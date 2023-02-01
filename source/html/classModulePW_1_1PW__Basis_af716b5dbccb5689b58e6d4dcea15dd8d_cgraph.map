@@ -1,0 +1,12 @@
+<map id="ModulePW::PW_Basis::setuptransform" name="ModulePW::PW_Basis::setuptransform">
+<area shape="rect" id="node1" title=" " alt="" coords="5,174,167,215"/>
+<area shape="rect" id="node2" href="$classModulePW_1_1FFT.html#a58dbb3aeae4ad521880117532db22b06" title=" " alt="" coords="228,5,388,32"/>
+<area shape="rect" id="node4" href="$classModulePW_1_1PW__Basis.html#a7d1b5f765b8f39b7100522a5d57e0fb0" title=" " alt="" coords="227,57,389,98"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="493,119,671,145"/>
+<area shape="rect" id="node7" href="$classModulePW_1_1PW__Basis.html#a7a5b07a892d8dd6a5b379c09141ebdec" title=" " alt="" coords="227,174,389,215"/>
+<area shape="rect" id="node8" href="$classModulePW_1_1PW__Basis.html#afbd05b3f560a1f54a897dfbd078ed661" title=" " alt="" coords="227,239,389,281"/>
+<area shape="rect" id="node9" href="$classModulePW_1_1FFT.html#a1f546daf2a19065994cd748daa801466" title=" " alt="" coords="227,305,389,332"/>
+<area shape="rect" id="node10" href="$classModulePW_1_1FFT.html#a01cdf401263774e830e76c88a68b96a4" title=" " alt="" coords="215,356,401,383"/>
+<area shape="rect" id="node3" href="$classModulePW_1_1FFT.html#a202315d1b5c5e3cd440a35782d5bda0c" title=" " alt="" coords="489,5,675,32"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#a54819f2f01c0e423b694c352136971a4" title="Check, if true, WARNING_QUIT." alt="" coords="449,64,715,91"/>
+</map>

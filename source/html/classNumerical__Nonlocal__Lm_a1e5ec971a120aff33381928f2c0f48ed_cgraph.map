@@ -1,0 +1,12 @@
+<map id="Numerical_Nonlocal_Lm::set_NL_proj" name="Numerical_Nonlocal_Lm::set_NL_proj">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,159,112"/>
+<area shape="rect" id="node2" href="$classNumerical__Nonlocal__Lm.html#ae77b2582289c6e433be0e37691730648" title=" " alt="" coords="207,5,360,47"/>
+<area shape="rect" id="node3" href="$classNumerical__Nonlocal__Lm.html#a49651a0b2933ec0c8f5aa73007272374" title=" " alt="" coords="207,71,360,112"/>
+<area shape="rect" id="node9" href="$classNumerical__Nonlocal__Lm.html#ab57dbd00d9bfe122edc2426f12479785" title=" " alt="" coords="207,136,360,177"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1Integral.html#ae0056c1ae699da00491139964f7acf54" title="simpson integral." alt="" coords="419,5,579,47"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1Sphbes.html#a1859a74f03086a23a2a68a6fa1f74008" title="spherical bessel jl(qr)" alt="" coords="421,71,578,112"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1libm.html#a7b49e155799ac36b2da1da35b6c2c77c" title=" " alt="" coords="643,27,812,54"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1libm.html#a91c03031eb1d447315c0f37d8251d2ad" title=" " alt="" coords="644,78,811,105"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="639,129,816,155"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="408,136,591,177"/>
+</map>

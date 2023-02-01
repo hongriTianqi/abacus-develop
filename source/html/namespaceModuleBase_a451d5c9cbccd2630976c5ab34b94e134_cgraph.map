@@ -1,0 +1,4 @@
+<map id="ModuleBase::CHECK_INT" name="ModuleBase::CHECK_INT">
+<area shape="rect" id="node1" title="Check the next input from ifs is integer. This is a global function." alt="" coords="5,5,189,32"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="237,5,451,32"/>
+</map>

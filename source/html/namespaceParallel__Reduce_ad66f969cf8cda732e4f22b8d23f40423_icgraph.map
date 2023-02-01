@@ -1,0 +1,12 @@
+<map id="Parallel_Reduce::gather_min_double_all" name="Parallel_Reduce::gather_min_double_all">
+<area shape="rect" id="node1" title=" " alt="" coords="952,96,1127,137"/>
+<area shape="rect" id="node2" href="$classelecstate_1_1ElecState.html#aee098bd1a0a4792cca287ca7bd76c3d6" title=" " alt="" coords="240,13,391,55"/>
+<area shape="rect" id="node4" href="$classOccupy.html#a8859bd7135067293db02c90d0115cfd2" title=" " alt="" coords="749,50,877,77"/>
+<area shape="rect" id="node6" href="$classenergy.html#aee431bab8c7494af2ffede6458983f32" title=" " alt="" coords="735,103,891,130"/>
+<area shape="rect" id="node8" href="$classenergy.html#aa059cdbb7d93be73e713cdd0b29798b5" title=" " alt="" coords="721,154,904,181"/>
+<area shape="rect" id="node10" href="$parallel__reduce__test_8cpp.html#ad089b2df176a70f2ac58526377bfd76d" title=" " alt="" coords="778,205,847,231"/>
+<area shape="rect" id="node3" href="$classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,13,192,55"/>
+<area shape="rect" id="node5" href="$classOccupy.html#abd74a9130e5b8c6855f8d163e7962205" title=" " alt="" coords="488,46,624,73"/>
+<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="468,97,644,139"/>
+<area shape="rect" id="node9" href="$classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="439,163,673,204"/>
+</map>

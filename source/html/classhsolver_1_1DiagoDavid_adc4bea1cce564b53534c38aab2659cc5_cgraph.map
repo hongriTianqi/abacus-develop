@@ -1,0 +1,6 @@
+<map id="hsolver::DiagoDavid::diag_mock" name="hsolver::DiagoDavid::diag_mock">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,160,72"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="208,13,385,39"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="224,63,369,90"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="433,5,587,47"/>
+</map>

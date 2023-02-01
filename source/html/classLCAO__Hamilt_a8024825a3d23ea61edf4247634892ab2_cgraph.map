@@ -1,0 +1,12 @@
+<map id="LCAO_Hamilt::calculat_HR_dftu_soc_sparse" name="LCAO_Hamilt::calculat_HR_dftu_soc_sparse">
+<area shape="rect" id="node1" title=" " alt="" coords="5,171,172,212"/>
+<area shape="rect" id="node2" href="$classModuleDFTU_1_1DFTU.html#a7303e883b3f6efa5f6fc5d079214c2fc" title=" " alt="" coords="220,98,407,154"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="908,61,1053,88"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="677,171,860,212"/>
+<area shape="rect" id="node8" href="$namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="225,230,402,271"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="225,296,402,322"/>
+<area shape="rect" id="node3" href="$classModuleDFTU_1_1DFTU.html#aefc27e200bbb76b44255e61f768f4e75" title=" " alt="" coords="455,112,629,154"/>
+<area shape="rect" id="node7" href="$scalapack__connector_8h.html#a9ca348c03b3a2eed595eaee8dbc07c9b" title=" " alt="" coords="499,61,585,88"/>
+<area shape="rect" id="node4" href="$classModuleDFTU_1_1DFTU.html#aa7dbd2bac5bdad4fd1496032396c7204" title=" " alt="" coords="680,54,857,95"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="465,288,619,330"/>
+</map>

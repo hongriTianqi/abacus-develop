@@ -1,0 +1,7 @@
+<map id="ModulePW::PW_Basis_K" name="ModulePW::PW_Basis_K">
+<area shape="rect" id="node1" title="Special pw_basis class. It includes different k&#45;points." alt="" coords="40,1372,220,1845"/>
+<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="163,673,350,1323"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="5,152,164,420"/>
+<area shape="rect" id="node4" href="$classModulePW_1_1FFT.html" title=" " alt="" coords="192,5,313,567"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="338,93,498,479"/>
+</map>

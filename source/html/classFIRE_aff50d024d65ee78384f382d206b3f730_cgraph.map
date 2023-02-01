@@ -1,0 +1,4 @@
+<map id="FIRE::restart" name="FIRE::restart">
+<area shape="rect" id="node1" title="restart MD when md_restart is true" alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="156,5,369,32"/>
+</map>

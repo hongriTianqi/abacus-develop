@@ -1,0 +1,12 @@
+<map id="surchem::gauss_charge" name="surchem::gauss_charge">
+<area shape="rect" id="node1" title=" " alt="" coords="5,76,180,103"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="511,5,681,32"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1ComplexMatrix.html#a66cb21c1a78ed6fcbf9029d7924fc59d" title=" " alt="" coords="228,69,439,110"/>
+<area shape="rect" id="node4" href="$classStructure__Factor.html#a34e384dbd2dca46573ed777b03d7aa1b" title=" " alt="" coords="248,145,419,186"/>
+<area shape="rect" id="node5" href="$classStructure__Factor.html#aa7319cb63b6d5407607441a97d00e8d3" title=" " alt="" coords="495,56,697,83"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1ComplexMatrix.html#a5c1453ebc08a2889d5b77e310256ad44" title=" " alt="" coords="491,107,701,149"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase.html#a278b24c3b7b288f629f30aea309a5356" title=" " alt="" coords="487,173,705,200"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="487,224,705,251"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="514,275,678,317"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="507,341,685,368"/>
+</map>

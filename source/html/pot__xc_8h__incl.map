@@ -1,0 +1,12 @@
+<map id="module_elecstate/potentials/pot_xc.h" name="module_elecstate/potentials/pot_xc.h">
+<area shape="rect" id="node1" title=" " alt="" coords="577,5,783,47"/>
+<area shape="rect" id="node2" href="$xc__functional_8h.html" title=" " alt="" coords="495,95,695,136"/>
+<area shape="rect" id="node10" href="$pot__base_8h.html" title=" " alt="" coords="816,102,909,129"/>
+<area shape="rect" id="node3" href="$xc__funcs_8h.html" title=" " alt="" coords="5,191,96,218"/>
+<area shape="rect" id="node4" href="$global__function_8h.html" title=" " alt="" coords="121,184,274,225"/>
+<area shape="rect" id="node5" href="$global__variable_8h.html" title=" " alt="" coords="187,273,322,300"/>
+<area shape="rect" id="node6" href="$vector3_8h.html" title=" " alt="" coords="350,191,525,218"/>
+<area shape="rect" id="node7" href="$matrix_8h.html" title=" " alt="" coords="877,191,1045,218"/>
+<area shape="rect" id="node8" href="$exx__info_8h.html" title=" " alt="" coords="549,191,640,218"/>
+<area shape="rect" id="node9" href="$pw__basis__k_8h.html" title=" " alt="" coords="665,191,853,218"/>
+</map>

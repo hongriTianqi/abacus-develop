@@ -1,0 +1,12 @@
+<map id="ModuleBase::GlobalFunc::NEW_PART" name="ModuleBase::GlobalFunc::NEW_PART">
+<area shape="rect" id="node1" title=" " alt="" coords="544,155,727,196"/>
+<area shape="rect" id="node2" href="$classNumerical__Descriptor.html#a6d9a78152eb9691a85e26d03079b05e5" title=" " alt="" coords="324,5,487,47"/>
+<area shape="rect" id="node4" href="$classNumerical__Basis.html#a7f0dcff6fb2250631f6447cd5504ed5c" title=" " alt="" coords="315,71,496,112"/>
+<area shape="rect" id="node6" href="$classMD__func.html#a99da8e2d5369eb9c2a2ba398497730b1" title=" " alt="" coords="331,137,479,163"/>
+<area shape="rect" id="node8" href="$classForces.html#ab839f66f8064f0d1e06f0b3512d8f993" title=" " alt="" coords="317,187,493,214"/>
+<area shape="rect" id="node9" href="$classStress__Func.html#a283a801fed548150170fa9626fc7c96a" title=" " alt="" coords="322,238,489,294"/>
+<area shape="rect" id="node10" href="$global__function__test_8cpp.html#a058f01e4c6dc3c93813c2acf41124163" title=" " alt="" coords="371,318,440,345"/>
+<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__PW.html#a2d7c936122c694417b9e4291f501e591" title=" " alt="" coords="5,5,267,47"/>
+<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="19,71,253,112"/>
+<area shape="rect" id="node7" href="$classMDrun.html#a19356db7cdf6b48357ecfff93bccacf7" title="output MD information such as energy, temperature, and pressure" alt="" coords="67,137,205,163"/>
+</map>

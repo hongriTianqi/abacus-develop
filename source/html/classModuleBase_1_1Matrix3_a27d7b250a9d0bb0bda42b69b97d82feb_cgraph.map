@@ -1,0 +1,6 @@
+<map id="ModuleBase::Matrix3::Inverse" name="ModuleBase::Matrix3::Inverse">
+<area shape="rect" id="node1" title="Inverse a 3x3 matrix." alt="" coords="5,27,165,69"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1Matrix3.html#ab28d96cf2c851a6c1eae27ce780d2e90" title="Calculate the determinant of a 3x3 matrix." alt="" coords="213,5,404,32"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7" title="Construct a new Matrix 3 object to Identity matrix." alt="" coords="229,57,389,98"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1Matrix3.html#a42bb8704e6e193ae5dded7779548fb1c" title="Set a 3x3 matrix to identity matrix." alt="" coords="452,57,612,98"/>
+</map>

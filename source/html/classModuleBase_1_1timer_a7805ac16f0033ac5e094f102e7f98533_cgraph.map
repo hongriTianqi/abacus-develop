@@ -1,0 +1,6 @@
+<map id="ModuleBase::timer::finish" name="ModuleBase::timer::finish">
+<area shape="rect" id="node1" title="Finish total time calculation and print computational processes with duration &gt; 0...." alt="" coords="5,35,159,76"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1timer.html#ac4c6e76df32609d3a8fbda5457317dab" title="Print all computational processes with during &gt; 0.1 s." alt="" coords="219,5,372,47"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="207,71,384,98"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="432,64,585,105"/>
+</map>

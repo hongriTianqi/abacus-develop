@@ -1,0 +1,8 @@
+<map id="ModulePW::PW_Basis::collect_st" name="ModulePW::PW_Basis::collect_st">
+<area shape="rect" id="node1" title=" " alt="" coords="5,53,167,94"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#a0ec3accba1ee041127f0a069dc85c86e" title=" " alt="" coords="223,31,389,57"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="215,82,397,123"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#a3534a93327d8c5e0943a310ab62e7b52" title=" " alt="" coords="447,5,621,32"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="445,56,623,83"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="671,49,824,90"/>
+</map>

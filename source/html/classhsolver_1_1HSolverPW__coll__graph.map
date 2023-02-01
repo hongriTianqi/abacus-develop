@@ -1,0 +1,10 @@
+<map id="hsolver::HSolverPW&lt; FPTYPE, Device &gt;" name="hsolver::HSolverPW&lt; FPTYPE, Device &gt;">
+<area shape="rect" id="node1" title=" " alt="" coords="119,1921,299,2175"/>
+<area shape="rect" id="node2" href="$classhsolver_1_1HSolver.html" title=" " alt="" coords="5,1510,201,1734"/>
+<area shape="rect" id="node3" href="$classhsolver_1_1DiagH.html" title=" " alt="" coords="11,937,196,1059"/>
+<area shape="rect" id="node4" href="$classModulePW_1_1PW__Basis__K.html" title="Special pw_basis class. It includes different k&#45;points." alt="" coords="225,1385,405,1859"/>
+<area shape="rect" id="node5" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="374,673,561,1323"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="216,152,375,420"/>
+<area shape="rect" id="node7" href="$classModulePW_1_1FFT.html" title=" " alt="" coords="403,5,524,567"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="549,93,709,479"/>
+</map>

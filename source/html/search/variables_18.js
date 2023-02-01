@@ -1,0 +1,22 @@
+var searchData=
+[
+  ['x_13326',['x',['../unionModuleBase_1_1libm_1_1mynumber.html#a6511d3ea1379cd57ec0b80b681f07c18',1,'ModuleBase::libm::mynumber::x()'],['../classCG__test.html#a5e759efba4e02a92a718995063950ebb',1,'CG_test::x()'],['../classMinFunc.html#a1736f55498702bf767a59541402391cf',1,'MinFunc::x()'],['../classTN__test.html#a274de9c056a4bcd424c7c7dd8a6e5e70',1,'TN_test::x()'],['../classModuleBase_1_1Vector3.html#aa4a84e2c108d8c722b30b887fc6a62a8',1,'ModuleBase::Vector3::x()'],['../classAtom__input.html#aafdbdaec7d644ba3389f84de7069648c',1,'Atom_input::x()'],['../classLineSearchPrepare.html#ad505d1f778d622114b0e40da67a6fdd4',1,'LineSearchPrepare::x()'],['../namespaceModuleBase_1_1libm.html#a947b87f10e3327eefe6c05e187d544d6',1,'ModuleBase::libm::x()']]],
+  ['x_5faxpy_13327',['X_axpy',['../classTestModuleHsolverMathKernel.html#adede003f67c6136f3017817f36a37237',1,'TestModuleHsolverMathKernel']]],
+  ['x_5fgemv_13328',['X_gemv',['../classTestModuleHsolverMathKernel.html#a7bea4fa13363975d40ad8831de81b234',1,'TestModuleHsolverMathKernel']]],
+  ['x_5fmax_13329',['x_max',['../classAtom__input.html#a1ae1e8b906539a5d770b43a016ed5b12',1,'Atom_input']]],
+  ['x_5fmax_5fexpand_13330',['x_max_expand',['../classAtom__input.html#ad2871d8b2f710491ce522362bbda7cf6',1,'Atom_input']]],
+  ['x_5fmin_13331',['x_min',['../classAtom__input.html#a6373cca953a1a53e2d48efc9c3a163dc',1,'Atom_input']]],
+  ['x_5fmin_5fexpand_13332',['x_min_expand',['../classAtom__input.html#a630a4add5cf0aa5adab1d197ae2a952a',1,'Atom_input']]],
+  ['x_5fscal_13333',['X_scal',['../classTestModuleHsolverMathKernel.html#a6bd640faedd974332123d0c27be22f7f',1,'TestModuleHsolverMathKernel']]],
+  ['xa_13334',['xa',['../classLine__Search.html#a687525c37b9946d0ddcf1e1be54e7603',1,'Line_Search']]],
+  ['xb_13335',['xb',['../classLine__Search.html#a02e053cd6d03cbf4b810f0694626dfb8',1,'Line_Search']]],
+  ['xc_13336',['xc',['../classLine__Search.html#aeec11da52722813afc3767076d8764b4',1,'Line_Search']]],
+  ['xc_5ffunc_13337',['xc_func',['../classpseudo__nc.html#a12a5b2583b63a838cc758e1096b8477d',1,'pseudo_nc::xc_func()'],['../classPseudopot__upf.html#a11d023405da849684b07763e1e9ee59b',1,'Pseudopot_upf::xc_func()']]],
+  ['xc_5ftemperature_13338',['xc_temperature',['../classInput.html#a14260aca23b2f8dbf3f6344ea6d98962',1,'Input::xc_temperature()'],['../namespaceGlobalV.html#a3b38dbff0ad37387df8a30676e29684c',1,'GlobalV::XC_TEMPERATURE()']]],
+  ['xi_13339',['xi',['../classModuleBase_1_1Bspline.html#aa4951d73460714c44a34974c532a5c23',1,'ModuleBase::Bspline']]],
+  ['xnew_13340',['xnew',['../classLineSearchPrepare.html#a1afb8b6d5b98bf9f5b09605aec735b75',1,'LineSearchPrepare']]],
+  ['xprime_13341',['xprime',['../classModulePW_1_1FFT.html#a8a0bda413f707e53db867bf498ff6d3e',1,'ModulePW::FFT::xprime()'],['../classModulePW_1_1PW__Basis.html#a1fb4dd46a0b85216518d0ffc678e8d55',1,'ModulePW::PW_Basis::xprime()']]],
+  ['xtol_13342',['xtol',['../classModuleBase_1_1Opt__DCsrch.html#a78f36ae693b96ba85171ce790f584b51',1,'ModuleBase::Opt_DCsrch']]],
+  ['xx_13343',['xx',['../classTestModulePsiMemory.html#a0a383776a3896ff0c088416a520b4c99',1,'TestModulePsiMemory']]],
+  ['xyz_5f_13344',['xyz_',['../classvdw_1_1Vdwd3.html#acbbb51d74ed7663a8f1aaa3e6718842d',1,'vdw::Vdwd3']]]
+];

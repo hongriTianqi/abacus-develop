@@ -1,0 +1,11 @@
+<map id="ModuleBase::QUIT" name="ModuleBase::QUIT">
+<area shape="rect" id="node1" title="Close .log files and exit." alt="" coords="5,91,148,118"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase_1_1Global__File.html#a52a4994647aa5f0de52e85072af5a272" title=" " alt="" coords="202,12,354,53"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7805ac16f0033ac5e094f102e7f98533" title="Finish total time calculation and print computational processes with duration &gt; 0...." alt="" coords="201,84,355,125"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1Memory.html#ad117abb25dd10a4b3c00c363076690c5" title="Print memory consumed (&gt; 1 MB) in a file." alt="" coords="196,163,360,204"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase_1_1Global__File.html#aba4dacccff3a0d3282eb01dc3a31bf5d" title=" " alt="" coords="421,5,573,47"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ac4c6e76df32609d3a8fbda5457317dab" title="Print all computational processes with during &gt; 0.1 s." alt="" coords="420,71,573,112"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="408,137,585,163"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="633,129,787,171"/>
+<area shape="rect" id="node9" href="$namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="408,188,585,229"/>
+</map>

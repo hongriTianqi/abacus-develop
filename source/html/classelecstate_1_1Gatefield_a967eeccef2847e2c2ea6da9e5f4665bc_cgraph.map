@@ -1,0 +1,12 @@
+<map id="elecstate::Gatefield::add_gatefield" name="elecstate::Gatefield::add_gatefield">
+<area shape="rect" id="node1" title=" " alt="" coords="5,123,155,164"/>
+<area shape="rect" id="node2" href="$classelecstate_1_1Gatefield.html#ad4a4401f0e9ad96c3deca85e5bc44b8e" title=" " alt="" coords="237,5,387,47"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="203,71,421,98"/>
+<area shape="rect" id="node4" href="$classelecstate_1_1Efield.html#a5854a7c0a26eb3c5deed698c1bf63269" title=" " alt="" coords="245,123,379,164"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="223,189,401,215"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="239,239,385,266"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#a01fe9e625b0987ac1383bf7551906cbd" title="Cross product of two Vector3." alt="" coords="504,42,648,69"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1Vector3.html#ad60ad31cf88ec368398433c2826e6715" title="Get the norm of a Vector3." alt="" coords="497,93,655,135"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="469,159,683,186"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="499,211,653,252"/>
+</map>

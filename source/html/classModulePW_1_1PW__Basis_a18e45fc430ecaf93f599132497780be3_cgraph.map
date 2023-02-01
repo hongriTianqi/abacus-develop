@@ -1,0 +1,10 @@
+<map id="ModulePW::PW_Basis::real2recip" name="ModulePW::PW_Basis::real2recip">
+<area shape="rect" id="node1" title=" " alt="" coords="5,137,167,178"/>
+<area shape="rect" id="node2" href="$classModulePW_1_1FFT.html#ac5a1aa06f4c446a5456208e867e02cc5" title=" " alt="" coords="215,5,391,32"/>
+<area shape="rect" id="node3" href="$classModulePW_1_1FFT.html#ad01da6b7d37afe506725bae4cbc87a6a" title=" " alt="" coords="219,56,386,83"/>
+<area shape="rect" id="node4" href="$classModulePW_1_1PW__Basis.html#aae091c3aec38ba253fdda8650c0d7b9a" title=" " alt="" coords="222,107,383,149"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="439,144,616,171"/>
+<area shape="rect" id="node7" href="$classModulePW_1_1FFT.html#a51172642621a79864bd8a34d02c27f3c" title=" " alt="" coords="228,225,377,266"/>
+<area shape="rect" id="node8" href="$classModulePW_1_1FFT.html#af4c076ea70f66d0c7011f0f318cfe808" title=" " alt="" coords="228,290,377,331"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="664,137,817,178"/>
+</map>

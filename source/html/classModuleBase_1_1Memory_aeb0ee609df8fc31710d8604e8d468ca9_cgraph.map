@@ -1,0 +1,4 @@
+<map id="ModuleBase::Memory::record" name="ModuleBase::Memory::record">
+<area shape="rect" id="node1" title="Record memory consumed during computation." alt="" coords="5,5,169,47"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="217,5,381,47"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="wavefunc::wfcinit" name="wavefunc::wfcinit">
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,143,98"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="191,17,368,43"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="424,71,569,98"/>
+<area shape="rect" id="node5" href="$classwavefunc.html#a5f9675b18a2980386b6d6fe03be07e90" title=" " alt="" coords="203,126,355,153"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="420,5,573,47"/>
+<area shape="rect" id="node6" href="$classModulePW_1_1PW__Basis__K.html#ac975ac5c253e198598ffab6b4729f335" title=" " alt="" coords="416,123,577,164"/>
+<area shape="rect" id="node9" href="$classModulePW_1_1PW__Basis.html#ac2da170e2a9f72476c5675a437d3e750" title=" " alt="" coords="416,188,577,229"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="625,123,789,164"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="837,123,1001,164"/>
+</map>

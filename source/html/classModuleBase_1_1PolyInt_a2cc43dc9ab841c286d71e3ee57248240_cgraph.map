@@ -1,0 +1,5 @@
+<map id="ModuleBase::PolyInt::Polynomial_Interpolation" name="ModuleBase::PolyInt::Polynomial_Interpolation">
+<area shape="rect" id="node1" title="Lagrange interpolation." alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="247,13,424,39"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="472,5,625,47"/>
+</map>

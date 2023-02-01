@@ -1,0 +1,5 @@
+<map id="FIRE::check_force" name="FIRE::check_force">
+<area shape="rect" id="node1" title=" " alt="" coords="191,31,328,57"/>
+<area shape="rect" id="node2" href="$classFIRE.html#a00433d49713c21bd66fe133dca9d66fa" title="the second half of equation of motion, update velocities" alt="" coords="5,5,143,32"/>
+<area shape="rect" id="node3" href="$classFIRE.html#aa6566bc8dee83eb9bf17818bd79b18a9" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="27,56,121,83"/>
+</map>

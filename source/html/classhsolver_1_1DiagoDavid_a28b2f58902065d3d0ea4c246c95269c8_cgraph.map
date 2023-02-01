@@ -1,0 +1,6 @@
+<map id="hsolver::DiagoDavid::SchmitOrth" name="hsolver::DiagoDavid::SchmitOrth">
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,160,76"/>
+<area shape="rect" id="node2" href="$namespaceParallel__Reduce.html#a5ccf1f753c6fae3266e7e9b5e21f2712" title=" " alt="" coords="208,5,385,47"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="208,71,385,98"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="433,64,587,105"/>
+</map>

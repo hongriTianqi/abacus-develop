@@ -1,0 +1,4 @@
+<map id="Verlet::write_restart" name="Verlet::write_restart">
+<area shape="rect" id="node1" title="write the information into files used for MD restarting" alt="" coords="5,5,156,32"/>
+<area shape="rect" id="node2" href="$classMDrun.html#a943294ad3074d8a96519e4aae5702455" title="write the information into files used for MD restarting" alt="" coords="204,5,360,32"/>
+</map>

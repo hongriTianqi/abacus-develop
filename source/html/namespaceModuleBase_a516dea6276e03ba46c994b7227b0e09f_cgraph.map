@@ -1,0 +1,4 @@
+<map id="ModuleBase::CHECK_STRING" name="ModuleBase::CHECK_STRING">
+<area shape="rect" id="node1" title="Check the next input from ifs is std::string. This is a global function." alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="264,5,477,32"/>
+</map>

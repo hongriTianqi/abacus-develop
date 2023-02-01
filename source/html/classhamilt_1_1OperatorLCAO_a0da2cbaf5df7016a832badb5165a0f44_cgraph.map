@@ -1,0 +1,7 @@
+<map id="hamilt::OperatorLCAO::get_hs_pointers" name="hamilt::OperatorLCAO::get_hs_pointers">
+<area shape="rect" id="node1" title=" " alt="" coords="5,27,169,69"/>
+<area shape="rect" id="node2" href="$classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="229,8,383,35"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="217,60,395,87"/>
+<area shape="rect" id="node3" href="$blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc" title=" " alt="" coords="485,5,553,32"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="443,57,596,98"/>
+</map>

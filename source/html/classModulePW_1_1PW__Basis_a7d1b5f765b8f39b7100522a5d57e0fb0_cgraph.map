@@ -1,0 +1,12 @@
+<map id="ModulePW::PW_Basis::distribute_g" name="ModulePW::PW_Basis::distribute_g">
+<area shape="rect" id="node1" title=" " alt="" coords="5,168,167,209"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#a54819f2f01c0e423b694c352136971a4" title="Check, if true, WARNING_QUIT." alt="" coords="215,51,480,78"/>
+<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis.html#a399d8ab060804e2e27a78551293f303d" title=" " alt="" coords="263,103,432,144"/>
+<area shape="rect" id="node8" href="$classModulePW_1_1PW__Basis.html#a6afc340aa2187debf07a140e08ebb77a" title=" " alt="" coords="263,168,432,209"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="259,234,436,261"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="241,285,454,311"/>
+<area shape="rect" id="node4" href="$classModulePW_1_1PW__Basis.html#ae74a52ca0171aa8f89874de34304d88a" title=" " alt="" coords="528,5,689,47"/>
+<area shape="rect" id="node5" href="$classModulePW_1_1PW__Basis.html#a3c103bd7f70cff1f20a9a8f35f4e48a3" title=" " alt="" coords="528,136,689,177"/>
+<area shape="rect" id="node6" href="$classModulePW_1_1PW__Basis.html#a4c16b997e3795c401deb65238d7dfbbf" title=" " alt="" coords="528,71,689,112"/>
+<area shape="rect" id="node7" href="$classModulePW_1_1PW__Basis.html#a77f8d43243138e75cb8f288617917d54" title=" " alt="" coords="528,201,689,243"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="berryphase::Macroscopic_polarization" name="berryphase::Macroscopic_polarization">
+<area shape="rect" id="node1" title=" " alt="" coords="5,207,189,249"/>
+<area shape="rect" id="node2" href="$classberryphase.html#a2e60227a04f102306c0741139fdf314c" title=" " alt="" coords="247,5,431,32"/>
+<area shape="rect" id="node4" href="$classberryphase.html#a2cb84cf95bb258b1207299b82e2debae" title=" " alt="" coords="237,57,440,98"/>
+<area shape="rect" id="node5" href="$classberryphase.html#a8134ea72b8d06da749456ea46a4fc3aa" title=" " alt="" coords="259,123,418,149"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1Vector3.html#ad60ad31cf88ec368398433c2826e6715" title="Get the norm of a Vector3." alt="" coords="259,174,418,215"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1Vector3.html#a3cb438023dc1a3dfea46a8c3cc355d1b" title="Normalize a Vector3." alt="" coords="259,239,418,281"/>
+<area shape="rect" id="node8" href="$classberryphase.html#af09aea42b8546fa21b8b404f1a8f7812" title=" " alt="" coords="253,305,424,332"/>
+<area shape="rect" id="node9" href="$classberryphase.html#ae0efb40ae9e8af72c8a95ff08d989a44" title=" " alt="" coords="249,356,428,383"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="247,407,430,449"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase_1_1libm.html#a7b49e155799ac36b2da1da35b6c2c77c" title=" " alt="" coords="488,5,657,32"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="elecstate::Potential::get_effective_vofk" name="elecstate::Potential::get_effective_vofk">
+<area shape="rect" id="node1" title=" " alt="" coords="512,155,663,196"/>
+<area shape="rect" id="node2" href="$classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="268,5,451,47"/>
+<area shape="rect" id="node4" href="$classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="277,71,442,112"/>
+<area shape="rect" id="node6" href="$classOF__Stress__PW.html#aac70df38dc093637423bfe19a48011c2" title=" " alt="" coords="266,137,453,163"/>
+<area shape="rect" id="node8" href="$classenergy.html#ab646e9013cd5353bce3ed8908e27f3fa" title=" " alt="" coords="298,187,421,214"/>
+<area shape="rect" id="node9" href="$classenergy.html#ade2b7b806a6294f619af6ecc6d8b7dfb" title=" " alt="" coords="289,238,430,265"/>
+<area shape="rect" id="node10" href="$classhamilt_1_1HamiltPW.html#afac6695b0092743a3575e47248037433" title=" " alt="" coords="255,289,464,315"/>
+<area shape="rect" id="node3" href="$classForce__LCAO__gamma.html#a1f1d4ecc486d17e6201f5a8a4d29942b" title=" " alt="" coords="5,5,207,47"/>
+<area shape="rect" id="node5" href="$classForce__LCAO__k.html#ae2c554f465bc6b480664f9cf3fbd9919" title=" " alt="" coords="19,78,193,105"/>
+<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__OF.html#acc894b3c6c4e638098cc70caac93bc6e" title=" " alt="" coords="18,129,194,171"/>
+</map>
