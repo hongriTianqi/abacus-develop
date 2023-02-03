@@ -1,10 +1,10 @@
-<map id="src_external/src_test/src_global/complexmatrix&#45;test.h" name="src_external/src_test/src_global/complexmatrix&#45;test.h">
-<area shape="rect" id="node1" title=" " alt="" coords="61,5,255,61"/>
-<area shape="rect" id="node2" href="$complexmatrix_8h.html" title=" " alt="" coords="23,109,168,151"/>
-<area shape="rect" id="node8" title=" " alt="" coords="193,117,251,143"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,199,84,225"/>
-<area shape="rect" id="node4" href="$matrix_8h.html" title=" " alt="" coords="109,199,186,225"/>
-<area shape="rect" id="node5" title=" " alt="" coords="12,273,88,300"/>
-<area shape="rect" id="node6" title=" " alt="" coords="113,273,182,300"/>
-<area shape="rect" id="node7" title=" " alt="" coords="207,273,280,300"/>
+<map id="src_ri/test_code/complexmatrix&#45;test.h" name="src_ri/test_code/complexmatrix&#45;test.h">
+<area shape="rect" id="node1" title=" " alt="" coords="87,5,313,47"/>
+<area shape="rect" id="node2" href="$complexmatrix_8h.html" title=" " alt="" coords="5,95,229,121"/>
+<area shape="rect" id="node8" title=" " alt="" coords="253,95,312,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="27,169,106,196"/>
+<area shape="rect" id="node4" href="$matrix_8h.html" title=" " alt="" coords="131,169,208,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="34,244,110,271"/>
+<area shape="rect" id="node6" title=" " alt="" coords="135,244,204,271"/>
+<area shape="rect" id="node7" title=" " alt="" coords="229,244,302,271"/>
 </map>

@@ -1,12 +1,12 @@
-<map id="module_dftu/dftu_folding.cpp" name="module_dftu/dftu_folding.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="359,5,570,32"/>
-<area shape="rect" id="node2" href="$dftu_8h.html" title=" " alt="" coords="361,87,419,114"/>
-<area shape="rect" id="node8" href="$timer_8h.html" title=" " alt="" coords="663,87,821,114"/>
-<area shape="rect" id="node9" href="$global_8h.html" title=" " alt="" coords="145,80,337,121"/>
-<area shape="rect" id="node10" href="$global__fp_8h.html" title=" " alt="" coords="443,80,638,121"/>
-<area shape="rect" id="node3" href="$unitcell_8h.html" title=" " alt="" coords="221,184,386,211"/>
-<area shape="rect" id="node4" href="$module__orbital_2parallel__orbitals_8h.html" title=" " alt="" coords="395,273,569,315"/>
-<area shape="rect" id="node5" href="$LCAO__matrix_8h.html" title=" " alt="" coords="461,169,620,225"/>
-<area shape="rect" id="node6" href="$charge__mixing_8h.html" title=" " alt="" coords="5,177,196,218"/>
-<area shape="rect" id="node7" title=" " alt="" coords="679,184,738,211"/>
+<map id="module_hamilt_lcao/module_dftu/dftu_folding.cpp" name="module_hamilt_lcao/module_dftu/dftu_folding.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="357,5,572,47"/>
+<area shape="rect" id="node2" href="$dftu_8h.html" title=" " alt="" coords="361,102,419,129"/>
+<area shape="rect" id="node8" href="$timer_8h.html" title=" " alt="" coords="663,102,821,129"/>
+<area shape="rect" id="node9" href="$global_8h.html" title=" " alt="" coords="145,95,337,136"/>
+<area shape="rect" id="node10" href="$global__fp_8h.html" title=" " alt="" coords="443,95,638,136"/>
+<area shape="rect" id="node3" href="$unitcell_8h.html" title=" " alt="" coords="221,199,386,225"/>
+<area shape="rect" id="node4" href="$module__orbital_2parallel__orbitals_8h.html" title=" " alt="" coords="395,288,569,329"/>
+<area shape="rect" id="node5" href="$LCAO__matrix_8h.html" title=" " alt="" coords="461,184,620,240"/>
+<area shape="rect" id="node6" href="$charge__mixing_8h.html" title=" " alt="" coords="5,191,196,233"/>
+<area shape="rect" id="node7" title=" " alt="" coords="679,199,738,225"/>
 </map>

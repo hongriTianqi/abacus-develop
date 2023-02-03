@@ -1,9 +1,9 @@
-<map id="src_pdiag/helper_string.h" name="src_pdiag/helper_string.h">
-<area shape="rect" id="node1" title=" " alt="" coords="181,5,366,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,80,72,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="97,80,167,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="191,80,265,107"/>
-<area shape="rect" id="node5" title=" " alt="" coords="289,80,348,107"/>
-<area shape="rect" id="node6" title=" " alt="" coords="373,80,443,107"/>
-<area shape="rect" id="node7" title=" " alt="" coords="467,80,546,107"/>
+<map id="module_hsolver/kernels/cuda/helper_string.h" name="module_hsolver/kernels/cuda/helper_string.h">
+<area shape="rect" id="node1" title=" " alt="" coords="185,5,362,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,72,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="97,95,167,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="191,95,265,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="289,95,348,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="373,95,443,121"/>
+<area shape="rect" id="node7" title=" " alt="" coords="467,95,546,121"/>
 </map>

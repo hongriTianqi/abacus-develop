@@ -1,7 +1,5 @@
 <map id="ModulePW::FFT::setupFFT" name="ModulePW::FFT::setupFFT">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,192,108"/>
-<area shape="rect" id="node2" href="$classModulePW_1_1FFT.html#aa8bb0ec7e0486ca7a915f2e158fd21b0" title=" " alt="" coords="259,5,436,32"/>
-<area shape="rect" id="node3" href="$classModulePW_1_1FFT.html#a261b9c4f671280aa077bb1cd0f92e9a7" title=" " alt="" coords="243,56,452,83"/>
-<area shape="rect" id="node4" href="$classModulePW_1_1FFT.html#aab1f8cd8648203893f4ca2faabcc0833" title=" " alt="" coords="256,107,439,133"/>
-<area shape="rect" id="node5" href="$classModulePW_1_1FFT.html#a6279daa7af5308504b7dbddb8d69ff34" title=" " alt="" coords="240,157,455,184"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,192,57"/>
+<area shape="rect" id="node2" href="$classModulePW_1_1FFT.html#aa8bb0ec7e0486ca7a915f2e158fd21b0" title=" " alt="" coords="243,5,420,32"/>
+<area shape="rect" id="node3" href="$classModulePW_1_1FFT.html#aab1f8cd8648203893f4ca2faabcc0833" title=" " alt="" coords="240,56,423,83"/>
 </map>
