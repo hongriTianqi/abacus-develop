@@ -23,7 +23,7 @@
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">3.1.1
-   &#160;<span id="projectnumber">2023-02-01</span>
+   &#160;<span id="projectnumber">2023-02-04</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -73,23 +73,23 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a3bc5935ee371c4018b99a89026721152"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__cell_2test_2CMakeLists_8txt.html#a3bc5935ee371c4018b99a89026721152">remove_definitions</a> (-D__LCAO) remove_definitions(-D__DEEPKS) remove_definitions(-D__CUDA) remove_definitions(-D__ROCM) <a class="el" href="module__base_2test_2CMakeLists_8txt.html#a3efe0bdd38c179e11bf2a535f28dd8ba">AddTest</a>(TARGET cell_read_pp_upf LIBS $</td></tr>
+<tr class="memitem:a3bc5935ee371c4018b99a89026721152"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__cell_2test_2CMakeLists_8txt.html#a3bc5935ee371c4018b99a89026721152">remove_definitions</a> (-D__LCAO) remove_definitions(-D__DEEPKS) remove_definitions(-D__CUDA) remove_definitions(-D__ROCM) <a class="el" href="module__cell_2test_2CMakeLists_8txt.html#a52264a83048b281f5d62c2410aad9d39">AddTest</a>(TARGET cell_read_pp_upf LIBS $</td></tr>
 <tr class="separator:a3bc5935ee371c4018b99a89026721152"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35a8bdaa73e5af68d87dcd4ceaa9ad6d"><td class="memItemLeft" align="right" valign="top">base device SOURCES read_pp_upf_test cpp read_pp cpp read_pp_upf201 cpp read_pp_upf100 cpp read_pp_vwr cpp read_pp_blps cpp src_parallel parallel_reduce cpp src_parallel parallel_kpoints cpp src_parallel parallel_global cpp src_parallel parallel_common cpp module_io <a class="el" href="classoutput.html">output</a> cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__cell_2test_2CMakeLists_8txt.html#a35a8bdaa73e5af68d87dcd4ceaa9ad6d">install</a> (DIRECTORY support DESTINATION ${CMAKE_CURRENT_BINARY_DIR}) <a class="el" href="module__base_2test_2CMakeLists_8txt.html#a3efe0bdd38c179e11bf2a535f28dd8ba">AddTest</a>(TARGET klist_test LIBS $</td></tr>
-<tr class="separator:a35a8bdaa73e5af68d87dcd4ceaa9ad6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a52264a83048b281f5d62c2410aad9d39"><td class="memItemLeft" align="right" valign="top">base device SOURCES read_pp_upf_test cpp read_pp cpp read_pp_upf201 cpp read_pp_upf100 cpp read_pp_vwr cpp read_pp_blps cpp src_parallel parallel_reduce cpp src_parallel parallel_kpoints cpp src_parallel parallel_global cpp src_parallel parallel_common cpp module_io <a class="el" href="classoutput.html">output</a> cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__cell_2test_2CMakeLists_8txt.html#a52264a83048b281f5d62c2410aad9d39">AddTest</a> (TARGET klist_test LIBS ${math_libs} base device SOURCES klist_test.cpp ../klist.cpp ../../src_parallel/parallel_reduce.cpp ../../src_parallel/parallel_kpoints.cpp ../../src_parallel/parallel_global.cpp ../../src_parallel/parallel_common.cpp ../../module_io/output.cpp ../module_symmetry/symm_other.cpp ../module_symmetry/symmetry_basic.cpp ../module_symmetry/symmetry.cpp) <a class="el" href="module__io_2test_2CMakeLists_8txt.html#adcbe0327bfcc4ec1564d59f6991ecc5b">install</a>(DIRECTORY support DESTINATION $</td></tr>
+<tr class="separator:a52264a83048b281f5d62c2410aad9d39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a35a8bdaa73e5af68d87dcd4ceaa9ad6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35a8bdaa73e5af68d87dcd4ceaa9ad6d">&#9670;&nbsp;</a></span>install()</h2>
+<a id="a52264a83048b281f5d62c2410aad9d39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a52264a83048b281f5d62c2410aad9d39">&#9670;&nbsp;</a></span>AddTest()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">base device SOURCES read_pp_upf_test cpp read_pp cpp read_pp_upf201 cpp read_pp_upf100 cpp read_pp_vwr cpp read_pp_blps cpp src_parallel parallel_reduce cpp src_parallel parallel_kpoints cpp src_parallel parallel_global cpp src_parallel parallel_common cpp module_io <a class="el" href="classoutput.html">output</a> cpp install </td>
+          <td class="memname">base device SOURCES read_pp_upf_test cpp read_pp cpp read_pp_upf201 cpp read_pp_upf100 cpp read_pp_vwr cpp read_pp_blps cpp src_parallel parallel_reduce cpp src_parallel parallel_kpoints cpp src_parallel parallel_global cpp src_parallel parallel_common cpp module_io <a class="el" href="classoutput.html">output</a> cpp AddTest </td>
           <td>(</td>
-          <td class="paramtype">DIRECTORY support DESTINATION ${CMAKE_CURRENT_BINARY_DIR}&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">TARGET klist_test LIBS ${math_libs} base device SOURCES klist_test.cpp ../klist.cpp ../../src_parallel/parallel_reduce.cpp ../../src_parallel/parallel_kpoints.cpp ../../src_parallel/parallel_global.cpp ../../src_parallel/parallel_common.cpp ../../module_io/output.cpp ../module_symmetry/symm_other.cpp ../module_symmetry/symmetry_basic.cpp ../module_symmetry/symmetry.&#160;</td>
+          <td class="paramname"><em>cpp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
