@@ -1,4 +1,6 @@
 <map id="Gint_Tools::cal_dpsirr_ylm" name="Gint_Tools::cal_dpsirr_ylm">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,197,39"/>
-<area shape="rect" id="node2" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="245,5,428,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,42,197,69"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="248,13,425,39"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="245,64,428,105"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="476,5,629,47"/>
 </map>

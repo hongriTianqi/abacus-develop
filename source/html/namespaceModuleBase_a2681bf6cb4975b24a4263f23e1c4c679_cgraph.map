@@ -1,4 +1,4 @@
 <map id="ModuleBase::dot" name="ModuleBase::dot">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,136,39"/>
+<area shape="rect" id="node1" title="Take &quot;dot&#45;product&quot; of two ComplexArray: sum of cd1(conjugate)[i] * cd2[i]." alt="" coords="5,13,136,39"/>
 <area shape="rect" id="node2" href="$classModuleBase_1_1ComplexArray.html#aebb42694ab2809f0a99e8a36fa7efb77" title=" " alt="" coords="184,5,387,47"/>
 </map>

@@ -1,12 +1,12 @@
 <map id="hamilt::Meta&lt; OperatorLCAO&lt; T &gt; &gt;" name="hamilt::Meta&lt; OperatorLCAO&lt; T &gt; &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="472,1349,684,1529"/>
-<area shape="rect" id="node2" href="$classhamilt_1_1OperatorLCAO.html" title=" " alt="" coords="99,879,302,1191"/>
-<area shape="rect" id="node3" href="$classhamilt_1_1Operator.html" title=" " alt="" coords="5,409,172,633"/>
-<area shape="rect" id="node4" href="$classLCAO__Matrix.html" title=" " alt="" coords="196,321,371,721"/>
+<area shape="rect" id="node1" title=" " alt="" coords="473,1393,685,1573"/>
+<area shape="rect" id="node2" href="$classhamilt_1_1OperatorLCAO.html" title=" " alt="" coords="99,923,302,1235"/>
+<area shape="rect" id="node3" href="$classhamilt_1_1Operator.html" title=" " alt="" coords="5,431,172,655"/>
+<area shape="rect" id="node4" href="$classLCAO__Matrix.html" title=" " alt="" coords="196,351,371,736"/>
 <area shape="rect" id="node5" href="$structParallel__Orbitals.html" title=" " alt="" coords="337,5,501,259"/>
-<area shape="rect" id="node9" href="$classLocal__Orbital__Charge.html" title=" " alt="" coords="326,784,566,1287"/>
-<area shape="rect" id="node10" href="$classLocal__Orbital__wfc.html" title=" " alt="" coords="497,402,670,641"/>
-<area shape="rect" id="node6" href="$classGint__k.html" title=" " alt="" coords="591,923,832,1147"/>
-<area shape="rect" id="node7" href="$classGint.html" title=" " alt="" coords="755,329,961,714"/>
-<area shape="rect" id="node8" href="$classGint__Gamma.html" title=" " alt="" coords="857,865,1035,1206"/>
+<area shape="rect" id="node9" href="$classLocal__Orbital__Charge.html" title=" " alt="" coords="326,828,566,1331"/>
+<area shape="rect" id="node10" href="$classLocal__Orbital__wfc.html" title=" " alt="" coords="497,424,670,663"/>
+<area shape="rect" id="node6" href="$classGint__k.html" title=" " alt="" coords="591,923,840,1235"/>
+<area shape="rect" id="node7" href="$classGint.html" title=" " alt="" coords="759,321,965,765"/>
+<area shape="rect" id="node8" href="$classGint__Gamma.html" title=" " alt="" coords="865,909,1043,1250"/>
 </map>

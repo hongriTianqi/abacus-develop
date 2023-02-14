@@ -1,6 +1,6 @@
 <map id="BFGS_Basic::new_step" name="BFGS_Basic::new_step">
 <area shape="rect" id="node1" title=" " alt="" coords="5,89,175,115"/>
-<area shape="rect" id="node2" href="$namespaceModuleBase.html#a2681bf6cb4975b24a4263f23e1c4c679" title=" " alt="" coords="264,13,395,39"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#a2681bf6cb4975b24a4263f23e1c4c679" title="Take &quot;dot&#45;product&quot; of two ComplexArray: sum of cd1(conjugate)[i] * cd2[i]." alt="" coords="264,13,395,39"/>
 <area shape="rect" id="node4" href="$namespaceIons__Move__Basic.html#aaf71ac6969e58677438de4379cca01aa" title=" " alt="" coords="230,63,429,90"/>
 <area shape="rect" id="node5" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="257,114,402,141"/>
 <area shape="rect" id="node6" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="223,165,436,191"/>

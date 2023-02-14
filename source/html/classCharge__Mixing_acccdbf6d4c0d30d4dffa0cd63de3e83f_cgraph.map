@@ -1,7 +1,4 @@
 <map id="Charge_Mixing::generate_dRR" name="Charge_Mixing::generate_dRR">
-<area shape="rect" id="node1" title=" " alt="" coords="5,78,224,105"/>
-<area shape="rect" id="node2" href="$classCharge__Mixing.html#a56eb6a3bd9ff5d4a8b1e07b3338be902" title=" " alt="" coords="272,5,459,47"/>
-<area shape="rect" id="node4" href="$classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="294,71,437,112"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="274,136,457,177"/>
-<area shape="rect" id="node3" href="$namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="507,5,684,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,224,39"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="272,5,455,47"/>
 </map>

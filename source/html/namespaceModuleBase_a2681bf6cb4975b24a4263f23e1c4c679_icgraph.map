@@ -1,5 +1,5 @@
 <map id="ModuleBase::dot" name="ModuleBase::dot">
-<area shape="rect" id="node1" title=" " alt="" coords="705,173,836,199"/>
+<area shape="rect" id="node1" title="Take &quot;dot&#45;product&quot; of two ComplexArray: sum of cd1(conjugate)[i] * cd2[i]." alt="" coords="705,173,836,199"/>
 <area shape="rect" id="node2" href="$classBFGS__Basic.html#a56763f17067203750246149e4fddbb70" title=" " alt="" coords="469,5,657,47"/>
 <area shape="rect" id="node3" href="$classBFGS__Basic.html#a421839a0016d07a3097050354852376b" title=" " alt="" coords="481,71,645,112"/>
 <area shape="rect" id="node4" href="$classCharge__Extra.html#acdb6daa1cf37777c66f7118d3b821adf" title=" " alt="" coords="493,136,634,177"/>

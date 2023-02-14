@@ -1,6 +1,7 @@
 <map id="Gint_Tools::cal_psir_ylm" name="Gint_Tools::cal_psir_ylm">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,184,98"/>
-<area shape="rect" id="node2" href="$classNumerical__Orbital.html#a9a6371156b2ad03aef58e59572a03cae" title=" " alt="" coords="261,5,409,47"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1Ylm.html#a3226b51ada4223b1c81f0de127046a03" title="Get the ylm real object (used in grid integration)" alt="" coords="232,71,439,98"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="244,123,427,164"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,184,83"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1Ylm.html#a3226b51ada4223b1c81f0de127046a03" title="Get the ylm real object (used in grid integration)" alt="" coords="232,5,439,32"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="247,56,424,83"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="244,107,427,149"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="487,49,640,90"/>
 </map>

@@ -1,6 +1,6 @@
 <map id="BFGS_Basic::compute_trust_radius" name="BFGS_Basic::compute_trust_radius">
 <area shape="rect" id="node1" title=" " alt="" coords="5,107,169,148"/>
-<area shape="rect" id="node2" href="$namespaceModuleBase.html#a2681bf6cb4975b24a4263f23e1c4c679" title=" " alt="" coords="261,13,392,39"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#a2681bf6cb4975b24a4263f23e1c4c679" title="Take &quot;dot&#45;product&quot; of two ComplexArray: sum of cd1(conjugate)[i] * cd2[i]." alt="" coords="261,13,392,39"/>
 <area shape="rect" id="node4" href="$namespaceIons__Move__Basic.html#aaf71ac6969e58677438de4379cca01aa" title=" " alt="" coords="227,63,426,90"/>
 <area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="217,114,436,141"/>
 <area shape="rect" id="node6" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="254,165,399,191"/>

@@ -1,4 +1,4 @@
 <map id="ModuleBase::ComplexArray::zero_out" name="ModuleBase::ComplexArray::zero_out">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,208,47"/>
+<area shape="rect" id="node1" title="set all elements to be {0.0,0.0}" alt="" coords="5,5,208,47"/>
 <area shape="rect" id="node2" href="$classModuleBase_1_1ComplexArray.html#aebb42694ab2809f0a99e8a36fa7efb77" title=" " alt="" coords="256,5,459,47"/>
 </map>

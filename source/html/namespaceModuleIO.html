@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.1: ModuleIO Namespace Reference</title>
+<title>3.1.2: ModuleIO Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.1
-   &#160;<span id="projectnumber">2023-02-04</span>
+   <div id="projectname">3.1.2
+   &#160;<span id="projectnumber">2023-02-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -73,10 +73,36 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a9ac688fcec1848d8ddfa512c012555eb"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a9ac688fcec1848d8ddfa512c012555eb">read_wfc_nao</a> (double **ctot, const int &amp;is, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *ParaV, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *)</td></tr>
+<tr class="separator:a9ac688fcec1848d8ddfa512c012555eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a767734bb5be529bc872f038c26159556"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a767734bb5be529bc872f038c26159556">read_wfc_nao_complex</a> (<a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; **ctot, const int &amp;ik, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *ParaV, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; &gt; *, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *)</td></tr>
+<tr class="separator:a767734bb5be529bc872f038c26159556"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b7f752ad45eebcabc34b77794d784fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a3b7f752ad45eebcabc34b77794d784fe">write_wfc_nao</a> (const std::string &amp;name, double **ctot, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg)</td></tr>
+<tr class="separator:a3b7f752ad45eebcabc34b77794d784fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25211498c731959156a75f266c5e07af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a25211498c731959156a75f266c5e07af">write_wfc_nao_complex</a> (const std::string &amp;name, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; **ctot, const int &amp;ik, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg)</td></tr>
+<tr class="separator:a25211498c731959156a75f266c5e07af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32472b1e7305d67d49cf05ed0465fb51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a32472b1e7305d67d49cf05ed0465fb51">write_dipole</a> (const double *rho_save, const int &amp;is, const int &amp;istep, const std::string &amp;fn, const int &amp;precision=11, const bool for_plot=false)</td></tr>
+<tr class="separator:a32472b1e7305d67d49cf05ed0465fb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad171b096499feb7992f58bd98c8a66de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#ad171b096499feb7992f58bd98c8a66de">read_dm</a> (const int &amp;is, const std::string &amp;fn, double ***DM, double **DM_R)</td></tr>
 <tr class="separator:ad171b096499feb7992f58bd98c8a66de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe92d0593d891a358ddeb22dc95f6eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#abe92d0593d891a358ddeb22dc95f6eb5">write_dm</a> (const int &amp;is, const int &amp;iter, const std::string &amp;fn, const int &amp;precision, const int &amp;out_dm, double ***DM)</td></tr>
 <tr class="separator:abe92d0593d891a358ddeb22dc95f6eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b909817cf58636ab2139753703a4698"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a6b909817cf58636ab2139753703a4698">calculate_dos</a> (const int &amp;is, const std::vector&lt; int &gt; &amp;isk, const std::string &amp;fn, const std::string &amp;fn1, const double &amp;de_ev, const double &amp;emax_ev, const double &amp;emin_ev, const double &amp;bcoeff, const int &amp;nks, const int &amp;nkstot, const std::vector&lt; double &gt; &amp;wk, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const int &amp;nbands, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb)</td></tr>
+<tr class="separator:a6b909817cf58636ab2139753703a4698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93153aba53aad7ab7e3cf55bbb8ac8ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a93153aba53aad7ab7e3cf55bbb8ac8ed">nscf_band</a> (const int &amp;is, const std::string &amp;out_band_dir, const int &amp;nks, const int &amp;nband, const double &amp;fermie, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb, const <a class="el" href="classK__Vectors.html">K_Vectors</a> *kv, const <a class="el" href="classParallel__Kpoints.html">Parallel_Kpoints</a> *Pkpoints)</td></tr>
+<tr class="separator:a93153aba53aad7ab7e3cf55bbb8ac8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af67a6840a05d103336e7ea9bcebf2285"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#af67a6840a05d103336e7ea9bcebf2285">nscf_fermi_surface</a> (const std::string &amp;out_band_dir, const int &amp;nks, const int &amp;nband, const double &amp;ef, const <a class="el" href="classK__Vectors.html">K_Vectors</a> *kv, const <a class="el" href="classParallel__Kpoints.html">Parallel_Kpoints</a> *Pkpoints, const <a class="el" href="classUnitCell.html">UnitCell</a> *ucell, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb)</td></tr>
+<tr class="separator:af67a6840a05d103336e7ea9bcebf2285"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5bc61c3a892da02cef23631dba2ec5b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#af5bc61c3a892da02cef23631dba2ec5b">distri_wfc_nao</a> (double **ctot, const int &amp;is, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *ParaV, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *psid)</td></tr>
+<tr class="separator:af5bc61c3a892da02cef23631dba2ec5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb3651ae2e1a100d92fe71442ef53397"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#acb3651ae2e1a100d92fe71442ef53397">distri_wfc_nao_complex</a> (<a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; **ctot, const int &amp;ik, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *ParaV, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *psi)</td></tr>
+<tr class="separator:acb3651ae2e1a100d92fe71442ef53397"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93ca7452766c0f1bb957887ced449d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#ac93ca7452766c0f1bb957887ced449d7">read_wfc_nao_complex</a> (<a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; **ctot, const int &amp;ik, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *ParaV, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *psi, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pelec)</td></tr>
+<tr class="separator:ac93ca7452766c0f1bb957887ced449d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed941ec6c7a9c792424c4c3051427bde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#aed941ec6c7a9c792424c4c3051427bde">read_rho</a> (const int &amp;is, const std::string &amp;fn, double *rho, int &amp;prenspin)</td></tr>
+<tr class="separator:aed941ec6c7a9c792424c4c3051427bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b1939432dc234c612304f7b7321fb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a30b1939432dc234c612304f7b7321fb7">write_rho</a> (const double *rho_save, const int &amp;is, const int &amp;iter, const std::string &amp;fn, const int &amp;precision=11, const bool for_plot=false)</td></tr>
+<tr class="separator:a30b1939432dc234c612304f7b7321fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d24743c9d76fa75f2da7a7dbdf8adc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a5d24743c9d76fa75f2da7a7dbdf8adc6">write_dm1</a> (const int &amp;is, const int &amp;istep, double **dm2d, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *ParaV, std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, double &gt;&gt;&gt; &amp;DMR_sparse)</td></tr>
 <tr class="separator:a5d24743c9d76fa75f2da7a7dbdf8adc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff4da1944cd6dd9491b817b1ff6263f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#acff4da1944cd6dd9491b817b1ff6263f">get_dm_sparse</a> (const int &amp;is, double **dm2d, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *ParaV, std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, double &gt;&gt;&gt; &amp;DMR_sparse)</td></tr>
@@ -85,8 +111,247 @@ Functions</h2></td></tr>
 <tr class="separator:ae464eebb454ba7cef56061e970a22a46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74d193a87787a3732bab47645d6455ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a74d193a87787a3732bab47645d6455ce">destroy_dm_sparse</a> (std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, double &gt;&gt;&gt; &amp;DMR_sparse)</td></tr>
 <tr class="separator:a74d193a87787a3732bab47645d6455ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55eb550050b217a8ca9ecf8a0d0f8111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111">write_dos_lcao</a> (const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *psid, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *psi, <a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;uhm, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const double &amp;dos_edelta_ev, const double &amp;dos_scale, const double &amp;bcoeff)</td></tr>
+<tr class="memdesc:a55eb550050b217a8ca9ecf8a0d0f8111"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO base  <a href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111">More...</a><br /></td></tr>
+<tr class="separator:a55eb550050b217a8ca9ecf8a0d0f8111"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60049ca8dad06d59d228be3f8acff51d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a60049ca8dad06d59d228be3f8acff51d">write_dos_pw</a> (const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const double &amp;dos_edelta_ev, const double &amp;dos_scale, const double &amp;bcoeff)</td></tr>
+<tr class="memdesc:a60049ca8dad06d59d228be3f8acff51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate density of states(DOS) for PW base  <a href="namespaceModuleIO.html#a60049ca8dad06d59d228be3f8acff51d">More...</a><br /></td></tr>
+<tr class="separator:a60049ca8dad06d59d228be3f8acff51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6a335e71b54d75081e049ef7a9dd0e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#ab6a335e71b54d75081e049ef7a9dd0e6">saving_HS</a> (const double *Hloc, const double *Sloc, const bool bit, const int &amp;out_hs, const std::string &amp;file_name, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
+<tr class="separator:ab6a335e71b54d75081e049ef7a9dd0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aab5e98603d425dfbe3fe0ae982b6b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a4aab5e98603d425dfbe3fe0ae982b6b3">save_HS</a> (const double *H, const double *S, const bool bit, const std::string &amp;file_name, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
+<tr class="separator:a4aab5e98603d425dfbe3fe0ae982b6b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a360f74fa56ded2f83e4e1af12c95a61b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a360f74fa56ded2f83e4e1af12c95a61b">save_HS_complex</a> (const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *H, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *S, const bool bit, const std::string &amp;file__name, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
+<tr class="separator:a360f74fa56ded2f83e4e1af12c95a61b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38ff19a2ef738da7f338cf182f263cf7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a38ff19a2ef738da7f338cf182f263cf7">save_HSR_tr</a> (const int current_spin, <a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;lm)</td></tr>
+<tr class="separator:a38ff19a2ef738da7f338cf182f263cf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a510d61f3fa1d2652ecc11d53ed896c55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a510d61f3fa1d2652ecc11d53ed896c55">saving_HS</a> (<a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *Hloc, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *Sloc, bool bit, const int &amp;out_hs, const std::string &amp;file__name, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
+<tr class="separator:a510d61f3fa1d2652ecc11d53ed896c55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a849a6658e1b9bf9cedc528471ff2f439"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a849a6658e1b9bf9cedc528471ff2f439">save_HS_complex</a> (<a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *H, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *S, const bool bit, const std::string &amp;file__name, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
+<tr class="separator:a849a6658e1b9bf9cedc528471ff2f439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad46acd60a18f774d9ce42bc613994275"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275">output_HS_R</a> (const int &amp;istep, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;v_eff, <a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;UHM, const std::string &amp;SR_filename=&quot;data-SR-sparse_SPIN0.csr&quot;, const std::string &amp;HR_filename_up=&quot;data-HR-sparse_SPIN0.csr&quot;, const std::string HR_filename_down=&quot;data-HR-sparse_SPIN1.csr&quot;, const bool &amp;binary=false, const double &amp;sparse_threshold=1e-10)</td></tr>
+<tr class="separator:ad46acd60a18f774d9ce42bc613994275"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d88b86e77cb5645ff018b2fbb08f37b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b">output_dH_R</a> (const int &amp;istep, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;v_eff, <a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;UHM, const bool &amp;binary=false, const double &amp;sparse_threshold=1e-10)</td></tr>
+<tr class="separator:a0d88b86e77cb5645ff018b2fbb08f37b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7358ddde907dcfe7ed301492d0ad45eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a7358ddde907dcfe7ed301492d0ad45eb">output_T_R</a> (const int istep, <a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;UHM, const std::string &amp;TR_filename=&quot;data-TR-sparse_SPIN0.csr&quot;, const bool &amp;binary=false, const double &amp;sparse_threshold=1e-10)</td></tr>
+<tr class="separator:a7358ddde907dcfe7ed301492d0ad45eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d9ce1f8baba9306ec62451480faaaca"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a2d9ce1f8baba9306ec62451480faaaca">output_S_R</a> (<a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;UHM, const std::string &amp;SR_filename=&quot;data-SR-sparse_SPIN0.csr&quot;, const bool &amp;binary=false, const double &amp;sparse_threshold=1e-10)</td></tr>
+<tr class="separator:a2d9ce1f8baba9306ec62451480faaaca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5ac38e58c093b54af0e9c65f5f08fe0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#af5ac38e58c093b54af0e9c65f5f08fe0">save_HSR_sparse</a> (const int &amp;istep, <a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;lm, const double &amp;sparse_threshold, const bool &amp;binary, const std::string &amp;SR_filename, const std::string &amp;HR_filename_up, const std::string &amp;HR_filename_down)</td></tr>
+<tr class="separator:af5ac38e58c093b54af0e9c65f5f08fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e8eb92348bf16f397355bd7548b4cb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a3e8eb92348bf16f397355bd7548b4cb2">save_SR_sparse</a> (<a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;lm, const double &amp;sparse_threshold, const bool &amp;binary, const std::string &amp;SR_filename)</td></tr>
+<tr class="separator:a3e8eb92348bf16f397355bd7548b4cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fe32fb0efb1b5ff8592d684e7738fec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a6fe32fb0efb1b5ff8592d684e7738fec">save_TR_sparse</a> (<a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;lm, const double &amp;sparse_threshold, const bool &amp;binary, const std::string &amp;TR_filename)</td></tr>
+<tr class="separator:a6fe32fb0efb1b5ff8592d684e7738fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43148bd67c9217b537b2f4b585cb65cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a43148bd67c9217b537b2f4b585cb65cb">save_dH_sparse</a> (const int &amp;istep, <a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;lm, const double &amp;sparse_threshold, const bool &amp;binary)</td></tr>
+<tr class="separator:a43148bd67c9217b537b2f4b585cb65cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1013bb33b63a153e291ad7b1b58beed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a1013bb33b63a153e291ad7b1b58beed4">output_single_R</a> (std::ofstream &amp;ofs, const std::map&lt; size_t, std::map&lt; size_t, double &gt;&gt; &amp;XR, const double &amp;sparse_threshold, const bool &amp;binary, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
+<tr class="separator:a1013bb33b63a153e291ad7b1b58beed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae59680e39ec3af5e92c8b99fdecca25c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#ae59680e39ec3af5e92c8b99fdecca25c">output_soc_single_R</a> (std::ofstream &amp;ofs, const std::map&lt; size_t, std::map&lt; size_t, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt;&gt; &amp;XR, const double &amp;sparse_threshold, const bool &amp;binary, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
+<tr class="separator:ae59680e39ec3af5e92c8b99fdecca25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae5da83e095340bebb9d4d1ee6dab9eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#aae5da83e095340bebb9d4d1ee6dab9eb">write_istate_info</a> (const <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pelec, const <a class="el" href="classK__Vectors.html">K_Vectors</a> *kv, const <a class="el" href="classParallel__Kpoints.html">Parallel_Kpoints</a> *Pkpoints)</td></tr>
+<tr class="separator:aae5da83e095340bebb9d4d1ee6dab9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ec775d5374f80eec191dd53383988a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a6ec775d5374f80eec191dd53383988a7">write_orb_info</a> ()</td></tr>
+<tr class="separator:a6ec775d5374f80eec191dd53383988a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8cbf83c8770f439cd1dff405626aba97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97">write_proj_band_lcao</a> (const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *psid, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *psi, <a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;uhm, const <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pelec, const <a class="el" href="classK__Vectors.html">K_Vectors</a> *kv, const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell, const <a class="el" href="classLCAO__Orbitals.html">LCAO_Orbitals</a> &amp;ORB, <a class="el" href="classGrid__Driver.html">Grid_Driver</a> &amp;GridD)</td></tr>
+<tr class="separator:a8cbf83c8770f439cd1dff405626aba97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9ef58714bb2c79676c5abb86ff9676d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#aa9ef58714bb2c79676c5abb86ff9676d">write_wfc_pw</a> (const std::string &amp;fn, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; &amp;psi, const <a class="el" href="classK__Vectors.html">K_Vectors</a> *p_kv, const <a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *wfc_basis)</td></tr>
+<tr class="separator:aa9ef58714bb2c79676c5abb86ff9676d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5a38d3160bfa6212d5d3bc2e5d206b9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a5a38d3160bfa6212d5d3bc2e5d206b9a">write_psi_r_1</a> (const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; &amp;wfc_g, const std::string &amp;folder_name, const bool &amp;square)</td></tr>
+<tr class="separator:a5a38d3160bfa6212d5d3bc2e5d206b9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9281aaef4579dabfaa938a7949ac4bb0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a9281aaef4579dabfaa938a7949ac4bb0">cal_wfc_r</a> (const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; &amp;wfc_g, const int ik, const int ib)</td></tr>
+<tr class="separator:a9281aaef4579dabfaa938a7949ac4bb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa4791f945aed27e409b734b782a08b91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#aa4791f945aed27e409b734b782a08b91">write_chg_r_1</a> (const std::vector&lt; double &gt; &amp;chg_r, const std::string &amp;file_name, MPI_Request &amp;mpi_request)</td></tr>
+<tr class="separator:aa4791f945aed27e409b734b782a08b91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a9281aaef4579dabfaa938a7949ac4bb0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9281aaef4579dabfaa938a7949ac4bb0">&#9670;&nbsp;</a></span>cal_wfc_r()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; &gt; ModuleIO::cal_wfc_r </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>wfc_g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ik</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ib</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a9281aaef4579dabfaa938a7949ac4bb0_cgraph.png" border="0" usemap="#namespaceModuleIO_a9281aaef4579dabfaa938a7949ac4bb0_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a9281aaef4579dabfaa938a7949ac4bb0_cgraph" id="namespaceModuleIO_a9281aaef4579dabfaa938a7949ac4bb0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,360,159,387"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a6fadd5f43b7c9b1ea6bbe560733f7f05" title=" " alt="" coords="207,225,368,266"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="647,173,824,200"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a3d62d6b321ce67c013623e32bc2d671b" title=" " alt="" coords="418,5,597,32"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a095c2e1e1febc9130f27b467ba079438" title=" " alt="" coords="421,56,593,83"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a9bbea0367082dfbad3ca06a1b8f0c6d5" title=" " alt="" coords="427,107,588,149"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a51172642621a79864bd8a34d02c27f3c" title=" " alt="" coords="433,225,582,266"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#af4c076ea70f66d0c7011f0f318cfe808" title=" " alt="" coords="433,290,582,331"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#abafb29fca1142448e55e2f184c160124" title=" " alt="" coords="433,355,582,397"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="416,421,599,462"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a9281aaef4579dabfaa938a7949ac4bb0_icgraph.png" border="0" usemap="#namespaceModuleIO_a9281aaef4579dabfaa938a7949ac4bb0_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a9281aaef4579dabfaa938a7949ac4bb0_icgraph" id="namespaceModuleIO_a9281aaef4579dabfaa938a7949ac4bb0_icgraph">
+<area shape="rect" title=" " alt="" coords="764,42,917,69"/>
+<area shape="rect" href="namespaceModuleIO.html#a5a38d3160bfa6212d5d3bc2e5d206b9a" title=" " alt="" coords="537,42,716,69"/>
+<area shape="rect" href="classIState__Envelope.html#a26a721cfbef23d0a9cd55d4b1466be37" title="for gamma_only" alt="" coords="287,13,457,39"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="255,64,489,105"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,5,207,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6b909817cf58636ab2139753703a4698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b909817cf58636ab2139753703a4698">&#9670;&nbsp;</a></span>calculate_dos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModuleIO::calculate_dos </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>isk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fn1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>de_ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>emax_ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>emin_ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>bcoeff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nkstot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>wk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>wg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nbands</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>ekb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a6b909817cf58636ab2139753703a4698_cgraph.png" border="0" usemap="#namespaceModuleIO_a6b909817cf58636ab2139753703a4698_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a6b909817cf58636ab2139753703a4698_cgraph" id="namespaceModuleIO_a6b909817cf58636ab2139753703a4698_cgraph">
+<area shape="rect" title=" " alt="" coords="5,81,187,108"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="235,5,453,32"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="271,56,417,83"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="257,107,431,133"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="253,158,435,199"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a6b909817cf58636ab2139753703a4698_icgraph.png" border="0" usemap="#namespaceModuleIO_a6b909817cf58636ab2139753703a4698_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a6b909817cf58636ab2139753703a4698_icgraph" id="namespaceModuleIO_a6b909817cf58636ab2139753703a4698_icgraph">
+<area shape="rect" title=" " alt="" coords="525,46,707,73"/>
+<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="288,17,477,43"/>
+<area shape="rect" href="namespaceModuleIO.html#a60049ca8dad06d59d228be3f8acff51d" title="calculate density of states(DOS) for PW base" alt="" coords="292,71,473,98"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="35,5,211,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="5,71,240,112"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a74d193a87787a3732bab47645d6455ce"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a74d193a87787a3732bab47645d6455ce">&#9670;&nbsp;</a></span>destroy_dm_sparse()</h2>
 
@@ -110,6 +375,122 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="439,5,608,47"/>
 <area shape="rect" href="namespaceModuleIO.html#a5d24743c9d76fa75f2da7a7dbdf8adc6" title=" " alt="" coords="229,13,391,39"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="5,5,181,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af5bc61c3a892da02cef23631dba2ec5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5bc61c3a892da02cef23631dba2ec5b">&#9670;&nbsp;</a></span>distri_wfc_nao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::distri_wfc_nao </td>
+          <td>(</td>
+          <td class="paramtype">double **&#160;</td>
+          <td class="paramname"><em>ctot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *&#160;</td>
+          <td class="paramname"><em>ParaV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>psid</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_af5bc61c3a892da02cef23631dba2ec5b_cgraph.png" border="0" usemap="#namespaceModuleIO_af5bc61c3a892da02cef23631dba2ec5b_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_af5bc61c3a892da02cef23631dba2ec5b_cgraph" id="namespaceModuleIO_af5bc61c3a892da02cef23631dba2ec5b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,63,192,89"/>
+<area shape="rect" href="classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="240,8,395,35"/>
+<area shape="rect" href="read__wfc__nao_8cpp.html#ad358ab0af8ae6f75e724b29a78fe7ba3" title=" " alt="" coords="281,63,354,89"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="245,113,390,140"/>
+<area shape="rect" href="blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc" title=" " alt="" coords="481,5,549,32"/>
+<area shape="rect" href="classLocal__Orbital__wfc.html#aa3d559e5775e7c4a7555eb3047747ad6" title=" " alt="" coords="443,57,588,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acb3651ae2e1a100d92fe71442ef53397"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb3651ae2e1a100d92fe71442ef53397">&#9670;&nbsp;</a></span>distri_wfc_nao_complex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::distri_wfc_nao_complex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; **&#160;</td>
+          <td class="paramname"><em>ctot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>ik</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *&#160;</td>
+          <td class="paramname"><em>ParaV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *&#160;</td>
+          <td class="paramname"><em>psi</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_acb3651ae2e1a100d92fe71442ef53397_cgraph.png" border="0" usemap="#namespaceModuleIO_acb3651ae2e1a100d92fe71442ef53397_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_acb3651ae2e1a100d92fe71442ef53397_cgraph" id="namespaceModuleIO_acb3651ae2e1a100d92fe71442ef53397_cgraph">
+<area shape="rect" title=" " alt="" coords="5,79,160,121"/>
+<area shape="rect" href="classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="237,7,392,33"/>
+<area shape="rect" href="read__wfc__nao_8cpp.html#a5c87801061ddd47b3acebd7ec6a00130" title=" " alt="" coords="271,61,358,88"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="242,112,387,139"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="208,163,421,189"/>
+<area shape="rect" href="blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc" title=" " alt="" coords="508,5,576,32"/>
+<area shape="rect" href="classLocal__Orbital__wfc.html#aa3d559e5775e7c4a7555eb3047747ad6" title=" " alt="" coords="469,57,615,98"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_acb3651ae2e1a100d92fe71442ef53397_icgraph.png" border="0" usemap="#namespaceModuleIO_acb3651ae2e1a100d92fe71442ef53397_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_acb3651ae2e1a100d92fe71442ef53397_icgraph" id="namespaceModuleIO_acb3651ae2e1a100d92fe71442ef53397_icgraph">
+<area shape="rect" title=" " alt="" coords="204,5,359,47"/>
+<area shape="rect" href="namespaceModuleIO.html#ac93ca7452766c0f1bb957887ced449d7" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
 
@@ -182,6 +563,620 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a93153aba53aad7ab7e3cf55bbb8ac8ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93153aba53aad7ab7e3cf55bbb8ac8ed">&#9670;&nbsp;</a></span>nscf_band()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::nscf_band </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>out_band_dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nband</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>fermie</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>ekb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classK__Vectors.html">K_Vectors</a> *&#160;</td>
+          <td class="paramname"><em>kv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classParallel__Kpoints.html">Parallel_Kpoints</a> *&#160;</td>
+          <td class="paramname"><em>Pkpoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a93153aba53aad7ab7e3cf55bbb8ac8ed_cgraph.png" border="0" usemap="#namespaceModuleIO_a93153aba53aad7ab7e3cf55bbb8ac8ed_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a93153aba53aad7ab7e3cf55bbb8ac8ed_cgraph" id="namespaceModuleIO_a93153aba53aad7ab7e3cf55bbb8ac8ed_cgraph">
+<area shape="rect" title=" " alt="" coords="5,38,164,65"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="212,13,389,39"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="228,63,373,90"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="437,5,591,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a93153aba53aad7ab7e3cf55bbb8ac8ed_icgraph.png" border="0" usemap="#namespaceModuleIO_a93153aba53aad7ab7e3cf55bbb8ac8ed_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a93153aba53aad7ab7e3cf55bbb8ac8ed_icgraph" id="namespaceModuleIO_a93153aba53aad7ab7e3cf55bbb8ac8ed_icgraph">
+<area shape="rect" title=" " alt="" coords="288,46,447,73"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="35,5,211,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="5,71,240,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af67a6840a05d103336e7ea9bcebf2285"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af67a6840a05d103336e7ea9bcebf2285">&#9670;&nbsp;</a></span>nscf_fermi_surface()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::nscf_fermi_surface </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>out_band_dir</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nband</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>ef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classK__Vectors.html">K_Vectors</a> *&#160;</td>
+          <td class="paramname"><em>kv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classParallel__Kpoints.html">Parallel_Kpoints</a> *&#160;</td>
+          <td class="paramname"><em>Pkpoints</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classUnitCell.html">UnitCell</a> *&#160;</td>
+          <td class="paramname"><em>ucell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>ekb</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_af67a6840a05d103336e7ea9bcebf2285_cgraph.png" border="0" usemap="#namespaceModuleIO_af67a6840a05d103336e7ea9bcebf2285_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_af67a6840a05d103336e7ea9bcebf2285_cgraph" id="namespaceModuleIO_af67a6840a05d103336e7ea9bcebf2285_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,167,72"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="215,13,392,39"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="231,63,376,90"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="440,5,593,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_af67a6840a05d103336e7ea9bcebf2285_icgraph.png" border="0" usemap="#namespaceModuleIO_af67a6840a05d103336e7ea9bcebf2285_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_af67a6840a05d103336e7ea9bcebf2285_icgraph" id="namespaceModuleIO_af67a6840a05d103336e7ea9bcebf2285_icgraph">
+<area shape="rect" title=" " alt="" coords="229,5,391,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,5,181,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0d88b86e77cb5645ff018b2fbb08f37b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d88b86e77cb5645ff018b2fbb08f37b">&#9670;&nbsp;</a></span>output_dH_R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::output_dH_R </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>istep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>v_eff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;&#160;</td>
+          <td class="paramname"><em>UHM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>binary</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>sparse_threshold</em> = <code>1e-10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a0d88b86e77cb5645ff018b2fbb08f37b_cgraph.png" border="0" usemap="#namespaceModuleIO_a0d88b86e77cb5645ff018b2fbb08f37b_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a0d88b86e77cb5645ff018b2fbb08f37b_cgraph" id="namespaceModuleIO_a0d88b86e77cb5645ff018b2fbb08f37b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,206,180,233"/>
+<area shape="rect" href="classGint__k.html#a6df2319438d058d3fa6a2115ec6df0d7" title=" " alt="" coords="241,13,413,39"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="491,151,636,178"/>
+<area shape="rect" href="classGint.html#ac7bf53713917f2a2545c7f98e5b056a3" title=" " alt="" coords="273,231,381,258"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="475,282,652,309"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a92bcfc332b2966a939d9e5b37adba655" title=" " alt="" coords="240,115,415,156"/>
+<area shape="rect" href="classLCAO__Hamilt.html#aba478b11073b79a4863a604707a210fd" title=" " alt="" coords="245,384,410,425"/>
+<area shape="rect" href="classGint__k.html#a715df56452f48f54a350470fa913d91c" title=" " alt="" coords="243,181,412,207"/>
+<area shape="rect" href="namespaceModuleIO.html#a43148bd67c9217b537b2f4b585cb65cb" title=" " alt="" coords="228,282,427,309"/>
+<area shape="rect" href="classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="481,5,645,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a0d88b86e77cb5645ff018b2fbb08f37b_icgraph.png" border="0" usemap="#namespaceModuleIO_a0d88b86e77cb5645ff018b2fbb08f37b_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a0d88b86e77cb5645ff018b2fbb08f37b_icgraph" id="namespaceModuleIO_a0d88b86e77cb5645ff018b2fbb08f37b_icgraph">
+<area shape="rect" title=" " alt="" coords="248,46,423,73"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="15,71,191,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad46acd60a18f774d9ce42bc613994275"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad46acd60a18f774d9ce42bc613994275">&#9670;&nbsp;</a></span>output_HS_R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::output_HS_R </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>istep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>v_eff</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;&#160;</td>
+          <td class="paramname"><em>UHM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>SR_filename</em> = <code>&quot;data-SR-sparse_SPIN0.csr&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>HR_filename_up</em> = <code>&quot;data-HR-sparse_SPIN0.csr&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string&#160;</td>
+          <td class="paramname"><em>HR_filename_down</em> = <code>&quot;data-HR-sparse_SPIN1.csr&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>binary</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>sparse_threshold</em> = <code>1e-10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_ad46acd60a18f774d9ce42bc613994275_cgraph.png" border="0" usemap="#namespaceModuleIO_ad46acd60a18f774d9ce42bc613994275_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_ad46acd60a18f774d9ce42bc613994275_cgraph" id="namespaceModuleIO_ad46acd60a18f774d9ce42bc613994275_cgraph">
+<area shape="rect" title=" " alt="" coords="5,239,180,266"/>
+<area shape="rect" href="classGint.html#ac7bf53713917f2a2545c7f98e5b056a3" title=" " alt="" coords="261,71,369,98"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="451,122,628,149"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="467,239,612,266"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a34542d40d7473a253e2ba042ad97339a" title=" " alt="" coords="228,291,403,332"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a9a67d9b8783720e2b1f48dc68bd51aff" title=" " alt="" coords="233,408,398,449"/>
+<area shape="rect" href="classGint__k.html#a1e0d0bb0bc28e24a865d6bd98ea80db9" title=" " alt="" coords="235,357,396,383"/>
+<area shape="rect" href="namespaceModuleIO.html#af5ac38e58c093b54af0e9c65f5f08fe0" title=" " alt="" coords="237,173,394,215"/>
+<area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="463,5,616,47"/>
+<area shape="rect" href="namespaceGint__Tools.html#a71bef6de27b1addd129e88d07012baeb" title=" " alt="" coords="455,71,624,98"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_ad46acd60a18f774d9ce42bc613994275_icgraph.png" border="0" usemap="#namespaceModuleIO_ad46acd60a18f774d9ce42bc613994275_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_ad46acd60a18f774d9ce42bc613994275_icgraph" id="namespaceModuleIO_ad46acd60a18f774d9ce42bc613994275_icgraph">
+<area shape="rect" title=" " alt="" coords="248,46,423,73"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="15,71,191,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2d9ce1f8baba9306ec62451480faaaca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d9ce1f8baba9306ec62451480faaaca">&#9670;&nbsp;</a></span>output_S_R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::output_S_R </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;&#160;</td>
+          <td class="paramname"><em>UHM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>SR_filename</em> = <code>&quot;data-SR-sparse_SPIN0.csr&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>binary</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>sparse_threshold</em> = <code>1e-10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a2d9ce1f8baba9306ec62451480faaaca_cgraph.png" border="0" usemap="#namespaceModuleIO_a2d9ce1f8baba9306ec62451480faaaca_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a2d9ce1f8baba9306ec62451480faaaca_cgraph" id="namespaceModuleIO_a2d9ce1f8baba9306ec62451480faaaca_cgraph">
+<area shape="rect" title=" " alt="" coords="5,247,171,274"/>
+<area shape="rect" href="classLCAO__Hamilt.html#ae82068bd370b5d279669a2ff8ddb45c6" title=" " alt="" coords="230,93,405,135"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="689,189,835,215"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a9a67d9b8783720e2b1f48dc68bd51aff" title=" " alt="" coords="235,240,400,281"/>
+<area shape="rect" href="namespaceModuleIO.html#a3e8eb92348bf16f397355bd7548b4cb2" title=" " alt="" coords="219,318,416,345"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="464,407,641,434"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a9182a39b5758d2a95bdd95930dd0cc54" title=" " alt="" coords="465,5,640,47"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a0dc9c34f5f599d78bb868387b6cf2e12" title=" " alt="" coords="477,123,629,164"/>
+<area shape="rect" href="classLCAO__Matrix.html#a7aa0cf7e7cadd9239f72fe9c4b285b83" title=" " alt="" coords="471,240,634,281"/>
+<area shape="rect" href="write__dm__sparse_8cpp.html#af2e4797e1b905049a01390ced0f145e9" title=" " alt="" coords="489,357,616,383"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a2d9ce1f8baba9306ec62451480faaaca_icgraph.png" border="0" usemap="#namespaceModuleIO_a2d9ce1f8baba9306ec62451480faaaca_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a2d9ce1f8baba9306ec62451480faaaca_icgraph" id="namespaceModuleIO_a2d9ce1f8baba9306ec62451480faaaca_icgraph">
+<area shape="rect" title=" " alt="" coords="479,13,644,39"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8b339edbf7eee63e294ff452ac1ef9df" title=" " alt="" coords="255,5,431,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,5,207,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1013bb33b63a153e291ad7b1b58beed4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1013bb33b63a153e291ad7b1b58beed4">&#9670;&nbsp;</a></span>output_single_R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::output_single_R </td>
+          <td>(</td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>ofs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; size_t, std::map&lt; size_t, double &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>XR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>sparse_threshold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>binary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;&#160;</td>
+          <td class="paramname"><em>pv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a1013bb33b63a153e291ad7b1b58beed4_cgraph.png" border="0" usemap="#namespaceModuleIO_a1013bb33b63a153e291ad7b1b58beed4_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a1013bb33b63a153e291ad7b1b58beed4_cgraph" id="namespaceModuleIO_a1013bb33b63a153e291ad7b1b58beed4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,46,201,73"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="252,5,429,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="249,71,432,112"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a1013bb33b63a153e291ad7b1b58beed4_icgraph.png" border="0" usemap="#namespaceModuleIO_a1013bb33b63a153e291ad7b1b58beed4_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a1013bb33b63a153e291ad7b1b58beed4_icgraph" id="namespaceModuleIO_a1013bb33b63a153e291ad7b1b58beed4_icgraph">
+<area shape="rect" title=" " alt="" coords="471,46,667,73"/>
+<area shape="rect" href="classcal__r__overlap__R.html#a30fd69d113a66731a3a0be24ef747134" title=" " alt="" coords="248,17,423,43"/>
+<area shape="rect" href="classcal__r__overlap__R.html#aa089487c820b61e24512c8fc9f10757e" title=" " alt="" coords="258,68,413,109"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="15,71,191,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae59680e39ec3af5e92c8b99fdecca25c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae59680e39ec3af5e92c8b99fdecca25c">&#9670;&nbsp;</a></span>output_soc_single_R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::output_soc_single_R </td>
+          <td>(</td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>ofs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::map&lt; size_t, std::map&lt; size_t, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>XR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>sparse_threshold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>binary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;&#160;</td>
+          <td class="paramname"><em>pv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_ae59680e39ec3af5e92c8b99fdecca25c_cgraph.png" border="0" usemap="#namespaceModuleIO_ae59680e39ec3af5e92c8b99fdecca25c_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_ae59680e39ec3af5e92c8b99fdecca25c_cgraph" id="namespaceModuleIO_ae59680e39ec3af5e92c8b99fdecca25c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,168,80"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#aaf8c18a72256b2dc71cb8cd143fa7c65" title=" " alt="" coords="219,5,396,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="216,71,399,112"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_ae59680e39ec3af5e92c8b99fdecca25c_icgraph.png" border="0" usemap="#namespaceModuleIO_ae59680e39ec3af5e92c8b99fdecca25c_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_ae59680e39ec3af5e92c8b99fdecca25c_icgraph" id="namespaceModuleIO_ae59680e39ec3af5e92c8b99fdecca25c_icgraph">
+<area shape="rect" title=" " alt="" coords="717,86,880,127"/>
+<area shape="rect" href="namespaceModuleIO.html#a43148bd67c9217b537b2f4b585cb65cb" title=" " alt="" coords="471,5,669,32"/>
+<area shape="rect" href="namespaceModuleIO.html#af5ac38e58c093b54af0e9c65f5f08fe0" title=" " alt="" coords="491,57,649,98"/>
+<area shape="rect" href="namespaceModuleIO.html#a3e8eb92348bf16f397355bd7548b4cb2" title=" " alt="" coords="471,123,669,149"/>
+<area shape="rect" href="namespaceModuleIO.html#a6fe32fb0efb1b5ff8592d684e7738fec" title=" " alt="" coords="471,173,669,200"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="248,9,423,36"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,57,200,98"/>
+<area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="248,64,423,91"/>
+<area shape="rect" href="namespaceModuleIO.html#a2d9ce1f8baba9306ec62451480faaaca" title=" " alt="" coords="253,123,418,149"/>
+<area shape="rect" href="namespaceModuleIO.html#a7358ddde907dcfe7ed301492d0ad45eb" title=" " alt="" coords="253,173,418,200"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7358ddde907dcfe7ed301492d0ad45eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7358ddde907dcfe7ed301492d0ad45eb">&#9670;&nbsp;</a></span>output_T_R()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::output_T_R </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>istep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;&#160;</td>
+          <td class="paramname"><em>UHM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>TR_filename</em> = <code>&quot;data-TR-sparse_SPIN0.csr&quot;</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>binary</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>sparse_threshold</em> = <code>1e-10</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a7358ddde907dcfe7ed301492d0ad45eb_cgraph.png" border="0" usemap="#namespaceModuleIO_a7358ddde907dcfe7ed301492d0ad45eb_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a7358ddde907dcfe7ed301492d0ad45eb_cgraph" id="namespaceModuleIO_a7358ddde907dcfe7ed301492d0ad45eb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,363,171,390"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a5b7670dbd9e802eb478c5e804546225d" title=" " alt="" coords="230,156,405,197"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="695,130,840,157"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a6f77f3db1775c49d6bcb79f07cfdb623" title=" " alt="" coords="235,356,400,397"/>
+<area shape="rect" href="namespaceModuleIO.html#a6fe32fb0efb1b5ff8592d684e7738fec" title=" " alt="" coords="219,422,416,449"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="467,447,644,474"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b" title=" " alt="" coords="467,5,643,47"/>
+<area shape="rect" href="classLCAO__Hamilt.html#aa25b07a8b27e85bceae7a15bb0a4492e" title=" " alt="" coords="468,123,643,164"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a0dc9c34f5f599d78bb868387b6cf2e12" title=" " alt="" coords="479,188,631,229"/>
+<area shape="rect" href="classLCAO__Matrix.html#a17555e58238e5020ece5384ada791b37" title=" " alt="" coords="464,254,647,281"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a7358ddde907dcfe7ed301492d0ad45eb_icgraph.png" border="0" usemap="#namespaceModuleIO_a7358ddde907dcfe7ed301492d0ad45eb_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a7358ddde907dcfe7ed301492d0ad45eb_icgraph" id="namespaceModuleIO_a7358ddde907dcfe7ed301492d0ad45eb_icgraph">
+<area shape="rect" title=" " alt="" coords="248,46,413,73"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="15,71,191,112"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ad171b096499feb7992f58bd98c8a66de"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad171b096499feb7992f58bd98c8a66de">&#9670;&nbsp;</a></span>read_dm()</h2>
 
@@ -245,6 +1240,1035 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="255,39,433,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,71,207,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aed941ec6c7a9c792424c4c3051427bde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed941ec6c7a9c792424c4c3051427bde">&#9670;&nbsp;</a></span>read_rho()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ModuleIO::read_rho </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>rho</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>prenspin</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_cgraph.png" border="0" usemap="#namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_cgraph" id="namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_cgraph">
+<area shape="rect" title=" " alt="" coords="5,81,155,108"/>
+<area shape="rect" href="namespaceModuleBase.html#a43656d1e863b0ec72e21ed479c79c39b" title="Check the next input from ifs is double. This is a global function." alt="" coords="203,5,419,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a451d5c9cbccd2630976c5ab34b94e134" title="Check the next input from ifs is integer. This is a global function." alt="" coords="219,56,403,83"/>
+<area shape="rect" href="namespaceModuleBase.html#a516dea6276e03ba46c994b7227b0e09f" title="Check the next input from ifs is std::string. This is a global function." alt="" coords="205,107,416,133"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="219,158,402,199"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="467,56,680,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_icgraph.png" border="0" usemap="#namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_icgraph" id="namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_icgraph">
+<area shape="rect" title=" " alt="" coords="851,137,1000,163"/>
+<area shape="rect" href="classCharge.html#a6ef62c006a967148f156fa5db8fa752e" title=" " alt="" coords="677,111,803,138"/>
+<area shape="rect" href="updaterhok__pw__test_8cpp.html#a8d8d0f6b8066294ef021796e6950d7bb" title=" " alt="" coords="705,162,775,189"/>
+<area shape="rect" href="classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651" title=" " alt="" coords="479,104,629,145"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="242,5,418,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="242,71,418,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="242,136,418,177"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="229,201,431,243"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a380b40f26c567a678ad6552068e6f4bc" title=" " alt="" coords="5,5,181,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9ac688fcec1848d8ddfa512c012555eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ac688fcec1848d8ddfa512c012555eb">&#9670;&nbsp;</a></span>read_wfc_nao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ModuleIO::read_wfc_nao </td>
+          <td>(</td>
+          <td class="paramtype">double **&#160;</td>
+          <td class="paramname"><em>ctot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *&#160;</td>
+          <td class="paramname"><em>ParaV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a9ac688fcec1848d8ddfa512c012555eb_icgraph.png" border="0" usemap="#namespaceModuleIO_a9ac688fcec1848d8ddfa512c012555eb_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a9ac688fcec1848d8ddfa512c012555eb_icgraph" id="namespaceModuleIO_a9ac688fcec1848d8ddfa512c012555eb_icgraph">
+<area shape="rect" title=" " alt="" coords="1124,107,1307,134"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#ae82f43ef7d90a624e9d494e96d231314" title=" " alt="" coords="916,100,1076,141"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#a8578427bfbbd7f87d5204cd195e526e2" title=" " alt="" coords="708,100,868,141"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#abdb87aaed59940ee43dce98b17e7c1d9" title=" " alt="" coords="500,100,660,141"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="264,71,443,112"/>
+<area shape="rect" href="classElecStateLCAOPrepare.html#a3a3a3bfc0cb8a67a387ef05b39f3ce0e" title=" " alt="" coords="255,137,452,163"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,71,207,112"/>
+<area shape="rect" href="elecstate__lcao__test_8cpp.html#a70603d7f4921613799c6ec2f99505525" title=" " alt="" coords="79,137,133,163"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a767734bb5be529bc872f038c26159556"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a767734bb5be529bc872f038c26159556">&#9670;&nbsp;</a></span>read_wfc_nao_complex() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ModuleIO::read_wfc_nao_complex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; **&#160;</td>
+          <td class="paramname"><em>ctot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>ik</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *&#160;</td>
+          <td class="paramname"><em>ParaV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; &gt; *&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a767734bb5be529bc872f038c26159556_icgraph.png" border="0" usemap="#namespaceModuleIO_a767734bb5be529bc872f038c26159556_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a767734bb5be529bc872f038c26159556_icgraph" id="namespaceModuleIO_a767734bb5be529bc872f038c26159556_icgraph">
+<area shape="rect" title=" " alt="" coords="901,100,1052,141"/>
+<area shape="rect" href="classLocal__Orbital__wfc.html#a59ca67b73f816357cad719d9d6b511c5" title=" " alt="" coords="708,100,853,141"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#abdb87aaed59940ee43dce98b17e7c1d9" title=" " alt="" coords="500,100,660,141"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="264,71,443,112"/>
+<area shape="rect" href="classElecStateLCAOPrepare.html#a3a3a3bfc0cb8a67a387ef05b39f3ce0e" title=" " alt="" coords="255,137,452,163"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,71,207,112"/>
+<area shape="rect" href="elecstate__lcao__test_8cpp.html#a70603d7f4921613799c6ec2f99505525" title=" " alt="" coords="79,137,133,163"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac93ca7452766c0f1bb957887ced449d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac93ca7452766c0f1bb957887ced449d7">&#9670;&nbsp;</a></span>read_wfc_nao_complex() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ModuleIO::read_wfc_nao_complex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; **&#160;</td>
+          <td class="paramname"><em>ctot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>ik</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *&#160;</td>
+          <td class="paramname"><em>ParaV</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *&#160;</td>
+          <td class="paramname"><em>psi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *&#160;</td>
+          <td class="paramname"><em>pelec</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_ac93ca7452766c0f1bb957887ced449d7_cgraph.png" border="0" usemap="#namespaceModuleIO_ac93ca7452766c0f1bb957887ced449d7_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_ac93ca7452766c0f1bb957887ced449d7_cgraph" id="namespaceModuleIO_ac93ca7452766c0f1bb957887ced449d7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,125,156,166"/>
+<area shape="rect" href="namespaceParallel__Common.html#a948e39313b7dec5fc96e407e0de09d41" title=" " alt="" coords="204,44,407,71"/>
+<area shape="rect" href="namespaceModuleIO.html#acb3651ae2e1a100d92fe71442ef53397" title=" " alt="" coords="228,95,383,137"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="489,157,634,184"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="217,212,394,239"/>
+<area shape="rect" href="classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="484,5,639,32"/>
+<area shape="rect" href="read__wfc__nao_8cpp.html#a5c87801061ddd47b3acebd7ec6a00130" title=" " alt="" coords="518,56,605,83"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="455,107,668,133"/>
+<area shape="rect" href="blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc" title=" " alt="" coords="716,5,784,32"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="485,209,638,250"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a43148bd67c9217b537b2f4b585cb65cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43148bd67c9217b537b2f4b585cb65cb">&#9670;&nbsp;</a></span>save_dH_sparse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::save_dH_sparse </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>istep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>lm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>sparse_threshold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>binary</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a43148bd67c9217b537b2f4b585cb65cb_cgraph.png" border="0" usemap="#namespaceModuleIO_a43148bd67c9217b537b2f4b585cb65cb_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a43148bd67c9217b537b2f4b585cb65cb_cgraph" id="namespaceModuleIO_a43148bd67c9217b537b2f4b585cb65cb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,170,204,197"/>
+<area shape="rect" href="write__dm__sparse_8cpp.html#af2e4797e1b905049a01390ced0f145e9" title=" " alt="" coords="277,27,404,54"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="477,71,660,112"/>
+<area shape="rect" href="namespaceModuleIO.html#ae59680e39ec3af5e92c8b99fdecca25c" title=" " alt="" coords="259,129,422,171"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="252,195,429,236"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="252,261,429,287"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="268,311,413,338"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="480,5,657,47"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#aaf8c18a72256b2dc71cb8cd143fa7c65" title=" " alt="" coords="480,136,657,177"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="492,253,645,295"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a43148bd67c9217b537b2f4b585cb65cb_icgraph.png" border="0" usemap="#namespaceModuleIO_a43148bd67c9217b537b2f4b585cb65cb_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a43148bd67c9217b537b2f4b585cb65cb_icgraph" id="namespaceModuleIO_a43148bd67c9217b537b2f4b585cb65cb_icgraph">
+<area shape="rect" title=" " alt="" coords="471,46,669,73"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="248,46,423,73"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="15,71,191,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4aab5e98603d425dfbe3fe0ae982b6b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4aab5e98603d425dfbe3fe0ae982b6b3">&#9670;&nbsp;</a></span>save_HS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::save_HS </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>H</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>S</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>bit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;&#160;</td>
+          <td class="paramname"><em>pv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a4aab5e98603d425dfbe3fe0ae982b6b3_cgraph.png" border="0" usemap="#namespaceModuleIO_a4aab5e98603d425dfbe3fe0ae982b6b3_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a4aab5e98603d425dfbe3fe0ae982b6b3_cgraph" id="namespaceModuleIO_a4aab5e98603d425dfbe3fe0ae982b6b3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,123,153,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="201,5,420,32"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="222,57,399,98"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="222,123,399,149"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="238,173,383,200"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="219,225,402,266"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="468,115,621,157"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a4aab5e98603d425dfbe3fe0ae982b6b3_icgraph.png" border="0" usemap="#namespaceModuleIO_a4aab5e98603d425dfbe3fe0ae982b6b3_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a4aab5e98603d425dfbe3fe0ae982b6b3_icgraph" id="namespaceModuleIO_a4aab5e98603d425dfbe3fe0ae982b6b3_icgraph">
+<area shape="rect" title=" " alt="" coords="637,13,785,39"/>
+<area shape="rect" href="namespaceModuleIO.html#ab6a335e71b54d75081e049ef7a9dd0e6" title=" " alt="" coords="429,13,589,39"/>
+<area shape="rect" href="classhsolver_1_1HSolverLCAO.html#a11a9f93e5be6ffcc98b70755f6c1f850" title=" " alt="" coords="217,5,381,47"/>
+<area shape="rect" href="classhsolver_1_1HSolverLCAO.html#a5b34c659435176ba20c4b6bd052d9ae0" title=" " alt="" coords="5,5,169,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a360f74fa56ded2f83e4e1af12c95a61b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a360f74fa56ded2f83e4e1af12c95a61b">&#9670;&nbsp;</a></span>save_HS_complex() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::save_HS_complex </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>H</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>S</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>bit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file__name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;&#160;</td>
+          <td class="paramname"><em>pv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a360f74fa56ded2f83e4e1af12c95a61b_icgraph.png" border="0" usemap="#namespaceModuleIO_a360f74fa56ded2f83e4e1af12c95a61b_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a360f74fa56ded2f83e4e1af12c95a61b_icgraph" id="namespaceModuleIO_a360f74fa56ded2f83e4e1af12c95a61b_icgraph">
+<area shape="rect" title=" " alt="" coords="213,5,424,32"/>
+<area shape="rect" href="namespaceModuleIO.html#a510d61f3fa1d2652ecc11d53ed896c55" title=" " alt="" coords="5,5,165,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a849a6658e1b9bf9cedc528471ff2f439"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a849a6658e1b9bf9cedc528471ff2f439">&#9670;&nbsp;</a></span>save_HS_complex() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::save_HS_complex </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>H</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>S</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>bit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file__name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;&#160;</td>
+          <td class="paramname"><em>pv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a849a6658e1b9bf9cedc528471ff2f439_cgraph.png" border="0" usemap="#namespaceModuleIO_a849a6658e1b9bf9cedc528471ff2f439_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a849a6658e1b9bf9cedc528471ff2f439_cgraph" id="namespaceModuleIO_a849a6658e1b9bf9cedc528471ff2f439_cgraph">
+<area shape="rect" title=" " alt="" coords="5,123,216,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="264,5,483,32"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a5ccf1f753c6fae3266e7e9b5e21f2712" title=" " alt="" coords="285,57,462,98"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="285,123,462,149"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="301,173,446,200"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="282,225,465,266"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="531,115,684,157"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af5ac38e58c093b54af0e9c65f5f08fe0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5ac38e58c093b54af0e9c65f5f08fe0">&#9670;&nbsp;</a></span>save_HSR_sparse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::save_HSR_sparse </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>istep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>lm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>sparse_threshold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>binary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>SR_filename</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>HR_filename_up</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>HR_filename_down</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_af5ac38e58c093b54af0e9c65f5f08fe0_cgraph.png" border="0" usemap="#namespaceModuleIO_af5ac38e58c093b54af0e9c65f5f08fe0_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_af5ac38e58c093b54af0e9c65f5f08fe0_cgraph" id="namespaceModuleIO_af5ac38e58c093b54af0e9c65f5f08fe0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,163,163,204"/>
+<area shape="rect" href="write__dm__sparse_8cpp.html#af2e4797e1b905049a01390ced0f145e9" title=" " alt="" coords="236,27,363,54"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="436,71,619,112"/>
+<area shape="rect" href="namespaceModuleIO.html#ae59680e39ec3af5e92c8b99fdecca25c" title=" " alt="" coords="218,129,381,171"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="211,195,388,236"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="211,261,388,287"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="227,311,372,338"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="439,5,616,47"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#aaf8c18a72256b2dc71cb8cd143fa7c65" title=" " alt="" coords="439,136,616,177"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="451,253,604,295"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_af5ac38e58c093b54af0e9c65f5f08fe0_icgraph.png" border="0" usemap="#namespaceModuleIO_af5ac38e58c093b54af0e9c65f5f08fe0_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_af5ac38e58c093b54af0e9c65f5f08fe0_icgraph" id="namespaceModuleIO_af5ac38e58c093b54af0e9c65f5f08fe0_icgraph">
+<area shape="rect" title=" " alt="" coords="471,39,628,80"/>
+<area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="248,46,423,73"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="15,71,191,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a38ff19a2ef738da7f338cf182f263cf7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38ff19a2ef738da7f338cf182f263cf7">&#9670;&nbsp;</a></span>save_HSR_tr()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::save_HSR_tr </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>current_spin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>lm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3e8eb92348bf16f397355bd7548b4cb2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e8eb92348bf16f397355bd7548b4cb2">&#9670;&nbsp;</a></span>save_SR_sparse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::save_SR_sparse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>lm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>sparse_threshold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>binary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>SR_filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a3e8eb92348bf16f397355bd7548b4cb2_cgraph.png" border="0" usemap="#namespaceModuleIO_a3e8eb92348bf16f397355bd7548b4cb2_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a3e8eb92348bf16f397355bd7548b4cb2_cgraph" id="namespaceModuleIO_a3e8eb92348bf16f397355bd7548b4cb2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,170,203,197"/>
+<area shape="rect" href="write__dm__sparse_8cpp.html#af2e4797e1b905049a01390ced0f145e9" title=" " alt="" coords="276,27,403,54"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="476,71,659,112"/>
+<area shape="rect" href="namespaceModuleIO.html#ae59680e39ec3af5e92c8b99fdecca25c" title=" " alt="" coords="258,129,421,171"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="251,195,428,236"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="251,261,428,287"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="267,311,412,338"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="479,5,656,47"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#aaf8c18a72256b2dc71cb8cd143fa7c65" title=" " alt="" coords="479,136,656,177"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="491,253,644,295"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a3e8eb92348bf16f397355bd7548b4cb2_icgraph.png" border="0" usemap="#namespaceModuleIO_a3e8eb92348bf16f397355bd7548b4cb2_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a3e8eb92348bf16f397355bd7548b4cb2_icgraph" id="namespaceModuleIO_a3e8eb92348bf16f397355bd7548b4cb2_icgraph">
+<area shape="rect" title=" " alt="" coords="692,13,889,39"/>
+<area shape="rect" href="namespaceModuleIO.html#a2d9ce1f8baba9306ec62451480faaaca" title=" " alt="" coords="479,13,644,39"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8b339edbf7eee63e294ff452ac1ef9df" title=" " alt="" coords="255,5,431,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,5,207,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6fe32fb0efb1b5ff8592d684e7738fec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fe32fb0efb1b5ff8592d684e7738fec">&#9670;&nbsp;</a></span>save_TR_sparse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::save_TR_sparse </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>lm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>sparse_threshold</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>binary</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>TR_filename</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_cgraph.png" border="0" usemap="#namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_cgraph" id="namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_cgraph">
+<area shape="rect" title=" " alt="" coords="5,170,203,197"/>
+<area shape="rect" href="write__dm__sparse_8cpp.html#af2e4797e1b905049a01390ced0f145e9" title=" " alt="" coords="276,27,403,54"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="476,71,659,112"/>
+<area shape="rect" href="namespaceModuleIO.html#ae59680e39ec3af5e92c8b99fdecca25c" title=" " alt="" coords="258,129,421,171"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="251,195,428,236"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="251,261,428,287"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="267,311,412,338"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="479,5,656,47"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#aaf8c18a72256b2dc71cb8cd143fa7c65" title=" " alt="" coords="479,136,656,177"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="491,253,644,295"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_icgraph.png" border="0" usemap="#namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_icgraph" id="namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_icgraph">
+<area shape="rect" title=" " alt="" coords="461,46,659,73"/>
+<area shape="rect" href="namespaceModuleIO.html#a7358ddde907dcfe7ed301492d0ad45eb" title=" " alt="" coords="248,46,413,73"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="15,71,191,112"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab6a335e71b54d75081e049ef7a9dd0e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6a335e71b54d75081e049ef7a9dd0e6">&#9670;&nbsp;</a></span>saving_HS() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::saving_HS </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>Hloc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>Sloc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>bit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>out_hs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;&#160;</td>
+          <td class="paramname"><em>pv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_ab6a335e71b54d75081e049ef7a9dd0e6_cgraph.png" border="0" usemap="#namespaceModuleIO_ab6a335e71b54d75081e049ef7a9dd0e6_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_ab6a335e71b54d75081e049ef7a9dd0e6_cgraph" id="namespaceModuleIO_ab6a335e71b54d75081e049ef7a9dd0e6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,148,165,175"/>
+<area shape="rect" href="namespaceModuleIO.html#a4aab5e98603d425dfbe3fe0ae982b6b3" title=" " alt="" coords="227,123,375,149"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="213,173,388,200"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="436,5,655,32"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="457,57,634,98"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="457,123,634,149"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="473,173,618,200"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="454,225,637,266"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="703,115,856,157"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_ab6a335e71b54d75081e049ef7a9dd0e6_icgraph.png" border="0" usemap="#namespaceModuleIO_ab6a335e71b54d75081e049ef7a9dd0e6_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_ab6a335e71b54d75081e049ef7a9dd0e6_icgraph" id="namespaceModuleIO_ab6a335e71b54d75081e049ef7a9dd0e6_icgraph">
+<area shape="rect" title=" " alt="" coords="429,13,589,39"/>
+<area shape="rect" href="classhsolver_1_1HSolverLCAO.html#a11a9f93e5be6ffcc98b70755f6c1f850" title=" " alt="" coords="217,5,381,47"/>
+<area shape="rect" href="classhsolver_1_1HSolverLCAO.html#a5b34c659435176ba20c4b6bd052d9ae0" title=" " alt="" coords="5,5,169,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a510d61f3fa1d2652ecc11d53ed896c55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a510d61f3fa1d2652ecc11d53ed896c55">&#9670;&nbsp;</a></span>saving_HS() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::saving_HS </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>Hloc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>Sloc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>bit</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>out_hs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file__name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;&#160;</td>
+          <td class="paramname"><em>pv</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a510d61f3fa1d2652ecc11d53ed896c55_cgraph.png" border="0" usemap="#namespaceModuleIO_a510d61f3fa1d2652ecc11d53ed896c55_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a510d61f3fa1d2652ecc11d53ed896c55_cgraph" id="namespaceModuleIO_a510d61f3fa1d2652ecc11d53ed896c55_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,165,57"/>
+<area shape="rect" href="namespaceModuleIO.html#a360f74fa56ded2f83e4e1af12c95a61b" title=" " alt="" coords="213,5,424,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="231,56,406,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa4791f945aed27e409b734b782a08b91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa4791f945aed27e409b734b782a08b91">&#9670;&nbsp;</a></span>write_chg_r_1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::write_chg_r_1 </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>chg_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">MPI_Request &amp;&#160;</td>
+          <td class="paramname"><em>mpi_request</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_aa4791f945aed27e409b734b782a08b91_cgraph.png" border="0" usemap="#namespaceModuleIO_aa4791f945aed27e409b734b782a08b91_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_aa4791f945aed27e409b734b782a08b91_cgraph" id="namespaceModuleIO_aa4791f945aed27e409b734b782a08b91_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,188,39"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="236,13,413,39"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="461,5,615,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_aa4791f945aed27e409b734b782a08b91_icgraph.png" border="0" usemap="#namespaceModuleIO_aa4791f945aed27e409b734b782a08b91_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_aa4791f945aed27e409b734b782a08b91_icgraph" id="namespaceModuleIO_aa4791f945aed27e409b734b782a08b91_icgraph">
+<area shape="rect" title=" " alt="" coords="764,42,947,69"/>
+<area shape="rect" href="namespaceModuleIO.html#a5a38d3160bfa6212d5d3bc2e5d206b9a" title=" " alt="" coords="537,42,716,69"/>
+<area shape="rect" href="classIState__Envelope.html#a26a721cfbef23d0a9cd55d4b1466be37" title="for gamma_only" alt="" coords="287,13,457,39"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="255,64,489,105"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,5,207,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a32472b1e7305d67d49cf05ed0465fb51"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a32472b1e7305d67d49cf05ed0465fb51">&#9670;&nbsp;</a></span>write_dipole()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::write_dipole </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>rho_save</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>istep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>precision</em> = <code>11</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>for_plot</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a32472b1e7305d67d49cf05ed0465fb51_cgraph.png" border="0" usemap="#namespaceModuleIO_a32472b1e7305d67d49cf05ed0465fb51_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a32472b1e7305d67d49cf05ed0465fb51_cgraph" id="namespaceModuleIO_a32472b1e7305d67d49cf05ed0465fb51_cgraph">
+<area shape="rect" title=" " alt="" coords="5,137,177,163"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a5f13944ea3a04330fb2cc24e1c96a307" title=" " alt="" coords="225,5,408,47"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="228,71,405,112"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="244,137,389,163"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="229,187,404,214"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="225,239,408,280"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a32472b1e7305d67d49cf05ed0465fb51_icgraph.png" border="0" usemap="#namespaceModuleIO_a32472b1e7305d67d49cf05ed0465fb51_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a32472b1e7305d67d49cf05ed0465fb51_icgraph" id="namespaceModuleIO_a32472b1e7305d67d49cf05ed0465fb51_icgraph">
+<area shape="rect" title=" " alt="" coords="248,13,420,39"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,5,200,47"/>
 </map>
 </div>
 
@@ -448,7 +2472,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classGrid.html#a807f3e6b306efa342a4dcb4ac81cc350" title=" " alt="" coords="239,5,351,32"/>
 <area shape="rect" href="classGrid.html#ae53483fdcd64827cc7b1704ab819feea" title=" " alt="" coords="240,56,351,83"/>
 <area shape="rect" href="classGrid.html#ad73c369a4f09cd0b135e58d8d83989c1" title=" " alt="" coords="239,107,351,133"/>
-<area shape="rect" href="write__dm_8cpp.html#af2e4797e1b905049a01390ced0f145e9" title=" " alt="" coords="232,157,359,184"/>
+<area shape="rect" href="write__dm__sparse_8cpp.html#af2e4797e1b905049a01390ced0f145e9" title=" " alt="" coords="232,157,359,184"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="432,201,615,242"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="207,259,384,301"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="207,325,384,352"/>
@@ -464,6 +2488,638 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="439,5,592,47"/>
 <area shape="rect" href="namespaceModuleIO.html#a5d24743c9d76fa75f2da7a7dbdf8adc6" title=" " alt="" coords="229,13,391,39"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="5,5,181,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a55eb550050b217a8ca9ecf8a0d0f8111"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a55eb550050b217a8ca9ecf8a0d0f8111">&#9670;&nbsp;</a></span>write_dos_lcao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::write_dos_lcao </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>psid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *&#160;</td>
+          <td class="paramname"><em>psi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;&#160;</td>
+          <td class="paramname"><em>uhm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>ekb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>wg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>dos_edelta_ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>dos_scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>bcoeff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO base </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a55eb550050b217a8ca9ecf8a0d0f8111_icgraph.png" border="0" usemap="#namespaceModuleIO_a55eb550050b217a8ca9ecf8a0d0f8111_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a55eb550050b217a8ca9ecf8a0d0f8111_icgraph" id="namespaceModuleIO_a55eb550050b217a8ca9ecf8a0d0f8111_icgraph">
+<area shape="rect" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="229,13,419,39"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,5,181,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a60049ca8dad06d59d228be3f8acff51d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a60049ca8dad06d59d228be3f8acff51d">&#9670;&nbsp;</a></span>write_dos_pw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::write_dos_pw </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>ekb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>wg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>dos_edelta_ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>dos_scale</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>bcoeff</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>calculate density of states(DOS) for PW base </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_cgraph.png" border="0" usemap="#namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_cgraph" id="namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_cgraph">
+<area shape="rect" title="calculate density of states(DOS) for PW base" alt="" coords="5,107,187,133"/>
+<area shape="rect" href="namespaceModuleIO.html#a6b909817cf58636ab2139753703a4698" title=" " alt="" coords="235,107,416,133"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="464,5,683,32"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="501,56,646,83"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a20b908f647927836ab12eb9a9ad9fcea" title=" " alt="" coords="238,223,413,265"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#ad66f969cf8cda732e4f22b8d23f40423" title=" " alt="" coords="238,158,413,199"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="486,107,661,133"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="482,158,665,199"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_icgraph.png" border="0" usemap="#namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_icgraph" id="namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_icgraph">
+<area shape="rect" title="calculate density of states(DOS) for PW base" alt="" coords="288,13,469,39"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="5,5,240,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aae5da83e095340bebb9d4d1ee6dab9eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae5da83e095340bebb9d4d1ee6dab9eb">&#9670;&nbsp;</a></span>write_istate_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::write_istate_info </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *&#160;</td>
+          <td class="paramname"><em>pelec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classK__Vectors.html">K_Vectors</a> *&#160;</td>
+          <td class="paramname"><em>kv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classParallel__Kpoints.html">Parallel_Kpoints</a> *&#160;</td>
+          <td class="paramname"><em>Pkpoints</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_cgraph.png" border="0" usemap="#namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_cgraph" id="namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,38,207,65"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="255,13,432,39"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="271,63,416,90"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="480,5,633,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_icgraph.png" border="0" usemap="#namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_icgraph" id="namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_icgraph">
+<area shape="rect" title=" " alt="" coords="288,78,489,105"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="35,5,211,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="5,71,240,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a8508b2564b3ed0e7250ba70385f13e1e" title=" " alt="" coords="35,136,211,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6ec775d5374f80eec191dd53383988a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ec775d5374f80eec191dd53383988a7">&#9670;&nbsp;</a></span>write_orb_info()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::write_orb_info </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a6ec775d5374f80eec191dd53383988a7_icgraph.png" border="0" usemap="#namespaceModuleIO_a6ec775d5374f80eec191dd53383988a7_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a6ec775d5374f80eec191dd53383988a7_icgraph" id="namespaceModuleIO_a6ec775d5374f80eec191dd53383988a7_icgraph">
+<area shape="rect" title=" " alt="" coords="467,35,652,61"/>
+<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="229,5,419,32"/>
+<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="245,57,403,98"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,27,181,69"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a8cbf83c8770f439cd1dff405626aba97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8cbf83c8770f439cd1dff405626aba97">&#9670;&nbsp;</a></span>write_proj_band_lcao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::write_proj_band_lcao </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>psid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *&#160;</td>
+          <td class="paramname"><em>psi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;&#160;</td>
+          <td class="paramname"><em>uhm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *&#160;</td>
+          <td class="paramname"><em>pelec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classK__Vectors.html">K_Vectors</a> *&#160;</td>
+          <td class="paramname"><em>kv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;&#160;</td>
+          <td class="paramname"><em>ucell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classLCAO__Orbitals.html">LCAO_Orbitals</a> &amp;&#160;</td>
+          <td class="paramname"><em>ORB</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classGrid__Driver.html">Grid_Driver</a> &amp;&#160;</td>
+          <td class="paramname"><em>GridD</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a8cbf83c8770f439cd1dff405626aba97_icgraph.png" border="0" usemap="#namespaceModuleIO_a8cbf83c8770f439cd1dff405626aba97_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a8cbf83c8770f439cd1dff405626aba97_icgraph" id="namespaceModuleIO_a8cbf83c8770f439cd1dff405626aba97_icgraph">
+<area shape="rect" title=" " alt="" coords="229,5,387,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,5,181,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5a38d3160bfa6212d5d3bc2e5d206b9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5a38d3160bfa6212d5d3bc2e5d206b9a">&#9670;&nbsp;</a></span>write_psi_r_1()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::write_psi_r_1 </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>wfc_g</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>folder_name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool &amp;&#160;</td>
+          <td class="paramname"><em>square</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a5a38d3160bfa6212d5d3bc2e5d206b9a_cgraph.png" border="0" usemap="#namespaceModuleIO_a5a38d3160bfa6212d5d3bc2e5d206b9a_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a5a38d3160bfa6212d5d3bc2e5d206b9a_cgraph" id="namespaceModuleIO_a5a38d3160bfa6212d5d3bc2e5d206b9a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,188,184,215"/>
+<area shape="rect" href="namespaceModuleIO.html#a9281aaef4579dabfaa938a7949ac4bb0" title=" " alt="" coords="247,87,400,113"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="694,111,871,137"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="251,188,396,215"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="232,239,415,281"/>
+<area shape="rect" href="namespaceModuleIO.html#aa4791f945aed27e409b734b782a08b91" title=" " alt="" coords="463,247,645,273"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a6fadd5f43b7c9b1ea6bbe560733f7f05" title=" " alt="" coords="473,21,635,62"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a3d62d6b321ce67c013623e32bc2d671b" title=" " alt="" coords="693,5,872,32"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a095c2e1e1febc9130f27b467ba079438" title=" " alt="" coords="697,56,869,83"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="920,103,1073,145"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a5a38d3160bfa6212d5d3bc2e5d206b9a_icgraph.png" border="0" usemap="#namespaceModuleIO_a5a38d3160bfa6212d5d3bc2e5d206b9a_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a5a38d3160bfa6212d5d3bc2e5d206b9a_icgraph" id="namespaceModuleIO_a5a38d3160bfa6212d5d3bc2e5d206b9a_icgraph">
+<area shape="rect" title=" " alt="" coords="537,42,716,69"/>
+<area shape="rect" href="classIState__Envelope.html#a26a721cfbef23d0a9cd55d4b1466be37" title="for gamma_only" alt="" coords="287,13,457,39"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="255,64,489,105"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,5,207,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a30b1939432dc234c612304f7b7321fb7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b1939432dc234c612304f7b7321fb7">&#9670;&nbsp;</a></span>write_rho()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::write_rho </td>
+          <td>(</td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>rho_save</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>precision</em> = <code>11</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const bool&#160;</td>
+          <td class="paramname"><em>for_plot</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>output header for cube file</p>
+<p>cube file</p>
+<p>for cube file</p>
+<p>for cube file</p>
+<p>for cube file</p>
+<p>for cube file</p>
+<p>for cube file</p>
+<p>for cube file</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_cgraph.png" border="0" usemap="#namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_cgraph" id="namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_cgraph">
+<area shape="rect" title=" " alt="" coords="5,122,159,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a5f13944ea3a04330fb2cc24e1c96a307" title=" " alt="" coords="222,5,405,47"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="241,71,386,98"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="226,122,401,149"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="207,173,420,199"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="222,224,405,265"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_icgraph.png" border="0" usemap="#namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_icgraph" id="namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_icgraph">
+<area shape="rect" title=" " alt="" coords="297,274,451,301"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#ae1092298a9813efc7cdde2af4fa26616" title=" " alt="" coords="39,5,215,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a5b596cbb5f0b554a0df61843436e419b" title=" " alt="" coords="39,71,215,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="30,136,225,177"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="39,201,215,243"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#ae6d6b033f0537dc893a61f5159e85a8e" title=" " alt="" coords="25,267,230,308"/>
+<area shape="rect" href="classIState__Charge.html#a0899014f06b2e4be9d7426f52d4b41b2" title=" " alt="" coords="49,333,206,359"/>
+<area shape="rect" href="classIState__Envelope.html#a26a721cfbef23d0a9cd55d4b1466be37" title="for gamma_only" alt="" coords="42,383,213,410"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ac3772ee0b74a42065551d48c90c703c0" title=" " alt="" coords="35,435,219,476"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#add0ad74bf7753d5019aa6f921eb8077d" title=" " alt="" coords="5,500,249,541"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3b7f752ad45eebcabc34b77794d784fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3b7f752ad45eebcabc34b77794d784fe">&#9670;&nbsp;</a></span>write_wfc_nao()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::write_wfc_nao </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double **&#160;</td>
+          <td class="paramname"><em>ctot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>ekb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>wg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a3b7f752ad45eebcabc34b77794d784fe_icgraph.png" border="0" usemap="#namespaceModuleIO_a3b7f752ad45eebcabc34b77794d784fe_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a3b7f752ad45eebcabc34b77794d784fe_icgraph" id="namespaceModuleIO_a3b7f752ad45eebcabc34b77794d784fe_icgraph">
+<area shape="rect" title=" " alt="" coords="973,49,1160,75"/>
+<area shape="rect" href="classLocal__Orbital__wfc.html#adb2af80cbb236dbd8a3dc7b9dbe82cc6" title=" " alt="" coords="780,41,925,83"/>
+<area shape="rect" href="classIState__Envelope.html#a26a721cfbef23d0a9cd55d4b1466be37" title="for gamma_only" alt="" coords="553,17,724,43"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#abed992181b6bfb22cb88607205b0c8a7" title=" " alt="" coords="545,71,732,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="296,5,497,47"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="303,71,490,112"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="303,136,490,177"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="17,100,236,141"/>
+<area shape="rect" href="classElecStateLCAOPrepare.html#a3a3a3bfc0cb8a67a387ef05b39f3ce0e" title=" " alt="" coords="28,49,225,75"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="5,165,248,207"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a25211498c731959156a75f266c5e07af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25211498c731959156a75f266c5e07af">&#9670;&nbsp;</a></span>write_wfc_nao_complex()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::write_wfc_nao_complex </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; **&#160;</td>
+          <td class="paramname"><em>ctot</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>ik</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>ekb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>wg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_a25211498c731959156a75f266c5e07af_icgraph.png" border="0" usemap="#namespaceModuleIO_a25211498c731959156a75f266c5e07af_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a25211498c731959156a75f266c5e07af_icgraph" id="namespaceModuleIO_a25211498c731959156a75f266c5e07af_icgraph">
+<area shape="rect" title=" " alt="" coords="199,5,353,47"/>
+<area shape="rect" href="classLocal__Orbital__wfc.html#a6105c437970f29e51947577d83ab0ef7" title=" " alt="" coords="5,5,151,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa9ef58714bb2c79676c5abb86ff9676d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9ef58714bb2c79676c5abb86ff9676d">&#9670;&nbsp;</a></span>write_wfc_pw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModuleIO::write_wfc_pw </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; &amp;&#160;</td>
+          <td class="paramname"><em>psi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classK__Vectors.html">K_Vectors</a> *&#160;</td>
+          <td class="paramname"><em>p_kv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *&#160;</td>
+          <td class="paramname"><em>wfc_basis</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_cgraph.png" border="0" usemap="#namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_cgraph" id="namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,93,187,120"/>
+<area shape="rect" href="classRwstream.html#a54d6c441015eb4c1b3061666ad4ddb83" title=" " alt="" coords="250,5,381,32"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a1d769515eb35bb144f3dfd0a9cd28636" title=" " alt="" coords="235,57,396,98"/>
+<area shape="rect" href="write__wfc__pw_8cpp.html#ab6942585b43a0cb527303b8f28a827c8" title=" " alt="" coords="284,123,347,149"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="243,173,388,200"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_icgraph.png" border="0" usemap="#namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_icgraph" id="namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_icgraph">
+<area shape="rect" title=" " alt="" coords="547,71,728,98"/>
+<area shape="rect" href="classIState__Envelope.html#a26a721cfbef23d0a9cd55d4b1466be37" title="for gamma_only" alt="" coords="291,13,462,39"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#add0ad74bf7753d5019aa6f921eb8077d" title=" " alt="" coords="255,64,499,105"/>
+<area shape="rect" href="updaterhok__pw__test_8cpp.html#a8d8d0f6b8066294ef021796e6950d7bb" title=" " alt="" coords="342,130,411,157"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,5,207,47"/>
 </map>
 </div>
 

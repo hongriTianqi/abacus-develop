@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.1: module_hamilt_lcao/module_deepks/LCAO_deepks.h Source File</title>
+<title>3.1.2: module_hamilt_lcao/module_deepks/LCAO_deepks.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.1
-   &#160;<span id="projectnumber">2023-02-04</span>
+   <div id="projectname">3.1.2
+   &#160;<span id="projectnumber">2023-02-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -623,7 +623,7 @@ $(function() {
 <div class="ttc" id="aclassModuleBase_1_1IntArray_html"><div class="ttname"><a href="classModuleBase_1_1IntArray.html">ModuleBase::IntArray</a></div><div class="ttdoc">Integer array.</div><div class="ttdef"><b>Definition:</b> intarray.h:25</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_a61aa8c25b262fdfb1b2cae7db393ead1"><div class="ttname"><a href="classLCAO__Deepks.html#a61aa8c25b262fdfb1b2cae7db393ead1">LCAO_Deepks::check_descriptor</a></div><div class="ttdeci">void check_descriptor(const UnitCell &amp;ucell)</div><div class="ttdoc">print descriptors based on LCAO basis</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_torch.cpp:77</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_aee14084577fda72d4a2ad1bc6f167b6f"><div class="ttname"><a href="classLCAO__Deepks.html#aee14084577fda72d4a2ad1bc6f167b6f">LCAO_Deepks::build_psialpha</a></div><div class="ttdeci">void build_psialpha(const bool &amp;cal_deri, const UnitCell &amp;ucell, const LCAO_Orbitals &amp;orb, Grid_Driver &amp;GridD, const int *trace_loc_row, const int *trace_loc_col, const ORB_gen_tables &amp;UOT)</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_psialpha.cpp:15</div></div>
-<div class="ttc" id="aupdaterhok__pw__test_8cpp_html_a76856123020bfe7248f49d72ce3e62af"><div class="ttname"><a href="updaterhok__pw__test_8cpp.html#a76856123020bfe7248f49d72ce3e62af">orb</a></div><div class="ttdeci">LCAO_Orbitals orb</div><div class="ttdef"><b>Definition:</b> updaterhok_pw_test.cpp:189</div></div>
+<div class="ttc" id="aupdaterhok__pw__test_8cpp_html_a76856123020bfe7248f49d72ce3e62af"><div class="ttname"><a href="updaterhok__pw__test_8cpp.html#a76856123020bfe7248f49d72ce3e62af">orb</a></div><div class="ttdeci">LCAO_Orbitals orb</div><div class="ttdef"><b>Definition:</b> updaterhok_pw_test.cpp:191</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_ae47ee87c7f58bdea1e4e2f81a614214a"><div class="ttname"><a href="classLCAO__Deepks.html#ae47ee87c7f58bdea1e4e2f81a614214a">LCAO_Deepks::cal_gvx</a></div><div class="ttdeci">void cal_gvx(const int nat)</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_torch.cpp:108</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_a8edd4a0b54f0952affa170a8ea5981b5"><div class="ttname"><a href="classLCAO__Deepks.html#a8edd4a0b54f0952affa170a8ea5981b5">LCAO_Deepks::cal_e_delta_band</a></div><div class="ttdeci">void cal_e_delta_band(const std::vector&lt; ModuleBase::matrix &gt; &amp;dm, const int *trace_loc_row, const int *trace_loc_col, const int nrow)</div><div class="ttdoc">calculate tr(\rho V_delta)</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_vdelta.cpp:381</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_ac4e003b86ce0ff82b63c2ccb1041b16d"><div class="ttname"><a href="classLCAO__Deepks.html#ac4e003b86ce0ff82b63c2ccb1041b16d">LCAO_Deepks::save_npy_o</a></div><div class="ttdeci">void save_npy_o(const ModuleBase::matrix &amp;bandgap, const std::string &amp;o_file, const int nks)</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_io.cpp:189</div></div>
@@ -663,7 +663,7 @@ $(function() {
 <div class="ttc" id="anamespaceGlobalC_html_a385573cb3a339f21703a1ae6b7f80b09"><div class="ttname"><a href="namespaceGlobalC.html#a385573cb3a339f21703a1ae6b7f80b09">GlobalC::ld</a></div><div class="ttdeci">LCAO_Deepks ld</div><div class="ttdef"><b>Definition:</b> LCAO_deepks.cpp:29</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_a129ecdbc98f0407ae4636c168b528bea"><div class="ttname"><a href="classLCAO__Deepks.html#a129ecdbc98f0407ae4636c168b528bea">LCAO_Deepks::cal_projected_DM_k</a></div><div class="ttdeci">void cal_projected_DM_k(const std::vector&lt; ModuleBase::ComplexMatrix &gt; &amp;dm, const UnitCell &amp;ucell, const LCAO_Orbitals &amp;orb, Grid_Driver &amp;GridD, const int *trace_loc_row, const int *trace_loc_col, const int nks, const std::vector&lt; ModuleBase::Vector3&lt; double &gt;&gt; &amp;kvec_d)</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_pdm.cpp:160</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_ab7031b0eb3f45a5bed39997c26a55b24"><div class="ttname"><a href="classLCAO__Deepks.html#ab7031b0eb3f45a5bed39997c26a55b24">LCAO_Deepks::cal_o_delta</a></div><div class="ttdeci">void cal_o_delta(const std::vector&lt; std::vector&lt; ModuleBase::matrix &gt;&gt; &amp;dm_hl, const Parallel_Orbitals &amp;ParaO)</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_odelta.cpp:15</div></div>
-<div class="ttc" id="aclassModuleBase_1_1matrix_html_abc8c011ec78c8d2f2cf98e69227314b0"><div class="ttname"><a href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0">ModuleBase::matrix::create</a></div><div class="ttdeci">void create(const int nrow, const int ncol, const bool flag_zero=true)</div><div class="ttdef"><b>Definition:</b> matrix.cpp:130</div></div>
+<div class="ttc" id="aclassModuleBase_1_1matrix_html_abc8c011ec78c8d2f2cf98e69227314b0"><div class="ttname"><a href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0">ModuleBase::matrix::create</a></div><div class="ttdeci">void create(const int nrow, const int ncol, const bool flag_zero=true)</div><div class="ttdef"><b>Definition:</b> matrix.cpp:121</div></div>
 <div class="ttc" id="aclassLCAO__Orbitals_html"><div class="ttname"><a href="classLCAO__Orbitals.html">LCAO_Orbitals</a></div><div class="ttdef"><b>Definition:</b> ORB_read.h:18</div></div>
 <div class="ttc" id="anamespaceGlobalV_html_a998f95b035318051aa260cc6718ef51d"><div class="ttname"><a href="namespaceGlobalV.html#a998f95b035318051aa260cc6718ef51d">GlobalV::deepks_bandgap</a></div><div class="ttdeci">bool deepks_bandgap</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:204</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_a7ae2d099677eb37d8446b82dbebee925"><div class="ttname"><a href="classLCAO__Deepks.html#a7ae2d099677eb37d8446b82dbebee925">LCAO_Deepks::add_v_delta</a></div><div class="ttdeci">void add_v_delta(const UnitCell &amp;ucell, const LCAO_Orbitals &amp;orb, Grid_Driver &amp;GridD, const int *trace_loc_row, const int *trace_loc_col, const int nrow, const int ncol)</div><div class="ttdoc">add dV to the Hamiltonian matrix</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_vdelta.cpp:24</div></div>

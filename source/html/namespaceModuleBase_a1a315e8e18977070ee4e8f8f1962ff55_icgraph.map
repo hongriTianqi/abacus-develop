@@ -1,12 +1,12 @@
 <map id="ModuleBase::TASK_DIST_1D" name="ModuleBase::TASK_DIST_1D">
-<area shape="rect" id="node1" title=" " alt="" coords="857,87,1063,114"/>
-<area shape="rect" id="node2" href="$classForces.html#ae52a9fdf7bcb35ac20b51f9708124527" title=" " alt="" coords="429,5,594,47"/>
-<area shape="rect" id="node3" href="$classForces.html#aa64789246a49baf7a2fe1a3f421e157a" title=" " alt="" coords="643,47,809,88"/>
-<area shape="rect" id="node4" href="$classCharge.html#a92bbd862fbb55713ae899204aef0a421" title=" " alt="" coords="654,112,798,153"/>
-<area shape="rect" id="node10" href="$classStress__Func.html#a123bfe3d6692f7863c5233b9d6f93215" title=" " alt="" coords="643,178,809,234"/>
-<area shape="rect" id="node5" href="$classCharge.html#abe553c3901db57ef8814c39c2baa241a" title=" " alt="" coords="432,103,591,130"/>
-<area shape="rect" id="node9" href="$classStress__Func.html#afb4a91cc8729aa125799567996c3870c" title=" " alt="" coords="428,154,595,210"/>
-<area shape="rect" id="node6" href="$classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651" title=" " alt="" coords="229,96,380,137"/>
-<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="5,63,181,104"/>
-<area shape="rect" id="node8" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="5,128,181,169"/>
+<area shape="rect" id="node1" title=" " alt="" coords="453,143,659,170"/>
+<area shape="rect" id="node2" href="$classCharge__Mixing.html#a2de61ea41b5a844d981203014990438d" title=" " alt="" coords="223,5,402,47"/>
+<area shape="rect" id="node4" href="$classForces.html#aa64789246a49baf7a2fe1a3f421e157a" title=" " alt="" coords="230,71,395,112"/>
+<area shape="rect" id="node5" href="$classCharge__Mixing.html#a68919071ddea987bb8520f9710f88427" title=" " alt="" coords="220,136,405,177"/>
+<area shape="rect" id="node6" href="$classCharge.html#a92bbd862fbb55713ae899204aef0a421" title=" " alt="" coords="241,201,385,243"/>
+<area shape="rect" id="node10" href="$classStress__Func.html#a123bfe3d6692f7863c5233b9d6f93215" title=" " alt="" coords="229,267,396,323"/>
+<area shape="rect" id="node3" href="$classCharge__Mixing.html#a091ccdd59998a426169d76f9a7b23beb" title=" " alt="" coords="7,41,170,83"/>
+<area shape="rect" id="node7" href="$classForces.html#ae52a9fdf7bcb35ac20b51f9708124527" title=" " alt="" coords="6,143,171,184"/>
+<area shape="rect" id="node8" href="$classCharge.html#abe553c3901db57ef8814c39c2baa241a" title=" " alt="" coords="9,209,168,235"/>
+<area shape="rect" id="node9" href="$classStress__Func.html#afb4a91cc8729aa125799567996c3870c" title=" " alt="" coords="5,259,172,315"/>
 </map>

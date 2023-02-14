@@ -1,6 +1,6 @@
 <map id="ModuleBase::ComplexArray::getBound1" name="ModuleBase::ComplexArray::getBound1">
 <area shape="rect" id="node1" title=" " alt="" coords="256,71,459,112"/>
-<area shape="rect" id="node2" href="$classModuleBase_1_1ComplexArray.html#a9a3e9b0a264089c84f89b0ab8bc83f05" title=" " alt="" coords="5,5,208,47"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1ComplexArray.html#aa5589378c6bbe0d409a432f1503b6f84" title=" " alt="" coords="5,71,208,112"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1ComplexArray.html#a9a3e9b0a264089c84f89b0ab8bc83f05" title="Judge if two ComplexArray is not equal." alt="" coords="5,5,208,47"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1ComplexArray.html#aa5589378c6bbe0d409a432f1503b6f84" title="Judge if two ComplexArray is equal." alt="" coords="5,71,208,112"/>
 <area shape="rect" id="node4" href="$complexarray__test_8cpp.html#ac612efbcb39b9e90113f1adace672891" title=" " alt="" coords="79,137,134,163"/>
 </map>

@@ -1,7 +1,7 @@
 <map id="IState_Envelope" name="IState_Envelope">
 <area shape="rect" id="node1" title=" " alt="" coords="587,2208,749,2344"/>
 <area shape="rect" id="node2" href="$classelecstate_1_1ElecState.html" title=" " alt="" coords="586,1833,750,2145"/>
-<area shape="rect" id="node3" href="$classCharge.html" title=" " alt="" coords="169,1246,399,1705"/>
+<area shape="rect" id="node3" href="$classCharge.html" title=" " alt="" coords="169,1231,399,1719"/>
 <area shape="rect" id="node4" href="$classelecstate_1_1Potential.html" title=" " alt="" coords="423,1283,604,1668"/>
 <area shape="rect" id="node5" href="$classelecstate_1_1PotBase.html" title=" " alt="" coords="27,835,170,971"/>
 <area shape="rect" id="node6" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="5,5,192,655"/>

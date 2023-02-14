@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.1: ModulePW::PW_Basis_Big Class Reference</title>
+<title>3.1.2: ModulePW::PW_Basis_Big Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.1
-   &#160;<span id="projectnumber">2023-02-04</span>
+   <div id="projectname">3.1.2
+   &#160;<span id="projectnumber">2023-02-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -83,7 +83,7 @@ Inheritance diagram for ModulePW::PW_Basis_Big:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModulePW_1_1PW__Basis__Big__inherit__graph.png" border="0" usemap="#ModulePW_1_1PW__Basis__Big_inherit__map" alt="Inheritance graph"/></div>
 <map name="ModulePW_1_1PW__Basis__Big_inherit__map" id="ModulePW_1_1PW__Basis__Big_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,703,195,985"/>
+<area shape="rect" title=" " alt="" coords="5,703,195,1000"/>
 <area shape="rect" href="classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="7,5,193,655"/>
 </map>
 </div>
@@ -92,7 +92,7 @@ Collaboration diagram for ModulePW::PW_Basis_Big:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModulePW_1_1PW__Basis__Big__coll__graph.png" border="0" usemap="#ModulePW_1_1PW__Basis__Big_coll__map" alt="Collaboration graph"/></div>
 <map name="ModulePW_1_1PW__Basis__Big_coll__map" id="ModulePW_1_1PW__Basis__Big_coll__map">
-<area shape="rect" title=" " alt="" coords="154,1372,343,1655"/>
+<area shape="rect" title=" " alt="" coords="154,1372,343,1669"/>
 <area shape="rect" href="classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="155,673,342,1323"/>
 <area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="5,152,164,420"/>
 <area shape="rect" href="classModulePW_1_1FFT.html" title=" " alt="" coords="188,5,309,567"/>
@@ -108,6 +108,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a29fa006c91ae55d58778f9b9eb77fa28"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accf375f1342a3357d2269c9e09f4d734"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis__Big.html#accf375f1342a3357d2269c9e09f4d734">setbxyz</a> (const int bx_in, const int by_in, const int bz_in)</td></tr>
 <tr class="separator:accf375f1342a3357d2269c9e09f4d734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0a0c20628ec24c7ed6a0848406231923"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis__Big.html#a0a0c20628ec24c7ed6a0848406231923">autoset_big_cell_size</a> (int &amp;b_size, const int &amp;nc_size, const int nproc=0)</td></tr>
+<tr class="separator:a0a0c20628ec24c7ed6a0848406231923"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f3e568f3c3a8d0e95cd8f4562689eea"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis__Big.html#a1f3e568f3c3a8d0e95cd8f4562689eea">initgrids</a> (const double lat0_in, const <a class="el" href="classModuleBase_1_1Matrix3.html">ModuleBase::Matrix3</a> latvec_in, const double gridecut)</td></tr>
 <tr class="separator:a1f3e568f3c3a8d0e95cd8f4562689eea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aec2a68cae0c18dcfc4255c22aa94e4bc"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis__Big.html#aec2a68cae0c18dcfc4255c22aa94e4bc">initgrids</a> (const double lat0_in, const <a class="el" href="classModuleBase_1_1Matrix3.html">ModuleBase::Matrix3</a> latvec_in, const int nx_in, int ny_in, int nz_in)</td></tr>
@@ -390,6 +392,58 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a0a0c20628ec24c7ed6a0848406231923"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0a0c20628ec24c7ed6a0848406231923">&#9670;&nbsp;</a></span>autoset_big_cell_size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModulePW::PW_Basis_Big::autoset_big_cell_size </td>
+          <td>(</td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>b_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nc_size</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>nproc</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModulePW_1_1PW__Basis__Big_a0a0c20628ec24c7ed6a0848406231923_icgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis__Big_a0a0c20628ec24c7ed6a0848406231923_icgraph" alt=""/></div>
+<map name="classModulePW_1_1PW__Basis__Big_a0a0c20628ec24c7ed6a0848406231923_icgraph" id="classModulePW_1_1PW__Basis__Big_a0a0c20628ec24c7ed6a0848406231923_icgraph">
+<area shape="rect" title=" " alt="" coords="332,5,529,47"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__Big.html#a1f3e568f3c3a8d0e95cd8f4562689eea" title=" " alt="" coords="123,5,284,47"/>
+<area shape="rect" href="test-big_8cpp.html#a14e2e0e392b2062e36e89c634500331c" title=" " alt="" coords="5,13,75,39"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a52a9feb143ed3ed2add46b71fa4c47f7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a52a9feb143ed3ed2add46b71fa4c47f7">&#9670;&nbsp;</a></span>distribute_r()</h2>
 
@@ -474,12 +528,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModulePW_1_1PW__Basis__Big_a1f3e568f3c3a8d0e95cd8f4562689eea_cgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis__Big_a1f3e568f3c3a8d0e95cd8f4562689eea_cgraph" alt=""/></div>
 <map name="classModulePW_1_1PW__Basis__Big_a1f3e568f3c3a8d0e95cd8f4562689eea_cgraph" id="classModulePW_1_1PW__Basis__Big_a1f3e568f3c3a8d0e95cd8f4562689eea_cgraph">
-<area shape="rect" title=" " alt="" coords="5,39,167,80"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#a27d7b250a9d0bb0bda42b69b97d82feb" title="Inverse a 3x3 matrix." alt="" coords="215,5,375,47"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056" title="Transpose a 3x3 matrix." alt="" coords="215,71,375,112"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab28d96cf2c851a6c1eae27ce780d2e90" title="Calculate the determinant of a 3x3 matrix." alt="" coords="423,13,613,39"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7" title="Construct a new Matrix 3 object to Identity matrix." alt="" coords="438,67,598,108"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#a42bb8704e6e193ae5dded7779548fb1c" title="Set a 3x3 matrix to identity matrix." alt="" coords="661,67,821,108"/>
+<area shape="rect" title=" " alt="" coords="5,71,167,112"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__Big.html#a0a0c20628ec24c7ed6a0848406231923" title=" " alt="" coords="215,5,412,47"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#a27d7b250a9d0bb0bda42b69b97d82feb" title="Inverse a 3x3 matrix." alt="" coords="233,71,393,112"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056" title="Transpose a 3x3 matrix." alt="" coords="233,136,393,177"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab28d96cf2c851a6c1eae27ce780d2e90" title="Calculate the determinant of a 3x3 matrix." alt="" coords="460,78,651,105"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7" title="Construct a new Matrix 3 object to Identity matrix." alt="" coords="475,132,635,173"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#a42bb8704e6e193ae5dded7779548fb1c" title="Set a 3x3 matrix to identity matrix." alt="" coords="699,132,859,173"/>
 </map>
 </div>
 <div class="dynheader">

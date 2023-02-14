@@ -1,12 +1,12 @@
 <map id="Charge_Mixing::Simplified_Broyden_mixing" name="Charge_Mixing::Simplified_Broyden_mixing">
-<area shape="rect" id="node1" title=" " alt="" coords="5,209,197,251"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,239,197,280"/>
 <area shape="rect" id="node2" href="$classCharge__Mixing.html#a5969d5f4d10bf99b101c8c1e9564af51" title=" " alt="" coords="263,5,441,47"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="275,71,429,112"/>
-<area shape="rect" id="node5" href="$lapack__connector_8h.html#aeed9e2b3c7f66c9b8058915f35d5d68e" title=" " alt="" coords="319,137,385,163"/>
-<area shape="rect" id="node6" href="$lapack__connector_8h.html#a53f72797c82bd68b4162802b9366bdd2" title=" " alt="" coords="319,187,385,214"/>
-<area shape="rect" id="node7" href="$classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce" title=" " alt="" coords="271,239,433,280"/>
-<area shape="rect" id="node8" href="$classCharge__Mixing.html#a8b3b365be955d98b527d05f53eb98e49" title=" " alt="" coords="274,304,430,345"/>
-<area shape="rect" id="node9" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="516,341,661,367"/>
-<area shape="rect" id="node10" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="245,421,459,447"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="507,5,671,47"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="275,71,429,112"/>
+<area shape="rect" id="node4" href="$lapack__connector_8h.html#aeed9e2b3c7f66c9b8058915f35d5d68e" title=" " alt="" coords="319,137,385,163"/>
+<area shape="rect" id="node5" href="$lapack__connector_8h.html#a53f72797c82bd68b4162802b9366bdd2" title=" " alt="" coords="319,187,385,214"/>
+<area shape="rect" id="node6" href="$classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce" title=" " alt="" coords="271,239,433,280"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="507,305,684,331"/>
+<area shape="rect" id="node8" href="$classCharge__Mixing.html#a8b3b365be955d98b527d05f53eb98e49" title=" " alt="" coords="274,356,430,397"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="523,393,668,419"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="245,473,459,499"/>
 </map>

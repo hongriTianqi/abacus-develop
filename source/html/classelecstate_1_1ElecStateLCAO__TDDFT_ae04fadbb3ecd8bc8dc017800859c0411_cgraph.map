@@ -1,4 +1,5 @@
 <map id="elecstate::ElecStateLCAO_TDDFT::calculate_weights_td" name="elecstate::ElecStateLCAO_TDDFT::calculate_weights_td">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,221,47"/>
-<area shape="rect" id="node2" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="269,13,415,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,221,65"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="303,5,449,32"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="269,56,483,83"/>
 </map>

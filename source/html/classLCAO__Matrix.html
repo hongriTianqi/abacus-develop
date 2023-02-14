@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.1: LCAO_Matrix Class Reference</title>
+<title>3.1.2: LCAO_Matrix Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.1
-   &#160;<span id="projectnumber">2023-02-04</span>
+   <div id="projectname">3.1.2
+   &#160;<span id="projectnumber">2023-02-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -81,7 +81,7 @@ Collaboration diagram for LCAO_Matrix:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLCAO__Matrix__coll__graph.png" border="0" usemap="#LCAO__Matrix_coll__map" alt="Collaboration graph"/></div>
 <map name="LCAO__Matrix_coll__map" id="LCAO__Matrix_coll__map">
-<area shape="rect" title=" " alt="" coords="5,564,180,964"/>
+<area shape="rect" title=" " alt="" coords="5,564,180,949"/>
 <area shape="rect" href="structParallel__Orbitals.html" title=" " alt="" coords="11,248,175,501"/>
 <area shape="rect" href="structLocalMatrix.html" title=" " alt="" coords="43,5,142,185"/>
 </map>
@@ -97,6 +97,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a156176dd6b68c606f63ca6ca7ea4965d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a5c2aaad0df58ba23691418cbee1d18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a8a5c2aaad0df58ba23691418cbee1d18">folding_fixedH</a> (const int &amp;ik)</td></tr>
 <tr class="separator:a8a5c2aaad0df58ba23691418cbee1d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d67cc481b3a17dd999acbe8ea274d91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a8d67cc481b3a17dd999acbe8ea274d91">allocate_HS_k</a> (const long &amp;nloc)</td></tr>
+<tr class="separator:a8d67cc481b3a17dd999acbe8ea274d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a13e2a1807a0532a336a40221c16268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a9a13e2a1807a0532a336a40221c16268">set_HSgamma</a> (const int &amp;iw1_all, const int &amp;iw2_all, const double &amp;v, const char &amp;dtype, double *HSloc)</td></tr>
 <tr class="separator:a9a13e2a1807a0532a336a40221c16268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac728fbfba46b235db1443a0a4685c2b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#ac728fbfba46b235db1443a0a4685c2b9">set_HSk</a> (const int &amp;iw1_all, const int &amp;iw2_all, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; &amp;v, const char &amp;dtype, const int spin=0)</td></tr>
@@ -137,6 +139,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a410693ebc65c67220c0158892aa5c739"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7aa0cf7e7cadd9239f72fe9c4b285b83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a7aa0cf7e7cadd9239f72fe9c4b285b83">destroy_HS_R_sparse</a> (void)</td></tr>
 <tr class="separator:a7aa0cf7e7cadd9239f72fe9c4b285b83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63706436aceb1429dbda15abf6b57fee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a63706436aceb1429dbda15abf6b57fee">destroy_T_R_sparse</a> (void)</td></tr>
+<tr class="separator:a63706436aceb1429dbda15abf6b57fee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d4bef67913168b4cd32a0b3ccf0fbbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a6d4bef67913168b4cd32a0b3ccf0fbbf">destroy_dH_R_sparse</a> (void)</td></tr>
+<tr class="separator:a6d4bef67913168b4cd32a0b3ccf0fbbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -182,10 +188,26 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a0614f0a91f73ea75d2cc1c2aa0e5d3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9f2db92feb48dc8858bba202ec9bcf1f"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a9f2db92feb48dc8858bba202ec9bcf1f">SR_sparse</a></td></tr>
 <tr class="separator:a9f2db92feb48dc8858bba202ec9bcf1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3fffdf8e63eccd9a227a35e2145e83f6"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a3fffdf8e63eccd9a227a35e2145e83f6">TR_sparse</a></td></tr>
+<tr class="separator:a3fffdf8e63eccd9a227a35e2145e83f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0044c533468c0a419bdca45d39e2ed0"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#ae0044c533468c0a419bdca45d39e2ed0">dHRx_sparse</a> [2]</td></tr>
+<tr class="separator:ae0044c533468c0a419bdca45d39e2ed0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12148dae151c7f85ed4877372cb77dbb"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a12148dae151c7f85ed4877372cb77dbb">dHRy_sparse</a> [2]</td></tr>
+<tr class="separator:a12148dae151c7f85ed4877372cb77dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bf8662506714570006a7e7678c4eac2"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a4bf8662506714570006a7e7678c4eac2">dHRz_sparse</a> [2]</td></tr>
+<tr class="separator:a4bf8662506714570006a7e7678c4eac2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a390e9ce7850a6f2c25cf1c153e724df7"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a390e9ce7850a6f2c25cf1c153e724df7">HR_soc_sparse</a></td></tr>
 <tr class="separator:a390e9ce7850a6f2c25cf1c153e724df7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0655bc8c822d4495753d011a8db25f5"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#ad0655bc8c822d4495753d011a8db25f5">SR_soc_sparse</a></td></tr>
 <tr class="separator:ad0655bc8c822d4495753d011a8db25f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc81922db93b3260a8b5285a88a08ef8"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#adc81922db93b3260a8b5285a88a08ef8">TR_soc_sparse</a></td></tr>
+<tr class="separator:adc81922db93b3260a8b5285a88a08ef8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af13ecafdb35ee22c94532a0610cf3083"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#af13ecafdb35ee22c94532a0610cf3083">dHRx_soc_sparse</a></td></tr>
+<tr class="separator:af13ecafdb35ee22c94532a0610cf3083"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a999d9a9d7d3ac18115f29fe55cf792e2"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a999d9a9d7d3ac18115f29fe55cf792e2">dHRy_soc_sparse</a></td></tr>
+<tr class="separator:a999d9a9d7d3ac18115f29fe55cf792e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f40f47f373c815eb0038379f12824ca"><td class="memItemLeft" align="right" valign="top">std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a8f40f47f373c815eb0038379f12824ca">dHRz_soc_sparse</a></td></tr>
+<tr class="separator:a8f40f47f373c815eb0038379f12824ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe3d949359bbdf2765d88183b7c8d550"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#abe3d949359bbdf2765d88183b7c8d550">all_R_coor</a></td></tr>
 <tr class="separator:abe3d949359bbdf2765d88183b7c8d550"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a42741575951e534cb0d185fd356efdfb"><td class="memItemLeft" align="right" valign="top">std::set&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a42741575951e534cb0d185fd356efdfb">output_R_coor</a></td></tr>
@@ -257,13 +279,9 @@ Public Attributes</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a1d6e6efd15a79481c3b0c0f39d501a48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a1d6e6efd15a79481c3b0c0f39d501a48">allocate_HS_gamma</a> (const long &amp;nloc)</td></tr>
 <tr class="separator:a1d6e6efd15a79481c3b0c0f39d501a48"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d67cc481b3a17dd999acbe8ea274d91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a8d67cc481b3a17dd999acbe8ea274d91">allocate_HS_k</a> (const long &amp;nloc)</td></tr>
-<tr class="separator:a8d67cc481b3a17dd999acbe8ea274d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:ab8c154743139a805ae6fa0220772fb98"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#ab8c154743139a805ae6fa0220772fb98">energy</a></td></tr>
-<tr class="separator:ab8c154743139a805ae6fa0220772fb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f747cbcc09612bf447c236937a5d5bc"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a2f747cbcc09612bf447c236937a5d5bc">Mulliken_Charge</a></td></tr>
 <tr class="separator:a2f747cbcc09612bf447c236937a5d5bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -418,9 +436,6 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void LCAO_Matrix::allocate_HS_k </td>
@@ -430,11 +445,6 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
@@ -452,14 +462,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLCAO__Matrix_a8d67cc481b3a17dd999acbe8ea274d91_icgraph.png" border="0" usemap="#classLCAO__Matrix_a8d67cc481b3a17dd999acbe8ea274d91_icgraph" alt=""/></div>
 <map name="classLCAO__Matrix_a8d67cc481b3a17dd999acbe8ea274d91_icgraph" id="classLCAO__Matrix_a8d67cc481b3a17dd999acbe8ea274d91_icgraph">
-<area shape="rect" title=" " alt="" coords="865,71,1072,98"/>
-<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="660,5,817,47"/>
-<area shape="rect" href="classenergy.html#aee431bab8c7494af2ffede6458983f32" title=" " alt="" coords="229,42,385,69"/>
-<area shape="rect" href="classLCAO__Matrix.html#a156176dd6b68c606f63ca6ca7ea4965d" title=" " alt="" coords="661,123,816,164"/>
-<area shape="rect" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89" title=" " alt="" coords="433,5,612,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,35,181,76"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="435,123,611,164"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a9062d41b281c0efb4ec25752c0496f9e" title=" " alt="" coords="435,188,611,229"/>
+<area shape="rect" title=" " alt="" coords="672,165,879,191"/>
+<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="467,35,624,76"/>
+<area shape="rect" href="classLCAO__Matrix.html#a156176dd6b68c606f63ca6ca7ea4965d" title=" " alt="" coords="468,128,623,169"/>
+<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="229,202,419,229"/>
+<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="467,245,624,287"/>
+<area shape="rect" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89" title=" " alt="" coords="235,5,413,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,195,181,236"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="236,71,412,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a9062d41b281c0efb4ec25752c0496f9e" title=" " alt="" coords="236,136,412,177"/>
 </map>
 </div>
 
@@ -494,16 +505,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLCAO__Matrix_ab2892335016cc79a08679abe13b2d0be_icgraph.png" border="0" usemap="#classLCAO__Matrix_ab2892335016cc79a08679abe13b2d0be_icgraph" alt=""/></div>
 <map name="classLCAO__Matrix_ab2892335016cc79a08679abe13b2d0be_icgraph" id="classLCAO__Matrix_ab2892335016cc79a08679abe13b2d0be_icgraph">
-<area shape="rect" title=" " alt="" coords="952,97,1159,123"/>
-<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="726,5,883,47"/>
-<area shape="rect" href="classenergy.html#aee431bab8c7494af2ffede6458983f32" title=" " alt="" coords="252,42,408,69"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8b339edbf7eee63e294ff452ac1ef9df" title=" " alt="" coords="480,123,656,164"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#abedf9068c9baafef4020b266e0098a5d" title=" " alt="" coords="705,180,904,221"/>
-<area shape="rect" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89" title=" " alt="" coords="479,5,657,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,35,181,76"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="229,123,431,164"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="479,188,657,229"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="242,188,418,229"/>
+<area shape="rect" title=" " alt="" coords="739,143,945,170"/>
+<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="513,136,670,177"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8b339edbf7eee63e294ff452ac1ef9df" title=" " alt="" coords="503,71,679,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#abedf9068c9baafef4020b266e0098a5d" title=" " alt="" coords="492,5,691,47"/>
+<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="255,202,444,229"/>
+<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="271,253,428,295"/>
+<area shape="rect" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89" title=" " alt="" coords="260,136,439,177"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="18,195,194,236"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,39,207,80"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="260,8,439,49"/>
 </map>
 </div>
 
@@ -535,6 +546,45 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classGrid.html#ad73c369a4f09cd0b135e58d8d83989c1" title=" " alt="" coords="255,107,367,133"/>
 <area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="239,157,384,184"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="220,209,403,250"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a6d4bef67913168b4cd32a0b3ccf0fbbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d4bef67913168b4cd32a0b3ccf0fbbf">&#9670;&nbsp;</a></span>destroy_dH_R_sparse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCAO_Matrix::destroy_dH_R_sparse </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLCAO__Matrix_a6d4bef67913168b4cd32a0b3ccf0fbbf_cgraph.png" border="0" usemap="#classLCAO__Matrix_a6d4bef67913168b4cd32a0b3ccf0fbbf_cgraph" alt=""/></div>
+<map name="classLCAO__Matrix_a6d4bef67913168b4cd32a0b3ccf0fbbf_cgraph" id="classLCAO__Matrix_a6d4bef67913168b4cd32a0b3ccf0fbbf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,168,47"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="216,13,361,39"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLCAO__Matrix_a6d4bef67913168b4cd32a0b3ccf0fbbf_icgraph.png" border="0" usemap="#classLCAO__Matrix_a6d4bef67913168b4cd32a0b3ccf0fbbf_icgraph" alt=""/></div>
+<map name="classLCAO__Matrix_a6d4bef67913168b4cd32a0b3ccf0fbbf_icgraph" id="classLCAO__Matrix_a6d4bef67913168b4cd32a0b3ccf0fbbf_icgraph">
+<area shape="rect" title=" " alt="" coords="684,39,847,80"/>
+<area shape="rect" href="classLCAO__Hamilt.html#aba478b11073b79a4863a604707a210fd" title=" " alt="" coords="471,39,636,80"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="248,46,423,73"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="15,71,191,112"/>
 </map>
 </div>
 
@@ -599,14 +649,53 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLCAO__Matrix_a7aa0cf7e7cadd9239f72fe9c4b285b83_icgraph.png" border="0" usemap="#classLCAO__Matrix_a7aa0cf7e7cadd9239f72fe9c4b285b83_icgraph" alt=""/></div>
 <map name="classLCAO__Matrix_a7aa0cf7e7cadd9239f72fe9c4b285b83_icgraph" id="classLCAO__Matrix_a7aa0cf7e7cadd9239f72fe9c4b285b83_icgraph">
-<area shape="rect" title=" " alt="" coords="937,104,1100,145"/>
-<area shape="rect" href="classLCAO__Hamilt.html#a9a67d9b8783720e2b1f48dc68bd51aff" title=" " alt="" coords="724,104,889,145"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="497,71,676,112"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a6f9ebb0d6f669a465cb1e3250f580341" title=" " alt="" coords="499,136,675,177"/>
+<area shape="rect" title=" " alt="" coords="933,103,1096,144"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a9a67d9b8783720e2b1f48dc68bd51aff" title=" " alt="" coords="720,103,885,144"/>
+<area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="497,78,672,105"/>
+<area shape="rect" href="namespaceModuleIO.html#a2d9ce1f8baba9306ec62451480faaaca" title=" " alt="" coords="502,135,667,162"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="255,5,449,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="264,71,440,112"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8b339edbf7eee63e294ff452ac1ef9df" title=" " alt="" coords="264,136,440,177"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,136,207,177"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a63706436aceb1429dbda15abf6b57fee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63706436aceb1429dbda15abf6b57fee">&#9670;&nbsp;</a></span>destroy_T_R_sparse()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void LCAO_Matrix::destroy_T_R_sparse </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLCAO__Matrix_a63706436aceb1429dbda15abf6b57fee_cgraph.png" border="0" usemap="#classLCAO__Matrix_a63706436aceb1429dbda15abf6b57fee_cgraph" alt=""/></div>
+<map name="classLCAO__Matrix_a63706436aceb1429dbda15abf6b57fee_cgraph" id="classLCAO__Matrix_a63706436aceb1429dbda15abf6b57fee_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,168,47"/>
+<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="216,13,361,39"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classLCAO__Matrix_a63706436aceb1429dbda15abf6b57fee_icgraph.png" border="0" usemap="#classLCAO__Matrix_a63706436aceb1429dbda15abf6b57fee_icgraph" alt=""/></div>
+<map name="classLCAO__Matrix_a63706436aceb1429dbda15abf6b57fee_icgraph" id="classLCAO__Matrix_a63706436aceb1429dbda15abf6b57fee_icgraph">
+<area shape="rect" title=" " alt="" coords="675,39,837,80"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a6f77f3db1775c49d6bcb79f07cfdb623" title=" " alt="" coords="461,39,627,80"/>
+<area shape="rect" href="namespaceModuleIO.html#a7358ddde907dcfe7ed301492d0ad45eb" title=" " alt="" coords="248,46,413,73"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="15,71,191,112"/>
 </map>
 </div>
 
@@ -704,11 +793,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLCAO__Matrix_a8a5c2aaad0df58ba23691418cbee1d18_icgraph.png" border="0" usemap="#classLCAO__Matrix_a8a5c2aaad0df58ba23691418cbee1d18_icgraph" alt=""/></div>
 <map name="classLCAO__Matrix_a8a5c2aaad0df58ba23691418cbee1d18_icgraph" id="classLCAO__Matrix_a8a5c2aaad0df58ba23691418cbee1d18_icgraph">
-<area shape="rect" title=" " alt="" coords="865,35,1024,76"/>
-<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="660,5,817,47"/>
-<area shape="rect" href="classenergy.html#aee431bab8c7494af2ffede6458983f32" title=" " alt="" coords="229,42,385,69"/>
-<area shape="rect" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89" title=" " alt="" coords="433,5,612,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,35,181,76"/>
+<area shape="rect" title=" " alt="" coords="672,64,831,105"/>
+<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="467,5,624,47"/>
+<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="229,71,419,98"/>
+<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="467,123,624,164"/>
+<area shape="rect" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89" title=" " alt="" coords="235,5,413,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,64,181,105"/>
 </map>
 </div>
 
@@ -901,16 +991,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLCAO__Matrix_ad68a244e6299d60082aefe5d8514c1b6_icgraph.png" border="0" usemap="#classLCAO__Matrix_ad68a244e6299d60082aefe5d8514c1b6_icgraph" alt=""/></div>
 <map name="classLCAO__Matrix_ad68a244e6299d60082aefe5d8514c1b6_icgraph" id="classLCAO__Matrix_ad68a244e6299d60082aefe5d8514c1b6_icgraph">
-<area shape="rect" title=" " alt="" coords="724,157,899,183"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a46576390147c76ff8c30146fe8235d4f" title=" " alt="" coords="500,91,676,132"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b" title=" " alt="" coords="500,181,676,223"/>
-<area shape="rect" href="classForce__LCAO__gamma.html#a6a2ac4aa03c2f6428d4ed4263eed309f" title=" " alt="" coords="223,123,439,164"/>
-<area shape="rect" href="classForce__LCAO__k.html#a80c8caa156eda5d990074791bcb3a42d" title=" " alt="" coords="237,71,426,98"/>
+<area shape="rect" title=" " alt="" coords="724,167,899,194"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a46576390147c76ff8c30146fe8235d4f" title=" " alt="" coords="500,127,676,168"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b" title=" " alt="" coords="500,192,676,233"/>
+<area shape="rect" href="classForce__LCAO__gamma.html#a6a2ac4aa03c2f6428d4ed4263eed309f" title=" " alt="" coords="223,71,439,112"/>
+<area shape="rect" href="classForce__LCAO__k.html#a80c8caa156eda5d990074791bcb3a42d" title=" " alt="" coords="237,137,426,163"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a92bcfc332b2966a939d9e5b37adba655" title=" " alt="" coords="244,188,419,229"/>
 <area shape="rect" href="classLCAO__gen__fixedH.html#a7133d01461b3583ea89d9b8d824e1be7" title=" " alt="" coords="230,5,433,47"/>
-<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="5,312,163,353"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a98eea8394388573fcebe6371af772cc1" title=" " alt="" coords="211,290,452,317"/>
-<area shape="rect" href="classenergy.html#aee431bab8c7494af2ffede6458983f32" title=" " alt="" coords="6,250,162,277"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a1935b847d05c52da9a38a40770b4c3ef" title=" " alt="" coords="211,189,452,215"/>
+<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="5,272,163,313"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a98eea8394388573fcebe6371af772cc1" title=" " alt="" coords="211,254,452,281"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a1935b847d05c52da9a38a40770b4c3ef" title=" " alt="" coords="211,355,452,382"/>
 </map>
 </div>
 
@@ -1227,16 +1317,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLCAO__Matrix_aad6705daef68bfb57456b468ca986ca2_icgraph.png" border="0" usemap="#classLCAO__Matrix_aad6705daef68bfb57456b468ca986ca2_icgraph" alt=""/></div>
 <map name="classLCAO__Matrix_aad6705daef68bfb57456b468ca986ca2_icgraph" id="classLCAO__Matrix_aad6705daef68bfb57456b468ca986ca2_icgraph">
-<area shape="rect" title=" " alt="" coords="768,147,948,174"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b" title=" " alt="" coords="544,140,720,181"/>
-<area shape="rect" href="classForce__LCAO__gamma.html#a6a2ac4aa03c2f6428d4ed4263eed309f" title=" " alt="" coords="267,5,483,47"/>
-<area shape="rect" href="classForce__LCAO__k.html#a80c8caa156eda5d990074791bcb3a42d" title=" " alt="" coords="281,71,470,98"/>
-<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="27,131,185,172"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a98eea8394388573fcebe6371af772cc1" title=" " alt="" coords="255,173,496,199"/>
-<area shape="rect" href="classenergy.html#aee431bab8c7494af2ffede6458983f32" title=" " alt="" coords="28,214,184,241"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a1935b847d05c52da9a38a40770b4c3ef" title=" " alt="" coords="255,274,496,301"/>
-<area shape="rect" href="classForce__LCAO__gamma.html#a1f1d4ecc486d17e6201f5a8a4d29942b" title=" " alt="" coords="5,5,207,47"/>
-<area shape="rect" href="classForce__LCAO__k.html#ae2c554f465bc6b480664f9cf3fbd9919" title=" " alt="" coords="19,71,193,98"/>
+<area shape="rect" title=" " alt="" coords="756,210,936,237"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b" title=" " alt="" coords="532,203,708,244"/>
+<area shape="rect" href="classForce__LCAO__gamma.html#a6a2ac4aa03c2f6428d4ed4263eed309f" title=" " alt="" coords="255,5,471,47"/>
+<area shape="rect" href="classForce__LCAO__k.html#a80c8caa156eda5d990074791bcb3a42d" title=" " alt="" coords="269,71,458,98"/>
+<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="21,157,179,199"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a92bcfc332b2966a939d9e5b37adba655" title=" " alt="" coords="276,173,451,215"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a98eea8394388573fcebe6371af772cc1" title=" " alt="" coords="243,239,484,266"/>
+<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="5,265,195,291"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a1935b847d05c52da9a38a40770b4c3ef" title=" " alt="" coords="243,341,484,367"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a5b7670dbd9e802eb478c5e804546225d" title=" " alt="" coords="276,392,451,433"/>
 </map>
 </div>
 
@@ -1365,11 +1455,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLCAO__Matrix_adb530cc2aaa747493979072a25e61e22_icgraph.png" border="0" usemap="#classLCAO__Matrix_adb530cc2aaa747493979072a25e61e22_icgraph" alt=""/></div>
 <map name="classLCAO__Matrix_adb530cc2aaa747493979072a25e61e22_icgraph" id="classLCAO__Matrix_adb530cc2aaa747493979072a25e61e22_icgraph">
-<area shape="rect" title=" " alt="" coords="865,42,1048,69"/>
-<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="660,5,817,47"/>
-<area shape="rect" href="classenergy.html#aee431bab8c7494af2ffede6458983f32" title=" " alt="" coords="229,42,385,69"/>
-<area shape="rect" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89" title=" " alt="" coords="433,5,612,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,35,181,76"/>
+<area shape="rect" title=" " alt="" coords="672,71,855,98"/>
+<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="467,5,624,47"/>
+<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="229,71,419,98"/>
+<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="467,123,624,164"/>
+<area shape="rect" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89" title=" " alt="" coords="235,5,413,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,64,181,105"/>
 </map>
 </div>
 
@@ -1406,42 +1497,22 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLCAO__Matrix_a17555e58238e5020ece5384ada791b37_icgraph.png" border="0" usemap="#classLCAO__Matrix_a17555e58238e5020ece5384ada791b37_icgraph" alt=""/></div>
 <map name="classLCAO__Matrix_a17555e58238e5020ece5384ada791b37_icgraph" id="classLCAO__Matrix_a17555e58238e5020ece5384ada791b37_icgraph">
-<area shape="rect" title=" " alt="" coords="907,101,1089,127"/>
-<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="692,5,849,47"/>
-<area shape="rect" href="classenergy.html#aee431bab8c7494af2ffede6458983f32" title=" " alt="" coords="229,42,385,69"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8b339edbf7eee63e294ff452ac1ef9df" title=" " alt="" coords="683,123,859,164"/>
-<area shape="rect" href="classhamilt_1_1HamiltLCAO.html#ae1603158638b3df141cfcd0120c102c1" title=" " alt="" coords="695,188,846,229"/>
-<area shape="rect" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89" title=" " alt="" coords="445,5,623,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,35,181,76"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="433,123,635,164"/>
+<area shape="rect" title=" " alt="" coords="492,177,675,203"/>
+<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="271,5,428,47"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a5b7670dbd9e802eb478c5e804546225d" title=" " alt="" coords="262,71,437,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8b339edbf7eee63e294ff452ac1ef9df" title=" " alt="" coords="261,136,437,177"/>
+<area shape="rect" href="classhamilt_1_1HamiltLCAO.html#ae1603158638b3df141cfcd0120c102c1" title=" " alt="" coords="274,201,425,243"/>
+<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="255,267,444,294"/>
+<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="271,319,428,360"/>
+<area shape="rect" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89" title=" " alt="" coords="17,5,195,47"/>
+<area shape="rect" href="namespaceModuleIO.html#a7358ddde907dcfe7ed301492d0ad45eb" title=" " alt="" coords="23,78,189,105"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,136,207,177"/>
 </map>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="ab8c154743139a805ae6fa0220772fb98"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8c154743139a805ae6fa0220772fb98">&#9670;&nbsp;</a></span>energy</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classenergy.html">energy</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a2f747cbcc09612bf447c236937a5d5bc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2f747cbcc09612bf447c236937a5d5bc">&#9670;&nbsp;</a></span>Mulliken_Charge</h2>
 
@@ -1655,6 +1726,90 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">double* LCAO_Matrix::DHloc_fixedR_z</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af13ecafdb35ee22c94532a0610cf3083"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af13ecafdb35ee22c94532a0610cf3083">&#9670;&nbsp;</a></span>dHRx_soc_sparse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt;int&gt;, std::map&lt;size_t, std::map&lt;size_t, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt;double&gt; &gt; &gt; &gt; LCAO_Matrix::dHRx_soc_sparse</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0044c533468c0a419bdca45d39e2ed0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0044c533468c0a419bdca45d39e2ed0">&#9670;&nbsp;</a></span>dHRx_sparse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt;int&gt;, std::map&lt;size_t, std::map&lt;size_t, double&gt; &gt; &gt; LCAO_Matrix::dHRx_sparse[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a999d9a9d7d3ac18115f29fe55cf792e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a999d9a9d7d3ac18115f29fe55cf792e2">&#9670;&nbsp;</a></span>dHRy_soc_sparse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt;int&gt;, std::map&lt;size_t, std::map&lt;size_t, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt;double&gt; &gt; &gt; &gt; LCAO_Matrix::dHRy_soc_sparse</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a12148dae151c7f85ed4877372cb77dbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12148dae151c7f85ed4877372cb77dbb">&#9670;&nbsp;</a></span>dHRy_sparse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt;int&gt;, std::map&lt;size_t, std::map&lt;size_t, double&gt; &gt; &gt; LCAO_Matrix::dHRy_sparse[2]</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8f40f47f373c815eb0038379f12824ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8f40f47f373c815eb0038379f12824ca">&#9670;&nbsp;</a></span>dHRz_soc_sparse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt;int&gt;, std::map&lt;size_t, std::map&lt;size_t, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt;double&gt; &gt; &gt; &gt; LCAO_Matrix::dHRz_soc_sparse</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4bf8662506714570006a7e7678c4eac2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bf8662506714570006a7e7678c4eac2">&#9670;&nbsp;</a></span>dHRz_sparse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt;int&gt;, std::map&lt;size_t, std::map&lt;size_t, double&gt; &gt; &gt; LCAO_Matrix::dHRz_sparse[2]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2243,6 +2398,34 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">double* LCAO_Matrix::stvnl33</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="adc81922db93b3260a8b5285a88a08ef8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc81922db93b3260a8b5285a88a08ef8">&#9670;&nbsp;</a></span>TR_soc_sparse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt;int&gt;, std::map&lt;size_t, std::map&lt;size_t, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt;double&gt; &gt; &gt; &gt; LCAO_Matrix::TR_soc_sparse</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3fffdf8e63eccd9a227a35e2145e83f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3fffdf8e63eccd9a227a35e2145e83f6">&#9670;&nbsp;</a></span>TR_sparse</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;<a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt;int&gt;, std::map&lt;size_t, std::map&lt;size_t, double&gt; &gt; &gt; LCAO_Matrix::TR_sparse</td>
         </tr>
       </table>
 </div><div class="memdoc">

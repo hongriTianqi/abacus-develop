@@ -1,8 +1,10 @@
 <map id="Gint_Tools::cal_ddpsir_ylm" name="Gint_Tools::cal_ddpsir_ylm">
-<area shape="rect" id="node1" title=" " alt="" coords="5,111,200,138"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,143,200,170"/>
 <area shape="rect" id="node2" href="$classModuleBase_1_1Ylm.html#a4e724a8e58c91ced8330c2c326b5c3d7" title="Get the ylm real object and the gradient (used in getting derivative of overlap)" alt="" coords="253,5,425,47"/>
 <area shape="rect" id="node3" href="$classModuleBase_1_1Ylm.html#a7288f8a5606e795d92c9cb83716f3926" title="Get the hessian of r^l Ylm (used in getting derivative of overlap)" alt="" coords="256,71,423,112"/>
 <area shape="rect" id="node5" href="$classNumerical__Orbital.html#a9a6371156b2ad03aef58e59572a03cae" title=" " alt="" coords="265,136,413,177"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="248,201,431,243"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="251,202,428,229"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="248,253,431,295"/>
 <area shape="rect" id="node4" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="479,78,692,105"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="509,195,662,236"/>
 </map>

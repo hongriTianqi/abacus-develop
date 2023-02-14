@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.1: module_base/complexarray.h File Reference</title>
+<title>3.1.2: module_base/complexarray.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.1
-   &#160;<span id="projectnumber">2023-02-04</span>
+   <div id="projectname">3.1.2
+   &#160;<span id="projectnumber">2023-02-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -115,6 +115,7 @@ This graph shows which files directly or indirectly include this file:</div>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleBase_1_1ComplexArray.html">ModuleBase::ComplexArray</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A basic type of data for complex array.  <a href="classModuleBase_1_1ComplexArray.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
@@ -125,27 +126,37 @@ Namespaces</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a2f82bfc222fdbc64bc3be3952bd6f2fd"><td class="memItemLeft" align="right" valign="top">ComplexArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleBase.html#a2f82bfc222fdbc64bc3be3952bd6f2fd">ModuleBase::operator*</a> (const double r, const ComplexArray &amp;cd)</td></tr>
+<tr class="memdesc:a2f82bfc222fdbc64bc3be3952bd6f2fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale a <a class="el" href="classModuleBase_1_1ComplexArray.html" title="A basic type of data for complex array.">ComplexArray</a> cd by real r.  <a href="namespaceModuleBase.html#a2f82bfc222fdbc64bc3be3952bd6f2fd">More...</a><br /></td></tr>
 <tr class="separator:a2f82bfc222fdbc64bc3be3952bd6f2fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0e8359208baafe55df444e433724e58"><td class="memItemLeft" align="right" valign="top">ComplexArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleBase.html#ab0e8359208baafe55df444e433724e58">ModuleBase::operator*</a> (const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; c, const ComplexArray &amp;cd)</td></tr>
+<tr class="memdesc:ab0e8359208baafe55df444e433724e58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Scale a <a class="el" href="classModuleBase_1_1ComplexArray.html" title="A basic type of data for complex array.">ComplexArray</a> cd by std::complex number c.  <a href="namespaceModuleBase.html#ab0e8359208baafe55df444e433724e58">More...</a><br /></td></tr>
 <tr class="separator:ab0e8359208baafe55df444e433724e58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a301e207ebf602abde4821f23148ed030"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleBase.html#a301e207ebf602abde4821f23148ed030">ModuleBase::abs2</a> (const ComplexArray &amp;cd)</td></tr>
+<tr class="memdesc:a301e207ebf602abde4821f23148ed030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sum of absolute squares of all elements in cd.  <a href="namespaceModuleBase.html#a301e207ebf602abde4821f23148ed030">More...</a><br /></td></tr>
 <tr class="separator:a301e207ebf602abde4821f23148ed030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae073d466ab02371446c2a946ec476dbb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleBase.html#ae073d466ab02371446c2a946ec476dbb">ModuleBase::add_scale_abs2</a> (const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; &amp;c, const ComplexArray &amp;in, ComplexArray &amp;out)</td></tr>
 <tr class="separator:ae073d466ab02371446c2a946ec476dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2681bf6cb4975b24a4263f23e1c4c679"><td class="memItemLeft" align="right" valign="top"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleBase.html#a2681bf6cb4975b24a4263f23e1c4c679">ModuleBase::dot</a> (const ComplexArray &amp;cd1, const ComplexArray &amp;cd2)</td></tr>
+<tr class="memdesc:a2681bf6cb4975b24a4263f23e1c4c679"><td class="mdescLeft">&#160;</td><td class="mdescRight">Take "dot-product" of two <a class="el" href="classModuleBase_1_1ComplexArray.html" title="A basic type of data for complex array.">ComplexArray</a>: sum of cd1(conjugate)[i] * cd2[i].  <a href="namespaceModuleBase.html#a2681bf6cb4975b24a4263f23e1c4c679">More...</a><br /></td></tr>
 <tr class="separator:a2681bf6cb4975b24a4263f23e1c4c679"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac67872d5ffde3960ea6c9c9412224598"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleBase.html#ac67872d5ffde3960ea6c9c9412224598">ModuleBase::scale_accumulate</a> (double r, const ComplexArray &amp;cd1, ComplexArray &amp;cd2)</td></tr>
+<tr class="memdesc:ac67872d5ffde3960ea6c9c9412224598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does cd2 += r * cd1.  <a href="namespaceModuleBase.html#ac67872d5ffde3960ea6c9c9412224598">More...</a><br /></td></tr>
 <tr class="separator:ac67872d5ffde3960ea6c9c9412224598"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac72a7d17a87fc33d0b8aa01cf4687913"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleBase.html#ac72a7d17a87fc33d0b8aa01cf4687913">ModuleBase::scale_accumulate</a> (const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; c, const ComplexArray &amp;cd1, ComplexArray &amp;cd2)</td></tr>
-<tr class="separator:ac72a7d17a87fc33d0b8aa01cf4687913"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabf4f10a26b47278e4f4ea201301710f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleBase.html#aabf4f10a26b47278e4f4ea201301710f">ModuleBase::scale_accumulate</a> (<a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; c, const ComplexArray &amp;cd1, ComplexArray &amp;cd2)</td></tr>
+<tr class="memdesc:aabf4f10a26b47278e4f4ea201301710f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does cd2 += c * cd1.  <a href="namespaceModuleBase.html#aabf4f10a26b47278e4f4ea201301710f">More...</a><br /></td></tr>
+<tr class="separator:aabf4f10a26b47278e4f4ea201301710f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac261198fbe5402ad46a08fb8b3181e9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleBase.html#aac261198fbe5402ad46a08fb8b3181e9">ModuleBase::scaled_sum</a> (double r1, const ComplexArray &amp;cd1, double r2, const ComplexArray &amp;cd2, ComplexArray &amp;cd3)</td></tr>
+<tr class="memdesc:aac261198fbe5402ad46a08fb8b3181e9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does cd3 = r1*cd1 + r2*cd2.  <a href="namespaceModuleBase.html#aac261198fbe5402ad46a08fb8b3181e9">More...</a><br /></td></tr>
 <tr class="separator:aac261198fbe5402ad46a08fb8b3181e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f96ec43b4825957525b09242b9fdb29"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleBase.html#a6f96ec43b4825957525b09242b9fdb29">ModuleBase::scaled_sum</a> (<a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; c1, const ComplexArray &amp;cd1, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; c2, const ComplexArray &amp;cd2, ComplexArray &amp;cd3)</td></tr>
+<tr class="memdesc:a6f96ec43b4825957525b09242b9fdb29"><td class="mdescLeft">&#160;</td><td class="mdescRight">Does cd3 = c1*cd1 + c2*cd2.  <a href="namespaceModuleBase.html#a6f96ec43b4825957525b09242b9fdb29">More...</a><br /></td></tr>
 <tr class="separator:a6f96ec43b4825957525b09242b9fdb29"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acdcee108b01f2588a9d2f84332407880"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleBase.html#acdcee108b01f2588a9d2f84332407880">ModuleBase::point_mult</a> (ComplexArray &amp;in1, ComplexArray &amp;in2, ComplexArray &amp;out)</td></tr>
-<tr class="separator:acdcee108b01f2588a9d2f84332407880"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b15ce7b16c8f8d038a3a7878287a3a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleBase.html#a9b15ce7b16c8f8d038a3a7878287a3a6">ModuleBase::point_mult</a> (ComplexArray &amp;a1, ComplexArray &amp;in2, ComplexArray &amp;out)</td></tr>
+<tr class="memdesc:a9b15ce7b16c8f8d038a3a7878287a3a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">out[i] = a1[i] * in2[i]  <a href="namespaceModuleBase.html#a9b15ce7b16c8f8d038a3a7878287a3a6">More...</a><br /></td></tr>
+<tr class="separator:a9b15ce7b16c8f8d038a3a7878287a3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ca91d13824ae2932bdce6fbcbc4b59c"><td class="memTemplParams" colspan="2">template&lt;class T &gt; </td></tr>
 <tr class="memitem:a3ca91d13824ae2932bdce6fbcbc4b59c"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceModuleBase.html#a3ca91d13824ae2932bdce6fbcbc4b59c">ModuleBase::zeros</a> (<a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; <a class="el" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a> &gt; *u, int n)</td></tr>
+<tr class="memdesc:a3ca91d13824ae2932bdce6fbcbc4b59c"><td class="mdescLeft">&#160;</td><td class="mdescRight">set elements of u as zero which u is 1_d std::complex array  <a href="namespaceModuleBase.html#a3ca91d13824ae2932bdce6fbcbc4b59c">More...</a><br /></td></tr>
 <tr class="separator:a3ca91d13824ae2932bdce6fbcbc4b59c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->

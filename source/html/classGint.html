@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.1: Gint Class Reference</title>
+<title>3.1.2: Gint Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.1
-   &#160;<span id="projectnumber">2023-02-04</span>
+   <div id="projectname">3.1.2
+   &#160;<span id="projectnumber">2023-02-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -80,9 +80,9 @@ Inheritance diagram for Gint:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGint__inherit__graph.png" border="0" usemap="#Gint_inherit__map" alt="Inheritance graph"/></div>
 <map name="Gint_inherit__map" id="Gint_inherit__map">
-<area shape="rect" title=" " alt="" coords="109,5,315,391"/>
-<area shape="rect" href="classGint__Gamma.html" title=" " alt="" coords="5,439,184,780"/>
-<area shape="rect" href="classGint__k.html" title=" " alt="" coords="209,497,450,721"/>
+<area shape="rect" title=" " alt="" coords="110,5,317,449"/>
+<area shape="rect" href="classGint__Gamma.html" title=" " alt="" coords="5,497,184,839"/>
+<area shape="rect" href="classGint__k.html" title=" " alt="" coords="209,512,458,824"/>
 </map>
 </div>
 <div class="dynheader">
@@ -90,7 +90,7 @@ Collaboration diagram for Gint:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGint__coll__graph.png" border="0" usemap="#Gint_coll__map" alt="Collaboration graph"/></div>
 <map name="Gint_coll__map" id="Gint_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,212,391"/>
+<area shape="rect" title=" " alt="" coords="5,5,212,449"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -105,6 +105,8 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:ad4faffb495e4b2c490c703a456a142ce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#ad4faffb495e4b2c490c703a456a142ce">gint_kernel_vlocal</a> (const int na_grid, const int grid_index, const double delta_r, double *vldr3, const int LD_pool, double *<a class="el" href="classGint.html#ae73ed02bdf8720eb95dcf5df67cf06a8">pvpR_reduced</a>)</td></tr>
 <tr class="separator:ad4faffb495e4b2c490c703a456a142ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8fe999b55583c2059a1b925c350be71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#ab8fe999b55583c2059a1b925c350be71">gint_kernel_dvlocal</a> (const int na_grid, const int grid_index, const double delta_r, double *vldr3, const int LD_pool, double *<a class="el" href="classGint.html#a4e24a8ce3a261fac6e4f0d2e22f39a45">pvdpRx_reduced</a>, double *<a class="el" href="classGint.html#af7909dd2a5ad954c61da2f82879d97d0">pvdpRy_reduced</a>, double *<a class="el" href="classGint.html#a0593b7c4e38c5bf6dd71a93f7be3f3f4">pvdpRz_reduced</a>)</td></tr>
+<tr class="separator:ab8fe999b55583c2059a1b925c350be71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e8b36be42eee87c9ee85badc46c791a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#a4e8b36be42eee87c9ee85badc46c791a">gint_kernel_vlocal_meta</a> (const int na_grid, const int grid_index, const double delta_r, double *vldr3, double *vkdr3, const int LD_pool, double *<a class="el" href="classGint.html#ae73ed02bdf8720eb95dcf5df67cf06a8">pvpR_reduced</a>)</td></tr>
 <tr class="separator:a4e8b36be42eee87c9ee85badc46c791a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6f661ded23f7bf6a7313205b884f6a7d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#a6f661ded23f7bf6a7313205b884f6a7d">cal_meshball_vlocal_gamma</a> (const int na_grid, const int LD_pool, const int *const block_iw, const int *const block_size, const int *const block_index, const bool *const *const cal_flag, const double *const *const psir_ylm, const double *const *const psir_vlbr3, double *GridVlocal)</td></tr>
@@ -144,6 +146,12 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a7387fd99972ae38726e68b95b01647fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae73ed02bdf8720eb95dcf5df67cf06a8"><td class="memItemLeft" align="right" valign="top">double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#ae73ed02bdf8720eb95dcf5df67cf06a8">pvpR_reduced</a> = nullptr</td></tr>
 <tr class="separator:ae73ed02bdf8720eb95dcf5df67cf06a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e24a8ce3a261fac6e4f0d2e22f39a45"><td class="memItemLeft" align="right" valign="top">double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#a4e24a8ce3a261fac6e4f0d2e22f39a45">pvdpRx_reduced</a> = nullptr</td></tr>
+<tr class="separator:a4e24a8ce3a261fac6e4f0d2e22f39a45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af7909dd2a5ad954c61da2f82879d97d0"><td class="memItemLeft" align="right" valign="top">double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#af7909dd2a5ad954c61da2f82879d97d0">pvdpRy_reduced</a> = nullptr</td></tr>
+<tr class="separator:af7909dd2a5ad954c61da2f82879d97d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0593b7c4e38c5bf6dd71a93f7be3f3f4"><td class="memItemLeft" align="right" valign="top">double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#a0593b7c4e38c5bf6dd71a93f7be3f3f4">pvdpRz_reduced</a> = nullptr</td></tr>
+<tr class="separator:a0593b7c4e38c5bf6dd71a93f7be3f3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a402e95ec8710dbcab1805d195f684354"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#a402e95ec8710dbcab1805d195f684354">pvpR_grid</a> = nullptr</td></tr>
 <tr class="separator:a402e95ec8710dbcab1805d195f684354"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -168,16 +176,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGint_ac7bf53713917f2a2545c7f98e5b056a3_icgraph.png" border="0" usemap="#classGint_ac7bf53713917f2a2545c7f98e5b056a3_icgraph" alt=""/></div>
 <map name="classGint_ac7bf53713917f2a2545c7f98e5b056a3_icgraph" id="classGint_ac7bf53713917f2a2545c7f98e5b056a3_icgraph">
-<area shape="rect" title=" " alt="" coords="464,225,572,251"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="233,5,412,47"/>
-<area shape="rect" href="classIState__Charge.html#a0899014f06b2e4be9d7426f52d4b41b2" title=" " alt="" coords="244,71,401,98"/>
-<area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="231,123,414,164"/>
-<area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="240,188,405,229"/>
-<area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="232,254,413,281"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="233,305,412,347"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="229,371,416,412"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="229,436,416,477"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="5,5,181,47"/>
+<area shape="rect" title=" " alt="" coords="240,254,348,281"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="9,5,188,47"/>
+<area shape="rect" href="classIState__Charge.html#a0899014f06b2e4be9d7426f52d4b41b2" title=" " alt="" coords="20,71,177,98"/>
+<area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="7,123,190,164"/>
+<area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="16,188,181,229"/>
+<area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="8,254,189,281"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="11,305,186,331"/>
+<area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="11,355,186,382"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,407,192,448"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="5,472,192,513"/>
 </map>
 </div>
 
@@ -281,7 +289,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="5,123,188,164"/>
 <area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="14,188,179,229"/>
 <area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="6,254,187,281"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="7,305,186,347"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="9,305,184,331"/>
 </map>
 </div>
 
@@ -358,16 +366,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGint_a2b7116d6854dacc69ad8ffcdfd86c201_icgraph.png" border="0" usemap="#classGint_a2b7116d6854dacc69ad8ffcdfd86c201_icgraph" alt=""/></div>
 <map name="classGint_a2b7116d6854dacc69ad8ffcdfd86c201_icgraph" id="classGint_a2b7116d6854dacc69ad8ffcdfd86c201_icgraph">
-<area shape="rect" title=" " alt="" coords="601,195,772,222"/>
-<area shape="rect" href="classGint.html#a8020febbc49625d0586718981902eeb9" title=" " alt="" coords="396,195,553,222"/>
-<area shape="rect" href="classGint.html#ac7bf53713917f2a2545c7f98e5b056a3" title=" " alt="" coords="240,195,348,222"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="9,5,188,47"/>
-<area shape="rect" href="classIState__Charge.html#a0899014f06b2e4be9d7426f52d4b41b2" title=" " alt="" coords="20,71,177,98"/>
-<area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="7,123,190,164"/>
-<area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="16,188,181,229"/>
-<area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="8,254,189,281"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="9,305,188,347"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,371,192,412"/>
+<area shape="rect" title=" " alt="" coords="597,195,768,222"/>
+<area shape="rect" href="classGint.html#a8020febbc49625d0586718981902eeb9" title=" " alt="" coords="392,195,549,222"/>
+<area shape="rect" href="classGint.html#ac7bf53713917f2a2545c7f98e5b056a3" title=" " alt="" coords="236,195,344,222"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="7,5,186,47"/>
+<area shape="rect" href="classIState__Charge.html#a0899014f06b2e4be9d7426f52d4b41b2" title=" " alt="" coords="18,71,175,98"/>
+<area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="5,123,188,164"/>
+<area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="14,188,179,229"/>
+<area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="6,254,187,281"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="9,305,184,331"/>
+<area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="9,355,184,382"/>
 </map>
 </div>
 
@@ -477,7 +485,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="5,123,188,164"/>
 <area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="14,188,179,229"/>
 <area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="6,254,187,281"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="7,305,186,347"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="9,305,184,331"/>
 </map>
 </div>
 
@@ -578,16 +586,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGint_a8735667f6c09f54d238184e7905cc216_icgraph.png" border="0" usemap="#classGint_a8735667f6c09f54d238184e7905cc216_icgraph" alt=""/></div>
 <map name="classGint_a8735667f6c09f54d238184e7905cc216_icgraph" id="classGint_a8735667f6c09f54d238184e7905cc216_icgraph">
-<area shape="rect" title=" " alt="" coords="601,195,772,222"/>
-<area shape="rect" href="classGint.html#a593a1cde2b9c3f515c5366af906267d2" title=" " alt="" coords="396,195,553,222"/>
-<area shape="rect" href="classGint.html#ac7bf53713917f2a2545c7f98e5b056a3" title=" " alt="" coords="240,195,348,222"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="9,5,188,47"/>
-<area shape="rect" href="classIState__Charge.html#a0899014f06b2e4be9d7426f52d4b41b2" title=" " alt="" coords="20,71,177,98"/>
-<area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="7,123,190,164"/>
-<area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="16,188,181,229"/>
-<area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="8,254,189,281"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="9,305,188,347"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,371,192,412"/>
+<area shape="rect" title=" " alt="" coords="597,195,768,222"/>
+<area shape="rect" href="classGint.html#a593a1cde2b9c3f515c5366af906267d2" title=" " alt="" coords="392,195,549,222"/>
+<area shape="rect" href="classGint.html#ac7bf53713917f2a2545c7f98e5b056a3" title=" " alt="" coords="236,195,344,222"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="7,5,186,47"/>
+<area shape="rect" href="classIState__Charge.html#a0899014f06b2e4be9d7426f52d4b41b2" title=" " alt="" coords="18,71,175,98"/>
+<area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="5,123,188,164"/>
+<area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="14,188,179,229"/>
+<area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="6,254,187,281"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="9,305,184,331"/>
+<area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="9,355,184,382"/>
 </map>
 </div>
 
@@ -691,7 +699,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="5,123,188,164"/>
 <area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="14,188,179,229"/>
 <area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="6,254,187,281"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="7,305,186,347"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="9,305,184,331"/>
 </map>
 </div>
 
@@ -795,16 +803,122 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGint_a2f675360199067e33647808da60da051_icgraph.png" border="0" usemap="#classGint_a2f675360199067e33647808da60da051_icgraph" alt=""/></div>
 <map name="classGint_a2f675360199067e33647808da60da051_icgraph" id="classGint_a2f675360199067e33647808da60da051_icgraph">
-<area shape="rect" title=" " alt="" coords="656,156,799,197"/>
-<area shape="rect" href="classGint.html#ad4faffb495e4b2c490c703a456a142ce" title=" " alt="" coords="413,138,587,165"/>
-<area shape="rect" href="classGint.html#a4e8b36be42eee87c9ee85badc46c791a" title=" " alt="" coords="392,189,608,215"/>
-<area shape="rect" href="classGint.html#ac7bf53713917f2a2545c7f98e5b056a3" title=" " alt="" coords="236,163,344,190"/>
+<area shape="rect" title=" " alt="" coords="656,123,799,164"/>
+<area shape="rect" href="classGint.html#ab8fe999b55583c2059a1b925c350be71" title=" " alt="" coords="409,79,591,106"/>
+<area shape="rect" href="classGint.html#ad4faffb495e4b2c490c703a456a142ce" title=" " alt="" coords="413,130,587,157"/>
+<area shape="rect" href="classGint.html#a4e8b36be42eee87c9ee85badc46c791a" title=" " alt="" coords="392,181,608,207"/>
+<area shape="rect" href="classGint.html#ac7bf53713917f2a2545c7f98e5b056a3" title=" " alt="" coords="236,130,344,157"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="7,5,186,47"/>
 <area shape="rect" href="classIState__Charge.html#a0899014f06b2e4be9d7426f52d4b41b2" title=" " alt="" coords="18,71,175,98"/>
 <area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="5,123,188,164"/>
 <area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="14,188,179,229"/>
 <area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="6,254,187,281"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="7,305,186,347"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab8fe999b55583c2059a1b925c350be71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8fe999b55583c2059a1b925c350be71">&#9670;&nbsp;</a></span>gint_kernel_dvlocal()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Gint::gint_kernel_dvlocal </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>na_grid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>grid_index</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>delta_r</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>vldr3</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>LD_pool</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>pvdpRx_reduced</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>pvdpRy_reduced</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>pvdpRz_reduced</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGint_ab8fe999b55583c2059a1b925c350be71_cgraph.png" border="0" usemap="#classGint_ab8fe999b55583c2059a1b925c350be71_cgraph" alt=""/></div>
+<map name="classGint_ab8fe999b55583c2059a1b925c350be71_cgraph" id="classGint_ab8fe999b55583c2059a1b925c350be71_cgraph">
+<area shape="rect" title=" " alt="" coords="5,254,188,281"/>
+<area shape="rect" href="namespaceGint__Tools.html#a9f2a4d03f25e5d90626c6cbac914d318" title=" " alt="" coords="239,137,425,163"/>
+<area shape="rect" href="classGint.html#a2f675360199067e33647808da60da051" title=" " alt="" coords="261,217,403,259"/>
+<area shape="rect" href="namespaceGint__Tools.html#a3fe28976d650f9238c2225d00af23634" title=" " alt="" coords="236,283,428,310"/>
+<area shape="rect" href="namespaceGint__Tools.html#ab3ecfb5981a5b52f1343a32b179bdd01" title=" " alt="" coords="257,335,407,376"/>
+<area shape="rect" href="classModuleBase_1_1Ylm.html#a4e724a8e58c91ced8330c2c326b5c3d7" title="Get the ylm real object and the gradient (used in getting derivative of overlap)" alt="" coords="481,5,653,47"/>
+<area shape="rect" href="classNumerical__Orbital.html#a9a6371156b2ad03aef58e59572a03cae" title=" " alt="" coords="493,71,641,112"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="479,137,656,163"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="476,188,659,229"/>
+<area shape="rect" href="blas__connector_8h.html#acd91e478fc0b939313049e2e895a39e1" title=" " alt="" coords="528,254,607,281"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classGint_ab8fe999b55583c2059a1b925c350be71_icgraph.png" border="0" usemap="#classGint_ab8fe999b55583c2059a1b925c350be71_icgraph" alt=""/></div>
+<map name="classGint_ab8fe999b55583c2059a1b925c350be71_icgraph" id="classGint_ab8fe999b55583c2059a1b925c350be71_icgraph">
+<area shape="rect" title=" " alt="" coords="396,225,579,251"/>
+<area shape="rect" href="classGint.html#ac7bf53713917f2a2545c7f98e5b056a3" title=" " alt="" coords="240,225,348,251"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="9,5,188,47"/>
+<area shape="rect" href="classIState__Charge.html#a0899014f06b2e4be9d7426f52d4b41b2" title=" " alt="" coords="20,71,177,98"/>
+<area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="7,123,190,164"/>
+<area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="16,188,181,229"/>
+<area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="8,254,189,281"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="11,305,186,331"/>
+<area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="11,355,186,382"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,407,192,448"/>
 </map>
 </div>
 
@@ -920,9 +1034,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="7,123,190,164"/>
 <area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="16,188,181,229"/>
 <area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="8,254,189,281"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="9,305,188,347"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,371,192,412"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="5,436,192,477"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="11,305,186,331"/>
+<area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="11,355,186,382"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,407,192,448"/>
 </map>
 </div>
 
@@ -1027,9 +1141,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="7,123,190,164"/>
 <area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="16,188,181,229"/>
 <area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="8,254,189,281"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="9,305,188,347"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,371,192,412"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="5,436,192,477"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="11,305,186,331"/>
+<area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="11,355,186,382"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,407,192,448"/>
 </map>
 </div>
 
@@ -1097,16 +1211,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGint_a8020febbc49625d0586718981902eeb9_cgraph.png" border="0" usemap="#classGint_a8020febbc49625d0586718981902eeb9_cgraph" alt=""/></div>
 <map name="classGint_a8020febbc49625d0586718981902eeb9_cgraph" id="classGint_a8020febbc49625d0586718981902eeb9_cgraph">
-<area shape="rect" title=" " alt="" coords="5,199,163,225"/>
-<area shape="rect" href="classGint.html#a2b7116d6854dacc69ad8ffcdfd86c201" title=" " alt="" coords="221,39,392,65"/>
-<area shape="rect" href="namespaceGint__Tools.html#a68d2d5b656d38608610e873decdf1132" title=" " alt="" coords="217,123,396,149"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="463,174,645,215"/>
-<area shape="rect" href="namespaceGint__Tools.html#a3fe28976d650f9238c2225d00af23634" title=" " alt="" coords="211,224,403,251"/>
-<area shape="rect" href="namespaceGint__Tools.html#ac4bb93bf76fc1dd0fafd6a5f0700c8c5" title=" " alt="" coords="215,275,398,301"/>
-<area shape="rect" href="namespaceGint__Tools.html#a203d54828bb3ade16ab1e1b8b91bd1fa" title=" " alt="" coords="211,325,402,352"/>
+<area shape="rect" title=" " alt="" coords="5,183,163,209"/>
+<area shape="rect" href="classGint.html#a2b7116d6854dacc69ad8ffcdfd86c201" title=" " alt="" coords="221,31,392,57"/>
+<area shape="rect" href="namespaceGint__Tools.html#a68d2d5b656d38608610e873decdf1132" title=" " alt="" coords="217,107,396,133"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="463,158,645,199"/>
+<area shape="rect" href="namespaceGint__Tools.html#a3fe28976d650f9238c2225d00af23634" title=" " alt="" coords="211,208,403,235"/>
+<area shape="rect" href="namespaceGint__Tools.html#ac4bb93bf76fc1dd0fafd6a5f0700c8c5" title=" " alt="" coords="215,259,398,285"/>
+<area shape="rect" href="namespaceGint__Tools.html#a203d54828bb3ade16ab1e1b8b91bd1fa" title=" " alt="" coords="211,309,402,336"/>
 <area shape="rect" href="blas__connector_8h.html#a14802ce6d8424abb471e028b29f6cd3d" title=" " alt="" coords="525,5,583,32"/>
-<area shape="rect" href="classNumerical__Orbital.html#a9a6371156b2ad03aef58e59572a03cae" title=" " alt="" coords="480,57,628,98"/>
-<area shape="rect" href="classModuleBase_1_1Ylm.html#a3226b51ada4223b1c81f0de127046a03" title="Get the ylm real object (used in grid integration)" alt="" coords="451,123,657,149"/>
+<area shape="rect" href="classModuleBase_1_1Ylm.html#a3226b51ada4223b1c81f0de127046a03" title="Get the ylm real object (used in grid integration)" alt="" coords="451,56,657,83"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="465,107,643,133"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1121,9 +1235,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="7,123,190,164"/>
 <area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="16,188,181,229"/>
 <area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="8,254,189,281"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="9,305,188,347"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,371,192,412"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="5,436,192,477"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="11,305,186,331"/>
+<area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="11,355,186,382"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,407,192,448"/>
 </map>
 </div>
 
@@ -1191,16 +1305,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGint_a593a1cde2b9c3f515c5366af906267d2_cgraph.png" border="0" usemap="#classGint_a593a1cde2b9c3f515c5366af906267d2_cgraph" alt=""/></div>
 <map name="classGint_a593a1cde2b9c3f515c5366af906267d2_cgraph" id="classGint_a593a1cde2b9c3f515c5366af906267d2_cgraph">
-<area shape="rect" title=" " alt="" coords="5,219,163,246"/>
-<area shape="rect" href="namespaceGint__Tools.html#a9f2a4d03f25e5d90626c6cbac914d318" title=" " alt="" coords="213,86,400,113"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="451,136,633,177"/>
-<area shape="rect" href="classGint.html#a8735667f6c09f54d238184e7905cc216" title=" " alt="" coords="221,194,392,221"/>
-<area shape="rect" href="namespaceGint__Tools.html#a3fe28976d650f9238c2225d00af23634" title=" " alt="" coords="211,245,403,271"/>
-<area shape="rect" href="namespaceGint__Tools.html#ac4bb93bf76fc1dd0fafd6a5f0700c8c5" title=" " alt="" coords="215,295,398,322"/>
-<area shape="rect" href="namespaceGint__Tools.html#a203d54828bb3ade16ab1e1b8b91bd1fa" title=" " alt="" coords="211,346,402,373"/>
+<area shape="rect" title=" " alt="" coords="5,267,163,294"/>
+<area shape="rect" href="namespaceGint__Tools.html#a9f2a4d03f25e5d90626c6cbac914d318" title=" " alt="" coords="213,137,400,163"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="451,188,633,229"/>
+<area shape="rect" href="classGint.html#a8735667f6c09f54d238184e7905cc216" title=" " alt="" coords="221,242,392,269"/>
+<area shape="rect" href="namespaceGint__Tools.html#a3fe28976d650f9238c2225d00af23634" title=" " alt="" coords="211,293,403,319"/>
+<area shape="rect" href="namespaceGint__Tools.html#ac4bb93bf76fc1dd0fafd6a5f0700c8c5" title=" " alt="" coords="215,343,398,370"/>
+<area shape="rect" href="namespaceGint__Tools.html#a203d54828bb3ade16ab1e1b8b91bd1fa" title=" " alt="" coords="211,394,402,421"/>
 <area shape="rect" href="classModuleBase_1_1Ylm.html#a4e724a8e58c91ced8330c2c326b5c3d7" title="Get the ylm real object and the gradient (used in getting derivative of overlap)" alt="" coords="456,5,628,47"/>
 <area shape="rect" href="classNumerical__Orbital.html#a9a6371156b2ad03aef58e59572a03cae" title=" " alt="" coords="468,71,616,112"/>
-<area shape="rect" href="blas__connector_8h.html#a14802ce6d8424abb471e028b29f6cd3d" title=" " alt="" coords="513,202,571,229"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="453,137,631,163"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1215,9 +1329,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="7,123,190,164"/>
 <area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="16,188,181,229"/>
 <area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="8,254,189,281"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="9,305,188,347"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,371,192,412"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="5,436,192,477"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="11,305,186,331"/>
+<area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="11,355,186,382"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,407,192,448"/>
 </map>
 </div>
 
@@ -1293,8 +1407,8 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceGint__Tools.html#ab3ecfb5981a5b52f1343a32b179bdd01" title=" " alt="" coords="249,239,399,280"/>
 <area shape="rect" href="blas__connector_8h.html#acd91e478fc0b939313049e2e895a39e1" title=" " alt="" coords="532,21,611,47"/>
 <area shape="rect" href="gint__vl_8cpp.html#aea17174a13eda4f386898b1dc61ac36f" title=" " alt="" coords="526,78,617,105"/>
-<area shape="rect" href="classNumerical__Orbital.html#a9a6371156b2ad03aef58e59572a03cae" title=" " alt="" coords="497,129,645,171"/>
-<area shape="rect" href="classModuleBase_1_1Ylm.html#a3226b51ada4223b1c81f0de127046a03" title="Get the ylm real object (used in grid integration)" alt="" coords="468,195,675,222"/>
+<area shape="rect" href="classModuleBase_1_1Ylm.html#a3226b51ada4223b1c81f0de127046a03" title="Get the ylm real object (used in grid integration)" alt="" coords="468,133,675,159"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="483,183,660,210"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1309,9 +1423,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="7,123,190,164"/>
 <area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="16,188,181,229"/>
 <area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="8,254,189,281"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="9,305,188,347"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,371,192,412"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="5,436,192,477"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="11,305,186,331"/>
+<area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="11,355,186,382"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,407,192,448"/>
 </map>
 </div>
 
@@ -1385,16 +1499,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGint_a4e8b36be42eee87c9ee85badc46c791a_cgraph.png" border="0" usemap="#classGint_a4e8b36be42eee87c9ee85badc46c791a_cgraph" alt=""/></div>
 <map name="classGint_a4e8b36be42eee87c9ee85badc46c791a_cgraph" id="classGint_a4e8b36be42eee87c9ee85badc46c791a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,202,221,229"/>
-<area shape="rect" href="namespaceGint__Tools.html#a9f2a4d03f25e5d90626c6cbac914d318" title=" " alt="" coords="272,78,459,105"/>
-<area shape="rect" href="classGint.html#a6f661ded23f7bf6a7313205b884f6a7d" title=" " alt="" coords="294,129,437,171"/>
-<area shape="rect" href="classGint.html#a2f675360199067e33647808da60da051" title=" " alt="" coords="294,195,437,236"/>
-<area shape="rect" href="namespaceGint__Tools.html#a3fe28976d650f9238c2225d00af23634" title=" " alt="" coords="269,261,461,287"/>
-<area shape="rect" href="namespaceGint__Tools.html#ab3ecfb5981a5b52f1343a32b179bdd01" title=" " alt="" coords="291,312,440,353"/>
+<area shape="rect" title=" " alt="" coords="5,231,221,258"/>
+<area shape="rect" href="namespaceGint__Tools.html#a9f2a4d03f25e5d90626c6cbac914d318" title=" " alt="" coords="272,107,459,134"/>
+<area shape="rect" href="classGint.html#a6f661ded23f7bf6a7313205b884f6a7d" title=" " alt="" coords="294,159,437,200"/>
+<area shape="rect" href="classGint.html#a2f675360199067e33647808da60da051" title=" " alt="" coords="294,224,437,265"/>
+<area shape="rect" href="namespaceGint__Tools.html#a3fe28976d650f9238c2225d00af23634" title=" " alt="" coords="269,290,461,317"/>
+<area shape="rect" href="namespaceGint__Tools.html#ab3ecfb5981a5b52f1343a32b179bdd01" title=" " alt="" coords="291,341,440,383"/>
 <area shape="rect" href="classModuleBase_1_1Ylm.html#a4e724a8e58c91ced8330c2c326b5c3d7" title="Get the ylm real object and the gradient (used in getting derivative of overlap)" alt="" coords="515,5,687,47"/>
 <area shape="rect" href="classNumerical__Orbital.html#a9a6371156b2ad03aef58e59572a03cae" title=" " alt="" coords="527,71,675,112"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="509,136,692,177"/>
-<area shape="rect" href="blas__connector_8h.html#acd91e478fc0b939313049e2e895a39e1" title=" " alt="" coords="561,202,640,229"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="512,137,689,163"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="509,188,692,229"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1409,9 +1523,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="7,123,190,164"/>
 <area shape="rect" href="classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="16,188,181,229"/>
 <area shape="rect" href="classGint__Gamma.html#a96c5adac1ba310a6a6f521cdfd140e0b" title=" " alt="" coords="8,254,189,281"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aa1365c6c20cf458a2bb78ea7f436b566" title=" " alt="" coords="9,305,188,347"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,371,192,412"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="5,436,192,477"/>
+<area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="11,305,186,331"/>
+<area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="11,355,186,382"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,407,192,448"/>
 </map>
 </div>
 
@@ -1584,6 +1698,72 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">int Gint::ncxyz</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4e24a8ce3a261fac6e4f0d2e22f39a45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e24a8ce3a261fac6e4f0d2e22f39a45">&#9670;&nbsp;</a></span>pvdpRx_reduced</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double** Gint::pvdpRx_reduced = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af7909dd2a5ad954c61da2f82879d97d0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af7909dd2a5ad954c61da2f82879d97d0">&#9670;&nbsp;</a></span>pvdpRy_reduced</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double** Gint::pvdpRy_reduced = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0593b7c4e38c5bf6dd71a93f7be3f3f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0593b7c4e38c5bf6dd71a93f7be3f3f4">&#9670;&nbsp;</a></span>pvdpRz_reduced</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double** Gint::pvdpRz_reduced = nullptr</td>
         </tr>
       </table>
   </td>

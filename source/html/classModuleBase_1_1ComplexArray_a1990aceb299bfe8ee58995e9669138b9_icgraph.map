@@ -1,4 +1,4 @@
 <map id="ModuleBase::ComplexArray::randomize" name="ModuleBase::ComplexArray::randomize">
-<area shape="rect" id="node1" title=" " alt="" coords="108,5,311,47"/>
+<area shape="rect" id="node1" title="set all elements to a random number whose real/image is between [&#45;0.5,0.5)." alt="" coords="108,5,311,47"/>
 <area shape="rect" id="node2" href="$complexarray__test_8cpp.html#af6ecc1b054c211f47d0a16bb1622dd2b" title=" " alt="" coords="5,13,60,39"/>
 </map>

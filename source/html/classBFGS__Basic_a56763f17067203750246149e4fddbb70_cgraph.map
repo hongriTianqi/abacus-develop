@@ -1,6 +1,6 @@
 <map id="BFGS_Basic::check_wolfe_conditions" name="BFGS_Basic::check_wolfe_conditions">
 <area shape="rect" id="node1" title=" " alt="" coords="5,56,193,97"/>
-<area shape="rect" id="node2" href="$namespaceModuleBase.html#a2681bf6cb4975b24a4263f23e1c4c679" title=" " alt="" coords="285,13,416,39"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#a2681bf6cb4975b24a4263f23e1c4c679" title="Take &quot;dot&#45;product&quot; of two ComplexArray: sum of cd1(conjugate)[i] * cd2[i]." alt="" coords="285,13,416,39"/>
 <area shape="rect" id="node4" href="$namespaceIons__Move__Basic.html#aaf71ac6969e58677438de4379cca01aa" title=" " alt="" coords="251,63,450,90"/>
 <area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="241,114,460,141"/>
 <area shape="rect" id="node3" href="$classModuleBase_1_1ComplexArray.html#aebb42694ab2809f0a99e8a36fa7efb77" title=" " alt="" coords="508,5,711,47"/>

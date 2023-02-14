@@ -1,5 +1,5 @@
 <map id="ModuleBase::scale_accumulate" name="ModuleBase::scale_accumulate">
-<area shape="rect" id="node1" title=" " alt="" coords="280,31,507,57"/>
+<area shape="rect" id="node1" title="Does cd2 += r * cd1." alt="" coords="280,31,507,57"/>
 <area shape="rect" id="node2" href="$namespaceModuleBase.html#a97647cdda3dbfe6f081ab67bce081f1e" title=" " alt="" coords="5,5,232,32"/>
 <area shape="rect" id="node3" href="$complexarray__test_8cpp.html#a4828a17eccd586f93c7e4a7583a5f695" title=" " alt="" coords="84,56,153,83"/>
 </map>

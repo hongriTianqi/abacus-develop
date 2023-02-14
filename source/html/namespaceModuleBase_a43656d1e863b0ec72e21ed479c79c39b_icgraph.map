@@ -1,7 +1,7 @@
 <map id="ModuleBase::CHECK_DOUBLE" name="ModuleBase::CHECK_DOUBLE">
 <area shape="rect" id="node1" title="Check the next input from ifs is double. This is a global function." alt="" coords="852,56,1068,83"/>
 <area shape="rect" id="node2" href="$namespaceModuleIO.html#ad171b096499feb7992f58bd98c8a66de" title=" " alt="" coords="655,5,804,32"/>
-<area shape="rect" id="node6" href="$classCharge.html#ac3948d3acb5db8ffc8b8524cfbcd5286" title=" " alt="" coords="663,56,796,83"/>
+<area shape="rect" id="node6" href="$namespaceModuleIO.html#aed941ec6c7a9c792424c4c3051427bde" title=" " alt="" coords="655,56,804,83"/>
 <area shape="rect" id="node10" href="$tool__check__test_8cpp.html#a418b61cb34e119fa99ce3f8c24125505" title=" " alt="" coords="695,107,764,133"/>
 <area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="255,17,433,58"/>
 <area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,17,194,58"/>

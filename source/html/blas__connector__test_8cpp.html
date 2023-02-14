@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.1: module_base/test/blas_connector_test.cpp File Reference</title>
+<title>3.1.2: module_base/test/blas_connector_test.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.1
-   &#160;<span id="projectnumber">2023-02-04</span>
+   <div id="projectname">3.1.2
+   &#160;<span id="projectnumber">2023-02-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -105,6 +105,8 @@ Functions</h2></td></tr>
 <tr class="separator:ab5041014279af83ca1974dcbe6ae4e85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5da016db705725d864e1ef9ce0ae49d8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blas__connector__test_8cpp.html#a5da016db705725d864e1ef9ce0ae49d8">TEST</a> (blas_connector, <a class="el" href="blas__connector_8h.html#a7368c9b5d7612fe8f5e2d1548d2cb558">zscal_</a>)</td></tr>
 <tr class="separator:a5da016db705725d864e1ef9ce0ae49d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40b982037591bdac51c1f7a699d2b489"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blas__connector__test_8cpp.html#a40b982037591bdac51c1f7a699d2b489">TEST</a> (blas_connector, Scal)</td></tr>
+<tr class="separator:a40b982037591bdac51c1f7a699d2b489"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab8784ead3f911491bfc3c48b8927b3b9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blas__connector__test_8cpp.html#ab8784ead3f911491bfc3c48b8927b3b9">TEST</a> (blas_connector, <a class="el" href="blas__connector_8h.html#a518c29880a080640cd44e94c39073a68">daxpy_</a>)</td></tr>
 <tr class="separator:ab8784ead3f911491bfc3c48b8927b3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d77cab5363df040a2bd394f3a2f994a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blas__connector__test_8cpp.html#a1d77cab5363df040a2bd394f3a2f994a">TEST</a> (blas_connector, <a class="el" href="blas__connector_8h.html#a99f70fad229a53d21f3012c9d0927a8d">zaxpy_</a>)</td></tr>
@@ -113,6 +115,8 @@ Functions</h2></td></tr>
 <tr class="separator:acfddd7f20f051772d31873ac7acb6098"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d18cadd19365ac49bfc162bed70b472"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blas__connector__test_8cpp.html#a2d18cadd19365ac49bfc162bed70b472">TEST</a> (blas_connector, <a class="el" href="blas_8h.html#aa5066e9950db1427c508bc145da3dce0">zcopy_</a>)</td></tr>
 <tr class="separator:a2d18cadd19365ac49bfc162bed70b472"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a562020969a557c96adc38d2e31696d64"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blas__connector__test_8cpp.html#a562020969a557c96adc38d2e31696d64">TEST</a> (blas_connector, copy)</td></tr>
+<tr class="separator:a562020969a557c96adc38d2e31696d64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16e7d1f9e5ad7e6e20b27a8fc478cbdd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blas__connector__test_8cpp.html#a16e7d1f9e5ad7e6e20b27a8fc478cbdd">TEST</a> (blas_connector, <a class="el" href="blas__connector_8h.html#a4e5d8bfe0536ce4e9f62110e596523cc">dgemv_</a>)</td></tr>
 <tr class="separator:a16e7d1f9e5ad7e6e20b27a8fc478cbdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a05ea1ccb2a15405b61b52dca31c5cc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="blas__connector__test_8cpp.html#a1a05ea1ccb2a15405b61b52dca31c5cc">TEST</a> (blas_connector, <a class="el" href="blas__connector_8h.html#af6e68bda698eaed2db4e4c1efcd9cfab">zgemv_</a>)</td></tr>
@@ -153,8 +157,46 @@ Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a562020969a557c96adc38d2e31696d64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a562020969a557c96adc38d2e31696d64">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">blas_connector&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">copy&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="blas__connector__test_8cpp_a562020969a557c96adc38d2e31696d64_cgraph.png" border="0" usemap="#blas__connector__test_8cpp_a562020969a557c96adc38d2e31696d64_cgraph" alt=""/></div>
+<map name="blas__connector__test_8cpp_a562020969a557c96adc38d2e31696d64_cgraph" id="blas__connector__test_8cpp_a562020969a557c96adc38d2e31696d64_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="108,5,263,32"/>
+<area shape="rect" href="blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc" title=" " alt="" coords="311,5,379,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="ab5041014279af83ca1974dcbe6ae4e85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab5041014279af83ca1974dcbe6ae4e85">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5041014279af83ca1974dcbe6ae4e85">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -182,7 +224,7 @@ Functions</h2></td></tr>
 </div>
 </div>
 <a id="ab8784ead3f911491bfc3c48b8927b3b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8784ead3f911491bfc3c48b8927b3b9">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8784ead3f911491bfc3c48b8927b3b9">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -219,7 +261,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="acfddd7f20f051772d31873ac7acb6098"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acfddd7f20f051772d31873ac7acb6098">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#acfddd7f20f051772d31873ac7acb6098">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -256,7 +298,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a724b89a0f454ad09cbbf77354bbe9c46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a724b89a0f454ad09cbbf77354bbe9c46">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a724b89a0f454ad09cbbf77354bbe9c46">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -293,7 +335,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a16e7d1f9e5ad7e6e20b27a8fc478cbdd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a16e7d1f9e5ad7e6e20b27a8fc478cbdd">&#9670;&nbsp;</a></span>TEST() <span class="overload">[5/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a16e7d1f9e5ad7e6e20b27a8fc478cbdd">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -330,7 +372,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a6887cf56b5b82855ad3cd07fa6aa6bd0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6887cf56b5b82855ad3cd07fa6aa6bd0">&#9670;&nbsp;</a></span>TEST() <span class="overload">[6/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a6887cf56b5b82855ad3cd07fa6aa6bd0">&#9670;&nbsp;</a></span>TEST() <span class="overload">[7/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -366,8 +408,46 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a40b982037591bdac51c1f7a699d2b489"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40b982037591bdac51c1f7a699d2b489">&#9670;&nbsp;</a></span>TEST() <span class="overload">[8/14]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">blas_connector&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Scal&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="blas__connector__test_8cpp_a40b982037591bdac51c1f7a699d2b489_cgraph.png" border="0" usemap="#blas__connector__test_8cpp_a40b982037591bdac51c1f7a699d2b489_cgraph" alt=""/></div>
+<map name="blas__connector__test_8cpp_a40b982037591bdac51c1f7a699d2b489_cgraph" id="blas__connector__test_8cpp_a40b982037591bdac51c1f7a699d2b489_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="classBlasConnector.html#a65fa97ab2ee173c4f1634ffca6afd80f" title=" " alt="" coords="108,5,259,32"/>
+<area shape="rect" href="blas__connector_8h.html#a4f000413cab4edc6ff55e4b04f56bc91" title=" " alt="" coords="307,5,369,32"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="aee73a33828959df4f6ced333242f4605"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aee73a33828959df4f6ced333242f4605">&#9670;&nbsp;</a></span>TEST() <span class="overload">[7/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aee73a33828959df4f6ced333242f4605">&#9670;&nbsp;</a></span>TEST() <span class="overload">[9/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -404,7 +484,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a1d77cab5363df040a2bd394f3a2f994a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1d77cab5363df040a2bd394f3a2f994a">&#9670;&nbsp;</a></span>TEST() <span class="overload">[8/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d77cab5363df040a2bd394f3a2f994a">&#9670;&nbsp;</a></span>TEST() <span class="overload">[10/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -432,7 +512,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a2d18cadd19365ac49bfc162bed70b472"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d18cadd19365ac49bfc162bed70b472">&#9670;&nbsp;</a></span>TEST() <span class="overload">[9/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d18cadd19365ac49bfc162bed70b472">&#9670;&nbsp;</a></span>TEST() <span class="overload">[11/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -460,7 +540,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a84063345cb72e05636dd9620e4360704"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84063345cb72e05636dd9620e4360704">&#9670;&nbsp;</a></span>TEST() <span class="overload">[10/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a84063345cb72e05636dd9620e4360704">&#9670;&nbsp;</a></span>TEST() <span class="overload">[12/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -488,7 +568,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a1a05ea1ccb2a15405b61b52dca31c5cc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1a05ea1ccb2a15405b61b52dca31c5cc">&#9670;&nbsp;</a></span>TEST() <span class="overload">[11/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a05ea1ccb2a15405b61b52dca31c5cc">&#9670;&nbsp;</a></span>TEST() <span class="overload">[13/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -516,7 +596,7 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a5da016db705725d864e1ef9ce0ae49d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5da016db705725d864e1ef9ce0ae49d8">&#9670;&nbsp;</a></span>TEST() <span class="overload">[12/12]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a5da016db705725d864e1ef9ce0ae49d8">&#9670;&nbsp;</a></span>TEST() <span class="overload">[14/14]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
