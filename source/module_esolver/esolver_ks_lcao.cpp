@@ -60,6 +60,8 @@ void ESolver_KS_LCAO::Init(Input& inp, UnitCell& ucell)
 
     if (GlobalV::CALCULATION == "get_S")
     {
+        ucell.read_pseudo(GlobalV::ofs_running);
+
         if (ModuleSymmetry::Symmetry::symm_flag == 1)
         {
             GlobalC::symm.analy_sys(ucell, GlobalV::ofs_running);
@@ -259,9 +261,9 @@ void ESolver_KS_LCAO::postprocess()
 #ifdef __LCAO
     if (GlobalV::out_mul == 1)
     {
-        Mulliken_Charge MC(psid, psi);
-        MC.stdout_mulliken(this->UHM, this->pelec->wg);
-    } // qifeng add 2019/9/10
+        Mulliken_Charge MC;
+        MC.out_mulliken(this->UHM, this->LOC);
+    } // qifeng add 2019/9/10, jiyy modify 2023/2/27
 #endif
 
     int nspin0 = 1;
@@ -437,6 +439,8 @@ void ESolver_KS_LCAO::eachiterinit(const int istep, const int iter)
             // so be careful here, make sure
             // rho1 and rho2 are the same rho.
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+            
+            if(GlobalV::NSPIN==4) GlobalC::ucell.cal_ux();
             this->pelec->pot->update_from_charge(this->pelec->charge, &GlobalC::ucell);
             GlobalC::en.delta_escf(this->pelec);
         }
@@ -618,6 +622,7 @@ void ESolver_KS_LCAO::updatepot(const int istep, const int iter)
     }
     if (!this->conv_elec)
     {
+        if(GlobalV::NSPIN==4) GlobalC::ucell.cal_ux();
         this->pelec->pot->update_from_charge(this->pelec->charge, &GlobalC::ucell);
         GlobalC::en.delta_escf(this->pelec);
     }
@@ -714,6 +719,11 @@ void ESolver_KS_LCAO::afterscf(const int istep)
 
         std::stringstream ssc;
         std::stringstream ss1;
+        ss1 << GlobalV::global_out_dir << "tmp_SPIN" << is + 1 << "_CHG";
+        std::remove(ss1.str().c_str());    // remove tmp_SPIN_CHG when scf is finished    liuyu 2023-03-01
+        ss1 << ".cube";
+        std::remove(ss1.str().c_str());    // remove tmp_SPIN_CHG.cube when scf is finished    liuyu 2023-03-01
+
         ssc << GlobalV::global_out_dir << "SPIN" << is + 1 << "_CHG";
         ModuleIO::write_rho(pelec->charge->rho_save[is], is, 0, ssc.str()); // mohan add 2007-10-17
 
@@ -987,7 +997,7 @@ void ESolver_KS_LCAO::afterscf(const int istep)
 #endif
     if (hsolver::HSolverLCAO::out_mat_hsR)
     {
-        if( !(GlobalV::CALCULATION=="md" && (istep%hsolver::HSolverLCAO::out_hsR_interval!=0)) )
+        if( GlobalV::CALCULATION != "md" || (istep % hsolver::HSolverLCAO::out_hsR_interval == 0))
         {
             ModuleIO::output_HS_R(istep, this->pelec->pot->get_effective_v(), this->UHM); // LiuXh add 2019-07-15
         } // LiuXh add 2019-07-15
@@ -995,7 +1005,7 @@ void ESolver_KS_LCAO::afterscf(const int istep)
 
     if (hsolver::HSolverLCAO::out_mat_t)
     {
-        if( !(GlobalV::CALCULATION=="md" && (istep%hsolver::HSolverLCAO::out_hsR_interval!=0)) )
+        if( GlobalV::CALCULATION != "md" || (istep % hsolver::HSolverLCAO::out_hsR_interval == 0))
         {
             ModuleIO::output_T_R(istep, this->UHM); // LiuXh add 2019-07-15
         } // LiuXh add 2019-07-15
@@ -1003,7 +1013,7 @@ void ESolver_KS_LCAO::afterscf(const int istep)
 
     if (hsolver::HSolverLCAO::out_mat_dh)
     {
-        if( !(GlobalV::CALCULATION=="md" && (istep%hsolver::HSolverLCAO::out_hsR_interval!=0)) )
+        if( GlobalV::CALCULATION != "md" || (istep % hsolver::HSolverLCAO::out_hsR_interval == 0))
         {
             ModuleIO::output_dH_R(istep, this->pelec->pot->get_effective_v(), this->UHM); // LiuXh add 2019-07-15
         } // LiuXh add 2019-07-15

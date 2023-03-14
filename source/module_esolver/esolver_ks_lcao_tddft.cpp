@@ -283,6 +283,7 @@ void ESolver_KS_LCAO_TDDFT::updatepot(const int istep, const int iter)
 
     if (!this->conv_elec)
     {
+        if(GlobalV::NSPIN==4) GlobalC::ucell.cal_ux();
         this->pelec->pot->update_from_charge(this->pelec->charge, &GlobalC::ucell);
         GlobalC::en.delta_escf(this->pelec);
     }
@@ -304,11 +305,12 @@ void ESolver_KS_LCAO_TDDFT::updatepot(const int istep, const int iter)
             this->psi_laststep
                 = new psi::Psi<std::complex<double>>(GlobalC::kv.nks, GlobalV::NBANDS, GlobalV::NLOCAL, nullptr);
 #endif
-        for (int ik = 0; ik < GlobalC::kv.nks; ++ik)
+
+        std::complex<double> *p_psi = &psi[0](0,0,0);
+        std::complex<double> *p_psi_laststep = &psi_laststep[0](0,0,0);
+        for (int index = 0; index < psi[0].size(); ++index)
         {
-            psi->fix_k(ik);
-            for (int index = 0; index < psi[0].size(); ++index)
-                psi_laststep[0].get_pointer()[index] = psi[0].get_pointer()[index];
+            p_psi_laststep[index] = p_psi[index];
         }
         if (istep > 1 && ELEC_evolve::td_edm == 0)
             this->cal_edm_tddft();
@@ -416,7 +418,7 @@ void ESolver_KS_LCAO_TDDFT::afterscf(const int istep)
 
     if (hsolver::HSolverLCAO::out_mat_hsR)
     {
-        if (!(GlobalV::CALCULATION == "md" && (istep % hsolver::HSolverLCAO::out_hsR_interval != 0)))
+        if( GlobalV::CALCULATION != "md" || (istep % hsolver::HSolverLCAO::out_hsR_interval == 0))
         {
             ModuleIO::output_HS_R(istep, this->pelec->pot->get_effective_v(), this->UHM); // LiuXh add 2019-07-15
         }
@@ -424,7 +426,7 @@ void ESolver_KS_LCAO_TDDFT::afterscf(const int istep)
 
     if (hsolver::HSolverLCAO::out_mat_t)
     {
-        if (!(GlobalV::CALCULATION == "md" && (istep % hsolver::HSolverLCAO::out_hsR_interval != 0)))
+        if( GlobalV::CALCULATION != "md" || (istep % hsolver::HSolverLCAO::out_hsR_interval == 0))
         {
             ModuleIO::output_T_R(istep, this->UHM); // LiuXh add 2019-07-15
         }
@@ -432,7 +434,7 @@ void ESolver_KS_LCAO_TDDFT::afterscf(const int istep)
 
     if (hsolver::HSolverLCAO::out_mat_dh)
     {
-        if (!(GlobalV::CALCULATION == "md" && (istep % hsolver::HSolverLCAO::out_hsR_interval != 0)))
+        if( GlobalV::CALCULATION != "md" || (istep % hsolver::HSolverLCAO::out_hsR_interval == 0))
         {
             ModuleIO::output_dH_R(istep, this->pelec->pot->get_effective_v(), this->UHM); // LiuXh add 2019-07-15
         }
@@ -524,14 +526,14 @@ void ESolver_KS_LCAO_TDDFT::cal_edm_tddft()
                  &info);
 
         const char N_char = 'N', T_char = 'T';
-        const double one_float[2] = {1.0, 0.0}, zero_float[2] = {0.0, 0.0};
-        const complex<double> half_float[2] = {0.5, 0.0};
+        const complex<double> one_float = {1.0, 0.0}, zero_float = {0.0, 0.0};
+        const complex<double> half_float = {0.5, 0.0};
         pzgemm_(&T_char,
                 &T_char,
                 &GlobalV::NLOCAL,
                 &GlobalV::NLOCAL,
                 &GlobalV::NLOCAL,
-                &one_float[0],
+                &one_float,
                 this->LOC.dm_k[ik].c,
                 &one_int,
                 &one_int,
@@ -540,7 +542,7 @@ void ESolver_KS_LCAO_TDDFT::cal_edm_tddft()
                 &one_int,
                 &one_int,
                 this->LOC.ParaV->desc,
-                &zero_float[0],
+                &zero_float,
                 tmp1,
                 &one_int,
                 &one_int,
@@ -551,7 +553,7 @@ void ESolver_KS_LCAO_TDDFT::cal_edm_tddft()
                 &GlobalV::NLOCAL,
                 &GlobalV::NLOCAL,
                 &GlobalV::NLOCAL,
-                &one_float[0],
+                &one_float,
                 tmp1,
                 &one_int,
                 &one_int,
@@ -560,7 +562,7 @@ void ESolver_KS_LCAO_TDDFT::cal_edm_tddft()
                 &one_int,
                 &one_int,
                 this->LOC.ParaV->desc,
-                &zero_float[0],
+                &zero_float,
                 tmp2,
                 &one_int,
                 &one_int,
@@ -571,7 +573,7 @@ void ESolver_KS_LCAO_TDDFT::cal_edm_tddft()
                 &GlobalV::NLOCAL,
                 &GlobalV::NLOCAL,
                 &GlobalV::NLOCAL,
-                &one_float[0],
+                &one_float,
                 Sinv,
                 &one_int,
                 &one_int,
@@ -580,7 +582,7 @@ void ESolver_KS_LCAO_TDDFT::cal_edm_tddft()
                 &one_int,
                 &one_int,
                 this->LOC.ParaV->desc,
-                &zero_float[0],
+                &zero_float,
                 tmp3,
                 &one_int,
                 &one_int,
@@ -591,7 +593,7 @@ void ESolver_KS_LCAO_TDDFT::cal_edm_tddft()
                 &GlobalV::NLOCAL,
                 &GlobalV::NLOCAL,
                 &GlobalV::NLOCAL,
-                &one_float[0],
+                &one_float,
                 tmp3,
                 &one_int,
                 &one_int,
@@ -600,7 +602,7 @@ void ESolver_KS_LCAO_TDDFT::cal_edm_tddft()
                 &one_int,
                 &one_int,
                 this->LOC.ParaV->desc,
-                &zero_float[0],
+                &zero_float,
                 tmp4,
                 &one_int,
                 &one_int,
@@ -609,12 +611,12 @@ void ESolver_KS_LCAO_TDDFT::cal_edm_tddft()
         pzgeadd_(&N_char,
                  &GlobalV::NLOCAL,
                  &GlobalV::NLOCAL,
-                 &half_float[0],
+                 &half_float,
                  tmp2,
                  &one_int,
                  &one_int,
                  this->LOC.ParaV->desc,
-                 &half_float[0],
+                 &half_float,
                  tmp4,
                  &one_int,
                  &one_int,
@@ -622,12 +624,12 @@ void ESolver_KS_LCAO_TDDFT::cal_edm_tddft()
 
         pztranu_(&GlobalV::NLOCAL,
                  &GlobalV::NLOCAL,
-                 &one_float[0],
+                 &one_float,
                  tmp4,
                  &one_int,
                  &one_int,
                  this->LOC.ParaV->desc,
-                 &zero_float[0],
+                 &zero_float,
                  tmp5,
                  &one_int,
                  &one_int,

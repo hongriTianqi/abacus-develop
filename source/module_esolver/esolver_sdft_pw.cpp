@@ -139,6 +139,21 @@ void ESolver_SDFT_PW::hamilt2density(int istep, int iter, double ethr)
     hsolver::DiagoIterAssist<double>::PW_DIAG_THR = ethr; 
     hsolver::DiagoIterAssist<double>::PW_DIAG_NMAX = GlobalV::PW_DIAG_NMAX;
     this->phsol->solve(this->p_hamilt, this->psi[0], this->pelec,this->stowf, istep, iter, GlobalV::KS_SOLVER);   
+    if(GlobalV::MY_STOGROUP==0)
+    {
+        Symmetry_rho srho;
+        for(int is=0; is < GlobalV::NSPIN; is++)
+        {
+            srho.begin(is, *(this->pelec->charge), GlobalC::rhopw, GlobalC::Pgrid, GlobalC::symm);
+        }
+        GlobalC::en.deband = GlobalC::en.delta_e(this->pelec);
+    }
+    else
+    {
+#ifdef __MPI
+			if(ModuleSymmetry::Symmetry::symm_flag == 1)	MPI_Barrier(MPI_COMM_WORLD);
+#endif
+    }
     // transform energy for print
     GlobalC::en.eband = this->pelec->eband;
     GlobalC::en.demet = this->pelec->demet;
@@ -177,9 +192,9 @@ void ESolver_SDFT_PW::postprocess()
         hsolver::DiagoIterAssist<double>::PW_DIAG_THR = std::max(std::min(1e-5, 0.1 * GlobalV::SCF_THR / std::max(1.0, GlobalV::nelec)),1e-12);
         hsolver::DiagoIterAssist<double>::need_subspace = false;
         this->phsol->solve(this->p_hamilt, this->psi[0], this->pelec,this->stowf,istep, iter, GlobalV::KS_SOLVER, true);
-        ((hsolver::HSolverPW_SDFT*)phsol)->stoiter.cleanchiallorder();//release lots of memories
         GlobalC::en.ef = this->pelec->ef; //Temporary: Please use this->pelec->ef. GlobalC::en.ef is not recommended.
     }
+    ((hsolver::HSolverPW_SDFT*)phsol)->stoiter.cleanchiallorder();//release lots of memories
     int nche_test = 0;
     if(INPUT.cal_cond)  nche_test = std::max(nche_test, INPUT.cond_nche);
     if(INPUT.out_dos)  nche_test = std::max(nche_test, INPUT.dos_nche);

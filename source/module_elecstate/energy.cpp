@@ -1,6 +1,6 @@
 #include "module_base/global_function.h"
 #include "module_base/global_variable.h"
-#include "src_parallel/parallel_reduce.h"
+#include "module_base/parallel_reduce.h"
 #include "module_hamilt_pw/hamilt_pwdft/global.h"
 #include "module_hamilt_lcao/hamilt_lcaodft/global_fp.h"
 #include "energy.h"
@@ -511,6 +511,11 @@ void energy::cal_converged(elecstate::ElecState* pelec)
 
 void energy::cal_bandgap(const elecstate::ElecState* pelec)
 {
+	if(pelec->ekb.nr == 0 || pelec->ekb.nc == 0)
+	{//which means no homo and no lumo
+		this->bandgap = 0.0;
+		return;
+	}
 	int nbands = GlobalV::NBANDS;
 	int nks = GlobalC::kv.nks;
 	double homo = pelec->ekb(0,0);
@@ -534,6 +539,12 @@ void energy::cal_bandgap(const elecstate::ElecState* pelec)
 
 void energy::cal_bandgap_updw(const elecstate::ElecState* pelec)
 {
+	if(pelec->ekb.nr == 0 || pelec->ekb.nc == 0)
+	{//which means no homo and no lumo
+		this->bandgap_up = 0.0;
+		this->bandgap_dw = 0.0;
+		return;
+	}
 	int nbands = GlobalV::NBANDS;
 	int nks = GlobalC::kv.nks;
 	double homo_up = pelec->ekb(0,0);

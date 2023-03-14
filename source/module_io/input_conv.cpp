@@ -53,7 +53,7 @@ template <typename T> void Input_Conv::parse_expression(const std::string &fn, s
     regcomp(&reg, pattern.c_str(), REG_EXTENDED);
     regmatch_t pmatch[1];
     const size_t nmatch = 1;
-    for (int i = 0; i < str.size(); ++i)
+    for (size_t i = 0; i < str.size(); ++i)
     {
         if (str[i] == "")
         {
@@ -61,7 +61,7 @@ template <typename T> void Input_Conv::parse_expression(const std::string &fn, s
         }
         int status = regexec(&reg, str[i].c_str(), nmatch, pmatch, 0);
         std::string sub_str = "";
-        for (int j = pmatch[0].rm_so; j != pmatch[0].rm_eo; ++j)
+        for (size_t j = pmatch[0].rm_so; j != pmatch[0].rm_eo; ++j)
         {
             sub_str += str[i][j];
         }
@@ -78,8 +78,8 @@ template <typename T> void Input_Conv::parse_expression(const std::string &fn, s
             // std::vector<double> ocp_temp(num, occ);
             // const std::vector<double>::iterator dest = vec.begin() + count;
             // copy(ocp_temp.begin(), ocp_temp.end(), dest);
-            //count += num;
-            for (size_t i = 0; i != num; i++)
+            // count += num;
+            for (size_t k = 0; k != num; k++)
                 vec.emplace_back(occ);
         }
         else
@@ -347,8 +347,12 @@ void Input_Conv::Convert(void)
     ELEC_evolve::td_val_elec_02 = INPUT.td_val_elec_02;
     ELEC_evolve::td_val_elec_03 = INPUT.td_val_elec_03;
     ELEC_evolve::td_vext = INPUT.td_vext;
-    ELEC_evolve::td_vext_dire = INPUT.td_vext_dire;
+    if (ELEC_evolve::td_vext)
+    {
+        parse_expression(INPUT.td_vext_dire, ELEC_evolve::td_vext_dire_case);
+    }
     ELEC_evolve::out_dipole = INPUT.out_dipole;
+    ELEC_evolve::out_efield = INPUT.out_efield ;
     ELEC_evolve::td_print_eij = INPUT.td_print_eij;
     ELEC_evolve::td_edm = INPUT.td_edm;
 #endif
@@ -489,6 +493,15 @@ void Input_Conv::Convert(void)
                                 INPUT.mixing_ndim,
                                 INPUT.mixing_gg0,
                                 INPUT.mixing_tau); // mohan modify 2014-09-27, add mixing_gg0
+    //using bandgap to auto set mixing_beta
+    if(std::abs(INPUT.mixing_beta + 10.0) < 1e-6)
+    {
+        GlobalC::CHR_MIX.need_auto_set();
+    }
+    else if(INPUT.mixing_beta > 1.0 || INPUT.mixing_beta<0.0)
+    {
+        ModuleBase::WARNING("INPUT", "You'd better set mixing_beta to [0.0, 1.0]!");
+    }
 
     //----------------------------------------------------------
     // iteration

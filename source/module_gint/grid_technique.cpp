@@ -1,6 +1,6 @@
 #include "grid_technique.h"
 #include "module_hamilt_pw/hamilt_pwdft/global.h"
-#include "src_parallel/parallel_reduce.h"
+#include "module_base/parallel_reduce.h"
 
 #include "module_hamilt_lcao/hamilt_lcaodft/global_fp.h" // mohan add 2021-01-30
 #include "module_base/memory.h"
@@ -50,9 +50,11 @@ Grid_Technique::~Grid_Technique()
 		{
 			delete[] find_R2[iat];
 			delete[] find_R2st[iat];
+			delete[] find_R2_sorted_index[iat];
 		}
 		delete[] find_R2;
 		delete[] find_R2st;
+		delete[] find_R2_sorted_index;
 	}
 }
 
@@ -398,12 +400,19 @@ void Grid_Technique::cal_grid_integration_index(void)
 {
 	// save the start 
 	delete[] this->bcell_start;
-	this->bcell_start = new int[nbxx];
-	ModuleBase::Memory::record("GT::bcell_start", sizeof(int) * nbxx);
-	this->bcell_start[0] = 0;
-	for(int i=1; i<nbxx; i++)
+	if(nbxx > 0)
 	{
-		this->bcell_start[i] = this->bcell_start[i-1] + this->how_many_atoms[i-1];
+		this->bcell_start = new int[nbxx];
+		ModuleBase::Memory::record("GT::bcell_start", sizeof(int) * nbxx);
+		this->bcell_start[0] = 0;
+		for(int i=1; i<nbxx; i++)
+		{
+			this->bcell_start[i] = this->bcell_start[i-1] + this->how_many_atoms[i-1];
+		}
+	}
+	else
+	{
+		this->bcell_start = nullptr;
 	}
 	// calculate which grid has the largest number of atoms,
 	// and how many atoms.

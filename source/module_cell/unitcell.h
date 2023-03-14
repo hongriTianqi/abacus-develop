@@ -233,6 +233,8 @@ public:
 	int read_atom_species(std::ifstream &ifa, std::ofstream &ofs_running); // read in the atom information for each type of atom
 	bool read_atom_positions(std::ifstream &ifpos, std::ofstream &ofs_running, std::ofstream &ofs_warning); // read in atomic positions
 #endif
+
+    void read_pseudo(ofstream &ofs);
 	int find_type(const std::string &label);
 	void print_tau(void)const;
 	void print_stru_file(const std::string &fn, const int &type=1, const int &level=0)const; // mohan add 2011-03-22
@@ -263,11 +265,6 @@ public:
 			const int &lmaxmax_in,
 			const bool &init_vel_in,
 			const std::string &fixed_axes_in);
-
-#ifdef __MPI
-	void bcast_unitcell_pseudo(void);
-	void bcast_unitcell_pseudo2(void);
-#endif
 
 	void check_structure(double factor);
 };

@@ -1,4 +1,3 @@
-remove_definitions(-D__MPI)
 remove_definitions(-D__EXX)
 
 list(APPEND depend_files
@@ -41,8 +40,36 @@ AddTest(
   TARGET orbital_equal_test
   LIBS ${math_libs} device
   SOURCES 1_snap_equal_test.cpp ORB_unittest.cpp
-  ../../src_parallel/parallel_reduce.cpp ../../src_parallel/parallel_kpoints.cpp ../../src_parallel/parallel_global.cpp ../../src_parallel/parallel_common.cpp
+  ../../module_base/parallel_reduce.cpp ../../module_base/parallel_global.cpp ../../module_base/parallel_common.cpp
   ${depend_files}
 )
 install(DIRECTORY GaAs DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/../../../tests)
 install(DIRECTORY GaAs DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+
+
+AddTest(
+    TARGET ORB_nonlocal_lm_test
+    SOURCES ORB_nonlocal_lm_test.cpp
+        ../ORB_nonlocal_lm.cpp
+    LIBS ${math_libs} device base
+)
+
+AddTest(
+    TARGET ORB_atomic_lm_test
+    SOURCES ORB_atomic_lm_test.cpp
+        ../ORB_atomic_lm.cpp
+    LIBS ${math_libs} device base
+)
+
+AddTest(
+    TARGET ORB_read_test
+    SOURCES ORB_read_test.cpp
+        ../ORB_read.cpp
+        ../ORB_atomic.cpp
+        ../ORB_atomic_lm.cpp
+    LIBS ${math_libs} device base
+)
+
+install(DIRECTORY lcao_H2O DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+install(DIRECTORY lcao_H2O DESTINATION ${CMAKE_CURRENT_BINARY_DIR}/../../../tests)
+

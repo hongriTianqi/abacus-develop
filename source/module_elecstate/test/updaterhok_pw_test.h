@@ -12,8 +12,8 @@
 #include "module_cell/pseudo_nc.h"
 #include "module_cell/module_symmetry/symmetry_basic.h"
 #include "module_cell/module_symmetry/symmetry.h"
-#include "src_parallel/parallel_grid.h"
-#include "src_parallel/parallel_kpoints.h"
+#include "module_hamilt_pw/hamilt_pwdft/parallel_grid.h"
+#include "module_cell/parallel_kpoints.h"
 #include "module_hamilt_pw/hamilt_pwdft/structure_factor.h"
 #include "module_hamilt_pw/hamilt_pwdft/VNL_in_pw.h"
 #include "module_io/input.h"
@@ -23,15 +23,8 @@
 #include "module_io/restart.h"
 #include "module_io/rho_io.h"
 
-int ModuleSymmetry::Symmetry::symm_flag;
-
 LCAO_Orbitals::LCAO_Orbitals(){}
 LCAO_Orbitals::~LCAO_Orbitals(){}
-
-ModuleSymmetry::Symmetry::Symmetry(){}
-ModuleSymmetry::Symmetry::~Symmetry(){}
-ModuleSymmetry::Symmetry_Basic::Symmetry_Basic(){}
-ModuleSymmetry::Symmetry_Basic::~Symmetry_Basic(){}
 
 pseudo_nc::pseudo_nc(){}
 pseudo_nc::~pseudo_nc(){}
@@ -182,8 +175,6 @@ bool ModuleIO::read_rho(const int &is, const std::string &fn, double* rho, int &
 }
 
 //bool Occupy::use_gaussian_broadening=false;
-
-bool ModuleSymmetry::Symmetry_Basic::equal(double const&m, double const&n) const{return false;}
 
 void UnitCell::setup_cell(
 #ifdef __LCAO
