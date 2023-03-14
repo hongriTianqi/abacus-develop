@@ -1,10 +1,10 @@
 <map id="elecstate::PotLocal" name="elecstate::PotLocal">
-<area shape="rect" id="node1" title=" " alt="" coords="377,1716,523,1808"/>
-<area shape="rect" id="node2" href="$classelecstate_1_1PotBase.html" title=" " alt="" coords="177,1451,320,1587"/>
-<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="155,673,342,1323"/>
+<area shape="rect" id="node1" title=" " alt="" coords="377,1687,523,1779"/>
+<area shape="rect" id="node2" href="$classelecstate_1_1PotBase.html" title=" " alt="" coords="177,1422,320,1558"/>
+<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="155,673,342,1293"/>
 <area shape="rect" id="node4" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="5,152,164,420"/>
 <area shape="rect" id="node5" href="$classModulePW_1_1FFT.html" title=" " alt="" coords="188,5,309,567"/>
 <area shape="rect" id="node6" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="334,93,494,479"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1ComplexMatrix.html" title=" " alt="" coords="345,1385,555,1653"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="579,1393,732,1646"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1ComplexMatrix.html" title=" " alt="" coords="345,1356,555,1624"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="579,1363,732,1617"/>
 </map>

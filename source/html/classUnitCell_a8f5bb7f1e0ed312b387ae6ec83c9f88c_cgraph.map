@@ -1,8 +1,7 @@
 <map id="UnitCell::setup_cell_classic" name="UnitCell::setup_cell_classic">
-<area shape="rect" id="node1" title=" " alt="" coords="5,115,153,157"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,153,115"/>
 <area shape="rect" id="node2" href="$namespaceParallel__Common.html#a739125ffaec185825b0015a6a562edd6" title=" " alt="" coords="203,5,418,32"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase_1_1Global__File.html#aec599394f7f8f0c533a69e0a4f508e9a" title=" " alt="" coords="230,57,391,98"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="201,123,420,149"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="238,173,383,200"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="204,224,417,251"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="201,56,420,83"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="238,107,383,133"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="204,157,417,184"/>
 </map>

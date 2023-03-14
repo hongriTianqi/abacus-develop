@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: elecstate::H_TDDFT_pw Class Reference</title>
+<title>3.1.4: elecstate::H_TDDFT_pw Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -94,16 +94,16 @@ Collaboration diagram for elecstate::H_TDDFT_pw:</div>
 <div class="dyncontent">
 <div class="center"><img src="classelecstate_1_1H__TDDFT__pw__coll__graph.png" border="0" usemap="#elecstate_1_1H__TDDFT__pw_coll__map" alt="Collaboration graph"/></div>
 <map name="elecstate_1_1H__TDDFT__pw_coll__map" id="elecstate_1_1H__TDDFT__pw_coll__map">
-<area shape="rect" title=" " alt="" coords="485,1863,691,2307"/>
-<area shape="rect" href="classelecstate_1_1PotBase.html" title=" " alt="" coords="667,1547,810,1683"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="853,703,1040,1352"/>
+<area shape="rect" title=" " alt="" coords="485,1833,691,2277"/>
+<area shape="rect" href="classelecstate_1_1PotBase.html" title=" " alt="" coords="667,1517,810,1653"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="853,703,1040,1323"/>
 <area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="331,152,490,420"/>
-<area shape="rect" href="classUnitCell.html" title=" " alt="" coords="437,1429,576,1800"/>
-<area shape="rect" href="classMagnetism.html" title=" " alt="" coords="508,915,713,1139"/>
-<area shape="rect" href="classAtom.html" title=" " alt="" coords="5,871,176,1183"/>
+<area shape="rect" href="classUnitCell.html" title=" " alt="" coords="437,1400,576,1771"/>
+<area shape="rect" href="classMagnetism.html" title=" " alt="" coords="508,901,713,1125"/>
+<area shape="rect" href="classAtom.html" title=" " alt="" coords="5,857,176,1169"/>
 <area shape="rect" href="classModulePW_1_1FFT.html" title=" " alt="" coords="886,5,1007,567"/>
 <area shape="rect" href="classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="691,93,851,479"/>
-<area shape="rect" href="classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="321,835,484,1220"/>
+<area shape="rect" href="classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="321,820,484,1205"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -125,18 +125,20 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
+<tr class="memitem:a3afb2c0dd87456040e729921fc1981a2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a3afb2c0dd87456040e729921fc1981a2">set_parameters</a> (std::string params, double c)</td></tr>
+<tr class="separator:a3afb2c0dd87456040e729921fc1981a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a51b64dbd9c908142a64d6d2378968bff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a51b64dbd9c908142a64d6d2378968bff">read_parameters</a> (<a class="el" href="classInput.html">Input</a> *in)</td></tr>
 <tr class="separator:a51b64dbd9c908142a64d6d2378968bff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57a46ddb375f176fd03afc6a63c3e37f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a57a46ddb375f176fd03afc6a63c3e37f">cal_v_space</a> (double *vext_space)</td></tr>
-<tr class="separator:a57a46ddb375f176fd03afc6a63c3e37f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb45b66c6c2bc104dbbb5ed60981016b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#aeb45b66c6c2bc104dbbb5ed60981016b">cal_v_space_length</a> (double *vext_space)</td></tr>
-<tr class="separator:aeb45b66c6c2bc104dbbb5ed60981016b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3ddb5eb342be941c3d2f4755d1486eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ae3ddb5eb342be941c3d2f4755d1486eb">cal_v_space</a> (std::vector&lt; double &gt; &amp;vext_space, int direc)</td></tr>
+<tr class="separator:ae3ddb5eb342be941c3d2f4755d1486eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79259b12b4a73ce15cf73fd0a1e873d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a79259b12b4a73ce15cf73fd0a1e873d6">cal_v_space_length</a> (std::vector&lt; double &gt; &amp;vext_space, int direc)</td></tr>
+<tr class="separator:a79259b12b4a73ce15cf73fd0a1e873d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78c4761dc021fe88fc5af229564c2e9a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a78c4761dc021fe88fc5af229564c2e9a">cal_v_space_length_potential</a> (double i)</td></tr>
 <tr class="separator:a78c4761dc021fe88fc5af229564c2e9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87dea9c1c737c6f34666f3f7da505180"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a87dea9c1c737c6f34666f3f7da505180">cal_v_space_velocity</a> (double *vext_space)</td></tr>
-<tr class="separator:a87dea9c1c737c6f34666f3f7da505180"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac647c659d85b2e72129cd7f9ce1da88d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ac647c659d85b2e72129cd7f9ce1da88d">cal_v_time</a> ()</td></tr>
-<tr class="separator:ac647c659d85b2e72129cd7f9ce1da88d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fa35c7970ed07459d8991ed89b71cda"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a6fa35c7970ed07459d8991ed89b71cda">cal_v_space_velocity</a> (std::vector&lt; double &gt; &amp;vext_space, int direc)</td></tr>
+<tr class="separator:a6fa35c7970ed07459d8991ed89b71cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2cde12054cbf4aa1d50e545f775ec92"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ae2cde12054cbf4aa1d50e545f775ec92">cal_v_time</a> (int t_type)</td></tr>
+<tr class="separator:ae2cde12054cbf4aa1d50e545f775ec92"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac95d8407d65fd2e6f0749e883ab7bfe7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ac95d8407d65fd2e6f0749e883ab7bfe7">cal_v_time_Gauss</a> ()</td></tr>
 <tr class="separator:ac95d8407d65fd2e6f0749e883ab7bfe7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ce1eeb0851b974f4f264c9e24631124"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a8ce1eeb0851b974f4f264c9e24631124">cal_v_time_trapezoid</a> ()</td></tr>
@@ -145,15 +147,13 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:aa0e56372e54444e29e0f57e48878cbc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afcadbc763256484de0ae95c6261641a2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#afcadbc763256484de0ae95c6261641a2">cal_v_time_heaviside</a> ()</td></tr>
 <tr class="separator:afcadbc763256484de0ae95c6261641a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab75cc1e20388e061d1cb41c8b568780a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ab75cc1e20388e061d1cb41c8b568780a">cal_v_time_HHG</a> ()</td></tr>
-<tr class="separator:ab75cc1e20388e061d1cb41c8b568780a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a44c65e1c96d5e37afc425e520355d58e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a44c65e1c96d5e37afc425e520355d58e">stype</a></td></tr>
 <tr class="separator:a44c65e1c96d5e37afc425e520355d58e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2fc09a6be959706dfc2fbd4273ab9df2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a2fc09a6be959706dfc2fbd4273ab9df2">ttype</a></td></tr>
-<tr class="separator:a2fc09a6be959706dfc2fbd4273ab9df2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1077687a79c4b8342b3562497463d10"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ad1077687a79c4b8342b3562497463d10">ttype</a></td></tr>
+<tr class="separator:ad1077687a79c4b8342b3562497463d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7122dba15a5ee251c6601aef81f64de"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ae7122dba15a5ee251c6601aef81f64de">tstart</a></td></tr>
 <tr class="separator:ae7122dba15a5ee251c6601aef81f64de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3126f594cc746ca0afdd41a6d9fe7890"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a3126f594cc746ca0afdd41a6d9fe7890">tend</a></td></tr>
@@ -164,58 +164,50 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ad52946d17aeffc9cff4dfb117bfdf7b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:add40b86062311b806f6d1248c5fef617"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#add40b86062311b806f6d1248c5fef617">lcut2</a></td></tr>
 <tr class="separator:add40b86062311b806f6d1248c5fef617"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad3fa9227eae928433fe39a336035ce3f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ad3fa9227eae928433fe39a336035ce3f">gauss_omega</a></td></tr>
-<tr class="separator:ad3fa9227eae928433fe39a336035ce3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d81ca30362d0a2de3fcef126073a045"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a9d81ca30362d0a2de3fcef126073a045">gauss_phase</a></td></tr>
-<tr class="separator:a9d81ca30362d0a2de3fcef126073a045"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a45cc4e8d4ceaed80ade46268fea3f1b1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a45cc4e8d4ceaed80ade46268fea3f1b1">gauss_sigma2</a></td></tr>
-<tr class="separator:a45cc4e8d4ceaed80ade46268fea3f1b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a87ce5a5aa871213986bb423cddfe1d09"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a87ce5a5aa871213986bb423cddfe1d09">gauss_t0</a></td></tr>
-<tr class="separator:a87ce5a5aa871213986bb423cddfe1d09"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a77a6ebc154f2af207f604256dceed6ac"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a77a6ebc154f2af207f604256dceed6ac">gauss_amp</a></td></tr>
-<tr class="separator:a77a6ebc154f2af207f604256dceed6ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaa63180f7fe86020fafa4a4bbc778f2c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#aaa63180f7fe86020fafa4a4bbc778f2c">trape_omega</a></td></tr>
-<tr class="separator:aaa63180f7fe86020fafa4a4bbc778f2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9d1303cd2385bb34f7122c58123c9d0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ad9d1303cd2385bb34f7122c58123c9d0">trape_phase</a></td></tr>
-<tr class="separator:ad9d1303cd2385bb34f7122c58123c9d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21d244d62548d34f1b28cfc1bf3c72d0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a21d244d62548d34f1b28cfc1bf3c72d0">trape_t1</a></td></tr>
-<tr class="separator:a21d244d62548d34f1b28cfc1bf3c72d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41de02623598c79d8a5d73fb2e0878eb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a41de02623598c79d8a5d73fb2e0878eb">trape_t2</a></td></tr>
-<tr class="separator:a41de02623598c79d8a5d73fb2e0878eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedbb95955ab5bc0f56c0fae9327ad8ff"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#aedbb95955ab5bc0f56c0fae9327ad8ff">trape_t3</a></td></tr>
-<tr class="separator:aedbb95955ab5bc0f56c0fae9327ad8ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2cc224e5dfbbbef819a4656ca0530142"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a2cc224e5dfbbbef819a4656ca0530142">trape_amp</a></td></tr>
-<tr class="separator:a2cc224e5dfbbbef819a4656ca0530142"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aaee7e9927fe62ac3dfe485e0fd9e7e2b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#aaee7e9927fe62ac3dfe485e0fd9e7e2b">trigo_omega1</a></td></tr>
-<tr class="separator:aaee7e9927fe62ac3dfe485e0fd9e7e2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a231b89effbc380b44d1a308f1e47df9e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a231b89effbc380b44d1a308f1e47df9e">trigo_omega2</a></td></tr>
-<tr class="separator:a231b89effbc380b44d1a308f1e47df9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeae5e17c86c49fef098229afd231673f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#aeae5e17c86c49fef098229afd231673f">trigo_phase1</a></td></tr>
-<tr class="separator:aeae5e17c86c49fef098229afd231673f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab53623d4bd9a6425350f0ef635643bbc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ab53623d4bd9a6425350f0ef635643bbc">trigo_phase2</a></td></tr>
-<tr class="separator:ab53623d4bd9a6425350f0ef635643bbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaf1bfb40677fe89881157768c64f6e7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#adaf1bfb40677fe89881157768c64f6e7">trigo_amp</a></td></tr>
-<tr class="separator:adaf1bfb40677fe89881157768c64f6e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28d64b802e898067dcf405635d461ea0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a28d64b802e898067dcf405635d461ea0">heavi_t0</a></td></tr>
-<tr class="separator:a28d64b802e898067dcf405635d461ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a78d8975c7c194d8260f6e9bb2d150ea0"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a78d8975c7c194d8260f6e9bb2d150ea0">heavi_amp</a></td></tr>
-<tr class="separator:a78d8975c7c194d8260f6e9bb2d150ea0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a243a7b0d62892356d28600e06323e65b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a243a7b0d62892356d28600e06323e65b">hhg_amp1</a></td></tr>
-<tr class="separator:a243a7b0d62892356d28600e06323e65b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a125048a7343b71857d2f3d8b40d49ae2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a125048a7343b71857d2f3d8b40d49ae2">hhg_amp2</a></td></tr>
-<tr class="separator:a125048a7343b71857d2f3d8b40d49ae2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb62c9b1b9b5c8e894a0949eabe417f9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#abb62c9b1b9b5c8e894a0949eabe417f9">hhg_omega1</a></td></tr>
-<tr class="separator:abb62c9b1b9b5c8e894a0949eabe417f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7a22099c6abc45c607fc7da6c321d1f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ab7a22099c6abc45c607fc7da6c321d1f">hhg_omega2</a></td></tr>
-<tr class="separator:ab7a22099c6abc45c607fc7da6c321d1f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a944c7c59bd88dd0b4e362c0cd9132ba4"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a944c7c59bd88dd0b4e362c0cd9132ba4">hhg_phase1</a></td></tr>
-<tr class="separator:a944c7c59bd88dd0b4e362c0cd9132ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a366c2ffc45dfd49a4a23bc747b13fc43"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a366c2ffc45dfd49a4a23bc747b13fc43">hhg_phase2</a></td></tr>
-<tr class="separator:a366c2ffc45dfd49a4a23bc747b13fc43"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8433f41b3a349e611ee977363f09b9da"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a8433f41b3a349e611ee977363f09b9da">hhg_t0</a></td></tr>
-<tr class="separator:a8433f41b3a349e611ee977363f09b9da"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad82de6227fb6b1c4adacff21d81c222"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#aad82de6227fb6b1c4adacff21d81c222">hhg_sigma2</a></td></tr>
-<tr class="separator:aad82de6227fb6b1c4adacff21d81c222"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a649d3150c94491311adabc0d0913867c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a649d3150c94491311adabc0d0913867c">gauss_count</a></td></tr>
+<tr class="separator:a649d3150c94491311adabc0d0913867c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fd5fed68be9ad01cd84f325dd19b2c5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a7fd5fed68be9ad01cd84f325dd19b2c5">gauss_omega</a></td></tr>
+<tr class="separator:a7fd5fed68be9ad01cd84f325dd19b2c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5903fe891a9757501e61c0ca79bcd2cb"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a5903fe891a9757501e61c0ca79bcd2cb">gauss_phase</a></td></tr>
+<tr class="separator:a5903fe891a9757501e61c0ca79bcd2cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a770f773303da0509a490c86f6838e51f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a770f773303da0509a490c86f6838e51f">gauss_sigma</a></td></tr>
+<tr class="separator:a770f773303da0509a490c86f6838e51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a173bb5e17510a771b0940d44f361c7b6"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a173bb5e17510a771b0940d44f361c7b6">gauss_t0</a></td></tr>
+<tr class="separator:a173bb5e17510a771b0940d44f361c7b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6b0ee2df5d7f67736b083d94bacbb37"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ae6b0ee2df5d7f67736b083d94bacbb37">gauss_amp</a></td></tr>
+<tr class="separator:ae6b0ee2df5d7f67736b083d94bacbb37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac92e9f9e7bb04d53b0d2ed24ed466b23"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ac92e9f9e7bb04d53b0d2ed24ed466b23">trape_count</a></td></tr>
+<tr class="separator:ac92e9f9e7bb04d53b0d2ed24ed466b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a237fa46916108a4fcd589821907fc4a3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a237fa46916108a4fcd589821907fc4a3">trape_omega</a></td></tr>
+<tr class="separator:a237fa46916108a4fcd589821907fc4a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93e0ec670cc61d5937868926666bd7e2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a93e0ec670cc61d5937868926666bd7e2">trape_phase</a></td></tr>
+<tr class="separator:a93e0ec670cc61d5937868926666bd7e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1831991b3908ae7e8a964aca5de3b43f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a1831991b3908ae7e8a964aca5de3b43f">trape_t1</a></td></tr>
+<tr class="separator:a1831991b3908ae7e8a964aca5de3b43f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada79f2b8d4bf88312185c5682943e87d"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ada79f2b8d4bf88312185c5682943e87d">trape_t2</a></td></tr>
+<tr class="separator:ada79f2b8d4bf88312185c5682943e87d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88f1c914891899679475f8cb22117412"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a88f1c914891899679475f8cb22117412">trape_t3</a></td></tr>
+<tr class="separator:a88f1c914891899679475f8cb22117412"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa85fcc5e814e289d611a3f0d13cc871a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#aa85fcc5e814e289d611a3f0d13cc871a">trape_amp</a></td></tr>
+<tr class="separator:aa85fcc5e814e289d611a3f0d13cc871a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d27ccb6cc64f4936c57ab89fc6e943"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a67d27ccb6cc64f4936c57ab89fc6e943">trigo_count</a></td></tr>
+<tr class="separator:a67d27ccb6cc64f4936c57ab89fc6e943"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7a2213e2538c9bdbc17a9059785d3e4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ad7a2213e2538c9bdbc17a9059785d3e4">trigo_omega1</a></td></tr>
+<tr class="separator:ad7a2213e2538c9bdbc17a9059785d3e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af357208b3cb2eceb858e504edc8f8fa0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#af357208b3cb2eceb858e504edc8f8fa0">trigo_omega2</a></td></tr>
+<tr class="separator:af357208b3cb2eceb858e504edc8f8fa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad6a0d5a3c65be8489da35d4a86c630ce"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#ad6a0d5a3c65be8489da35d4a86c630ce">trigo_phase1</a></td></tr>
+<tr class="separator:ad6a0d5a3c65be8489da35d4a86c630ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a970603b49544269938216e41306c97c2"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a970603b49544269938216e41306c97c2">trigo_phase2</a></td></tr>
+<tr class="separator:a970603b49544269938216e41306c97c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48b8d1d720523e5813af801b01e47a37"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a48b8d1d720523e5813af801b01e47a37">trigo_amp</a></td></tr>
+<tr class="separator:a48b8d1d720523e5813af801b01e47a37"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a48a6dd5c9acbbe8d7687cef8310de863"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a48a6dd5c9acbbe8d7687cef8310de863">heavi_count</a></td></tr>
+<tr class="separator:a48a6dd5c9acbbe8d7687cef8310de863"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaab3e9547231015f9b55714bd10fbca0"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#aaab3e9547231015f9b55714bd10fbca0">heavi_t0</a></td></tr>
+<tr class="separator:aaab3e9547231015f9b55714bd10fbca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1be5cb785e322da779fe25ea4ed9c279"><td class="memItemLeft" align="right" valign="top">std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a1be5cb785e322da779fe25ea4ed9c279">heavi_amp</a></td></tr>
+<tr class="separator:a1be5cb785e322da779fe25ea4ed9c279"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a642e0e0786c6584de0bc23e2b4adb79a"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classUnitCell.html">UnitCell</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a642e0e0786c6584de0bc23e2b4adb79a">ucell_</a> = nullptr</td></tr>
 <tr class="separator:a642e0e0786c6584de0bc23e2b4adb79a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -329,13 +321,13 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classelecstate_1_1H__TDDFT__pw_a8ebe60248b2f7c2e80d9cc94b6d2aa18_cgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_a8ebe60248b2f7c2e80d9cc94b6d2aa18_cgraph" alt=""/></div>
 <map name="classelecstate_1_1H__TDDFT__pw_a8ebe60248b2f7c2e80d9cc94b6d2aa18_cgraph" id="classelecstate_1_1H__TDDFT__pw_a8ebe60248b2f7c2e80d9cc94b6d2aa18_cgraph">
 <area shape="rect" title=" " alt="" coords="5,239,156,281"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a57a46ddb375f176fd03afc6a63c3e37f" title=" " alt="" coords="212,130,363,171"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ae3ddb5eb342be941c3d2f4755d1486eb" title=" " alt="" coords="212,130,363,171"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="663,13,840,40"/>
-<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="679,196,824,223"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ac647c659d85b2e72129cd7f9ce1da88d" title=" " alt="" coords="212,298,363,339"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="679,196,824,223"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ae2cde12054cbf4aa1d50e545f775ec92" title=" " alt="" coords="212,298,363,339"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a51b64dbd9c908142a64d6d2378968bff" title=" " alt="" coords="204,363,371,405"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#aeb45b66c6c2bc104dbbb5ed60981016b" title=" " alt="" coords="425,65,608,106"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a87dea9c1c737c6f34666f3f7da505180" title=" " alt="" coords="420,130,613,171"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a79259b12b4a73ce15cf73fd0a1e873d6" title=" " alt="" coords="425,65,608,106"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a6fa35c7970ed07459d8991ed89b71cda" title=" " alt="" coords="420,130,613,171"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ac95d8407d65fd2e6f0749e883ab7bfe7" title=" " alt="" coords="430,298,603,339"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#afcadbc763256484de0ae95c6261641a2" title=" " alt="" coords="419,363,615,405"/>
 </map>
@@ -343,8 +335,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a57a46ddb375f176fd03afc6a63c3e37f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a57a46ddb375f176fd03afc6a63c3e37f">&#9670;&nbsp;</a></span>cal_v_space()</h2>
+<a id="ae3ddb5eb342be941c3d2f4755d1486eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae3ddb5eb342be941c3d2f4755d1486eb">&#9670;&nbsp;</a></span>cal_v_space()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -355,9 +347,19 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void elecstate::H_TDDFT_pw::cal_v_space </td>
           <td>(</td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>vext_space</em></td><td>)</td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vext_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>direc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -369,13 +371,13 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_a57a46ddb375f176fd03afc6a63c3e37f_cgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_a57a46ddb375f176fd03afc6a63c3e37f_cgraph" alt=""/></div>
-<map name="classelecstate_1_1H__TDDFT__pw_a57a46ddb375f176fd03afc6a63c3e37f_cgraph" id="classelecstate_1_1H__TDDFT__pw_a57a46ddb375f176fd03afc6a63c3e37f_cgraph">
+<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_ae3ddb5eb342be941c3d2f4755d1486eb_cgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_ae3ddb5eb342be941c3d2f4755d1486eb_cgraph" alt=""/></div>
+<map name="classelecstate_1_1H__TDDFT__pw_ae3ddb5eb342be941c3d2f4755d1486eb_cgraph" id="classelecstate_1_1H__TDDFT__pw_ae3ddb5eb342be941c3d2f4755d1486eb_cgraph">
 <area shape="rect" title=" " alt="" coords="5,100,156,141"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#aeb45b66c6c2bc104dbbb5ed60981016b" title=" " alt="" coords="209,71,392,112"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a79259b12b4a73ce15cf73fd0a1e873d6" title=" " alt="" coords="209,71,392,112"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="448,13,625,39"/>
-<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="464,143,609,170"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a87dea9c1c737c6f34666f3f7da505180" title=" " alt="" coords="204,188,397,229"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="464,143,609,170"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a6fa35c7970ed07459d8991ed89b71cda" title=" " alt="" coords="204,188,397,229"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a78c4761dc021fe88fc5af229564c2e9a" title=" " alt="" coords="445,63,628,119"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="676,5,829,47"/>
 </map>
@@ -383,8 +385,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_a57a46ddb375f176fd03afc6a63c3e37f_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_a57a46ddb375f176fd03afc6a63c3e37f_icgraph" alt=""/></div>
-<map name="classelecstate_1_1H__TDDFT__pw_a57a46ddb375f176fd03afc6a63c3e37f_icgraph" id="classelecstate_1_1H__TDDFT__pw_a57a46ddb375f176fd03afc6a63c3e37f_icgraph">
+<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_ae3ddb5eb342be941c3d2f4755d1486eb_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_ae3ddb5eb342be941c3d2f4755d1486eb_icgraph" alt=""/></div>
+<map name="classelecstate_1_1H__TDDFT__pw_ae3ddb5eb342be941c3d2f4755d1486eb_icgraph" id="classelecstate_1_1H__TDDFT__pw_ae3ddb5eb342be941c3d2f4755d1486eb_icgraph">
 <area shape="rect" title=" " alt="" coords="204,5,355,47"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a8ebe60248b2f7c2e80d9cc94b6d2aa18" title=" " alt="" coords="5,5,156,47"/>
 </map>
@@ -392,8 +394,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aeb45b66c6c2bc104dbbb5ed60981016b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb45b66c6c2bc104dbbb5ed60981016b">&#9670;&nbsp;</a></span>cal_v_space_length()</h2>
+<a id="a79259b12b4a73ce15cf73fd0a1e873d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a79259b12b4a73ce15cf73fd0a1e873d6">&#9670;&nbsp;</a></span>cal_v_space_length()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -404,9 +406,19 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void elecstate::H_TDDFT_pw::cal_v_space_length </td>
           <td>(</td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>vext_space</em></td><td>)</td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vext_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>direc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -418,22 +430,22 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_aeb45b66c6c2bc104dbbb5ed60981016b_cgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_aeb45b66c6c2bc104dbbb5ed60981016b_cgraph" alt=""/></div>
-<map name="classelecstate_1_1H__TDDFT__pw_aeb45b66c6c2bc104dbbb5ed60981016b_cgraph" id="classelecstate_1_1H__TDDFT__pw_aeb45b66c6c2bc104dbbb5ed60981016b_cgraph">
+<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_a79259b12b4a73ce15cf73fd0a1e873d6_cgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_a79259b12b4a73ce15cf73fd0a1e873d6_cgraph" alt=""/></div>
+<map name="classelecstate_1_1H__TDDFT__pw_a79259b12b4a73ce15cf73fd0a1e873d6_cgraph" id="classelecstate_1_1H__TDDFT__pw_a79259b12b4a73ce15cf73fd0a1e873d6_cgraph">
 <area shape="rect" title=" " alt="" coords="5,78,188,119"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a78c4761dc021fe88fc5af229564c2e9a" title=" " alt="" coords="236,5,419,61"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="239,85,416,112"/>
-<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="255,136,400,163"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="255,136,400,163"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="467,78,620,119"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_aeb45b66c6c2bc104dbbb5ed60981016b_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_aeb45b66c6c2bc104dbbb5ed60981016b_icgraph" alt=""/></div>
-<map name="classelecstate_1_1H__TDDFT__pw_aeb45b66c6c2bc104dbbb5ed60981016b_icgraph" id="classelecstate_1_1H__TDDFT__pw_aeb45b66c6c2bc104dbbb5ed60981016b_icgraph">
+<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_a79259b12b4a73ce15cf73fd0a1e873d6_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_a79259b12b4a73ce15cf73fd0a1e873d6_icgraph" alt=""/></div>
+<map name="classelecstate_1_1H__TDDFT__pw_a79259b12b4a73ce15cf73fd0a1e873d6_icgraph" id="classelecstate_1_1H__TDDFT__pw_a79259b12b4a73ce15cf73fd0a1e873d6_icgraph">
 <area shape="rect" title=" " alt="" coords="403,5,585,47"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a57a46ddb375f176fd03afc6a63c3e37f" title=" " alt="" coords="204,5,355,47"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ae3ddb5eb342be941c3d2f4755d1486eb" title=" " alt="" coords="204,5,355,47"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a8ebe60248b2f7c2e80d9cc94b6d2aa18" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
@@ -469,16 +481,16 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classelecstate_1_1H__TDDFT__pw_a78c4761dc021fe88fc5af229564c2e9a_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_a78c4761dc021fe88fc5af229564c2e9a_icgraph" alt=""/></div>
 <map name="classelecstate_1_1H__TDDFT__pw_a78c4761dc021fe88fc5af229564c2e9a_icgraph" id="classelecstate_1_1H__TDDFT__pw_a78c4761dc021fe88fc5af229564c2e9a_icgraph">
 <area shape="rect" title=" " alt="" coords="633,5,816,61"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#aeb45b66c6c2bc104dbbb5ed60981016b" title=" " alt="" coords="403,13,585,54"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a57a46ddb375f176fd03afc6a63c3e37f" title=" " alt="" coords="204,13,355,54"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a79259b12b4a73ce15cf73fd0a1e873d6" title=" " alt="" coords="403,13,585,54"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ae3ddb5eb342be941c3d2f4755d1486eb" title=" " alt="" coords="204,13,355,54"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a8ebe60248b2f7c2e80d9cc94b6d2aa18" title=" " alt="" coords="5,13,156,54"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a87dea9c1c737c6f34666f3f7da505180"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87dea9c1c737c6f34666f3f7da505180">&#9670;&nbsp;</a></span>cal_v_space_velocity()</h2>
+<a id="a6fa35c7970ed07459d8991ed89b71cda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6fa35c7970ed07459d8991ed89b71cda">&#9670;&nbsp;</a></span>cal_v_space_velocity()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -489,9 +501,19 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void elecstate::H_TDDFT_pw::cal_v_space_velocity </td>
           <td>(</td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>vext_space</em></td><td>)</td>
+          <td class="paramtype">std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>vext_space</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>direc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -503,18 +525,18 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_a87dea9c1c737c6f34666f3f7da505180_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_a87dea9c1c737c6f34666f3f7da505180_icgraph" alt=""/></div>
-<map name="classelecstate_1_1H__TDDFT__pw_a87dea9c1c737c6f34666f3f7da505180_icgraph" id="classelecstate_1_1H__TDDFT__pw_a87dea9c1c737c6f34666f3f7da505180_icgraph">
+<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_a6fa35c7970ed07459d8991ed89b71cda_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_a6fa35c7970ed07459d8991ed89b71cda_icgraph" alt=""/></div>
+<map name="classelecstate_1_1H__TDDFT__pw_a6fa35c7970ed07459d8991ed89b71cda_icgraph" id="classelecstate_1_1H__TDDFT__pw_a6fa35c7970ed07459d8991ed89b71cda_icgraph">
 <area shape="rect" title=" " alt="" coords="403,5,596,47"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a57a46ddb375f176fd03afc6a63c3e37f" title=" " alt="" coords="204,5,355,47"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ae3ddb5eb342be941c3d2f4755d1486eb" title=" " alt="" coords="204,5,355,47"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a8ebe60248b2f7c2e80d9cc94b6d2aa18" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ac647c659d85b2e72129cd7f9ce1da88d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac647c659d85b2e72129cd7f9ce1da88d">&#9670;&nbsp;</a></span>cal_v_time()</h2>
+<a id="ae2cde12054cbf4aa1d50e545f775ec92"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae2cde12054cbf4aa1d50e545f775ec92">&#9670;&nbsp;</a></span>cal_v_time()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -525,7 +547,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">double elecstate::H_TDDFT_pw::cal_v_time </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>t_type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -538,23 +561,22 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_ac647c659d85b2e72129cd7f9ce1da88d_cgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_ac647c659d85b2e72129cd7f9ce1da88d_cgraph" alt=""/></div>
-<map name="classelecstate_1_1H__TDDFT__pw_ac647c659d85b2e72129cd7f9ce1da88d_cgraph" id="classelecstate_1_1H__TDDFT__pw_ac647c659d85b2e72129cd7f9ce1da88d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,104,156,145"/>
+<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_ae2cde12054cbf4aa1d50e545f775ec92_cgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_ae2cde12054cbf4aa1d50e545f775ec92_cgraph" alt=""/></div>
+<map name="classelecstate_1_1H__TDDFT__pw_ae2cde12054cbf4aa1d50e545f775ec92_cgraph" id="classelecstate_1_1H__TDDFT__pw_ae2cde12054cbf4aa1d50e545f775ec92_cgraph">
+<area shape="rect" title=" " alt="" coords="5,71,156,112"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ac95d8407d65fd2e6f0749e883ab7bfe7" title=" " alt="" coords="228,5,401,47"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#afcadbc763256484de0ae95c6261641a2" title=" " alt="" coords="217,201,413,243"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ab75cc1e20388e061d1cb41c8b568780a" title=" " alt="" coords="233,71,396,112"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#afcadbc763256484de0ae95c6261641a2" title=" " alt="" coords="217,71,413,112"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#aa0e56372e54444e29e0f57e48878cbc5" title=" " alt="" coords="204,136,425,177"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#a7b49e155799ac36b2da1da35b6c2c77c" title=" " alt="" coords="474,78,643,105"/>
-<area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="473,21,644,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="473,13,644,39"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#a91c03031eb1d447315c0f37d8251d2ad" title=" " alt="" coords="475,143,642,170"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_ac647c659d85b2e72129cd7f9ce1da88d_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_ac647c659d85b2e72129cd7f9ce1da88d_icgraph" alt=""/></div>
-<map name="classelecstate_1_1H__TDDFT__pw_ac647c659d85b2e72129cd7f9ce1da88d_icgraph" id="classelecstate_1_1H__TDDFT__pw_ac647c659d85b2e72129cd7f9ce1da88d_icgraph">
+<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_ae2cde12054cbf4aa1d50e545f775ec92_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_ae2cde12054cbf4aa1d50e545f775ec92_icgraph" alt=""/></div>
+<map name="classelecstate_1_1H__TDDFT__pw_ae2cde12054cbf4aa1d50e545f775ec92_icgraph" id="classelecstate_1_1H__TDDFT__pw_ae2cde12054cbf4aa1d50e545f775ec92_icgraph">
 <area shape="rect" title=" " alt="" coords="204,5,355,47"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a8ebe60248b2f7c2e80d9cc94b6d2aa18" title=" " alt="" coords="5,5,156,47"/>
 </map>
@@ -600,7 +622,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classelecstate_1_1H__TDDFT__pw_ac95d8407d65fd2e6f0749e883ab7bfe7_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_ac95d8407d65fd2e6f0749e883ab7bfe7_icgraph" alt=""/></div>
 <map name="classelecstate_1_1H__TDDFT__pw_ac95d8407d65fd2e6f0749e883ab7bfe7_icgraph" id="classelecstate_1_1H__TDDFT__pw_ac95d8407d65fd2e6f0749e883ab7bfe7_icgraph">
 <area shape="rect" title=" " alt="" coords="403,5,576,47"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ac647c659d85b2e72129cd7f9ce1da88d" title=" " alt="" coords="204,5,355,47"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ae2cde12054cbf4aa1d50e545f775ec92" title=" " alt="" coords="204,5,355,47"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a8ebe60248b2f7c2e80d9cc94b6d2aa18" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
@@ -635,52 +657,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classelecstate_1_1H__TDDFT__pw_afcadbc763256484de0ae95c6261641a2_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_afcadbc763256484de0ae95c6261641a2_icgraph" alt=""/></div>
 <map name="classelecstate_1_1H__TDDFT__pw_afcadbc763256484de0ae95c6261641a2_icgraph" id="classelecstate_1_1H__TDDFT__pw_afcadbc763256484de0ae95c6261641a2_icgraph">
 <area shape="rect" title=" " alt="" coords="403,5,599,47"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ac647c659d85b2e72129cd7f9ce1da88d" title=" " alt="" coords="204,5,355,47"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a8ebe60248b2f7c2e80d9cc94b6d2aa18" title=" " alt="" coords="5,5,156,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ab75cc1e20388e061d1cb41c8b568780a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab75cc1e20388e061d1cb41c8b568780a">&#9670;&nbsp;</a></span>cal_v_time_HHG()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::cal_v_time_HHG </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_ab75cc1e20388e061d1cb41c8b568780a_cgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_ab75cc1e20388e061d1cb41c8b568780a_cgraph" alt=""/></div>
-<map name="classelecstate_1_1H__TDDFT__pw_ab75cc1e20388e061d1cb41c8b568780a_cgraph" id="classelecstate_1_1H__TDDFT__pw_ab75cc1e20388e061d1cb41c8b568780a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,23,168,65"/>
-<area shape="rect" href="namespaceModuleBase_1_1libm.html#a7b49e155799ac36b2da1da35b6c2c77c" title=" " alt="" coords="217,5,386,32"/>
-<area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="216,56,387,83"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_ab75cc1e20388e061d1cb41c8b568780a_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_ab75cc1e20388e061d1cb41c8b568780a_icgraph" alt=""/></div>
-<map name="classelecstate_1_1H__TDDFT__pw_ab75cc1e20388e061d1cb41c8b568780a_icgraph" id="classelecstate_1_1H__TDDFT__pw_ab75cc1e20388e061d1cb41c8b568780a_icgraph">
-<area shape="rect" title=" " alt="" coords="403,5,565,47"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ac647c659d85b2e72129cd7f9ce1da88d" title=" " alt="" coords="204,5,355,47"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ae2cde12054cbf4aa1d50e545f775ec92" title=" " alt="" coords="204,5,355,47"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a8ebe60248b2f7c2e80d9cc94b6d2aa18" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
@@ -759,7 +736,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classelecstate_1_1H__TDDFT__pw_aa0e56372e54444e29e0f57e48878cbc5_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_aa0e56372e54444e29e0f57e48878cbc5_icgraph" alt=""/></div>
 <map name="classelecstate_1_1H__TDDFT__pw_aa0e56372e54444e29e0f57e48878cbc5_icgraph" id="classelecstate_1_1H__TDDFT__pw_aa0e56372e54444e29e0f57e48878cbc5_icgraph">
 <area shape="rect" title=" " alt="" coords="403,5,624,47"/>
-<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ac647c659d85b2e72129cd7f9ce1da88d" title=" " alt="" coords="204,5,355,47"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#ae2cde12054cbf4aa1d50e545f775ec92" title=" " alt="" coords="204,5,355,47"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a8ebe60248b2f7c2e80d9cc94b6d2aa18" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
@@ -790,11 +767,82 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_a51b64dbd9c908142a64d6d2378968bff_cgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_a51b64dbd9c908142a64d6d2378968bff_cgraph" alt=""/></div>
+<map name="classelecstate_1_1H__TDDFT__pw_a51b64dbd9c908142a64d6d2378968bff_cgraph" id="classelecstate_1_1H__TDDFT__pw_a51b64dbd9c908142a64d6d2378968bff_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,172,72"/>
+<area shape="rect" href="namespaceInput__Conv.html#ad0ef2d5d10f39c59c519f2f9d5d8ef74" title=" " alt="" coords="425,38,641,65"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a3afb2c0dd87456040e729921fc1981a2" title=" " alt="" coords="220,60,377,101"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="689,13,867,39"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="705,63,851,90"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="915,5,1068,47"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classelecstate_1_1H__TDDFT__pw_a51b64dbd9c908142a64d6d2378968bff_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_a51b64dbd9c908142a64d6d2378968bff_icgraph" alt=""/></div>
 <map name="classelecstate_1_1H__TDDFT__pw_a51b64dbd9c908142a64d6d2378968bff_icgraph" id="classelecstate_1_1H__TDDFT__pw_a51b64dbd9c908142a64d6d2378968bff_icgraph">
 <area shape="rect" title=" " alt="" coords="204,5,371,47"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a8ebe60248b2f7c2e80d9cc94b6d2aa18" title=" " alt="" coords="5,5,156,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3afb2c0dd87456040e729921fc1981a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3afb2c0dd87456040e729921fc1981a2">&#9670;&nbsp;</a></span>set_parameters()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; double &gt; elecstate::H_TDDFT_pw::set_parameters </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>params</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>c</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_a3afb2c0dd87456040e729921fc1981a2_cgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_a3afb2c0dd87456040e729921fc1981a2_cgraph" alt=""/></div>
+<map name="classelecstate_1_1H__TDDFT__pw_a3afb2c0dd87456040e729921fc1981a2_cgraph" id="classelecstate_1_1H__TDDFT__pw_a3afb2c0dd87456040e729921fc1981a2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,163,72"/>
+<area shape="rect" href="namespaceInput__Conv.html#ad0ef2d5d10f39c59c519f2f9d5d8ef74" title=" " alt="" coords="211,38,427,65"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="475,13,652,39"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="491,63,636,90"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="700,5,853,47"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classelecstate_1_1H__TDDFT__pw_a3afb2c0dd87456040e729921fc1981a2_icgraph.png" border="0" usemap="#classelecstate_1_1H__TDDFT__pw_a3afb2c0dd87456040e729921fc1981a2_icgraph" alt=""/></div>
+<map name="classelecstate_1_1H__TDDFT__pw_a3afb2c0dd87456040e729921fc1981a2_icgraph" id="classelecstate_1_1H__TDDFT__pw_a3afb2c0dd87456040e729921fc1981a2_icgraph">
+<area shape="rect" title=" " alt="" coords="419,5,576,47"/>
+<area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a51b64dbd9c908142a64d6d2378968bff" title=" " alt="" coords="204,5,371,47"/>
 <area shape="rect" href="classelecstate_1_1H__TDDFT__pw.html#a8ebe60248b2f7c2e80d9cc94b6d2aa18" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
@@ -824,8 +872,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a77a6ebc154f2af207f604256dceed6ac"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a77a6ebc154f2af207f604256dceed6ac">&#9670;&nbsp;</a></span>gauss_amp</h2>
+<a id="ae6b0ee2df5d7f67736b083d94bacbb37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6b0ee2df5d7f67736b083d94bacbb37">&#9670;&nbsp;</a></span>gauss_amp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -834,7 +882,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::gauss_amp</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::gauss_amp</td>
         </tr>
       </table>
   </td>
@@ -846,8 +894,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ad3fa9227eae928433fe39a336035ce3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad3fa9227eae928433fe39a336035ce3f">&#9670;&nbsp;</a></span>gauss_omega</h2>
+<a id="a649d3150c94491311adabc0d0913867c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a649d3150c94491311adabc0d0913867c">&#9670;&nbsp;</a></span>gauss_count</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -856,7 +904,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::gauss_omega</td>
+          <td class="memname">int elecstate::H_TDDFT_pw::gauss_count</td>
         </tr>
       </table>
   </td>
@@ -868,8 +916,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a9d81ca30362d0a2de3fcef126073a045"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d81ca30362d0a2de3fcef126073a045">&#9670;&nbsp;</a></span>gauss_phase</h2>
+<a id="a7fd5fed68be9ad01cd84f325dd19b2c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fd5fed68be9ad01cd84f325dd19b2c5">&#9670;&nbsp;</a></span>gauss_omega</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -878,7 +926,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::gauss_phase</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::gauss_omega</td>
         </tr>
       </table>
   </td>
@@ -890,8 +938,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a45cc4e8d4ceaed80ade46268fea3f1b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a45cc4e8d4ceaed80ade46268fea3f1b1">&#9670;&nbsp;</a></span>gauss_sigma2</h2>
+<a id="a5903fe891a9757501e61c0ca79bcd2cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5903fe891a9757501e61c0ca79bcd2cb">&#9670;&nbsp;</a></span>gauss_phase</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -900,7 +948,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::gauss_sigma2</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::gauss_phase</td>
         </tr>
       </table>
   </td>
@@ -912,8 +960,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a87ce5a5aa871213986bb423cddfe1d09"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a87ce5a5aa871213986bb423cddfe1d09">&#9670;&nbsp;</a></span>gauss_t0</h2>
+<a id="a770f773303da0509a490c86f6838e51f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a770f773303da0509a490c86f6838e51f">&#9670;&nbsp;</a></span>gauss_sigma</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -922,7 +970,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::gauss_t0</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::gauss_sigma</td>
         </tr>
       </table>
   </td>
@@ -934,8 +982,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a78d8975c7c194d8260f6e9bb2d150ea0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78d8975c7c194d8260f6e9bb2d150ea0">&#9670;&nbsp;</a></span>heavi_amp</h2>
+<a id="a173bb5e17510a771b0940d44f361c7b6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a173bb5e17510a771b0940d44f361c7b6">&#9670;&nbsp;</a></span>gauss_t0</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -944,7 +992,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::heavi_amp</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::gauss_t0</td>
         </tr>
       </table>
   </td>
@@ -956,8 +1004,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a28d64b802e898067dcf405635d461ea0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28d64b802e898067dcf405635d461ea0">&#9670;&nbsp;</a></span>heavi_t0</h2>
+<a id="a1be5cb785e322da779fe25ea4ed9c279"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1be5cb785e322da779fe25ea4ed9c279">&#9670;&nbsp;</a></span>heavi_amp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -966,7 +1014,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int elecstate::H_TDDFT_pw::heavi_t0</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::heavi_amp</td>
         </tr>
       </table>
   </td>
@@ -978,8 +1026,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a243a7b0d62892356d28600e06323e65b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a243a7b0d62892356d28600e06323e65b">&#9670;&nbsp;</a></span>hhg_amp1</h2>
+<a id="a48a6dd5c9acbbe8d7687cef8310de863"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48a6dd5c9acbbe8d7687cef8310de863">&#9670;&nbsp;</a></span>heavi_count</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -988,7 +1036,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::hhg_amp1</td>
+          <td class="memname">int elecstate::H_TDDFT_pw::heavi_count</td>
         </tr>
       </table>
   </td>
@@ -1000,8 +1048,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a125048a7343b71857d2f3d8b40d49ae2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a125048a7343b71857d2f3d8b40d49ae2">&#9670;&nbsp;</a></span>hhg_amp2</h2>
+<a id="aaab3e9547231015f9b55714bd10fbca0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaab3e9547231015f9b55714bd10fbca0">&#9670;&nbsp;</a></span>heavi_t0</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1010,139 +1058,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::hhg_amp2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abb62c9b1b9b5c8e894a0949eabe417f9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb62c9b1b9b5c8e894a0949eabe417f9">&#9670;&nbsp;</a></span>hhg_omega1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::hhg_omega1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ab7a22099c6abc45c607fc7da6c321d1f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7a22099c6abc45c607fc7da6c321d1f">&#9670;&nbsp;</a></span>hhg_omega2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::hhg_omega2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a944c7c59bd88dd0b4e362c0cd9132ba4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a944c7c59bd88dd0b4e362c0cd9132ba4">&#9670;&nbsp;</a></span>hhg_phase1</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::hhg_phase1</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a366c2ffc45dfd49a4a23bc747b13fc43"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a366c2ffc45dfd49a4a23bc747b13fc43">&#9670;&nbsp;</a></span>hhg_phase2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::hhg_phase2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aad82de6227fb6b1c4adacff21d81c222"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aad82de6227fb6b1c4adacff21d81c222">&#9670;&nbsp;</a></span>hhg_sigma2</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::hhg_sigma2</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a8433f41b3a349e611ee977363f09b9da"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8433f41b3a349e611ee977363f09b9da">&#9670;&nbsp;</a></span>hhg_t0</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::hhg_t0</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::heavi_t0</td>
         </tr>
       </table>
   </td>
@@ -1264,8 +1180,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a2cc224e5dfbbbef819a4656ca0530142"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2cc224e5dfbbbef819a4656ca0530142">&#9670;&nbsp;</a></span>trape_amp</h2>
+<a id="aa85fcc5e814e289d611a3f0d13cc871a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa85fcc5e814e289d611a3f0d13cc871a">&#9670;&nbsp;</a></span>trape_amp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1274,7 +1190,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::trape_amp</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::trape_amp</td>
         </tr>
       </table>
   </td>
@@ -1286,8 +1202,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aaa63180f7fe86020fafa4a4bbc778f2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa63180f7fe86020fafa4a4bbc778f2c">&#9670;&nbsp;</a></span>trape_omega</h2>
+<a id="ac92e9f9e7bb04d53b0d2ed24ed466b23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac92e9f9e7bb04d53b0d2ed24ed466b23">&#9670;&nbsp;</a></span>trape_count</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1296,7 +1212,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::trape_omega</td>
+          <td class="memname">int elecstate::H_TDDFT_pw::trape_count</td>
         </tr>
       </table>
   </td>
@@ -1308,8 +1224,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ad9d1303cd2385bb34f7122c58123c9d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9d1303cd2385bb34f7122c58123c9d0">&#9670;&nbsp;</a></span>trape_phase</h2>
+<a id="a237fa46916108a4fcd589821907fc4a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a237fa46916108a4fcd589821907fc4a3">&#9670;&nbsp;</a></span>trape_omega</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1318,7 +1234,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::trape_phase</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::trape_omega</td>
         </tr>
       </table>
   </td>
@@ -1330,8 +1246,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a21d244d62548d34f1b28cfc1bf3c72d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21d244d62548d34f1b28cfc1bf3c72d0">&#9670;&nbsp;</a></span>trape_t1</h2>
+<a id="a93e0ec670cc61d5937868926666bd7e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93e0ec670cc61d5937868926666bd7e2">&#9670;&nbsp;</a></span>trape_phase</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1340,7 +1256,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::trape_t1</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::trape_phase</td>
         </tr>
       </table>
   </td>
@@ -1352,8 +1268,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a41de02623598c79d8a5d73fb2e0878eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a41de02623598c79d8a5d73fb2e0878eb">&#9670;&nbsp;</a></span>trape_t2</h2>
+<a id="a1831991b3908ae7e8a964aca5de3b43f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1831991b3908ae7e8a964aca5de3b43f">&#9670;&nbsp;</a></span>trape_t1</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1362,7 +1278,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::trape_t2</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::trape_t1</td>
         </tr>
       </table>
   </td>
@@ -1374,8 +1290,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aedbb95955ab5bc0f56c0fae9327ad8ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedbb95955ab5bc0f56c0fae9327ad8ff">&#9670;&nbsp;</a></span>trape_t3</h2>
+<a id="ada79f2b8d4bf88312185c5682943e87d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada79f2b8d4bf88312185c5682943e87d">&#9670;&nbsp;</a></span>trape_t2</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1384,7 +1300,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::trape_t3</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::trape_t2</td>
         </tr>
       </table>
   </td>
@@ -1396,8 +1312,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="adaf1bfb40677fe89881157768c64f6e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adaf1bfb40677fe89881157768c64f6e7">&#9670;&nbsp;</a></span>trigo_amp</h2>
+<a id="a88f1c914891899679475f8cb22117412"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a88f1c914891899679475f8cb22117412">&#9670;&nbsp;</a></span>trape_t3</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1406,7 +1322,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::trigo_amp</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::trape_t3</td>
         </tr>
       </table>
   </td>
@@ -1418,8 +1334,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aaee7e9927fe62ac3dfe485e0fd9e7e2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaee7e9927fe62ac3dfe485e0fd9e7e2b">&#9670;&nbsp;</a></span>trigo_omega1</h2>
+<a id="a48b8d1d720523e5813af801b01e47a37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48b8d1d720523e5813af801b01e47a37">&#9670;&nbsp;</a></span>trigo_amp</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1428,7 +1344,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::trigo_omega1</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::trigo_amp</td>
         </tr>
       </table>
   </td>
@@ -1440,8 +1356,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a231b89effbc380b44d1a308f1e47df9e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a231b89effbc380b44d1a308f1e47df9e">&#9670;&nbsp;</a></span>trigo_omega2</h2>
+<a id="a67d27ccb6cc64f4936c57ab89fc6e943"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d27ccb6cc64f4936c57ab89fc6e943">&#9670;&nbsp;</a></span>trigo_count</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1450,7 +1366,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::trigo_omega2</td>
+          <td class="memname">int elecstate::H_TDDFT_pw::trigo_count</td>
         </tr>
       </table>
   </td>
@@ -1462,8 +1378,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aeae5e17c86c49fef098229afd231673f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeae5e17c86c49fef098229afd231673f">&#9670;&nbsp;</a></span>trigo_phase1</h2>
+<a id="ad7a2213e2538c9bdbc17a9059785d3e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7a2213e2538c9bdbc17a9059785d3e4">&#9670;&nbsp;</a></span>trigo_omega1</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1472,7 +1388,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::trigo_phase1</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::trigo_omega1</td>
         </tr>
       </table>
   </td>
@@ -1484,8 +1400,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ab53623d4bd9a6425350f0ef635643bbc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab53623d4bd9a6425350f0ef635643bbc">&#9670;&nbsp;</a></span>trigo_phase2</h2>
+<a id="af357208b3cb2eceb858e504edc8f8fa0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af357208b3cb2eceb858e504edc8f8fa0">&#9670;&nbsp;</a></span>trigo_omega2</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1494,7 +1410,51 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double elecstate::H_TDDFT_pw::trigo_phase2</td>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::trigo_omega2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad6a0d5a3c65be8489da35d4a86c630ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad6a0d5a3c65be8489da35d4a86c630ce">&#9670;&nbsp;</a></span>trigo_phase1</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::trigo_phase1</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a970603b49544269938216e41306c97c2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a970603b49544269938216e41306c97c2">&#9670;&nbsp;</a></span>trigo_phase2</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;double&gt; elecstate::H_TDDFT_pw::trigo_phase2</td>
         </tr>
       </table>
   </td>
@@ -1528,8 +1488,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a2fc09a6be959706dfc2fbd4273ab9df2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2fc09a6be959706dfc2fbd4273ab9df2">&#9670;&nbsp;</a></span>ttype</h2>
+<a id="ad1077687a79c4b8342b3562497463d10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1077687a79c4b8342b3562497463d10">&#9670;&nbsp;</a></span>ttype</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1538,7 +1498,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int elecstate::H_TDDFT_pw::ttype</td>
+          <td class="memname">std::vector&lt;int&gt; elecstate::H_TDDFT_pw::ttype</td>
         </tr>
       </table>
   </td>

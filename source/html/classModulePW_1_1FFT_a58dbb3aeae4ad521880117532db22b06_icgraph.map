@@ -1,8 +1,7 @@
 <map id="ModulePW::FFT::clear" name="ModulePW::FFT::clear">
-<area shape="rect" id="node1" title=" " alt="" coords="676,78,836,105"/>
-<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__K.html#a6ab73fca00b3da2f540e84195b96876f" title=" " alt="" coords="466,5,627,47"/>
-<area shape="rect" id="node4" href="$classModulePW_1_1PW__Basis.html#af716b5dbccb5689b58e6d4dcea15dd8d" title=" " alt="" coords="466,71,627,112"/>
-<area shape="rect" id="node9" href="$classModulePW_1_1FFT.html#a7487b898e8086abe0836d7e716ab597a" title=" " alt="" coords="465,137,628,163"/>
+<area shape="rect" id="node1" title=" " alt="" coords="675,46,835,73"/>
+<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__K.html#a6ab73fca00b3da2f540e84195b96876f" title=" " alt="" coords="465,5,627,47"/>
+<area shape="rect" id="node4" href="$classModulePW_1_1PW__Basis.html#af716b5dbccb5689b58e6d4dcea15dd8d" title=" " alt="" coords="465,71,627,112"/>
 <area shape="rect" id="node3" href="$updaterhok__pw__test_8cpp.html#a8d8d0f6b8066294ef021796e6950d7bb" title=" " alt="" coords="295,14,364,41"/>
 <area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__FP.html#aa1be91ac66538c223a7c7a5936170765" title=" " alt="" coords="241,68,417,109"/>
 <area shape="rect" id="node8" href="$generate_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="302,134,357,161"/>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: module_cell/test/klist_test.cpp File Reference</title>
+<title>3.1.4: module_cell/test/klist_test.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -78,7 +78,14 @@ $(function() {
 <div class="title">klist_test.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;gtest/gtest.h&quot;</code><br />
+<div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &quot;gtest/gtest.h&quot;</code><br />
+<code>#include &quot;gmock/gmock.h&quot;</code><br />
+<code>#include &lt;streambuf&gt;</code><br />
+<code>#include &quot;<a class="el" href="mathzone_8h_source.html">module_base/mathzone.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parallel__kpoints_8h_source.html">module_cell/parallel_kpoints.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parallel__global_8h_source.html">module_base/parallel_global.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="module__cell_2klist_8h_source.html">../klist.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="magnetism_8h_source.html">module_elecstate/magnetism.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="VNL__in__pw_8h_source.html">module_hamilt_pw/hamilt_pwdft/VNL_in_pw.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="atom__pseudo_8h_source.html">module_cell/atom_pseudo.h</a>&quot;</code><br />
@@ -86,15 +93,16 @@ $(function() {
 <code>#include &quot;<a class="el" href="unitcell_8h_source.html">module_cell/unitcell.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="pseudo__nc_8h_source.html">module_cell/pseudo_nc.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="setup__nonlocal_8h_source.html">module_cell/setup_nonlocal.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parallel__grid_8h_source.html">src_parallel/parallel_grid.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parallel__kpoints_8h_source.html">src_parallel/parallel_kpoints.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parallel__grid_8h_source.html">module_hamilt_pw/hamilt_pwdft/parallel_grid.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="berryphase_8h_source.html">module_io/berryphase.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="ORB__gaunt__table_8h_source.html">module_orbital/ORB_gaunt_table.h</a>&quot;</code><br />
-<code>#include &lt;iostream&gt;</code><br />
-<code>#include &quot;<a class="el" href="module__cell_2klist_8h_source.html">module_cell/klist.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structatomtype__.html">atomtype_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structstru__.html">stru_</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKlistTest.html">KlistTest</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -115,20 +123,58 @@ Functions</h2></td></tr>
 <tr class="separator:af2c21290f4783edc6290856b06705c8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a329d79f4482d561a86c9d528ccf3f0c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a329d79f4482d561a86c9d528ccf3f0c0">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, MP)</td></tr>
 <tr class="separator:a329d79f4482d561a86c9d528ccf3f0c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0de935b1be96ec2035afbe1924ba717d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a0de935b1be96ec2035afbe1924ba717d">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadMesh)</td></tr>
-<tr class="separator:a0de935b1be96ec2035afbe1924ba717d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac542fddf8aae4466c37bef70063d9827"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#ac542fddf8aae4466c37bef70063d9827">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadMP)</td></tr>
-<tr class="separator:ac542fddf8aae4466c37bef70063d9827"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29fe8bbc0d0fad79c64bb0a8e91b48ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a29fe8bbc0d0fad79c64bb0a8e91b48ef">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadList)</td></tr>
-<tr class="separator:a29fe8bbc0d0fad79c64bb0a8e91b48ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29924769c6dbab0bb5a9265a42006ab4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a29924769c6dbab0bb5a9265a42006ab4">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, Kspacing)</td></tr>
-<tr class="separator:a29924769c6dbab0bb5a9265a42006ab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0d913d888e7a663ad362f90890998e5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#ad0d913d888e7a663ad362f90890998e5">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, Renew)</td></tr>
-<tr class="separator:ad0d913d888e7a663ad362f90890998e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0920b1c142349ab34ace996e05ed2ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#ad0920b1c142349ab34ace996e05ed2ee">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, LineCartesian)</td></tr>
-<tr class="separator:ad0920b1c142349ab34ace996e05ed2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a557401fcb135c3709c0d09c6c087e514"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a557401fcb135c3709c0d09c6c087e514">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, SetKupKdownAfterXC)</td></tr>
-<tr class="separator:a557401fcb135c3709c0d09c6c087e514"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4f49d2ab2631920ffe23f4ebdc6d890"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#ad4f49d2ab2631920ffe23f4ebdc6d890">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsGammaOnlyLocal)</td></tr>
+<tr class="separator:ad4f49d2ab2631920ffe23f4ebdc6d890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7749e7bf28dd4da928da308e03307b5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#aa7749e7bf28dd4da928da308e03307b5">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsKspacing)</td></tr>
+<tr class="separator:aa7749e7bf28dd4da928da308e03307b5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0733f7db088a920e1b19e1c46eabb1d9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a0733f7db088a920e1b19e1c46eabb1d9">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsGamma)</td></tr>
+<tr class="separator:a0733f7db088a920e1b19e1c46eabb1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add4924a6032dfc96dbe43130e3347cf0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#add4924a6032dfc96dbe43130e3347cf0">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsMP)</td></tr>
+<tr class="separator:add4924a6032dfc96dbe43130e3347cf0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1b21e94d507832d1da2b8d0d2b03c69e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a1b21e94d507832d1da2b8d0d2b03c69e">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsLine)</td></tr>
+<tr class="separator:a1b21e94d507832d1da2b8d0d2b03c69e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77dd2b881294bed5989ed944ac920914"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a77dd2b881294bed5989ed944ac920914">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsCartesian)</td></tr>
+<tr class="separator:a77dd2b881294bed5989ed944ac920914"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6708f5088c73e0be2d4c145c72eb8bb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#ae6708f5088c73e0be2d4c145c72eb8bb">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsLineCartesian)</td></tr>
+<tr class="separator:ae6708f5088c73e0be2d4c145c72eb8bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94ca973de5070f8ab23519391e123d85"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a94ca973de5070f8ab23519391e123d85">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsDirect)</td></tr>
+<tr class="separator:a94ca973de5070f8ab23519391e123d85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a906d73deb9e4c352efb8f771a6aade26"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a906d73deb9e4c352efb8f771a6aade26">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsWarning1)</td></tr>
+<tr class="separator:a906d73deb9e4c352efb8f771a6aade26"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac55e7073a22e56467e212bf164aee421"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#ac55e7073a22e56467e212bf164aee421">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsWarning2)</td></tr>
+<tr class="separator:ac55e7073a22e56467e212bf164aee421"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c1b22c460902a65343f5b08f445fdc2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a0c1b22c460902a65343f5b08f445fdc2">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsWarning3)</td></tr>
+<tr class="separator:a0c1b22c460902a65343f5b08f445fdc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7452a9107fcc1a0845d6d0c67664a19"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#ad7452a9107fcc1a0845d6d0c67664a19">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsWarning4)</td></tr>
+<tr class="separator:ad7452a9107fcc1a0845d6d0c67664a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a010c85879f0b0bd2fcf1182457012227"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a010c85879f0b0bd2fcf1182457012227">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsWarning5)</td></tr>
+<tr class="separator:a010c85879f0b0bd2fcf1182457012227"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75ddf41bdd48b3caa1d89842fcd3789"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#aa75ddf41bdd48b3caa1d89842fcd3789">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsWarning6)</td></tr>
+<tr class="separator:aa75ddf41bdd48b3caa1d89842fcd3789"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9cc4e7c9fc4fd184e59d6e4af5b05a2a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a9cc4e7c9fc4fd184e59d6e4af5b05a2a">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, ReadKpointsWarning7)</td></tr>
+<tr class="separator:a9cc4e7c9fc4fd184e59d6e4af5b05a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd0b75c997a07ccb9fcbcbd36aaf307b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#acd0b75c997a07ccb9fcbcbd36aaf307b">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, SetKupKdown)</td></tr>
+<tr class="separator:acd0b75c997a07ccb9fcbcbd36aaf307b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af568090d929465cafa33f9ce4ddb6b6b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#af568090d929465cafa33f9ce4ddb6b6b">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, SetKupKdownAfterVC)</td></tr>
+<tr class="separator:af568090d929465cafa33f9ce4ddb6b6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4fa2fc434e8e34e205d2562bd40dd60"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#ac4fa2fc434e8e34e205d2562bd40dd60">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, SetBothKvecAfterVC)</td></tr>
+<tr class="separator:ac4fa2fc434e8e34e205d2562bd40dd60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8632623f8dfc3d0966cf35f09d6a33b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#ad8632623f8dfc3d0966cf35f09d6a33b">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, PrintKlists)</td></tr>
+<tr class="separator:ad8632623f8dfc3d0966cf35f09d6a33b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1efa95003832fbfea5478b522671a150"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a1efa95003832fbfea5478b522671a150">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, PrintKlistsWarnigQuit)</td></tr>
+<tr class="separator:a1efa95003832fbfea5478b522671a150"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f45b2336676b1e98188a4425b0b53ce"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a4f45b2336676b1e98188a4425b0b53ce">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, SetBothKvecFinalSCF)</td></tr>
+<tr class="separator:a4f45b2336676b1e98188a4425b0b53ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a027478f39663e49d4f337462111ba178"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a027478f39663e49d4f337462111ba178">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, SetBothKvec)</td></tr>
+<tr class="separator:a027478f39663e49d4f337462111ba178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ca16b85b4546bf9fcc1adea0752ebd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a59ca16b85b4546bf9fcc1adea0752ebd">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, NormalizeWk)</td></tr>
+<tr class="separator:a59ca16b85b4546bf9fcc1adea0752ebd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbddc0ec4a850febb8a29ec36f75c13e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#adbddc0ec4a850febb8a29ec36f75c13e">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, UpdateUseIBZ)</td></tr>
+<tr class="separator:adbddc0ec4a850febb8a29ec36f75c13e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a539b14ab62273d9a16d7f082b6809575"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a539b14ab62273d9a16d7f082b6809575">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, IbzKpoint)</td></tr>
+<tr class="separator:a539b14ab62273d9a16d7f082b6809575"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a660a6145b970922578a35f185c21b09a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#a660a6145b970922578a35f185c21b09a">TEST_F</a> (<a class="el" href="classKlistTest.html">KlistTest</a>, IbzKpointIsMP)</td></tr>
+<tr class="separator:a660a6145b970922578a35f185c21b09a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
@@ -136,6 +182,8 @@ Variables</h2></td></tr>
 <tr class="separator:af624760f90b462565bd40217cb8868c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad13900463d5f46ae6dc8854de86b6198"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUnitCell.html">UnitCell</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceGlobalC.html#ad13900463d5f46ae6dc8854de86b6198">GlobalC::ucell</a></td></tr>
 <tr class="separator:ad13900463d5f46ae6dc8854de86b6198"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb15ed156381848dc2d1a6e631d728e4"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="structstru__.html">stru_</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="klist__test_8cpp.html#aeb15ed156381848dc2d1a6e631d728e4">stru_lib</a></td></tr>
+<tr class="separator:aeb15ed156381848dc2d1a6e631d728e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a6a1d6e1a12975a4e9a0b5b952e79eaad"></a>
@@ -149,30 +197,12 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<ul>
-<li>Tested Functions:<ul>
-<li><a class="el" href="classK__Vectors.html">K_Vectors()</a><ul>
-<li>basic parameters (nks,nkstot,nkstot_ibz) are set</li>
-</ul>
-</li>
-<li>read_kpoints()<ul>
-<li>read from file</li>
-<li>generate KPT from kspacing parameter</li>
-<li>renew and memory allocation <br  />
-</li>
-<li>read from file (Line_Cartesian kpoint file)</li>
-<li>setup kup and kdw after vc (different spin cases) </li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="af2c21290f4783edc6290856b06705c8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2c21290f4783edc6290856b06705c8a">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[1/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af2c21290f4783edc6290856b06705c8a">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[1/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,56 +226,24 @@ Variables</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-
-</div>
-</div>
-<a id="a29924769c6dbab0bb5a9265a42006ab4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29924769c6dbab0bb5a9265a42006ab4">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[2/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Kspacing&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="klist__test_8cpp_a29924769c6dbab0bb5a9265a42006ab4_cgraph.png" border="0" usemap="#klist__test_8cpp_a29924769c6dbab0bb5a9265a42006ab4_cgraph" alt=""/></div>
-<map name="klist__test_8cpp_a29924769c6dbab0bb5a9265a42006ab4_cgraph" id="klist__test_8cpp_a29924769c6dbab0bb5a9265a42006ab4_cgraph">
-<area shape="rect" title=" " alt="" coords="5,93,75,120"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#a27d7b250a9d0bb0bda42b69b97d82feb" title="Inverse a 3x3 matrix." alt="" coords="132,21,292,62"/>
-<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,173,301,200"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056" title="Transpose a 3x3 matrix." alt="" coords="132,86,292,127"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab28d96cf2c851a6c1eae27ce780d2e90" title="Calculate the determinant of a 3x3 matrix." alt="" coords="363,5,554,32"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7" title="Construct a new Matrix 3 object to Identity matrix." alt="" coords="379,57,539,98"/>
-<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,173,559,200"/>
-<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="621,136,756,163"/>
-<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="616,199,761,225"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,275,568,301"/>
+<div class="center"><img src="klist__test_8cpp_af2c21290f4783edc6290856b06705c8a_cgraph.png" border="0" usemap="#klist__test_8cpp_af2c21290f4783edc6290856b06705c8a_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_af2c21290f4783edc6290856b06705c8a_cgraph" id="klist__test_8cpp_af2c21290f4783edc6290856b06705c8a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,46,75,73"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#a27d7b250a9d0bb0bda42b69b97d82feb" title="Inverse a 3x3 matrix." alt="" coords="123,5,283,47"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056" title="Transpose a 3x3 matrix." alt="" coords="123,71,283,112"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab28d96cf2c851a6c1eae27ce780d2e90" title="Calculate the determinant of a 3x3 matrix." alt="" coords="331,13,521,39"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7" title="Construct a new Matrix 3 object to Identity matrix." alt="" coords="346,67,506,108"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#a42bb8704e6e193ae5dded7779548fb1c" title="Set a 3x3 matrix to identity matrix." alt="" coords="569,67,729,108"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ad0920b1c142349ab34ace996e05ed2ee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0920b1c142349ab34ace996e05ed2ee">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[3/9]</span></h2>
+<a id="a539b14ab62273d9a16d7f082b6809575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a539b14ab62273d9a16d7f082b6809575">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[2/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -259,7 +257,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">LineCartesian&#160;</td>
+          <td class="paramtype">IbzKpoint&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -272,24 +270,70 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="klist__test_8cpp_ad0920b1c142349ab34ace996e05ed2ee_cgraph.png" border="0" usemap="#klist__test_8cpp_ad0920b1c142349ab34ace996e05ed2ee_cgraph" alt=""/></div>
-<map name="klist__test_8cpp_ad0920b1c142349ab34ace996e05ed2ee_cgraph" id="klist__test_8cpp_ad0920b1c142349ab34ace996e05ed2ee_cgraph">
-<area shape="rect" title=" " alt="" coords="5,184,75,211"/>
-<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,133,301,160"/>
-<area shape="rect" href="classK__Vectors.html#a75d26a706355c95a6c5a586bba230c51" title=" " alt="" coords="139,206,285,247"/>
-<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,61,559,88"/>
-<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="625,123,770,149"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,213,568,240"/>
-<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,163,546,189"/>
-<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<div class="center"><img src="klist__test_8cpp_a539b14ab62273d9a16d7f082b6809575_cgraph.png" border="0" usemap="#klist__test_8cpp_a539b14ab62273d9a16d7f082b6809575_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a539b14ab62273d9a16d7f082b6809575_cgraph" id="klist__test_8cpp_a539b14ab62273d9a16d7f082b6809575_cgraph">
+<area shape="rect" title=" " alt="" coords="5,187,75,214"/>
+<area shape="rect" href="classModuleSymmetry_1_1Symmetry.html#a9f7dababf39280c286082252f5107e4f" title=" " alt="" coords="123,71,336,112"/>
+<area shape="rect" href="vdw__test_8cpp.html#ad1f1276630014edc73a5070706b820f2" title=" " alt="" coords="185,137,274,163"/>
+<area shape="rect" href="vdw__test_8cpp.html#aa7c2ad6e7212b7b8b27dd1287a772a9f" title=" " alt="" coords="169,187,289,214"/>
+<area shape="rect" href="classK__Vectors.html#af2117429ed0db32c94d425174c951cfe" title=" " alt="" coords="149,238,310,265"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="140,289,319,315"/>
+<area shape="rect" href="classModuleSymmetry_1_1Symmetry.html#a7d00eb0720527b6d2739375d713df0d4" title=" " alt="" coords="384,5,597,47"/>
+<area shape="rect" href="classModuleSymmetry_1_1Symmetry.html#af568ec7c73bf7661e93fad1df788678e" title=" " alt="" coords="384,71,597,112"/>
+<area shape="rect" href="classModuleSymmetry_1_1Symmetry.html#a21f78ba2a8d5f694bd15b00947f43d22" title=" " alt="" coords="384,136,597,177"/>
+<area shape="rect" href="classModuleSymmetry_1_1Symmetry.html#a21d0cce54a86e90f980f99c4ade379c7" title=" " alt="" coords="384,216,597,257"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a660a6145b970922578a35f185c21b09a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a660a6145b970922578a35f185c21b09a">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[3/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">IbzKpointIsMP&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_a660a6145b970922578a35f185c21b09a_cgraph.png" border="0" usemap="#klist__test_8cpp_a660a6145b970922578a35f185c21b09a_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a660a6145b970922578a35f185c21b09a_cgraph" id="klist__test_8cpp_a660a6145b970922578a35f185c21b09a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,187,75,214"/>
+<area shape="rect" href="classModuleSymmetry_1_1Symmetry.html#a9f7dababf39280c286082252f5107e4f" title=" " alt="" coords="123,71,336,112"/>
+<area shape="rect" href="vdw__test_8cpp.html#ad1f1276630014edc73a5070706b820f2" title=" " alt="" coords="185,137,274,163"/>
+<area shape="rect" href="vdw__test_8cpp.html#aa7c2ad6e7212b7b8b27dd1287a772a9f" title=" " alt="" coords="169,187,289,214"/>
+<area shape="rect" href="classK__Vectors.html#af2117429ed0db32c94d425174c951cfe" title=" " alt="" coords="149,238,310,265"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="140,289,319,315"/>
+<area shape="rect" href="classModuleSymmetry_1_1Symmetry.html#a7d00eb0720527b6d2739375d713df0d4" title=" " alt="" coords="384,5,597,47"/>
+<area shape="rect" href="classModuleSymmetry_1_1Symmetry.html#af568ec7c73bf7661e93fad1df788678e" title=" " alt="" coords="384,71,597,112"/>
+<area shape="rect" href="classModuleSymmetry_1_1Symmetry.html#a21f78ba2a8d5f694bd15b00947f43d22" title=" " alt="" coords="384,136,597,177"/>
+<area shape="rect" href="classModuleSymmetry_1_1Symmetry.html#a21d0cce54a86e90f980f99c4ade379c7" title=" " alt="" coords="384,216,597,257"/>
 </map>
 </div>
 
 </div>
 </div>
 <a id="a329d79f4482d561a86c9d528ccf3f0c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a329d79f4482d561a86c9d528ccf3f0c0">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[4/9]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a329d79f4482d561a86c9d528ccf3f0c0">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[4/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -322,14 +366,14 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="123,71,323,98"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="371,5,533,47"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="385,71,519,98"/>
-<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="379,122,525,149"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="379,122,525,149"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a29fe8bbc0d0fad79c64bb0a8e91b48ef"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a29fe8bbc0d0fad79c64bb0a8e91b48ef">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[5/9]</span></h2>
+<a id="a59ca16b85b4546bf9fcc1adea0752ebd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59ca16b85b4546bf9fcc1adea0752ebd">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[5/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -343,7 +387,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ReadList&#160;</td>
+          <td class="paramtype">NormalizeWk&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -356,13 +400,135 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="klist__test_8cpp_a29fe8bbc0d0fad79c64bb0a8e91b48ef_cgraph.png" border="0" usemap="#klist__test_8cpp_a29fe8bbc0d0fad79c64bb0a8e91b48ef_cgraph" alt=""/></div>
-<map name="klist__test_8cpp_a29fe8bbc0d0fad79c64bb0a8e91b48ef_cgraph" id="klist__test_8cpp_a29fe8bbc0d0fad79c64bb0a8e91b48ef_cgraph">
+<div class="center"><img src="klist__test_8cpp_a59ca16b85b4546bf9fcc1adea0752ebd_cgraph.png" border="0" usemap="#klist__test_8cpp_a59ca16b85b4546bf9fcc1adea0752ebd_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a59ca16b85b4546bf9fcc1adea0752ebd_cgraph" id="klist__test_8cpp_a59ca16b85b4546bf9fcc1adea0752ebd_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,75,57"/>
+<area shape="rect" href="classK__Vectors.html#a45570bee0a6b0b630c21d5844b3cb523" title=" " alt="" coords="123,5,308,32"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="148,56,283,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad8632623f8dfc3d0966cf35f09d6a33b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8632623f8dfc3d0966cf35f09d6a33b">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[6/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PrintKlists&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_ad8632623f8dfc3d0966cf35f09d6a33b_cgraph.png" border="0" usemap="#klist__test_8cpp_ad8632623f8dfc3d0966cf35f09d6a33b_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_ad8632623f8dfc3d0966cf35f09d6a33b_cgraph" id="klist__test_8cpp_ad8632623f8dfc3d0966cf35f09d6a33b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,81,75,108"/>
+<area shape="rect" href="classK__Vectors.html#a4ae348fcfe0d57007a8cfe0ab2660936" title=" " alt="" coords="123,31,289,57"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="139,81,273,108"/>
+<area shape="rect" href="classK__Vectors.html#a1f61ab9075864f594594db5ee8a0d764" title=" " alt="" coords="131,133,281,174"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="371,5,517,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="337,56,551,83"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056" title="Transpose a 3x3 matrix." alt="" coords="364,133,524,174"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7" title="Construct a new Matrix 3 object to Identity matrix." alt="" coords="599,133,759,174"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#a42bb8704e6e193ae5dded7779548fb1c" title="Set a 3x3 matrix to identity matrix." alt="" coords="807,133,967,174"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1efa95003832fbfea5478b522671a150"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1efa95003832fbfea5478b522671a150">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[7/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">PrintKlistsWarnigQuit&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_a1efa95003832fbfea5478b522671a150_cgraph.png" border="0" usemap="#klist__test_8cpp_a1efa95003832fbfea5478b522671a150_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a1efa95003832fbfea5478b522671a150_cgraph" id="klist__test_8cpp_a1efa95003832fbfea5478b522671a150_cgraph">
+<area shape="rect" title=" " alt="" coords="5,56,75,83"/>
+<area shape="rect" href="classK__Vectors.html#a4ae348fcfe0d57007a8cfe0ab2660936" title=" " alt="" coords="123,31,289,57"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="139,81,273,108"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="371,5,517,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="337,56,551,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a77dd2b881294bed5989ed944ac920914"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a77dd2b881294bed5989ed944ac920914">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[8/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsCartesian&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_a77dd2b881294bed5989ed944ac920914_cgraph.png" border="0" usemap="#klist__test_8cpp_a77dd2b881294bed5989ed944ac920914_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a77dd2b881294bed5989ed944ac920914_cgraph" id="klist__test_8cpp_a77dd2b881294bed5989ed944ac920914_cgraph">
 <area shape="rect" title=" " alt="" coords="5,115,75,141"/>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
@@ -371,8 +537,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a0de935b1be96ec2035afbe1924ba717d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0de935b1be96ec2035afbe1924ba717d">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[6/9]</span></h2>
+<a id="a94ca973de5070f8ab23519391e123d85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94ca973de5070f8ab23519391e123d85">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[9/28]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,7 +552,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">ReadMesh&#160;</td>
+          <td class="paramtype">ReadKpointsDirect&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -399,143 +565,14 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="klist__test_8cpp_a0de935b1be96ec2035afbe1924ba717d_cgraph.png" border="0" usemap="#klist__test_8cpp_a0de935b1be96ec2035afbe1924ba717d_cgraph" alt=""/></div>
-<map name="klist__test_8cpp_a0de935b1be96ec2035afbe1924ba717d_cgraph" id="klist__test_8cpp_a0de935b1be96ec2035afbe1924ba717d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
-<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
-<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
-<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="625,123,770,149"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
-<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
-<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ac542fddf8aae4466c37bef70063d9827"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac542fddf8aae4466c37bef70063d9827">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[7/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">ReadMP&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="klist__test_8cpp_ac542fddf8aae4466c37bef70063d9827_cgraph.png" border="0" usemap="#klist__test_8cpp_ac542fddf8aae4466c37bef70063d9827_cgraph" alt=""/></div>
-<map name="klist__test_8cpp_ac542fddf8aae4466c37bef70063d9827_cgraph" id="klist__test_8cpp_ac542fddf8aae4466c37bef70063d9827_cgraph">
-<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
-<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
-<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
-<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="625,123,770,149"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
-<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
-<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="ad0d913d888e7a663ad362f90890998e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0d913d888e7a663ad362f90890998e5">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[8/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">Renew&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="klist__test_8cpp_ad0d913d888e7a663ad362f90890998e5_cgraph.png" border="0" usemap="#klist__test_8cpp_ad0d913d888e7a663ad362f90890998e5_cgraph" alt=""/></div>
-<map name="klist__test_8cpp_ad0d913d888e7a663ad362f90890998e5_cgraph" id="klist__test_8cpp_ad0d913d888e7a663ad362f90890998e5_cgraph">
-<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
-<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
-<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
-<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="625,123,770,149"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
-<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
-<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a557401fcb135c3709c0d09c6c087e514"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a557401fcb135c3709c0d09c6c087e514">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[9/9]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TEST_F </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
-          <td class="paramname">, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">SetKupKdownAfterXC&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="klist__test_8cpp_a557401fcb135c3709c0d09c6c087e514_cgraph.png" border="0" usemap="#klist__test_8cpp_a557401fcb135c3709c0d09c6c087e514_cgraph" alt=""/></div>
-<map name="klist__test_8cpp_a557401fcb135c3709c0d09c6c087e514_cgraph" id="klist__test_8cpp_a557401fcb135c3709c0d09c6c087e514_cgraph">
+<div class="center"><img src="klist__test_8cpp_a94ca973de5070f8ab23519391e123d85_cgraph.png" border="0" usemap="#klist__test_8cpp_a94ca973de5070f8ab23519391e123d85_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a94ca973de5070f8ab23519391e123d85_cgraph" id="klist__test_8cpp_a94ca973de5070f8ab23519391e123d85_cgraph">
 <area shape="rect" title=" " alt="" coords="5,184,75,211"/>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,133,301,160"/>
-<area shape="rect" href="classK__Vectors.html#a75d26a706355c95a6c5a586bba230c51" title=" " alt="" coords="139,206,285,247"/>
+<area shape="rect" href="classK__Vectors.html#a52ee6279ba2fcc4cdb1b3410074251d9" title=" " alt="" coords="140,206,284,247"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,61,559,88"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,213,568,240"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,163,546,189"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
@@ -544,7 +581,846 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="a0733f7db088a920e1b19e1c46eabb1d9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0733f7db088a920e1b19e1c46eabb1d9">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[10/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsGamma&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_a0733f7db088a920e1b19e1c46eabb1d9_cgraph.png" border="0" usemap="#klist__test_8cpp_a0733f7db088a920e1b19e1c46eabb1d9_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a0733f7db088a920e1b19e1c46eabb1d9_cgraph" id="klist__test_8cpp_a0733f7db088a920e1b19e1c46eabb1d9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad4f49d2ab2631920ffe23f4ebdc6d890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4f49d2ab2631920ffe23f4ebdc6d890">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[11/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsGammaOnlyLocal&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_ad4f49d2ab2631920ffe23f4ebdc6d890_cgraph.png" border="0" usemap="#klist__test_8cpp_ad4f49d2ab2631920ffe23f4ebdc6d890_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_ad4f49d2ab2631920ffe23f4ebdc6d890_cgraph" id="klist__test_8cpp_ad4f49d2ab2631920ffe23f4ebdc6d890_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa7749e7bf28dd4da928da308e03307b5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa7749e7bf28dd4da928da308e03307b5">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[12/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsKspacing&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_aa7749e7bf28dd4da928da308e03307b5_cgraph.png" border="0" usemap="#klist__test_8cpp_aa7749e7bf28dd4da928da308e03307b5_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_aa7749e7bf28dd4da928da308e03307b5_cgraph" id="klist__test_8cpp_aa7749e7bf28dd4da928da308e03307b5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1b21e94d507832d1da2b8d0d2b03c69e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1b21e94d507832d1da2b8d0d2b03c69e">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[13/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsLine&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_a1b21e94d507832d1da2b8d0d2b03c69e_cgraph.png" border="0" usemap="#klist__test_8cpp_a1b21e94d507832d1da2b8d0d2b03c69e_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a1b21e94d507832d1da2b8d0d2b03c69e_cgraph" id="klist__test_8cpp_a1b21e94d507832d1da2b8d0d2b03c69e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae6708f5088c73e0be2d4c145c72eb8bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6708f5088c73e0be2d4c145c72eb8bb">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[14/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsLineCartesian&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_ae6708f5088c73e0be2d4c145c72eb8bb_cgraph.png" border="0" usemap="#klist__test_8cpp_ae6708f5088c73e0be2d4c145c72eb8bb_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_ae6708f5088c73e0be2d4c145c72eb8bb_cgraph" id="klist__test_8cpp_ae6708f5088c73e0be2d4c145c72eb8bb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,184,75,211"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,133,301,160"/>
+<area shape="rect" href="classK__Vectors.html#a52ee6279ba2fcc4cdb1b3410074251d9" title=" " alt="" coords="140,206,284,247"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,61,559,88"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,213,568,240"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,163,546,189"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="add4924a6032dfc96dbe43130e3347cf0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add4924a6032dfc96dbe43130e3347cf0">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[15/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsMP&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_add4924a6032dfc96dbe43130e3347cf0_cgraph.png" border="0" usemap="#klist__test_8cpp_add4924a6032dfc96dbe43130e3347cf0_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_add4924a6032dfc96dbe43130e3347cf0_cgraph" id="klist__test_8cpp_add4924a6032dfc96dbe43130e3347cf0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a906d73deb9e4c352efb8f771a6aade26"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a906d73deb9e4c352efb8f771a6aade26">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[16/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsWarning1&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_a906d73deb9e4c352efb8f771a6aade26_cgraph.png" border="0" usemap="#klist__test_8cpp_a906d73deb9e4c352efb8f771a6aade26_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a906d73deb9e4c352efb8f771a6aade26_cgraph" id="klist__test_8cpp_a906d73deb9e4c352efb8f771a6aade26_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac55e7073a22e56467e212bf164aee421"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac55e7073a22e56467e212bf164aee421">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[17/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsWarning2&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_ac55e7073a22e56467e212bf164aee421_cgraph.png" border="0" usemap="#klist__test_8cpp_ac55e7073a22e56467e212bf164aee421_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_ac55e7073a22e56467e212bf164aee421_cgraph" id="klist__test_8cpp_ac55e7073a22e56467e212bf164aee421_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0c1b22c460902a65343f5b08f445fdc2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c1b22c460902a65343f5b08f445fdc2">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[18/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsWarning3&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_a0c1b22c460902a65343f5b08f445fdc2_cgraph.png" border="0" usemap="#klist__test_8cpp_a0c1b22c460902a65343f5b08f445fdc2_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a0c1b22c460902a65343f5b08f445fdc2_cgraph" id="klist__test_8cpp_a0c1b22c460902a65343f5b08f445fdc2_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad7452a9107fcc1a0845d6d0c67664a19"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7452a9107fcc1a0845d6d0c67664a19">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[19/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsWarning4&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_ad7452a9107fcc1a0845d6d0c67664a19_cgraph.png" border="0" usemap="#klist__test_8cpp_ad7452a9107fcc1a0845d6d0c67664a19_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_ad7452a9107fcc1a0845d6d0c67664a19_cgraph" id="klist__test_8cpp_ad7452a9107fcc1a0845d6d0c67664a19_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a010c85879f0b0bd2fcf1182457012227"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a010c85879f0b0bd2fcf1182457012227">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[20/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsWarning5&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_a010c85879f0b0bd2fcf1182457012227_cgraph.png" border="0" usemap="#klist__test_8cpp_a010c85879f0b0bd2fcf1182457012227_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a010c85879f0b0bd2fcf1182457012227_cgraph" id="klist__test_8cpp_a010c85879f0b0bd2fcf1182457012227_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa75ddf41bdd48b3caa1d89842fcd3789"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa75ddf41bdd48b3caa1d89842fcd3789">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[21/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsWarning6&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_aa75ddf41bdd48b3caa1d89842fcd3789_cgraph.png" border="0" usemap="#klist__test_8cpp_aa75ddf41bdd48b3caa1d89842fcd3789_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_aa75ddf41bdd48b3caa1d89842fcd3789_cgraph" id="klist__test_8cpp_aa75ddf41bdd48b3caa1d89842fcd3789_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9cc4e7c9fc4fd184e59d6e4af5b05a2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9cc4e7c9fc4fd184e59d6e4af5b05a2a">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[22/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ReadKpointsWarning7&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_a9cc4e7c9fc4fd184e59d6e4af5b05a2a_cgraph.png" border="0" usemap="#klist__test_8cpp_a9cc4e7c9fc4fd184e59d6e4af5b05a2a_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a9cc4e7c9fc4fd184e59d6e4af5b05a2a_cgraph" id="klist__test_8cpp_a9cc4e7c9fc4fd184e59d6e4af5b05a2a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,115,75,141"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a027478f39663e49d4f337462111ba178"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a027478f39663e49d4f337462111ba178">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[23/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SetBothKvec&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_a027478f39663e49d4f337462111ba178_cgraph.png" border="0" usemap="#klist__test_8cpp_a027478f39663e49d4f337462111ba178_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a027478f39663e49d4f337462111ba178_cgraph" id="klist__test_8cpp_a027478f39663e49d4f337462111ba178_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,75,57"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="149,5,284,32"/>
+<area shape="rect" href="classK__Vectors.html#adf95cd2fb3c67650c42ef2e7099f4faa" title=" " alt="" coords="123,56,311,83"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056" title="Transpose a 3x3 matrix." alt="" coords="359,49,519,90"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7" title="Construct a new Matrix 3 object to Identity matrix." alt="" coords="567,49,727,90"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#a42bb8704e6e193ae5dded7779548fb1c" title="Set a 3x3 matrix to identity matrix." alt="" coords="775,49,935,90"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac4fa2fc434e8e34e205d2562bd40dd60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4fa2fc434e8e34e205d2562bd40dd60">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[24/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SetBothKvecAfterVC&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_ac4fa2fc434e8e34e205d2562bd40dd60_cgraph.png" border="0" usemap="#klist__test_8cpp_ac4fa2fc434e8e34e205d2562bd40dd60_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_ac4fa2fc434e8e34e205d2562bd40dd60_cgraph" id="klist__test_8cpp_ac4fa2fc434e8e34e205d2562bd40dd60_cgraph">
+<area shape="rect" title=" " alt="" coords="5,35,75,61"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="131,5,265,32"/>
+<area shape="rect" href="classK__Vectors.html#a1f61ab9075864f594594db5ee8a0d764" title=" " alt="" coords="123,57,273,98"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056" title="Transpose a 3x3 matrix." alt="" coords="321,57,481,98"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7" title="Construct a new Matrix 3 object to Identity matrix." alt="" coords="529,57,689,98"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#a42bb8704e6e193ae5dded7779548fb1c" title="Set a 3x3 matrix to identity matrix." alt="" coords="737,57,897,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4f45b2336676b1e98188a4425b0b53ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f45b2336676b1e98188a4425b0b53ce">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[25/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SetBothKvecFinalSCF&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_a4f45b2336676b1e98188a4425b0b53ce_cgraph.png" border="0" usemap="#klist__test_8cpp_a4f45b2336676b1e98188a4425b0b53ce_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_a4f45b2336676b1e98188a4425b0b53ce_cgraph" id="klist__test_8cpp_a4f45b2336676b1e98188a4425b0b53ce_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,75,57"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="149,5,284,32"/>
+<area shape="rect" href="classK__Vectors.html#adf95cd2fb3c67650c42ef2e7099f4faa" title=" " alt="" coords="123,56,311,83"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056" title="Transpose a 3x3 matrix." alt="" coords="359,49,519,90"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7" title="Construct a new Matrix 3 object to Identity matrix." alt="" coords="567,49,727,90"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#a42bb8704e6e193ae5dded7779548fb1c" title="Set a 3x3 matrix to identity matrix." alt="" coords="775,49,935,90"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acd0b75c997a07ccb9fcbcbd36aaf307b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd0b75c997a07ccb9fcbcbd36aaf307b">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[26/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SetKupKdown&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_acd0b75c997a07ccb9fcbcbd36aaf307b_cgraph.png" border="0" usemap="#klist__test_8cpp_acd0b75c997a07ccb9fcbcbd36aaf307b_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_acd0b75c997a07ccb9fcbcbd36aaf307b_cgraph" id="klist__test_8cpp_acd0b75c997a07ccb9fcbcbd36aaf307b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,184,75,211"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,133,301,160"/>
+<area shape="rect" href="classK__Vectors.html#a52ee6279ba2fcc4cdb1b3410074251d9" title=" " alt="" coords="140,206,284,247"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,61,559,88"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,213,568,240"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,163,546,189"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="af568090d929465cafa33f9ce4ddb6b6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af568090d929465cafa33f9ce4ddb6b6b">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[27/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">SetKupKdownAfterVC&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_af568090d929465cafa33f9ce4ddb6b6b_cgraph.png" border="0" usemap="#klist__test_8cpp_af568090d929465cafa33f9ce4ddb6b6b_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_af568090d929465cafa33f9ce4ddb6b6b_cgraph" id="klist__test_8cpp_af568090d929465cafa33f9ce4ddb6b6b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,184,75,211"/>
+<area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,133,301,160"/>
+<area shape="rect" href="classK__Vectors.html#a75d26a706355c95a6c5a586bba230c51" title=" " alt="" coords="139,206,285,247"/>
+<area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,61,559,88"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,213,568,240"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,163,546,189"/>
+<area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adbddc0ec4a850febb8a29ec36f75c13e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbddc0ec4a850febb8a29ec36f75c13e">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[28/28]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST_F </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classKlistTest.html">KlistTest</a>&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">UpdateUseIBZ&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="klist__test_8cpp_adbddc0ec4a850febb8a29ec36f75c13e_cgraph.png" border="0" usemap="#klist__test_8cpp_adbddc0ec4a850febb8a29ec36f75c13e_cgraph" alt=""/></div>
+<map name="klist__test_8cpp_adbddc0ec4a850febb8a29ec36f75c13e_cgraph" id="klist__test_8cpp_adbddc0ec4a850febb8a29ec36f75c13e_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,75,57"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="153,5,287,32"/>
+<area shape="rect" href="classK__Vectors.html#adb0d91d4c03e9c89742eda4d0dcde3bf" title=" " alt="" coords="123,56,317,83"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="365,31,584,57"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="402,81,547,108"/>
+</map>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aeb15ed156381848dc2d1a6e631d728e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb15ed156381848dc2d1a6e631d728e4">&#9670;&nbsp;</a></span>stru_lib</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="structstru__.html">stru_</a>&gt; stru_lib</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Initial value:</b><div class="fragment"><div class="line">{</div>
+<div class="line">    <a class="code" href="structstru__.html">stru_</a>{1,</div>
+<div class="line">          <span class="stringliteral">&quot;O_h&quot;</span>,</div>
+<div class="line">          <span class="stringliteral">&quot;m-3m&quot;</span>,</div>
+<div class="line">          <span class="stringliteral">&quot;Pm-3m&quot;</span>,</div>
+<div class="line">          std::vector&lt;double&gt;{1., 0., 0., 0., 1., 0., 0., 0., 1.},</div>
+<div class="line">          std::vector&lt;atomtype_&gt;{<a class="code" href="structatomtype__.html">atomtype_</a>{<span class="stringliteral">&quot;C&quot;</span>,</div>
+<div class="line">                                           std::vector&lt;std::vector&lt;double&gt;&gt;{</div>
+<div class="line">                                               {0., 0., 0.},</div>
+<div class="line">                                           }}}}</div>
+<div class="line">}</div>
+</div><!-- fragment -->
+</div>
+</div>
 </div><!-- contents -->
+<div class="ttc" id="astructstru___html"><div class="ttname"><a href="structstru__.html">stru_</a></div><div class="ttdef"><b>Definition:</b> symmetry_test.cpp:88</div></div>
+<div class="ttc" id="astructatomtype___html"><div class="ttname"><a href="structatomtype__.html">atomtype_</a></div><div class="ttdef"><b>Definition:</b> symmetry_test.cpp:82</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

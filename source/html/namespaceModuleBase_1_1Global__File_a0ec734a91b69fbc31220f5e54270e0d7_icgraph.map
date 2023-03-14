@@ -1,8 +1,10 @@
 <map id="ModuleBase::Global_File::open_log" name="ModuleBase::Global_File::open_log">
-<area shape="rect" id="node1" title=" " alt="" coords="745,5,897,47"/>
-<area shape="rect" id="node2" href="$namespaceModuleBase_1_1Global__File.html#ada49a20b8049da487cf0b2f341379fb4" title=" " alt="" coords="545,5,697,47"/>
-<area shape="rect" id="node3" href="$classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,13,497,39"/>
-<area shape="rect" id="node4" href="$classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,13,365,39"/>
-<area shape="rect" id="node5" href="$classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,13,199,39"/>
-<area shape="rect" id="node6" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,13,60,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="745,53,897,94"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase_1_1Global__File.html#ada49a20b8049da487cf0b2f341379fb4" title=" " alt="" coords="545,23,697,65"/>
+<area shape="rect" id="node8" href="$global__file__test_8cpp.html#a1c8bc1e7666d076641f8d003aac94512" title=" " alt="" coords="587,89,656,116"/>
+<area shape="rect" id="node3" href="$classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,5,497,32"/>
+<area shape="rect" id="node7" href="$global__file__test_8cpp.html#a9a6260caaaf39d616ea3948a82e8b07d" title=" " alt="" coords="421,56,490,83"/>
+<area shape="rect" id="node4" href="$classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" id="node5" href="$classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
+<area shape="rect" id="node6" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>

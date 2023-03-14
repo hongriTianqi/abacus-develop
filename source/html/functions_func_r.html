@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: Class Members - Functions</title>
+<title>3.1.4: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -89,7 +89,10 @@ $(function() {
 : <a class="el" href="classModuleBase_1_1Random.html#a56c0996dc4a4650da85cc253ae9bcaa0">ModuleBase::Random</a>
 </li>
 <li>random()
-: <a class="el" href="classWF__atomic.html#aa40ff61820ed085aaacce39569b9fed7">WF_atomic</a>
+: <a class="el" href="classWF__atomic.html#a69faf13c690ddd1eafb89e0411b7ae4b">WF_atomic</a>
+</li>
+<li>random_t()
+: <a class="el" href="classWF__atomic.html#a2e3bc38d26ea42e66f38d350df5e8c75">WF_atomic</a>
 </li>
 <li>randomize()
 : <a class="el" href="classModuleBase_1_1ComplexArray.html#a1990aceb299bfe8ee58995e9669138b9">ModuleBase::ComplexArray</a>
@@ -176,6 +179,9 @@ $(function() {
 </li>
 <li>read_parameters()
 : <a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a51b64dbd9c908142a64d6d2378968bff">elecstate::H_TDDFT_pw</a>
+</li>
+<li>read_pseudo()
+: <a class="el" href="classUnitCell.html#aeb1029769b8a937eeab87248ef5bd042">UnitCell</a>
 </li>
 <li>read_pseudo_addinfo()
 : <a class="el" href="classPseudopot__upf.html#a6294c7fe41dc12325cb4ce5140e406c7">Pseudopot_upf</a>
@@ -280,10 +286,10 @@ $(function() {
 </li>
 <li>recip2real()
 : <a class="el" href="classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce">ModulePW::PW_Basis</a>
-, <a class="el" href="classModulePW_1_1PW__Basis__K.html#a6fadd5f43b7c9b1ea6bbe560733f7f05">ModulePW::PW_Basis_K</a>
+, <a class="el" href="classModulePW_1_1PW__Basis__K.html#a25e4bc1b67fa4ccc3cba56ca8687d8f6">ModulePW::PW_Basis_K</a>
 </li>
 <li>recip_to_real()
-: <a class="el" href="classModulePW_1_1PW__Basis__K.html#a871caa596c04fc27a82ca4b78f7305dc">ModulePW::PW_Basis_K</a>
+: <a class="el" href="classModulePW_1_1PW__Basis__K.html#a758e891e9ff421bd3c08d90f78480e23">ModulePW::PW_Basis_K</a>
 </li>
 <li>record()
 : <a class="el" href="classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9">ModuleBase::Memory</a>
@@ -307,6 +313,9 @@ $(function() {
 <li>reduce_to_fullrho()
 : <a class="el" href="classParallel__Grid.html#aa28a017b0402c67d24aad07b70ba4351">Parallel_Grid</a>
 </li>
+<li>reduce_to_fullrhog()
+: <a class="el" href="classSymmetry__rho.html#a14e17055c48200a1c6257e1ff83b037f">Symmetry_rho</a>
+</li>
 <li>refresh()
 : <a class="el" href="classhsolver_1_1DiagoDavid.html#ac327e5b87b128449acb7277a3162c22f">hsolver::DiagoDavid&lt; FPTYPE, Device &gt;</a>
 , <a class="el" href="classModuleBase_1_1Opt__CG.html#a5b94a03c7c3cadf01aec7848524cd2a3">ModuleBase::Opt_CG</a>
@@ -318,11 +327,11 @@ $(function() {
 <li>Relax()
 : <a class="el" href="classRelax.html#aceef3b9c6df0afa10a1f551aab87adb7">Relax</a>
 </li>
-<li>relax_driver()
-: <a class="el" href="classRelax__Driver.html#a96d381221cd3909b3f242097e45fcc27">Relax_Driver</a>
-</li>
 <li>Relax_Driver()
 : <a class="el" href="classRelax__Driver.html#aa320a01276f1d597f3d04196ed157260">Relax_Driver</a>
+</li>
+<li>relax_driver()
+: <a class="el" href="classRelax__Driver.html#a96d381221cd3909b3f242097e45fcc27">Relax_Driver</a>
 </li>
 <li>relax_step()
 : <a class="el" href="classRelax.html#a0a089d0c7ae02c19abf4f2a9544c23aa">Relax</a>
@@ -399,11 +408,17 @@ $(function() {
 <li>rhog_dot_product()
 : <a class="el" href="classCharge__Mixing.html#a8b3b365be955d98b527d05f53eb98e49">Charge_Mixing</a>
 </li>
+<li>rhog_piece_to_all()
+: <a class="el" href="classSymmetry__rho.html#a5720ba690b5a26d3098d634bb76cc146">Symmetry_rho</a>
+</li>
+<li>rhog_symmetry()
+: <a class="el" href="classModuleSymmetry_1_1Symmetry.html#a81fa3f3a4cb714a89f233952c41e7472">ModuleSymmetry::Symmetry</a>
+</li>
 <li>rl_sph_harm()
 : <a class="el" href="classModuleBase_1_1Ylm.html#a104baf4d0deee88cc32bd8e1e323e3cb">ModuleBase::Ylm</a>
 </li>
 <li>rlylm()
-: <a class="el" href="classModuleBase_1_1Ylm.html#a61acd0fe3396e303361d68e036257e54">ModuleBase::Ylm</a>
+: <a class="el" href="classModuleBase_1_1Ylm.html#ac5b0ac2d877eed2b6590960e95129295">ModuleBase::Ylm</a>
 , <a class="el" href="classModuleBase_1_1YlmReal.html#a76c49f30ece9922ffa5fce0975ccc94f">ModuleBase::YlmReal</a>
 </li>
 <li>root_fd()
@@ -444,7 +459,7 @@ $(function() {
 : <a class="el" href="classRun__MD.html#a1a09a23c21521aa27fe159d60c072f1c">Run_MD</a>
 </li>
 <li>Rwstream()
-: <a class="el" href="classRwstream.html#abe239ebe506a7faa240f331883dad14c">Rwstream</a>
+: <a class="el" href="classRwstream.html#aa0882fb87d1ccddb68677ff0b4962fa2">Rwstream</a>
 </li>
 </ul>
 </div><!-- contents -->

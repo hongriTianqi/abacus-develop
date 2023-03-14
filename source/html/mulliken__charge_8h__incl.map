@@ -1,12 +1,9 @@
 <map id="module_io/mulliken_charge.h" name="module_io/mulliken_charge.h">
-<area shape="rect" id="node1" title=" " alt="" coords="236,5,387,47"/>
-<area shape="rect" id="node2" href="$global__function_8h.html" title=" " alt="" coords="119,184,272,225"/>
-<area shape="rect" id="node3" title=" " alt="" coords="58,348,120,375"/>
-<area shape="rect" id="node5" href="$global__variable_8h.html" title=" " alt="" coords="22,273,156,300"/>
-<area shape="rect" id="node6" href="$lapack__connector_8h.html" title=" " alt="" coords="292,95,448,136"/>
-<area shape="rect" id="node7" href="$matrix_8h.html" title=" " alt="" coords="333,273,410,300"/>
-<area shape="rect" id="node8" href="$complexmatrix_8h.html" title=" " alt="" coords="408,191,541,218"/>
-<area shape="rect" id="node9" href="$scalapack__connector_8h.html" title=" " alt="" coords="524,95,702,136"/>
-<area shape="rect" id="node10" href="$psi_8h.html" title=" " alt="" coords="727,102,859,129"/>
-<area shape="rect" id="node4" title=" " alt="" coords="232,273,308,300"/>
+<area shape="rect" id="node1" title=" " alt="" coords="139,5,289,47"/>
+<area shape="rect" id="node2" href="$matrix_8h.html" title=" " alt="" coords="57,169,225,196"/>
+<area shape="rect" id="node6" href="$complexmatrix_8h.html" title=" " alt="" coords="177,95,401,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,244,81,271"/>
+<area shape="rect" id="node4" title=" " alt="" coords="106,244,175,271"/>
+<area shape="rect" id="node5" title=" " alt="" coords="200,244,273,271"/>
+<area shape="rect" id="node7" title=" " alt="" coords="249,169,328,196"/>
 </map>

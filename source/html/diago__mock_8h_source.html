@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: module_hsolver/test/diago_mock.h Source File</title>
+<title>3.1.4: module_hsolver/test/diago_mock.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -76,7 +76,7 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &quot;../../module_base/lapack_connector.h&quot;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;../../module_base/blas_connector.h&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;mpi.h&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="parallel__reduce_8h.html">src_parallel/parallel_reduce.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="parallel__reduce_8h.html">module_base/parallel_reduce.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="hamilt__pw_8h.html">module_hamilt_pw/hamilt_pwdft/hamilt_pw.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno"><a class="line" href="namespaceDIAGOTEST.html">    8</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceDIAGOTEST.html">DIAGOTEST</a></div>
@@ -358,6 +358,7 @@ $(function() {
 <div class="ttc" id="adiago__lcao__test_8cpp_html_a3c04138a5bfe5d72780bb7e82a18e627"><div class="ttname"><a href="diago__lcao__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">main</a></div><div class="ttdeci">int main(int argc, char **argv)</div><div class="ttdef"><b>Definition:</b> diago_lcao_test.cpp:307</div></div>
 <div class="ttc" id="aclassHPsi_html_a95d2a796645d831d0b84be3dbb68e8f2"><div class="ttname"><a href="classHPsi.html#a95d2a796645d831d0b84be3dbb68e8f2">HPsi::psimatrix</a></div><div class="ttdeci">ModuleBase::ComplexMatrix psimatrix</div><div class="ttdef"><b>Definition:</b> diago_mock.h:227</div></div>
 <div class="ttc" id="aclassDiagoPrepare_html_a068737a4a2248584c10c3ad6b21ff92f"><div class="ttname"><a href="classDiagoPrepare.html#a068737a4a2248584c10c3ad6b21ff92f">DiagoPrepare::abc</a></div><div class="ttdeci">std::vector&lt; double &gt; abc</div><div class="ttdef"><b>Definition:</b> diago_lcao_test.cpp:89</div></div>
+<div class="ttc" id="amodule__hsolver_2test_2CMakeLists_8txt_html_a44eaede0efa2e49af7d69a911f20b1a0"><div class="ttname"><a href="module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0">endif</a></div><div class="ttdeci">base psi device SOURCES diago_lcao_test cpp diago_blas cpp endif() endif() install(FILES H-KPoints-Si2.dat DESTINATION $</div><div class="ttdef"><b>Definition:</b> CMakeLists.txt:51</div></div>
 <div class="ttc" id="aclassModuleBase_1_1ComplexMatrix_html_a82ad82e98b7c96c8b7c82b212e0c4cfa"><div class="ttname"><a href="classModuleBase_1_1ComplexMatrix.html#a82ad82e98b7c96c8b7c82b212e0c4cfa">ModuleBase::ComplexMatrix::c</a></div><div class="ttdeci">std::complex&lt; double &gt; * c</div><div class="ttdef"><b>Definition:</b> complexmatrix.h:21</div></div>
 <div class="ttc" id="astructhamilt_1_1MatrixBlock_html"><div class="ttname"><a href="structhamilt_1_1MatrixBlock.html">hamilt::MatrixBlock</a></div><div class="ttdef"><b>Definition:</b> matrixblock.h:8</div></div>
 <div class="ttc" id="aclassDiagoPrepare_html_ab1bc8566f94b5a58f58a384f8c2e16a4"><div class="ttname"><a href="classDiagoPrepare.html#ab1bc8566f94b5a58f58a384f8c2e16a4">DiagoPrepare::set_env</a></div><div class="ttdeci">void set_env()</div><div class="ttdef"><b>Definition:</b> diago_lcao_test.cpp:171</div></div>
@@ -365,8 +366,7 @@ $(function() {
 <div class="ttc" id="aclassDiagoPrepare_html_ac097e0f95311366152072a76806eae12"><div class="ttname"><a href="classDiagoPrepare.html#ac097e0f95311366152072a76806eae12">DiagoPrepare::compare_eigen</a></div><div class="ttdeci">bool compare_eigen(std::stringstream &amp;out_info)</div><div class="ttdef"><b>Definition:</b> diago_lcao_test.cpp:209</div></div>
 <div class="ttc" id="aclassDiagoPrepare_html_aad0f96f7dc2b39c6d250e5407d093163"><div class="ttname"><a href="classDiagoPrepare.html#aad0f96f7dc2b39c6d250e5407d093163">DiagoPrepare::dh</a></div><div class="ttdeci">hsolver::DiagH&lt; double &gt; * dh</div><div class="ttdef"><b>Definition:</b> diago_lcao_test.cpp:85</div></div>
 <div class="ttc" id="aclassHamiltTEST_html_a9a1fe3679645087d61ab8c3752246865"><div class="ttname"><a href="classHamiltTEST.html#a9a1fe3679645087d61ab8c3752246865">HamiltTEST::matrix</a></div><div class="ttdeci">void matrix(hamilt::MatrixBlock&lt; T &gt; &amp;hk_in, hamilt::MatrixBlock&lt; T &gt; &amp;sk_in)</div><div class="ttdef"><b>Definition:</b> diago_lcao_test.cpp:39</div></div>
-<div class="ttc" id="amodule__hsolver_2test_2CMakeLists_8txt_html_af43323ef8227890ad5b6f6e4f83dd6a4"><div class="ttname"><a href="module__hsolver_2test_2CMakeLists_8txt.html#af43323ef8227890ad5b6f6e4f83dd6a4">endif</a></div><div class="ttdeci">base psi device SOURCES diago_lcao_test cpp diago_blas cpp src_parallel parallel_global cpp src_parallel parallel_common cpp src_parallel parallel_reduce cpp endif() endif() install(FILES H-KPoints-Si2.dat DESTINATION $</div><div class="ttdef"><b>Definition:</b> CMakeLists.txt:37</div></div>
-<div class="ttc" id="anamespaceParallel__Reduce_html_a5ccf1f753c6fae3266e7e9b5e21f2712"><div class="ttname"><a href="namespaceParallel__Reduce.html#a5ccf1f753c6fae3266e7e9b5e21f2712">Parallel_Reduce::reduce_complex_double_pool</a></div><div class="ttdeci">void reduce_complex_double_pool(std::complex&lt; double &gt; &amp;object)</div><div class="ttdef"><b>Definition:</b> parallel_reduce.cpp:178</div></div>
+<div class="ttc" id="anamespaceParallel__Reduce_html_a5ccf1f753c6fae3266e7e9b5e21f2712"><div class="ttname"><a href="namespaceParallel__Reduce.html#a5ccf1f753c6fae3266e7e9b5e21f2712">Parallel_Reduce::reduce_complex_double_pool</a></div><div class="ttdeci">void reduce_complex_double_pool(std::complex&lt; double &gt; &amp;object)</div><div class="ttdef"><b>Definition:</b> parallel_reduce.cpp:151</div></div>
 <div class="ttc" id="aclasshamilt_1_1HamiltPW_html_a0a1327efc7273f87fdedcafb34319155"><div class="ttname"><a href="classhamilt_1_1HamiltPW.html#a0a1327efc7273f87fdedcafb34319155">hamilt::HamiltPW::~HamiltPW</a></div><div class="ttdeci">~HamiltPW()</div><div class="ttdef"><b>Definition:</b> hamilt_pw.cpp:119</div></div>
 <div class="ttc" id="adiago__blas_8h_html"><div class="ttname"><a href="diago__blas_8h.html">diago_blas.h</a></div></div>
 <div class="ttc" id="aclassHPsi_html_a7a5655323fa5d4a30182809f48cc7a98"><div class="ttname"><a href="classHPsi.html#a7a5655323fa5d4a30182809f48cc7a98">HPsi::max</a></div><div class="ttdeci">int max</div><div class="ttdef"><b>Definition:</b> diago_mock.h:230</div></div>

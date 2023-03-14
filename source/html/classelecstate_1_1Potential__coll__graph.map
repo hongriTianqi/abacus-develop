@@ -1,12 +1,12 @@
 <map id="elecstate::Potential" name="elecstate::Potential">
-<area shape="rect" id="node1" title=" " alt="" coords="497,1599,679,1984"/>
-<area shape="rect" id="node2" href="$classelecstate_1_1PotBase.html" title=" " alt="" coords="125,1253,267,1389"/>
-<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="5,409,192,1059"/>
+<area shape="rect" id="node1" title=" " alt="" coords="497,1569,679,1955"/>
+<area shape="rect" id="node2" href="$classelecstate_1_1PotBase.html" title=" " alt="" coords="125,1224,267,1360"/>
+<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="5,409,192,1029"/>
 <area shape="rect" id="node4" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="182,5,341,273"/>
-<area shape="rect" id="node5" href="$classUnitCell.html" title=" " alt="" coords="371,1136,509,1507"/>
-<area shape="rect" id="node6" href="$classMagnetism.html" title=" " alt="" coords="337,622,543,846"/>
-<area shape="rect" id="node8" href="$classAtom.html" title=" " alt="" coords="567,578,737,890"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="761,541,924,927"/>
-<area shape="rect" id="node9" href="$classModuleBase_1_1ComplexMatrix.html" title=" " alt="" coords="533,1187,744,1455"/>
-<area shape="rect" id="node10" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="767,1195,921,1448"/>
+<area shape="rect" id="node5" href="$classUnitCell.html" title=" " alt="" coords="371,1107,509,1477"/>
+<area shape="rect" id="node6" href="$classMagnetism.html" title=" " alt="" coords="337,607,543,831"/>
+<area shape="rect" id="node8" href="$classAtom.html" title=" " alt="" coords="567,563,737,875"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="761,527,924,912"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1ComplexMatrix.html" title=" " alt="" coords="533,1158,744,1426"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="767,1165,921,1419"/>
 </map>

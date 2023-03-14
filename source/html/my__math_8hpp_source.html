@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: module_hsolver/genelpa/my_math.hpp Source File</title>
+<title>3.1.4: module_hsolver/genelpa/my_math.hpp Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -179,7 +179,7 @@ $(function() {
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">double</span> _Complex* alpha_c = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">double</span> _Complex*<span class="keyword">&gt;</span>(&amp;alpha);</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">double</span> _Complex* aa = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">double</span> _Complex*<span class="keyword">&gt;</span>(a);</div>
 <div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">double</span> _Complex* bb = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">double</span> _Complex*<span class="keyword">&gt;</span>(b);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="scalapack__connector_8h.html#adb37c8d9157712aad20cc464c90af528">pztrmm_</a>(&amp;side, &amp;uplo, &amp;trans, &amp;diag, &amp;m, &amp;n, alpha_c, aa, &amp;isrc, &amp;isrc, desc, bb, &amp;isrc, &amp;isrc, desc);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <a class="code" href="scalapack__connector_8h.html#a0ac509dd2b6bd5eb11d4d1a651b44a47">pztrmm_</a>(&amp;side, &amp;uplo, &amp;trans, &amp;diag, &amp;m, &amp;n, alpha_c, aa, &amp;isrc, &amp;isrc, desc, bb, &amp;isrc, &amp;isrc, desc);</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;}</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
 <div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">void</span> Cpdgemm(<span class="keywordtype">char</span> transa,</div>
@@ -266,7 +266,7 @@ $(function() {
 <div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">double</span> _Complex* bb = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">double</span> _Complex*<span class="keyword">&gt;</span>(b);</div>
 <div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">double</span> _Complex* cc = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">double</span> _Complex*<span class="keyword">&gt;</span>(c);</div>
 <div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">int</span> isrc = 1;</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="scalapack__connector_8h.html#a9ca348c03b3a2eed595eaee8dbc07c9b">pzgemm_</a>(&amp;transa,</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="scalapack__connector_8h.html#aa31b969b27288889456f745735b2cb2c">pzgemm_</a>(&amp;transa,</div>
 <div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            &amp;transb,</div>
 <div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            &amp;m,</div>
 <div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            &amp;n,</div>
@@ -303,7 +303,7 @@ $(function() {
 <div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    <span class="keywordtype">double</span> _Complex* bb = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">double</span> _Complex*<span class="keyword">&gt;</span>(b);</div>
 <div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <span class="keywordtype">double</span> _Complex* cc = <span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">double</span> _Complex*<span class="keyword">&gt;</span>(c);</div>
 <div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <span class="keywordtype">int</span> isrc = 1;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="scalapack__connector_8h.html#a9ca348c03b3a2eed595eaee8dbc07c9b">pzgemm_</a>(&amp;transa,</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    <a class="code" href="scalapack__connector_8h.html#aa31b969b27288889456f745735b2cb2c">pzgemm_</a>(&amp;transa,</div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            &amp;transb,</div>
 <div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            &amp;m,</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            &amp;m,</div>
@@ -459,17 +459,18 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="ascalapack_8h_html"><div class="ttname"><a href="scalapack_8h.html">scalapack.h</a></div></div>
 <div class="ttc" id="apblas_8h_html_a3a448c1e9466120c9fa5a8656c40620f"><div class="ttname"><a href="pblas_8h.html#a3a448c1e9466120c9fa5a8656c40620f">pzsymm_</a></div><div class="ttdeci">void pzsymm_(char *side, char *uplo, int *m, int *n, double _Complex *alpha, double _Complex *a, int *ia, int *ja, int *desca, double _Complex *b, int *ib, int *jb, int *descb, double _Complex *beta, double _Complex *c, int *ic, int *jc, int *descc)</div></div>
-<div class="ttc" id="ascalapack__connector_8h_html_a9ca348c03b3a2eed595eaee8dbc07c9b"><div class="ttname"><a href="scalapack__connector_8h.html#a9ca348c03b3a2eed595eaee8dbc07c9b">pzgemm_</a></div><div class="ttdeci">void pzgemm_(const char *transa, const char *transb, const int *M, const int *N, const int *K, const double *alpha, const std::complex&lt; double &gt; *A, const int *IA, const int *JA, const int *DESCA, const std::complex&lt; double &gt; *B, const int *IB, const int *JB, const int *DESCB, const double *beta, std::complex&lt; double &gt; *C, const int *IC, const int *JC, const int *DESCC)</div></div>
 <div class="ttc" id="ascalapack__connector_8h_html_a40dea1997c75ef776ebdf2ae463f4a8a"><div class="ttname"><a href="scalapack__connector_8h.html#a40dea1997c75ef776ebdf2ae463f4a8a">pdpotrf_</a></div><div class="ttdeci">void pdpotrf_(char *uplo, int *n, double *a, int *ia, int *ja, int *desca, int *info)</div></div>
 <div class="ttc" id="apblas_8h_html"><div class="ttname"><a href="pblas_8h.html">pblas.h</a></div></div>
 <div class="ttc" id="apblas_8h_html_a7360598291a9af7050518a3964ef20e4"><div class="ttname"><a href="pblas_8h.html#a7360598291a9af7050518a3964ef20e4">pzhemm_</a></div><div class="ttdeci">void pzhemm_(char *side, char *uplo, int *m, int *n, double _Complex *alpha, double _Complex *a, int *ia, int *ja, int *desca, double _Complex *b, int *ib, int *jb, int *descb, double _Complex *beta, double _Complex *c, int *ic, int *jc, int *descc)</div></div>
 <div class="ttc" id="ablas__connector_8h_html_aa786995208fbea7ec820306e310ea0a3"><div class="ttname"><a href="blas__connector_8h.html#aa786995208fbea7ec820306e310ea0a3">zcopy_</a></div><div class="ttdeci">void zcopy_(long const *n, const std::complex&lt; double &gt; *a, int const *incx, std::complex&lt; double &gt; *b, int const *incy)</div></div>
 <div class="ttc" id="ascalapack_8h_html_a6d00aa8dfd2fc7cf18f994f26ad603ab"><div class="ttname"><a href="scalapack_8h.html#a6d00aa8dfd2fc7cf18f994f26ad603ab">pdgemr2d_</a></div><div class="ttdeci">void pdgemr2d_(int *M, int *N, double *A, int *IA, int *JA, int *DESCA, double *B, int *IB, int *JB, int *DESCB, int *ICTXT)</div></div>
+<div class="ttc" id="ascalapack__connector_8h_html_a0ac509dd2b6bd5eb11d4d1a651b44a47"><div class="ttname"><a href="scalapack__connector_8h.html#a0ac509dd2b6bd5eb11d4d1a651b44a47">pztrmm_</a></div><div class="ttdeci">void pztrmm_(char *side, char *uplo, char *transa, char *diag, int *m, int *n, std::complex&lt; double &gt; *alpha, std::complex&lt; double &gt; *a, int *ia, int *ja, int *desca, std::complex&lt; double &gt; *b, int *ib, int *jb, int *descb)</div></div>
 <div class="ttc" id="ascalapack_8h_html_aae5638df04bab4c3e3da074a58f96613"><div class="ttname"><a href="scalapack_8h.html#aae5638df04bab4c3e3da074a58f96613">pzgemr2d_</a></div><div class="ttdeci">void pzgemr2d_(int *M, int *N, double _Complex *A, int *IA, int *JA, int *DESCA, double _Complex *B, int *IB, int *JB, int *DESCB, int *ICTXT)</div></div>
 <div class="ttc" id="ascalapack__connector_8h_html_a9ff8b730d2d1eb239d626e25c48c5a89"><div class="ttname"><a href="scalapack__connector_8h.html#a9ff8b730d2d1eb239d626e25c48c5a89">pdgemm_</a></div><div class="ttdeci">void pdgemm_(const char *transa, const char *transb, const int *M, const int *N, const int *K, const double *alpha, const double *A, const int *IA, const int *JA, const int *DESCA, const double *B, const int *IB, const int *JB, const int *DESCB, const double *beta, double *C, const int *IC, const int *JC, const int *DESCC)</div></div>
 <div class="ttc" id="ascalapack__connector_8h_html_abbf9e1d8f4db394760ede906f3f25d95"><div class="ttname"><a href="scalapack__connector_8h.html#abbf9e1d8f4db394760ede906f3f25d95">pdtrmm_</a></div><div class="ttdeci">void pdtrmm_(char *side, char *uplo, char *transa, char *diag, int *m, int *n, double *alpha, double *a, int *ia, int *ja, int *desca, double *b, int *ib, int *jb, int *descb)</div></div>
 <div class="ttc" id="apblas_8h_html_a9c497c8cc169eab99a6458095aacf40f"><div class="ttname"><a href="pblas_8h.html#a9c497c8cc169eab99a6458095aacf40f">pddot_</a></div><div class="ttdeci">void pddot_(int *n, double *dot, double *x, int *ix, int *jx, int *descx, int *incx, double *y, int *iy, int *jy, int *descy, int *incy)</div></div>
 <div class="ttc" id="ablas__connector_8h_html_aad2eb011ff28b56f4d4da7701baec2cc"><div class="ttname"><a href="blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc">dcopy_</a></div><div class="ttdeci">void dcopy_(long const *n, const double *a, int const *incx, double *b, int const *incy)</div></div>
+<div class="ttc" id="ascalapack__connector_8h_html_aa31b969b27288889456f745735b2cb2c"><div class="ttname"><a href="scalapack__connector_8h.html#aa31b969b27288889456f745735b2cb2c">pzgemm_</a></div><div class="ttdeci">void pzgemm_(const char *transa, const char *transb, const int *M, const int *N, const int *K, const std::complex&lt; double &gt; *alpha, const std::complex&lt; double &gt; *A, const int *IA, const int *JA, const int *DESCA, const std::complex&lt; double &gt; *B, const int *IB, const int *JB, const int *DESCB, const std::complex&lt; double &gt; *beta, std::complex&lt; double &gt; *C, const int *IC, const int *JC, const int *DESCC)</div></div>
 <div class="ttc" id="ablas_8h_html"><div class="ttname"><a href="blas_8h.html">blas.h</a></div></div>
 <div class="ttc" id="ascalapack__connector_8h_html_a930c0e9df04b25ee4db1faccdba0cb9b"><div class="ttname"><a href="scalapack__connector_8h.html#a930c0e9df04b25ee4db1faccdba0cb9b">pzpotrf_</a></div><div class="ttdeci">void pzpotrf_(char *uplo, int *n, std::complex&lt; double &gt; *a, int *ia, int *ja, int *desca, int *info)</div></div>
 <div class="ttc" id="anamespaceModuleBase_html_a2681bf6cb4975b24a4263f23e1c4c679"><div class="ttname"><a href="namespaceModuleBase.html#a2681bf6cb4975b24a4263f23e1c4c679">ModuleBase::dot</a></div><div class="ttdeci">std::complex&lt; double &gt; dot(const ComplexArray &amp;cd1, const ComplexArray &amp;cd2)</div><div class="ttdoc">Take &quot;dot-product&quot; of two ComplexArray: sum of cd1(conjugate)[i] * cd2[i].</div><div class="ttdef"><b>Definition:</b> complexarray.cpp:218</div></div>
@@ -477,7 +478,6 @@ $(function() {
 <div class="ttc" id="aCblacs_8h_html"><div class="ttname"><a href="Cblacs_8h.html">Cblacs.h</a></div></div>
 <div class="ttc" id="ascalapack__connector_8h_html_adea02be289439c846d427117119eea0d"><div class="ttname"><a href="scalapack__connector_8h.html#adea02be289439c846d427117119eea0d">pdsymm_</a></div><div class="ttdeci">void pdsymm_(char *side, char *uplo, int *m, int *n, double *alpha, double *a, int *ia, int *ja, int *desca, double *b, int *ib, int *jb, int *descb, double *beta, double *c, int *ic, int *jc, int *descc)</div></div>
 <div class="ttc" id="aexp_8cpp_html_a0240ac851181b84ac374872dc5434ee4"><div class="ttname"><a href="exp_8cpp.html#a0240ac851181b84ac374872dc5434ee4">N</a></div><div class="ttdeci">#define N</div><div class="ttdef"><b>Definition:</b> exp.cpp:24</div></div>
-<div class="ttc" id="ascalapack__connector_8h_html_adb37c8d9157712aad20cc464c90af528"><div class="ttname"><a href="scalapack__connector_8h.html#adb37c8d9157712aad20cc464c90af528">pztrmm_</a></div><div class="ttdeci">void pztrmm_(char *side, char *uplo, char *transa, char *diag, int *m, int *n, double *alpha, std::complex&lt; double &gt; *a, int *ia, int *ja, int *desca, std::complex&lt; double &gt; *b, int *ib, int *jb, int *descb)</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

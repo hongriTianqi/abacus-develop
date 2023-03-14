@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: module_base/blacs_connector.h Source File</title>
+<title>3.1.4: module_base/blacs_connector.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -109,11 +109,13 @@ $(function() {
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="blacs__connector_8h.html#ae3b0677b0e09884d640aef46976bcd45">Cblacs_gridinfo</a>(<span class="keywordtype">int</span> icontxt, <span class="keywordtype">int</span>* nprow, <span class="keywordtype">int</span> *npcol, <span class="keywordtype">int</span> *myprow, <span class="keywordtype">int</span> *mypcol);</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">int</span>  <a class="code" href="blacs__connector_8h.html#ac582040a70677419d461b192b3ee54e9">Cblacs_pnum</a>(<span class="keywordtype">int</span> icontxt, <span class="keywordtype">int</span> prow, <span class="keywordtype">int</span> pcol);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="blacs__connector_8h.html#a38270c5b86788cb4ef93d825166c8b30">Cblacs_pcoord</a>(<span class="keywordtype">int</span> icontxt, <span class="keywordtype">int</span> pnum, <span class="keywordtype">int</span> *prow, <span class="keywordtype">int</span> *pcol);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="blacs__connector_8h.html#a655442fd70b0849d135b11263c2ec2f1">Cblacs_exit</a>(<span class="keywordtype">int</span> icontxt);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;}</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="ablacs__connector_8h_html_ac582040a70677419d461b192b3ee54e9"><div class="ttname"><a href="blacs__connector_8h.html#ac582040a70677419d461b192b3ee54e9">Cblacs_pnum</a></div><div class="ttdeci">int Cblacs_pnum(int icontxt, int prow, int pcol)</div></div>
 <div class="ttc" id="ablacs__connector_8h_html_ae3b0677b0e09884d640aef46976bcd45"><div class="ttname"><a href="blacs__connector_8h.html#ae3b0677b0e09884d640aef46976bcd45">Cblacs_gridinfo</a></div><div class="ttdeci">void Cblacs_gridinfo(int icontxt, int *nprow, int *npcol, int *myprow, int *mypcol)</div></div>
 <div class="ttc" id="ablacs__connector_8h_html_a38270c5b86788cb4ef93d825166c8b30"><div class="ttname"><a href="blacs__connector_8h.html#a38270c5b86788cb4ef93d825166c8b30">Cblacs_pcoord</a></div><div class="ttdeci">void Cblacs_pcoord(int icontxt, int pnum, int *prow, int *pcol)</div></div>
+<div class="ttc" id="ablacs__connector_8h_html_a655442fd70b0849d135b11263c2ec2f1"><div class="ttname"><a href="blacs__connector_8h.html#a655442fd70b0849d135b11263c2ec2f1">Cblacs_exit</a></div><div class="ttdeci">void Cblacs_exit(int icontxt)</div></div>
 <div class="ttc" id="ablacs__connector_8h_html_aa7556fa70dcc29ec2bec52bb0b652ef7"><div class="ttname"><a href="blacs__connector_8h.html#aa7556fa70dcc29ec2bec52bb0b652ef7">Cblacs_gridmap</a></div><div class="ttdeci">void Cblacs_gridmap(int *icontxt, int *usermap, int ldumap, int nprow, int npcol)</div></div>
 <div class="ttc" id="ablacs__connector_8h_html_a5fe0cd2524599ee02fa0c59758ab7a28"><div class="ttname"><a href="blacs__connector_8h.html#a5fe0cd2524599ee02fa0c59758ab7a28">Cblacs_get</a></div><div class="ttdeci">void Cblacs_get(int icontxt, int what, int *val)</div></div>
 <div class="ttc" id="ablacs__connector_8h_html_a9148b59f32c03127a7147965ee673cc9"><div class="ttname"><a href="blacs__connector_8h.html#a9148b59f32c03127a7147965ee673cc9">Cblacs_pinfo</a></div><div class="ttdeci">void Cblacs_pinfo(int *myid, int *nprocs)</div></div>

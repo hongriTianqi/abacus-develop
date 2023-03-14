@@ -1,12 +1,9 @@
 <map id="Charge::non_linear_core_correction" name="Charge::non_linear_core_correction">
-<area shape="rect" id="node1" title=" " alt="" coords="892,104,1036,145"/>
-<area shape="rect" id="node2" href="$classForces.html#ae52a9fdf7bcb35ac20b51f9708124527" title=" " alt="" coords="678,45,843,87"/>
-<area shape="rect" id="node3" href="$classCharge.html#abe553c3901db57ef8814c39c2baa241a" title=" " alt="" coords="681,111,840,138"/>
-<area shape="rect" id="node10" href="$classStress__Func.html#afb4a91cc8729aa125799567996c3870c" title=" " alt="" coords="677,162,844,218"/>
-<area shape="rect" id="node4" href="$classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651" title=" " alt="" coords="479,104,629,145"/>
-<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="242,5,418,47"/>
-<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="242,71,418,112"/>
-<area shape="rect" id="node8" href="$classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="242,136,418,177"/>
-<area shape="rect" id="node9" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="229,201,431,243"/>
-<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__OF.html#a380b40f26c567a678ad6552068e6f4bc" title=" " alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="668,64,812,105"/>
+<area shape="rect" id="node2" href="$classForces.html#ae52a9fdf7bcb35ac20b51f9708124527" title=" " alt="" coords="454,5,619,47"/>
+<area shape="rect" id="node3" href="$classCharge.html#abe553c3901db57ef8814c39c2baa241a" title=" " alt="" coords="457,71,616,98"/>
+<area shape="rect" id="node7" href="$classStress__Func.html#afb4a91cc8729aa125799567996c3870c" title=" " alt="" coords="453,122,620,178"/>
+<area shape="rect" id="node4" href="$classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651" title=" " alt="" coords="255,64,405,105"/>
+<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,31,194,72"/>
+<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,96,207,137"/>
 </map>

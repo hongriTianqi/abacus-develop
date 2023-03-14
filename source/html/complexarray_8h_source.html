@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: module_base/complexarray.h Source File</title>
+<title>3.1.4: module_base/complexarray.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -147,8 +147,8 @@ $(function() {
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keywordtype">double</span> <a class="code" href="namespaceModuleBase.html#a301e207ebf602abde4821f23148ed030">abs2</a>(<span class="keyword">const</span> <a class="code" href="classModuleBase_1_1ComplexArray.html">ComplexArray</a> &amp;cd);</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="keywordtype">void</span> <a class="code" href="namespaceModuleBase.html#ae073d466ab02371446c2a946ec476dbb">add_scale_abs2</a>(<span class="keyword">const</span> std::complex &lt;double&gt; &amp;c, <span class="keyword">const</span> <a class="code" href="classModuleBase_1_1ComplexArray.html">ComplexArray</a> &amp; in,</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;               <a class="code" href="classModuleBase_1_1ComplexArray.html">ComplexArray</a> &amp;out);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">// void add_scale_abs2(const std::complex &lt;double&gt; &amp;c, const ComplexArray &amp; in,</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment">//                ComplexArray &amp;out);</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;std::complex &lt;double&gt; <a class="code" href="namespaceModuleBase.html#a2681bf6cb4975b24a4263f23e1c4c679">dot</a>(<span class="keyword">const</span> <a class="code" href="classModuleBase_1_1ComplexArray.html">ComplexArray</a> &amp;cd1, <span class="keyword">const</span> <a class="code" href="classModuleBase_1_1ComplexArray.html">ComplexArray</a> &amp;cd2);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
@@ -184,7 +184,6 @@ $(function() {
 <div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
 <div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;<span class="preprocessor">#endif // COMPLEX_ARRAY_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespaceModuleBase_html_ae073d466ab02371446c2a946ec476dbb"><div class="ttname"><a href="namespaceModuleBase.html#ae073d466ab02371446c2a946ec476dbb">ModuleBase::add_scale_abs2</a></div><div class="ttdeci">void add_scale_abs2(const std::complex&lt; double &gt; &amp;c, const ComplexArray &amp;in, ComplexArray &amp;out)</div><div class="ttdef"><b>Definition:</b> complexarray.cpp:213</div></div>
 <div class="ttc" id="aclassModuleBase_1_1ComplexArray_html_a0486e17f5fa3e4e3bfa463c2e2551add"><div class="ttname"><a href="classModuleBase_1_1ComplexArray.html#a0486e17f5fa3e4e3bfa463c2e2551add">ModuleBase::ComplexArray::operator()</a></div><div class="ttdeci">std::complex&lt; double &gt; &amp; operator()(const int ind1=0, const int ind2=0, const int ind3=0, const int ind4=0)</div><div class="ttdoc">overloaded subscript operator for non-const std::complex Array const reference return creates an lvak...</div><div class="ttdef"><b>Definition:</b> complexarray.cpp:272</div></div>
 <div class="ttc" id="aclassModuleBase_1_1ComplexArray_html_a62132fb3c3afa23c4ddf3205dff1c016"><div class="ttname"><a href="classModuleBase_1_1ComplexArray.html#a62132fb3c3afa23c4ddf3205dff1c016">ModuleBase::ComplexArray::ComplexArray</a></div><div class="ttdeci">ComplexArray(const int bnd1=0, const int bnd2=1, const int bnd3=1, const int bnd4=1)</div><div class="ttdef"><b>Definition:</b> complexarray.cpp:14</div></div>
 <div class="ttc" id="anamespaceModuleBase_html_aac261198fbe5402ad46a08fb8b3181e9"><div class="ttname"><a href="namespaceModuleBase.html#aac261198fbe5402ad46a08fb8b3181e9">ModuleBase::scaled_sum</a></div><div class="ttdeci">void scaled_sum(double r1, const ComplexArray &amp;cd1, double r2, const ComplexArray &amp;cd2, ComplexArray &amp;cd3)</div><div class="ttdoc">Does cd3 = r1*cd1 + r2*cd2.</div><div class="ttdef"><b>Definition:</b> complexarray.cpp:241</div></div>
@@ -227,7 +226,7 @@ $(function() {
 <div class="ttc" id="anamespaceModuleBase_html_a689d9cf4485dfa67a0ede7afe585ccd1"><div class="ttname"><a href="namespaceModuleBase.html#a689d9cf4485dfa67a0ede7afe585ccd1">ModuleBase::complexArrayxAlloc</a></div><div class="ttdeci">void complexArrayxAlloc()</div><div class="ttdef"><b>Definition:</b> complexarray.cpp:12</div></div>
 <div class="ttc" id="aclassModuleBase_1_1ComplexArray_html_a6e91b92cbdd44ecff114f65d42ee5a40"><div class="ttname"><a href="classModuleBase_1_1ComplexArray.html#a6e91b92cbdd44ecff114f65d42ee5a40">ModuleBase::ComplexArray::create</a></div><div class="ttdeci">void create(const int bnd1=0, const int bnd2=1, const int bnd3=1, const int bnd4=1)</div><div class="ttdef"><b>Definition:</b> complexarray.cpp:41</div></div>
 <div class="ttc" id="aclassModuleBase_1_1ComplexArray_html_aa712d63dbcc6f3e94006ac85bb092d9a"><div class="ttname"><a href="classModuleBase_1_1ComplexArray.html#aa712d63dbcc6f3e94006ac85bb092d9a">ModuleBase::ComplexArray::operator=</a></div><div class="ttdeci">ComplexArray &amp; operator=(ComplexArray &amp;&amp;cd)</div><div class="ttdef"><b>Definition:</b> complexarray.cpp:70</div></div>
-<div class="ttc" id="anamespaceModuleBase_html_a319c957fc399a519aa4cdd447bdee1aa"><div class="ttname"><a href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa">ModuleBase::WARNING_QUIT</a></div><div class="ttdeci">void WARNING_QUIT(const std::string &amp;file, const std::string &amp;description)</div><div class="ttdoc">Combine the functions of WARNING and QUIT.</div><div class="ttdef"><b>Definition:</b> complexmatrix_test.cpp:45</div></div>
+<div class="ttc" id="anamespaceModuleBase_html_a319c957fc399a519aa4cdd447bdee1aa"><div class="ttname"><a href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa">ModuleBase::WARNING_QUIT</a></div><div class="ttdeci">void WARNING_QUIT(const std::string &amp;file, const std::string &amp;description)</div><div class="ttdoc">Combine the functions of WARNING and QUIT.</div><div class="ttdef"><b>Definition:</b> complexmatrix_test.cpp:46</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

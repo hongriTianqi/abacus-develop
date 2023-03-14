@@ -1,7 +1,7 @@
 <map id="Exx_LRI::cal_exx_elec" name="Exx_LRI::cal_exx_elec">
 <area shape="rect" id="node1" title=" " alt="" coords="5,137,171,163"/>
 <area shape="rect" id="node2" href="$namespaceRI__2D__Comm.html#a45646400746155ec7a64b558194bd25c" title=" " alt="" coords="225,71,389,112"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="453,137,598,163"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="453,137,598,163"/>
 <area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="219,191,396,218"/>
 <area shape="rect" id="node3" href="$namespaceRI__2D__Comm.html#a8566e497fbd82c693b20235fbe2f394b" title=" " alt="" coords="444,5,607,47"/>
 <area shape="rect" id="node4" href="$namespaceRI__2D__Comm.html#a4761dc82d1884cd847bcd9d015278e2f" title=" " alt="" coords="447,71,604,112"/>

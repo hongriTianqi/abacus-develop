@@ -1,11 +1,12 @@
 <map id="XC_Functional::perdew86_spin" name="XC_Functional::perdew86_spin">
-<area shape="rect" id="node1" title=" " alt="" coords="883,79,1101,105"/>
-<area shape="rect" id="node2" href="$classXC__Functional.html#a2766fbd64029813a5d1d65ec9c7a5c8a" title=" " alt="" coords="657,53,835,80"/>
-<area shape="rect" id="node9" href="$classXCTest__P86__SPN.html#a2959506d6fd0eb7e73a2ebfa8560e350" title=" " alt="" coords="658,104,834,131"/>
-<area shape="rect" id="node3" href="$classXC__Functional.html#aa70083a1d12d9b738b3b5038af13cd36" title=" " alt="" coords="435,53,609,80"/>
-<area shape="rect" id="node4" href="$classStress__Func.html#a6fc9b89334a17ad363da53de60e88ea8" title=" " alt="" coords="220,5,387,61"/>
-<area shape="rect" id="node5" href="$classXC__Functional.html#a062ef071f07bf5327b7a7ee7a232325b" title=" " alt="" coords="228,85,379,112"/>
-<area shape="rect" id="node6" href="$classForces.html#ae52a9fdf7bcb35ac20b51f9708124527" title=" " alt="" coords="6,13,171,54"/>
-<area shape="rect" id="node7" href="$classelecstate_1_1PotXC.html#a1ce5b3e56bb87cf597b9832feb484aa0" title=" " alt="" coords="11,78,166,119"/>
-<area shape="rect" id="node8" href="$classStress__Func.html#afb4a91cc8729aa125799567996c3870c" title=" " alt="" coords="5,144,172,200"/>
+<area shape="rect" id="node1" title=" " alt="" coords="679,176,897,203"/>
+<area shape="rect" id="node2" href="$classXC__Functional.html#a2766fbd64029813a5d1d65ec9c7a5c8a" title=" " alt="" coords="453,151,631,177"/>
+<area shape="rect" id="node10" href="$classXCTest__P86__SPN.html#a2959506d6fd0eb7e73a2ebfa8560e350" title=" " alt="" coords="454,201,630,228"/>
+<area shape="rect" id="node3" href="$classXC__Functional.html#a08045cb243bc6c5b0e8725ab42546bd5" title=" " alt="" coords="225,20,400,47"/>
+<area shape="rect" id="node5" href="$classXCTest__PBE__SPN.html#a0b75c666fe29e537d10e90551216e7d0" title=" " alt="" coords="224,71,401,97"/>
+<area shape="rect" id="node6" href="$classXCTest__BP__SPN.html#a2758410e99fe01b0a2fa3958e60c576f" title=" " alt="" coords="228,121,397,148"/>
+<area shape="rect" id="node7" href="$classXCTest__revPBE__SPN.html#a815a7e59b92606002718984dd2a9d078" title=" " alt="" coords="233,173,392,214"/>
+<area shape="rect" id="node8" href="$classXCTest__PBE0__SPN.html#a351aa00054a162f019cdae812ee06cdf" title=" " alt="" coords="220,239,405,265"/>
+<area shape="rect" id="node9" href="$classXCTest__PBEsol__SPN.html#ad5aad9a1f9dae9a23921b40dc40c1303" title=" " alt="" coords="234,290,391,331"/>
+<area shape="rect" id="node4" href="$classStress__Func.html#a6fc9b89334a17ad363da53de60e88ea8" title=" " alt="" coords="5,5,172,61"/>
 </map>

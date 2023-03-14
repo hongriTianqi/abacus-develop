@@ -1,12 +1,12 @@
 <map id="ModulePW::FFT::fftxyr2c" name="ModulePW::FFT::fftxyr2c">
-<area shape="rect" id="node1" title=" " alt="" coords="471,221,649,248"/>
-<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__K.html#a97ed9dc5408318cc47463effacd41ebb" title=" " alt="" coords="261,181,423,222"/>
-<area shape="rect" id="node10" href="$classModulePW_1_1PW__Basis.html#a743759a9021fc9d1cf570a7499e55b08" title=" " alt="" coords="261,246,423,287"/>
-<area shape="rect" id="node3" href="$classStochastic__hchi.html#a296c8e3164d80c0c8b4163e8d073d05a" title=" " alt="" coords="30,5,189,32"/>
-<area shape="rect" id="node4" href="$classModulePW_1_1PW__Basis__K.html#a0a7421cdb81e2617e6916f2f7224cbb8" title=" " alt="" coords="29,57,190,98"/>
-<area shape="rect" id="node5" href="$classIState__Envelope.html#aa0192513c523e3622fb25d1d600d4626" title=" " alt="" coords="32,122,187,163"/>
-<area shape="rect" id="node6" href="$test-other_8cpp.html#a2bcd6cbe392dd349c308f97fe14e1d62" title=" " alt="" coords="75,188,144,215"/>
-<area shape="rect" id="node7" href="$classtoWannier90.html#afd2f7a1ab9e79243f953eb31700e0674" title=" " alt="" coords="23,239,196,265"/>
-<area shape="rect" id="node8" href="$classunkOverlap__pw.html#a3314ed0c6bb97b0c56da3079294a4406" title=" " alt="" coords="5,289,213,316"/>
-<area shape="rect" id="node9" href="$classunkOverlap__pw.html#a6526167db514315fda7ef764af9c2ffb" title=" " alt="" coords="18,341,201,382"/>
+<area shape="rect" id="node1" title=" " alt="" coords="717,188,896,215"/>
+<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__K.html#a97ed9dc5408318cc47463effacd41ebb" title=" " alt="" coords="508,181,669,222"/>
+<area shape="rect" id="node3" href="$classStochastic__hchi.html#a296c8e3164d80c0c8b4163e8d073d05a" title=" " alt="" coords="277,5,435,32"/>
+<area shape="rect" id="node5" href="$classModulePW_1_1PW__Basis__K.html#a0a7421cdb81e2617e6916f2f7224cbb8" title=" " alt="" coords="275,57,437,98"/>
+<area shape="rect" id="node6" href="$classIState__Envelope.html#aa0192513c523e3622fb25d1d600d4626" title=" " alt="" coords="279,122,433,163"/>
+<area shape="rect" id="node7" href="$test-other_8cpp.html#a2bcd6cbe392dd349c308f97fe14e1d62" title=" " alt="" coords="321,188,391,215"/>
+<area shape="rect" id="node8" href="$classtoWannier90.html#afd2f7a1ab9e79243f953eb31700e0674" title=" " alt="" coords="269,239,443,265"/>
+<area shape="rect" id="node9" href="$classunkOverlap__pw.html#a3314ed0c6bb97b0c56da3079294a4406" title=" " alt="" coords="252,289,460,316"/>
+<area shape="rect" id="node10" href="$classunkOverlap__pw.html#a6526167db514315fda7ef764af9c2ffb" title=" " alt="" coords="265,341,447,382"/>
+<area shape="rect" id="node4" href="$classStochastic__hchi.html#ae00a42cc25853724fc41316f3290d2db" title=" " alt="" coords="5,5,204,32"/>
 </map>

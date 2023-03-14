@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: atomtype_ Struct Reference</title>
+<title>3.1.4: atomtype_ Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -84,11 +84,85 @@ Collaboration diagram for atomtype_:</div>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a9ca6034d211591e99a8f3dfe6691c610"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structatomtype__.html#a9ca6034d211591e99a8f3dfe6691c610">atomname</a></td></tr>
 <tr class="separator:a9ca6034d211591e99a8f3dfe6691c610"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abea7928ada46796290cbfc705ed1a7ff"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structatomtype__.html#abea7928ada46796290cbfc705ed1a7ff">coordinate</a></td></tr>
-<tr class="separator:abea7928ada46796290cbfc705ed1a7ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2c6d112eeb10bdbe8f82848254ae0f5"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; double &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structatomtype__.html#ab2c6d112eeb10bdbe8f82848254ae0f5">coordinate</a></td></tr>
+<tr class="separator:ab2c6d112eeb10bdbe8f82848254ae0f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>switch(ibrav) { case 1: return "01. Cubic P (simple)"; case 2: return "02. Cubic I (body-centered)"; case 3: return "03. Cubic F (face-centered)"; case 4: return "04. Hexagonal cell"; case 5: return "05. Tetrogonal P (simple)"; case 6: return "06. Tetrogonal I (body-centered)"; case 7: return "07. Rhombohedral (Trigonal) cell"; case 8: return "08. Orthorhombic P(simple)"; case 9: return "09. Orthorhombic I (body-centered)"; case 10: return "10. Orthorhombic F (face-centered)"; case 11: return "11. Orthorhombic C (base-centered)"; case 12: return "12. Monoclinic P (simple)"; case 13: return "13. Monoclinic A (base-center)"; case 14: return "14. Triclinic cell"; case 15: return "wrong !! "; } </p>
+<div class="textblock"><p>switch(ibrav) { case 1: return "01. Cubic P (simple)"; case 2: return "02. Cubic I (body-centered)"; case 3: return "03. Cubic F (face-centered)"; case 4: return "04. Hexagonal cell"; case 5: return "05. Tetrogonal P (simple)"; case 6: return "06. Tetrogonal I (body-centered)"; case 7: return "07. Rhombohedral (Trigonal) cell"; case 8: return "08. Orthorhombic P(simple)"; case 9: return "09. Orthorhombic I (body-centered)"; case 10: return "10. Orthorhombic F (face-centered)"; case 11: return "11. Orthorhombic C (base-centered)"; case 12: return "12. Monoclinic P (simple)"; case 13: return "13. Monoclinic A (base-center)"; case 14: return "14. Triclinic cell"; case 15: return "wrong !! "; }</p>
+<ul>
+<li>Tested Functions:<ul>
+<li><a class="el" href="classK__Vectors.html">K_Vectors()</a><ul>
+<li>basic parameters (nks,nkstot,nkstot_ibz) are set</li>
+</ul>
+</li>
+<li>read_kpoints()<ul>
+<li>ReadKpointsGammaOnlyLocal: <a class="el" href="namespaceGlobalV.html#ab410eb03e7415c06bcdea279a94daf3f">GlobalV::GAMMA_ONLY_LOCAL</a> = 1</li>
+<li>ReadKpointsKspacing: generate KPT from kspacing parameter</li>
+<li>ReadKpointsGamma: "Gamma" mode of <code>KPT</code> file</li>
+<li>ReadKpointsMP: "MP" mode of <code>KPT</code> file</li>
+<li>ReadKpointsLine: "Line" mode of <code>KPT</code> file</li>
+<li>ReadKpointsCartesian: "Cartesian" mode of <code>KPT</code> file</li>
+<li>ReadKpointsLineCartesian: "Line_Cartesian" mode of <code>KPT</code> file</li>
+<li>ReadKpointsDirect: "Direct" mode of <code>KPT</code> file</li>
+<li>ReadKpointsWarning1: Can't find KPT file through string k_file</li>
+<li>ReadKpointsWarning2: symbol K_POINTS not found at the 1st line</li>
+<li>ReadKpointsWarning3: nkstot &gt; MAX_KPOINTS (100000)</li>
+<li>ReadKpointsWarning4: Error: neither Gamma nor Monkhorst-Pack mode when nkstot=0</li>
+<li>ReadKpointsWarning5: Error : neither Cartesian nor Direct kpoint in line mode(nkstot&gt;0)</li>
+<li>ReadKpointsWarning6: Line mode (Line_Cartesian) of k-points is open, please set symmetry to 0 or -1</li>
+<li>ReadKpointsWarning7: Line mode (Line_Direct) of k-points is open, please set symmetry to 0 or -1</li>
+</ul>
+</li>
+<li>set_kup_and_kdw()<ul>
+<li>SetKupKdown: set basic kpoints info: kvec_c, kvec_d, wk, isk, nks, nkstot according to different spin case</li>
+</ul>
+</li>
+<li>set_kup_and_kdw_after_vc()<ul>
+<li>SetKupKdownAfterVC: set basic kpoints info: kvec_c, kvec_d, wk, isk, nks, nkstot according to different spin case after variable-cell optimization</li>
+</ul>
+</li>
+<li>set_both_kvec()<ul>
+<li>SetBothKvec: set kvec_c (cartesian coor.) and kvec_d (direct coor.)</li>
+<li>SetBothKvecFinalSCF: same as above, with <a class="el" href="namespaceGlobalV.html#a3c57c1f9d6358804568b1cef03c0e09b">GlobalV::FINAL_SCF</a>=1</li>
+</ul>
+</li>
+<li>set_both_kvec_after_vc()<ul>
+<li>SetBothKvecAfterVC: set kvec_c (cartesian coor.) and kvec_d (direct coor.) after variable-cell relaxation</li>
+</ul>
+</li>
+<li>print_klists()<ul>
+<li>PrintKlists: print kpoints coordinates</li>
+<li>PrintKlistsWarningQuit: for nkstot &lt; nks error</li>
+</ul>
+</li>
+<li>normalize_wk()<ul>
+<li>NormalizeWk: normalize weight of kpoints</li>
+</ul>
+</li>
+<li>update_use_ibz()<ul>
+<li>UpdateUseIbz: update kpoints info by ibz kpoints info</li>
+</ul>
+</li>
+<li>ibz_kpoint()<ul>
+<li>IbzKpoint: generate IBZ kpoints</li>
+<li>IbzKpointIsMP: generate IBZ kpoints for non-symmetry and Monkhorst-Pack case</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Tested Functions:<ul>
+<li>Set<ul>
+<li>this is a "kind of" integerated test for set() and mpi_k()</li>
+</ul>
+</li>
+<li>SetAfterVC<ul>
+<li>this is a "kind of" integerated test for set_after_vc() and mpi_k_after_vc()</li>
+<li>a bug is found from here, that is, KPAR &gt; 1 is not support yet in vc-relax calculation due to the size of kvec_d, kvec_c being nks, rather than nkstot in set_both_kvec_after_vc </li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a id="a9ca6034d211591e99a8f3dfe6691c610"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a9ca6034d211591e99a8f3dfe6691c610">&#9670;&nbsp;</a></span>atomname</h2>
@@ -104,22 +178,25 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="abea7928ada46796290cbfc705ed1a7ff"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abea7928ada46796290cbfc705ed1a7ff">&#9670;&nbsp;</a></span>coordinate</h2>
+<a id="ab2c6d112eeb10bdbe8f82848254ae0f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2c6d112eeb10bdbe8f82848254ae0f5">&#9670;&nbsp;</a></span>coordinate</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::vector&lt;std::vector&lt;double&gt; &gt; atomtype_::coordinate</td>
+          <td class="memname">std::vector&lt; std::vector&lt; double &gt; &gt; atomtype_::coordinate</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 </div>
 </div>
-<hr/>The documentation for this struct was generated from the following file:<ul>
+<hr/>The documentation for this struct was generated from the following files:<ul>
 <li>module_cell/module_symmetry/test/<a class="el" href="symmetry__test_8cpp.html">symmetry_test.cpp</a></li>
+<li>module_cell/test/<a class="el" href="klist__test_8cpp.html">klist_test.cpp</a></li>
+<li>module_cell/test/<a class="el" href="klist__test__para_8cpp.html">klist_test_para.cpp</a></li>
+<li>module_hamilt_general/module_vdw/test/<a class="el" href="vdw__test_8cpp.html">vdw_test.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

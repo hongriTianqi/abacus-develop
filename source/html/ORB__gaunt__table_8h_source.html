@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: module_orbital/ORB_gaunt_table.h Source File</title>
+<title>3.1.4: module_orbital/ORB_gaunt_table.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -114,99 +114,94 @@ $(function() {
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classORB__gaunt__table.html#ac13c54d57fa558343d5fe10effec49c6">   56</a></span>&#160;    <a class="code" href="classModuleBase_1_1realArray.html">ModuleBase::realArray</a> <a class="code" href="classORB__gaunt__table.html#ac13c54d57fa558343d5fe10effec49c6">Gaunt_Coefficients</a>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classORB__gaunt__table.html#a5d9e706b36bc418b4822819bb474e6c8">init_Ylm_Gaunt</a>(</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;lmax, </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;s1,</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;e1,</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;s2,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;<a class="code" href="namespaceModuleBase.html#ac3cf0876e20fdcf6968ecfc0e2da2cd1">e2</a>);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classORB__gaunt__table.html#adfb9f8dd734e1157e59a466b5dd5e857">Cal_Gaunt_single</a>(</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;l1, </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;m1, </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;l2, </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;m2, </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;l, </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;m, </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;s1, </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;e1,    </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;s2, </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;<a class="code" href="namespaceModuleBase.html#ac3cf0876e20fdcf6968ecfc0e2da2cd1">e2</a>);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classORB__gaunt__table.html#a4ce5f87381f42c5febf4451752081224">init_Gaunt</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;lmax);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">    void init_Ylm_Gaunt(</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">        const int &amp;lmax, </span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">        const double &amp;s1,</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">        const double &amp;e1,</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">        const double &amp;s2,</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="comment">        const double &amp;e2);</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">    */</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">/*</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="comment">    double Cal_Gaunt_single(</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">        const int &amp;l1, </span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="comment">        const int &amp;m1, </span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="comment">        const int &amp;l2, </span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="comment">        const int &amp;m2, </span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="comment">        const int &amp;l, </span></div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="comment">        const int &amp;m, </span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="comment">        const double &amp;s1, </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="comment">        const double &amp;e1,    </span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="comment">        const double &amp;s2, </span></div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;<span class="comment">        const double &amp;e2);</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="comment">    */</span></div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classORB__gaunt__table.html#a1d526ddcee8ae7723891a0cac9fd29f4">get_lm_index</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> l, <span class="keyword">const</span> <span class="keywordtype">int</span> m);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classORB__gaunt__table.html#a6607db33b684d9fa5a288ddcb1bb9148">Index_M</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; m);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classORB__gaunt__table.html#a4ce5f87381f42c5febf4451752081224">init_Gaunt</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> &amp;lmax);</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="comment">// Index Function</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="comment">// Yu&#39;s mehtod</span></div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="comment">// Peize Lin delete void ModuleBase::GlobalFunc::ZEROS(); 2016-08-26</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classORB__gaunt__table.html#a1d526ddcee8ae7723891a0cac9fd29f4">get_lm_index</a>(<span class="keyword">const</span> <span class="keywordtype">int</span> l, <span class="keyword">const</span> <span class="keywordtype">int</span> m);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classORB__gaunt__table.html#a6607db33b684d9fa5a288ddcb1bb9148">Index_M</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; m);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    </div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classORB__gaunt__table.html#af665d3d9d1883f980da2a2056cea4a3c">P_EL</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; L);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classORB__gaunt__table.html#afe015e6a483070efed15845aaa9cf52f">EP_EL</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; L);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classORB__gaunt__table.html#a9a8accfe375b94089bfa53da6d1cfef0">index_func</a>(</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; l1,</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; l2,</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; l3,</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; m3   );</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classORB__gaunt__table.html#ae3ad720061388734f4bf724c137fd641">Fact</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; n);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classORB__gaunt__table.html#aefdf409897b4e5badd148b3396087cfb">Swap</a>(</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordtype">int</span>&amp; l1,</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordtype">int</span>&amp; m1,</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordtype">int</span>&amp; l2,</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="keywordtype">int</span>&amp; m2 );</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="comment">//2*Lmax+1</span></div>
-<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classORB__gaunt__table.html#ad7a65a841bd3cd48a0632d50447f452b">  114</a></span>&#160;    std::map&lt;int,std::map&lt;int,double&gt;&gt; <a class="code" href="classORB__gaunt__table.html#ad7a65a841bd3cd48a0632d50447f452b">Gaunt_CH</a>;        <span class="comment">// Peize Lin update 2016-08-26</span></div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    <span class="comment">//direct integral</span></div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classORB__gaunt__table.html#aa0354fbec63d201487941503bd8c2811">  117</a></span>&#160;    <a class="code" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> <a class="code" href="classORB__gaunt__table.html#aa0354fbec63d201487941503bd8c2811">Ylm_Gaunt</a>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;};</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="comment">// Index Function</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="comment">// Yu&#39;s mehtod</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="comment">// Peize Lin delete void ModuleBase::GlobalFunc::ZEROS(); 2016-08-26</span></div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">//int P_EL(const int&amp; L);</span></div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classORB__gaunt__table.html#afe015e6a483070efed15845aaa9cf52f">EP_EL</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; L);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classORB__gaunt__table.html#a9a8accfe375b94089bfa53da6d1cfef0">index_func</a>(</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; l1,</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; l2,</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; l3,</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; m3   );</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classORB__gaunt__table.html#ae3ad720061388734f4bf724c137fd641">Fact</a>(<span class="keyword">const</span> <span class="keywordtype">int</span>&amp; n);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classORB__gaunt__table.html#aefdf409897b4e5badd148b3396087cfb">Swap</a>(</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordtype">int</span>&amp; l1,</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordtype">int</span>&amp; m1,</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keywordtype">int</span>&amp; l2,</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keywordtype">int</span>&amp; m2 );</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    <span class="comment">//2*Lmax+1</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classORB__gaunt__table.html#ad7a65a841bd3cd48a0632d50447f452b">  118</a></span>&#160;    std::map&lt;int,std::map&lt;int,double&gt;&gt; <a class="code" href="classORB__gaunt__table.html#ad7a65a841bd3cd48a0632d50447f452b">Gaunt_CH</a>;        <span class="comment">// Peize Lin update 2016-08-26</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    </div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="comment">//direct integral</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno"><a class="line" href="classORB__gaunt__table.html#aa0354fbec63d201487941503bd8c2811">  121</a></span>&#160;    <a class="code" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> <a class="code" href="classORB__gaunt__table.html#aa0354fbec63d201487941503bd8c2811">Ylm_Gaunt</a>;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;};</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassModuleBase_1_1realArray_html"><div class="ttname"><a href="classModuleBase_1_1realArray.html">ModuleBase::realArray</a></div><div class="ttdoc">double float array</div><div class="ttdef"><b>Definition:</b> realarray.h:25</div></div>
-<div class="ttc" id="aclassORB__gaunt__table_html_af665d3d9d1883f980da2a2056cea4a3c"><div class="ttname"><a href="classORB__gaunt__table.html#af665d3d9d1883f980da2a2056cea4a3c">ORB_gaunt_table::P_EL</a></div><div class="ttdeci">int P_EL(const int &amp;L)</div><div class="ttdoc">total pointers</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:169</div></div>
-<div class="ttc" id="anamespaceModuleBase_1_1libm_html_a91c03031eb1d447315c0f37d8251d2ad"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#a91c03031eb1d447315c0f37d8251d2ad">ModuleBase::libm::sin</a></div><div class="ttdeci">Tp sin(Tp x)</div></div>
+<div class="ttc" id="aclassModuleBase_1_1realArray_html"><div class="ttname"><a href="classModuleBase_1_1realArray.html">ModuleBase::realArray</a></div><div class="ttdoc">double float array</div><div class="ttdef"><b>Definition:</b> realarray.h:22</div></div>
+<div class="ttc" id="anamespaceModuleBase_html_a7f2e75fdaf26614e5c7485cff6287bd4"><div class="ttname"><a href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4">ModuleBase::TITLE</a></div><div class="ttdeci">void TITLE(const std::string &amp;class_function_name, const bool disable)</div><div class="ttdef"><b>Definition:</b> tool_title.cpp:14</div></div>
 <div class="ttc" id="aclassORB__gaunt__table_html_a6607db33b684d9fa5a288ddcb1bb9148"><div class="ttname"><a href="classORB__gaunt__table.html#a6607db33b684d9fa5a288ddcb1bb9148">ORB_gaunt_table::Index_M</a></div><div class="ttdeci">static int Index_M(const int &amp;m)</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:483</div></div>
 <div class="ttc" id="aclassORB__gaunt__table_html_ae3ad720061388734f4bf724c137fd641"><div class="ttname"><a href="classORB__gaunt__table.html#ae3ad720061388734f4bf724c137fd641">ORB_gaunt_table::Fact</a></div><div class="ttdeci">double Fact(const int &amp;n)</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:449</div></div>
 <div class="ttc" id="aclassORB__gaunt__table_html_a36055439e1c50b5e1b4af4cbc60d3646"><div class="ttname"><a href="classORB__gaunt__table.html#a36055439e1c50b5e1b4af4cbc60d3646">ORB_gaunt_table::Get_Gaunt_CH</a></div><div class="ttdeci">double Get_Gaunt_CH(const int &amp;l1, const int &amp;m1, const int &amp;l2, const int &amp;m2, const int &amp;l3, const int &amp;m3)</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:306</div></div>
 <div class="ttc" id="anamespaceModuleBase_1_1libm_html_a53ba939830541970fa8cdc6973c806e5"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">ModuleBase::libm::i</a></div><div class="ttdeci">int4 i[880]</div><div class="ttdef"><b>Definition:</b> sincos.cpp:28</div></div>
-<div class="ttc" id="anamespaceModuleBase_1_1libm_html_a03e6410df8e8339093eeb809bebb6c5d"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#a03e6410df8e8339093eeb809bebb6c5d">ModuleBase::libm::u</a></div><div class="ttdeci">unsigned int u[880]</div><div class="ttdef"><b>Definition:</b> sincos.cpp:28</div></div>
-<div class="ttc" id="aclassModuleBase_1_1Vector3_html"><div class="ttname"><a href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3&lt; double &gt;</a></div></div>
 <div class="ttc" id="aORB__gaunt__table_8h_html"><div class="ttname"><a href="ORB__gaunt__table_8h.html">ORB_gaunt_table.h</a></div></div>
 <div class="ttc" id="aclassModuleBase_1_1realArray_html_a323f1573575d1738f0ac735789679c08"><div class="ttname"><a href="classModuleBase_1_1realArray.html#a323f1573575d1738f0ac735789679c08">ModuleBase::realArray::create</a></div><div class="ttdeci">void create(const int d1, const int d2, const int d3)</div><div class="ttdoc">create 3 dimensional real array</div><div class="ttdef"><b>Definition:</b> realarray.cpp:110</div></div>
 <div class="ttc" id="aclassORB__gaunt__table_html_aefdf409897b4e5badd148b3396087cfb"><div class="ttname"><a href="classORB__gaunt__table.html#aefdf409897b4e5badd148b3396087cfb">ORB_gaunt_table::Swap</a></div><div class="ttdeci">void Swap(int &amp;l1, int &amp;m1, int &amp;l2, int &amp;m2)</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:460</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Memory_html_aeb0ee609df8fc31710d8604e8d468ca9"><div class="ttname"><a href="classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9">ModuleBase::Memory::record</a></div><div class="ttdeci">static double record(const std::string &amp;class_name, const std::string &amp;name, const long &amp;n, const std::string &amp;type, const bool accumulate=false)</div><div class="ttdoc">Record memory consumed during computation.</div><div class="ttdef"><b>Definition:</b> memory.cpp:94</div></div>
 <div class="ttc" id="aclassModuleBase_1_1matrix_html"><div class="ttname"><a href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a></div><div class="ttdef"><b>Definition:</b> matrix.h:18</div></div>
 <div class="ttc" id="anamespaceIons__Move__Basic_html_ad33ffc23a7d6955f536f6cd68967f2c4"><div class="ttname"><a href="namespaceIons__Move__Basic.html#ad33ffc23a7d6955f536f6cd68967f2c4">Ions_Move_Basic::dim</a></div><div class="ttdeci">int dim</div><div class="ttdef"><b>Definition:</b> ions_move_basic.cpp:4</div></div>
-<div class="ttc" id="aclassORB__gaunt__table_html_afe015e6a483070efed15845aaa9cf52f"><div class="ttname"><a href="classORB__gaunt__table.html#afe015e6a483070efed15845aaa9cf52f">ORB_gaunt_table::EP_EL</a></div><div class="ttdeci">int EP_EL(const int &amp;L)</div><div class="ttdoc">effective pointers</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:176</div></div>
+<div class="ttc" id="aclassORB__gaunt__table_html_afe015e6a483070efed15845aaa9cf52f"><div class="ttname"><a href="classORB__gaunt__table.html#afe015e6a483070efed15845aaa9cf52f">ORB_gaunt_table::EP_EL</a></div><div class="ttdeci">int EP_EL(const int &amp;L)</div><div class="ttdoc">total pointers</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:176</div></div>
 <div class="ttc" id="aclassModuleBase_1_1timer_html_a7d5a9dd381e39259fb92b31a89140206"><div class="ttname"><a href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206">ModuleBase::timer::tick</a></div><div class="ttdeci">static void tick(const std::string &amp;class_name_in, const std::string &amp;name_in)</div><div class="ttdoc">Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur...</div><div class="ttdef"><b>Definition:</b> timer.cpp:66</div></div>
-<div class="ttc" id="aclassModuleBase_1_1YlmReal_html_a4a0791bc6a7899abb20c1d2dfec05b80"><div class="ttname"><a href="classModuleBase_1_1YlmReal.html#a4a0791bc6a7899abb20c1d2dfec05b80">ModuleBase::YlmReal::Ylm_Real</a></div><div class="ttdeci">static void Ylm_Real(const int lmax2, const int ng, const ModuleBase::Vector3&lt; double &gt; *g, matrix &amp;ylm)</div><div class="ttdoc">spherical harmonic function (real form) an array of vectors</div><div class="ttdef"><b>Definition:</b> math_ylmreal.cpp:354</div></div>
-<div class="ttc" id="aclassORB__gaunt__table_html_ad7a65a841bd3cd48a0632d50447f452b"><div class="ttname"><a href="classORB__gaunt__table.html#ad7a65a841bd3cd48a0632d50447f452b">ORB_gaunt_table::Gaunt_CH</a></div><div class="ttdeci">std::map&lt; int, std::map&lt; int, double &gt; &gt; Gaunt_CH</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.h:114</div></div>
-<div class="ttc" id="anamespaceModuleBase_1_1libm_html_a7b49e155799ac36b2da1da35b6c2c77c"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#a7b49e155799ac36b2da1da35b6c2c77c">ModuleBase::libm::cos</a></div><div class="ttdeci">Tp cos(Tp x)</div></div>
+<div class="ttc" id="aclassORB__gaunt__table_html_ad7a65a841bd3cd48a0632d50447f452b"><div class="ttname"><a href="classORB__gaunt__table.html#ad7a65a841bd3cd48a0632d50447f452b">ORB_gaunt_table::Gaunt_CH</a></div><div class="ttdeci">std::map&lt; int, std::map&lt; int, double &gt; &gt; Gaunt_CH</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.h:118</div></div>
 <div class="ttc" id="anamespaceModuleBase_html_abe5a2d94d587472c1f5317cf21fd2bc8"><div class="ttname"><a href="namespaceModuleBase.html#abe5a2d94d587472c1f5317cf21fd2bc8">ModuleBase::FOUR_PI</a></div><div class="ttdeci">const double FOUR_PI</div><div class="ttdef"><b>Definition:</b> constants.h:22</div></div>
 <div class="ttc" id="aclassORB__gaunt__table_html_a9a8accfe375b94089bfa53da6d1cfef0"><div class="ttname"><a href="classORB__gaunt__table.html#a9a8accfe375b94089bfa53da6d1cfef0">ORB_gaunt_table::index_func</a></div><div class="ttdeci">int index_func(const int &amp;l1, const int &amp;l2, const int &amp;l3, const int &amp;m3)</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:184</div></div>
 <div class="ttc" id="aclassORB__gaunt__table_html_a1d526ddcee8ae7723891a0cac9fd29f4"><div class="ttname"><a href="classORB__gaunt__table.html#a1d526ddcee8ae7723891a0cac9fd29f4">ORB_gaunt_table::get_lm_index</a></div><div class="ttdeci">static int get_lm_index(const int l, const int m)</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:157</div></div>
-<div class="ttc" id="aclassORB__gaunt__table_html_ad8a57f86fd49ffeee65382390134cf62"><div class="ttname"><a href="classORB__gaunt__table.html#ad8a57f86fd49ffeee65382390134cf62">ORB_gaunt_table::~ORB_gaunt_table</a></div><div class="ttdeci">~ORB_gaunt_table()</div><div class="ttdef"><b>Definition:</b> klist_test.cpp:30</div></div>
-<div class="ttc" id="aclassORB__gaunt__table_html_a5d9e706b36bc418b4822819bb474e6c8"><div class="ttname"><a href="classORB__gaunt__table.html#a5d9e706b36bc418b4822819bb474e6c8">ORB_gaunt_table::init_Ylm_Gaunt</a></div><div class="ttdeci">void init_Ylm_Gaunt(const int &amp;lmax, const double &amp;s1, const double &amp;e1, const double &amp;s2, const double &amp;e2)</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:114</div></div>
+<div class="ttc" id="aclassORB__gaunt__table_html_ad8a57f86fd49ffeee65382390134cf62"><div class="ttname"><a href="classORB__gaunt__table.html#ad8a57f86fd49ffeee65382390134cf62">ORB_gaunt_table::~ORB_gaunt_table</a></div><div class="ttdeci">~ORB_gaunt_table()</div><div class="ttdef"><b>Definition:</b> klist_test.cpp:37</div></div>
 <div class="ttc" id="aclassORB__gaunt__table_html_a1dfce3cf13eada867392d1912befc3c0"><div class="ttname"><a href="classORB__gaunt__table.html#a1dfce3cf13eada867392d1912befc3c0">ORB_gaunt_table::Calc_Gaunt_CH</a></div><div class="ttdeci">double Calc_Gaunt_CH(const int &amp;l1, const int &amp;m1, const int &amp;l2, const int &amp;m2, const int &amp;l3, const int &amp;m3)</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:263</div></div>
 <div class="ttc" id="aclassORB__gaunt__table_html"><div class="ttname"><a href="classORB__gaunt__table.html">ORB_gaunt_table</a></div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.h:8</div></div>
 <div class="ttc" id="aclassORB__gaunt__table_html_af2322bde6386b3ab759ef851b3fc85c3"><div class="ttname"><a href="classORB__gaunt__table.html#af2322bde6386b3ab759ef851b3fc85c3">ORB_gaunt_table::init_Gaunt_CH</a></div><div class="ttdeci">void init_Gaunt_CH(const int &amp;Lmax)</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:199</div></div>
 <div class="ttc" id="aclassORB__gaunt__table_html_ac13c54d57fa558343d5fe10effec49c6"><div class="ttname"><a href="classORB__gaunt__table.html#ac13c54d57fa558343d5fe10effec49c6">ORB_gaunt_table::Gaunt_Coefficients</a></div><div class="ttdeci">ModuleBase::realArray Gaunt_Coefficients</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.h:56</div></div>
 <div class="ttc" id="aclassORB__gaunt__table_html_a9976de3ecb914becbf8b8be3a2811c99"><div class="ttname"><a href="classORB__gaunt__table.html#a9976de3ecb914becbf8b8be3a2811c99">ORB_gaunt_table::Get_Gaunt_SH</a></div><div class="ttdeci">double Get_Gaunt_SH(const int &amp;l1, const int &amp;mm1, const int &amp;l2, const int &amp;mm2, const int &amp;l3, const int &amp;mm3)</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:368</div></div>
-<div class="ttc" id="aclassORB__gaunt__table_html_aa0354fbec63d201487941503bd8c2811"><div class="ttname"><a href="classORB__gaunt__table.html#aa0354fbec63d201487941503bd8c2811">ORB_gaunt_table::Ylm_Gaunt</a></div><div class="ttdeci">ModuleBase::matrix Ylm_Gaunt</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.h:117</div></div>
-<div class="ttc" id="aclassORB__gaunt__table_html_adfb9f8dd734e1157e59a466b5dd5e857"><div class="ttname"><a href="classORB__gaunt__table.html#adfb9f8dd734e1157e59a466b5dd5e857">ORB_gaunt_table::Cal_Gaunt_single</a></div><div class="ttdeci">double Cal_Gaunt_single(const int &amp;l1, const int &amp;m1, const int &amp;l2, const int &amp;m2, const int &amp;l, const int &amp;m, const double &amp;s1, const double &amp;e1, const double &amp;s2, const double &amp;e2)</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:62</div></div>
+<div class="ttc" id="aclassORB__gaunt__table_html_aa0354fbec63d201487941503bd8c2811"><div class="ttname"><a href="classORB__gaunt__table.html#aa0354fbec63d201487941503bd8c2811">ORB_gaunt_table::Ylm_Gaunt</a></div><div class="ttdeci">ModuleBase::matrix Ylm_Gaunt</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.h:121</div></div>
 <div class="ttc" id="aclassORB__gaunt__table_html_a4ce5f87381f42c5febf4451752081224"><div class="ttname"><a href="classORB__gaunt__table.html#a4ce5f87381f42c5febf4451752081224">ORB_gaunt_table::init_Gaunt</a></div><div class="ttdeci">void init_Gaunt(const int &amp;lmax)</div><div class="ttdef"><b>Definition:</b> ORB_gaunt_table.cpp:15</div></div>
-<div class="ttc" id="anamespaceModuleBase_html_acffa468e438dcfa87403393f65dd1dad"><div class="ttname"><a href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad">ModuleBase::TITLE</a></div><div class="ttdeci">void TITLE(const std::string &amp;class_function_name)</div><div class="ttdef"><b>Definition:</b> tool_title.cpp:14</div></div>
-<div class="ttc" id="aclassORB__gaunt__table_html_a6b7d21d46938cd39b784d6fefc2d65ad"><div class="ttname"><a href="classORB__gaunt__table.html#a6b7d21d46938cd39b784d6fefc2d65ad">ORB_gaunt_table::ORB_gaunt_table</a></div><div class="ttdeci">ORB_gaunt_table()</div><div class="ttdef"><b>Definition:</b> klist_test.cpp:29</div></div>
-<div class="ttc" id="anamespaceModuleBase_html_ac3cf0876e20fdcf6968ecfc0e2da2cd1"><div class="ttname"><a href="namespaceModuleBase.html#ac3cf0876e20fdcf6968ecfc0e2da2cd1">ModuleBase::e2</a></div><div class="ttdeci">const double e2</div><div class="ttdef"><b>Definition:</b> constants.h:78</div></div>
+<div class="ttc" id="aclassORB__gaunt__table_html_a6b7d21d46938cd39b784d6fefc2d65ad"><div class="ttname"><a href="classORB__gaunt__table.html#a6b7d21d46938cd39b784d6fefc2d65ad">ORB_gaunt_table::ORB_gaunt_table</a></div><div class="ttdeci">ORB_gaunt_table()</div><div class="ttdef"><b>Definition:</b> klist_test.cpp:36</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

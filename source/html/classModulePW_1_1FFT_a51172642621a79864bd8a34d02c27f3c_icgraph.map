@@ -1,7 +1,12 @@
 <map id="ModulePW::FFT::get_auxg_data" name="ModulePW::FFT::get_auxg_data">
-<area shape="rect" id="node1" title=" " alt="" coords="215,104,364,145"/>
-<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__K.html#a50d2b5d82149a808adc0dbe703c2ba68" title=" " alt="" coords="5,5,167,47"/>
-<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis.html#a18e45fc430ecaf93f599132497780be3" title=" " alt="" coords="5,71,167,112"/>
-<area shape="rect" id="node4" href="$classModulePW_1_1PW__Basis__K.html#a25e4bc1b67fa4ccc3cba56ca8687d8f6" title=" " alt="" coords="5,136,167,177"/>
-<area shape="rect" id="node5" href="$classModulePW_1_1PW__Basis.html#ae9a43abf29742754cac80813ee105f9f" title=" " alt="" coords="5,201,167,243"/>
+<area shape="rect" id="node1" title=" " alt="" coords="616,125,765,166"/>
+<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__K.html#a50d2b5d82149a808adc0dbe703c2ba68" title=" " alt="" coords="407,59,568,101"/>
+<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis__K.html#a6fadd5f43b7c9b1ea6bbe560733f7f05" title=" " alt="" coords="407,125,568,166"/>
+<area shape="rect" id="node10" href="$classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce" title=" " alt="" coords="407,190,568,231"/>
+<area shape="rect" id="node4" href="$namespaceModuleIO.html#a9281aaef4579dabfaa938a7949ac4bb0" title=" " alt="" coords="192,5,345,32"/>
+<area shape="rect" id="node5" href="$classXC__Functional.html#acd3f2e95b5432678733749d91eda4ec7" title=" " alt="" coords="179,56,359,83"/>
+<area shape="rect" id="node6" href="$classStochastic__hchi.html#a296c8e3164d80c0c8b4163e8d073d05a" title=" " alt="" coords="189,107,348,133"/>
+<area shape="rect" id="node7" href="$classExx__Lip.html#a22a45eb7d90d7c9b0e87d57ee5dac7dd" title=" " alt="" coords="205,157,332,184"/>
+<area shape="rect" id="node8" href="$classExx__Lip.html#aa18b3873716f2d1448215bbd77e03b6f" title=" " alt="" coords="5,183,131,209"/>
+<area shape="rect" id="node9" href="$classModulePW_1_1PW__Basis__K.html#a8a9c59e7eaffc9585bb974695e9cbb48" title=" " alt="" coords="188,259,349,301"/>
 </map>

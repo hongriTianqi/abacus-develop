@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: ModuleBase::Chebyshev&lt; REAL &gt; Class Template Reference</title>
+<title>3.1.4: ModuleBase::Chebyshev&lt; REAL &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -170,7 +170,7 @@ class ModuleBase::Chebyshev&lt; REAL &gt;</h3>
 <p>A class to treat the <a class="el" href="classModuleBase_1_1Chebyshev.html" title="A class to treat the Chebyshev expansion.">Chebyshev</a> expansion. </p>
 <dl class="section author"><dt>Author</dt><dd>qianrui on 2022-05-18</dd></dl>
 <p>Math: I. <a class="el" href="classModuleBase_1_1Chebyshev.html" title="A class to treat the Chebyshev expansion.">Chebyshev</a> polynomial: T_0(x) = 1; T_1(x) = x; T_2(x) = 2x^2 -1; T_3(x) = 4x^3-3x; T_{n+2}(x) = 2xT_{n+1}(x) - T_n(x) II. Any analytical function f(x) can be expanded by <a class="el" href="classModuleBase_1_1Chebyshev.html" title="A class to treat the Chebyshev expansion.">Chebyshev</a> polynomial: f(x) = \sum_{n=0}^{norder-1} C_n[f]*T_n(x) (|x| &lt; 1), where C_n[f] = \frac{2-\delta_{n0}}{\pi} \int_0^\pi f(cos(\theta))cos(n\theta) d\theta Here C_n can be calculate with FFT. III. Any functions of linear Operator or matrix f(\hat{A}) or f(A) can also be expanded as well: f(A) = \sum_{n=0}^{norder-1} C_n[f]*T_n(A) (|all eigenvalues of A| &lt; 1). f(A)v = \sum_{n=0}^{norder-1} C_n[f]*T_n(A)v, where v is column vector = \sum_{n=0}^{norder-1} C_n[f]*v_n, where v_n = T_n(A)v, v_0 = v v_{n+2} = 2Av_{n+1} - v_n IV. v^+f(A)v = \sum_{n=0}^{norder-1} C_n[f]*v^+v_n = \sum_{n=0}^{norder-1} C_n[f] * w_n, where w_n = v^+ * v_n = v^+ * T_n(A) * v</p>
-<p>USAGE： <a class="el" href="classModuleBase_1_1Chebyshev.html" title="A class to treat the Chebyshev expansion.">Chebyshev</a> che(10); // constructe a chebyshev expansion of 10 orders (n=0,1,...,9)</p><ol type="1">
+<p>USAGE: <a class="el" href="classModuleBase_1_1Chebyshev.html" title="A class to treat the Chebyshev expansion.">Chebyshev</a> che(10); // constructe a chebyshev expansion of 10 orders (n=0,1,...,9)</p><ol type="1">
 <li><p class="startli">che.calcoef_real(&amp;a, &amp;A::cos) // calculate C_n[f], where f is a.cos for(int i=0;i&lt;10;++i) cout&lt;&lt;che.coef_real[i]&lt;&lt;endl; //Then we print C_n[f]</p>
 <p class="startli">che.calcoef_complex(&amp;b, &amp;B::expi) // calculate C_n[g], where g is b.expi for(int i=0;i&lt;10;++i) cout&lt;&lt;che.coef_complex[i]&lt;&lt;endl; //Then we print C_n[g]</p>
 <p class="startli">che.calcoef_pair(&amp;c, &amp;C::cos, &amp;C::sin) // calculate C_n[g], where g is (c.cos, c.sin) for(int i=0;i&lt;10;++i) cout&lt;&lt;che.coef_complex[i]&lt;&lt;endl; //Then we print C_n[g]</p>

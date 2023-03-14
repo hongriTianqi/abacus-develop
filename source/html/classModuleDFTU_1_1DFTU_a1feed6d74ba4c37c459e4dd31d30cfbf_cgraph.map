@@ -1,7 +1,7 @@
 <map id="ModuleDFTU::DFTU::cal_energy_correction" name="ModuleDFTU::DFTU::cal_energy_correction">
 <area shape="rect" id="node1" title=" " alt="" coords="5,64,180,105"/>
 <area shape="rect" id="node2" href="$classModuleDFTU_1_1DFTU.html#aa7dbd2bac5bdad4fd1496032396c7204" title=" " alt="" coords="228,5,405,47"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="457,38,603,65"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="457,38,603,65"/>
 <area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="228,122,405,149"/>
 <area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="453,115,607,156"/>
 </map>

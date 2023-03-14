@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: module_base/scalapack_connector.h File Reference</title>
+<title>3.1.4: module_base/scalapack_connector.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -109,22 +109,22 @@ Functions</h2></td></tr>
 <tr class="separator:a930c0e9df04b25ee4db1faccdba0cb9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a96fa05ae86b5c72a4cba91dc05cd9f27"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#a96fa05ae86b5c72a4cba91dc05cd9f27">pdtran_</a> (int *m, int *n, double *alpha, double *a, int *ia, int *ja, int *desca, double *beta, double *c, int *ic, int *jc, int *descc)</td></tr>
 <tr class="separator:a96fa05ae86b5c72a4cba91dc05cd9f27"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a18f8efdbaae17a7a24b06df53698e94e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#a18f8efdbaae17a7a24b06df53698e94e">pztranu_</a> (const int *m, const int *n, const double *alpha, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *a, const int *ia, const int *ja, const int *desca, const double *beta, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *c, const int *ic, const int *jc, const int *descc)</td></tr>
-<tr class="separator:a18f8efdbaae17a7a24b06df53698e94e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a87cc82345ad9fc0dac19916cba794161"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#a87cc82345ad9fc0dac19916cba794161">pztranu_</a> (const int *m, const int *n, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *alpha, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *a, const int *ia, const int *ja, const int *desca, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *beta, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *c, const int *ic, const int *jc, const int *descc)</td></tr>
+<tr class="separator:a87cc82345ad9fc0dac19916cba794161"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab2a539c12f958c5d7eef8c73197f3678"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#ab2a539c12f958c5d7eef8c73197f3678">pzgemv_</a> (const char *transa, const int *M, const int *<a class="el" href="exp_8cpp.html#a0240ac851181b84ac374872dc5434ee4">N</a>, const double *alpha, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *A, const int *IA, const int *JA, const int *DESCA, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *B, const int *IB, const int *JB, const int *DESCB, const int *K, const double *beta, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *C, const int *IC, const int *JC, const int *DESCC, const int *L)</td></tr>
 <tr class="separator:ab2a539c12f958c5d7eef8c73197f3678"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63fce172aab5e5fb9898146193cc422b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#a63fce172aab5e5fb9898146193cc422b">pdgemv_</a> (const char *transa, const int *M, const int *<a class="el" href="exp_8cpp.html#a0240ac851181b84ac374872dc5434ee4">N</a>, const double *alpha, const double *A, const int *IA, const int *JA, const int *DESCA, const double *B, const int *IB, const int *JB, const int *DESCB, const int *K, const double *beta, double *C, const int *IC, const int *JC, const int *DESCC, const int *L)</td></tr>
 <tr class="separator:a63fce172aab5e5fb9898146193cc422b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9ff8b730d2d1eb239d626e25c48c5a89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#a9ff8b730d2d1eb239d626e25c48c5a89">pdgemm_</a> (const char *transa, const char *transb, const int *M, const int *<a class="el" href="exp_8cpp.html#a0240ac851181b84ac374872dc5434ee4">N</a>, const int *K, const double *alpha, const double *A, const int *IA, const int *JA, const int *DESCA, const double *B, const int *IB, const int *JB, const int *DESCB, const double *beta, double *C, const int *IC, const int *JC, const int *DESCC)</td></tr>
 <tr class="separator:a9ff8b730d2d1eb239d626e25c48c5a89"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ca348c03b3a2eed595eaee8dbc07c9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#a9ca348c03b3a2eed595eaee8dbc07c9b">pzgemm_</a> (const char *transa, const char *transb, const int *M, const int *<a class="el" href="exp_8cpp.html#a0240ac851181b84ac374872dc5434ee4">N</a>, const int *K, const double *alpha, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *A, const int *IA, const int *JA, const int *DESCA, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *B, const int *IB, const int *JB, const int *DESCB, const double *beta, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *C, const int *IC, const int *JC, const int *DESCC)</td></tr>
-<tr class="separator:a9ca348c03b3a2eed595eaee8dbc07c9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa31b969b27288889456f745735b2cb2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#aa31b969b27288889456f745735b2cb2c">pzgemm_</a> (const char *transa, const char *transb, const int *M, const int *<a class="el" href="exp_8cpp.html#a0240ac851181b84ac374872dc5434ee4">N</a>, const int *K, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *alpha, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *A, const int *IA, const int *JA, const int *DESCA, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *B, const int *IB, const int *JB, const int *DESCB, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *beta, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *C, const int *IC, const int *JC, const int *DESCC)</td></tr>
+<tr class="separator:aa31b969b27288889456f745735b2cb2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adea02be289439c846d427117119eea0d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#adea02be289439c846d427117119eea0d">pdsymm_</a> (char *side, char *uplo, int *m, int *n, double *alpha, double *a, int *ia, int *ja, int *desca, double *b, int *ib, int *jb, int *descb, double *beta, double *c, int *ic, int *jc, int *descc)</td></tr>
 <tr class="separator:adea02be289439c846d427117119eea0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abbf9e1d8f4db394760ede906f3f25d95"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#abbf9e1d8f4db394760ede906f3f25d95">pdtrmm_</a> (char *side, char *uplo, char *transa, char *diag, int *m, int *n, double *alpha, double *a, int *ia, int *ja, int *desca, double *b, int *ib, int *jb, int *descb)</td></tr>
 <tr class="separator:abbf9e1d8f4db394760ede906f3f25d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adb37c8d9157712aad20cc464c90af528"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#adb37c8d9157712aad20cc464c90af528">pztrmm_</a> (char *side, char *uplo, char *transa, char *diag, int *m, int *n, double *alpha, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *a, int *ia, int *ja, int *desca, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *b, int *ib, int *jb, int *descb)</td></tr>
-<tr class="separator:adb37c8d9157712aad20cc464c90af528"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac509dd2b6bd5eb11d4d1a651b44a47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#a0ac509dd2b6bd5eb11d4d1a651b44a47">pztrmm_</a> (char *side, char *uplo, char *transa, char *diag, int *m, int *n, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *alpha, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *a, int *ia, int *ja, int *desca, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *b, int *ib, int *jb, int *descb)</td></tr>
+<tr class="separator:a0ac509dd2b6bd5eb11d4d1a651b44a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa9b4d15e459edd4ca3be60785111733"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#afa9b4d15e459edd4ca3be60785111733">pzgetrf_</a> (const int *M, const int *<a class="el" href="exp_8cpp.html#a0240ac851181b84ac374872dc5434ee4">N</a>, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *A, const int *IA, const int *JA, const int *DESCA, int *ipiv, int *info)</td></tr>
 <tr class="separator:afa9b4d15e459edd4ca3be60785111733"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7910817089a3b9a790ee5d679847533c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="scalapack__connector_8h.html#a7910817089a3b9a790ee5d679847533c">pdsygvx_</a> (const int *itype, const char *jobz, const char *range, const char *uplo, const int *n, double *A, const int *ia, const int *ja, const int *desca, double *B, const int *ib, const int *jb, const int *descb, const double *vl, const double *vu, const int *il, const int *iu, const double *abstol, int *m, int *nz, double *w, const double *orfac, double *Z, const int *iz, const int *jz, const int *descz, double *work, int *lwork, int *iwork, int *liwork, int *ifail, int *iclustr, double *gap, int *info)</td></tr>
@@ -505,16 +505,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="scalapack__connector_8h_a9ff8b730d2d1eb239d626e25c48c5a89_icgraph.png" border="0" usemap="#scalapack__connector_8h_a9ff8b730d2d1eb239d626e25c48c5a89_icgraph" alt=""/></div>
 <map name="scalapack__connector_8h_a9ff8b730d2d1eb239d626e25c48c5a89_icgraph" id="scalapack__connector_8h_a9ff8b730d2d1eb239d626e25c48c5a89_icgraph">
-<area shape="rect" title=" " alt="" coords="667,107,753,134"/>
-<area shape="rect" href="classModuleDFTU_1_1DFTU.html#a108d515d9112ad35cc3ab07dd7a1ea1b" title=" " alt="" coords="443,5,618,47"/>
-<area shape="rect" href="classModuleDFTU_1_1DFTU.html#acd0310ab2595d3fdb44efd723cdbdb48" title=" " alt="" coords="443,71,618,112"/>
-<area shape="rect" href="classIState__Charge.html#a5f43634e4ac5d17a6a4f47d9a9082b2c" title=" " alt="" coords="443,137,619,163"/>
-<area shape="rect" href="math__tools_8h.html#a3c2af98784430dd529a2751bc6bbce53" title=" " alt="" coords="477,187,585,214"/>
-<area shape="rect" href="classLCAO__Hamilt.html#a7b829ebfbfc28b333d824c72445c3570" title=" " alt="" coords="228,5,395,47"/>
-<area shape="rect" href="classLCAO__Hamilt.html#a34542d40d7473a253e2ba042ad97339a" title=" " alt="" coords="5,5,180,47"/>
-<area shape="rect" href="classhamilt_1_1OperatorDFTU.html#a68192c04522a191dc78045776bd75a39" title=" " alt="" coords="229,71,393,112"/>
-<area shape="rect" href="classIState__Charge.html#a0899014f06b2e4be9d7426f52d4b41b2" title=" " alt="" coords="233,137,390,163"/>
-<area shape="rect" href="namespaceelecstate.html#a6d2a47f8eaa9f0592a121e8c62a97240" title=" " alt="" coords="243,187,380,214"/>
+<area shape="rect" title=" " alt="" coords="444,143,531,170"/>
+<area shape="rect" href="classModuleDFTU_1_1DFTU.html#a108d515d9112ad35cc3ab07dd7a1ea1b" title=" " alt="" coords="221,5,395,47"/>
+<area shape="rect" href="classModuleDFTU_1_1DFTU.html#acd0310ab2595d3fdb44efd723cdbdb48" title=" " alt="" coords="221,71,395,112"/>
+<area shape="rect" href="classMulliken__Charge.html#a1027baa4ae2ced0efc8dc55e0d9d600f" title=" " alt="" coords="229,136,387,177"/>
+<area shape="rect" href="classIState__Charge.html#a5f43634e4ac5d17a6a4f47d9a9082b2c" title=" " alt="" coords="220,202,396,229"/>
+<area shape="rect" href="math__tools_8h.html#a3c2af98784430dd529a2751bc6bbce53" title=" " alt="" coords="254,253,362,279"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a7b829ebfbfc28b333d824c72445c3570" title=" " alt="" coords="5,5,172,47"/>
+<area shape="rect" href="classhamilt_1_1OperatorDFTU.html#a68192c04522a191dc78045776bd75a39" title=" " alt="" coords="7,71,171,112"/>
+<area shape="rect" href="classMulliken__Charge.html#a1d26609b66f7380171f6dcb54bd11836" title=" " alt="" coords="9,136,168,177"/>
+<area shape="rect" href="classIState__Charge.html#a0899014f06b2e4be9d7426f52d4b41b2" title=" " alt="" coords="10,202,167,229"/>
 </map>
 </div>
 
@@ -652,12 +652,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="scalapack__connector_8h_a63fce172aab5e5fb9898146193cc422b_icgraph.png" border="0" usemap="#scalapack__connector_8h_a63fce172aab5e5fb9898146193cc422b_icgraph" alt=""/></div>
 <map name="scalapack__connector_8h_a63fce172aab5e5fb9898146193cc422b_icgraph" id="scalapack__connector_8h_a63fce172aab5e5fb9898146193cc422b_icgraph">
-<area shape="rect" title=" " alt="" coords="672,71,755,98"/>
-<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="467,5,624,47"/>
-<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="229,71,419,98"/>
-<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="467,123,624,164"/>
-<area shape="rect" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89" title=" " alt="" coords="235,5,413,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,64,181,105"/>
+<area shape="rect" title=" " alt="" coords="467,35,549,61"/>
+<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="229,5,419,32"/>
+<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="245,57,403,98"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,27,181,69"/>
 </map>
 </div>
 
@@ -1390,8 +1388,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a9ca348c03b3a2eed595eaee8dbc07c9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ca348c03b3a2eed595eaee8dbc07c9b">&#9670;&nbsp;</a></span>pzgemm_()</h2>
+<a id="aa31b969b27288889456f745735b2cb2c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa31b969b27288889456f745735b2cb2c">&#9670;&nbsp;</a></span>pzgemm_()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1429,7 +1427,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
         </tr>
         <tr>
@@ -1483,7 +1481,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
           <td class="paramname"><em>beta</em>, </td>
         </tr>
         <tr>
@@ -1520,18 +1518,18 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="scalapack__connector_8h_a9ca348c03b3a2eed595eaee8dbc07c9b_icgraph.png" border="0" usemap="#scalapack__connector_8h_a9ca348c03b3a2eed595eaee8dbc07c9b_icgraph" alt=""/></div>
-<map name="scalapack__connector_8h_a9ca348c03b3a2eed595eaee8dbc07c9b_icgraph" id="scalapack__connector_8h_a9ca348c03b3a2eed595eaee8dbc07c9b_icgraph">
-<area shape="rect" title=" " alt="" coords="549,189,636,215"/>
+<div class="center"><img src="scalapack__connector_8h_aa31b969b27288889456f745735b2cb2c_icgraph.png" border="0" usemap="#scalapack__connector_8h_aa31b969b27288889456f745735b2cb2c_icgraph" alt=""/></div>
+<map name="scalapack__connector_8h_aa31b969b27288889456f745735b2cb2c_icgraph" id="scalapack__connector_8h_aa31b969b27288889456f745735b2cb2c_icgraph">
+<area shape="rect" title=" " alt="" coords="549,225,636,251"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a64ae21285e379175921100c13d31efb3" title=" " alt="" coords="264,5,501,47"/>
 <area shape="rect" href="classModuleDFTU_1_1DFTU.html#a248eade1326fa22b83505d57d62d550f" title=" " alt="" coords="295,71,470,112"/>
 <area shape="rect" href="classModuleDFTU_1_1DFTU.html#a7303e883b3f6efa5f6fc5d079214c2fc" title=" " alt="" coords="289,137,476,193"/>
-<area shape="rect" href="classunkOverlap__lcao.html#a548ff19fc2e4d2daf6f106bb74cf5c69" title=" " alt="" coords="303,217,463,259"/>
-<area shape="rect" href="classScalapackConnector.html#a3792839f1d94a5983e5edfd1f938eb0b" title=" " alt="" coords="305,283,460,324"/>
-<area shape="rect" href="math__tools_8h.html#a422733656bf37be76bb0cd2c466b84f1" title=" " alt="" coords="329,349,437,375"/>
+<area shape="rect" href="classMulliken__Charge.html#ab81dc26ee2f1fe7feb54aeccc629b06d" title=" " alt="" coords="304,217,461,259"/>
+<area shape="rect" href="classunkOverlap__lcao.html#a548ff19fc2e4d2daf6f106bb74cf5c69" title=" " alt="" coords="303,283,463,324"/>
+<area shape="rect" href="classScalapackConnector.html#a1ce0488c3a659c36274a54b2a5e81d44" title=" " alt="" coords="305,348,460,389"/>
+<area shape="rect" href="math__tools_8h.html#a422733656bf37be76bb0cd2c466b84f1" title=" " alt="" coords="329,414,437,441"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#ab018811c84928fe8f01ae25646e57201" title=" " alt="" coords="5,5,216,47"/>
 <area shape="rect" href="classhamilt_1_1OperatorDFTU.html#a3fbaea2494b0cf140ff703fae42c0457" title=" " alt="" coords="29,71,193,112"/>
-<area shape="rect" href="classLCAO__Hamilt.html#a8024825a3d23ea61edf4247634892ab2" title=" " alt="" coords="27,144,194,185"/>
 </map>
 </div>
 
@@ -1669,12 +1667,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="scalapack__connector_8h_ab2a539c12f958c5d7eef8c73197f3678_icgraph.png" border="0" usemap="#scalapack__connector_8h_ab2a539c12f958c5d7eef8c73197f3678_icgraph" alt=""/></div>
 <map name="scalapack__connector_8h_ab2a539c12f958c5d7eef8c73197f3678_icgraph" id="scalapack__connector_8h_ab2a539c12f958c5d7eef8c73197f3678_icgraph">
-<area shape="rect" title=" " alt="" coords="672,71,753,98"/>
-<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="467,5,624,47"/>
-<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="229,71,419,98"/>
-<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="467,123,624,164"/>
-<area shape="rect" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89" title=" " alt="" coords="235,5,413,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,64,181,105"/>
+<area shape="rect" title=" " alt="" coords="467,35,548,61"/>
+<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="229,5,419,32"/>
+<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="245,57,403,98"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,27,181,69"/>
 </map>
 </div>
 
@@ -1749,7 +1745,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="1563,78,1637,105"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a64ae21285e379175921100c13d31efb3" title=" " alt="" coords="1277,5,1515,47"/>
 <area shape="rect" href="classunkOverlap__lcao.html#a548ff19fc2e4d2daf6f106bb74cf5c69" title=" " alt="" coords="1316,71,1476,112"/>
-<area shape="rect" href="classScalapackConnector.html#a5d667689886639b7cf719a55b68d9f34" title=" " alt="" coords="1319,136,1473,177"/>
+<area shape="rect" href="classScalapackConnector.html#afae2a4495573ccef6e8c7b02ff9631ae" title=" " alt="" coords="1319,136,1473,177"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#ab018811c84928fe8f01ae25646e57201" title=" " alt="" coords="1019,5,1229,47"/>
 <area shape="rect" href="classEvolve__LCAO__Matrix.html#ac8dc6985f0eb5cab328fc054a7d98587" title=" " alt="" coords="1041,136,1207,177"/>
 <area shape="rect" href="classEvolve__LCAO__Matrix.html#ae98176663248ba55bc850c39b0f95ee1" title=" " alt="" coords="761,136,971,177"/>
@@ -1847,7 +1843,7 @@ Here is the caller graph for this function:</div>
 <map name="scalapack__connector_8h_a241ca27baa93f0f868f18f2ed8b00ae0_icgraph" id="scalapack__connector_8h_a241ca27baa93f0f868f18f2ed8b00ae0_icgraph">
 <area shape="rect" title=" " alt="" coords="1563,46,1637,73"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a64ae21285e379175921100c13d31efb3" title=" " alt="" coords="1277,5,1515,47"/>
-<area shape="rect" href="classScalapackConnector.html#a104ebfa993de7e2b671722063a7c8937" title=" " alt="" coords="1319,71,1473,112"/>
+<area shape="rect" href="classScalapackConnector.html#a19071c4c907cc4865848cd0ffeddae88" title=" " alt="" coords="1319,71,1473,112"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#ab018811c84928fe8f01ae25646e57201" title=" " alt="" coords="1019,5,1229,47"/>
 <area shape="rect" href="classEvolve__LCAO__Matrix.html#ac8dc6985f0eb5cab328fc054a7d98587" title=" " alt="" coords="1041,71,1207,112"/>
 <area shape="rect" href="classEvolve__LCAO__Matrix.html#ae98176663248ba55bc850c39b0f95ee1" title=" " alt="" coords="761,71,971,112"/>
@@ -2258,8 +2254,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a18f8efdbaae17a7a24b06df53698e94e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18f8efdbaae17a7a24b06df53698e94e">&#9670;&nbsp;</a></span>pztranu_()</h2>
+<a id="a87cc82345ad9fc0dac19916cba794161"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a87cc82345ad9fc0dac19916cba794161">&#9670;&nbsp;</a></span>pztranu_()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2279,7 +2275,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
         </tr>
         <tr>
@@ -2309,7 +2305,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const double *&#160;</td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
           <td class="paramname"><em>beta</em>, </td>
         </tr>
         <tr>
@@ -2346,25 +2342,19 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="scalapack__connector_8h_a18f8efdbaae17a7a24b06df53698e94e_icgraph.png" border="0" usemap="#scalapack__connector_8h_a18f8efdbaae17a7a24b06df53698e94e_icgraph" alt=""/></div>
-<map name="scalapack__connector_8h_a18f8efdbaae17a7a24b06df53698e94e_icgraph" id="scalapack__connector_8h_a18f8efdbaae17a7a24b06df53698e94e_icgraph">
-<area shape="rect" title=" " alt="" coords="1272,79,1351,106"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a64ae21285e379175921100c13d31efb3" title=" " alt="" coords="987,23,1224,64"/>
-<area shape="rect" href="classScalapackConnector.html#a819a2945064a5d0b3ff3048212cdaec9" title=" " alt="" coords="1028,104,1183,145"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#ab018811c84928fe8f01ae25646e57201" title=" " alt="" coords="728,5,939,47"/>
-<area shape="rect" href="classEvolve__LCAO__Matrix.html#aec7bb6e0a91b1a9586741f635369687e" title=" " alt="" coords="755,71,912,112"/>
-<area shape="rect" href="classEvolve__LCAO__Matrix.html#aef0aab61187862adfad92afb4803d4c5" title=" " alt="" coords="755,136,912,177"/>
-<area shape="rect" href="classEvolve__LCAO__Matrix.html#af30d5a8d9e454786bebf6a966b19463f" title=" " alt="" coords="755,201,912,243"/>
-<area shape="rect" href="classEvolve__LCAO__Matrix.html#ae98176663248ba55bc850c39b0f95ee1" title=" " alt="" coords="471,136,680,177"/>
-<area shape="rect" href="classEvolve__LCAO__Matrix.html#a96f048a2ef9fe7565a1ed1bc087592a6" title=" " alt="" coords="236,136,423,177"/>
-<area shape="rect" href="classELEC__evolve.html#a8f1c5934994782bb3c861471d2b739ed" title=" " alt="" coords="5,143,188,170"/>
+<div class="center"><img src="scalapack__connector_8h_a87cc82345ad9fc0dac19916cba794161_icgraph.png" border="0" usemap="#scalapack__connector_8h_a87cc82345ad9fc0dac19916cba794161_icgraph" alt=""/></div>
+<map name="scalapack__connector_8h_a87cc82345ad9fc0dac19916cba794161_icgraph" id="scalapack__connector_8h_a87cc82345ad9fc0dac19916cba794161_icgraph">
+<area shape="rect" title=" " alt="" coords="549,46,628,73"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a64ae21285e379175921100c13d31efb3" title=" " alt="" coords="264,5,501,47"/>
+<area shape="rect" href="classScalapackConnector.html#aa6ef7fe45ac23540a9c2f087bfc8d036" title=" " alt="" coords="305,71,460,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#ab018811c84928fe8f01ae25646e57201" title=" " alt="" coords="5,5,216,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="adb37c8d9157712aad20cc464c90af528"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adb37c8d9157712aad20cc464c90af528">&#9670;&nbsp;</a></span>pztrmm_()</h2>
+<a id="a0ac509dd2b6bd5eb11d4d1a651b44a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ac509dd2b6bd5eb11d4d1a651b44a47">&#9670;&nbsp;</a></span>pztrmm_()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2408,7 +2398,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double *&#160;</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
           <td class="paramname"><em>alpha</em>, </td>
         </tr>
         <tr>

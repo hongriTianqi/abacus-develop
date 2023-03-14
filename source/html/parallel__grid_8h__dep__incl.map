@@ -1,12 +1,12 @@
-<map id="src_parallel/parallel_grid.h" name="src_parallel/parallel_grid.h">
-<area shape="rect" id="node1" title=" " alt="" coords="584,5,735,47"/>
-<area shape="rect" id="node2" href="$global_8h.html" title=" " alt="" coords="99,95,291,136"/>
-<area shape="rect" id="node5" href="$charge_8cpp.html" title=" " alt="" coords="256,184,447,225"/>
-<area shape="rect" id="node6" href="$klist__test_8cpp.html" title=" " alt="" coords="377,95,539,136"/>
-<area shape="rect" id="node7" href="$symmetry__rho_8h.html" title=" " alt="" coords="564,95,755,136"/>
-<area shape="rect" id="node8" href="$elecstate__lcao__test_8cpp.html" title=" " alt="" coords="779,95,958,136"/>
-<area shape="rect" id="node9" href="$updaterhok__pw__test_8h.html" title=" " alt="" coords="982,95,1153,136"/>
-<area shape="rect" id="node10" href="$parallel__grid_8cpp.html" title=" " alt="" coords="1177,95,1328,136"/>
-<area shape="rect" id="node3" href="$driver_8cpp.html" title=" " alt="" coords="5,191,92,218"/>
-<area shape="rect" id="node4" href="$driver__run_8cpp.html" title=" " alt="" coords="117,191,231,218"/>
+<map id="module_hamilt_pw/hamilt_pwdft/parallel_grid.h" name="module_hamilt_pw/hamilt_pwdft/parallel_grid.h">
+<area shape="rect" id="node1" title=" " alt="" coords="544,5,736,47"/>
+<area shape="rect" id="node2" href="$global_8h.html" title=" " alt="" coords="5,95,197,136"/>
+<area shape="rect" id="node4" href="$charge_8cpp.html" title=" " alt="" coords="139,184,330,225"/>
+<area shape="rect" id="node5" href="$klist__test_8cpp.html" title=" " alt="" coords="272,95,435,136"/>
+<area shape="rect" id="node6" href="$klist__test__para_8cpp.html" title=" " alt="" coords="459,95,621,136"/>
+<area shape="rect" id="node7" href="$symmetry__rho_8h.html" title=" " alt="" coords="646,95,837,136"/>
+<area shape="rect" id="node8" href="$elecstate__lcao__test_8cpp.html" title=" " alt="" coords="861,95,1040,136"/>
+<area shape="rect" id="node9" href="$updaterhok__pw__test_8h.html" title=" " alt="" coords="1064,95,1235,136"/>
+<area shape="rect" id="node10" href="$parallel__grid_8cpp.html" title=" " alt="" coords="1259,95,1451,136"/>
+<area shape="rect" id="node3" href="$driver_8cpp.html" title=" " alt="" coords="29,191,115,218"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: module_hamilt_lcao/hamilt_lcaodft/LCAO_nnr.cpp File Reference</title>
+<title>3.1.4: module_hamilt_lcao/hamilt_lcaodft/LCAO_nnr.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -68,6 +68,8 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#define-members">Macros</a>  </div>
   <div class="headertitle">
 <div class="title">LCAO_nnr.cpp File Reference</div>  </div>
 </div><!--header-->
@@ -79,24 +81,84 @@ $(function() {
 <code>#include &quot;<a class="el" href="tool__threading_8h_source.html">module_base/tool_threading.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="sltk__grid__driver_8h_source.html">module_cell/module_neighbor/sltk_grid_driver.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LCAO__deepks_8h_source.html">module_hamilt_lcao/module_deepks/LCAO_deepks.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="libm_8h_source.html">module_base/libm/libm.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for LCAO_nnr.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="LCAO__nnr_8cpp__incl.png" border="0" usemap="#module__hamilt__lcao_2hamilt__lcaodft_2LCAO__nnr_8cpp" alt=""/></div>
 <map name="module__hamilt__lcao_2hamilt__lcaodft_2LCAO__nnr_8cpp" id="module__hamilt__lcao_2hamilt__lcaodft_2LCAO__nnr_8cpp">
-<area shape="rect" title=" " alt="" coords="438,5,597,61"/>
-<area shape="rect" href="global_8h.html" title=" " alt="" coords="5,221,197,262"/>
-<area shape="rect" href="global__fp_8h.html" title=" " alt="" coords="197,117,392,158"/>
-<area shape="rect" href="sltk__grid__driver_8h.html" title=" " alt="" coords="221,213,376,269"/>
-<area shape="rect" href="record__adj_8h.html" title=" " alt="" coords="416,117,619,158"/>
-<area shape="rect" href="timer_8h.html" title=" " alt="" coords="829,228,987,255"/>
-<area shape="rect" href="tool__threading_8h.html" title=" " alt="" coords="835,124,1053,151"/>
-<area shape="rect" href="LCAO__deepks_8h.html" title=" " alt="" coords="643,109,811,165"/>
-<area shape="rect" href="global__function_8h.html" title=" " alt="" coords="123,317,277,359"/>
-<area shape="rect" href="global__variable_8h.html" title=" " alt="" coords="133,407,267,433"/>
+<area shape="rect" title=" " alt="" coords="531,5,690,61"/>
+<area shape="rect" href="global_8h.html" title=" " alt="" coords="752,221,944,262"/>
+<area shape="rect" href="global__fp_8h.html" title=" " alt="" coords="29,117,224,158"/>
+<area shape="rect" href="sltk__grid__driver_8h.html" title=" " alt="" coords="157,213,312,269"/>
+<area shape="rect" href="record__adj_8h.html" title=" " alt="" coords="440,117,642,158"/>
+<area shape="rect" href="timer_8h.html" title=" " alt="" coords="348,228,507,255"/>
+<area shape="rect" href="tool__threading_8h.html" title=" " alt="" coords="717,124,936,151"/>
+<area shape="rect" href="LCAO__deepks_8h.html" title=" " alt="" coords="248,109,416,165"/>
+<area shape="rect" href="libm_8h.html" title=" " alt="" coords="1010,124,1197,151"/>
+<area shape="rect" href="global__function_8h.html" title=" " alt="" coords="348,317,502,359"/>
 </map>
 </div>
-</div></div><!-- contents -->
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a50a43eb9df2fbdae66deb19f487d8037"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LCAO__nnr_8cpp.html#a50a43eb9df2fbdae66deb19f487d8037">NW_IJ_LOOP_BEGIN</a>()</td></tr>
+<tr class="separator:a50a43eb9df2fbdae66deb19f487d8037"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a196e2254c658108245a249f28b724c6a"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="LCAO__nnr_8cpp.html#a196e2254c658108245a249f28b724c6a">NW_IJ_LOOP_END</a>()</td></tr>
+<tr class="separator:a196e2254c658108245a249f28b724c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a50a43eb9df2fbdae66deb19f487d8037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50a43eb9df2fbdae66deb19f487d8037">&#9670;&nbsp;</a></span>NW_IJ_LOOP_BEGIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NW_IJ_LOOP_BEGIN</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">                    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> ii=0; ii&lt;atom1-&gt;nw*<a class="code" href="namespaceGlobalV.html#a97ef4b128d8c7eee952ee4eb9c7feda7">GlobalV::NPOL</a>; ii++)             \</div>
+<div class="line">                    {                                                           \</div>
+<div class="line">                        <span class="comment">/* the index of orbitals in this processor */</span>           \</div>
+<div class="line">                        const <span class="keywordtype">int</span> iw1_all = start + ii;                         \</div>
+<div class="line">                        const <span class="keywordtype">int</span> mu = pv-&gt;trace_loc_row[iw1_all];              \</div>
+<div class="line">                        if(mu&lt;0) {<span class="keywordflow">continue</span>;}                                    \</div>
+<div class="line">                        for(<span class="keywordtype">int</span> jj=0; jj&lt;atom2-&gt;nw*<a class="code" href="namespaceGlobalV.html#a97ef4b128d8c7eee952ee4eb9c7feda7">GlobalV::NPOL</a>; jj++)         \</div>
+<div class="line">                        {                                                       \</div>
+<div class="line">                            int iw2_all = start2 + jj;                          \</div>
+<div class="line">                            const <span class="keywordtype">int</span> nu = pv-&gt;trace_loc_col[iw2_all];          \</div>
+<div class="line">                            if(nu&lt;0) {<span class="keywordflow">continue</span>;}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a196e2254c658108245a249f28b724c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a196e2254c658108245a249f28b724c6a">&#9670;&nbsp;</a></span>NW_IJ_LOOP_END</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define NW_IJ_LOOP_END</td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">                            ++index;                                            \</div>
+<div class="line">                            ++tot_index;                                        \</div>
+<div class="line">                        }<span class="comment">/*end jj*/</span>                                             \</div>
+<div class="line">                    }<span class="comment">/*end ii*/</span></div>
+</div><!-- fragment -->
+</div>
+</div>
+</div><!-- contents -->
+<div class="ttc" id="anamespaceGlobalV_html_a97ef4b128d8c7eee952ee4eb9c7feda7"><div class="ttname"><a href="namespaceGlobalV.html#a97ef4b128d8c7eee952ee4eb9c7feda7">GlobalV::NPOL</a></div><div class="ttdeci">int NPOL</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:197</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

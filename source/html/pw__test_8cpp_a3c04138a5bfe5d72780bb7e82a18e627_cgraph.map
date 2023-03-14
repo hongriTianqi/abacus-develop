@@ -1,7 +1,6 @@
 <map id="main" name="main">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,60,83"/>
-<area shape="rect" id="node2" href="$test__tool_8cpp.html#a938cb5a9ce80b54e24b5168d5bb74ba7" title=" " alt="" coords="108,5,212,32"/>
-<area shape="rect" id="node3" href="$test__tool_8cpp.html#aa554214049d7fae01a7b3331dbb84e3d" title=" " alt="" coords="119,56,201,83"/>
-<area shape="rect" id="node4" href="$test__tool_8cpp.html#a1cb2d7ed1593015f4beb58652d844142" title=" " alt="" coords="119,107,201,133"/>
-<area shape="rect" id="node5" href="$namespaceParallel__Global.html#a1245451ef8414c9477f89e0e69637ca7" title=" " alt="" coords="260,107,437,133"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,60,98"/>
+<area shape="rect" id="node2" href="$namespaceParallel__Global.html#a50fb6fedc5162018673b4633f09a03bd" title=" " alt="" coords="108,5,275,47"/>
+<area shape="rect" id="node3" href="$test__tool_8cpp.html#aa554214049d7fae01a7b3331dbb84e3d" title=" " alt="" coords="150,71,233,98"/>
+<area shape="rect" id="node4" href="$test__tool_8cpp.html#a1cb2d7ed1593015f4beb58652d844142" title=" " alt="" coords="150,122,233,149"/>
 </map>

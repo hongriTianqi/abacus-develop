@@ -1,9 +1,12 @@
 <map id="XC_Functional::pz_polarized" name="XC_Functional::pz_polarized">
-<area shape="rect" id="node1" title=" " alt="" coords="856,78,1059,105"/>
-<area shape="rect" id="node2" href="$classXC__Functional.html#acf5b86d7473e54375ef63a164071b877" title=" " alt="" coords="637,78,808,105"/>
-<area shape="rect" id="node3" href="$classXC__Functional.html#a8e84b873fd30954b12e9c49f1b89d025" title=" " alt="" coords="419,78,589,105"/>
-<area shape="rect" id="node4" href="$classXC__Functional.html#a062ef071f07bf5327b7a7ee7a232325b" title=" " alt="" coords="220,78,371,105"/>
-<area shape="rect" id="node5" href="$classForces.html#ae52a9fdf7bcb35ac20b51f9708124527" title=" " alt="" coords="6,5,171,47"/>
-<area shape="rect" id="node6" href="$classelecstate_1_1PotXC.html#a1ce5b3e56bb87cf597b9832feb484aa0" title=" " alt="" coords="11,71,166,112"/>
-<area shape="rect" id="node7" href="$classStress__Func.html#afb4a91cc8729aa125799567996c3870c" title=" " alt="" coords="5,137,172,193"/>
+<area shape="rect" id="node1" title=" " alt="" coords="676,173,879,200"/>
+<area shape="rect" id="node2" href="$classXC__Functional.html#acf5b86d7473e54375ef63a164071b877" title=" " alt="" coords="457,173,628,200"/>
+<area shape="rect" id="node3" href="$classXC__Functional.html#a8e84b873fd30954b12e9c49f1b89d025" title=" " alt="" coords="239,173,409,200"/>
+<area shape="rect" id="node4" href="$classXCTest__PBE__SPN.html#a0b75c666fe29e537d10e90551216e7d0" title=" " alt="" coords="9,5,187,32"/>
+<area shape="rect" id="node5" href="$classXCTest__BP__SPN.html#a2758410e99fe01b0a2fa3958e60c576f" title=" " alt="" coords="13,56,183,83"/>
+<area shape="rect" id="node6" href="$classXCTest__revPBE__SPN.html#a815a7e59b92606002718984dd2a9d078" title=" " alt="" coords="19,107,177,149"/>
+<area shape="rect" id="node7" href="$classXCTest__PZ__SPN.html#acaa719ee9b33e7447b0fd19c1b355635" title=" " alt="" coords="13,173,183,200"/>
+<area shape="rect" id="node8" href="$classXCTest__PBE0__SPN.html#a351aa00054a162f019cdae812ee06cdf" title=" " alt="" coords="5,224,191,251"/>
+<area shape="rect" id="node9" href="$classXCTest__PBEsol__SPN.html#ad5aad9a1f9dae9a23921b40dc40c1303" title=" " alt="" coords="19,275,177,317"/>
+<area shape="rect" id="node10" href="$classXC__Functional.html#afc0869018a47418a92ea17bf16e96b7d" title=" " alt="" coords="23,341,173,368"/>
 </map>

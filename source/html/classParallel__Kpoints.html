@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: Parallel_Kpoints Class Reference</title>
+<title>3.1.4: Parallel_Kpoints Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -80,7 +80,7 @@ Collaboration diagram for Parallel_Kpoints:</div>
 <div class="dyncontent">
 <div class="center"><img src="classParallel__Kpoints__coll__graph.png" border="0" usemap="#Parallel__Kpoints_coll__map" alt="Collaboration graph"/></div>
 <map name="Parallel__Kpoints_coll__map" id="Parallel__Kpoints_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,168,288"/>
+<area shape="rect" title=" " alt="" coords="5,5,168,259"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -90,8 +90,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a34d9d323c5b7e3fa82e356d6aab6565c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3870309fbf57d63c11182c93e48c1460"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParallel__Kpoints.html#a3870309fbf57d63c11182c93e48c1460">~Parallel_Kpoints</a> ()</td></tr>
 <tr class="separator:a3870309fbf57d63c11182c93e48c1460"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adf08d994cafe64c0f3daacd5833319a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParallel__Kpoints.html#adf08d994cafe64c0f3daacd5833319a3">init_pools</a> ()</td></tr>
-<tr class="separator:adf08d994cafe64c0f3daacd5833319a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4d74b51d257e27c70168e51148d004e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParallel__Kpoints.html#a4d74b51d257e27c70168e51148d004e4">kinfo</a> (int &amp;nkstot)</td></tr>
 <tr class="separator:a4d74b51d257e27c70168e51148d004e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5910a44ca21c7e5d281e7d0a711a75ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParallel__Kpoints.html#a5910a44ca21c7e5d281e7d0a711a75ed">pool_collection</a> (double &amp;value, const double *wk, const int &amp;ik)</td></tr>
@@ -116,8 +114,6 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:acdde0956fb5751d2eea478ebfb205943"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParallel__Kpoints.html#acdde0956fb5751d2eea478ebfb205943">divide_pools</a> (void)</td></tr>
-<tr class="separator:acdde0956fb5751d2eea478ebfb205943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c414335c55516a52b9ae1dec30aface"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParallel__Kpoints.html#a2c414335c55516a52b9ae1dec30aface">get_nks_pool</a> (const int &amp;nkstot)</td></tr>
 <tr class="separator:a2c414335c55516a52b9ae1dec30aface"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af47c9e5b935cbe6278d386ea2fe5670b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classParallel__Kpoints.html#af47c9e5b935cbe6278d386ea2fe5670b">get_startk_pool</a> (const int &amp;nkstot)</td></tr>
@@ -161,46 +157,6 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="acdde0956fb5751d2eea478ebfb205943"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acdde0956fb5751d2eea478ebfb205943">&#9670;&nbsp;</a></span>divide_pools()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Parallel_Kpoints::divide_pools </td>
-          <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classParallel__Kpoints_acdde0956fb5751d2eea478ebfb205943_icgraph.png" border="0" usemap="#classParallel__Kpoints_acdde0956fb5751d2eea478ebfb205943_icgraph" alt=""/></div>
-<map name="classParallel__Kpoints_acdde0956fb5751d2eea478ebfb205943_icgraph" id="classParallel__Kpoints_acdde0956fb5751d2eea478ebfb205943_icgraph">
-<area shape="rect" title=" " alt="" coords="616,49,791,90"/>
-<area shape="rect" href="classParallel__Kpoints.html#adf08d994cafe64c0f3daacd5833319a3" title=" " alt="" coords="413,49,568,90"/>
-<area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
-<area shape="rect" href="parallel__reduce__test_8cpp.html#a744e91b21f098acdbe551196d445d739" title=" " alt="" coords="271,56,341,83"/>
-<area shape="rect" href="parallel__kpoints__test_8cpp.html#ae49a2f59cd64a581fbe0de010b053c88" title=" " alt="" coords="271,107,341,133"/>
-<area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
-<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="a2c414335c55516a52b9ae1dec30aface"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2c414335c55516a52b9ae1dec30aface">&#9670;&nbsp;</a></span>get_nks_pool()</h2>
 
@@ -246,7 +202,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="155,71,343,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="161,152,337,193"/>
 <area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="167,218,330,245"/>
-<area shape="rect" href="updaterhok__pw__test_8cpp.html#a8d8d0f6b8066294ef021796e6950d7bb" title=" " alt="" coords="214,269,283,295"/>
+<area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="214,269,283,295"/>
 <area shape="rect" href="classExx__Lip.html#ac94a9e681d40d939634735558235cb6a" title=" " alt="" coords="5,218,107,245"/>
 </map>
 </div>
@@ -289,7 +245,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="155,71,343,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="161,152,337,193"/>
 <area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="167,218,330,245"/>
-<area shape="rect" href="updaterhok__pw__test_8cpp.html#a8d8d0f6b8066294ef021796e6950d7bb" title=" " alt="" coords="214,269,283,295"/>
+<area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="214,269,283,295"/>
 <area shape="rect" href="classExx__Lip.html#ac94a9e681d40d939634735558235cb6a" title=" " alt="" coords="5,218,107,245"/>
 </map>
 </div>
@@ -341,47 +297,8 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="155,71,343,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="161,152,337,193"/>
 <area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="167,218,330,245"/>
-<area shape="rect" href="updaterhok__pw__test_8cpp.html#a8d8d0f6b8066294ef021796e6950d7bb" title=" " alt="" coords="214,269,283,295"/>
+<area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="214,269,283,295"/>
 <area shape="rect" href="classExx__Lip.html#ac94a9e681d40d939634735558235cb6a" title=" " alt="" coords="5,218,107,245"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="adf08d994cafe64c0f3daacd5833319a3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adf08d994cafe64c0f3daacd5833319a3">&#9670;&nbsp;</a></span>init_pools()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Parallel_Kpoints::init_pools </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classParallel__Kpoints_adf08d994cafe64c0f3daacd5833319a3_cgraph.png" border="0" usemap="#classParallel__Kpoints_adf08d994cafe64c0f3daacd5833319a3_cgraph" alt=""/></div>
-<map name="classParallel__Kpoints_adf08d994cafe64c0f3daacd5833319a3_cgraph" id="classParallel__Kpoints_adf08d994cafe64c0f3daacd5833319a3_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,160,47"/>
-<area shape="rect" href="classParallel__Kpoints.html#acdde0956fb5751d2eea478ebfb205943" title=" " alt="" coords="208,5,383,47"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classParallel__Kpoints_adf08d994cafe64c0f3daacd5833319a3_icgraph.png" border="0" usemap="#classParallel__Kpoints_adf08d994cafe64c0f3daacd5833319a3_icgraph" alt=""/></div>
-<map name="classParallel__Kpoints_adf08d994cafe64c0f3daacd5833319a3_icgraph" id="classParallel__Kpoints_adf08d994cafe64c0f3daacd5833319a3_icgraph">
-<area shape="rect" title=" " alt="" coords="413,49,568,90"/>
-<area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
-<area shape="rect" href="parallel__reduce__test_8cpp.html#a744e91b21f098acdbe551196d445d739" title=" " alt="" coords="271,56,341,83"/>
-<area shape="rect" href="parallel__kpoints__test_8cpp.html#ae49a2f59cd64a581fbe0de010b053c88" title=" " alt="" coords="271,107,341,133"/>
-<area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
-<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>
 </div>
 
@@ -427,7 +344,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="155,71,343,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="161,152,337,193"/>
 <area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="167,218,330,245"/>
-<area shape="rect" href="updaterhok__pw__test_8cpp.html#a8d8d0f6b8066294ef021796e6950d7bb" title=" " alt="" coords="214,269,283,295"/>
+<area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="214,269,283,295"/>
 <area shape="rect" href="classExx__Lip.html#ac94a9e681d40d939634735558235cb6a" title=" " alt="" coords="5,218,107,245"/>
 </map>
 </div>
@@ -653,8 +570,8 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>src_parallel/<a class="el" href="parallel__kpoints_8h_source.html">parallel_kpoints.h</a></li>
-<li>src_parallel/<a class="el" href="parallel__kpoints_8cpp.html">parallel_kpoints.cpp</a></li>
+<li>module_cell/<a class="el" href="parallel__kpoints_8h_source.html">parallel_kpoints.h</a></li>
+<li>module_cell/<a class="el" href="parallel__kpoints_8cpp.html">parallel_kpoints.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

@@ -1,7 +1,6 @@
 <map id="elecstate::ElecState::init_nelec_spin" name="elecstate::ElecState::init_nelec_spin">
-<area shape="rect" id="node1" title=" " alt="" coords="503,39,653,80"/>
-<area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="279,5,455,47"/>
-<area shape="rect" id="node3" href="$classelecstate_1_1ElecState.html#a11b78602110599e6ad68a462b9215c40" title=" " alt="" coords="291,71,442,112"/>
-<area shape="rect" id="node4" href="$classelecstate_1_1ElecStateLCAO.html#a67e7ec29ef629c8f3e6c1a39775c2810" title=" " alt="" coords="25,37,211,79"/>
-<area shape="rect" id="node5" href="$classelecstate_1_1ElecStateLCAO__TDDFT.html#a434781f17df9a057a1debc7b0a7d17ee" title=" " alt="" coords="5,103,231,144"/>
+<area shape="rect" id="node1" title=" " alt="" coords="477,39,628,80"/>
+<area shape="rect" id="node2" href="$classelecstate_1_1ElecState.html#a11b78602110599e6ad68a462b9215c40" title=" " alt="" coords="279,39,429,80"/>
+<area shape="rect" id="node3" href="$classelecstate_1_1ElecStateLCAO.html#a67e7ec29ef629c8f3e6c1a39775c2810" title=" " alt="" coords="25,5,211,47"/>
+<area shape="rect" id="node4" href="$classelecstate_1_1ElecStateLCAO__TDDFT.html#a434781f17df9a057a1debc7b0a7d17ee" title=" " alt="" coords="5,71,231,112"/>
 </map>

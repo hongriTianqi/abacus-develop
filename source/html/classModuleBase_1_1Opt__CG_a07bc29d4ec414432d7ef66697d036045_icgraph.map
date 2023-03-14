@@ -1,5 +1,7 @@
 <map id="ModuleBase::Opt_CG::setPara" name="ModuleBase::Opt_CG::setPara">
-<area shape="rect" id="node1" title=" " alt="" coords="436,5,595,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="436,64,595,105"/>
 <area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="5,5,181,47"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1Opt__TN.html#a0436b9aebe76cc3a612e6116e9d006a6" title=" " alt="" coords="229,35,388,76"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1Opt__TN.html#a0436b9aebe76cc3a612e6116e9d006a6" title=" " alt="" coords="229,64,388,105"/>
+<area shape="rect" id="node5" href="$classCG__test.html#a2601a60f77acc846977b398994709248" title=" " alt="" coords="249,130,369,157"/>
+<area shape="rect" id="node4" href="$classTN__test.html#af44d95e188568048b499fab92390e082" title=" " alt="" coords="34,71,153,98"/>
 </map>

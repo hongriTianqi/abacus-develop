@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: module_base/libm/test/libm_test.cpp File Reference</title>
+<title>3.1.4: module_base/libm/test/libm_test.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -69,6 +69,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">libm_test.cpp File Reference</div>  </div>
@@ -97,18 +98,235 @@ Include dependency graph for libm_test.cpp:</div>
 </map>
 </div>
 </div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:ae658474cf09e27d61478d79049c43b7d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libm__test_8cpp.html#ae658474cf09e27d61478d79049c43b7d">MY_EXPECT_DOUBLE_EQ</a>(ds1,  ds2)</td></tr>
+<tr class="separator:ae658474cf09e27d61478d79049c43b7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3ea421ca302a7ddb2b9da885270fbde6"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libm__test_8cpp.html#a3ea421ca302a7ddb2b9da885270fbde6">MY_EXPECT_COMPLEX_DOUBLE_EQ</a>(ds1,  ds2)</td></tr>
+<tr class="separator:a3ea421ca302a7ddb2b9da885270fbde6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae995fa92d1bc2def79548ab140366c4b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libm__test_8cpp.html#ae995fa92d1bc2def79548ab140366c4b">SINGLE_PARAM_FLOAT64_MATH_RANDOM_TEST_TEMPLATE</a>(TNAME,  FNAME,  LENGTH,  LOW,  HIGH)</td></tr>
+<tr class="separator:ae995fa92d1bc2def79548ab140366c4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa882e06417ddc0ceda6b7660ecc8f292"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libm__test_8cpp.html#aa882e06417ddc0ceda6b7660ecc8f292">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE</a>(TNAME,  FNAME,  VALUE)</td></tr>
+<tr class="separator:aa882e06417ddc0ceda6b7660ecc8f292"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3965b11065da9b34bd6e0046ae974356"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libm__test_8cpp.html#a3965b11065da9b34bd6e0046ae974356">SINGLE_PARAM_FLOAT64_MATH_CORNER_TEST_TEMPLATE</a>(FNAME)</td></tr>
+<tr class="separator:a3965b11065da9b34bd6e0046ae974356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a92dcd25edcc8898da594ed1f6d4ae834"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libm__test_8cpp.html#a92dcd25edcc8898da594ed1f6d4ae834">TEST</a> (base_libm, sincos)</td></tr>
-<tr class="separator:a92dcd25edcc8898da594ed1f6d4ae834"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeb78a103d3216fe93ca04db83632d48e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libm__test_8cpp.html#aeb78a103d3216fe93ca04db83632d48e">TEST</a> (base_libm, exp)</td></tr>
-<tr class="separator:aeb78a103d3216fe93ca04db83632d48e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af0adc239dc6ca6aeb396d708ad59bc2b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libm__test_8cpp.html#af0adc239dc6ca6aeb396d708ad59bc2b">TEST</a> (base_libm, cexp)</td></tr>
-<tr class="separator:af0adc239dc6ca6aeb396d708ad59bc2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c2b9fe4547eedd9183c72e011be615d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libm__test_8cpp.html#a8c2b9fe4547eedd9183c72e011be615d">TEST</a> (base_libm, sincos_random)</td></tr>
+<tr class="separator:a8c2b9fe4547eedd9183c72e011be615d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67a768fe99220e05578138aaa4cfbfb9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libm__test_8cpp.html#a67a768fe99220e05578138aaa4cfbfb9">TEST</a> (base_libm, sincos_spec)</td></tr>
+<tr class="separator:a67a768fe99220e05578138aaa4cfbfb9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d0268f440d3493e9c533d0ad000f5d3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libm__test_8cpp.html#a3d0268f440d3493e9c533d0ad000f5d3">TEST</a> (base_libm, cexp_random)</td></tr>
+<tr class="separator:a3d0268f440d3493e9c533d0ad000f5d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d22ab6f63f922e3655a6cdadaf4b8fb"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="libm__test_8cpp.html#a6d22ab6f63f922e3655a6cdadaf4b8fb">TEST</a> (base_libm, cexp_spec)</td></tr>
+<tr class="separator:a6d22ab6f63f922e3655a6cdadaf4b8fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a3ea421ca302a7ddb2b9da885270fbde6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3ea421ca302a7ddb2b9da885270fbde6">&#9670;&nbsp;</a></span>MY_EXPECT_COMPLEX_DOUBLE_EQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MY_EXPECT_COMPLEX_DOUBLE_EQ</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ds1, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ds2&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line">    <a class="code" href="libm__test_8cpp.html#ae658474cf09e27d61478d79049c43b7d">MY_EXPECT_DOUBLE_EQ</a>(ds1.real(), ds2.real());                                \</div>
+<div class="line">    MY_EXPECT_DOUBLE_EQ(ds1.imag(), ds2.imag());                                \</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae658474cf09e27d61478d79049c43b7d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae658474cf09e27d61478d79049c43b7d">&#9670;&nbsp;</a></span>MY_EXPECT_DOUBLE_EQ</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define MY_EXPECT_DOUBLE_EQ</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ds1, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">ds2&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><span class="keywordflow">do</span> {                                                                            \</div>
+<div class="line">    if (std::isnan(ds1) &amp;&amp; std::isnan(ds2) &amp;&amp;                                   \</div>
+<div class="line">        std::signbit(ds1) == std::signbit(ds2))                                 \</div>
+<div class="line">        EXPECT_EQ(1, 1);                                                        \</div>
+<div class="line">    else EXPECT_DOUBLE_EQ(ds1, ds2);                                            \</div>
+<div class="line">} <span class="keywordflow">while</span> (0)</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a3965b11065da9b34bd6e0046ae974356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3965b11065da9b34bd6e0046ae974356">&#9670;&nbsp;</a></span>SINGLE_PARAM_FLOAT64_MATH_CORNER_TEST_TEMPLATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SINGLE_PARAM_FLOAT64_MATH_CORNER_TEST_TEMPLATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">FNAME</td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="libm__test_8cpp.html#aa882e06417ddc0ceda6b7660ecc8f292">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE</a>(FNAME ## _nz, FNAME, -0.0);        \</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _pz, FNAME, +0.0);        \</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _ninf, FNAME, -INFINITY); \</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _pinf, FNAME, +INFINITY); \</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _nnan, FNAME, -NAN);      \</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _pnan, FNAME, +NAN);      \</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _nmin, FNAME, -DBL_MIN);  \</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _nmax, FNAME, -DBL_MAX);  \</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _pmin, FNAME, +DBL_MIN);  \</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _pmax, FNAME, +DBL_MAX);  \</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _nmin2, FNAME, -DBL_MIN * DBL_MIN);\</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _nmax2, FNAME, -DBL_MAX * DBL_MAX);\</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _pmin2, FNAME, +DBL_MIN * DBL_MIN);\</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _pmax2, FNAME, +DBL_MAX * DBL_MAX);\</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _nlarge, FNAME, -DBL_MAX / M_PI);\</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _plarge, FNAME, +DBL_MAX / M_PI);\</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _nlarge2, FNAME, -105414350.0 * 2.0);\</div>
+<div class="line">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(FNAME ## _plarge2, FNAME, +105414350.0 * 2.0);\</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ae995fa92d1bc2def79548ab140366c4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae995fa92d1bc2def79548ab140366c4b">&#9670;&nbsp;</a></span>SINGLE_PARAM_FLOAT64_MATH_RANDOM_TEST_TEMPLATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SINGLE_PARAM_FLOAT64_MATH_RANDOM_TEST_TEMPLATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TNAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">FNAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">LENGTH, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">LOW, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">HIGH&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="libm__test_8cpp.html#a8c2b9fe4547eedd9183c72e011be615d">TEST</a>(base_libm, TNAME) {                                                        \</div>
+<div class="line">    int len = (LENGTH);                                                         \</div>
+<div class="line">    std::vector&lt;double&gt; da(len);                                                \</div>
+<div class="line">    std::vector&lt;double&gt; ds1(len);                                               \</div>
+<div class="line">    std::vector&lt;double&gt; ds2(len);                                               \</div>
+<div class="line">    std::uniform_real_distribution&lt;double&gt; rnd(LOW, HIGH);                      \</div>
+<div class="line">    std::default_random_engine eng;                                             \</div>
+<div class="line">    for (<span class="keywordtype">int</span> <a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a> = 0; <a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a> &lt; len; ++<a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a>)                                               \</div>
+<div class="line">        da[<a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a>] = rnd(eng);                                                       \</div>
+<div class="line">    for (<span class="keywordtype">int</span> <a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a> = 0; <a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a> &lt; len; ++<a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a>) {                                             \</div>
+<div class="line">        ds1[<a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a>] = std::FNAME(da[<a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a>]);                                             \</div>
+<div class="line">        ds2[<a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a>] = ModuleBase::libm::FNAME(da[<a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a>]);                                \</div>
+<div class="line">    }                                                                           \</div>
+<div class="line">    for (<span class="keywordtype">int</span> <a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a> = 0; <a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a> &lt; len; <a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a>++)                                               \</div>
+<div class="line">        <a class="code" href="libm__test_8cpp.html#ae658474cf09e27d61478d79049c43b7d">MY_EXPECT_DOUBLE_EQ</a>(ds1[<a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a>], ds2[<a class="code" href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">i</a>]);                                       \</div>
+<div class="line">}                                                                               \</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="aa882e06417ddc0ceda6b7660ecc8f292"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa882e06417ddc0ceda6b7660ecc8f292">&#9670;&nbsp;</a></span>SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE</td>
+          <td>(</td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">TNAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">FNAME, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">&#160;</td>
+          <td class="paramname">VALUE&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<b>Value:</b><div class="fragment"><div class="line"><a class="code" href="libm__test_8cpp.html#a8c2b9fe4547eedd9183c72e011be615d">TEST</a>(base_libm, TNAME) {                                                        \</div>
+<div class="line">    double ds1 = std::FNAME(VALUE);                                             \</div>
+<div class="line">    double ds2 = ModuleBase::libm::FNAME(VALUE);                                \</div>
+<div class="line">    MY_EXPECT_DOUBLE_EQ(ds1, ds2);                                              \</div>
+<div class="line">}                                                                               \</div>
+</div><!-- fragment -->
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="af0adc239dc6ca6aeb396d708ad59bc2b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0adc239dc6ca6aeb396d708ad59bc2b">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/3]</span></h2>
+<a id="a3d0268f440d3493e9c533d0ad000f5d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d0268f440d3493e9c533d0ad000f5d3">&#9670;&nbsp;</a></span>TEST() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -122,7 +340,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">cexp&#160;</td>
+          <td class="paramtype">cexp_random&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -135,8 +353,8 @@ Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="libm__test_8cpp_af0adc239dc6ca6aeb396d708ad59bc2b_cgraph.png" border="0" usemap="#libm__test_8cpp_af0adc239dc6ca6aeb396d708ad59bc2b_cgraph" alt=""/></div>
-<map name="libm__test_8cpp_af0adc239dc6ca6aeb396d708ad59bc2b_cgraph" id="libm__test_8cpp_af0adc239dc6ca6aeb396d708ad59bc2b_cgraph">
+<div class="center"><img src="libm__test_8cpp_a3d0268f440d3493e9c533d0ad000f5d3_cgraph.png" border="0" usemap="#libm__test_8cpp_a3d0268f440d3493e9c533d0ad000f5d3_cgraph" alt=""/></div>
+<map name="libm__test_8cpp_a3d0268f440d3493e9c533d0ad000f5d3_cgraph" id="libm__test_8cpp_a3d0268f440d3493e9c533d0ad000f5d3_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,60,32"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="108,5,279,32"/>
 </map>
@@ -144,8 +362,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="aeb78a103d3216fe93ca04db83632d48e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeb78a103d3216fe93ca04db83632d48e">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/3]</span></h2>
+<a id="a6d22ab6f63f922e3655a6cdadaf4b8fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6d22ab6f63f922e3655a6cdadaf4b8fb">&#9670;&nbsp;</a></span>TEST() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -159,7 +377,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">exp&#160;</td>
+          <td class="paramtype">cexp_spec&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -172,8 +390,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="libm__test_8cpp_aeb78a103d3216fe93ca04db83632d48e_cgraph.png" border="0" usemap="#libm__test_8cpp_aeb78a103d3216fe93ca04db83632d48e_cgraph" alt=""/></div>
-<map name="libm__test_8cpp_aeb78a103d3216fe93ca04db83632d48e_cgraph" id="libm__test_8cpp_aeb78a103d3216fe93ca04db83632d48e_cgraph">
+<div class="center"><img src="libm__test_8cpp_a6d22ab6f63f922e3655a6cdadaf4b8fb_cgraph.png" border="0" usemap="#libm__test_8cpp_a6d22ab6f63f922e3655a6cdadaf4b8fb_cgraph" alt=""/></div>
+<map name="libm__test_8cpp_a6d22ab6f63f922e3655a6cdadaf4b8fb_cgraph" id="libm__test_8cpp_a6d22ab6f63f922e3655a6cdadaf4b8fb_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,60,32"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="108,5,279,32"/>
 </map>
@@ -181,8 +399,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a92dcd25edcc8898da594ed1f6d4ae834"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a92dcd25edcc8898da594ed1f6d4ae834">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/3]</span></h2>
+<a id="a8c2b9fe4547eedd9183c72e011be615d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8c2b9fe4547eedd9183c72e011be615d">&#9670;&nbsp;</a></span>TEST() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -196,7 +414,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">sincos&#160;</td>
+          <td class="paramtype">sincos_random&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -209,8 +427,45 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="libm__test_8cpp_a92dcd25edcc8898da594ed1f6d4ae834_cgraph.png" border="0" usemap="#libm__test_8cpp_a92dcd25edcc8898da594ed1f6d4ae834_cgraph" alt=""/></div>
-<map name="libm__test_8cpp_a92dcd25edcc8898da594ed1f6d4ae834_cgraph" id="libm__test_8cpp_a92dcd25edcc8898da594ed1f6d4ae834_cgraph">
+<div class="center"><img src="libm__test_8cpp_a8c2b9fe4547eedd9183c72e011be615d_cgraph.png" border="0" usemap="#libm__test_8cpp_a8c2b9fe4547eedd9183c72e011be615d_cgraph" alt=""/></div>
+<map name="libm__test_8cpp_a8c2b9fe4547eedd9183c72e011be615d_cgraph" id="libm__test_8cpp_a8c2b9fe4547eedd9183c72e011be615d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,60,32"/>
+<area shape="rect" href="namespaceModuleBase_1_1libm.html#afa2a407ece6197db03448e7ae021b263" title=" " alt="" coords="108,5,296,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a67a768fe99220e05578138aaa4cfbfb9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67a768fe99220e05578138aaa4cfbfb9">&#9670;&nbsp;</a></span>TEST() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">TEST </td>
+          <td>(</td>
+          <td class="paramtype">base_libm&#160;</td>
+          <td class="paramname">, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">sincos_spec&#160;</td>
+          <td class="paramname">&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="libm__test_8cpp_a67a768fe99220e05578138aaa4cfbfb9_cgraph.png" border="0" usemap="#libm__test_8cpp_a67a768fe99220e05578138aaa4cfbfb9_cgraph" alt=""/></div>
+<map name="libm__test_8cpp_a67a768fe99220e05578138aaa4cfbfb9_cgraph" id="libm__test_8cpp_a67a768fe99220e05578138aaa4cfbfb9_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,60,32"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#afa2a407ece6197db03448e7ae021b263" title=" " alt="" coords="108,5,296,32"/>
 </map>
@@ -219,6 +474,10 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 </div><!-- contents -->
+<div class="ttc" id="alibm__test_8cpp_html_ae658474cf09e27d61478d79049c43b7d"><div class="ttname"><a href="libm__test_8cpp.html#ae658474cf09e27d61478d79049c43b7d">MY_EXPECT_DOUBLE_EQ</a></div><div class="ttdeci">#define MY_EXPECT_DOUBLE_EQ(ds1, ds2)</div><div class="ttdef"><b>Definition:</b> libm_test.cpp:10</div></div>
+<div class="ttc" id="anamespaceModuleBase_1_1libm_html_a53ba939830541970fa8cdc6973c806e5"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">ModuleBase::libm::i</a></div><div class="ttdeci">int4 i[880]</div><div class="ttdef"><b>Definition:</b> sincos.cpp:28</div></div>
+<div class="ttc" id="alibm__test_8cpp_html_a8c2b9fe4547eedd9183c72e011be615d"><div class="ttname"><a href="libm__test_8cpp.html#a8c2b9fe4547eedd9183c72e011be615d">TEST</a></div><div class="ttdeci">TEST(base_libm, sincos_random)</div><div class="ttdef"><b>Definition:</b> libm_test.cpp:22</div></div>
+<div class="ttc" id="alibm__test_8cpp_html_aa882e06417ddc0ceda6b7660ecc8f292"><div class="ttname"><a href="libm__test_8cpp.html#aa882e06417ddc0ceda6b7660ecc8f292">SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE</a></div><div class="ttdeci">#define SINGLE_PARAM_FLOAT64_MATH_SPEC_TEST_TEMPLATE(TNAME, FNAME, VALUE)</div><div class="ttdef"><b>Definition:</b> libm_test.cpp:97</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: Class Members - Functions</title>
+<title>3.1.4: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -80,12 +80,15 @@ $(function() {
 , <a class="el" href="classFIRE__test.html#af30fc2cc6dcf7f06e5e1f53ed53986d6">FIRE_test</a>
 , <a class="el" href="classGlobalFunctionTest.html#a877add0c6961691865b37b8417430d71">GlobalFunctionTest</a>
 , <a class="el" href="classLangevin__test.html#ac00996b6b4140211ce35b2dd101f5f1a">Langevin_test</a>
+, <a class="el" href="classLcaoOrbitalsTest.html#a7f03a9ebdb184388c1c547a2746baeb6">LcaoOrbitalsTest</a>
 , <a class="el" href="classLJ__pot__test.html#a77b33945f38dccbeb11769620d5a2361">LJ_pot_test</a>
 , <a class="el" href="classMathzoneAdd1Test.html#a7985afe3a27bafcad1c9418b4c4eb2d4">MathzoneAdd1Test</a>
 , <a class="el" href="classMD__func__test.html#a984e33f6a7b208f58962c9bc09f28b8b">MD_func_test</a>
 , <a class="el" href="classMemoryTest.html#a1f8a1c0ad52f2fcbbc8123dce366ae73">MemoryTest</a>
 , <a class="el" href="classMSST__test.html#ad9e60eb4b39eb9779fab46656515d09c">MSST_test</a>
 , <a class="el" href="classNHC__test.html#a5b9d6ad3e3ae285526a02c57137d0f7c">NHC_test</a>
+, <a class="el" href="classNumericalNonlocalLmTest.html#a7b41e22e201ed3769151c572881879b9">NumericalNonlocalLmTest</a>
+, <a class="el" href="classNumericalOrbitalLmTest.html#afeea6df93f01dff4e56a98ba9b0bfad9">NumericalOrbitalLmTest</a>
 , <a class="el" href="classPWTEST.html#a209ae3238d92684ffbf805ee0eed9177">PWTEST</a>
 , <a class="el" href="classSimpsonIntegralSinx.html#a910a345b33c591a4c792624b9460c5f2">SimpsonIntegralSinx</a>
 , <a class="el" href="classSphbes.html#a0815ab1ef2016631526bf6cf84a6bb2d">Sphbes</a>
@@ -108,6 +111,11 @@ $(function() {
 , <a class="el" href="classTN__test.html#ab6ea6d3cd6e001a6e97b28b10fe6fb63">TN_test</a>
 , <a class="el" href="classToolCheckTest.html#af0621de3660d3b0554f06ad1e7528a63">ToolCheckTest</a>
 , <a class="el" href="classToolQuitTest.html#a42b8b7475afd26e2c75e9f4dd3cf307b">ToolQuitTest</a>
+, <a class="el" href="classToolTitleTest.html#ae020d6cc3c8da27e7b4560d3060fa9b3">ToolTitleTest</a>
+, <a class="el" href="classUcellTest.html#a451d5e0cb926e05e6a37f476ff9cfba8">UcellTest</a>
+, <a class="el" href="classvdwd2Test.html#ad866e4b50661e2f80de04fc2af1a7219">vdwd2Test</a>
+, <a class="el" href="classvdwd3abcTest.html#abc1167864fd83325786d017873a1c9f4">vdwd3abcTest</a>
+, <a class="el" href="classvdwd3Test.html#a0f8fba1a5784cf0680203846fdb7e41f">vdwd3Test</a>
 , <a class="el" href="classVerlet__test.html#ad5338ff6575c101bd4adb9e3d88b64ce">Verlet_test</a>
 , <a class="el" href="classYlmRealTest.html#a9cabb267069c7b82fcfdb2e3fd4978fe">YlmRealTest</a>
 </li>
@@ -132,6 +140,9 @@ $(function() {
 </li>
 <li>test_all()
 : <a class="el" href="classExx__Abfs.html#a929141c2ab00d173f26e9e7d75e981bd">Exx_Abfs</a>
+</li>
+<li>test_atom_ordering()
+: <a class="el" href="classModuleSymmetry_1_1Symmetry__Basic.html#a4a73c003b4fd0d4a783ed310731d3e37">ModuleSymmetry::Symmetry_Basic</a>
 </li>
 <li>test_deepks()
 : <a class="el" href="classtest__deepks.html#a74ac05f391293470060ca8556ecfd79c">test_deepks</a>
@@ -185,7 +196,7 @@ $(function() {
 : <a class="el" href="classpsi_1_1Psi.html#a33380ffe7c69c8c2a03b88af11f9323c">psi::Psi&lt; T, Device &gt;</a>
 </li>
 <li>toWannier90()
-: <a class="el" href="classtoWannier90.html#ae44275ab30efb67c2dc1ab282841db31">toWannier90</a>
+: <a class="el" href="classtoWannier90.html#a5288c95c569090ff82e2735d3f675831">toWannier90</a>
 </li>
 <li>trace_on()
 : <a class="el" href="classModuleBase_1_1matrix.html#a5ff60d8f2dee9e7a3cf3ca4609d5ef90">ModuleBase::matrix</a>
@@ -194,16 +205,17 @@ $(function() {
 : <a class="el" href="classModuleBase_1_1Chebyshev.html#a98acd7d53b325cbbf4087a098278e741">ModuleBase::Chebyshev&lt; REAL &gt;</a>
 </li>
 <li>transpose()
-: <a class="el" href="classLapackConnector.html#a1bbcb7b2f4d9d1462c184a7b09e52f27">LapackConnector</a>
+: <a class="el" href="classLapackConnector.html#a99230c7a4adeb7106c82376ec55ef3ed">LapackConnector</a>
 </li>
 <li>Transpose()
 : <a class="el" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056">ModuleBase::Matrix3</a>
 </li>
 <li>tranu()
-: <a class="el" href="classScalapackConnector.html#a819a2945064a5d0b3ff3048212cdaec9">ScalapackConnector</a>
+: <a class="el" href="classScalapackConnector.html#aa6ef7fe45ac23540a9c2f087bfc8d036">ScalapackConnector</a>
 </li>
 <li>trim()
-: <a class="el" href="classPseudopot__upf.html#ac550a59580f6ef61dc30c6fd0244dad0">Pseudopot_upf</a>
+: <a class="el" href="classNumericalNonlocalLmTest.html#a2e4047de7e2e2b04d4ea5429ca29ea00">NumericalNonlocalLmTest</a>
+, <a class="el" href="classPseudopot__upf.html#ac550a59580f6ef61dc30c6fd0244dad0">Pseudopot_upf</a>
 </li>
 <li>trimend()
 : <a class="el" href="classPseudopot__upf.html#a29ca3d85a79c1ece42206e604add57bc">Pseudopot_upf</a>

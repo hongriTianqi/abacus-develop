@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: Class Members</title>
+<title>3.1.4: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -147,7 +147,7 @@ $(function() {
 : <a class="el" href="classModuleBase_1_1Mathzone__Add1.html#aeb3829f487438d4a8e15dff0b3c72c34">ModuleBase::Mathzone_Add1</a>
 </li>
 <li>matrigen()
-: <a class="el" href="classModuleSymmetry_1_1Symmetry__Basic.html#aa39a2c06670d831a2aa72cc7f9672faa">ModuleSymmetry::Symmetry_Basic</a>
+: <a class="el" href="classModuleSymmetry_1_1Symmetry__Basic.html#a46232c35c1ccc6c16487f7b0823e42ac">ModuleSymmetry::Symmetry_Basic</a>
 </li>
 <li>matrix
 : <a class="el" href="classExx__Lcao.html#a77953bd488042ff0a74970013f646be0">Exx_Lcao</a>
@@ -261,6 +261,7 @@ $(function() {
 </li>
 <li>mbl
 : <a class="el" href="classAtom.html#a1da89c2e1122d87a42198c6d0c377188">Atom</a>
+, <a class="el" href="classUcellTestPrepare.html#a16c776c9584a6288546fec2a995ce5ec">UcellTestPrepare</a>
 </li>
 <li>md
 : <a class="el" href="classForce__Stress__LCAO.html#ad8c8d66a1a2ed09701e630a8230c6f37">Force_Stress_LCAO</a>
@@ -339,7 +340,7 @@ $(function() {
 : <a class="el" href="classMD__parameters.html#a14615e892fe9be8ed89222946d527304">MD_parameters</a>
 </li>
 <li>MDdump()
-: <a class="el" href="classMD__func.html#aabbc7a21ced3128268bbfd5dc003f622">MD_func</a>
+: <a class="el" href="classMD__func.html#a62a1994e003004286002395b5af44880">MD_func</a>
 </li>
 <li>mdp
 : <a class="el" href="classInput.html#a1fb248794300fa5738d21d387e95d7c9">Input</a>
@@ -356,9 +357,6 @@ $(function() {
 : <a class="el" href="classMSST__test.html#add1bf5e013fcc2614a4f415742989d00">MSST_test</a>
 , <a class="el" href="classNHC__test.html#aa62ca938d05e5e6f7deef248fb228a38">NHC_test</a>
 , <a class="el" href="classVerlet__test.html#a9496dc4f431c75c5ec13d7147712b15e">Verlet_test</a>
-</li>
-<li>MecMulP
-: <a class="el" href="classMulliken__Charge.html#ae4c4e872d3535eee53fee93aca012dee">Mulliken_Charge</a>
 </li>
 <li>mem_saver
 : <a class="el" href="classInput.html#afe7ac9d93b47e76421d36284a1cfe7ac">Input</a>
@@ -439,8 +437,13 @@ $(function() {
 <li>method_sto
 : <a class="el" href="classInput.html#aae1ccb88a07b4c246b790195ab022fd6">Input</a>
 </li>
+<li>method_test
+: <a class="el" href="classTestHSolver.html#a8c10e66678f0a8ac03c6b3f1f27012ea">TestHSolver</a>
+, <a class="el" href="classTestHSolverPW.html#a6f2e3708a3a4c048da222837e021c84f">TestHSolverPW</a>
+, <a class="el" href="classTestHSolverPW__SDFT.html#a25814c000d349edc9634b2145451cef4">TestHSolverPW_SDFT</a>
+</li>
 <li>mf
-: <a class="el" href="classTestTools.html#a492618dc8a4c03fef15923ea18e8065a">TestTools</a>
+: <a class="el" href="classTestTools.html#a97664dda368cc0c1ca0c4e628145a268">TestTools</a>
 </li>
 <li>MGT
 : <a class="el" href="classcal__r__overlap__R.html#a95ca89e9e8123b2ab485857e71959a63">cal_r_overlap_R</a>
@@ -471,9 +474,6 @@ $(function() {
 </li>
 <li>minB3
 : <a class="el" href="classGrid__Technique.html#a373b398f7a1c6757fcfc3f3c1f7ae4c1">Grid_Technique</a>
-</li>
-<li>MinFunc()
-: <a class="el" href="classMinFunc.html#a198d619a330adb42758f7a56ba1eb73f">MinFunc</a>
 </li>
 <li>minimize_cg()
 : <a class="el" href="classsurchem.html#aeb7e54f0c573e06f0768c3a11f2ec5f7">surchem</a>
@@ -520,13 +520,13 @@ $(function() {
 </li>
 <li>mixing_mode
 : <a class="el" href="classCharge__Mixing.html#a7a4c143d369884e8f7d2c274b5458668">Charge_Mixing</a>
-, <a class="el" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1Hexx.html#aebaa3e288d46a14e3a8bc8156623b4fa">Exx_Abfs::Parallel::Communicate::Hexx</a>
 </li>
 <li>Mixing_Mode
 : <a class="el" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1Hexx.html#ae2be828f5b5c1ec0ae4435d8361325f3">Exx_Abfs::Parallel::Communicate::Hexx</a>
 </li>
 <li>mixing_mode
-: <a class="el" href="classInput.html#a484141a54ff8499e4d724a3204a9757e">Input</a>
+: <a class="el" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1Hexx.html#aebaa3e288d46a14e3a8bc8156623b4fa">Exx_Abfs::Parallel::Communicate::Hexx</a>
+, <a class="el" href="classInput.html#a484141a54ff8499e4d724a3204a9757e">Input</a>
 </li>
 <li>mixing_ndim
 : <a class="el" href="classCharge__Mixing.html#ace64ee88221d8ba19eefb8db729ad473">Charge_Mixing</a>
@@ -537,7 +537,7 @@ $(function() {
 , <a class="el" href="classInput.html#a167824a40f42229f077599a028668f72">Input</a>
 </li>
 <li>MOCK_METHOD0()
-: <a class="el" href="classelecstate_1_1MockElecStatePW.html#a0ad8f0cd9d47d6b119cb68dc567b9054">elecstate::MockElecStatePW</a>
+: <a class="el" href="classelecstate_1_1MockElecStatePW.html#a25ddbe2e886edab0e9b1c9a32235ad50">elecstate::MockElecStatePW</a>
 </li>
 <li>MockElecStateLCAO()
 : <a class="el" href="classelecstate_1_1MockElecStateLCAO.html#aa4519860ecadc74d0889b47252297979">elecstate::MockElecStateLCAO</a>
@@ -662,13 +662,9 @@ $(function() {
 : <a class="el" href="classNumerical__Basis.html#a1cfa5c70e3b08f608b2aa2eb5f66938c">Numerical_Basis</a>
 , <a class="el" href="classNumerical__Descriptor.html#a8c51ec15fdd919252a44f1044ba1c1c5">Numerical_Descriptor</a>
 </li>
-<li>mug
-: <a class="el" href="classMulliken__Charge.html#aefe00c30a183731b4057bf5602f81e0d">Mulliken_Charge</a>
-</li>
 <li>Mulliken_Charge
 : <a class="el" href="classLCAO__gen__fixedH.html#a2f747cbcc09612bf447c236937a5d5bc">LCAO_gen_fixedH</a>
 , <a class="el" href="classLCAO__Matrix.html#a2f747cbcc09612bf447c236937a5d5bc">LCAO_Matrix</a>
-, <a class="el" href="classMulliken__Charge.html#aedbe184ade22848832c00be77819118a">Mulliken_Charge</a>
 </li>
 <li>multi_proj
 : <a class="el" href="classpseudopot__cell__vnl.html#ab25c11bba0daf09ff02723fe5a726b5d">pseudopot_cell_vnl</a>
@@ -692,6 +688,9 @@ $(function() {
 , <a class="el" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1DM_1_1Allreduce.html#a5e1a2d1c387bcd36999144fbf568fa7c">Exx_Abfs::Parallel::Communicate::DM::Allreduce</a>
 , <a class="el" href="classtest__deepks.html#a7af76a962f7a04af31d773240705c430">test_deepks</a>
 , <a class="el" href="classtest__orb.html#ab199264182bfc76a78d288105e8d1e96">test_orb</a>
+</li>
+<li>my_rank_
+: <a class="el" href="classLcaoOrbitalsTest.html#a765b879245a2ff14b9f9c3546589e7a5">LcaoOrbitalsTest</a>
 </li>
 <li>myid
 : <a class="el" href="classELPA__Solver.html#ac8343c9be2fd59827336401e3fce0d88">ELPA_Solver</a>

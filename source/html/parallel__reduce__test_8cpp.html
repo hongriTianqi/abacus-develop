@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: src_parallel/test/parallel_reduce_test.cpp File Reference</title>
+<title>3.1.4: module_base/test_parallel/parallel_reduce_test.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_1f49b596a8df0f58bf5e0d7300b7d9c5.html">src_parallel</a></li><li class="navelem"><a class="el" href="dir_108ee3fdeee91061488eb727849a3e77.html">test</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_b9ccfbd71bf0bf19ced0d48494a985fa.html">module_base</a></li><li class="navelem"><a class="el" href="dir_c866fa0703a5375b2a0cde9a72b51512.html">test_parallel</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -79,27 +79,26 @@ $(function() {
 <div class="textblock"><code>#include &quot;mpi.h&quot;</code><br />
 <code>#include &quot;gtest/gtest.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="global__variable_8h_source.html">module_base/global_variable.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parallel__reduce_8h_source.html">src_parallel/parallel_reduce.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parallel__global_8h_source.html">src_parallel/parallel_global.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parallel__kpoints_8h_source.html">src_parallel/parallel_kpoints.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parallel__reduce_8h_source.html">module_base/parallel_reduce.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parallel__global_8h_source.html">module_base/parallel_global.h</a>&quot;</code><br />
 <code>#include &lt;time.h&gt;</code><br />
 <code>#include &lt;random&gt;</code><br />
 <code>#include &lt;assert.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for parallel_reduce_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="parallel__reduce__test_8cpp__incl.png" border="0" usemap="#src__parallel_2test_2parallel__reduce__test_8cpp" alt=""/></div>
-<map name="src__parallel_2test_2parallel__reduce__test_8cpp" id="src__parallel_2test_2parallel__reduce__test_8cpp">
-<area shape="rect" title=" " alt="" coords="432,5,611,47"/>
-<area shape="rect" title=" " alt="" coords="204,191,263,218"/>
+<div class="center"><img src="parallel__reduce__test_8cpp__incl.png" border="0" usemap="#module__base_2test__parallel_2parallel__reduce__test_8cpp" alt=""/></div>
+<map name="module__base_2test__parallel_2parallel__reduce__test_8cpp" id="module__base_2test__parallel_2parallel__reduce__test_8cpp">
+<area shape="rect" title=" " alt="" coords="418,5,613,47"/>
+<area shape="rect" title=" " alt="" coords="209,184,268,211"/>
 <area shape="rect" title=" " alt="" coords="29,102,133,129"/>
-<area shape="rect" href="global__variable_8h.html" title=" " alt="" coords="501,184,654,225"/>
-<area shape="rect" href="parallel__reduce_8h.html" title=" " alt="" coords="158,95,309,136"/>
-<area shape="rect" href="parallel__global_8h.html" title=" " alt="" coords="333,95,483,136"/>
-<area shape="rect" href="parallel__kpoints_8h.html" title=" " alt="" coords="559,95,710,136"/>
-<area shape="rect" title=" " alt="" coords="735,102,799,129"/>
-<area shape="rect" title=" " alt="" coords="823,102,895,129"/>
-<area shape="rect" title=" " alt="" coords="919,102,993,129"/>
+<area shape="rect" href="global__variable_8h.html" title=" " alt="" coords="531,95,684,136"/>
+<area shape="rect" href="parallel__reduce_8h.html" title=" " alt="" coords="157,95,320,136"/>
+<area shape="rect" href="parallel__global_8h.html" title=" " alt="" coords="344,95,506,136"/>
+<area shape="rect" title=" " alt="" coords="709,102,773,129"/>
+<area shape="rect" title=" " alt="" coords="797,102,869,129"/>
+<area shape="rect" title=" " alt="" coords="893,102,968,129"/>
+<area shape="rect" title=" " alt="" coords="571,184,644,211"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -193,15 +192,6 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="parallel__reduce__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph.png" border="0" usemap="#parallel__reduce__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" alt=""/></div>
-<map name="parallel__reduce__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph" id="parallel__reduce__test_8cpp_a3c04138a5bfe5d72780bb7e82a18e627_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,60,32"/>
-<area shape="rect" href="namespaceParallel__Global.html#a1245451ef8414c9477f89e0e69637ca7" title=" " alt="" coords="108,5,285,32"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -280,9 +270,9 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,78,75,105"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a33e6221d6351d7e81ac624dfcc34eca2" title=" " alt="" coords="123,5,297,47"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#aa6c9d751d1adc920c86e8833745aad82" title=" " alt="" coords="123,71,297,112"/>
-<area shape="rect" href="classParallel__Kpoints.html#adf08d994cafe64c0f3daacd5833319a3" title=" " alt="" coords="133,136,287,177"/>
+<area shape="rect" href="namespaceParallel__Global.html#adae926256d35d66b10bc2f1837cc1ced" title=" " alt="" coords="136,136,284,177"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="345,39,528,80"/>
-<area shape="rect" href="classParallel__Kpoints.html#acdde0956fb5751d2eea478ebfb205943" title=" " alt="" coords="349,136,524,177"/>
+<area shape="rect" href="namespaceParallel__Global.html#a50fb6fedc5162018673b4633f09a03bd" title=" " alt="" coords="353,136,520,177"/>
 </map>
 </div>
 
@@ -403,9 +393,9 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="parallel__reduce__test_8cpp_a848316f40b8d1a252016701c60faa4f0_cgraph.png" border="0" usemap="#parallel__reduce__test_8cpp_a848316f40b8d1a252016701c60faa4f0_cgraph" alt=""/></div>
 <map name="parallel__reduce__test_8cpp_a848316f40b8d1a252016701c60faa4f0_cgraph" id="parallel__reduce__test_8cpp_a848316f40b8d1a252016701c60faa4f0_cgraph">
 <area shape="rect" title=" " alt="" coords="5,46,75,73"/>
-<area shape="rect" href="classParallel__Kpoints.html#adf08d994cafe64c0f3daacd5833319a3" title=" " alt="" coords="134,5,289,47"/>
+<area shape="rect" href="namespaceParallel__Global.html#adae926256d35d66b10bc2f1837cc1ced" title=" " alt="" coords="137,5,285,47"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a5ccf1f753c6fae3266e7e9b5e21f2712" title=" " alt="" coords="123,71,300,112"/>
-<area shape="rect" href="classParallel__Kpoints.html#acdde0956fb5751d2eea478ebfb205943" title=" " alt="" coords="348,5,523,47"/>
+<area shape="rect" href="namespaceParallel__Global.html#a50fb6fedc5162018673b4633f09a03bd" title=" " alt="" coords="348,5,515,47"/>
 </map>
 </div>
 
@@ -570,10 +560,10 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="parallel__reduce__test_8cpp_a744e91b21f098acdbe551196d445d739_cgraph.png" border="0" usemap="#parallel__reduce__test_8cpp_a744e91b21f098acdbe551196d445d739_cgraph" alt=""/></div>
 <map name="parallel__reduce__test_8cpp_a744e91b21f098acdbe551196d445d739_cgraph" id="parallel__reduce__test_8cpp_a744e91b21f098acdbe551196d445d739_cgraph">
 <area shape="rect" title=" " alt="" coords="5,78,75,105"/>
-<area shape="rect" href="classParallel__Kpoints.html#adf08d994cafe64c0f3daacd5833319a3" title=" " alt="" coords="134,5,289,47"/>
+<area shape="rect" href="namespaceParallel__Global.html#adae926256d35d66b10bc2f1837cc1ced" title=" " alt="" coords="137,5,285,47"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a58cd25c0bca55c28727e26eecbfe7a8c" title=" " alt="" coords="123,71,300,112"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="123,136,300,177"/>
-<area shape="rect" href="classParallel__Kpoints.html#acdde0956fb5751d2eea478ebfb205943" title=" " alt="" coords="348,5,523,47"/>
+<area shape="rect" href="namespaceParallel__Global.html#a50fb6fedc5162018673b4633f09a03bd" title=" " alt="" coords="348,5,515,47"/>
 </map>
 </div>
 
@@ -729,7 +719,7 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>The tested functions are mainly wrappers of MPI_Allreduce and MPI_Allgather in ABACUS, as defined in src_parallel/ <a class="el" href="parallel__reduce_8h.html">parallel_reduce.h</a>.</p>
+<p>The tested functions are mainly wrappers of MPI_Allreduce and MPI_Allgather in ABACUS, as defined in module_base/ <a class="el" href="parallel__reduce_8h.html">parallel_reduce.h</a>.</p>
 <p>The logic to test MPI_Allreduce wrapper functions is to calculate the sum of the total array in two ways, one by using MPI_Allreduce with only 1 number, another one by using MPI_Allreduce with n numbers. The total array is deemed as the sum of local arrays with the same length.</p><ol type="1">
 <li>ReduceIntAll: Tests two variations of <a class="el" href="namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0">reduce_int_all()</a></li>
 <li>ReduceDoubleAll: Tests two variations of <a class="el" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915">reduce_double_all()</a></li>

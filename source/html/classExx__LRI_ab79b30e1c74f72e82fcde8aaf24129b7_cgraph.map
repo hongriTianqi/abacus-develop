@@ -1,7 +1,7 @@
 <map id="Exx_LRI::cal_exx_ions" name="Exx_LRI::cal_exx_ions">
 <area shape="rect" id="node1" title=" " alt="" coords="5,63,171,90"/>
 <area shape="rect" id="node2" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="219,13,396,39"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="235,63,380,90"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="235,63,380,90"/>
 <area shape="rect" id="node5" href="$namespaceRI__Util.html#a408c07bbf484134108d1e8aebb4f1f5b" title=" " alt="" coords="236,115,379,156"/>
 <area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="444,5,597,47"/>
 </map>

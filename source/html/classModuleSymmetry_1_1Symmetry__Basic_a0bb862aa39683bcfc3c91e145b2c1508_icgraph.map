@@ -1,12 +1,12 @@
 <map id="ModuleSymmetry::Symmetry_Basic::check_diff" name="ModuleSymmetry::Symmetry_Basic::check_diff">
-<area shape="rect" id="node1" title=" " alt="" coords="1025,127,1239,169"/>
-<area shape="rect" id="node2" href="$classModuleSymmetry_1_1Symmetry.html#a29cff8ff6ddc5e9e5754f72de93bd2a1" title=" " alt="" coords="764,94,977,135"/>
-<area shape="rect" id="node9" href="$classModuleSymmetry_1_1Symmetry.html#acc1cf8f72ee492997d5ba507bf72efeb" title=" " alt="" coords="764,159,977,201"/>
-<area shape="rect" id="node3" href="$classModuleSymmetry_1_1Symmetry.html#a7d00eb0720527b6d2739375d713df0d4" title=" " alt="" coords="503,94,716,135"/>
-<area shape="rect" id="node4" href="$classModuleSymmetry_1_1Symmetry.html#a9f7dababf39280c286082252f5107e4f" title=" " alt="" coords="241,94,455,135"/>
-<area shape="rect" id="node5" href="$run__symmetry_8cpp.html#afe1d8348c24e6589bc7c0b3f689316a7" title=" " alt="" coords="59,5,140,32"/>
-<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="11,57,187,98"/>
-<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="5,123,193,179"/>
-<area shape="rect" id="node8" href="$classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="11,203,187,245"/>
-<area shape="rect" id="node10" href="$classForce__Stress__LCAO.html#a229b87d60435f91c0491f6fb9d52931c" title=" " alt="" coords="532,159,687,201"/>
+<area shape="rect" id="node1" title=" " alt="" coords="1025,71,1239,112"/>
+<area shape="rect" id="node2" href="$classModuleSymmetry_1_1Symmetry.html#a29cff8ff6ddc5e9e5754f72de93bd2a1" title=" " alt="" coords="764,5,977,47"/>
+<area shape="rect" id="node8" href="$classModuleSymmetry_1_1Symmetry.html#acc1cf8f72ee492997d5ba507bf72efeb" title=" " alt="" coords="764,71,977,112"/>
+<area shape="rect" id="node10" href="$classModuleSymmetry_1_1Symmetry.html#a040ff76b6189cb9694a304715727bef8" title=" " alt="" coords="503,136,716,177"/>
+<area shape="rect" id="node3" href="$classModuleSymmetry_1_1Symmetry.html#a7d00eb0720527b6d2739375d713df0d4" title=" " alt="" coords="503,5,716,47"/>
+<area shape="rect" id="node4" href="$classModuleSymmetry_1_1Symmetry.html#a9f7dababf39280c286082252f5107e4f" title=" " alt="" coords="241,71,455,112"/>
+<area shape="rect" id="node5" href="$run__symmetry_8cpp.html#afe1d8348c24e6589bc7c0b3f689316a7" title=" " alt="" coords="59,19,140,46"/>
+<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="11,71,187,112"/>
+<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="5,137,193,193"/>
+<area shape="rect" id="node9" href="$classForce__Stress__LCAO.html#a229b87d60435f91c0491f6fb9d52931c" title=" " alt="" coords="532,71,687,112"/>
 </map>

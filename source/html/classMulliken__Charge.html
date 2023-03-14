@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: Mulliken_Charge Class Reference</title>
+<title>3.1.4: Mulliken_Charge Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -66,7 +66,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classMulliken__Charge-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Mulliken_Charge Class Reference</div>  </div>
@@ -79,111 +79,45 @@ Collaboration diagram for Mulliken_Charge:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMulliken__Charge__coll__graph.png" border="0" usemap="#Mulliken__Charge_coll__map" alt="Collaboration graph"/></div>
 <map name="Mulliken__Charge_coll__map" id="Mulliken__Charge_coll__map">
-<area shape="rect" title=" " alt="" coords="83,497,249,663"/>
-<area shape="rect" href="classpsi_1_1Psi.html" title=" " alt="" coords="5,13,148,427"/>
-<area shape="rect" href="classpsi_1_1Psi.html" title=" " alt="" coords="172,5,339,435"/>
+<area shape="rect" title=" " alt="" coords="5,5,144,127"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aedbe184ade22848832c00be77819118a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#aedbe184ade22848832c00be77819118a">Mulliken_Charge</a> (const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *psi_gamma_in, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *psi_k_in)</td></tr>
-<tr class="separator:aedbe184ade22848832c00be77819118a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b95f4676652e89bb322b415207ea741"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#a4b95f4676652e89bb322b415207ea741">~Mulliken_Charge</a> ()</td></tr>
-<tr class="separator:a4b95f4676652e89bb322b415207ea741"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d0d08e2b7b407f25bba6367be3f490c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c">cal_mulliken</a> (<a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;uhm, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg)</td></tr>
-<tr class="separator:a8d0d08e2b7b407f25bba6367be3f490c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ab7b766fe14df77af43c4fe0632fb89"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89">stdout_mulliken</a> (<a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;uhm, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg)</td></tr>
-<tr class="separator:a0ab7b766fe14df77af43c4fe0632fb89"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d26609b66f7380171f6dcb54bd11836"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#a1d26609b66f7380171f6dcb54bd11836">out_mulliken</a> (<a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;uhm, <a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a> &amp;loc)</td></tr>
+<tr class="separator:a1d26609b66f7380171f6dcb54bd11836"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
-<tr class="memitem:af4a62bbaf2d11740ccb307adcaaa6b14"><td class="memItemLeft" align="right" valign="top">double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#af4a62bbaf2d11740ccb307adcaaa6b14">DecMulP</a></td></tr>
-<tr class="separator:af4a62bbaf2d11740ccb307adcaaa6b14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae4c4e872d3535eee53fee93aca012dee"><td class="memItemLeft" align="right" valign="top">double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#ae4c4e872d3535eee53fee93aca012dee">MecMulP</a></td></tr>
-<tr class="separator:ae4c4e872d3535eee53fee93aca012dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad720232c3773d9f16c8ddcaeeebb7b88"><td class="memItemLeft" align="right" valign="top">double ***&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#ad720232c3773d9f16c8ddcaeeebb7b88">ADecMulP</a></td></tr>
-<tr class="separator:ad720232c3773d9f16c8ddcaeeebb7b88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7641d76d799ab51651360b67b3d288b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#ad7641d76d799ab51651360b67b3d288b">psi_gamma</a></td></tr>
-<tr class="separator:ad7641d76d799ab51651360b67b3d288b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9f889243416220e86ed437c5e6dd54e"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#ad9f889243416220e86ed437c5e6dd54e">psi_k</a></td></tr>
-<tr class="separator:ad9f889243416220e86ed437c5e6dd54e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefe00c30a183731b4057bf5602f81e0d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#aefe00c30a183731b4057bf5602f81e0d">mug</a></td></tr>
-<tr class="separator:aefe00c30a183731b4057bf5602f81e0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a1027baa4ae2ced0efc8dc55e0d9d600f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#a1027baa4ae2ced0efc8dc55e0d9d600f">cal_mulliken</a> (const std::vector&lt; <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &gt; &amp;dm, <a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;uhm)</td></tr>
+<tr class="separator:a1027baa4ae2ced0efc8dc55e0d9d600f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab81dc26ee2f1fe7feb54aeccc629b06d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#ab81dc26ee2f1fe7feb54aeccc629b06d">cal_mulliken_k</a> (const std::vector&lt; <a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &gt; &amp;dm, <a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;uhm)</td></tr>
+<tr class="separator:ab81dc26ee2f1fe7feb54aeccc629b06d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a964c2d9222fbcfc128e298dd7267495a"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html#a964c2d9222fbcfc128e298dd7267495a">convert</a> (const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;orbMulP)</td></tr>
+<tr class="separator:a964c2d9222fbcfc128e298dd7267495a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="aedbe184ade22848832c00be77819118a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedbe184ade22848832c00be77819118a">&#9670;&nbsp;</a></span>Mulliken_Charge()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mulliken_Charge::Mulliken_Charge </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *&#160;</td>
-          <td class="paramname"><em>psi_gamma_in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *&#160;</td>
-          <td class="paramname"><em>psi_k_in</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classMulliken__Charge_aedbe184ade22848832c00be77819118a_cgraph.png" border="0" usemap="#classMulliken__Charge_aedbe184ade22848832c00be77819118a_cgraph" alt=""/></div>
-<map name="classMulliken__Charge_aedbe184ade22848832c00be77819118a_cgraph" id="classMulliken__Charge_aedbe184ade22848832c00be77819118a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,199,47"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="247,5,429,47"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a4b95f4676652e89bb322b415207ea741"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b95f4676652e89bb322b415207ea741">&#9670;&nbsp;</a></span>~Mulliken_Charge()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Mulliken_Charge::~Mulliken_Charge </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8d0d08e2b7b407f25bba6367be3f490c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d0d08e2b7b407f25bba6367be3f490c">&#9670;&nbsp;</a></span>cal_mulliken()</h2>
+<a id="a1027baa4ae2ced0efc8dc55e0d9d600f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1027baa4ae2ced0efc8dc55e0d9d600f">&#9670;&nbsp;</a></span>cal_mulliken()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Mulliken_Charge::cal_mulliken </td>
+          <td class="memname"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> Mulliken_Charge::cal_mulliken </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;&#160;</td>
-          <td class="paramname"><em>uhm</em>, </td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dm</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>wg</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;&#160;</td>
+          <td class="paramname"><em>uhm</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -191,28 +125,129 @@ Here is the call graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMulliken__Charge_a1027baa4ae2ced0efc8dc55e0d9d600f_cgraph.png" border="0" usemap="#classMulliken__Charge_a1027baa4ae2ced0efc8dc55e0d9d600f_cgraph" alt=""/></div>
+<map name="classMulliken__Charge_a1027baa4ae2ced0efc8dc55e0d9d600f_cgraph" id="classMulliken__Charge_a1027baa4ae2ced0efc8dc55e0d9d600f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,100,163,141"/>
+<area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="211,5,364,47"/>
+<area shape="rect" href="structParallel__Orbitals.html#af9f4eeaafdfa96f52d721cc48d045b40" title=" " alt="" coords="219,71,355,112"/>
+<area shape="rect" href="scalapack__connector_8h.html#a9ff8b730d2d1eb239d626e25c48c5a89" title=" " alt="" coords="244,137,331,163"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="215,187,360,214"/>
+<area shape="rect" href="namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="412,13,597,39"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="645,13,859,39"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMulliken__Charge_a8d0d08e2b7b407f25bba6367be3f490c_icgraph.png" border="0" usemap="#classMulliken__Charge_a8d0d08e2b7b407f25bba6367be3f490c_icgraph" alt=""/></div>
-<map name="classMulliken__Charge_a8d0d08e2b7b407f25bba6367be3f490c_icgraph" id="classMulliken__Charge_a8d0d08e2b7b407f25bba6367be3f490c_icgraph">
-<area shape="rect" title=" " alt="" coords="456,5,613,47"/>
-<area shape="rect" href="classMulliken__Charge.html#a0ab7b766fe14df77af43c4fe0632fb89" title=" " alt="" coords="229,5,408,47"/>
+<div class="center"><img src="classMulliken__Charge_a1027baa4ae2ced0efc8dc55e0d9d600f_icgraph.png" border="0" usemap="#classMulliken__Charge_a1027baa4ae2ced0efc8dc55e0d9d600f_icgraph" alt=""/></div>
+<map name="classMulliken__Charge_a1027baa4ae2ced0efc8dc55e0d9d600f_icgraph" id="classMulliken__Charge_a1027baa4ae2ced0efc8dc55e0d9d600f_icgraph">
+<area shape="rect" title=" " alt="" coords="436,5,593,47"/>
+<area shape="rect" href="classMulliken__Charge.html#a1d26609b66f7380171f6dcb54bd11836" title=" " alt="" coords="229,5,388,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,5,181,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a0ab7b766fe14df77af43c4fe0632fb89"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0ab7b766fe14df77af43c4fe0632fb89">&#9670;&nbsp;</a></span>stdout_mulliken()</h2>
+<a id="ab81dc26ee2f1fe7feb54aeccc629b06d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab81dc26ee2f1fe7feb54aeccc629b06d">&#9670;&nbsp;</a></span>cal_mulliken_k()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> Mulliken_Charge::cal_mulliken_k </td>
+          <td>(</td>
+          <td class="paramtype">const std::vector&lt; <a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>dm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;&#160;</td>
+          <td class="paramname"><em>uhm</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMulliken__Charge_ab81dc26ee2f1fe7feb54aeccc629b06d_icgraph.png" border="0" usemap="#classMulliken__Charge_ab81dc26ee2f1fe7feb54aeccc629b06d_icgraph" alt=""/></div>
+<map name="classMulliken__Charge_ab81dc26ee2f1fe7feb54aeccc629b06d_icgraph" id="classMulliken__Charge_ab81dc26ee2f1fe7feb54aeccc629b06d_icgraph">
+<area shape="rect" title=" " alt="" coords="436,5,593,47"/>
+<area shape="rect" href="classMulliken__Charge.html#a1d26609b66f7380171f6dcb54bd11836" title=" " alt="" coords="229,5,388,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,5,181,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a964c2d9222fbcfc128e298dd7267495a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a964c2d9222fbcfc128e298dd7267495a">&#9670;&nbsp;</a></span>convert()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt; Mulliken_Charge::convert </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>orbMulP</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMulliken__Charge_a964c2d9222fbcfc128e298dd7267495a_icgraph.png" border="0" usemap="#classMulliken__Charge_a964c2d9222fbcfc128e298dd7267495a_icgraph" alt=""/></div>
+<map name="classMulliken__Charge_a964c2d9222fbcfc128e298dd7267495a_icgraph" id="classMulliken__Charge_a964c2d9222fbcfc128e298dd7267495a_icgraph">
+<area shape="rect" title=" " alt="" coords="436,13,623,39"/>
+<area shape="rect" href="classMulliken__Charge.html#a1d26609b66f7380171f6dcb54bd11836" title=" " alt="" coords="229,5,388,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,5,181,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1d26609b66f7380171f6dcb54bd11836"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d26609b66f7380171f6dcb54bd11836">&#9670;&nbsp;</a></span>out_mulliken()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Mulliken_Charge::stdout_mulliken </td>
+          <td class="memname">void Mulliken_Charge::out_mulliken </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;&#160;</td>
           <td class="paramname"><em>uhm</em>, </td>
@@ -220,8 +255,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>wg</em>&#160;</td>
+          <td class="paramtype"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a> &amp;&#160;</td>
+          <td class="paramname"><em>loc</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -233,114 +268,29 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMulliken__Charge_a0ab7b766fe14df77af43c4fe0632fb89_cgraph.png" border="0" usemap="#classMulliken__Charge_a0ab7b766fe14df77af43c4fe0632fb89_cgraph" alt=""/></div>
-<map name="classMulliken__Charge_a0ab7b766fe14df77af43c4fe0632fb89_cgraph" id="classMulliken__Charge_a0ab7b766fe14df77af43c4fe0632fb89_cgraph">
-<area shape="rect" title=" " alt="" coords="5,313,184,354"/>
-<area shape="rect" href="classMulliken__Charge.html#a8d0d08e2b7b407f25bba6367be3f490c" title=" " alt="" coords="232,204,389,245"/>
-<area shape="rect" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="981,156,1127,183"/>
-<area shape="rect" href="classLCAO__Matrix.html#a8d67cc481b3a17dd999acbe8ea274d91" title=" " alt="" coords="727,8,933,35"/>
-<area shape="rect" href="classLCAO__Matrix.html#ab2892335016cc79a08679abe13b2d0be" title=" " alt="" coords="455,110,661,136"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b" title=" " alt="" coords="742,149,918,190"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a98eea8394388573fcebe6371af772cc1" title=" " alt="" coords="437,211,679,238"/>
-<area shape="rect" href="namespaceModuleBase.html#adeaaec1c2e00d3e37d62ae80ba994120" title=" " alt="" coords="489,262,627,288"/>
-<area shape="rect" href="classatom__arrange.html#afa4b6f37829d2483318520c43c6a0f27" title=" " alt="" coords="477,313,639,354"/>
-<area shape="rect" href="classpsi_1_1Psi.html#ad7e42ed74de2afabb302d56079d65e79" title=" " alt="" coords="505,379,611,406"/>
+<div class="center"><img src="classMulliken__Charge_a1d26609b66f7380171f6dcb54bd11836_cgraph.png" border="0" usemap="#classMulliken__Charge_a1d26609b66f7380171f6dcb54bd11836_cgraph" alt=""/></div>
+<map name="classMulliken__Charge_a1d26609b66f7380171f6dcb54bd11836_cgraph" id="classMulliken__Charge_a1d26609b66f7380171f6dcb54bd11836_cgraph">
+<area shape="rect" title=" " alt="" coords="5,150,164,191"/>
+<area shape="rect" href="classMulliken__Charge.html#a1027baa4ae2ced0efc8dc55e0d9d600f" title=" " alt="" coords="227,117,384,158"/>
+<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="701,132,847,159"/>
+<area shape="rect" href="classMulliken__Charge.html#ab81dc26ee2f1fe7feb54aeccc629b06d" title=" " alt="" coords="227,182,384,223"/>
+<area shape="rect" href="classMulliken__Charge.html#a964c2d9222fbcfc128e298dd7267495a" title=" " alt="" coords="212,248,399,275"/>
+<area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="473,117,627,158"/>
+<area shape="rect" href="structParallel__Orbitals.html#af9f4eeaafdfa96f52d721cc48d045b40" title=" " alt="" coords="482,182,618,223"/>
+<area shape="rect" href="scalapack__connector_8h.html#a9ff8b730d2d1eb239d626e25c48c5a89" title=" " alt="" coords="507,65,593,92"/>
+<area shape="rect" href="classLCAO__Matrix.html#a8d67cc481b3a17dd999acbe8ea274d91" title=" " alt="" coords="447,248,653,275"/>
+<area shape="rect" href="classLCAO__Matrix.html#ab2892335016cc79a08679abe13b2d0be" title=" " alt="" coords="447,299,653,325"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMulliken__Charge_a0ab7b766fe14df77af43c4fe0632fb89_icgraph.png" border="0" usemap="#classMulliken__Charge_a0ab7b766fe14df77af43c4fe0632fb89_icgraph" alt=""/></div>
-<map name="classMulliken__Charge_a0ab7b766fe14df77af43c4fe0632fb89_icgraph" id="classMulliken__Charge_a0ab7b766fe14df77af43c4fe0632fb89_icgraph">
-<area shape="rect" title=" " alt="" coords="229,5,408,47"/>
+<div class="center"><img src="classMulliken__Charge_a1d26609b66f7380171f6dcb54bd11836_icgraph.png" border="0" usemap="#classMulliken__Charge_a1d26609b66f7380171f6dcb54bd11836_icgraph" alt=""/></div>
+<map name="classMulliken__Charge_a1d26609b66f7380171f6dcb54bd11836_icgraph" id="classMulliken__Charge_a1d26609b66f7380171f6dcb54bd11836_icgraph">
+<area shape="rect" title=" " alt="" coords="229,5,388,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,5,181,47"/>
 </map>
 </div>
-
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a id="ad720232c3773d9f16c8ddcaeeebb7b88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad720232c3773d9f16c8ddcaeeebb7b88">&#9670;&nbsp;</a></span>ADecMulP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double*** Mulliken_Charge::ADecMulP</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af4a62bbaf2d11740ccb307adcaaa6b14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af4a62bbaf2d11740ccb307adcaaa6b14">&#9670;&nbsp;</a></span>DecMulP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double** Mulliken_Charge::DecMulP</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ae4c4e872d3535eee53fee93aca012dee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae4c4e872d3535eee53fee93aca012dee">&#9670;&nbsp;</a></span>MecMulP</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double** Mulliken_Charge::MecMulP</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aefe00c30a183731b4057bf5602f81e0d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefe00c30a183731b4057bf5602f81e0d">&#9670;&nbsp;</a></span>mug</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt;double&gt;* Mulliken_Charge::mug</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad7641d76d799ab51651360b67b3d288b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7641d76d799ab51651360b67b3d288b">&#9670;&nbsp;</a></span>psi_gamma</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt;double&gt;* Mulliken_Charge::psi_gamma</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad9f889243416220e86ed437c5e6dd54e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9f889243416220e86ed437c5e6dd54e">&#9670;&nbsp;</a></span>psi_k</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt;<a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt;double&gt; &gt;* Mulliken_Charge::psi_k</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
 
 </div>
 </div>

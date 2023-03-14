@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: src_ri/test_code/exx_abfs-dm-test.h Source File</title>
+<title>3.1.4: src_ri/test_code/exx_abfs-dm-test.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -92,7 +92,7 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classExx__Abfs__DM__Test.html#a1f6f14f524f8a2299ebcd456ede22348">   18</a></span>&#160;<a class="code" href="classExx__Abfs__DM__Test.html#a1f6f14f524f8a2299ebcd456ede22348">Exx_Abfs_DM_Test::cal_DMk_raw_readfile</a>( <span class="keyword">const</span> set&lt;std::pair&lt;size_t,size_t&gt;&gt; &amp;atom_pairs )</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="namespaceIons__Move__Basic.html#afafa0cf5c9a34d577ac34a5a3487cf74">istep</a>=-1;    ++<a class="code" href="namespaceIons__Move__Basic.html#afafa0cf5c9a34d577ac34a5a3487cf74">istep</a>;    </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad">ModuleBase::TITLE</a>(<span class="stringliteral">&quot;cal_DMk_raw_readfile_&quot;</span>+<a class="code" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6">ModuleBase::GlobalFunc::TO_STRING</a>(<a class="code" href="namespaceIons__Move__Basic.html#afafa0cf5c9a34d577ac34a5a3487cf74">istep</a>));</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4">ModuleBase::TITLE</a>(<span class="stringliteral">&quot;cal_DMk_raw_readfile_&quot;</span>+<a class="code" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6">ModuleBase::GlobalFunc::TO_STRING</a>(<a class="code" href="namespaceIons__Move__Basic.html#afafa0cf5c9a34d577ac34a5a3487cf74">istep</a>));</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> wf_wg = <a class="code" href="classExx__Abfs__DM__Test.html#a4e921a547126bc08653a9b50c3ffed12">read_wg</a>( <span class="stringliteral">&quot;wf.wg/wf.wg_&quot;</span>+<a class="code" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6">ModuleBase::GlobalFunc::TO_STRING</a>(<a class="code" href="namespaceIons__Move__Basic.html#afafa0cf5c9a34d577ac34a5a3487cf74">istep</a>) );</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    std::vector&lt;std::vector&lt;std::vector&lt;std::complex&lt;double&gt;&gt;&gt;&gt; wfc(<a class="code" href="namespaceGlobalC.html#a82e5b30ae8436fb8721ae845114b1100">GlobalC::kv</a>.nks);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">for</span>( <span class="keywordtype">size_t</span> ik=0; ik!=<a class="code" href="namespaceGlobalC.html#a82e5b30ae8436fb8721ae845114b1100">GlobalC::kv</a>.<a class="code" href="classK__Vectors.html#a9c1560cb5c6ad972f2f22a1d1d3b29eb">nks</a>; ++ik )</div>
@@ -168,12 +168,13 @@ $(function() {
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div></div>
 <div class="ttc" id="anamespaceIons__Move__Basic_html_afafa0cf5c9a34d577ac34a5a3487cf74"><div class="ttname"><a href="namespaceIons__Move__Basic.html#afafa0cf5c9a34d577ac34a5a3487cf74">Ions_Move_Basic::istep</a></div><div class="ttdeci">int istep</div><div class="ttdef"><b>Definition:</b> ions_move_basic.cpp:8</div></div>
+<div class="ttc" id="anamespaceModuleBase_html_a7f2e75fdaf26614e5c7485cff6287bd4"><div class="ttname"><a href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4">ModuleBase::TITLE</a></div><div class="ttdeci">void TITLE(const std::string &amp;class_function_name, const bool disable)</div><div class="ttdef"><b>Definition:</b> tool_title.cpp:14</div></div>
 <div class="ttc" id="aclassExx__Abfs__DM__Test_html_a5a5189c1873c2c15b69e43638a2c821b"><div class="ttname"><a href="classExx__Abfs__DM__Test.html#a5a5189c1873c2c15b69e43638a2c821b">Exx_Abfs_DM_Test::read_wfc</a></div><div class="ttdeci">static std::vector&lt; std::vector&lt; std::complex&lt; double &gt; &gt; &gt; read_wfc(const std::string &amp;file_name)</div><div class="ttdef"><b>Definition:</b> exx_abfs-dm-test.h:61</div></div>
 <div class="ttc" id="anamespaceGlobalV_html_aa21d3bb9a3dd12f2b025fb31ff8cd0ee"><div class="ttname"><a href="namespaceGlobalV.html#aa21d3bb9a3dd12f2b025fb31ff8cd0ee">GlobalV::NSPIN</a></div><div class="ttdeci">int NSPIN</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:39</div></div>
 <div class="ttc" id="aclassExx__Abfs__DM__Test_html"><div class="ttname"><a href="classExx__Abfs__DM__Test.html">Exx_Abfs_DM_Test</a></div><div class="ttdef"><b>Definition:</b> exx_abfs-dm-test.h:9</div></div>
 <div class="ttc" id="aclassModuleBase_1_1matrix_html"><div class="ttname"><a href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a></div><div class="ttdef"><b>Definition:</b> matrix.h:18</div></div>
 <div class="ttc" id="anamespaceModuleBase_1_1GlobalFunc_html_a2951c6789427db1f9d91f62a0e84e2a6"><div class="ttname"><a href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6">ModuleBase::GlobalFunc::TO_STRING</a></div><div class="ttdeci">std::string TO_STRING(const T &amp;n)</div><div class="ttdef"><b>Definition:</b> global_function.h:227</div></div>
-<div class="ttc" id="anamespaceGlobalC_html_ad13900463d5f46ae6dc8854de86b6198"><div class="ttname"><a href="namespaceGlobalC.html#ad13900463d5f46ae6dc8854de86b6198">GlobalC::ucell</a></div><div class="ttdeci">UnitCell ucell</div><div class="ttdef"><b>Definition:</b> klist_test.cpp:39</div></div>
+<div class="ttc" id="anamespaceGlobalC_html_ad13900463d5f46ae6dc8854de86b6198"><div class="ttname"><a href="namespaceGlobalC.html#ad13900463d5f46ae6dc8854de86b6198">GlobalC::ucell</a></div><div class="ttdeci">UnitCell ucell</div><div class="ttdef"><b>Definition:</b> klist_test.cpp:46</div></div>
 <div class="ttc" id="amatrix_8h_html"><div class="ttname"><a href="matrix_8h.html">matrix.h</a></div></div>
 <div class="ttc" id="aclassUnitCell_html_a970add514cb5fc017ab2e348c7502773"><div class="ttname"><a href="classUnitCell.html#a970add514cb5fc017ab2e348c7502773">UnitCell::iat2ia</a></div><div class="ttdeci">int * iat2ia</div><div class="ttdef"><b>Definition:</b> unitcell.h:72</div></div>
 <div class="ttc" id="aclassExx__Abfs__DM__Test_html_a1f6f14f524f8a2299ebcd456ede22348"><div class="ttname"><a href="classExx__Abfs__DM__Test.html#a1f6f14f524f8a2299ebcd456ede22348">Exx_Abfs_DM_Test::cal_DMk_raw_readfile</a></div><div class="ttdeci">static std::map&lt; size_t, std::map&lt; size_t, std::vector&lt; ModuleBase::ComplexMatrix &gt; &gt; &gt; cal_DMk_raw_readfile(const set&lt; std::pair&lt; size_t, size_t &gt;&gt; &amp;atom_pairs)</div><div class="ttdef"><b>Definition:</b> exx_abfs-dm-test.h:18</div></div>
@@ -186,7 +187,6 @@ $(function() {
 <div class="ttc" id="anamespaceModuleBase_html_adeaaec1c2e00d3e37d62ae80ba994120"><div class="ttname"><a href="namespaceModuleBase.html#adeaaec1c2e00d3e37d62ae80ba994120">ModuleBase::conj</a></div><div class="ttdeci">ComplexMatrix conj(const ComplexMatrix &amp;m)</div><div class="ttdef"><b>Definition:</b> complexmatrix.cpp:408</div></div>
 <div class="ttc" id="anamespaceGlobalC_html_a82e5b30ae8436fb8721ae845114b1100"><div class="ttname"><a href="namespaceGlobalC.html#a82e5b30ae8436fb8721ae845114b1100">GlobalC::kv</a></div><div class="ttdeci">K_Vectors kv</div><div class="ttdef"><b>Definition:</b> elecstate_lcao_test.cpp:59</div></div>
 <div class="ttc" id="aclassUnitCell_html_a1663e041da7d7f723cdf2b19d9d06efe"><div class="ttname"><a href="classUnitCell.html#a1663e041da7d7f723cdf2b19d9d06efe">UnitCell::atoms</a></div><div class="ttdeci">Atom * atoms</div><div class="ttdef"><b>Definition:</b> unitcell.h:24</div></div>
-<div class="ttc" id="anamespaceModuleBase_html_acffa468e438dcfa87403393f65dd1dad"><div class="ttname"><a href="namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad">ModuleBase::TITLE</a></div><div class="ttdeci">void TITLE(const std::string &amp;class_function_name)</div><div class="ttdef"><b>Definition:</b> tool_title.cpp:14</div></div>
 <div class="ttc" id="aclassExx__Abfs__DM__Test_html_a4e921a547126bc08653a9b50c3ffed12"><div class="ttname"><a href="classExx__Abfs__DM__Test.html#a4e921a547126bc08653a9b50c3ffed12">Exx_Abfs_DM_Test::read_wg</a></div><div class="ttdeci">static ModuleBase::matrix read_wg(const std::string &amp;file_name)</div><div class="ttdef"><b>Definition:</b> exx_abfs-dm-test.h:80</div></div>
 <div class="ttc" id="aclassAtom_html_a5832dcb912a37ac0e80592d723ed6115"><div class="ttname"><a href="classAtom.html#a5832dcb912a37ac0e80592d723ed6115">Atom::nw</a></div><div class="ttdeci">int nw</div><div class="ttdef"><b>Definition:</b> atom_spec.h:24</div></div>
 <!-- start footer part -->

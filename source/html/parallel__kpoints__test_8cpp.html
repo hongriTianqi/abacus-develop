@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: src_parallel/test/parallel_kpoints_test.cpp File Reference</title>
+<title>3.1.4: module_cell/test/parallel_kpoints_test.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -64,7 +64,7 @@ $(function() {
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_1f49b596a8df0f58bf5e0d7300b7d9c5.html">src_parallel</a></li><li class="navelem"><a class="el" href="dir_108ee3fdeee91061488eb727849a3e77.html">test</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_af6b4888c9ceb958eaa0d16bca330680.html">module_cell</a></li><li class="navelem"><a class="el" href="dir_c3860e27156c6cba19a1eded46f57244.html">test</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -79,23 +79,24 @@ $(function() {
 <code>#include &quot;gmock/gmock.h&quot;</code><br />
 <code>#include &quot;mpi.h&quot;</code><br />
 <code>#include &quot;<a class="el" href="global__variable_8h_source.html">module_base/global_variable.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="parallel__kpoints_8h_source.html">src_parallel/parallel_kpoints.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parallel__kpoints_8h_source.html">module_cell/parallel_kpoints.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="parallel__global_8h_source.html">module_base/parallel_global.h</a>&quot;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for parallel_kpoints_test.cpp:</div>
 <div class="dyncontent">
-<div class="center"><img src="parallel__kpoints__test_8cpp__incl.png" border="0" usemap="#src__parallel_2test_2parallel__kpoints__test_8cpp" alt=""/></div>
-<map name="src__parallel_2test_2parallel__kpoints__test_8cpp" id="src__parallel_2test_2parallel__kpoints__test_8cpp">
-<area shape="rect" title=" " alt="" coords="259,5,437,47"/>
+<div class="center"><img src="parallel__kpoints__test_8cpp__incl.png" border="0" usemap="#module__cell_2test_2parallel__kpoints__test_8cpp" alt=""/></div>
+<map name="module__cell_2test_2parallel__kpoints__test_8cpp" id="module__cell_2test_2parallel__kpoints__test_8cpp">
+<area shape="rect" title=" " alt="" coords="326,5,509,47"/>
 <area shape="rect" title=" " alt="" coords="5,102,109,129"/>
 <area shape="rect" title=" " alt="" coords="134,102,261,129"/>
-<area shape="rect" title=" " alt="" coords="285,102,344,129"/>
-<area shape="rect" href="global__variable_8h.html" title=" " alt="" coords="375,184,529,225"/>
-<area shape="rect" title=" " alt="" coords="577,273,639,300"/>
-<area shape="rect" href="parallel__kpoints_8h.html" title=" " alt="" coords="419,95,570,136"/>
-<area shape="rect" title=" " alt="" coords="275,273,349,300"/>
-<area shape="rect" title=" " alt="" coords="373,273,448,300"/>
-<area shape="rect" title=" " alt="" coords="472,273,552,300"/>
+<area shape="rect" title=" " alt="" coords="329,191,388,218"/>
+<area shape="rect" href="global__variable_8h.html" title=" " alt="" coords="574,184,727,225"/>
+<area shape="rect" title=" " alt="" coords="729,273,791,300"/>
+<area shape="rect" href="parallel__kpoints_8h.html" title=" " alt="" coords="573,95,728,136"/>
+<area shape="rect" href="parallel__global_8h.html" title=" " alt="" coords="336,95,499,136"/>
+<area shape="rect" title=" " alt="" coords="521,273,594,300"/>
+<area shape="rect" title=" " alt="" coords="619,273,693,300"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -209,11 +210,11 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="parallel__kpoints__test_8cpp_ae49a2f59cd64a581fbe0de010b053c88_cgraph.png" border="0" usemap="#parallel__kpoints__test_8cpp_ae49a2f59cd64a581fbe0de010b053c88_cgraph" alt=""/></div>
 <map name="parallel__kpoints__test_8cpp_ae49a2f59cd64a581fbe0de010b053c88_cgraph" id="parallel__kpoints__test_8cpp_ae49a2f59cd64a581fbe0de010b053c88_cgraph">
 <area shape="rect" title=" " alt="" coords="5,159,75,186"/>
-<area shape="rect" href="classParallel__Kpoints.html#adf08d994cafe64c0f3daacd5833319a3" title=" " alt="" coords="132,35,287,76"/>
+<area shape="rect" href="namespaceParallel__Global.html#adae926256d35d66b10bc2f1837cc1ced" title=" " alt="" coords="135,35,283,76"/>
 <area shape="rect" href="classParallel__Kpoints.html#a4d74b51d257e27c70168e51148d004e4" title=" " alt="" coords="126,130,293,157"/>
 <area shape="rect" href="classParaPrepare.html#a6ea84cc43d484ab3ad57811e0889dc81" title=" " alt="" coords="129,181,290,223"/>
 <area shape="rect" href="classParaPrepare.html#ab7fc2dd2f26a3f17332c049f91826c5a" title=" " alt="" coords="123,247,296,274"/>
-<area shape="rect" href="classParallel__Kpoints.html#acdde0956fb5751d2eea478ebfb205943" title=" " alt="" coords="358,5,533,47"/>
+<area shape="rect" href="namespaceParallel__Global.html#a50fb6fedc5162018673b4633f09a03bd" title=" " alt="" coords="362,5,529,47"/>
 <area shape="rect" href="namespaceParallel__Common.html#a948e39313b7dec5fc96e407e0de09d41" title=" " alt="" coords="344,71,547,98"/>
 <area shape="rect" href="classParallel__Kpoints.html#a2c414335c55516a52b9ae1dec30aface" title=" " alt="" coords="368,123,523,164"/>
 <area shape="rect" href="classParallel__Kpoints.html#af47c9e5b935cbe6278d386ea2fe5670b" title=" " alt="" coords="368,188,523,229"/>

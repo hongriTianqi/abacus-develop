@@ -1,12 +1,12 @@
 <map id="elecstate::PotSurChem" name="elecstate::PotSurChem">
-<area shape="rect" id="node1" title=" " alt="" coords="355,1731,526,1852"/>
-<area shape="rect" id="node2" href="$classelecstate_1_1PotBase.html" title=" " alt="" coords="288,1466,431,1602"/>
-<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="238,673,425,1323"/>
+<area shape="rect" id="node1" title=" " alt="" coords="355,1701,526,1823"/>
+<area shape="rect" id="node2" href="$classelecstate_1_1PotBase.html" title=" " alt="" coords="288,1437,431,1573"/>
+<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="238,673,425,1293"/>
 <area shape="rect" id="node4" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="5,152,164,420"/>
 <area shape="rect" id="node5" href="$classModulePW_1_1FFT.html" title=" " alt="" coords="188,5,309,567"/>
 <area shape="rect" id="node6" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="334,93,494,479"/>
-<area shape="rect" id="node7" href="$classsurchem.html" title=" " alt="" coords="479,1400,615,1668"/>
-<area shape="rect" id="node8" href="$classatom__in.html" title=" " alt="" coords="492,952,603,1044"/>
+<area shape="rect" id="node7" href="$classsurchem.html" title=" " alt="" coords="479,1371,615,1639"/>
+<area shape="rect" id="node8" href="$classatom__in.html" title=" " alt="" coords="492,937,603,1029"/>
 <area shape="rect" id="node9" title=" " alt="" coords="519,247,661,325"/>
-<area shape="rect" id="node10" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="627,871,780,1125"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="627,857,780,1110"/>
 </map>

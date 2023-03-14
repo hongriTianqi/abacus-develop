@@ -1,6 +1,6 @@
 <map id="ModulePW::PW_Basis" name="ModulePW::PW_Basis">
-<area shape="rect" id="node1" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="111,5,297,655"/>
-<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__Big.html" title=" " alt="" coords="5,805,195,1103"/>
-<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis__K.html" title="Special pw_basis class. It includes different k&#45;points." alt="" coords="219,703,399,1205"/>
-<area shape="rect" id="node4" href="$classModulePW_1_1PW__Basis__K__Big.html" title=" " alt="" coords="227,1253,392,1463"/>
+<area shape="rect" id="node1" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="111,5,297,625"/>
+<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__Big.html" title=" " alt="" coords="5,769,195,1081"/>
+<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis__K.html" title="Special pw_basis class. It includes different k&#45;points." alt="" coords="219,673,399,1176"/>
+<area shape="rect" id="node4" href="$classModulePW_1_1PW__Basis__K__Big.html" title=" " alt="" coords="227,1224,392,1448"/>
 </map>

@@ -1,8 +1,9 @@
 <map id="module_base/global_file.h" name="module_base/global_file.h">
-<area shape="rect" id="node1" title=" " alt="" coords="383,5,536,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="481,5,635,47"/>
 <area shape="rect" id="node2" href="$global__file_8cpp.html" title=" " alt="" coords="5,95,159,136"/>
 <area shape="rect" id="node3" href="$global__function_8cpp.html" title=" " alt="" coords="183,95,336,136"/>
-<area shape="rect" id="node4" href="$tool__quit_8cpp.html" title=" " alt="" coords="361,102,558,129"/>
-<area shape="rect" id="node5" href="$unitcell_8cpp.html" title=" " alt="" coords="583,102,763,129"/>
-<area shape="rect" id="node6" href="$input_8cpp.html" title=" " alt="" coords="787,102,942,129"/>
+<area shape="rect" id="node4" href="$global__file__test_8cpp.html" title=" " alt="" coords="360,95,543,136"/>
+<area shape="rect" id="node5" href="$tool__quit_8cpp.html" title=" " alt="" coords="567,102,765,129"/>
+<area shape="rect" id="node6" href="$unitcell_8cpp.html" title=" " alt="" coords="789,102,969,129"/>
+<area shape="rect" id="node7" href="$input_8cpp.html" title=" " alt="" coords="994,102,1149,129"/>
 </map>

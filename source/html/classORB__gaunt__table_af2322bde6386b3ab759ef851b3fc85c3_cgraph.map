@@ -2,10 +2,10 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,140,168,181"/>
 <area shape="rect" id="node2" href="$classORB__gaunt__table.html#a1dfce3cf13eada867392d1912befc3c0" title=" " alt="" coords="237,5,408,47"/>
 <area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="477,42,655,69"/>
-<area shape="rect" id="node5" href="$classORB__gaunt__table.html#afe015e6a483070efed15845aaa9cf52f" title="effective pointers" alt="" coords="233,122,413,149"/>
+<area shape="rect" id="node5" href="$classORB__gaunt__table.html#afe015e6a483070efed15845aaa9cf52f" title="total pointers" alt="" coords="233,122,413,149"/>
 <area shape="rect" id="node6" href="$classORB__gaunt__table.html#a9a8accfe375b94089bfa53da6d1cfef0" title=" " alt="" coords="216,173,429,199"/>
 <area shape="rect" id="node7" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="241,224,405,265"/>
-<area shape="rect" id="node9" href="$namespaceModuleBase.html#acffa468e438dcfa87403393f65dd1dad" title=" " alt="" coords="250,290,395,317"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="250,290,395,317"/>
 <area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="703,35,856,76"/>
 <area shape="rect" id="node8" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="484,224,648,265"/>
 </map>

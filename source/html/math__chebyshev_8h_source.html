@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: module_base/math_chebyshev.h Source File</title>
+<title>3.1.4: module_base/math_chebyshev.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -181,7 +181,7 @@ $(function() {
 <div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;        std::complex&lt;REAL&gt;* arrayn_1,  <span class="comment">//v_{n-1}</span></div>
 <div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code" href="exp_8cpp.html#a0240ac851181b84ac374872dc5434ee4">N</a>, <span class="keyword">const</span> <span class="keywordtype">int</span> LDA = 1,  <span class="keyword">const</span> <span class="keywordtype">int</span> m = 1);</div>
 <div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;    <span class="comment">//return 2xTn-Tn_1</span></div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    <span class="keyword">inline</span> REAL <a class="code" href="classModuleBase_1_1Chebyshev.html#a3e690faa57772bc5c269a129014c0709">recurs</a>(<span class="keyword">const</span> REAL <a class="code" href="namespaceModuleBase_1_1libm.html#a947b87f10e3327eefe6c05e187d544d6">x</a>, <span class="keyword">const</span> REAL Tn, <span class="keyword">const</span> REAL Tn_1);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;    REAL <a class="code" href="classModuleBase_1_1Chebyshev.html#a3e690faa57772bc5c269a129014c0709">recurs</a>(<span class="keyword">const</span> REAL <a class="code" href="namespaceModuleBase_1_1libm.html#a947b87f10e3327eefe6c05e187d544d6">x</a>, <span class="keyword">const</span> REAL Tn, <span class="keyword">const</span> REAL Tn_1);</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;    </div>
 <div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;    <span class="comment">// V.</span></div>
 <div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;    <span class="comment">// auxiliary function</span></div>
@@ -233,7 +233,7 @@ $(function() {
 <div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="classModuleBase_1_1FFTW_3_01double_01_4.html#a2b82ce2cb71f3c5a9d888d8ac5f26936">  221</a></span>&#160;    fftw_plan <a class="code" href="classModuleBase_1_1FFTW_3_01double_01_4.html#a2b82ce2cb71f3c5a9d888d8ac5f26936">coef_plan</a>;</div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;};</div>
 <div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160; </div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#ifdef __MIX_PRECISION</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="preprocessor">#ifdef __ENABLE_FLOAT_FFTW</span></div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="keyword">template</span>&lt;&gt;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="keyword">class </span><a class="code" href="classModuleBase_1_1FFTW.html">FFTW</a>&lt;float&gt;</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;{</div>
@@ -294,7 +294,7 @@ $(function() {
 <div class="ttc" id="aclassModuleBase_1_1FFTW_html"><div class="ttname"><a href="classModuleBase_1_1FFTW.html">ModuleBase::FFTW</a></div><div class="ttdef"><b>Definition:</b> math_chebyshev.h:10</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Chebyshev_html_a7394c7acadc4700c7f550860f77c68b4"><div class="ttname"><a href="classModuleBase_1_1Chebyshev.html#a7394c7acadc4700c7f550860f77c68b4">ModuleBase::Chebyshev::checkconverge</a></div><div class="ttdeci">bool checkconverge(T *ptr, void(T::*funA)(std::complex&lt; REAL &gt; *in, std::complex&lt; REAL &gt; *out, const int), std::complex&lt; REAL &gt; *wavein, const int N, REAL &amp;tmax, REAL &amp;tmin, REAL stept)</div><div class="ttdef"><b>Definition:</b> math_chebyshev_def.h:444</div></div>
 <div class="ttc" id="aexp_8cpp_html_a0240ac851181b84ac374872dc5434ee4"><div class="ttname"><a href="exp_8cpp.html#a0240ac851181b84ac374872dc5434ee4">N</a></div><div class="ttdeci">#define N</div><div class="ttdef"><b>Definition:</b> exp.cpp:24</div></div>
-<div class="ttc" id="anamespaceModuleBase_html_a319c957fc399a519aa4cdd447bdee1aa"><div class="ttname"><a href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa">ModuleBase::WARNING_QUIT</a></div><div class="ttdeci">void WARNING_QUIT(const std::string &amp;file, const std::string &amp;description)</div><div class="ttdoc">Combine the functions of WARNING and QUIT.</div><div class="ttdef"><b>Definition:</b> complexmatrix_test.cpp:45</div></div>
+<div class="ttc" id="anamespaceModuleBase_html_a319c957fc399a519aa4cdd447bdee1aa"><div class="ttname"><a href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa">ModuleBase::WARNING_QUIT</a></div><div class="ttdeci">void WARNING_QUIT(const std::string &amp;file, const std::string &amp;description)</div><div class="ttdoc">Combine the functions of WARNING and QUIT.</div><div class="ttdef"><b>Definition:</b> complexmatrix_test.cpp:46</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Chebyshev_html"><div class="ttname"><a href="classModuleBase_1_1Chebyshev.html">ModuleBase::Chebyshev</a></div><div class="ttdoc">A class to treat the Chebyshev expansion.</div><div class="ttdef"><b>Definition:</b> math_chebyshev.h:75</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

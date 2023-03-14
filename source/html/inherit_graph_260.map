@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structModulePW_1_1set__real__to__recip__output__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html" title=" " alt="" coords="5,5,223,61"/>
+<area shape="rect" id="node1" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="5,31,167,57"/>
+<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__Big.html" title=" " alt="" coords="215,5,404,32"/>
+<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis__K.html" title="Special pw_basis class. It includes different k&#45;points." alt="" coords="221,56,398,83"/>
+<area shape="rect" id="node4" href="$classModulePW_1_1PW__Basis__K__Big.html" title=" " alt="" coords="452,49,613,90"/>
 </map>

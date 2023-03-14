@@ -1,12 +1,12 @@
 <map id="module_hamilt_lcao/module_dftu/dftu_folding.cpp" name="module_hamilt_lcao/module_dftu/dftu_folding.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="357,5,572,47"/>
-<area shape="rect" id="node2" href="$dftu_8h.html" title=" " alt="" coords="361,102,419,129"/>
-<area shape="rect" id="node8" href="$timer_8h.html" title=" " alt="" coords="663,102,821,129"/>
-<area shape="rect" id="node9" href="$global_8h.html" title=" " alt="" coords="145,95,337,136"/>
-<area shape="rect" id="node10" href="$global__fp_8h.html" title=" " alt="" coords="443,95,638,136"/>
-<area shape="rect" id="node3" href="$unitcell_8h.html" title=" " alt="" coords="221,199,386,225"/>
-<area shape="rect" id="node4" href="$module__orbital_2parallel__orbitals_8h.html" title=" " alt="" coords="395,288,569,329"/>
-<area shape="rect" id="node5" href="$LCAO__matrix_8h.html" title=" " alt="" coords="461,184,620,240"/>
-<area shape="rect" id="node6" href="$charge__mixing_8h.html" title=" " alt="" coords="5,191,196,233"/>
-<area shape="rect" id="node7" title=" " alt="" coords="679,199,738,225"/>
+<area shape="rect" id="node1" title=" " alt="" coords="239,5,454,47"/>
+<area shape="rect" id="node2" href="$dftu_8h.html" title=" " alt="" coords="242,102,301,129"/>
+<area shape="rect" id="node8" href="$timer_8h.html" title=" " alt="" coords="544,102,703,129"/>
+<area shape="rect" id="node9" href="$global_8h.html" title=" " alt="" coords="26,95,218,136"/>
+<area shape="rect" id="node10" href="$global__fp_8h.html" title=" " alt="" coords="325,95,520,136"/>
+<area shape="rect" id="node3" href="$unitcell_8h.html" title=" " alt="" coords="40,295,205,322"/>
+<area shape="rect" id="node4" href="$module__orbital_2parallel__orbitals_8h.html" title=" " alt="" coords="282,288,456,329"/>
+<area shape="rect" id="node5" href="$LCAO__matrix_8h.html" title=" " alt="" coords="344,184,503,240"/>
+<area shape="rect" id="node6" href="$charge__mixing_8h.html" title=" " alt="" coords="27,191,218,233"/>
+<area shape="rect" id="node7" title=" " alt="" coords="561,199,620,225"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.2: ModulePW::PW_Basis Class Reference</title>
+<title>3.1.4: ModulePW::PW_Basis Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.2
-   &#160;<span id="projectnumber">2023-02-14</span>
+   <div id="projectname">3.1.4
+   &#160;<span id="projectnumber">2023-03-14</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -89,10 +89,10 @@ Inheritance diagram for ModulePW::PW_Basis:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModulePW_1_1PW__Basis__inherit__graph.png" border="0" usemap="#ModulePW_1_1PW__Basis_inherit__map" alt="Inheritance graph"/></div>
 <map name="ModulePW_1_1PW__Basis_inherit__map" id="ModulePW_1_1PW__Basis_inherit__map">
-<area shape="rect" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="111,5,297,655"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis__Big.html" title=" " alt="" coords="5,805,195,1103"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis__K.html" title="Special pw_basis class. It includes different k&#45;points." alt="" coords="219,703,399,1205"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis__K__Big.html" title=" " alt="" coords="227,1253,392,1463"/>
+<area shape="rect" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="111,5,297,625"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__Big.html" title=" " alt="" coords="5,769,195,1081"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__K.html" title="Special pw_basis class. It includes different k&#45;points." alt="" coords="219,673,399,1176"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__K__Big.html" title=" " alt="" coords="227,1224,392,1448"/>
 </map>
 </div>
 <div class="dynheader">
@@ -100,7 +100,7 @@ Collaboration diagram for ModulePW::PW_Basis:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModulePW_1_1PW__Basis__coll__graph.png" border="0" usemap="#ModulePW_1_1PW__Basis_coll__map" alt="Collaboration graph"/></div>
 <map name="ModulePW_1_1PW__Basis_coll__map" id="ModulePW_1_1PW__Basis_coll__map">
-<area shape="rect" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="155,673,342,1323"/>
+<area shape="rect" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="155,673,342,1293"/>
 <area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="5,152,164,420"/>
 <area shape="rect" href="classModulePW_1_1FFT.html" title=" " alt="" coords="188,5,309,567"/>
 <area shape="rect" href="classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="334,93,494,479"/>
@@ -120,6 +120,8 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a465c155d29fe97e8703360888468f9a7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis.html#a465c155d29fe97e8703360888468f9a7">PW_Basis</a> ()</td></tr>
 <tr class="separator:a465c155d29fe97e8703360888468f9a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af72f9f3639530dc76da9307f604172a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis.html#af72f9f3639530dc76da9307f604172a3">PW_Basis</a> (std::string device_, std::string precision_)</td></tr>
+<tr class="separator:af72f9f3639530dc76da9307f604172a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf544068dff3002a42cdb206665954e5"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis.html#acf544068dff3002a42cdb206665954e5">~PW_Basis</a> ()</td></tr>
 <tr class="separator:acf544068dff3002a42cdb206665954e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49d8c6c5c0400dd5a864733fe83146cd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis.html#a49d8c6c5c0400dd5a864733fe83146cd">initmpi</a> (const int poolnproc_in, const int poolrank_in, MPI_Comm pool_world_in)</td></tr>
@@ -150,8 +152,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae9a43abf29742754cac80813ee105f9f"><td class="memTemplParams" colspan="2">template&lt;typename FPTYPE &gt; </td></tr>
 <tr class="memitem:ae9a43abf29742754cac80813ee105f9f"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis.html#ae9a43abf29742754cac80813ee105f9f">recip2real</a> (const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; FPTYPE &gt; *in, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; FPTYPE &gt; *out, const bool add=false, const FPTYPE factor=1.0)</td></tr>
 <tr class="separator:ae9a43abf29742754cac80813ee105f9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac2da170e2a9f72476c5675a437d3e750"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis.html#ac2da170e2a9f72476c5675a437d3e750">getfftixy2is</a> (int *fftixy2is)</td></tr>
-<tr class="separator:ac2da170e2a9f72476c5675a437d3e750"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ac28a3fbbc4cfd50bedb3b9aff40e56"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis.html#a0ac28a3fbbc4cfd50bedb3b9aff40e56">getfftixy2is</a> (int *fftixy2is) const</td></tr>
+<tr class="separator:a0ac28a3fbbc4cfd50bedb3b9aff40e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25331e1cd6176655fbfa9e1c853d2754"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis.html#a25331e1cd6176655fbfa9e1c853d2754">set_device</a> (std::string device_)</td></tr>
+<tr class="separator:a25331e1cd6176655fbfa9e1c853d2754"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a713915463752333dbd879f84e3be0f8d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis.html#a713915463752333dbd879f84e3be0f8d">set_precision</a> (std::string precision_)</td></tr>
+<tr class="separator:a713915463752333dbd879f84e3be0f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -319,12 +325,16 @@ Protected Member Functions</h2></td></tr>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:a497b9f3b04087b0039e1e14a566719ed"><td class="memItemLeft" align="right" valign="top">int *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis.html#a497b9f3b04087b0039e1e14a566719ed">startnsz_per</a> =nullptr</td></tr>
 <tr class="separator:a497b9f3b04087b0039e1e14a566719ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a442503a315bba47a5784da0370bc1430"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis.html#a442503a315bba47a5784da0370bc1430">device</a> = &quot;cpu&quot;</td></tr>
+<tr class="separator:a442503a315bba47a5784da0370bc1430"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a24a0ec8915413ebb11e254cf63b5f037"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModulePW_1_1PW__Basis.html#a24a0ec8915413ebb11e254cf63b5f037">precision</a> = &quot;double&quot;</td></tr>
+<tr class="separator:a24a0ec8915413ebb11e254cf63b5f037"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class which can convert a function of "r" to the corresponding linear superposition of plane waves (real space to reciprocal space) or convert a linear superposition of plane waves to the function of "r" (reciprocal to real). </p>
 <dl class="section author"><dt>Author</dt><dd>qianrui, Sunliang on 2021-10-15</dd></dl>
-<p>Math: plane waves: &lt;r|g&gt;=1/sqrt(V) * exp(igr) f(r) = 1/sqrt(V) * \sum_g{c(g)*exp(igr)} c(g) = \int f(r)*exp(-igr) dr USAGE： <a class="el" href="classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ...">ModulePW::PW_Basis</a> pwtest; 0. init mpi for <a class="el" href="classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ...">PW_Basis</a> pwtest.inimpi(nproc_in_pool,rank_in_pool,POOL_WORLD);</p><ol type="1">
-<li>setup <a class="el" href="classModulePW_1_1FFT.html">FFT</a> grids for <a class="el" href="classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ...">PW_Basis</a> pwtest.initgrids(lat0,latvec,gridecut); pwtest.initgrids(lat0,latvec,N1,N2,N3); //double lat0：unit length, (unit: bohr) //ModuleBase::Matrix3 latvec：lattice vector, (unit: lat0), e.g. <a class="el" href="classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations">ModuleBase::Matrix3</a> latvec(1, 1, 0, 0, 2, 0, 0, 0, 2); //double gridecut：cutoff energy to generate <a class="el" href="classModulePW_1_1FFT.html">FFT</a> grids, (unit: Ry) //int N1,N2,N3: <a class="el" href="classModulePW_1_1FFT.html">FFT</a> grids</li>
+<p>Math: plane waves: &lt;r|g&gt;=1/sqrt(V) * exp(igr) f(r) = 1/sqrt(V) * \sum_g{c(g)*exp(igr)} c(g) = \int f(r)*exp(-igr) dr USAGE: <a class="el" href="classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ...">ModulePW::PW_Basis</a> pwtest; 0. init mpi for <a class="el" href="classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ...">PW_Basis</a> pwtest.inimpi(nproc_in_pool,rank_in_pool,POOL_WORLD);</p><ol type="1">
+<li>setup <a class="el" href="classModulePW_1_1FFT.html">FFT</a> grids for <a class="el" href="classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ...">PW_Basis</a> pwtest.initgrids(lat0,latvec,gridecut); pwtest.initgrids(lat0,latvec,N1,N2,N3); //double lat0: unit length, (unit: bohr) //ModuleBase::Matrix3 latvec: lattice vector, (unit: lat0), e.g. <a class="el" href="classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations">ModuleBase::Matrix3</a> latvec(1, 1, 0, 0, 2, 0, 0, 0, 2); //double gridecut: cutoff energy to generate <a class="el" href="classModulePW_1_1FFT.html">FFT</a> grids, (unit: Ry) //int N1,N2,N3: <a class="el" href="classModulePW_1_1FFT.html">FFT</a> grids</li>
 <li>init parameters pwtest.initparameters(gamma_only,ggecut,dividemthd); //bool gamma_only: if use gamma_only //double ggecut: cutoff kinetic energy for planewaves,(unit in Ry) G^2 &lt; ggecut //int dividemthd: method to divide planewaves to different cores</li>
 <li>Setup transforms from real space to reciprocal space or from reciprocal space to real space. pwtest.setuptransform(); pwtest.recip2real(rhog,rhor); //rhog to rhor pwtest.real2recip(rhor,rhog); //rhor to rhog</li>
 <li>Generate the wave vector for planewaves pwtest.collect_local_pw(); //then we can use pwtest.gg, pwtest.gdirect, pwtest.gcar, (unit in lat0^-1 or lat0^-2) </li>
@@ -374,7 +384,7 @@ Protected Attributes</h2></td></tr>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a465c155d29fe97e8703360888468f9a7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a465c155d29fe97e8703360888468f9a7">&#9670;&nbsp;</a></span>PW_Basis()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a465c155d29fe97e8703360888468f9a7">&#9670;&nbsp;</a></span>PW_Basis() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -387,6 +397,44 @@ Protected Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+</div>
+</div>
+<a id="af72f9f3639530dc76da9307f604172a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af72f9f3639530dc76da9307f604172a3">&#9670;&nbsp;</a></span>PW_Basis() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ModulePW::PW_Basis::PW_Basis </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>device_</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>precision_</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModulePW_1_1PW__Basis_af72f9f3639530dc76da9307f604172a3_cgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_af72f9f3639530dc76da9307f604172a3_cgraph" alt=""/></div>
+<map name="classModulePW_1_1PW__Basis_af72f9f3639530dc76da9307f604172a3_cgraph" id="classModulePW_1_1PW__Basis_af72f9f3639530dc76da9307f604172a3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,167,80"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#af4aa58cad10dbee93d1e4027b768841d" title=" " alt="" coords="215,5,363,47"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#ac9b7d908baf0b693dccc4889a612b34d" title=" " alt="" coords="215,71,363,112"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -436,16 +484,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModulePW_1_1PW__Basis_ad8e9e53f69426170b8c1dbba0391bcda_icgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_ad8e9e53f69426170b8c1dbba0391bcda_icgraph" alt=""/></div>
 <map name="classModulePW_1_1PW__Basis_ad8e9e53f69426170b8c1dbba0391bcda_icgraph" id="classModulePW_1_1PW__Basis_ad8e9e53f69426170b8c1dbba0391bcda_icgraph">
-<area shape="rect" title=" " alt="" coords="465,210,627,251"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__FP.html#aa1be91ac66538c223a7c7a5936170765" title=" " alt="" coords="241,86,417,127"/>
-<area shape="rect" href="classVariable__Cell.html#a734f97e787992db765320371ccd076bb" title=" " alt="" coords="261,151,397,193"/>
-<area shape="rect" href="classRelax.html#a8bcf2bc3882f3b5c1d6531606552ae9e" title=" " alt="" coords="256,217,403,244"/>
-<area shape="rect" href="generate_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="302,268,357,295"/>
-<area shape="rect" href="test1-1-1_8cpp.html#a484f80241f2d379d0fb07ef9746eeb0f" title=" " alt="" coords="295,319,364,345"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="5,5,193,61"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="11,86,187,127"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="11,151,187,193"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="11,217,187,258"/>
+<area shape="rect" title=" " alt="" coords="495,214,656,255"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__FP.html#aa1be91ac66538c223a7c7a5936170765" title=" " alt="" coords="271,86,447,127"/>
+<area shape="rect" href="classVariable__Cell.html#a734f97e787992db765320371ccd076bb" title=" " alt="" coords="291,185,427,226"/>
+<area shape="rect" href="generate_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="331,251,386,277"/>
+<area shape="rect" href="test1-1-1_8cpp.html#a484f80241f2d379d0fb07ef9746eeb0f" title=" " alt="" coords="324,301,393,328"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="20,5,208,61"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="26,86,202,127"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="26,151,202,193"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="26,217,202,258"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a319a12680e389afe891fbf36567f6848" title=" " alt="" coords="5,282,223,323"/>
 </map>
 </div>
 
@@ -569,16 +617,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModulePW_1_1PW__Basis_a9b368eb3fdb59bcf316cc939b93d82a0_icgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_a9b368eb3fdb59bcf316cc939b93d82a0_icgraph" alt=""/></div>
 <map name="classModulePW_1_1PW__Basis_a9b368eb3fdb59bcf316cc939b93d82a0_icgraph" id="classModulePW_1_1PW__Basis_a9b368eb3fdb59bcf316cc939b93d82a0_icgraph">
-<area shape="rect" title=" " alt="" coords="465,210,627,251"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__FP.html#aa1be91ac66538c223a7c7a5936170765" title=" " alt="" coords="241,86,417,127"/>
-<area shape="rect" href="classVariable__Cell.html#a734f97e787992db765320371ccd076bb" title=" " alt="" coords="261,151,397,193"/>
-<area shape="rect" href="classRelax.html#a8bcf2bc3882f3b5c1d6531606552ae9e" title=" " alt="" coords="256,217,403,244"/>
-<area shape="rect" href="generate_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="302,268,357,295"/>
-<area shape="rect" href="test1-1-1_8cpp.html#a484f80241f2d379d0fb07ef9746eeb0f" title=" " alt="" coords="295,319,364,345"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="5,5,193,61"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="11,86,187,127"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="11,151,187,193"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="11,217,187,258"/>
+<area shape="rect" title=" " alt="" coords="495,214,656,255"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__FP.html#aa1be91ac66538c223a7c7a5936170765" title=" " alt="" coords="271,86,447,127"/>
+<area shape="rect" href="classVariable__Cell.html#a734f97e787992db765320371ccd076bb" title=" " alt="" coords="291,185,427,226"/>
+<area shape="rect" href="generate_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="331,251,386,277"/>
+<area shape="rect" href="test1-1-1_8cpp.html#a484f80241f2d379d0fb07ef9746eeb0f" title=" " alt="" coords="324,301,393,328"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="20,5,208,61"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="26,86,202,127"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="26,151,202,193"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="26,217,202,258"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a319a12680e389afe891fbf36567f6848" title=" " alt="" coords="5,282,223,323"/>
 </map>
 </div>
 
@@ -782,15 +830,6 @@ Here is the caller graph for this function:</div>
 <p>distribute real-space grids to different processors Known: nx, ny, nz, poolnproc, poolrank output: nrxx, startz, numz </p>
 
 <p>Reimplemented in <a class="el" href="classModulePW_1_1PW__Basis__Big.html#a52a9feb143ed3ed2add46b71fa4c47f7">ModulePW::PW_Basis_Big</a>, and <a class="el" href="classModulePW_1_1PW__Basis__K__Big.html#acb085c345a4d5a4a6e278f2722a30f06">ModulePW::PW_Basis_K_Big</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classModulePW_1_1PW__Basis_a7a5b07a892d8dd6a5b379c09141ebdec_cgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_a7a5b07a892d8dd6a5b379c09141ebdec_cgraph" alt=""/></div>
-<map name="classModulePW_1_1PW__Basis_a7a5b07a892d8dd6a5b379c09141ebdec_cgraph" id="classModulePW_1_1PW__Basis_a7a5b07a892d8dd6a5b379c09141ebdec_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,167,47"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="215,5,397,47"/>
-</map>
-</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1098,9 +1137,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModulePW_1_1PW__Basis_aae091c3aec38ba253fdda8650c0d7b9a_icgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_aae091c3aec38ba253fdda8650c0d7b9a_icgraph" alt=""/></div>
 <map name="classModulePW_1_1PW__Basis_aae091c3aec38ba253fdda8650c0d7b9a_icgraph" id="classModulePW_1_1PW__Basis_aae091c3aec38ba253fdda8650c0d7b9a_icgraph">
-<area shape="rect" title=" " alt="" coords="215,39,376,80"/>
+<area shape="rect" title=" " alt="" coords="215,5,376,47"/>
 <area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a50d2b5d82149a808adc0dbe703c2ba68" title=" " alt="" coords="5,5,167,47"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a18e45fc430ecaf93f599132497780be3" title=" " alt="" coords="5,71,167,112"/>
 </map>
 </div>
 
@@ -1157,9 +1195,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModulePW_1_1PW__Basis_a9bbea0367082dfbad3ca06a1b8f0c6d5_icgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_a9bbea0367082dfbad3ca06a1b8f0c6d5_icgraph" alt=""/></div>
 <map name="classModulePW_1_1PW__Basis_a9bbea0367082dfbad3ca06a1b8f0c6d5_icgraph" id="classModulePW_1_1PW__Basis_a9bbea0367082dfbad3ca06a1b8f0c6d5_icgraph">
-<area shape="rect" title=" " alt="" coords="215,39,376,80"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a25e4bc1b67fa4ccc3cba56ca8687d8f6" title=" " alt="" coords="5,5,167,47"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#ae9a43abf29742754cac80813ee105f9f" title=" " alt="" coords="5,71,167,112"/>
+<area shape="rect" title=" " alt="" coords="645,183,807,225"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a6fadd5f43b7c9b1ea6bbe560733f7f05" title=" " alt="" coords="436,150,597,191"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce" title=" " alt="" coords="436,215,597,257"/>
+<area shape="rect" href="namespaceModuleIO.html#a9281aaef4579dabfaa938a7949ac4bb0" title=" " alt="" coords="221,5,375,32"/>
+<area shape="rect" href="classXC__Functional.html#acd3f2e95b5432678733749d91eda4ec7" title=" " alt="" coords="208,56,388,83"/>
+<area shape="rect" href="classStochastic__hchi.html#a296c8e3164d80c0c8b4163e8d073d05a" title=" " alt="" coords="219,107,377,133"/>
+<area shape="rect" href="classStochastic__Iter.html#a6547caaa896fb1ca5c9b2ae83e0c0262" title=" " alt="" coords="5,135,160,177"/>
+<area shape="rect" href="classExx__Lip.html#a22a45eb7d90d7c9b0e87d57ee5dac7dd" title=" " alt="" coords="235,208,361,235"/>
+<area shape="rect" href="classExx__Lip.html#aa18b3873716f2d1448215bbd77e03b6f" title=" " alt="" coords="20,223,145,249"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a8a9c59e7eaffc9585bb974695e9cbb48" title=" " alt="" coords="217,310,379,351"/>
 </map>
 </div>
 
@@ -1282,8 +1327,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ac2da170e2a9f72476c5675a437d3e750"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac2da170e2a9f72476c5675a437d3e750">&#9670;&nbsp;</a></span>getfftixy2is()</h2>
+<a id="a0ac28a3fbbc4cfd50bedb3b9aff40e56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ac28a3fbbc4cfd50bedb3b9aff40e56">&#9670;&nbsp;</a></span>getfftixy2is()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1293,20 +1338,25 @@ Here is the caller graph for this function:</div>
           <td>(</td>
           <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>fftixy2is</em></td><td>)</td>
-          <td></td>
+          <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classModulePW_1_1PW__Basis_ac2da170e2a9f72476c5675a437d3e750_icgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_ac2da170e2a9f72476c5675a437d3e750_icgraph" alt=""/></div>
-<map name="classModulePW_1_1PW__Basis_ac2da170e2a9f72476c5675a437d3e750_icgraph" id="classModulePW_1_1PW__Basis_ac2da170e2a9f72476c5675a437d3e750_icgraph">
-<area shape="rect" title=" " alt="" coords="616,23,777,65"/>
-<area shape="rect" href="test1-1-1_8cpp.html#a484f80241f2d379d0fb07ef9746eeb0f" title=" " alt="" coords="457,5,527,32"/>
-<area shape="rect" href="classwavefunc.html#a5f9675b18a2980386b6d6fe03be07e90" title=" " alt="" coords="416,56,568,83"/>
-<area shape="rect" href="classwavefunc.html#ae6f9a56b703c00c64944522f3cc84a6d" title=" " alt="" coords="231,56,368,83"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#af2403883913144cf4650c22002484109" title=" " alt="" coords="5,41,183,97"/>
+<div class="center"><img src="classModulePW_1_1PW__Basis_a0ac28a3fbbc4cfd50bedb3b9aff40e56_icgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_a0ac28a3fbbc4cfd50bedb3b9aff40e56_icgraph" alt=""/></div>
+<map name="classModulePW_1_1PW__Basis_a0ac28a3fbbc4cfd50bedb3b9aff40e56_icgraph" id="classModulePW_1_1PW__Basis_a0ac28a3fbbc4cfd50bedb3b9aff40e56_icgraph">
+<area shape="rect" title=" " alt="" coords="749,155,911,196"/>
+<area shape="rect" href="classSymmetry__rho.html#a55b2578d61b7481066d4fc6587b32227" title=" " alt="" coords="519,111,701,138"/>
+<area shape="rect" href="test1-1-1_8cpp.html#a484f80241f2d379d0fb07ef9746eeb0f" title=" " alt="" coords="575,162,645,189"/>
+<area shape="rect" href="classwavefunc.html#a5f9675b18a2980386b6d6fe03be07e90" title=" " alt="" coords="534,213,686,239"/>
+<area shape="rect" href="classSymmetry__rho.html#ace244855a5390fa61f308b55c2b7bd6e" title=" " alt="" coords="308,111,471,138"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="45,5,221,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="45,71,221,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a319a12680e389afe891fbf36567f6848" title=" " alt="" coords="24,136,241,177"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a8cd1ebf60aadee55cd2c98acdfbee50a" title=" " alt="" coords="5,201,260,243"/>
+<area shape="rect" href="classwavefunc.html#ae6f9a56b703c00c64944522f3cc84a6d" title=" " alt="" coords="321,213,458,239"/>
 </map>
 </div>
 
@@ -1395,33 +1445,20 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classModulePW_1_1PW__Basis__Big.html#a1f3e568f3c3a8d0e95cd8f4562689eea">ModulePW::PW_Basis_Big</a>.</p>
 <div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classModulePW_1_1PW__Basis_a7bfacfccea71e2ec66f5a0520b634b66_cgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_a7bfacfccea71e2ec66f5a0520b634b66_cgraph" alt=""/></div>
-<map name="classModulePW_1_1PW__Basis_a7bfacfccea71e2ec66f5a0520b634b66_cgraph" id="classModulePW_1_1PW__Basis_a7bfacfccea71e2ec66f5a0520b634b66_cgraph">
-<area shape="rect" title=" " alt="" coords="5,39,167,80"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#a27d7b250a9d0bb0bda42b69b97d82feb" title="Inverse a 3x3 matrix." alt="" coords="215,5,375,47"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056" title="Transpose a 3x3 matrix." alt="" coords="215,71,375,112"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab28d96cf2c851a6c1eae27ce780d2e90" title="Calculate the determinant of a 3x3 matrix." alt="" coords="423,13,613,39"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7" title="Construct a new Matrix 3 object to Identity matrix." alt="" coords="438,67,598,108"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#a42bb8704e6e193ae5dded7779548fb1c" title="Set a 3x3 matrix to identity matrix." alt="" coords="661,67,821,108"/>
-</map>
-</div>
-<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModulePW_1_1PW__Basis_a7bfacfccea71e2ec66f5a0520b634b66_icgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_a7bfacfccea71e2ec66f5a0520b634b66_icgraph" alt=""/></div>
 <map name="classModulePW_1_1PW__Basis_a7bfacfccea71e2ec66f5a0520b634b66_icgraph" id="classModulePW_1_1PW__Basis_a7bfacfccea71e2ec66f5a0520b634b66_icgraph">
-<area shape="rect" title=" " alt="" coords="495,232,656,273"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a319a12680e389afe891fbf36567f6848" title=" " alt="" coords="5,152,223,193"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__FP.html#aa1be91ac66538c223a7c7a5936170765" title=" " alt="" coords="271,79,447,120"/>
-<area shape="rect" href="classVariable__Cell.html#a734f97e787992db765320371ccd076bb" title=" " alt="" coords="291,203,427,244"/>
-<area shape="rect" href="classRelax.html#a8bcf2bc3882f3b5c1d6531606552ae9e" title=" " alt="" coords="285,269,432,295"/>
-<area shape="rect" href="generate_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="331,319,386,346"/>
-<area shape="rect" href="updaterhok__pw__test_8cpp.html#a8d8d0f6b8066294ef021796e6950d7bb" title=" " alt="" coords="324,370,393,397"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="20,71,208,127"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="26,5,202,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="26,217,202,259"/>
+<area shape="rect" title=" " alt="" coords="495,210,656,251"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a319a12680e389afe891fbf36567f6848" title=" " alt="" coords="5,151,223,193"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__FP.html#aa1be91ac66538c223a7c7a5936170765" title=" " alt="" coords="271,86,447,127"/>
+<area shape="rect" href="classVariable__Cell.html#a734f97e787992db765320371ccd076bb" title=" " alt="" coords="291,210,427,251"/>
+<area shape="rect" href="generate_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="331,276,386,303"/>
+<area shape="rect" href="updaterhok__pw__test_8cpp.html#a8d8d0f6b8066294ef021796e6950d7bb" title=" " alt="" coords="324,327,393,353"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="20,5,208,61"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="26,86,202,127"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="26,282,202,323"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="26,217,202,258"/>
 </map>
 </div>
 
@@ -1481,19 +1518,6 @@ Here is the caller graph for this function:</div>
 <p>Init the grids for <a class="el" href="classModulePW_1_1FFT.html">FFT</a> <a class="el" href="classInput.html">Input</a>: lattice vectors of the cell, nx, ny, nz Output: nx, ny, nz, nxyz, latvec, G, GT, GGT </p>
 
 <p>Reimplemented in <a class="el" href="classModulePW_1_1PW__Basis__Big.html#aec2a68cae0c18dcfc4255c22aa94e4bc">ModulePW::PW_Basis_Big</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classModulePW_1_1PW__Basis_a00c24179ca27416e6db0ba2f2df8c6c7_cgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_a00c24179ca27416e6db0ba2f2df8c6c7_cgraph" alt=""/></div>
-<map name="classModulePW_1_1PW__Basis_a00c24179ca27416e6db0ba2f2df8c6c7_cgraph" id="classModulePW_1_1PW__Basis_a00c24179ca27416e6db0ba2f2df8c6c7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,39,167,80"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#a27d7b250a9d0bb0bda42b69b97d82feb" title="Inverse a 3x3 matrix." alt="" coords="215,5,375,47"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056" title="Transpose a 3x3 matrix." alt="" coords="215,71,375,112"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab28d96cf2c851a6c1eae27ce780d2e90" title="Calculate the determinant of a 3x3 matrix." alt="" coords="423,13,613,39"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7" title="Construct a new Matrix 3 object to Identity matrix." alt="" coords="438,67,598,108"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#a42bb8704e6e193ae5dded7779548fb1c" title="Set a 3x3 matrix to identity matrix." alt="" coords="661,67,821,108"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1637,23 +1661,6 @@ template&lt;typename FPTYPE &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>transform real space to reciprocal space in: (nplane,ny,nx), double data out: (nz, ns), complex&lt;double&gt; data </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classModulePW_1_1PW__Basis_a743759a9021fc9d1cf570a7499e55b08_cgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_a743759a9021fc9d1cf570a7499e55b08_cgraph" alt=""/></div>
-<map name="classModulePW_1_1PW__Basis_a743759a9021fc9d1cf570a7499e55b08_cgraph" id="classModulePW_1_1PW__Basis_a743759a9021fc9d1cf570a7499e55b08_cgraph">
-<area shape="rect" title=" " alt="" coords="5,187,167,229"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#ac5a1aa06f4c446a5456208e867e02cc5" title=" " alt="" coords="216,5,392,32"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a903c866d6f5dc8e8e3a483060ad198aa" title=" " alt="" coords="215,56,393,83"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#ad01da6b7d37afe506725bae4cbc87a6a" title=" " alt="" coords="221,107,387,133"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#aae091c3aec38ba253fdda8650c0d7b9a" title=" " alt="" coords="223,158,385,199"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="441,195,619,221"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a51172642621a79864bd8a34d02c27f3c" title=" " alt="" coords="229,275,379,317"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#af4c076ea70f66d0c7011f0f318cfe808" title=" " alt="" coords="229,341,379,382"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#abafb29fca1142448e55e2f184c160124" title=" " alt="" coords="229,406,379,447"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="667,187,820,229"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1697,21 +1704,6 @@ template&lt;typename FPTYPE &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>transform real space to reciprocal space c(k,g)=\int dr*f(r)*exp(-ig*r) c(k,g)=c_k(g)*exp(ik*r) c_k(g)=\int dr*f(r)*exp(-i(g+k)*r) Here we calculate c(k,g) in: (nplane,ny,nx), complex&lt;double&gt; data out: (nz, ns), complex&lt;double&gt; data </p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classModulePW_1_1PW__Basis_a18e45fc430ecaf93f599132497780be3_cgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_a18e45fc430ecaf93f599132497780be3_cgraph" alt=""/></div>
-<map name="classModulePW_1_1PW__Basis_a18e45fc430ecaf93f599132497780be3_cgraph" id="classModulePW_1_1PW__Basis_a18e45fc430ecaf93f599132497780be3_cgraph">
-<area shape="rect" title=" " alt="" coords="5,137,167,178"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#ac5a1aa06f4c446a5456208e867e02cc5" title=" " alt="" coords="215,5,391,32"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#ad01da6b7d37afe506725bae4cbc87a6a" title=" " alt="" coords="219,56,386,83"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#aae091c3aec38ba253fdda8650c0d7b9a" title=" " alt="" coords="222,107,383,149"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="439,144,616,171"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a51172642621a79864bd8a34d02c27f3c" title=" " alt="" coords="228,225,377,266"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#af4c076ea70f66d0c7011f0f318cfe808" title=" " alt="" coords="228,290,377,331"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="664,137,817,178"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1820,14 +1812,53 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModulePW_1_1PW__Basis_ae9a43abf29742754cac80813ee105f9f_cgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_ae9a43abf29742754cac80813ee105f9f_cgraph" alt=""/></div>
 <map name="classModulePW_1_1PW__Basis_ae9a43abf29742754cac80813ee105f9f_cgraph" id="classModulePW_1_1PW__Basis_ae9a43abf29742754cac80813ee105f9f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,137,167,178"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a6a0f22482d8f7ef0b166b326ba0d6a44" title=" " alt="" coords="215,5,396,32"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a095c2e1e1febc9130f27b467ba079438" title=" " alt="" coords="219,56,391,83"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a9bbea0367082dfbad3ca06a1b8f0c6d5" title=" " alt="" coords="225,107,386,149"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="444,144,621,171"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a51172642621a79864bd8a34d02c27f3c" title=" " alt="" coords="231,225,380,266"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#af4c076ea70f66d0c7011f0f318cfe808" title=" " alt="" coords="231,290,380,331"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="669,137,823,178"/>
+<area shape="rect" title=" " alt="" coords="5,5,167,47"/>
+<area shape="rect" href="namespaceModuleBase.html#a4226cc0dab4f99d513d87e0c663f3ca8" title=" " alt="" coords="215,13,399,39"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a25331e1cd6176655fbfa9e1c853d2754"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25331e1cd6176655fbfa9e1c853d2754">&#9670;&nbsp;</a></span>set_device()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModulePW::PW_Basis::set_device </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>device_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a713915463752333dbd879f84e3be0f8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a713915463752333dbd879f84e3be0f8d">&#9670;&nbsp;</a></span>set_precision()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ModulePW::PW_Basis::set_precision </td>
+          <td>(</td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>precision_</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classModulePW_1_1PW__Basis_a713915463752333dbd879f84e3be0f8d_icgraph.png" border="0" usemap="#classModulePW_1_1PW__Basis_a713915463752333dbd879f84e3be0f8d_icgraph" alt=""/></div>
+<map name="classModulePW_1_1PW__Basis_a713915463752333dbd879f84e3be0f8d_icgraph" id="classModulePW_1_1PW__Basis_a713915463752333dbd879f84e3be0f8d_icgraph">
+<area shape="rect" title=" " alt="" coords="123,5,284,47"/>
+<area shape="rect" href="test-other_8cpp.html#a2bcd6cbe392dd349c308f97fe14e1d62" title=" " alt="" coords="5,13,75,39"/>
 </map>
 </div>
 
@@ -1946,6 +1977,28 @@ Here is the caller graph for this function:</div>
           <td class="memname">int * ModulePW::PW_Basis::d_is2fftixy = nullptr</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a442503a315bba47a5784da0370bc1430"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a442503a315bba47a5784da0370bc1430">&#9670;&nbsp;</a></span>device</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ModulePW::PW_Basis::device = &quot;cpu&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -2678,6 +2731,28 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a24a0ec8915413ebb11e254cf63b5f037"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a24a0ec8915413ebb11e254cf63b5f037">&#9670;&nbsp;</a></span>precision</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ModulePW::PW_Basis::precision = &quot;double&quot;</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a3a1ba40912a5b062fcd6f09ccc7fddc3"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3a1ba40912a5b062fcd6f09ccc7fddc3">&#9670;&nbsp;</a></span>rix</h2>
 
@@ -2828,6 +2903,8 @@ Here is the caller graph for this function:</div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>module_pw/<a class="el" href="pw__basis_8h_source.html">pw_basis.h</a></li>
+<li>module_hamilt_general/module_xc/test/<a class="el" href="xc3__mock_8h_source.html">xc3_mock.h</a></li>
+<li>module_hsolver/test/<a class="el" href="hsolver__pw__sup_8h_source.html">hsolver_pw_sup.h</a></li>
 <li>module_pw/<a class="el" href="pw__basis_8cpp.html">pw_basis.cpp</a></li>
 <li>module_pw/<a class="el" href="pw__distributeg_8cpp.html">pw_distributeg.cpp</a></li>
 <li>module_pw/<a class="el" href="pw__distributeg__method1_8cpp.html">pw_distributeg_method1.cpp</a></li>
