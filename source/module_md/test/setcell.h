@@ -9,6 +9,17 @@
 #include "module_cell/module_neighbor/sltk_atom_arrange.h"
 #include "module_cell/module_neighbor/sltk_grid_driver.h"
 
+Magnetism::Magnetism()
+{
+    this->tot_magnetization = 0.0;
+    this->abs_magnetization = 0.0;
+    this->start_magnetization = nullptr;
+}
+Magnetism::~Magnetism()
+{
+    delete[] this->start_magnetization;
+}
+
 class Setcell
 {
 public:
@@ -56,7 +67,7 @@ public:
         delete[] ucell.atoms[0].vel;
         delete[] ucell.atoms[0].mbl;
         ucell.atoms[0].tau = new ModuleBase::Vector3<double>[4];
-        ucell.atoms[0].tau_original = new ModuleBase::Vector3<double>[4];
+        ucell.atoms[0].dis = new ModuleBase::Vector3<double>[4];
         ucell.atoms[0].taud = new ModuleBase::Vector3<double>[4];
         ucell.atoms[0].vel = new ModuleBase::Vector3<double>[4];
         ucell.atoms[0].mbl = new ModuleBase::Vector3<int>[4];

@@ -55,7 +55,7 @@ void Input::Init(const std::string &fn)
     // NAME : Run::make_dir( dir name : OUT.suffix)
     //----------------------------------------------------------
     bool out_dir = false;
-    if(out_mat_hs2 || out_mat_r || out_mat_t || out_mat_dh) out_dir = true;
+    if(!out_app_flag && (out_mat_hs2 || out_mat_r || out_mat_t || out_mat_dh)) out_dir = true;
     ModuleBase::Global_File::make_dir_out(this->suffix,
                                           this->calculation,
                                           out_dir,
@@ -67,7 +67,7 @@ void Input::Init(const std::string &fn)
     time_t time_now = time(NULL);
     GlobalV::ofs_running << "                                                                                     "
                          << std::endl;
-    GlobalV::ofs_running << "                              ABACUS v3.1                                            "
+    GlobalV::ofs_running << "                              ABACUS v3.2                                            "
                          << std::endl << std::endl;
     GlobalV::ofs_running << "               Atomic-orbital Based Ab-initio Computation at UStc                    "
                          << std::endl << std::endl;
@@ -157,8 +157,9 @@ void Input::Default(void)
     cond_nche = 20;
     cond_dw = 0.1;
     cond_wcut = 10;
-    cond_wenlarge = 10;
-    cond_fwhm = 0.3;
+    cond_dt = 0.02;
+    cond_dtbatch = 4;
+    cond_fwhm = 0.4;
     cond_nonlocal = true;
     berry_phase = false;
     gdir = 3;
@@ -184,6 +185,7 @@ void Input::Default(void)
     search_pbc = true;
     symmetry = 0;
     init_vel = false;
+    ref_cell_factor = 1.0;
     symmetry_prec = 1.0e-5; // LiuXh add 2021-08-12, accuracy for symmetry
     cal_force = 0;
     dump_force = true;
@@ -300,7 +302,9 @@ void Input::Default(void)
     out_mat_hs2 = 0; // LiuXh add 2019-07-15
     out_mat_t = 0;
     out_hs2_interval = 1;
+    out_app_flag = true;
     out_mat_r = 0; // jingan add 2019-8-14
+    out_mat_dh = 0;
     out_wfc_lcao = false;
     out_alllog = false;
     dos_emin_ev = -15; //(ev)
@@ -376,7 +380,8 @@ void Input::Default(void)
     exx_cauchy_threshold = 1E-7;
     exx_c_grad_threshold = 1E-4;
     exx_v_grad_threshold = 1E-1;
-    exx_cauchy_grad_threshold = 1E-7;
+    exx_cauchy_force_threshold = 1E-7;
+    exx_cauchy_stress_threshold = 1E-7;
     exx_ccp_threshold = 1E-8;
     exx_ccp_rmesh_times = "default";
 
@@ -742,9 +747,13 @@ bool Input::Read(const std::string &fn)
         {
             read_value(ifs, cond_wcut);
         }
-        else if (strcmp("cond_wenlarge", word) == 0)
+        else if (strcmp("cond_dt", word) == 0)
         {
-            read_value(ifs, cond_wenlarge);
+            read_value(ifs, cond_dt);
+        }
+        else if (strcmp("cond_dtbatch", word) == 0)
+        {
+            read_value(ifs, cond_dtbatch);
         }
         else if (strcmp("cond_fwhm", word) == 0)
         {
@@ -835,6 +844,10 @@ bool Input::Read(const std::string &fn)
         else if (strcmp("init_vel", word) == 0)
         {
             read_bool(ifs, init_vel);
+        }
+        else if (strcmp("ref_cell_factor", word) == 0)
+        {
+            read_value(ifs, ref_cell_factor);
         }
         else if (strcmp("symmetry_prec", word) == 0) // LiuXh add 2021-08-12, accuracy for symmetry
         {
@@ -1238,6 +1251,10 @@ bool Input::Read(const std::string &fn)
         {
             read_value(ifs, out_hs2_interval);
         }
+        else if (strcmp("out_app_flag", word) == 0)
+        {
+            read_bool(ifs, out_app_flag);
+        }
         else if (strcmp("out_mat_r", word) == 0)
         {
             read_bool(ifs, out_mat_r);
@@ -1353,9 +1370,13 @@ bool Input::Read(const std::string &fn)
         {
             read_value(ifs, mdp.md_seed);
         }
+        else if (strcmp("md_prec_level", word) == 0)
+        {
+            read_value(ifs, mdp.md_prec_level);
+        }
         else if (strcmp("md_restart", word) == 0)
         {
-            read_value(ifs, mdp.md_restart);
+            read_bool(ifs, mdp.md_restart);
         }
         else if (strcmp("md_pmode", word) == 0)
         {
@@ -1814,9 +1835,13 @@ bool Input::Read(const std::string &fn)
         {
             read_value(ifs, exx_v_grad_threshold);
         }
-        else if (strcmp("exx_cauchy_grad_threshold", word) == 0)
+        else if (strcmp("exx_cauchy_force_threshold", word) == 0)
         {
-            read_value(ifs, exx_cauchy_grad_threshold);
+            read_value(ifs, exx_cauchy_force_threshold);
+        }
+        else if (strcmp("exx_cauchy_stress_threshold", word) == 0)
+        {
+            read_value(ifs, exx_cauchy_stress_threshold);
         }
         else if (strcmp("exx_ccp_threshold", word) == 0)
         {
@@ -2419,7 +2444,7 @@ void Input::Default_2(void) // jiyy add 2019-08-04
     if (exx_ccp_rmesh_times == "default")
     {
         if (dft_functional == "hf" || dft_functional == "pbe0" || dft_functional == "scan0")
-            exx_ccp_rmesh_times = "10";
+            exx_ccp_rmesh_times = "5";
         else if (dft_functional == "hse")
             exx_ccp_rmesh_times = "1.5";
     }
@@ -2556,6 +2581,12 @@ void Input::Default_2(void) // jiyy add 2019-08-04
         {
             cal_stress = 1;
         }
+
+        // md_prec_level only used in vc-md  liuyu 2023-03-27
+        if(mdp.md_type != 4 && (mdp.md_type != 1 || mdp.md_pmode == "none"))
+        {
+            mdp.md_prec_level = 0;
+        }
     }
     else if (calculation == "cell-relax") // mohan add 2011-11-04
     {
@@ -2642,6 +2673,15 @@ void Input::Default_2(void) // jiyy add 2019-08-04
 	{
 		bessel_descriptor_ecut = std::to_string(ecutwfc);
 	}
+
+    if (calculation != "md")
+    {
+        mdp.md_prec_level = 0;
+    }
+    if (mdp.md_prec_level != 1)
+    {
+        ref_cell_factor = 1.0;
+    }
 }
 #ifdef __MPI
 void Input::Bcast()
@@ -2682,7 +2722,8 @@ void Input::Bcast()
     Parallel_Common::bcast_int(cond_nche);
     Parallel_Common::bcast_double(cond_dw);
     Parallel_Common::bcast_double(cond_wcut);
-    Parallel_Common::bcast_int(cond_wenlarge);
+    Parallel_Common::bcast_double(cond_dt);
+    Parallel_Common::bcast_int(cond_dtbatch);
     Parallel_Common::bcast_double(cond_fwhm);
     Parallel_Common::bcast_bool(cond_nonlocal);
     Parallel_Common::bcast_int(bndpar);
@@ -2707,6 +2748,7 @@ void Input::Bcast()
     Parallel_Common::bcast_double(search_radius);
     Parallel_Common::bcast_int(symmetry);
     Parallel_Common::bcast_bool(init_vel); // liuyu 2021-07-14
+    Parallel_Common::bcast_double(ref_cell_factor);
     Parallel_Common::bcast_double(symmetry_prec); // LiuXh add 2021-08-12, accuracy for symmetry
     Parallel_Common::bcast_bool(cal_force);
     Parallel_Common::bcast_bool(dump_force);
@@ -2815,6 +2857,8 @@ void Input::Bcast()
     Parallel_Common::bcast_bool(out_wfc_lcao);
     Parallel_Common::bcast_bool(out_alllog);
     Parallel_Common::bcast_bool(out_element_info);
+    Parallel_Common::bcast_bool(out_app_flag);
+    Parallel_Common::bcast_int(out_hs2_interval);
 
     Parallel_Common::bcast_double(dos_emin_ev);
     Parallel_Common::bcast_double(dos_emax_ev);
@@ -2852,6 +2896,7 @@ void Input::Bcast()
     Parallel_Common::bcast_int(mdp.md_dumpfreq);
     Parallel_Common::bcast_int(mdp.md_restartfreq);
     Parallel_Common::bcast_int(mdp.md_seed);
+    Parallel_Common::bcast_int(mdp.md_prec_level);
     Parallel_Common::bcast_bool(mdp.md_restart);
     Parallel_Common::bcast_double(mdp.lj_rcut);
     Parallel_Common::bcast_double(mdp.lj_epsilon);
@@ -2985,7 +3030,8 @@ void Input::Bcast()
     Parallel_Common::bcast_double(exx_cauchy_threshold);
     Parallel_Common::bcast_double(exx_c_grad_threshold);
     Parallel_Common::bcast_double(exx_v_grad_threshold);
-    Parallel_Common::bcast_double(exx_cauchy_grad_threshold);
+    Parallel_Common::bcast_double(exx_cauchy_force_threshold);
+    Parallel_Common::bcast_double(exx_cauchy_stress_threshold);
     Parallel_Common::bcast_double(exx_ccp_threshold);
     Parallel_Common::bcast_string(exx_ccp_rmesh_times);
     Parallel_Common::bcast_string(exx_distribute_type);
@@ -3120,6 +3166,11 @@ void Input::Check(void)
     if (gate_flag && efield_flag && !dip_cor_flag)
     {
         ModuleBase::WARNING_QUIT("Input", "gate field cannot be used with efield if dip_cor_flag=false !");
+    }
+
+    if(ref_cell_factor < 1.0)
+    {
+        ModuleBase::WARNING_QUIT("Input", "ref_cell_factor must not be less than 1.0");
     }
 
     //----------------------------------------------------------

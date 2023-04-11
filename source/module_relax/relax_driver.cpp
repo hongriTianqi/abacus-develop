@@ -16,7 +16,7 @@ void Relax_Driver::relax_driver(ModuleESolver::ESolver *p_esolver)
 		}
 		else
 		{
-			rl.init_relax(GlobalC::ucell.nat);
+			rl.init_relax(GlobalC::ucell.nat, Lattice_Change_Basic::out_stru);
 		}
 	}
 
@@ -86,6 +86,6 @@ void Relax_Driver::relax_driver(ModuleESolver::ESolver *p_esolver)
 		std::cout << " ION DYNAMICS FINISHED :)" << std::endl;
 	}
 
-	ModuleBase::timer::tick("Ions","opt_ions_pw");
+	ModuleBase::timer::tick("Ions","opt_ions");
     return;
 }

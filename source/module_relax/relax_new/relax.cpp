@@ -3,16 +3,16 @@
 #include "module_hamilt_pw/hamilt_pwdft/global.h"
 #include "module_base/matrix3.h"
 #include "../relax_old/ions_move_basic.h"
-#include "module_relax/variable_cell.h"
 #include "module_base/tool_title.h"
 #include "module_base/parallel_common.h"
 
-void Relax::init_relax(const int nat_in)
+void Relax::init_relax(const int nat_in, const int out_stru_in)
 {
     ModuleBase::TITLE("Relax","init_relax");
 
     //set some initial conditions / constants
     nat = nat_in;
+    out_stru = out_stru_in;
     istep = 0;
     cg_step = 0;
     ltrial = false;
@@ -594,7 +594,7 @@ void Relax::move_cell_ions(const bool is_new_dir)
     // =================================================================
     std::stringstream ss;
     ss << GlobalV::global_out_dir << "STRU_ION";
-    if (Lattice_Change_Basic::out_stru == 1)
+    if (out_stru == 1)
     {
         ss << istep;
         istep ++;
@@ -611,26 +611,9 @@ void Relax::move_cell_ions(const bool is_new_dir)
     //at the beginning of the next step (namely 'beforescf'),
     //but before we have a better organized Esolver
     //I do not want to change it
-
-    // This part is needless for lj and dp potential, so I do a temporary modification here.
-    // liuyu modify 2023-01-04
-    if(GlobalV::ESOLVER_TYPE == "lj" || GlobalV::ESOLVER_TYPE == "dp")
+    if(if_cell_moves)
     {
-        if(if_cell_moves)
-        {
-            GlobalC::ucell.setup_cell_after_vc(GlobalV::ofs_running);
-            ModuleBase::GlobalFunc::DONE(GlobalV::ofs_running, "SETUP UNITCELL");
-        }
-    }
-    else
-    {
-        if(if_cell_moves)
-        {
-            Variable_Cell::init_after_vc();    //variable cell
-        }
-        else
-        {
-            GlobalC::sf.setup_structure_factor(&GlobalC::ucell,GlobalC::rhopw);
-        }
+        GlobalC::ucell.setup_cell_after_vc(GlobalV::ofs_running);
+        ModuleBase::GlobalFunc::DONE(GlobalV::ofs_running, "SETUP UNITCELL");
     }
 }

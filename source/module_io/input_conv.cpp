@@ -19,7 +19,7 @@
 #include "module_hamilt_lcao/hamilt_lcaodft/local_orbital_charge.h"
 #include "module_hamilt_lcao/module_dftu/dftu.h"
 #include "module_hamilt_lcao/module_tddft/ELEC_evolve.h"
-#include "module_orbital/ORB_read.h"
+#include "module_basis/module_ao/ORB_read.h"
 #endif
 #include "module_base/timer.h"
 #include "module_elecstate/elecstate_lcao.h"
@@ -31,7 +31,6 @@
 template <typename T> void Input_Conv::parse_expression(const std::string &fn, std::vector<T> &vec)
 {
     ModuleBase::TITLE("Input_Conv", "parse_expression");
-    ModuleBase::timer::tick("Input_Conv", "parse_expression");
     int count = 0;
     std::string pattern("([0-9]+\\*[0-9.]+|[0-9,.]+)");
     std::vector<std::string> str;
@@ -265,11 +264,6 @@ void Input_Conv::Convert(void)
         }
     }
 #endif
-    /*
-#ifndef __CMD
-    GlobalC::ucell.n_mag_at=INPUT.n_mag_at;
-    GlobalC::ucell.atom_mag=INPUT.atom_mag;
-#endif*/
     //--------------------------------------------
     // added by zhengdy-soc
     //--------------------------------------------
@@ -368,9 +362,7 @@ void Input_Conv::Convert(void)
     if (INPUT.restart_save)
     {
         GlobalC::restart.folder = GlobalV::global_readin_dir + "restart/";
-        const std::string command0 = "test -d " + GlobalC::restart.folder + " || mkdir " + GlobalC::restart.folder;
-        if (GlobalV::MY_RANK == 0)
-            system(command0.c_str());
+        ModuleBase::GlobalFunc::MAKE_DIR(GlobalC::restart.folder);
         if (INPUT.dft_functional == "hf" || INPUT.dft_functional == "pbe0" || INPUT.dft_functional == "hse"
             || INPUT.dft_functional == "opt_orb" || INPUT.dft_functional == "scan0")
         {
@@ -451,7 +443,8 @@ void Input_Conv::Convert(void)
         GlobalC::exx_info.info_ri.cauchy_threshold = INPUT.exx_cauchy_threshold;
         GlobalC::exx_info.info_ri.C_grad_threshold = INPUT.exx_c_grad_threshold;
         GlobalC::exx_info.info_ri.V_grad_threshold = INPUT.exx_v_grad_threshold;
-        GlobalC::exx_info.info_ri.cauchy_grad_threshold = INPUT.exx_cauchy_grad_threshold;
+        GlobalC::exx_info.info_ri.cauchy_force_threshold = INPUT.exx_cauchy_force_threshold;
+        GlobalC::exx_info.info_ri.cauchy_stress_threshold = INPUT.exx_cauchy_stress_threshold;
         GlobalC::exx_info.info_ri.ccp_threshold = INPUT.exx_ccp_threshold;
         GlobalC::exx_info.info_ri.ccp_rmesh_times = std::stod(INPUT.exx_ccp_rmesh_times);
 
@@ -501,6 +494,7 @@ void Input_Conv::Convert(void)
     GlobalV::SCF_NMAX = INPUT.scf_nmax;
     GlobalV::RELAX_NMAX = INPUT.relax_nmax;
     GlobalV::MD_NSTEP = INPUT.mdp.md_nstep;
+    GlobalV::md_prec_level = INPUT.mdp.md_prec_level;
 
     //----------------------------------------------------------
     // wavefunction / charge / potential / (2/4)
@@ -517,6 +511,7 @@ void Input_Conv::Convert(void)
     GlobalC::en.out_dos = INPUT.out_dos;
     GlobalC::en.out_band = INPUT.out_band;
     GlobalC::en.out_proj_band = INPUT.out_proj_band;
+    GlobalV::out_app_flag = INPUT.out_app_flag;
 
     GlobalV::out_bandgap = INPUT.out_bandgap; // QO added for bandgap printing
 #ifdef __LCAO

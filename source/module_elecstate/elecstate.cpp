@@ -222,14 +222,18 @@ void ElecState::calEBand()
 {
     ModuleBase::TITLE("ElecState", "calEBand");
     // calculate ebands using wg and ekb
-    this->eband = 0.0;
+    double eband = 0.0;
+#ifdef _OPENMP
+#pragma omp parallel for collapse(2) reduction(+:eband)
+#endif
     for (int ik = 0; ik < this->ekb.nr; ++ik)
     {
         for (int ibnd = 0; ibnd < this->ekb.nc; ibnd++)
         {
-            this->eband += this->ekb(ik, ibnd) * this->wg(ik, ibnd);
+            eband += this->ekb(ik, ibnd) * this->wg(ik, ibnd);
         }
     }
+    this->eband = eband;
     if (GlobalV::KPAR != 1 && GlobalV::ESOLVER_TYPE != "sdft")
     {
         //==================================
@@ -378,7 +382,7 @@ void ElecState::init_scf(const int istep, const ModuleBase::ComplexMatrix& struc
     // (2) other effective potentials need charge density,
     // choose charge density from ionic step 0.
     //--------------------------------------------------------------------
-    if (istep == 0)
+    if (istep == 0 || GlobalV::md_prec_level == 2)
     {
         this->charge->init_rho();
     }

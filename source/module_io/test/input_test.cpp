@@ -57,8 +57,9 @@ TEST_F(InputTest, Default)
         EXPECT_EQ(INPUT.cond_nche,20);
         EXPECT_DOUBLE_EQ(INPUT.cond_dw,0.1);
         EXPECT_DOUBLE_EQ(INPUT.cond_wcut,10);
-        EXPECT_EQ(INPUT.cond_wenlarge,10);
-        EXPECT_DOUBLE_EQ(INPUT.cond_fwhm,0.3);
+        EXPECT_EQ(INPUT.cond_dt,0.02);
+		EXPECT_EQ(INPUT.cond_dtbatch,4);
+        EXPECT_DOUBLE_EQ(INPUT.cond_fwhm,0.4);
         EXPECT_TRUE(INPUT.cond_nonlocal);
         EXPECT_FALSE(INPUT.berry_phase);
         EXPECT_EQ(INPUT.gdir,3);
@@ -78,6 +79,7 @@ TEST_F(InputTest, Default)
         EXPECT_TRUE(INPUT.search_pbc);
         EXPECT_EQ(INPUT.symmetry,0);
         EXPECT_FALSE(INPUT.init_vel);
+        EXPECT_DOUBLE_EQ(INPUT.ref_cell_factor,1.0);
         EXPECT_DOUBLE_EQ(INPUT.symmetry_prec,1.0e-5);
         EXPECT_EQ(INPUT.cal_force,0);
         EXPECT_TRUE(INPUT.dump_force);
@@ -163,6 +165,7 @@ TEST_F(InputTest, Default)
         EXPECT_EQ(INPUT.out_mat_hs,0);
         EXPECT_EQ(INPUT.out_mat_hs2,0);
         EXPECT_EQ(INPUT.out_hs2_interval,1);
+        EXPECT_EQ(INPUT.out_app_flag,1);
         EXPECT_EQ(INPUT.out_mat_r,0);
         EXPECT_FALSE(INPUT.out_wfc_lcao);
         EXPECT_FALSE(INPUT.out_alllog);
@@ -234,7 +237,8 @@ TEST_F(InputTest, Default)
         EXPECT_DOUBLE_EQ(INPUT.exx_cauchy_threshold,1E-7);
         EXPECT_DOUBLE_EQ(INPUT.exx_c_grad_threshold,1E-4);
         EXPECT_DOUBLE_EQ(INPUT.exx_v_grad_threshold,1E-1);
-        EXPECT_DOUBLE_EQ(INPUT.exx_cauchy_grad_threshold,1E-7);
+        EXPECT_DOUBLE_EQ(INPUT.exx_cauchy_force_threshold,1E-7);
+        EXPECT_DOUBLE_EQ(INPUT.exx_cauchy_stress_threshold,1E-7);
         EXPECT_DOUBLE_EQ(INPUT.exx_ccp_threshold,1E-8);
         EXPECT_EQ(INPUT.exx_ccp_rmesh_times,"default");
         EXPECT_EQ(INPUT.exx_distribute_type,"htime");
@@ -333,6 +337,7 @@ TEST_F(InputTest, Default)
 	EXPECT_EQ(INPUT.mdp.md_restart,0);
 	EXPECT_EQ(INPUT.mdp.md_restartfreq,5);
 	EXPECT_EQ(INPUT.mdp.md_seed,-1);
+    EXPECT_EQ(INPUT.mdp.md_prec_level,0);
 	EXPECT_EQ(INPUT.mdp.md_tchain,1);
 	EXPECT_DOUBLE_EQ(INPUT.mdp.md_tfirst,-1);
 	EXPECT_DOUBLE_EQ(INPUT.mdp.md_tfreq,0);
@@ -351,10 +356,9 @@ TEST_F(InputTest, Default)
 TEST_F(InputTest, Read)
 {
 	std::string input_file = "./support/INPUT";
-	GlobalV::stru_file = "./support/STRU";
 	INPUT.Read(input_file);
 	EXPECT_EQ(INPUT.suffix,"autotest");
-	EXPECT_EQ(INPUT.stru_file,"STRU");
+	EXPECT_EQ(INPUT.stru_file,"./support/STRU");
 	EXPECT_EQ(INPUT.kpoint_file,"KPT");
 	EXPECT_EQ(INPUT.pseudo_dir,"../../PP_ORB/");
 	EXPECT_EQ(INPUT.orbital_dir,"../../PP_ORB/");
@@ -384,7 +388,8 @@ TEST_F(InputTest, Read)
         EXPECT_EQ(INPUT.cond_nche,20);
         EXPECT_DOUBLE_EQ(INPUT.cond_dw,0.1);
         EXPECT_DOUBLE_EQ(INPUT.cond_wcut,10);
-        EXPECT_EQ(INPUT.cond_wenlarge,10);
+        EXPECT_EQ(INPUT.cond_dt,0.07);
+		EXPECT_EQ(INPUT.cond_dtbatch,2);
         EXPECT_DOUBLE_EQ(INPUT.cond_fwhm,0.3);
         EXPECT_TRUE(INPUT.cond_nonlocal);
         EXPECT_FALSE(INPUT.berry_phase);
@@ -494,6 +499,7 @@ TEST_F(InputTest, Read)
         EXPECT_EQ(INPUT.out_mat_hs,0);
         EXPECT_EQ(INPUT.out_mat_hs2,0);
         EXPECT_EQ(INPUT.out_hs2_interval,1);
+        EXPECT_EQ(INPUT.out_app_flag,0);
         EXPECT_EQ(INPUT.out_mat_r,0);
         EXPECT_FALSE(INPUT.out_wfc_lcao);
         EXPECT_FALSE(INPUT.out_alllog);
@@ -564,7 +570,8 @@ TEST_F(InputTest, Read)
         EXPECT_DOUBLE_EQ(INPUT.exx_cauchy_threshold,0);
         EXPECT_DOUBLE_EQ(INPUT.exx_c_grad_threshold,0);
         EXPECT_DOUBLE_EQ(INPUT.exx_v_grad_threshold,0);
-        EXPECT_DOUBLE_EQ(INPUT.exx_cauchy_grad_threshold,0);
+        EXPECT_DOUBLE_EQ(INPUT.exx_cauchy_force_threshold,0);
+        EXPECT_DOUBLE_EQ(INPUT.exx_cauchy_stress_threshold,0);
         EXPECT_DOUBLE_EQ(INPUT.exx_ccp_threshold,1E-8);
         EXPECT_EQ(INPUT.exx_ccp_rmesh_times,"default");
         EXPECT_EQ(INPUT.exx_distribute_type,"htime");
@@ -666,6 +673,8 @@ TEST_F(InputTest, Read)
 	EXPECT_EQ(INPUT.mdp.md_restart,0);
 	EXPECT_EQ(INPUT.mdp.md_restartfreq,5);
 	EXPECT_EQ(INPUT.mdp.md_seed,-1);
+    EXPECT_EQ(INPUT.mdp.md_prec_level,1);
+    EXPECT_DOUBLE_EQ(INPUT.ref_cell_factor,1.2);
 	EXPECT_EQ(INPUT.mdp.md_tchain,1);
 	EXPECT_DOUBLE_EQ(INPUT.mdp.md_tfirst,-1);
 	EXPECT_DOUBLE_EQ(INPUT.mdp.md_tfreq,0);
@@ -757,7 +766,7 @@ TEST_F(InputTest, Default_2)
 	EXPECT_EQ(INPUT.vdw_cutoff_radius,"95");
 	EXPECT_EQ(INPUT.exx_hybrid_alpha,"1");
 	EXPECT_EQ(INPUT.exx_real_number,"0");
-        EXPECT_EQ(INPUT.exx_ccp_rmesh_times,"10");
+        EXPECT_EQ(INPUT.exx_ccp_rmesh_times,"5");
 	EXPECT_EQ(INPUT.diago_proc,1);
 	EXPECT_EQ(INPUT.mem_saver,0);
 	EXPECT_EQ(INPUT.cal_force,1);

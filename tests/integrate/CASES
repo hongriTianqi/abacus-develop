@@ -42,6 +42,7 @@
 108_PW_RE
 108_PW_RE_MB
 108_PW_RE_MG
+108_PW_RE_NEW
 109_PW_CR
 109_PW_CR_fix_a
 109_PW_CR_fix_ab
@@ -65,6 +66,7 @@
 115_PW_sol_H2O
 116_PW_scan_Si2
 116_PW_scan_Si2_nspin2
+117_PW_out_pot
 120_PW_KP_MD_MSST
 120_PW_KP_MD_NHC
 121_PW_KPAR
@@ -142,6 +144,7 @@
 213_NO_mulliken
 215_NO_sol_H2
 216_NO_scan_Si2
+217_NO_out_pot
 220_NO_KP_MD_MSST
 220_NO_KP_MD_NHC
 #230_NO_KP_MD_TD
