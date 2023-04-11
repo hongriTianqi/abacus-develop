@@ -182,7 +182,7 @@ var searchData=
   ['build_5fnonlocal_5fbeta_5fnew_410',['build_Nonlocal_beta_new',['../classLCAO__gen__fixedH.html#a3305c82406cf05cc81ee5d46241e75a8',1,'LCAO_gen_fixedH']]],
   ['build_5fnonlocal_5fmu_5fnew_411',['build_Nonlocal_mu_new',['../classLCAO__gen__fixedH.html#a46576390147c76ff8c30146fe8235d4f',1,'LCAO_gen_fixedH']]],
   ['build_5fpsialpha_412',['build_psialpha',['../classLCAO__Deepks.html#aee14084577fda72d4a2ad1bc6f167b6f',1,'LCAO_Deepks']]],
-  ['build_5fst_5fnew_413',['build_ST_new',['../classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b',1,'LCAO_gen_fixedH']]],
+  ['build_5fst_5fnew_413',['build_ST_new',['../classLCAO__gen__fixedH.html#a13bc49e3cbb3ad3b12f77118896b7438',1,'LCAO_gen_fixedH']]],
   ['build_5fwf_414',['build_wf',['../classwinput.html#ac0a52ab48ea0732c415feee6d7203110',1,'winput']]],
   ['bvec_415',['bvec',['../classelecstate_1_1Efield.html#a9f62065dc2060504843df4943dba8b7c',1,'elecstate::Efield']]],
   ['bx_416',['bx',['../classModulePW_1_1PW__Basis__Big.html#a14766bcc338db2bc6f05e4f3ab9e7253',1,'ModulePW::PW_Basis_Big::bx()'],['../classModulePW_1_1PW__Basis__K__Big.html#a11f4ffc929bcd05a941737e45c385a00',1,'ModulePW::PW_Basis_K_Big::bx()'],['../classGrid__MeshCell.html#a5cc7c204b4e935af04ea633f1abd1f0e',1,'Grid_MeshCell::bx()'],['../classInput.html#acf618fb6adf25de0b2f5fcd15a1b56d1',1,'Input::bx()']]],

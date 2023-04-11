@@ -95,8 +95,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab8ddad5635d9142ae62e5be91efa1f32"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a156176dd6b68c606f63ca6ca7ea4965d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a156176dd6b68c606f63ca6ca7ea4965d">divide_HS_in_frag</a> (const bool isGamma, <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
 <tr class="separator:a156176dd6b68c606f63ca6ca7ea4965d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a5c2aaad0df58ba23691418cbee1d18"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a8a5c2aaad0df58ba23691418cbee1d18">folding_fixedH</a> (const int &amp;ik)</td></tr>
-<tr class="separator:a8a5c2aaad0df58ba23691418cbee1d18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ac3d5578d57d8b7c8517c6f65e1d05a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a6ac3d5578d57d8b7c8517c6f65e1d05a">folding_fixedH</a> (const int &amp;ik, bool cal_syns=false)</td></tr>
+<tr class="separator:a6ac3d5578d57d8b7c8517c6f65e1d05a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d67cc481b3a17dd999acbe8ea274d91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a8d67cc481b3a17dd999acbe8ea274d91">allocate_HS_k</a> (const long &amp;nloc)</td></tr>
 <tr class="separator:a8d67cc481b3a17dd999acbe8ea274d91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9a13e2a1807a0532a336a40221c16268"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__Matrix.html#a9a13e2a1807a0532a336a40221c16268">set_HSgamma</a> (const int &amp;iw1_all, const int &amp;iw2_all, const double &amp;v, const char &amp;dtype, double *HSloc)</td></tr>
@@ -794,8 +794,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a8a5c2aaad0df58ba23691418cbee1d18"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a5c2aaad0df58ba23691418cbee1d18">&#9670;&nbsp;</a></span>folding_fixedH()</h2>
+<a id="a6ac3d5578d57d8b7c8517c6f65e1d05a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ac3d5578d57d8b7c8517c6f65e1d05a">&#9670;&nbsp;</a></span>folding_fixedH()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -804,16 +804,26 @@ Here is the caller graph for this function:</div>
           <td class="memname">void LCAO_Matrix::folding_fixedH </td>
           <td>(</td>
           <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>ik</em></td><td>)</td>
+          <td class="paramname"><em>ik</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cal_syns</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLCAO__Matrix_a8a5c2aaad0df58ba23691418cbee1d18_cgraph.png" border="0" usemap="#classLCAO__Matrix_a8a5c2aaad0df58ba23691418cbee1d18_cgraph" alt=""/></div>
-<map name="classLCAO__Matrix_a8a5c2aaad0df58ba23691418cbee1d18_cgraph" id="classLCAO__Matrix_a8a5c2aaad0df58ba23691418cbee1d18_cgraph">
+<div class="center"><img src="classLCAO__Matrix_a6ac3d5578d57d8b7c8517c6f65e1d05a_cgraph.png" border="0" usemap="#classLCAO__Matrix_a6ac3d5578d57d8b7c8517c6f65e1d05a_cgraph" alt=""/></div>
+<map name="classLCAO__Matrix_a6ac3d5578d57d8b7c8517c6f65e1d05a_cgraph" id="classLCAO__Matrix_a6ac3d5578d57d8b7c8517c6f65e1d05a_cgraph">
 <area shape="rect" title=" " alt="" coords="5,207,164,248"/>
 <area shape="rect" href="namespaceModuleBase.html#a04d6e9eea9a131d0ccf54a74c65c0f71" title=" " alt="" coords="212,5,407,47"/>
 <area shape="rect" href="classGrid__Driver.html#a13083b6b44127bd3400f46cf120bb3ea" title=" " alt="" coords="223,71,395,98"/>
@@ -829,14 +839,18 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLCAO__Matrix_a8a5c2aaad0df58ba23691418cbee1d18_icgraph.png" border="0" usemap="#classLCAO__Matrix_a8a5c2aaad0df58ba23691418cbee1d18_icgraph" alt=""/></div>
-<map name="classLCAO__Matrix_a8a5c2aaad0df58ba23691418cbee1d18_icgraph" id="classLCAO__Matrix_a8a5c2aaad0df58ba23691418cbee1d18_icgraph">
-<area shape="rect" title=" " alt="" coords="672,64,831,105"/>
-<area shape="rect" href="classMulliken__Charge.html#ab81dc26ee2f1fe7feb54aeccc629b06d" title=" " alt="" coords="467,5,624,47"/>
-<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="229,71,419,98"/>
-<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="467,123,624,164"/>
-<area shape="rect" href="classMulliken__Charge.html#a1d26609b66f7380171f6dcb54bd11836" title=" " alt="" coords="245,5,403,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,64,181,105"/>
+<div class="center"><img src="classLCAO__Matrix_a6ac3d5578d57d8b7c8517c6f65e1d05a_icgraph.png" border="0" usemap="#classLCAO__Matrix_a6ac3d5578d57d8b7c8517c6f65e1d05a_icgraph" alt=""/></div>
+<map name="classLCAO__Matrix_a6ac3d5578d57d8b7c8517c6f65e1d05a_icgraph" id="classLCAO__Matrix_a6ac3d5578d57d8b7c8517c6f65e1d05a_icgraph">
+<area shape="rect" title=" " alt="" coords="921,93,1080,135"/>
+<area shape="rect" href="classForce__LCAO__k.html#a80c8caa156eda5d990074791bcb3a42d" title=" " alt="" coords="684,13,873,39"/>
+<area shape="rect" href="classMulliken__Charge.html#ab81dc26ee2f1fe7feb54aeccc629b06d" title=" " alt="" coords="700,64,857,105"/>
+<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="447,130,636,157"/>
+<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="700,181,857,223"/>
+<area shape="rect" href="classForce__LCAO__k.html#ae2c554f465bc6b480664f9cf3fbd9919" title=" " alt="" coords="454,13,629,39"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#a8b6e20d17ff9f86cb6560d007804cd08" title=" " alt="" coords="208,5,399,47"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#a5c8c7969c28fabd7ead07d20e8bc3c4f" title=" " alt="" coords="5,5,160,47"/>
+<area shape="rect" href="classMulliken__Charge.html#a1d26609b66f7380171f6dcb54bd11836" title=" " alt="" coords="462,64,621,105"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="215,123,391,164"/>
 </map>
 </div>
 
@@ -1046,7 +1060,7 @@ Here is the caller graph for this function:</div>
 <map name="classLCAO__Matrix_ad68a244e6299d60082aefe5d8514c1b6_icgraph" id="classLCAO__Matrix_ad68a244e6299d60082aefe5d8514c1b6_icgraph">
 <area shape="rect" title=" " alt="" coords="724,167,899,194"/>
 <area shape="rect" href="classLCAO__gen__fixedH.html#a46576390147c76ff8c30146fe8235d4f" title=" " alt="" coords="500,127,676,168"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b" title=" " alt="" coords="500,192,676,233"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a13bc49e3cbb3ad3b12f77118896b7438" title=" " alt="" coords="500,192,676,233"/>
 <area shape="rect" href="classForce__LCAO__gamma.html#a6a2ac4aa03c2f6428d4ed4263eed309f" title=" " alt="" coords="223,71,439,112"/>
 <area shape="rect" href="classForce__LCAO__k.html#a80c8caa156eda5d990074791bcb3a42d" title=" " alt="" coords="237,137,426,163"/>
 <area shape="rect" href="classLCAO__Hamilt.html#a92bcfc332b2966a939d9e5b37adba655" title=" " alt="" coords="244,188,419,229"/>
@@ -1224,7 +1238,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="namespaceRI__2D__Comm.html#a027958693a4769f1aac8094eb17faf01" title=" " alt="" coords="269,13,452,39"/>
 <area shape="rect" href="classLCAO__gen__fixedH.html#a3305c82406cf05cc81ee5d46241e75a8" title=" " alt="" coords="273,64,449,105"/>
 <area shape="rect" href="classLCAO__gen__fixedH.html#a46576390147c76ff8c30146fe8235d4f" title=" " alt="" coords="273,129,449,171"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b" title=" " alt="" coords="273,195,449,236"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a13bc49e3cbb3ad3b12f77118896b7438" title=" " alt="" coords="273,195,449,236"/>
 <area shape="rect" href="classGint__Gamma.html#ad9121ea4e7f1a332a8d36952ae95c14d" title=" " alt="" coords="281,260,441,301"/>
 <area shape="rect" href="classhamilt_1_1OperatorEXX.html#ab4e0293992f563879322c7664cf99fed" title=" " alt="" coords="36,5,191,47"/>
 <area shape="rect" href="classLCAO__gen__fixedH.html#a7133d01461b3583ea89d9b8d824e1be7" title=" " alt="" coords="12,71,215,112"/>
@@ -1371,7 +1385,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classLCAO__Matrix_aad6705daef68bfb57456b468ca986ca2_icgraph.png" border="0" usemap="#classLCAO__Matrix_aad6705daef68bfb57456b468ca986ca2_icgraph" alt=""/></div>
 <map name="classLCAO__Matrix_aad6705daef68bfb57456b468ca986ca2_icgraph" id="classLCAO__Matrix_aad6705daef68bfb57456b468ca986ca2_icgraph">
 <area shape="rect" title=" " alt="" coords="756,210,936,237"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b" title=" " alt="" coords="532,203,708,244"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a13bc49e3cbb3ad3b12f77118896b7438" title=" " alt="" coords="532,203,708,244"/>
 <area shape="rect" href="classForce__LCAO__gamma.html#a6a2ac4aa03c2f6428d4ed4263eed309f" title=" " alt="" coords="255,5,471,47"/>
 <area shape="rect" href="classForce__LCAO__k.html#a80c8caa156eda5d990074791bcb3a42d" title=" " alt="" coords="269,71,458,98"/>
 <area shape="rect" href="classMulliken__Charge.html#ab81dc26ee2f1fe7feb54aeccc629b06d" title=" " alt="" coords="21,157,179,199"/>
@@ -1480,8 +1494,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLCAO__Matrix_a8a164f1fc1583bdc07a3bcba929659f5_icgraph.png" border="0" usemap="#classLCAO__Matrix_a8a164f1fc1583bdc07a3bcba929659f5_icgraph" alt=""/></div>
 <map name="classLCAO__Matrix_a8a164f1fc1583bdc07a3bcba929659f5_icgraph" id="classLCAO__Matrix_a8a164f1fc1583bdc07a3bcba929659f5_icgraph">
-<area shape="rect" title=" " alt="" coords="204,5,353,47"/>
-<area shape="rect" href="classhamilt_1_1HamiltLCAO.html#a633d50610a09a6b27036abc5e02ff04d" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" title=" " alt="" coords="1408,39,1557,80"/>
+<area shape="rect" href="classForce__LCAO__gamma.html#a6a2ac4aa03c2f6428d4ed4263eed309f" title=" " alt="" coords="1144,5,1360,47"/>
+<area shape="rect" href="classhamilt_1_1HamiltLCAO.html#a633d50610a09a6b27036abc5e02ff04d" title=" " alt="" coords="1177,71,1327,112"/>
+<area shape="rect" href="classForce__LCAO__gamma.html#a1f1d4ecc486d17e6201f5a8a4d29942b" title=" " alt="" coords="895,5,1096,47"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#a8b6e20d17ff9f86cb6560d007804cd08" title=" " alt="" coords="656,5,847,47"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#a5c8c7969c28fabd7ead07d20e8bc3c4f" title=" " alt="" coords="453,5,608,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a716b45c5166cc186febb12e770ec90ba" title=" " alt="" coords="229,5,405,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad9ee1f7371488c9b715fe71662cd1456" title=" " alt="" coords="5,5,181,47"/>
 </map>
 </div>
 
@@ -1518,12 +1538,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLCAO__Matrix_adb530cc2aaa747493979072a25e61e22_icgraph.png" border="0" usemap="#classLCAO__Matrix_adb530cc2aaa747493979072a25e61e22_icgraph" alt=""/></div>
 <map name="classLCAO__Matrix_adb530cc2aaa747493979072a25e61e22_icgraph" id="classLCAO__Matrix_adb530cc2aaa747493979072a25e61e22_icgraph">
-<area shape="rect" title=" " alt="" coords="672,71,855,98"/>
-<area shape="rect" href="classMulliken__Charge.html#ab81dc26ee2f1fe7feb54aeccc629b06d" title=" " alt="" coords="467,5,624,47"/>
-<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="229,71,419,98"/>
-<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="467,123,624,164"/>
-<area shape="rect" href="classMulliken__Charge.html#a1d26609b66f7380171f6dcb54bd11836" title=" " alt="" coords="245,5,403,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,64,181,105"/>
+<area shape="rect" title=" " alt="" coords="921,101,1104,127"/>
+<area shape="rect" href="classForce__LCAO__k.html#a80c8caa156eda5d990074791bcb3a42d" title=" " alt="" coords="684,13,873,39"/>
+<area shape="rect" href="classMulliken__Charge.html#ab81dc26ee2f1fe7feb54aeccc629b06d" title=" " alt="" coords="700,64,857,105"/>
+<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="447,130,636,157"/>
+<area shape="rect" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97" title=" " alt="" coords="700,181,857,223"/>
+<area shape="rect" href="classForce__LCAO__k.html#ae2c554f465bc6b480664f9cf3fbd9919" title=" " alt="" coords="454,13,629,39"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#a8b6e20d17ff9f86cb6560d007804cd08" title=" " alt="" coords="208,5,399,47"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#a5c8c7969c28fabd7ead07d20e8bc3c4f" title=" " alt="" coords="5,5,160,47"/>
+<area shape="rect" href="classMulliken__Charge.html#a1d26609b66f7380171f6dcb54bd11836" title=" " alt="" coords="462,64,621,105"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="215,123,391,164"/>
 </map>
 </div>
 

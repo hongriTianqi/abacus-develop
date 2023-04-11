@@ -1,12 +1,12 @@
 <map id="module_basis/module_pw/fft.h" name="module_basis/module_pw/fft.h">
-<area shape="rect" id="node1" title=" " alt="" coords="677,5,842,47"/>
-<area shape="rect" id="node2" href="$pw__basis_8h.html" title=" " alt="" coords="455,95,621,136"/>
-<area shape="rect" id="node9" href="$pw__transform_8cpp.html" title=" " alt="" coords="776,184,945,225"/>
-<area shape="rect" id="node10" href="$fft_8cpp.html" title=" " alt="" coords="797,95,962,136"/>
-<area shape="rect" id="node3" href="$charge_8h.html" title=" " alt="" coords="509,184,700,225"/>
-<area shape="rect" id="node4" href="$pot__base_8h.html" title=" " alt="" coords="27,273,233,315"/>
-<area shape="rect" id="node5" href="$forces_8h.html" title=" " alt="" coords="387,273,579,315"/>
-<area shape="rect" id="node6" href="$stress__func_8h.html" title=" " alt="" coords="629,273,821,315"/>
-<area shape="rect" id="node7" href="$VL__in__pw_8h.html" title=" " alt="" coords="26,184,218,225"/>
-<area shape="rect" id="node8" href="$structure__factor_8h.html" title=" " alt="" coords="242,184,434,225"/>
+<area shape="rect" id="node1" title=" " alt="" coords="737,5,902,47"/>
+<area shape="rect" id="node2" href="$pw__basis_8h.html" title=" " alt="" coords="522,95,687,136"/>
+<area shape="rect" id="node8" href="$pw__transform_8cpp.html" title=" " alt="" coords="709,191,879,233"/>
+<area shape="rect" id="node9" href="$pw__basis__test_8cpp.html" title=" " alt="" coords="903,184,1087,240"/>
+<area shape="rect" id="node10" href="$fft_8cpp.html" title=" " alt="" coords="882,95,1047,136"/>
+<area shape="rect" id="node3" href="$charge_8h.html" title=" " alt="" coords="227,191,417,233"/>
+<area shape="rect" id="node4" href="$pot__base_8h.html" title=" " alt="" coords="5,288,212,329"/>
+<area shape="rect" id="node5" href="$forces_8h.html" title=" " alt="" coords="237,288,429,329"/>
+<area shape="rect" id="node6" href="$stress__func_8h.html" title=" " alt="" coords="514,288,706,329"/>
+<area shape="rect" id="node7" href="$VL__in__pw_8h.html" title=" " alt="" coords="442,191,634,233"/>
 </map>

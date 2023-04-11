@@ -100,8 +100,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1935b847d05c52da9a38a40770b4c3ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98eea8394388573fcebe6371af772cc1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__gen__fixedH.html#a98eea8394388573fcebe6371af772cc1">calculate_S_no</a> (double *SlocR)</td></tr>
 <tr class="separator:a98eea8394388573fcebe6371af772cc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64522ad6b5aa376f398d8bc046ad6f9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b">build_ST_new</a> (const char &amp;dtype, const bool &amp;cal_deri, const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell, double *SHlocR)</td></tr>
-<tr class="separator:a64522ad6b5aa376f398d8bc046ad6f9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13bc49e3cbb3ad3b12f77118896b7438"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLCAO__gen__fixedH.html#a13bc49e3cbb3ad3b12f77118896b7438">build_ST_new</a> (const char &amp;dtype, const bool &amp;cal_deri, const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell, double *SHlocR, bool cal_syns=false, double dmax=0.0)</td></tr>
+<tr class="separator:a13bc49e3cbb3ad3b12f77118896b7438"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -268,8 +268,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a64522ad6b5aa376f398d8bc046ad6f9b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a64522ad6b5aa376f398d8bc046ad6f9b">&#9670;&nbsp;</a></span>build_ST_new()</h2>
+<a id="a13bc49e3cbb3ad3b12f77118896b7438"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13bc49e3cbb3ad3b12f77118896b7438">&#9670;&nbsp;</a></span>build_ST_new()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -296,7 +296,19 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>SHlocR</em>&#160;</td>
+          <td class="paramname"><em>SHlocR</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>cal_syns</em> = <code>false</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>dmax</em> = <code>0.0</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -308,8 +320,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLCAO__gen__fixedH_a64522ad6b5aa376f398d8bc046ad6f9b_icgraph.png" border="0" usemap="#classLCAO__gen__fixedH_a64522ad6b5aa376f398d8bc046ad6f9b_icgraph" alt=""/></div>
-<map name="classLCAO__gen__fixedH_a64522ad6b5aa376f398d8bc046ad6f9b_icgraph" id="classLCAO__gen__fixedH_a64522ad6b5aa376f398d8bc046ad6f9b_icgraph">
+<div class="center"><img src="classLCAO__gen__fixedH_a13bc49e3cbb3ad3b12f77118896b7438_icgraph.png" border="0" usemap="#classLCAO__gen__fixedH_a13bc49e3cbb3ad3b12f77118896b7438_icgraph" alt=""/></div>
+<map name="classLCAO__gen__fixedH_a13bc49e3cbb3ad3b12f77118896b7438_icgraph" id="classLCAO__gen__fixedH_a13bc49e3cbb3ad3b12f77118896b7438_icgraph">
 <area shape="rect" title=" " alt="" coords="532,216,708,257"/>
 <area shape="rect" href="classForce__LCAO__gamma.html#a6a2ac4aa03c2f6428d4ed4263eed309f" title=" " alt="" coords="255,5,471,47"/>
 <area shape="rect" href="classForce__LCAO__k.html#a80c8caa156eda5d990074791bcb3a42d" title=" " alt="" coords="269,71,458,98"/>
@@ -381,7 +393,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classLCAO__gen__fixedH_a98eea8394388573fcebe6371af772cc1_cgraph.png" border="0" usemap="#classLCAO__gen__fixedH_a98eea8394388573fcebe6371af772cc1_cgraph" alt=""/></div>
 <map name="classLCAO__gen__fixedH_a98eea8394388573fcebe6371af772cc1_cgraph" id="classLCAO__gen__fixedH_a98eea8394388573fcebe6371af772cc1_cgraph">
 <area shape="rect" title=" " alt="" coords="5,355,247,381"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b" title=" " alt="" coords="295,217,471,258"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a13bc49e3cbb3ad3b12f77118896b7438" title=" " alt="" coords="295,217,471,258"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="776,205,953,232"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="551,355,696,381"/>
 <area shape="rect" href="classGrid__Driver.html#a13083b6b44127bd3400f46cf120bb3ea" title=" " alt="" coords="537,5,709,32"/>
@@ -431,7 +443,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classLCAO__gen__fixedH_a1935b847d05c52da9a38a40770b4c3ef_cgraph.png" border="0" usemap="#classLCAO__gen__fixedH_a1935b847d05c52da9a38a40770b4c3ef_cgraph" alt=""/></div>
 <map name="classLCAO__gen__fixedH_a1935b847d05c52da9a38a40770b4c3ef_cgraph" id="classLCAO__gen__fixedH_a1935b847d05c52da9a38a40770b4c3ef_cgraph">
 <area shape="rect" title=" " alt="" coords="5,329,247,356"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b" title=" " alt="" coords="295,246,471,287"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a13bc49e3cbb3ad3b12f77118896b7438" title=" " alt="" coords="295,246,471,287"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="551,405,696,432"/>
 <area shape="rect" href="classGrid__Driver.html#a13083b6b44127bd3400f46cf120bb3ea" title=" " alt="" coords="537,5,709,32"/>
 <area shape="rect" href="classNumerical__Orbital.html#ad14b5e00ca67a8806f643c0a6ec52b39" title=" " alt="" coords="549,57,697,98"/>
