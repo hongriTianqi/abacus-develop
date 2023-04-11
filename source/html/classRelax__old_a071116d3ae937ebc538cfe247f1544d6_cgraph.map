@@ -1,6 +1,11 @@
 <map id="Relax_old::if_do_cellrelax" name="Relax_old::if_do_cellrelax">
 <area shape="rect" id="node1" title=" " alt="" coords="5,71,195,98"/>
 <area shape="rect" id="node2" href="$classIons__Move__Methods.html#a36973919e017209bd33b2c8ba4fe44fb" title=" " alt="" coords="249,5,411,47"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="257,71,403,98"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="243,122,417,149"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="257,71,403,98"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="243,122,417,149"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="465,31,648,72"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="480,96,633,137"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="696,31,879,72"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="699,103,876,130"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="927,96,1080,137"/>
 </map>

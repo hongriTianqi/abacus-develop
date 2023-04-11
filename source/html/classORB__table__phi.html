@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: ORB_table_phi Class Reference</title>
+<title>3.2.0: ORB_table_phi Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -66,9 +66,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classORB__table__phi-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -82,7 +81,7 @@ Collaboration diagram for ORB_table_phi:</div>
 <div class="dyncontent">
 <div class="center"><img src="classORB__table__phi__coll__graph.png" border="0" usemap="#ORB__table__phi_coll__map" alt="Collaboration graph"/></div>
 <map name="ORB__table__phi_coll__map" id="ORB__table__phi_coll__map">
-<area shape="rect" title=" " alt="" coords="102,483,269,985"/>
+<area shape="rect" title=" " alt="" coords="89,483,282,1044"/>
 <area shape="rect" href="classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="5,5,168,391"/>
 <area shape="rect" href="classModuleBase_1_1Sph__Bessel__Recursive_1_1D2.html" title=" " alt="" coords="192,86,376,310"/>
 </map>
@@ -111,15 +110,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1015e6e70ae6fc2f648ed6445d4d1f9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7c344ee6907c8ca108e938aab3bca02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#aa7c344ee6907c8ca108e938aab3bca02">init_OV_Opair</a> (<a class="el" href="classLCAO__Orbitals.html">LCAO_Orbitals</a> &amp;<a class="el" href="updaterhok__pw__test_8cpp.html#a76856123020bfe7248f49d72ce3e62af">orb</a>)</td></tr>
 <tr class="separator:aa7c344ee6907c8ca108e938aab3bca02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a608c19dd134b88f18ec3ffa211bc28ca"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#a608c19dd134b88f18ec3ffa211bc28ca">get_rmesh</a> (const double &amp;R1, const double &amp;R2) const</td></tr>
+<tr class="separator:a608c19dd134b88f18ec3ffa211bc28ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab7f22309400963bc78b66deda3343d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#aab7f22309400963bc78b66deda3343d3">cal_ST_Phi12_R</a> (const int &amp;job, const int &amp;l, const <a class="el" href="classNumerical__Orbital__Lm.html">Numerical_Orbital_Lm</a> &amp;n1, const <a class="el" href="classNumerical__Orbital__Lm.html">Numerical_Orbital_Lm</a> &amp;n2, const int &amp;rmesh, double *rs, double *drs) const</td></tr>
 <tr class="separator:aab7f22309400963bc78b66deda3343d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6185509eef16c49bf469a5fd34c4a8f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#a6185509eef16c49bf469a5fd34c4a8f0">cal_ST_Phi12_R</a> (const int &amp;job, const int &amp;l, const <a class="el" href="classNumerical__Orbital__Lm.html">Numerical_Orbital_Lm</a> &amp;n1, const <a class="el" href="classNumerical__Orbital__Lm.html">Numerical_Orbital_Lm</a> &amp;n2, const std::set&lt; size_t &gt; &amp;radials, double *rs, double *drs) const</td></tr>
 <tr class="separator:a6185509eef16c49bf469a5fd34c4a8f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a33b76eb9643780662b891a15310c7dee"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#a33b76eb9643780662b891a15310c7dee">get_rmesh</a> (const double &amp;R1, const double &amp;R2)</td></tr>
-<tr class="separator:a33b76eb9643780662b891a15310c7dee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -127,10 +123,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aa6dbd5ea0319f071149b6a17d4eca033"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3fec74addcf4482d8857ed4475b8263"><td class="memItemLeft" align="right" valign="top">double *****&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#af3fec74addcf4482d8857ed4475b8263">Table_TR</a></td></tr>
 <tr class="separator:af3fec74addcf4482d8857ed4475b8263"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a558c47bf234b1969b033824ebeecf33c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#a558c47bf234b1969b033824ebeecf33c">destroy_sr</a></td></tr>
-<tr class="separator:a558c47bf234b1969b033824ebeecf33c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa9fd240149b337d2386b65f1c21485ab"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#aa9fd240149b337d2386b65f1c21485ab">destroy_tr</a></td></tr>
-<tr class="separator:aa9fd240149b337d2386b65f1c21485ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7518b9b5220eeef7af6283db2738a63a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#a7518b9b5220eeef7af6283db2738a63a">overlap_table_allocated</a></td></tr>
+<tr class="separator:a7518b9b5220eeef7af6283db2738a63a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa2838a93cd0ecf59594341661ee19f5"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#aaa2838a93cd0ecf59594341661ee19f5">kinetic_table_allocated</a></td></tr>
+<tr class="separator:aaa2838a93cd0ecf59594341661ee19f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb11d8f8fc3f3580eb5389f47706261c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Sph__Bessel__Recursive_1_1D2.html">ModuleBase::Sph_Bessel_Recursive::D2</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#aeb11d8f8fc3f3580eb5389f47706261c">pSB</a> = nullptr</td></tr>
 <tr class="separator:aeb11d8f8fc3f3580eb5389f47706261c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f27192f6bc393d17066beaa67fd4c13"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#a0f27192f6bc393d17066beaa67fd4c13">OV_nTpairs</a></td></tr>
@@ -141,13 +137,15 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a7548996858bc544c16bf46adecc725f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e851dec59ac49ae1e73122d7a3582bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1IntArray.html">ModuleBase::IntArray</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#a2e851dec59ac49ae1e73122d7a3582bd">OV_L2plus1</a></td></tr>
 <tr class="separator:a2e851dec59ac49ae1e73122d7a3582bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55893d7471f643a57c66b36dc6d06d3b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#a55893d7471f643a57c66b36dc6d06d3b">dr</a></td></tr>
+<tr class="separator:a55893d7471f643a57c66b36dc6d06d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4df44beac5c47467a5127d8cdc27960b"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#a4df44beac5c47467a5127d8cdc27960b">Rmesh</a></td></tr>
 <tr class="separator:a4df44beac5c47467a5127d8cdc27960b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a55893d7471f643a57c66b36dc6d06d3b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#a55893d7471f643a57c66b36dc6d06d3b">dr</a> = -1.0</td></tr>
-<tr class="separator:a55893d7471f643a57c66b36dc6d06d3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a4dabab7963c1a17c4c9ca840ceb4ae58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#a4dabab7963c1a17c4c9ca840ceb4ae58">_destroy_table</a> ()</td></tr>
+<tr class="separator:a4dabab7963c1a17c4c9ca840ceb4ae58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -171,6 +169,12 @@ Private Attributes</h2></td></tr>
 <tr class="separator:add0e26c634397246c105d26b943d9958"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a98a44879247c91061224d23960b908b6"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#a98a44879247c91061224d23960b908b6">kab</a></td></tr>
 <tr class="separator:a98a44879247c91061224d23960b908b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c1c385306cf51ed82c63b3fea453dc"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#a83c1c385306cf51ed82c63b3fea453dc">nelem_</a></td></tr>
+<tr class="separator:a83c1c385306cf51ed82c63b3fea453dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1ae2d45d2b7156b0e5c3c5e647c29ba"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#ad1ae2d45d2b7156b0e5c3c5e647c29ba">lmax_</a></td></tr>
+<tr class="separator:ad1ae2d45d2b7156b0e5c3c5e647c29ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeadb37abe7d179fc4ff8258a46da9466"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classORB__table__phi.html#aeadb37abe7d179fc4ff8258a46da9466">nchi_tot_</a></td></tr>
+<tr class="separator:aeadb37abe7d179fc4ff8258a46da9466"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abb0d1e30a7a7738d3455b975a2219c1c"></a>
@@ -204,10 +208,53 @@ Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__table__phi_a0665255c9b492648573fb0486ca06282_cgraph.png" border="0" usemap="#classORB__table__phi_a0665255c9b492648573fb0486ca06282_cgraph" alt=""/></div>
+<map name="classORB__table__phi_a0665255c9b492648573fb0486ca06282_cgraph" id="classORB__table__phi_a0665255c9b492648573fb0486ca06282_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" href="classORB__table__phi.html#a4dabab7963c1a17c4c9ca840ceb4ae58" title=" " alt="" coords="217,5,399,47"/>
+</map>
+</div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4dabab7963c1a17c4c9ca840ceb4ae58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4dabab7963c1a17c4c9ca840ceb4ae58">&#9670;&nbsp;</a></span>_destroy_table()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ORB_table_phi::_destroy_table </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classORB__table__phi_a4dabab7963c1a17c4c9ca840ceb4ae58_icgraph.png" border="0" usemap="#classORB__table__phi_a4dabab7963c1a17c4c9ca840ceb4ae58_icgraph" alt=""/></div>
+<map name="classORB__table__phi_a4dabab7963c1a17c4c9ca840ceb4ae58_icgraph" id="classORB__table__phi_a4dabab7963c1a17c4c9ca840ceb4ae58_icgraph">
+<area shape="rect" title=" " alt="" coords="217,5,399,47"/>
+<area shape="rect" href="classORB__table__phi.html#a0665255c9b492648573fb0486ca06282" title=" " alt="" coords="5,5,169,47"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a22ce292f82e4e2ef88a3c40b2ab645b0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a22ce292f82e4e2ef88a3c40b2ab645b0">&#9670;&nbsp;</a></span>allocate()</h2>
 
@@ -273,25 +320,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classORB__table__phi_a22ce292f82e4e2ef88a3c40b2ab645b0_cgraph.png" border="0" usemap="#classORB__table__phi_a22ce292f82e4e2ef88a3c40b2ab645b0_cgraph" alt=""/></div>
 <map name="classORB__table__phi_a22ce292f82e4e2ef88a3c40b2ab645b0_cgraph" id="classORB__table__phi_a22ce292f82e4e2ef88a3c40b2ab645b0_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,183,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="231,5,376,32"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classORB__table__phi_a22ce292f82e4e2ef88a3c40b2ab645b0_icgraph.png" border="0" usemap="#classORB__table__phi_a22ce292f82e4e2ef88a3c40b2ab645b0_icgraph" alt=""/></div>
-<map name="classORB__table__phi_a22ce292f82e4e2ef88a3c40b2ab645b0_icgraph" id="classORB__table__phi_a22ce292f82e4e2ef88a3c40b2ab645b0_icgraph">
-<area shape="rect" title=" " alt="" coords="264,274,441,301"/>
-<area shape="rect" href="classORB__gen__tables.html#a6f4aecf2dfaaa4e92884adfc1917e532" title="call in hamilt_linear::init_before_ions." alt="" coords="31,5,191,47"/>
-<area shape="rect" href="classExx__Abfs_1_1Matrix__Orbs22.html#aaeda7ecc8322c60f485f514a5f960f9f" title=" " alt="" coords="18,71,203,112"/>
-<area shape="rect" href="classExx__Abfs_1_1Matrix__Lcaoslcaos__Lcaoslcaos.html#a5be08e520ddad02931bd05927d15e2b7" title=" " alt="" coords="5,136,216,177"/>
-<area shape="rect" href="classExx__Abfs_1_1Matrix__Orbs11.html#ac9902d846d85156b2105944e32840e8b" title=" " alt="" coords="18,201,203,243"/>
-<area shape="rect" href="classExx__Abfs_1_1Matrix__Orbs21.html#a7f6dea8a53598ca458b70825f9568062" title=" " alt="" coords="18,267,203,308"/>
-<area shape="rect" href="classMatrix__Orbs21.html#a31199c2b61d029f298e5cffcdae31ec4" title=" " alt="" coords="37,333,184,359"/>
-<area shape="rect" href="classMatrix__Orbs11.html#a645a9ecc26fb5dca957f47ca1707d78b" title=" " alt="" coords="37,383,184,410"/>
-<area shape="rect" href="classunkOverlap__lcao.html#af32347afb5bbc04104b58ab62abb8bab" title=" " alt="" coords="31,434,191,461"/>
-<area shape="rect" href="classcal__r__overlap__R.html#a873a18e8cf46b1af2f4e8f2838bd4686" title=" " alt="" coords="16,485,205,527"/>
+<area shape="rect" title=" " alt="" coords="5,46,183,73"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="231,46,376,73"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="424,5,607,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="439,71,592,112"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="655,5,837,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="657,78,835,105"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="885,71,1039,112"/>
 </map>
 </div>
 
@@ -487,14 +522,11 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a33b76eb9643780662b891a15310c7dee"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a33b76eb9643780662b891a15310c7dee">&#9670;&nbsp;</a></span>get_rmesh()</h2>
+<a id="a608c19dd134b88f18ec3ffa211bc28ca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a608c19dd134b88f18ec3ffa211bc28ca">&#9670;&nbsp;</a></span>get_rmesh()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int ORB_table_phi::get_rmesh </td>
@@ -511,20 +543,15 @@ Here is the caller graph for this function:</div>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td></td>
+          <td></td><td> const</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classORB__table__phi_a33b76eb9643780662b891a15310c7dee_cgraph.png" border="0" usemap="#classORB__table__phi_a33b76eb9643780662b891a15310c7dee_cgraph" alt=""/></div>
-<map name="classORB__table__phi_a33b76eb9643780662b891a15310c7dee_cgraph" id="classORB__table__phi_a33b76eb9643780662b891a15310c7dee_cgraph">
+<div class="center"><img src="classORB__table__phi_a608c19dd134b88f18ec3ffa211bc28ca_cgraph.png" border="0" usemap="#classORB__table__phi_a608c19dd134b88f18ec3ffa211bc28ca_cgraph" alt=""/></div>
+<map name="classORB__table__phi_a608c19dd134b88f18ec3ffa211bc28ca_cgraph" id="classORB__table__phi_a608c19dd134b88f18ec3ffa211bc28ca_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,152,47"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="200,13,413,39"/>
 </map>
@@ -532,8 +559,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classORB__table__phi_a33b76eb9643780662b891a15310c7dee_icgraph.png" border="0" usemap="#classORB__table__phi_a33b76eb9643780662b891a15310c7dee_icgraph" alt=""/></div>
-<map name="classORB__table__phi_a33b76eb9643780662b891a15310c7dee_icgraph" id="classORB__table__phi_a33b76eb9643780662b891a15310c7dee_icgraph">
+<div class="center"><img src="classORB__table__phi_a608c19dd134b88f18ec3ffa211bc28ca_icgraph.png" border="0" usemap="#classORB__table__phi_a608c19dd134b88f18ec3ffa211bc28ca_icgraph" alt=""/></div>
+<map name="classORB__table__phi_a608c19dd134b88f18ec3ffa211bc28ca_icgraph" id="classORB__table__phi_a608c19dd134b88f18ec3ffa211bc28ca_icgraph">
 <area shape="rect" title=" " alt="" coords="708,68,855,109"/>
 <area shape="rect" href="classORB__table__phi.html#a98de0312b5ee90cf1adf461cf57597bc" title=" " alt="" coords="503,20,650,61"/>
 <area shape="rect" href="classORB__gen__tables.html#a8b9774a6cc33b782116b326f65c9bb60" title=" " alt="" coords="493,100,660,141"/>
@@ -629,9 +656,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classExx__Abfs_1_1Matrix__Lcaoslcaos__Lcaoslcaos.html#a5be08e520ddad02931bd05927d15e2b7" title=" " alt="" coords="5,136,216,177"/>
 <area shape="rect" href="classExx__Abfs_1_1Matrix__Orbs11.html#ac9902d846d85156b2105944e32840e8b" title=" " alt="" coords="18,201,203,243"/>
 <area shape="rect" href="classExx__Abfs_1_1Matrix__Orbs21.html#a7f6dea8a53598ca458b70825f9568062" title=" " alt="" coords="18,267,203,308"/>
-<area shape="rect" href="classMatrix__Orbs21.html#a31199c2b61d029f298e5cffcdae31ec4" title=" " alt="" coords="37,333,184,359"/>
-<area shape="rect" href="classMatrix__Orbs11.html#a645a9ecc26fb5dca957f47ca1707d78b" title=" " alt="" coords="37,383,184,410"/>
-<area shape="rect" href="classunkOverlap__lcao.html#af32347afb5bbc04104b58ab62abb8bab" title=" " alt="" coords="31,434,191,461"/>
+<area shape="rect" href="classMatrix__Orbs22.html#a3c898a32a52ea7fa272ec073d2d3c67a" title=" " alt="" coords="37,333,184,359"/>
+<area shape="rect" href="classMatrix__Orbs21.html#a31199c2b61d029f298e5cffcdae31ec4" title=" " alt="" coords="37,383,184,410"/>
+<area shape="rect" href="classMatrix__Orbs11.html#a645a9ecc26fb5dca957f47ca1707d78b" title=" " alt="" coords="37,434,184,461"/>
 </map>
 </div>
 
@@ -714,7 +741,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,71,152,112"/>
 <area shape="rect" href="classModuleBase_1_1IntArray.html#a4859137dfb68026cc06128fad1dad1e2" title="Create integer arrays." alt="" coords="200,5,363,47"/>
 <area shape="rect" href="classNumerical__Orbital.html#a1a29486b7944bb9e9c35cff697d13021" title=" " alt="" coords="207,71,355,112"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="209,137,354,163"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="209,137,354,163"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="411,96,593,137"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="425,161,579,203"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="641,96,824,137"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="644,169,821,195"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="872,161,1025,203"/>
 </map>
 </div>
 <div class="dynheader">
@@ -837,27 +869,11 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classORB__table__phi.html#a4cae790df2163c0e8580ec83fd7a993c" title="make table of Spherical bessel" alt="" coords="233,78,423,105"/>
 <area shape="rect" href="classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="246,129,410,171"/>
 <area shape="rect" href="classModuleBase_1_1Sph__Bessel__Recursive_1_1D2.html#a2918b8355a54f2072f7fd935bd119a97" title=" " alt="" coords="236,195,420,236"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="255,261,401,287"/>
-<area shape="rect" href="classLCAO__Orbitals.html#ab33e3164563e1ea61c612473ee2a8cac" title=" " alt="" coords="481,5,625,47"/>
-<area shape="rect" href="classNumerical__Orbital.html#a1a29486b7944bb9e9c35cff697d13021" title=" " alt="" coords="479,71,627,112"/>
-<area shape="rect" href="classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="471,136,635,177"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classORB__table__phi_ad2646e5a0c85613beb5ee1537d2d1e8f_icgraph.png" border="0" usemap="#classORB__table__phi_ad2646e5a0c85613beb5ee1537d2d1e8f_icgraph" alt=""/></div>
-<map name="classORB__table__phi_ad2646e5a0c85613beb5ee1537d2d1e8f_icgraph" id="classORB__table__phi_ad2646e5a0c85613beb5ee1537d2d1e8f_icgraph">
-<area shape="rect" title=" " alt="" coords="264,267,444,308"/>
-<area shape="rect" href="classORB__gen__tables.html#a6f4aecf2dfaaa4e92884adfc1917e532" title="call in hamilt_linear::init_before_ions." alt="" coords="31,5,191,47"/>
-<area shape="rect" href="classExx__Abfs_1_1Matrix__Orbs22.html#aaeda7ecc8322c60f485f514a5f960f9f" title=" " alt="" coords="18,71,203,112"/>
-<area shape="rect" href="classExx__Abfs_1_1Matrix__Lcaoslcaos__Lcaoslcaos.html#a5be08e520ddad02931bd05927d15e2b7" title=" " alt="" coords="5,136,216,177"/>
-<area shape="rect" href="classExx__Abfs_1_1Matrix__Orbs11.html#ac9902d846d85156b2105944e32840e8b" title=" " alt="" coords="18,201,203,243"/>
-<area shape="rect" href="classExx__Abfs_1_1Matrix__Orbs21.html#a7f6dea8a53598ca458b70825f9568062" title=" " alt="" coords="18,267,203,308"/>
-<area shape="rect" href="classMatrix__Orbs21.html#a31199c2b61d029f298e5cffcdae31ec4" title=" " alt="" coords="37,333,184,359"/>
-<area shape="rect" href="classMatrix__Orbs11.html#a645a9ecc26fb5dca957f47ca1707d78b" title=" " alt="" coords="37,383,184,410"/>
-<area shape="rect" href="classunkOverlap__lcao.html#af32347afb5bbc04104b58ab62abb8bab" title=" " alt="" coords="31,434,191,461"/>
-<area shape="rect" href="classcal__r__overlap__R.html#a873a18e8cf46b1af2f4e8f2838bd4686" title=" " alt="" coords="16,485,205,527"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="255,261,401,287"/>
+<area shape="rect" href="classLCAO__Orbitals.html#ab33e3164563e1ea61c612473ee2a8cac" title=" " alt="" coords="490,5,634,47"/>
+<area shape="rect" href="classNumerical__Orbital.html#a1a29486b7944bb9e9c35cff697d13021" title=" " alt="" coords="488,71,636,112"/>
+<area shape="rect" href="classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="480,136,644,177"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="471,253,653,295"/>
 </map>
 </div>
 
@@ -915,34 +931,6 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a558c47bf234b1969b033824ebeecf33c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a558c47bf234b1969b033824ebeecf33c">&#9670;&nbsp;</a></span>destroy_sr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ORB_table_phi::destroy_sr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa9fd240149b337d2386b65f1c21485ab"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa9fd240149b337d2386b65f1c21485ab">&#9670;&nbsp;</a></span>destroy_tr</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool ORB_table_phi::destroy_tr</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a88d8e69b7723fdc08b23829fd109a50b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a88d8e69b7723fdc08b23829fd109a50b">&#9670;&nbsp;</a></span>dk</h2>
 
@@ -970,19 +958,11 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double ORB_table_phi::dr = -1.0</td>
+          <td class="memname">double ORB_table_phi::dr</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 </div>
@@ -1005,6 +985,20 @@ Here is the caller graph for this function:</div>
 <span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aaa2838a93cd0ecf59594341661ee19f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa2838a93cd0ecf59594341661ee19f5">&#9670;&nbsp;</a></span>kinetic_table_allocated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ORB_table_phi::kinetic_table_allocated</td>
+        </tr>
+      </table>
 </div><div class="memdoc">
 
 </div>
@@ -1064,6 +1058,72 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">int ORB_table_phi::lmax</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad1ae2d45d2b7156b0e5c3c5e647c29ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1ae2d45d2b7156b0e5c3c5e647c29ba">&#9670;&nbsp;</a></span>lmax_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; ORB_table_phi::lmax_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aeadb37abe7d179fc4ff8258a46da9466"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeadb37abe7d179fc4ff8258a46da9466">&#9670;&nbsp;</a></span>nchi_tot_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;int&gt; ORB_table_phi::nchi_tot_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a83c1c385306cf51ed82c63b3fea453dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83c1c385306cf51ed82c63b3fea453dc">&#9670;&nbsp;</a></span>nelem_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int ORB_table_phi::nelem_</td>
         </tr>
       </table>
   </td>
@@ -1175,6 +1235,20 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a7518b9b5220eeef7af6283db2738a63a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7518b9b5220eeef7af6283db2738a63a">&#9670;&nbsp;</a></span>overlap_table_allocated</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ORB_table_phi::overlap_table_allocated</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="aeb11d8f8fc3f3580eb5389f47706261c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aeb11d8f8fc3f3580eb5389f47706261c">&#9670;&nbsp;</a></span>pSB</h2>
 
@@ -1280,7 +1354,7 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
-<h2><a class="anchor" id="autotoc_md16"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 Five dimension:</h2>
 <p>(1) 0: normal (S(R)) ; 1: derivative( dS/dR )</p>
 <p>(2) pairs type number.</p>
@@ -1305,8 +1379,8 @@ Five dimension:</h2>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>module_orbital/<a class="el" href="ORB__table__phi_8h_source.html">ORB_table_phi.h</a></li>
-<li>module_orbital/<a class="el" href="ORB__table__phi_8cpp.html">ORB_table_phi.cpp</a></li>
+<li>module_basis/module_ao/<a class="el" href="ORB__table__phi_8h_source.html">ORB_table_phi.h</a></li>
+<li>module_basis/module_ao/<a class="el" href="ORB__table__phi_8cpp.html">ORB_table_phi.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

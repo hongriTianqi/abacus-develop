@@ -1,4 +1,5 @@
 <map id="ELPA_Solver::ELPA_Solver" name="ELPA_Solver::ELPA_Solver">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,193,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,193,57"/>
 <area shape="rect" id="node2" href="$blacs__connector_8h.html#ae3b0677b0e09884d640aef46976bcd45" title=" " alt="" coords="241,5,364,32"/>
+<area shape="rect" id="node3" href="$elpa__generic_8hpp.html#a5ba34081cf93b9b578a68d8cfcc1e932" title="generic C method for elpa_set" alt="" coords="264,56,341,83"/>
 </map>

@@ -1,12 +1,12 @@
-<map id="module_orbital/ORB_table_phi.h" name="module_orbital/ORB_table_phi.h">
-<area shape="rect" id="node1" title=" " alt="" coords="315,5,467,47"/>
-<area shape="rect" id="node2" href="$ORB__read_8h.html" title=" " alt="" coords="175,95,273,121"/>
-<area shape="rect" id="node4" href="$intarray_8h.html" title=" " alt="" coords="209,244,396,271"/>
-<area shape="rect" id="node5" href="$ORB__atomic__lm_8h.html" title=" " alt="" coords="19,244,157,271"/>
-<area shape="rect" id="node9" href="$sph__bessel__recursive_8h.html" title=" " alt="" coords="295,319,446,360"/>
-<area shape="rect" id="node10" title=" " alt="" coords="479,95,521,121"/>
-<area shape="rect" id="node3" href="$ORB__atomic_8h.html" title=" " alt="" coords="239,169,353,196"/>
-<area shape="rect" id="node8" href="$ORB__nonlocal_8h.html" title=" " alt="" coords="90,169,214,196"/>
-<area shape="rect" id="node6" title=" " alt="" coords="177,408,239,435"/>
-<area shape="rect" id="node7" href="$global__function_8h.html" title=" " alt="" coords="5,319,171,360"/>
+<map id="module_basis/module_ao/ORB_table_phi.h" name="module_basis/module_ao/ORB_table_phi.h">
+<area shape="rect" id="node1" title=" " alt="" coords="297,5,462,47"/>
+<area shape="rect" id="node2" href="$ORB__read_8h.html" title=" " alt="" coords="163,95,262,121"/>
+<area shape="rect" id="node4" href="$intarray_8h.html" title=" " alt="" coords="207,244,381,271"/>
+<area shape="rect" id="node5" href="$ORB__atomic__lm_8h.html" title=" " alt="" coords="13,244,151,271"/>
+<area shape="rect" id="node9" href="$sph__bessel__recursive_8h.html" title=" " alt="" coords="275,319,460,360"/>
+<area shape="rect" id="node10" title=" " alt="" coords="467,95,510,121"/>
+<area shape="rect" id="node3" href="$ORB__atomic_8h.html" title=" " alt="" coords="227,169,342,196"/>
+<area shape="rect" id="node8" href="$ORB__nonlocal_8h.html" title=" " alt="" coords="79,169,203,196"/>
+<area shape="rect" id="node6" title=" " alt="" coords="165,408,228,435"/>
+<area shape="rect" id="node7" href="$global__function_8h.html" title=" " alt="" coords="5,319,159,360"/>
 </map>

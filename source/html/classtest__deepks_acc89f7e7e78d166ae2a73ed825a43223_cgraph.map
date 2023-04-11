@@ -1,7 +1,12 @@
 <map id="test_deepks::check_descriptor" name="test_deepks::check_descriptor">
-<area shape="rect" id="node1" title=" " alt="" coords="5,57,152,98"/>
-<area shape="rect" id="node2" href="$classLCAO__Deepks.html#ab3e0af2a92d4a4d68505b43d6b51d0d3" title=" " alt="" coords="200,5,412,32"/>
-<area shape="rect" id="node4" href="$classLCAO__Deepks.html#a61aa8c25b262fdfb1b2cae7db393ead1" title="print descriptors based on LCAO basis" alt="" coords="227,57,385,98"/>
-<area shape="rect" id="node5" href="$classtest__deepks.html#ab16450cb7cc14f59d3cbb6ff248ee64b" title=" " alt="" coords="223,122,389,163"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="460,35,605,61"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,68,152,109"/>
+<area shape="rect" id="node2" href="$classLCAO__Deepks.html#ab3e0af2a92d4a4d68505b43d6b51d0d3" title=" " alt="" coords="200,17,412,43"/>
+<area shape="rect" id="node9" href="$classLCAO__Deepks.html#a61aa8c25b262fdfb1b2cae7db393ead1" title="print descriptors based on LCAO basis" alt="" coords="227,68,385,109"/>
+<area shape="rect" id="node10" href="$classtest__deepks.html#ab16450cb7cc14f59d3cbb6ff248ee64b" title=" " alt="" coords="223,133,389,175"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="460,46,605,73"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="653,5,836,47"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="668,71,821,112"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="884,5,1067,47"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="887,78,1064,105"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1115,71,1268,112"/>
 </map>

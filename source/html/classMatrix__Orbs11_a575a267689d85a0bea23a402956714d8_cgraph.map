@@ -1,6 +1,9 @@
 <map id="Matrix_Orbs11::init_radial" name="Matrix_Orbs11::init_radial">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,152,72"/>
-<area shape="rect" id="node2" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="200,13,377,39"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="216,63,361,90"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="425,5,579,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="627,13,804,39"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="200,42,345,69"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="855,5,1008,47"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="393,100,576,141"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="408,35,561,76"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="624,100,807,141"/>
 </map>

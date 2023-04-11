@@ -1,10 +1,10 @@
 <map id="ORB_control::setup_2d_division" name="ORB_control::setup_2d_division">
 <area shape="rect" id="node1" title="set 2D&#45;block&#45;cyclic division according to the basis" alt="" coords="5,203,152,244"/>
 <area shape="rect" id="node2" href="$classORB__control.html#a020411851995dfde40203b27d7e18bfd" title=" " alt="" coords="200,164,351,206"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="695,146,841,173"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="695,146,841,173"/>
 <area shape="rect" id="node7" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="661,298,875,325"/>
 <area shape="rect" id="node10" href="$classORB__control.html#a5302c22add6e495cf1fc1a67f10b81ae" title=" " alt="" coords="419,324,590,350"/>
-<area shape="rect" id="node3" href="$module__orbital_2parallel__orbitals_8cpp.html#a3e25a8b7e84d8d31e5ea518be55833b5" title=" " alt="" coords="460,70,549,97"/>
+<area shape="rect" id="node3" href="$module__basis_2module__ao_2parallel__orbitals_8cpp.html#a3e25a8b7e84d8d31e5ea518be55833b5" title=" " alt="" coords="460,70,549,97"/>
 <area shape="rect" id="node4" href="$classORB__control.html#a4c4ef810157e3f4c6fec2d01c2727cd9" title=" " alt="" coords="425,222,584,249"/>
 <area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="659,248,877,274"/>
 <area shape="rect" id="node8" href="$classORB__control.html#aa400888eae0b315f2918a64359d619ac" title=" " alt="" coords="401,121,608,148"/>

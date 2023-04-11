@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: Numerical_Descriptor Class Reference</title>
+<title>3.2.0: Numerical_Descriptor Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -80,7 +80,7 @@ Collaboration diagram for Numerical_Descriptor:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNumerical__Descriptor__coll__graph.png" border="0" usemap="#Numerical__Descriptor_coll__map" alt="Collaboration graph"/></div>
 <map name="Numerical__Descriptor_coll__map" id="Numerical__Descriptor_coll__map">
-<area shape="rect" title=" " alt="" coords="167,931,366,1125"/>
+<area shape="rect" title=" " alt="" coords="167,931,366,1096"/>
 <area shape="rect" href="classBessel__Basis.html" title=" " alt="" coords="5,453,224,868"/>
 <area shape="rect" href="classModuleBase_1_1realArray.html" title="double float array" alt="" coords="29,5,200,361"/>
 <area shape="rect" href="classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="248,468,411,853"/>
@@ -100,10 +100,6 @@ Public Member Functions</h2></td></tr>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:acf5caf615600b86f0b7663f768e2cbaa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumerical__Descriptor.html#acf5caf615600b86f0b7663f768e2cbaa">init_mu_index</a> (void)</td></tr>
 <tr class="separator:acf5caf615600b86f0b7663f768e2cbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acecce930005b489ce5dad075da8739c5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumerical__Descriptor.html#acecce930005b489ce5dad075da8739c5">jlq3d_overlap</a> (<a class="el" href="classModuleBase_1_1realArray.html">ModuleBase::realArray</a> &amp;overlap_Q1, <a class="el" href="classModuleBase_1_1realArray.html">ModuleBase::realArray</a> &amp;overlap_Q2, const int &amp;ik_ibz, const int &amp;ik, const int &amp;np, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; &amp;psi)</td></tr>
-<tr class="separator:acecce930005b489ce5dad075da8739c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b9d882909d550beb010f3f97ac8a72d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNumerical__Descriptor.html#a5b9d882909d550beb010f3f97ac8a72d">generate_descriptor</a> (<a class="el" href="classModuleBase_1_1realArray.html">ModuleBase::realArray</a> &amp;overlap_Q1, <a class="el" href="classModuleBase_1_1realArray.html">ModuleBase::realArray</a> &amp;overlap_Q2, const int &amp;it, const int &amp;ia, double *d, const int &amp;nd)</td></tr>
-<tr class="separator:a5b9d882909d550beb010f3f97ac8a72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -156,90 +152,6 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a5b9d882909d550beb010f3f97ac8a72d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5b9d882909d550beb010f3f97ac8a72d">&#9670;&nbsp;</a></span>generate_descriptor()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Numerical_Descriptor::generate_descriptor </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classModuleBase_1_1realArray.html">ModuleBase::realArray</a> &amp;&#160;</td>
-          <td class="paramname"><em>overlap_Q1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classModuleBase_1_1realArray.html">ModuleBase::realArray</a> &amp;&#160;</td>
-          <td class="paramname"><em>overlap_Q2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>it</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>ia</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">double *&#160;</td>
-          <td class="paramname"><em>d</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>nd</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classNumerical__Descriptor_a5b9d882909d550beb010f3f97ac8a72d_cgraph.png" border="0" usemap="#classNumerical__Descriptor_a5b9d882909d550beb010f3f97ac8a72d_cgraph" alt=""/></div>
-<map name="classNumerical__Descriptor_a5b9d882909d550beb010f3f97ac8a72d_cgraph" id="classNumerical__Descriptor_a5b9d882909d550beb010f3f97ac8a72d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,104,168,145"/>
-<area shape="rect" href="classModuleBase_1_1realArray.html#aff54e4ea34416d142f0291430013e9fa" title=" " alt="" coords="236,5,407,47"/>
-<area shape="rect" href="classModuleBase_1_1realArray.html#af2466c5fedc1d316ea7de389453d7c3b" title=" " alt="" coords="236,71,407,112"/>
-<area shape="rect" href="classModuleBase_1_1ComplexMatrix.html#a66cb21c1a78ed6fcbf9029d7924fc59d" title=" " alt="" coords="216,136,427,177"/>
-<area shape="rect" href="classLapackConnector.html#aadf5aabc22a191444545181d07ce9c5a" title=" " alt="" coords="231,202,412,229"/>
-<area shape="rect" href="classLapackConnector.html#aaf5fe3af83a07c43c38d4be20c3bee0b" title=" " alt="" coords="475,177,681,203"/>
-<area shape="rect" href="lapack__connector_8h.html#a7a78d1e6ea8c9e5770729b15d347a53f" title=" " alt="" coords="544,227,612,254"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classNumerical__Descriptor_a5b9d882909d550beb010f3f97ac8a72d_icgraph.png" border="0" usemap="#classNumerical__Descriptor_a5b9d882909d550beb010f3f97ac8a72d_icgraph" alt=""/></div>
-<map name="classNumerical__Descriptor_a5b9d882909d550beb010f3f97ac8a72d_icgraph" id="classNumerical__Descriptor_a5b9d882909d550beb010f3f97ac8a72d_icgraph">
-<area shape="rect" title=" " alt="" coords="525,5,688,47"/>
-<area shape="rect" href="classNumerical__Descriptor.html#a6d9a78152eb9691a85e26d03079b05e5" title=" " alt="" coords="315,5,477,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a2d7c936122c694417b9e4291f501e591" title=" " alt="" coords="5,5,267,47"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="acf5caf615600b86f0b7663f768e2cbaa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf5caf615600b86f0b7663f768e2cbaa">&#9670;&nbsp;</a></span>init_mu_index()</h2>
 
@@ -285,93 +197,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="acecce930005b489ce5dad075da8739c5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acecce930005b489ce5dad075da8739c5">&#9670;&nbsp;</a></span>jlq3d_overlap()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Numerical_Descriptor::jlq3d_overlap </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classModuleBase_1_1realArray.html">ModuleBase::realArray</a> &amp;&#160;</td>
-          <td class="paramname"><em>overlap_Q1</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="classModuleBase_1_1realArray.html">ModuleBase::realArray</a> &amp;&#160;</td>
-          <td class="paramname"><em>overlap_Q2</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>ik_ibz</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>ik</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>np</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; &amp;&#160;</td>
-          <td class="paramname"><em>psi</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classNumerical__Descriptor_acecce930005b489ce5dad075da8739c5_cgraph.png" border="0" usemap="#classNumerical__Descriptor_acecce930005b489ce5dad075da8739c5_cgraph" alt=""/></div>
-<map name="classNumerical__Descriptor_acecce930005b489ce5dad075da8739c5_cgraph" id="classNumerical__Descriptor_acecce930005b489ce5dad075da8739c5_cgraph">
-<area shape="rect" title=" " alt="" coords="5,201,168,242"/>
-<area shape="rect" href="namespaceModuleBase.html#adeaaec1c2e00d3e37d62ae80ba994120" title=" " alt="" coords="253,5,391,32"/>
-<area shape="rect" href="classWF__igk.html#ae332dba4fe2ba0188c07382eb49d4267" title=" " alt="" coords="216,56,428,83"/>
-<area shape="rect" href="classWF__igk.html#af05a61be1a99f54bddd8374d92fa4dfb" title=" " alt="" coords="261,107,383,133"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="476,132,653,159"/>
-<area shape="rect" href="namespaceModuleBase.html#a4226cc0dab4f99d513d87e0c663f3ca8" title=" " alt="" coords="230,208,414,235"/>
-<area shape="rect" href="classBessel__Basis.html#a44ce1481b351755c9e7aa361ece3797d" title=" " alt="" coords="228,259,416,301"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="249,325,395,352"/>
-<area shape="rect" href="classModuleBase_1_1YlmReal.html#a4a0791bc6a7899abb20c1d2dfec05b80" title="spherical harmonic function (real form) an array of vectors" alt="" coords="240,377,404,418"/>
-<area shape="rect" href="namespaceModuleBase.html#afbf699235c354243775d842f3856702d" title=" " alt="" coords="249,443,395,469"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classNumerical__Descriptor_acecce930005b489ce5dad075da8739c5_icgraph.png" border="0" usemap="#classNumerical__Descriptor_acecce930005b489ce5dad075da8739c5_icgraph" alt=""/></div>
-<map name="classNumerical__Descriptor_acecce930005b489ce5dad075da8739c5_icgraph" id="classNumerical__Descriptor_acecce930005b489ce5dad075da8739c5_icgraph">
-<area shape="rect" title=" " alt="" coords="525,5,688,47"/>
-<area shape="rect" href="classNumerical__Descriptor.html#a6d9a78152eb9691a85e26d03079b05e5" title=" " alt="" coords="315,5,477,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a2d7c936122c694417b9e4291f501e591" title=" " alt="" coords="5,5,267,47"/>
-</map>
-</div>
-
-</div>
-</div>
 <a id="a6d9a78152eb9691a85e26d03079b05e5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d9a78152eb9691a85e26d03079b05e5">&#9670;&nbsp;</a></span>output_descriptor()</h2>
 
@@ -409,6 +234,23 @@ Here is the caller graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classNumerical__Descriptor_a6d9a78152eb9691a85e26d03079b05e5_cgraph.png" border="0" usemap="#classNumerical__Descriptor_a6d9a78152eb9691a85e26d03079b05e5_cgraph" alt=""/></div>
+<map name="classNumerical__Descriptor_a6d9a78152eb9691a85e26d03079b05e5_cgraph" id="classNumerical__Descriptor_a6d9a78152eb9691a85e26d03079b05e5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,282,168,323"/>
+<area shape="rect" href="classBessel__Basis.html#a42ab49f0a9f75fbc4055c428527dbc79" title=" " alt="" coords="222,114,393,155"/>
+<area shape="rect" href="classBessel__Basis.html#a9f8c0c865b6cbf0ff6505204472349e5" title=" " alt="" coords="239,180,375,207"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="685,148,831,175"/>
+<area shape="rect" href="classNumerical__Descriptor.html#acf5caf615600b86f0b7663f768e2cbaa" title=" " alt="" coords="226,341,389,382"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac3c6cb9eae3ff814df0a1e32876c5126" title=" " alt="" coords="216,406,399,447"/>
+<area shape="rect" href="classBessel__Basis.html#a7ba8ff33d567a9345c15d141b3d125d6" title=" " alt="" coords="447,5,637,32"/>
+<area shape="rect" href="namespaceParallel__Common.html#ae2c335f1c53dd21170728ba93aee096e" title=" " alt="" coords="453,107,631,149"/>
+<area shape="rect" href="classModuleBase_1_1realArray.html#abbba25f3d129b62f7aaf09ebc5a1eeb9" title="Get the Size object." alt="" coords="457,173,627,214"/>
+<area shape="rect" href="classBessel__Basis.html#a52f24298b48dcbe12a1448d0b15b33e0" title=" " alt="" coords="457,239,627,265"/>
+</map>
+</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

@@ -1,8 +1,11 @@
 <map id="Charge::rho_mpi" name="Charge::rho_mpi">
 <area shape="rect" id="node1" title=" " alt="" coords="5,97,135,123"/>
 <area shape="rect" id="node2" href="$classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="203,5,345,47"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="185,71,363,98"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="201,122,347,149"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="183,173,365,215"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="413,64,567,105"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="647,101,824,127"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="201,126,347,153"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="183,177,365,219"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="875,93,1028,135"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="413,188,596,229"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="428,123,581,164"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="644,188,827,229"/>
 </map>

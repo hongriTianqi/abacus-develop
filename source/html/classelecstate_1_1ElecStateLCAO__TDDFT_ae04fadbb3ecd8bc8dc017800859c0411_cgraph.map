@@ -1,5 +1,10 @@
 <map id="elecstate::ElecStateLCAO_TDDFT::calculate_weights_td" name="elecstate::ElecStateLCAO_TDDFT::calculate_weights_td">
-<area shape="rect" id="node1" title=" " alt="" coords="5,23,221,65"/>
-<area shape="rect" id="node2" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="303,5,449,32"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="269,56,483,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,221,105"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="303,46,449,73"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="269,97,483,123"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="531,5,713,47"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="545,71,699,112"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="761,5,944,47"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="764,78,941,105"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="992,71,1145,112"/>
 </map>

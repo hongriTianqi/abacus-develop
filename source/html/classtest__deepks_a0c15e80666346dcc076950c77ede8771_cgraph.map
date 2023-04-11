@@ -1,8 +1,12 @@
 <map id="test_deepks::check_gvx" name="test_deepks::check_gvx">
-<area shape="rect" id="node1" title=" " alt="" coords="5,81,184,108"/>
-<area shape="rect" id="node2" href="$classLCAO__Deepks.html#ae47ee87c7f58bdea1e4e2f81a614214a" title=" " alt="" coords="242,31,413,57"/>
-<area shape="rect" id="node5" href="$classLCAO__Deepks.html#a26c909f03c2ac438385060f527df5f55" title=" " alt="" coords="232,81,423,108"/>
-<area shape="rect" id="node6" href="$classtest__deepks.html#ab16450cb7cc14f59d3cbb6ff248ee64b" title=" " alt="" coords="244,133,411,174"/>
-<area shape="rect" id="node3" href="$classLCAO__Deepks.html#a947af3e9eb7149bedf161e8e6fc7f6dc" title=" " alt="" coords="471,5,655,32"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="703,31,848,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,184,123"/>
+<area shape="rect" id="node2" href="$classLCAO__Deepks.html#ae47ee87c7f58bdea1e4e2f81a614214a" title=" " alt="" coords="242,46,413,73"/>
+<area shape="rect" id="node9" href="$classLCAO__Deepks.html#a26c909f03c2ac438385060f527df5f55" title=" " alt="" coords="232,97,423,123"/>
+<area shape="rect" id="node10" href="$classtest__deepks.html#ab16450cb7cc14f59d3cbb6ff248ee64b" title=" " alt="" coords="244,148,411,189"/>
+<area shape="rect" id="node3" href="$classLCAO__Deepks.html#a947af3e9eb7149bedf161e8e6fc7f6dc" title=" " alt="" coords="471,21,655,47"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="703,46,848,73"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="896,5,1079,47"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="911,71,1064,112"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="1127,5,1309,47"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="1129,78,1307,105"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: ModuleIO Namespace Reference</title>
+<title>3.2.0: ModuleIO Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -83,12 +83,12 @@ Functions</h2></td></tr>
 <tr class="separator:a25211498c731959156a75f266c5e07af"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a32472b1e7305d67d49cf05ed0465fb51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a32472b1e7305d67d49cf05ed0465fb51">write_dipole</a> (const double *rho_save, const int &amp;is, const int &amp;istep, const std::string &amp;fn, const int &amp;precision=11, const bool for_plot=false)</td></tr>
 <tr class="separator:a32472b1e7305d67d49cf05ed0465fb51"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad171b096499feb7992f58bd98c8a66de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#ad171b096499feb7992f58bd98c8a66de">read_dm</a> (const int &amp;is, const std::string &amp;fn, double ***DM, double **DM_R)</td></tr>
-<tr class="separator:ad171b096499feb7992f58bd98c8a66de"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abe92d0593d891a358ddeb22dc95f6eb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#abe92d0593d891a358ddeb22dc95f6eb5">write_dm</a> (const int &amp;is, const int &amp;iter, const std::string &amp;fn, const int &amp;precision, const int &amp;out_dm, double ***DM)</td></tr>
-<tr class="separator:abe92d0593d891a358ddeb22dc95f6eb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b909817cf58636ab2139753703a4698"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a6b909817cf58636ab2139753703a4698">calculate_dos</a> (const int &amp;is, const std::vector&lt; int &gt; &amp;isk, const std::string &amp;fn, const std::string &amp;fn1, const double &amp;de_ev, const double &amp;emax_ev, const double &amp;emin_ev, const double &amp;bcoeff, const int &amp;nks, const int &amp;nkstot, const std::vector&lt; double &gt; &amp;wk, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const int &amp;nbands, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb)</td></tr>
-<tr class="separator:a6b909817cf58636ab2139753703a4698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d79f11ea7761898866ed5df0407ccbf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a3d79f11ea7761898866ed5df0407ccbf">read_dm</a> (const int nnrg, const int *trace_lo, const int &amp;is, const std::string &amp;fn, double ***DM, double **DM_R, double &amp;ef, const <a class="el" href="classUnitCell.html">UnitCell</a> *ucell)</td></tr>
+<tr class="separator:a3d79f11ea7761898866ed5df0407ccbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1cb97aa4d8ae5a2d9bbfcca7c9058149"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a1cb97aa4d8ae5a2d9bbfcca7c9058149">write_dm</a> (const int *trace_lo, const int &amp;is, const int &amp;iter, const std::string &amp;fn, const int &amp;precision, const int &amp;out_dm, double ***DM, const double &amp;ef, const <a class="el" href="classUnitCell.html">UnitCell</a> *ucell)</td></tr>
+<tr class="separator:a1cb97aa4d8ae5a2d9bbfcca7c9058149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2deddafb1cb5949c20e093db8eb715cb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a2deddafb1cb5949c20e093db8eb715cb">calculate_dos</a> (const int &amp;is, const std::string &amp;fn, const std::string &amp;fn1, const double &amp;de_ev, const double &amp;emax_ev, const double &amp;emin_ev, const double &amp;bcoeff, const int &amp;nks, const int &amp;nkstot, const std::vector&lt; double &gt; &amp;wk, const std::vector&lt; int &gt; &amp;isk, const int &amp;nbands, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg)</td></tr>
+<tr class="separator:a2deddafb1cb5949c20e093db8eb715cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93153aba53aad7ab7e3cf55bbb8ac8ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a93153aba53aad7ab7e3cf55bbb8ac8ed">nscf_band</a> (const int &amp;is, const std::string &amp;out_band_dir, const int &amp;nks, const int &amp;nband, const double &amp;fermie, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb, const <a class="el" href="classK__Vectors.html">K_Vectors</a> *kv, const <a class="el" href="classParallel__Kpoints.html">Parallel_Kpoints</a> *Pkpoints)</td></tr>
 <tr class="separator:a93153aba53aad7ab7e3cf55bbb8ac8ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af67a6840a05d103336e7ea9bcebf2285"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#af67a6840a05d103336e7ea9bcebf2285">nscf_fermi_surface</a> (const std::string &amp;out_band_dir, const int &amp;nks, const int &amp;nband, const double &amp;ef, const <a class="el" href="classK__Vectors.html">K_Vectors</a> *kv, const <a class="el" href="classParallel__Kpoints.html">Parallel_Kpoints</a> *Pkpoints, const <a class="el" href="classUnitCell.html">UnitCell</a> *ucell, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb)</td></tr>
@@ -99,10 +99,10 @@ Functions</h2></td></tr>
 <tr class="separator:acb3651ae2e1a100d92fe71442ef53397"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac93ca7452766c0f1bb957887ced449d7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#ac93ca7452766c0f1bb957887ced449d7">read_wfc_nao_complex</a> (<a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; **ctot, const int &amp;ik, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *ParaV, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *psi, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pelec)</td></tr>
 <tr class="separator:ac93ca7452766c0f1bb957887ced449d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed941ec6c7a9c792424c4c3051427bde"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#aed941ec6c7a9c792424c4c3051427bde">read_rho</a> (const int &amp;is, const std::string &amp;fn, double *rho, int &amp;prenspin)</td></tr>
-<tr class="separator:aed941ec6c7a9c792424c4c3051427bde"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a30b1939432dc234c612304f7b7321fb7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a30b1939432dc234c612304f7b7321fb7">write_rho</a> (const double *rho_save, const int &amp;is, const int &amp;iter, const std::string &amp;fn, const int &amp;precision=11, const bool for_plot=false)</td></tr>
-<tr class="separator:a30b1939432dc234c612304f7b7321fb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17a82ff18c4eec3cdca9b446d737bd4c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a17a82ff18c4eec3cdca9b446d737bd4c">read_rho</a> (<a class="el" href="classParallel__Grid.html">Parallel_Grid</a> *Pgrid, const int &amp;is, const int &amp;nspin, const std::string &amp;fn, double *rho, int &amp;nx, int &amp;ny, int &amp;nz, double &amp;ef, const <a class="el" href="classUnitCell.html">UnitCell</a> *ucell, int &amp;prenspin)</td></tr>
+<tr class="separator:a17a82ff18c4eec3cdca9b446d737bd4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a047c6203f4fd97139b8d5e093e15ed0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a047c6203f4fd97139b8d5e093e15ed0b">write_rho</a> (const int &amp;bz, const int &amp;nbz, const int &amp;nplane, const int &amp;startz_current, const double *rho_save, const int &amp;is, const int &amp;nspin, const int &amp;iter, const std::string &amp;fn, const int &amp;nx, const int &amp;ny, const int &amp;nz, const double &amp;ef, const <a class="el" href="classUnitCell.html">UnitCell</a> *ucell, const int &amp;precision=11)</td></tr>
+<tr class="separator:a047c6203f4fd97139b8d5e093e15ed0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d24743c9d76fa75f2da7a7dbdf8adc6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a5d24743c9d76fa75f2da7a7dbdf8adc6">write_dm1</a> (const int &amp;is, const int &amp;istep, double **dm2d, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *ParaV, std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, double &gt;&gt;&gt; &amp;DMR_sparse)</td></tr>
 <tr class="separator:a5d24743c9d76fa75f2da7a7dbdf8adc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff4da1944cd6dd9491b817b1ff6263f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#acff4da1944cd6dd9491b817b1ff6263f">get_dm_sparse</a> (const int &amp;is, double **dm2d, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *ParaV, std::map&lt; <a class="el" href="classAbfs_1_1Vector3__Order.html">Abfs::Vector3_Order</a>&lt; int &gt;, std::map&lt; size_t, std::map&lt; size_t, double &gt;&gt;&gt; &amp;DMR_sparse)</td></tr>
@@ -114,9 +114,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a55eb550050b217a8ca9ecf8a0d0f8111"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111">write_dos_lcao</a> (const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *psid, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *psi, <a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;uhm, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const double &amp;dos_edelta_ev, const double &amp;dos_scale, const double &amp;bcoeff)</td></tr>
 <tr class="memdesc:a55eb550050b217a8ca9ecf8a0d0f8111"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO base  <a href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111">More...</a><br /></td></tr>
 <tr class="separator:a55eb550050b217a8ca9ecf8a0d0f8111"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a60049ca8dad06d59d228be3f8acff51d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a60049ca8dad06d59d228be3f8acff51d">write_dos_pw</a> (const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const double &amp;dos_edelta_ev, const double &amp;dos_scale, const double &amp;bcoeff)</td></tr>
-<tr class="memdesc:a60049ca8dad06d59d228be3f8acff51d"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate density of states(DOS) for PW base  <a href="namespaceModuleIO.html#a60049ca8dad06d59d228be3f8acff51d">More...</a><br /></td></tr>
-<tr class="separator:a60049ca8dad06d59d228be3f8acff51d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a307ae47198cb3fbb3276fc9be1c73586"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a307ae47198cb3fbb3276fc9be1c73586">write_dos_pw</a> (const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const <a class="el" href="classK__Vectors.html">K_Vectors</a> *kv, const double &amp;dos_edelta_ev, const double &amp;dos_scale, const double &amp;bcoeff)</td></tr>
+<tr class="memdesc:a307ae47198cb3fbb3276fc9be1c73586"><td class="mdescLeft">&#160;</td><td class="mdescRight">calculate density of states(DOS) for PW base  <a href="namespaceModuleIO.html#a307ae47198cb3fbb3276fc9be1c73586">More...</a><br /></td></tr>
+<tr class="separator:a307ae47198cb3fbb3276fc9be1c73586"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab6a335e71b54d75081e049ef7a9dd0e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#ab6a335e71b54d75081e049ef7a9dd0e6">saving_HS</a> (const double *Hloc, const double *Sloc, const bool bit, const int &amp;out_hs, const std::string &amp;file_name, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
 <tr class="separator:ab6a335e71b54d75081e049ef7a9dd0e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4aab5e98603d425dfbe3fe0ae982b6b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a4aab5e98603d425dfbe3fe0ae982b6b3">save_HS</a> (const double *H, const double *S, const bool bit, const std::string &amp;file_name, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
@@ -141,16 +141,16 @@ Functions</h2></td></tr>
 <tr class="separator:af5ac38e58c093b54af0e9c65f5f08fe0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e8eb92348bf16f397355bd7548b4cb2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a3e8eb92348bf16f397355bd7548b4cb2">save_SR_sparse</a> (<a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;lm, const double &amp;sparse_threshold, const bool &amp;binary, const std::string &amp;SR_filename)</td></tr>
 <tr class="separator:a3e8eb92348bf16f397355bd7548b4cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fe32fb0efb1b5ff8592d684e7738fec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a6fe32fb0efb1b5ff8592d684e7738fec">save_TR_sparse</a> (<a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;lm, const double &amp;sparse_threshold, const bool &amp;binary, const std::string &amp;TR_filename)</td></tr>
-<tr class="separator:a6fe32fb0efb1b5ff8592d684e7738fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71f6d0b5602944686d930ef99eee9fbe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a71f6d0b5602944686d930ef99eee9fbe">save_TR_sparse</a> (const int &amp;istep, <a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;lm, const double &amp;sparse_threshold, const bool &amp;binary, const std::string &amp;TR_filename)</td></tr>
+<tr class="separator:a71f6d0b5602944686d930ef99eee9fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43148bd67c9217b537b2f4b585cb65cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a43148bd67c9217b537b2f4b585cb65cb">save_dH_sparse</a> (const int &amp;istep, <a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;lm, const double &amp;sparse_threshold, const bool &amp;binary)</td></tr>
 <tr class="separator:a43148bd67c9217b537b2f4b585cb65cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1013bb33b63a153e291ad7b1b58beed4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a1013bb33b63a153e291ad7b1b58beed4">output_single_R</a> (std::ofstream &amp;ofs, const std::map&lt; size_t, std::map&lt; size_t, double &gt;&gt; &amp;XR, const double &amp;sparse_threshold, const bool &amp;binary, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
 <tr class="separator:a1013bb33b63a153e291ad7b1b58beed4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae59680e39ec3af5e92c8b99fdecca25c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#ae59680e39ec3af5e92c8b99fdecca25c">output_soc_single_R</a> (std::ofstream &amp;ofs, const std::map&lt; size_t, std::map&lt; size_t, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt;&gt; &amp;XR, const double &amp;sparse_threshold, const bool &amp;binary, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
 <tr class="separator:ae59680e39ec3af5e92c8b99fdecca25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aae5da83e095340bebb9d4d1ee6dab9eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#aae5da83e095340bebb9d4d1ee6dab9eb">write_istate_info</a> (const <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pelec, const <a class="el" href="classK__Vectors.html">K_Vectors</a> *kv, const <a class="el" href="classParallel__Kpoints.html">Parallel_Kpoints</a> *Pkpoints)</td></tr>
-<tr class="separator:aae5da83e095340bebb9d4d1ee6dab9eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a513ecd04735cb7946ca23244921d53b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a513ecd04735cb7946ca23244921d53b3">write_istate_info</a> (const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;ekb, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const <a class="el" href="classK__Vectors.html">K_Vectors</a> *kv, const <a class="el" href="classParallel__Kpoints.html">Parallel_Kpoints</a> *Pkpoints)</td></tr>
+<tr class="separator:a513ecd04735cb7946ca23244921d53b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ec775d5374f80eec191dd53383988a7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a6ec775d5374f80eec191dd53383988a7">write_orb_info</a> ()</td></tr>
 <tr class="separator:a6ec775d5374f80eec191dd53383988a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cbf83c8770f439cd1dff405626aba97"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a8cbf83c8770f439cd1dff405626aba97">write_proj_band_lcao</a> (const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *psid, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *psi, <a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;uhm, const <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pelec, const <a class="el" href="classK__Vectors.html">K_Vectors</a> *kv, const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell, const <a class="el" href="classLCAO__Orbitals.html">LCAO_Orbitals</a> &amp;ORB, <a class="el" href="classGrid__Driver.html">Grid_Driver</a> &amp;GridD)</td></tr>
@@ -228,8 +228,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a6b909817cf58636ab2139753703a4698"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b909817cf58636ab2139753703a4698">&#9670;&nbsp;</a></span>calculate_dos()</h2>
+<a id="a2deddafb1cb5949c20e093db8eb715cb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2deddafb1cb5949c20e093db8eb715cb">&#9670;&nbsp;</a></span>calculate_dos()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -239,12 +239,6 @@ Here is the caller graph for this function:</div>
           <td>(</td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>is</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
-          <td class="paramname"><em>isk</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -303,8 +297,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>wg</em>, </td>
+          <td class="paramtype">const std::vector&lt; int &gt; &amp;&#160;</td>
+          <td class="paramname"><em>isk</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -316,7 +310,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>ekb</em>&#160;</td>
+          <td class="paramname"><em>ekb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>wg</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -328,25 +328,32 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_a6b909817cf58636ab2139753703a4698_cgraph.png" border="0" usemap="#namespaceModuleIO_a6b909817cf58636ab2139753703a4698_cgraph" alt=""/></div>
-<map name="namespaceModuleIO_a6b909817cf58636ab2139753703a4698_cgraph" id="namespaceModuleIO_a6b909817cf58636ab2139753703a4698_cgraph">
+<div class="center"><img src="namespaceModuleIO_a2deddafb1cb5949c20e093db8eb715cb_cgraph.png" border="0" usemap="#namespaceModuleIO_a2deddafb1cb5949c20e093db8eb715cb_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a2deddafb1cb5949c20e093db8eb715cb_cgraph" id="namespaceModuleIO_a2deddafb1cb5949c20e093db8eb715cb_cgraph">
 <area shape="rect" title=" " alt="" coords="5,81,187,108"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="235,5,453,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="271,56,417,83"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="271,56,417,83"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="257,107,431,133"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="253,158,435,199"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="501,17,684,58"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="516,82,669,123"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="732,17,915,58"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="735,89,912,116"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="963,82,1116,123"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_a6b909817cf58636ab2139753703a4698_icgraph.png" border="0" usemap="#namespaceModuleIO_a6b909817cf58636ab2139753703a4698_icgraph" alt=""/></div>
-<map name="namespaceModuleIO_a6b909817cf58636ab2139753703a4698_icgraph" id="namespaceModuleIO_a6b909817cf58636ab2139753703a4698_icgraph">
-<area shape="rect" title=" " alt="" coords="525,46,707,73"/>
-<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="288,17,477,43"/>
-<area shape="rect" href="namespaceModuleIO.html#a60049ca8dad06d59d228be3f8acff51d" title="calculate density of states(DOS) for PW base" alt="" coords="292,71,473,98"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="35,5,211,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="5,71,240,112"/>
+<div class="center"><img src="namespaceModuleIO_a2deddafb1cb5949c20e093db8eb715cb_icgraph.png" border="0" usemap="#namespaceModuleIO_a2deddafb1cb5949c20e093db8eb715cb_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a2deddafb1cb5949c20e093db8eb715cb_icgraph" id="namespaceModuleIO_a2deddafb1cb5949c20e093db8eb715cb_icgraph">
+<area shape="rect" title=" " alt="" coords="525,56,707,83"/>
+<area shape="rect" href="dos__test_8cpp.html#abe39b5b710352d3e1e78c5677856c2af" title=" " alt="" coords="348,5,417,32"/>
+<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="288,56,477,83"/>
+<area shape="rect" href="namespaceModuleIO.html#a307ae47198cb3fbb3276fc9be1c73586" title="calculate density of states(DOS) for PW base" alt="" coords="292,113,473,140"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="35,41,211,82"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="5,106,240,147"/>
+<area shape="rect" href="write__dos__pw__test_8cpp.html#a99684cd3880b183f8e1de04d444ce9fa" title=" " alt="" coords="88,172,157,199"/>
 </map>
 </div>
 
@@ -422,12 +429,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceModuleIO_af5bc61c3a892da02cef23631dba2ec5b_cgraph.png" border="0" usemap="#namespaceModuleIO_af5bc61c3a892da02cef23631dba2ec5b_cgraph" alt=""/></div>
 <map name="namespaceModuleIO_af5bc61c3a892da02cef23631dba2ec5b_cgraph" id="namespaceModuleIO_af5bc61c3a892da02cef23631dba2ec5b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,63,192,89"/>
-<area shape="rect" href="classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="240,8,395,35"/>
-<area shape="rect" href="read__wfc__nao_8cpp.html#ad358ab0af8ae6f75e724b29a78fe7ba3" title=" " alt="" coords="281,63,354,89"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="245,113,390,140"/>
-<area shape="rect" href="blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc" title=" " alt="" coords="481,5,549,32"/>
-<area shape="rect" href="classLocal__Orbital__wfc.html#aa3d559e5775e7c4a7555eb3047747ad6" title=" " alt="" coords="443,57,588,98"/>
+<area shape="rect" title=" " alt="" coords="5,64,192,91"/>
+<area shape="rect" href="classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="240,9,395,36"/>
+<area shape="rect" href="read__wfc__nao_8cpp.html#ad358ab0af8ae6f75e724b29a78fe7ba3" title=" " alt="" coords="281,64,354,91"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="245,129,390,156"/>
+<area shape="rect" href="blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc" title=" " alt="" coords="500,5,568,32"/>
+<area shape="rect" href="classLocal__Orbital__wfc.html#aa3d559e5775e7c4a7555eb3047747ad6" title=" " alt="" coords="461,57,607,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="443,122,625,163"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="457,187,611,229"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="673,122,856,163"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="676,195,853,221"/>
 </map>
 </div>
 
@@ -475,13 +486,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceModuleIO_acb3651ae2e1a100d92fe71442ef53397_cgraph.png" border="0" usemap="#namespaceModuleIO_acb3651ae2e1a100d92fe71442ef53397_cgraph" alt=""/></div>
 <map name="namespaceModuleIO_acb3651ae2e1a100d92fe71442ef53397_cgraph" id="namespaceModuleIO_acb3651ae2e1a100d92fe71442ef53397_cgraph">
-<area shape="rect" title=" " alt="" coords="5,79,160,121"/>
-<area shape="rect" href="classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="237,7,392,33"/>
-<area shape="rect" href="read__wfc__nao_8cpp.html#a5c87801061ddd47b3acebd7ec6a00130" title=" " alt="" coords="271,61,358,88"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="242,112,387,139"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="208,163,421,189"/>
-<area shape="rect" href="blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc" title=" " alt="" coords="508,5,576,32"/>
-<area shape="rect" href="classLocal__Orbital__wfc.html#aa3d559e5775e7c4a7555eb3047747ad6" title=" " alt="" coords="469,57,615,98"/>
+<area shape="rect" title=" " alt="" coords="5,93,160,134"/>
+<area shape="rect" href="classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="237,9,392,36"/>
+<area shape="rect" href="read__wfc__nao_8cpp.html#a5c87801061ddd47b3acebd7ec6a00130" title=" " alt="" coords="271,68,358,95"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="242,125,387,152"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="208,176,421,203"/>
+<area shape="rect" href="blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc" title=" " alt="" coords="527,5,595,32"/>
+<area shape="rect" href="classLocal__Orbital__wfc.html#aa3d559e5775e7c4a7555eb3047747ad6" title=" " alt="" coords="488,57,633,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="469,122,652,163"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="484,187,637,229"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="700,122,883,163"/>
 </map>
 </div>
 <div class="dynheader">
@@ -547,7 +561,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classNumerical__Orbital.html#ad14b5e00ca67a8806f643c0a6ec52b39" title=" " alt="" coords="277,259,425,301"/>
 <area shape="rect" href="classGrid__Driver.html#a6454c0cf88c2daa8a19f365bb3bcdc47" title=" " alt="" coords="273,325,428,352"/>
 <area shape="rect" href="classModuleBase_1_1Vector3.html#ad60ad31cf88ec368398433c2826e6715" title="Get the norm of a Vector3." alt="" coords="271,377,430,418"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="278,443,423,469"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="278,443,423,469"/>
 </map>
 </div>
 <div class="dynheader">
@@ -629,10 +643,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceModuleIO_a93153aba53aad7ab7e3cf55bbb8ac8ed_cgraph.png" border="0" usemap="#namespaceModuleIO_a93153aba53aad7ab7e3cf55bbb8ac8ed_cgraph" alt=""/></div>
 <map name="namespaceModuleIO_a93153aba53aad7ab7e3cf55bbb8ac8ed_cgraph" id="namespaceModuleIO_a93153aba53aad7ab7e3cf55bbb8ac8ed_cgraph">
-<area shape="rect" title=" " alt="" coords="5,38,164,65"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="212,13,389,39"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="228,63,373,90"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="437,5,591,47"/>
+<area shape="rect" title=" " alt="" coords="5,13,164,39"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="639,13,816,39"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="212,42,357,69"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="867,5,1020,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="405,100,588,141"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="420,35,573,76"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="636,100,819,141"/>
 </map>
 </div>
 <div class="dynheader">
@@ -714,10 +731,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceModuleIO_af67a6840a05d103336e7ea9bcebf2285_cgraph.png" border="0" usemap="#namespaceModuleIO_af67a6840a05d103336e7ea9bcebf2285_cgraph" alt=""/></div>
 <map name="namespaceModuleIO_af67a6840a05d103336e7ea9bcebf2285_cgraph" id="namespaceModuleIO_af67a6840a05d103336e7ea9bcebf2285_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,167,72"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="215,13,392,39"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="231,63,376,90"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="440,5,593,47"/>
+<area shape="rect" title=" " alt="" coords="5,5,167,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="641,13,819,39"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="215,42,360,69"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="869,5,1023,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="408,100,591,141"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="423,35,576,76"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="639,100,821,141"/>
 </map>
 </div>
 <div class="dynheader">
@@ -782,7 +802,7 @@ Here is the call graph for this function:</div>
 <map name="namespaceModuleIO_a0d88b86e77cb5645ff018b2fbb08f37b_cgraph" id="namespaceModuleIO_a0d88b86e77cb5645ff018b2fbb08f37b_cgraph">
 <area shape="rect" title=" " alt="" coords="5,206,180,233"/>
 <area shape="rect" href="classGint__k.html#a6df2319438d058d3fa6a2115ec6df0d7" title=" " alt="" coords="241,13,413,39"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="491,151,636,178"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="491,151,636,178"/>
 <area shape="rect" href="classGint.html#ac7bf53713917f2a2545c7f98e5b056a3" title=" " alt="" coords="273,231,381,258"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="475,282,652,309"/>
 <area shape="rect" href="classLCAO__Hamilt.html#a92bcfc332b2966a939d9e5b37adba655" title=" " alt="" coords="240,115,415,156"/>
@@ -874,7 +894,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,239,180,266"/>
 <area shape="rect" href="classGint.html#ac7bf53713917f2a2545c7f98e5b056a3" title=" " alt="" coords="261,71,369,98"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="451,122,628,149"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="467,239,612,266"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="467,239,612,266"/>
 <area shape="rect" href="classLCAO__Hamilt.html#a34542d40d7473a253e2ba042ad97339a" title=" " alt="" coords="228,291,403,332"/>
 <area shape="rect" href="classLCAO__Hamilt.html#a9a67d9b8783720e2b1f48dc68bd51aff" title=" " alt="" coords="233,408,398,449"/>
 <area shape="rect" href="classGint__k.html#a1e0d0bb0bc28e24a865d6bd98ea80db9" title=" " alt="" coords="235,357,396,383"/>
@@ -940,7 +960,7 @@ Here is the call graph for this function:</div>
 <map name="namespaceModuleIO_a2d9ce1f8baba9306ec62451480faaaca_cgraph" id="namespaceModuleIO_a2d9ce1f8baba9306ec62451480faaaca_cgraph">
 <area shape="rect" title=" " alt="" coords="5,247,171,274"/>
 <area shape="rect" href="classLCAO__Hamilt.html#ae82068bd370b5d279669a2ff8ddb45c6" title=" " alt="" coords="230,93,405,135"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="689,189,835,215"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="689,189,835,215"/>
 <area shape="rect" href="classLCAO__Hamilt.html#a9a67d9b8783720e2b1f48dc68bd51aff" title=" " alt="" coords="235,240,400,281"/>
 <area shape="rect" href="namespaceModuleIO.html#a3e8eb92348bf16f397355bd7548b4cb2" title=" " alt="" coords="219,318,416,345"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="464,407,641,434"/>
@@ -1093,7 +1113,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="namespaceModuleIO.html#a43148bd67c9217b537b2f4b585cb65cb" title=" " alt="" coords="471,5,669,32"/>
 <area shape="rect" href="namespaceModuleIO.html#af5ac38e58c093b54af0e9c65f5f08fe0" title=" " alt="" coords="491,57,649,98"/>
 <area shape="rect" href="namespaceModuleIO.html#a3e8eb92348bf16f397355bd7548b4cb2" title=" " alt="" coords="471,123,669,149"/>
-<area shape="rect" href="namespaceModuleIO.html#a6fe32fb0efb1b5ff8592d684e7738fec" title=" " alt="" coords="471,173,669,200"/>
+<area shape="rect" href="namespaceModuleIO.html#a71f6d0b5602944686d930ef99eee9fbe" title=" " alt="" coords="471,173,669,200"/>
 <area shape="rect" href="namespaceModuleIO.html#a0d88b86e77cb5645ff018b2fbb08f37b" title=" " alt="" coords="248,9,423,36"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,57,200,98"/>
 <area shape="rect" href="namespaceModuleIO.html#ad46acd60a18f774d9ce42bc613994275" title=" " alt="" coords="248,64,423,91"/>
@@ -1154,9 +1174,9 @@ Here is the call graph for this function:</div>
 <map name="namespaceModuleIO_a7358ddde907dcfe7ed301492d0ad45eb_cgraph" id="namespaceModuleIO_a7358ddde907dcfe7ed301492d0ad45eb_cgraph">
 <area shape="rect" title=" " alt="" coords="5,363,171,390"/>
 <area shape="rect" href="classLCAO__Hamilt.html#a5b7670dbd9e802eb478c5e804546225d" title=" " alt="" coords="230,156,405,197"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="695,130,840,157"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="695,130,840,157"/>
 <area shape="rect" href="classLCAO__Hamilt.html#a6f77f3db1775c49d6bcb79f07cfdb623" title=" " alt="" coords="235,356,400,397"/>
-<area shape="rect" href="namespaceModuleIO.html#a6fe32fb0efb1b5ff8592d684e7738fec" title=" " alt="" coords="219,422,416,449"/>
+<area shape="rect" href="namespaceModuleIO.html#a71f6d0b5602944686d930ef99eee9fbe" title=" " alt="" coords="219,422,416,449"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="467,447,644,474"/>
 <area shape="rect" href="classLCAO__gen__fixedH.html#a64522ad6b5aa376f398d8bc046ad6f9b" title=" " alt="" coords="467,5,643,47"/>
 <area shape="rect" href="classLCAO__Hamilt.html#aa25b07a8b27e85bceae7a15bb0a4492e" title=" " alt="" coords="468,123,643,164"/>
@@ -1177,8 +1197,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ad171b096499feb7992f58bd98c8a66de"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad171b096499feb7992f58bd98c8a66de">&#9670;&nbsp;</a></span>read_dm()</h2>
+<a id="a3d79f11ea7761898866ed5df0407ccbf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d79f11ea7761898866ed5df0407ccbf">&#9670;&nbsp;</a></span>read_dm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1186,6 +1206,18 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void ModuleIO::read_dm </td>
           <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>nnrg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>trace_lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>is</em>, </td>
         </tr>
@@ -1205,7 +1237,19 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double **&#160;</td>
-          <td class="paramname"><em>DM_R</em>&#160;</td>
+          <td class="paramname"><em>DM_R</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>ef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classUnitCell.html">UnitCell</a> *&#160;</td>
+          <td class="paramname"><em>ucell</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1217,8 +1261,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_ad171b096499feb7992f58bd98c8a66de_cgraph.png" border="0" usemap="#namespaceModuleIO_ad171b096499feb7992f58bd98c8a66de_cgraph" alt=""/></div>
-<map name="namespaceModuleIO_ad171b096499feb7992f58bd98c8a66de_cgraph" id="namespaceModuleIO_ad171b096499feb7992f58bd98c8a66de_cgraph">
+<div class="center"><img src="namespaceModuleIO_a3d79f11ea7761898866ed5df0407ccbf_cgraph.png" border="0" usemap="#namespaceModuleIO_a3d79f11ea7761898866ed5df0407ccbf_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a3d79f11ea7761898866ed5df0407ccbf_cgraph" id="namespaceModuleIO_a3d79f11ea7761898866ed5df0407ccbf_cgraph">
 <area shape="rect" title=" " alt="" coords="5,224,155,251"/>
 <area shape="rect" href="namespaceParallel__Common.html#a739125ffaec185825b0015a6a562edd6" title=" " alt="" coords="203,5,418,32"/>
 <area shape="rect" href="namespaceParallel__Common.html#ae2c335f1c53dd21170728ba93aee096e" title=" " alt="" coords="221,57,400,98"/>
@@ -1227,17 +1271,18 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleBase.html#a451d5c9cbccd2630976c5ab34b94e134" title="Check the next input from ifs is integer. This is a global function." alt="" coords="219,224,403,251"/>
 <area shape="rect" href="namespaceModuleBase.html#a516dea6276e03ba46c994b7227b0e09f" title="Check the next input from ifs is std::string. This is a global function." alt="" coords="205,275,416,301"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="222,325,399,352"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="238,376,383,403"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="238,376,383,403"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="219,427,402,469"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_ad171b096499feb7992f58bd98c8a66de_icgraph.png" border="0" usemap="#namespaceModuleIO_ad171b096499feb7992f58bd98c8a66de_icgraph" alt=""/></div>
-<map name="namespaceModuleIO_ad171b096499feb7992f58bd98c8a66de_icgraph" id="namespaceModuleIO_ad171b096499feb7992f58bd98c8a66de_icgraph">
-<area shape="rect" title=" " alt="" coords="481,46,631,73"/>
+<div class="center"><img src="namespaceModuleIO_a3d79f11ea7761898866ed5df0407ccbf_icgraph.png" border="0" usemap="#namespaceModuleIO_a3d79f11ea7761898866ed5df0407ccbf_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a3d79f11ea7761898866ed5df0407ccbf_icgraph" id="namespaceModuleIO_a3d79f11ea7761898866ed5df0407ccbf_icgraph">
+<area shape="rect" title=" " alt="" coords="481,75,631,102"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="255,39,433,80"/>
+<area shape="rect" href="dm__io__test_8cpp.html#a53e37b5abc9dddec377fbe6f6054dbb7" title=" " alt="" coords="309,105,379,131"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,71,207,112"/>
 </map>
@@ -1245,8 +1290,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="aed941ec6c7a9c792424c4c3051427bde"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aed941ec6c7a9c792424c4c3051427bde">&#9670;&nbsp;</a></span>read_rho()</h2>
+<a id="a17a82ff18c4eec3cdca9b446d737bd4c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17a82ff18c4eec3cdca9b446d737bd4c">&#9670;&nbsp;</a></span>read_rho()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1254,8 +1299,20 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">bool ModuleIO::read_rho </td>
           <td>(</td>
+          <td class="paramtype"><a class="el" href="classParallel__Grid.html">Parallel_Grid</a> *&#160;</td>
+          <td class="paramname"><em>Pgrid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nspin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1273,6 +1330,36 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>nx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
+          <td class="paramname"><em>nz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double &amp;&#160;</td>
+          <td class="paramname"><em>ef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classUnitCell.html">UnitCell</a> *&#160;</td>
+          <td class="paramname"><em>ucell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int &amp;&#160;</td>
           <td class="paramname"><em>prenspin</em>&#160;</td>
         </tr>
         <tr>
@@ -1285,21 +1372,25 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_cgraph.png" border="0" usemap="#namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_cgraph" alt=""/></div>
-<map name="namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_cgraph" id="namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,155,108"/>
+<div class="center"><img src="namespaceModuleIO_a17a82ff18c4eec3cdca9b446d737bd4c_cgraph.png" border="0" usemap="#namespaceModuleIO_a17a82ff18c4eec3cdca9b446d737bd4c_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a17a82ff18c4eec3cdca9b446d737bd4c_cgraph" id="namespaceModuleIO_a17a82ff18c4eec3cdca9b446d737bd4c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,107,155,133"/>
 <area shape="rect" href="namespaceModuleBase.html#a43656d1e863b0ec72e21ed479c79c39b" title="Check the next input from ifs is double. This is a global function." alt="" coords="203,5,419,32"/>
 <area shape="rect" href="namespaceModuleBase.html#a451d5c9cbccd2630976c5ab34b94e134" title="Check the next input from ifs is integer. This is a global function." alt="" coords="219,56,403,83"/>
-<area shape="rect" href="namespaceModuleBase.html#a516dea6276e03ba46c994b7227b0e09f" title="Check the next input from ifs is std::string. This is a global function." alt="" coords="205,107,416,133"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="238,107,383,133"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="219,158,402,199"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="467,56,680,83"/>
+<area shape="rect" href="classParallel__Grid.html#a8b5d3506121576ce2323d42182db0018" title=" " alt="" coords="233,223,388,265"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="467,16,680,43"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="482,89,665,130"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="497,154,650,195"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="728,89,911,130"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_icgraph.png" border="0" usemap="#namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_icgraph" alt=""/></div>
-<map name="namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_icgraph" id="namespaceModuleIO_aed941ec6c7a9c792424c4c3051427bde_icgraph">
+<div class="center"><img src="namespaceModuleIO_a17a82ff18c4eec3cdca9b446d737bd4c_icgraph.png" border="0" usemap="#namespaceModuleIO_a17a82ff18c4eec3cdca9b446d737bd4c_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a17a82ff18c4eec3cdca9b446d737bd4c_icgraph" id="namespaceModuleIO_a17a82ff18c4eec3cdca9b446d737bd4c_icgraph">
 <area shape="rect" title=" " alt="" coords="627,71,776,98"/>
 <area shape="rect" href="classCharge.html#a6ef62c006a967148f156fa5db8fa752e" title=" " alt="" coords="453,46,579,73"/>
 <area shape="rect" href="updaterhok__pw__test_8cpp.html#a8d8d0f6b8066294ef021796e6950d7bb" title=" " alt="" coords="481,97,551,123"/>
@@ -1485,12 +1576,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,125,156,166"/>
 <area shape="rect" href="namespaceParallel__Common.html#a948e39313b7dec5fc96e407e0de09d41" title=" " alt="" coords="204,44,407,71"/>
 <area shape="rect" href="namespaceModuleIO.html#acb3651ae2e1a100d92fe71442ef53397" title=" " alt="" coords="228,95,383,137"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="489,157,634,184"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="489,157,634,184"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="217,212,394,239"/>
 <area shape="rect" href="classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="484,5,639,32"/>
 <area shape="rect" href="read__wfc__nao_8cpp.html#a5c87801061ddd47b3acebd7ec6a00130" title=" " alt="" coords="518,56,605,83"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="455,107,668,133"/>
-<area shape="rect" href="blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc" title=" " alt="" coords="716,5,784,32"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="716,150,899,191"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="485,209,638,250"/>
 </map>
 </div>
@@ -1545,7 +1636,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleIO.html#ae59680e39ec3af5e92c8b99fdecca25c" title=" " alt="" coords="259,129,422,171"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="252,195,429,236"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="252,261,429,287"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="268,311,413,338"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="268,311,413,338"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="480,5,657,47"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#aaf8c18a72256b2dc71cb8cd143fa7c65" title=" " alt="" coords="480,136,657,177"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="492,253,645,295"/>
@@ -1616,10 +1707,13 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,123,153,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="201,5,420,32"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="222,57,399,98"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="222,123,399,149"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="238,173,383,200"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="219,225,402,266"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="468,115,621,157"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="701,152,879,179"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="238,177,383,204"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="219,229,402,270"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="929,145,1083,186"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="468,239,651,281"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="483,174,636,215"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="699,239,881,281"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1627,10 +1721,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceModuleIO_a4aab5e98603d425dfbe3fe0ae982b6b3_icgraph.png" border="0" usemap="#namespaceModuleIO_a4aab5e98603d425dfbe3fe0ae982b6b3_icgraph" alt=""/></div>
 <map name="namespaceModuleIO_a4aab5e98603d425dfbe3fe0ae982b6b3_icgraph" id="namespaceModuleIO_a4aab5e98603d425dfbe3fe0ae982b6b3_icgraph">
-<area shape="rect" title=" " alt="" coords="637,13,785,39"/>
-<area shape="rect" href="namespaceModuleIO.html#ab6a335e71b54d75081e049ef7a9dd0e6" title=" " alt="" coords="429,13,589,39"/>
-<area shape="rect" href="classhsolver_1_1HSolverLCAO.html#a11a9f93e5be6ffcc98b70755f6c1f850" title=" " alt="" coords="217,5,381,47"/>
-<area shape="rect" href="classhsolver_1_1HSolverLCAO.html#a5b34c659435176ba20c4b6bd052d9ae0" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" title=" " alt="" coords="472,46,620,73"/>
+<area shape="rect" href="namespaceModuleIO.html#ab6a335e71b54d75081e049ef7a9dd0e6" title=" " alt="" coords="264,46,424,73"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#ab018811c84928fe8f01ae25646e57201" title=" " alt="" coords="5,5,216,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae0cd9310438ff79da094fc161c3602d9" title=" " alt="" coords="23,71,199,112"/>
 </map>
 </div>
 
@@ -1742,10 +1836,13 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,123,216,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="264,5,483,32"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a5ccf1f753c6fae3266e7e9b5e21f2712" title=" " alt="" coords="285,57,462,98"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="285,123,462,149"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="301,173,446,200"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="282,225,465,266"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="531,115,684,157"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="764,152,941,179"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="301,177,446,204"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="282,229,465,270"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="992,145,1145,186"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="531,239,713,281"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="545,174,699,215"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="761,239,944,281"/>
 </map>
 </div>
 
@@ -1817,7 +1914,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleIO.html#ae59680e39ec3af5e92c8b99fdecca25c" title=" " alt="" coords="218,129,381,171"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="211,195,388,236"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="211,261,388,287"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="227,311,372,338"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="227,311,372,338"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="439,5,616,47"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#aaf8c18a72256b2dc71cb8cd143fa7c65" title=" " alt="" coords="439,136,616,177"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="451,253,604,295"/>
@@ -1913,7 +2010,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleIO.html#ae59680e39ec3af5e92c8b99fdecca25c" title=" " alt="" coords="258,129,421,171"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="251,195,428,236"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="251,261,428,287"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="267,311,412,338"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="267,311,412,338"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="479,5,656,47"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#aaf8c18a72256b2dc71cb8cd143fa7c65" title=" " alt="" coords="479,136,656,177"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="491,253,644,295"/>
@@ -1933,8 +2030,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a6fe32fb0efb1b5ff8592d684e7738fec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fe32fb0efb1b5ff8592d684e7738fec">&#9670;&nbsp;</a></span>save_TR_sparse()</h2>
+<a id="a71f6d0b5602944686d930ef99eee9fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71f6d0b5602944686d930ef99eee9fbe">&#9670;&nbsp;</a></span>save_TR_sparse()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1942,6 +2039,12 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void ModuleIO::save_TR_sparse </td>
           <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>istep</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype"><a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;&#160;</td>
           <td class="paramname"><em>lm</em>, </td>
         </tr>
@@ -1973,15 +2076,15 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_cgraph.png" border="0" usemap="#namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_cgraph" alt=""/></div>
-<map name="namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_cgraph" id="namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_cgraph">
+<div class="center"><img src="namespaceModuleIO_a71f6d0b5602944686d930ef99eee9fbe_cgraph.png" border="0" usemap="#namespaceModuleIO_a71f6d0b5602944686d930ef99eee9fbe_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a71f6d0b5602944686d930ef99eee9fbe_cgraph" id="namespaceModuleIO_a71f6d0b5602944686d930ef99eee9fbe_cgraph">
 <area shape="rect" title=" " alt="" coords="5,170,203,197"/>
 <area shape="rect" href="write__dm__sparse_8cpp.html#af2e4797e1b905049a01390ced0f145e9" title=" " alt="" coords="276,27,403,54"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="476,71,659,112"/>
 <area shape="rect" href="namespaceModuleIO.html#ae59680e39ec3af5e92c8b99fdecca25c" title=" " alt="" coords="258,129,421,171"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="251,195,428,236"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="251,261,428,287"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="267,311,412,338"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="267,311,412,338"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="479,5,656,47"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#aaf8c18a72256b2dc71cb8cd143fa7c65" title=" " alt="" coords="479,136,656,177"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="491,253,644,295"/>
@@ -1990,8 +2093,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_icgraph.png" border="0" usemap="#namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_icgraph" alt=""/></div>
-<map name="namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_icgraph" id="namespaceModuleIO_a6fe32fb0efb1b5ff8592d684e7738fec_icgraph">
+<div class="center"><img src="namespaceModuleIO_a71f6d0b5602944686d930ef99eee9fbe_icgraph.png" border="0" usemap="#namespaceModuleIO_a71f6d0b5602944686d930ef99eee9fbe_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a71f6d0b5602944686d930ef99eee9fbe_icgraph" id="namespaceModuleIO_a71f6d0b5602944686d930ef99eee9fbe_icgraph">
 <area shape="rect" title=" " alt="" coords="461,46,659,73"/>
 <area shape="rect" href="namespaceModuleIO.html#a7358ddde907dcfe7ed301492d0ad45eb" title=" " alt="" coords="248,46,413,73"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,5,200,47"/>
@@ -2061,9 +2164,10 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="436,5,655,32"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="457,57,634,98"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="457,123,634,149"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="473,173,618,200"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="473,173,618,200"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="454,225,637,266"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="703,115,856,157"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="717,107,871,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="703,173,885,214"/>
 </map>
 </div>
 <div class="dynheader">
@@ -2071,9 +2175,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceModuleIO_ab6a335e71b54d75081e049ef7a9dd0e6_icgraph.png" border="0" usemap="#namespaceModuleIO_ab6a335e71b54d75081e049ef7a9dd0e6_icgraph" alt=""/></div>
 <map name="namespaceModuleIO_ab6a335e71b54d75081e049ef7a9dd0e6_icgraph" id="namespaceModuleIO_ab6a335e71b54d75081e049ef7a9dd0e6_icgraph">
-<area shape="rect" title=" " alt="" coords="429,13,589,39"/>
-<area shape="rect" href="classhsolver_1_1HSolverLCAO.html#a11a9f93e5be6ffcc98b70755f6c1f850" title=" " alt="" coords="217,5,381,47"/>
-<area shape="rect" href="classhsolver_1_1HSolverLCAO.html#a5b34c659435176ba20c4b6bd052d9ae0" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" title=" " alt="" coords="264,46,424,73"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#ab018811c84928fe8f01ae25646e57201" title=" " alt="" coords="5,5,216,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae0cd9310438ff79da094fc161c3602d9" title=" " alt="" coords="23,71,199,112"/>
 </map>
 </div>
 
@@ -2254,9 +2358,13 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,137,177,163"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a5f13944ea3a04330fb2cc24e1c96a307" title=" " alt="" coords="225,5,408,47"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="228,71,405,112"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="244,137,389,163"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="244,137,389,163"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="229,187,404,214"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="225,239,408,280"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="456,97,639,139"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="471,163,624,204"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="687,97,869,139"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="689,170,867,197"/>
 </map>
 </div>
 <div class="dynheader">
@@ -2271,8 +2379,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="abe92d0593d891a358ddeb22dc95f6eb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abe92d0593d891a358ddeb22dc95f6eb5">&#9670;&nbsp;</a></span>write_dm()</h2>
+<a id="a1cb97aa4d8ae5a2d9bbfcca7c9058149"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1cb97aa4d8ae5a2d9bbfcca7c9058149">&#9670;&nbsp;</a></span>write_dm()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2280,6 +2388,12 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void ModuleIO::write_dm </td>
           <td>(</td>
+          <td class="paramtype">const int *&#160;</td>
+          <td class="paramname"><em>trace_lo</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>is</em>, </td>
         </tr>
@@ -2311,7 +2425,19 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double ***&#160;</td>
-          <td class="paramname"><em>DM</em>&#160;</td>
+          <td class="paramname"><em>DM</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>ef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classUnitCell.html">UnitCell</a> *&#160;</td>
+          <td class="paramname"><em>ucell</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2323,29 +2449,30 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_abe92d0593d891a358ddeb22dc95f6eb5_cgraph.png" border="0" usemap="#namespaceModuleIO_abe92d0593d891a358ddeb22dc95f6eb5_cgraph" alt=""/></div>
-<map name="namespaceModuleIO_abe92d0593d891a358ddeb22dc95f6eb5_cgraph" id="namespaceModuleIO_abe92d0593d891a358ddeb22dc95f6eb5_cgraph">
-<area shape="rect" title=" " alt="" coords="5,227,159,254"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a5f13944ea3a04330fb2cc24e1c96a307" title=" " alt="" coords="222,5,405,47"/>
-<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="225,71,402,112"/>
-<area shape="rect" href="namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="225,136,402,177"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="225,202,402,229"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="241,253,386,279"/>
-<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="226,303,401,330"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="207,354,420,381"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="222,405,405,447"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="468,195,621,236"/>
+<div class="center"><img src="namespaceModuleIO_a1cb97aa4d8ae5a2d9bbfcca7c9058149_cgraph.png" border="0" usemap="#namespaceModuleIO_a1cb97aa4d8ae5a2d9bbfcca7c9058149_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a1cb97aa4d8ae5a2d9bbfcca7c9058149_cgraph" id="namespaceModuleIO_a1cb97aa4d8ae5a2d9bbfcca7c9058149_cgraph">
+<area shape="rect" title=" " alt="" coords="5,202,159,229"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a5f13944ea3a04330fb2cc24e1c96a307" title=" " alt="" coords="207,5,389,47"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="209,71,387,112"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="209,136,387,177"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="209,202,387,229"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="225,253,371,279"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="211,303,385,330"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="207,355,389,396"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="452,188,605,229"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="437,253,620,295"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_abe92d0593d891a358ddeb22dc95f6eb5_icgraph.png" border="0" usemap="#namespaceModuleIO_abe92d0593d891a358ddeb22dc95f6eb5_icgraph" alt=""/></div>
-<map name="namespaceModuleIO_abe92d0593d891a358ddeb22dc95f6eb5_icgraph" id="namespaceModuleIO_abe92d0593d891a358ddeb22dc95f6eb5_icgraph">
-<area shape="rect" title=" " alt="" coords="248,78,401,105"/>
+<div class="center"><img src="namespaceModuleIO_a1cb97aa4d8ae5a2d9bbfcca7c9058149_icgraph.png" border="0" usemap="#namespaceModuleIO_a1cb97aa4d8ae5a2d9bbfcca7c9058149_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a1cb97aa4d8ae5a2d9bbfcca7c9058149_icgraph" id="namespaceModuleIO_a1cb97aa4d8ae5a2d9bbfcca7c9058149_icgraph">
+<area shape="rect" title=" " alt="" coords="248,111,401,138"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,5,200,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="15,71,191,112"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ac3772ee0b74a42065551d48c90c703c0" title=" " alt="" coords="11,136,195,177"/>
+<area shape="rect" href="dm__io__test_8cpp.html#ae464c664e145a0b0d0d05e0b2836ad68" title=" " alt="" coords="68,202,137,229"/>
 </map>
 </div>
 
@@ -2403,7 +2530,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleIO.html#a74d193a87787a3732bab47645d6455ce" title=" " alt="" coords="225,101,395,142"/>
 <area shape="rect" href="namespaceModuleIO.html#acff4da1944cd6dd9491b817b1ff6263f" title=" " alt="" coords="215,167,405,193"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="715,259,892,285"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="487,259,633,285"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="487,259,633,285"/>
 <area shape="rect" href="namespaceModuleIO.html#ae464eebb454ba7cef56061e970a22a46" title=" " alt="" coords="233,277,387,318"/>
 <area shape="rect" href="classGrid__Driver.html#a13083b6b44127bd3400f46cf120bb3ea" title=" " alt="" coords="474,157,646,184"/>
 <area shape="rect" href="classGrid__Driver.html#a18d06ba8f5d099571ac30301594a3f67" title=" " alt="" coords="453,5,667,32"/>
@@ -2473,7 +2600,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="432,201,615,242"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="207,259,384,301"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="207,325,384,352"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="223,376,368,403"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="223,376,368,403"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="435,135,612,177"/>
 </map>
 </div>
@@ -2565,8 +2692,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a60049ca8dad06d59d228be3f8acff51d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a60049ca8dad06d59d228be3f8acff51d">&#9670;&nbsp;</a></span>write_dos_pw()</h2>
+<a id="a307ae47198cb3fbb3276fc9be1c73586"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a307ae47198cb3fbb3276fc9be1c73586">&#9670;&nbsp;</a></span>write_dos_pw()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2582,6 +2709,12 @@ Here is the caller graph for this function:</div>
           <td></td>
           <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
           <td class="paramname"><em>wg</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classK__Vectors.html">K_Vectors</a> *&#160;</td>
+          <td class="paramname"><em>kv</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2613,32 +2746,35 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_cgraph.png" border="0" usemap="#namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_cgraph" alt=""/></div>
-<map name="namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_cgraph" id="namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_cgraph">
+<div class="center"><img src="namespaceModuleIO_a307ae47198cb3fbb3276fc9be1c73586_cgraph.png" border="0" usemap="#namespaceModuleIO_a307ae47198cb3fbb3276fc9be1c73586_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a307ae47198cb3fbb3276fc9be1c73586_cgraph" id="namespaceModuleIO_a307ae47198cb3fbb3276fc9be1c73586_cgraph">
 <area shape="rect" title="calculate density of states(DOS) for PW base" alt="" coords="5,107,187,133"/>
-<area shape="rect" href="namespaceModuleIO.html#a6b909817cf58636ab2139753703a4698" title=" " alt="" coords="235,107,416,133"/>
+<area shape="rect" href="namespaceModuleIO.html#a2deddafb1cb5949c20e093db8eb715cb" title=" " alt="" coords="235,107,416,133"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="464,5,683,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="501,56,646,83"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="501,56,646,83"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a20b908f647927836ab12eb9a9ad9fcea" title=" " alt="" coords="238,223,413,265"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#ad66f969cf8cda732e4f22b8d23f40423" title=" " alt="" coords="238,158,413,199"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="486,107,661,133"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="482,158,665,199"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="731,15,913,57"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="745,81,899,122"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_icgraph.png" border="0" usemap="#namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_icgraph" alt=""/></div>
-<map name="namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_icgraph" id="namespaceModuleIO_a60049ca8dad06d59d228be3f8acff51d_icgraph">
-<area shape="rect" title="calculate density of states(DOS) for PW base" alt="" coords="288,13,469,39"/>
+<div class="center"><img src="namespaceModuleIO_a307ae47198cb3fbb3276fc9be1c73586_icgraph.png" border="0" usemap="#namespaceModuleIO_a307ae47198cb3fbb3276fc9be1c73586_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a307ae47198cb3fbb3276fc9be1c73586_icgraph" id="namespaceModuleIO_a307ae47198cb3fbb3276fc9be1c73586_icgraph">
+<area shape="rect" title="calculate density of states(DOS) for PW base" alt="" coords="288,42,469,69"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="5,5,240,47"/>
+<area shape="rect" href="write__dos__pw__test_8cpp.html#a99684cd3880b183f8e1de04d444ce9fa" title=" " alt="" coords="88,71,157,98"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aae5da83e095340bebb9d4d1ee6dab9eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aae5da83e095340bebb9d4d1ee6dab9eb">&#9670;&nbsp;</a></span>write_istate_info()</h2>
+<a id="a513ecd04735cb7946ca23244921d53b3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a513ecd04735cb7946ca23244921d53b3">&#9670;&nbsp;</a></span>write_istate_info()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2646,8 +2782,14 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void ModuleIO::write_istate_info </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *&#160;</td>
-          <td class="paramname"><em>pelec</em>, </td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>ekb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>wg</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2671,23 +2813,27 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_cgraph.png" border="0" usemap="#namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_cgraph" alt=""/></div>
-<map name="namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_cgraph" id="namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_cgraph">
-<area shape="rect" title=" " alt="" coords="5,38,207,65"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="255,13,432,39"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="271,63,416,90"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="480,5,633,47"/>
+<div class="center"><img src="namespaceModuleIO_a513ecd04735cb7946ca23244921d53b3_cgraph.png" border="0" usemap="#namespaceModuleIO_a513ecd04735cb7946ca23244921d53b3_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a513ecd04735cb7946ca23244921d53b3_cgraph" id="namespaceModuleIO_a513ecd04735cb7946ca23244921d53b3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,13,207,39"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="681,13,859,39"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="255,42,400,69"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="909,5,1063,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="448,100,631,141"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="463,35,616,76"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="679,100,861,141"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_icgraph.png" border="0" usemap="#namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_icgraph" alt=""/></div>
-<map name="namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_icgraph" id="namespaceModuleIO_aae5da83e095340bebb9d4d1ee6dab9eb_icgraph">
-<area shape="rect" title=" " alt="" coords="288,78,489,105"/>
+<div class="center"><img src="namespaceModuleIO_a513ecd04735cb7946ca23244921d53b3_icgraph.png" border="0" usemap="#namespaceModuleIO_a513ecd04735cb7946ca23244921d53b3_icgraph" alt=""/></div>
+<map name="namespaceModuleIO_a513ecd04735cb7946ca23244921d53b3_icgraph" id="namespaceModuleIO_a513ecd04735cb7946ca23244921d53b3_icgraph">
+<area shape="rect" title=" " alt="" coords="288,111,489,138"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="35,5,211,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="5,71,240,112"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a8508b2564b3ed0e7250ba70385f13e1e" title=" " alt="" coords="35,136,211,177"/>
+<area shape="rect" href="write__istate__info__test_8cpp.html#a3162545833e6ef1c4a1e23d1805164aa" title=" " alt="" coords="88,202,157,229"/>
 </map>
 </div>
 
@@ -2830,16 +2976,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceModuleIO_a5a38d3160bfa6212d5d3bc2e5d206b9a_cgraph.png" border="0" usemap="#namespaceModuleIO_a5a38d3160bfa6212d5d3bc2e5d206b9a_cgraph" alt=""/></div>
 <map name="namespaceModuleIO_a5a38d3160bfa6212d5d3bc2e5d206b9a_cgraph" id="namespaceModuleIO_a5a38d3160bfa6212d5d3bc2e5d206b9a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,188,184,215"/>
-<area shape="rect" href="namespaceModuleIO.html#a9281aaef4579dabfaa938a7949ac4bb0" title=" " alt="" coords="247,87,400,113"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="694,111,871,137"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="251,188,396,215"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="232,239,415,281"/>
-<area shape="rect" href="namespaceModuleIO.html#aa4791f945aed27e409b734b782a08b91" title=" " alt="" coords="463,247,645,273"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a6fadd5f43b7c9b1ea6bbe560733f7f05" title=" " alt="" coords="473,21,635,62"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a3d62d6b321ce67c013623e32bc2d671b" title=" " alt="" coords="693,5,872,32"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a095c2e1e1febc9130f27b467ba079438" title=" " alt="" coords="697,56,869,83"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="920,103,1073,145"/>
+<area shape="rect" title=" " alt="" coords="5,210,184,237"/>
+<area shape="rect" href="namespaceModuleIO.html#a9281aaef4579dabfaa938a7949ac4bb0" title=" " alt="" coords="247,71,400,98"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="724,97,901,123"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a03979de9e57ca346c906e928f08e15a8" title=" " alt="" coords="232,173,415,215"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="251,239,396,266"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="232,291,415,332"/>
+<area shape="rect" href="namespaceModuleIO.html#aa4791f945aed27e409b734b782a08b91" title=" " alt="" coords="478,294,661,321"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a6fadd5f43b7c9b1ea6bbe560733f7f05" title=" " alt="" coords="489,5,650,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="949,89,1103,131"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="463,181,676,207"/>
 </map>
 </div>
 <div class="dynheader">
@@ -2856,8 +3002,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a30b1939432dc234c612304f7b7321fb7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a30b1939432dc234c612304f7b7321fb7">&#9670;&nbsp;</a></span>write_rho()</h2>
+<a id="a047c6203f4fd97139b8d5e093e15ed0b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a047c6203f4fd97139b8d5e093e15ed0b">&#9670;&nbsp;</a></span>write_rho()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2865,6 +3011,30 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void ModuleIO::write_rho </td>
           <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>bz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nbz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nplane</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>startz_current</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const double *&#160;</td>
           <td class="paramname"><em>rho_save</em>, </td>
         </tr>
@@ -2873,6 +3043,12 @@ Here is the caller graph for this function:</div>
           <td></td>
           <td class="paramtype">const int &amp;&#160;</td>
           <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nspin</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -2890,13 +3066,37 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>precision</em> = <code>11</code>, </td>
+          <td class="paramname"><em>nx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const bool&#160;</td>
-          <td class="paramname"><em>for_plot</em> = <code>false</code>&#160;</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>ny</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>ef</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classUnitCell.html">UnitCell</a> *&#160;</td>
+          <td class="paramname"><em>ucell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>precision</em> = <code>11</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2906,7 +3106,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>output header for cube file</p>
-<p>cube file</p>
 <p>for cube file</p>
 <p>for cube file</p>
 <p>for cube file</p>
@@ -2916,31 +3115,18 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_cgraph.png" border="0" usemap="#namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_cgraph" alt=""/></div>
-<map name="namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_cgraph" id="namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,122,159,149"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a5f13944ea3a04330fb2cc24e1c96a307" title=" " alt="" coords="222,5,405,47"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="241,71,386,98"/>
-<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="226,122,401,149"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="207,173,420,199"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="222,224,405,265"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_icgraph.png" border="0" usemap="#namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_icgraph" alt=""/></div>
-<map name="namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_icgraph" id="namespaceModuleIO_a30b1939432dc234c612304f7b7321fb7_icgraph">
-<area shape="rect" title=" " alt="" coords="297,274,451,301"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#ae1092298a9813efc7cdde2af4fa26616" title=" " alt="" coords="39,5,215,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a5b596cbb5f0b554a0df61843436e419b" title=" " alt="" coords="39,71,215,112"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="30,136,225,177"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="39,201,215,243"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#ae6d6b033f0537dc893a61f5159e85a8e" title=" " alt="" coords="25,267,230,308"/>
-<area shape="rect" href="classIState__Charge.html#a0899014f06b2e4be9d7426f52d4b41b2" title=" " alt="" coords="49,333,206,359"/>
-<area shape="rect" href="classIState__Envelope.html#a26a721cfbef23d0a9cd55d4b1466be37" title="for gamma_only" alt="" coords="42,383,213,410"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ac3772ee0b74a42065551d48c90c703c0" title=" " alt="" coords="35,435,219,476"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#add0ad74bf7753d5019aa6f921eb8077d" title=" " alt="" coords="5,500,249,541"/>
+<div class="center"><img src="namespaceModuleIO_a047c6203f4fd97139b8d5e093e15ed0b_cgraph.png" border="0" usemap="#namespaceModuleIO_a047c6203f4fd97139b8d5e093e15ed0b_cgraph" alt=""/></div>
+<map name="namespaceModuleIO_a047c6203f4fd97139b8d5e093e15ed0b_cgraph" id="namespaceModuleIO_a047c6203f4fd97139b8d5e093e15ed0b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,97,159,123"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a5f13944ea3a04330fb2cc24e1c96a307" title=" " alt="" coords="207,5,389,47"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="225,71,371,98"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="211,122,385,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="207,173,389,215"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="437,32,620,73"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="452,97,605,139"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="668,32,851,73"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="671,105,848,131"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="899,97,1052,139"/>
 </map>
 </div>
 
@@ -3101,10 +3287,15 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_cgraph.png" border="0" usemap="#namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_cgraph" alt=""/></div>
 <map name="namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_cgraph" id="namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,93,187,120"/>
-<area shape="rect" href="classRwstream.html#a54d6c441015eb4c1b3061666ad4ddb83" title=" " alt="" coords="250,5,381,32"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a1d769515eb35bb144f3dfd0a9cd28636" title=" " alt="" coords="235,57,396,98"/>
-<area shape="rect" href="write__wfc__pw_8cpp.html#ab6942585b43a0cb527303b8f28a827c8" title=" " alt="" coords="284,123,347,149"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="243,173,388,200"/>
+<area shape="rect" href="classBinstream.html#aa09d58e6592dffcd84332e6aaa353cac" title=" " alt="" coords="257,5,387,32"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a1d769515eb35bb144f3dfd0a9cd28636" title=" " alt="" coords="241,57,403,98"/>
+<area shape="rect" href="classK__Vectors.html#a91a688d5eca95c2cd6f82a6cb68cd3a0" title=" " alt="" coords="235,123,409,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="249,173,395,200"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="457,133,640,174"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="472,198,625,239"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="688,133,871,174"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="691,205,868,232"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="919,198,1072,239"/>
 </map>
 </div>
 <div class="dynheader">
@@ -3112,11 +3303,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_icgraph.png" border="0" usemap="#namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_icgraph" alt=""/></div>
 <map name="namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_icgraph" id="namespaceModuleIO_aa9ef58714bb2c79676c5abb86ff9676d_icgraph">
-<area shape="rect" title=" " alt="" coords="547,71,728,98"/>
-<area shape="rect" href="classIState__Envelope.html#a26a721cfbef23d0a9cd55d4b1466be37" title="for gamma_only" alt="" coords="291,13,462,39"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#add0ad74bf7753d5019aa6f921eb8077d" title=" " alt="" coords="255,64,499,105"/>
-<area shape="rect" href="updaterhok__pw__test_8cpp.html#a8d8d0f6b8066294ef021796e6950d7bb" title=" " alt="" coords="342,130,411,157"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,5,207,47"/>
+<area shape="rect" title=" " alt="" coords="547,101,728,127"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#ae6d6b033f0537dc893a61f5159e85a8e" title=" " alt="" coords="274,5,479,47"/>
+<area shape="rect" href="classIState__Envelope.html#a26a721cfbef23d0a9cd55d4b1466be37" title="for gamma_only" alt="" coords="291,71,462,98"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#add0ad74bf7753d5019aa6f921eb8077d" title=" " alt="" coords="255,123,499,164"/>
+<area shape="rect" href="updaterhok__pw__test_8cpp.html#a8d8d0f6b8066294ef021796e6950d7bb" title=" " alt="" coords="342,189,411,215"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,64,207,105"/>
 </map>
 </div>
 

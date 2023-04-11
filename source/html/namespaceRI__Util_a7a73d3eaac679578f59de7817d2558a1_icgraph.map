@@ -1,7 +1,9 @@
 <map id="RI_Util::array3_to_Vector3" name="RI_Util::array3_to_Vector3">
-<area shape="rect" id="node1" title=" " alt="" coords="439,56,573,97"/>
-<area shape="rect" id="node2" href="$namespaceRI__2D__Comm.html#a027958693a4769f1aac8094eb17faf01" title=" " alt="" coords="208,13,391,39"/>
-<area shape="rect" id="node4" href="$classLRI__CV.html#a0cd1c5ca9e4d49f8593869b8e248abd0" title=" " alt="" coords="231,63,367,90"/>
-<area shape="rect" id="node5" href="$classRPA__LRI.html#ae4fdf8a171fa77feac76fe62489fcfa0" title=" " alt="" coords="209,114,390,141"/>
+<area shape="rect" id="node1" title=" " alt="" coords="443,107,577,148"/>
+<area shape="rect" id="node2" href="$namespaceRI__2D__Comm.html#a027958693a4769f1aac8094eb17faf01" title=" " alt="" coords="210,13,393,39"/>
+<area shape="rect" id="node4" href="$classLRI__CV.html#a0cd1c5ca9e4d49f8593869b8e248abd0" title=" " alt="" coords="233,63,369,90"/>
+<area shape="rect" id="node5" href="$namespaceLRI__CV__Tools.html#a8571eb347f0744ebeda5c3ba789b7ebe" title=" " alt="" coords="212,114,391,141"/>
+<area shape="rect" id="node6" href="$namespaceLRI__CV__Tools.html#a76e31f4ee86261dc57b9fd23e492d8db" title=" " alt="" coords="208,165,395,191"/>
+<area shape="rect" id="node7" href="$classRPA__LRI.html#ae4fdf8a171fa77feac76fe62489fcfa0" title=" " alt="" coords="211,215,392,242"/>
 <area shape="rect" id="node3" href="$classhamilt_1_1OperatorEXX.html#ab4e0293992f563879322c7664cf99fed" title=" " alt="" coords="5,5,160,47"/>
 </map>

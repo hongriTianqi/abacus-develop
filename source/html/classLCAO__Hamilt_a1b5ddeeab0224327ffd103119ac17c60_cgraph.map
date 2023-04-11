@@ -1,7 +1,10 @@
 <map id="LCAO_Hamilt::grid_prepare" name="LCAO_Hamilt::grid_prepare">
-<area shape="rect" id="node1" title=" " alt="" coords="5,56,204,83"/>
-<area shape="rect" id="node2" href="$classGint.html#a6b66a3f5ad069a1f61e82dd091871de7" title=" " alt="" coords="281,5,400,32"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="481,27,627,53"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="252,107,429,133"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="477,99,631,141"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,86,204,113"/>
+<area shape="rect" id="node2" href="$classGint.html#a6b66a3f5ad069a1f61e82dd091871de7" title=" " alt="" coords="252,35,371,62"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="419,57,564,83"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="845,107,1023,134"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="612,5,795,47"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="627,71,780,112"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="843,5,1025,47"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1073,100,1227,141"/>
 </map>

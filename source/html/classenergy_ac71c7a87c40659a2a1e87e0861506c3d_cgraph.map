@@ -3,6 +3,10 @@
 <area shape="rect" id="node2" href="$classsurchem.html#a1c9d7d71349ae94e09981f6b50bc0231" title=" " alt="" coords="237,5,381,32"/>
 <area shape="rect" id="node4" href="$classsurchem.html#a57f5d5cb067903c5ce4d0a2a7353fc0f" title=" " alt="" coords="242,56,375,83"/>
 <area shape="rect" id="node5" href="$classModuleDFTU_1_1DFTU.html#ab2a045834215ce8bfc8dcfecaa7207fa" title=" " alt="" coords="220,107,397,149"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="236,173,381,200"/>
-<area shape="rect" id="node3" href="$namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="445,23,623,65"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="236,173,381,200"/>
+<area shape="rect" id="node3" href="$namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="448,21,625,62"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="445,107,628,149"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="460,173,613,214"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="676,107,859,149"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="679,180,856,207"/>
 </map>

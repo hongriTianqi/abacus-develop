@@ -1,6 +1,11 @@
 <map id="LCAO_Matrix::allocate_HS_gamma" name="LCAO_Matrix::allocate_HS_gamma">
 <area shape="rect" id="node1" title=" " alt="" coords="5,49,172,90"/>
 <area shape="rect" id="node2" href="$namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="220,5,439,32"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="257,56,402,83"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="238,107,421,149"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="257,56,402,83"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="238,107,421,149"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="487,17,669,58"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="501,82,655,123"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="717,17,900,58"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="720,89,897,116"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="948,82,1101,123"/>
 </map>

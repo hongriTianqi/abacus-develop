@@ -1,7 +1,12 @@
 <map id="Parallel_Grid::init_final_scf" name="Parallel_Grid::init_final_scf">
-<area shape="rect" id="node1" title=" " alt="" coords="5,74,139,115"/>
-<area shape="rect" id="node2" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="221,5,366,32"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="187,56,400,83"/>
-<area shape="rect" id="node4" href="$classParallel__Grid.html#a7d4a4143429725f0678fb68c4a0143c9" title=" " alt="" coords="193,107,393,133"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="202,158,385,199"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,113,139,155"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="221,45,366,71"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="187,95,400,122"/>
+<area shape="rect" id="node9" href="$classParallel__Grid.html#a7d4a4143429725f0678fb68c4a0143c9" title=" " alt="" coords="193,146,393,173"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="202,197,385,239"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="448,5,631,47"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="463,71,616,112"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="679,5,861,47"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="681,78,859,105"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="909,71,1063,112"/>
 </map>

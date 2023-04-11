@@ -1,7 +1,12 @@
 <map id="Charge::init_final_scf" name="Charge::init_final_scf">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,164,98"/>
-<area shape="rect" id="node2" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="221,5,385,47"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="231,71,376,98"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="212,123,395,164"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="443,5,607,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,78,164,105"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="221,9,385,51"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="231,78,376,105"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="212,129,395,171"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="452,5,616,47"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="443,71,625,112"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="457,136,611,177"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="673,71,856,112"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="676,143,853,170"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="904,136,1057,177"/>
 </map>

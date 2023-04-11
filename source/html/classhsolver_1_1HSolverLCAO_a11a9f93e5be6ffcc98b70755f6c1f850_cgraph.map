@@ -1,12 +1,12 @@
 <map id="hsolver::HSolverLCAO::solveTemplate" name="hsolver::HSolverLCAO::solveTemplate">
-<area shape="rect" id="node1" title=" " alt="" coords="5,218,169,259"/>
-<area shape="rect" id="node2" href="$classhsolver_1_1HSolverLCAO.html#ab986ef7951ff5dd9e90fb31b5fb92698" title=" " alt="" coords="242,50,406,91"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="479,30,656,57"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="495,85,640,112"/>
-<area shape="rect" id="node5" href="$classhamilt_1_1Hamilt.html#abc2177ba7c8bf11be21fed333c570126" title=" " alt="" coords="241,166,407,193"/>
-<area shape="rect" id="node6" href="$classelecstate_1_1ElecState.html#ae8907bc22f379514af3ac43b4305bb18" title=" " alt="" coords="249,218,399,259"/>
-<area shape="rect" id="node7" href="$classelecstate_1_1ElecState.html#a95d9ce13f8e55476dc3d98a21ff9efe7" title=" " alt="" coords="249,283,399,324"/>
-<area shape="rect" id="node8" href="$namespaceModuleIO.html#ab6a335e71b54d75081e049ef7a9dd0e6" title=" " alt="" coords="244,349,404,376"/>
-<area shape="rect" id="node9" href="$classhamilt_1_1Hamilt.html#a37b475589f13243db965f20afbdf1d81" title=" " alt="" coords="231,400,417,426"/>
-<area shape="rect" id="node10" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="217,450,431,477"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,177,169,219"/>
+<area shape="rect" id="node2" href="$classhsolver_1_1HSolverLCAO.html#ab986ef7951ff5dd9e90fb31b5fb92698" title=" " alt="" coords="242,60,406,101"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="479,13,656,39"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="495,122,640,149"/>
+<area shape="rect" id="node7" href="$classelecstate_1_1ElecState.html#ae8907bc22f379514af3ac43b4305bb18" title=" " alt="" coords="249,177,399,219"/>
+<area shape="rect" id="node8" href="$classelecstate_1_1ElecState.html#a95d9ce13f8e55476dc3d98a21ff9efe7" title=" " alt="" coords="249,243,399,284"/>
+<area shape="rect" id="node9" href="$classhamilt_1_1Hamilt.html#a37b475589f13243db965f20afbdf1d81" title=" " alt="" coords="231,309,417,335"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="217,359,431,386"/>
+<area shape="rect" id="node3" href="$classhsolver_1_1DiagH.html#aad82c91e8528d2e4e413e3d9f14c967f" title=" " alt="" coords="490,67,645,94"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="704,5,857,47"/>
 </map>

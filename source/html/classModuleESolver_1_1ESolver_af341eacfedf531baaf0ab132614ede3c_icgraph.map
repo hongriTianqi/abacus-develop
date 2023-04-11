@@ -5,8 +5,8 @@
 <area shape="rect" id="node3" href="$classRun__MD.html#a42a25187fa871ef2b746d483451a22b6" title=" " alt="" coords="198,5,334,32"/>
 <area shape="rect" id="node5" href="$classMDrun.html#ade9fa55197d9f546719b08b729fbf68e" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="409,107,519,133"/>
 <area shape="rect" id="node4" href="$classDriver.html#aff0cf0057c9529d58f6a341ee2143ea7" title=" " alt="" coords="5,132,141,159"/>
-<area shape="rect" id="node6" href="$classVerlet.html#abc1bee265ad620bd3361588bc1d17001" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="214,56,318,83"/>
-<area shape="rect" id="node7" href="$classLangevin.html#adad3f244cf074406679bbbfab11202d6" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="203,107,329,133"/>
+<area shape="rect" id="node6" href="$classFIRE.html#aa6566bc8dee83eb9bf17818bd79b18a9" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="219,56,313,83"/>
+<area shape="rect" id="node7" href="$classMSST.html#a35142b27ab806779aca03e3b800ed910" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="215,107,317,133"/>
 <area shape="rect" id="node8" href="$classNose__Hoover.html#afef45e7cf29d9880c32fab3a0570fbd8" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="189,157,343,184"/>
-<area shape="rect" id="node9" href="$classMSST.html#a35142b27ab806779aca03e3b800ed910" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="215,208,317,235"/>
+<area shape="rect" id="node9" href="$classLangevin.html#adad3f244cf074406679bbbfab11202d6" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="203,208,329,235"/>
 </map>

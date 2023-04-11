@@ -1,10 +1,12 @@
 <map id="elecstate::Potential::update_from_charge" name="elecstate::Potential::update_from_charge">
-<area shape="rect" id="node1" title=" " alt="" coords="5,55,169,97"/>
-<area shape="rect" id="node2" href="$classelecstate_1_1Potential.html#abcaac2f917c0b57b78c9ccbbff548230" title=" " alt="" coords="217,26,365,67"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="416,33,593,60"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="432,92,577,119"/>
-<area shape="rect" id="node6" href="$classelecstate_1_1Potential.html#a112b4776c8d1c54c8e47f2e71657c509" title=" " alt="" coords="217,143,365,185"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="644,26,797,67"/>
-<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#a8915e5032c99ab36504e32e41daf3cf4" title=" " alt="" coords="413,143,596,185"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1matrix.html#a1a39a6d91c25fb1a71458dc6543f407d" title=" " alt="" coords="428,209,581,250"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,75,169,116"/>
+<area shape="rect" id="node2" href="$classelecstate_1_1Potential.html#abcaac2f917c0b57b78c9ccbbff548230" title=" " alt="" coords="217,45,365,87"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="875,46,1052,73"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="432,111,577,138"/>
+<area shape="rect" id="node8" href="$classelecstate_1_1Potential.html#a112b4776c8d1c54c8e47f2e71657c509" title=" " alt="" coords="217,192,365,233"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1100,39,1253,80"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="644,133,827,175"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="659,68,812,109"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#a8915e5032c99ab36504e32e41daf3cf4" title=" " alt="" coords="413,251,596,292"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1matrix.html#a1a39a6d91c25fb1a71458dc6543f407d" title=" " alt="" coords="428,316,581,357"/>
 </map>

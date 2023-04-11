@@ -1,6 +1,6 @@
-<map id="module_pw/kernels/pw_op.h" name="module_pw/kernels/pw_op.h">
-<area shape="rect" id="node1" title=" " alt="" coords="186,5,393,32"/>
-<area shape="rect" id="node2" href="$pw__op_8cpp.html" title=" " alt="" coords="5,80,176,121"/>
-<area shape="rect" id="node3" href="$pw__op__test_8cpp.html" title=" " alt="" coords="201,80,378,121"/>
-<area shape="rect" id="node4" href="$pw__transform__k_8cpp.html" title=" " alt="" coords="402,80,593,121"/>
+<map id="module_basis/module_pw/kernels/pw_op.h" name="module_basis/module_pw/kernels/pw_op.h">
+<area shape="rect" id="node1" title=" " alt="" coords="202,5,367,47"/>
+<area shape="rect" id="node2" href="$pw__op_8cpp.html" title=" " alt="" coords="5,102,177,143"/>
+<area shape="rect" id="node3" href="$pw__op__test_8cpp.html" title=" " alt="" coords="202,95,367,151"/>
+<area shape="rect" id="node4" href="$pw__transform__k_8cpp.html" title=" " alt="" coords="391,102,575,143"/>
 </map>

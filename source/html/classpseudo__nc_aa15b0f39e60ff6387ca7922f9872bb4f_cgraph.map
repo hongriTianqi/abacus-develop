@@ -1,9 +1,12 @@
 <map id="pseudo_nc::set_pseudo_atom" name="pseudo_nc::set_pseudo_atom">
 <area shape="rect" id="node1" title=" " alt="" coords="5,122,220,149"/>
 <area shape="rect" id="node2" href="$classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="301,5,454,47"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="768,46,981,73"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="768,45,981,71"/>
 <area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="268,122,487,149"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="305,173,450,199"/>
-<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="286,224,469,265"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="305,173,450,199"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="286,224,469,265"/>
 <area shape="rect" id="node3" href="$namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="535,17,720,43"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="536,144,719,185"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="551,209,704,251"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="783,144,966,185"/>
 </map>

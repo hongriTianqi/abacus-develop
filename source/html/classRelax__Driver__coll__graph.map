@@ -1,10 +1,10 @@
 <map id="Relax_Driver" name="Relax_Driver">
 <area shape="rect" id="node1" title=" " alt="" coords="362,1217,505,1324"/>
-<area shape="rect" id="node2" href="$classRelax.html" title=" " alt="" coords="247,799,422,1155"/>
+<area shape="rect" id="node2" href="$classRelax.html" title=" " alt="" coords="249,799,423,1155"/>
 <area shape="rect" id="node3" href="$classLine__Search.html" title=" " alt="" coords="5,255,141,597"/>
 <area shape="rect" id="node4" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="165,233,325,619"/>
 <area shape="rect" id="node5" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="350,299,503,553"/>
-<area shape="rect" id="node6" href="$classRelax__old.html" title=" " alt="" coords="535,887,710,1067"/>
+<area shape="rect" id="node6" href="$classRelax__old.html" title=" " alt="" coords="555,901,691,1052"/>
 <area shape="rect" id="node7" href="$classIons__Move__Methods.html" title=" " alt="" coords="527,329,718,523"/>
 <area shape="rect" id="node8" href="$classIons__Move__BFGS.html" title=" " alt="" coords="444,5,615,171"/>
 <area shape="rect" id="node9" href="$classIons__Move__SD.html" title=" " alt="" coords="639,5,793,171"/>

@@ -1,5 +1,10 @@
 <map id="Numerical_Orbital::set_orbital_info" name="Numerical_Orbital::set_orbital_info">
-<area shape="rect" id="node1" title=" " alt="" coords="5,23,153,65"/>
-<area shape="rect" id="node2" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="235,5,381,32"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="201,56,415,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,153,105"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="235,46,381,73"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="201,97,415,123"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="463,5,645,47"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="477,71,631,112"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="693,5,876,47"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="696,78,873,105"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="924,71,1077,112"/>
 </map>

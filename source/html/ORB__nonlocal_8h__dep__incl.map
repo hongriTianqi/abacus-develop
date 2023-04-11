@@ -1,12 +1,12 @@
-<map id="module_orbital/ORB_nonlocal.h" name="module_orbital/ORB_nonlocal.h">
-<area shape="rect" id="node1" title=" " alt="" coords="593,5,745,47"/>
-<area shape="rect" id="node2" href="$ORB__read_8h.html" title=" " alt="" coords="378,95,530,136"/>
-<area shape="rect" id="node9" href="$setup__nonlocal_8h.html" title=" " alt="" coords="663,191,877,218"/>
-<area shape="rect" id="node10" href="$ORB__nonlocal_8cpp.html" title=" " alt="" coords="706,95,858,136"/>
-<area shape="rect" id="node3" href="$ORB__table__beta_8h.html" title=" " alt="" coords="435,184,587,225"/>
-<area shape="rect" id="node4" href="$ORB__gen__tables_8h.html" title=" " alt="" coords="322,273,474,315"/>
-<area shape="rect" id="node5" href="$ORB__control_8h.html" title=" " alt="" coords="135,363,287,404"/>
-<area shape="rect" id="node6" href="$global__fp_8h.html" title=" " alt="" coords="414,363,609,404"/>
-<area shape="rect" id="node7" href="$ORB__table__phi_8h.html" title=" " alt="" coords="33,184,185,225"/>
-<area shape="rect" id="node8" href="$ORB__table__alpha_8h.html" title=" " alt="" coords="209,184,361,225"/>
+<map id="module_basis/module_ao/ORB_nonlocal.h" name="module_basis/module_ao/ORB_nonlocal.h">
+<area shape="rect" id="node1" title=" " alt="" coords="605,5,771,47"/>
+<area shape="rect" id="node2" href="$ORB__read_8h.html" title=" " alt="" coords="280,102,445,143"/>
+<area shape="rect" id="node8" href="$setup__nonlocal_8h.html" title=" " alt="" coords="666,206,881,233"/>
+<area shape="rect" id="node9" href="$ORB__nonlocal_8cpp.html" title=" " alt="" coords="666,102,833,143"/>
+<area shape="rect" id="node10" href="$ORB__nonlocal__test_8cpp.html" title=" " alt="" coords="857,95,1025,151"/>
+<area shape="rect" id="node3" href="$ORB__table__beta_8h.html" title=" " alt="" coords="91,199,256,240"/>
+<area shape="rect" id="node4" href="$ORB__gen__tables_8h.html" title=" " alt="" coords="185,288,351,329"/>
+<area shape="rect" id="node5" href="$ORB__control_8h.html" title=" " alt="" coords="5,377,171,419"/>
+<area shape="rect" id="node6" href="$ORB__table__phi_8h.html" title=" " alt="" coords="280,199,445,240"/>
+<area shape="rect" id="node7" href="$ORB__table__alpha_8h.html" title=" " alt="" coords="470,199,642,240"/>
 </map>

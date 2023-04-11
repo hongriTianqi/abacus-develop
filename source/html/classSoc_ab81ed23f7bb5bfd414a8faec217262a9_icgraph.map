@@ -1,12 +1,12 @@
 <map id="Soc::sph_ind" name="Soc::sph_ind">
-<area shape="rect" id="node1" title=" " alt="" coords="676,134,779,161"/>
-<area shape="rect" id="node2" href="$classWF__atomic.html#a6aa20d17fbd106434e0ebe2ce5fdd326" title=" " alt="" coords="443,75,622,102"/>
-<area shape="rect" id="node6" href="$namespaceWavefunc__in__pw.html#ac0d4307ead64a794baec29f26fa58f8f" title=" " alt="" coords="437,127,628,168"/>
-<area shape="rect" id="node7" href="$classSoc.html#adccf6c1a45c0183eb2385b6983b771ae" title=" " alt="" coords="476,193,589,219"/>
-<area shape="rect" id="node3" href="$namespacehamilt.html#a4a9e9aac71ad51b96c72a10dabaf4bfe" title=" " alt="" coords="229,68,389,109"/>
-<area shape="rect" id="node4" href="$namespacehamilt.html#a1fcdb41dc522ab83e53989227f61a429" title=" " alt="" coords="13,5,173,47"/>
-<area shape="rect" id="node5" href="$classhsolver_1_1HSolverPW.html#a67b184f74c8a604a526333adf2e30f42" title=" " alt="" coords="11,71,175,127"/>
-<area shape="rect" id="node8" href="$classpseudopot__cell__vnl.html#abe3df0df3ffb1f6b6acec30bcf1e551a" title=" " alt="" coords="236,185,383,227"/>
-<area shape="rect" id="node9" href="$classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="5,173,181,215"/>
-<area shape="rect" id="node10" href="$classVariable__Cell.html#a734f97e787992db765320371ccd076bb" title=" " alt="" coords="25,239,161,280"/>
+<area shape="rect" id="node1" title=" " alt="" coords="677,134,780,161"/>
+<area shape="rect" id="node2" href="$classWF__atomic.html#a6aa20d17fbd106434e0ebe2ce5fdd326" title=" " alt="" coords="445,75,623,102"/>
+<area shape="rect" id="node6" href="$namespaceWavefunc__in__pw.html#ac0d4307ead64a794baec29f26fa58f8f" title=" " alt="" coords="439,127,629,168"/>
+<area shape="rect" id="node7" href="$classSoc.html#adccf6c1a45c0183eb2385b6983b771ae" title=" " alt="" coords="477,193,591,219"/>
+<area shape="rect" id="node3" href="$namespacehamilt.html#a4a9e9aac71ad51b96c72a10dabaf4bfe" title=" " alt="" coords="231,68,391,109"/>
+<area shape="rect" id="node4" href="$namespacehamilt.html#a1fcdb41dc522ab83e53989227f61a429" title=" " alt="" coords="14,5,174,47"/>
+<area shape="rect" id="node5" href="$classhsolver_1_1HSolverPW.html#a67b184f74c8a604a526333adf2e30f42" title=" " alt="" coords="12,71,176,127"/>
+<area shape="rect" id="node8" href="$classpseudopot__cell__vnl.html#abe3df0df3ffb1f6b6acec30bcf1e551a" title=" " alt="" coords="237,185,384,227"/>
+<area shape="rect" id="node9" href="$classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="6,173,182,215"/>
+<area shape="rect" id="node10" href="$classModuleESolver_1_1ESolver__KS__PW.html#a9d20018ab937bada8366ae8063649375" title=" " alt="" coords="5,239,183,295"/>
 </map>

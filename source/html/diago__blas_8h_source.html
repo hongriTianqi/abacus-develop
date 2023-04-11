@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: module_hsolver/diago_blas.h Source File</title>
+<title>3.2.0: module_hsolver/diago_blas.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -85,7 +85,7 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="diagh_8h.html">diagh.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="complexmatrix_8h.html">module_base/complexmatrix.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="matrix_8h.html">module_base/matrix.h</a>&quot;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="module__orbital_2parallel__orbitals_8h.html">module_orbital/parallel_orbitals.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="module__basis_2module__ao_2parallel__orbitals_8h.html">module_basis/module_ao/parallel_orbitals.h</a>&quot;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;complex&gt;</span></div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;utility&gt;</span></div>
@@ -142,12 +142,11 @@ $(function() {
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclasspsi_1_1Psi_html_ad54ad789907892402df657738b4608c1"><div class="ttname"><a href="classpsi_1_1Psi.html#ad54ad789907892402df657738b4608c1">psi::Psi::get_pointer</a></div><div class="ttdeci">T * get_pointer()</div><div class="ttdef"><b>Definition:</b> psi.cpp:198</div></div>
+<div class="ttc" id="aclasspsi_1_1Psi_html_a90db35e433ee949459a4c370e0dacc9c"><div class="ttname"><a href="classpsi_1_1Psi.html#a90db35e433ee949459a4c370e0dacc9c">psi::Psi::get_pointer</a></div><div class="ttdeci">T * get_pointer() const</div><div class="ttdef"><b>Definition:</b> psi.cpp:167</div></div>
 <div class="ttc" id="adiago__blas_8cpp_html_a9adef5335911ea8994f9d0ae3e600900"><div class="ttname"><a href="diago__blas_8cpp.html#a9adef5335911ea8994f9d0ae3e600900">matd</a></div><div class="ttdeci">hamilt::MatrixBlock&lt; double &gt; matd</div><div class="ttdef"><b>Definition:</b> diago_blas.cpp:18</div></div>
 <div class="ttc" id="aclassModuleBase_1_1ComplexMatrix_html_a82ad82e98b7c96c8b7c82b212e0c4cfa"><div class="ttname"><a href="classModuleBase_1_1ComplexMatrix.html#a82ad82e98b7c96c8b7c82b212e0c4cfa">ModuleBase::ComplexMatrix::c</a></div><div class="ttdeci">std::complex&lt; double &gt; * c</div><div class="ttdef"><b>Definition:</b> complexmatrix.h:21</div></div>
 <div class="ttc" id="astructhamilt_1_1MatrixBlock_html"><div class="ttname"><a href="structhamilt_1_1MatrixBlock.html">hamilt::MatrixBlock</a></div><div class="ttdef"><b>Definition:</b> matrixblock.h:8</div></div>
 <div class="ttc" id="ascalapack__connector_8h_html_a7cd7f3cd92984d862e6594b442cd03b4"><div class="ttname"><a href="scalapack__connector_8h.html#a7cd7f3cd92984d862e6594b442cd03b4">pzhegvx_</a></div><div class="ttdeci">void pzhegvx_(const int *itype, const char *jobz, const char *range, const char *uplo, const int *n, std::complex&lt; double &gt; *A, const int *ia, const int *ja, const int *desca, std::complex&lt; double &gt; *B, const int *ib, const int *jb, const int *descb, const double *vl, const double *vu, const int *il, const int *iu, const double *abstol, int *m, int *nz, double *w, const double *orfac, std::complex&lt; double &gt; *Z, const int *iz, const int *jz, const int *descz, std::complex&lt; double &gt; *work, int *lwork, double *rwork, int *lrwork, int *iwork, int *liwork, int *ifail, int *iclustr, double *gap, int *info)</div></div>
-<div class="ttc" id="anamespaceModuleBase_html_a7f2e75fdaf26614e5c7485cff6287bd4"><div class="ttname"><a href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4">ModuleBase::TITLE</a></div><div class="ttdeci">void TITLE(const std::string &amp;class_function_name, const bool disable)</div><div class="ttdef"><b>Definition:</b> tool_title.cpp:14</div></div>
 <div class="ttc" id="aclassModuleBase_1_1matrix_html_a37ea41ac31fc5329f07fc4765bd5a582"><div class="ttname"><a href="classModuleBase_1_1matrix.html#a37ea41ac31fc5329f07fc4765bd5a582">ModuleBase::matrix::c</a></div><div class="ttdeci">double * c</div><div class="ttdef"><b>Definition:</b> matrix.h:25</div></div>
 <div class="ttc" id="astructhamilt_1_1MatrixBlock_html_a3e04583f8ed41aab8f844aad07aac1bc"><div class="ttname"><a href="structhamilt_1_1MatrixBlock.html#a3e04583f8ed41aab8f844aad07aac1bc">hamilt::MatrixBlock::p</a></div><div class="ttdeci">T * p</div><div class="ttdef"><b>Definition:</b> matrixblock.h:12</div></div>
 <div class="ttc" id="adiago__blas_8h_html"><div class="ttname"><a href="diago__blas_8h.html">diago_blas.h</a></div></div>
@@ -156,12 +155,13 @@ $(function() {
 <div class="ttc" id="anamespaceModuleBase_1_1libm_html_a53ba939830541970fa8cdc6973c806e5"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">ModuleBase::libm::i</a></div><div class="ttdeci">int4 i[880]</div><div class="ttdef"><b>Definition:</b> sincos.cpp:28</div></div>
 <div class="ttc" id="aclasshsolver_1_1DiagoBlas_html"><div class="ttname"><a href="classhsolver_1_1DiagoBlas.html">hsolver::DiagoBlas</a></div><div class="ttdef"><b>Definition:</b> diago_blas.h:23</div></div>
 <div class="ttc" id="aclasshsolver_1_1DiagoBlas_html_a98d6ad18b1e6ebfcfe7178360bc1bb2b"><div class="ttname"><a href="classhsolver_1_1DiagoBlas.html#a98d6ad18b1e6ebfcfe7178360bc1bb2b">hsolver::DiagoBlas::post_processing</a></div><div class="ttdeci">void post_processing(const int info, const std::vector&lt; int &gt; &amp;vec)</div><div class="ttdef"><b>Definition:</b> diago_blas.cpp:339</div></div>
+<div class="ttc" id="anamespaceModuleBase_html_ad0b268ded393d31b0dd1a795366af4a6"><div class="ttname"><a href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6">ModuleBase::TITLE</a></div><div class="ttdeci">void TITLE(const std::string &amp;class_name, const std::string &amp;function_name, const bool disable)</div><div class="ttdef"><b>Definition:</b> tool_title.cpp:18</div></div>
 <div class="ttc" id="aclasspsi_1_1Psi_html"><div class="ttname"><a href="classpsi_1_1Psi.html">psi::Psi&lt; double &gt;</a></div></div>
 <div class="ttc" id="anamespacehsolver_html"><div class="ttname"><a href="namespacehsolver.html">hsolver</a></div><div class="ttdef"><b>Definition:</b> diagh.h:9</div></div>
 <div class="ttc" id="aclassModuleBase_1_1matrix_html"><div class="ttname"><a href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a></div><div class="ttdef"><b>Definition:</b> matrix.h:18</div></div>
 <div class="ttc" id="anamespaceModuleBase_1_1GlobalFunc_html_a2951c6789427db1f9d91f62a0e84e2a6"><div class="ttname"><a href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6">ModuleBase::GlobalFunc::TO_STRING</a></div><div class="ttdeci">std::string TO_STRING(const T &amp;n)</div><div class="ttdef"><b>Definition:</b> global_function.h:227</div></div>
 <div class="ttc" id="aclassModuleBase_1_1ComplexMatrix_html"><div class="ttname"><a href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a></div><div class="ttdef"><b>Definition:</b> complexmatrix.h:13</div></div>
-<div class="ttc" id="anamespaceGlobalV_html_aa6d884dbe6439646b8937a9171e9a8a3"><div class="ttname"><a href="namespaceGlobalV.html#aa6d884dbe6439646b8937a9171e9a8a3">GlobalV::ofs_running</a></div><div class="ttdeci">std::ofstream ofs_running</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:144</div></div>
+<div class="ttc" id="anamespaceGlobalV_html_aa6d884dbe6439646b8937a9171e9a8a3"><div class="ttname"><a href="namespaceGlobalV.html#aa6d884dbe6439646b8937a9171e9a8a3">GlobalV::ofs_running</a></div><div class="ttdeci">std::ofstream ofs_running</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:146</div></div>
 <div class="ttc" id="amatrix_8h_html"><div class="ttname"><a href="matrix_8h.html">matrix.h</a></div></div>
 <div class="ttc" id="astructhamilt_1_1MatrixBlock_html_a0d67395f80f056c8eb5a015e09d37a51"><div class="ttname"><a href="structhamilt_1_1MatrixBlock.html#a0d67395f80f056c8eb5a015e09d37a51">hamilt::MatrixBlock::col</a></div><div class="ttdeci">size_t col</div><div class="ttdef"><b>Definition:</b> matrixblock.h:14</div></div>
 <div class="ttc" id="aclasshsolver_1_1DiagoBlas_html_a5c385ff511ac95c5a96ec945bf23d6ba"><div class="ttname"><a href="classhsolver_1_1DiagoBlas.html#a5c385ff511ac95c5a96ec945bf23d6ba">hsolver::DiagoBlas::pdsygvx_once</a></div><div class="ttdeci">std::pair&lt; int, std::vector&lt; int &gt; &gt; pdsygvx_once(const int *const desc, const int ncol, const int nrow, const double *const h_mat, const double *const s_mat, double *const ekb, psi::Psi&lt; double &gt; &amp;wfc_2d) const</div><div class="ttdef"><b>Definition:</b> diago_blas.cpp:48</div></div>
@@ -171,9 +171,9 @@ $(function() {
 <div class="ttc" id="anamespaceGlobalV_html_ab2155b2832203d6785810f0c9ea3c966"><div class="ttname"><a href="namespaceGlobalV.html#ab2155b2832203d6785810f0c9ea3c966">GlobalV::NBANDS</a></div><div class="ttdeci">int NBANDS</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:21</div></div>
 <div class="ttc" id="aclasshsolver_1_1DiagoBlas_html_a7333ca6ac3befed00c9e10ec8eb8e70f"><div class="ttname"><a href="classhsolver_1_1DiagoBlas.html#a7333ca6ac3befed00c9e10ec8eb8e70f">hsolver::DiagoBlas::degeneracy_max</a></div><div class="ttdeci">int degeneracy_max</div><div class="ttdef"><b>Definition:</b> diago_blas.h:62</div></div>
 <div class="ttc" id="aglobal__function_8h_html"><div class="ttname"><a href="global__function_8h.html">global_function.h</a></div></div>
-<div class="ttc" id="anamespaceGlobalV_html_a45c5329f8f6c7c4f8c76ab1fd42e18ec"><div class="ttname"><a href="namespaceGlobalV.html#a45c5329f8f6c7c4f8c76ab1fd42e18ec">GlobalV::DSIZE</a></div><div class="ttdeci">int DSIZE</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:121</div></div>
+<div class="ttc" id="amodule__basis_2module__ao_2parallel__orbitals_8h_html"><div class="ttname"><a href="module__basis_2module__ao_2parallel__orbitals_8h.html">parallel_orbitals.h</a></div></div>
+<div class="ttc" id="anamespaceGlobalV_html_a45c5329f8f6c7c4f8c76ab1fd42e18ec"><div class="ttname"><a href="namespaceGlobalV.html#a45c5329f8f6c7c4f8c76ab1fd42e18ec">GlobalV::DSIZE</a></div><div class="ttdeci">int DSIZE</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:123</div></div>
 <div class="ttc" id="aglobal__variable_8h_html"><div class="ttname"><a href="global__variable_8h.html">global_variable.h</a></div></div>
-<div class="ttc" id="amodule__orbital_2parallel__orbitals_8h_html"><div class="ttname"><a href="module__orbital_2parallel__orbitals_8h.html">parallel_orbitals.h</a></div></div>
 <div class="ttc" id="astructhamilt_1_1MatrixBlock_html_a665e05dfedfc1b762031ed6a46bc7075"><div class="ttname"><a href="structhamilt_1_1MatrixBlock.html#a665e05dfedfc1b762031ed6a46bc7075">hamilt::MatrixBlock::desc</a></div><div class="ttdeci">int * desc</div><div class="ttdef"><b>Definition:</b> matrixblock.h:15</div></div>
 <div class="ttc" id="adiagh_8h_html"><div class="ttname"><a href="diagh_8h.html">diagh.h</a></div></div>
 <div class="ttc" id="anamespaceGlobalV_html_af0b48957c67d47b385306c0c81625419"><div class="ttname"><a href="namespaceGlobalV.html#af0b48957c67d47b385306c0c81625419">GlobalV::NLOCAL</a></div><div class="ttdeci">int NLOCAL</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:23</div></div>

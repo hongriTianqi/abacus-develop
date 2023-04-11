@@ -1,12 +1,12 @@
 <map id="SymmetryTest" name="SymmetryTest">
-<area shape="rect" id="node1" title=" " alt="" coords="285,1452,430,1544"/>
-<area shape="rect" id="node2" title=" " alt="" coords="312,1165,360,1243"/>
-<area shape="rect" id="node3" href="$classUnitCell.html" title=" " alt="" coords="384,1019,523,1389"/>
-<area shape="rect" id="node4" href="$classMagnetism.html" title=" " alt="" coords="139,490,344,714"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="158,5,317,273"/>
-<area shape="rect" id="node7" href="$classAtom.html" title=" " alt="" coords="368,446,539,758"/>
+<area shape="rect" id="node1" title=" " alt="" coords="285,1452,431,1544"/>
+<area shape="rect" id="node2" title=" " alt="" coords="313,1165,361,1243"/>
+<area shape="rect" id="node3" href="$classUnitCell.html" title=" " alt="" coords="385,1019,523,1389"/>
+<area shape="rect" id="node4" href="$classMagnetism.html" title=" " alt="" coords="139,490,345,714"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="163,5,321,273"/>
+<area shape="rect" id="node7" href="$classAtom.html" title=" " alt="" coords="369,446,539,758"/>
 <area shape="rect" id="node6" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="563,409,726,795"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="374,5,533,273"/>
-<area shape="rect" id="node9" href="$classAtom__pseudo.html" title=" " alt="" coords="557,49,734,229"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="360,5,519,273"/>
+<area shape="rect" id="node9" href="$classAtom__pseudo.html" title=" " alt="" coords="543,49,720,229"/>
 <area shape="rect" id="node10" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="750,409,910,795"/>
 </map>

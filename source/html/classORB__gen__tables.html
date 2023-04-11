@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: ORB_gen_tables Class Reference</title>
+<title>3.2.0: ORB_gen_tables Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -82,15 +82,15 @@ Collaboration diagram for ORB_gen_tables:</div>
 <div class="dyncontent">
 <div class="center"><img src="classORB__gen__tables__coll__graph.png" border="0" usemap="#ORB__gen__tables_coll__map" alt="Collaboration graph"/></div>
 <map name="ORB__gen__tables_coll__map" id="ORB__gen__tables_coll__map">
-<area shape="rect" title=" " alt="" coords="271,1048,443,1228"/>
-<area shape="rect" href="classORB__table__phi.html" title=" " alt="" coords="206,483,373,985"/>
-<area shape="rect" href="classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="228,5,391,391"/>
-<area shape="rect" href="classORB__table__beta.html" title=" " alt="" coords="5,534,181,934"/>
-<area shape="rect" href="classORB__table__alpha.html" title=" " alt="" coords="397,527,579,941"/>
-<area shape="rect" href="classModuleBase_1_1Sph__Bessel__Recursive_1_1D2.html" title=" " alt="" coords="20,86,204,310"/>
-<area shape="rect" href="classORB__gaunt__table.html" title=" " alt="" coords="604,607,775,861"/>
-<area shape="rect" href="classModuleBase_1_1realArray.html" title="double float array" alt="" coords="556,20,727,376"/>
-<area shape="rect" href="classModuleBase_1_1matrix.html" title=" " alt="" coords="751,71,905,325"/>
+<area shape="rect" title=" " alt="" coords="287,1107,459,1287"/>
+<area shape="rect" href="classORB__table__phi.html" title=" " alt="" coords="206,483,399,1044"/>
+<area shape="rect" href="classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="245,5,408,391"/>
+<area shape="rect" href="classORB__table__beta.html" title=" " alt="" coords="5,563,181,963"/>
+<area shape="rect" href="classORB__table__alpha.html" title=" " alt="" coords="423,541,606,985"/>
+<area shape="rect" href="classModuleBase_1_1Sph__Bessel__Recursive_1_1D2.html" title=" " alt="" coords="37,86,221,310"/>
+<area shape="rect" href="classORB__gaunt__table.html" title=" " alt="" coords="631,637,801,890"/>
+<area shape="rect" href="classModuleBase_1_1realArray.html" title="double float array" alt="" coords="583,20,753,376"/>
+<area shape="rect" href="classModuleBase_1_1matrix.html" title=" " alt="" coords="778,71,931,325"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -433,7 +433,7 @@ Here is the caller graph for this function:</div>
 
 <p>set as public because in hamilt_linear, </p>
 <p>Formula : T1 T0 </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ &lt;\psi1_{L1,N1}|\Beta_{L0,m0}&gt; \]" src="form_12.png"/>
+<img class="formulaDsp" alt="\[ &lt;\psi1_{L1,N1}|\Beta_{L0,m0}&gt; \]" src="form_2.png"/>
 </p>
 <p>Overlap value = S_from_table * G * Ylm</p>
 <div class="dynheader">
@@ -534,7 +534,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>Formula : T1 T0 </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ &lt;\psi1_{L1,N1}|\Beta_{L0,m0}&gt; \]" src="form_12.png"/>
+<img class="formulaDsp" alt="\[ &lt;\psi1_{L1,N1}|\Beta_{L0,m0}&gt; \]" src="form_2.png"/>
 </p>
 <p>Overlap value = S_from_table * G * Ylm</p>
 <div class="dynheader">
@@ -682,7 +682,7 @@ Here is the caller graph for this function:</div>
 </div><div class="memdoc">
 <p>(1) get distance between R1 and R2 (a.u.) judge if there exist overlap</p>
 <p>if distance == 0, </p><p class="formulaDsp">
-<img class="formulaDsp" alt="\[ \int psi(r) psi(r-R)\]" src="form_13.png"/>
+<img class="formulaDsp" alt="\[ \int psi(r) psi(r-R)\]" src="form_3.png"/>
 </p>
 <p> dr independent of R if R == 0. distance += tiny1 avoid overflow during calculation.</p>
 <p>(2) if there exist overlap, calculate the mesh number between two atoms</p>
@@ -827,8 +827,8 @@ Here is the caller graph for this function:</div>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>module_orbital/<a class="el" href="ORB__gen__tables_8h_source.html">ORB_gen_tables.h</a></li>
-<li>module_orbital/<a class="el" href="ORB__gen__tables_8cpp.html">ORB_gen_tables.cpp</a></li>
+<li>module_basis/module_ao/<a class="el" href="ORB__gen__tables_8h_source.html">ORB_gen_tables.h</a></li>
+<li>module_basis/module_ao/<a class="el" href="ORB__gen__tables_8cpp.html">ORB_gen_tables.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

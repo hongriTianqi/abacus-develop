@@ -1,12 +1,12 @@
-<map id="module_pw/fft.h" name="module_pw/fft.h">
-<area shape="rect" id="node1" title=" " alt="" coords="85,5,212,32"/>
-<area shape="rect" id="node2" title=" " alt="" coords="5,244,84,271"/>
-<area shape="rect" id="node3" title=" " alt="" coords="77,80,135,107"/>
-<area shape="rect" id="node4" title=" " alt="" coords="159,80,226,107"/>
-<area shape="rect" id="node5" href="$psi_8h.html" title=" " alt="" coords="251,80,383,107"/>
-<area shape="rect" id="node6" href="$memory__op_8h.html" title=" " alt="" coords="97,155,245,196"/>
-<area shape="rect" id="node7" href="$types_8h.html" title=" " alt="" coords="316,244,387,271"/>
-<area shape="rect" id="node10" title=" " alt="" coords="269,162,324,189"/>
-<area shape="rect" id="node8" title=" " alt="" coords="220,244,283,271"/>
-<area shape="rect" id="node9" title=" " alt="" coords="121,244,195,271"/>
+<map id="module_basis/module_pw/fft.h" name="module_basis/module_pw/fft.h">
+<area shape="rect" id="node1" title=" " alt="" coords="66,5,231,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,259,84,285"/>
+<area shape="rect" id="node3" title=" " alt="" coords="77,95,135,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="159,95,226,121"/>
+<area shape="rect" id="node5" href="$psi_8h.html" title=" " alt="" coords="251,95,383,121"/>
+<area shape="rect" id="node6" href="$memory__op_8h.html" title=" " alt="" coords="97,169,245,211"/>
+<area shape="rect" id="node7" href="$types_8h.html" title=" " alt="" coords="316,259,387,285"/>
+<area shape="rect" id="node10" title=" " alt="" coords="269,177,324,203"/>
+<area shape="rect" id="node8" title=" " alt="" coords="220,259,283,285"/>
+<area shape="rect" id="node9" title=" " alt="" coords="121,259,195,285"/>
 </map>

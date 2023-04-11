@@ -1,9 +1,12 @@
 <map id="ORB_gaunt_table::init_Gaunt" name="ORB_gaunt_table::init_Gaunt">
-<area shape="rect" id="node1" title=" " alt="" coords="5,129,168,171"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,115,168,156"/>
 <area shape="rect" id="node2" href="$classModuleBase_1_1realArray.html#a323f1573575d1738f0ac735789679c08" title="create 3 dimensional real array" alt="" coords="216,5,387,47"/>
-<area shape="rect" id="node3" href="$classORB__gaunt__table.html#a9976de3ecb914becbf8b8be3a2811c99" title=" " alt="" coords="219,71,384,112"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="435,107,612,134"/>
-<area shape="rect" id="node6" href="$classORB__gaunt__table.html#a1d526ddcee8ae7723891a0cac9fd29f4" title=" " alt="" coords="220,188,383,229"/>
-<area shape="rect" id="node7" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="229,254,374,281"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="660,100,813,141"/>
+<area shape="rect" id="node3" href="$classORB__gaunt__table.html#a9976de3ecb914becbf8b8be3a2811c99" title=" " alt="" coords="443,56,609,97"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="668,122,845,149"/>
+<area shape="rect" id="node6" href="$classORB__gaunt__table.html#a1d526ddcee8ae7723891a0cac9fd29f4" title=" " alt="" coords="220,173,383,215"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="229,239,374,266"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="896,115,1049,156"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="435,239,617,280"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="449,173,603,215"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="665,239,848,280"/>
 </map>

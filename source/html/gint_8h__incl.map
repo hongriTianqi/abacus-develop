@@ -1,12 +1,12 @@
-<map id="module_gint/gint.h" name="module_gint/gint.h">
-<area shape="rect" id="node1" title=" " alt="" coords="317,5,461,32"/>
-<area shape="rect" id="node2" href="$gint__tools_8h.html" title=" " alt="" coords="339,80,438,107"/>
-<area shape="rect" id="node3" href="$grid__technique_8h.html" title=" " alt="" coords="133,169,263,196"/>
-<area shape="rect" id="node7" title=" " alt="" coords="288,169,353,196"/>
-<area shape="rect" id="node8" href="$charge_8h.html" title=" " alt="" coords="560,162,751,203"/>
-<area shape="rect" id="node10" href="$LCAO__matrix_8h.html" title=" " alt="" coords="377,155,536,211"/>
-<area shape="rect" id="node4" href="$grid__meshball_8h.html" title=" " alt="" coords="5,266,132,293"/>
-<area shape="rect" id="node5" href="$grid__index_8h.html" title=" " alt="" coords="156,266,259,293"/>
-<area shape="rect" id="node6" href="$module__orbital_2parallel__orbitals_8h.html" title=" " alt="" coords="319,259,493,300"/>
-<area shape="rect" id="node9" href="$complexmatrix_8h.html" title=" " alt="" coords="534,266,758,293"/>
+<map id="module_hamilt_lcao/module_gint/gint.h" name="module_hamilt_lcao/module_gint/gint.h">
+<area shape="rect" id="node1" title=" " alt="" coords="310,5,465,47"/>
+<area shape="rect" id="node2" href="$gint__tools_8h.html" title=" " alt="" coords="338,95,437,121"/>
+<area shape="rect" id="node3" href="$grid__technique_8h.html" title=" " alt="" coords="131,184,262,211"/>
+<area shape="rect" id="node7" title=" " alt="" coords="287,184,352,211"/>
+<area shape="rect" id="node8" href="$charge_8h.html" title=" " alt="" coords="559,177,749,218"/>
+<area shape="rect" id="node10" href="$LCAO__matrix_8h.html" title=" " alt="" coords="376,169,535,225"/>
+<area shape="rect" id="node4" href="$grid__meshball_8h.html" title=" " alt="" coords="5,281,132,307"/>
+<area shape="rect" id="node5" href="$grid__index_8h.html" title=" " alt="" coords="156,281,259,307"/>
+<area shape="rect" id="node6" href="$module__basis_2module__ao_2parallel__orbitals_8h.html" title=" " alt="" coords="321,273,488,315"/>
+<area shape="rect" id="node9" href="$complexmatrix_8h.html" title=" " alt="" coords="533,281,757,307"/>
 </map>

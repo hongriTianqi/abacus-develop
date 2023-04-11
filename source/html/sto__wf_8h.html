@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: module_hamilt_pw/hamilt_stodft/sto_wf.h File Reference</title>
+<title>3.2.0: module_hamilt_pw/hamilt_stodft/sto_wf.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -121,16 +121,16 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a83fdf2a7e1c88d13b926143cdce85728"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sto__wf_8h.html#a83fdf2a7e1c88d13b926143cdce85728">Init_Sto_Orbitals</a> (<a class="el" href="classStochastic__WF.html">Stochastic_WF</a> &amp;stowf, const int seed_in)</td></tr>
-<tr class="separator:a83fdf2a7e1c88d13b926143cdce85728"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9a4a037fc6e67fb92ddd575a0080c2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sto__wf_8h.html#ad9a4a037fc6e67fb92ddd575a0080c2c">Update_Sto_Orbitals</a> (<a class="el" href="classStochastic__WF.html">Stochastic_WF</a> &amp;stowf, const int seed_in)</td></tr>
-<tr class="separator:ad9a4a037fc6e67fb92ddd575a0080c2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a637afebfe477cbed91ed6dc97b12a36a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sto__wf_8h.html#a637afebfe477cbed91ed6dc97b12a36a">Init_Com_Orbitals</a> (<a class="el" href="classStochastic__WF.html">Stochastic_WF</a> &amp;stowf, <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;kv)</td></tr>
-<tr class="separator:a637afebfe477cbed91ed6dc97b12a36a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a078c5b0df770c2d163cb4adaad3d0cec"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sto__wf_8h.html#a078c5b0df770c2d163cb4adaad3d0cec">Init_Sto_Orbitals</a> (<a class="el" href="classStochastic__WF.html">Stochastic_WF</a> &amp;stowf, const int seed_in, const int nks)</td></tr>
+<tr class="separator:a078c5b0df770c2d163cb4adaad3d0cec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dc65855850974a0b8ea4cc49592552a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sto__wf_8h.html#a1dc65855850974a0b8ea4cc49592552a">Update_Sto_Orbitals</a> (<a class="el" href="classStochastic__WF.html">Stochastic_WF</a> &amp;stowf, const int seed_in, const int nks)</td></tr>
+<tr class="separator:a1dc65855850974a0b8ea4cc49592552a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acab47d88eb9cc53e7f070092d83cb516"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="sto__wf_8h.html#acab47d88eb9cc53e7f070092d83cb516">Init_Com_Orbitals</a> (<a class="el" href="classStochastic__WF.html">Stochastic_WF</a> &amp;stowf, <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;kv, const int ndim)</td></tr>
+<tr class="separator:acab47d88eb9cc53e7f070092d83cb516"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a637afebfe477cbed91ed6dc97b12a36a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a637afebfe477cbed91ed6dc97b12a36a">&#9670;&nbsp;</a></span>Init_Com_Orbitals()</h2>
+<a id="acab47d88eb9cc53e7f070092d83cb516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acab47d88eb9cc53e7f070092d83cb516">&#9670;&nbsp;</a></span>Init_Com_Orbitals()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -145,7 +145,13 @@ Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;&#160;</td>
-          <td class="paramname"><em>kv</em>&#160;</td>
+          <td class="paramname"><em>kv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ndim</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -157,8 +163,8 @@ Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="sto__wf_8h_a637afebfe477cbed91ed6dc97b12a36a_cgraph.png" border="0" usemap="#sto__wf_8h_a637afebfe477cbed91ed6dc97b12a36a_cgraph" alt=""/></div>
-<map name="sto__wf_8h_a637afebfe477cbed91ed6dc97b12a36a_cgraph" id="sto__wf_8h_a637afebfe477cbed91ed6dc97b12a36a_cgraph">
+<div class="center"><img src="sto__wf_8h_acab47d88eb9cc53e7f070092d83cb516_cgraph.png" border="0" usemap="#sto__wf_8h_acab47d88eb9cc53e7f070092d83cb516_cgraph" alt=""/></div>
+<map name="sto__wf_8h_acab47d88eb9cc53e7f070092d83cb516_cgraph" id="sto__wf_8h_acab47d88eb9cc53e7f070092d83cb516_cgraph">
 <area shape="rect" title=" " alt="" coords="5,13,144,39"/>
 <area shape="rect" href="classModuleBase_1_1ComplexMatrix.html#a5c1453ebc08a2889d5b77e310256ad44" title=" " alt="" coords="192,5,403,47"/>
 <area shape="rect" href="classModuleBase_1_1ComplexMatrix.html#a3838106abe74b149f792daadd79fb027" title=" " alt="" coords="451,5,661,47"/>
@@ -167,8 +173,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="sto__wf_8h_a637afebfe477cbed91ed6dc97b12a36a_icgraph.png" border="0" usemap="#sto__wf_8h_a637afebfe477cbed91ed6dc97b12a36a_icgraph" alt=""/></div>
-<map name="sto__wf_8h_a637afebfe477cbed91ed6dc97b12a36a_icgraph" id="sto__wf_8h_a637afebfe477cbed91ed6dc97b12a36a_icgraph">
+<div class="center"><img src="sto__wf_8h_acab47d88eb9cc53e7f070092d83cb516_icgraph.png" border="0" usemap="#sto__wf_8h_acab47d88eb9cc53e7f070092d83cb516_icgraph" alt=""/></div>
+<map name="sto__wf_8h_acab47d88eb9cc53e7f070092d83cb516_icgraph" id="sto__wf_8h_acab47d88eb9cc53e7f070092d83cb516_icgraph">
 <area shape="rect" title=" " alt="" coords="229,13,368,39"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a5da528c585deda3e93483bb394d67713" title=" " alt="" coords="5,5,181,47"/>
 </map>
@@ -176,8 +182,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a83fdf2a7e1c88d13b926143cdce85728"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a83fdf2a7e1c88d13b926143cdce85728">&#9670;&nbsp;</a></span>Init_Sto_Orbitals()</h2>
+<a id="a078c5b0df770c2d163cb4adaad3d0cec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a078c5b0df770c2d163cb4adaad3d0cec">&#9670;&nbsp;</a></span>Init_Sto_Orbitals()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,7 +198,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>seed_in</em>&#160;</td>
+          <td class="paramname"><em>seed_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>nks</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -204,20 +216,21 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="sto__wf_8h_a83fdf2a7e1c88d13b926143cdce85728_cgraph.png" border="0" usemap="#sto__wf_8h_a83fdf2a7e1c88d13b926143cdce85728_cgraph" alt=""/></div>
-<map name="sto__wf_8h_a83fdf2a7e1c88d13b926143cdce85728_cgraph" id="sto__wf_8h_a83fdf2a7e1c88d13b926143cdce85728_cgraph">
-<area shape="rect" title=" " alt="" coords="5,64,135,91"/>
-<area shape="rect" href="namespaceModuleBase_1_1libm.html#a7b49e155799ac36b2da1da35b6c2c77c" title=" " alt="" coords="203,5,373,32"/>
-<area shape="rect" href="classModuleBase_1_1ComplexMatrix.html#a5c1453ebc08a2889d5b77e310256ad44" title=" " alt="" coords="183,57,393,98"/>
-<area shape="rect" href="namespaceModuleBase_1_1libm.html#a91c03031eb1d447315c0f37d8251d2ad" title=" " alt="" coords="205,123,371,149"/>
-<area shape="rect" href="classModuleBase_1_1ComplexMatrix.html#a3838106abe74b149f792daadd79fb027" title=" " alt="" coords="441,57,652,98"/>
+<div class="center"><img src="sto__wf_8h_a078c5b0df770c2d163cb4adaad3d0cec_cgraph.png" border="0" usemap="#sto__wf_8h_a078c5b0df770c2d163cb4adaad3d0cec_cgraph" alt=""/></div>
+<map name="sto__wf_8h_a078c5b0df770c2d163cb4adaad3d0cec_cgraph" id="sto__wf_8h_a078c5b0df770c2d163cb4adaad3d0cec_cgraph">
+<area shape="rect" title=" " alt="" coords="5,93,135,120"/>
+<area shape="rect" href="namespaceModuleBase_1_1libm.html#a7b49e155799ac36b2da1da35b6c2c77c" title=" " alt="" coords="205,5,374,32"/>
+<area shape="rect" href="classModuleBase_1_1ComplexMatrix.html#a5c1453ebc08a2889d5b77e310256ad44" title=" " alt="" coords="184,57,395,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1libm.html#a91c03031eb1d447315c0f37d8251d2ad" title=" " alt="" coords="206,123,373,149"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="183,173,396,200"/>
+<area shape="rect" href="classModuleBase_1_1ComplexMatrix.html#a3838106abe74b149f792daadd79fb027" title=" " alt="" coords="444,57,655,98"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="sto__wf_8h_a83fdf2a7e1c88d13b926143cdce85728_icgraph.png" border="0" usemap="#sto__wf_8h_a83fdf2a7e1c88d13b926143cdce85728_icgraph" alt=""/></div>
-<map name="sto__wf_8h_a83fdf2a7e1c88d13b926143cdce85728_icgraph" id="sto__wf_8h_a83fdf2a7e1c88d13b926143cdce85728_icgraph">
+<div class="center"><img src="sto__wf_8h_a078c5b0df770c2d163cb4adaad3d0cec_icgraph.png" border="0" usemap="#sto__wf_8h_a078c5b0df770c2d163cb4adaad3d0cec_icgraph" alt=""/></div>
+<map name="sto__wf_8h_a078c5b0df770c2d163cb4adaad3d0cec_icgraph" id="sto__wf_8h_a078c5b0df770c2d163cb4adaad3d0cec_icgraph">
 <area shape="rect" title=" " alt="" coords="229,13,359,39"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a5da528c585deda3e93483bb394d67713" title=" " alt="" coords="5,5,181,47"/>
 </map>
@@ -225,8 +238,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ad9a4a037fc6e67fb92ddd575a0080c2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9a4a037fc6e67fb92ddd575a0080c2c">&#9670;&nbsp;</a></span>Update_Sto_Orbitals()</h2>
+<a id="a1dc65855850974a0b8ea4cc49592552a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1dc65855850974a0b8ea4cc49592552a">&#9670;&nbsp;</a></span>Update_Sto_Orbitals()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -241,7 +254,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>seed_in</em>&#160;</td>
+          <td class="paramname"><em>seed_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>nks</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -253,8 +272,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="sto__wf_8h_ad9a4a037fc6e67fb92ddd575a0080c2c_cgraph.png" border="0" usemap="#sto__wf_8h_ad9a4a037fc6e67fb92ddd575a0080c2c_cgraph" alt=""/></div>
-<map name="sto__wf_8h_ad9a4a037fc6e67fb92ddd575a0080c2c_cgraph" id="sto__wf_8h_ad9a4a037fc6e67fb92ddd575a0080c2c_cgraph">
+<div class="center"><img src="sto__wf_8h_a1dc65855850974a0b8ea4cc49592552a_cgraph.png" border="0" usemap="#sto__wf_8h_a1dc65855850974a0b8ea4cc49592552a_cgraph" alt=""/></div>
+<map name="sto__wf_8h_a1dc65855850974a0b8ea4cc49592552a_cgraph" id="sto__wf_8h_a1dc65855850974a0b8ea4cc49592552a_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,160,57"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#a7b49e155799ac36b2da1da35b6c2c77c" title=" " alt="" coords="208,5,377,32"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#a91c03031eb1d447315c0f37d8251d2ad" title=" " alt="" coords="209,56,376,83"/>
@@ -263,8 +282,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="sto__wf_8h_ad9a4a037fc6e67fb92ddd575a0080c2c_icgraph.png" border="0" usemap="#sto__wf_8h_ad9a4a037fc6e67fb92ddd575a0080c2c_icgraph" alt=""/></div>
-<map name="sto__wf_8h_ad9a4a037fc6e67fb92ddd575a0080c2c_icgraph" id="sto__wf_8h_ad9a4a037fc6e67fb92ddd575a0080c2c_icgraph">
+<div class="center"><img src="sto__wf_8h_a1dc65855850974a0b8ea4cc49592552a_icgraph.png" border="0" usemap="#sto__wf_8h_a1dc65855850974a0b8ea4cc49592552a_icgraph" alt=""/></div>
+<map name="sto__wf_8h_a1dc65855850974a0b8ea4cc49592552a_icgraph" id="sto__wf_8h_a1dc65855850974a0b8ea4cc49592552a_icgraph">
 <area shape="rect" title=" " alt="" coords="229,13,384,39"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a3e9f57ebe56787eaf5ca794f48231deb" title=" " alt="" coords="5,5,181,47"/>
 </map>

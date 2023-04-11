@@ -1,9 +1,10 @@
 <map id="module_hsolver/diago_david.h" name="module_hsolver/diago_david.h">
-<area shape="rect" id="node1" title=" " alt="" coords="300,5,467,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="416,5,583,47"/>
 <area shape="rect" id="node2" href="$diago__david_8cpp.html" title=" " alt="" coords="5,95,172,136"/>
 <area shape="rect" id="node3" href="$hsolver__pw_8cpp.html" title=" " alt="" coords="197,95,375,136"/>
-<area shape="rect" id="node4" href="$diago__david__test_8cpp.html" title=" " alt="" coords="400,95,564,136"/>
-<area shape="rect" id="node5" href="$hsolver__pw__sup_8h.html" title=" " alt="" coords="589,95,743,136"/>
-<area shape="rect" id="node6" href="$test__hsolver__pw_8cpp.html" title=" " alt="" coords="493,184,652,225"/>
-<area shape="rect" id="node7" href="$test__hsolver__sdft_8cpp.html" title=" " alt="" coords="676,184,840,225"/>
+<area shape="rect" id="node4" href="$diago__david__float__test_8cpp.html" title=" " alt="" coords="399,95,599,136"/>
+<area shape="rect" id="node5" href="$diago__david__test_8cpp.html" title=" " alt="" coords="624,95,788,136"/>
+<area shape="rect" id="node6" href="$hsolver__pw__sup_8h.html" title=" " alt="" coords="813,95,967,136"/>
+<area shape="rect" id="node7" href="$test__hsolver__pw_8cpp.html" title=" " alt="" coords="717,184,876,225"/>
+<area shape="rect" id="node8" href="$test__hsolver__sdft_8cpp.html" title=" " alt="" coords="900,184,1064,225"/>
 </map>

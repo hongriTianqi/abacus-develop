@@ -1,12 +1,12 @@
 <map id="ModuleESolver::ESolver_KS_PW&lt; FPTYPE, Device &gt;" name="ModuleESolver::ESolver_KS_PW&lt; FPTYPE, Device &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="686,1321,891,1707"/>
-<area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver__KS.html" title=" " alt="" coords="409,837,651,1251"/>
-<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__FP.html" title=" " alt="" coords="5,469,204,591"/>
+<area shape="rect" id="node1" title=" " alt="" coords="686,1321,891,1721"/>
+<area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver__KS.html" title=" " alt="" coords="409,829,651,1259"/>
+<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__FP.html" title=" " alt="" coords="5,462,204,598"/>
 <area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver.html" title=" " alt="" coords="17,5,193,244"/>
 <area shape="rect" id="node5" href="$classModulePW_1_1PW__Basis__K.html" title="Special pw_basis class. It includes different k&#45;points." alt="" coords="228,293,408,767"/>
 <area shape="rect" id="node6" href="$classhsolver_1_1HSolver.html" title=" " alt="" coords="432,418,628,642"/>
 <area shape="rect" id="node7" href="$classhamilt_1_1Hamilt.html" title=" " alt="" coords="652,440,835,620"/>
-<area shape="rect" id="node8" href="$classCharge__Extra.html" title=" " alt="" coords="859,389,1033,671"/>
+<area shape="rect" id="node8" href="$classCharge__Extra.html" title=" " alt="" coords="859,396,1033,664"/>
 <area shape="rect" id="node9" href="$classpsi_1_1Psi.html" title=" " alt="" coords="675,829,903,1259"/>
 <area shape="rect" id="node10" href="$classpsi_1_1Psi.html" title=" " alt="" coords="927,829,1159,1259"/>
 </map>

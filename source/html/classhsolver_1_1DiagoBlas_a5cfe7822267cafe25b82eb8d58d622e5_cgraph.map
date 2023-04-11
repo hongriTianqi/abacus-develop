@@ -1,12 +1,12 @@
 <map id="hsolver::DiagoBlas::diag" name="hsolver::DiagoBlas::diag">
-<area shape="rect" id="node1" title=" " alt="" coords="5,78,149,119"/>
-<area shape="rect" id="node2" href="$classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="203,5,358,32"/>
-<area shape="rect" id="node4" href="$classhamilt_1_1Hamilt.html#abc2177ba7c8bf11be21fed333c570126" title=" " alt="" coords="197,56,364,83"/>
-<area shape="rect" id="node5" href="$classhsolver_1_1DiagoBlas.html#a520734ebd6a2c7a8e250ce7c02009429" title=" " alt="" coords="209,107,353,149"/>
-<area shape="rect" id="node10" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="208,173,353,200"/>
-<area shape="rect" id="node3" href="$blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc" title=" " alt="" coords="450,5,518,32"/>
-<area shape="rect" id="node6" href="$classhsolver_1_1DiagoBlas.html#a98d6ad18b1e6ebfcfe7178360bc1bb2b" title=" " alt="" coords="412,82,556,123"/>
-<area shape="rect" id="node8" href="$classhsolver_1_1DiagoBlas.html#a00b59a93f47339130de5352f7d59b69d" title=" " alt="" coords="412,147,556,189"/>
-<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="604,86,787,127"/>
-<area shape="rect" id="node9" href="$scalapack__connector_8h.html#a7cd7f3cd92984d862e6594b442cd03b4" title=" " alt="" coords="653,155,737,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,89,149,130"/>
+<area shape="rect" id="node2" href="$classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="203,9,358,36"/>
+<area shape="rect" id="node4" href="$classhamilt_1_1Hamilt.html#abc2177ba7c8bf11be21fed333c570126" title=" " alt="" coords="197,67,364,93"/>
+<area shape="rect" id="node5" href="$classhsolver_1_1DiagoBlas.html#a520734ebd6a2c7a8e250ce7c02009429" title=" " alt="" coords="209,118,353,159"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="208,195,353,221"/>
+<area shape="rect" id="node3" href="$blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc" title=" " alt="" coords="469,5,537,32"/>
+<area shape="rect" id="node6" href="$classhsolver_1_1DiagoBlas.html#a98d6ad18b1e6ebfcfe7178360bc1bb2b" title=" " alt="" coords="431,57,575,98"/>
+<area shape="rect" id="node7" href="$classhsolver_1_1DiagoBlas.html#a00b59a93f47339130de5352f7d59b69d" title=" " alt="" coords="431,122,575,163"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="412,187,595,229"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="427,253,580,294"/>
 </map>

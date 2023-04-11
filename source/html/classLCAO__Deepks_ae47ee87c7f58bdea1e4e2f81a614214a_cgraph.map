@@ -1,5 +1,10 @@
 <map id="LCAO_Deepks::cal_gvx" name="LCAO_Deepks::cal_gvx">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,176,57"/>
-<area shape="rect" id="node2" href="$classLCAO__Deepks.html#a947af3e9eb7149bedf161e8e6fc7f6dc" title=" " alt="" coords="224,5,408,32"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="456,31,601,57"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,176,73"/>
+<area shape="rect" id="node2" href="$classLCAO__Deepks.html#a947af3e9eb7149bedf161e8e6fc7f6dc" title=" " alt="" coords="224,21,408,47"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="456,46,601,73"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="649,5,832,47"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="664,71,817,112"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="880,5,1063,47"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="883,78,1060,105"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1111,71,1264,112"/>
 </map>

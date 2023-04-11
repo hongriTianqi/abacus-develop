@@ -1,6 +1,10 @@
 <map id="Exx_Abfs::DM::cal_DMk_mixing" name="Exx_Abfs::DM::cal_DMk_mixing">
-<area shape="rect" id="node1" title=" " alt="" coords="5,64,181,105"/>
-<area shape="rect" id="node2" href="$classCharge__Mixing.html#ab31004c7df886fbf8b5aeb4afc3795a1" title=" " alt="" coords="247,5,395,47"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="248,71,393,98"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="229,123,412,164"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,181,112"/>
+<area shape="rect" id="node2" href="$classCharge__Mixing.html#ab31004c7df886fbf8b5aeb4afc3795a1" title=" " alt="" coords="229,12,377,53"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="231,78,376,105"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="656,100,839,141"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="425,71,608,112"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="440,5,593,47"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="659,13,836,39"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="887,5,1040,47"/>
 </map>

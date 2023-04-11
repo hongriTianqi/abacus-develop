@@ -1,7 +1,12 @@
 <map id="Grid_BigCell::init_tau_in_bigcell" name="Grid_BigCell::init_tau_in_bigcell">
-<area shape="rect" id="node1" title=" " alt="" coords="5,64,136,105"/>
-<area shape="rect" id="node2" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="209,5,373,47"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="218,71,363,98"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="184,122,397,149"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="445,5,609,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,71,136,112"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="209,9,373,51"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="218,78,363,105"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="184,129,397,155"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="455,5,619,47"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="445,71,628,112"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="460,136,613,177"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="676,71,859,112"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="679,143,856,170"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="907,136,1060,177"/>
 </map>

@@ -1,10 +1,12 @@
 <map id="Ions_Move_Basic::move_atoms" name="Ions_Move_Basic::move_atoms">
-<area shape="rect" id="node1" title=" " alt="" coords="5,141,184,182"/>
-<area shape="rect" id="node2" href="$classUnitCell.html#a81a42ec6047e78ea94996cb019b7ce46" title=" " alt="" coords="232,5,425,32"/>
-<area shape="rect" id="node3" href="$classUnitCell.html#a2f5cc850b919765c3b62894f8066b094" title=" " alt="" coords="243,57,414,98"/>
-<area shape="rect" id="node5" href="$classUnitCell.html#a09dbc2f6cdfbd268507e2795a55145eb" title=" " alt="" coords="246,123,411,149"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="507,173,653,200"/>
-<area shape="rect" id="node7" href="$classUnitCell.html#a26967dcfb0ce163f9472173d1980de62" title=" " alt="" coords="259,224,399,251"/>
-<area shape="rect" id="node8" href="$classUnitCell.html#a2c6f413016609a17a96ce59023b94f1f" title=" " alt="" coords="236,275,421,301"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="473,64,687,91"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,184,115"/>
+<area shape="rect" id="node2" href="$classUnitCell.html#a09dbc2f6cdfbd268507e2795a55145eb" title=" " alt="" coords="242,5,407,32"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="465,56,611,83"/>
+<area shape="rect" id="node9" href="$classUnitCell.html#a26967dcfb0ce163f9472173d1980de62" title=" " alt="" coords="255,107,395,133"/>
+<area shape="rect" id="node10" href="$classUnitCell.html#a2c6f413016609a17a96ce59023b94f1f" title=" " alt="" coords="232,157,417,184"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="659,15,841,57"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="673,81,827,122"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="889,15,1072,57"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="892,88,1069,115"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1120,81,1273,122"/>
 </map>

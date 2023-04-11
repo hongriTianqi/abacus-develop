@@ -1,12 +1,12 @@
 <map id="test_orb" name="test_orb">
-<area shape="rect" id="node1" title=" " alt="" coords="243,1121,410,1521"/>
-<area shape="rect" id="node2" title=" " alt="" coords="16,783,64,861"/>
-<area shape="rect" id="node3" href="$classORB__gen__tables.html" title=" " alt="" coords="241,732,413,912"/>
-<area shape="rect" id="node4" href="$classORB__table__phi.html" title=" " alt="" coords="607,5,774,508"/>
-<area shape="rect" id="node5" href="$classORB__gaunt__table.html" title=" " alt="" coords="5,130,176,383"/>
-<area shape="rect" id="node6" href="$classORB__table__beta.html" title=" " alt="" coords="200,57,376,457"/>
-<area shape="rect" id="node7" href="$classORB__table__alpha.html" title=" " alt="" coords="401,49,583,464"/>
-<area shape="rect" id="node8" href="$classLCAO__Orbitals.html" title=" " alt="" coords="437,593,592,1051"/>
-<area shape="rect" id="node9" href="$classNumerical__Orbital.html" title=" " alt="" coords="799,49,975,464"/>
-<area shape="rect" id="node10" href="$classORB__control.html" title=" " alt="" coords="617,585,781,1059"/>
+<area shape="rect" id="node1" title=" " alt="" coords="243,1180,410,1536"/>
+<area shape="rect" id="node2" title=" " alt="" coords="16,842,64,919"/>
+<area shape="rect" id="node3" href="$classORB__gen__tables.html" title=" " alt="" coords="241,791,413,971"/>
+<area shape="rect" id="node4" href="$classORB__table__phi.html" title=" " alt="" coords="607,5,801,567"/>
+<area shape="rect" id="node5" href="$classORB__gaunt__table.html" title=" " alt="" coords="5,159,176,413"/>
+<area shape="rect" id="node6" href="$classORB__table__beta.html" title=" " alt="" coords="200,86,376,486"/>
+<area shape="rect" id="node7" href="$classORB__table__alpha.html" title=" " alt="" coords="401,64,583,508"/>
+<area shape="rect" id="node8" href="$classLCAO__Orbitals.html" title=" " alt="" coords="437,651,592,1110"/>
+<area shape="rect" id="node9" href="$classNumerical__Orbital.html" title=" " alt="" coords="825,79,1001,493"/>
+<area shape="rect" id="node10" href="$classORB__control.html" title=" " alt="" coords="617,644,781,1117"/>
 </map>

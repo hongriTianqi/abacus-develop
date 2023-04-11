@@ -2,7 +2,11 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,71,188,98"/>
 <area shape="rect" id="node2" href="$namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="236,21,455,47"/>
 <area shape="rect" id="node3" href="$classCharge.html#acaba94e803083e82aff5f6a0c14e1356" title=" " alt="" coords="279,71,411,98"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="537,122,682,149"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="537,122,682,149"/>
 <area shape="rect" id="node4" href="$namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="521,5,698,47"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="503,71,716,98"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="503,71,716,98"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="764,81,947,123"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="779,147,932,188"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="995,81,1177,123"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="997,154,1175,181"/>
 </map>

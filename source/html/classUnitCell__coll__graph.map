@@ -1,12 +1,12 @@
 <map id="UnitCell" name="UnitCell">
-<area shape="rect" id="node1" title=" " alt="" coords="380,1437,518,1808"/>
-<area shape="rect" id="node2" href="$classMagnetism.html" title=" " alt="" coords="134,909,340,1133"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="154,424,312,692"/>
-<area shape="rect" id="node5" href="$classAtom.html" title=" " alt="" coords="364,865,534,1177"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="558,828,721,1213"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="370,424,528,692"/>
-<area shape="rect" id="node7" href="$classAtom__pseudo.html" title=" " alt="" coords="552,468,730,648"/>
-<area shape="rect" id="node8" href="$classpseudo__nc.html" title=" " alt="" coords="448,5,620,361"/>
-<area shape="rect" id="node9" href="$classModuleBase_1_1ComplexArray.html" title="A basic type of data for complex array." alt="" coords="645,35,848,332"/>
+<area shape="rect" id="node1" title=" " alt="" coords="380,1437,519,1808"/>
+<area shape="rect" id="node2" href="$classMagnetism.html" title=" " alt="" coords="135,909,340,1133"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="158,424,317,692"/>
+<area shape="rect" id="node5" href="$classAtom.html" title=" " alt="" coords="364,865,535,1177"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="559,828,721,1213"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="355,424,514,692"/>
+<area shape="rect" id="node7" href="$classAtom__pseudo.html" title=" " alt="" coords="538,468,715,648"/>
+<area shape="rect" id="node8" href="$classpseudo__nc.html" title=" " alt="" coords="434,5,606,361"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1ComplexArray.html" title="A basic type of data for complex array." alt="" coords="631,35,833,332"/>
 <area shape="rect" id="node10" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="745,828,905,1213"/>
 </map>

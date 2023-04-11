@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: MDrun Class Reference</title>
+<title>3.2.0: MDrun Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -79,12 +79,12 @@ Inheritance diagram for MDrun:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMDrun__inherit__graph.png" border="0" usemap="#MDrun_inherit__map" alt="Inheritance graph"/></div>
 <map name="MDrun_inherit__map" id="MDrun_inherit__map">
-<area shape="rect" title=" " alt="" coords="333,5,479,332"/>
-<area shape="rect" href="classFIRE.html" title=" " alt="" coords="5,409,143,736"/>
-<area shape="rect" href="classLangevin.html" title=" " alt="" coords="167,475,301,670"/>
-<area shape="rect" href="classMSST.html" title=" " alt="" coords="325,387,487,758"/>
-<area shape="rect" href="classNose__Hoover.html" title=" " alt="" coords="511,380,661,765"/>
-<area shape="rect" href="classVerlet.html" title=" " alt="" coords="686,468,849,677"/>
+<area shape="rect" title=" " alt="" coords="330,5,477,361"/>
+<area shape="rect" href="classFIRE.html" title=" " alt="" coords="5,468,143,795"/>
+<area shape="rect" href="classLangevin.html" title=" " alt="" coords="167,534,298,729"/>
+<area shape="rect" href="classMSST.html" title=" " alt="" coords="323,446,484,817"/>
+<area shape="rect" href="classNose__Hoover.html" title=" " alt="" coords="508,409,659,853"/>
+<area shape="rect" href="classVerlet.html" title=" " alt="" coords="683,527,846,736"/>
 </map>
 </div>
 <div class="dynheader">
@@ -92,7 +92,7 @@ Collaboration diagram for MDrun:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMDrun__coll__graph.png" border="0" usemap="#MDrun_coll__map" alt="Collaboration graph"/></div>
 <map name="MDrun_coll__map" id="MDrun_coll__map">
-<area shape="rect" title=" " alt="" coords="947,1467,1094,1764"/>
+<area shape="rect" title=" " alt="" coords="947,1467,1094,1793"/>
 <area shape="rect" href="classUnitCell.html" title=" " alt="" coords="547,1019,686,1389"/>
 <area shape="rect" href="classMagnetism.html" title=" " alt="" coords="212,490,418,714"/>
 <area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="86,5,245,273"/>
@@ -120,6 +120,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a2b7f91ffa0d66ba98ca6c2cad87e3d49"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a2b7f91ffa0d66ba98ca6c2cad87e3d49">second_half</a> ()</td></tr>
 <tr class="memdesc:a2b7f91ffa0d66ba98ca6c2cad87e3d49"><td class="mdescLeft">&#160;</td><td class="mdescRight">the second half of equation of motion, update velocities  <a href="classMDrun.html#a2b7f91ffa0d66ba98ca6c2cad87e3d49">More...</a><br /></td></tr>
 <tr class="separator:a2b7f91ffa0d66ba98ca6c2cad87e3d49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117831ce15e9c9ea3ecf0439da44225f"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f">update_pos</a> ()</td></tr>
+<tr class="memdesc:a117831ce15e9c9ea3ecf0439da44225f"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform one step update of pos due to atomic velocity  <a href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f">More...</a><br /></td></tr>
+<tr class="separator:a117831ce15e9c9ea3ecf0439da44225f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4e537c0e31069dcd68609f914234df"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df">update_vel</a> (const <a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *<a class="el" href="classMDrun.html#af606a44acc0c7a20a95358c784076acd">force</a>)</td></tr>
+<tr class="memdesc:a7b4e537c0e31069dcd68609f914234df"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform half-step update of vel due to atomic force  <a href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df">More...</a><br /></td></tr>
+<tr class="separator:a7b4e537c0e31069dcd68609f914234df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19356db7cdf6b48357ecfff93bccacf7"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a19356db7cdf6b48357ecfff93bccacf7">outputMD</a> (std::ofstream &amp;ofs, bool cal_stress)</td></tr>
 <tr class="memdesc:a19356db7cdf6b48357ecfff93bccacf7"><td class="mdescLeft">&#160;</td><td class="mdescRight">output MD information such as energy, temperature, and pressure  <a href="classMDrun.html#a19356db7cdf6b48357ecfff93bccacf7">More...</a><br /></td></tr>
 <tr class="separator:a19356db7cdf6b48357ecfff93bccacf7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -198,16 +204,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMDrun_ae13c3615d2cf185d056e8a6bb1ce7e9d_cgraph.png" border="0" usemap="#classMDrun_ae13c3615d2cf185d056e8a6bb1ce7e9d_cgraph" alt=""/></div>
 <map name="classMDrun_ae13c3615d2cf185d056e8a6bb1ce7e9d_cgraph" id="classMDrun_ae13c3615d2cf185d056e8a6bb1ce7e9d_cgraph">
-<area shape="rect" title=" " alt="" coords="5,71,121,98"/>
-<area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="169,5,323,47"/>
-<area shape="rect" href="classMD__func.html#aecf4cfc5f562ff1f75fe480248aa6bc0" title=" " alt="" coords="181,71,311,98"/>
-<area shape="rect" href="classMD__func.html#ad4e2e8cd1f82ff435bb6e441543f27d0" title=" " alt="" coords="182,122,310,149"/>
-<area shape="rect" href="namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="371,13,556,39"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="604,13,817,39"/>
-<area shape="rect" href="classMD__func.html#abad7340af4068b098a38addd7766af66" title=" " alt="" coords="380,71,547,98"/>
-<area shape="rect" href="classMD__func.html#a238d98d18a333f5d7f48d89f07c2bb98" title=" " alt="" coords="383,122,544,149"/>
-<area shape="rect" href="classMD__func.html#a6949fea92b6240b9433f377d7066224b" title=" " alt="" coords="393,173,533,199"/>
-<area shape="rect" href="classModuleBase_1_1Vector3.html#a7e069b794f5d1cf410c54d01c874f09c" title="set a 3d vector" alt="" coords="617,71,804,98"/>
+<area shape="rect" title=" " alt="" coords="5,56,121,83"/>
+<area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="169,9,323,50"/>
+<area shape="rect" href="classMD__func.html#ad4e2e8cd1f82ff435bb6e441543f27d0" title=" " alt="" coords="182,85,310,112"/>
+<area shape="rect" href="namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="371,5,556,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="604,5,817,32"/>
+<area shape="rect" href="classMD__func.html#abad7340af4068b098a38addd7766af66" title=" " alt="" coords="380,56,547,83"/>
+<area shape="rect" href="classMD__func.html#a238d98d18a333f5d7f48d89f07c2bb98" title=" " alt="" coords="383,107,544,133"/>
+<area shape="rect" href="classMD__func.html#a6949fea92b6240b9433f377d7066224b" title=" " alt="" coords="393,157,533,184"/>
+<area shape="rect" href="classModuleBase_1_1Vector3.html#a7e069b794f5d1cf410c54d01c874f09c" title="set a 3d vector" alt="" coords="617,56,804,83"/>
+<area shape="rect" href="classMD__func.html#a36655a0860e146ab9c2ad9e3110cb8c9" title=" " alt="" coords="633,107,788,133"/>
 </map>
 </div>
 
@@ -270,11 +276,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMDrun_a6f87ef70d9b4910b0a6399ed5b41307b_cgraph.png" border="0" usemap="#classMDrun_a6f87ef70d9b4910b0a6399ed5b41307b_cgraph" alt=""/></div>
 <map name="classMDrun_a6f87ef70d9b4910b0a6399ed5b41307b_cgraph" id="classMDrun_a6f87ef70d9b4910b0a6399ed5b41307b_cgraph">
-<area shape="rect" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,64,136,91"/>
-<area shape="rect" href="classMD__func.html#aecf4cfc5f562ff1f75fe480248aa6bc0" title=" " alt="" coords="211,5,342,32"/>
-<area shape="rect" href="classUnitCell.html#a2f5cc850b919765c3b62894f8066b094" title=" " alt="" coords="191,57,362,98"/>
-<area shape="rect" href="classUnitCell.html#a2c6f413016609a17a96ce59023b94f1f" title=" " alt="" coords="184,123,369,149"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="417,64,631,91"/>
+<area shape="rect" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,31,136,57"/>
+<area shape="rect" href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f" title="perform one step update of pos due to atomic velocity" alt="" coords="184,5,332,32"/>
+<area shape="rect" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df" title="perform half&#45;step update of vel due to atomic force" alt="" coords="185,56,331,83"/>
+<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="380,5,573,32"/>
 </map>
 </div>
 <div class="dynheader">
@@ -282,14 +287,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMDrun_a6f87ef70d9b4910b0a6399ed5b41307b_icgraph.png" border="0" usemap="#classMDrun_a6f87ef70d9b4910b0a6399ed5b41307b_icgraph" alt=""/></div>
 <map name="classMDrun_a6f87ef70d9b4910b0a6399ed5b41307b_icgraph" id="classMDrun_a6f87ef70d9b4910b0a6399ed5b41307b_icgraph">
-<area shape="rect" title="the first half of equation of motion, update velocities and positions" alt="" coords="821,56,952,83"/>
-<area shape="rect" href="classVerlet.html#aba69d1b6dbfd2695197236279dff7099" title="the first half of equation of motion, update velocities and positions" alt="" coords="643,5,768,32"/>
-<area shape="rect" href="classRun__MD.html#a42a25187fa871ef2b746d483451a22b6" title=" " alt="" coords="637,56,773,83"/>
-<area shape="rect" href="FIRE__test_8cpp.html#ac381ddd25b6d86e64207a17c8ee54171" title=" " alt="" coords="671,107,740,133"/>
-<area shape="rect" href="classDriver.html#aff0cf0057c9529d58f6a341ee2143ea7" title=" " alt="" coords="453,56,589,83"/>
-<area shape="rect" href="classDriver.html#acac803df99ed03e19344274c985ffa8c" title=" " alt="" coords="247,56,405,83"/>
-<area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,56,199,83"/>
-<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,56,60,83"/>
+<area shape="rect" title="the first half of equation of motion, update velocities and positions" alt="" coords="821,31,952,57"/>
+<area shape="rect" href="classRun__MD.html#a42a25187fa871ef2b746d483451a22b6" title=" " alt="" coords="637,5,773,32"/>
+<area shape="rect" href="FIRE__test_8cpp.html#ac381ddd25b6d86e64207a17c8ee54171" title=" " alt="" coords="671,56,740,83"/>
+<area shape="rect" href="classDriver.html#aff0cf0057c9529d58f6a341ee2143ea7" title=" " alt="" coords="453,5,589,32"/>
+<area shape="rect" href="classDriver.html#acac803df99ed03e19344274c985ffa8c" title=" " alt="" coords="247,5,405,32"/>
+<area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>
 </div>
 
@@ -454,15 +458,22 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classFIRE.html#a00433d49713c21bd66fe133dca9d66fa">FIRE</a>, <a class="el" href="classLangevin.html#a134991eeab1573644469c3820644607e">Langevin</a>, <a class="el" href="classMSST.html#ab05716f7f09d027861c7435dae09334f">MSST</a>, <a class="el" href="classNose__Hoover.html#a6d05097c9fc8a511256ca0a48d0ac0e4">Nose_Hoover</a>, and <a class="el" href="classVerlet.html#a58f10f85ec6c5cf05486a07c27b379bc">Verlet</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMDrun_a2b7f91ffa0d66ba98ca6c2cad87e3d49_cgraph.png" border="0" usemap="#classMDrun_a2b7f91ffa0d66ba98ca6c2cad87e3d49_cgraph" alt=""/></div>
+<map name="classMDrun_a2b7f91ffa0d66ba98ca6c2cad87e3d49_cgraph" id="classMDrun_a2b7f91ffa0d66ba98ca6c2cad87e3d49_cgraph">
+<area shape="rect" title="the second half of equation of motion, update velocities" alt="" coords="5,5,156,32"/>
+<area shape="rect" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df" title="perform half&#45;step update of vel due to atomic force" alt="" coords="204,5,349,32"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMDrun_a2b7f91ffa0d66ba98ca6c2cad87e3d49_icgraph.png" border="0" usemap="#classMDrun_a2b7f91ffa0d66ba98ca6c2cad87e3d49_icgraph" alt=""/></div>
 <map name="classMDrun_a2b7f91ffa0d66ba98ca6c2cad87e3d49_icgraph" id="classMDrun_a2b7f91ffa0d66ba98ca6c2cad87e3d49_icgraph">
-<area shape="rect" title="the second half of equation of motion, update velocities" alt="" coords="832,81,983,108"/>
-<area shape="rect" href="classRun__MD.html#a42a25187fa871ef2b746d483451a22b6" title=" " alt="" coords="643,5,779,32"/>
-<area shape="rect" href="classVerlet.html#a58f10f85ec6c5cf05486a07c27b379bc" title="the second half of equation of motion, update velocities" alt="" coords="637,56,784,83"/>
-<area shape="rect" href="classFIRE.html#a00433d49713c21bd66fe133dca9d66fa" title="the second half of equation of motion, update velocities" alt="" coords="642,107,779,133"/>
-<area shape="rect" href="FIRE__test_8cpp.html#a0ab4578682d3acf3194dfe0e3fae6061" title=" " alt="" coords="676,157,745,184"/>
+<area shape="rect" title="the second half of equation of motion, update velocities" alt="" coords="821,31,972,57"/>
+<area shape="rect" href="classRun__MD.html#a42a25187fa871ef2b746d483451a22b6" title=" " alt="" coords="637,5,773,32"/>
+<area shape="rect" href="FIRE__test_8cpp.html#a0ab4578682d3acf3194dfe0e3fae6061" title=" " alt="" coords="671,56,740,83"/>
 <area shape="rect" href="classDriver.html#aff0cf0057c9529d58f6a341ee2143ea7" title=" " alt="" coords="453,5,589,32"/>
 <area shape="rect" href="classDriver.html#acac803df99ed03e19344274c985ffa8c" title=" " alt="" coords="247,5,405,32"/>
 <area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
@@ -539,6 +550,87 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="5,5,96,32"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a117831ce15e9c9ea3ecf0439da44225f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a117831ce15e9c9ea3ecf0439da44225f">&#9670;&nbsp;</a></span>update_pos()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MDrun::update_pos </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>perform one step update of pos due to atomic velocity </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMDrun_a117831ce15e9c9ea3ecf0439da44225f_cgraph.png" border="0" usemap="#classMDrun_a117831ce15e9c9ea3ecf0439da44225f_cgraph" alt=""/></div>
+<map name="classMDrun_a117831ce15e9c9ea3ecf0439da44225f_cgraph" id="classMDrun_a117831ce15e9c9ea3ecf0439da44225f_cgraph">
+<area shape="rect" title="perform one step update of pos due to atomic velocity" alt="" coords="5,5,153,32"/>
+<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="201,5,395,32"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMDrun_a117831ce15e9c9ea3ecf0439da44225f_icgraph.png" border="0" usemap="#classMDrun_a117831ce15e9c9ea3ecf0439da44225f_icgraph" alt=""/></div>
+<map name="classMDrun_a117831ce15e9c9ea3ecf0439da44225f_icgraph" id="classMDrun_a117831ce15e9c9ea3ecf0439da44225f_icgraph">
+<area shape="rect" title="perform one step update of pos due to atomic velocity" alt="" coords="596,132,744,159"/>
+<area shape="rect" href="classFIRE.html#a4c99ed42e50c097585590bf34696ccf1" title="the first half of equation of motion, update velocities and positions" alt="" coords="403,5,519,32"/>
+<area shape="rect" href="classLangevin.html#a11909ad91ccca42c13ff46c48a65e316" title="the first half of equation of motion, update velocities and positions" alt="" coords="387,56,534,83"/>
+<area shape="rect" href="classNose__Hoover.html#a2460699a58dd787699447714e3f87944" title="the first half of equation of motion, update velocities and positions" alt="" coords="373,107,548,133"/>
+<area shape="rect" href="classMSST.html#aadf86d8c908345664a4739154be3b183" title="the first half of equation of motion, update velocities and positions" alt="" coords="399,157,522,184"/>
+<area shape="rect" href="classVerlet.html#aba69d1b6dbfd2695197236279dff7099" title="the first half of equation of motion, update velocities and positions" alt="" coords="398,208,523,235"/>
+<area shape="rect" href="classMDrun.html#a6f87ef70d9b4910b0a6399ed5b41307b" title="the first half of equation of motion, update velocities and positions" alt="" coords="395,259,526,285"/>
+<area shape="rect" href="classRun__MD.html#a42a25187fa871ef2b746d483451a22b6" title=" " alt="" coords="189,233,325,260"/>
+<area shape="rect" href="FIRE__test_8cpp.html#ac381ddd25b6d86e64207a17c8ee54171" title=" " alt="" coords="223,284,292,311"/>
+<area shape="rect" href="classDriver.html#aff0cf0057c9529d58f6a341ee2143ea7" title=" " alt="" coords="5,233,141,260"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7b4e537c0e31069dcd68609f914234df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4e537c0e31069dcd68609f914234df">&#9670;&nbsp;</a></span>update_vel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MDrun::update_vel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>force</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>perform half-step update of vel due to atomic force </p>
 
 </div>
 </div>

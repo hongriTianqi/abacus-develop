@@ -1,11 +1,12 @@
 <map id="Verlet::first_half" name="Verlet::first_half">
-<area shape="rect" id="node1" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,148,131,175"/>
-<area shape="rect" id="node2" href="$classMDrun.html#a6f87ef70d9b4910b0a6399ed5b41307b" title="the first half of equation of motion, update velocities and positions" alt="" coords="202,93,333,120"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="179,148,356,175"/>
-<area shape="rect" id="node9" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="195,199,340,225"/>
-<area shape="rect" id="node3" href="$classMD__func.html#aecf4cfc5f562ff1f75fe480248aa6bc0" title=" " alt="" coords="431,5,562,32"/>
-<area shape="rect" id="node4" href="$classUnitCell.html#a2f5cc850b919765c3b62894f8066b094" title=" " alt="" coords="411,57,582,98"/>
-<area shape="rect" id="node6" href="$classUnitCell.html#a2c6f413016609a17a96ce59023b94f1f" title=" " alt="" coords="404,123,589,149"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="637,64,851,91"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="420,174,573,215"/>
+<area shape="rect" id="node1" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,99,131,126"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="619,13,796,39"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="180,74,325,101"/>
+<area shape="rect" id="node8" href="$classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f" title="perform one step update of pos due to atomic velocity" alt="" coords="179,125,327,151"/>
+<area shape="rect" id="node10" href="$classMDrun.html#a7b4e537c0e31069dcd68609f914234df" title="perform half&#45;step update of vel due to atomic force" alt="" coords="180,175,325,202"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="847,5,1000,47"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="380,100,563,141"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="395,35,548,76"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="616,100,799,141"/>
+<area shape="rect" id="node9" href="$classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="375,166,568,193"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: elecstate::Potential Class Reference</title>
+<title>3.2.0: elecstate::Potential Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -148,6 +148,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a82624e65269613fea89feac06f895966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8cb2d67e7fc7368ea5dc3af5a1971d52"><td class="memItemLeft" align="right" valign="top">const double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1Potential.html#a8cb2d67e7fc7368ea5dc3af5a1971d52">get_fixed_v</a> () const</td></tr>
 <tr class="separator:a8cb2d67e7fc7368ea5dc3af5a1971d52"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b0de0c2cb9186cf24db0024575f9fe6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1Potential.html#a7b0de0c2cb9186cf24db0024575f9fe6">write_potential</a> (const int &amp;is, const int &amp;iter, const std::string &amp;fn, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;v, const int &amp;precision, const int &amp;hartree=0) const</td></tr>
+<tr class="separator:a7b0de0c2cb9186cf24db0024575f9fe6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af61dec0d8043fc6c960c46589214a2b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1Potential.html#af61dec0d8043fc6c960c46589214a2b7">write_elecstat_pot</a> (const std::string &amp;fn, const std::string &amp;fn_ave, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis, const <a class="el" href="classCharge.html">Charge</a> *const chr)</td></tr>
 <tr class="separator:af61dec0d8043fc6c960c46589214a2b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac32740cfee73673a4c21beee61c89edc"><td class="memItemLeft" align="right" valign="top">template&lt;&gt; </td></tr>
@@ -225,7 +227,7 @@ Additional Inherited Members</h2></td></tr>
 <li>use the final delta_V_eff for calculating force correction</li>
 </ol>
 </li>
-<li>Func write_potential()</li>
+<li>Func <a class="el" href="classelecstate_1_1Potential.html#a7b0de0c2cb9186cf24db0024575f9fe6">write_potential()</a></li>
 <li>Func <a class="el" href="classelecstate_1_1Potential.html#af61dec0d8043fc6c960c46589214a2b7">write_elecstat_pot()</a></li>
 <li>interfaces for v_effective_fixed/v_effective/vofk_effective </li>
 </ol>
@@ -314,10 +316,11 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="403,5,556,47"/>
 <area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="408,71,551,112"/>
 <area shape="rect" href="classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="397,136,561,177"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="407,202,552,229"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="407,205,552,231"/>
 <area shape="rect" href="namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="609,13,795,39"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="843,13,1056,39"/>
-<area shape="rect" href="classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="620,136,784,177"/>
+<area shape="rect" href="classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="620,132,784,173"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="611,197,793,239"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="625,263,779,304"/>
 </map>
 </div>
 
@@ -372,10 +375,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="207,5,360,47"/>
 <area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="212,71,355,112"/>
 <area shape="rect" href="classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="201,136,365,177"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="211,202,356,229"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="211,205,356,231"/>
 <area shape="rect" href="namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="413,13,599,39"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="647,13,860,39"/>
-<area shape="rect" href="classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="424,136,588,177"/>
+<area shape="rect" href="classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="424,132,588,173"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="415,197,597,239"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="429,263,583,304"/>
 </map>
 </div>
 <div class="dynheader">
@@ -420,10 +425,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classelecstate_1_1Potential_abcaac2f917c0b57b78c9ccbbff548230_cgraph.png" border="0" usemap="#classelecstate_1_1Potential_abcaac2f917c0b57b78c9ccbbff548230_cgraph" alt=""/></div>
 <map name="classelecstate_1_1Potential_abcaac2f917c0b57b78c9ccbbff548230_cgraph" id="classelecstate_1_1Potential_abcaac2f917c0b57b78c9ccbbff548230_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,153,72"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="201,13,379,39"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="217,63,363,90"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="427,5,580,47"/>
+<area shape="rect" title=" " alt="" coords="5,5,153,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="628,13,805,39"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="201,42,347,69"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="856,5,1009,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="395,100,577,141"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="409,35,563,76"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="625,100,808,141"/>
 </map>
 </div>
 <div class="dynheader">
@@ -494,10 +502,13 @@ Here is the call graph for this function:</div>
 <map name="classelecstate_1_1Potential_a112b4776c8d1c54c8e47f2e71657c509_cgraph" id="classelecstate_1_1Potential_a112b4776c8d1c54c8e47f2e71657c509_cgraph">
 <area shape="rect" title=" " alt="" coords="5,89,153,131"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a8915e5032c99ab36504e32e41daf3cf4" title=" " alt="" coords="201,5,384,47"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="204,71,381,98"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="220,122,365,149"/>
-<area shape="rect" href="classModuleBase_1_1matrix.html#a1a39a6d91c25fb1a71458dc6543f407d" title=" " alt="" coords="216,173,369,215"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="432,64,585,105"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="665,101,843,127"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="220,126,365,153"/>
+<area shape="rect" href="classModuleBase_1_1matrix.html#a1a39a6d91c25fb1a71458dc6543f407d" title=" " alt="" coords="216,177,369,219"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="893,93,1047,135"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="432,188,615,229"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="447,123,600,164"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="663,188,845,229"/>
 </map>
 </div>
 <div class="dynheader">
@@ -904,14 +915,14 @@ Here is the call graph for this function:</div>
 <map name="classelecstate_1_1Potential_a284d65fd7e455b9cd12bff7f6c6b4c10_cgraph" id="classelecstate_1_1Potential_a284d65fd7e455b9cd12bff7f6c6b4c10_cgraph">
 <area shape="rect" title=" " alt="" coords="5,146,153,187"/>
 <area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="207,26,360,67"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="681,205,826,232"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="647,232,792,259"/>
 <area shape="rect" href="classelecstate_1_1Potential.html#a297c2e2ff9ecb2103d5b99219f00604a" title=" " alt="" coords="201,146,365,187"/>
 <area shape="rect" href="namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="413,5,599,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="647,5,860,32"/>
-<area shape="rect" href="classelecstate_1_1Potential.html#abcaac2f917c0b57b78c9ccbbff548230" title=" " alt="" coords="432,173,580,214"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="665,148,842,175"/>
-<area shape="rect" href="classelecstate_1_1Potential.html#a112b4776c8d1c54c8e47f2e71657c509" title=" " alt="" coords="432,107,580,149"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a8915e5032c99ab36504e32e41daf3cf4" title=" " alt="" coords="662,82,845,123"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="840,217,1023,258"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="855,282,1008,323"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="1071,140,1248,167"/>
+<area shape="rect" href="classelecstate_1_1Potential.html#abcaac2f917c0b57b78c9ccbbff548230" title=" " alt="" coords="432,107,580,149"/>
+<area shape="rect" href="classelecstate_1_1Potential.html#a112b4776c8d1c54c8e47f2e71657c509" title=" " alt="" coords="432,173,580,214"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1006,15 +1017,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classelecstate_1_1Potential_afdf446f77f366e2ba47a564fb09cb09a_cgraph.png" border="0" usemap="#classelecstate_1_1Potential_afdf446f77f366e2ba47a564fb09cb09a_cgraph" alt=""/></div>
 <map name="classelecstate_1_1Potential_afdf446f77f366e2ba47a564fb09cb09a_cgraph" id="classelecstate_1_1Potential_afdf446f77f366e2ba47a564fb09cb09a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,90,153,131"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="612,188,789,215"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="628,5,773,32"/>
-<area shape="rect" href="classelecstate_1_1Potential.html#a297c2e2ff9ecb2103d5b99219f00604a" title=" " alt="" coords="201,90,365,131"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="840,181,993,222"/>
-<area shape="rect" href="classelecstate_1_1Potential.html#abcaac2f917c0b57b78c9ccbbff548230" title=" " alt="" coords="413,122,561,163"/>
-<area shape="rect" href="classelecstate_1_1Potential.html#a112b4776c8d1c54c8e47f2e71657c509" title=" " alt="" coords="413,57,561,98"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a8915e5032c99ab36504e32e41daf3cf4" title=" " alt="" coords="609,57,792,98"/>
-<area shape="rect" href="classModuleBase_1_1matrix.html#a1a39a6d91c25fb1a71458dc6543f407d" title=" " alt="" coords="624,122,777,163"/>
+<area shape="rect" title=" " alt="" coords="5,127,153,169"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="1036,97,1213,124"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="609,215,755,241"/>
+<area shape="rect" href="classelecstate_1_1Potential.html#a297c2e2ff9ecb2103d5b99219f00604a" title=" " alt="" coords="201,127,365,169"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1264,90,1417,131"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="803,265,985,306"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="817,199,971,241"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="1033,265,1216,306"/>
+<area shape="rect" href="classelecstate_1_1Potential.html#abcaac2f917c0b57b78c9ccbbff548230" title=" " alt="" coords="413,94,561,135"/>
+<area shape="rect" href="classelecstate_1_1Potential.html#a112b4776c8d1c54c8e47f2e71657c509" title=" " alt="" coords="413,159,561,201"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1052,9 +1064,14 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classelecstate_1_1Potential_a94ccbeaa3dabb988e3380003c26a2bf3_cgraph.png" border="0" usemap="#classelecstate_1_1Potential_a94ccbeaa3dabb988e3380003c26a2bf3_cgraph" alt=""/></div>
 <map name="classelecstate_1_1Potential_a94ccbeaa3dabb988e3380003c26a2bf3_cgraph" id="classelecstate_1_1Potential_a94ccbeaa3dabb988e3380003c26a2bf3_cgraph">
-<area shape="rect" title=" " alt="" coords="5,23,153,65"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="235,5,381,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="201,56,415,83"/>
+<area shape="rect" title=" " alt="" coords="5,64,153,105"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="235,46,381,73"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="201,97,415,123"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="463,5,645,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="477,71,631,112"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="693,5,876,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="696,78,873,105"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="924,71,1077,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1100,14 +1117,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classelecstate_1_1Potential_a297c2e2ff9ecb2103d5b99219f00604a_cgraph.png" border="0" usemap="#classelecstate_1_1Potential_a297c2e2ff9ecb2103d5b99219f00604a_cgraph" alt=""/></div>
 <map name="classelecstate_1_1Potential_a297c2e2ff9ecb2103d5b99219f00604a_cgraph" id="classelecstate_1_1Potential_a297c2e2ff9ecb2103d5b99219f00604a_cgraph">
-<area shape="rect" title=" " alt="" coords="5,55,169,97"/>
-<area shape="rect" href="classelecstate_1_1Potential.html#abcaac2f917c0b57b78c9ccbbff548230" title=" " alt="" coords="217,26,365,67"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="416,33,593,60"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="432,92,577,119"/>
-<area shape="rect" href="classelecstate_1_1Potential.html#a112b4776c8d1c54c8e47f2e71657c509" title=" " alt="" coords="217,143,365,185"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="644,26,797,67"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a8915e5032c99ab36504e32e41daf3cf4" title=" " alt="" coords="413,143,596,185"/>
-<area shape="rect" href="classModuleBase_1_1matrix.html#a1a39a6d91c25fb1a71458dc6543f407d" title=" " alt="" coords="428,209,581,250"/>
+<area shape="rect" title=" " alt="" coords="5,75,169,116"/>
+<area shape="rect" href="classelecstate_1_1Potential.html#abcaac2f917c0b57b78c9ccbbff548230" title=" " alt="" coords="217,45,365,87"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="875,46,1052,73"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="432,111,577,138"/>
+<area shape="rect" href="classelecstate_1_1Potential.html#a112b4776c8d1c54c8e47f2e71657c509" title=" " alt="" coords="217,192,365,233"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1100,39,1253,80"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="644,133,827,175"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="659,68,812,109"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a8915e5032c99ab36504e32e41daf3cf4" title=" " alt="" coords="413,251,596,292"/>
+<area shape="rect" href="classModuleBase_1_1matrix.html#a1a39a6d91c25fb1a71458dc6543f407d" title=" " alt="" coords="428,316,581,357"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1172,16 +1191,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classelecstate_1_1Potential_af61dec0d8043fc6c960c46589214a2b7_cgraph.png" border="0" usemap="#classelecstate_1_1Potential_af61dec0d8043fc6c960c46589214a2b7_cgraph" alt=""/></div>
 <map name="classelecstate_1_1Potential_af61dec0d8043fc6c960c46589214a2b7_cgraph" id="classelecstate_1_1Potential_af61dec0d8043fc6c960c46589214a2b7_cgraph">
-<area shape="rect" title=" " alt="" coords="5,209,156,250"/>
-<area shape="rect" href="classelecstate_1_1Efield.html#af5232724e20d4443fa343ac2c803bb03" title=" " alt="" coords="228,58,363,100"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="435,124,612,151"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="451,7,596,34"/>
-<area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="219,176,372,217"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a743759a9021fc9d1cf570a7499e55b08" title=" " alt="" coords="215,241,376,282"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce" title=" " alt="" coords="215,306,376,348"/>
-<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="208,372,383,399"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="204,424,387,465"/>
-<area shape="rect" href="classelecstate_1_1Efield.html#a5bdb5d6870e94a500533ed50e595f311" title=" " alt="" coords="456,58,591,100"/>
+<area shape="rect" title=" " alt="" coords="5,223,156,264"/>
+<area shape="rect" href="classelecstate_1_1Efield.html#af5232724e20d4443fa343ac2c803bb03" title=" " alt="" coords="228,59,363,100"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="435,197,612,224"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="451,8,596,34"/>
+<area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="219,190,372,231"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a743759a9021fc9d1cf570a7499e55b08" title=" " alt="" coords="215,124,376,166"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce" title=" " alt="" coords="215,255,376,296"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="208,372,383,398"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="204,423,387,464"/>
+<area shape="rect" href="classelecstate_1_1Efield.html#a5bdb5d6870e94a500533ed50e595f311" title=" " alt="" coords="456,59,591,100"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1191,6 +1210,85 @@ Here is the caller graph for this function:</div>
 <map name="classelecstate_1_1Potential_af61dec0d8043fc6c960c46589214a2b7_icgraph" id="classelecstate_1_1Potential_af61dec0d8043fc6c960c46589214a2b7_icgraph">
 <area shape="rect" title=" " alt="" coords="229,5,380,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="5,5,181,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7b0de0c2cb9186cf24db0024575f9fe6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b0de0c2cb9186cf24db0024575f9fe6">&#9670;&nbsp;</a></span>write_potential()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elecstate::Potential::write_potential </td>
+          <td>(</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>iter</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>fn</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>precision</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>hartree</em> = <code>0</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>output header for cube file</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classelecstate_1_1Potential_a7b0de0c2cb9186cf24db0024575f9fe6_cgraph.png" border="0" usemap="#classelecstate_1_1Potential_a7b0de0c2cb9186cf24db0024575f9fe6_cgraph" alt=""/></div>
+<map name="classelecstate_1_1Potential_a7b0de0c2cb9186cf24db0024575f9fe6_cgraph" id="classelecstate_1_1Potential_a7b0de0c2cb9186cf24db0024575f9fe6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,60,153,101"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="665,13,843,39"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="220,42,365,69"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="205,93,380,119"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="201,144,384,185"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="893,5,1047,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="432,100,615,141"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="447,35,600,76"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="663,100,845,141"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classelecstate_1_1Potential_a7b0de0c2cb9186cf24db0024575f9fe6_icgraph.png" border="0" usemap="#classelecstate_1_1Potential_a7b0de0c2cb9186cf24db0024575f9fe6_icgraph" alt=""/></div>
+<map name="classelecstate_1_1Potential_a7b0de0c2cb9186cf24db0024575f9fe6_icgraph" id="classelecstate_1_1Potential_a7b0de0c2cb9186cf24db0024575f9fe6_icgraph">
+<area shape="rect" title=" " alt="" coords="248,39,396,80"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,5,200,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="15,71,191,112"/>
 </map>
 </div>
 

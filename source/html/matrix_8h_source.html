@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: module_base/matrix.h Source File</title>
+<title>3.2.0: module_base/matrix.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -144,7 +144,7 @@ $(function() {
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classModuleBase_1_1matrix.html#a976ec94fbdf0a34ae89c92cdcfb9ddc8">get_extreme_eigen_values</a>(<span class="keywordtype">double</span> &amp;ev_lower, <span class="keywordtype">double</span> &amp;ev_upper) <span class="keyword">const</span>;    <span class="comment">// mohan add 2011-01-13</span></div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classModuleBase_1_1matrix.html#a4ce330c061f73c1fd065a8f0e8a80c61">reshape</a>( <span class="keyword">const</span> <span class="keywordtype">double</span> nr_new, <span class="keyword">const</span> <span class="keywordtype">double</span> nc_new,  <span class="keyword">const</span> <span class="keywordtype">bool</span> flag_zero = <span class="keyword">true</span> );     <span class="comment">// Peize Lin add 2017-05-27</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classModuleBase_1_1matrix.html#a3375f2ebef1b3b8c15e2b2bb230fba91">reshape</a>( <span class="keyword">const</span> <span class="keywordtype">int</span> nr_new, <span class="keyword">const</span> <span class="keywordtype">int</span> nc_new,  <span class="keyword">const</span> <span class="keywordtype">bool</span> flag_zero = <span class="keyword">true</span> );       <span class="comment">// Peize Lin add 2017-05-27</span></div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classModuleBase_1_1matrix.html#a934e91ecf7c6f75b5f8f9fc108382cc8">max</a>() <span class="keyword">const</span>;                 <span class="comment">// Peize Lin add 2016-09-08</span></div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">double</span> <a class="code" href="classModuleBase_1_1matrix.html#aa92d2e00c7f21f2df7c0af6973b82714">min</a>() <span class="keyword">const</span>;                 <span class="comment">// Peize Lin add 2016-09-08</span></div>
@@ -184,6 +184,7 @@ $(function() {
 <div class="ttc" id="anamespaceModuleBase_1_1libm_html_a53ba939830541970fa8cdc6973c806e5"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">ModuleBase::libm::i</a></div><div class="ttdeci">int4 i[880]</div><div class="ttdef"><b>Definition:</b> sincos.cpp:28</div></div>
 <div class="ttc" id="aclassModuleBase_1_1matrix_html_a74625925930e1f85f9dba57dfcbb2567"><div class="ttname"><a href="classModuleBase_1_1matrix.html#a74625925930e1f85f9dba57dfcbb2567">ModuleBase::matrix::operator=</a></div><div class="ttdeci">matrix &amp; operator=(const matrix &amp;m1)</div><div class="ttdef"><b>Definition:</b> matrix-inl.h:45</div></div>
 <div class="ttc" id="anamespaceModuleBase_html"><div class="ttname"><a href="namespaceModuleBase.html">ModuleBase</a></div><div class="ttdef"><b>Definition:</b> complexarray.cpp:10</div></div>
+<div class="ttc" id="aclassModuleBase_1_1matrix_html_a3375f2ebef1b3b8c15e2b2bb230fba91"><div class="ttname"><a href="classModuleBase_1_1matrix.html#a3375f2ebef1b3b8c15e2b2bb230fba91">ModuleBase::matrix::reshape</a></div><div class="ttdeci">void reshape(const int nr_new, const int nc_new, const bool flag_zero=true)</div><div class="ttdef"><b>Definition:</b> matrix.cpp:356</div></div>
 <div class="ttc" id="aclassBlasConnector_html_a7fc631407a62968b5c7ea22257f96460"><div class="ttname"><a href="classBlasConnector.html#a7fc631407a62968b5c7ea22257f96460">BlasConnector::gemm</a></div><div class="ttdeci">static void gemm(const char transa, const char transb, const int m, const int n, const int k, const float alpha, const float *a, const int lda, const float *b, const int ldb, const float beta, float *c, const int ldc)</div><div class="ttdef"><b>Definition:</b> blas_connector.h:162</div></div>
 <div class="ttc" id="anamespaceModuleBase_1_1libm_html_a947b87f10e3327eefe6c05e187d544d6"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#a947b87f10e3327eefe6c05e187d544d6">ModuleBase::libm::x</a></div><div class="ttdeci">double x[440]</div><div class="ttdef"><b>Definition:</b> sincos.cpp:28</div></div>
 <div class="ttc" id="anamespaceModuleBase_html_adf707972eba12e147ef256882f485ee1"><div class="ttname"><a href="namespaceModuleBase.html#adf707972eba12e147ef256882f485ee1">ModuleBase::transpose</a></div><div class="ttdeci">matrix transpose(const matrix &amp;m)</div><div class="ttdef"><b>Definition:</b> matrix.cpp:304</div></div>
@@ -195,7 +196,6 @@ $(function() {
 <div class="ttc" id="aclassModuleBase_1_1matrix_html_ab17f63752a519153f8f9562463b39884"><div class="ttname"><a href="classModuleBase_1_1matrix.html#ab17f63752a519153f8f9562463b39884">ModuleBase::matrix::operator()</a></div><div class="ttdeci">const double &amp; operator()(const int ir, const int ic) const</div><div class="ttdef"><b>Definition:</b> matrix.h:44</div></div>
 <div class="ttc" id="amatrix_8h_html"><div class="ttname"><a href="matrix_8h.html">matrix.h</a></div></div>
 <div class="ttc" id="ablas__connector_8h_html"><div class="ttname"><a href="blas__connector_8h.html">blas_connector.h</a></div></div>
-<div class="ttc" id="aclassModuleBase_1_1matrix_html_a4ce330c061f73c1fd065a8f0e8a80c61"><div class="ttname"><a href="classModuleBase_1_1matrix.html#a4ce330c061f73c1fd065a8f0e8a80c61">ModuleBase::matrix::reshape</a></div><div class="ttdeci">void reshape(const double nr_new, const double nc_new, const bool flag_zero=true)</div><div class="ttdef"><b>Definition:</b> matrix.cpp:356</div></div>
 <div class="ttc" id="aclassModuleBase_1_1matrix_html_aaf6fb5d107ca9228c5c731327abed607"><div class="ttname"><a href="classModuleBase_1_1matrix.html#aaf6fb5d107ca9228c5c731327abed607">ModuleBase::matrix::type</a></div><div class="ttdeci">double type</div><div class="ttdef"><b>Definition:</b> matrix.h:83</div></div>
 <div class="ttc" id="aclassModuleBase_1_1matrix_html_a1a39a6d91c25fb1a71458dc6543f407d"><div class="ttname"><a href="classModuleBase_1_1matrix.html#a1a39a6d91c25fb1a71458dc6543f407d">ModuleBase::matrix::zero_out</a></div><div class="ttdeci">void zero_out(void)</div><div class="ttdef"><b>Definition:</b> matrix.cpp:281</div></div>
 <div class="ttc" id="aclassModuleBase_1_1matrix_html_aaceeccd6dd5c9d364ab979457bedd00e"><div class="ttname"><a href="classModuleBase_1_1matrix.html#aaceeccd6dd5c9d364ab979457bedd00e">ModuleBase::matrix::fill_out</a></div><div class="ttdeci">void fill_out(const double x)</div><div class="ttdef"><b>Definition:</b> matrix.cpp:293</div></div>

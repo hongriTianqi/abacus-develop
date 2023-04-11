@@ -2,9 +2,11 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,99,172,141"/>
 <area shape="rect" id="node2" href="$classAtom.html#a49604a68067a2ebd8196ea080e1c39e2" title=" " alt="" coords="223,56,360,83"/>
 <area shape="rect" id="node6" href="$classUnitCell.html#a83373d509a172206feed4a336d78d077" title=" " alt="" coords="220,107,363,133"/>
-<area shape="rect" id="node8" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="447,157,593,184"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="447,157,593,184"/>
 <area shape="rect" id="node3" href="$namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="411,56,629,83"/>
 <area shape="rect" id="node4" href="$classoutput.html#afecf1367a681c26ab2567e6ee8729246" title=" " alt="" coords="449,5,591,32"/>
-<area shape="rect" id="node5" href="$classoutput.html#ac5505190d2c50da110d2aa165751ec30" title=" " alt="" coords="677,5,796,32"/>
+<area shape="rect" id="node5" href="$classoutput.html#ac5505190d2c50da110d2aa165751ec30" title=" " alt="" coords="709,5,828,32"/>
 <area shape="rect" id="node7" href="$classoutput.html#a2c0ee91b261a332d8ecb88d9a07a80d9" title=" " alt="" coords="459,107,581,133"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="677,117,860,158"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="692,182,845,223"/>
 </map>

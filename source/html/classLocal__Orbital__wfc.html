@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: Local_Orbital_wfc Class Reference</title>
+<title>3.2.0: Local_Orbital_wfc Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -208,10 +208,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceParallel__Common.html#a948e39313b7dec5fc96e407e0de09d41" title=" " alt="" coords="204,5,407,32"/>
 <area shape="rect" href="namespaceModuleIO.html#a767734bb5be529bc872f038c26159556" title=" " alt="" coords="230,57,381,98"/>
 <area shape="rect" href="classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="223,122,387,163"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="233,188,378,215"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="233,188,378,215"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="199,239,412,265"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="214,290,397,331"/>
-<area shape="rect" href="classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="460,122,624,163"/>
+<area shape="rect" href="classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="469,115,633,157"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="460,181,643,222"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="475,246,628,287"/>
 </map>
 </div>
 <div class="dynheader">
@@ -277,7 +279,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>========================================= </p>
-<h1><a class="anchor" id="autotoc_md3"></a>
+<h1><a class="anchor" id="autotoc_md12"></a>
 Parallel: map of index in 2D distribution: global&lt;-&gt;local</h1>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -453,7 +455,12 @@ Here is the call graph for this function:</div>
 <map name="classLocal__Orbital__wfc_a64d59d87d707d825975f4f7977fa6662_cgraph" id="classLocal__Orbital__wfc_a64d59d87d707d825975f4f7977fa6662_cgraph">
 <area shape="rect" title=" " alt="" coords="5,35,151,76"/>
 <area shape="rect" href="classLocal__Orbital__wfc.html#aa3d559e5775e7c4a7555eb3047747ad6" title=" " alt="" coords="199,5,344,47"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="199,71,344,98"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="199,71,344,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="392,31,575,72"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="407,96,560,137"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="623,31,805,72"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="625,103,803,130"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="853,96,1007,137"/>
 </map>
 </div>
 <div class="dynheader">
@@ -520,7 +527,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>========================================= </p>
-<h1><a class="anchor" id="autotoc_md4"></a>
+<h1><a class="anchor" id="autotoc_md13"></a>
 Parallel: convert the distribution of wavefunction from 2D to grid</h1>
 <p>For gamma_only, T = double; For multi-k, T = complex&lt;double&gt;; Set myid and ctot when output is needed; Set wfc as nullptr when 2d-to-grid convertion is not needed. </p>
 <div class="dynheader">
@@ -532,7 +539,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="215,5,369,32"/>
 <area shape="rect" href="classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="210,57,374,98"/>
 <area shape="rect" href="classLocal__Orbital__wfc.html#a64d59d87d707d825975f4f7977fa6662" title=" " alt="" coords="219,122,365,163"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="443,159,588,185"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="443,159,588,185"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="203,239,381,265"/>
 <area shape="rect" href="namespaceModuleIO.html#a3b7f752ad45eebcabc34b77794d784fe" title=" " alt="" coords="199,289,385,316"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="201,341,383,382"/>
@@ -618,7 +625,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f" title=" " alt="" coords="213,5,367,32"/>
 <area shape="rect" href="classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="208,57,372,98"/>
 <area shape="rect" href="classLocal__Orbital__wfc.html#a64d59d87d707d825975f4f7977fa6662" title=" " alt="" coords="217,122,363,163"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="439,159,584,185"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="439,159,584,185"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="201,239,379,265"/>
 <area shape="rect" href="namespaceModuleIO.html#a25211498c731959156a75f266c5e07af" title=" " alt="" coords="213,290,367,331"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="199,355,381,397"/>
@@ -700,7 +707,7 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 <p>========================================= grid wfc used to generate density matrix: LOC.DM_R, which is used to calculate the charge density. which is got after the diagonalization of </p>
-<h1><a class="anchor" id="autotoc_md2"></a>
+<h1><a class="anchor" id="autotoc_md11"></a>
 std::complex Hamiltonian matrix.</h1>
 
 </div>

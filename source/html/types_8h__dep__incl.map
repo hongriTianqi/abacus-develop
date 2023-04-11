@@ -1,12 +1,12 @@
 <map id="module_psi/kernels/types.h" name="module_psi/kernels/types.h">
-<area shape="rect" id="node1" title=" " alt="" coords="401,5,549,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="421,5,569,47"/>
 <area shape="rect" id="node2" href="$memory__op_8h.html" title=" " alt="" coords="152,95,300,136"/>
 <area shape="rect" id="node3" href="$psi_8h.html" title=" " alt="" coords="5,191,137,218"/>
 <area shape="rect" id="node5" href="$diago__cg_8h.html" title=" " alt="" coords="238,363,438,389"/>
 <area shape="rect" id="node6" href="$memory__op_8cpp.html" title=" " alt="" coords="264,184,412,225"/>
-<area shape="rect" id="node7" href="$device_8h.html" title=" " alt="" coords="539,95,687,136"/>
-<area shape="rect" id="node8" href="$device_8cpp.html" title=" " alt="" coords="488,184,636,225"/>
-<area shape="rect" id="node9" href="$device__test_8cpp.html" title=" " alt="" coords="711,184,869,225"/>
-<area shape="rect" id="node10" href="$test-other_8cpp.html" title=" " alt="" coords="762,95,917,136"/>
+<area shape="rect" id="node7" href="$test-other_8cpp.html" title=" " alt="" coords="471,95,642,136"/>
+<area shape="rect" id="node8" href="$device_8h.html" title=" " alt="" coords="717,95,865,136"/>
+<area shape="rect" id="node9" href="$device_8cpp.html" title=" " alt="" coords="604,184,752,225"/>
+<area shape="rect" id="node10" href="$device__test_8cpp.html" title=" " alt="" coords="827,184,985,225"/>
 <area shape="rect" id="node4" href="$math__kernel__op_8h.html" title=" " alt="" coords="11,273,188,315"/>
 </map>

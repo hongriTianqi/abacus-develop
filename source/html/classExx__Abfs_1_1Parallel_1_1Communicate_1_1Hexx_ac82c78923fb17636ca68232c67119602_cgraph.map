@@ -1,7 +1,11 @@
 <map id="Exx_Abfs::Parallel::Communicate::Hexx::Rexx_to_Km2D" name="Exx_Abfs::Parallel::Communicate::Hexx::Rexx_to_Km2D">
 <area shape="rect" id="node1" title=" " alt="" coords="5,90,168,146"/>
-<area shape="rect" id="node2" href="$classExx__Abfs_1_1IO.html#ab778dbe26b75160f12fd8437fb4f979e" title=" " alt="" coords="231,5,385,47"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="448,64,631,105"/>
+<area shape="rect" id="node2" href="$classExx__Abfs_1_1IO.html#ab778dbe26b75160f12fd8437fb4f979e" title=" " alt="" coords="448,5,603,47"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="881,89,1064,131"/>
 <area shape="rect" id="node4" href="$classExx__Abfs_1_1Parallel_1_1Communicate_1_1Hexx.html#ad35a85fb2a00054f9457754f5d7ea926" title=" " alt="" coords="216,122,400,178"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="467,169,612,195"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="453,191,598,218"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="651,173,833,215"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="665,239,819,280"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="884,246,1061,273"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1112,239,1265,280"/>
 </map>

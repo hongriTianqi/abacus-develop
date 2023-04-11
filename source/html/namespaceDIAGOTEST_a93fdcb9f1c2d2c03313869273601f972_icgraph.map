@@ -1,8 +1,6 @@
 <map id="DIAGOTEST::divide_hpsi" name="DIAGOTEST::divide_hpsi">
-<area shape="rect" id="node1" title=" " alt="" coords="403,81,581,108"/>
-<area shape="rect" id="node2" href="$classDiagoCGPrepare.html#a48541e8324339b06a5baa51969773b1e" title=" " alt="" coords="123,31,355,57"/>
-<area shape="rect" id="node5" href="$diago__david__test_8cpp.html#a7ce3dfb389f50edb8c6d0de8fb0adc12" title=" " alt="" coords="211,81,266,108"/>
-<area shape="rect" id="node6" href="$diago__david__test_8cpp.html#af13d026f20e27132259c35bc28e36556" title=" " alt="" coords="204,132,273,159"/>
-<area shape="rect" id="node3" href="$diago__cg__test_8cpp.html#a3c532f830f90f2656845085bebb244e8" title=" " alt="" coords="13,5,67,32"/>
-<area shape="rect" id="node4" href="$diago__cg__test_8cpp.html#aef12b718a627ca3de248eae91d56f0fd" title=" " alt="" coords="5,56,75,83"/>
+<area shape="rect" id="node1" title=" " alt="" coords="285,56,464,83"/>
+<area shape="rect" id="node2" href="$classDiagoCGPrepare.html#a48541e8324339b06a5baa51969773b1e" title=" " alt="" coords="5,5,237,32"/>
+<area shape="rect" id="node3" href="$diago__david__test_8cpp.html#a7ce3dfb389f50edb8c6d0de8fb0adc12" title=" " alt="" coords="94,56,149,83"/>
+<area shape="rect" id="node4" href="$diago__david__test_8cpp.html#af13d026f20e27132259c35bc28e36556" title=" " alt="" coords="87,107,156,133"/>
 </map>

@@ -1,6 +1,11 @@
 <map id="Ions_Move_BFGS::allocate" name="Ions_Move_BFGS::allocate">
-<area shape="rect" id="node1" title=" " alt="" coords="5,42,200,69"/>
-<area shape="rect" id="node2" href="$classBFGS__Basic.html#aee0f353f3fda32020dbff80919cb2df0" title=" " alt="" coords="248,5,407,47"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="255,71,400,98"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,200,75"/>
+<area shape="rect" id="node2" href="$classBFGS__Basic.html#aee0f353f3fda32020dbff80919cb2df0" title=" " alt="" coords="248,9,407,51"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="255,78,400,105"/>
 <area shape="rect" id="node3" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="455,5,637,47"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="455,71,637,112"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="469,136,623,177"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="685,71,868,112"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="688,143,865,170"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="916,136,1069,177"/>
 </map>

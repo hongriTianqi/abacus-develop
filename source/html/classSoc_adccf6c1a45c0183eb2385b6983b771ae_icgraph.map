@@ -1,12 +1,10 @@
 <map id="Soc::set_fcoef" name="Soc::set_fcoef">
-<area shape="rect" id="node1" title=" " alt="" coords="691,143,804,170"/>
-<area shape="rect" id="node2" href="$classpseudopot__cell__vnl.html#abe3df0df3ffb1f6b6acec30bcf1e551a" title=" " alt="" coords="496,136,643,177"/>
-<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="271,71,447,112"/>
-<area shape="rect" id="node4" href="$classVariable__Cell.html#a734f97e787992db765320371ccd076bb" title=" " alt="" coords="291,136,427,177"/>
-<area shape="rect" id="node10" href="$classModuleESolver_1_1ESolver__KS__PW.html#af2403883913144cf4650c22002484109" title=" " alt="" coords="271,202,448,258"/>
-<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="26,5,202,47"/>
-<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="26,71,202,112"/>
-<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__KS__PW.html#a319a12680e389afe891fbf36567f6848" title=" " alt="" coords="5,136,223,177"/>
-<area shape="rect" id="node8" href="$classRelax.html#af3530159661500c6499bf6bc1952dac3" title=" " alt="" coords="30,202,198,229"/>
-<area shape="rect" id="node9" href="$classRelax__old.html#afa99e739470b83b7153786ae0c0cb60c" title=" " alt="" coords="32,253,196,295"/>
+<area shape="rect" id="node1" title=" " alt="" coords="873,123,987,150"/>
+<area shape="rect" id="node2" href="$classpseudopot__cell__vnl.html#abe3df0df3ffb1f6b6acec30bcf1e551a" title=" " alt="" coords="679,116,825,157"/>
+<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="454,5,630,47"/>
+<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS__PW.html#a9d20018ab937bada8366ae8063649375" title=" " alt="" coords="453,71,631,127"/>
+<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__OF.html#af3cbc4288b59778d85ce9748e0356779" title=" " alt="" coords="454,152,630,193"/>
+<area shape="rect" id="node8" href="$classModuleESolver_1_1ESolver__KS__PW.html#af2403883913144cf4650c22002484109" title=" " alt="" coords="453,218,631,274"/>
+<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="229,152,405,193"/>
+<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__OF.html#a380b40f26c567a678ad6552068e6f4bc" title=" " alt="" coords="5,152,181,193"/>
 </map>

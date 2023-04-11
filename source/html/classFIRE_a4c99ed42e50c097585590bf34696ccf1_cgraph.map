@@ -1,12 +1,12 @@
 <map id="FIRE::first_half" name="FIRE::first_half">
-<area shape="rect" id="node1" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,151,121,178"/>
-<area shape="rect" id="node2" href="$classFIRE.html#a78d8bbaa0dc7c302a65fd81796c1c49d" title=" " alt="" coords="195,13,329,39"/>
-<area shape="rect" id="node4" href="$classMD__func.html#aecf4cfc5f562ff1f75fe480248aa6bc0" title=" " alt="" coords="197,63,327,90"/>
-<area shape="rect" id="node5" href="$classUnitCell.html#a2f5cc850b919765c3b62894f8066b094" title=" " alt="" coords="177,115,347,156"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="173,181,351,207"/>
-<area shape="rect" id="node9" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="189,231,335,258"/>
-<area shape="rect" id="node10" href="$classUnitCell.html#a2c6f413016609a17a96ce59023b94f1f" title=" " alt="" coords="169,282,355,309"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1Vector3.html#a2eb1b82893764c1bd38a5993c6f6dcfb" title="Get the square of nomr of a Vector3." alt="" coords="430,5,589,47"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="403,122,616,149"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="433,173,586,215"/>
+<area shape="rect" id="node1" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,126,121,153"/>
+<area shape="rect" id="node2" href="$classFIRE.html#a78d8bbaa0dc7c302a65fd81796c1c49d" title=" " alt="" coords="177,17,310,43"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="596,134,773,161"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="171,126,316,153"/>
+<area shape="rect" id="node9" href="$classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f" title="perform one step update of pos due to atomic velocity" alt="" coords="169,177,317,203"/>
+<area shape="rect" id="node10" href="$classMDrun.html#a7b4e537c0e31069dcd68609f914234df" title="perform half&#45;step update of vel due to atomic force" alt="" coords="171,227,316,254"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1Vector3.html#a2eb1b82893764c1bd38a5993c6f6dcfb" title="Get the square of nomr of a Vector3." alt="" coords="377,5,536,47"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="821,127,975,168"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="365,123,548,164"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="380,188,533,229"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: module_hamilt_pw/hamilt_pwdft/operator_pw/velocity_pw.h Source File</title>
+<title>3.2.0: module_hamilt_pw/hamilt_pwdft/operator_pw/velocity_pw.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -77,7 +77,7 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operator__pw_8h.html">operator_pw.h</a>&quot;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="unitcell_8h.html">module_cell/unitcell.h</a>&quot;</span></div>
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="VNL__in__pw_8h.html">module_hamilt_pw/hamilt_pwdft/VNL_in_pw.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pw__basis__k_8h.html">module_pw/pw_basis_k.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="pw__basis__k_8h.html">module_basis/module_pw/pw_basis_k.h</a>&quot;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehamilt.html">hamilt</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
@@ -106,9 +106,9 @@ $(function() {
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        std::complex&lt;double&gt;* tmhpsi,</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">bool</span> add = <span class="keyword">false</span></div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    )<span class="keyword">const</span>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classhamilt_1_1Velocity.html#a7b973d95396e3b21dfcfa7f49eb6ebe9">   37</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classhamilt_1_1Velocity.html#a7b973d95396e3b21dfcfa7f49eb6ebe9">nonlocal</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classhamilt_1_1Velocity.html#a7b973d95396e3b21dfcfa7f49eb6ebe9">   35</a></span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classhamilt_1_1Velocity.html#a7b973d95396e3b21dfcfa7f49eb6ebe9">nonlocal</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classhamilt_1_1Velocity.html#a2ca43b48d25cd6d7fcc9fdd421883539">   38</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* <a class="code" href="classhamilt_1_1Velocity.html#a2ca43b48d25cd6d7fcc9fdd421883539">wfcpw</a> = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
 <div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classhamilt_1_1Velocity.html#a3dd741ab5dbb4b785ec11d3f6c76dabf">   40</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span>* <a class="code" href="classhamilt_1_1Velocity.html#a3dd741ab5dbb4b785ec11d3f6c76dabf">isk</a> = <span class="keyword">nullptr</span>;</div>
@@ -124,8 +124,8 @@ $(function() {
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclasshamilt_1_1Velocity_html_a7b973d95396e3b21dfcfa7f49eb6ebe9"><div class="ttname"><a href="classhamilt_1_1Velocity.html#a7b973d95396e3b21dfcfa7f49eb6ebe9">hamilt::Velocity::nonlocal</a></div><div class="ttdeci">bool nonlocal</div><div class="ttdef"><b>Definition:</b> velocity_pw.h:37</div></div>
-<div class="ttc" id="aclassUnitCell_html"><div class="ttname"><a href="classUnitCell.html">UnitCell</a></div><div class="ttdef"><b>Definition:</b> unitcell.h:21</div></div>
+<div class="ttc" id="aclasshamilt_1_1Velocity_html_a7b973d95396e3b21dfcfa7f49eb6ebe9"><div class="ttname"><a href="classhamilt_1_1Velocity.html#a7b973d95396e3b21dfcfa7f49eb6ebe9">hamilt::Velocity::nonlocal</a></div><div class="ttdeci">bool nonlocal</div><div class="ttdef"><b>Definition:</b> velocity_pw.h:35</div></div>
+<div class="ttc" id="aclassUnitCell_html"><div class="ttname"><a href="classUnitCell.html">UnitCell</a></div><div class="ttdef"><b>Definition:</b> unitcell.h:18</div></div>
 <div class="ttc" id="aclassModuleBase_1_1ComplexMatrix_html_a82ad82e98b7c96c8b7c82b212e0c4cfa"><div class="ttname"><a href="classModuleBase_1_1ComplexMatrix.html#a82ad82e98b7c96c8b7c82b212e0c4cfa">ModuleBase::ComplexMatrix::c</a></div><div class="ttdeci">std::complex&lt; double &gt; * c</div><div class="ttdef"><b>Definition:</b> complexmatrix.h:21</div></div>
 <div class="ttc" id="aclasshamilt_1_1Velocity_html_aa5a8a67c4253dee6600580e7e0e16433"><div class="ttname"><a href="classhamilt_1_1Velocity.html#aa5a8a67c4253dee6600580e7e0e16433">hamilt::Velocity::tpiba</a></div><div class="ttdeci">double tpiba</div><div class="ttdef"><b>Definition:</b> velocity_pw.h:48</div></div>
 <div class="ttc" id="aclasshamilt_1_1Velocity_html_ab703f51d49acfad2f3b9b493dee956fa"><div class="ttname"><a href="classhamilt_1_1Velocity.html#ab703f51d49acfad2f3b9b493dee956fa">hamilt::Velocity::ucell</a></div><div class="ttdeci">const UnitCell * ucell</div><div class="ttdef"><b>Definition:</b> velocity_pw.h:44</div></div>
@@ -139,7 +139,7 @@ $(function() {
 <div class="ttc" id="anamespaceGlobalC_html_a16ba5ad95bb6646d39f5565c7c9ed96c"><div class="ttname"><a href="namespaceGlobalC.html#a16ba5ad95bb6646d39f5565c7c9ed96c">GlobalC::ppcell</a></div><div class="ttdeci">pseudopot_cell_vnl ppcell</div><div class="ttdef"><b>Definition:</b> elecstate_lcao_test.cpp:61</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Vector3_html"><div class="ttname"><a href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3&lt; double &gt;</a></div></div>
 <div class="ttc" id="aclasspseudopot__cell__vnl_html_a9462ec959a3307743564a1ea14a68e0e"><div class="ttname"><a href="classpseudopot__cell__vnl.html#a9462ec959a3307743564a1ea14a68e0e">pseudopot_cell_vnl::nkb</a></div><div class="ttdeci">int nkb</div><div class="ttdef"><b>Definition:</b> VNL_in_pw.h:45</div></div>
-<div class="ttc" id="aclasspsi_1_1Psi_html"><div class="ttname"><a href="classpsi_1_1Psi.html">psi::Psi</a></div><div class="ttdef"><b>Definition:</b> psi.h:37</div></div>
+<div class="ttc" id="aclasspsi_1_1Psi_html"><div class="ttname"><a href="classpsi_1_1Psi.html">psi::Psi</a></div><div class="ttdef"><b>Definition:</b> psi.h:33</div></div>
 <div class="ttc" id="avelocity__pw_8h_html"><div class="ttname"><a href="velocity__pw_8h.html">velocity_pw.h</a></div></div>
 <div class="ttc" id="aclasshamilt_1_1Velocity_html_acb7aab50177250ed4696b47ea6721e4f"><div class="ttname"><a href="classhamilt_1_1Velocity.html#acb7aab50177250ed4696b47ea6721e4f">hamilt::Velocity::init</a></div><div class="ttdeci">void init(const int ik_in)</div><div class="ttdef"><b>Definition:</b> velocity_pw.cpp:29</div></div>
 <div class="ttc" id="aVNL__in__pw_8h_html"><div class="ttname"><a href="VNL__in__pw_8h.html">VNL_in_pw.h</a></div></div>
@@ -148,18 +148,18 @@ $(function() {
 <div class="ttc" id="aclassModuleBase_1_1ComplexMatrix_html"><div class="ttname"><a href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a></div><div class="ttdef"><b>Definition:</b> complexmatrix.h:13</div></div>
 <div class="ttc" id="anamespaceGlobalC_html_a73ba10f89d1a15cc4a17ca592a78835f"><div class="ttname"><a href="namespaceGlobalC.html#a73ba10f89d1a15cc4a17ca592a78835f">GlobalC::wfcpw</a></div><div class="ttdeci">ModulePW::PW_Basis_K * wfcpw</div><div class="ttdef"><b>Definition:</b> elecstate_lcao_test.cpp:64</div></div>
 <div class="ttc" id="aclasshamilt_1_1Velocity_html_a3dd741ab5dbb4b785ec11d3f6c76dabf"><div class="ttname"><a href="classhamilt_1_1Velocity.html#a3dd741ab5dbb4b785ec11d3f6c76dabf">hamilt::Velocity::isk</a></div><div class="ttdeci">const int * isk</div><div class="ttdef"><b>Definition:</b> velocity_pw.h:40</div></div>
-<div class="ttc" id="anamespaceDIAGOTEST_html_a0c8319a6e067c53d82f3f3f210021fa4"><div class="ttname"><a href="namespaceDIAGOTEST.html#a0c8319a6e067c53d82f3f3f210021fa4">DIAGOTEST::npw</a></div><div class="ttdeci">int npw</div><div class="ttdef"><b>Definition:</b> diago_mock.h:12</div></div>
+<div class="ttc" id="anamespaceDIAGOTEST_html_a0c8319a6e067c53d82f3f3f210021fa4"><div class="ttname"><a href="namespaceDIAGOTEST.html#a0c8319a6e067c53d82f3f3f210021fa4">DIAGOTEST::npw</a></div><div class="ttdeci">int npw</div><div class="ttdef"><b>Definition:</b> diago_mock.h:16</div></div>
 <div class="ttc" id="aparallel__reduce_8h_html"><div class="ttname"><a href="parallel__reduce_8h.html">parallel_reduce.h</a></div></div>
 <div class="ttc" id="anamespaceModuleBase_html_afbf699235c354243775d842f3856702d"><div class="ttname"><a href="namespaceModuleBase.html#afbf699235c354243775d842f3856702d">ModuleBase::ZERO</a></div><div class="ttdeci">const std::complex&lt; double &gt; ZERO(0.0, 0.0)</div></div>
 <div class="ttc" id="aclasspseudopot__cell__vnl_html_aeaaf1ebd9b0dd4f95920fc4d000d51b0"><div class="ttname"><a href="classpseudopot__cell__vnl.html#aeaaf1ebd9b0dd4f95920fc4d000d51b0">pseudopot_cell_vnl::initgradq_vnl</a></div><div class="ttdeci">void initgradq_vnl(const UnitCell &amp;cell)</div><div class="ttdef"><b>Definition:</b> VNL_grad_pw.cpp:8</div></div>
 <div class="ttc" id="aclasshamilt_1_1Velocity_html_aee60907c491e045b63af67775502a2af"><div class="ttname"><a href="classhamilt_1_1Velocity.html#aee60907c491e045b63af67775502a2af">hamilt::Velocity::~Velocity</a></div><div class="ttdeci">~Velocity()</div><div class="ttdef"><b>Definition:</b> velocity_pw.h:22</div></div>
 <div class="ttc" id="aclassModuleBase_1_1timer_html_a7d5a9dd381e39259fb92b31a89140206"><div class="ttname"><a href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206">ModuleBase::timer::tick</a></div><div class="ttdeci">static void tick(const std::string &amp;class_name_in, const std::string &amp;name_in)</div><div class="ttdoc">Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur...</div><div class="ttdef"><b>Definition:</b> timer.cpp:66</div></div>
 <div class="ttc" id="atimer_8h_html"><div class="ttname"><a href="timer_8h.html">timer.h</a></div></div>
-<div class="ttc" id="aclassModulePW_1_1PW__Basis__K_html_a95b24e597b47294a9d6b46bfe8393de9"><div class="ttname"><a href="classModulePW_1_1PW__Basis__K.html#a95b24e597b47294a9d6b46bfe8393de9">ModulePW::PW_Basis_K::getgpluskcar</a></div><div class="ttdeci">ModuleBase::Vector3&lt; double &gt; getgpluskcar(const int ik, const int igl) const</div><div class="ttdef"><b>Definition:</b> xc3_mock.h:54</div></div>
+<div class="ttc" id="aclassModulePW_1_1PW__Basis__K_html_a95b24e597b47294a9d6b46bfe8393de9"><div class="ttname"><a href="classModulePW_1_1PW__Basis__K.html#a95b24e597b47294a9d6b46bfe8393de9">ModulePW::PW_Basis_K::getgpluskcar</a></div><div class="ttdeci">ModuleBase::Vector3&lt; double &gt; getgpluskcar(const int ik, const int igl) const</div><div class="ttdef"><b>Definition:</b> pw_basis_k.cpp:296</div></div>
 <div class="ttc" id="aunitcell_8h_html"><div class="ttname"><a href="unitcell_8h.html">unitcell.h</a></div></div>
 <div class="ttc" id="aclasshamilt_1_1Velocity_html_a2a613181e4932ef4a6320b9383827033"><div class="ttname"><a href="classhamilt_1_1Velocity.html#a2a613181e4932ef4a6320b9383827033">hamilt::Velocity::ik</a></div><div class="ttdeci">int ik</div><div class="ttdef"><b>Definition:</b> velocity_pw.h:46</div></div>
 <div class="ttc" id="ablas__connector_8h_html_af6e68bda698eaed2db4e4c1efcd9cfab"><div class="ttname"><a href="blas__connector_8h.html#af6e68bda698eaed2db4e4c1efcd9cfab">zgemv_</a></div><div class="ttdeci">void zgemv_(const char *trans, const int *m, const int *n, const std::complex&lt; double &gt; *alpha, const std::complex&lt; double &gt; *a, const int *lda, const std::complex&lt; double &gt; *x, const int *incx, const std::complex&lt; double &gt; *beta, std::complex&lt; double &gt; *y, const int *incy)</div></div>
-<div class="ttc" id="aclassUnitCell_html_a0ffb2085697159cf7630c18873016fa6"><div class="ttname"><a href="classUnitCell.html#a0ffb2085697159cf7630c18873016fa6">UnitCell::ntype</a></div><div class="ttdeci">int ntype</div><div class="ttdef"><b>Definition:</b> unitcell.h:36</div></div>
+<div class="ttc" id="aclassUnitCell_html_a0ffb2085697159cf7630c18873016fa6"><div class="ttname"><a href="classUnitCell.html#a0ffb2085697159cf7630c18873016fa6">UnitCell::ntype</a></div><div class="ttdeci">int ntype</div><div class="ttdef"><b>Definition:</b> unitcell.h:30</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Vector3_html_afe59714e0bf2bd3921d90dc1bcc22b67"><div class="ttname"><a href="classModuleBase_1_1Vector3.html#afe59714e0bf2bd3921d90dc1bcc22b67">ModuleBase::Vector3::z</a></div><div class="ttdeci">T z</div><div class="ttdef"><b>Definition:</b> vector3.h:25</div></div>
 <div class="ttc" id="anamespaceModuleBase_html_a3dd5886827d91befd079da1e23921f07"><div class="ttname"><a href="namespaceModuleBase.html#a3dd5886827d91befd079da1e23921f07">ModuleBase::ONE</a></div><div class="ttdeci">const std::complex&lt; double &gt; ONE(1.0, 0.0)</div></div>
 <div class="ttc" id="aclasspseudopot__cell__vnl_html"><div class="ttname"><a href="classpseudopot__cell__vnl.html">pseudopot_cell_vnl</a></div><div class="ttdef"><b>Definition:</b> VNL_in_pw.h:23</div></div>
@@ -174,7 +174,7 @@ $(function() {
 <div class="ttc" id="aclassModuleBase_1_1Vector3_html_aed4fc904d651cc0265bd90fbccd20cff"><div class="ttname"><a href="classModuleBase_1_1Vector3.html#aed4fc904d651cc0265bd90fbccd20cff">ModuleBase::Vector3::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> vector3.h:24</div></div>
 <div class="ttc" id="aclasspseudopot__cell__vnl_html_a36a7487638c7d7df169c7891c6880056"><div class="ttname"><a href="classpseudopot__cell__vnl.html#a36a7487638c7d7df169c7891c6880056">pseudopot_cell_vnl::deeq</a></div><div class="ttdeci">ModuleBase::realArray deeq</div><div class="ttdef"><b>Definition:</b> VNL_in_pw.h:92</div></div>
 <div class="ttc" id="anamespaceModuleBase_html_a319c957fc399a519aa4cdd447bdee1aa"><div class="ttname"><a href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa">ModuleBase::WARNING_QUIT</a></div><div class="ttdeci">void WARNING_QUIT(const std::string &amp;file, const std::string &amp;description)</div><div class="ttdoc">Combine the functions of WARNING and QUIT.</div><div class="ttdef"><b>Definition:</b> complexmatrix_test.cpp:46</div></div>
-<div class="ttc" id="aclassUnitCell_html_a1663e041da7d7f723cdf2b19d9d06efe"><div class="ttname"><a href="classUnitCell.html#a1663e041da7d7f723cdf2b19d9d06efe">UnitCell::atoms</a></div><div class="ttdeci">Atom * atoms</div><div class="ttdef"><b>Definition:</b> unitcell.h:24</div></div>
+<div class="ttc" id="aclassUnitCell_html_a1663e041da7d7f723cdf2b19d9d06efe"><div class="ttname"><a href="classUnitCell.html#a1663e041da7d7f723cdf2b19d9d06efe">UnitCell::atoms</a></div><div class="ttdeci">Atom * atoms</div><div class="ttdef"><b>Definition:</b> unitcell.h:21</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Vector3_html_aa4a84e2c108d8c722b30b887fc6a62a8"><div class="ttname"><a href="classModuleBase_1_1Vector3.html#aa4a84e2c108d8c722b30b887fc6a62a8">ModuleBase::Vector3::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> vector3.h:23</div></div>
 <div class="ttc" id="anamespacehamilt_html"><div class="ttname"><a href="namespacehamilt.html">hamilt</a></div><div class="ttdef"><b>Definition:</b> hamilt.h:11</div></div>
 <div class="ttc" id="aclasshamilt_1_1Velocity_html_a2ca43b48d25cd6d7fcc9fdd421883539"><div class="ttname"><a href="classhamilt_1_1Velocity.html#a2ca43b48d25cd6d7fcc9fdd421883539">hamilt::Velocity::wfcpw</a></div><div class="ttdeci">const ModulePW::PW_Basis_K * wfcpw</div><div class="ttdef"><b>Definition:</b> velocity_pw.h:38</div></div>

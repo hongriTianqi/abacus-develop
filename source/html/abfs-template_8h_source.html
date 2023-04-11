@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: src_ri/abfs-template.h Source File</title>
+<title>3.2.0: src_ri/abfs-template.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -80,7 +80,7 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T1,<span class="keyword">typename</span> T2,<span class="keyword">typename</span> T3,<span class="keyword">typename</span> Tmatrix&gt;</div>
 <div class="line"><a name="l00007"></a><span class="lineno"><a class="line" href="classAbfs.html#ac7b99e92169b085d043dc027f831ac0c">    7</a></span>&#160;<span class="keywordtype">void</span> <a class="code" href="classAbfs.html#aba6e693ac0872d07821ca02fb1c6775c">Abfs::delete_empty_ptrs</a>( std::map&lt;T1,std::map&lt;T2,std::map&lt;T3,std::weak_ptr&lt;Tmatrix&gt;&gt;&gt;&gt; &amp;ptrs )</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4">ModuleBase::TITLE</a>(<span class="stringliteral">&quot;Abfs&quot;</span>,<span class="stringliteral">&quot;delete_empty_ptrs&quot;</span>);</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    <a class="code" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6">ModuleBase::TITLE</a>(<span class="stringliteral">&quot;Abfs&quot;</span>,<span class="stringliteral">&quot;delete_empty_ptrs&quot;</span>);</div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">for</span>( <span class="keyword">auto</span> iter1=ptrs.begin(); iter1!=ptrs.end(); )</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;        <span class="keywordflow">for</span>( <span class="keyword">auto</span> iter2=iter1-&gt;second.begin(); iter2!=iter1-&gt;second.end(); )</div>
@@ -187,8 +187,8 @@ $(function() {
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassAbfs_html_a6be7c80ec10f771a39da8ac0a076d8b4"><div class="ttname"><a href="classAbfs.html#a6be7c80ec10f771a39da8ac0a076d8b4">Abfs::get_atom_pair</a></div><div class="ttdeci">static std::vector&lt; std::pair&lt; T1, T2 &gt; &gt; get_atom_pair(const std::map&lt; T1, std::map&lt; T2, Tother &gt;&gt; &amp;m)</div><div class="ttdef"><b>Definition:</b> abfs-template.h:104</div></div>
-<div class="ttc" id="anamespaceModuleBase_html_a7f2e75fdaf26614e5c7485cff6287bd4"><div class="ttname"><a href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4">ModuleBase::TITLE</a></div><div class="ttdeci">void TITLE(const std::string &amp;class_function_name, const bool disable)</div><div class="ttdef"><b>Definition:</b> tool_title.cpp:14</div></div>
 <div class="ttc" id="aclassAbfs_html_a2084d5dcb626c4cbd38716db3b9c8b0a"><div class="ttname"><a href="classAbfs.html#a2084d5dcb626c4cbd38716db3b9c8b0a">Abfs::delete_threshold_ptrs</a></div><div class="ttdeci">static void delete_threshold_ptrs(std::map&lt; Tkey, Tmatrix &gt; &amp;ptrs, const double threshold)</div><div class="ttdef"><b>Definition:</b> abfs-template.h:28</div></div>
+<div class="ttc" id="anamespaceModuleBase_html_ad0b268ded393d31b0dd1a795366af4a6"><div class="ttname"><a href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6">ModuleBase::TITLE</a></div><div class="ttdeci">void TITLE(const std::string &amp;class_name, const std::string &amp;function_name, const bool disable)</div><div class="ttdef"><b>Definition:</b> tool_title.cpp:18</div></div>
 <div class="ttc" id="aclassAbfs_html_aba6e693ac0872d07821ca02fb1c6775c"><div class="ttname"><a href="classAbfs.html#aba6e693ac0872d07821ca02fb1c6775c">Abfs::delete_empty_ptrs</a></div><div class="ttdeci">static void delete_empty_ptrs(std::map&lt; T1, std::map&lt; T2, std::map&lt; T3, std::weak_ptr&lt; T4 &gt;&gt;&gt;&gt; &amp;ptrs)</div></div>
 <div class="ttc" id="aabfs_8h_html"><div class="ttname"><a href="abfs_8h.html">abfs.h</a></div></div>
 <div class="ttc" id="asph__bessel__recursive__test_8cpp_html_a92ac017207defd4cbfa24eefe0c6236e"><div class="ttname"><a href="sph__bessel__recursive__test_8cpp.html#a92ac017207defd4cbfa24eefe0c6236e">threshold</a></div><div class="ttdeci">#define threshold</div><div class="ttdef"><b>Definition:</b> sph_bessel_recursive_test.cpp:4</div></div>

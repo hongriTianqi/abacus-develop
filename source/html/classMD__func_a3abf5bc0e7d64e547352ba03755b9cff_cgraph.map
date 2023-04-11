@@ -4,7 +4,9 @@
 <area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver.html#af341eacfedf531baaf0ab132614ede3c" title=" " alt="" coords="230,71,406,112"/>
 <area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver.html#aff2054c975810eafda69e1c23eaa86eb" title=" " alt="" coords="230,136,406,177"/>
 <area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver.html#a38bb2c7ca52c8c82a29ae0df096ed1fa" title=" " alt="" coords="213,202,423,229"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="229,253,407,279"/>
-<area shape="rect" id="node8" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="245,303,391,330"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="471,245,624,287"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="701,315,879,342"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="245,311,391,338"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="927,308,1080,349"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="471,304,653,345"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="485,369,639,411"/>
 </map>

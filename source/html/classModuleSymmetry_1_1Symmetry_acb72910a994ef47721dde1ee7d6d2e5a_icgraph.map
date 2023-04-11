@@ -1,11 +1,10 @@
 <map id="ModuleSymmetry::Symmetry::stress_symmetry" name="ModuleSymmetry::Symmetry::stress_symmetry">
-<area shape="rect" id="node1" title=" " alt="" coords="688,123,901,164"/>
+<area shape="rect" id="node1" title=" " alt="" coords="688,97,901,139"/>
 <area shape="rect" id="node2" href="$classOF__Stress__PW.html#aac70df38dc093637423bfe19a48011c2" title=" " alt="" coords="453,18,640,45"/>
 <area shape="rect" id="node4" href="$classStress__PW.html#a1d03332d9703fee2cc8eb7be1db7b053" title=" " alt="" coords="465,79,628,106"/>
-<area shape="rect" id="node6" href="$classSto__Stress__PW.html#a1c5e6badd1f803a6e255ff35c36a301e" title=" " alt="" coords="245,159,389,200"/>
+<area shape="rect" id="node6" href="$classSto__Stress__PW.html#a1c5e6badd1f803a6e255ff35c36a301e" title=" " alt="" coords="245,164,389,205"/>
 <area shape="rect" id="node8" href="$classSto__Stress__PW.html#a592243126d8e6ef154a036679bff430c" title=" " alt="" coords="474,181,619,223"/>
-<area shape="rect" id="node9" href="$classStress__Func.html#a581c9814b3e779edcba36cf3ff8097f1" title=" " alt="" coords="463,247,630,303"/>
 <area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__OF.html#acc894b3c6c4e638098cc70caac93bc6e" title=" " alt="" coords="229,5,405,47"/>
 <area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__PW.html#a8d66a4cf77b11e5cfb003a681491ca59" title=" " alt="" coords="229,71,405,127"/>
-<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__SDFT__PW.html#a90b451696b73b171c1614b2c6a0c1372" title=" " alt="" coords="5,159,181,200"/>
+<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__SDFT__PW.html#a90b451696b73b171c1614b2c6a0c1372" title=" " alt="" coords="5,164,181,205"/>
 </map>

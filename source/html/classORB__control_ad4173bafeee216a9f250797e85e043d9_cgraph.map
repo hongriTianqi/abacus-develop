@@ -1,10 +1,12 @@
 <map id="ORB_control::clear_after_ions" name="ORB_control::clear_after_ions">
-<area shape="rect" id="node1" title=" " alt="" coords="5,104,148,145"/>
-<area shape="rect" id="node2" href="$classORB__table__phi.html#a1f3c500bd3557878e1399638f036284f" title=" " alt="" coords="204,104,380,145"/>
-<area shape="rect" id="node3" href="$classLCAO__Orbitals.html#ab33e3164563e1ea61c612473ee2a8cac" title=" " alt="" coords="438,9,582,50"/>
-<area shape="rect" id="node6" href="$classORB__table__alpha.html#a1c06db11732cfb7c0cf74afa02022424" title=" " alt="" coords="196,38,388,80"/>
-<area shape="rect" id="node7" href="$classORB__table__beta.html#ab1d9bde11a9b6d441f6f7e265ad9df04" title=" " alt="" coords="199,169,385,210"/>
-<area shape="rect" id="node8" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="219,235,365,262"/>
-<area shape="rect" id="node4" href="$classNumerical__Orbital.html#a1a29486b7944bb9e9c35cff697d13021" title=" " alt="" coords="436,74,584,116"/>
-<area shape="rect" id="node5" href="$classNumerical__Orbital.html#aac06e739a8e53299f861971ea05774cb" title=" " alt="" coords="436,140,584,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,116,148,157"/>
+<area shape="rect" id="node2" href="$classORB__table__phi.html#a1f3c500bd3557878e1399638f036284f" title=" " alt="" coords="204,116,380,157"/>
+<area shape="rect" id="node3" href="$classLCAO__Orbitals.html#ab33e3164563e1ea61c612473ee2a8cac" title=" " alt="" coords="455,5,599,47"/>
+<area shape="rect" id="node6" href="$classORB__table__alpha.html#a1c06db11732cfb7c0cf74afa02022424" title=" " alt="" coords="196,51,388,92"/>
+<area shape="rect" id="node7" href="$classORB__table__beta.html#ab1d9bde11a9b6d441f6f7e265ad9df04" title=" " alt="" coords="199,181,385,223"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="219,247,365,274"/>
+<area shape="rect" id="node4" href="$classNumerical__Orbital.html#a1a29486b7944bb9e9c35cff697d13021" title=" " alt="" coords="453,71,601,112"/>
+<area shape="rect" id="node5" href="$classNumerical__Orbital.html#aac06e739a8e53299f861971ea05774cb" title=" " alt="" coords="453,136,601,177"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="436,292,619,333"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="451,227,604,268"/>
 </map>

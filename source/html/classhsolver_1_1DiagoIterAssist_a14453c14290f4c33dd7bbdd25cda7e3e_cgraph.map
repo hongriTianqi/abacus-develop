@@ -1,9 +1,12 @@
 <map id="hsolver::DiagoIterAssist::diagH_subspace" name="hsolver::DiagoIterAssist::diagH_subspace">
-<area shape="rect" id="node1" title=" " alt="" coords="5,93,183,135"/>
-<area shape="rect" id="node2" href="$classhsolver_1_1DiagoIterAssist.html#a217531fa3309029e07de3e62d5adb845" title=" " alt="" coords="231,35,408,76"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="456,15,633,42"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="472,70,617,97"/>
-<area shape="rect" id="node6" href="$classpsi_1_1Psi.html#ad54ad789907892402df657738b4608c1" title=" " alt="" coords="244,151,395,178"/>
-<area shape="rect" id="node7" href="$namespaceParallel__Reduce.html#a5ccf1f753c6fae3266e7e9b5e21f2712" title=" " alt="" coords="231,203,408,244"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="681,8,835,49"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,114,183,155"/>
+<area shape="rect" id="node2" href="$classhsolver_1_1DiagoIterAssist.html#a217531fa3309029e07de3e62d5adb845" title=" " alt="" coords="231,55,408,96"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="883,56,1060,82"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="456,117,601,144"/>
+<area shape="rect" id="node9" href="$classpsi_1_1Psi.html#a90db35e433ee949459a4c370e0dacc9c" title=" " alt="" coords="244,172,395,198"/>
+<area shape="rect" id="node10" href="$namespaceParallel__Reduce.html#a5ccf1f753c6fae3266e7e9b5e21f2712" title=" " alt="" coords="231,223,408,264"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1111,48,1264,90"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="649,172,832,214"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="664,107,817,148"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="880,172,1063,214"/>
 </map>

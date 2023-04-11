@@ -1,12 +1,12 @@
-<map id="module_gint/grid_meshk.h" name="module_gint/grid_meshk.h">
-<area shape="rect" id="node1" title=" " alt="" coords="490,5,685,32"/>
-<area shape="rect" id="node2" href="$grid__meshcell_8h.html" title=" " alt="" coords="365,80,575,107"/>
-<area shape="rect" id="node10" href="$grid__meshk_8cpp.html" title=" " alt="" coords="599,80,810,107"/>
-<area shape="rect" id="node3" href="$grid__bigcell_8h.html" title=" " alt="" coords="255,155,450,181"/>
-<area shape="rect" id="node9" href="$grid__meshcell_8cpp.html" title=" " alt="" coords="475,155,700,181"/>
-<area shape="rect" id="node4" href="$grid__meshball_8h.html" title=" " alt="" coords="130,229,341,256"/>
-<area shape="rect" id="node8" href="$grid__bigcell_8cpp.html" title=" " alt="" coords="365,229,575,256"/>
-<area shape="rect" id="node5" href="$grid__technique_8h.html" title=" " alt="" coords="5,304,220,331"/>
-<area shape="rect" id="node7" href="$grid__meshball_8cpp.html" title=" " alt="" coords="245,304,471,331"/>
-<area shape="rect" id="node6" href="$local__orbital__wfc_8h.html" title=" " alt="" coords="35,379,190,435"/>
+<map id="module_hamilt_lcao/module_gint/grid_meshk.h" name="module_hamilt_lcao/module_gint/grid_meshk.h">
+<area shape="rect" id="node1" title=" " alt="" coords="495,5,694,47"/>
+<area shape="rect" id="node2" href="$grid__meshcell_8h.html" title=" " alt="" coords="369,95,583,136"/>
+<area shape="rect" id="node10" href="$grid__meshk_8cpp.html" title=" " alt="" coords="607,95,822,136"/>
+<area shape="rect" id="node3" href="$grid__bigcell_8h.html" title=" " alt="" coords="258,184,457,225"/>
+<area shape="rect" id="node9" href="$grid__meshcell_8cpp.html" title=" " alt="" coords="481,184,711,225"/>
+<area shape="rect" id="node4" href="$grid__meshball_8h.html" title=" " alt="" coords="131,273,346,315"/>
+<area shape="rect" id="node8" href="$grid__bigcell_8cpp.html" title=" " alt="" coords="371,273,584,315"/>
+<area shape="rect" id="node5" href="$grid__technique_8h.html" title=" " alt="" coords="5,363,224,404"/>
+<area shape="rect" id="node7" href="$grid__meshball_8cpp.html" title=" " alt="" coords="249,363,479,404"/>
+<area shape="rect" id="node6" href="$local__orbital__wfc_8h.html" title=" " alt="" coords="37,452,192,508"/>
 </map>

@@ -1,10 +1,12 @@
 <map id="cal_r_overlap_R::out_rR_other" name="cal_r_overlap_R::out_rR_other">
-<area shape="rect" id="node1" title=" " alt="" coords="5,132,160,173"/>
-<area shape="rect" id="node2" href="$namespaceModuleIO.html#a1013bb33b63a153e291ad7b1b58beed4" title=" " alt="" coords="208,51,404,78"/>
-<area shape="rect" id="node5" href="$namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="217,103,395,144"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="217,169,395,195"/>
-<area shape="rect" id="node8" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="233,219,379,246"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,129,160,171"/>
+<area shape="rect" id="node2" href="$namespaceModuleIO.html#a1013bb33b63a153e291ad7b1b58beed4" title=" " alt="" coords="208,49,404,75"/>
+<area shape="rect" id="node5" href="$namespaceParallel__Reduce.html#ab7e6a585dcc19d81f5cf44128cafa3c0" title=" " alt="" coords="217,100,395,141"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="683,229,860,255"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="233,225,379,251"/>
 <area shape="rect" id="node3" href="$namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="455,5,632,47"/>
 <area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="452,71,635,112"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="467,161,620,203"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="908,221,1061,263"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="452,217,635,259"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="467,283,620,324"/>
 </map>

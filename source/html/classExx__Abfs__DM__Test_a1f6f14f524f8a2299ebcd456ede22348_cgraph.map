@@ -3,6 +3,10 @@
 <area shape="rect" id="node2" href="$namespaceModuleBase.html#adeaaec1c2e00d3e37d62ae80ba994120" title=" " alt="" coords="261,5,398,32"/>
 <area shape="rect" id="node3" href="$classExx__Abfs__DM__Test.html#a5a5189c1873c2c15b69e43638a2c821b" title=" " alt="" coords="224,56,435,83"/>
 <area shape="rect" id="node4" href="$classExx__Abfs__DM__Test.html#a4e921a547126bc08653a9b50c3ffed12" title=" " alt="" coords="226,107,433,133"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="257,157,402,184"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="238,209,421,250"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="257,157,402,184"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="713,179,896,221"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="483,150,665,191"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="497,85,651,126"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="716,92,893,119"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="944,85,1097,126"/>
 </map>

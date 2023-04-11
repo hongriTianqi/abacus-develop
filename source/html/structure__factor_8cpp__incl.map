@@ -1,12 +1,12 @@
 <map id="module_hamilt_pw/hamilt_pwdft/structure_factor.cpp" name="module_hamilt_pw/hamilt_pwdft/structure_factor.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="499,5,697,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="488,5,687,47"/>
 <area shape="rect" id="node2" href="$global__function_8h.html" title=" " alt="" coords="5,184,159,225"/>
 <area shape="rect" id="node3" href="$global__variable_8h.html" title=" " alt="" coords="129,273,264,300"/>
 <area shape="rect" id="node4" href="$structure__factor_8h.html" title=" " alt="" coords="242,191,378,218"/>
-<area shape="rect" id="node5" href="$constants_8h.html" title=" " alt="" coords="361,102,561,129"/>
+<area shape="rect" id="node5" href="$constants_8h.html" title=" " alt="" coords="361,102,549,129"/>
 <area shape="rect" id="node6" href="$global_8h.html" title=" " alt="" coords="94,95,286,136"/>
-<area shape="rect" id="node7" href="$math__bspline_8h.html" title=" " alt="" coords="635,102,849,129"/>
-<area shape="rect" id="node8" href="$memory_8h.html" title=" " alt="" coords="873,102,1051,129"/>
-<area shape="rect" id="node9" href="$timer_8h.html" title=" " alt="" coords="1076,102,1235,129"/>
-<area shape="rect" id="node10" href="$libm_8h.html" title=" " alt="" coords="1259,102,1446,129"/>
+<area shape="rect" id="node7" href="$math__bspline_8h.html" title=" " alt="" coords="625,102,838,129"/>
+<area shape="rect" id="node8" href="$memory_8h.html" title=" " alt="" coords="862,102,1041,129"/>
+<area shape="rect" id="node9" href="$timer_8h.html" title=" " alt="" coords="1065,102,1224,129"/>
+<area shape="rect" id="node10" href="$libm_8h.html" title=" " alt="" coords="1249,102,1435,129"/>
 </map>

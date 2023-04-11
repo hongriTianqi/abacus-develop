@@ -1,5 +1,10 @@
 <map id="Gint_k::~Gint_k" name="Gint_k::~Gint_k">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,131,32"/>
-<area shape="rect" id="node2" href="$classGint__k.html#a1e0d0bb0bc28e24a865d6bd98ea80db9" title=" " alt="" coords="179,5,340,32"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="388,5,533,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,131,73"/>
+<area shape="rect" id="node2" href="$classGint__k.html#a1e0d0bb0bc28e24a865d6bd98ea80db9" title=" " alt="" coords="179,46,340,73"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="388,46,533,73"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="581,5,764,47"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="596,71,749,112"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="812,5,995,47"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="815,78,992,105"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1043,71,1196,112"/>
 </map>

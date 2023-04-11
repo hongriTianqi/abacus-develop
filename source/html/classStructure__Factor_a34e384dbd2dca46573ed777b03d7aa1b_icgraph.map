@@ -1,12 +1,12 @@
 <map id="Structure_Factor::setup_structure_factor" name="Structure_Factor::setup_structure_factor">
-<area shape="rect" id="node1" title=" " alt="" coords="469,180,640,221"/>
-<area shape="rect" id="node2" href="$classCharge__Extra.html#ad6b3264e9fc967ef8d745df3250dfa85" title=" " alt="" coords="229,5,421,47"/>
-<area shape="rect" id="node5" href="$classsurchem.html#a8d778f83825f71c704714e2eb12c35db" title=" " alt="" coords="238,187,413,214"/>
-<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="231,238,419,294"/>
-<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="237,319,413,360"/>
-<area shape="rect" id="node8" href="$classVariable__Cell.html#a734f97e787992db765320371ccd076bb" title=" " alt="" coords="257,71,393,112"/>
-<area shape="rect" id="node9" href="$classRelax.html#af3530159661500c6499bf6bc1952dac3" title=" " alt="" coords="9,137,177,163"/>
-<area shape="rect" id="node10" href="$classRelax__old.html#aa202ce7559148cc081cf90864ffd9583" title=" " alt="" coords="243,384,407,425"/>
-<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="5,71,181,112"/>
-<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="693,195,864,236"/>
+<area shape="rect" id="node2" href="$classCharge__Extra.html#ad6b3264e9fc967ef8d745df3250dfa85" title=" " alt="" coords="453,71,645,112"/>
+<area shape="rect" id="node6" href="$classsurchem.html#a8d778f83825f71c704714e2eb12c35db" title=" " alt="" coords="462,137,637,163"/>
+<area shape="rect" id="node8" href="$classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="455,187,643,243"/>
+<area shape="rect" id="node9" href="$classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="461,268,637,309"/>
+<area shape="rect" id="node10" href="$classModuleESolver_1_1ESolver__KS.html#ac96101045ab980649d190fe00b00461c" title=" " alt="" coords="455,334,643,390"/>
+<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="229,5,405,47"/>
+<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="229,71,405,112"/>
+<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__OF.html#a380b40f26c567a678ad6552068e6f4bc" title=" " alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node7" href="$classsurchem.html#a538573650c782ac0290a1250453a0e4b" title=" " alt="" coords="238,137,397,163"/>
 </map>

@@ -1,12 +1,12 @@
 <map id="module_cell/atom_spec.h" name="module_cell/atom_spec.h">
-<area shape="rect" id="node1" title=" " alt="" coords="391,5,579,32"/>
-<area shape="rect" id="node2" href="$unitcell_8h.html" title=" " alt="" coords="403,87,568,114"/>
-<area shape="rect" id="node5" href="$klist__test_8cpp.html" title=" " alt="" coords="5,169,168,211"/>
-<area shape="rect" id="node6" href="$klist__test__para_8cpp.html" title=" " alt="" coords="192,169,355,211"/>
-<area shape="rect" id="node7" href="$updaterhok__pw__test_8h.html" title=" " alt="" coords="808,169,979,211"/>
-<area shape="rect" id="node8" href="$setup__nonlocal_8h.html" title=" " alt="" coords="113,87,327,114"/>
-<area shape="rect" id="node9" href="$atom__spec_8cpp.html" title=" " alt="" coords="643,87,845,114"/>
-<area shape="rect" id="node10" href="$atom__spec__test_8cpp.html" title=" " alt="" coords="869,80,1037,121"/>
-<area shape="rect" id="node3" href="$charge__extra_8h.html" title=" " alt="" coords="593,169,783,211"/>
-<area shape="rect" id="node4" href="$esolver_8h.html" title=" " alt="" coords="379,177,568,203"/>
+<area shape="rect" id="node1" title=" " alt="" coords="402,5,590,32"/>
+<area shape="rect" id="node2" href="$unitcell_8h.html" title=" " alt="" coords="473,87,639,114"/>
+<area shape="rect" id="node4" href="$klist__test_8cpp.html" title=" " alt="" coords="5,169,168,211"/>
+<area shape="rect" id="node5" href="$klist__test__para_8cpp.html" title=" " alt="" coords="357,169,520,211"/>
+<area shape="rect" id="node6" href="$updaterhok__pw__test_8h.html" title=" " alt="" coords="760,169,931,211"/>
+<area shape="rect" id="node7" href="$for__testing__klist_8h.html" title=" " alt="" coords="192,169,333,211"/>
+<area shape="rect" id="node8" href="$setup__nonlocal_8h.html" title=" " alt="" coords="183,87,398,114"/>
+<area shape="rect" id="node9" href="$atom__spec_8cpp.html" title=" " alt="" coords="713,87,916,114"/>
+<area shape="rect" id="node10" href="$atom__spec__test_8cpp.html" title=" " alt="" coords="940,80,1108,121"/>
+<area shape="rect" id="node3" href="$charge__extra_8h.html" title=" " alt="" coords="545,169,735,211"/>
 </map>

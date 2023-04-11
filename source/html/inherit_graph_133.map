@@ -1,12 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classhamilt_1_1Operator.html" title=" " alt="" coords="5,242,172,269"/>
-<area shape="rect" id="node2" href="$classhamilt_1_1OperatorLCAO.html" title=" " alt="" coords="220,242,423,269"/>
-<area shape="rect" id="node3" href="$classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html" title=" " alt="" coords="479,5,674,47"/>
-<area shape="rect" id="node4" href="$classhamilt_1_1Ekinetic_3_01OperatorLCAO_3_01T_01_4_01_4.html" title=" " alt="" coords="479,71,675,112"/>
-<area shape="rect" id="node5" href="$classhamilt_1_1Meta_3_01OperatorLCAO_3_01T_01_4_01_4.html" title=" " alt="" coords="471,136,683,177"/>
-<area shape="rect" id="node6" href="$classhamilt_1_1Nonlocal_3_01OperatorLCAO_3_01T_01_4_01_4.html" title=" " alt="" coords="476,201,677,243"/>
-<area shape="rect" id="node7" href="$classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html" title=" " alt="" coords="485,267,668,308"/>
-<area shape="rect" id="node8" href="$classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html" title=" " alt="" coords="485,332,668,373"/>
-<area shape="rect" id="node9" href="$classhamilt_1_1Overlap_3_01OperatorLCAO_3_01T_01_4_01_4.html" title=" " alt="" coords="479,397,674,439"/>
-<area shape="rect" id="node10" href="$classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html" title=" " alt="" coords="475,463,679,504"/>
+<area shape="rect" id="node1" href="$classhamilt_1_1Operator.html" title=" " alt="" coords="5,5,177,61"/>
+<area shape="rect" id="node2" href="$classhamilt_1_1OperatorPW.html" title=" " alt="" coords="225,13,376,54"/>
+<area shape="rect" id="node3" href="$classOperatorMock__f.html" title=" " alt="" coords="424,20,551,47"/>
 </map>

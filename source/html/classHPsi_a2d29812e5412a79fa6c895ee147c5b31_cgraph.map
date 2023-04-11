@@ -1,9 +1,7 @@
 <map id="HPsi::HPsi" name="HPsi::HPsi">
 <area shape="rect" id="node1" title=" " alt="" coords="5,56,93,83"/>
 <area shape="rect" id="node2" href="$classHPsi.html#a6c6e44b4592ca0507bdfd13f7ae06dcb" title=" " alt="" coords="156,5,291,32"/>
-<area shape="rect" id="node6" href="$classHPsi.html#abd85fa970e002582739018bc2c5f88f3" title=" " alt="" coords="141,56,305,83"/>
-<area shape="rect" id="node7" href="$classHPsi.html#aa48376fc4649140e9d675df2c0110d1c" title=" " alt="" coords="172,107,275,133"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#adeaaec1c2e00d3e37d62ae80ba994120" title=" " alt="" coords="390,5,527,32"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1ComplexMatrix.html#a5c1453ebc08a2889d5b77e310256ad44" title=" " alt="" coords="353,78,564,119"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1ComplexMatrix.html#a3838106abe74b149f792daadd79fb027" title=" " alt="" coords="612,78,823,119"/>
+<area shape="rect" id="node4" href="$classHPsi.html#abd85fa970e002582739018bc2c5f88f3" title=" " alt="" coords="141,56,305,83"/>
+<area shape="rect" id="node5" href="$classHPsi.html#aa48376fc4649140e9d675df2c0110d1c" title=" " alt="" coords="172,107,275,133"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#adeaaec1c2e00d3e37d62ae80ba994120" title=" " alt="" coords="353,5,491,32"/>
 </map>

@@ -1,12 +1,12 @@
-<map id="module_gint/gint_gamma.h" name="module_gint/gint_gamma.h">
-<area shape="rect" id="node1" title=" " alt="" coords="91,5,293,32"/>
-<area shape="rect" id="node2" href="$gint_8h.html" title=" " alt="" coords="163,80,221,107"/>
-<area shape="rect" id="node4" href="$grid__technique_8h.html" title=" " alt="" coords="43,244,173,271"/>
-<area shape="rect" id="node5" href="$LCAO__matrix_8h.html" title=" " alt="" coords="198,229,357,285"/>
-<area shape="rect" id="node6" href="$global__function_8h.html" title=" " alt="" coords="253,333,419,375"/>
-<area shape="rect" id="node10" href="$global__variable_8h.html" title=" " alt="" coords="118,423,253,449"/>
-<area shape="rect" id="node3" href="$gint__tools_8h.html" title=" " alt="" coords="143,155,241,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="206,497,269,524"/>
-<area shape="rect" id="node8" title=" " alt="" coords="329,423,405,449"/>
-<area shape="rect" id="node9" title=" " alt="" coords="353,497,412,524"/>
+<map id="module_hamilt_lcao/module_gint/gint_gamma.h" name="module_hamilt_lcao/module_gint/gint_gamma.h">
+<area shape="rect" id="node1" title=" " alt="" coords="89,5,295,47"/>
+<area shape="rect" id="node2" href="$gint_8h.html" title=" " alt="" coords="163,95,221,121"/>
+<area shape="rect" id="node4" href="$grid__technique_8h.html" title=" " alt="" coords="43,259,173,285"/>
+<area shape="rect" id="node5" href="$LCAO__matrix_8h.html" title=" " alt="" coords="198,244,357,300"/>
+<area shape="rect" id="node6" href="$global__function_8h.html" title=" " alt="" coords="259,348,413,389"/>
+<area shape="rect" id="node10" href="$global__variable_8h.html" title=" " alt="" coords="121,437,255,464"/>
+<area shape="rect" id="node3" href="$gint__tools_8h.html" title=" " alt="" coords="143,169,241,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="209,512,271,539"/>
+<area shape="rect" id="node8" title=" " alt="" coords="331,437,407,464"/>
+<area shape="rect" id="node9" title=" " alt="" coords="356,512,415,539"/>
 </map>

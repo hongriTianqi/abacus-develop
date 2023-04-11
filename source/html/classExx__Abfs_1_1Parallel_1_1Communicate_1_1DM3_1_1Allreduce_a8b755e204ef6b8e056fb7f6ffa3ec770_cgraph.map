@@ -1,6 +1,10 @@
 <map id="Exx_Abfs::Parallel::Communicate::DM3::Allreduce::get_H_atom_pairs_group_rank" name="Exx_Abfs::Parallel::Communicate::DM3::Allreduce::get_H_atom_pairs_group_rank">
-<area shape="rect" id="node1" title=" " alt="" coords="5,31,176,102"/>
-<area shape="rect" id="node2" href="$classExx__Abfs_1_1Parallel_1_1Communicate_1_1Function.html#ab79c42ba8fefe71398c48b1e433752dd" title=" " alt="" coords="224,5,408,61"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="456,74,639,115"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="475,20,620,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,133,176,204"/>
+<area shape="rect" id="node2" href="$classExx__Abfs_1_1Parallel_1_1Communicate_1_1Function.html#ab79c42ba8fefe71398c48b1e433752dd" title=" " alt="" coords="224,107,408,163"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="880,129,1063,171"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="456,78,601,105"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="649,71,832,112"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="664,5,817,47"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="883,13,1060,39"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1111,5,1264,47"/>
 </map>

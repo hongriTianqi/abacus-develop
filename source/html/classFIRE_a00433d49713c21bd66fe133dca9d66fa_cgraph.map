@@ -1,8 +1,11 @@
 <map id="FIRE::second_half" name="FIRE::second_half">
 <area shape="rect" id="node1" title="the second half of equation of motion, update velocities" alt="" coords="5,81,143,108"/>
-<area shape="rect" id="node2" href="$classFIRE.html#a5a66f671ab4f8af4dc30b163ba819807" title=" " alt="" coords="211,5,348,32"/>
-<area shape="rect" id="node3" href="$classMDrun.html#a2b7f91ffa0d66ba98ca6c2cad87e3d49" title="the second half of equation of motion, update velocities" alt="" coords="204,56,355,83"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="191,107,368,133"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="207,157,352,184"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="416,99,569,141"/>
+<area shape="rect" id="node2" href="$classFIRE.html#a5a66f671ab4f8af4dc30b163ba819807" title=" " alt="" coords="195,5,332,32"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="617,85,795,112"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="191,111,336,137"/>
+<area shape="rect" id="node9" href="$classMDrun.html#a7b4e537c0e31069dcd68609f914234df" title="perform half&#45;step update of vel due to atomic force" alt="" coords="191,161,336,188"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="845,78,999,119"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="384,173,567,214"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="399,107,552,149"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="615,173,797,214"/>
 </map>

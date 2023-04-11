@@ -1,9 +1,8 @@
 <map id="Numerical_Basis::cal_ylm" name="Numerical_Basis::cal_ylm">
-<area shape="rect" id="node1" title=" " alt="" coords="5,123,196,149"/>
-<area shape="rect" id="node2" href="$classModuleBase_1_1YlmReal.html#a4a0791bc6a7899abb20c1d2dfec05b80" title="spherical harmonic function (real form) an array of vectors" alt="" coords="244,115,408,157"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase_1_1libm.html#a7b49e155799ac36b2da1da35b6c2c77c" title=" " alt="" coords="478,5,647,32"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1Vector3.html#ad60ad31cf88ec368398433c2826e6715" title="Get the norm of a Vector3." alt="" coords="483,57,642,98"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase_1_1libm.html#a91c03031eb1d447315c0f37d8251d2ad" title=" " alt="" coords="479,123,646,149"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="475,173,650,200"/>
-<area shape="rect" id="node7" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="456,224,669,251"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,196,123"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1YlmReal.html#a4a0791bc6a7899abb20c1d2dfec05b80" title="spherical harmonic function (real form) an array of vectors" alt="" coords="244,89,408,131"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1Vector3.html#ad60ad31cf88ec368398433c2826e6715" title="Get the norm of a Vector3." alt="" coords="483,5,642,47"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1libm.html#afa2a407ece6197db03448e7ae021b263" title=" " alt="" coords="469,71,657,98"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="475,122,650,149"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="456,173,669,199"/>
 </map>

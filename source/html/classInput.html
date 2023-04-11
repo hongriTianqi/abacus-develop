@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: Input Class Reference</title>
+<title>3.2.0: Input Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -144,6 +144,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:aacaab3df84b0b1efec08ebd30c54bda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b0c52620defe5758d5e8787905843be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a1b0c52620defe5758d5e8787905843be">dump_vel</a></td></tr>
 <tr class="separator:a1b0c52620defe5758d5e8787905843be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4ac34b3d763ebe13bd1a8958390e9d95"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a4ac34b3d763ebe13bd1a8958390e9d95">ref_cell_factor</a></td></tr>
+<tr class="separator:a4ac34b3d763ebe13bd1a8958390e9d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a123b11d919c39ed79c95c7d70981be25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a123b11d919c39ed79c95c7d70981be25">symmetry</a></td></tr>
 <tr class="separator:a123b11d919c39ed79c95c7d70981be25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab957a8c8a5627705da0aeeec42157834"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#ab957a8c8a5627705da0aeeec42157834">symmetry_prec</a></td></tr>
@@ -190,8 +192,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a484119d9bc0fd8b555edbc4fdc6c6075"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e582329137d62aef4fb4e40e172727d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a4e582329137d62aef4fb4e40e172727d">cond_wcut</a></td></tr>
 <tr class="separator:a4e582329137d62aef4fb4e40e172727d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f4f111b1a6583d403d20b0b8881ae04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a2f4f111b1a6583d403d20b0b8881ae04">cond_wenlarge</a></td></tr>
-<tr class="separator:a2f4f111b1a6583d403d20b0b8881ae04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa411ce9fa9cfce8088de5dc2f37f105e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#aa411ce9fa9cfce8088de5dc2f37f105e">cond_dt</a></td></tr>
+<tr class="separator:aa411ce9fa9cfce8088de5dc2f37f105e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8be5aca2920da37ee42279812828699"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#aa8be5aca2920da37ee42279812828699">cond_dtbatch</a></td></tr>
+<tr class="separator:aa8be5aca2920da37ee42279812828699"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2520f2e4b55a5baaa789bb55fa625dcd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a2520f2e4b55a5baaa789bb55fa625dcd">cond_fwhm</a></td></tr>
 <tr class="separator:a2520f2e4b55a5baaa789bb55fa625dcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab92527ea57da83bbb299a7a5cf92c9f4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#ab92527ea57da83bbb299a7a5cf92c9f4">cond_nonlocal</a></td></tr>
@@ -384,6 +388,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a8d397e414d60ae09857a25fb73e4a67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a88647213b16432250766cd18f8b6d800"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a88647213b16432250766cd18f8b6d800">out_hs2_interval</a></td></tr>
 <tr class="separator:a88647213b16432250766cd18f8b6d800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5e8c3be28a0841aec76bbde1252e24c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#aa5e8c3be28a0841aec76bbde1252e24c">out_app_flag</a></td></tr>
+<tr class="separator:aa5e8c3be28a0841aec76bbde1252e24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5cc745bbec2b7256029f5d7b2770c39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#af5cc745bbec2b7256029f5d7b2770c39">out_mat_t</a></td></tr>
 <tr class="separator:af5cc745bbec2b7256029f5d7b2770c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a43ecec259c030ec5ad2e5a08546859c8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a43ecec259c030ec5ad2e5a08546859c8">out_mat_r</a></td></tr>
@@ -526,8 +532,10 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a81c5e2c0216129405124027325d86025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa292aa250d10c526388db5002cd92983"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#aa292aa250d10c526388db5002cd92983">exx_v_grad_threshold</a></td></tr>
 <tr class="separator:aa292aa250d10c526388db5002cd92983"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88965a685a26f182b280ee5861fa8106"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a88965a685a26f182b280ee5861fa8106">exx_cauchy_grad_threshold</a></td></tr>
-<tr class="separator:a88965a685a26f182b280ee5861fa8106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf7e7beec0feda4c649de85fe4eb7d70"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#aaf7e7beec0feda4c649de85fe4eb7d70">exx_cauchy_force_threshold</a></td></tr>
+<tr class="separator:aaf7e7beec0feda4c649de85fe4eb7d70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a887c26cd8366d4c501d79f043ae4106b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a887c26cd8366d4c501d79f043ae4106b">exx_cauchy_stress_threshold</a></td></tr>
+<tr class="separator:a887c26cd8366d4c501d79f043ae4106b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e24f0d3234a68352ba86a1eb04a41ce"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a2e24f0d3234a68352ba86a1eb04a41ce">exx_ccp_threshold</a></td></tr>
 <tr class="separator:a2e24f0d3234a68352ba86a1eb04a41ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c509d802684476163a6e937791447d8"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a4c509d802684476163a6e937791447d8">exx_ccp_rmesh_times</a></td></tr>
@@ -762,7 +770,11 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceParallel__Common.html#ae2c335f1c53dd21170728ba93aee096e" title=" " alt="" coords="170,57,349,98"/>
 <area shape="rect" href="namespaceParallel__Common.html#a948e39313b7dec5fc96e407e0de09d41" title=" " alt="" coords="158,123,361,149"/>
 <area shape="rect" href="namespaceParallel__Common.html#ababd95434741c7d1904c7db6a6e4427b" title=" " alt="" coords="170,174,349,215"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="187,240,332,267"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="187,240,332,267"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="415,199,597,241"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="429,265,583,306"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="645,199,828,241"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="648,272,825,299"/>
 </map>
 </div>
 <div class="dynheader">
@@ -770,9 +782,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a15e0f1ae3d52bffc17eca52ad6792363_icgraph.png" border="0" usemap="#classInput_a15e0f1ae3d52bffc17eca52ad6792363_icgraph" alt=""/></div>
 <map name="classInput_a15e0f1ae3d52bffc17eca52ad6792363_icgraph" id="classInput_a15e0f1ae3d52bffc17eca52ad6792363_icgraph">
-<area shape="rect" title=" " alt="" coords="545,5,644,32"/>
-<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,5,497,32"/>
+<area shape="rect" title=" " alt="" coords="545,56,644,83"/>
+<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,31,497,57"/>
+<area shape="rect" href="input__test__para_8cpp.html#a867691bbd5f5c002094f414b51ec7232" title=" " alt="" coords="421,81,490,108"/>
 <area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" href="input__test__para_8cpp.html#a96670cc090652cebde955bb8bc28ff60" title=" " alt="" coords="271,56,341,83"/>
 <area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
 <area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>
@@ -808,9 +822,14 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a9dbb4e4cf613c541c3d07f60e23779aa_cgraph.png" border="0" usemap="#classInput_a9dbb4e4cf613c541c3d07f60e23779aa_cgraph" alt=""/></div>
 <map name="classInput_a9dbb4e4cf613c541c3d07f60e23779aa_cgraph" id="classInput_a9dbb4e4cf613c541c3d07f60e23779aa_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,108,57"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="190,5,335,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="156,56,369,83"/>
+<area shape="rect" title=" " alt="" coords="5,71,108,98"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="190,46,335,73"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="156,97,369,123"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="417,5,600,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="432,71,585,112"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="648,5,831,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="651,78,828,105"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="879,71,1032,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -818,10 +837,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a9dbb4e4cf613c541c3d07f60e23779aa_icgraph.png" border="0" usemap="#classInput_a9dbb4e4cf613c541c3d07f60e23779aa_icgraph" alt=""/></div>
 <map name="classInput_a9dbb4e4cf613c541c3d07f60e23779aa_icgraph" id="classInput_a9dbb4e4cf613c541c3d07f60e23779aa_icgraph">
-<area shape="rect" title=" " alt="" coords="545,31,648,57"/>
-<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,5,497,32"/>
-<area shape="rect" href="input__test_8cpp.html#a09aace9253e44057cb98eac653a0688a" title=" " alt="" coords="421,56,490,83"/>
+<area shape="rect" title=" " alt="" coords="545,56,648,83"/>
+<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,31,497,57"/>
+<area shape="rect" href="input__test_8cpp.html#a09aace9253e44057cb98eac653a0688a" title=" " alt="" coords="421,81,490,108"/>
 <area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" href="input__test__para_8cpp.html#a96670cc090652cebde955bb8bc28ff60" title=" " alt="" coords="271,56,341,83"/>
 <area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
 <area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>
@@ -905,11 +925,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a0014bea8bd01e89aac455c2c0207408c_icgraph.png" border="0" usemap="#classInput_a0014bea8bd01e89aac455c2c0207408c_icgraph" alt=""/></div>
 <map name="classInput_a0014bea8bd01e89aac455c2c0207408c_icgraph" id="classInput_a0014bea8bd01e89aac455c2c0207408c_icgraph">
-<area shape="rect" title=" " alt="" coords="689,31,832,57"/>
-<area shape="rect" href="classInput.html#a68fcea4dfde32563345dbfd7ba893a61" title=" " alt="" coords="545,31,641,57"/>
-<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,5,497,32"/>
-<area shape="rect" href="input__test_8cpp.html#a67983d47f432c2ef9e1fdee96a16773c" title=" " alt="" coords="421,56,490,83"/>
+<area shape="rect" title=" " alt="" coords="689,56,832,83"/>
+<area shape="rect" href="classInput.html#a68fcea4dfde32563345dbfd7ba893a61" title=" " alt="" coords="545,56,641,83"/>
+<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,31,497,57"/>
+<area shape="rect" href="input__conv__test_8cpp.html#a7f938d098f2dfc4c20108bef6d2a9bfc" title=" " alt="" coords="421,81,490,108"/>
 <area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" href="input__test__para_8cpp.html#a96670cc090652cebde955bb8bc28ff60" title=" " alt="" coords="271,56,341,83"/>
 <area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
 <area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>
@@ -945,8 +966,13 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a5449b23c9570038d90fca731acb8c03c_cgraph.png" border="0" usemap="#classInput_a5449b23c9570038d90fca731acb8c03c_cgraph" alt=""/></div>
 <map name="classInput_a5449b23c9570038d90fca731acb8c03c_cgraph" id="classInput_a5449b23c9570038d90fca731acb8c03c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,116,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="164,5,309,32"/>
+<area shape="rect" title=" " alt="" coords="5,46,116,73"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="164,46,309,73"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="357,5,540,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="372,71,525,112"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="588,5,771,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="591,78,768,105"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="819,71,972,112"/>
 </map>
 </div>
 <div class="dynheader">
@@ -954,10 +980,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a5449b23c9570038d90fca731acb8c03c_icgraph.png" border="0" usemap="#classInput_a5449b23c9570038d90fca731acb8c03c_icgraph" alt=""/></div>
 <map name="classInput_a5449b23c9570038d90fca731acb8c03c_icgraph" id="classInput_a5449b23c9570038d90fca731acb8c03c_icgraph">
-<area shape="rect" title=" " alt="" coords="545,31,656,57"/>
-<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,5,497,32"/>
-<area shape="rect" href="input__test_8cpp.html#af3544cdff0dd2017f67147f17a9eb033" title=" " alt="" coords="421,56,490,83"/>
+<area shape="rect" title=" " alt="" coords="545,56,656,83"/>
+<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,31,497,57"/>
+<area shape="rect" href="input__conv__test_8cpp.html#a7f938d098f2dfc4c20108bef6d2a9bfc" title=" " alt="" coords="421,81,490,108"/>
 <area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" href="input__test__para_8cpp.html#a96670cc090652cebde955bb8bc28ff60" title=" " alt="" coords="271,56,341,83"/>
 <area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
 <area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>
@@ -1003,10 +1030,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a2d91b4dd1d71f1b10315bfb2fb1ac484_icgraph.png" border="0" usemap="#classInput_a2d91b4dd1d71f1b10315bfb2fb1ac484_icgraph" alt=""/></div>
 <map name="classInput_a2d91b4dd1d71f1b10315bfb2fb1ac484_icgraph" id="classInput_a2d91b4dd1d71f1b10315bfb2fb1ac484_icgraph">
-<area shape="rect" title=" " alt="" coords="545,31,672,57"/>
-<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,5,497,32"/>
-<area shape="rect" href="input__test_8cpp.html#a56b2c03e70f7406aa3b368cc23d974b1" title=" " alt="" coords="421,56,490,83"/>
+<area shape="rect" title=" " alt="" coords="545,56,672,83"/>
+<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,31,497,57"/>
+<area shape="rect" href="input__test_8cpp.html#a56b2c03e70f7406aa3b368cc23d974b1" title=" " alt="" coords="421,81,490,108"/>
 <area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" href="input__test__para_8cpp.html#a96670cc090652cebde955bb8bc28ff60" title=" " alt="" coords="271,56,341,83"/>
 <area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
 <area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>
@@ -1034,8 +1062,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a38d2aaf59cd18edf8e9a82230d55f9cd_icgraph.png" border="0" usemap="#classInput_a38d2aaf59cd18edf8e9a82230d55f9cd_icgraph" alt=""/></div>
 <map name="classInput_a38d2aaf59cd18edf8e9a82230d55f9cd_icgraph" id="classInput_a38d2aaf59cd18edf8e9a82230d55f9cd_icgraph">
-<area shape="rect" title=" " alt="" coords="413,5,497,32"/>
+<area shape="rect" title=" " alt="" coords="413,31,497,57"/>
 <area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" href="input__test__para_8cpp.html#a96670cc090652cebde955bb8bc28ff60" title=" " alt="" coords="271,56,341,83"/>
 <area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
 <area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>
@@ -1065,7 +1094,12 @@ Here is the call graph for this function:</div>
 <map name="classInput_a27ac99de2091420d22379130bbbcf9ec_cgraph" id="classInput_a27ac99de2091420d22379130bbbcf9ec_cgraph">
 <area shape="rect" title=" " alt="" coords="5,42,99,69"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a29251669fcd76212e7098f943cb72dec" title=" " alt="" coords="147,5,329,47"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="165,71,311,98"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="165,71,311,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="377,31,560,72"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="392,96,545,137"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="608,31,791,72"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="611,103,788,130"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="839,96,992,137"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1073,8 +1107,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a27ac99de2091420d22379130bbbcf9ec_icgraph.png" border="0" usemap="#classInput_a27ac99de2091420d22379130bbbcf9ec_icgraph" alt=""/></div>
 <map name="classInput_a27ac99de2091420d22379130bbbcf9ec_icgraph" id="classInput_a27ac99de2091420d22379130bbbcf9ec_icgraph">
-<area shape="rect" title=" " alt="" coords="413,5,507,32"/>
+<area shape="rect" title=" " alt="" coords="413,31,507,57"/>
 <area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" href="write__input__test_8cpp.html#a5fc0daf33a26cb96252af55604def035" title=" " alt="" coords="271,56,341,83"/>
 <area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
 <area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>
@@ -1116,8 +1151,10 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classInput.html#a3096f1ed2dcb8e830423b960838e113e" title=" " alt="" coords="159,118,285,145"/>
 <area shape="rect" href="classInput.html#a8dc0b78064193c3f967ada55fdfe42eb" title=" " alt="" coords="155,169,289,195"/>
 <area shape="rect" href="classInput.html#a52e287de884a72b9208184a95d8f864c" title=" " alt="" coords="157,219,287,246"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="149,270,295,297"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="149,270,295,297"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a5496667007afe5b237ec62f4e3f68baa" title=" " alt="" coords="358,5,541,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="358,229,541,271"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="373,295,526,336"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1125,10 +1162,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a68fcea4dfde32563345dbfd7ba893a61_icgraph.png" border="0" usemap="#classInput_a68fcea4dfde32563345dbfd7ba893a61_icgraph" alt=""/></div>
 <map name="classInput_a68fcea4dfde32563345dbfd7ba893a61_icgraph" id="classInput_a68fcea4dfde32563345dbfd7ba893a61_icgraph">
-<area shape="rect" title=" " alt="" coords="545,31,641,57"/>
-<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,5,497,32"/>
-<area shape="rect" href="input__test_8cpp.html#a67983d47f432c2ef9e1fdee96a16773c" title=" " alt="" coords="421,56,490,83"/>
+<area shape="rect" title=" " alt="" coords="545,56,641,83"/>
+<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,31,497,57"/>
+<area shape="rect" href="input__conv__test_8cpp.html#a7f938d098f2dfc4c20108bef6d2a9bfc" title=" " alt="" coords="421,81,490,108"/>
 <area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" href="input__test__para_8cpp.html#a96670cc090652cebde955bb8bc28ff60" title=" " alt="" coords="271,56,341,83"/>
 <area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
 <area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>
@@ -1175,11 +1213,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a3096f1ed2dcb8e830423b960838e113e_icgraph.png" border="0" usemap="#classInput_a3096f1ed2dcb8e830423b960838e113e_icgraph" alt=""/></div>
 <map name="classInput_a3096f1ed2dcb8e830423b960838e113e_icgraph" id="classInput_a3096f1ed2dcb8e830423b960838e113e_icgraph">
-<area shape="rect" title=" " alt="" coords="689,31,816,57"/>
-<area shape="rect" href="classInput.html#a68fcea4dfde32563345dbfd7ba893a61" title=" " alt="" coords="545,31,641,57"/>
-<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,5,497,32"/>
-<area shape="rect" href="input__test_8cpp.html#a67983d47f432c2ef9e1fdee96a16773c" title=" " alt="" coords="421,56,490,83"/>
+<area shape="rect" title=" " alt="" coords="689,56,816,83"/>
+<area shape="rect" href="classInput.html#a68fcea4dfde32563345dbfd7ba893a61" title=" " alt="" coords="545,56,641,83"/>
+<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,31,497,57"/>
+<area shape="rect" href="input__conv__test_8cpp.html#a7f938d098f2dfc4c20108bef6d2a9bfc" title=" " alt="" coords="421,81,490,108"/>
 <area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" href="input__test__para_8cpp.html#a96670cc090652cebde955bb8bc28ff60" title=" " alt="" coords="271,56,341,83"/>
 <area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
 <area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>
@@ -1227,11 +1266,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a8dc0b78064193c3f967ada55fdfe42eb_icgraph.png" border="0" usemap="#classInput_a8dc0b78064193c3f967ada55fdfe42eb_icgraph" alt=""/></div>
 <map name="classInput_a8dc0b78064193c3f967ada55fdfe42eb_icgraph" id="classInput_a8dc0b78064193c3f967ada55fdfe42eb_icgraph">
-<area shape="rect" title=" " alt="" coords="689,31,824,57"/>
-<area shape="rect" href="classInput.html#a68fcea4dfde32563345dbfd7ba893a61" title=" " alt="" coords="545,31,641,57"/>
-<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,5,497,32"/>
-<area shape="rect" href="input__test_8cpp.html#a67983d47f432c2ef9e1fdee96a16773c" title=" " alt="" coords="421,56,490,83"/>
+<area shape="rect" title=" " alt="" coords="689,56,824,83"/>
+<area shape="rect" href="classInput.html#a68fcea4dfde32563345dbfd7ba893a61" title=" " alt="" coords="545,56,641,83"/>
+<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,31,497,57"/>
+<area shape="rect" href="input__conv__test_8cpp.html#a7f938d098f2dfc4c20108bef6d2a9bfc" title=" " alt="" coords="421,81,490,108"/>
 <area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" href="input__test__para_8cpp.html#a96670cc090652cebde955bb8bc28ff60" title=" " alt="" coords="271,56,341,83"/>
 <area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
 <area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>
@@ -1269,11 +1309,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a52e287de884a72b9208184a95d8f864c_icgraph.png" border="0" usemap="#classInput_a52e287de884a72b9208184a95d8f864c_icgraph" alt=""/></div>
 <map name="classInput_a52e287de884a72b9208184a95d8f864c_icgraph" id="classInput_a52e287de884a72b9208184a95d8f864c_icgraph">
-<area shape="rect" title=" " alt="" coords="689,31,819,57"/>
-<area shape="rect" href="classInput.html#a68fcea4dfde32563345dbfd7ba893a61" title=" " alt="" coords="545,31,641,57"/>
-<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,5,497,32"/>
-<area shape="rect" href="input__test_8cpp.html#a67983d47f432c2ef9e1fdee96a16773c" title=" " alt="" coords="421,56,490,83"/>
+<area shape="rect" title=" " alt="" coords="689,56,819,83"/>
+<area shape="rect" href="classInput.html#a68fcea4dfde32563345dbfd7ba893a61" title=" " alt="" coords="545,56,641,83"/>
+<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,31,497,57"/>
+<area shape="rect" href="input__conv__test_8cpp.html#a7f938d098f2dfc4c20108bef6d2a9bfc" title=" " alt="" coords="421,81,490,108"/>
 <area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" href="input__test__para_8cpp.html#a96670cc090652cebde955bb8bc28ff60" title=" " alt="" coords="271,56,341,83"/>
 <area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
 <area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>
@@ -1674,6 +1715,34 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="aa411ce9fa9cfce8088de5dc2f37f105e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa411ce9fa9cfce8088de5dc2f37f105e">&#9670;&nbsp;</a></span>cond_dt</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Input::cond_dt</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8be5aca2920da37ee42279812828699"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8be5aca2920da37ee42279812828699">&#9670;&nbsp;</a></span>cond_dtbatch</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Input::cond_dtbatch</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a484119d9bc0fd8b555edbc4fdc6c6075"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a484119d9bc0fd8b555edbc4fdc6c6075">&#9670;&nbsp;</a></span>cond_dw</h2>
 
@@ -1738,20 +1807,6 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">double Input::cond_wcut</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2f4f111b1a6583d403d20b0b8881ae04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2f4f111b1a6583d403d20b0b8881ae04">&#9670;&nbsp;</a></span>cond_wenlarge</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Input::cond_wenlarge</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2276,14 +2331,28 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a88965a685a26f182b280ee5861fa8106"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88965a685a26f182b280ee5861fa8106">&#9670;&nbsp;</a></span>exx_cauchy_grad_threshold</h2>
+<a id="aaf7e7beec0feda4c649de85fe4eb7d70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf7e7beec0feda4c649de85fe4eb7d70">&#9670;&nbsp;</a></span>exx_cauchy_force_threshold</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Input::exx_cauchy_grad_threshold</td>
+          <td class="memname">double Input::exx_cauchy_force_threshold</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a887c26cd8366d4c501d79f043ae4106b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a887c26cd8366d4c501d79f043ae4106b">&#9670;&nbsp;</a></span>exx_cauchy_stress_threshold</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Input::exx_cauchy_stress_threshold</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3662,6 +3731,20 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="aa5e8c3be28a0841aec76bbde1252e24c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5e8c3be28a0841aec76bbde1252e24c">&#9670;&nbsp;</a></span>out_app_flag</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool Input::out_app_flag</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ac6f05429535e405c7ae62615e334e64e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6f05429535e405c7ae62615e334e64e">&#9670;&nbsp;</a></span>out_band</h2>
 
@@ -4202,6 +4285,20 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">std::string Input::read_file_dir</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4ac34b3d763ebe13bd1a8958390e9d95"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4ac34b3d763ebe13bd1a8958390e9d95">&#9670;&nbsp;</a></span>ref_cell_factor</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Input::ref_cell_factor</td>
         </tr>
       </table>
 </div><div class="memdoc">

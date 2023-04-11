@@ -1,11 +1,11 @@
 <map id="ORB_gen_tables" name="ORB_gen_tables">
-<area shape="rect" id="node1" title=" " alt="" coords="271,1048,443,1228"/>
-<area shape="rect" id="node2" href="$classORB__table__phi.html" title=" " alt="" coords="206,483,373,985"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="228,5,391,391"/>
-<area shape="rect" id="node8" href="$classORB__table__beta.html" title=" " alt="" coords="5,534,181,934"/>
-<area shape="rect" id="node9" href="$classORB__table__alpha.html" title=" " alt="" coords="397,527,579,941"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1Sph__Bessel__Recursive_1_1D2.html" title=" " alt="" coords="20,86,204,310"/>
-<area shape="rect" id="node5" href="$classORB__gaunt__table.html" title=" " alt="" coords="604,607,775,861"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1realArray.html" title="double float array" alt="" coords="556,20,727,376"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="751,71,905,325"/>
+<area shape="rect" id="node1" title=" " alt="" coords="287,1107,459,1287"/>
+<area shape="rect" id="node2" href="$classORB__table__phi.html" title=" " alt="" coords="206,483,399,1044"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="245,5,408,391"/>
+<area shape="rect" id="node8" href="$classORB__table__beta.html" title=" " alt="" coords="5,563,181,963"/>
+<area shape="rect" id="node9" href="$classORB__table__alpha.html" title=" " alt="" coords="423,541,606,985"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1Sph__Bessel__Recursive_1_1D2.html" title=" " alt="" coords="37,86,221,310"/>
+<area shape="rect" id="node5" href="$classORB__gaunt__table.html" title=" " alt="" coords="631,637,801,890"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1realArray.html" title="double float array" alt="" coords="583,20,753,376"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="778,71,931,325"/>
 </map>

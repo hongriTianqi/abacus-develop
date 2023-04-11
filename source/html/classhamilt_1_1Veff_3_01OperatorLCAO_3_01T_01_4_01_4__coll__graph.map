@@ -1,12 +1,12 @@
 <map id="hamilt::Veff&lt; OperatorLCAO&lt; T &gt; &gt;" name="hamilt::Veff&lt; OperatorLCAO&lt; T &gt; &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="573,1077,777,1257"/>
-<area shape="rect" id="node2" href="$classhamilt_1_1OperatorLCAO.html" title=" " alt="" coords="85,607,287,919"/>
+<area shape="rect" id="node1" title=" " alt="" coords="545,1077,749,1257"/>
+<area shape="rect" id="node2" href="$classhamilt_1_1OperatorLCAO.html" title=" " alt="" coords="161,607,363,919"/>
 <area shape="rect" id="node3" href="$classhamilt_1_1Operator.html" title=" " alt="" coords="5,115,172,339"/>
 <area shape="rect" id="node4" href="$classLCAO__Matrix.html" title=" " alt="" coords="196,35,371,420"/>
-<area shape="rect" id="node5" href="$classGint__k.html" title=" " alt="" coords="312,607,561,919"/>
-<area shape="rect" id="node6" href="$classGint.html" title=" " alt="" coords="440,5,647,449"/>
-<area shape="rect" id="node7" href="$classGint__Gamma.html" title=" " alt="" coords="586,593,765,934"/>
-<area shape="rect" id="node8" href="$classelecstate_1_1Potential.html" title=" " alt="" coords="789,571,970,956"/>
-<area shape="rect" id="node9" href="$classelecstate_1_1PotBase.html" title=" " alt="" coords="808,159,951,295"/>
-<area shape="rect" id="node10" href="$classLocal__Orbital__Charge.html" title=" " alt="" coords="994,512,1234,1015"/>
+<area shape="rect" id="node5" href="$classGint__k.html" title=" " alt="" coords="387,651,534,875"/>
+<area shape="rect" id="node6" href="$classGint.html" title=" " alt="" coords="480,5,687,449"/>
+<area shape="rect" id="node7" href="$classGint__Gamma.html" title=" " alt="" coords="558,593,737,934"/>
+<area shape="rect" id="node8" href="$classelecstate_1_1Potential.html" title=" " alt="" coords="761,571,942,956"/>
+<area shape="rect" id="node9" href="$classelecstate_1_1PotBase.html" title=" " alt="" coords="780,159,923,295"/>
+<area shape="rect" id="node10" href="$classLocal__Orbital__Charge.html" title=" " alt="" coords="966,512,1206,1015"/>
 </map>

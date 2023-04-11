@@ -2,7 +2,11 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,78,157,105"/>
 <area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__K.html#ac975ac5c253e198598ffab6b4729f335" title=" " alt="" coords="205,5,367,47"/>
 <area shape="rect" id="node5" href="$classModulePW_1_1PW__Basis.html#a0ac28a3fbbc4cfd50bedb3b9aff40e56" title=" " alt="" coords="205,71,367,112"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="213,137,359,163"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="415,5,579,47"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="627,5,791,47"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="213,137,359,163"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="424,5,588,47"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="655,5,819,47"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="415,100,597,141"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="429,165,583,207"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="645,100,828,141"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="648,173,825,199"/>
 </map>

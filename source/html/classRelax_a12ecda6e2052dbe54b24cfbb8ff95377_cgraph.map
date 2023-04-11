@@ -1,11 +1,12 @@
 <map id="Relax::new_direction" name="Relax::new_direction">
-<area shape="rect" id="node1" title=" " alt="" coords="5,148,164,175"/>
-<area shape="rect" id="node2" href="$classLine__Search.html#aca29d7e969ad32420891d5b353047e81" title=" " alt="" coords="212,123,395,149"/>
-<area shape="rect" id="node9" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="231,173,376,200"/>
-<area shape="rect" id="node3" href="$classLine__Search.html#affcb58657cb52c79399b00ca40ddbc8f" title=" " alt="" coords="457,5,599,32"/>
-<area shape="rect" id="node5" href="$classLine__Search.html#aa518599344aff5809df04109343ae983" title=" " alt="" coords="461,57,595,98"/>
-<area shape="rect" id="node6" href="$classLine__Search.html#abef587552199cf3b1041e627c49933d6" title=" " alt="" coords="443,123,613,149"/>
-<area shape="rect" id="node7" href="$classLine__Search.html#a7dad685268edda8546e6657f62ffde7e" title=" " alt="" coords="459,174,597,215"/>
-<area shape="rect" id="node8" href="$classLine__Search.html#a5147845d01bf544e9e5e1b501490497e" title=" " alt="" coords="451,239,605,281"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="661,5,875,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,268,164,295"/>
+<area shape="rect" id="node2" href="$classLine__Search.html#aca29d7e969ad32420891d5b353047e81" title=" " alt="" coords="212,173,395,200"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="231,293,376,320"/>
+<area shape="rect" id="node3" href="$classLine__Search.html#affcb58657cb52c79399b00ca40ddbc8f" title=" " alt="" coords="463,5,605,32"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="673,31,887,57"/>
+<area shape="rect" id="node5" href="$classLine__Search.html#aa518599344aff5809df04109343ae983" title=" " alt="" coords="467,107,601,149"/>
+<area shape="rect" id="node6" href="$classLine__Search.html#abef587552199cf3b1041e627c49933d6" title=" " alt="" coords="449,173,619,200"/>
+<area shape="rect" id="node7" href="$classLine__Search.html#a7dad685268edda8546e6657f62ffde7e" title=" " alt="" coords="465,225,603,266"/>
+<area shape="rect" id="node8" href="$classLine__Search.html#a5147845d01bf544e9e5e1b501490497e" title=" " alt="" coords="457,290,611,331"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="443,355,625,397"/>
 </map>

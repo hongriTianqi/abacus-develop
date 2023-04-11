@@ -1,12 +1,12 @@
-<map id="module_gint/gint_tools.cpp" name="module_gint/gint_tools.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="500,5,699,32"/>
-<area shape="rect" id="node2" href="$gint__tools_8h.html" title=" " alt="" coords="65,87,163,114"/>
-<area shape="rect" id="node6" href="$global_8h.html" title=" " alt="" coords="187,80,379,121"/>
-<area shape="rect" id="node7" href="$global__fp_8h.html" title=" " alt="" coords="403,80,598,121"/>
-<area shape="rect" id="node8" href="$ylm_8h.html" title=" " alt="" coords="623,87,773,114"/>
-<area shape="rect" id="node9" href="$timer_8h.html" title=" " alt="" coords="797,87,956,114"/>
-<area shape="rect" id="node10" title=" " alt="" coords="980,87,1043,114"/>
-<area shape="rect" id="node3" href="$grid__technique_8h.html" title=" " alt="" coords="373,177,503,203"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,177,71,203"/>
-<area shape="rect" id="node5" href="$charge_8h.html" title=" " alt="" coords="95,169,285,211"/>
+<map id="module_hamilt_lcao/module_gint/gint_tools.cpp" name="module_hamilt_lcao/module_gint/gint_tools.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="498,5,701,47"/>
+<area shape="rect" id="node2" href="$gint__tools_8h.html" title=" " alt="" coords="65,102,163,129"/>
+<area shape="rect" id="node6" href="$global_8h.html" title=" " alt="" coords="187,95,379,136"/>
+<area shape="rect" id="node7" href="$global__fp_8h.html" title=" " alt="" coords="403,95,598,136"/>
+<area shape="rect" id="node8" href="$ylm_8h.html" title=" " alt="" coords="623,102,773,129"/>
+<area shape="rect" id="node9" href="$timer_8h.html" title=" " alt="" coords="797,102,956,129"/>
+<area shape="rect" id="node10" title=" " alt="" coords="980,102,1043,129"/>
+<area shape="rect" id="node3" href="$grid__technique_8h.html" title=" " alt="" coords="373,191,503,218"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,191,71,218"/>
+<area shape="rect" id="node5" href="$charge_8h.html" title=" " alt="" coords="95,184,285,225"/>
 </map>

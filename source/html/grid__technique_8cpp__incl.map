@@ -1,12 +1,12 @@
-<map id="module_gint/grid_technique.cpp" name="module_gint/grid_technique.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="313,5,544,32"/>
-<area shape="rect" id="node2" href="$grid__technique_8h.html" title=" " alt="" coords="195,169,326,196"/>
-<area shape="rect" id="node6" href="$global_8h.html" title=" " alt="" coords="30,80,222,121"/>
-<area shape="rect" id="node7" href="$parallel__reduce_8h.html" title=" " alt="" coords="246,80,409,121"/>
-<area shape="rect" id="node8" href="$global__fp_8h.html" title=" " alt="" coords="433,80,627,121"/>
-<area shape="rect" id="node9" href="$memory_8h.html" title=" " alt="" coords="651,87,830,114"/>
-<area shape="rect" id="node10" href="$timer_8h.html" title=" " alt="" coords="855,87,1013,114"/>
-<area shape="rect" id="node3" href="$grid__meshball_8h.html" title=" " alt="" coords="59,251,185,278"/>
-<area shape="rect" id="node4" href="$grid__index_8h.html" title=" " alt="" coords="209,251,312,278"/>
-<area shape="rect" id="node5" href="$module__orbital_2parallel__orbitals_8h.html" title=" " alt="" coords="337,244,510,285"/>
+<map id="module_hamilt_lcao/module_gint/grid_technique.cpp" name="module_hamilt_lcao/module_gint/grid_technique.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="311,5,546,47"/>
+<area shape="rect" id="node2" href="$grid__technique_8h.html" title=" " alt="" coords="195,184,326,211"/>
+<area shape="rect" id="node6" href="$global_8h.html" title=" " alt="" coords="30,95,222,136"/>
+<area shape="rect" id="node7" href="$parallel__reduce_8h.html" title=" " alt="" coords="246,95,408,136"/>
+<area shape="rect" id="node8" href="$global__fp_8h.html" title=" " alt="" coords="432,95,627,136"/>
+<area shape="rect" id="node9" href="$memory_8h.html" title=" " alt="" coords="651,102,830,129"/>
+<area shape="rect" id="node10" href="$timer_8h.html" title=" " alt="" coords="854,102,1013,129"/>
+<area shape="rect" id="node3" href="$grid__meshball_8h.html" title=" " alt="" coords="58,266,185,293"/>
+<area shape="rect" id="node4" href="$grid__index_8h.html" title=" " alt="" coords="209,266,312,293"/>
+<area shape="rect" id="node5" href="$module__basis_2module__ao_2parallel__orbitals_8h.html" title=" " alt="" coords="336,259,502,300"/>
 </map>

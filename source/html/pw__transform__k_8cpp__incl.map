@@ -1,12 +1,12 @@
-<map id="module_pw/pw_transform_k.cpp" name="module_pw/pw_transform_k.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="296,5,486,47"/>
-<area shape="rect" id="node2" title=" " alt="" coords="321,244,400,271"/>
-<area shape="rect" id="node3" href="$pw__basis__k_8h.html" title=" " alt="" coords="54,95,163,121"/>
-<area shape="rect" id="node7" title=" " alt="" coords="640,95,710,121"/>
-<area shape="rect" id="node8" href="$timer_8h.html" title=" " alt="" coords="518,169,688,196"/>
-<area shape="rect" id="node9" href="$pw__gatherscatter_8h.html" title=" " alt="" coords="419,95,566,121"/>
-<area shape="rect" id="node10" href="$pw__op_8h.html" title=" " alt="" coords="188,95,394,121"/>
-<area shape="rect" id="node4" href="$pw__basis_8h.html" title=" " alt="" coords="398,169,493,196"/>
-<area shape="rect" id="node5" href="$psi_8h.html" title=" " alt="" coords="190,169,322,196"/>
-<area shape="rect" id="node6" href="$pw__basis__k__big_8h.html" title=" " alt="" coords="22,169,166,196"/>
+<map id="module_basis/module_pw/pw_transform_k.cpp" name="module_basis/module_pw/pw_transform_k.cpp">
+<area shape="rect" id="node1" title=" " alt="" coords="303,5,487,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="321,259,400,285"/>
+<area shape="rect" id="node3" href="$pw__basis__k_8h.html" title=" " alt="" coords="90,102,199,129"/>
+<area shape="rect" id="node7" title=" " alt="" coords="634,102,703,129"/>
+<area shape="rect" id="node8" href="$timer_8h.html" title=" " alt="" coords="517,184,676,211"/>
+<area shape="rect" id="node9" href="$pw__gatherscatter_8h.html" title=" " alt="" coords="413,102,559,129"/>
+<area shape="rect" id="node10" href="$pw__op_8h.html" title=" " alt="" coords="223,95,389,136"/>
+<area shape="rect" id="node4" href="$pw__basis_8h.html" title=" " alt="" coords="399,184,493,211"/>
+<area shape="rect" id="node5" href="$psi_8h.html" title=" " alt="" coords="191,184,323,211"/>
+<area shape="rect" id="node6" href="$pw__basis__k__big_8h.html" title=" " alt="" coords="22,184,166,211"/>
 </map>

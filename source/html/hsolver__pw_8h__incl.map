@@ -1,12 +1,12 @@
 <map id="module_hsolver/hsolver_pw.h" name="module_hsolver/hsolver_pw.h">
 <area shape="rect" id="node1" title=" " alt="" coords="281,5,495,32"/>
 <area shape="rect" id="node2" href="$hsolver_8h.html" title=" " alt="" coords="309,80,390,107"/>
-<area shape="rect" id="node9" href="$pw__basis__k_8h.html" title=" " alt="" coords="634,162,822,189"/>
+<area shape="rect" id="node9" href="$pw__basis__k_8h.html" title=" " alt="" coords="636,155,801,196"/>
 <area shape="rect" id="node3" href="$diagh_8h.html" title=" " alt="" coords="314,162,385,189"/>
 <area shape="rect" id="node4" href="$hamilt_8h.html" title=" " alt="" coords="335,244,511,285"/>
 <area shape="rect" id="node5" href="$psi_8h.html" title=" " alt="" coords="231,333,363,360"/>
 <area shape="rect" id="node6" title=" " alt="" coords="559,333,638,360"/>
 <area shape="rect" id="node7" href="$elecstate_8h.html" title=" " alt="" coords="45,251,259,278"/>
 <area shape="rect" id="node8" href="$sto__wf_8h.html" title=" " alt="" coords="47,155,239,196"/>
-<area shape="rect" id="node10" href="$pw__basis_8h.html" title=" " alt="" coords="640,251,813,278"/>
+<area shape="rect" id="node10" href="$pw__basis_8h.html" title=" " alt="" coords="636,244,801,285"/>
 </map>

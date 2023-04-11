@@ -1,7 +1,10 @@
 <map id="Exx_LRI::cal_exx_ions" name="Exx_LRI::cal_exx_ions">
-<area shape="rect" id="node1" title=" " alt="" coords="5,63,171,90"/>
-<area shape="rect" id="node2" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="219,13,396,39"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="235,63,380,90"/>
-<area shape="rect" id="node5" href="$namespaceRI__Util.html#a408c07bbf484134108d1e8aebb4f1f5b" title=" " alt="" coords="236,115,379,156"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="444,5,597,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,42,171,69"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="645,13,823,39"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="219,42,364,69"/>
+<area shape="rect" id="node8" href="$namespaceRI__Util.html#a408c07bbf484134108d1e8aebb4f1f5b" title=" " alt="" coords="220,93,363,135"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="873,5,1027,47"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="412,100,595,141"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="427,35,580,76"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="643,100,825,141"/>
 </map>

@@ -1,8 +1,11 @@
 <map id="LRI_CV::cal_datas" name="LRI_CV::cal_datas">
 <area shape="rect" id="node1" title=" " alt="" coords="5,107,141,134"/>
-<area shape="rect" id="node2" href="$namespaceRI__Util.html#a7a73d3eaac679578f59de7817d2558a1" title=" " alt="" coords="211,5,345,47"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1Vector3.html#ad60ad31cf88ec368398433c2826e6715" title="Get the norm of a Vector3." alt="" coords="199,71,357,112"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="189,137,367,163"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="205,187,351,214"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="415,129,568,171"/>
+<area shape="rect" id="node2" href="$namespaceRI__Util.html#a7a73d3eaac679578f59de7817d2558a1" title=" " alt="" coords="201,5,336,47"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1Vector3.html#ad60ad31cf88ec368398433c2826e6715" title="Get the norm of a Vector3." alt="" coords="189,71,348,112"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="629,166,807,193"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="196,195,341,222"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="857,159,1011,200"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="396,253,579,295"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="411,188,564,229"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="627,253,809,295"/>
 </map>

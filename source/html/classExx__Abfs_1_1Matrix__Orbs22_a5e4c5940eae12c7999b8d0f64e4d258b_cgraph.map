@@ -2,6 +2,10 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,89,191,131"/>
 <area shape="rect" id="node2" href="$namespaceModuleBase_1_1GlobalFunc.html#a2f50ac655e4e3d90620e3d99192cd638" title=" " alt="" coords="239,5,421,47"/>
 <area shape="rect" id="node3" href="$exx__lcao-test_8h.html#aca5d911c0f74c7086783abbd9a0f1536" title=" " alt="" coords="280,71,380,98"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="257,122,403,149"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="239,173,421,215"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="257,122,403,149"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="700,144,883,185"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="469,115,652,156"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="484,49,637,91"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="703,57,880,83"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="931,49,1084,91"/>
 </map>

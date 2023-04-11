@@ -2,5 +2,10 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,71,152,112"/>
 <area shape="rect" id="node2" href="$classModuleBase_1_1IntArray.html#a4859137dfb68026cc06128fad1dad1e2" title="Create integer arrays." alt="" coords="200,5,363,47"/>
 <area shape="rect" id="node3" href="$classNumerical__Orbital.html#a1a29486b7944bb9e9c35cff697d13021" title=" " alt="" coords="207,71,355,112"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="209,137,354,163"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="209,137,354,163"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="411,96,593,137"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="425,161,579,203"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="641,96,824,137"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="644,169,821,195"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="872,161,1025,203"/>
 </map>

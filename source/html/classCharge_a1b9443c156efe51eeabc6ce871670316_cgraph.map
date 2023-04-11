@@ -1,8 +1,12 @@
 <map id="Charge::allocate" name="Charge::allocate">
-<area shape="rect" id="node1" title=" " alt="" coords="5,107,133,134"/>
-<area shape="rect" id="node2" href="$classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="201,5,344,47"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="191,71,355,112"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="200,137,345,163"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="181,188,364,229"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="412,71,576,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,115,133,141"/>
+<area shape="rect" id="node2" href="$classCharge.html#ada28366defcbf80e1f11e9b9a1a873e7" title=" " alt="" coords="210,5,335,32"/>
+<area shape="rect" id="node3" href="$classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="432,17,575,58"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="191,107,355,149"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="200,173,345,200"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="181,225,364,266"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="421,101,585,142"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="412,166,595,207"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="427,231,580,273"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="643,166,825,207"/>
 </map>

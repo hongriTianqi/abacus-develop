@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: module_hsolver/genelpa/elpa_generic.hpp File Reference</title>
+<title>3.2.0: module_hsolver/genelpa/elpa_generic.hpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -68,11 +68,14 @@ $(function() {
 </div>
 </div><!-- top -->
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">elpa_generic.hpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="elpa__new_8h_source.html">elpa_new.h</a>&quot;</code><br />
+<code>#include &lt;complex&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for elpa_generic.hpp:</div>
 <div class="dyncontent">
@@ -80,6 +83,7 @@ Include dependency graph for elpa_generic.hpp:</div>
 <map name="module__hsolver_2genelpa_2elpa__generic_8hpp" id="module__hsolver_2genelpa_2elpa__generic_8hpp">
 <area shape="rect" title=" " alt="" coords="265,5,447,47"/>
 <area shape="rect" href="elpa__new_8h.html" title=" " alt="" coords="309,95,403,121"/>
+<area shape="rect" title=" " alt="" coords="427,95,506,121"/>
 <area shape="rect" title=" " alt="" coords="5,177,155,203"/>
 <area shape="rect" title=" " alt="" coords="179,177,250,203"/>
 <area shape="rect" title=" " alt="" coords="274,177,438,203"/>
@@ -101,6 +105,2025 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 </div>
 <p><a href="elpa__generic_8hpp_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a5ba34081cf93b9b578a68d8cfcc1e932"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a5ba34081cf93b9b578a68d8cfcc1e932">elpa_set</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, const char *name, int value, int *error)</td></tr>
+<tr class="memdesc:a5ba34081cf93b9b578a68d8cfcc1e932"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic C method for elpa_set  <a href="elpa__generic_8hpp.html#a5ba34081cf93b9b578a68d8cfcc1e932">More...</a><br /></td></tr>
+<tr class="separator:a5ba34081cf93b9b578a68d8cfcc1e932"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06b8515f9c6df18d116d3f64e492b07a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a06b8515f9c6df18d116d3f64e492b07a">elpa_set</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, const char *name, double value, int *error)</td></tr>
+<tr class="separator:a06b8515f9c6df18d116d3f64e492b07a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a315f62a2fbb913d835603cc7fc553be0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a315f62a2fbb913d835603cc7fc553be0">elpa_get</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, const char *name, int *value, int *error)</td></tr>
+<tr class="memdesc:a315f62a2fbb913d835603cc7fc553be0"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic C method for elpa_get  <a href="elpa__generic_8hpp.html#a315f62a2fbb913d835603cc7fc553be0">More...</a><br /></td></tr>
+<tr class="separator:a315f62a2fbb913d835603cc7fc553be0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62d6aa480011c10465278d027a673196"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a62d6aa480011c10465278d027a673196">elpa_get</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, const char *name, double *value, int *error)</td></tr>
+<tr class="separator:a62d6aa480011c10465278d027a673196"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0570dea2e93cebdc25f9d27bc9da38d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a0570dea2e93cebdc25f9d27bc9da38d6">elpa_eigenvectors</a> (const <a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, double *a, double *ev, double *q, int *error)</td></tr>
+<tr class="memdesc:a0570dea2e93cebdc25f9d27bc9da38d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic C method for elpa_eigenvectors  <a href="elpa__generic_8hpp.html#a0570dea2e93cebdc25f9d27bc9da38d6">More...</a><br /></td></tr>
+<tr class="separator:a0570dea2e93cebdc25f9d27bc9da38d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac66d70d793ee9b2eaba3324bff74e021"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#ac66d70d793ee9b2eaba3324bff74e021">elpa_eigenvectors</a> (const <a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, float *a, float *ev, float *q, int *error)</td></tr>
+<tr class="separator:ac66d70d793ee9b2eaba3324bff74e021"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a8ac78725605c2522c22ba874e508bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a2a8ac78725605c2522c22ba874e508bb">elpa_eigenvectors</a> (const <a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *a, double *ev, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *q, int *error)</td></tr>
+<tr class="separator:a2a8ac78725605c2522c22ba874e508bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0220633e3150c6a531d91a6286bd79aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a0220633e3150c6a531d91a6286bd79aa">elpa_eigenvectors</a> (const <a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *a, float *ev, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *q, int *error)</td></tr>
+<tr class="separator:a0220633e3150c6a531d91a6286bd79aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96f2818b4757afb3ed7bc1db92f8ac4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#ac96f2818b4757afb3ed7bc1db92f8ac4">elpa_skew_eigenvectors</a> (const <a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, double *a, double *ev, double *q, int *error)</td></tr>
+<tr class="memdesc:ac96f2818b4757afb3ed7bc1db92f8ac4"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic C method for elpa_skew_eigenvectors  <a href="elpa__generic_8hpp.html#ac96f2818b4757afb3ed7bc1db92f8ac4">More...</a><br /></td></tr>
+<tr class="separator:ac96f2818b4757afb3ed7bc1db92f8ac4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a021e7ba7688c02ea1c519048c163b6d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a021e7ba7688c02ea1c519048c163b6d6">elpa_skew_eigenvectors</a> (const <a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, float *a, float *ev, float *q, int *error)</td></tr>
+<tr class="separator:a021e7ba7688c02ea1c519048c163b6d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c1373013e02937e2f2e3d3d19390251"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a1c1373013e02937e2f2e3d3d19390251">elpa_generalized_eigenvectors</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, double *a, double *b, double *ev, double *q, int is_already_decomposed, int *error)</td></tr>
+<tr class="memdesc:a1c1373013e02937e2f2e3d3d19390251"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic C method for elpa_generalized_eigenvectors  <a href="elpa__generic_8hpp.html#a1c1373013e02937e2f2e3d3d19390251">More...</a><br /></td></tr>
+<tr class="separator:a1c1373013e02937e2f2e3d3d19390251"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a9212baf4a2322b276e3ebfc30857f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a6a9212baf4a2322b276e3ebfc30857f8">elpa_generalized_eigenvectors</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, float *a, float *b, float *ev, float *q, int is_already_decomposed, int *error)</td></tr>
+<tr class="separator:a6a9212baf4a2322b276e3ebfc30857f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94662690327ec193405dd7eae5cb2cfb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a94662690327ec193405dd7eae5cb2cfb">elpa_generalized_eigenvectors</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *a, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *b, double *ev, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *q, int is_already_decomposed, int *error)</td></tr>
+<tr class="separator:a94662690327ec193405dd7eae5cb2cfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d05c49c046dfd8076a1e2ef80965ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a99d05c49c046dfd8076a1e2ef80965ff">elpa_generalized_eigenvectors</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *a, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *b, float *ev, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *q, int is_already_decomposed, int *error)</td></tr>
+<tr class="separator:a99d05c49c046dfd8076a1e2ef80965ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a482a788f6521c3e5ffbc388c6416330c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a482a788f6521c3e5ffbc388c6416330c">elpa_eigenvalues</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, double *a, double *ev, int *error)</td></tr>
+<tr class="memdesc:a482a788f6521c3e5ffbc388c6416330c"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic C method for elpa_eigenvalues  <a href="elpa__generic_8hpp.html#a482a788f6521c3e5ffbc388c6416330c">More...</a><br /></td></tr>
+<tr class="separator:a482a788f6521c3e5ffbc388c6416330c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99842a53a4ee247984de15f4269b0242"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a99842a53a4ee247984de15f4269b0242">elpa_eigenvalues</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, float *a, float *ev, int *error)</td></tr>
+<tr class="separator:a99842a53a4ee247984de15f4269b0242"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a749bd62fa76b9dfe10e2b6b990b0f30e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a749bd62fa76b9dfe10e2b6b990b0f30e">elpa_eigenvalues</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *a, double *ev, int *error)</td></tr>
+<tr class="separator:a749bd62fa76b9dfe10e2b6b990b0f30e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a56b8bdbab1909b387c4b53cdc9097fd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a56b8bdbab1909b387c4b53cdc9097fd1">elpa_eigenvalues</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *a, float *ev, int *error)</td></tr>
+<tr class="separator:a56b8bdbab1909b387c4b53cdc9097fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1da2291c72b6d062d582830c5353620a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a1da2291c72b6d062d582830c5353620a">elpa_skew_eigenvalues</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, double *a, double *ev, int *error)</td></tr>
+<tr class="memdesc:a1da2291c72b6d062d582830c5353620a"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic C method for elpa_skew_eigenvalues  <a href="elpa__generic_8hpp.html#a1da2291c72b6d062d582830c5353620a">More...</a><br /></td></tr>
+<tr class="separator:a1da2291c72b6d062d582830c5353620a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c7b7681fdec5d505c61b630cf52fe9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a38c7b7681fdec5d505c61b630cf52fe9">elpa_skew_eigenvalues</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, float *a, float *ev, int *error)</td></tr>
+<tr class="separator:a38c7b7681fdec5d505c61b630cf52fe9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a537ec2fcf84b9c08d4ca1f63122a44ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a537ec2fcf84b9c08d4ca1f63122a44ed">elpa_cholesky</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, double *a, int *error)</td></tr>
+<tr class="memdesc:a537ec2fcf84b9c08d4ca1f63122a44ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic C method for elpa_cholesky  <a href="elpa__generic_8hpp.html#a537ec2fcf84b9c08d4ca1f63122a44ed">More...</a><br /></td></tr>
+<tr class="separator:a537ec2fcf84b9c08d4ca1f63122a44ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5e8496dcb04b7dec48f0f995d6740ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#ab5e8496dcb04b7dec48f0f995d6740ed">elpa_cholesky</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, float *a, int *error)</td></tr>
+<tr class="separator:ab5e8496dcb04b7dec48f0f995d6740ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afa5365f867e3a579eed4742c306de167"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#afa5365f867e3a579eed4742c306de167">elpa_cholesky</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *a, int *error)</td></tr>
+<tr class="separator:afa5365f867e3a579eed4742c306de167"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7170d191f9af01fff2c80c935bed40c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a7170d191f9af01fff2c80c935bed40c1">elpa_cholesky</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *a, int *error)</td></tr>
+<tr class="separator:a7170d191f9af01fff2c80c935bed40c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7cadf7a4f9b5b6930f5f3428d95c2112"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a7cadf7a4f9b5b6930f5f3428d95c2112">elpa_hermitian_multiply</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, char uplo_a, char uplo_c, int ncb, double *a, double *b, int nrows_b, int ncols_b, double *c, int nrows_c, int ncols_c, int *error)</td></tr>
+<tr class="memdesc:a7cadf7a4f9b5b6930f5f3428d95c2112"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic C method for elpa_hermitian_multiply  <a href="elpa__generic_8hpp.html#a7cadf7a4f9b5b6930f5f3428d95c2112">More...</a><br /></td></tr>
+<tr class="separator:a7cadf7a4f9b5b6930f5f3428d95c2112"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab856949d700fb68e4beb8c072ee8d55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#aab856949d700fb68e4beb8c072ee8d55">elpa_hermitian_multiply</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, char uplo_a, char uplo_c, int ncb, float *a, float *b, int nrows_b, int ncols_b, float *c, int nrows_c, int ncols_c, int *error)</td></tr>
+<tr class="separator:aab856949d700fb68e4beb8c072ee8d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a1a44b9cd0c31ce1e4e243607bcfc82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a3a1a44b9cd0c31ce1e4e243607bcfc82">elpa_hermitian_multiply</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, char uplo_a, char uplo_c, int ncb, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *a, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *b, int nrows_b, int ncols_b, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *c, int nrows_c, int ncols_c, int *error)</td></tr>
+<tr class="separator:a3a1a44b9cd0c31ce1e4e243607bcfc82"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03a23be3000fedc128009cf5f1c3ba0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a03a23be3000fedc128009cf5f1c3ba0f">elpa_hermitian_multiply</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, char uplo_a, char uplo_c, int ncb, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *a, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *b, int nrows_b, int ncols_b, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *c, int nrows_c, int ncols_c, int *error)</td></tr>
+<tr class="separator:a03a23be3000fedc128009cf5f1c3ba0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf7553524265b4ac20a50c9cdc47bea6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#acf7553524265b4ac20a50c9cdc47bea6">elpa_invert_triangular</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, double *a, int *error)</td></tr>
+<tr class="memdesc:acf7553524265b4ac20a50c9cdc47bea6"><td class="mdescLeft">&#160;</td><td class="mdescRight">generic C method for elpa_invert_triangular  <a href="elpa__generic_8hpp.html#acf7553524265b4ac20a50c9cdc47bea6">More...</a><br /></td></tr>
+<tr class="separator:acf7553524265b4ac20a50c9cdc47bea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a481dfb82414d22b4da7d5ff0927e7a55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#a481dfb82414d22b4da7d5ff0927e7a55">elpa_invert_triangular</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, float *a, int *error)</td></tr>
+<tr class="separator:a481dfb82414d22b4da7d5ff0927e7a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8e652cffba5c72f1e53b14905bb4fa7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#aa8e652cffba5c72f1e53b14905bb4fa7">elpa_invert_triangular</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *a, int *error)</td></tr>
+<tr class="separator:aa8e652cffba5c72f1e53b14905bb4fa7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a0ea5158e2b71ef1e646fa605de948"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="elpa__generic_8hpp.html#af9a0ea5158e2b71ef1e646fa605de948">elpa_invert_triangular</a> (<a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a> handle, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *a, int *error)</td></tr>
+<tr class="separator:af9a0ea5158e2b71ef1e646fa605de948"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="a537ec2fcf84b9c08d4ca1f63122a44ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a537ec2fcf84b9c08d4ca1f63122a44ed">&#9670;&nbsp;</a></span>elpa_cholesky() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_cholesky </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>generic C method for elpa_cholesky </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>handle of the ELPA object, which defines the problem </td></tr>
+    <tr><td class="paramname">a</td><td>float/double float complex/double complex pointer to matrix a, for which the cholesky factorizaion will be computed </td></tr>
+    <tr><td class="paramname">error</td><td>on return the error code, which can be queried with <a class="el" href="elpa__new_8h.html#ac188b3ce4bb83f37c005be3278743ef0">elpa_strerr()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="ab5e8496dcb04b7dec48f0f995d6740ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5e8496dcb04b7dec48f0f995d6740ed">&#9670;&nbsp;</a></span>elpa_cholesky() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_cholesky </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="afa5365f867e3a579eed4742c306de167"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afa5365f867e3a579eed4742c306de167">&#9670;&nbsp;</a></span>elpa_cholesky() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_cholesky </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7170d191f9af01fff2c80c935bed40c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7170d191f9af01fff2c80c935bed40c1">&#9670;&nbsp;</a></span>elpa_cholesky() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_cholesky </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a482a788f6521c3e5ffbc388c6416330c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a482a788f6521c3e5ffbc388c6416330c">&#9670;&nbsp;</a></span>elpa_eigenvalues() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_eigenvalues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>generic C method for elpa_eigenvalues </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>handle of the ELPA object, which defines the problem </td></tr>
+    <tr><td class="paramname">a</td><td>float/double float complex/double complex pointer to matrix a </td></tr>
+    <tr><td class="paramname">ev</td><td>on return: float/double pointer to eigenvalues </td></tr>
+    <tr><td class="paramname">error</td><td>on return the error code, which can be queried with <a class="el" href="elpa__new_8h.html#ac188b3ce4bb83f37c005be3278743ef0">elpa_strerr()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a99842a53a4ee247984de15f4269b0242"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99842a53a4ee247984de15f4269b0242">&#9670;&nbsp;</a></span>elpa_eigenvalues() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_eigenvalues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a749bd62fa76b9dfe10e2b6b990b0f30e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a749bd62fa76b9dfe10e2b6b990b0f30e">&#9670;&nbsp;</a></span>elpa_eigenvalues() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_eigenvalues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a56b8bdbab1909b387c4b53cdc9097fd1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a56b8bdbab1909b387c4b53cdc9097fd1">&#9670;&nbsp;</a></span>elpa_eigenvalues() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_eigenvalues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0570dea2e93cebdc25f9d27bc9da38d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0570dea2e93cebdc25f9d27bc9da38d6">&#9670;&nbsp;</a></span>elpa_eigenvectors() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_eigenvectors </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>generic C method for elpa_eigenvectors </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>handle of the ELPA object, which defines the problem </td></tr>
+    <tr><td class="paramname">a</td><td>float/double float complex/double complex pointer to matrix a </td></tr>
+    <tr><td class="paramname">ev</td><td>on return: float/double pointer to eigenvalues </td></tr>
+    <tr><td class="paramname">q</td><td>on return: float/double float complex/double complex pointer to eigenvectors </td></tr>
+    <tr><td class="paramname">error</td><td>on return the error code, which can be queried with <a class="el" href="elpa__new_8h.html#ac188b3ce4bb83f37c005be3278743ef0">elpa_strerr()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elpa__generic_8hpp_a0570dea2e93cebdc25f9d27bc9da38d6_icgraph.png" border="0" usemap="#elpa__generic_8hpp_a0570dea2e93cebdc25f9d27bc9da38d6_icgraph" alt=""/></div>
+<map name="elpa__generic_8hpp_a0570dea2e93cebdc25f9d27bc9da38d6_icgraph" id="elpa__generic_8hpp_a0570dea2e93cebdc25f9d27bc9da38d6_icgraph">
+<area shape="rect" title="generic C method for elpa_eigenvectors" alt="" coords="240,5,381,32"/>
+<area shape="rect" href="classELPA__Solver.html#a264f3bd1668c2b4875e12e5461a0c4d6" title=" " alt="" coords="5,5,192,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac66d70d793ee9b2eaba3324bff74e021"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac66d70d793ee9b2eaba3324bff74e021">&#9670;&nbsp;</a></span>elpa_eigenvectors() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_eigenvectors </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a2a8ac78725605c2522c22ba874e508bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2a8ac78725605c2522c22ba874e508bb">&#9670;&nbsp;</a></span>elpa_eigenvectors() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_eigenvectors </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a0220633e3150c6a531d91a6286bd79aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0220633e3150c6a531d91a6286bd79aa">&#9670;&nbsp;</a></span>elpa_eigenvectors() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_eigenvectors </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a1c1373013e02937e2f2e3d3d19390251"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c1373013e02937e2f2e3d3d19390251">&#9670;&nbsp;</a></span>elpa_generalized_eigenvectors() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_generalized_eigenvectors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>is_already_decomposed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>generic C method for elpa_generalized_eigenvectors </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>handle of the ELPA object, which defines the problem </td></tr>
+    <tr><td class="paramname">a</td><td>float/double float complex/double complex pointer to matrix a </td></tr>
+    <tr><td class="paramname">b</td><td>float/double float complex/double complex pointer to matrix b </td></tr>
+    <tr><td class="paramname">ev</td><td>on return: float/double pointer to eigenvalues </td></tr>
+    <tr><td class="paramname">q</td><td>on return: float/double float complex/double complex pointer to eigenvectors </td></tr>
+    <tr><td class="paramname">is_already_decomposed</td><td>set to 1, if b already decomposed by previous call to elpa_generalized </td></tr>
+    <tr><td class="paramname">error</td><td>on return the error code, which can be queried with <a class="el" href="elpa__new_8h.html#ac188b3ce4bb83f37c005be3278743ef0">elpa_strerr()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a6a9212baf4a2322b276e3ebfc30857f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a9212baf4a2322b276e3ebfc30857f8">&#9670;&nbsp;</a></span>elpa_generalized_eigenvectors() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_generalized_eigenvectors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>is_already_decomposed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94662690327ec193405dd7eae5cb2cfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94662690327ec193405dd7eae5cb2cfb">&#9670;&nbsp;</a></span>elpa_generalized_eigenvectors() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_generalized_eigenvectors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>is_already_decomposed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a99d05c49c046dfd8076a1e2ef80965ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99d05c49c046dfd8076a1e2ef80965ff">&#9670;&nbsp;</a></span>elpa_generalized_eigenvectors() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_generalized_eigenvectors </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>is_already_decomposed</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a62d6aa480011c10465278d027a673196"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62d6aa480011c10465278d027a673196">&#9670;&nbsp;</a></span>elpa_get() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a315f62a2fbb913d835603cc7fc553be0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a315f62a2fbb913d835603cc7fc553be0">&#9670;&nbsp;</a></span>elpa_get() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_get </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>generic C method for elpa_get </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>handle of the ELPA object for which a key/value pair should be queried </td></tr>
+    <tr><td class="paramname">name</td><td>the name of the key </td></tr>
+    <tr><td class="paramname">value</td><td>integer/double value to be queried </td></tr>
+    <tr><td class="paramname">error</td><td>on return the error code, which can be queried with <a class="el" href="elpa__new_8h.html#ac188b3ce4bb83f37c005be3278743ef0">elpa_strerr()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a7cadf7a4f9b5b6930f5f3428d95c2112"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7cadf7a4f9b5b6930f5f3428d95c2112">&#9670;&nbsp;</a></span>elpa_hermitian_multiply() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_hermitian_multiply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>uplo_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>uplo_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nrows_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncols_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nrows_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncols_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>generic C method for elpa_hermitian_multiply </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>handle of the ELPA object, which defines the problem </td></tr>
+    <tr><td class="paramname">uplo_a</td><td>descriptor for matrix a </td></tr>
+    <tr><td class="paramname">uplo_c</td><td>descriptor for matrix c </td></tr>
+    <tr><td class="paramname">ncb</td><td>int </td></tr>
+    <tr><td class="paramname">a</td><td>float/double float complex/double complex pointer to matrix a </td></tr>
+    <tr><td class="paramname">b</td><td>float/double float complex/double complex pointer to matrix b </td></tr>
+    <tr><td class="paramname">nrows_b</td><td>number of rows for matrix b </td></tr>
+    <tr><td class="paramname">ncols_b</td><td>number of cols for matrix b </td></tr>
+    <tr><td class="paramname">c</td><td>float/double float complex/double complex pointer to matrix c </td></tr>
+    <tr><td class="paramname">nrows_c</td><td>number of rows for matrix c </td></tr>
+    <tr><td class="paramname">ncols_c</td><td>number of cols for matrix c </td></tr>
+    <tr><td class="paramname">error</td><td>on return the error code, which can be queried with <a class="el" href="elpa__new_8h.html#ac188b3ce4bb83f37c005be3278743ef0">elpa_strerr()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="aab856949d700fb68e4beb8c072ee8d55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab856949d700fb68e4beb8c072ee8d55">&#9670;&nbsp;</a></span>elpa_hermitian_multiply() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_hermitian_multiply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>uplo_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>uplo_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nrows_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncols_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nrows_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncols_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a3a1a44b9cd0c31ce1e4e243607bcfc82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a1a44b9cd0c31ce1e4e243607bcfc82">&#9670;&nbsp;</a></span>elpa_hermitian_multiply() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_hermitian_multiply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>uplo_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>uplo_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nrows_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncols_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nrows_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncols_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a03a23be3000fedc128009cf5f1c3ba0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03a23be3000fedc128009cf5f1c3ba0f">&#9670;&nbsp;</a></span>elpa_hermitian_multiply() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_hermitian_multiply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>uplo_a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char&#160;</td>
+          <td class="paramname"><em>uplo_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nrows_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncols_b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>nrows_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>ncols_c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acf7553524265b4ac20a50c9cdc47bea6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf7553524265b4ac20a50c9cdc47bea6">&#9670;&nbsp;</a></span>elpa_invert_triangular() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_invert_triangular </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>generic C method for elpa_invert_triangular </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>handle of the ELPA object, which defines the problem </td></tr>
+    <tr><td class="paramname">a</td><td>float/double float complex/double complex pointer to matrix a, which should be inverted </td></tr>
+    <tr><td class="paramname">error</td><td>on return the error code, which can be queried with <a class="el" href="elpa__new_8h.html#ac188b3ce4bb83f37c005be3278743ef0">elpa_strerr()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a481dfb82414d22b4da7d5ff0927e7a55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a481dfb82414d22b4da7d5ff0927e7a55">&#9670;&nbsp;</a></span>elpa_invert_triangular() <span class="overload">[2/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_invert_triangular </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa8e652cffba5c72f1e53b14905bb4fa7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8e652cffba5c72f1e53b14905bb4fa7">&#9670;&nbsp;</a></span>elpa_invert_triangular() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_invert_triangular </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af9a0ea5158e2b71ef1e646fa605de948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9a0ea5158e2b71ef1e646fa605de948">&#9670;&nbsp;</a></span>elpa_invert_triangular() <span class="overload">[4/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_invert_triangular </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a06b8515f9c6df18d116d3f64e492b07a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06b8515f9c6df18d116d3f64e492b07a">&#9670;&nbsp;</a></span>elpa_set() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a5ba34081cf93b9b578a68d8cfcc1e932"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ba34081cf93b9b578a68d8cfcc1e932">&#9670;&nbsp;</a></span>elpa_set() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_set </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char *&#160;</td>
+          <td class="paramname"><em>name</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>generic C method for elpa_set </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>handle of the ELPA object for which a key/value pair should be set </td></tr>
+    <tr><td class="paramname">name</td><td>the name of the key </td></tr>
+    <tr><td class="paramname">value</td><td>integer/double value to be set for the key </td></tr>
+    <tr><td class="paramname">error</td><td>on return the error code, which can be queried with <a class="el" href="elpa__new_8h.html#ac188b3ce4bb83f37c005be3278743ef0">elpa_strerr()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="elpa__generic_8hpp_a5ba34081cf93b9b578a68d8cfcc1e932_icgraph.png" border="0" usemap="#elpa__generic_8hpp_a5ba34081cf93b9b578a68d8cfcc1e932_icgraph" alt=""/></div>
+<map name="elpa__generic_8hpp_a5ba34081cf93b9b578a68d8cfcc1e932_icgraph" id="elpa__generic_8hpp_a5ba34081cf93b9b578a68d8cfcc1e932_icgraph">
+<area shape="rect" title="generic C method for elpa_set" alt="" coords="241,81,319,108"/>
+<area shape="rect" href="classELPA__Solver.html#aac3804d1cee763e930d52e7c85383184" title=" " alt="" coords="5,5,193,32"/>
+<area shape="rect" href="classELPA__Solver.html#a8dbbae2e413ca995716d08c753c45f51" title=" " alt="" coords="14,56,185,83"/>
+<area shape="rect" href="classELPA__Solver.html#a2653c1592b3128aa7d3068a4b10a15e8" title=" " alt="" coords="7,107,191,133"/>
+<area shape="rect" href="classELPA__Solver.html#a64fdc59533b01196aff25fbbc4ad05d7" title=" " alt="" coords="25,157,173,184"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1da2291c72b6d062d582830c5353620a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1da2291c72b6d062d582830c5353620a">&#9670;&nbsp;</a></span>elpa_skew_eigenvalues() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_skew_eigenvalues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>generic C method for elpa_skew_eigenvalues </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>handle of the ELPA object, which defines the problem </td></tr>
+    <tr><td class="paramname">a</td><td>float/double float complex/double complex pointer to matrix a </td></tr>
+    <tr><td class="paramname">ev</td><td>on return: float/double pointer to eigenvalues </td></tr>
+    <tr><td class="paramname">error</td><td>on return the error code, which can be queried with <a class="el" href="elpa__new_8h.html#ac188b3ce4bb83f37c005be3278743ef0">elpa_strerr()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a38c7b7681fdec5d505c61b630cf52fe9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38c7b7681fdec5d505c61b630cf52fe9">&#9670;&nbsp;</a></span>elpa_skew_eigenvalues() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_skew_eigenvalues </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ac96f2818b4757afb3ed7bc1db92f8ac4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac96f2818b4757afb3ed7bc1db92f8ac4">&#9670;&nbsp;</a></span>elpa_skew_eigenvectors() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_skew_eigenvectors </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>generic C method for elpa_skew_eigenvectors </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">handle</td><td>handle of the ELPA object, which defines the problem </td></tr>
+    <tr><td class="paramname">a</td><td>float/double float complex/double complex pointer to matrix a </td></tr>
+    <tr><td class="paramname">ev</td><td>on return: float/double pointer to eigenvalues </td></tr>
+    <tr><td class="paramname">q</td><td>on return: float/double float complex/double complex pointer to eigenvectors </td></tr>
+    <tr><td class="paramname">error</td><td>on return the error code, which can be queried with <a class="el" href="elpa__new_8h.html#ac188b3ce4bb83f37c005be3278743ef0">elpa_strerr()</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>void </dd></dl>
+
+</div>
+</div>
+<a id="a021e7ba7688c02ea1c519048c163b6d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a021e7ba7688c02ea1c519048c163b6d6">&#9670;&nbsp;</a></span>elpa_skew_eigenvectors() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elpa_skew_eigenvectors </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a2fff90448514ab1c9699fbfcbb94bcb3">elpa_t</a>&#160;</td>
+          <td class="paramname"><em>handle</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>ev</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>q</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int *&#160;</td>
+          <td class="paramname"><em>error</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

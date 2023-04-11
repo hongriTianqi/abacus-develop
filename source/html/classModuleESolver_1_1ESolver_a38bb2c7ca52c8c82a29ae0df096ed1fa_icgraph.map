@@ -7,6 +7,6 @@
 <area shape="rect" id="node4" href="$classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="5,29,96,56"/>
 <area shape="rect" id="node6" href="$classRun__MD.html#a42a25187fa871ef2b746d483451a22b6" title=" " alt="" coords="535,29,671,56"/>
 <area shape="rect" id="node7" href="$classMDrun.html#ade9fa55197d9f546719b08b729fbf68e" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="737,80,847,107"/>
-<area shape="rect" id="node8" href="$classVerlet.html#abc1bee265ad620bd3361588bc1d17001" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="551,80,655,107"/>
-<area shape="rect" id="node9" href="$classLangevin.html#adad3f244cf074406679bbbfab11202d6" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="540,131,665,157"/>
+<area shape="rect" id="node8" href="$classFIRE.html#aa6566bc8dee83eb9bf17818bd79b18a9" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="555,80,650,107"/>
+<area shape="rect" id="node9" href="$classMSST.html#a35142b27ab806779aca03e3b800ed910" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="552,131,653,157"/>
 </map>

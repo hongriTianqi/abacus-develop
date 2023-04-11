@@ -1,9 +1,12 @@
 <map id="ORB_table_alpha::print_Table_DSR" name="ORB_table_alpha::print_Table_DSR">
 <area shape="rect" id="node1" title=" " alt="" coords="5,136,176,177"/>
-<area shape="rect" id="node2" href="$classORB__table__alpha.html#abf43dd32a6813a1c476f27d3a54dadb2" title=" " alt="" coords="224,5,387,47"/>
+<area shape="rect" id="node2" href="$classORB__table__alpha.html#a7b8c0e8ea5c97e214535c73388d24138" title=" " alt="" coords="224,5,387,47"/>
 <area shape="rect" id="node4" href="$classNumerical__Orbital.html#a1a29486b7944bb9e9c35cff697d13021" title=" " alt="" coords="231,71,379,112"/>
 <area shape="rect" id="node5" href="$classNumerical__Orbital.html#aa36d426892b5c0ca04c8f2ab1ff0b2ea" title=" " alt="" coords="231,136,379,177"/>
 <area shape="rect" id="node6" href="$classNumerical__Orbital.html#ad14b5e00ca67a8806f643c0a6ec52b39" title=" " alt="" coords="231,201,379,243"/>
-<area shape="rect" id="node7" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="233,267,378,294"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="233,267,378,294"/>
 <area shape="rect" id="node3" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="435,13,648,39"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="450,227,633,268"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="465,292,618,333"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="696,227,879,268"/>
 </map>

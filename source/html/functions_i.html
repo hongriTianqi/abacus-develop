@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: Class Members</title>
+<title>3.2.0: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -127,6 +127,9 @@ $(function() {
 <li>idstep
 : <a class="el" href="classCharge__Mixing.html#ab5d48ca84d76d6014e77896ee2250636">Charge_Mixing</a>
 </li>
+<li>ielem_
+: <a class="el" href="classNumericalNonlocalTest.html#aa9925883f7274c58a74f9de087f84915">NumericalNonlocalTest</a>
+</li>
 <li>if_atoms_can_move()
 : <a class="el" href="classUnitCell.html#afe1010e532e0dd8814d5732ab563d4e4">UnitCell</a>
 </li>
@@ -192,9 +195,6 @@ $(function() {
 , <a class="el" href="classTestSrcPWForceMultiDevice.html#a3bf469a3047046fad3df343e6f9c8ee6">TestSrcPWForceMultiDevice</a>
 , <a class="el" href="classTestSrcPWWfMultiDevice.html#ad7615253a8cd5f663eba5d9fda83213b">TestSrcPWWfMultiDevice</a>
 </li>
-<li>ilaenv()
-: <a class="el" href="classLapackConnector.html#a36efff08cd103937bcd5fdc839bc2be6">LapackConnector</a>
-</li>
 <li>ilattname
 : <a class="el" href="classModuleSymmetry_1_1Symmetry.html#adf8f01e85239b5a936157593ed9b3de0">ModuleSymmetry::Symmetry</a>
 </li>
@@ -244,6 +244,12 @@ $(function() {
 </li>
 <li>In_Which_Cell()
 : <a class="el" href="classGrid.html#aa22f1dca95dbcd5f5037b3b9f5893ac0">Grid</a>
+</li>
+<li>inbands
+: <a class="el" href="classTestPsi.html#a8ff7877488df79e183811f988865974c">TestPsi</a>
+</li>
+<li>inbasis
+: <a class="el" href="classTestPsi.html#a254b62f879d8c46d177089963a21dd8b">TestPsi</a>
 </li>
 <li>ind1
 : <a class="el" href="classFcoef.html#a3704e16f0418b370026aad091a2512c3">Fcoef</a>
@@ -383,6 +389,7 @@ $(function() {
 : <a class="el" href="classLCAO__Deepks.html#ad193a780d0c677289bcea12807e0a064">LCAO_Deepks</a>
 , <a class="el" href="classMatrix__Orbs11.html#a645a9ecc26fb5dca957f47ca1707d78b">Matrix_Orbs11</a>
 , <a class="el" href="classMatrix__Orbs21.html#a31199c2b61d029f298e5cffcdae31ec4">Matrix_Orbs21</a>
+, <a class="el" href="classMatrix__Orbs22.html#a3c898a32a52ea7fa272ec073d2d3c67a">Matrix_Orbs22</a>
 , <a class="el" href="classModuleBase_1_1Bspline.html#a4ddfe8167b5fad028efe7df8b00e0bd2">ModuleBase::Bspline</a>
 , <a class="el" href="classModuleBase_1_1ComplexArray.html#aa7662a15bdcc6428cdf77a7220c7ff38">ModuleBase::ComplexArray</a>
 , <a class="el" href="classModuleBase_1_1Inverse__Matrix__Complex.html#a4ab903adb449717c661cfeb4af8e5ac1">ModuleBase::Inverse_Matrix_Complex</a>
@@ -422,7 +429,11 @@ $(function() {
 : <a class="el" href="classwinput.html#af710d5b372f8c282b99241d9b1047e9d">winput</a>
 </li>
 <li>init_after_vc()
-: <a class="el" href="classVariable__Cell.html#a734f97e787992db765320371ccd076bb">Variable_Cell</a>
+: <a class="el" href="classModuleESolver_1_1ESolver__FP.html#ac79873fb919bb929201e474013f717ad">ModuleESolver::ESolver_FP</a>
+, <a class="el" href="classModuleESolver_1_1ESolver__KS.html#ac96101045ab980649d190fe00b00461c">ModuleESolver::ESolver_KS&lt; FPTYPE, Device &gt;</a>
+, <a class="el" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad316c994ae1b69629b29a0eb7f98536f">ModuleESolver::ESolver_KS_LCAO</a>
+, <a class="el" href="classModuleESolver_1_1ESolver__KS__PW.html#a9d20018ab937bada8366ae8063649375">ModuleESolver::ESolver_KS_PW&lt; FPTYPE, Device &gt;</a>
+, <a class="el" href="classModuleESolver_1_1ESolver__OF.html#af3cbc4288b59778d85ce9748e0356779">ModuleESolver::ESolver_OF</a>
 , <a class="el" href="classwavefunc.html#aee995e3232e9432ade01d9537d84bc76">wavefunc</a>
 </li>
 <li>init_at_1()
@@ -578,22 +589,24 @@ $(function() {
 <li>init_radial()
 : <a class="el" href="classExx__Abfs_1_1Matrix__Lcaoslcaos__Lcaoslcaos.html#a5339363f6d5f9a0d4338842a2b2da871">Exx_Abfs::Matrix_Lcaoslcaos_Lcaoslcaos</a>
 , <a class="el" href="classExx__Abfs_1_1Matrix__Orbs11.html#a4e4972c884e1bb91f1832c35ef4f1a76">Exx_Abfs::Matrix_Orbs11</a>
-, <a class="el" href="classExx__Abfs_1_1Matrix__Orbs21.html#a4cb9700befd9c47eea40db6178c2f413">Exx_Abfs::Matrix_Orbs21</a>
+, <a class="el" href="classExx__Abfs_1_1Matrix__Orbs21.html#a175596c07d17fc3b63e91518ea040122">Exx_Abfs::Matrix_Orbs21</a>
 , <a class="el" href="classExx__Abfs_1_1Matrix__Orbs22.html#aebe7bf9c975e558efd6092b8acbf62dc">Exx_Abfs::Matrix_Orbs22</a>
 , <a class="el" href="classMatrix__Orbs11.html#a575a267689d85a0bea23a402956714d8">Matrix_Orbs11</a>
-, <a class="el" href="classMatrix__Orbs21.html#ae61502b0edb4b6ab09ae676cf230d0ac">Matrix_Orbs21</a>
+, <a class="el" href="classMatrix__Orbs21.html#a3f2f936fff3e1e0919236ad3f32b8b2d">Matrix_Orbs21</a>
+, <a class="el" href="classMatrix__Orbs22.html#ae30dbb3be8afbf86f37ab06b2729bbe6">Matrix_Orbs22</a>
 </li>
 <li>init_radial_table()
 : <a class="el" href="classCenter2__Orb_1_1Orb11.html#a7863e936126bfa67fa0af10b83af7df4">Center2_Orb::Orb11</a>
 , <a class="el" href="classCenter2__Orb_1_1Orb21.html#aed2453ce3dc3e834cb6160e5466b4153">Center2_Orb::Orb21</a>
-, <a class="el" href="classCenter2__Orb_1_1Orb22.html#ab4e1b3b2a6375a3f4b0a9150490ea3ba">Center2_Orb::Orb22</a>
+, <a class="el" href="classCenter2__Orb_1_1Orb22.html#a8a8208f2b0e65eb7249926d53f25ae32">Center2_Orb::Orb22</a>
 , <a class="el" href="classCenter2__Orb_1_1Orb22__Ccp.html#a789bc48b9d94fd2d994962648164c12d">Center2_Orb::Orb22_Ccp</a>
-, <a class="el" href="classExx__Abfs_1_1Matrix__Lcaoslcaos__Lcaoslcaos.html#a02431d4b404e0d07b3bde0258b4fa22f">Exx_Abfs::Matrix_Lcaoslcaos_Lcaoslcaos</a>
+, <a class="el" href="classExx__Abfs_1_1Matrix__Lcaoslcaos__Lcaoslcaos.html#a7b3cc6d45bf1d85f4a1a71c46ae12260">Exx_Abfs::Matrix_Lcaoslcaos_Lcaoslcaos</a>
 , <a class="el" href="classExx__Abfs_1_1Matrix__Orbs11.html#a841c3b4fa77f2fe7c17457d35da74330">Exx_Abfs::Matrix_Orbs11</a>
 , <a class="el" href="classExx__Abfs_1_1Matrix__Orbs21.html#a9d859feecc422a0240698dfbfb3995fa">Exx_Abfs::Matrix_Orbs21</a>
-, <a class="el" href="classExx__Abfs_1_1Matrix__Orbs22.html#a5e4c5940eae12c7999b8d0f64e4d258b">Exx_Abfs::Matrix_Orbs22</a>
+, <a class="el" href="classExx__Abfs_1_1Matrix__Orbs22.html#a942d887e7c2c97b436ed6cac2e3603b4">Exx_Abfs::Matrix_Orbs22</a>
 , <a class="el" href="classMatrix__Orbs11.html#a0d4ec28156692bff7230a501bd036156">Matrix_Orbs11</a>
-, <a class="el" href="classMatrix__Orbs21.html#a36ebb5f6b478c2348ef4977e167701e9">Matrix_Orbs21</a>
+, <a class="el" href="classMatrix__Orbs21.html#ac86ba52eae282c603fbffb372ed65b6c">Matrix_Orbs21</a>
+, <a class="el" href="classMatrix__Orbs22.html#a64879726566c507a6c040f7adca700cd">Matrix_Orbs22</a>
 </li>
 <li>init_radial_table_ions()
 : <a class="el" href="classExx__Lcao.html#a4aa98630983f26ca0328110aad8321a3">Exx_Lcao</a>
@@ -602,7 +615,7 @@ $(function() {
 : <a class="el" href="classvdw_1_1Vdwd3Parameters.html#afa8af6ef1176967c02d0a5d7ecdf78a4">vdw::Vdwd3Parameters</a>
 </li>
 <li>init_relax()
-: <a class="el" href="classRelax.html#a3431914af01aee67b441e4b9a031defc">Relax</a>
+: <a class="el" href="classRelax.html#ab8fe093e761549a8d5613997d6955f80">Relax</a>
 , <a class="el" href="classRelax__old.html#a11f16df359d2bb2f79f2b2a9b8607f4f">Relax_old</a>
 </li>
 <li>init_rho()
@@ -614,6 +627,10 @@ $(function() {
 </li>
 <li>init_scf()
 : <a class="el" href="classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651">elecstate::ElecState</a>
+</li>
+<li>init_sph_bessel()
+: <a class="el" href="classOrbTableAlphaTest.html#af9a830fbb673345d338dcd5f5fb8747f">OrbTableAlphaTest</a>
+, <a class="el" href="classOrbTablePhiTest.html#afd9b872c59b1de955da39631f0a962ac">OrbTablePhiTest</a>
 </li>
 <li>init_Table()
 : <a class="el" href="classORB__table__phi.html#a98de0312b5ee90cf1adf461cf57597bc">ORB_table_phi</a>
@@ -673,7 +690,7 @@ $(function() {
 : <a class="el" href="classpseudopot__cell__vnl.html#aeaaf1ebd9b0dd4f95920fc4d000d51b0">pseudopot_cell_vnl</a>
 </li>
 <li>initgrids()
-: <a class="el" href="classModulePW_1_1PW__Basis.html#a7bfacfccea71e2ec66f5a0520b634b66">ModulePW::PW_Basis</a>
+: <a class="el" href="classModulePW_1_1PW__Basis.html#a00c24179ca27416e6db0ba2f2df8c6c7">ModulePW::PW_Basis</a>
 , <a class="el" href="classModulePW_1_1PW__Basis__Big.html#a1f3e568f3c3a8d0e95cd8f4562689eea">ModulePW::PW_Basis_Big</a>
 </li>
 <li>initial_parameters()
@@ -702,9 +719,6 @@ $(function() {
 <li>initplan()
 : <a class="el" href="classModulePW_1_1FFT.html#aa8bb0ec7e0486ca7a915f2e158fd21b0">ModulePW::FFT</a>
 </li>
-<li>InitPos()
-: <a class="el" href="classMD__func.html#aecf4cfc5f562ff1f75fe480248aa6bc0">MD_func</a>
-</li>
 <li>initset()
 : <a class="el" href="classvdw_1_1Vdwd2Parameters.html#af8bc6cb8fc9d1edeff5edf7b4460af0e">vdw::Vdwd2Parameters</a>
 </li>
@@ -713,6 +727,9 @@ $(function() {
 </li>
 <li>InitVel()
 : <a class="el" href="classMD__func.html#ad4e2e8cd1f82ff435bb6e441543f27d0">MD_func</a>
+</li>
+<li>ink
+: <a class="el" href="classTestPsi.html#a50314b38d2761d5a9524811f424ed06b">TestPsi</a>
 </li>
 <li>inl_index
 : <a class="el" href="classLCAO__Deepks.html#ad72a8cda3e683ff1d6761b718b25d707">LCAO_Deepks</a>
@@ -736,6 +753,9 @@ $(function() {
 , <a class="el" href="classvdwd2Test.html#ac79770c1f4ae5456c3221e7fcf406da0">vdwd2Test</a>
 , <a class="el" href="classvdwd3abcTest.html#adcf32452250a9d5192f1728eb5b6b0d4">vdwd3abcTest</a>
 , <a class="el" href="classvdwd3Test.html#ac3be7cc47d19059e142a2e0b788337a8">vdwd3Test</a>
+</li>
+<li>INPUT
+: <a class="el" href="classwrite__input.html#a7b0d5c6a4b83c3fb27bd95ed0d47c814">write_input</a>
 </li>
 <li>input1
 : <a class="el" href="classTestModuleHsolverMathKernel.html#ac4ff6ed647bb7dd6af412686ed8c2389">TestModuleHsolverMathKernel</a>
@@ -849,7 +869,8 @@ $(function() {
 : <a class="el" href="classCharge__Mixing.html#a2033c34167a4a0311609aac7d56fd7d5">Charge_Mixing</a>
 </li>
 <li>is
-: <a class="el" href="classParaCommon.html#a97bfb189ab8dfdd7c6a7ea3631b7f227">ParaCommon</a>
+: <a class="el" href="classDosPrepare.html#a6c7ae8b37478de87fddb0cd0a05a7f81">DosPrepare</a>
+, <a class="el" href="classParaCommon.html#a97bfb189ab8dfdd7c6a7ea3631b7f227">ParaCommon</a>
 </li>
 <li>is2fftixy
 : <a class="el" href="classModulePW_1_1PW__Basis.html#adb1a24593a082ad647e7aa17b7defff6">ModulePW::PW_Basis</a>
@@ -868,7 +889,8 @@ $(function() {
 : <a class="el" href="classGint__inout.html#a13fa8cb52a95a0fe4ec7e3060eea8889">Gint_inout</a>
 </li>
 <li>isk
-: <a class="el" href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#a1ff9a195f890b2ba646e80e9e9301553">hamilt::Meta&lt; OperatorPW&lt; FPTYPE, Device &gt; &gt;</a>
+: <a class="el" href="classDosPrepare.html#a57e6e12bce370a6a85589b3bd97f23ea">DosPrepare</a>
+, <a class="el" href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#a1ff9a195f890b2ba646e80e9e9301553">hamilt::Meta&lt; OperatorPW&lt; FPTYPE, Device &gt; &gt;</a>
 , <a class="el" href="classhamilt_1_1Nonlocal_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#ae59f5ea3508d2151c6a45397696b34ad">hamilt::Nonlocal&lt; OperatorPW&lt; FPTYPE, Device &gt; &gt;</a>
 , <a class="el" href="classhamilt_1_1Veff_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#aeed0e280a44e46c9b052cfffc1077487">hamilt::Veff&lt; OperatorPW&lt; FPTYPE, Device &gt; &gt;</a>
 , <a class="el" href="classhamilt_1_1Velocity.html#a3dd741ab5dbb4b785ec11d3f6c76dabf">hamilt::Velocity</a>

@@ -1,10 +1,12 @@
 <map id="Exx_Abfs::Parallel::Communicate::DM3::Allreduce::a2D_to_exx" name="Exx_Abfs::Parallel::Communicate::DM3::Allreduce::a2D_to_exx">
-<area shape="rect" id="node1" title=" " alt="" coords="5,123,173,179"/>
-<area shape="rect" id="node2" href="$classExx__Abfs_1_1Parallel_1_1Communicate_1_1DM3_1_1Allreduce.html#aaa27519154bfd64e2d884554d5600163" title=" " alt="" coords="229,5,396,76"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="456,101,601,127"/>
-<area shape="rect" id="node7" href="$classExx__Abfs_1_1Parallel_1_1Communicate_1_1DM3_1_1Allreduce.html#a3a31e815f5dc5817d5f5e4d490cccf44" title=" " alt="" coords="229,152,396,223"/>
-<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="221,247,404,288"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="452,20,605,61"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="653,27,839,54"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="887,27,1100,54"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,110,173,166"/>
+<area shape="rect" id="node2" href="$classExx__Abfs_1_1Parallel_1_1Communicate_1_1DM3_1_1Allreduce.html#aaa27519154bfd64e2d884554d5600163" title=" " alt="" coords="221,55,388,125"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="440,171,585,198"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="871,56,1053,97"/>
+<area shape="rect" id="node10" href="$classExx__Abfs_1_1Parallel_1_1Communicate_1_1DM3_1_1Allreduce.html#a3a31e815f5dc5817d5f5e4d490cccf44" title=" " alt="" coords="221,149,388,220"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="436,64,589,105"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="637,65,823,91"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="639,116,821,157"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="653,181,807,223"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="873,189,1051,215"/>
 </map>

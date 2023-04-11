@@ -1,6 +1,11 @@
 <map id="LCAO_Deepks::cal_o_delta" name="LCAO_Deepks::cal_o_delta">
 <area shape="rect" id="node1" title=" " alt="" coords="5,64,160,105"/>
 <area shape="rect" id="node2" href="$namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="208,5,385,47"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="224,71,369,98"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1matrix.html#a1a39a6d91c25fb1a71458dc6543f407d" title=" " alt="" coords="220,123,373,164"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="224,71,369,98"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1matrix.html#a1a39a6d91c25fb1a71458dc6543f407d" title=" " alt="" coords="220,123,373,164"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="433,32,616,73"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="448,97,601,139"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="664,32,847,73"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="667,105,844,131"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="895,97,1048,139"/>
 </map>

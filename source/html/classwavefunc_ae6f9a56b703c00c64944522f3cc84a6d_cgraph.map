@@ -1,11 +1,12 @@
 <map id="wavefunc::wfcinit" name="wavefunc::wfcinit">
-<area shape="rect" id="node1" title=" " alt="" coords="5,71,143,98"/>
-<area shape="rect" id="node2" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="191,17,368,43"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="424,71,569,98"/>
-<area shape="rect" id="node5" href="$classwavefunc.html#a5f9675b18a2980386b6d6fe03be07e90" title=" " alt="" coords="203,126,355,153"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="420,5,573,47"/>
-<area shape="rect" id="node6" href="$classModulePW_1_1PW__Basis__K.html#ac975ac5c253e198598ffab6b4729f335" title=" " alt="" coords="416,123,577,164"/>
-<area shape="rect" id="node9" href="$classModulePW_1_1PW__Basis.html#a0ac28a3fbbc4cfd50bedb3b9aff40e56" title=" " alt="" coords="416,188,577,229"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="625,123,789,164"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="837,123,1001,164"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,42,143,69"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="833,13,1011,39"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="399,42,544,69"/>
+<area shape="rect" id="node8" href="$classwavefunc.html#a5f9675b18a2980386b6d6fe03be07e90" title=" " alt="" coords="191,97,343,123"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1061,5,1215,47"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="600,100,783,141"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="615,35,768,76"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="831,100,1013,141"/>
+<area shape="rect" id="node9" href="$classModulePW_1_1PW__Basis__K.html#ac975ac5c253e198598ffab6b4729f335" title=" " alt="" coords="391,93,552,135"/>
+<area shape="rect" id="node10" href="$classModulePW_1_1PW__Basis.html#a0ac28a3fbbc4cfd50bedb3b9aff40e56" title=" " alt="" coords="391,159,552,200"/>
 </map>

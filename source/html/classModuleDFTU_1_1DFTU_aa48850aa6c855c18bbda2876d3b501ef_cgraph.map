@@ -1,7 +1,10 @@
 <map id="ModuleDFTU::DFTU::cal_force_gamma" name="ModuleDFTU::DFTU::cal_force_gamma">
 <area shape="rect" id="node1" title=" " alt="" coords="5,49,180,90"/>
-<area shape="rect" id="node2" href="$dftu__force_8cpp.html#a9ff8b730d2d1eb239d626e25c48c5a89" title=" " alt="" coords="273,5,360,32"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="228,56,405,83"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="244,107,389,133"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="453,49,607,90"/>
+<area shape="rect" id="node2" href="$dftu__force_8cpp.html#a9ff8b730d2d1eb239d626e25c48c5a89" title=" " alt="" coords="257,5,344,32"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="655,85,832,112"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="228,115,373,141"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="883,78,1036,119"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="421,173,604,214"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="436,107,589,149"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="652,173,835,214"/>
 </map>

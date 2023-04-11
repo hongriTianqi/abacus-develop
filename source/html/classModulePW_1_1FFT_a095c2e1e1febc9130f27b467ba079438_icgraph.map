@@ -1,12 +1,5 @@
 <map id="ModulePW::FFT::fftzbac" name="ModulePW::FFT::fftzbac">
-<area shape="rect" id="node1" title=" " alt="" coords="645,191,817,217"/>
-<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__K.html#a6fadd5f43b7c9b1ea6bbe560733f7f05" title=" " alt="" coords="436,150,597,191"/>
-<area shape="rect" id="node10" href="$classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce" title=" " alt="" coords="436,215,597,257"/>
-<area shape="rect" id="node3" href="$namespaceModuleIO.html#a9281aaef4579dabfaa938a7949ac4bb0" title=" " alt="" coords="221,5,375,32"/>
-<area shape="rect" id="node4" href="$classXC__Functional.html#acd3f2e95b5432678733749d91eda4ec7" title=" " alt="" coords="208,56,388,83"/>
-<area shape="rect" id="node5" href="$classStochastic__hchi.html#a296c8e3164d80c0c8b4163e8d073d05a" title=" " alt="" coords="219,107,377,133"/>
-<area shape="rect" id="node6" href="$classStochastic__Iter.html#a6547caaa896fb1ca5c9b2ae83e0c0262" title=" " alt="" coords="5,135,160,177"/>
-<area shape="rect" id="node7" href="$classExx__Lip.html#a22a45eb7d90d7c9b0e87d57ee5dac7dd" title=" " alt="" coords="235,208,361,235"/>
-<area shape="rect" id="node8" href="$classExx__Lip.html#aa18b3873716f2d1448215bbd77e03b6f" title=" " alt="" coords="20,223,145,249"/>
-<area shape="rect" id="node9" href="$classModulePW_1_1PW__Basis__K.html#a8a9c59e7eaffc9585bb974695e9cbb48" title=" " alt="" coords="217,310,379,351"/>
+<area shape="rect" id="node1" title=" " alt="" coords="215,46,387,73"/>
+<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__K.html#a25e4bc1b67fa4ccc3cba56ca8687d8f6" title=" " alt="" coords="5,5,167,47"/>
+<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis.html#ae9a43abf29742754cac80813ee105f9f" title=" " alt="" coords="5,71,167,112"/>
 </map>

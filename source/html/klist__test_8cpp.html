@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: module_cell/test/klist_test.cpp File Reference</title>
+<title>3.2.0: module_cell/test/klist_test.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -95,7 +95,7 @@ $(function() {
 <code>#include &quot;<a class="el" href="setup__nonlocal_8h_source.html">module_cell/setup_nonlocal.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="parallel__grid_8h_source.html">module_hamilt_pw/hamilt_pwdft/parallel_grid.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="berryphase_8h_source.html">module_io/berryphase.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="ORB__gaunt__table_8h_source.html">module_orbital/ORB_gaunt_table.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="ORB__gaunt__table_8h_source.html">module_basis/module_ao/ORB_gaunt_table.h</a>&quot;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -366,7 +366,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="123,71,323,98"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="371,5,533,47"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="385,71,519,98"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="379,122,525,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="379,122,525,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="581,81,764,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="596,147,749,188"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="812,81,995,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="815,154,992,181"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1043,147,1196,188"/>
 </map>
 </div>
 
@@ -440,15 +445,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="klist__test_8cpp_ad8632623f8dfc3d0966cf35f09d6a33b_cgraph.png" border="0" usemap="#klist__test_8cpp_ad8632623f8dfc3d0966cf35f09d6a33b_cgraph" alt=""/></div>
 <map name="klist__test_8cpp_ad8632623f8dfc3d0966cf35f09d6a33b_cgraph" id="klist__test_8cpp_ad8632623f8dfc3d0966cf35f09d6a33b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,75,108"/>
-<area shape="rect" href="classK__Vectors.html#a4ae348fcfe0d57007a8cfe0ab2660936" title=" " alt="" coords="123,31,289,57"/>
-<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="139,81,273,108"/>
-<area shape="rect" href="classK__Vectors.html#a1f61ab9075864f594594db5ee8a0d764" title=" " alt="" coords="131,133,281,174"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="371,5,517,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="337,56,551,83"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056" title="Transpose a 3x3 matrix." alt="" coords="364,133,524,174"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7" title="Construct a new Matrix 3 object to Identity matrix." alt="" coords="599,133,759,174"/>
-<area shape="rect" href="classModuleBase_1_1Matrix3.html#a42bb8704e6e193ae5dded7779548fb1c" title="Set a 3x3 matrix to identity matrix." alt="" coords="807,133,967,174"/>
+<area shape="rect" title=" " alt="" coords="5,111,75,138"/>
+<area shape="rect" href="classK__Vectors.html#a4ae348fcfe0d57007a8cfe0ab2660936" title=" " alt="" coords="123,61,289,87"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="139,111,273,138"/>
+<area shape="rect" href="classK__Vectors.html#a1f61ab9075864f594594db5ee8a0d764" title=" " alt="" coords="131,163,281,204"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="371,50,517,77"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="337,101,551,127"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="599,5,781,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="613,71,767,112"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056" title="Transpose a 3x3 matrix." alt="" coords="364,163,524,204"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7" title="Construct a new Matrix 3 object to Identity matrix." alt="" coords="610,163,770,204"/>
 </map>
 </div>
 
@@ -484,11 +490,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="klist__test_8cpp_a1efa95003832fbfea5478b522671a150_cgraph.png" border="0" usemap="#klist__test_8cpp_a1efa95003832fbfea5478b522671a150_cgraph" alt=""/></div>
 <map name="klist__test_8cpp_a1efa95003832fbfea5478b522671a150_cgraph" id="klist__test_8cpp_a1efa95003832fbfea5478b522671a150_cgraph">
-<area shape="rect" title=" " alt="" coords="5,56,75,83"/>
-<area shape="rect" href="classK__Vectors.html#a4ae348fcfe0d57007a8cfe0ab2660936" title=" " alt="" coords="123,31,289,57"/>
-<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="139,81,273,108"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="371,5,517,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="337,56,551,83"/>
+<area shape="rect" title=" " alt="" coords="5,97,75,123"/>
+<area shape="rect" href="classK__Vectors.html#a4ae348fcfe0d57007a8cfe0ab2660936" title=" " alt="" coords="123,71,289,98"/>
+<area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="139,122,273,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="371,46,517,73"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="337,97,551,123"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="599,5,781,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="613,71,767,112"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="829,5,1012,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="832,78,1009,105"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1060,71,1213,112"/>
 </map>
 </div>
 
@@ -528,10 +539,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,82,1009,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="841,147,995,189"/>
 </map>
 </div>
 
@@ -572,10 +585,11 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#a52ee6279ba2fcc4cdb1b3410074251d9" title=" " alt="" coords="140,206,284,247"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,61,559,88"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,213,568,240"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,163,546,189"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,115,1009,157"/>
 </map>
 </div>
 
@@ -615,10 +629,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,82,1009,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="841,147,995,189"/>
 </map>
 </div>
 
@@ -658,10 +674,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,82,1009,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="841,147,995,189"/>
 </map>
 </div>
 
@@ -701,10 +719,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,82,1009,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="841,147,995,189"/>
 </map>
 </div>
 
@@ -744,10 +764,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,82,1009,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="841,147,995,189"/>
 </map>
 </div>
 
@@ -788,10 +810,11 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#a52ee6279ba2fcc4cdb1b3410074251d9" title=" " alt="" coords="140,206,284,247"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,61,559,88"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,213,568,240"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,163,546,189"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,115,1009,157"/>
 </map>
 </div>
 
@@ -831,10 +854,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,82,1009,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="841,147,995,189"/>
 </map>
 </div>
 
@@ -874,10 +899,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,82,1009,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="841,147,995,189"/>
 </map>
 </div>
 
@@ -917,10 +944,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,82,1009,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="841,147,995,189"/>
 </map>
 </div>
 
@@ -960,10 +989,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,82,1009,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="841,147,995,189"/>
 </map>
 </div>
 
@@ -1003,10 +1034,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,82,1009,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="841,147,995,189"/>
 </map>
 </div>
 
@@ -1046,10 +1079,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,82,1009,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="841,147,995,189"/>
 </map>
 </div>
 
@@ -1089,10 +1124,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,82,1009,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="841,147,995,189"/>
 </map>
 </div>
 
@@ -1132,10 +1169,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#ab1380f72433577f42ac1647207540a8f" title=" " alt="" coords="123,115,301,141"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,64,559,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,165,568,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,216,546,243"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,82,1009,123"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="841,147,995,189"/>
 </map>
 </div>
 
@@ -1299,10 +1338,11 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#a52ee6279ba2fcc4cdb1b3410074251d9" title=" " alt="" coords="140,206,284,247"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,61,559,88"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,213,568,240"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,163,546,189"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,115,1009,157"/>
 </map>
 </div>
 
@@ -1343,10 +1383,11 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#a75d26a706355c95a6c5a586bba230c51" title=" " alt="" coords="139,206,285,247"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="359,61,559,88"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="630,5,765,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="625,123,770,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="625,123,770,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="349,213,568,240"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="371,163,546,189"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="616,57,779,98"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="827,115,1009,157"/>
 </map>
 </div>
 
@@ -1386,7 +1427,12 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="153,5,287,32"/>
 <area shape="rect" href="classK__Vectors.html#adb0d91d4c03e9c89742eda4d0dcde3bf" title=" " alt="" coords="123,56,317,83"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="365,31,584,57"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="402,81,547,108"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="402,81,547,108"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="632,41,815,82"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="647,106,800,147"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="863,41,1045,82"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="865,113,1043,140"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1093,106,1247,147"/>
 </map>
 </div>
 

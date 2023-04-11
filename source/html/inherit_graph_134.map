@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structhamilt_1_1veff__pw__op.html" title=" " alt="" coords="5,5,159,47"/>
+<area shape="rect" id="node1" href="$classhamilt_1_1Operator.html" title=" " alt="" coords="5,97,173,153"/>
+<area shape="rect" id="node2" href="$classhamilt_1_1OperatorPW.html" title=" " alt="" coords="221,104,375,145"/>
+<area shape="rect" id="node3" href="$classhamilt_1_1Ekinetic_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html" title=" " alt="" coords="425,5,621,47"/>
+<area shape="rect" id="node4" href="$classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html" title=" " alt="" coords="424,71,623,112"/>
+<area shape="rect" id="node5" href="$classhamilt_1_1Nonlocal_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html" title=" " alt="" coords="423,136,624,177"/>
+<area shape="rect" id="node6" href="$classhamilt_1_1Veff_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html" title=" " alt="" coords="428,201,619,243"/>
 </map>

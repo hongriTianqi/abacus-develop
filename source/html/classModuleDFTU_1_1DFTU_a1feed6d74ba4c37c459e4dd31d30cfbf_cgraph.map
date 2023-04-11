@@ -1,7 +1,10 @@
 <map id="ModuleDFTU::DFTU::cal_energy_correction" name="ModuleDFTU::DFTU::cal_energy_correction">
-<area shape="rect" id="node1" title=" " alt="" coords="5,64,180,105"/>
-<area shape="rect" id="node2" href="$classModuleDFTU_1_1DFTU.html#aa7dbd2bac5bdad4fd1496032396c7204" title=" " alt="" coords="228,5,405,47"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="457,38,603,65"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="228,122,405,149"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="453,115,607,156"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,79,180,120"/>
+<area shape="rect" id="node2" href="$classModuleDFTU_1_1DFTU.html#aa7dbd2bac5bdad4fd1496032396c7204" title=" " alt="" coords="228,20,405,61"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="453,53,599,79"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="880,107,1057,134"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="647,5,829,47"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="661,71,815,112"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="877,5,1060,47"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1108,100,1261,141"/>
 </map>

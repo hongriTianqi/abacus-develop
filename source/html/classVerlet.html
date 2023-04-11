@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.1.4: Verlet Class Reference</title>
+<title>3.2.0: Verlet Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.1.4
-   &#160;<span id="projectnumber">2023-03-14</span>
+   <div id="projectname">3.2.0
+   &#160;<span id="projectnumber">2023-04-11</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -78,8 +78,8 @@ Inheritance diagram for Verlet:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVerlet__inherit__graph.png" border="0" usemap="#Verlet_inherit__map" alt="Inheritance graph"/></div>
 <map name="Verlet_inherit__map" id="Verlet_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,380,168,589"/>
-<area shape="rect" href="classMDrun.html" title=" " alt="" coords="13,5,160,332"/>
+<area shape="rect" title=" " alt="" coords="5,409,168,619"/>
+<area shape="rect" href="classMDrun.html" title=" " alt="" coords="13,5,160,361"/>
 </map>
 </div>
 <div class="dynheader">
@@ -87,8 +87,8 @@ Collaboration diagram for Verlet:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVerlet__coll__graph.png" border="0" usemap="#Verlet_coll__map" alt="Collaboration graph"/></div>
 <map name="Verlet_coll__map" id="Verlet_coll__map">
-<area shape="rect" title=" " alt="" coords="746,1681,908,1891"/>
-<area shape="rect" href="classMDrun.html" title=" " alt="" coords="754,1335,900,1632"/>
+<area shape="rect" title=" " alt="" coords="746,1711,908,1920"/>
+<area shape="rect" href="classMDrun.html" title=" " alt="" coords="754,1335,900,1661"/>
 <area shape="rect" href="classUnitCell.html" title=" " alt="" coords="444,887,583,1257"/>
 <area shape="rect" href="classMagnetism.html" title=" " alt="" coords="203,490,408,714"/>
 <area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="77,5,236,273"/>
@@ -133,6 +133,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ae13c3615d2cf185d056e8a6bb1ce7e9d inherit pub_methods_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40231699e3268f07c8f9b18b0498d560 inherit pub_methods_classMDrun"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a40231699e3268f07c8f9b18b0498d560">~MDrun</a> ()</td></tr>
 <tr class="separator:a40231699e3268f07c8f9b18b0498d560 inherit pub_methods_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a117831ce15e9c9ea3ecf0439da44225f inherit pub_methods_classMDrun"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f">update_pos</a> ()</td></tr>
+<tr class="memdesc:a117831ce15e9c9ea3ecf0439da44225f inherit pub_methods_classMDrun"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform one step update of pos due to atomic velocity  <a href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f">More...</a><br /></td></tr>
+<tr class="separator:a117831ce15e9c9ea3ecf0439da44225f inherit pub_methods_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b4e537c0e31069dcd68609f914234df inherit pub_methods_classMDrun"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df">update_vel</a> (const <a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *<a class="el" href="classMDrun.html#af606a44acc0c7a20a95358c784076acd">force</a>)</td></tr>
+<tr class="memdesc:a7b4e537c0e31069dcd68609f914234df inherit pub_methods_classMDrun"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform half-step update of vel due to atomic force  <a href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df">More...</a><br /></td></tr>
+<tr class="separator:a7b4e537c0e31069dcd68609f914234df inherit pub_methods_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -291,15 +297,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classVerlet_aba69d1b6dbfd2695197236279dff7099_cgraph.png" border="0" usemap="#classVerlet_aba69d1b6dbfd2695197236279dff7099_cgraph" alt=""/></div>
 <map name="classVerlet_aba69d1b6dbfd2695197236279dff7099_cgraph" id="classVerlet_aba69d1b6dbfd2695197236279dff7099_cgraph">
-<area shape="rect" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,148,131,175"/>
-<area shape="rect" href="classMDrun.html#a6f87ef70d9b4910b0a6399ed5b41307b" title="the first half of equation of motion, update velocities and positions" alt="" coords="202,93,333,120"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="179,148,356,175"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="195,199,340,225"/>
-<area shape="rect" href="classMD__func.html#aecf4cfc5f562ff1f75fe480248aa6bc0" title=" " alt="" coords="431,5,562,32"/>
-<area shape="rect" href="classUnitCell.html#a2f5cc850b919765c3b62894f8066b094" title=" " alt="" coords="411,57,582,98"/>
-<area shape="rect" href="classUnitCell.html#a2c6f413016609a17a96ce59023b94f1f" title=" " alt="" coords="404,123,589,149"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="637,64,851,91"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="420,174,573,215"/>
+<area shape="rect" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,99,131,126"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="619,13,796,39"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="180,74,325,101"/>
+<area shape="rect" href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f" title="perform one step update of pos due to atomic velocity" alt="" coords="179,125,327,151"/>
+<area shape="rect" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df" title="perform half&#45;step update of vel due to atomic force" alt="" coords="180,175,325,202"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="847,5,1000,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="380,100,563,141"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="395,35,548,76"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="616,100,799,141"/>
+<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="375,166,568,193"/>
 </map>
 </div>
 
@@ -438,9 +445,9 @@ Here is the call graph for this function:</div>
 <map name="classVerlet_a58f10f85ec6c5cf05486a07c27b379bc_cgraph" id="classVerlet_a58f10f85ec6c5cf05486a07c27b379bc_cgraph">
 <area shape="rect" title="the second half of equation of motion, update velocities" alt="" coords="5,183,152,209"/>
 <area shape="rect" href="classVerlet.html#adca4383b8dde321f9313b6cdf940cd24" title=" " alt="" coords="200,107,383,133"/>
-<area shape="rect" href="classMDrun.html#a2b7f91ffa0d66ba98ca6c2cad87e3d49" title="the second half of equation of motion, update velocities" alt="" coords="216,157,367,184"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="203,208,380,235"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="219,259,364,285"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="203,157,380,184"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="219,208,364,235"/>
+<area shape="rect" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df" title="perform half&#45;step update of vel due to atomic force" alt="" coords="219,259,364,285"/>
 <area shape="rect" href="classMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title=" " alt="" coords="450,5,625,32"/>
 <area shape="rect" href="classMD__func.html#a36655a0860e146ab9c2ad9e3110cb8c9" title=" " alt="" coords="460,56,615,83"/>
 <area shape="rect" href="classMD__func.html#a6d8606bdc588c3fb21550c8486ad8c4c" title=" " alt="" coords="454,107,621,133"/>
@@ -492,7 +499,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="5,134,109,161"/>
 <area shape="rect" href="classMDrun.html#ade9fa55197d9f546719b08b729fbf68e" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="157,134,267,161"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="553,83,731,110"/>
-<area shape="rect" href="namespaceModuleBase.html#a7f2e75fdaf26614e5c7485cff6287bd4" title=" " alt="" coords="569,185,715,211"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="569,185,715,211"/>
 <area shape="rect" href="classMD__func.html#a74016d09926da9592562873ce98f4da5" title=" " alt="" coords="315,33,505,59"/>
 <area shape="rect" href="classMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title=" " alt="" coords="323,83,497,110"/>
 <area shape="rect" href="classMD__func.html#a3abf5bc0e7d64e547352ba03755b9cff" title=" " alt="" coords="330,134,490,161"/>
