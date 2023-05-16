@@ -1,6 +1,7 @@
-<map id="src_ri/test_code/exx_abfs&#45;construct_orbs&#45;test.h" name="src_ri/test_code/exx_abfs&#45;construct_orbs&#45;test.h">
-<area shape="rect" id="node1" title=" " alt="" coords="101,5,259,61"/>
-<area shape="rect" id="node2" href="$conv__coulomb__pot__k-template_8h.html" title=" " alt="" coords="5,109,160,151"/>
-<area shape="rect" id="node4" href="$exx__abfs-construct__orbs_8cpp.html" title=" " alt="" coords="185,109,370,151"/>
-<area shape="rect" id="node3" href="$exx__lcao_8cpp.html" title=" " alt="" coords="9,199,156,225"/>
+<map id="module_ri/test_code/exx_abfs&#45;construct_orbs&#45;test.h" name="module_ri/test_code/exx_abfs&#45;construct_orbs&#45;test.h">
+<area shape="rect" id="node1" title=" " alt="" coords="117,5,271,61"/>
+<area shape="rect" id="node2" href="$conv__coulomb__pot__k-template_8h.html" title=" " alt="" coords="5,109,191,151"/>
+<area shape="rect" id="node5" href="$exx__abfs-construct__orbs_8cpp.html" title=" " alt="" coords="215,109,365,151"/>
+<area shape="rect" id="node3" href="$Exx__LRI_8hpp.html" title=" " alt="" coords="13,199,183,225"/>
+<area shape="rect" id="node4" href="$Exx__LRI_8h.html" title=" " alt="" coords="21,273,175,300"/>
 </map>

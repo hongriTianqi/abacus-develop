@@ -1,12 +1,12 @@
-<map id="src_ri/exx_abfs&#45;pca.h" name="src_ri/exx_abfs&#45;pca.h">
-<area shape="rect" id="node1" title=" " alt="" coords="241,5,401,32"/>
-<area shape="rect" id="node2" href="$exx__abfs_8h.html" title=" " alt="" coords="426,80,519,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="187,333,249,360"/>
-<area shape="rect" id="node6" href="$ORB__atomic__lm_8h.html" title=" " alt="" coords="232,155,409,196"/>
-<area shape="rect" id="node8" href="$element__basis__index_8h.html" title=" " alt="" coords="29,155,207,196"/>
-<area shape="rect" id="node9" href="$matrix_8h.html" title=" " alt="" coords="821,162,1001,189"/>
-<area shape="rect" id="node4" title=" " alt="" coords="535,162,586,189"/>
-<area shape="rect" id="node5" title=" " alt="" coords="411,333,470,360"/>
-<area shape="rect" id="node10" href="$vector3_8h.html" title=" " alt="" coords="610,162,797,189"/>
-<area shape="rect" id="node7" href="$global__function_8h.html" title=" " alt="" coords="307,244,460,285"/>
+<map id="module_ri/exx_abfs&#45;pca.h" name="module_ri/exx_abfs&#45;pca.h">
+<area shape="rect" id="node1" title=" " alt="" coords="327,5,477,47"/>
+<area shape="rect" id="node2" href="$exx__abfs_8h.html" title=" " alt="" coords="398,95,491,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="185,259,248,285"/>
+<area shape="rect" id="node6" href="$ORB__atomic__lm_8h.html" title=" " alt="" coords="27,169,204,211"/>
+<area shape="rect" id="node7" href="$element__basis__index_8h.html" title=" " alt="" coords="229,169,407,211"/>
+<area shape="rect" id="node8" href="$matrix_8h.html" title=" " alt="" coords="851,177,1031,203"/>
+<area shape="rect" id="node10" title=" " alt="" coords="566,95,702,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="482,177,533,203"/>
+<area shape="rect" id="node5" title=" " alt="" coords="557,177,615,203"/>
+<area shape="rect" id="node9" href="$vector3_8h.html" title=" " alt="" coords="639,177,826,203"/>
 </map>

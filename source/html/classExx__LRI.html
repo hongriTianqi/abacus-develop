@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Exx_LRI&lt; Tdata &gt; Class Template Reference</title>
+<title>3.2.2: Exx_LRI&lt; Tdata &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -84,9 +84,10 @@ Collaboration diagram for Exx_LRI&lt; Tdata &gt;:</div>
 <div class="dyncontent">
 <div class="center"><img src="classExx__LRI__coll__graph.png" border="0" usemap="#Exx__LRI_3_01Tdata_01_4_coll__map" alt="Collaboration graph"/></div>
 <map name="Exx__LRI_3_01Tdata_01_4_coll__map" id="Exx__LRI_3_01Tdata_01_4_coll__map">
-<area shape="rect" title=" " alt="" coords="94,336,261,663"/>
-<area shape="rect" href="structExx__Info_1_1Exx__Info__RI.html" title=" " alt="" coords="5,20,168,244"/>
-<area shape="rect" href="classModuleBase_1_1matrix.html" title=" " alt="" coords="193,5,346,259"/>
+<area shape="rect" title=" " alt="" coords="243,688,409,1029"/>
+<area shape="rect" href="classK__Vectors.html" title=" " alt="" coords="5,5,220,611"/>
+<area shape="rect" href="structExx__Info_1_1Exx__Info__RI.html" title=" " alt="" coords="245,196,407,420"/>
+<area shape="rect" href="classModuleBase_1_1matrix.html" title=" " alt="" coords="432,181,585,435"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -94,8 +95,8 @@ Collaboration diagram for Exx_LRI&lt; Tdata &gt;:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5deea4c816be036231e6e42693b57d0c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExx__LRI.html#a5deea4c816be036231e6e42693b57d0c">Exx_LRI</a> (const <a class="el" href="structExx__Info_1_1Exx__Info__RI.html">Exx_Info::Exx_Info_RI</a> &amp;info_in)</td></tr>
 <tr class="separator:a5deea4c816be036231e6e42693b57d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a405e5962417ec7de5b92aa8eb197bbdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExx__LRI.html#a405e5962417ec7de5b92aa8eb197bbdb">init</a> (const MPI_Comm &amp;mpi_comm_in)</td></tr>
-<tr class="separator:a405e5962417ec7de5b92aa8eb197bbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada647b1279a682e6dbae1d2c7a2f57dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExx__LRI.html#ada647b1279a682e6dbae1d2c7a2f57dd">init</a> (const MPI_Comm &amp;mpi_comm_in, const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;kv_in)</td></tr>
+<tr class="separator:ada647b1279a682e6dbae1d2c7a2f57dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab79b30e1c74f72e82fcde8aaf24129b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExx__LRI.html#ab79b30e1c74f72e82fcde8aaf24129b7">cal_exx_ions</a> ()</td></tr>
 <tr class="separator:ab79b30e1c74f72e82fcde8aaf24129b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0a85f40fb750862f732012ba4b1015e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExx__LRI.html#ab0a85f40fb750862f732012ba4b1015e">cal_exx_elec</a> (const <a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a> &amp;loc, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
@@ -119,6 +120,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a685758253a7b1e3130c1bc3dfdef441e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00ad924c041361aac3252c5c258167f4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExx__LRI.html#a00ad924c041361aac3252c5c258167f4">stress_exx</a></td></tr>
 <tr class="separator:a00ad924c041361aac3252c5c258167f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8da421f467dc4249ca0165f48255c7f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::deque&lt; std::vector&lt; std::vector&lt; Tdata &gt; &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExx__LRI.html#aa8da421f467dc4249ca0165f48255c7f">Hk_seq</a></td></tr>
+<tr class="separator:aa8da421f467dc4249ca0165f48255c7f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-types"></a>
 Private Types</h2></td></tr>
@@ -146,6 +149,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a4e27f66a6b531f5db1bb05b6a4d4023e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac79c2f5cd81f97c288ca31d63d83b401"><td class="memItemLeft" align="right" valign="top">MPI_Comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExx__LRI.html#ac79c2f5cd81f97c288ca31d63d83b401">mpi_comm</a></td></tr>
 <tr class="separator:ac79c2f5cd81f97c288ca31d63d83b401"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af16dd3985ed5dea20f9ee2218f94ce37"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classK__Vectors.html">K_Vectors</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExx__LRI.html#af16dd3985ed5dea20f9ee2218f94ce37">p_kv</a></td></tr>
+<tr class="separator:af16dd3985ed5dea20f9ee2218f94ce37"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a08594f36ea8cecebfe78544b57a7fa88"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; std::vector&lt; <a class="el" href="classNumerical__Orbital__Lm.html">Numerical_Orbital_Lm</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExx__LRI.html#a08594f36ea8cecebfe78544b57a7fa88">lcaos</a></td></tr>
 <tr class="separator:a08594f36ea8cecebfe78544b57a7fa88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ac415bba198871cd432276cad75e8dc"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; std::vector&lt; <a class="el" href="classNumerical__Orbital__Lm.html">Numerical_Orbital_Lm</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classExx__LRI.html#a2ac415bba198871cd432276cad75e8dc">abfs</a></td></tr>
@@ -456,8 +461,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="a405e5962417ec7de5b92aa8eb197bbdb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a405e5962417ec7de5b92aa8eb197bbdb">&#9670;&nbsp;</a></span>init()</h2>
+<a id="ada647b1279a682e6dbae1d2c7a2f57dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada647b1279a682e6dbae1d2c7a2f57dd">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -468,20 +473,30 @@ template&lt;typename Tdata &gt; </div>
           <td class="memname">void <a class="el" href="classExx__LRI.html">Exx_LRI</a>&lt; Tdata &gt;::init </td>
           <td>(</td>
           <td class="paramtype">const MPI_Comm &amp;&#160;</td>
-          <td class="paramname"><em>mpi_comm_in</em></td><td>)</td>
+          <td class="paramname"><em>mpi_comm_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;&#160;</td>
+          <td class="paramname"><em>kv_in</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classExx__LRI_a405e5962417ec7de5b92aa8eb197bbdb_cgraph.png" border="0" usemap="#classExx__LRI_a405e5962417ec7de5b92aa8eb197bbdb_cgraph" alt=""/></div>
-<map name="classExx__LRI_a405e5962417ec7de5b92aa8eb197bbdb_cgraph" id="classExx__LRI_a405e5962417ec7de5b92aa8eb197bbdb_cgraph">
+<div class="center"><img src="classExx__LRI_ada647b1279a682e6dbae1d2c7a2f57dd_cgraph.png" border="0" usemap="#classExx__LRI_ada647b1279a682e6dbae1d2c7a2f57dd_cgraph" alt=""/></div>
+<map name="classExx__LRI_ada647b1279a682e6dbae1d2c7a2f57dd_cgraph" id="classExx__LRI_ada647b1279a682e6dbae1d2c7a2f57dd_cgraph">
 <area shape="rect" title=" " alt="" coords="5,195,108,222"/>
 <area shape="rect" href="classExx__Abfs_1_1Construct__Orbs.html#ac0b16254b0e8d36c6967747a42d4ba50" title=" " alt="" coords="170,5,349,47"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="412,71,557,98"/>
-<area shape="rect" href="classConv__Coulomb__Pot__K.html#a9702ea43f9b3e32b2959e0201f836ed8" title=" " alt="" coords="177,123,341,164"/>
+<area shape="rect" href="classConv__Coulomb__Pot__K.html#a3cd98781edfb6764d43b9e39337be326" title=" " alt="" coords="177,123,341,164"/>
 <area shape="rect" href="classExx__Abfs_1_1Construct__Orbs.html#aff148854b6a70cef2404537fc6994b0b" title=" " alt="" coords="183,188,335,229"/>
 <area shape="rect" href="classExx__Abfs_1_1IO.html#abcf94ceceb957bbe032cf38df1f9d130" title=" " alt="" coords="156,254,363,281"/>
 <area shape="rect" href="classExx__Abfs_1_1Construct__Orbs.html#abb334de1bc4e677b616a532ad6eba9a0" title=" " alt="" coords="177,305,342,347"/>
@@ -815,6 +830,22 @@ template&lt;typename Tdata &gt; </div>
 
 </div>
 </div>
+<a id="aa8da421f467dc4249ca0165f48255c7f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa8da421f467dc4249ca0165f48255c7f">&#9670;&nbsp;</a></span>Hk_seq</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Tdata &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;std::deque&lt;std::vector&lt;std::vector&lt;Tdata&gt; &gt; &gt; &gt; <a class="el" href="classExx__LRI.html">Exx_LRI</a>&lt; Tdata &gt;::Hk_seq</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a4e27f66a6b531f5db1bb05b6a4d4023e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4e27f66a6b531f5db1bb05b6a4d4023e">&#9670;&nbsp;</a></span>info</h2>
 
@@ -905,6 +936,30 @@ template&lt;typename Tdata &gt; </div>
   </td>
   <td class="mlabels-right">
 <span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="af16dd3985ed5dea20f9ee2218f94ce37"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af16dd3985ed5dea20f9ee2218f94ce37">&#9670;&nbsp;</a></span>p_kv</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Tdata &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classK__Vectors.html">K_Vectors</a>* <a class="el" href="classExx__LRI.html">Exx_LRI</a>&lt; Tdata &gt;::p_kv</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

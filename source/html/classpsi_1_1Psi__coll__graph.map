@@ -1,3 +1,4 @@
 <map id="psi::Psi&lt; T, Device &gt;" name="psi::Psi&lt; T, Device &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,164,420"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,145,164,545"/>
+<area shape="rect" id="node2" href="$structDEVICE__CPU.html" title="A tag type for identifying CPU and GPU devices." alt="" coords="33,5,137,83"/>
 </map>

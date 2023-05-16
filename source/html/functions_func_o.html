@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Class Members - Functions</title>
+<title>3.2.2: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -71,7 +71,7 @@ $(function() {
 : <a class="el" href="classOccupy.html#ac45b4f2f37a2193d75f0c86cc4cdf9dc">Occupy</a>
 </li>
 <li>OF_Stress_PW()
-: <a class="el" href="classOF__Stress__PW.html#a992e9a18f3dcad0e24346c70b790bf71">OF_Stress_PW</a>
+: <a class="el" href="classOF__Stress__PW.html#a96eaea804cedaf672d7ffc75569b43c3">OF_Stress_PW</a>
 </li>
 <li>open()
 : <a class="el" href="classBinstream.html#a308069436f4323de52746398e7cf2f95">Binstream</a>
@@ -86,11 +86,43 @@ $(function() {
 : <a class="el" href="classBinstream.html#a36c7a6b7487e25b5a9afc786e8a1cdf6">Binstream</a>
 </li>
 <li>operator!=()
-: <a class="el" href="classModuleBase_1_1ComplexArray.html#a9a3e9b0a264089c84f89b0ab8bc83f05">ModuleBase::ComplexArray</a>
+: <a class="el" href="classcontainer_1_1TensorShape.html#abdeb39bb3da31a250363ff96bb95ef9d">container::TensorShape</a>
+, <a class="el" href="classModuleBase_1_1ComplexArray.html#a9a3e9b0a264089c84f89b0ab8bc83f05">ModuleBase::ComplexArray</a>
 </li>
 <li>operator()()
-: <a class="el" href="structelecstate_1_1elecstate__pw__op.html#af3d4ac80c8db1c87ffab603b65b2732f">elecstate::elecstate_pw_op&lt; FPTYPE, Device &gt;</a>
-, <a class="el" href="structelecstate_1_1elecstate__pw__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a9b554049d8300b7739c1fffe76e6e677">elecstate::elecstate_pw_op&lt; FPTYPE, psi::DEVICE_CPU &gt;</a>
+: <a class="el" href="structcontainer_1_1op_1_1axpy__op.html#a06d77cc5f43191e4c13ea29949d09fc0">container::op::axpy_op&lt; T, DEVICE &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1axpy__op_3_01T_00_01DEVICE__CPU_01_4.html#a1cf6e347719d20ddbf8ee76e6b8c6b4b">container::op::axpy_op&lt; T, DEVICE_CPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1cast__memory__op.html#a05611a97b67d3ff53346aa3776a0cda1">container::op::cast_memory_op&lt; T_out, T_in, Device_out, Device_in &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1cast__memory__op_3_01FPTYPE__out_00_01FPTYPE__in_00_01container_1_1DEVI510794064abdaee6b70f952f5894c2ae.html#aa633cf293a8275fb193e6918fae4d902">container::op::cast_memory_op&lt; FPTYPE_out, FPTYPE_in, container::DEVICE_CPU, container::DEVICE_CPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1cast__memory__op_3_01FPTYPE__out_00_01FPTYPE__in_00_01container_1_1DEVI51045a4a876831de1cf453a0f6cc9f47.html#ac4786504fdf6d6220bd57641334276a1">container::op::cast_memory_op&lt; FPTYPE_out, FPTYPE_in, container::DEVICE_CPU, container::DEVICE_GPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1cast__memory__op_3_01FPTYPE__out_00_01FPTYPE__in_00_01container_1_1DEVId0c8ee3fb09561602cae97845a1d12ef.html#a13d88742ca12a8765271528aa38204b6">container::op::cast_memory_op&lt; FPTYPE_out, FPTYPE_in, container::DEVICE_GPU, container::DEVICE_CPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1cast__memory__op_3_01FPTYPE__out_00_01FPTYPE__in_00_01container_1_1DEVI0799ffb80dabca1586ea49bacfe1ec76.html#a931949cae31dc6b0d9f48f84d9783c4e">container::op::cast_memory_op&lt; FPTYPE_out, FPTYPE_in, container::DEVICE_GPU, container::DEVICE_GPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1delete__memory__op.html#a91eaba56f29959ef3cc6399ba4cfc799">container::op::delete_memory_op&lt; T, Device &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1delete__memory__op_3_01T_00_01container_1_1DEVICE__CPU_01_4.html#ae43b8236037e8ac8e7ae7299869f0500">container::op::delete_memory_op&lt; T, container::DEVICE_CPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1delete__memory__op_3_01T_00_01container_1_1DEVICE__GPU_01_4.html#ab10249558a1819dca6519faffe7b9e6a">container::op::delete_memory_op&lt; T, container::DEVICE_GPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1dnevx__op.html#a7a0e8307e94950a163103ca7098a8cc8">container::op::dnevx_op&lt; T, Device &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1dnevx__op_3_01T_00_01DEVICE__CPU_01_4.html#a9ebe0a67af89f193d8bbc85e14535ff4">container::op::dnevx_op&lt; T, DEVICE_CPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1dngvd__op.html#a74fc2627a2f7682901950bcb895a32cb">container::op::dngvd_op&lt; T, Device &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1dngvd__op_3_01T_00_01DEVICE__CPU_01_4.html#aa384cdf426cd347d22d64b775a5ef873">container::op::dngvd_op&lt; T, DEVICE_CPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1gemm__op.html#a7a46411a012742503d383ae833fbdda8">container::op::gemm_op&lt; T, DEVICE &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1gemm__op_3_01T_00_01DEVICE__CPU_01_4.html#ac686556cc510684a1ab0976fd666c2ea">container::op::gemm_op&lt; T, DEVICE_CPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1gemv__op.html#a343c178c811a9ded40ed67898a2109be">container::op::gemv_op&lt; T, DEVICE &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1gemv__op_3_01T_00_01DEVICE__CPU_01_4.html#a4552d989c9ad022458631e9689dc631e">container::op::gemv_op&lt; T, DEVICE_CPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1resize__memory__op.html#a165422fc16c15cea0a065bbfa76164b5">container::op::resize_memory_op&lt; T, Device &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1resize__memory__op_3_01T_00_01container_1_1DEVICE__CPU_01_4.html#a04960adccd9b5e5b4bc032d6557f2d3e">container::op::resize_memory_op&lt; T, container::DEVICE_CPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1resize__memory__op_3_01T_00_01container_1_1DEVICE__GPU_01_4.html#a5d3aa8b78330c0ab64ddf9baf1212cd5">container::op::resize_memory_op&lt; T, container::DEVICE_GPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1scal__op.html#ae75f4a7de520a899f5efbe00780a998b">container::op::scal_op&lt; T, DEVICE &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1scal__op_3_01T_00_01DEVICE__CPU_01_4.html#afd6ac79b20f21a15700aff0857937d0d">container::op::scal_op&lt; T, DEVICE_CPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1set__memory__op.html#a43ddd80d488bcaaa435ed95ae064dea0">container::op::set_memory_op&lt; T, Device &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1set__memory__op_3_01T_00_01container_1_1DEVICE__CPU_01_4.html#a12feb0d9f0a7f742ec4404ac4b776b5f">container::op::set_memory_op&lt; T, container::DEVICE_CPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1set__memory__op_3_01T_00_01container_1_1DEVICE__GPU_01_4.html#aace955810693608c0957f1715f4d4a19">container::op::set_memory_op&lt; T, container::DEVICE_GPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1synchronize__memory__op.html#afa07210576aca9ddf7832a20215a2abb">container::op::synchronize_memory_op&lt; T, Device_out, Device_in &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1synchronize__memory__op_3_01T_00_01container_1_1DEVICE__CPU_00_01container_1_1DEVICE__CPU_01_4.html#a6b609c72e292c63f3ca73c89073839ea">container::op::synchronize_memory_op&lt; T, container::DEVICE_CPU, container::DEVICE_CPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1synchronize__memory__op_3_01T_00_01container_1_1DEVICE__CPU_00_01container_1_1DEVICE__GPU_01_4.html#a8a07410ed30cc95b0a7bea9ab37a6e4a">container::op::synchronize_memory_op&lt; T, container::DEVICE_CPU, container::DEVICE_GPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1synchronize__memory__op_3_01T_00_01container_1_1DEVICE__GPU_00_01container_1_1DEVICE__CPU_01_4.html#adf1d554762395754d964ee77d7c0b355">container::op::synchronize_memory_op&lt; T, container::DEVICE_GPU, container::DEVICE_CPU &gt;</a>
+, <a class="el" href="structcontainer_1_1op_1_1synchronize__memory__op_3_01T_00_01container_1_1DEVICE__GPU_00_01container_1_1DEVICE__GPU_01_4.html#afe568ec1d9aecb2c8d4b919cd82affc0">container::op::synchronize_memory_op&lt; T, container::DEVICE_GPU, container::DEVICE_GPU &gt;</a>
+, <a class="el" href="structelecstate_1_1elecstate__pw__op.html#af3d4ac80c8db1c87ffab603b65b2732f">elecstate::elecstate_pw_op&lt; FPTYPE, Device &gt;</a>
+, <a class="el" href="structelecstate_1_1elecstate__pw__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#ab5c5b5da952349cfe722403eb340f5dc">elecstate::elecstate_pw_op&lt; FPTYPE, psi::DEVICE_CPU &gt;</a>
 , <a class="el" href="classFcoef.html#a88c5922ed8ac783a4eaa0f145248ccde">Fcoef</a>
 , <a class="el" href="structhamilt_1_1cal__dbecp__noevc__nl__op.html#a49de506329c6408a9c9220a1ac646b95">hamilt::cal_dbecp_noevc_nl_op&lt; FPTYPE, Device &gt;</a>
 , <a class="el" href="structhamilt_1_1cal__dbecp__noevc__nl__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#ab0dcc5b7dabed1a80062976f0d4f9af9">hamilt::cal_dbecp_noevc_nl_op&lt; FPTYPE, psi::DEVICE_CPU &gt;</a>
@@ -109,9 +141,9 @@ $(function() {
 , <a class="el" href="structhamilt_1_1meta__pw__op.html#a661cebea9ee7cc14a7a03750e2643959">hamilt::meta_pw_op&lt; FPTYPE, Device &gt;</a>
 , <a class="el" href="structhamilt_1_1meta__pw__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#afd8029c1b60923bc39b4b2184e17bdac">hamilt::meta_pw_op&lt; FPTYPE, psi::DEVICE_CPU &gt;</a>
 , <a class="el" href="structhamilt_1_1nonlocal__pw__op.html#a5fa5a37c7706386ba6ad7f741f17ee54">hamilt::nonlocal_pw_op&lt; FPTYPE, Device &gt;</a>
-, <a class="el" href="structhamilt_1_1nonlocal__pw__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a19ad2ab1a6f4c689dfb282a0034efda7">hamilt::nonlocal_pw_op&lt; FPTYPE, psi::DEVICE_CPU &gt;</a>
+, <a class="el" href="structhamilt_1_1nonlocal__pw__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a222531ebc182ae3ff002baa30a7414d3">hamilt::nonlocal_pw_op&lt; FPTYPE, psi::DEVICE_CPU &gt;</a>
 , <a class="el" href="structhamilt_1_1veff__pw__op.html#a1e8fc3fdffeff2a86eed478f8004a1eb">hamilt::veff_pw_op&lt; FPTYPE, Device &gt;</a>
-, <a class="el" href="structhamilt_1_1veff__pw__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a2800ce8c5ea8125dee64f4878256d470">hamilt::veff_pw_op&lt; FPTYPE, psi::DEVICE_CPU &gt;</a>
+, <a class="el" href="structhamilt_1_1veff__pw__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a052ebf84f562dc0f5b476488fe26ad9a">hamilt::veff_pw_op&lt; FPTYPE, psi::DEVICE_CPU &gt;</a>
 , <a class="el" href="structhsolver_1_1axpy__op.html#a0781d41fab98cb34b6b872be0627dbf7">hsolver::axpy_op&lt; FPTYPE, Device &gt;</a>
 , <a class="el" href="structhsolver_1_1axpy__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a06d6b74f6521ed87512e9275c334cd17">hsolver::axpy_op&lt; FPTYPE, psi::DEVICE_CPU &gt;</a>
 , <a class="el" href="structhsolver_1_1constantvector__addORsub__constantVector__op.html#abbda478319dfbc5d9e4d8f6a40b4646c">hsolver::constantvector_addORsub_constantVector_op&lt; FPTYPE, Device &gt;</a>
@@ -142,7 +174,7 @@ $(function() {
 , <a class="el" href="structModuleBase_1_1cal__ylm__real__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a598a86fe015f44169dfabccdc41aa0ae">ModuleBase::cal_ylm_real_op&lt; FPTYPE, psi::DEVICE_CPU &gt;</a>
 , <a class="el" href="classModuleBase_1_1ComplexArray.html#a0486e17f5fa3e4e3bfa463c2e2551add">ModuleBase::ComplexArray</a>
 , <a class="el" href="classModuleBase_1_1ComplexMatrix.html#ad1b15bad5c818bb768541a5d2a2f8a46">ModuleBase::ComplexMatrix</a>
-, <a class="el" href="classModuleBase_1_1IntArray.html#aba46a8482df7868d31830eea72c47895">ModuleBase::IntArray</a>
+, <a class="el" href="classModuleBase_1_1IntArray.html#a547dca9c7b8d3a4e6b67fc207b07eae4">ModuleBase::IntArray</a>
 , <a class="el" href="classModuleBase_1_1matrix.html#a9383ce44ee5605be66c6ada001449df1">ModuleBase::matrix</a>
 , <a class="el" href="classModuleBase_1_1realArray.html#a30e7d86d1c74e1b555c754f1bdca0d4a">ModuleBase::realArray</a>
 , <a class="el" href="structModulePW_1_1set__3d__fft__box__op.html#a42b533b0386236df7af7cc72276fd185">ModulePW::set_3d_fft_box_op&lt; FPTYPE, Device &gt;</a>
@@ -173,7 +205,7 @@ $(function() {
 , <a class="el" href="classpsi_1_1Psi.html#a2457f7a3012ad87a4b108fbe2b88d0d1">psi::Psi&lt; T, Device &gt;</a>
 </li>
 <li>operator*()
-: <a class="el" href="classModuleBase_1_1ComplexArray.html#a6f1d5164bf92b1b3861096899c04830c">ModuleBase::ComplexArray</a>
+: <a class="el" href="classModuleBase_1_1ComplexArray.html#a60f5855babec0afa21cf3b266d7dbc4a">ModuleBase::ComplexArray</a>
 </li>
 <li>operator*=()
 : <a class="el" href="classModuleBase_1_1ComplexArray.html#af005dd294ccada7548bf49e2f76e9abf">ModuleBase::ComplexArray</a>
@@ -211,24 +243,26 @@ $(function() {
 : <a class="el" href="classBinstream.html#a8b00a084ee3eb8886c08608758aec642">Binstream</a>
 </li>
 <li>operator=()
-: <a class="el" href="classModuleBase_1_1ComplexArray.html#a31a98c2c143be7593f0a584b77cf1c39">ModuleBase::ComplexArray</a>
+: <a class="el" href="classModuleBase_1_1ComplexArray.html#ade9766ab9fdf6b0d48ead2407a00a0ca">ModuleBase::ComplexArray</a>
 , <a class="el" href="classModuleBase_1_1ComplexMatrix.html#a0a082b61268cc541f5b5b579cfe28990">ModuleBase::ComplexMatrix</a>
 , <a class="el" href="classModuleBase_1_1IntArray.html#a88fff89bf4b97cb7e8601b6abf75e84a">ModuleBase::IntArray</a>
 , <a class="el" href="classModuleBase_1_1Matrix3.html#a10163ad4af97888e43126f7f22034cf5">ModuleBase::Matrix3</a>
 , <a class="el" href="classModuleBase_1_1matrix.html#a74625925930e1f85f9dba57dfcbb2567">ModuleBase::matrix</a>
 , <a class="el" href="classModuleBase_1_1Matrix__Wrapper.html#a6c0b4aece3353c817fe4e14f5cf57a4f">ModuleBase::Matrix_Wrapper</a>
 , <a class="el" href="classModuleBase_1_1realArray.html#a2d505861bd672ff388c81e82803f8c07">ModuleBase::realArray</a>
+, <a class="el" href="classModuleBase_1_1SphericalBesselTransformer.html#ac796b401851dcc5a8ebb6b21c20e3a6a">ModuleBase::SphericalBesselTransformer</a>
 , <a class="el" href="classModuleBase_1_1Vector3.html#a351b826f2eb9a5f809404a047d8f36e1">ModuleBase::Vector3&lt; T &gt;</a>
 , <a class="el" href="classNumerical__Nonlocal__Lm.html#a89bc96a0e0095fc34164ede57d1c5407">Numerical_Nonlocal_Lm</a>
 </li>
 <li>operator==()
-: <a class="el" href="classModuleBase_1_1ComplexArray.html#aa5589378c6bbe0d409a432f1503b6f84">ModuleBase::ComplexArray</a>
+: <a class="el" href="classcontainer_1_1TensorShape.html#a77d41c59cfe7a3403c61b90ee1c16b54">container::TensorShape</a>
+, <a class="el" href="classModuleBase_1_1ComplexArray.html#aa5589378c6bbe0d409a432f1503b6f84">ModuleBase::ComplexArray</a>
 </li>
 <li>operator&gt;&gt;()
 : <a class="el" href="classBinstream.html#a361b1db7ea2fd86997b6f1b66f73503b">Binstream</a>
 </li>
 <li>operator[]()
-: <a class="el" href="classModuleBase_1_1Vector3.html#a507763db326bfe9b00502c0b9bca6aa6">ModuleBase::Vector3&lt; T &gt;</a>
+: <a class="el" href="classModuleBase_1_1Vector3.html#a62305689bb45ee019b29d07c3b7addb3">ModuleBase::Vector3&lt; T &gt;</a>
 </li>
 <li>OperatorDFTU()
 : <a class="el" href="classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html#a5f083ee256945d9a3ff10638e9e6a6ca">hamilt::OperatorDFTU&lt; OperatorLCAO&lt; T &gt; &gt;</a>
@@ -257,11 +291,8 @@ $(function() {
 <li>Orb22()
 : <a class="el" href="classCenter2__Orb_1_1Orb22.html#af38463278cdf60cc1f3de46de1a29438">Center2_Orb::Orb22</a>
 </li>
-<li>Orb22_Ccp()
-: <a class="el" href="classCenter2__Orb_1_1Orb22__Ccp.html#abbe1dc66928710c1229e6cfd32fd441e">Center2_Orb::Orb22_Ccp</a>
-</li>
 <li>ORB_control()
-: <a class="el" href="classORB__control.html#a3b974d4f699b9ea80512a4bf13283337">ORB_control</a>
+: <a class="el" href="classORB__control.html#a6ca1077da99acbb6108a3fe8fec4364e">ORB_control</a>
 </li>
 <li>ORB_gaunt_table()
 : <a class="el" href="classORB__gaunt__table.html#a6b7d21d46938cd39b784d6fefc2d65ad">ORB_gaunt_table</a>
@@ -293,9 +324,6 @@ $(function() {
 <li>orth()
 : <a class="el" href="classExx__Abfs_1_1Construct__Orbs.html#a34697ba2da8f5f49b04ccbf5a73f25e0">Exx_Abfs::Construct_Orbs</a>
 </li>
-<li>orth_orbs()
-: <a class="el" href="classExx__Abfs_1_1Construct__Orbs.html#a6326dee99b1851af04871d7f6512f56e">Exx_Abfs::Construct_Orbs</a>
-</li>
 <li>orthog()
 : <a class="el" href="classStochastic__Iter.html#a2d801f3aa4e71f1176aaa9a4930e4bff">Stochastic_Iter</a>
 </li>
@@ -309,6 +337,7 @@ $(function() {
 : <a class="el" href="classModuleESolver_1_1ESolver.html#a74cc8c74936bea55001ae7c87184eb98">ModuleESolver::ESolver</a>
 , <a class="el" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6">ModuleESolver::ESolver_KS_LCAO</a>
 , <a class="el" href="classModuleESolver_1_1ESolver__KS__PW.html#a2d7c936122c694417b9e4291f501e591">ModuleESolver::ESolver_KS_PW&lt; FPTYPE, Device &gt;</a>
+, <a class="el" href="classModuleESolver_1_1ESolver__SDFT__PW.html#acc5b565040b5e3f88c0dee2f626a59a9">ModuleESolver::ESolver_SDFT_PW</a>
 </li>
 <li>out_bands()
 : <a class="el" href="classRPA__LRI.html#aa31969e33bd161d8e881ae6376ccadc7">RPA_LRI&lt; Tdata &gt;</a>
@@ -324,12 +353,6 @@ $(function() {
 </li>
 <li>out_for_RPA()
 : <a class="el" href="classRPA__LRI.html#a6c1164aad23d15b2b0cbbda179761f7b">RPA_LRI&lt; Tdata &gt;</a>
-</li>
-<li>out_mulliken()
-: <a class="el" href="classMulliken__Charge.html#a1d26609b66f7380171f6dcb54bd11836">Mulliken_Charge</a>
-</li>
-<li>out_rho()
-: <a class="el" href="classElecStateLCAOPrepare.html#aaa1375f2a6aebe8543059b7e6c308bfc">ElecStateLCAOPrepare&lt; T &gt;</a>
 </li>
 <li>out_rR()
 : <a class="el" href="classcal__r__overlap__R.html#a30fd69d113a66731a3a0be24ef747134">cal_r_overlap_R</a>
@@ -347,59 +370,41 @@ $(function() {
 : <a class="el" href="classberryphase.html#af09aea42b8546fa21b8b404f1a8f7812">berryphase</a>
 </li>
 <li>output()
-: <a class="el" href="classExx__Abfs_1_1Inverse__Matrix__Double.html#a74844df14d9d9b8a0909aca4767602ee">Exx_Abfs::Inverse_Matrix_Double</a>
-, <a class="el" href="classInverse__Matrix.html#a04e18f891ac9df7f5b11e09f11c8f1a9">Inverse_Matrix&lt; Tdata &gt;</a>
+: <a class="el" href="classInverse__Matrix.html#a769c89e443b14065e7bdf4646b54bf41">Inverse_Matrix&lt; Tdata &gt;</a>
 , <a class="el" href="classModuleDFTU_1_1DFTU.html#a344a9e290158b236fbe4c40c9eb3228c">ModuleDFTU::DFTU</a>
 </li>
-<li>output_binary()
-: <a class="el" href="classExx__Abfs_1_1IO.html#ab778dbe26b75160f12fd8437fb4f979e">Exx_Abfs::IO</a>
-</li>
-<li>output_cut()
-: <a class="el" href="classMulliken__Charge.html#a381cc6f260298f9e9d877af1974b3d78">Mulliken_Charge</a>
-</li>
 <li>output_descriptor()
-: <a class="el" href="classNumerical__Descriptor.html#a6d9a78152eb9691a85e26d03079b05e5">Numerical_Descriptor</a>
+: <a class="el" href="classNumerical__Descriptor.html#ad517f21756822de6ccd13b9d2e389e1c">Numerical_Descriptor</a>
 </li>
 <li>output_HSk()
 : <a class="el" href="classLCAO__Matrix.html#a5cf163d004def64561c3d9dfcb9229ca">LCAO_Matrix</a>
 </li>
 <li>output_info()
-: <a class="el" href="classNumerical__Basis.html#aac727a9e653ef814269897b5029181d5">Numerical_Basis</a>
+: <a class="el" href="classNumerical__Basis.html#a6285be56f5681d53e874ddaa129e884c">Numerical_Basis</a>
 </li>
 <li>output_k()
-: <a class="el" href="classNumerical__Basis.html#a6bad04455a5e6470fb7db29097af90c7">Numerical_Basis</a>
+: <a class="el" href="classNumerical__Basis.html#aea33711b9fafb085adf70632026ef2ef">Numerical_Basis</a>
 </li>
 <li>output_overlap()
-: <a class="el" href="classNumerical__Basis.html#a7f0dcff6fb2250631f6447cd5504ed5c">Numerical_Basis</a>
+: <a class="el" href="classNumerical__Basis.html#a14ddd7c2b3a50be3507427984511dd41">Numerical_Basis</a>
 </li>
 <li>output_overlap_Q()
-: <a class="el" href="classNumerical__Basis.html#aa4f899f2d3b237e8f6e82f4436defd21">Numerical_Basis</a>
+: <a class="el" href="classNumerical__Basis.html#a7304bedce10e383300e756357ec79294">Numerical_Basis</a>
 </li>
 <li>output_overlap_Sq()
-: <a class="el" href="classNumerical__Basis.html#a49dbd2f790a11165264f25a86b3c8c09">Numerical_Basis</a>
+: <a class="el" href="classNumerical__Basis.html#ab7888fe61ffc211df7bda536537786fd">Numerical_Basis</a>
 </li>
 <li>output_overlap_V()
 : <a class="el" href="classNumerical__Basis.html#a0c0f09f8f5c184306b029e4c6430129d">Numerical_Basis</a>
 </li>
-<li>output_text()
-: <a class="el" href="classExx__Abfs_1_1IO.html#aa7424b55127d3e75549dd12422193982">Exx_Abfs::IO</a>
-</li>
-<li>outputMD()
-: <a class="el" href="classFIRE.html#a164b3433fb5d4af8d961ebd4122c0617">FIRE</a>
-, <a class="el" href="classLangevin.html#a27ca8749da2cb47f00cd4b46d1a8b96f">Langevin</a>
-, <a class="el" href="classMDrun.html#a19356db7cdf6b48357ecfff93bccacf7">MDrun</a>
-, <a class="el" href="classMSST.html#abd63cad72d1582131aa796ac3d4a629c">MSST</a>
-, <a class="el" href="classNose__Hoover.html#aa8bc8619be3ebf92f53d5121a3df3842">Nose_Hoover</a>
-, <a class="el" href="classVerlet.html#a376ee9f3bb0cd7306eb80b85c3fcfafc">Verlet</a>
-</li>
 <li>outputParameters()
 : <a class="el" href="classELPA__Solver.html#a7df4fefb383afca109aa780bed156e47">ELPA_Solver</a>
 </li>
-<li>outStress()
-: <a class="el" href="classMD__func.html#a99da8e2d5369eb9c2a2ba398497730b1">MD_func</a>
-</li>
 <li>Overlap()
 : <a class="el" href="classhamilt_1_1Overlap_3_01OperatorLCAO_3_01T_01_4_01_4.html#a30fd5552eb8c79753dff66eea5f43158">hamilt::Overlap&lt; OperatorLCAO&lt; T &gt; &gt;</a>
+</li>
+<li>OwnsMemory()
+: <a class="el" href="classcontainer_1_1TensorBuffer.html#afd40303433993f7bd95a0a00bfc50a35">container::TensorBuffer</a>
 </li>
 </ul>
 </div><!-- contents -->

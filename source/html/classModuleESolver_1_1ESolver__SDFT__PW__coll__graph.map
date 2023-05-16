@@ -1,9 +1,9 @@
 <map id="ModuleESolver::ESolver_SDFT_PW" name="ModuleESolver::ESolver_SDFT_PW">
-<area shape="rect" id="node1" title=" " alt="" coords="537,989,713,1272"/>
+<area shape="rect" id="node1" title=" " alt="" coords="537,989,713,1301"/>
 <area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver__KS__PW.html" title=" " alt="" coords="293,527,469,927"/>
 <area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS.html" title=" " alt="" coords="5,5,243,435"/>
 <area shape="rect" id="node4" href="$classpsi_1_1Psi.html" title=" " alt="" coords="267,5,495,435"/>
-<area shape="rect" id="node5" href="$classStochastic__WF.html" title=" " alt="" coords="549,637,702,817"/>
+<area shape="rect" id="node5" href="$classStochastic__WF.html" title=" " alt="" coords="549,622,702,831"/>
 <area shape="rect" id="node6" href="$classModuleBase_1_1ComplexMatrix.html" title=" " alt="" coords="520,86,731,354"/>
 <area shape="rect" id="node7" href="$classStochastic__Iter.html" title=" " alt="" coords="769,534,924,919"/>
 <area shape="rect" id="node8" href="$classModuleBase_1_1Chebyshev.html" title=" " alt="" coords="755,49,938,391"/>

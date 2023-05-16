@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: MSST Class Reference</title>
+<title>3.2.2: MSST Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -66,21 +66,25 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classMSST-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">MSST Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="MSST_8h_source.html">MSST.h</a>&gt;</code></p>
+<p><a class="el" href="classMSST.html" title="MSST method.">MSST</a> method.  
+ <a href="classMSST.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="msst_8h_source.html">msst.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for MSST:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMSST__inherit__graph.png" border="0" usemap="#MSST_inherit__map" alt="Inheritance graph"/></div>
 <map name="MSST_inherit__map" id="MSST_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,409,167,780"/>
-<area shape="rect" href="classMDrun.html" title=" " alt="" coords="13,5,159,361"/>
+<area shape="rect" title="MSST method." alt="" coords="5,497,160,853"/>
+<area shape="rect" href="classMD__base.html" title="base class of md" alt="" coords="9,5,156,449"/>
 </map>
 </div>
 <div class="dynheader">
@@ -88,124 +92,163 @@ Collaboration diagram for MSST:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMSST__coll__graph.png" border="0" usemap="#MSST_coll__map" alt="Collaboration graph"/></div>
 <map name="MSST_coll__map" id="MSST_coll__map">
-<area shape="rect" title=" " alt="" coords="38,1711,199,2037"/>
-<area shape="rect" href="classMDrun.html" title=" " alt="" coords="399,1335,545,1661"/>
-<area shape="rect" href="classUnitCell.html" title=" " alt="" coords="275,887,413,1257"/>
-<area shape="rect" href="classMagnetism.html" title=" " alt="" coords="449,490,655,714"/>
-<area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="86,5,245,273"/>
-<area shape="rect" href="classAtom.html" title=" " alt="" coords="679,446,849,758"/>
-<area shape="rect" href="classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="263,409,425,795"/>
-<area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="761,5,919,273"/>
-<area shape="rect" href="classModuleBase_1_1matrix.html" title=" " alt="" coords="438,945,591,1199"/>
-<area shape="rect" href="classMD__parameters.html" title=" " alt="" coords="616,953,779,1191"/>
+<area shape="rect" title="MSST method." alt="" coords="39,1711,193,2023"/>
+<area shape="rect" href="classMD__base.html" title="base class of md" alt="" coords="385,1335,532,1661"/>
+<area shape="rect" href="classUnitCell.html" title=" " alt="" coords="268,887,407,1257"/>
+<area shape="rect" href="classMagnetism.html" title=" " alt="" coords="443,490,648,714"/>
+<area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="79,5,238,273"/>
+<area shape="rect" href="classAtom.html" title=" " alt="" coords="672,446,843,758"/>
+<area shape="rect" href="classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="256,409,419,795"/>
+<area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="754,5,913,273"/>
+<area shape="rect" href="classMD__para.html" title="input parameters used in md" alt="" coords="431,953,569,1191"/>
+<area shape="rect" href="classModuleBase_1_1matrix.html" title=" " alt="" coords="593,945,746,1199"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a3c9f339028b4bb107f67d236a5182250"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a3c9f339028b4bb107f67d236a5182250">MSST</a> (<a class="el" href="classMD__parameters.html">MD_parameters</a> &amp;MD_para_in, <a class="el" href="classUnitCell.html">UnitCell</a> &amp;unit_in)</td></tr>
-<tr class="separator:a3c9f339028b4bb107f67d236a5182250"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0414aec148785260192b3fa14c2d4efa"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a0414aec148785260192b3fa14c2d4efa">MSST</a> (<a class="el" href="classMD__para.html">MD_para</a> &amp;MD_para_in, <a class="el" href="classUnitCell.html">UnitCell</a> &amp;unit_in)</td></tr>
+<tr class="separator:a0414aec148785260192b3fa14c2d4efa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab96cba762ecc39c039e84e843907237a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#ab96cba762ecc39c039e84e843907237a">~MSST</a> ()</td></tr>
 <tr class="separator:ab96cba762ecc39c039e84e843907237a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a35142b27ab806779aca03e3b800ed910"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a35142b27ab806779aca03e3b800ed910">setup</a> (<a class="el" href="classModuleESolver_1_1ESolver.html">ModuleESolver::ESolver</a> *p_ensolve)</td></tr>
-<tr class="memdesc:a35142b27ab806779aca03e3b800ed910"><td class="mdescLeft">&#160;</td><td class="mdescRight">init before running md, calculate energy, force, and stress of the initial configuration.  <a href="classMSST.html#a35142b27ab806779aca03e3b800ed910">More...</a><br /></td></tr>
-<tr class="separator:a35142b27ab806779aca03e3b800ed910"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aadf86d8c908345664a4739154be3b183"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#aadf86d8c908345664a4739154be3b183">first_half</a> ()</td></tr>
-<tr class="memdesc:aadf86d8c908345664a4739154be3b183"><td class="mdescLeft">&#160;</td><td class="mdescRight">the first half of equation of motion, update velocities and positions  <a href="classMSST.html#aadf86d8c908345664a4739154be3b183">More...</a><br /></td></tr>
-<tr class="separator:aadf86d8c908345664a4739154be3b183"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classMD__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMD__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classMD__base.html">MD_base</a></td></tr>
+<tr class="memitem:a15fd5d2ff68df857d022fe9e53933938 inherit pub_methods_classMD__base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a15fd5d2ff68df857d022fe9e53933938">MD_base</a> (<a class="el" href="classMD__para.html">MD_para</a> &amp;MD_para_in, <a class="el" href="classUnitCell.html">UnitCell</a> &amp;unit_in)</td></tr>
+<tr class="separator:a15fd5d2ff68df857d022fe9e53933938 inherit pub_methods_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af25f4216b8faea2c9d517d8da625e401 inherit pub_methods_classMD__base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#af25f4216b8faea2c9d517d8da625e401">~MD_base</a> ()</td></tr>
+<tr class="separator:af25f4216b8faea2c9d517d8da625e401 inherit pub_methods_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a7d21bd9eb05d22a5e1957d2d4b1e9d6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a7d21bd9eb05d22a5e1957d2d4b1e9d6f">setup</a> (<a class="el" href="classModuleESolver_1_1ESolver.html">ModuleESolver::ESolver</a> *p_esolver, const std::string &amp;global_readin_dir)</td></tr>
+<tr class="memdesc:a7d21bd9eb05d22a5e1957d2d4b1e9d6f"><td class="mdescLeft">&#160;</td><td class="mdescRight">init before running md, calculate energy, force, and stress of the initial configuration.  <a href="classMSST.html#a7d21bd9eb05d22a5e1957d2d4b1e9d6f">More...</a><br /></td></tr>
+<tr class="separator:a7d21bd9eb05d22a5e1957d2d4b1e9d6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6e5fdfd75f51345b271ec9f410314ee"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#aa6e5fdfd75f51345b271ec9f410314ee">first_half</a> (std::ofstream &amp;ofs)</td></tr>
+<tr class="memdesc:aa6e5fdfd75f51345b271ec9f410314ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">the first half of equation of motion, update velocities and positions  <a href="classMSST.html#aa6e5fdfd75f51345b271ec9f410314ee">More...</a><br /></td></tr>
+<tr class="separator:aa6e5fdfd75f51345b271ec9f410314ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab05716f7f09d027861c7435dae09334f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#ab05716f7f09d027861c7435dae09334f">second_half</a> ()</td></tr>
 <tr class="memdesc:ab05716f7f09d027861c7435dae09334f"><td class="mdescLeft">&#160;</td><td class="mdescRight">the second half of equation of motion, update velocities  <a href="classMSST.html#ab05716f7f09d027861c7435dae09334f">More...</a><br /></td></tr>
 <tr class="separator:ab05716f7f09d027861c7435dae09334f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd63cad72d1582131aa796ac3d4a629c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#abd63cad72d1582131aa796ac3d4a629c">outputMD</a> (std::ofstream &amp;ofs, bool cal_stress)</td></tr>
-<tr class="memdesc:abd63cad72d1582131aa796ac3d4a629c"><td class="mdescLeft">&#160;</td><td class="mdescRight">output MD information such as energy, temperature, and pressure  <a href="classMSST.html#abd63cad72d1582131aa796ac3d4a629c">More...</a><br /></td></tr>
-<tr class="separator:abd63cad72d1582131aa796ac3d4a629c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a27c4b072a05e7214a33a65ddf0d7d19f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a27c4b072a05e7214a33a65ddf0d7d19f">write_restart</a> ()</td></tr>
-<tr class="memdesc:a27c4b072a05e7214a33a65ddf0d7d19f"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the information into files used for MD restarting  <a href="classMSST.html#a27c4b072a05e7214a33a65ddf0d7d19f">More...</a><br /></td></tr>
-<tr class="separator:a27c4b072a05e7214a33a65ddf0d7d19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14f0ae8bbe8e7811c4c91e084b7ecb2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a14f0ae8bbe8e7811c4c91e084b7ecb2a">restart</a> ()</td></tr>
-<tr class="memdesc:a14f0ae8bbe8e7811c4c91e084b7ecb2a"><td class="mdescLeft">&#160;</td><td class="mdescRight">restart MD when md_restart is true  <a href="classMSST.html#a14f0ae8bbe8e7811c4c91e084b7ecb2a">More...</a><br /></td></tr>
-<tr class="separator:a14f0ae8bbe8e7811c4c91e084b7ecb2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bd5e9e3377cd3158b15427e76559519"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a3bd5e9e3377cd3158b15427e76559519">extra_term</a> ()</td></tr>
-<tr class="separator:a3bd5e9e3377cd3158b15427e76559519"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93935d927d32ac0988d7badca0d41176"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a93935d927d32ac0988d7badca0d41176">print_md</a> (std::ofstream &amp;ofs, const bool &amp;cal_stress)</td></tr>
+<tr class="memdesc:a93935d927d32ac0988d7badca0d41176"><td class="mdescLeft">&#160;</td><td class="mdescRight">output MD information such as energy, temperature, and pressure  <a href="classMSST.html#a93935d927d32ac0988d7badca0d41176">More...</a><br /></td></tr>
+<tr class="separator:a93935d927d32ac0988d7badca0d41176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacb268283618dd7818fe771c964e5e66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#aacb268283618dd7818fe771c964e5e66">write_restart</a> (const std::string &amp;global_out_dir)</td></tr>
+<tr class="memdesc:aacb268283618dd7818fe771c964e5e66"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the information into files used for MD restarting  <a href="classMSST.html#aacb268283618dd7818fe771c964e5e66">More...</a><br /></td></tr>
+<tr class="separator:aacb268283618dd7818fe771c964e5e66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a82f55920e4c94be00c8c6151fc3b4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a18a82f55920e4c94be00c8c6151fc3b4">restart</a> (const std::string &amp;global_readin_dir)</td></tr>
+<tr class="memdesc:a18a82f55920e4c94be00c8c6151fc3b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">restart MD when md_restart is true  <a href="classMSST.html#a18a82f55920e4c94be00c8c6151fc3b4">More...</a><br /></td></tr>
+<tr class="separator:a18a82f55920e4c94be00c8c6151fc3b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af455d41cf14b2083792cff64371bbd94"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#af455d41cf14b2083792cff64371bbd94">vel_sum</a> ()</td></tr>
+<tr class="memdesc:af455d41cf14b2083792cff64371bbd94"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the sum of square of velocities  <a href="classMSST.html#af455d41cf14b2083792cff64371bbd94">More...</a><br /></td></tr>
 <tr class="separator:af455d41cf14b2083792cff64371bbd94"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae2c12573db536950fe4a7829ff0ea77c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#ae2c12573db536950fe4a7829ff0ea77c">rescale</a> (double volume)</td></tr>
-<tr class="separator:ae2c12573db536950fe4a7829ff0ea77c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a06155892554181694640b793a89b4adf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a06155892554181694640b793a89b4adf">rescale</a> (std::ofstream &amp;ofs, const double &amp;volume)</td></tr>
+<tr class="memdesc:a06155892554181694640b793a89b4adf"><td class="mdescLeft">&#160;</td><td class="mdescRight">rescale the lattice and velocities  <a href="classMSST.html#a06155892554181694640b793a89b4adf">More...</a><br /></td></tr>
+<tr class="separator:a06155892554181694640b793a89b4adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb555193b92b223924b68082c7376b1e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#afb555193b92b223924b68082c7376b1e">propagate_vel</a> ()</td></tr>
+<tr class="memdesc:afb555193b92b223924b68082c7376b1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">propagate atomic velocities  <a href="classMSST.html#afb555193b92b223924b68082c7376b1e">More...</a><br /></td></tr>
 <tr class="separator:afb555193b92b223924b68082c7376b1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb2b42d795b4d4b14e94805b032dba16"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#afb2b42d795b4d4b14e94805b032dba16">propagate_voldot</a> ()</td></tr>
+<tr class="memdesc:afb2b42d795b4d4b14e94805b032dba16"><td class="mdescLeft">&#160;</td><td class="mdescRight">propagate the volume change rate  <a href="classMSST.html#afb2b42d795b4d4b14e94805b032dba16">More...</a><br /></td></tr>
 <tr class="separator:afb2b42d795b4d4b14e94805b032dba16"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classMDrun"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMDrun')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classMDrun.html">MDrun</a></td></tr>
-<tr class="memitem:ae13c3615d2cf185d056e8a6bb1ce7e9d inherit pub_methods_classMDrun"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#ae13c3615d2cf185d056e8a6bb1ce7e9d">MDrun</a> (<a class="el" href="classMD__parameters.html">MD_parameters</a> &amp;MD_para_in, <a class="el" href="classUnitCell.html">UnitCell</a> &amp;unit_in)</td></tr>
-<tr class="separator:ae13c3615d2cf185d056e8a6bb1ce7e9d inherit pub_methods_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40231699e3268f07c8f9b18b0498d560 inherit pub_methods_classMDrun"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a40231699e3268f07c8f9b18b0498d560">~MDrun</a> ()</td></tr>
-<tr class="separator:a40231699e3268f07c8f9b18b0498d560 inherit pub_methods_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a117831ce15e9c9ea3ecf0439da44225f inherit pub_methods_classMDrun"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f">update_pos</a> ()</td></tr>
-<tr class="memdesc:a117831ce15e9c9ea3ecf0439da44225f inherit pub_methods_classMDrun"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform one step update of pos due to atomic velocity  <a href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f">More...</a><br /></td></tr>
-<tr class="separator:a117831ce15e9c9ea3ecf0439da44225f inherit pub_methods_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b4e537c0e31069dcd68609f914234df inherit pub_methods_classMDrun"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df">update_vel</a> (const <a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *<a class="el" href="classMDrun.html#af606a44acc0c7a20a95358c784076acd">force</a>)</td></tr>
-<tr class="memdesc:a7b4e537c0e31069dcd68609f914234df inherit pub_methods_classMDrun"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform half-step update of vel due to atomic force  <a href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df">More...</a><br /></td></tr>
-<tr class="separator:a7b4e537c0e31069dcd68609f914234df inherit pub_methods_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
 <tr class="memitem:a67e70a5282c60a3f99a8cf77d1c18549"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a67e70a5282c60a3f99a8cf77d1c18549">old_v</a></td></tr>
+<tr class="memdesc:a67e70a5282c60a3f99a8cf77d1c18549"><td class="mdescLeft">&#160;</td><td class="mdescRight">old atomic velocities  <a href="classMSST.html#a67e70a5282c60a3f99a8cf77d1c18549">More...</a><br /></td></tr>
 <tr class="separator:a67e70a5282c60a3f99a8cf77d1c18549"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad879fcb33bd18eaf99fcab7150798e36"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#ad879fcb33bd18eaf99fcab7150798e36">dilation</a></td></tr>
+<tr class="memdesc:ad879fcb33bd18eaf99fcab7150798e36"><td class="mdescLeft">&#160;</td><td class="mdescRight">dilation scale  <a href="classMSST.html#ad879fcb33bd18eaf99fcab7150798e36">More...</a><br /></td></tr>
 <tr class="separator:ad879fcb33bd18eaf99fcab7150798e36"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46216b7a8b260b27428124d313828014"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a46216b7a8b260b27428124d313828014">omega</a></td></tr>
+<tr class="memdesc:a46216b7a8b260b27428124d313828014"><td class="mdescLeft">&#160;</td><td class="mdescRight">time derivative of volume  <a href="classMSST.html#a46216b7a8b260b27428124d313828014">More...</a><br /></td></tr>
 <tr class="separator:a46216b7a8b260b27428124d313828014"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5f158fb15f23690eb4fdc6bd3abe7f11"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a5f158fb15f23690eb4fdc6bd3abe7f11">p0</a></td></tr>
+<tr class="memdesc:a5f158fb15f23690eb4fdc6bd3abe7f11"><td class="mdescLeft">&#160;</td><td class="mdescRight">initial pressure  <a href="classMSST.html#a5f158fb15f23690eb4fdc6bd3abe7f11">More...</a><br /></td></tr>
 <tr class="separator:a5f158fb15f23690eb4fdc6bd3abe7f11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a103072f61f6770484b8e7179be7ef793"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a103072f61f6770484b8e7179be7ef793">v0</a></td></tr>
+<tr class="memdesc:a103072f61f6770484b8e7179be7ef793"><td class="mdescLeft">&#160;</td><td class="mdescRight">initial volume  <a href="classMSST.html#a103072f61f6770484b8e7179be7ef793">More...</a><br /></td></tr>
 <tr class="separator:a103072f61f6770484b8e7179be7ef793"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8ea2cf52f896fa4add27d7be7681734"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#ad8ea2cf52f896fa4add27d7be7681734">e0</a></td></tr>
+<tr class="memdesc:ad8ea2cf52f896fa4add27d7be7681734"><td class="mdescLeft">&#160;</td><td class="mdescRight">initial energy  <a href="classMSST.html#ad8ea2cf52f896fa4add27d7be7681734">More...</a><br /></td></tr>
 <tr class="separator:ad8ea2cf52f896fa4add27d7be7681734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad093dbf6a1d31fb424f4c68ebb54de71"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#ad093dbf6a1d31fb424f4c68ebb54de71">totmass</a></td></tr>
+<tr class="memdesc:ad093dbf6a1d31fb424f4c68ebb54de71"><td class="mdescLeft">&#160;</td><td class="mdescRight">total mass of the cell  <a href="classMSST.html#ad093dbf6a1d31fb424f4c68ebb54de71">More...</a><br /></td></tr>
 <tr class="separator:ad093dbf6a1d31fb424f4c68ebb54de71"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46f1055a5740311c41afd3d593dc63d9"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a46f1055a5740311c41afd3d593dc63d9">lag_pos</a></td></tr>
+<tr class="memdesc:a46f1055a5740311c41afd3d593dc63d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Lagrangian location of cell.  <a href="classMSST.html#a46f1055a5740311c41afd3d593dc63d9">More...</a><br /></td></tr>
 <tr class="separator:a46f1055a5740311c41afd3d593dc63d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a032795a6c4d5b6dc594363ded0980fec"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMSST.html#a032795a6c4d5b6dc594363ded0980fec">vsum</a></td></tr>
+<tr class="memdesc:a032795a6c4d5b6dc594363ded0980fec"><td class="mdescLeft">&#160;</td><td class="mdescRight">sum over v^2  <a href="classMSST.html#a032795a6c4d5b6dc594363ded0980fec">More...</a><br /></td></tr>
 <tr class="separator:a032795a6c4d5b6dc594363ded0980fec"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classMDrun"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classMDrun')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classMDrun.html">MDrun</a></td></tr>
-<tr class="memitem:ae0e125883a2c39aaa41e46a64c14317f inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMD__parameters.html">MD_parameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#ae0e125883a2c39aaa41e46a64c14317f">mdp</a></td></tr>
-<tr class="separator:ae0e125883a2c39aaa41e46a64c14317f inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f02d300d87a3744bc2282673255422e inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUnitCell.html">UnitCell</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a4f02d300d87a3744bc2282673255422e">ucell</a></td></tr>
-<tr class="separator:a4f02d300d87a3744bc2282673255422e inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7430080491f2b6356282c69fbc1f02a3 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a7430080491f2b6356282c69fbc1f02a3">stop</a></td></tr>
-<tr class="separator:a7430080491f2b6356282c69fbc1f02a3 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8422dfef8ccea2df3f6089cf5cfb7b4 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#af8422dfef8ccea2df3f6089cf5cfb7b4">t_current</a></td></tr>
-<tr class="separator:af8422dfef8ccea2df3f6089cf5cfb7b4 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89ca568cb47db66c1ffddb2e94463053 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a89ca568cb47db66c1ffddb2e94463053">step_</a></td></tr>
-<tr class="separator:a89ca568cb47db66c1ffddb2e94463053 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1f401c56897825d64f8469b8a541097 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#ae1f401c56897825d64f8469b8a541097">step_rst_</a></td></tr>
-<tr class="separator:ae1f401c56897825d64f8469b8a541097 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2658178672035c84c94f264245999fa inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#ad2658178672035c84c94f264245999fa">energy_</a></td></tr>
-<tr class="separator:ad2658178672035c84c94f264245999fa inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7c519249eb60110cf2527c1f761c0c8 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#ad7c519249eb60110cf2527c1f761c0c8">frozen_freedom_</a></td></tr>
-<tr class="separator:ad7c519249eb60110cf2527c1f761c0c8 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db50772369ee01e72d59dca332ac4f8 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a9db50772369ee01e72d59dca332ac4f8">allmass</a></td></tr>
-<tr class="separator:a9db50772369ee01e72d59dca332ac4f8 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f1bec983640aa906af5cbe9ab6f5ea2 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a1f1bec983640aa906af5cbe9ab6f5ea2">pos</a></td></tr>
-<tr class="separator:a1f1bec983640aa906af5cbe9ab6f5ea2 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab81005160b6f67a18370f1526bca0775 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#ab81005160b6f67a18370f1526bca0775">vel</a></td></tr>
-<tr class="separator:ab81005160b6f67a18370f1526bca0775 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a67171bc30604d950fe3d2650dae4a7 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a7a67171bc30604d950fe3d2650dae4a7">ionmbl</a></td></tr>
-<tr class="separator:a7a67171bc30604d950fe3d2650dae4a7 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af606a44acc0c7a20a95358c784076acd inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#af606a44acc0c7a20a95358c784076acd">force</a></td></tr>
-<tr class="separator:af606a44acc0c7a20a95358c784076acd inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e7c36eb5297a8bb0bd597450668c20f inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a7e7c36eb5297a8bb0bd597450668c20f">virial</a></td></tr>
-<tr class="separator:a7e7c36eb5297a8bb0bd597450668c20f inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c010f96b6bf0a25933660552182b756 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a1c010f96b6bf0a25933660552182b756">stress</a></td></tr>
-<tr class="separator:a1c010f96b6bf0a25933660552182b756 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41e4bc784742d37662f5f3a742de1234 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a41e4bc784742d37662f5f3a742de1234">potential</a></td></tr>
-<tr class="separator:a41e4bc784742d37662f5f3a742de1234 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa60177cbdae9236608ee6bee92c5e2e inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#afa60177cbdae9236608ee6bee92c5e2e">kinetic</a></td></tr>
-<tr class="separator:afa60177cbdae9236608ee6bee92c5e2e inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classMD__base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classMD__base')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classMD__base.html">MD_base</a></td></tr>
+<tr class="memitem:afb78c708fe7fddd74d23ac0c867ea5c5 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#afb78c708fe7fddd74d23ac0c867ea5c5">stop</a></td></tr>
+<tr class="memdesc:afb78c708fe7fddd74d23ac0c867ea5c5 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">MD stop or not.  <a href="classMD__base.html#afb78c708fe7fddd74d23ac0c867ea5c5">More...</a><br /></td></tr>
+<tr class="separator:afb78c708fe7fddd74d23ac0c867ea5c5 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefd4f52b6b8531f57b19ff2ebf0499f inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#acefd4f52b6b8531f57b19ff2ebf0499f">t_current</a></td></tr>
+<tr class="memdesc:acefd4f52b6b8531f57b19ff2ebf0499f inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">current temperature  <a href="classMD__base.html#acefd4f52b6b8531f57b19ff2ebf0499f">More...</a><br /></td></tr>
+<tr class="separator:acefd4f52b6b8531f57b19ff2ebf0499f inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a894498f316aeff8e4c6d511e36d1f074 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a894498f316aeff8e4c6d511e36d1f074">step_</a></td></tr>
+<tr class="memdesc:a894498f316aeff8e4c6d511e36d1f074 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">the MD step finished in current calculation  <a href="classMD__base.html#a894498f316aeff8e4c6d511e36d1f074">More...</a><br /></td></tr>
+<tr class="separator:a894498f316aeff8e4c6d511e36d1f074 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f9c94b3aa87b41ea8bbd0da61c1f63 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#ad1f9c94b3aa87b41ea8bbd0da61c1f63">step_rst_</a></td></tr>
+<tr class="memdesc:ad1f9c94b3aa87b41ea8bbd0da61c1f63 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">the MD step finished in previous calculations  <a href="classMD__base.html#ad1f9c94b3aa87b41ea8bbd0da61c1f63">More...</a><br /></td></tr>
+<tr class="separator:ad1f9c94b3aa87b41ea8bbd0da61c1f63 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3862fc02512105f6d6c03874488761 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a6b3862fc02512105f6d6c03874488761">frozen_freedom_</a></td></tr>
+<tr class="memdesc:a6b3862fc02512105f6d6c03874488761 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">the fixed freedom of the system  <a href="classMD__base.html#a6b3862fc02512105f6d6c03874488761">More...</a><br /></td></tr>
+<tr class="separator:a6b3862fc02512105f6d6c03874488761 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add44e60b8b5ee286ad7f30651c20df5a inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#add44e60b8b5ee286ad7f30651c20df5a">allmass</a></td></tr>
+<tr class="memdesc:add44e60b8b5ee286ad7f30651c20df5a inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">atom mass  <a href="classMD__base.html#add44e60b8b5ee286ad7f30651c20df5a">More...</a><br /></td></tr>
+<tr class="separator:add44e60b8b5ee286ad7f30651c20df5a inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af742a249145061eb098f4985cdff796b inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#af742a249145061eb098f4985cdff796b">pos</a></td></tr>
+<tr class="memdesc:af742a249145061eb098f4985cdff796b inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">atom displacements liuyu modify 2023-03-22  <a href="classMD__base.html#af742a249145061eb098f4985cdff796b">More...</a><br /></td></tr>
+<tr class="separator:af742a249145061eb098f4985cdff796b inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02737871f93193b048c4a19a224d9862 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a02737871f93193b048c4a19a224d9862">vel</a></td></tr>
+<tr class="memdesc:a02737871f93193b048c4a19a224d9862 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">atom velocity  <a href="classMD__base.html#a02737871f93193b048c4a19a224d9862">More...</a><br /></td></tr>
+<tr class="separator:a02737871f93193b048c4a19a224d9862 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf1a92c22dff7035ac55b7cc5f9530b inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#aadf1a92c22dff7035ac55b7cc5f9530b">ionmbl</a></td></tr>
+<tr class="memdesc:aadf1a92c22dff7035ac55b7cc5f9530b inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">atom is frozen or not  <a href="classMD__base.html#aadf1a92c22dff7035ac55b7cc5f9530b">More...</a><br /></td></tr>
+<tr class="separator:aadf1a92c22dff7035ac55b7cc5f9530b inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2432508044776c8cd8a9e68e81ce33d7 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a2432508044776c8cd8a9e68e81ce33d7">force</a></td></tr>
+<tr class="memdesc:a2432508044776c8cd8a9e68e81ce33d7 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">force of each atom  <a href="classMD__base.html#a2432508044776c8cd8a9e68e81ce33d7">More...</a><br /></td></tr>
+<tr class="separator:a2432508044776c8cd8a9e68e81ce33d7 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6889bb51ac2a28b443e0cb2f3522445b inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a6889bb51ac2a28b443e0cb2f3522445b">virial</a></td></tr>
+<tr class="memdesc:a6889bb51ac2a28b443e0cb2f3522445b inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">virial for this lattice  <a href="classMD__base.html#a6889bb51ac2a28b443e0cb2f3522445b">More...</a><br /></td></tr>
+<tr class="separator:a6889bb51ac2a28b443e0cb2f3522445b inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16835a08cebd9b67f90581c954ab9dcd inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a16835a08cebd9b67f90581c954ab9dcd">stress</a></td></tr>
+<tr class="memdesc:a16835a08cebd9b67f90581c954ab9dcd inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">stress for this lattice  <a href="classMD__base.html#a16835a08cebd9b67f90581c954ab9dcd">More...</a><br /></td></tr>
+<tr class="separator:a16835a08cebd9b67f90581c954ab9dcd inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18cd00104a7024f64a56e82dcae6ceb8 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a18cd00104a7024f64a56e82dcae6ceb8">potential</a></td></tr>
+<tr class="memdesc:a18cd00104a7024f64a56e82dcae6ceb8 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">potential energy  <a href="classMD__base.html#a18cd00104a7024f64a56e82dcae6ceb8">More...</a><br /></td></tr>
+<tr class="separator:a18cd00104a7024f64a56e82dcae6ceb8 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceecd1918cea90b64a12a421a1e0b972 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#aceecd1918cea90b64a12a421a1e0b972">kinetic</a></td></tr>
+<tr class="memdesc:aceecd1918cea90b64a12a421a1e0b972 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">kinetic energy  <a href="classMD__base.html#aceecd1918cea90b64a12a421a1e0b972">More...</a><br /></td></tr>
+<tr class="separator:aceecd1918cea90b64a12a421a1e0b972 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classMD__base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classMD__base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classMD__base.html">MD_base</a></td></tr>
+<tr class="memitem:a1cf5142ddd12b55370f909ad0944da05 inherit pro_methods_classMD__base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a1cf5142ddd12b55370f909ad0944da05">update_pos</a> ()</td></tr>
+<tr class="memdesc:a1cf5142ddd12b55370f909ad0944da05 inherit pro_methods_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform one step update of pos due to atomic velocity  <a href="classMD__base.html#a1cf5142ddd12b55370f909ad0944da05">More...</a><br /></td></tr>
+<tr class="separator:a1cf5142ddd12b55370f909ad0944da05 inherit pro_methods_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75ba376219066befd52fb6d52ef08b7 inherit pro_methods_classMD__base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#aa75ba376219066befd52fb6d52ef08b7">update_vel</a> (const <a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *<a class="el" href="classMD__base.html#a2432508044776c8cd8a9e68e81ce33d7">force</a>)</td></tr>
+<tr class="memdesc:aa75ba376219066befd52fb6d52ef08b7 inherit pro_methods_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform half-step update of vel due to atomic force  <a href="classMD__base.html#aa75ba376219066befd52fb6d52ef08b7">More...</a><br /></td></tr>
+<tr class="separator:aa75ba376219066befd52fb6d52ef08b7 inherit pro_methods_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classMD__base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classMD__base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classMD__base.html">MD_base</a></td></tr>
+<tr class="memitem:a33383ae073c172d199ff47d3ec556c14 inherit pro_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMD__para.html">MD_para</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a33383ae073c172d199ff47d3ec556c14">mdp</a></td></tr>
+<tr class="memdesc:a33383ae073c172d199ff47d3ec556c14 inherit pro_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">input parameters used in md  <a href="classMD__base.html#a33383ae073c172d199ff47d3ec556c14">More...</a><br /></td></tr>
+<tr class="separator:a33383ae073c172d199ff47d3ec556c14 inherit pro_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5765c37148db7f59b03ffca89afdcd2a inherit pro_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUnitCell.html">UnitCell</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a5765c37148db7f59b03ffca89afdcd2a">ucell</a></td></tr>
+<tr class="memdesc:a5765c37148db7f59b03ffca89afdcd2a inherit pro_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">unitcell information  <a href="classMD__base.html#a5765c37148db7f59b03ffca89afdcd2a">More...</a><br /></td></tr>
+<tr class="separator:a5765c37148db7f59b03ffca89afdcd2a inherit pro_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0009554d767d7d4e78767ed9776c6a05 inherit pro_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a0009554d767d7d4e78767ed9776c6a05">energy_</a></td></tr>
+<tr class="memdesc:a0009554d767d7d4e78767ed9776c6a05 inherit pro_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">total energy of the system  <a href="classMD__base.html#a0009554d767d7d4e78767ed9776c6a05">More...</a><br /></td></tr>
+<tr class="separator:a0009554d767d7d4e78767ed9776c6a05 inherit pro_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a3c9f339028b4bb107f67d236a5182250"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3c9f339028b4bb107f67d236a5182250">&#9670;&nbsp;</a></span>MSST()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p><a class="el" href="classMSST.html" title="MSST method.">MSST</a> method. </p>
+<p>Multi-Scale Shock Technique (<a class="el" href="classMSST.html" title="MSST method.">MSST</a>) integration [Phys. Rev. Lett. 90, 235503 (2003)] update positions and velocities each timestep to mimic a compressive shock wave passing over the system. The <a class="el" href="classMSST.html" title="MSST method.">MSST</a> varies the cell volume and temperature to restrain the system to the shock Hugoniot and the Rayleigh line. These restraints correspond to the macroscopic conservation laws dictated by a shock front. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a0414aec148785260192b3fa14c2d4efa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0414aec148785260192b3fa14c2d4efa">&#9670;&nbsp;</a></span>MSST()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -213,7 +256,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">MSST::MSST </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classMD__parameters.html">MD_parameters</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classMD__para.html">MD_para</a> &amp;&#160;</td>
           <td class="paramname"><em>MD_para_in</em>, </td>
         </tr>
         <tr>
@@ -232,8 +275,8 @@ Public Attributes</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMSST_a3c9f339028b4bb107f67d236a5182250_cgraph.png" border="0" usemap="#classMSST_a3c9f339028b4bb107f67d236a5182250_cgraph" alt=""/></div>
-<map name="classMSST_a3c9f339028b4bb107f67d236a5182250_cgraph" id="classMSST_a3c9f339028b4bb107f67d236a5182250_cgraph">
+<div class="center"><img src="classMSST_a0414aec148785260192b3fa14c2d4efa_cgraph.png" border="0" usemap="#classMSST_a0414aec148785260192b3fa14c2d4efa_cgraph" alt=""/></div>
+<map name="classMSST_a0414aec148785260192b3fa14c2d4efa_cgraph" id="classMSST_a0414aec148785260192b3fa14c2d4efa_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,107,32"/>
 <area shape="rect" href="classModuleBase_1_1Vector3.html#a7e069b794f5d1cf410c54d01c874f09c" title="set a 3d vector" alt="" coords="155,5,341,32"/>
 </map>
@@ -259,25 +302,8 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a3bd5e9e3377cd3158b15427e76559519"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bd5e9e3377cd3158b15427e76559519">&#9670;&nbsp;</a></span>extra_term()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">double MSST::extra_term </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aadf86d8c908345664a4739154be3b183"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aadf86d8c908345664a4739154be3b183">&#9670;&nbsp;</a></span>first_half()</h2>
+<a id="aa6e5fdfd75f51345b271ec9f410314ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6e5fdfd75f51345b271ec9f410314ee">&#9670;&nbsp;</a></span>first_half()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,33 +314,50 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="memname">void MSST::first_half </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>ofs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>the first half of equation of motion, update velocities and positions </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ofs</td><td>determine the output files </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>propagate the time derivative of volume 1/2 step</p>
+<p>save the velocities</p>
+<p>propagate velocity sum 1/2 step by temporarily propagating the velocities</p>
+<p>reset the velocities</p>
+<p>propagate velocities 1/2 step using the new velocity sum</p>
+<p>propagate volume 1/2 step</p>
+<p>rescale positions and change box size</p>
+<p>propagate atom positions 1 time step</p>
+<p>propagate volume 1/2 step</p>
+<p>rescale positions and change box size</p>
 
-<p>Reimplemented from <a class="el" href="classMDrun.html#a6f87ef70d9b4910b0a6399ed5b41307b">MDrun</a>.</p>
+<p>Reimplemented from <a class="el" href="classMD__base.html#af067d8c93a4f44f6a698aa0d3fe9ac9c">MD_base</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMSST_aadf86d8c908345664a4739154be3b183_cgraph.png" border="0" usemap="#classMSST_aadf86d8c908345664a4739154be3b183_cgraph" alt=""/></div>
-<map name="classMSST_aadf86d8c908345664a4739154be3b183_cgraph" id="classMSST_aadf86d8c908345664a4739154be3b183_cgraph">
+<div class="center"><img src="classMSST_aa6e5fdfd75f51345b271ec9f410314ee_cgraph.png" border="0" usemap="#classMSST_aa6e5fdfd75f51345b271ec9f410314ee_cgraph" alt=""/></div>
+<map name="classMSST_aa6e5fdfd75f51345b271ec9f410314ee_cgraph" id="classMSST_aa6e5fdfd75f51345b271ec9f410314ee_cgraph">
 <area shape="rect" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,157,128,184"/>
-<area shape="rect" href="classMSST.html#afb555193b92b223924b68082c7376b1e" title=" " alt="" coords="186,56,345,83"/>
-<area shape="rect" href="classMSST.html#afb2b42d795b4d4b14e94805b032dba16" title=" " alt="" coords="176,5,355,32"/>
-<area shape="rect" href="classMSST.html#ae2c12573db536950fe4a7829ff0ea77c" title=" " alt="" coords="209,107,321,133"/>
+<area shape="rect" href="classMSST.html#afb555193b92b223924b68082c7376b1e" title="propagate atomic velocities" alt="" coords="186,56,345,83"/>
+<area shape="rect" href="classMSST.html#afb2b42d795b4d4b14e94805b032dba16" title="propagate the volume change rate" alt="" coords="176,5,355,32"/>
+<area shape="rect" href="classMSST.html#a06155892554181694640b793a89b4adf" title="rescale the lattice and velocities" alt="" coords="209,107,321,133"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="177,157,354,184"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="193,208,338,235"/>
-<area shape="rect" href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f" title="perform one step update of pos due to atomic velocity" alt="" coords="191,259,339,285"/>
-<area shape="rect" href="classMSST.html#af455d41cf14b2083792cff64371bbd94" title=" " alt="" coords="205,309,325,336"/>
+<area shape="rect" href="classMD__base.html#a1cf5142ddd12b55370f909ad0944da05" title="perform one step update of pos due to atomic velocity" alt="" coords="183,259,348,285"/>
+<area shape="rect" href="classMSST.html#af455d41cf14b2083792cff64371bbd94" title="get the sum of square of velocities" alt="" coords="205,309,325,336"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="411,5,581,32"/>
 <area shape="rect" href="classModuleBase_1_1Vector3.html#a7e069b794f5d1cf410c54d01c874f09c" title="set a 3d vector" alt="" coords="403,56,589,83"/>
 </map>
@@ -322,8 +365,8 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a id="abd63cad72d1582131aa796ac3d4a629c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd63cad72d1582131aa796ac3d4a629c">&#9670;&nbsp;</a></span>outputMD()</h2>
+<a id="a93935d927d32ac0988d7badca0d41176"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93935d927d32ac0988d7badca0d41176">&#9670;&nbsp;</a></span>print_md()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -332,7 +375,7 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void MSST::outputMD </td>
+          <td class="memname">void MSST::print_md </td>
           <td>(</td>
           <td class="paramtype">std::ofstream &amp;&#160;</td>
           <td class="paramname"><em>ofs</em>, </td>
@@ -340,7 +383,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype">const bool &amp;&#160;</td>
           <td class="paramname"><em>cal_stress</em>&#160;</td>
         </tr>
         <tr>
@@ -351,7 +394,7 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -365,19 +408,19 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classMDrun.html#a19356db7cdf6b48357ecfff93bccacf7">MDrun</a>.</p>
+<p>Reimplemented from <a class="el" href="classMD__base.html#a6b48d2dfbe305740bc978de1acaafa1d">MD_base</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMSST_abd63cad72d1582131aa796ac3d4a629c_cgraph.png" border="0" usemap="#classMSST_abd63cad72d1582131aa796ac3d4a629c_cgraph" alt=""/></div>
-<map name="classMSST_abd63cad72d1582131aa796ac3d4a629c_cgraph" id="classMSST_abd63cad72d1582131aa796ac3d4a629c_cgraph">
-<area shape="rect" title="output MD information such as energy, temperature, and pressure" alt="" coords="5,42,135,69"/>
-<area shape="rect" href="classMDrun.html#a19356db7cdf6b48357ecfff93bccacf7" title="output MD information such as energy, temperature, and pressure" alt="" coords="183,42,320,69"/>
-<area shape="rect" href="classMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title=" " alt="" coords="368,15,543,42"/>
-<area shape="rect" href="classMD__func.html#a99da8e2d5369eb9c2a2ba398497730b1" title=" " alt="" coords="381,67,529,94"/>
-<area shape="rect" href="classMD__func.html#a97c6aca19e89e6f10684226358fcd820" title=" " alt="" coords="601,13,763,39"/>
-<area shape="rect" href="classModuleBase_1_1Vector3.html#a2eb1b82893764c1bd38a5993c6f6dcfb" title="Get the square of nomr of a Vector3." alt="" coords="821,5,980,47"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac3c6cb9eae3ff814df0a1e32876c5126" title=" " alt="" coords="591,64,773,105"/>
+<div class="center"><img src="classMSST_a93935d927d32ac0988d7badca0d41176_cgraph.png" border="0" usemap="#classMSST_a93935d927d32ac0988d7badca0d41176_cgraph" alt=""/></div>
+<map name="classMSST_a93935d927d32ac0988d7badca0d41176_cgraph" id="classMSST_a93935d927d32ac0988d7badca0d41176_cgraph">
+<area shape="rect" title="output MD information such as energy, temperature, and pressure" alt="" coords="5,42,128,69"/>
+<area shape="rect" href="classMD__base.html#a6b48d2dfbe305740bc978de1acaafa1d" title="output MD information such as energy, temperature, and pressure" alt="" coords="176,42,324,69"/>
+<area shape="rect" href="namespaceMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title="get the current temperature" alt="" coords="372,15,547,42"/>
+<area shape="rect" href="namespaceMD__func.html#aaea37c0c850a62e46bf36533696046f0" title="output the stress information" alt="" coords="378,67,541,94"/>
+<area shape="rect" href="namespaceMD__func.html#a6c0e776a467f2fadc838df160f220ecc" title="calculate the ionic kinetic energy" alt="" coords="595,13,777,39"/>
+<area shape="rect" href="classModuleBase_1_1Vector3.html#a2eb1b82893764c1bd38a5993c6f6dcfb" title="Get the square of nomr of a Vector3." alt="" coords="825,5,984,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac3c6cb9eae3ff814df0a1e32876c5126" title=" " alt="" coords="595,64,777,105"/>
 </map>
 </div>
 
@@ -388,6 +431,9 @@ Here is the call graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void MSST::propagate_vel </td>
@@ -396,13 +442,20 @@ Here is the call graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>propagate atomic velocities </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMSST_afb555193b92b223924b68082c7376b1e_cgraph.png" border="0" usemap="#classMSST_afb555193b92b223924b68082c7376b1e_cgraph" alt=""/></div>
 <map name="classMSST_afb555193b92b223924b68082c7376b1e_cgraph" id="classMSST_afb555193b92b223924b68082c7376b1e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,164,57"/>
+<area shape="rect" title="propagate atomic velocities" alt="" coords="5,31,164,57"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="220,5,391,32"/>
 <area shape="rect" href="classModuleBase_1_1Vector3.html#a7e069b794f5d1cf410c54d01c874f09c" title="set a 3d vector" alt="" coords="212,56,399,83"/>
 </map>
@@ -412,8 +465,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMSST_afb555193b92b223924b68082c7376b1e_icgraph.png" border="0" usemap="#classMSST_afb555193b92b223924b68082c7376b1e_icgraph" alt=""/></div>
 <map name="classMSST_afb555193b92b223924b68082c7376b1e_icgraph" id="classMSST_afb555193b92b223924b68082c7376b1e_icgraph">
-<area shape="rect" title=" " alt="" coords="196,31,355,57"/>
-<area shape="rect" href="classMSST.html#aadf86d8c908345664a4739154be3b183" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,138,32"/>
+<area shape="rect" title="propagate atomic velocities" alt="" coords="196,31,355,57"/>
+<area shape="rect" href="classMSST.html#aa6e5fdfd75f51345b271ec9f410314ee" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,138,32"/>
 <area shape="rect" href="classMSST.html#ab05716f7f09d027861c7435dae09334f" title="the second half of equation of motion, update velocities" alt="" coords="5,56,148,83"/>
 </map>
 </div>
@@ -425,6 +478,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void MSST::propagate_voldot </td>
@@ -433,13 +489,22 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>propagate the volume change rate </p>
+<p>prevent the increase of volume</p>
+<p>avoid singularity at B = 0 with Taylor expansion</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMSST_afb2b42d795b4d4b14e94805b032dba16_cgraph.png" border="0" usemap="#classMSST_afb2b42d795b4d4b14e94805b032dba16_cgraph" alt=""/></div>
 <map name="classMSST_afb2b42d795b4d4b14e94805b032dba16_cgraph" id="classMSST_afb2b42d795b4d4b14e94805b032dba16_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,184,32"/>
+<area shape="rect" title="propagate the volume change rate" alt="" coords="5,5,184,32"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="232,5,403,32"/>
 </map>
 </div>
@@ -448,35 +513,63 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMSST_afb2b42d795b4d4b14e94805b032dba16_icgraph.png" border="0" usemap="#classMSST_afb2b42d795b4d4b14e94805b032dba16_icgraph" alt=""/></div>
 <map name="classMSST_afb2b42d795b4d4b14e94805b032dba16_icgraph" id="classMSST_afb2b42d795b4d4b14e94805b032dba16_icgraph">
-<area shape="rect" title=" " alt="" coords="196,31,375,57"/>
-<area shape="rect" href="classMSST.html#aadf86d8c908345664a4739154be3b183" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,138,32"/>
+<area shape="rect" title="propagate the volume change rate" alt="" coords="196,31,375,57"/>
+<area shape="rect" href="classMSST.html#aa6e5fdfd75f51345b271ec9f410314ee" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,138,32"/>
 <area shape="rect" href="classMSST.html#ab05716f7f09d027861c7435dae09334f" title="the second half of equation of motion, update velocities" alt="" coords="5,56,148,83"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ae2c12573db536950fe4a7829ff0ea77c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae2c12573db536950fe4a7829ff0ea77c">&#9670;&nbsp;</a></span>rescale()</h2>
+<a id="a06155892554181694640b793a89b4adf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a06155892554181694640b793a89b4adf">&#9670;&nbsp;</a></span>rescale()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void MSST::rescale </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>volume</em></td><td>)</td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>ofs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const double &amp;&#160;</td>
+          <td class="paramname"><em>volume</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>rescale the lattice and velocities </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ofs</td><td>determine the output files </td></tr>
+    <tr><td class="paramname">volume</td><td>the current cell volume </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>rescale velocity</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMSST_ae2c12573db536950fe4a7829ff0ea77c_cgraph.png" border="0" usemap="#classMSST_ae2c12573db536950fe4a7829ff0ea77c_cgraph" alt=""/></div>
-<map name="classMSST_ae2c12573db536950fe4a7829ff0ea77c_cgraph" id="classMSST_ae2c12573db536950fe4a7829ff0ea77c_cgraph">
-<area shape="rect" title=" " alt="" coords="5,81,117,108"/>
+<div class="center"><img src="classMSST_a06155892554181694640b793a89b4adf_cgraph.png" border="0" usemap="#classMSST_a06155892554181694640b793a89b4adf_cgraph" alt=""/></div>
+<map name="classMSST_a06155892554181694640b793a89b4adf_cgraph" id="classMSST_a06155892554181694640b793a89b4adf_cgraph">
+<area shape="rect" title="rescale the lattice and velocities" alt="" coords="5,81,117,108"/>
 <area shape="rect" href="classUnitCell.html#a0c497f4a41a710554e936f4e3d047835" title=" " alt="" coords="165,74,313,115"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="361,5,580,32"/>
 <area shape="rect" href="classoutput.html#a2c0ee91b261a332d8ecb88d9a07a80d9" title=" " alt="" coords="409,56,532,83"/>
@@ -491,17 +584,17 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMSST_ae2c12573db536950fe4a7829ff0ea77c_icgraph.png" border="0" usemap="#classMSST_ae2c12573db536950fe4a7829ff0ea77c_icgraph" alt=""/></div>
-<map name="classMSST_ae2c12573db536950fe4a7829ff0ea77c_icgraph" id="classMSST_ae2c12573db536950fe4a7829ff0ea77c_icgraph">
-<area shape="rect" title=" " alt="" coords="176,5,288,32"/>
-<area shape="rect" href="classMSST.html#aadf86d8c908345664a4739154be3b183" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,5,128,32"/>
+<div class="center"><img src="classMSST_a06155892554181694640b793a89b4adf_icgraph.png" border="0" usemap="#classMSST_a06155892554181694640b793a89b4adf_icgraph" alt=""/></div>
+<map name="classMSST_a06155892554181694640b793a89b4adf_icgraph" id="classMSST_a06155892554181694640b793a89b4adf_icgraph">
+<area shape="rect" title="rescale the lattice and velocities" alt="" coords="176,5,288,32"/>
+<area shape="rect" href="classMSST.html#aa6e5fdfd75f51345b271ec9f410314ee" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,5,128,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a14f0ae8bbe8e7811c4c91e084b7ecb2a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14f0ae8bbe8e7811c4c91e084b7ecb2a">&#9670;&nbsp;</a></span>restart()</h2>
+<a id="a18a82f55920e4c94be00c8c6151fc3b4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a82f55920e4c94be00c8c6151fc3b4">&#9670;&nbsp;</a></span>restart()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -512,25 +605,32 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void MSST::restart </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>global_readin_dir</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>restart MD when md_restart is true </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">global_readin_dir</td><td>directory of files for reading </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Reimplemented from <a class="el" href="classMDrun.html#ae5a5cac23232baaa0e027c00b20e2240">MDrun</a>.</p>
+<p>Reimplemented from <a class="el" href="classMD__base.html#a1d347efefe68147dc6da28cc28df42cf">MD_base</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMSST_a14f0ae8bbe8e7811c4c91e084b7ecb2a_cgraph.png" border="0" usemap="#classMSST_a14f0ae8bbe8e7811c4c91e084b7ecb2a_cgraph" alt=""/></div>
-<map name="classMSST_a14f0ae8bbe8e7811c4c91e084b7ecb2a_cgraph" id="classMSST_a14f0ae8bbe8e7811c4c91e084b7ecb2a_cgraph">
+<div class="center"><img src="classMSST_a18a82f55920e4c94be00c8c6151fc3b4_cgraph.png" border="0" usemap="#classMSST_a18a82f55920e4c94be00c8c6151fc3b4_cgraph" alt=""/></div>
+<map name="classMSST_a18a82f55920e4c94be00c8c6151fc3b4_cgraph" id="classMSST_a18a82f55920e4c94be00c8c6151fc3b4_cgraph">
 <area shape="rect" title="restart MD when md_restart is true" alt="" coords="5,5,113,32"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="161,5,375,32"/>
 </map>
@@ -556,36 +656,39 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>the second half of equation of motion, update velocities </p>
+<p>propagate velocities 1/2 step</p>
+<p>propagate the time derivative of volume 1/2 step</p>
+<p>calculate Lagrangian position</p>
 
-<p>Reimplemented from <a class="el" href="classMDrun.html#a2b7f91ffa0d66ba98ca6c2cad87e3d49">MDrun</a>.</p>
+<p>Reimplemented from <a class="el" href="classMD__base.html#ad851defa1ad207052885d78bc4a2f120">MD_base</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMSST_ab05716f7f09d027861c7435dae09334f_cgraph.png" border="0" usemap="#classMSST_ab05716f7f09d027861c7435dae09334f_cgraph" alt=""/></div>
 <map name="classMSST_ab05716f7f09d027861c7435dae09334f_cgraph" id="classMSST_ab05716f7f09d027861c7435dae09334f_cgraph">
 <area shape="rect" title="the second half of equation of motion, update velocities" alt="" coords="5,157,148,184"/>
-<area shape="rect" href="classMD__func.html#a74016d09926da9592562873ce98f4da5" title=" " alt="" coords="196,5,387,32"/>
-<area shape="rect" href="classMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title=" " alt="" coords="204,56,379,83"/>
-<area shape="rect" href="classMSST.html#afb555193b92b223924b68082c7376b1e" title=" " alt="" coords="212,107,371,133"/>
-<area shape="rect" href="classMSST.html#afb2b42d795b4d4b14e94805b032dba16" title=" " alt="" coords="202,157,381,184"/>
+<area shape="rect" href="namespaceMD__func.html#a5cebc1780ba2bdf569a9844a5f6deb8c" title="calculate the total stress tensor" alt="" coords="196,5,387,32"/>
+<area shape="rect" href="namespaceMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title="get the current temperature" alt="" coords="204,56,379,83"/>
+<area shape="rect" href="classMSST.html#afb555193b92b223924b68082c7376b1e" title="propagate atomic velocities" alt="" coords="212,107,371,133"/>
+<area shape="rect" href="classMSST.html#afb2b42d795b4d4b14e94805b032dba16" title="propagate the volume change rate" alt="" coords="202,157,381,184"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="203,208,380,235"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="219,259,364,285"/>
-<area shape="rect" href="classMSST.html#af455d41cf14b2083792cff64371bbd94" title=" " alt="" coords="231,309,351,336"/>
-<area shape="rect" href="classMD__func.html#aa24b5553a117456119e4a8e1ab6789bf" title=" " alt="" coords="435,5,604,32"/>
-<area shape="rect" href="classMD__func.html#a97c6aca19e89e6f10684226358fcd820" title=" " alt="" coords="438,56,601,83"/>
+<area shape="rect" href="classMSST.html#af455d41cf14b2083792cff64371bbd94" title="get the sum of square of velocities" alt="" coords="231,309,351,336"/>
+<area shape="rect" href="namespaceMD__func.html#aa24b5553a117456119e4a8e1ab6789bf" title="get the temperature vectors" alt="" coords="441,5,611,32"/>
+<area shape="rect" href="namespaceMD__func.html#a6c0e776a467f2fadc838df160f220ecc" title="calculate the ionic kinetic energy" alt="" coords="435,56,617,83"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a35142b27ab806779aca03e3b800ed910"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a35142b27ab806779aca03e3b800ed910">&#9670;&nbsp;</a></span>setup()</h2>
+<a id="a7d21bd9eb05d22a5e1957d2d4b1e9d6f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7d21bd9eb05d22a5e1957d2d4b1e9d6f">&#9670;&nbsp;</a></span>setup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -597,13 +700,23 @@ Here is the call graph for this function:</div>
           <td class="memname">void MSST::setup </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classModuleESolver_1_1ESolver.html">ModuleESolver::ESolver</a> *&#160;</td>
-          <td class="paramname"><em>p_esolver</em></td><td>)</td>
+          <td class="paramname"><em>p_esolver</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>global_readin_dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -612,26 +725,27 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_esolver</td><td>the energy solver used in md </td></tr>
+    <tr><td class="paramname">global_readin_dir</td><td>directory of files for reading </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classMDrun.html#ade9fa55197d9f546719b08b729fbf68e">MDrun</a>.</p>
+<p>Reimplemented from <a class="el" href="classMD__base.html#a78e4e9d290084b6ec0184c52b5d7bf0d">MD_base</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMSST_a35142b27ab806779aca03e3b800ed910_cgraph.png" border="0" usemap="#classMSST_a35142b27ab806779aca03e3b800ed910_cgraph" alt=""/></div>
-<map name="classMSST_a35142b27ab806779aca03e3b800ed910_cgraph" id="classMSST_a35142b27ab806779aca03e3b800ed910_cgraph">
+<div class="center"><img src="classMSST_a7d21bd9eb05d22a5e1957d2d4b1e9d6f_cgraph.png" border="0" usemap="#classMSST_a7d21bd9eb05d22a5e1957d2d4b1e9d6f_cgraph" alt=""/></div>
+<map name="classMSST_a7d21bd9eb05d22a5e1957d2d4b1e9d6f_cgraph" id="classMSST_a7d21bd9eb05d22a5e1957d2d4b1e9d6f_cgraph">
 <area shape="rect" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="5,107,107,133"/>
-<area shape="rect" href="classMD__func.html#a74016d09926da9592562873ce98f4da5" title=" " alt="" coords="312,5,503,32"/>
-<area shape="rect" href="classMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title=" " alt="" coords="320,56,495,83"/>
-<area shape="rect" href="classMDrun.html#ade9fa55197d9f546719b08b729fbf68e" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="155,107,264,133"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="551,169,728,196"/>
-<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="567,245,712,272"/>
-<area shape="rect" href="classMD__func.html#aa24b5553a117456119e4a8e1ab6789bf" title=" " alt="" coords="555,5,724,32"/>
-<area shape="rect" href="classMD__func.html#a97c6aca19e89e6f10684226358fcd820" title=" " alt="" coords="558,56,721,83"/>
-<area shape="rect" href="classMD__func.html#a3abf5bc0e7d64e547352ba03755b9cff" title=" " alt="" coords="327,157,487,184"/>
-<area shape="rect" href="classPrint__Info.html#a2707fcd7bf0dc7b1551c9ac868473da0" title=" " alt="" coords="321,107,493,133"/>
+<area shape="rect" href="namespaceMD__func.html#a5cebc1780ba2bdf569a9844a5f6deb8c" title="calculate the total stress tensor" alt="" coords="329,5,520,32"/>
+<area shape="rect" href="namespaceMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title="get the current temperature" alt="" coords="337,56,512,83"/>
+<area shape="rect" href="classMD__base.html#a78e4e9d290084b6ec0184c52b5d7bf0d" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="155,107,281,133"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="571,169,748,196"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="587,245,732,272"/>
+<area shape="rect" href="namespaceMD__func.html#aa24b5553a117456119e4a8e1ab6789bf" title="get the temperature vectors" alt="" coords="575,5,744,32"/>
+<area shape="rect" href="namespaceMD__func.html#a6c0e776a467f2fadc838df160f220ecc" title="calculate the ionic kinetic energy" alt="" coords="568,56,751,83"/>
+<area shape="rect" href="namespaceMD__func.html#a5c5ba239a9cf1b2a256dd446fa33a0c3" title="calculate energy, forces and virial tensor" alt="" coords="345,157,505,184"/>
+<area shape="rect" href="classPrint__Info.html#a2707fcd7bf0dc7b1551c9ac868473da0" title=" " alt="" coords="339,107,511,133"/>
 </map>
 </div>
 
@@ -642,6 +756,9 @@ Here is the call graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double MSST::vel_sum </td>
@@ -650,13 +767,21 @@ Here is the call graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>get the sum of square of velocities </p>
+<dl class="section return"><dt>Returns</dt><dd>the sum of square of velocities </dd></dl>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMSST_af455d41cf14b2083792cff64371bbd94_cgraph.png" border="0" usemap="#classMSST_af455d41cf14b2083792cff64371bbd94_cgraph" alt=""/></div>
 <map name="classMSST_af455d41cf14b2083792cff64371bbd94_cgraph" id="classMSST_af455d41cf14b2083792cff64371bbd94_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,125,39"/>
+<area shape="rect" title="get the sum of square of velocities" alt="" coords="5,13,125,39"/>
 <area shape="rect" href="classModuleBase_1_1Vector3.html#a2eb1b82893764c1bd38a5993c6f6dcfb" title="Get the square of nomr of a Vector3." alt="" coords="173,5,332,47"/>
 </map>
 </div>
@@ -665,16 +790,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMSST_af455d41cf14b2083792cff64371bbd94_icgraph.png" border="0" usemap="#classMSST_af455d41cf14b2083792cff64371bbd94_icgraph" alt=""/></div>
 <map name="classMSST_af455d41cf14b2083792cff64371bbd94_icgraph" id="classMSST_af455d41cf14b2083792cff64371bbd94_icgraph">
-<area shape="rect" title=" " alt="" coords="196,31,316,57"/>
-<area shape="rect" href="classMSST.html#aadf86d8c908345664a4739154be3b183" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,138,32"/>
+<area shape="rect" title="get the sum of square of velocities" alt="" coords="196,31,316,57"/>
+<area shape="rect" href="classMSST.html#aa6e5fdfd75f51345b271ec9f410314ee" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,138,32"/>
 <area shape="rect" href="classMSST.html#ab05716f7f09d027861c7435dae09334f" title="the second half of equation of motion, update velocities" alt="" coords="5,56,148,83"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a27c4b072a05e7214a33a65ddf0d7d19f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a27c4b072a05e7214a33a65ddf0d7d19f">&#9670;&nbsp;</a></span>write_restart()</h2>
+<a id="aacb268283618dd7818fe771c964e5e66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacb268283618dd7818fe771c964e5e66">&#9670;&nbsp;</a></span>write_restart()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -685,20 +810,27 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void MSST::write_restart </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>global_out_dir</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>write the information into files used for MD restarting </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">global_out_dir</td><td>directory of output files </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Reimplemented from <a class="el" href="classMDrun.html#a943294ad3074d8a96519e4aae5702455">MDrun</a>.</p>
+<p>Reimplemented from <a class="el" href="classMD__base.html#a26411e73950e5aaee59646e44e4fce4d">MD_base</a>.</p>
 
 </div>
 </div>
@@ -708,12 +840,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt;double&gt; MSST::dilation</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>dilation scale </p>
 
 </div>
 </div>
@@ -722,12 +864,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double MSST::e0</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>initial energy </p>
 
 </div>
 </div>
@@ -736,12 +888,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double MSST::lag_pos</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Lagrangian location of cell. </p>
 
 </div>
 </div>
@@ -750,12 +912,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt;double&gt;* MSST::old_v</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>old atomic velocities </p>
 
 </div>
 </div>
@@ -764,12 +936,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt;double&gt; MSST::omega</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>time derivative of volume </p>
 
 </div>
 </div>
@@ -778,12 +960,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double MSST::p0</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>initial pressure </p>
 
 </div>
 </div>
@@ -792,12 +984,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double MSST::totmass</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>total mass of the cell </p>
 
 </div>
 </div>
@@ -806,12 +1008,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double MSST::v0</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>initial volume </p>
 
 </div>
 </div>
@@ -820,18 +1032,28 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double MSST::vsum</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>sum over v^2 </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>module_md/<a class="el" href="MSST_8h_source.html">MSST.h</a></li>
-<li>module_md/<a class="el" href="MSST_8cpp.html">MSST.cpp</a></li>
+<li>module_md/<a class="el" href="msst_8h_source.html">msst.h</a></li>
+<li>module_md/<a class="el" href="msst_8cpp.html">msst.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

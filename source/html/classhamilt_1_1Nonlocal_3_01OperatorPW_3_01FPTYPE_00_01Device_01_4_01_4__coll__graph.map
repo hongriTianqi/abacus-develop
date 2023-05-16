@@ -1,12 +1,12 @@
 <map id="hamilt::Nonlocal&lt; OperatorPW&lt; FPTYPE, Device &gt; &gt;" name="hamilt::Nonlocal&lt; OperatorPW&lt; FPTYPE, Device &gt; &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="453,1613,654,2013"/>
-<area shape="rect" id="node2" href="$classhamilt_1_1OperatorPW.html" title=" " alt="" coords="173,1224,326,1345"/>
-<area shape="rect" id="node3" href="$classhamilt_1_1Operator.html" title=" " alt="" coords="5,475,173,729"/>
-<area shape="rect" id="node4" href="$classUnitCell.html" title=" " alt="" coords="484,1099,623,1470"/>
-<area shape="rect" id="node5" href="$classMagnetism.html" title=" " alt="" coords="319,490,524,714"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="342,5,501,273"/>
-<area shape="rect" id="node8" href="$classAtom.html" title=" " alt="" coords="548,446,719,758"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="743,409,905,795"/>
-<area shape="rect" id="node9" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="929,409,1089,795"/>
-<area shape="rect" id="node10" href="$classpseudopot__cell__vnl.html" title=" " alt="" coords="647,1019,830,1551"/>
+<area shape="rect" id="node1" title=" " alt="" coords="637,1540,838,1940"/>
+<area shape="rect" id="node2" href="$classhamilt_1_1OperatorPW.html" title=" " alt="" coords="198,1151,351,1272"/>
+<area shape="rect" id="node3" href="$classhamilt_1_1Operator.html" title=" " alt="" coords="5,519,173,773"/>
+<area shape="rect" id="node4" href="$classUnitCell.html" title=" " alt="" coords="560,1026,699,1397"/>
+<area shape="rect" id="node5" href="$classMagnetism.html" title=" " alt="" coords="319,534,524,758"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="454,5,613,273"/>
+<area shape="rect" id="node8" href="$classAtom.html" title=" " alt="" coords="735,490,905,802"/>
+<area shape="rect" id="node10" href="$classModulePW_1_1PW__Basis__K.html" title="Special pw_basis class. It includes different k&#45;points." alt="" coords="930,409,1110,883"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="548,453,711,839"/>
+<area shape="rect" id="node9" href="$classpseudopot__cell__vnl.html" title=" " alt="" coords="755,945,938,1477"/>
 </map>

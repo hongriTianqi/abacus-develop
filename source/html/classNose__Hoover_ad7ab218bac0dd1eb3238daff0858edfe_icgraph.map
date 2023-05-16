@@ -1,5 +1,5 @@
 <map id="Nose_Hoover::vel_baro" name="Nose_Hoover::vel_baro">
-<area shape="rect" id="node1" title=" " alt="" coords="248,31,421,57"/>
-<area shape="rect" id="node2" href="$classNose__Hoover.html#a2460699a58dd787699447714e3f87944" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,190,32"/>
+<area shape="rect" id="node1" title="perform half&#45;step update of velocity due to barostat" alt="" coords="248,31,421,57"/>
+<area shape="rect" id="node2" href="$classNose__Hoover.html#a1bfbc8a6b4d4ba509b9459c9417ea8d3" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,190,32"/>
 <area shape="rect" id="node3" href="$classNose__Hoover.html#a6d05097c9fc8a511256ca0a48d0ac0e4" title="the second half of equation of motion, update velocities" alt="" coords="5,56,200,83"/>
 </map>

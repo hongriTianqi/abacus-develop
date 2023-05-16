@@ -1,12 +1,12 @@
 <map id="Symmetry_rho::begin" name="Symmetry_rho::begin">
-<area shape="rect" id="node1" title=" " alt="" coords="5,130,168,157"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,181,168,207"/>
 <area shape="rect" id="node2" href="$classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="232,64,375,105"/>
 <area shape="rect" id="node3" href="$classSymmetry__rho.html#ad5d9217553e012041998992f47e7751b" title=" " alt="" coords="216,130,391,157"/>
-<area shape="rect" id="node6" href="$classModuleSymmetry_1_1Symmetry.html#acc52ff2f4c86b8cd0c014d55b4c4d443" title=" " alt="" coords="439,188,652,229"/>
+<area shape="rect" id="node8" href="$classSymmetry__rho.html#a55b2578d61b7481066d4fc6587b32227" title=" " alt="" coords="454,254,637,281"/>
+<area shape="rect" id="node9" href="$classModulePW_1_1PW__Basis.html#a187e988b2c81e3be3f905bf0f0834de6" title="transform real space to reciprocal space" alt="" coords="223,232,384,273"/>
+<area shape="rect" id="node10" href="$classModulePW_1_1PW__Basis.html#abe30432b8c7a5a3bec170b18ddfae010" title="transform reciprocal space to real space" alt="" coords="223,297,384,339"/>
 <area shape="rect" id="node4" href="$classParallel__Grid.html#aa28a017b0402c67d24aad07b70ba4351" title=" " alt="" coords="467,5,623,47"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="715,35,898,76"/>
-<area shape="rect" id="node10" href="$classParallel__Grid.html#a8b5d3506121576ce2323d42182db0018" title=" " alt="" coords="468,123,623,164"/>
-<area shape="rect" id="node7" href="$classModuleSymmetry_1_1Symmetry__Basic.html#a4b54c9b42b122d0f80cc0a77076a9b8b" title=" " alt="" coords="700,129,913,171"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="718,195,895,222"/>
-<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="961,188,1115,229"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="700,64,883,105"/>
+<area shape="rect" id="node6" href="$classModuleSymmetry_1_1Symmetry.html#acc52ff2f4c86b8cd0c014d55b4c4d443" title=" " alt="" coords="439,123,652,164"/>
+<area shape="rect" id="node7" href="$classParallel__Grid.html#a8b5d3506121576ce2323d42182db0018" title=" " alt="" coords="468,188,623,229"/>
 </map>

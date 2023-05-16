@@ -1,12 +1,12 @@
 <map id="pseudopot_cell_vnl::getvnl" name="pseudopot_cell_vnl::getvnl">
-<area shape="rect" id="node1" title=" " alt="" coords="5,135,152,176"/>
-<area shape="rect" id="node2" href="$classWF__igk.html#ae332dba4fe2ba0188c07382eb49d4267" title=" " alt="" coords="200,17,412,43"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="224,73,388,115"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="217,142,395,169"/>
-<area shape="rect" id="node8" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="233,193,379,219"/>
-<area shape="rect" id="node10" href="$classModuleBase_1_1YlmReal.html#a4a0791bc6a7899abb20c1d2dfec05b80" title="spherical harmonic function (real form) an array of vectors" alt="" coords="224,244,388,285"/>
-<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis__K.html#a95b24e597b47294a9d6b46bfe8393de9" title=" " alt="" coords="471,5,632,47"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="469,71,633,112"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="475,136,628,177"/>
-<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="460,201,643,243"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,129,152,171"/>
+<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__K.html#a95b24e597b47294a9d6b46bfe8393de9" title=" " alt="" coords="201,5,363,47"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="200,71,364,112"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="643,199,820,226"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="209,191,355,218"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1YlmReal.html#a4a0791bc6a7899abb20c1d2dfec05b80" title="spherical harmonic function (real form) an array of vectors" alt="" coords="200,243,364,284"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="421,71,585,112"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="868,192,1021,233"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="412,188,595,229"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="427,253,580,295"/>
 </map>

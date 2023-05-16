@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: module_hsolver/diago_cg.h Source File</title>
+<title>3.2.2: module_hsolver/diago_cg.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -81,7 +81,7 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="types_8h.html">module_psi/kernels/types.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="device_8h.html">module_psi/kernels/device.h</a>&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="memory__op_8h.html">module_psi/kernels/memory_op.h</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="module__psi_2kernels_2memory__op_8h.html">module_psi/kernels/memory_op.h</a>&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="math__kernel__op_8h.html">module_hsolver/kernels/math_kernel_op.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
@@ -173,6 +173,7 @@ $(function() {
 <div class="ttc" id="aclasshsolver_1_1DiagoCG_html"><div class="ttname"><a href="classhsolver_1_1DiagoCG.html">hsolver::DiagoCG</a></div><div class="ttdef"><b>Definition:</b> diago_cg.h:17</div></div>
 <div class="ttc" id="aclasshamilt_1_1Hamilt_html_a3e6b090012c89b1e304ae070edc76937"><div class="ttname"><a href="classhamilt_1_1Hamilt.html#a3e6b090012c89b1e304ae070edc76937">hamilt::Hamilt::ops</a></div><div class="ttdeci">Operator&lt; std::complex&lt; FPTYPE &gt;, Device &gt; * ops</div><div class="ttdef"><b>Definition:</b> hamilt.h:36</div></div>
 <div class="ttc" id="aclasshsolver_1_1DiagoCG_html_aae8e51799611304d3aa3473bf47d340e"><div class="ttname"><a href="classhsolver_1_1DiagoCG.html#aae8e51799611304d3aa3473bf47d340e">hsolver::DiagoCG::hphi</a></div><div class="ttdeci">std::complex&lt; FPTYPE &gt; * hphi</div><div class="ttdoc">temp vector for H|psi&gt; for one band, size dim</div><div class="ttdef"><b>Definition:</b> diago_cg.h:59</div></div>
+<div class="ttc" id="amodule__psi_2kernels_2memory__op_8h_html"><div class="ttname"><a href="module__psi_2kernels_2memory__op_8h.html">memory_op.h</a></div></div>
 <div class="ttc" id="anamespaceModuleBase_1_1libm_html_a91c03031eb1d447315c0f37d8251d2ad"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#a91c03031eb1d447315c0f37d8251d2ad">ModuleBase::libm::sin</a></div><div class="ttdeci">Tp sin(Tp x)</div></div>
 <div class="ttc" id="aclasshsolver_1_1DiagoCG_html_a0ccc225faec9e97b6c6c8defacf7973a"><div class="ttname"><a href="classhsolver_1_1DiagoCG.html#a0ccc225faec9e97b6c6c8defacf7973a">hsolver::DiagoCG::zero</a></div><div class="ttdeci">const std::complex&lt; FPTYPE &gt; * zero</div><div class="ttdef"><b>Definition:</b> diago_cg.h:108</div></div>
 <div class="ttc" id="anamespaceParallel__Reduce_html_a5ccf1f753c6fae3266e7e9b5e21f2712"><div class="ttname"><a href="namespaceParallel__Reduce.html#a5ccf1f753c6fae3266e7e9b5e21f2712">Parallel_Reduce::reduce_complex_double_pool</a></div><div class="ttdeci">void reduce_complex_double_pool(std::complex&lt; double &gt; &amp;object)</div><div class="ttdef"><b>Definition:</b> parallel_reduce.cpp:151</div></div>
@@ -196,12 +197,12 @@ $(function() {
 <div class="ttc" id="aclasshsolver_1_1DiagoCG_html_a7b1d1cb18008cb35829d641532a5e96c"><div class="ttname"><a href="classhsolver_1_1DiagoCG.html#a7b1d1cb18008cb35829d641532a5e96c">hsolver::DiagoCG::diag</a></div><div class="ttdeci">void diag(hamilt::Hamilt&lt; FPTYPE, Device &gt; *phm_in, psi::Psi&lt; std::complex&lt; FPTYPE &gt;, Device &gt; &amp;psi, FPTYPE *eigenvalue_in) override</div><div class="ttdef"><b>Definition:</b> diago_cg.cpp:565</div></div>
 <div class="ttc" id="aclasshamilt_1_1Operator_html"><div class="ttname"><a href="classhamilt_1_1Operator.html">hamilt::Operator</a></div><div class="ttdef"><b>Definition:</b> operator.h:31</div></div>
 <div class="ttc" id="astructpsi_1_1Range_html"><div class="ttname"><a href="structpsi_1_1Range.html">psi::Range</a></div><div class="ttdef"><b>Definition:</b> psi.h:15</div></div>
-<div class="ttc" id="anamespaceIons__Move__Basic_html_ad33ffc23a7d6955f536f6cd68967f2c4"><div class="ttname"><a href="namespaceIons__Move__Basic.html#ad33ffc23a7d6955f536f6cd68967f2c4">Ions_Move_Basic::dim</a></div><div class="ttdeci">int dim</div><div class="ttdef"><b>Definition:</b> ions_move_basic.cpp:4</div></div>
+<div class="ttc" id="anamespaceIons__Move__Basic_html_ad33ffc23a7d6955f536f6cd68967f2c4"><div class="ttname"><a href="namespaceIons__Move__Basic.html#ad33ffc23a7d6955f536f6cd68967f2c4">Ions_Move_Basic::dim</a></div><div class="ttdeci">int dim</div><div class="ttdef"><b>Definition:</b> ions_move_basic.cpp:6</div></div>
 <div class="ttc" id="astructpsi_1_1memory_1_1resize__memory__op_html"><div class="ttname"><a href="structpsi_1_1memory_1_1resize__memory__op.html">psi::memory::resize_memory_op</a></div><div class="ttdef"><b>Definition:</b> memory_op.h:16</div></div>
 <div class="ttc" id="adiago__cg_8h_html"><div class="ttname"><a href="diago__cg_8h.html">diago_cg.h</a></div></div>
 <div class="ttc" id="astructhsolver_1_1vector__div__vector__op_html"><div class="ttname"><a href="structhsolver_1_1vector__div__vector__op.html">hsolver::vector_div_vector_op</a></div><div class="ttdef"><b>Definition:</b> math_kernel_op.h:142</div></div>
 <div class="ttc" id="aclasshsolver_1_1DiagoCG_html_a1a06c818372e866f228a363891d9e490"><div class="ttname"><a href="classhsolver_1_1DiagoCG.html#a1a06c818372e866f228a363891d9e490">hsolver::DiagoCG::dim</a></div><div class="ttdeci">int dim</div><div class="ttdoc">non-zero col size for inputted psi matrix</div><div class="ttdef"><b>Definition:</b> diago_cg.h:46</div></div>
-<div class="ttc" id="anamespaceGlobalV_html_aa6d884dbe6439646b8937a9171e9a8a3"><div class="ttname"><a href="namespaceGlobalV.html#aa6d884dbe6439646b8937a9171e9a8a3">GlobalV::ofs_running</a></div><div class="ttdeci">std::ofstream ofs_running</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:146</div></div>
+<div class="ttc" id="anamespaceGlobalV_html_aa6d884dbe6439646b8937a9171e9a8a3"><div class="ttname"><a href="namespaceGlobalV.html#aa6d884dbe6439646b8937a9171e9a8a3">GlobalV::ofs_running</a></div><div class="ttdeci">std::ofstream ofs_running</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:145</div></div>
 <div class="ttc" id="aclasshsolver_1_1DiagoCG_html_ac3446dabbc782de0d65675d18c10f38d"><div class="ttname"><a href="classhsolver_1_1DiagoCG.html#ac3446dabbc782de0d65675d18c10f38d">hsolver::DiagoCG::cg</a></div><div class="ttdeci">psi::Psi&lt; std::complex&lt; FPTYPE &gt;, Device &gt; * cg</div><div class="ttdoc">temp vector for , size dim</div><div class="ttdef"><b>Definition:</b> diago_cg.h:62</div></div>
 <div class="ttc" id="aparallel__reduce_8h_html"><div class="ttname"><a href="parallel__reduce_8h.html">parallel_reduce.h</a></div></div>
 <div class="ttc" id="ablas__connector_8h_html"><div class="ttname"><a href="blas__connector_8h.html">blas_connector.h</a></div></div>
@@ -226,7 +227,6 @@ $(function() {
 <div class="ttc" id="anamespaceModuleBase_1_1libm_html_a7b49e155799ac36b2da1da35b6c2c77c"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#a7b49e155799ac36b2da1da35b6c2c77c">ModuleBase::libm::cos</a></div><div class="ttdeci">Tp cos(Tp x)</div></div>
 <div class="ttc" id="adiago__iter__assist_8h_html"><div class="ttname"><a href="diago__iter__assist_8h.html">diago_iter_assist.h</a></div></div>
 <div class="ttc" id="aclasshsolver_1_1DiagoCG_html_aaf18e35f83e3ca36b635f4c1250d40ea"><div class="ttname"><a href="classhsolver_1_1DiagoCG.html#aaf18e35f83e3ca36b635f4c1250d40ea">hsolver::DiagoCG::neg_one</a></div><div class="ttdeci">const std::complex&lt; FPTYPE &gt; * neg_one</div><div class="ttdef"><b>Definition:</b> diago_cg.h:108</div></div>
-<div class="ttc" id="amemory__op_8h_html"><div class="ttname"><a href="memory__op_8h.html">memory_op.h</a></div></div>
 <div class="ttc" id="aclasshamilt_1_1Hamilt_html_a390251e1296d0b9962a88d2805e4b1af"><div class="ttname"><a href="classhamilt_1_1Hamilt.html#a390251e1296d0b9962a88d2805e4b1af">hamilt::Hamilt::sPsi</a></div><div class="ttdeci">virtual void sPsi(const std::complex&lt; FPTYPE &gt; *psi_in, std::complex&lt; FPTYPE &gt; *spsi, const size_t size) const</div><div class="ttdef"><b>Definition:</b> hamilt.h:25</div></div>
 <div class="ttc" id="aclasshsolver_1_1DiagoCG_html_af57b1decaeaed5a7f234d0a0ffb7f828"><div class="ttname"><a href="classhsolver_1_1DiagoCG.html#af57b1decaeaed5a7f234d0a0ffb7f828">hsolver::DiagoCG::device</a></div><div class="ttdeci">psi::AbacusDevice_t device</div><div class="ttdoc">device type of psi</div><div class="ttdef"><b>Definition:</b> diago_cg.h:77</div></div>
 <div class="ttc" id="astructpsi_1_1memory_1_1set__memory__op_html"><div class="ttname"><a href="structpsi_1_1memory_1_1set__memory__op.html">psi::memory::set_memory_op</a></div><div class="ttdef"><b>Definition:</b> memory_op.h:30</div></div>
@@ -251,9 +251,9 @@ $(function() {
 <div class="ttc" id="abranred_8cpp_html_abb702d8b501669a23aa0ab3b281b9384"><div class="ttname"><a href="branred_8cpp.html#abb702d8b501669a23aa0ab3b281b9384">min</a></div><div class="ttdeci">#define min(x, y)</div><div class="ttdef"><b>Definition:</b> branred.cpp:18</div></div>
 <div class="ttc" id="anamespaceModuleBase_html_adeaaec1c2e00d3e37d62ae80ba994120"><div class="ttname"><a href="namespaceModuleBase.html#adeaaec1c2e00d3e37d62ae80ba994120">ModuleBase::conj</a></div><div class="ttdeci">ComplexMatrix conj(const ComplexMatrix &amp;m)</div><div class="ttdef"><b>Definition:</b> complexmatrix.cpp:408</div></div>
 <div class="ttc" id="aclasshamilt_1_1Hamilt_html"><div class="ttname"><a href="classhamilt_1_1Hamilt.html">hamilt::Hamilt</a></div><div class="ttdef"><b>Definition:</b> hamilt.h:15</div></div>
-<div class="ttc" id="anamespaceIons__Move__Basic_html_a26a7fc8dc0772fb107b9b7cfa5db4d4e"><div class="ttname"><a href="namespaceIons__Move__Basic.html#a26a7fc8dc0772fb107b9b7cfa5db4d4e">Ions_Move_Basic::converged</a></div><div class="ttdeci">bool converged</div><div class="ttdef"><b>Definition:</b> ions_move_basic.cpp:5</div></div>
+<div class="ttc" id="anamespaceIons__Move__Basic_html_a26a7fc8dc0772fb107b9b7cfa5db4d4e"><div class="ttname"><a href="namespaceIons__Move__Basic.html#a26a7fc8dc0772fb107b9b7cfa5db4d4e">Ions_Move_Basic::converged</a></div><div class="ttdeci">bool converged</div><div class="ttdef"><b>Definition:</b> ions_move_basic.cpp:7</div></div>
 <div class="ttc" id="aclasshsolver_1_1DiagoCG_html_ad655b483c9a23414e9655eeb0651758b"><div class="ttname"><a href="classhsolver_1_1DiagoCG.html#ad655b483c9a23414e9655eeb0651758b">hsolver::DiagoCG::sphi</a></div><div class="ttdeci">std::complex&lt; FPTYPE &gt; * sphi</div><div class="ttdoc">temp vector for S|psi&gt; for one band, size dim</div><div class="ttdef"><b>Definition:</b> diago_cg.h:57</div></div>
-<div class="ttc" id="anamespaceGlobalV_html_abbef3acac60bca45ffd0232b1e72a9dd"><div class="ttname"><a href="namespaceGlobalV.html#abbef3acac60bca45ffd0232b1e72a9dd">GlobalV::PW_DIAG_NMAX</a></div><div class="ttdeci">int PW_DIAG_NMAX</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:71</div></div>
+<div class="ttc" id="anamespaceGlobalV_html_abbef3acac60bca45ffd0232b1e72a9dd"><div class="ttname"><a href="namespaceGlobalV.html#abbef3acac60bca45ffd0232b1e72a9dd">GlobalV::PW_DIAG_NMAX</a></div><div class="ttdeci">int PW_DIAG_NMAX</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:70</div></div>
 <div class="ttc" id="anamespaceModuleBase_html_a319c957fc399a519aa4cdd447bdee1aa"><div class="ttname"><a href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa">ModuleBase::WARNING_QUIT</a></div><div class="ttdeci">void WARNING_QUIT(const std::string &amp;file, const std::string &amp;description)</div><div class="ttdoc">Combine the functions of WARNING and QUIT.</div><div class="ttdef"><b>Definition:</b> complexmatrix_test.cpp:46</div></div>
 <div class="ttc" id="amemory_8h_html"><div class="ttname"><a href="memory_8h.html">memory.h</a></div></div>
 <div class="ttc" id="astructhsolver_1_1gemv__op_html"><div class="ttname"><a href="structhsolver_1_1gemv__op.html">hsolver::gemv_op</a></div><div class="ttdef"><b>Definition:</b> math_kernel_op.h:211</div></div>

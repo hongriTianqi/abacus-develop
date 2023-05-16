@@ -1,8 +1,8 @@
 <map id="module_base/test" name="module_base/test">
-<area shape="rect" id="node1" href="dir_bb949a8662318acfbbccaf81a7d52ba1.html" title="test" alt="" coords="60,52,132,100"/>
-<area shape="rect" id="node2" href="dir_d4f84845e42511f5d44b785128221b3c.html" title="src_ri" alt="" coords="5,148,77,196"/>
-<area shape="rect" id="edge1-headlabel" href="dir_000005_000065.html" title="1" alt="" coords="66,129,76,144"/>
-<area shape="rect" id="node3" href="dir_17d8151cebd9e56ec9e3ca6ed961bb56.html" title="module_psi" alt="" coords="102,148,199,196"/>
-<area shape="rect" id="edge2-headlabel" href="dir_000005_000057.html" title="1" alt="" coords="131,121,140,135"/>
-<area shape="rect" id="clust1" href="dir_b9ccfbd71bf0bf19ced0d48494a985fa.html" title="module_base" alt="" coords="41,16,151,111"/>
+<area shape="rect" id="node1" href="dir_bb949a8662318acfbbccaf81a7d52ba1.html" title="test" alt="" coords="70,52,142,100"/>
+<area shape="rect" id="node2" href="dir_ce63385f78ddac7b4edb16c9aa09af5f.html" title="module_ri" alt="" coords="5,148,92,196"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000009_000074.html" title="1" alt="" coords="75,130,84,144"/>
+<area shape="rect" id="node3" href="dir_17d8151cebd9e56ec9e3ca6ed961bb56.html" title="module_psi" alt="" coords="116,148,213,196"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000009_000065.html" title="1" alt="" coords="143,121,153,135"/>
+<area shape="rect" id="clust1" href="dir_b9ccfbd71bf0bf19ced0d48494a985fa.html" title="module_base" alt="" coords="51,16,161,111"/>
 </map>

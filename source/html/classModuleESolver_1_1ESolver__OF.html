@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: ModuleESolver::ESolver_OF Class Reference</title>
+<title>3.2.2: ModuleESolver::ESolver_OF Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -85,16 +85,16 @@ Collaboration diagram for ModuleESolver::ESolver_OF:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModuleESolver_1_1ESolver__OF__coll__graph.png" border="0" usemap="#ModuleESolver_1_1ESolver__OF_coll__map" alt="Collaboration graph"/></div>
 <map name="ModuleESolver_1_1ESolver__OF_coll__map" id="ModuleESolver_1_1ESolver__OF_coll__map">
-<area shape="rect" title=" " alt="" coords="667,945,868,1595"/>
-<area shape="rect" href="classKEDF__vW.html" title=" " alt="" coords="5,563,180,787"/>
-<area shape="rect" href="classModuleBase_1_1matrix.html" title=" " alt="" coords="215,79,368,332"/>
-<area shape="rect" href="classKEDF__TF.html" title=" " alt="" coords="204,563,379,787"/>
-<area shape="rect" href="classKEDF__WT.html" title=" " alt="" coords="403,483,577,868"/>
-<area shape="rect" href="classpsi_1_1Psi.html" title=" " alt="" coords="601,468,744,883"/>
-<area shape="rect" href="classModuleBase_1_1Opt__DCsrch.html" title=" " alt="" coords="769,571,955,780"/>
-<area shape="rect" href="classModuleBase_1_1Opt__CG.html" title=" " alt="" coords="981,5,1140,405"/>
-<area shape="rect" href="classModuleBase_1_1Opt__TN.html" title=" " alt="" coords="1113,549,1272,802"/>
-<area shape="rect" href="classCharge__Extra.html" title=" " alt="" coords="1296,541,1471,809"/>
+<area shape="rect" title=" " alt="" coords="843,1033,1044,1683"/>
+<area shape="rect" href="classKEDF__vW.html" title="A class which calculates kinetic energy, potential, and stress with von Weizsäcker (vW) KEDF...." alt="" coords="5,607,180,831"/>
+<area shape="rect" href="classKEDF__TF.html" title="A class which calculates kinetic energy, potential, and stress with Thomas&#45;Fermi (TF) KEDF...." alt="" coords="204,607,379,831"/>
+<area shape="rect" href="classCharge.html" title=" " alt="" coords="403,468,633,971"/>
+<area shape="rect" href="classKEDF__WT.html" title="A class which calculates kinetic energy, potential, and stress with Wang&#45;Teter (WT) KEDF...." alt="" coords="657,527,832,912"/>
+<area shape="rect" href="classKEDF__LKT.html" title="A class which calculates kinetic energy, potential, and stress with Luo&#45;Karasiev&#45;Trickey (LKT) KEDF...." alt="" coords="856,578,1031,861"/>
+<area shape="rect" href="classpsi_1_1Psi.html" title=" " alt="" coords="1055,519,1197,919"/>
+<area shape="rect" href="classModuleBase_1_1Opt__DCsrch.html" title=" " alt="" coords="1222,615,1409,824"/>
+<area shape="rect" href="classModuleBase_1_1Opt__CG.html" title=" " alt="" coords="1399,5,1557,405"/>
+<area shape="rect" href="classModuleBase_1_1Opt__TN.html" title=" " alt="" coords="1567,593,1725,846"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -122,8 +122,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a380b40f26c567a678ad6552068e6f4bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b0d8e899d1364c50332ff8ea5427b1b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#a8b0d8e899d1364c50332ff8ea5427b1b">postprocess</a> () override</td></tr>
 <tr class="separator:a8b0d8e899d1364c50332ff8ea5427b1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bd21377904cb71904bd6a05464717c2"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#a9bd21377904cb71904bd6a05464717c2">cal_Energy</a> (double &amp;etot) override</td></tr>
-<tr class="separator:a9bd21377904cb71904bd6a05464717c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa8f9ce7bc35f9494c9c9806cf0ec6ef"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#aaa8f9ce7bc35f9494c9c9806cf0ec6ef">cal_Energy</a> () override</td></tr>
+<tr class="separator:aaa8f9ce7bc35f9494c9c9806cf0ec6ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a02b9da6593ccf7082ebb1bf279fa5e94"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#a02b9da6593ccf7082ebb1bf279fa5e94">cal_Force</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;force) override</td></tr>
 <tr class="separator:a02b9da6593ccf7082ebb1bf279fa5e94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc894b3c6c4e638098cc70caac93bc6e"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#acc894b3c6c4e638098cc70caac93bc6e">cal_Stress</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;stress) override</td></tr>
@@ -158,7 +158,7 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:ae1092298a9813efc7cdde2af4fa26616"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48a871417b685a63c2a991c0946da88f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#a48a871417b685a63c2a991c0946da88f">calV</a> (double *ptempPhi, double *rdLdphi)</td></tr>
 <tr class="separator:a48a871417b685a63c2a991c0946da88f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6d682e9c9920857b8fe080e00af461ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#a6d682e9c9920857b8fe080e00af461ed">caldEdtheta</a> (double **ptempPhi, <a class="el" href="classCharge.html">Charge</a> *ptempRho, double *ptheta, double *rdEdtheta)</td></tr>
+<tr class="memitem:a6d682e9c9920857b8fe080e00af461ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#a6d682e9c9920857b8fe080e00af461ed">caldEdtheta</a> (double **ptempPhi, <a class="el" href="classCharge.html">Charge</a> *<a class="el" href="classModuleESolver_1_1ESolver__OF.html#a6dd3a86ef2824904ec6f15a4bff5cec2">ptempRho</a>, double *ptheta, double *rdEdtheta)</td></tr>
 <tr class="separator:a6d682e9c9920857b8fe080e00af461ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b761b0f740ded0e98835fb7c54d33de"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#a6b761b0f740ded0e98835fb7c54d33de">cal_mu</a> (double *<a class="el" href="classModuleESolver_1_1ESolver__OF.html#a87e9c457db6e2532b89a5698cf045e94">pphi</a>, double *<a class="el" href="classModuleESolver_1_1ESolver__OF.html#ae9bf70332f9771840ffcca79591e1e9e">pdEdphi</a>, double <a class="el" href="classModuleESolver_1_1ESolver__OF.html#acffca2deae06753b765d0172b44a75f3">nelec</a>)</td></tr>
 <tr class="separator:a6b761b0f740ded0e98835fb7c54d33de"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -177,6 +177,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a1c06b91f2f6abf19b43b24a63f706450"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a77d83441d99796c7903d8dfebe7f12aa"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKEDF__WT.html">KEDF_WT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#a77d83441d99796c7903d8dfebe7f12aa">wt</a></td></tr>
 <tr class="separator:a77d83441d99796c7903d8dfebe7f12aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8abd58a150c3128e82e6dd5558388e1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classKEDF__LKT.html">KEDF_LKT</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#ad8abd58a150c3128e82e6dd5558388e1">lkt</a></td></tr>
+<tr class="separator:ad8abd58a150c3128e82e6dd5558388e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a1def57de1245f5407908cb21b0fe1d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharge__Extra.html">Charge_Extra</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#a0a1def57de1245f5407908cb21b0fe1d">CE</a></td></tr>
 <tr class="separator:a0a1def57de1245f5407908cb21b0fe1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab869f72dc38dad3fda56c2ae22b816a9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Opt__CG.html">ModuleBase::Opt_CG</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#ab869f72dc38dad3fda56c2ae22b816a9">opt_cg</a></td></tr>
@@ -229,6 +231,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a24bdbc7172c16b8217bcedd1b379620e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45427e54eb1420dc9bc2c58a49e91bb4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#a45427e54eb1420dc9bc2c58a49e91bb4">flag</a> = -1</td></tr>
 <tr class="separator:a45427e54eb1420dc9bc2c58a49e91bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dd3a86ef2824904ec6f15a4bff5cec2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classCharge.html">Charge</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#a6dd3a86ef2824904ec6f15a4bff5cec2">ptempRho</a> = nullptr</td></tr>
+<tr class="separator:a6dd3a86ef2824904ec6f15a4bff5cec2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa829768a3560352463d1e22d859b043f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#aa829768a3560352463d1e22d859b043f">conv</a> = false</td></tr>
 <tr class="separator:aa829768a3560352463d1e22d859b043f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6acfe51df544129315175e5c7f1ba27"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classModuleESolver_1_1ESolver__OF.html#ac6acfe51df544129315175e5c7f1ba27">energy_llast</a> = 0</td></tr>
@@ -373,16 +377,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModuleESolver_1_1ESolver__OF_ae1092298a9813efc7cdde2af4fa26616_cgraph.png" border="0" usemap="#classModuleESolver_1_1ESolver__OF_ae1092298a9813efc7cdde2af4fa26616_cgraph" alt=""/></div>
 <map name="classModuleESolver_1_1ESolver__OF_ae1092298a9813efc7cdde2af4fa26616_cgraph" id="classModuleESolver_1_1ESolver__OF_ae1092298a9813efc7cdde2af4fa26616_cgraph">
-<area shape="rect" title=" " alt="" coords="5,49,181,90"/>
-<area shape="rect" href="module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0" title=" " alt="" coords="279,5,333,32"/>
-<area shape="rect" href="classenergy.html#a64344ea129ad123e088a20e7678a9296" title=" " alt="" coords="249,56,363,83"/>
-<area shape="rect" href="namespaceModuleIO.html#a047c6203f4fd97139b8d5e093e15ed0b" title=" " alt="" coords="229,140,383,167"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="431,23,644,49"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a5f13944ea3a04330fb2cc24e1c96a307" title=" " alt="" coords="446,74,629,115"/>
-<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="465,140,610,167"/>
-<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="450,191,625,217"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="446,242,629,283"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="692,133,875,174"/>
+<area shape="rect" title=" " alt="" coords="5,64,181,105"/>
+<area shape="rect" href="module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0" title=" " alt="" coords="485,46,539,73"/>
+<area shape="rect" href="namespaceModuleIO.html#a047c6203f4fd97139b8d5e093e15ed0b" title=" " alt="" coords="229,97,383,123"/>
+<area shape="rect" href="namespaceModuleIO.html#adb299b4504ba1070cf7e9c6d6203bd5e" title=" " alt="" coords="431,97,593,123"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a5f13944ea3a04330fb2cc24e1c96a307" title=" " alt="" coords="641,5,824,47"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="660,71,805,98"/>
+<area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="645,122,820,149"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="641,173,824,215"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="872,32,1055,73"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="887,97,1040,139"/>
 </map>
 </div>
 <div class="dynheader">
@@ -426,10 +430,10 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classModuleESolver_1_1ESolver__OF_a6ec31babfb980d30e416d7da856f9de5_cgraph.png" border="0" usemap="#classModuleESolver_1_1ESolver__OF_a6ec31babfb980d30e416d7da856f9de5_cgraph" alt=""/></div>
 <map name="classModuleESolver_1_1ESolver__OF_a6ec31babfb980d30e416d7da856f9de5_cgraph" id="classModuleESolver_1_1ESolver__OF_a6ec31babfb980d30e416d7da856f9de5_cgraph">
 <area shape="rect" title=" " alt="" coords="5,253,181,295"/>
-<area shape="rect" href="classSymmetry__rho.html#ace244855a5390fa61f308b55c2b7bd6e" title=" " alt="" coords="236,97,399,123"/>
+<area shape="rect" href="classSymmetry__rho.html#a07f18ddf838d58e02e212ab4eb5563ec" title=" " alt="" coords="236,97,399,123"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="693,140,876,181"/>
-<area shape="rect" href="classH__Ewald__pw.html#aaa3df78758c3e66655104ea70221bc35" title=" " alt="" coords="233,224,401,265"/>
-<area shape="rect" href="classCharge__Extra.html#ad6b3264e9fc967ef8d745df3250dfa85" title=" " alt="" coords="453,253,645,295"/>
+<area shape="rect" href="classH__Ewald__pw.html#a48711a11ff5ca4d9e6733a50d13d11d8" title=" " alt="" coords="233,224,401,265"/>
+<area shape="rect" href="classCharge__Extra.html#ad0fe660c9bd6887fb04667c29948be22" title=" " alt="" coords="453,253,645,295"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#af3cbc4288b59778d85ce9748e0356779" title=" " alt="" coords="229,341,405,383"/>
 <area shape="rect" href="classCharge__Extra.html#a56fac5ef41039cfe1e8b2759e10f2525" title=" " alt="" coords="236,407,399,448"/>
 <area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="478,5,621,47"/>
@@ -449,8 +453,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a9bd21377904cb71904bd6a05464717c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bd21377904cb71904bd6a05464717c2">&#9670;&nbsp;</a></span>cal_Energy()</h2>
+<a id="aaa8f9ce7bc35f9494c9c9806cf0ec6ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa8f9ce7bc35f9494c9c9806cf0ec6ef">&#9670;&nbsp;</a></span>cal_Energy()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -459,10 +463,9 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void ModuleESolver::ESolver_OF::cal_Energy </td>
+          <td class="memname">double ModuleESolver::ESolver_OF::cal_Energy </td>
           <td>(</td>
-          <td class="paramtype">double &amp;&#160;</td>
-          <td class="paramname"><em>etot</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -475,25 +478,19 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classModuleESolver_1_1ESolver__OF_a9bd21377904cb71904bd6a05464717c2_cgraph.png" border="0" usemap="#classModuleESolver_1_1ESolver__OF_a9bd21377904cb71904bd6a05464717c2_cgraph" alt=""/></div>
-<map name="classModuleESolver_1_1ESolver__OF_a9bd21377904cb71904bd6a05464717c2_cgraph" id="classModuleESolver_1_1ESolver__OF_a9bd21377904cb71904bd6a05464717c2_cgraph">
-<area shape="rect" title=" " alt="" coords="5,170,181,211"/>
-<area shape="rect" href="classenergy.html#ac71c7a87c40659a2a1e87e0861506c3d" title=" " alt="" coords="235,85,401,112"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a2c12eec9617213c719ce6d6934a799e0" title=" " alt="" coords="230,137,406,178"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#ab92c9e3b9d6d97aec7f10e3adcba2cd7" title=" " alt="" coords="230,202,406,243"/>
-<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="229,267,407,309"/>
-<area shape="rect" href="classsurchem.html#a1c9d7d71349ae94e09981f6b50bc0231" title=" " alt="" coords="471,5,615,32"/>
-<area shape="rect" href="classsurchem.html#a57f5d5cb067903c5ce4d0a2a7353fc0f" title=" " alt="" coords="477,56,610,83"/>
-<area shape="rect" href="classModuleDFTU_1_1DFTU.html#ab2a045834215ce8bfc8dcfecaa7207fa" title=" " alt="" coords="455,107,632,149"/>
-<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="471,173,616,200"/>
-<area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="680,23,857,65"/>
+<div class="center"><img src="classModuleESolver_1_1ESolver__OF_aaa8f9ce7bc35f9494c9c9806cf0ec6ef_cgraph.png" border="0" usemap="#classModuleESolver_1_1ESolver__OF_aaa8f9ce7bc35f9494c9c9806cf0ec6ef_cgraph" alt=""/></div>
+<map name="classModuleESolver_1_1ESolver__OF_aaa8f9ce7bc35f9494c9c9806cf0ec6ef_cgraph" id="classModuleESolver_1_1ESolver__OF_aaa8f9ce7bc35f9494c9c9806cf0ec6ef_cgraph">
+<area shape="rect" title=" " alt="" coords="5,71,181,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a2c12eec9617213c719ce6d6934a799e0" title=" " alt="" coords="230,5,406,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#ab92c9e3b9d6d97aec7f10e3adcba2cd7" title=" " alt="" coords="230,71,406,112"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="229,136,407,177"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classModuleESolver_1_1ESolver__OF_a9bd21377904cb71904bd6a05464717c2_icgraph.png" border="0" usemap="#classModuleESolver_1_1ESolver__OF_a9bd21377904cb71904bd6a05464717c2_icgraph" alt=""/></div>
-<map name="classModuleESolver_1_1ESolver__OF_a9bd21377904cb71904bd6a05464717c2_icgraph" id="classModuleESolver_1_1ESolver__OF_a9bd21377904cb71904bd6a05464717c2_icgraph">
+<div class="center"><img src="classModuleESolver_1_1ESolver__OF_aaa8f9ce7bc35f9494c9c9806cf0ec6ef_icgraph.png" border="0" usemap="#classModuleESolver_1_1ESolver__OF_aaa8f9ce7bc35f9494c9c9806cf0ec6ef_icgraph" alt=""/></div>
+<map name="classModuleESolver_1_1ESolver__OF_aaa8f9ce7bc35f9494c9c9806cf0ec6ef_icgraph" id="classModuleESolver_1_1ESolver__OF_aaa8f9ce7bc35f9494c9c9806cf0ec6ef_icgraph">
 <area shape="rect" title=" " alt="" coords="229,5,405,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a380b40f26c567a678ad6552068e6f4bc" title=" " alt="" coords="5,5,181,47"/>
 </map>
@@ -530,7 +527,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classModuleESolver_1_1ESolver__OF_a02b9da6593ccf7082ebb1bf279fa5e94_cgraph.png" border="0" usemap="#classModuleESolver_1_1ESolver__OF_a02b9da6593ccf7082ebb1bf279fa5e94_cgraph" alt=""/></div>
 <map name="classModuleESolver_1_1ESolver__OF_a02b9da6593ccf7082ebb1bf279fa5e94_cgraph" id="classModuleESolver_1_1ESolver__OF_a02b9da6593ccf7082ebb1bf279fa5e94_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,181,47"/>
-<area shape="rect" href="classForces.html#a584caa88b74ddc81509a20c1bef91a6d" title=" " alt="" coords="229,13,323,39"/>
+<area shape="rect" href="classForces.html#a47247cc84c1c683b7cadf85e2d4ac060" title=" " alt="" coords="229,13,360,39"/>
 </map>
 </div>
 
@@ -628,16 +625,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModuleESolver_1_1ESolver__OF_acc894b3c6c4e638098cc70caac93bc6e_cgraph.png" border="0" usemap="#classModuleESolver_1_1ESolver__OF_acc894b3c6c4e638098cc70caac93bc6e_cgraph" alt=""/></div>
 <map name="classModuleESolver_1_1ESolver__OF_acc894b3c6c4e638098cc70caac93bc6e_cgraph" id="classModuleESolver_1_1ESolver__OF_acc894b3c6c4e638098cc70caac93bc6e_cgraph">
-<area shape="rect" title=" " alt="" coords="5,167,181,208"/>
-<area shape="rect" href="classOF__Stress__PW.html#aac70df38dc093637423bfe19a48011c2" title=" " alt="" coords="229,123,416,150"/>
+<area shape="rect" title=" " alt="" coords="5,147,181,188"/>
+<area shape="rect" href="classOF__Stress__PW.html#a3de2a96ff71c3d376317b094cb4f7b3e" title=" " alt="" coords="229,78,416,105"/>
 <area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="467,5,620,47"/>
-<area shape="rect" href="classKEDF__TF.html#a03022d50c6729b38a7d7579ace9b2f91" title=" " alt="" coords="245,174,400,201"/>
-<area shape="rect" href="classKEDF__vW.html#a48141735162de78d94747c5171c391b9" title=" " alt="" coords="243,225,402,251"/>
-<area shape="rect" href="classKEDF__WT.html#a4e924af90150938f8d02437af5517043" title=" " alt="" coords="243,275,402,302"/>
-<area shape="rect" href="classelecstate_1_1Potential.html#a3e6e467e1cfe898357bde1707783b032" title=" " alt="" coords="468,71,619,112"/>
-<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="472,136,615,177"/>
-<area shape="rect" href="classStress__Func.html#a0ec0c4ec6ec0bfd4af78d5b1c21a14f0" title=" " alt="" coords="464,201,623,243"/>
-<area shape="rect" href="classStress__Func.html#a283a801fed548150170fa9626fc7c96a" title=" " alt="" coords="464,267,623,308"/>
+<area shape="rect" href="classKEDF__TF.html#a03022d50c6729b38a7d7579ace9b2f91" title=" " alt="" coords="245,129,400,155"/>
+<area shape="rect" href="classKEDF__LKT.html#a0e2a1577f70e62e8a626a52ef7a47e4a" title=" " alt="" coords="242,179,403,206"/>
+<area shape="rect" href="classKEDF__vW.html#a48141735162de78d94747c5171c391b9" title=" " alt="" coords="243,230,402,257"/>
+<area shape="rect" href="classKEDF__WT.html#a4e924af90150938f8d02437af5517043" title=" " alt="" coords="243,281,402,307"/>
+<area shape="rect" href="classStress__Func.html#a0ec0c4ec6ec0bfd4af78d5b1c21a14f0" title=" " alt="" coords="464,71,623,112"/>
+<area shape="rect" href="classStress__Func.html#a283a801fed548150170fa9626fc7c96a" title=" " alt="" coords="464,136,623,177"/>
+<area shape="rect" href="classStress__Func.html#a89bc9855bd9f55ae47e65b70edb0cc9e" title=" " alt="" coords="464,201,623,243"/>
 </map>
 </div>
 
@@ -694,15 +691,15 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classModuleESolver_1_1ESolver__OF_a6d682e9c9920857b8fe080e00af461ed_cgraph.png" border="0" usemap="#classModuleESolver_1_1ESolver__OF_a6d682e9c9920857b8fe080e00af461ed_cgraph" alt=""/></div>
 <map name="classModuleESolver_1_1ESolver__OF_a6d682e9c9920857b8fe080e00af461ed_cgraph" id="classModuleESolver_1_1ESolver__OF_a6d682e9c9920857b8fe080e00af461ed_cgraph">
 <area shape="rect" title=" " alt="" coords="5,170,181,211"/>
-<area shape="rect" href="classUnitCell.html#af434f5a46f03a97b188f343b1703f666" title=" " alt="" coords="256,35,380,61"/>
-<area shape="rect" href="namespaceModuleBase_1_1libm.html#a7b49e155799ac36b2da1da35b6c2c77c" title=" " alt="" coords="233,85,403,112"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a2c12eec9617213c719ce6d6934a799e0" title=" " alt="" coords="230,137,406,178"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a201e7b72fee7a4121755354e916faaab" title=" " alt="" coords="230,202,406,243"/>
-<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="229,267,407,309"/>
-<area shape="rect" href="namespaceModuleBase_1_1libm.html#a91c03031eb1d447315c0f37d8251d2ad" title=" " alt="" coords="235,333,401,360"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="455,5,668,32"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="470,57,653,98"/>
-<area shape="rect" href="classKEDF__TF.html#a202d0c98ebb4b867810e46afb1d15960" title=" " alt="" coords="480,209,643,236"/>
+<area shape="rect" href="classUnitCell.html#af434f5a46f03a97b188f343b1703f666" title=" " alt="" coords="255,35,379,61"/>
+<area shape="rect" href="namespaceModuleBase_1_1libm.html#a7b49e155799ac36b2da1da35b6c2c77c" title=" " alt="" coords="233,85,402,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a2c12eec9617213c719ce6d6934a799e0" title=" " alt="" coords="229,137,405,178"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a201e7b72fee7a4121755354e916faaab" title=" " alt="" coords="229,202,405,243"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="715,231,892,273"/>
+<area shape="rect" href="namespaceModuleBase_1_1libm.html#a91c03031eb1d447315c0f37d8251d2ad" title=" " alt="" coords="234,319,401,345"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="453,5,667,32"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="469,57,651,98"/>
+<area shape="rect" href="classKEDF__LKT.html#a4422d01ff7621147c0c822e2232439f4" title=" " alt="" coords="472,213,648,240"/>
 </map>
 </div>
 <div class="dynheader">
@@ -761,11 +758,11 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classUnitCell.html#af434f5a46f03a97b188f343b1703f666" title=" " alt="" coords="255,155,379,182"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a201e7b72fee7a4121755354e916faaab" title=" " alt="" coords="229,232,405,273"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a2c12eec9617213c719ce6d6934a799e0" title=" " alt="" coords="472,5,648,47"/>
-<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="715,173,892,215"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="715,148,892,189"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="453,122,667,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="469,173,651,215"/>
-<area shape="rect" href="classKEDF__TF.html#a202d0c98ebb4b867810e46afb1d15960" title=" " alt="" coords="479,239,641,266"/>
-<area shape="rect" href="classKEDF__vW.html#aaca2f06bcbb0844621d18b7018fd473a" title=" " alt="" coords="471,290,649,317"/>
+<area shape="rect" href="classKEDF__LKT.html#a4422d01ff7621147c0c822e2232439f4" title=" " alt="" coords="472,239,648,266"/>
+<area shape="rect" href="classKEDF__TF.html#a202d0c98ebb4b867810e46afb1d15960" title=" " alt="" coords="479,290,641,317"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1086,7 +1083,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classModuleSymmetry_1_1Symmetry.html#a9f7dababf39280c286082252f5107e4f" title=" " alt="" coords="684,250,897,292"/>
 <area shape="rect" href="classModulePW_1_1PW__Basis.html#ad8e9e53f69426170b8c1dbba0391bcda" title=" " alt="" coords="464,90,625,132"/>
 <area shape="rect" href="classModulePW_1_1PW__Basis.html#a9b368eb3fdb59bcf316cc939b93d82a0" title=" " alt="" coords="464,156,625,197"/>
-<area shape="rect" href="classpseudopot__cell__vl.html#a19b000b661bdc91b6ae3cdd8d5784e3d" title=" " alt="" coords="717,185,864,226"/>
+<area shape="rect" href="classpseudopot__cell__vl.html#af0e66ffecbd3a9f9cae3784f5a1809d8" title=" " alt="" coords="717,185,864,226"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1153,7 +1150,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classModuleESolver_1_1ESolver__OF_a2c12eec9617213c719ce6d6934a799e0_icgraph.png" border="0" usemap="#classModuleESolver_1_1ESolver__OF_a2c12eec9617213c719ce6d6934a799e0_icgraph" alt=""/></div>
 <map name="classModuleESolver_1_1ESolver__OF_a2c12eec9617213c719ce6d6934a799e0_icgraph" id="classModuleESolver_1_1ESolver__OF_a2c12eec9617213c719ce6d6934a799e0_icgraph">
 <area shape="rect" title=" " alt="" coords="901,157,1077,199"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9bd21377904cb71904bd6a05464717c2" title=" " alt="" coords="229,5,405,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#aaa8f9ce7bc35f9494c9c9806cf0ec6ef" title=" " alt="" coords="229,5,405,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6b761b0f740ded0e98835fb7c54d33de" title=" " alt="" coords="677,128,853,169"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#ab1d19b9ae2f4d976e8a17711186cb0fc" title=" " alt="" coords="229,195,405,236"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a943020196b1b7e51f59b29d41f3fab07" title=" " alt="" coords="453,64,629,105"/>
@@ -1194,7 +1191,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classModuleESolver_1_1ESolver__OF_ab92c9e3b9d6d97aec7f10e3adcba2cd7_icgraph.png" border="0" usemap="#classModuleESolver_1_1ESolver__OF_ab92c9e3b9d6d97aec7f10e3adcba2cd7_icgraph" alt=""/></div>
 <map name="classModuleESolver_1_1ESolver__OF_ab92c9e3b9d6d97aec7f10e3adcba2cd7_icgraph" id="classModuleESolver_1_1ESolver__OF_ab92c9e3b9d6d97aec7f10e3adcba2cd7_icgraph">
 <area shape="rect" title=" " alt="" coords="453,39,629,80"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9bd21377904cb71904bd6a05464717c2" title=" " alt="" coords="229,5,405,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#aaa8f9ce7bc35f9494c9c9806cf0ec6ef" title=" " alt="" coords="229,5,405,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#ab1d19b9ae2f4d976e8a17711186cb0fc" title=" " alt="" coords="229,71,405,112"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a380b40f26c567a678ad6552068e6f4bc" title=" " alt="" coords="5,39,181,80"/>
 </map>
@@ -1246,14 +1243,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classModuleESolver_1_1ESolver__OF_a201e7b72fee7a4121755354e916faaab_cgraph.png" border="0" usemap="#classModuleESolver_1_1ESolver__OF_a201e7b72fee7a4121755354e916faaab_cgraph" alt=""/></div>
 <map name="classModuleESolver_1_1ESolver__OF_a201e7b72fee7a4121755354e916faaab_cgraph" id="classModuleESolver_1_1ESolver__OF_a201e7b72fee7a4121755354e916faaab_cgraph">
-<area shape="rect" title=" " alt="" coords="5,74,181,115"/>
-<area shape="rect" href="classKEDF__TF.html#a202d0c98ebb4b867810e46afb1d15960" title=" " alt="" coords="237,31,400,57"/>
-<area shape="rect" href="classKEDF__vW.html#aaca2f06bcbb0844621d18b7018fd473a" title=" " alt="" coords="229,81,408,108"/>
-<area shape="rect" href="classKEDF__WT.html#af535b0b3344924bbb3b2cf08f961479e" title=" " alt="" coords="229,132,408,159"/>
-<area shape="rect" href="classKEDF__TF.html#a08a0412cf1ee22589f53e55d05d79996" title=" " alt="" coords="465,5,625,32"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="456,107,633,133"/>
-<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="681,42,859,83"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="693,107,847,149"/>
+<area shape="rect" title=" " alt="" coords="5,181,181,222"/>
+<area shape="rect" href="classKEDF__LKT.html#a4422d01ff7621147c0c822e2232439f4" title=" " alt="" coords="231,108,407,135"/>
+<area shape="rect" href="classKEDF__TF.html#a202d0c98ebb4b867810e46afb1d15960" title=" " alt="" coords="237,264,400,291"/>
+<area shape="rect" href="classKEDF__vW.html#aaca2f06bcbb0844621d18b7018fd473a" title=" " alt="" coords="229,163,408,189"/>
+<area shape="rect" href="classKEDF__WT.html#af535b0b3344924bbb3b2cf08f961479e" title=" " alt="" coords="229,213,408,240"/>
+<area shape="rect" href="classKEDF__LKT.html#ab4c9aba5d8d755057f5af96144c3775f" title=" " alt="" coords="461,5,628,32"/>
+<area shape="rect" href="classKEDF__LKT.html#a8193164100c8defa3ec899969451b430" title=" " alt="" coords="476,56,613,83"/>
+<area shape="rect" href="classKEDF__LKT.html#ab1704d63a06569a49f84e037cd4ad954" title=" " alt="" coords="479,107,610,133"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="456,158,633,199"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="456,224,633,251"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1372,7 +1371,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,267,181,308"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#ae1092298a9813efc7cdde2af4fa26616" title=" " alt="" coords="230,5,406,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="230,71,406,112"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9bd21377904cb71904bd6a05464717c2" title=" " alt="" coords="230,136,406,177"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#aaa8f9ce7bc35f9494c9c9806cf0ec6ef" title=" " alt="" coords="230,136,406,177"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a82dba9155f17961017274ed5d26ea33e" title=" " alt="" coords="230,201,406,243"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a721b16ef0e12b76994edda266c3ca7b5" title=" " alt="" coords="230,267,406,308"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#ab1d19b9ae2f4d976e8a17711186cb0fc" title=" " alt="" coords="230,332,406,373"/>
@@ -1497,8 +1496,8 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a201e7b72fee7a4121755354e916faaab" title=" " alt="" coords="229,289,405,331"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="453,179,667,206"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="469,231,651,272"/>
-<area shape="rect" href="classKEDF__TF.html#a202d0c98ebb4b867810e46afb1d15960" title=" " alt="" coords="479,297,641,323"/>
-<area shape="rect" href="classKEDF__vW.html#aaca2f06bcbb0844621d18b7018fd473a" title=" " alt="" coords="471,347,649,374"/>
+<area shape="rect" href="classKEDF__LKT.html#a4422d01ff7621147c0c822e2232439f4" title=" " alt="" coords="472,297,648,323"/>
+<area shape="rect" href="classKEDF__TF.html#a202d0c98ebb4b867810e46afb1d15960" title=" " alt="" coords="479,347,641,374"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1679,6 +1678,28 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">int ModuleESolver::ESolver_OF::iter = 0</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad8abd58a150c3128e82e6dd5558388e1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad8abd58a150c3128e82e6dd5558388e1">&#9670;&nbsp;</a></span>lkt</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classKEDF__LKT.html">KEDF_LKT</a> ModuleESolver::ESolver_OF::lkt</td>
         </tr>
       </table>
   </td>
@@ -2184,6 +2205,28 @@ Here is the caller graph for this function:</div>
           <td class="memname"><a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt;double&gt;* ModuleESolver::ESolver_OF::psi =nullptr</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6dd3a86ef2824904ec6f15a4bff5cec2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dd3a86ef2824904ec6f15a4bff5cec2">&#9670;&nbsp;</a></span>ptempRho</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classCharge.html">Charge</a>* ModuleESolver::ESolver_OF::ptempRho = nullptr</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

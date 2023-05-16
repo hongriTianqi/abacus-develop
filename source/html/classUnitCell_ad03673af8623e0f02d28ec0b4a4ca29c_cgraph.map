@@ -1,4 +1,12 @@
 <map id="UnitCell::setup" name="UnitCell::setup">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,124,32"/>
-<area shape="rect" id="node2" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="172,5,385,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,124,108"/>
+<area shape="rect" id="node2" href="$namespaceMD__func.html#aaea67a4854afe0c5853067ab48fb8acc" title="initialize the atomic velocities" alt="" coords="211,56,346,83"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="172,107,385,133"/>
+<area shape="rect" id="node3" href="$namespaceMD__func.html#a4ac34d2ab4bcd2922b484ffd4f92a813" title="obtain the atomic mass and whether the freedom is fixed" alt="" coords="433,5,616,32"/>
+<area shape="rect" id="node5" href="$namespaceMD__func.html#a7f85ba3093e13e9ddb37898814c0e356" title="generate atomic velocities that satisfy the Boltzmann distribution" alt="" coords="453,56,596,83"/>
+<area shape="rect" id="node9" href="$namespaceMD__func.html#aa6d1d7b2faa0e020d3132e39ddaf5f3f" title="read in atomic velocities from STRU" alt="" coords="453,107,596,133"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1Vector3.html#a7e069b794f5d1cf410c54d01c874f09c" title="set a 3d vector" alt="" coords="664,5,851,32"/>
+<area shape="rect" id="node6" href="$namespaceMD__func.html#a36655a0860e146ab9c2ad9e3110cb8c9" title="generate a Gaussian random number" alt="" coords="680,56,835,83"/>
+<area shape="rect" id="node7" href="$namespaceMD__func.html#a6c0e776a467f2fadc838df160f220ecc" title="calculate the ionic kinetic energy" alt="" coords="666,107,849,133"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1Vector3.html#a2eb1b82893764c1bd38a5993c6f6dcfb" title="Get the square of nomr of a Vector3." alt="" coords="899,99,1057,141"/>
 </map>

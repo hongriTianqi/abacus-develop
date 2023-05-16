@@ -1,7 +1,5 @@
 <map id="ModuleESolver::ESolver_LJ" name="ModuleESolver::ESolver_LJ">
-<area shape="rect" id="node1" title=" " alt="" coords="163,828,358,1081"/>
-<area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver.html" title=" " alt="" coords="78,505,254,743"/>
-<area shape="rect" id="node3" href="$classpsi_1_1Psi.html" title=" " alt="" coords="5,13,148,427"/>
-<area shape="rect" id="node4" href="$classpsi_1_1Psi.html" title=" " alt="" coords="172,5,339,435"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="279,497,432,751"/>
+<area shape="rect" id="node1" title=" " alt="" coords="91,336,285,589"/>
+<area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver.html" title=" " alt="" coords="5,20,181,244"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="206,5,359,259"/>
 </map>

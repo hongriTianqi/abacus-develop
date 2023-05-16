@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Class Members - Variables</title>
+<title>3.2.2: Class Members - Variables</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -171,6 +171,9 @@ $(function() {
 <li>radius_
 : <a class="el" href="classvdw_1_1Vdwd2Parameters.html#a0631e9870cff3aba78bc659ab7bf6863">vdw::Vdwd2Parameters</a>
 </li>
+<li>rand
+: <a class="el" href="classTestLS.html#a9410596d3df13ccd5eb222fdf43a4f98">TestLS</a>
+</li>
 <li>range0
 : <a class="el" href="classwinput.html#ac79cb371cde685edf13e90da7c5c5f76">winput</a>
 </li>
@@ -182,9 +185,6 @@ $(function() {
 </li>
 <li>range_2
 : <a class="el" href="structpsi_1_1Range.html#abd45fa5d222f428e31e7dfaf7f2da0ac">psi::Range</a>
-</li>
-<li>rank_delta
-: <a class="el" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1DM_1_1Allreduce.html#ad3ba571115bc6ef845d89b76d013624c">Exx_Abfs::Parallel::Communicate::DM::Allreduce</a>
 </li>
 <li>rcov_
 : <a class="el" href="classvdw_1_1Vdwd3Parameters.html#ac1ab536546f47c33f2b7be52575ac5a4">vdw::Vdwd3Parameters</a>
@@ -263,9 +263,6 @@ $(function() {
 <li>recon_wanq
 : <a class="el" href="classwinput.html#a6a5d6ab09931608f03069959d02ede08">winput</a>
 </li>
-<li>recv_size
-: <a class="el" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1DM3_1_1Allreduce.html#aa61ca08418c16f40ccee635132a63c5f">Exx_Abfs::Parallel::Communicate::DM3::Allreduce</a>
-</li>
 <li>ref
 : <a class="el" href="classYlmRealTest.html#aea964f45f3e622d59470241793f5a3b6">YlmRealTest</a>
 </li>
@@ -339,6 +336,9 @@ $(function() {
 : <a class="el" href="classTest__RELAX.html#ac40be889db9674a48761df29f02700cb">Test_RELAX</a>
 , <a class="el" href="classTest__SETGRAD.html#a2b3b2f9fab71432b6a1e5b6ce42370d9">Test_SETGRAD</a>
 </li>
+<li>rfft_plan_
+: <a class="el" href="classModuleBase_1_1SphericalBesselTransformer.html#a35b9d5dd56d12dd14510232da8035295">ModuleBase::SphericalBesselTransformer</a>
+</li>
 <li>rho
 : <a class="el" href="classCharge.html#a056fbe36485bdaad061113ab102d66cb">Charge</a>
 , <a class="el" href="classelecstate_1_1ElecStatePW.html#ab7c1bf831c6b0b7adfbc42b7e23040c0">elecstate::ElecStatePW&lt; FPTYPE, Device &gt;</a>
@@ -361,9 +361,6 @@ $(function() {
 <li>rho_basis_
 : <a class="el" href="classelecstate_1_1PotBase.html#a2ee5343f1c96d9903fad002f3098d1bf">elecstate::PotBase</a>
 </li>
-<li>rho_cal
-: <a class="el" href="classElecStateLCAOPrepare.html#a88b3c244348a971e14c1be9cde6b82f5">ElecStateLCAOPrepare&lt; T &gt;</a>
-</li>
 <li>rho_core
 : <a class="el" href="classCharge.html#ad2ad36da866109a5d8a786e09075b2e8">Charge</a>
 </li>
@@ -372,9 +369,6 @@ $(function() {
 </li>
 <li>rho_extr
 : <a class="el" href="classCharge__Extra.html#a01efdaef86e51e718b90e2b2a2e93764">Charge_Extra</a>
-</li>
-<li>rho_ref
-: <a class="el" href="classElecStateLCAOPrepare.html#af8ec6724372e12121b6c05c2bc1d4e14">ElecStateLCAOPrepare&lt; T &gt;</a>
 </li>
 <li>rho_save
 : <a class="el" href="classCharge.html#abe416d44eab5a1e975ce6b8322530624">Charge</a>
@@ -393,6 +387,11 @@ $(function() {
 </li>
 <li>rhog_save
 : <a class="el" href="classCharge.html#a43e6c50873a159ac0ceffd73ea533ba2">Charge</a>
+</li>
+<li>rhopw
+: <a class="el" href="classCharge.html#ad4c6b165624d0f671f674c3737fd3c28">Charge</a>
+, <a class="el" href="classCharge__Mixing.html#ade8ad32427b8c795e369c169ba6f47e7">Charge_Mixing</a>
+, <a class="el" href="classOF__Stress__PW.html#a924d4103185e32a100c010a86ccba662">OF_Stress_PW</a>
 </li>
 <li>rix
 : <a class="el" href="classModulePW_1_1PW__Basis.html#a3a1ba40912a5b062fcd6f09ccc7fddc3">ModulePW::PW_Basis</a>
@@ -444,21 +443,16 @@ $(function() {
 , <a class="el" href="classORB__table__phi.html#a4df44beac5c47467a5127d8cdc27960b">ORB_table_phi</a>
 </li>
 <li>rmesh_times
-: <a class="el" href="classCenter2__Orb_1_1Orb22__Ccp.html#a2f0879706ed81f4b858c023d36d6e6d7">Center2_Orb::Orb22_Ccp</a>
-, <a class="el" href="classExx__Abfs.html#ad62a3f6faea3d2b5433b3315e2fb6fd2">Exx_Abfs</a>
+: <a class="el" href="classExx__Abfs.html#ad62a3f6faea3d2b5433b3315e2fb6fd2">Exx_Abfs</a>
 </li>
 <li>rotpos
 : <a class="el" href="classModuleSymmetry_1_1Symmetry.html#aa51e6ae2e65374646f2a95b696e4b99e">ModuleSymmetry::Symmetry</a>
 </li>
 <li>row
-: <a class="el" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1DM2.html#addccd5d38b4dbcb1e1fe8d8f4a69c2e7">Exx_Abfs::Parallel::Communicate::DM2</a>
-, <a class="el" href="structhamilt_1_1MatrixBlock.html#aae2095b6317a4dfab2a8f5d17a7a0d82">hamilt::MatrixBlock&lt; T &gt;</a>
+: <a class="el" href="structhamilt_1_1MatrixBlock.html#aae2095b6317a4dfab2a8f5d17a7a0d82">hamilt::MatrixBlock&lt; T &gt;</a>
 </li>
 <li>row_b
 : <a class="el" href="structLocalMatrix.html#addbd77fb954c5f4d1a2c1bcaf718d52d">LocalMatrix</a>
-</li>
-<li>row_col
-: <a class="el" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1DM2.html#a24cdbdf6fe42ac7e79ce721762ef43af">Exx_Abfs::Parallel::Communicate::DM2</a>
 </li>
 <li>row_num
 : <a class="el" href="structLocalMatrix.html#a6f9251b3f99d12965bf3896582292153">LocalMatrix</a>
@@ -489,9 +483,6 @@ $(function() {
 </li>
 <li>rthr2_
 : <a class="el" href="classvdw_1_1Vdwd3Parameters.html#a893fc3697f4b419c814b04991a8b4753">vdw::Vdwd3Parameters</a>
-</li>
-<li>running_log_
-: <a class="el" href="structENVPrepare.html#af3c56edb0d9178bea7208c3c8c548e07">ENVPrepare</a>
 </li>
 <li>rvalue
 : <a class="el" href="classtoWannier90.html#a9b7f530a21473ae5a8af31c1e7c75976">toWannier90</a>

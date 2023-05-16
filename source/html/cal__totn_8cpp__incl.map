@@ -1,12 +1,12 @@
 <map id="module_hamilt_general/module_surchem/cal_totn.cpp" name="module_hamilt_general/module_surchem/cal_totn.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="396,5,618,47"/>
-<area shape="rect" id="node2" href="$surchem_8h.html" title=" " alt="" coords="462,95,552,121"/>
-<area shape="rect" id="node3" href="$global__function_8h.html" title=" " alt="" coords="45,437,198,479"/>
-<area shape="rect" id="node4" href="$global__variable_8h.html" title=" " alt="" coords="112,527,246,553"/>
-<area shape="rect" id="node5" href="$matrix_8h.html" title=" " alt="" coords="508,445,676,471"/>
-<area shape="rect" id="node6" href="$unitcell_8h.html" title=" " alt="" coords="260,355,426,382"/>
-<area shape="rect" id="node7" href="$pw__basis_8h.html" title=" " alt="" coords="450,348,615,389"/>
-<area shape="rect" id="node8" href="$parallel__reduce_8h.html" title=" " alt="" coords="690,169,852,211"/>
-<area shape="rect" id="node9" href="$global_8h.html" title=" " alt="" coords="178,169,370,211"/>
-<area shape="rect" id="node10" href="$structure__factor_8h.html" title=" " alt="" coords="311,259,503,300"/>
+<area shape="rect" id="node1" title=" " alt="" coords="270,5,491,47"/>
+<area shape="rect" id="node2" href="$surchem_8h.html" title=" " alt="" coords="335,95,426,121"/>
+<area shape="rect" id="node3" href="$atom__in_8h.html" title=" " alt="" coords="5,177,92,203"/>
+<area shape="rect" id="node4" href="$global__function_8h.html" title=" " alt="" coords="269,333,423,375"/>
+<area shape="rect" id="node5" href="$global__variable_8h.html" title=" " alt="" coords="221,423,356,449"/>
+<area shape="rect" id="node6" href="$matrix_8h.html" title=" " alt="" coords="537,259,705,285"/>
+<area shape="rect" id="node7" href="$parallel__reduce_8h.html" title=" " alt="" coords="725,169,887,211"/>
+<area shape="rect" id="node8" href="$pw__basis_8h.html" title=" " alt="" coords="535,169,701,211"/>
+<area shape="rect" id="node9" href="$unitcell_8h.html" title=" " alt="" coords="347,259,513,285"/>
+<area shape="rect" id="node10" href="$global_8h.html" title=" " alt="" coords="218,169,410,211"/>
 </map>

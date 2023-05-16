@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: module_ri/RI_2D_Comm.h File Reference</title>
+<title>3.2.2: module_ri/RI_2D_Comm.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -78,30 +78,15 @@ $(function() {
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="module__basis_2module__ao_2parallel__orbitals_8h_source.html">module_basis/module_ao/parallel_orbitals.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="LCAO__matrix_8h_source.html">module_hamilt_lcao/hamilt_lcaodft/LCAO_matrix.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="module__cell_2klist_8h_source.html">module_cell/klist.h</a>&quot;</code><br />
 <code>#include &lt;RI/global/Tensor.h&gt;</code><br />
 <code>#include &lt;array&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;tuple&gt;</code><br />
 <code>#include &lt;map&gt;</code><br />
 <code>#include &lt;set&gt;</code><br />
+<code>#include &lt;deque&gt;</code><br />
 <code>#include &quot;<a class="el" href="RI__2D__Comm_8hpp_source.html">RI_2D_Comm.hpp</a>&quot;</code><br />
-</div><div class="textblock"><div class="dynheader">
-Include dependency graph for RI_2D_Comm.h:</div>
-<div class="dyncontent">
-<div class="center"><img src="RI__2D__Comm_8h__incl.png" border="0" usemap="#module__ri_2RI__2D__Comm_8h" alt=""/></div>
-<map name="module__ri_2RI__2D__Comm_8h" id="module__ri_2RI__2D__Comm_8h">
-<area shape="rect" title=" " alt="" coords="469,5,660,32"/>
-<area shape="rect" href="module__basis_2module__ao_2parallel__orbitals_8h.html" title=" " alt="" coords="5,184,172,225"/>
-<area shape="rect" href="LCAO__matrix_8h.html" title=" " alt="" coords="68,80,227,136"/>
-<area shape="rect" title=" " alt="" coords="251,95,387,121"/>
-<area shape="rect" title=" " alt="" coords="411,95,467,121"/>
-<area shape="rect" title=" " alt="" coords="492,95,555,121"/>
-<area shape="rect" title=" " alt="" coords="579,95,633,121"/>
-<area shape="rect" title=" " alt="" coords="658,95,709,121"/>
-<area shape="rect" title=" " alt="" coords="733,95,775,121"/>
-<area shape="rect" href="RI__2D__Comm_8hpp.html" title=" " alt="" coords="799,95,938,121"/>
-</map>
-</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
@@ -136,16 +121,22 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a29c844604e8fe18044c31764834644d7"><td class="memTemplParams" colspan="2">template&lt;typename Tdata , typename Tmatrix &gt; </td></tr>
-<tr class="memitem:a29c844604e8fe18044c31764834644d7"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::map&lt; TA, std::map&lt; TAC, RI::Tensor&lt; Tdata &gt; &gt; &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceRI__2D__Comm.html#a29c844604e8fe18044c31764834644d7">RI_2D_Comm::split_m2D_ktoR</a> (const std::vector&lt; Tmatrix &gt; &amp;mks_2D, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
-<tr class="separator:a29c844604e8fe18044c31764834644d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a282e9277fa9b6d717d95253734d363cc"><td class="memTemplParams" colspan="2">template&lt;typename Tdata , typename Tmatrix &gt; </td></tr>
+<tr class="memitem:a282e9277fa9b6d717d95253734d363cc"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::map&lt; TA, std::map&lt; TAC, RI::Tensor&lt; Tdata &gt; &gt; &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceRI__2D__Comm.html#a282e9277fa9b6d717d95253734d363cc">RI_2D_Comm::split_m2D_ktoR</a> (const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;kv, const std::vector&lt; Tmatrix &gt; &amp;mks_2D, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
+<tr class="separator:a282e9277fa9b6d717d95253734d363cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a45646400746155ec7a64b558194bd25c"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::tuple&lt; std::set&lt; TA &gt;, std::set&lt; TA &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRI__2D__Comm.html#a45646400746155ec7a64b558194bd25c">RI_2D_Comm::get_2D_judge</a> (const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv)</td></tr>
 <tr class="separator:a45646400746155ec7a64b558194bd25c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a027958693a4769f1aac8094eb17faf01"><td class="memTemplParams" colspan="2">template&lt;typename Tdata &gt; </td></tr>
-<tr class="memitem:a027958693a4769f1aac8094eb17faf01"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceRI__2D__Comm.html#a027958693a4769f1aac8094eb17faf01">RI_2D_Comm::add_Hexx</a> (const int ik, const double alpha, const std::vector&lt; std::map&lt; TA, std::map&lt; TAC, RI::Tensor&lt; Tdata &gt;&gt;&gt;&gt; &amp;Hs, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv, <a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;lm)</td></tr>
-<tr class="separator:a027958693a4769f1aac8094eb17faf01"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5a347a5587cb965682826c97c0382a95"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRI__2D__Comm.html#a5a347a5587cb965682826c97c0382a95">RI_2D_Comm::get_ik_list</a> (const int is_k)</td></tr>
-<tr class="separator:a5a347a5587cb965682826c97c0382a95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9c895bfff609e1e0a05840a341b844a"><td class="memTemplParams" colspan="2">template&lt;typename Tdata &gt; </td></tr>
+<tr class="memitem:aa9c895bfff609e1e0a05840a341b844a"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceRI__2D__Comm.html#aa9c895bfff609e1e0a05840a341b844a">RI_2D_Comm::add_Hexx</a> (const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;kv, const int ik, const double alpha, const std::vector&lt; std::map&lt; TA, std::map&lt; TAC, RI::Tensor&lt; Tdata &gt;&gt;&gt;&gt; &amp;Hs, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv, <a class="el" href="classLCAO__Matrix.html">LCAO_Matrix</a> &amp;lm, std::vector&lt; std::deque&lt; std::vector&lt; std::vector&lt; Tdata &gt;&gt;&gt;&gt; &amp;Hk_seq)</td></tr>
+<tr class="separator:aa9c895bfff609e1e0a05840a341b844a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85004c41397109a43c21113c0191d584"><td class="memTemplParams" colspan="2">template&lt;typename Tdata &gt; </td></tr>
+<tr class="memitem:a85004c41397109a43c21113c0191d584"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Tdata &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceRI__2D__Comm.html#a85004c41397109a43c21113c0191d584">RI_2D_Comm::Hexxs_to_Hk</a> (const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;kv, const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv, const std::vector&lt; std::map&lt; TA, std::map&lt; TAC, RI::Tensor&lt; Tdata &gt;&gt;&gt;&gt; &amp;Hexxs, const int ik)</td></tr>
+<tr class="separator:a85004c41397109a43c21113c0191d584"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94cca8e243b7b876f969be6f614173ec"><td class="memTemplParams" colspan="2">template&lt;typename Tdata &gt; </td></tr>
+<tr class="memitem:a94cca8e243b7b876f969be6f614173ec"><td class="memTemplItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; Tdata &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceRI__2D__Comm.html#a94cca8e243b7b876f969be6f614173ec">RI_2D_Comm::pulay_mixing</a> (const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv, std::deque&lt; std::vector&lt; std::vector&lt; Tdata &gt;&gt;&gt; &amp;Hk_seq, const std::vector&lt; std::vector&lt; Tdata &gt;&gt; &amp;Hk_new, const double mixing_beta, const std::string mixing_mode)</td></tr>
+<tr class="separator:a94cca8e243b7b876f969be6f614173ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21a9be782900bb0a391ca4a14fef2bb3"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRI__2D__Comm.html#a21a9be782900bb0a391ca4a14fef2bb3">RI_2D_Comm::get_ik_list</a> (const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;kv, const int is_k)</td></tr>
+<tr class="separator:a21a9be782900bb0a391ca4a14fef2bb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8566e497fbd82c693b20235fbe2f394b"><td class="memItemLeft" align="right" valign="top">std::tuple&lt; int, int, int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRI__2D__Comm.html#a8566e497fbd82c693b20235fbe2f394b">RI_2D_Comm::get_iat_iw_is_block</a> (const int iwt)</td></tr>
 <tr class="separator:a8566e497fbd82c693b20235fbe2f394b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4761dc82d1884cd847bcd9d015278e2f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceRI__2D__Comm.html#a4761dc82d1884cd847bcd9d015278e2f">RI_2D_Comm::get_is_block</a> (const int is_k, const int is_row_b, const int is_col_b)</td></tr>

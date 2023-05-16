@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: module_relax/relax_old/ions_move_basic.h File Reference</title>
+<title>3.2.2: module_relax/relax_old/ions_move_basic.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -77,16 +77,22 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="matrix_8h_source.html">module_base/matrix.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="unitcell_8h_source.html">module_cell/unitcell.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for ions_move_basic.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="ions__move__basic_8h__incl.png" border="0" usemap="#module__relax_2relax__old_2ions__move__basic_8h" alt=""/></div>
 <map name="module__relax_2relax__old_2ions__move__basic_8h" id="module__relax_2relax__old_2ions__move__basic_8h">
-<area shape="rect" title=" " alt="" coords="52,5,229,47"/>
-<area shape="rect" href="matrix_8h.html" title=" " alt="" coords="57,95,225,121"/>
-<area shape="rect" title=" " alt="" coords="5,169,81,196"/>
-<area shape="rect" title=" " alt="" coords="106,169,175,196"/>
-<area shape="rect" title=" " alt="" coords="200,169,273,196"/>
+<area shape="rect" title=" " alt="" coords="123,5,301,47"/>
+<area shape="rect" href="matrix_8h.html" title=" " alt="" coords="5,259,173,285"/>
+<area shape="rect" href="unitcell_8h.html" title=" " alt="" coords="255,95,420,121"/>
+<area shape="rect" title=" " alt="" coords="51,333,127,360"/>
+<area shape="rect" title=" " alt="" coords="176,333,245,360"/>
+<area shape="rect" title=" " alt="" coords="362,333,435,360"/>
+<area shape="rect" href="global__function_8h.html" title=" " alt="" coords="375,169,529,211"/>
+<area shape="rect" href="global__variable_8h.html" title=" " alt="" coords="499,259,634,285"/>
+<area shape="rect" href="matrix3_8h.html" title=" " alt="" coords="124,177,300,203"/>
+<area shape="rect" href="intarray_8h.html" title=" " alt="" coords="249,259,423,285"/>
 </map>
 </div>
 </div>
@@ -99,14 +105,14 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ac5cd325691912ff21c33b42a951b8f0f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#ac5cd325691912ff21c33b42a951b8f0f">Ions_Move_Basic::setup_gradient</a> (double *pos, double *grad, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;force)</td></tr>
-<tr class="separator:ac5cd325691912ff21c33b42a951b8f0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a337f5943bb4212e7b34c5b865cb78b45"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#a337f5943bb4212e7b34c5b865cb78b45">Ions_Move_Basic::move_atoms</a> (double *move, double *pos)</td></tr>
-<tr class="separator:a337f5943bb4212e7b34c5b865cb78b45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae8d6435872908d73195ba064285a9e71"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#ae8d6435872908d73195ba064285a9e71">Ions_Move_Basic::check_converged</a> (const double *grad)</td></tr>
-<tr class="separator:ae8d6435872908d73195ba064285a9e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca0f27d0f269229d9c557843d21dc343"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#aca0f27d0f269229d9c557843d21dc343">Ions_Move_Basic::terminate</a> (void)</td></tr>
-<tr class="separator:aca0f27d0f269229d9c557843d21dc343"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa47ad18fd6c04ed2e9ad16be38851628"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#aa47ad18fd6c04ed2e9ad16be38851628">Ions_Move_Basic::setup_gradient</a> (const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;force, double *pos, double *grad)</td></tr>
+<tr class="separator:aa47ad18fd6c04ed2e9ad16be38851628"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a212b0d03ef7c0663d798618f9fa3328f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#a212b0d03ef7c0663d798618f9fa3328f">Ions_Move_Basic::move_atoms</a> (<a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell, double *move, double *pos)</td></tr>
+<tr class="separator:a212b0d03ef7c0663d798618f9fa3328f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec6780da3eec2be1610d694b26ab45bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#aec6780da3eec2be1610d694b26ab45bb">Ions_Move_Basic::check_converged</a> (const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell, const double *grad)</td></tr>
+<tr class="separator:aec6780da3eec2be1610d694b26ab45bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac96b14cb03ad9202bc41ce709aff19ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#ac96b14cb03ad9202bc41ce709aff19ac">Ions_Move_Basic::terminate</a> (const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell)</td></tr>
+<tr class="separator:ac96b14cb03ad9202bc41ce709aff19ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4cbca31635b67166758fb82c54014764"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#a4cbca31635b67166758fb82c54014764">Ions_Move_Basic::setup_etot</a> (const double &amp;energy_in, const bool judgement)</td></tr>
 <tr class="separator:a4cbca31635b67166758fb82c54014764"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf71ac6969e58677438de4379cca01aa"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#aaf71ac6969e58677438de4379cca01aa">Ions_Move_Basic::dot_func</a> (const double *a, const double *b, const int &amp;dim)</td></tr>
@@ -116,25 +122,25 @@ Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:ad33ffc23a7d6955f536f6cd68967f2c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#ad33ffc23a7d6955f536f6cd68967f2c4">Ions_Move_Basic::dim</a> =0</td></tr>
+<tr class="memitem:ad33ffc23a7d6955f536f6cd68967f2c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#ad33ffc23a7d6955f536f6cd68967f2c4">Ions_Move_Basic::dim</a> = 0</td></tr>
 <tr class="separator:ad33ffc23a7d6955f536f6cd68967f2c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26a7fc8dc0772fb107b9b7cfa5db4d4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#a26a7fc8dc0772fb107b9b7cfa5db4d4e">Ions_Move_Basic::converged</a> =false</td></tr>
+<tr class="memitem:a26a7fc8dc0772fb107b9b7cfa5db4d4e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#a26a7fc8dc0772fb107b9b7cfa5db4d4e">Ions_Move_Basic::converged</a> = false</td></tr>
 <tr class="separator:a26a7fc8dc0772fb107b9b7cfa5db4d4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae0a65a28f4d6bb238f8f7bca8a9b3b46"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#ae0a65a28f4d6bb238f8f7bca8a9b3b46">Ions_Move_Basic::largest_grad</a> =0.0</td></tr>
+<tr class="memitem:ae0a65a28f4d6bb238f8f7bca8a9b3b46"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#ae0a65a28f4d6bb238f8f7bca8a9b3b46">Ions_Move_Basic::largest_grad</a> = 0.0</td></tr>
 <tr class="separator:ae0a65a28f4d6bb238f8f7bca8a9b3b46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a873db998bcd2d77399daef4d7ceafa7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#a873db998bcd2d77399daef4d7ceafa7e">Ions_Move_Basic::update_iter</a> =0</td></tr>
+<tr class="memitem:a873db998bcd2d77399daef4d7ceafa7e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#a873db998bcd2d77399daef4d7ceafa7e">Ions_Move_Basic::update_iter</a> = 0</td></tr>
 <tr class="separator:a873db998bcd2d77399daef4d7ceafa7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afafa0cf5c9a34d577ac34a5a3487cf74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#afafa0cf5c9a34d577ac34a5a3487cf74">Ions_Move_Basic::istep</a> =0</td></tr>
+<tr class="memitem:afafa0cf5c9a34d577ac34a5a3487cf74"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#afafa0cf5c9a34d577ac34a5a3487cf74">Ions_Move_Basic::istep</a> = 0</td></tr>
 <tr class="separator:afafa0cf5c9a34d577ac34a5a3487cf74"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa3d66505791bd44b025094d057a11d08"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#aa3d66505791bd44b025094d057a11d08">Ions_Move_Basic::ediff</a> =0.0</td></tr>
+<tr class="memitem:aa3d66505791bd44b025094d057a11d08"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#aa3d66505791bd44b025094d057a11d08">Ions_Move_Basic::ediff</a> = 0.0</td></tr>
 <tr class="separator:aa3d66505791bd44b025094d057a11d08"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07e061137b68df3b16c6ec9485db15bd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#a07e061137b68df3b16c6ec9485db15bd">Ions_Move_Basic::etot</a> =0.0</td></tr>
+<tr class="memitem:a07e061137b68df3b16c6ec9485db15bd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#a07e061137b68df3b16c6ec9485db15bd">Ions_Move_Basic::etot</a> = 0.0</td></tr>
 <tr class="separator:a07e061137b68df3b16c6ec9485db15bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab2c6e44424d005d423b39f45e7fcde61"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#ab2c6e44424d005d423b39f45e7fcde61">Ions_Move_Basic::etot_p</a> =0.0</td></tr>
+<tr class="memitem:ab2c6e44424d005d423b39f45e7fcde61"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#ab2c6e44424d005d423b39f45e7fcde61">Ions_Move_Basic::etot_p</a> = 0.0</td></tr>
 <tr class="separator:ab2c6e44424d005d423b39f45e7fcde61"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b516fa1cf76011cfb1fa72e36c6932d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#a0b516fa1cf76011cfb1fa72e36c6932d">Ions_Move_Basic::trust_radius</a> =0.0</td></tr>
+<tr class="memitem:a0b516fa1cf76011cfb1fa72e36c6932d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#a0b516fa1cf76011cfb1fa72e36c6932d">Ions_Move_Basic::trust_radius</a> = 0.0</td></tr>
 <tr class="separator:a0b516fa1cf76011cfb1fa72e36c6932d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2f3f8e3bf9053e42e572f1945d4a5095"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#a2f3f8e3bf9053e42e572f1945d4a5095">Ions_Move_Basic::trust_radius_old</a> =0.0</td></tr>
+<tr class="memitem:a2f3f8e3bf9053e42e572f1945d4a5095"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#a2f3f8e3bf9053e42e572f1945d4a5095">Ions_Move_Basic::trust_radius_old</a> = 0.0</td></tr>
 <tr class="separator:a2f3f8e3bf9053e42e572f1945d4a5095"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab69397ad7918fede7baefe09bd296371"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceIons__Move__Basic.html#ab69397ad7918fede7baefe09bd296371">Ions_Move_Basic::relax_bfgs_rmax</a> = -1.0</td></tr>
 <tr class="separator:ab69397ad7918fede7baefe09bd296371"><td class="memSeparator" colspan="2">&#160;</td></tr>

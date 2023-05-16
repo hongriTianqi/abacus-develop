@@ -4,8 +4,8 @@
 <area shape="rect" id="node3" href="$classModuleBase_1_1Opt__DCsrch.html" title=" " alt="" coords="5,490,192,699"/>
 <area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__OF.html" title=" " alt="" coords="338,784,539,1433"/>
 <area shape="rect" id="node4" href="$classTestTools.html" title=" " alt="" coords="383,1496,494,1617"/>
-<area shape="rect" id="node6" href="$classKEDF__vW.html" title=" " alt="" coords="217,483,391,707"/>
-<area shape="rect" id="node7" href="$classKEDF__TF.html" title=" " alt="" coords="415,483,590,707"/>
+<area shape="rect" id="node6" href="$classKEDF__vW.html" title="A class which calculates kinetic energy, potential, and stress with von Weizsäcker (vW) KEDF...." alt="" coords="217,483,391,707"/>
+<area shape="rect" id="node7" href="$classKEDF__TF.html" title="A class which calculates kinetic energy, potential, and stress with Thomas&#45;Fermi (TF) KEDF...." alt="" coords="415,483,590,707"/>
 <area shape="rect" id="node8" href="$classModuleBase_1_1Opt__CG.html" title=" " alt="" coords="581,5,739,405"/>
 <area shape="rect" id="node9" href="$classModuleBase_1_1Opt__TN.html" title=" " alt="" coords="749,468,907,721"/>
 <area shape="rect" id="node10" href="$classLinearEqu.html" title=" " alt="" coords="564,1019,687,1199"/>

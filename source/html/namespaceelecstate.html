@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: elecstate Namespace Reference</title>
+<title>3.2.2: elecstate Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -74,6 +74,9 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelecstate_1_1efermi.html">efermi</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Fermi energies.  <a href="structelecstate_1_1efermi.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1Efield.html">Efield</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1ElecState.html">ElecState</a></td></tr>
@@ -90,15 +93,13 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1ElecStatePW__SDFT.html">ElecStatePW_SDFT</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structelecstate_1_1fenergy.html">fenergy</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1Gatefield.html">Gatefield</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__Hartree__pw.html">H_Hartree_pw</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html">H_TDDFT_pw</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1MockElecStateLCAO.html">MockElecStateLCAO</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1MockElecStatePW.html">MockElecStatePW</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1PotBase.html">PotBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -123,13 +124,10 @@ Functions</h2></td></tr>
 <tr class="separator:a6d2a47f8eaa9f0592a121e8c62a97240"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26ab0eedda8028c108ec7965b68f7fd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#a26ab0eedda8028c108ec7965b68f7fd6">cal_dm</a> (const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *ParaV, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; &amp;wfc, std::vector&lt; <a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &gt; &amp;dm)</td></tr>
 <tr class="separator:a26ab0eedda8028c108ec7965b68f7fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abb96cf9fc561d8074c7ef6cbf487377b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#abb96cf9fc561d8074c7ef6cbf487377b">get_ucell_omega</a> ()</td></tr>
+<tr class="separator:abb96cf9fc561d8074c7ef6cbf487377b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>This unit test is designed to test the function of: <a class="el" href="classelecstate_1_1ElecStatePW.html#a03409c7714806413f2ab7839ec36acd6">elecstate::ElecStatePW::psiToRho()</a> A psi object "evc" is created to receive wavefunction, from which psiToRho() calculate charge density. The class <a class="el" href="classelecstate_1_1MockElecStatePW.html">MockElecStatePW</a> is derived from <a class="el" href="classelecstate_1_1ElecStatePW.html">ElecStatePW</a>, in order to mock the calculate_weights method.</p>
-<p>Currently, this test looks involved due to the use of extensively called global classes. It will be adjusted to test the corresponding new interfaces after reconstruction.</p>
-<p>The inputs and output files were taken from an integrated test: abacus-develop/tests/integrate/801_PW_LT_sc. Note: the output files <a class="el" href="WAVEFUNC1_8txt.html">WAVEFUNC1.txt</a> and SPIN1_CHG were obtained by using ABACUS without MPI (ABACUC.fp.x). This is because the GlobalC::sf.gdirect_global indexes are different with and without MPI.</p>
-<p>The mpi env. is currently invalid in this UT. </p>
-</div><h2 class="groupheader">Function Documentation</h2>
+<h2 class="groupheader">Function Documentation</h2>
 <a id="a6d2a47f8eaa9f0592a121e8c62a97240"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d2a47f8eaa9f0592a121e8c62a97240">&#9670;&nbsp;</a></span>cal_dm() <span class="overload">[1/2]</span></h2>
 
@@ -197,16 +195,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceelecstate_a6d2a47f8eaa9f0592a121e8c62a97240_icgraph.png" border="0" usemap="#namespaceelecstate_a6d2a47f8eaa9f0592a121e8c62a97240_icgraph" alt=""/></div>
 <map name="namespaceelecstate_a6d2a47f8eaa9f0592a121e8c62a97240_icgraph" id="namespaceelecstate_a6d2a47f8eaa9f0592a121e8c62a97240_icgraph">
-<area shape="rect" title=" " alt="" coords="537,137,675,163"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="293,5,469,47"/>
-<area shape="rect" href="classForce__LCAO__gamma.html#a2a22f95726bb35ea7be05a5206d09c30" title=" " alt="" coords="289,71,472,112"/>
-<area shape="rect" href="classForce__LCAO__k.html#aca4b159d50c6caf376b785828dbd8fae" title=" " alt="" coords="272,137,489,163"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="287,253,474,295"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="287,188,474,229"/>
-<area shape="rect" href="classForce__LCAO__gamma.html#a1f1d4ecc486d17e6201f5a8a4d29942b" title=" " alt="" coords="14,71,215,112"/>
-<area shape="rect" href="classForce__LCAO__k.html#ae2c554f465bc6b480664f9cf3fbd9919" title=" " alt="" coords="27,137,202,163"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="5,191,224,232"/>
-<area shape="rect" href="classElecStateLCAOPrepare.html#a3a3a3bfc0cb8a67a387ef05b39f3ce0e" title=" " alt="" coords="16,261,213,287"/>
+<area shape="rect" title=" " alt="" coords="561,137,699,163"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="317,5,493,47"/>
+<area shape="rect" href="classForce__LCAO__gamma.html#a2a22f95726bb35ea7be05a5206d09c30" title=" " alt="" coords="313,71,496,112"/>
+<area shape="rect" href="classForce__LCAO__k.html#aca4b159d50c6caf376b785828dbd8fae" title=" " alt="" coords="296,137,513,163"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="311,188,498,229"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="311,253,498,295"/>
+<area shape="rect" href="classForce__LCAO__gamma.html#a1f1d4ecc486d17e6201f5a8a4d29942b" title=" " alt="" coords="26,71,227,112"/>
+<area shape="rect" href="classForce__LCAO__k.html#ae2c554f465bc6b480664f9cf3fbd9919" title=" " alt="" coords="39,137,214,163"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="17,188,236,229"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="5,253,248,295"/>
 </map>
 </div>
 
@@ -272,6 +270,36 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="225,309,370,336"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="191,360,404,387"/>
 <area shape="rect" href="scalapack__connector_8h.html#a9ff8b730d2d1eb239d626e25c48c5a89" title=" " alt="" coords="497,107,584,133"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="abb96cf9fc561d8074c7ef6cbf487377b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abb96cf9fc561d8074c7ef6cbf487377b">&#9670;&nbsp;</a></span>get_ucell_omega()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double elecstate::get_ucell_omega </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceelecstate_abb96cf9fc561d8074c7ef6cbf487377b_icgraph.png" border="0" usemap="#namespaceelecstate_abb96cf9fc561d8074c7ef6cbf487377b_icgraph" alt=""/></div>
+<map name="namespaceelecstate_abb96cf9fc561d8074c7ef6cbf487377b_icgraph" id="namespaceelecstate_abb96cf9fc561d8074c7ef6cbf487377b_icgraph">
+<area shape="rect" title=" " alt="" coords="516,100,665,141"/>
+<area shape="rect" href="classMagnetism.html#afd6f158461dcf95ff3c0301554cc83ff" title=" " alt="" coords="308,71,468,112"/>
+<area shape="rect" href="elecstate__magnetism__test_8cpp.html#ae7d5ef929ef7be0691bd0c3481da0cd6" title=" " alt="" coords="353,137,423,163"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a8cd1ebf60aadee55cd2c98acdfbee50a" title=" " alt="" coords="5,5,260,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="11,71,254,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad77b2f8850b54ceb66721e4f6afb290d" title=" " alt="" coords="35,136,230,177"/>
 </map>
 </div>
 

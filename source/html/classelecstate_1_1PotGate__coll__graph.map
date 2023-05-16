@@ -1,9 +1,9 @@
 <map id="elecstate::PotGate" name="elecstate::PotGate">
-<area shape="rect" id="node1" title=" " alt="" coords="517,1833,659,1925"/>
-<area shape="rect" id="node2" href="$classelecstate_1_1PotBase.html" title=" " alt="" coords="667,1517,810,1653"/>
+<area shape="rect" id="node1" title=" " alt="" coords="517,1819,659,1911"/>
+<area shape="rect" id="node2" href="$classelecstate_1_1PotBase.html" title=" " alt="" coords="667,1503,810,1639"/>
 <area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="853,703,1040,1323"/>
 <area shape="rect" id="node4" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="331,152,490,420"/>
-<area shape="rect" id="node7" href="$classUnitCell.html" title=" " alt="" coords="437,1400,576,1771"/>
+<area shape="rect" id="node7" href="$classUnitCell.html" title=" " alt="" coords="437,1385,576,1756"/>
 <area shape="rect" id="node8" href="$classMagnetism.html" title=" " alt="" coords="508,901,713,1125"/>
 <area shape="rect" id="node10" href="$classAtom.html" title=" " alt="" coords="5,857,176,1169"/>
 <area shape="rect" id="node5" href="$classModulePW_1_1FFT.html" title=" " alt="" coords="886,5,1007,567"/>

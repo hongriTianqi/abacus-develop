@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: module_relax/relax_old/lattice_change_basic.h File Reference</title>
+<title>3.2.2: module_relax/relax_old/lattice_change_basic.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -77,16 +77,22 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="matrix_8h_source.html">module_base/matrix.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="unitcell_8h_source.html">module_cell/unitcell.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for lattice_change_basic.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="lattice__change__basic_8h__incl.png" border="0" usemap="#module__relax_2relax__old_2lattice__change__basic_8h" alt=""/></div>
 <map name="module__relax_2relax__old_2lattice__change__basic_8h" id="module__relax_2relax__old_2lattice__change__basic_8h">
-<area shape="rect" title=" " alt="" coords="67,5,215,61"/>
-<area shape="rect" href="matrix_8h.html" title=" " alt="" coords="57,109,225,136"/>
-<area shape="rect" title=" " alt="" coords="5,184,81,211"/>
-<area shape="rect" title=" " alt="" coords="106,184,175,211"/>
-<area shape="rect" title=" " alt="" coords="200,184,273,211"/>
+<area shape="rect" title=" " alt="" coords="138,5,286,61"/>
+<area shape="rect" href="matrix_8h.html" title=" " alt="" coords="5,273,173,300"/>
+<area shape="rect" href="unitcell_8h.html" title=" " alt="" coords="255,109,420,136"/>
+<area shape="rect" title=" " alt="" coords="51,348,127,375"/>
+<area shape="rect" title=" " alt="" coords="176,348,245,375"/>
+<area shape="rect" title=" " alt="" coords="362,348,435,375"/>
+<area shape="rect" href="global__function_8h.html" title=" " alt="" coords="375,184,529,225"/>
+<area shape="rect" href="global__variable_8h.html" title=" " alt="" coords="499,273,634,300"/>
+<area shape="rect" href="matrix3_8h.html" title=" " alt="" coords="124,191,300,218"/>
+<area shape="rect" href="intarray_8h.html" title=" " alt="" coords="249,273,423,300"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -94,16 +100,16 @@ This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
 <div class="center"><img src="lattice__change__basic_8h__dep__incl.png" border="0" usemap="#module__relax_2relax__old_2lattice__change__basic_8hdep" alt=""/></div>
 <map name="module__relax_2relax__old_2lattice__change__basic_8hdep" id="module__relax_2relax__old_2lattice__change__basic_8hdep">
-<area shape="rect" title=" " alt="" coords="409,5,557,61"/>
-<area shape="rect" href="lattice__change__methods_8h.html" title=" " alt="" coords="179,109,327,165"/>
-<area shape="rect" href="lattice__change__methods_8cpp.html" title=" " alt="" coords="263,213,411,269"/>
-<area shape="rect" href="for__testing__input__conv_8h.html" title=" " alt="" coords="402,117,565,158"/>
-<area shape="rect" href="lattice__change__basic_8cpp.html" title=" " alt="" coords="589,109,737,165"/>
-<area shape="rect" href="lattice__change__cg_8cpp.html" title=" " alt="" coords="761,109,909,165"/>
-<area shape="rect" href="relax__old_8h.html" title=" " alt="" coords="91,221,239,262"/>
-<area shape="rect" href="relax__driver_8h.html" title=" " alt="" coords="5,317,153,359"/>
-<area shape="rect" href="relax__old_8cpp.html" title=" " alt="" coords="177,317,325,359"/>
-<area shape="rect" href="input__conv__test_8cpp.html" title=" " alt="" coords="435,221,591,262"/>
+<area shape="rect" title=" " alt="" coords="665,5,813,61"/>
+<area shape="rect" href="lattice__change__methods_8h.html" title=" " alt="" coords="91,109,239,165"/>
+<area shape="rect" href="input__conv_8cpp.html" title=" " alt="" coords="263,124,453,151"/>
+<area shape="rect" href="for__testing__input__conv_8h.html" title=" " alt="" coords="478,117,641,158"/>
+<area shape="rect" href="lattice__change__basic_8cpp.html" title=" " alt="" coords="665,109,813,165"/>
+<area shape="rect" href="lattice__change__cg_8cpp.html" title=" " alt="" coords="837,109,985,165"/>
+<area shape="rect" href="lattice__change__basic__test_8cpp.html" title=" " alt="" coords="1009,109,1187,165"/>
+<area shape="rect" href="lattice__change__cg__test_8cpp.html" title=" " alt="" coords="1211,109,1388,165"/>
+<area shape="rect" href="relax__old_8h.html" title=" " alt="" coords="5,221,153,262"/>
+<area shape="rect" href="lattice__change__methods_8cpp.html" title=" " alt="" coords="177,213,325,269"/>
 </map>
 </div>
 </div>
@@ -116,12 +122,12 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a605fb410c76fc5801ac9097b20ef7ec1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLattice__Change__Basic.html#a605fb410c76fc5801ac9097b20ef7ec1">Lattice_Change_Basic::setup_gradient</a> (double *lat, double *grad, <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;stress)</td></tr>
-<tr class="separator:a605fb410c76fc5801ac9097b20ef7ec1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8607744f3aa198a954cc7039d2099db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLattice__Change__Basic.html#ac8607744f3aa198a954cc7039d2099db">Lattice_Change_Basic::change_lattice</a> (double *move, double *lat)</td></tr>
-<tr class="separator:ac8607744f3aa198a954cc7039d2099db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dc4187216d3faac2308aa48f2da2f9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLattice__Change__Basic.html#a8dc4187216d3faac2308aa48f2da2f9c">Lattice_Change_Basic::check_converged</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;stress, double *grad)</td></tr>
-<tr class="separator:a8dc4187216d3faac2308aa48f2da2f9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a95fc2d9b0ee4b270ed9562e72b00dde3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLattice__Change__Basic.html#a95fc2d9b0ee4b270ed9562e72b00dde3">Lattice_Change_Basic::setup_gradient</a> (const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell, double *lat, double *grad, <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;stress)</td></tr>
+<tr class="separator:a95fc2d9b0ee4b270ed9562e72b00dde3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acce5a28a6768ed1e9124067256b3cd4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLattice__Change__Basic.html#acce5a28a6768ed1e9124067256b3cd4d">Lattice_Change_Basic::change_lattice</a> (<a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell, double *move, double *lat)</td></tr>
+<tr class="separator:acce5a28a6768ed1e9124067256b3cd4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a27ffb8fcc7abdaf02fba5804ab591441"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLattice__Change__Basic.html#a27ffb8fcc7abdaf02fba5804ab591441">Lattice_Change_Basic::check_converged</a> (const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell, <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;stress, double *grad)</td></tr>
+<tr class="separator:a27ffb8fcc7abdaf02fba5804ab591441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a091e0f3aa9732c0baf7a48bd05cf8c62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLattice__Change__Basic.html#a091e0f3aa9732c0baf7a48bd05cf8c62">Lattice_Change_Basic::terminate</a> (void)</td></tr>
 <tr class="separator:a091e0f3aa9732c0baf7a48bd05cf8c62"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10dd7a23d87bc41675a3170b1566919f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLattice__Change__Basic.html#a10dd7a23d87bc41675a3170b1566919f">Lattice_Change_Basic::setup_etot</a> (const double &amp;energy_in, const bool judgement)</td></tr>
@@ -149,8 +155,8 @@ Variables</h2></td></tr>
 <tr class="separator:a33edca5c76484d6314fd140fda3a3287"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f37240dd6be784e8364a827099bff2e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLattice__Change__Basic.html#a7f37240dd6be784e8364a827099bff2e">Lattice_Change_Basic::lattice_change_ini</a> = 0.01</td></tr>
 <tr class="separator:a7f37240dd6be784e8364a827099bff2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3e265e274a69aa3c7cbf00f0175bd390"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLattice__Change__Basic.html#a3e265e274a69aa3c7cbf00f0175bd390">Lattice_Change_Basic::out_stru</a> = 0</td></tr>
-<tr class="separator:a3e265e274a69aa3c7cbf00f0175bd390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab04391d58da2a4778938df63617862cc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceLattice__Change__Basic.html#ab04391d58da2a4778938df63617862cc">Lattice_Change_Basic::fixed_axes</a> = &quot;None&quot;</td></tr>
+<tr class="separator:ab04391d58da2a4778938df63617862cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

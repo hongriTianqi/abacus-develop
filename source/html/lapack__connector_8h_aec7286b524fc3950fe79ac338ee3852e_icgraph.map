@@ -1,7 +1,6 @@
 <map id="spotri_" name="spotri_">
-<area shape="rect" id="node1" title=" " alt="" coords="460,64,527,91"/>
-<area shape="rect" id="node2" href="$classLapackConnector.html#a99e6d421d50231c037554d10903f4b0f" title=" " alt="" coords="240,64,412,91"/>
-<area shape="rect" id="node3" href="$classLapackConnector.html#a5b3468ebc101ce05699bb96dc302734c" title=" " alt="" coords="13,5,185,32"/>
-<area shape="rect" id="node4" href="$classExx__Abfs_1_1Inverse__Matrix__Double.html#a065bdf39f42eedea952fd29be71e0685" title=" " alt="" coords="5,57,192,98"/>
-<area shape="rect" id="node5" href="$classInverse__Matrix.html#a410a41d5c3d54325191a0e13e3c57cc9" title=" " alt="" coords="17,122,180,163"/>
+<area shape="rect" id="node1" title=" " alt="" coords="445,35,512,61"/>
+<area shape="rect" id="node2" href="$classLapackConnector.html#a99e6d421d50231c037554d10903f4b0f" title=" " alt="" coords="225,35,397,61"/>
+<area shape="rect" id="node3" href="$classLapackConnector.html#a5b3468ebc101ce05699bb96dc302734c" title=" " alt="" coords="5,5,177,32"/>
+<area shape="rect" id="node4" href="$classInverse__Matrix.html#a410a41d5c3d54325191a0e13e3c57cc9" title=" " alt="" coords="10,57,173,98"/>
 </map>

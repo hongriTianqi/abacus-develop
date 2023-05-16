@@ -1,7 +1,5 @@
 <map id="Numerical_Orbital_Lm::getChi" name="Numerical_Orbital_Lm::getChi">
-<area shape="rect" id="node1" title=" " alt="" coords="228,100,395,141"/>
-<area shape="rect" id="node2" href="$classConv__Coulomb__Pot__K.html#ad9b0c4e69d176e36dfe92df73c0e1f92" title=" " alt="" coords="11,5,175,47"/>
-<area shape="rect" id="node3" href="$classConv__Coulomb__Pot.html#a6e8efbb948e7967dbabe00efeb9a2e18" title=" " alt="" coords="5,71,180,112"/>
-<area shape="rect" id="node4" href="$classExx__Lcao.html#a0cf6e44caa8c70b72abb519991655035" title=" " alt="" coords="37,137,149,163"/>
-<area shape="rect" id="node5" href="$ORB__read__test_8cpp.html#aae6ee2603573b9ca376958d9cccc0160" title=" " alt="" coords="58,187,127,214"/>
+<area shape="rect" id="node1" title=" " alt="" coords="217,35,384,76"/>
+<area shape="rect" id="node2" href="$classConv__Coulomb__Pot__K.html#aad3bce09384eb281d46934b50c5cedd6" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" id="node3" href="$ORB__read__test_8cpp.html#aae6ee2603573b9ca376958d9cccc0160" title=" " alt="" coords="53,71,122,98"/>
 </map>

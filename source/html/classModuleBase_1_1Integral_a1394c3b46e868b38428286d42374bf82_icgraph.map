@@ -1,6 +1,4 @@
 <map id="ModuleBase::Integral::Simpson_Integral_alltoinf" name="ModuleBase::Integral::Simpson_Integral_alltoinf">
-<area shape="rect" id="node1" title="simpson integral." alt="" coords="451,35,647,76"/>
-<area shape="rect" id="node2" href="$classConv__Coulomb__Pot.html#a6824359487e165bb8b169d4dadd0db68" title=" " alt="" coords="228,5,403,47"/>
-<area shape="rect" id="node4" href="$math__integral__test_8cpp.html#ab1148794dfd681dff54b573276998940" title=" " alt="" coords="281,71,350,98"/>
-<area shape="rect" id="node3" href="$classConv__Coulomb__Pot.html#a6e8efbb948e7967dbabe00efeb9a2e18" title=" " alt="" coords="5,5,180,47"/>
+<area shape="rect" id="node1" title="simpson integral." alt="" coords="123,5,319,47"/>
+<area shape="rect" id="node2" href="$math__integral__test_8cpp.html#ab1148794dfd681dff54b573276998940" title=" " alt="" coords="5,13,75,39"/>
 </map>

@@ -1,5 +1,6 @@
 <map id="DiagoPrepare&lt; T &gt;" name="DiagoPrepare&lt; T &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="119,483,267,839"/>
-<area shape="rect" id="node2" href="$classhsolver_1_1DiagH.html" title=" " alt="" coords="5,159,197,266"/>
-<area shape="rect" id="node3" href="$classpsi_1_1Psi.html" title=" " alt="" coords="222,5,349,420"/>
+<area shape="rect" id="node1" title=" " alt="" coords="58,608,206,964"/>
+<area shape="rect" id="node2" href="$classhsolver_1_1DiagH.html" title=" " alt="" coords="5,292,197,399"/>
+<area shape="rect" id="node3" href="$classpsi_1_1Psi.html" title=" " alt="" coords="222,145,349,545"/>
+<area shape="rect" id="node4" href="$structDEVICE__CPU.html" title="A tag type for identifying CPU and GPU devices." alt="" coords="233,5,337,83"/>
 </map>

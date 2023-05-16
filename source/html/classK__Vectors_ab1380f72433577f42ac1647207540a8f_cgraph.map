@@ -1,12 +1,12 @@
 <map id="K_Vectors::read_kpoints" name="K_Vectors::read_kpoints">
-<area shape="rect" id="node1" title=" " alt="" coords="5,115,184,141"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,140,184,167"/>
 <area shape="rect" id="node2" href="$classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="241,64,441,91"/>
 <area shape="rect" id="node4" href="$classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="513,5,647,32"/>
 <area shape="rect" id="node5" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="507,123,653,149"/>
-<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="232,165,451,192"/>
-<area shape="rect" id="node10" href="$namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="254,216,429,243"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="232,165,451,192"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="254,216,429,243"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="235,267,448,293"/>
 <area shape="rect" id="node3" href="$classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="499,57,661,98"/>
 <area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="709,82,892,123"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="724,147,877,189"/>
-<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="940,82,1123,123"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="724,147,877,189"/>
 </map>

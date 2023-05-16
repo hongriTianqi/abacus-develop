@@ -1,12 +1,12 @@
 <map id="Stochastic_Iter::calHsqrtchi" name="Stochastic_Iter::calHsqrtchi">
-<area shape="rect" id="node1" title=" " alt="" coords="5,107,204,134"/>
-<area shape="rect" id="node2" href="$classModuleBase_1_1Chebyshev.html#acfb89fdcc229dae9e7c2b01a1c04e176" title=" " alt="" coords="260,41,443,83"/>
-<area shape="rect" id="node3" href="$classStochastic__Iter.html#a1a3fe3e0b121647a095facea48a6059f" title=" " alt="" coords="252,107,451,134"/>
-<area shape="rect" id="node8" href="$classpseudopot__cell__vnl.html#a2fb7c26fb6107fca6a9943141b99f032" title=" " alt="" coords="278,180,425,221"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1Chebyshev.html#a1831618166f6a623703c365fd16a3aff" title=" " alt="" coords="513,5,696,47"/>
-<area shape="rect" id="node5" href="$classStochastic__hchi.html#ae00a42cc25853724fc41316f3290d2db" title=" " alt="" coords="505,71,704,98"/>
-<area shape="rect" id="node7" href="$blas__connector_8h.html#af6e68bda698eaed2db4e4c1efcd9cfab" title=" " alt="" coords="568,122,641,149"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="759,122,936,149"/>
-<area shape="rect" id="node9" href="$classWF__igk.html#ae332dba4fe2ba0188c07382eb49d4267" title=" " alt="" coords="499,223,711,250"/>
-<area shape="rect" id="node10" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="532,274,677,301"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,106,204,133"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1Chebyshev.html#acfb89fdcc229dae9e7c2b01a1c04e176" title=" " alt="" coords="260,40,443,81"/>
+<area shape="rect" id="node3" href="$classStochastic__Iter.html#a1a3fe3e0b121647a095facea48a6059f" title=" " alt="" coords="252,106,451,133"/>
+<area shape="rect" id="node8" href="$classpseudopot__cell__vnl.html#a2fb7c26fb6107fca6a9943141b99f032" title=" " alt="" coords="278,183,425,224"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1Chebyshev.html#a1831618166f6a623703c365fd16a3aff" title=" " alt="" coords="507,5,689,47"/>
+<area shape="rect" id="node5" href="$classStochastic__hchi.html#ae00a42cc25853724fc41316f3290d2db" title=" " alt="" coords="499,71,697,98"/>
+<area shape="rect" id="node7" href="$blas__connector_8h.html#af6e68bda698eaed2db4e4c1efcd9cfab" title=" " alt="" coords="561,122,635,149"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="745,122,923,149"/>
+<area shape="rect" id="node9" href="$classModulePW_1_1PW__Basis__K.html#a95b24e597b47294a9d6b46bfe8393de9" title=" " alt="" coords="517,224,679,265"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="525,290,671,317"/>
 </map>

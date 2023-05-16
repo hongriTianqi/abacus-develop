@@ -3,9 +3,9 @@
 <area shape="rect" id="node2" href="$classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="233,5,375,47"/>
 <area shape="rect" id="node3" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="940,195,1117,222"/>
 <area shape="rect" id="node5" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="482,195,627,222"/>
-<area shape="rect" id="node8" href="$classXC__Functional.html#afc0869018a47418a92ea17bf16e96b7d" title=" " alt="" coords="229,246,379,273"/>
+<area shape="rect" id="node8" href="$classXC__Functional.html#a11cc7a57fde3a5739084017049bf9984" title=" " alt="" coords="229,246,379,273"/>
 <area shape="rect" id="node9" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="448,305,661,331"/>
-<area shape="rect" id="node10" href="$classXC__Functional.html#ab3a75de601381a86d97894b28b9a5ead" title=" " alt="" coords="208,347,400,374"/>
+<area shape="rect" id="node10" href="$classXC__Functional.html#aa01b2e2333820bbbd4558d3c0af0eac8" title=" " alt="" coords="208,347,400,374"/>
 <area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="1165,188,1319,229"/>
 <area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="709,123,892,164"/>
 <area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="724,188,877,229"/>

@@ -1,12 +1,12 @@
 <map id="module_ri/RI_2D_Comm.cpp" name="module_ri/RI_2D_Comm.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="472,5,679,32"/>
-<area shape="rect" id="node2" href="$RI__2D__Comm_8h.html" title=" " alt="" coords="258,87,381,114"/>
-<area shape="rect" id="node8" href="$global_8h.html" title=" " alt="" coords="405,80,597,121"/>
-<area shape="rect" id="node9" title=" " alt="" coords="621,87,679,114"/>
-<area shape="rect" id="node10" title=" " alt="" coords="704,87,791,114"/>
+<area shape="rect" id="node1" title=" " alt="" coords="461,5,668,32"/>
+<area shape="rect" id="node2" href="$RI__2D__Comm_8h.html" title=" " alt="" coords="265,87,387,114"/>
+<area shape="rect" id="node5" href="$module__cell_2klist_8h.html" title=" " alt="" coords="492,184,637,211"/>
+<area shape="rect" id="node8" href="$global_8h.html" title=" " alt="" coords="469,80,661,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="685,87,743,114"/>
+<area shape="rect" id="node10" title=" " alt="" coords="768,87,855,114"/>
 <area shape="rect" id="node3" href="$module__basis_2module__ao_2parallel__orbitals_8h.html" title=" " alt="" coords="5,273,172,315"/>
 <area shape="rect" id="node4" href="$LCAO__matrix_8h.html" title=" " alt="" coords="68,169,227,225"/>
-<area shape="rect" id="node5" title=" " alt="" coords="251,184,387,211"/>
-<area shape="rect" id="node6" title=" " alt="" coords="411,184,467,211"/>
-<area shape="rect" id="node7" title=" " alt="" coords="492,184,555,211"/>
+<area shape="rect" id="node6" title=" " alt="" coords="251,184,387,211"/>
+<area shape="rect" id="node7" title=" " alt="" coords="411,184,467,211"/>
 </map>

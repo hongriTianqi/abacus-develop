@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: hsolver::HSolver&lt; FPTYPE, Device &gt; Class Template Reference</title>
+<title>3.2.2: hsolver::HSolver&lt; FPTYPE, Device &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -99,8 +99,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aa1fe0e71ae84974f706cf97fa59a9fbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a526cd759850169ad8b917cfd8329b9ba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhsolver_1_1HSolver.html#a526cd759850169ad8b917cfd8329b9ba">solve</a> (<a class="el" href="classhamilt_1_1Hamilt.html">hamilt::Hamilt</a>&lt; FPTYPE, Device &gt; *phm, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; FPTYPE, Device &gt; &amp;ppsi, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pes, const std::string <a class="el" href="classhsolver_1_1HSolver.html#aba4aa7026e5efc1d62e96d411d081c2f">method</a>, const bool skip_charge=false)</td></tr>
 <tr class="separator:a526cd759850169ad8b917cfd8329b9ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aefb3316da353dde734b87cc9f014ea10"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhsolver_1_1HSolver.html#aefb3316da353dde734b87cc9f014ea10">solve</a> (<a class="el" href="classhamilt_1_1Hamilt.html">hamilt::Hamilt</a>&lt; FPTYPE, Device &gt; *phm, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; FPTYPE &gt;, Device &gt; &amp;ppsi, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pes, <a class="el" href="classStochastic__WF.html">Stochastic_WF</a> &amp;stowf, const int istep, const int iter, const std::string <a class="el" href="classhsolver_1_1HSolver.html#aba4aa7026e5efc1d62e96d411d081c2f">method</a>, const bool skip_charge=false)</td></tr>
-<tr class="separator:aefb3316da353dde734b87cc9f014ea10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc11240839cfbe77b3d153b8e2a95510"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhsolver_1_1HSolver.html#afc11240839cfbe77b3d153b8e2a95510">solve</a> (<a class="el" href="classhamilt_1_1Hamilt.html">hamilt::Hamilt</a>&lt; FPTYPE, Device &gt; *phm, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; FPTYPE &gt;, Device &gt; &amp;ppsi, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pes, <a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *wfc_basis, <a class="el" href="classStochastic__WF.html">Stochastic_WF</a> &amp;stowf, const int istep, const int iter, const std::string <a class="el" href="classhsolver_1_1HSolver.html#aba4aa7026e5efc1d62e96d411d081c2f">method</a>, const bool skip_charge=false)</td></tr>
+<tr class="separator:afc11240839cfbe77b3d153b8e2a95510"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1973b18828663e23620fb03c479ea63"><td class="memItemLeft" align="right" valign="top">virtual FPTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhsolver_1_1HSolver.html#ae1973b18828663e23620fb03c479ea63">set_diagethr</a> (const int istep, const int iter, const FPTYPE drho)</td></tr>
 <tr class="separator:ae1973b18828663e23620fb03c479ea63"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc1b70423c860186e66e4db2931b0583"><td class="memItemLeft" align="right" valign="top">virtual FPTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classhsolver_1_1HSolver.html#adc1b70423c860186e66e4db2931b0583">reset_diagethr</a> (std::ofstream &amp;ofs_running, const FPTYPE hsover_error, const FPTYPE drho)</td></tr>
@@ -203,7 +203,7 @@ template&lt;typename FPTYPE , typename Device  = psi::DEVICE_CPU&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Reimplemented in <a class="el" href="classhsolver_1_1HSolverPW.html#aa2c56cbe2dec2b9b18bc5cd3f61709bf">hsolver::HSolverPW&lt; FPTYPE, Device &gt;</a>, <a class="el" href="classhsolver_1_1HSolverPW__SDFT.html#abd17d6bb6e82779743e1b6b10b2e8921">hsolver::HSolverPW_SDFT</a>, <a class="el" href="classhsolver_1_1HSolverPW.html#aa2c56cbe2dec2b9b18bc5cd3f61709bf">hsolver::HSolverPW&lt; double &gt;</a>, <a class="el" href="classhsolver_1_1HSolverPW.html#aa2c56cbe2dec2b9b18bc5cd3f61709bf">hsolver::HSolverPW&lt; float, psi::DEVICE_CPU &gt;</a>, and <a class="el" href="classhsolver_1_1HSolverPW.html#aa2c56cbe2dec2b9b18bc5cd3f61709bf">hsolver::HSolverPW&lt; double, psi::DEVICE_CPU &gt;</a>.</p>
+<p>Reimplemented in <a class="el" href="classhsolver_1_1HSolverPW__SDFT.html#abd17d6bb6e82779743e1b6b10b2e8921">hsolver::HSolverPW_SDFT</a>, <a class="el" href="classhsolver_1_1HSolverPW.html#aa2c56cbe2dec2b9b18bc5cd3f61709bf">hsolver::HSolverPW&lt; FPTYPE, Device &gt;</a>, <a class="el" href="classhsolver_1_1HSolverPW.html#aa2c56cbe2dec2b9b18bc5cd3f61709bf">hsolver::HSolverPW&lt; double &gt;</a>, <a class="el" href="classhsolver_1_1HSolverPW.html#aa2c56cbe2dec2b9b18bc5cd3f61709bf">hsolver::HSolverPW&lt; float, psi::DEVICE_CPU &gt;</a>, and <a class="el" href="classhsolver_1_1HSolverPW.html#aa2c56cbe2dec2b9b18bc5cd3f61709bf">hsolver::HSolverPW&lt; double, psi::DEVICE_CPU &gt;</a>.</p>
 
 </div>
 </div>
@@ -415,20 +415,21 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classhsolver_1_1HSolver_aa1fe0e71ae84974f706cf97fa59a9fbc_icgraph.png" border="0" usemap="#classhsolver_1_1HSolver_aa1fe0e71ae84974f706cf97fa59a9fbc_icgraph" alt=""/></div>
 <map name="classhsolver_1_1HSolver_aa1fe0e71ae84974f706cf97fa59a9fbc_icgraph" id="classhsolver_1_1HSolver_aa1fe0e71ae84974f706cf97fa59a9fbc_icgraph">
-<area shape="rect" title=" " alt="" coords="545,143,717,170"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a51a0b6eba4b623909cd141d219748853" title=" " alt="" coords="279,5,473,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="255,71,497,112"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad77b2f8850b54ceb66721e4f6afb290d" title=" " alt="" coords="279,136,473,177"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a624766fb2ebfccd12416cb7dd89b0f70" title=" " alt="" coords="288,201,464,243"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a8508b2564b3ed0e7250ba70385f13e1e" title=" " alt="" coords="288,267,464,308"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,201,207,243"/>
+<area shape="rect" title=" " alt="" coords="796,111,968,138"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a51a0b6eba4b623909cd141d219748853" title=" " alt="" coords="529,5,724,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="505,71,748,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad77b2f8850b54ceb66721e4f6afb290d" title=" " alt="" coords="529,136,724,177"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a624766fb2ebfccd12416cb7dd89b0f70" title=" " alt="" coords="539,201,715,243"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a7ca0e7182ad95f436e509cdde05106fd" title=" " alt="" coords="269,5,445,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#acc5b565040b5e3f88c0dee2f626a59a9" title=" " alt="" coords="5,5,208,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="256,201,457,243"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="aefb3316da353dde734b87cc9f014ea10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aefb3316da353dde734b87cc9f014ea10">&#9670;&nbsp;</a></span>solve() <span class="overload">[3/3]</span></h2>
+<a id="afc11240839cfbe77b3d153b8e2a95510"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afc11240839cfbe77b3d153b8e2a95510">&#9670;&nbsp;</a></span>solve() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -455,6 +456,12 @@ template&lt;typename FPTYPE , typename Device  = psi::DEVICE_CPU&gt; </div>
           <td></td>
           <td class="paramtype"><a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *&#160;</td>
           <td class="paramname"><em>pes</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *&#160;</td>
+          <td class="paramname"><em>wfc_basis</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>

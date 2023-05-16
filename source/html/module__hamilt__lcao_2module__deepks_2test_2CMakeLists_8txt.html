@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: module_hamilt_lcao/module_deepks/test/CMakeLists.txt File Reference</title>
+<title>3.2.2: module_hamilt_lcao/module_deepks/test/CMakeLists.txt File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -73,10 +73,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a001fc9d6a04207cc5ec691dd8b372250"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__hamilt__lcao_2module__deepks_2test_2CMakeLists_8txt.html#a001fc9d6a04207cc5ec691dd8b372250">add_executable</a> (<a class="el" href="classtest__deepks.html">test_deepks</a> main_deepks.cpp klist_1.cpp LCAO_deepks_test_prep.cpp LCAO_deepks_test.cpp nnr.cpp parallel_orbitals.cpp) <a class="el" href="src__ri_2CMakeLists_8txt.html#a0327b7fd00bd958d0133c30359fe9a23">if</a>(ENABLE_COVERAGE) add_coverage(<a class="el" href="classtest__deepks.html">test_deepks</a>) <a class="el" href="module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0">endif</a>() get_target_property(ABACUS_LINK_LIBRARIES $</td></tr>
+<tr class="memitem:a001fc9d6a04207cc5ec691dd8b372250"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__hamilt__lcao_2module__deepks_2test_2CMakeLists_8txt.html#a001fc9d6a04207cc5ec691dd8b372250">add_executable</a> (<a class="el" href="classtest__deepks.html">test_deepks</a> main_deepks.cpp klist_1.cpp LCAO_deepks_test_prep.cpp LCAO_deepks_test.cpp nnr.cpp parallel_orbitals.cpp) <a class="el" href="module__ri_2CMakeLists_8txt.html#a9a2ae4e68abc6734cde1644e43adb9bd">if</a>(ENABLE_COVERAGE) add_coverage(<a class="el" href="classtest__deepks.html">test_deepks</a>) <a class="el" href="module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0">endif</a>() get_target_property(ABACUS_LINK_LIBRARIES $</td></tr>
 <tr class="separator:a001fc9d6a04207cc5ec691dd8b372250"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afac21131490ed84edf3d31f253546106"><td class="memItemLeft" align="right" valign="top">LINK_LIBRARIES&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__hamilt__lcao_2module__deepks_2test_2CMakeLists_8txt.html#afac21131490ed84edf3d31f253546106">target_link_libraries</a> (<a class="el" href="classtest__deepks.html">test_deepks</a> base cell symmetry md <a class="el" href="classsurchem.html">surchem</a> xc_ neighbor <a class="el" href="updaterhok__pw__test_8cpp.html#a76856123020bfe7248f49d72ce3e62af">orb</a> io_basic io_advanced relax gint driver esolver hsolver psi elecstate hamilt_general hamilt_pwdft hamilt_lcao tddft hamilt_ofdft hamilt_stodft planewave pthread vdw dftu deepks device ${ABACUS_LINK_LIBRARIES}) <a class="el" href="src__ri_2CMakeLists_8txt.html#a0327b7fd00bd958d0133c30359fe9a23">if</a>(USE_ELPA) target_link_libraries(<a class="el" href="classtest__deepks.html">test_deepks</a> genelpa) <a class="el" href="module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0">endif</a>() <a class="el" href="src__ri_2CMakeLists_8txt.html#a0327b7fd00bd958d0133c30359fe9a23">if</a>(USE_CUSOLVER_LCAO) target_link_libraries(diag_cusolver) <a class="el" href="module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0">endif</a>() <a class="el" href="src__ri_2CMakeLists_8txt.html#a0327b7fd00bd958d0133c30359fe9a23">if</a>(ENABLE_LIBRI) target_link_libraries(<a class="el" href="classtest__deepks.html">test_deepks</a> ri libri) <a class="el" href="module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0">endif</a>() <a class="el" href="module__io_2test_2CMakeLists_8txt.html#a45d84efc45f26b7dfaf0d0a62541a8d5">install</a>(TARGETS <a class="el" href="classtest__deepks.html">test_deepks</a> DESTINATION $</td></tr>
-<tr class="separator:afac21131490ed84edf3d31f253546106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a935bee53b8280d4eff936e092e757fa8"><td class="memItemLeft" align="right" valign="top">LINK_LIBRARIES&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__hamilt__lcao_2module__deepks_2test_2CMakeLists_8txt.html#a935bee53b8280d4eff936e092e757fa8">target_link_libraries</a> (<a class="el" href="classtest__deepks.html">test_deepks</a> base cell symmetry md <a class="el" href="classsurchem.html">surchem</a> xc_ neighbor orb io_basic io_advanced relax gint driver esolver hsolver psi elecstate hamilt_general hamilt_pwdft hamilt_lcao tddft hamilt_ofdft hamilt_stodft planewave pthread vdw dftu deepks device ${ABACUS_LINK_LIBRARIES}) <a class="el" href="module__ri_2CMakeLists_8txt.html#a9a2ae4e68abc6734cde1644e43adb9bd">if</a>(USE_ELPA) target_link_libraries(<a class="el" href="classtest__deepks.html">test_deepks</a> genelpa) <a class="el" href="module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0">endif</a>() <a class="el" href="module__ri_2CMakeLists_8txt.html#a9a2ae4e68abc6734cde1644e43adb9bd">if</a>(USE_CUSOLVER_LCAO) target_link_libraries(diag_cusolver) <a class="el" href="module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0">endif</a>() <a class="el" href="module__ri_2CMakeLists_8txt.html#a9a2ae4e68abc6734cde1644e43adb9bd">if</a>(ENABLE_LIBRI) target_link_libraries(<a class="el" href="classtest__deepks.html">test_deepks</a> ri) <a class="el" href="module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0">endif</a>() <a class="el" href="module__io_2test_2CMakeLists_8txt.html#a45d84efc45f26b7dfaf0d0a62541a8d5">install</a>(TARGETS <a class="el" href="classtest__deepks.html">test_deepks</a> DESTINATION $</td></tr>
+<tr class="separator:a935bee53b8280d4eff936e092e757fa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a001fc9d6a04207cc5ec691dd8b372250"></a>
@@ -97,8 +97,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afac21131490ed84edf3d31f253546106"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afac21131490ed84edf3d31f253546106">&#9670;&nbsp;</a></span>target_link_libraries()</h2>
+<a id="a935bee53b8280d4eff936e092e757fa8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a935bee53b8280d4eff936e092e757fa8">&#9670;&nbsp;</a></span>target_link_libraries()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -106,7 +106,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">LINK_LIBRARIES target_link_libraries </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classtest__deepks.html">test_deepks</a> base cell symmetry md <a class="el" href="classsurchem.html">surchem</a> xc_ neighbor <a class="el" href="updaterhok__pw__test_8cpp.html#a76856123020bfe7248f49d72ce3e62af">orb</a> io_basic io_advanced relax gint driver esolver hsolver psi elecstate hamilt_general hamilt_pwdft hamilt_lcao tddft hamilt_ofdft hamilt_stodft planewave pthread vdw dftu deepks device ${ABACUS_LINK_LIBRARIES}&#160;</td>
+          <td class="paramtype"><a class="el" href="classtest__deepks.html">test_deepks</a> base cell symmetry md <a class="el" href="classsurchem.html">surchem</a> xc_ neighbor orb io_basic io_advanced relax gint driver esolver hsolver psi elecstate hamilt_general hamilt_pwdft hamilt_lcao tddft hamilt_ofdft hamilt_stodft planewave pthread vdw dftu deepks device ${ABACUS_LINK_LIBRARIES}&#160;</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>

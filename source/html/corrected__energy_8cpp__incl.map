@@ -1,12 +1,12 @@
 <map id="module_hamilt_general/module_surchem/corrected_energy.cpp" name="module_hamilt_general/module_surchem/corrected_energy.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="406,5,608,61"/>
-<area shape="rect" id="node2" href="$surchem_8h.html" title=" " alt="" coords="462,109,552,136"/>
-<area shape="rect" id="node3" href="$global__function_8h.html" title=" " alt="" coords="45,452,198,493"/>
-<area shape="rect" id="node4" href="$global__variable_8h.html" title=" " alt="" coords="112,541,246,568"/>
-<area shape="rect" id="node5" href="$matrix_8h.html" title=" " alt="" coords="508,459,676,486"/>
-<area shape="rect" id="node6" href="$unitcell_8h.html" title=" " alt="" coords="260,370,426,397"/>
-<area shape="rect" id="node7" href="$pw__basis_8h.html" title=" " alt="" coords="450,363,615,404"/>
-<area shape="rect" id="node8" href="$parallel__reduce_8h.html" title=" " alt="" coords="690,184,852,225"/>
-<area shape="rect" id="node9" href="$global_8h.html" title=" " alt="" coords="178,184,370,225"/>
-<area shape="rect" id="node10" href="$structure__factor_8h.html" title=" " alt="" coords="311,273,503,315"/>
+<area shape="rect" id="node1" title=" " alt="" coords="279,5,482,61"/>
+<area shape="rect" id="node2" href="$surchem_8h.html" title=" " alt="" coords="335,109,426,136"/>
+<area shape="rect" id="node3" href="$atom__in_8h.html" title=" " alt="" coords="5,191,92,218"/>
+<area shape="rect" id="node4" href="$global__function_8h.html" title=" " alt="" coords="269,348,423,389"/>
+<area shape="rect" id="node5" href="$global__variable_8h.html" title=" " alt="" coords="221,437,356,464"/>
+<area shape="rect" id="node6" href="$matrix_8h.html" title=" " alt="" coords="537,273,705,300"/>
+<area shape="rect" id="node7" href="$parallel__reduce_8h.html" title=" " alt="" coords="725,184,887,225"/>
+<area shape="rect" id="node8" href="$pw__basis_8h.html" title=" " alt="" coords="535,184,701,225"/>
+<area shape="rect" id="node9" href="$unitcell_8h.html" title=" " alt="" coords="347,273,513,300"/>
+<area shape="rect" id="node10" href="$global_8h.html" title=" " alt="" coords="218,184,410,225"/>
 </map>

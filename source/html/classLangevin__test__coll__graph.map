@@ -1,12 +1,12 @@
 <map id="Langevin_test" name="Langevin_test">
-<area shape="rect" id="node1" title=" " alt="" coords="634,1841,747,1933"/>
-<area shape="rect" id="node2" title=" " alt="" coords="595,1577,643,1654"/>
-<area shape="rect" id="node3" href="$classUnitCell.html" title=" " alt="" coords="563,1019,701,1389"/>
-<area shape="rect" id="node10" href="$classMDrun.html" title=" " alt="" coords="820,1452,967,1779"/>
+<area shape="rect" id="node1" title=" " alt="" coords="613,1841,726,1933"/>
+<area shape="rect" id="node2" title=" " alt="" coords="573,1577,621,1654"/>
+<area shape="rect" id="node3" href="$classUnitCell.html" title=" " alt="" coords="559,1019,697,1389"/>
+<area shape="rect" id="node9" href="$classMD__base.html" title="base class of md" alt="" coords="821,1452,968,1779"/>
 <area shape="rect" id="node4" href="$classMagnetism.html" title=" " alt="" coords="5,490,211,714"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="237,5,395,273"/>
-<area shape="rect" id="node7" href="$classAtom.html" title=" " alt="" coords="356,446,527,758"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="551,409,713,795"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="930,5,1089,273"/>
-<area shape="rect" id="node9" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="737,409,897,795"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="363,5,522,273"/>
+<area shape="rect" id="node7" href="$classAtom.html" title=" " alt="" coords="543,446,713,758"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="356,409,519,795"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="737,409,897,795"/>
+<area shape="rect" id="node10" href="$classMD__para.html" title="input parameters used in md" alt="" coords="973,1085,1110,1323"/>
 </map>

@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$structExx__Info_1_1Exx__Info__Global.html" title=" " alt="" coords="5,5,148,47"/>
+<area shape="rect" id="node1" href="$classelecstate_1_1ElecState.html" title=" " alt="" coords="5,71,156,98"/>
+<area shape="rect" id="node2" href="$classelecstate_1_1ElecStateLCAO.html" title=" " alt="" coords="204,13,391,39"/>
+<area shape="rect" id="node4" href="$classelecstate_1_1ElecStatePW.html" title=" " alt="" coords="211,64,383,105"/>
+<area shape="rect" id="node5" href="$classelecstate_1_1ElecStatePW.html" title=" " alt="" coords="211,129,383,171"/>
+<area shape="rect" id="node3" href="$classelecstate_1_1ElecStateLCAO__TDDFT.html" title=" " alt="" coords="451,5,638,47"/>
+<area shape="rect" id="node6" href="$classelecstate_1_1ElecStatePW__SDFT.html" title=" " alt="" coords="439,137,651,163"/>
 </map>

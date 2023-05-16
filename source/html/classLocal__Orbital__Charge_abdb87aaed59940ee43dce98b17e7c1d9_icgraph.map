@@ -1,8 +1,6 @@
 <map id="Local_Orbital_Charge::allocate_dm_wfc" name="Local_Orbital_Charge::allocate_dm_wfc">
-<area shape="rect" id="node1" title=" " alt="" coords="500,100,660,141"/>
-<area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="264,71,443,112"/>
-<area shape="rect" id="node5" href="$classElecStateLCAOPrepare.html#a3a3a3bfc0cb8a67a387ef05b39f3ce0e" title=" " alt="" coords="255,137,452,163"/>
+<area shape="rect" id="node1" title=" " alt="" coords="481,39,641,80"/>
+<area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="255,39,433,80"/>
 <area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
 <area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,71,207,112"/>
-<area shape="rect" id="node6" href="$elecstate__lcao__test_8cpp.html#a70603d7f4921613799c6ec2f99505525" title=" " alt="" coords="79,137,133,163"/>
 </map>

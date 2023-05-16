@@ -1,7 +1,8 @@
 <map id="WF_atomic" name="WF_atomic">
-<area shape="rect" id="node1" title=" " alt="" coords="339,512,506,795"/>
-<area shape="rect" id="node2" href="$classWF__igk.html" title=" " alt="" coords="5,130,187,310"/>
-<area shape="rect" id="node3" href="$classModuleBase_1_1ComplexMatrix.html" title=" " alt="" coords="211,86,421,354"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1realArray.html" title="double float array" alt="" coords="445,42,616,398"/>
-<area shape="rect" id="node5" href="$classpsi_1_1Psi.html" title=" " alt="" coords="641,5,807,435"/>
+<area shape="rect" id="node1" title=" " alt="" coords="315,857,458,1125"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1ComplexMatrix.html" title=" " alt="" coords="5,5,216,273"/>
+<area shape="rect" id="node3" href="$classStructure__Factor.html" title=" " alt="" coords="135,402,329,773"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1realArray.html" title="double float array" alt="" coords="353,409,524,765"/>
+<area shape="rect" id="node5" href="$classpsi_1_1Psi.html" title=" " alt="" coords="549,380,715,795"/>
+<area shape="rect" id="node6" href="$structDEVICE__CPU.html" title="A tag type for identifying CPU and GPU devices." alt="" coords="580,101,684,178"/>
 </map>

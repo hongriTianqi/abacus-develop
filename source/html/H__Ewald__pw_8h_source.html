@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: module_hamilt_general/module_ewald/H_Ewald_pw.h Source File</title>
+<title>3.2.2: module_hamilt_general/module_ewald/H_Ewald_pw.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -84,49 +84,39 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classH__Ewald__pw.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classH__Ewald__pw.html">H_Ewald_pw</a> </div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="comment">// need to be updated in near future 2021-02-25</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classH__Ewald__pw.html#ad9665f035e788071eb3647bedd6b8489">   16</a></span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classStress__Func.html">Stress_Func</a>&lt;double, <a class="code" href="namespacepsi.html">psi</a>::DEVICE_CPU&gt;; <span class="comment">// Ewald stress</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classH__Ewald__pw.html#a09ffb47b02f0dbb7b173fb028bc3cc4c">   17</a></span>&#160;    friend class <a class="code" href="classStress__Func.html">Stress_Func</a>&lt;double, psi::DEVICE_GPU&gt;; <span class="comment">// Ewald stress</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classH__Ewald__pw.html#aa41563ae39863df69c376b900bf943b1">   18</a></span>&#160;    friend class <a class="code" href="classForces.html">Forces</a>&lt;double, psi::DEVICE_CPU&gt;; <span class="comment">// Ewald forces</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classH__Ewald__pw.html#a7ea653ebbaf1bef4e079d1cbaf569446">   19</a></span>&#160;    friend class <a class="code" href="classForces.html">Forces</a>&lt;double, psi::DEVICE_GPU&gt;; <span class="comment">// Ewald forces</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classH__Ewald__pw.html#a9516f5efd7043748882e320853d90a65">   20</a></span>&#160;    friend class <a class="code" href="classH__Ewald__pw.html#a9516f5efd7043748882e320853d90a65">Force_LCAO</a>; <span class="comment">// Ewald forces</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classH__Ewald__pw.html#ae98095ac27e1e82cf66dc075b5c7e237">H_Ewald_pw</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classH__Ewald__pw.html#a13c179edd0b7f8dd64c76ec13dc311b4">~H_Ewald_pw</a>();</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="comment">// compute the Ewald energy</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="classH__Ewald__pw.html#a48711a11ff5ca4d9e6733a50d13d11d8">compute_ewald</a>(<span class="keyword">const</span> <a class="code" href="classUnitCell.html">UnitCell</a>&amp; cell,</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;                                <span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a>* rho_basis,</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;                                <span class="keyword">const</span> <a class="code" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a>&amp; strucFac);</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <a class="code" href="classH__Ewald__pw.html">H_Ewald_pw</a>();</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    ~<a class="code" href="classH__Ewald__pw.html">H_Ewald_pw</a>();</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// the Ewald energy</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classH__Ewald__pw.html#a23ab82d03a3d60d6d22bf08bd6011c0b">   26</a></span>&#160;    static double <a class="code" href="classH__Ewald__pw.html#a23ab82d03a3d60d6d22bf08bd6011c0b">ewald_energy</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// compute the Ewald energy</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    static void <a class="code" href="classH__Ewald__pw.html#aaa3df78758c3e66655104ea70221bc35">compute_ewald</a>(const UnitCell &amp;cell, ModulePW::PW_Basis* rho_basis);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    static void <a class="code" href="classH__Ewald__pw.html#a28648f8322cbd19746037ce9ed7de020">rgen</a>(</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        const ModuleBase::Vector3&lt;double&gt; &amp;dtau,</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        const double &amp;rmax,</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        int *irr,</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        const ModuleBase::Matrix3 &amp;at,</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        const ModuleBase::Matrix3 &amp;bg,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        ModuleBase::Vector3&lt;double&gt; *r,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        double *r2,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        int  &amp;nrm</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    );</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// the coefficient of ewald method</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classH__Ewald__pw.html#ad70b0f60b2e59ef84c36649d9602d7c4">   45</a></span>&#160;    static double <a class="code" href="classH__Ewald__pw.html#ad70b0f60b2e59ef84c36649d9602d7c4">alpha</a>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classH__Ewald__pw.html#ab33523a934ced84818038fe6012e5287">   46</a></span>&#160;    static int <a class="code" href="classH__Ewald__pw.html#ab33523a934ced84818038fe6012e5287">mxr</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;};</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif //ewald energy</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code" href="classH__Ewald__pw.html#a28648f8322cbd19746037ce9ed7de020">rgen</a>(</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <span class="keyword">const</span> <a class="code" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3&lt;double&gt;</a> &amp;dtau,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <span class="keyword">const</span> <span class="keywordtype">double</span> &amp;rmax,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        <span class="keywordtype">int</span> *irr,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <span class="keyword">const</span> <a class="code" href="classModuleBase_1_1Matrix3.html">ModuleBase::Matrix3</a> &amp;at,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <span class="keyword">const</span> <a class="code" href="classModuleBase_1_1Matrix3.html">ModuleBase::Matrix3</a> &amp;bg,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3&lt;double&gt;</a> *r,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <span class="keywordtype">double</span> *r2,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        <span class="keywordtype">int</span>  &amp;nrm</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    );</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// the coefficient of ewald method</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classH__Ewald__pw.html#ad70b0f60b2e59ef84c36649d9602d7c4">   35</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">double</span> <a class="code" href="classH__Ewald__pw.html#ad70b0f60b2e59ef84c36649d9602d7c4">alpha</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classH__Ewald__pw.html#ab33523a934ced84818038fe6012e5287">   36</a></span>&#160;    <span class="keyword">static</span> <span class="keywordtype">int</span> <a class="code" href="classH__Ewald__pw.html#ab33523a934ced84818038fe6012e5287">mxr</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#endif //ewald energy</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassModuleBase_1_1Matrix3_html"><div class="ttname"><a href="classModuleBase_1_1Matrix3.html">ModuleBase::Matrix3</a></div><div class="ttdoc">3x3 matrix and related mathamatical operations</div><div class="ttdef"><b>Definition:</b> matrix3.h:18</div></div>
 <div class="ttc" id="aclassUnitCell_html"><div class="ttname"><a href="classUnitCell.html">UnitCell</a></div><div class="ttdef"><b>Definition:</b> unitcell.h:18</div></div>
 <div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div></div>
-<div class="ttc" id="aclassH__Ewald__pw_html_ab33523a934ced84818038fe6012e5287"><div class="ttname"><a href="classH__Ewald__pw.html#ab33523a934ced84818038fe6012e5287">H_Ewald_pw::mxr</a></div><div class="ttdeci">static int mxr</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.h:46</div></div>
+<div class="ttc" id="aclassH__Ewald__pw_html_ab33523a934ced84818038fe6012e5287"><div class="ttname"><a href="classH__Ewald__pw.html#ab33523a934ced84818038fe6012e5287">H_Ewald_pw::mxr</a></div><div class="ttdeci">static int mxr</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.h:36</div></div>
 <div class="ttc" id="adnrm2_8cpp_html_ab86ef3827967173febbe730c2f7f0375"><div class="ttname"><a href="dnrm2_8cpp.html#ab86ef3827967173febbe730c2f7f0375">dnrm2</a></div><div class="ttdeci">double dnrm2(const int n, const double *x, const int incx)</div><div class="ttdef"><b>Definition:</b> dnrm2.cpp:6</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Matrix3_html_ad0701e738b4f3c62bdcc3f3a2f531a85"><div class="ttname"><a href="classModuleBase_1_1Matrix3.html#ad0701e738b4f3c62bdcc3f3a2f531a85">ModuleBase::Matrix3::e23</a></div><div class="ttdeci">double e23</div><div class="ttdef"><b>Definition:</b> matrix3.h:26</div></div>
 <div class="ttc" id="astress__func_8h_html"><div class="ttname"><a href="stress__func_8h.html">stress_func.h</a></div></div>
@@ -136,20 +126,17 @@ $(function() {
 <div class="ttc" id="anamespaceModuleBase_html_a53ce073780a0fa3c4ee5611fa9e11523"><div class="ttname"><a href="namespaceModuleBase.html#a53ce073780a0fa3c4ee5611fa9e11523">ModuleBase::TWO_PI</a></div><div class="ttdeci">const double TWO_PI</div><div class="ttdef"><b>Definition:</b> constants.h:21</div></div>
 <div class="ttc" id="anamespaceModuleBase_1_1libm_html_a53ba939830541970fa8cdc6973c806e5"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">ModuleBase::libm::i</a></div><div class="ttdeci">int4 i[880]</div><div class="ttdef"><b>Definition:</b> sincos.cpp:28</div></div>
 <div class="ttc" id="aclasspseudo__nc_html_a8162eb6931773addda74a13ca14b57ad"><div class="ttname"><a href="classpseudo__nc.html#a8162eb6931773addda74a13ca14b57ad">pseudo_nc::zv</a></div><div class="ttdeci">int zv</div><div class="ttdef"><b>Definition:</b> pseudo_nc.h:26</div></div>
-<div class="ttc" id="aclassH__Ewald__pw_html_a9516f5efd7043748882e320853d90a65"><div class="ttname"><a href="classH__Ewald__pw.html#a9516f5efd7043748882e320853d90a65">H_Ewald_pw::Force_LCAO</a></div><div class="ttdeci">friend class Force_LCAO</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.h:20</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Vector3_html"><div class="ttname"><a href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3&lt; double &gt;</a></div></div>
 <div class="ttc" id="anamespaceModuleBase_html_ad0b268ded393d31b0dd1a795366af4a6"><div class="ttname"><a href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6">ModuleBase::TITLE</a></div><div class="ttdeci">void TITLE(const std::string &amp;class_name, const std::string &amp;function_name, const bool disable)</div><div class="ttdef"><b>Definition:</b> tool_title.cpp:18</div></div>
-<div class="ttc" id="aclassH__Ewald__pw_html_a13c179edd0b7f8dd64c76ec13dc311b4"><div class="ttname"><a href="classH__Ewald__pw.html#a13c179edd0b7f8dd64c76ec13dc311b4">H_Ewald_pw::~H_Ewald_pw</a></div><div class="ttdeci">~H_Ewald_pw()</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.cpp:14</div></div>
-<div class="ttc" id="aclassH__Ewald__pw_html_aaa3df78758c3e66655104ea70221bc35"><div class="ttname"><a href="classH__Ewald__pw.html#aaa3df78758c3e66655104ea70221bc35">H_Ewald_pw::compute_ewald</a></div><div class="ttdeci">static void compute_ewald(const UnitCell &amp;cell, ModulePW::PW_Basis *rho_basis)</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.cpp:16</div></div>
-<div class="ttc" id="aclassH__Ewald__pw_html_ad70b0f60b2e59ef84c36649d9602d7c4"><div class="ttname"><a href="classH__Ewald__pw.html#ad70b0f60b2e59ef84c36649d9602d7c4">H_Ewald_pw::alpha</a></div><div class="ttdeci">static double alpha</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.h:45</div></div>
+<div class="ttc" id="aclassH__Ewald__pw_html_a13c179edd0b7f8dd64c76ec13dc311b4"><div class="ttname"><a href="classH__Ewald__pw.html#a13c179edd0b7f8dd64c76ec13dc311b4">H_Ewald_pw::~H_Ewald_pw</a></div><div class="ttdeci">~H_Ewald_pw()</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.cpp:12</div></div>
+<div class="ttc" id="aclassH__Ewald__pw_html_ad70b0f60b2e59ef84c36649d9602d7c4"><div class="ttname"><a href="classH__Ewald__pw.html#ad70b0f60b2e59ef84c36649d9602d7c4">H_Ewald_pw::alpha</a></div><div class="ttdeci">static double alpha</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.h:35</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Matrix3_html_af32e115dc33398ffef3074a8a23cac04"><div class="ttname"><a href="classModuleBase_1_1Matrix3.html#af32e115dc33398ffef3074a8a23cac04">ModuleBase::Matrix3::e22</a></div><div class="ttdeci">double e22</div><div class="ttdef"><b>Definition:</b> matrix3.h:26</div></div>
-<div class="ttc" id="aclassForces_html"><div class="ttname"><a href="classForces.html">Forces</a></div><div class="ttdef"><b>Definition:</b> forces.h:15</div></div>
 <div class="ttc" id="aclassUnitCell_html_ad0d39d4919135f44ea165dbba619a65e"><div class="ttname"><a href="classUnitCell.html#ad0d39d4919135f44ea165dbba619a65e">UnitCell::latvec</a></div><div class="ttdeci">ModuleBase::Matrix3 latvec</div><div class="ttdef"><b>Definition:</b> unitcell.h:40</div></div>
 <div class="ttc" id="aclassUnitCell_html_af2bebfc1cf9b96f9fadb819c7cfa09b7"><div class="ttname"><a href="classUnitCell.html#af2bebfc1cf9b96f9fadb819c7cfa09b7">UnitCell::lat0</a></div><div class="ttdeci">double lat0</div><div class="ttdef"><b>Definition:</b> unitcell.h:34</div></div>
+<div class="ttc" id="aclassModuleBase_1_1ComplexMatrix_html"><div class="ttname"><a href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a></div><div class="ttdef"><b>Definition:</b> complexmatrix.h:13</div></div>
 <div class="ttc" id="aclassModulePW_1_1PW__Basis_html_adae2f927dcd38ffb31a049b64e084ee2"><div class="ttname"><a href="classModulePW_1_1PW__Basis.html#adae2f927dcd38ffb31a049b64e084ee2">ModulePW::PW_Basis::gg</a></div><div class="ttdeci">double * gg</div><div class="ttdef"><b>Definition:</b> pw_basis.h:129</div></div>
-<div class="ttc" id="anamespaceGlobalV_html_aa6d884dbe6439646b8937a9171e9a8a3"><div class="ttname"><a href="namespaceGlobalV.html#aa6d884dbe6439646b8937a9171e9a8a3">GlobalV::ofs_running</a></div><div class="ttdeci">std::ofstream ofs_running</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:146</div></div>
+<div class="ttc" id="anamespaceGlobalV_html_aa6d884dbe6439646b8937a9171e9a8a3"><div class="ttname"><a href="namespaceGlobalV.html#aa6d884dbe6439646b8937a9171e9a8a3">GlobalV::ofs_running</a></div><div class="ttdeci">std::ofstream ofs_running</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:145</div></div>
 <div class="ttc" id="anamespaceModuleBase_1_1libm_html_aee5a8e0b6865a68073202e1acddfaf68"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68">ModuleBase::libm::exp</a></div><div class="ttdeci">Tp exp(Tp x)</div></div>
-<div class="ttc" id="aclassStress__Func_html"><div class="ttname"><a href="classStress__Func.html">Stress_Func</a></div><div class="ttdef"><b>Definition:</b> stress_func.h:54</div></div>
 <div class="ttc" id="anamespaceParallel__Reduce_html_a3ba1cd04fa87f0be0907b857e5964b4c"><div class="ttname"><a href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c">Parallel_Reduce::reduce_double_pool</a></div><div class="ttdeci">void reduce_double_pool(float &amp;object)</div><div class="ttdef"><b>Definition:</b> depend_mock.cpp:16</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Matrix3_html_aaa85d8e33de235117da966146a377cf4"><div class="ttname"><a href="classModuleBase_1_1Matrix3.html#aaa85d8e33de235117da966146a377cf4">ModuleBase::Matrix3::e12</a></div><div class="ttdeci">double e12</div><div class="ttdef"><b>Definition:</b> matrix3.h:26</div></div>
 <div class="ttc" id="anamespaceModuleBase_html_a0ec3accba1ee041127f0a069dc85c86e"><div class="ttname"><a href="namespaceModuleBase.html#a0ec3accba1ee041127f0a069dc85c86e">ModuleBase::heapsort</a></div><div class="ttdeci">void heapsort(const int n, double *r, int *ind)</div><div class="ttdef"><b>Definition:</b> mymath.cpp:35</div></div>
@@ -161,29 +148,27 @@ $(function() {
 <div class="ttc" id="aclassModuleBase_1_1timer_html_a7d5a9dd381e39259fb92b31a89140206"><div class="ttname"><a href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206">ModuleBase::timer::tick</a></div><div class="ttdeci">static void tick(const std::string &amp;class_name_in, const std::string &amp;name_in)</div><div class="ttdoc">Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur...</div><div class="ttdef"><b>Definition:</b> timer.cpp:66</div></div>
 <div class="ttc" id="atimer_8h_html"><div class="ttname"><a href="timer_8h.html">timer.h</a></div></div>
 <div class="ttc" id="aunitcell_8h_html"><div class="ttname"><a href="unitcell_8h.html">unitcell.h</a></div></div>
-<div class="ttc" id="aclassModulePW_1_1PW__Basis_html_a443b661606f0a5bb3d757c4b3a5cd857"><div class="ttname"><a href="classModulePW_1_1PW__Basis.html#a443b661606f0a5bb3d757c4b3a5cd857">ModulePW::PW_Basis::ggecut</a></div><div class="ttdeci">double ggecut</div><div class="ttdef"><b>Definition:</b> pw_basis.h:165</div></div>
-<div class="ttc" id="aclassH__Ewald__pw_html_a28648f8322cbd19746037ce9ed7de020"><div class="ttname"><a href="classH__Ewald__pw.html#a28648f8322cbd19746037ce9ed7de020">H_Ewald_pw::rgen</a></div><div class="ttdeci">static void rgen(const ModuleBase::Vector3&lt; double &gt; &amp;dtau, const double &amp;rmax, int *irr, const ModuleBase::Matrix3 &amp;at, const ModuleBase::Matrix3 &amp;bg, ModuleBase::Vector3&lt; double &gt; *r, double *r2, int &amp;nrm)</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.cpp:206</div></div>
+<div class="ttc" id="aclassModulePW_1_1PW__Basis_html_a443b661606f0a5bb3d757c4b3a5cd857"><div class="ttname"><a href="classModulePW_1_1PW__Basis.html#a443b661606f0a5bb3d757c4b3a5cd857">ModulePW::PW_Basis::ggecut</a></div><div class="ttdeci">double ggecut</div><div class="ttdoc">Energy cut off for g^2/2 = ecutwfc(Ry)*lat0^2/4pi^2, unit in 1/lat0^2.</div><div class="ttdef"><b>Definition:</b> pw_basis.h:166</div></div>
+<div class="ttc" id="aclassH__Ewald__pw_html_a28648f8322cbd19746037ce9ed7de020"><div class="ttname"><a href="classH__Ewald__pw.html#a28648f8322cbd19746037ce9ed7de020">H_Ewald_pw::rgen</a></div><div class="ttdeci">static void rgen(const ModuleBase::Vector3&lt; double &gt; &amp;dtau, const double &amp;rmax, int *irr, const ModuleBase::Matrix3 &amp;at, const ModuleBase::Matrix3 &amp;bg, ModuleBase::Vector3&lt; double &gt; *r, double *r2, int &amp;nrm)</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.cpp:203</div></div>
 <div class="ttc" id="aclassModulePW_1_1PW__Basis_html_a3dbf762a3c3b282649614bd1cb89d801"><div class="ttname"><a href="classModulePW_1_1PW__Basis.html#a3dbf762a3c3b282649614bd1cb89d801">ModulePW::PW_Basis::npw</a></div><div class="ttdeci">int npw</div><div class="ttdef"><b>Definition:</b> pw_basis.h:112</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Matrix3_html_aa5762adeaad94ec4f0a525db8c18a250"><div class="ttname"><a href="classModuleBase_1_1Matrix3.html#aa5762adeaad94ec4f0a525db8c18a250">ModuleBase::Matrix3::e21</a></div><div class="ttdeci">double e21</div><div class="ttdef"><b>Definition:</b> matrix3.h:26</div></div>
-<div class="ttc" id="aclassH__Ewald__pw_html_a23ab82d03a3d60d6d22bf08bd6011c0b"><div class="ttname"><a href="classH__Ewald__pw.html#a23ab82d03a3d60d6d22bf08bd6011c0b">H_Ewald_pw::ewald_energy</a></div><div class="ttdeci">static double ewald_energy</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.h:26</div></div>
 <div class="ttc" id="aglobal__function_8h_html"><div class="ttname"><a href="global__function_8h.html">global_function.h</a></div></div>
 <div class="ttc" id="aclassModuleBase_1_1Matrix3_html_a6c8e4318f03272531a5b5ffa8f8f4c00"><div class="ttname"><a href="classModuleBase_1_1Matrix3.html#a6c8e4318f03272531a5b5ffa8f8f4c00">ModuleBase::Matrix3::e11</a></div><div class="ttdeci">double e11</div><div class="ttdoc">element e_ij: i_row, j_column</div><div class="ttdef"><b>Definition:</b> matrix3.h:26</div></div>
 <div class="ttc" id="aclassUnitCell_html_a0ffb2085697159cf7630c18873016fa6"><div class="ttname"><a href="classUnitCell.html#a0ffb2085697159cf7630c18873016fa6">UnitCell::ntype</a></div><div class="ttdeci">int ntype</div><div class="ttdef"><b>Definition:</b> unitcell.h:30</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Vector3_html_afe59714e0bf2bd3921d90dc1bcc22b67"><div class="ttname"><a href="classModuleBase_1_1Vector3.html#afe59714e0bf2bd3921d90dc1bcc22b67">ModuleBase::Vector3::z</a></div><div class="ttdeci">T z</div><div class="ttdef"><b>Definition:</b> vector3.h:25</div></div>
 <div class="ttc" id="aglobal__variable_8h_html"><div class="ttname"><a href="global__variable_8h.html">global_variable.h</a></div></div>
-<div class="ttc" id="anamespaceGlobalV_html_af2f83ab14c4b975e96f6a70bd03c60cd"><div class="ttname"><a href="namespaceGlobalV.html#af2f83ab14c4b975e96f6a70bd03c60cd">GlobalV::test_energy</a></div><div class="ttdeci">int test_energy</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:168</div></div>
+<div class="ttc" id="anamespaceGlobalV_html_af2f83ab14c4b975e96f6a70bd03c60cd"><div class="ttname"><a href="namespaceGlobalV.html#af2f83ab14c4b975e96f6a70bd03c60cd">GlobalV::test_energy</a></div><div class="ttdeci">int test_energy</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:167</div></div>
 <div class="ttc" id="aclassH__Ewald__pw_html"><div class="ttname"><a href="classH__Ewald__pw.html">H_Ewald_pw</a></div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.h:11</div></div>
 <div class="ttc" id="aforces_8h_html"><div class="ttname"><a href="forces_8h.html">forces.h</a></div></div>
 <div class="ttc" id="aclassUnitCell_html_a607fc6fcbdcad8a1ee85312a5b36e1e6"><div class="ttname"><a href="classUnitCell.html#a607fc6fcbdcad8a1ee85312a5b36e1e6">UnitCell::tpiba2</a></div><div class="ttdeci">double tpiba2</div><div class="ttdef"><b>Definition:</b> unitcell.h:37</div></div>
 <div class="ttc" id="anamespaceModuleBase_html_abe5a2d94d587472c1f5317cf21fd2bc8"><div class="ttname"><a href="namespaceModuleBase.html#abe5a2d94d587472c1f5317cf21fd2bc8">ModuleBase::FOUR_PI</a></div><div class="ttdeci">const double FOUR_PI</div><div class="ttdef"><b>Definition:</b> constants.h:22</div></div>
-<div class="ttc" id="anamespaceGlobalC_html_a1a5abf4c9f6c4ab19f0f65a82322428b"><div class="ttname"><a href="namespaceGlobalC.html#a1a5abf4c9f6c4ab19f0f65a82322428b">GlobalC::sf</a></div><div class="ttdeci">Structure_Factor sf</div><div class="ttdef"><b>Definition:</b> elecstate_lcao_test.cpp:58</div></div>
+<div class="ttc" id="aclassH__Ewald__pw_html_a48711a11ff5ca4d9e6733a50d13d11d8"><div class="ttname"><a href="classH__Ewald__pw.html#a48711a11ff5ca4d9e6733a50d13d11d8">H_Ewald_pw::compute_ewald</a></div><div class="ttdeci">static double compute_ewald(const UnitCell &amp;cell, const ModulePW::PW_Basis *rho_basis, const ModuleBase::ComplexMatrix &amp;strucFac)</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.cpp:14</div></div>
 <div class="ttc" id="aH__Ewald__pw_8h_html"><div class="ttname"><a href="H__Ewald__pw_8h.html">H_Ewald_pw.h</a></div></div>
-<div class="ttc" id="anamespacepsi_html"><div class="ttname"><a href="namespacepsi.html">psi</a></div><div class="ttdef"><b>Definition:</b> device.cpp:20</div></div>
 <div class="ttc" id="aclassAtom_html_a2a0be020c478df03a9862cd9bf93bb7b"><div class="ttname"><a href="classAtom.html#a2a0be020c478df03a9862cd9bf93bb7b">Atom::tau</a></div><div class="ttdeci">ModuleBase::Vector3&lt; double &gt; * tau</div><div class="ttdef"><b>Definition:</b> atom_spec.h:38</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Matrix3_html_a92516427ca15fb98eacfceeb906980e2"><div class="ttname"><a href="classModuleBase_1_1Matrix3.html#a92516427ca15fb98eacfceeb906980e2">ModuleBase::Matrix3::e32</a></div><div class="ttdeci">double e32</div><div class="ttdef"><b>Definition:</b> matrix3.h:26</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Matrix3_html_a045e46a9c436f369f99dd3b28eb4b448"><div class="ttname"><a href="classModuleBase_1_1Matrix3.html#a045e46a9c436f369f99dd3b28eb4b448">ModuleBase::Matrix3::e13</a></div><div class="ttdeci">double e13</div><div class="ttdef"><b>Definition:</b> matrix3.h:26</div></div>
 <div class="ttc" id="aconstants_8h_html"><div class="ttname"><a href="constants_8h.html">constants.h</a></div></div>
-<div class="ttc" id="aclassH__Ewald__pw_html_ae98095ac27e1e82cf66dc075b5c7e237"><div class="ttname"><a href="classH__Ewald__pw.html#ae98095ac27e1e82cf66dc075b5c7e237">H_Ewald_pw::H_Ewald_pw</a></div><div class="ttdeci">H_Ewald_pw()</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.cpp:13</div></div>
+<div class="ttc" id="aclassH__Ewald__pw_html_ae98095ac27e1e82cf66dc075b5c7e237"><div class="ttname"><a href="classH__Ewald__pw.html#ae98095ac27e1e82cf66dc075b5c7e237">H_Ewald_pw::H_Ewald_pw</a></div><div class="ttdeci">H_Ewald_pw()</div><div class="ttdef"><b>Definition:</b> H_Ewald_pw.cpp:11</div></div>
 <div class="ttc" id="adnrm2_8h_html"><div class="ttname"><a href="dnrm2_8h.html">dnrm2.h</a></div></div>
 <div class="ttc" id="aclassModuleBase_1_1Matrix3_html_a805f62f115057a0bc6c4ca00b3043e97"><div class="ttname"><a href="classModuleBase_1_1Matrix3.html#a805f62f115057a0bc6c4ca00b3043e97">ModuleBase::Matrix3::e33</a></div><div class="ttdeci">double e33</div><div class="ttdef"><b>Definition:</b> matrix3.h:26</div></div>
 <div class="ttc" id="anamespaceModuleBase_html_adeaaec1c2e00d3e37d62ae80ba994120"><div class="ttname"><a href="namespaceModuleBase.html#adeaaec1c2e00d3e37d62ae80ba994120">ModuleBase::conj</a></div><div class="ttdeci">ComplexMatrix conj(const ComplexMatrix &amp;m)</div><div class="ttdef"><b>Definition:</b> complexmatrix.cpp:408</div></div>

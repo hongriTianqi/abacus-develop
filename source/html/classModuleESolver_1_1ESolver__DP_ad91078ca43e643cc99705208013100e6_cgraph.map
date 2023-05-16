@@ -1,6 +1,9 @@
 <map id="ModuleESolver::ESolver_DP::Init" name="ModuleESolver::ESolver_DP::Init">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,181,47"/>
-<area shape="rect" id="node2" href="$classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="229,5,383,47"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="431,13,616,39"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="664,13,877,39"/>
+<area shape="rect" id="node1" title="Initialize the DP solver with given input parameters and unit cell." alt="" coords="5,50,181,91"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="241,7,394,49"/>
+<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__DP.html#a02b286e524cbbd22151f42edd9c003c4" title="determine the type map of DP model" alt="" coords="229,82,405,123"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="468,5,653,32"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="716,31,929,57"/>
+<area shape="rect" id="node6" href="$namespaceParallel__Common.html#a739125ffaec185825b0015a6a562edd6" title=" " alt="" coords="453,107,668,133"/>
+<area shape="rect" id="node7" href="$namespaceParallel__Common.html#a948e39313b7dec5fc96e407e0de09d41" title=" " alt="" coords="459,157,662,184"/>
 </map>

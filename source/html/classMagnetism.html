@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Magnetism Class Reference</title>
+<title>3.2.2: Magnetism Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -91,8 +91,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a83e7792c8d4b595e0a99316aa5e0a604"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaac899bae2df05be52623c4d67ae2e1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMagnetism.html#aaac899bae2df05be52623c4d67ae2e1b">~Magnetism</a> ()</td></tr>
 <tr class="separator:aaac899bae2df05be52623c4d67ae2e1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08fe60dd25da1dd9e9a2012a9c7f4356"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMagnetism.html#a08fe60dd25da1dd9e9a2012a9c7f4356">compute_magnetization</a> (const <a class="el" href="classCharge.html">Charge</a> *const chr, double *nelec_spin=nullptr)</td></tr>
-<tr class="separator:a08fe60dd25da1dd9e9a2012a9c7f4356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd6f158461dcf95ff3c0301554cc83ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMagnetism.html#afd6f158461dcf95ff3c0301554cc83ff">compute_magnetization</a> (const int &amp;nrxx, const int &amp;nxyz, const double *const *rho, double *nelec_spin=nullptr)</td></tr>
+<tr class="separator:afd6f158461dcf95ff3c0301554cc83ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -135,7 +135,6 @@ Private Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Test function psiToRho(), which is used to calculate desity matrix from wave function. Containing the tests for gamma_only and multiple k points cases. </p>
 
 </div>
 </div>
@@ -157,8 +156,8 @@ Private Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a08fe60dd25da1dd9e9a2012a9c7f4356"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08fe60dd25da1dd9e9a2012a9c7f4356">&#9670;&nbsp;</a></span>compute_magnetization()</h2>
+<a id="afd6f158461dcf95ff3c0301554cc83ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd6f158461dcf95ff3c0301554cc83ff">&#9670;&nbsp;</a></span>compute_magnetization()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -166,8 +165,20 @@ Private Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void Magnetism::compute_magnetization </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classCharge.html">Charge</a> *const&#160;</td>
-          <td class="paramname"><em>chr</em>, </td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nrxx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nxyz</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *const *&#160;</td>
+          <td class="paramname"><em>rho</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -185,18 +196,19 @@ Private Member Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMagnetism_a08fe60dd25da1dd9e9a2012a9c7f4356_cgraph.png" border="0" usemap="#classMagnetism_a08fe60dd25da1dd9e9a2012a9c7f4356_cgraph" alt=""/></div>
-<map name="classMagnetism_a08fe60dd25da1dd9e9a2012a9c7f4356_cgraph" id="classMagnetism_a08fe60dd25da1dd9e9a2012a9c7f4356_cgraph">
-<area shape="rect" title=" " alt="" coords="5,27,165,69"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="213,5,432,32"/>
-<area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="234,57,411,98"/>
+<div class="center"><img src="classMagnetism_afd6f158461dcf95ff3c0301554cc83ff_cgraph.png" border="0" usemap="#classMagnetism_afd6f158461dcf95ff3c0301554cc83ff_cgraph" alt=""/></div>
+<map name="classMagnetism_afd6f158461dcf95ff3c0301554cc83ff_cgraph" id="classMagnetism_afd6f158461dcf95ff3c0301554cc83ff_cgraph">
+<area shape="rect" title=" " alt="" coords="5,64,165,105"/>
+<area shape="rect" href="namespaceelecstate.html#abb96cf9fc561d8074c7ef6cbf487377b" title=" " alt="" coords="248,5,397,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="213,71,432,98"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="234,123,411,164"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classMagnetism_a08fe60dd25da1dd9e9a2012a9c7f4356_icgraph.png" border="0" usemap="#classMagnetism_a08fe60dd25da1dd9e9a2012a9c7f4356_icgraph" alt=""/></div>
-<map name="classMagnetism_a08fe60dd25da1dd9e9a2012a9c7f4356_icgraph" id="classMagnetism_a08fe60dd25da1dd9e9a2012a9c7f4356_icgraph">
+<div class="center"><img src="classMagnetism_afd6f158461dcf95ff3c0301554cc83ff_icgraph.png" border="0" usemap="#classMagnetism_afd6f158461dcf95ff3c0301554cc83ff_icgraph" alt=""/></div>
+<map name="classMagnetism_afd6f158461dcf95ff3c0301554cc83ff_icgraph" id="classMagnetism_afd6f158461dcf95ff3c0301554cc83ff_icgraph">
 <area shape="rect" title=" " alt="" coords="308,71,468,112"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a8cd1ebf60aadee55cd2c98acdfbee50a" title=" " alt="" coords="5,5,260,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="11,71,254,112"/>
@@ -389,13 +401,13 @@ Here is the call graph for this function:</div>
 <li>module_cell/test/<a class="el" href="unitcell__test__setupcell_8cpp.html">unitcell_test_setupcell.cpp</a></li>
 <li>module_cell/test_pw/<a class="el" href="unitcell__test__pw_8cpp.html">unitcell_test_pw.cpp</a></li>
 <li>module_elecstate/<a class="el" href="magnetism_8cpp.html">magnetism.cpp</a></li>
-<li>module_elecstate/test/<a class="el" href="elecstate__lcao__test_8cpp.html">elecstate_lcao_test.cpp</a></li>
-<li>module_elecstate/test/<a class="el" href="updaterhok__pw__test_8h_source.html">updaterhok_pw_test.h</a></li>
+<li>module_esolver/test/<a class="el" href="module__esolver_2test_2for__test_8h_source.html">for_test.h</a></li>
 <li>module_hamilt_general/module_vdw/test/<a class="el" href="vdw__test_8cpp.html">vdw_test.cpp</a></li>
 <li>module_hamilt_general/module_xc/test/<a class="el" href="xc3__mock_8h_source.html">xc3_mock.h</a></li>
 <li>module_io/test/<a class="el" href="for__testing__input__conv_8h_source.html">for_testing_input_conv.h</a></li>
 <li>module_io/test/<a class="el" href="for__testing__klist_8h_source.html">for_testing_klist.h</a></li>
 <li>module_io/test/<a class="el" href="print__info__test_8cpp.html">print_info_test.cpp</a></li>
+<li>module_io/test/<a class="el" href="write__orb__info__test_8cpp.html">write_orb_info_test.cpp</a></li>
 <li>module_io/test_serial/<a class="el" href="dm__io__test_8cpp.html">dm_io_test.cpp</a></li>
 <li>module_io/test_serial/<a class="el" href="rho__io__test_8cpp.html">rho_io_test.cpp</a></li>
 <li>module_md/test/<a class="el" href="setcell_8h_source.html">setcell.h</a></li>

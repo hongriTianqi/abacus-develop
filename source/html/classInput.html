@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Input Class Reference</title>
+<title>3.2.2: Input Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -81,9 +81,9 @@ Collaboration diagram for Input:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput__coll__graph.png" border="0" usemap="#Input_coll__map" alt="Collaboration graph"/></div>
 <map name="Input_coll__map" id="Input_coll__map">
-<area shape="rect" title=" " alt="" coords="115,336,239,721"/>
-<area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="5,5,164,273"/>
-<area shape="rect" href="classMD__parameters.html" title=" " alt="" coords="189,20,351,259"/>
+<area shape="rect" title=" " alt="" coords="89,336,230,736"/>
+<area shape="rect" href="classMD__para.html" title="input parameters used in md" alt="" coords="5,20,143,259"/>
+<area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="167,5,325,273"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -95,6 +95,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a27ac99de2091420d22379130bbbcf9ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a361cb4f9767c87400dfe3768e420b93a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a361cb4f9767c87400dfe3768e420b93a">close_log</a> (void) const</td></tr>
 <tr class="separator:a361cb4f9767c87400dfe3768e420b93a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2e5fb1a3d56b4af05370dd1df04f4778"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a2e5fb1a3d56b4af05370dd1df04f4778">read_kspacing</a> (std::ifstream &amp;ifs)</td></tr>
+<tr class="separator:a2e5fb1a3d56b4af05370dd1df04f4778"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52e287de884a72b9208184a95d8f864c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a52e287de884a72b9208184a95d8f864c">strtolower</a> (char *sa, char *sb)</td></tr>
 <tr class="separator:a52e287de884a72b9208184a95d8f864c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3096f1ed2dcb8e830423b960838e113e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a3096f1ed2dcb8e830423b960838e113e">read_bool</a> (std::ifstream &amp;ifs, bool &amp;var)</td></tr>
@@ -142,8 +144,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ad77aec2f4fedc3fff85aec00bb8f6aac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aacaab3df84b0b1efec08ebd30c54bda9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#aacaab3df84b0b1efec08ebd30c54bda9">init_vel</a></td></tr>
 <tr class="separator:aacaab3df84b0b1efec08ebd30c54bda9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b0c52620defe5758d5e8787905843be"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a1b0c52620defe5758d5e8787905843be">dump_vel</a></td></tr>
-<tr class="separator:a1b0c52620defe5758d5e8787905843be"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4ac34b3d763ebe13bd1a8958390e9d95"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a4ac34b3d763ebe13bd1a8958390e9d95">ref_cell_factor</a></td></tr>
 <tr class="separator:a4ac34b3d763ebe13bd1a8958390e9d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a123b11d919c39ed79c95c7d70981be25"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a123b11d919c39ed79c95c7d70981be25">symmetry</a></td></tr>
@@ -156,8 +156,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a8086ab6ae884f9e495ea0810f5f8fc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d3aa59b01a5f11276388a46b2a943a5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a9d3aa59b01a5f11276388a46b2a943a5">gdir</a></td></tr>
 <tr class="separator:a9d3aa59b01a5f11276388a46b2a943a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5d2bf22eb20fcada2179f7d0cca16399"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a5d2bf22eb20fcada2179f7d0cca16399">kspacing</a></td></tr>
-<tr class="separator:a5d2bf22eb20fcada2179f7d0cca16399"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada147dc50aedcd254ed7ca383a778d54"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#ada147dc50aedcd254ed7ca383a778d54">kspacing</a> [3]</td></tr>
+<tr class="separator:ada147dc50aedcd254ed7ca383a778d54"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a36461b6bba379440f76cc450b5b522c6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a36461b6bba379440f76cc450b5b522c6">min_dist_coef</a></td></tr>
 <tr class="separator:a36461b6bba379440f76cc450b5b522c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff05a5e000c00085babee0c1ee59bdcc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#aff05a5e000c00085babee0c1ee59bdcc">towannier90</a></td></tr>
@@ -170,6 +170,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:acd32cff44723c88ff8f14a05204318e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9257577462c2e424a6d76d14d073a456"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a9257577462c2e424a6d76d14d073a456">nbands_sto</a></td></tr>
 <tr class="separator:a9257577462c2e424a6d76d14d073a456"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa37dc3a4d019dbab3036c27be7d950ce"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#aa37dc3a4d019dbab3036c27be7d950ce">nbndsto_str</a></td></tr>
+<tr class="separator:aa37dc3a4d019dbab3036c27be7d950ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f42aace1e47ac042ce615b11a10da45"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a2f42aace1e47ac042ce615b11a10da45">seed_sto</a></td></tr>
 <tr class="separator:a2f42aace1e47ac042ce615b11a10da45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a33a8d3fffd6bf50a02e2b126b33d868c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a33a8d3fffd6bf50a02e2b126b33d868c">emax_sto</a></td></tr>
@@ -218,8 +220,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a68d9352ef9b0defcfbab7937efd6d254"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a97932639b3d2e1c74bb2952de45a5987"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a97932639b3d2e1c74bb2952de45a5987">cal_force</a></td></tr>
 <tr class="separator:a97932639b3d2e1c74bb2952de45a5987"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2a883d2e49e4fa7385457a5216157d95"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a2a883d2e49e4fa7385457a5216157d95">dump_force</a></td></tr>
-<tr class="separator:a2a883d2e49e4fa7385457a5216157d95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8721c7de45aaed3f1c0df1e26d2a722f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a8721c7de45aaed3f1c0df1e26d2a722f">force_thr</a></td></tr>
 <tr class="separator:a8721c7de45aaed3f1c0df1e26d2a722f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ada79d04d324e56e94738c106caa55c88"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#ada79d04d324e56e94738c106caa55c88">force_thr_ev2</a></td></tr>
@@ -234,8 +234,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a51267eca9f9d4d96e1b6435495c05296"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5cb2c9bffcd43dce5b1ca03ecbf428fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a5cb2c9bffcd43dce5b1ca03ecbf428fa">cal_stress</a></td></tr>
 <tr class="separator:a5cb2c9bffcd43dce5b1ca03ecbf428fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2d1ad329229bc1b66c3ee4d41f200199"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a2d1ad329229bc1b66c3ee4d41f200199">dump_virial</a></td></tr>
-<tr class="separator:a2d1ad329229bc1b66c3ee4d41f200199"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2a143c6d6ae14d2f7f82614510453a6f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a2a143c6d6ae14d2f7f82614510453a6f">fixed_axes</a></td></tr>
 <tr class="separator:a2a143c6d6ae14d2f7f82614510453a6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7c91c1938f5ca51c04424ee645ed845"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#ad7c91c1938f5ca51c04424ee645ed845">fixed_ibrav</a></td></tr>
@@ -390,8 +388,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a1ed448657d32914ee0bc992c0b3b3db7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8d397e414d60ae09857a25fb73e4a67d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a8d397e414d60ae09857a25fb73e4a67d">out_mat_dh</a></td></tr>
 <tr class="separator:a8d397e414d60ae09857a25fb73e4a67d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a88647213b16432250766cd18f8b6d800"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a88647213b16432250766cd18f8b6d800">out_hs2_interval</a></td></tr>
-<tr class="separator:a88647213b16432250766cd18f8b6d800"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab74d6b5d9bbf050c883ffa95959a6fa6"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#ab74d6b5d9bbf050c883ffa95959a6fa6">out_interval</a></td></tr>
+<tr class="separator:ab74d6b5d9bbf050c883ffa95959a6fa6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa5e8c3be28a0841aec76bbde1252e24c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#aa5e8c3be28a0841aec76bbde1252e24c">out_app_flag</a></td></tr>
 <tr class="separator:aa5e8c3be28a0841aec76bbde1252e24c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5cc745bbec2b7256029f5d7b2770c39"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#af5cc745bbec2b7256029f5d7b2770c39">out_mat_t</a></td></tr>
@@ -434,8 +432,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:ac99f04844ff2b38a70f8bf1c75979b9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f7106c1279616748a79e5356b4237e4"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a8f7106c1279616748a79e5356b4237e4">search_pbc</a></td></tr>
 <tr class="separator:a8f7106c1279616748a79e5356b4237e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1fb248794300fa5738d21d387e95d7c9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMD__parameters.html">MD_parameters</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a1fb248794300fa5738d21d387e95d7c9">mdp</a></td></tr>
-<tr class="separator:a1fb248794300fa5738d21d387e95d7c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fce1c136c6f9612e90b0e4ded657e6b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMD__para.html">MD_para</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a7fce1c136c6f9612e90b0e4ded657e6b">mdp</a></td></tr>
+<tr class="separator:a7fce1c136c6f9612e90b0e4ded657e6b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a668d1968bee9e2ce4bb7c09f3b0136e7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a668d1968bee9e2ce4bb7c09f3b0136e7">efield_flag</a></td></tr>
 <tr class="separator:a668d1968bee9e2ce4bb7c09f3b0136e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb6dd4420ee507737bc29308a3cf73c1"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#adb6dd4420ee507737bc29308a3cf73c1">dip_cor_flag</a></td></tr>
@@ -516,6 +514,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3367edbb20833e9910e4911c57bfd5b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac8c7ddd41f31e3551305f3d664fc814e"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#ac8c7ddd41f31e3551305f3d664fc814e">exx_hybrid_step</a></td></tr>
 <tr class="separator:ac8c7ddd41f31e3551305f3d664fc814e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b0729399274fc056d3ff9c371027889"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a6b0729399274fc056d3ff9c371027889">exx_mixing_beta</a></td></tr>
+<tr class="separator:a6b0729399274fc056d3ff9c371027889"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c01c03bacc0ec664371bf48838e0b2e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a4c01c03bacc0ec664371bf48838e0b2e">exx_lambda</a></td></tr>
 <tr class="separator:a4c01c03bacc0ec664371bf48838e0b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28a53dae31c70124f0314ddddac935ae"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a28a53dae31c70124f0314ddddac935ae">exx_real_number</a></td></tr>
@@ -554,12 +554,6 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a3c712bbf7344e90b61744b15123e19d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad60b720190d8f31026a6c3ef4eb3e7ba"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#ad60b720190d8f31026a6c3ef4eb3e7ba">td_force_dt</a></td></tr>
 <tr class="separator:ad60b720190d8f31026a6c3ef4eb3e7ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abcb6f503057ca45ab93a4a06e6043727"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#abcb6f503057ca45ab93a4a06e6043727">td_val_elec_01</a></td></tr>
-<tr class="separator:abcb6f503057ca45ab93a4a06e6043727"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0dc4f5947644b1aa806579a776c931b4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a0dc4f5947644b1aa806579a776c931b4">td_val_elec_02</a></td></tr>
-<tr class="separator:a0dc4f5947644b1aa806579a776c931b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a790b770f23c755b7163ff809850a6be7"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a790b770f23c755b7163ff809850a6be7">td_val_elec_03</a></td></tr>
-<tr class="separator:a790b770f23c755b7163ff809850a6be7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a40e1613f2cbb509c0e7c107cffae8f2b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a40e1613f2cbb509c0e7c107cffae8f2b">td_vext</a></td></tr>
 <tr class="separator:a40e1613f2cbb509c0e7c107cffae8f2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3266e173b6de17e476de2615667490d"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#ac3266e173b6de17e476de2615667490d">td_vext_dire</a></td></tr>
@@ -572,6 +566,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a9c9fcb6f9b4c71d8b817c08e8a2c131a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3812941e81cb2db77a692d1a84b9cc2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#ac3812941e81cb2db77a692d1a84b9cc2">td_edm</a></td></tr>
 <tr class="separator:ac3812941e81cb2db77a692d1a84b9cc2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a94da2839be69c106a17d3017deb571e9"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a94da2839be69c106a17d3017deb571e9">propagator</a></td></tr>
+<tr class="separator:a94da2839be69c106a17d3017deb571e9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3611df87b82513f64c5e9c1a8e2d9adf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a3611df87b82513f64c5e9c1a8e2d9adf">td_stype</a></td></tr>
 <tr class="separator:a3611df87b82513f64c5e9c1a8e2d9adf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5798f9d2e8ec7edd08a5a1b1f80f45c5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a5798f9d2e8ec7edd08a5a1b1f80f45c5">td_ttype</a></td></tr>
@@ -688,6 +684,8 @@ Public Attributes</h2></td></tr>
 <tr class="separator:adc5394ed3a046215fd67963e609d0dc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acee46e668ec7252fcfb3cc5f901477fa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#acee46e668ec7252fcfb3cc5f901477fa">of_hold_rho0</a></td></tr>
 <tr class="separator:acee46e668ec7252fcfb3cc5f901477fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ea367bc131fbb8ca4ff749c7ef19e15"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#a8ea367bc131fbb8ca4ff749c7ef19e15">of_lkt_a</a></td></tr>
+<tr class="separator:a8ea367bc131fbb8ca4ff749c7ef19e15"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1873354b862c699e52464a071a97918"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#ac1873354b862c699e52464a071a97918">of_full_pw</a></td></tr>
 <tr class="separator:ac1873354b862c699e52464a071a97918"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecb462101c7e284f63f309cda94abea2"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classInput.html#aecb462101c7e284f63f309cda94abea2">of_full_pw_dim</a></td></tr>
@@ -1149,16 +1147,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classInput_a68fcea4dfde32563345dbfd7ba893a61_cgraph.png" border="0" usemap="#classInput_a68fcea4dfde32563345dbfd7ba893a61_cgraph" alt=""/></div>
 <map name="classInput_a68fcea4dfde32563345dbfd7ba893a61_cgraph" id="classInput_a68fcea4dfde32563345dbfd7ba893a61_cgraph">
-<area shape="rect" title=" " alt="" coords="5,143,101,170"/>
-<area shape="rect" href="classInput.html#a0014bea8bd01e89aac455c2c0207408c" title=" " alt="" coords="151,17,293,43"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="343,71,556,98"/>
-<area shape="rect" href="classInput.html#a3096f1ed2dcb8e830423b960838e113e" title=" " alt="" coords="159,118,285,145"/>
-<area shape="rect" href="classInput.html#a8dc0b78064193c3f967ada55fdfe42eb" title=" " alt="" coords="155,169,289,195"/>
-<area shape="rect" href="classInput.html#a52e287de884a72b9208184a95d8f864c" title=" " alt="" coords="157,219,287,246"/>
-<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="149,270,295,297"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a5496667007afe5b237ec62f4e3f68baa" title=" " alt="" coords="358,5,541,47"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="358,229,541,271"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="373,295,526,336"/>
+<area shape="rect" title=" " alt="" coords="5,169,101,195"/>
+<area shape="rect" href="classInput.html#a0014bea8bd01e89aac455c2c0207408c" title=" " alt="" coords="157,17,299,43"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="355,71,568,98"/>
+<area shape="rect" href="classInput.html#a3096f1ed2dcb8e830423b960838e113e" title=" " alt="" coords="165,118,291,145"/>
+<area shape="rect" href="classInput.html#a2e5fb1a3d56b4af05370dd1df04f4778" title=" " alt="" coords="149,169,307,195"/>
+<area shape="rect" href="classInput.html#a8dc0b78064193c3f967ada55fdfe42eb" title=" " alt="" coords="161,219,295,246"/>
+<area shape="rect" href="classInput.html#a52e287de884a72b9208184a95d8f864c" title=" " alt="" coords="163,270,293,297"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="155,321,301,347"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a5496667007afe5b237ec62f4e3f68baa" title=" " alt="" coords="370,5,553,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="370,313,553,355"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1219,6 +1217,48 @@ Here is the caller graph for this function:</div>
 <map name="classInput_a3096f1ed2dcb8e830423b960838e113e_icgraph" id="classInput_a3096f1ed2dcb8e830423b960838e113e_icgraph">
 <area shape="rect" title=" " alt="" coords="689,56,816,83"/>
 <area shape="rect" href="classInput.html#a68fcea4dfde32563345dbfd7ba893a61" title=" " alt="" coords="545,56,641,83"/>
+<area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,31,497,57"/>
+<area shape="rect" href="input__conv__test_8cpp.html#a7f938d098f2dfc4c20108bef6d2a9bfc" title=" " alt="" coords="421,81,490,108"/>
+<area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" href="input__test__para_8cpp.html#a96670cc090652cebde955bb8bc28ff60" title=" " alt="" coords="271,56,341,83"/>
+<area shape="rect" href="classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
+<area shape="rect" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a2e5fb1a3d56b4af05370dd1df04f4778"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2e5fb1a3d56b4af05370dd1df04f4778">&#9670;&nbsp;</a></span>read_kspacing()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Input::read_kspacing </td>
+          <td>(</td>
+          <td class="paramtype">std::ifstream &amp;&#160;</td>
+          <td class="paramname"><em>ifs</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classInput_a2e5fb1a3d56b4af05370dd1df04f4778_icgraph.png" border="0" usemap="#classInput_a2e5fb1a3d56b4af05370dd1df04f4778_icgraph" alt=""/></div>
+<map name="classInput_a2e5fb1a3d56b4af05370dd1df04f4778_icgraph" id="classInput_a2e5fb1a3d56b4af05370dd1df04f4778_icgraph">
+<area shape="rect" title=" " alt="" coords="689,81,847,108"/>
+<area shape="rect" href="classInput.html#a68fcea4dfde32563345dbfd7ba893a61" title=" " alt="" coords="545,56,641,83"/>
+<area shape="rect" href="input__test_8cpp.html#a6848a5c6bc669a2710f5987eace0689d" title=" " alt="" coords="559,107,628,133"/>
 <area shape="rect" href="classInput.html#a38d2aaf59cd18edf8e9a82230d55f9cd" title=" " alt="" coords="413,31,497,57"/>
 <area shape="rect" href="input__conv__test_8cpp.html#a7f938d098f2dfc4c20108bef6d2a9bfc" title=" " alt="" coords="421,81,490,108"/>
 <area shape="rect" href="classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
@@ -2139,48 +2179,6 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a2a883d2e49e4fa7385457a5216157d95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2a883d2e49e4fa7385457a5216157d95">&#9670;&nbsp;</a></span>dump_force</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Input::dump_force</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a1b0c52620defe5758d5e8787905843be"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1b0c52620defe5758d5e8787905843be">&#9670;&nbsp;</a></span>dump_vel</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Input::dump_vel</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a2d1ad329229bc1b66c3ee4d41f200199"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2d1ad329229bc1b66c3ee4d41f200199">&#9670;&nbsp;</a></span>dump_virial</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool Input::dump_virial</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
 <a id="a751941e29fad9344a18f87ef22925813"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a751941e29fad9344a18f87ef22925813">&#9670;&nbsp;</a></span>eb_k</h2>
 
@@ -2511,6 +2509,20 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">double Input::exx_lambda</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6b0729399274fc056d3ff9c371027889"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b0729399274fc056d3ff9c371027889">&#9670;&nbsp;</a></span>exx_mixing_beta</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Input::exx_mixing_beta</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -2909,14 +2921,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a5d2bf22eb20fcada2179f7d0cca16399"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5d2bf22eb20fcada2179f7d0cca16399">&#9670;&nbsp;</a></span>kspacing</h2>
+<a id="ada147dc50aedcd254ed7ca383a778d54"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada147dc50aedcd254ed7ca383a778d54">&#9670;&nbsp;</a></span>kspacing</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">double Input::kspacing</td>
+          <td class="memname">double Input::kspacing[3]</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3021,14 +3033,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a1fb248794300fa5738d21d387e95d7c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fb248794300fa5738d21d387e95d7c9">&#9670;&nbsp;</a></span>mdp</h2>
+<a id="a7fce1c136c6f9612e90b0e4ded657e6b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fce1c136c6f9612e90b0e4ded657e6b">&#9670;&nbsp;</a></span>mdp</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classMD__parameters.html">MD_parameters</a> Input::mdp</td>
+          <td class="memname"><a class="el" href="classMD__para.html">MD_para</a> Input::mdp</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3211,6 +3223,20 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">int Input::nbands_sto</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa37dc3a4d019dbab3036c27be7d950ce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa37dc3a4d019dbab3036c27be7d950ce">&#9670;&nbsp;</a></span>nbndsto_str</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string Input::nbndsto_str</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -3581,6 +3607,20 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a8ea367bc131fbb8ca4ff749c7ef19e15"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ea367bc131fbb8ca4ff749c7ef19e15">&#9670;&nbsp;</a></span>of_lkt_a</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Input::of_lkt_a</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="a59b9578169d73d39b0a8a81d8892b875"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a59b9578169d73d39b0a8a81d8892b875">&#9670;&nbsp;</a></span>of_method</h2>
 
@@ -3931,14 +3971,14 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a88647213b16432250766cd18f8b6d800"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a88647213b16432250766cd18f8b6d800">&#9670;&nbsp;</a></span>out_hs2_interval</h2>
+<a id="ab74d6b5d9bbf050c883ffa95959a6fa6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab74d6b5d9bbf050c883ffa95959a6fa6">&#9670;&nbsp;</a></span>out_interval</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int Input::out_hs2_interval</td>
+          <td class="memname">int Input::out_interval</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -4205,6 +4245,20 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">int Input::printe</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a94da2839be69c106a17d3017deb571e9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a94da2839be69c106a17d3017deb571e9">&#9670;&nbsp;</a></span>propagator</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int Input::propagator</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -5129,48 +5183,6 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">std::string Input::td_ttype</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="abcb6f503057ca45ab93a4a06e6043727"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abcb6f503057ca45ab93a4a06e6043727">&#9670;&nbsp;</a></span>td_val_elec_01</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Input::td_val_elec_01</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a0dc4f5947644b1aa806579a776c931b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0dc4f5947644b1aa806579a776c931b4">&#9670;&nbsp;</a></span>td_val_elec_02</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Input::td_val_elec_02</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a790b770f23c755b7163ff809850a6be7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a790b770f23c755b7163ff809850a6be7">&#9670;&nbsp;</a></span>td_val_elec_03</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Input::td_val_elec_03</td>
         </tr>
       </table>
 </div><div class="memdoc">

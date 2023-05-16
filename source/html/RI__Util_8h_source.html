@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: module_ri/RI_Util.h Source File</title>
+<title>3.2.2: module_ri/RI_Util.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -88,7 +88,7 @@ $(function() {
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="namespaceRI__Util.html">   14</a></span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceRI__Util.html">RI_Util</a></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keyword">inline</span> <span class="keyword">extern</span> std::array&lt;int,3&gt;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="namespaceRI__Util.html#a7a69e7f8a5abb266351e0f308402d1c1">get_Born_vonKarmen_period</a>();</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="namespaceRI__Util.html#afebe7a022c9aacf0bed04fdd622cb8d5">get_Born_vonKarmen_period</a>();</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Tcell, <span class="keywordtype">size_t</span> Ndim&gt;</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">extern</span> std::vector&lt;std::array&lt;Tcell,Ndim&gt;&gt;</div>
@@ -126,7 +126,6 @@ $(function() {
 <div class="ttc" id="aclassModuleBase_1_1Vector3_html"><div class="ttname"><a href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a></div><div class="ttdoc">3 elements vector</div><div class="ttdef"><b>Definition:</b> vector3.h:20</div></div>
 <div class="ttc" id="anamespaceRI__Util_html_a408c07bbf484134108d1e8aebb4f1f5b"><div class="ttname"><a href="namespaceRI__Util.html#a408c07bbf484134108d1e8aebb4f1f5b">RI_Util::Vector3_to_array3</a></div><div class="ttdeci">std::array&lt; Tcell, 3 &gt; Vector3_to_array3(const ModuleBase::Vector3&lt; Tcell &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> RI_Util.h:25</div></div>
 <div class="ttc" id="aRI__Util_8hpp_html"><div class="ttname"><a href="RI__Util_8hpp.html">RI_Util.hpp</a></div></div>
-<div class="ttc" id="anamespaceRI__Util_html_a7a69e7f8a5abb266351e0f308402d1c1"><div class="ttname"><a href="namespaceRI__Util.html#a7a69e7f8a5abb266351e0f308402d1c1">RI_Util::get_Born_vonKarmen_period</a></div><div class="ttdeci">std::array&lt; int, 3 &gt; get_Born_vonKarmen_period()</div><div class="ttdef"><b>Definition:</b> RI_Util.hpp:15</div></div>
 <div class="ttc" id="anamespaceRI__Util_html_a7a73d3eaac679578f59de7817d2558a1"><div class="ttname"><a href="namespaceRI__Util.html#a7a73d3eaac679578f59de7817d2558a1">RI_Util::array3_to_Vector3</a></div><div class="ttdeci">ModuleBase::Vector3&lt; Tcell &gt; array3_to_Vector3(const std::array&lt; Tcell, 3 &gt; &amp;v)</div><div class="ttdef"><b>Definition:</b> RI_Util.h:31</div></div>
 <div class="ttc" id="anamespaceRI__Util_html_aef4f8ffe4a7af1e859cbaf7de1991d13"><div class="ttname"><a href="namespaceRI__Util.html#aef4f8ffe4a7af1e859cbaf7de1991d13">RI_Util::get_Born_von_Karmen_cells</a></div><div class="ttdeci">std::vector&lt; std::array&lt; Tcell, Ndim &gt; &gt; get_Born_von_Karmen_cells(const std::array&lt; Tcell, Ndim &gt; &amp;Born_von_Karman_period)</div><div class="ttdef"><b>Definition:</b> RI_Util.hpp:33</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Vector3_html_afe59714e0bf2bd3921d90dc1bcc22b67"><div class="ttname"><a href="classModuleBase_1_1Vector3.html#afe59714e0bf2bd3921d90dc1bcc22b67">ModuleBase::Vector3::z</a></div><div class="ttdeci">T z</div><div class="ttdef"><b>Definition:</b> vector3.h:25</div></div>
@@ -134,6 +133,7 @@ $(function() {
 <div class="ttc" id="anamespaceRI__Util_html"><div class="ttname"><a href="namespaceRI__Util.html">RI_Util</a></div><div class="ttdef"><b>Definition:</b> RI_Util.h:14</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Vector3_html_aed4fc904d651cc0265bd90fbccd20cff"><div class="ttname"><a href="classModuleBase_1_1Vector3.html#aed4fc904d651cc0265bd90fbccd20cff">ModuleBase::Vector3::y</a></div><div class="ttdeci">T y</div><div class="ttdef"><b>Definition:</b> vector3.h:24</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Vector3_html_aa4a84e2c108d8c722b30b887fc6a62a8"><div class="ttname"><a href="classModuleBase_1_1Vector3.html#aa4a84e2c108d8c722b30b887fc6a62a8">ModuleBase::Vector3::x</a></div><div class="ttdeci">T x</div><div class="ttdef"><b>Definition:</b> vector3.h:23</div></div>
+<div class="ttc" id="anamespaceRI__Util_html_afebe7a022c9aacf0bed04fdd622cb8d5"><div class="ttname"><a href="namespaceRI__Util.html#afebe7a022c9aacf0bed04fdd622cb8d5">RI_Util::get_Born_vonKarmen_period</a></div><div class="ttdeci">std::array&lt; int, 3 &gt; get_Born_vonKarmen_period()</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

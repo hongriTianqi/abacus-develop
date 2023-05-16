@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: module_hamilt_lcao/hamilt_lcaodft/record_adj.h Source File</title>
+<title>3.2.2: module_hamilt_lcao/hamilt_lcaodft/record_adj.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -84,75 +84,79 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment">//---------------------------------------------------</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classRecord__adj.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classRecord__adj.html">Record_adj</a></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <a class="code" href="classRecord__adj.html#aa7ec392e600d85ea5a62ff0b6153151f">Record_adj</a>();</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classRecord__adj.html#afead56affc083b81c1ee957cfda43791">~Record_adj</a>();</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <span class="comment">//--------------------------------------------</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="comment">// This will record the orbitals according to</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">// HPSEPS&#39;s 2D block division.</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">//--------------------------------------------</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRecord__adj.html#ad2b084434d1b4e4dab9c0d5ebcb378b9">for_2d</a>(<a class="code" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv, <span class="keywordtype">bool</span> gamma_only);</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="comment">//--------------------------------------------</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="comment">// This will record the orbitals according to</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">// grid division (cut along z direction) </span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">//--------------------------------------------</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRecord__adj.html#a84cfb4cbe5d398b5b7ca50cc4f6b1436">for_grid</a>(<span class="keyword">const</span> <a class="code" href="classGrid__Technique.html">Grid_Technique</a> &amp;gt);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRecord__adj.html#a2b7640af4f2a25a07c4e2190f58e5e2d">delete_grid</a>();</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classRecord__adj.html#a6bdc09f9fcbf11159fa44bbe271755a8">   14</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classRecord__adj.html#a6bdc09f9fcbf11159fa44bbe271755a8">info_modified</a>=<span class="keyword">false</span>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classRecord__adj.html#aa7ec392e600d85ea5a62ff0b6153151f">Record_adj</a>();</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    <a class="code" href="classRecord__adj.html#afead56affc083b81c1ee957cfda43791">~Record_adj</a>();</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="comment">//--------------------------------------------</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="comment">// This will record the orbitals according to</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="comment">// HPSEPS&#39;s 2D block division.</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="comment">//--------------------------------------------</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRecord__adj.html#ad2b084434d1b4e4dab9c0d5ebcb378b9">for_2d</a>(<a class="code" href="structParallel__Orbitals.html">Parallel_Orbitals</a> &amp;pv, <span class="keywordtype">bool</span> gamma_only);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="comment">//--------------------------------------------</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="comment">// This will record the orbitals according to</span></div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="comment">// grid division (cut along z direction) </span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="comment">//--------------------------------------------</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRecord__adj.html#a84cfb4cbe5d398b5b7ca50cc4f6b1436">for_grid</a>(<span class="keyword">const</span> <a class="code" href="classGrid__Technique.html">Grid_Technique</a> &amp;gt);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classRecord__adj.html#a12aaa636dd60cc68b0be60a4655600aa">   32</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classRecord__adj.html#a12aaa636dd60cc68b0be60a4655600aa">na_proc</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classRecord__adj.html#af24af1560947346bd4e6f9ee853e0a4e">   33</a></span>&#160;    <span class="keywordtype">int</span>* <a class="code" href="classRecord__adj.html#af24af1560947346bd4e6f9ee853e0a4e">na_each</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="comment">//--------------------------------------------</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="comment">// record sparse atom index in for_grid(const Grid_Technique &amp;gt);</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">// Map iat(dense atom index) to sparse atom index</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// Mainly removing the index dependency for OpenMP parallel loop</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// </span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// Meaning:</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// 1. if iat2ca[iat] &gt; 0, it contains the sparse atom index</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// 2. if iat2ca[iat] &lt; 0, the sparse atom index of iat does not exist </span></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">//</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// Usage: </span></div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">// 1. iat2ca[iat] &gt; 0 ? na_each[iat2ca[iat]] : 0</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// 2. iat2ca[iat] &gt; 0 ? info[iat2ca[iat]] : nullptr</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">//--------------------------------------------</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="classRecord__adj.html#a4697c0544eb5cec53ac8839a5d07b8f2">   48</a></span>&#160;    <span class="keywordtype">int</span>* <a class="code" href="classRecord__adj.html#a4697c0544eb5cec53ac8839a5d07b8f2">iat2ca</a>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="comment">//------------------------------------------------</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">// info will identify each atom in each unitcell.</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classRecord__adj.html#a2b7640af4f2a25a07c4e2190f58e5e2d">delete_grid</a>();</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classRecord__adj.html#a12aaa636dd60cc68b0be60a4655600aa">   34</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classRecord__adj.html#a12aaa636dd60cc68b0be60a4655600aa">na_proc</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classRecord__adj.html#af24af1560947346bd4e6f9ee853e0a4e">   35</a></span>&#160;    <span class="keywordtype">int</span>* <a class="code" href="classRecord__adj.html#af24af1560947346bd4e6f9ee853e0a4e">na_each</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//--------------------------------------------</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="comment">// record sparse atom index in for_grid(const Grid_Technique &amp;gt);</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="comment">// Map iat(dense atom index) to sparse atom index</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="comment">// Mainly removing the index dependency for OpenMP parallel loop</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="comment">// </span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="comment">// Meaning:</span></div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="comment">// 1. if iat2ca[iat] &gt; 0, it contains the sparse atom index</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// 2. if iat2ca[iat] &lt; 0, the sparse atom index of iat does not exist </span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="comment">//</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="comment">// Usage: </span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="comment">// 1. iat2ca[iat] &gt; 0 ? na_each[iat2ca[iat]] : 0</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="comment">// 2. iat2ca[iat] &gt; 0 ? info[iat2ca[iat]] : nullptr</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="comment">//--------------------------------------------</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classRecord__adj.html#a4697c0544eb5cec53ac8839a5d07b8f2">   50</a></span>&#160;    <span class="keywordtype">int</span>* <a class="code" href="classRecord__adj.html#a4697c0544eb5cec53ac8839a5d07b8f2">iat2ca</a>;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="comment">//------------------------------------------------</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="classRecord__adj.html#aa40f43e3977d54252f047cb7a122a65e">   53</a></span>&#160;    <span class="keywordtype">int</span>*** <a class="code" href="classRecord__adj.html#aa40f43e3977d54252f047cb7a122a65e">info</a>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="comment">// info will identify each atom in each unitcell.</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="comment">//------------------------------------------------</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classRecord__adj.html#aa40f43e3977d54252f047cb7a122a65e">   55</a></span>&#160;    <span class="keywordtype">int</span>*** <a class="code" href="classRecord__adj.html#aa40f43e3977d54252f047cb7a122a65e">info</a>;</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">private</span>:</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;};</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div></div>
-<div class="ttc" id="aclassRecord__adj_html_a12aaa636dd60cc68b0be60a4655600aa"><div class="ttname"><a href="classRecord__adj.html#a12aaa636dd60cc68b0be60a4655600aa">Record_adj::na_proc</a></div><div class="ttdeci">int na_proc</div><div class="ttdef"><b>Definition:</b> record_adj.h:32</div></div>
+<div class="ttc" id="aclassRecord__adj_html_a12aaa636dd60cc68b0be60a4655600aa"><div class="ttname"><a href="classRecord__adj.html#a12aaa636dd60cc68b0be60a4655600aa">Record_adj::na_proc</a></div><div class="ttdeci">int na_proc</div><div class="ttdef"><b>Definition:</b> record_adj.h:34</div></div>
 <div class="ttc" id="aglobal__fp_8h_html"><div class="ttname"><a href="global__fp_8h.html">global_fp.h</a></div></div>
 <div class="ttc" id="anamespaceModuleBase_1_1GlobalFunc_html_ae14c43041594db3a042c9ce69a6caeb9"><div class="ttname"><a href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9">ModuleBase::GlobalFunc::OUT</a></div><div class="ttdeci">void OUT(std::ofstream &amp;ofs, const std::string &amp;name)</div><div class="ttdef"><b>Definition:</b> global_function.cpp:51</div></div>
 <div class="ttc" id="aclassAtom_html"><div class="ttname"><a href="classAtom.html">Atom</a></div><div class="ttdef"><b>Definition:</b> atom_spec.h:6</div></div>
 <div class="ttc" id="aclassNumerical__Orbital_html_ad14b5e00ca67a8806f643c0a6ec52b39"><div class="ttname"><a href="classNumerical__Orbital.html#ad14b5e00ca67a8806f643c0a6ec52b39">Numerical_Orbital::getRcut</a></div><div class="ttdeci">const double &amp; getRcut() const</div><div class="ttdef"><b>Definition:</b> ORB_atomic.h:62</div></div>
 <div class="ttc" id="anamespaceModuleBase_1_1libm_html_a53ba939830541970fa8cdc6973c806e5"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">ModuleBase::libm::i</a></div><div class="ttdeci">int4 i[880]</div><div class="ttdef"><b>Definition:</b> sincos.cpp:28</div></div>
+<div class="ttc" id="aclassUnitCell_html_a146dc70d7ae0f08edf4ae7c93fc6af0a"><div class="ttname"><a href="classUnitCell.html#a146dc70d7ae0f08edf4ae7c93fc6af0a">UnitCell::itiaiw2iwt</a></div><div class="ttdeci">Tiait itiaiw2iwt(const Tiait &amp;it, const Tiait &amp;ia, const Tiait &amp;iw) const</div><div class="ttdef"><b>Definition:</b> unitcell.h:74</div></div>
 <div class="ttc" id="aclassLCAO__Orbitals_html_ac42b391feda41f6eb8aaee5be1edb5c3"><div class="ttname"><a href="classLCAO__Orbitals.html#ac42b391feda41f6eb8aaee5be1edb5c3">LCAO_Orbitals::Phi</a></div><div class="ttdeci">Numerical_Orbital * Phi</div><div class="ttdoc">numerical atomic orbitals</div><div class="ttdef"><b>Definition:</b> ORB_read.h:67</div></div>
-<div class="ttc" id="anamespaceGlobalC_html_a4f0d56893ec1db18f5030ca512f00c99"><div class="ttname"><a href="namespaceGlobalC.html#a4f0d56893ec1db18f5030ca512f00c99">GlobalC::GridD</a></div><div class="ttdeci">Grid_Driver GridD(GlobalV::test_deconstructor, GlobalV::test_grid_driver, GlobalV::test_grid)</div><div class="ttdef"><b>Definition:</b> global_fp.h:20</div></div>
+<div class="ttc" id="anamespaceGlobalC_html_a4f0d56893ec1db18f5030ca512f00c99"><div class="ttname"><a href="namespaceGlobalC.html#a4f0d56893ec1db18f5030ca512f00c99">GlobalC::GridD</a></div><div class="ttdeci">Grid_Driver GridD(GlobalV::test_deconstructor, GlobalV::test_grid_driver, GlobalV::test_grid)</div><div class="ttdef"><b>Definition:</b> global_fp.h:19</div></div>
 <div class="ttc" id="aclassGrid__Driver_html_a18d06ba8f5d099571ac30301594a3f67"><div class="ttname"><a href="classGrid__Driver.html#a18d06ba8f5d099571ac30301594a3f67">Grid_Driver::getAdjacentNum</a></div><div class="ttdeci">const int &amp; getAdjacentNum(void) const</div><div class="ttdef"><b>Definition:</b> sltk_grid_driver.h:72</div></div>
 <div class="ttc" id="aclassModuleBase_1_1Vector3_html"><div class="ttname"><a href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3&lt; double &gt;</a></div></div>
 <div class="ttc" id="anamespaceModuleBase_html_ad0b268ded393d31b0dd1a795366af4a6"><div class="ttname"><a href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6">ModuleBase::TITLE</a></div><div class="ttdeci">void TITLE(const std::string &amp;class_name, const std::string &amp;function_name, const bool disable)</div><div class="ttdef"><b>Definition:</b> tool_title.cpp:18</div></div>
 <div class="ttc" id="aclassAdjacentAtomInfo_html_a43b003f99a7ab9dcbd9fbb5273c54d51"><div class="ttname"><a href="classAdjacentAtomInfo.html#a43b003f99a7ab9dcbd9fbb5273c54d51">AdjacentAtomInfo::adjacent_tau</a></div><div class="ttdeci">std::vector&lt; ModuleBase::Vector3&lt; double &gt; &gt; adjacent_tau</div><div class="ttdef"><b>Definition:</b> sltk_grid_driver.h:25</div></div>
 <div class="ttc" id="astructParallel__Orbitals_html_a8972e0e6560d3538fe9c035078f60d2c"><div class="ttname"><a href="structParallel__Orbitals.html#a8972e0e6560d3538fe9c035078f60d2c">Parallel_Orbitals::nlocdim</a></div><div class="ttdeci">int * nlocdim</div><div class="ttdef"><b>Definition:</b> parallel_orbitals.h:70</div></div>
+<div class="ttc" id="aclassRecord__adj_html_a6bdc09f9fcbf11159fa44bbe271755a8"><div class="ttname"><a href="classRecord__adj.html#a6bdc09f9fcbf11159fa44bbe271755a8">Record_adj::info_modified</a></div><div class="ttdeci">bool info_modified</div><div class="ttdef"><b>Definition:</b> record_adj.h:14</div></div>
 <div class="ttc" id="astructParallel__Orbitals_html_af94a78146162de9a04df259053468fc2"><div class="ttname"><a href="structParallel__Orbitals.html#af94a78146162de9a04df259053468fc2">Parallel_Orbitals::nnr</a></div><div class="ttdeci">int nnr</div><div class="ttdef"><b>Definition:</b> parallel_orbitals.h:69</div></div>
 <div class="ttc" id="aclassAdjacentAtomInfo_html_aac7e3dcbf20f945ae0e8fb77b521f9af"><div class="ttname"><a href="classAdjacentAtomInfo.html#aac7e3dcbf20f945ae0e8fb77b521f9af">AdjacentAtomInfo::ntype</a></div><div class="ttdeci">std::vector&lt; int &gt; ntype</div><div class="ttdef"><b>Definition:</b> sltk_grid_driver.h:23</div></div>
 <div class="ttc" id="anamespaceGlobalC_html_a99a09ccc0fa804708c7fe59f2ee7ad3b"><div class="ttname"><a href="namespaceGlobalC.html#a99a09ccc0fa804708c7fe59f2ee7ad3b">GlobalC::ORB</a></div><div class="ttdeci">LCAO_Orbitals ORB</div><div class="ttdef"><b>Definition:</b> ORB_read.cpp:18</div></div>
-<div class="ttc" id="aclassRecord__adj_html_a84cfb4cbe5d398b5b7ca50cc4f6b1436"><div class="ttname"><a href="classRecord__adj.html#a84cfb4cbe5d398b5b7ca50cc4f6b1436">Record_adj::for_grid</a></div><div class="ttdeci">void for_grid(const Grid_Technique &amp;gt)</div><div class="ttdef"><b>Definition:</b> record_adj.cpp:262</div></div>
+<div class="ttc" id="aclassRecord__adj_html_a84cfb4cbe5d398b5b7ca50cc4f6b1436"><div class="ttname"><a href="classRecord__adj.html#a84cfb4cbe5d398b5b7ca50cc4f6b1436">Record_adj::for_grid</a></div><div class="ttdeci">void for_grid(const Grid_Technique &amp;gt)</div><div class="ttdef"><b>Definition:</b> record_adj.cpp:264</div></div>
 <div class="ttc" id="aclassUnitCell_html_af2bebfc1cf9b96f9fadb819c7cfa09b7"><div class="ttname"><a href="classUnitCell.html#af2bebfc1cf9b96f9fadb819c7cfa09b7">UnitCell::lat0</a></div><div class="ttdeci">double lat0</div><div class="ttdef"><b>Definition:</b> unitcell.h:34</div></div>
 <div class="ttc" id="anamespaceGlobalC_html_ad13900463d5f46ae6dc8854de86b6198"><div class="ttname"><a href="namespaceGlobalC.html#ad13900463d5f46ae6dc8854de86b6198">GlobalC::ucell</a></div><div class="ttdeci">UnitCell ucell</div><div class="ttdef"><b>Definition:</b> klist_test.cpp:46</div></div>
-<div class="ttc" id="anamespaceGlobalV_html_aa6d884dbe6439646b8937a9171e9a8a3"><div class="ttname"><a href="namespaceGlobalV.html#aa6d884dbe6439646b8937a9171e9a8a3">GlobalV::ofs_running</a></div><div class="ttdeci">std::ofstream ofs_running</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:146</div></div>
+<div class="ttc" id="anamespaceGlobalV_html_aa6d884dbe6439646b8937a9171e9a8a3"><div class="ttname"><a href="namespaceGlobalV.html#aa6d884dbe6439646b8937a9171e9a8a3">GlobalV::ofs_running</a></div><div class="ttdeci">std::ofstream ofs_running</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:145</div></div>
 <div class="ttc" id="aclassUnitCell_html_a970add514cb5fc017ab2e348c7502773"><div class="ttname"><a href="classUnitCell.html#a970add514cb5fc017ab2e348c7502773">UnitCell::iat2ia</a></div><div class="ttdeci">int * iat2ia</div><div class="ttdef"><b>Definition:</b> unitcell.h:66</div></div>
 <div class="ttc" id="aclassAdjacentAtomInfo_html"><div class="ttname"><a href="classAdjacentAtomInfo.html">AdjacentAtomInfo</a></div><div class="ttdef"><b>Definition:</b> sltk_grid_driver.h:19</div></div>
 <div class="ttc" id="aclassAdjacentAtomInfo_html_a7e62f54262252067f1fb78af760082c2"><div class="ttname"><a href="classAdjacentAtomInfo.html#a7e62f54262252067f1fb78af760082c2">AdjacentAtomInfo::box</a></div><div class="ttdeci">std::vector&lt; ModuleBase::Vector3&lt; int &gt; &gt; box</div><div class="ttdef"><b>Definition:</b> sltk_grid_driver.h:26</div></div>
@@ -163,28 +167,27 @@ $(function() {
 <div class="ttc" id="aclassGrid__Technique_html_a9a72e1b11c820fbb884888550f78689a"><div class="ttname"><a href="classGrid__Technique.html#a9a72e1b11c820fbb884888550f78689a">Grid_Technique::in_this_processor</a></div><div class="ttdeci">bool * in_this_processor</div><div class="ttdef"><b>Definition:</b> grid_technique.h:47</div></div>
 <div class="ttc" id="agrid__technique_8h_html"><div class="ttname"><a href="grid__technique_8h.html">grid_technique.h</a></div></div>
 <div class="ttc" id="aclassGrid__Driver_html_aaaf6af42483737bf5451dd9e6c809bcc"><div class="ttname"><a href="classGrid__Driver.html#aaaf6af42483737bf5451dd9e6c809bcc">Grid_Driver::getAdjacentTau</a></div><div class="ttdeci">const ModuleBase::Vector3&lt; double &gt; &amp; getAdjacentTau(const int i) const</div><div class="ttdef"><b>Definition:</b> sltk_grid_driver.h:75</div></div>
-<div class="ttc" id="aclassRecord__adj_html_a4697c0544eb5cec53ac8839a5d07b8f2"><div class="ttname"><a href="classRecord__adj.html#a4697c0544eb5cec53ac8839a5d07b8f2">Record_adj::iat2ca</a></div><div class="ttdeci">int * iat2ca</div><div class="ttdef"><b>Definition:</b> record_adj.h:48</div></div>
+<div class="ttc" id="aclassRecord__adj_html_a4697c0544eb5cec53ac8839a5d07b8f2"><div class="ttname"><a href="classRecord__adj.html#a4697c0544eb5cec53ac8839a5d07b8f2">Record_adj::iat2ca</a></div><div class="ttdeci">int * iat2ca</div><div class="ttdef"><b>Definition:</b> record_adj.h:50</div></div>
 <div class="ttc" id="astructParallel__Orbitals_html_a99a0a7a0f65b66d651d7b75a517688ad"><div class="ttname"><a href="structParallel__Orbitals.html#a99a0a7a0f65b66d651d7b75a517688ad">Parallel_Orbitals::trace_loc_col</a></div><div class="ttdeci">int * trace_loc_col</div><div class="ttdef"><b>Definition:</b> parallel_orbitals.h:37</div></div>
-<div class="ttc" id="aclassRecord__adj_html_aa40f43e3977d54252f047cb7a122a65e"><div class="ttname"><a href="classRecord__adj.html#aa40f43e3977d54252f047cb7a122a65e">Record_adj::info</a></div><div class="ttdeci">int *** info</div><div class="ttdef"><b>Definition:</b> record_adj.h:53</div></div>
+<div class="ttc" id="aclassRecord__adj_html_aa40f43e3977d54252f047cb7a122a65e"><div class="ttname"><a href="classRecord__adj.html#aa40f43e3977d54252f047cb7a122a65e">Record_adj::info</a></div><div class="ttdeci">int *** info</div><div class="ttdef"><b>Definition:</b> record_adj.h:55</div></div>
 <div class="ttc" id="amodule__basis_2module__ao_2parallel__orbitals_8h_html"><div class="ttname"><a href="module__basis_2module__ao_2parallel__orbitals_8h.html">parallel_orbitals.h</a></div></div>
 <div class="ttc" id="aclassUnitCell_html_a0ffb2085697159cf7630c18873016fa6"><div class="ttname"><a href="classUnitCell.html#a0ffb2085697159cf7630c18873016fa6">UnitCell::ntype</a></div><div class="ttdeci">int ntype</div><div class="ttdef"><b>Definition:</b> unitcell.h:30</div></div>
 <div class="ttc" id="aclassGrid__Driver_html_a6454c0cf88c2daa8a19f365bb3bcdc47"><div class="ttname"><a href="classGrid__Driver.html#a6454c0cf88c2daa8a19f365bb3bcdc47">Grid_Driver::getType</a></div><div class="ttdeci">const int &amp; getType(const int i) const</div><div class="ttdef"><b>Definition:</b> sltk_grid_driver.h:73</div></div>
-<div class="ttc" id="aclassRecord__adj_html_ad2b084434d1b4e4dab9c0d5ebcb378b9"><div class="ttname"><a href="classRecord__adj.html#ad2b084434d1b4e4dab9c0d5ebcb378b9">Record_adj::for_2d</a></div><div class="ttdeci">void for_2d(Parallel_Orbitals &amp;pv, bool gamma_only)</div><div class="ttdef"><b>Definition:</b> record_adj.cpp:35</div></div>
+<div class="ttc" id="aclassRecord__adj_html_ad2b084434d1b4e4dab9c0d5ebcb378b9"><div class="ttname"><a href="classRecord__adj.html#ad2b084434d1b4e4dab9c0d5ebcb378b9">Record_adj::for_2d</a></div><div class="ttdeci">void for_2d(Parallel_Orbitals &amp;pv, bool gamma_only)</div><div class="ttdef"><b>Definition:</b> record_adj.cpp:38</div></div>
 <div class="ttc" id="arecord__adj_8h_html"><div class="ttname"><a href="record__adj_8h.html">record_adj.h</a></div></div>
-<div class="ttc" id="aclassRecord__adj_html_aa7ec392e600d85ea5a62ff0b6153151f"><div class="ttname"><a href="classRecord__adj.html#aa7ec392e600d85ea5a62ff0b6153151f">Record_adj::Record_adj</a></div><div class="ttdeci">Record_adj()</div><div class="ttdef"><b>Definition:</b> record_adj.cpp:7</div></div>
+<div class="ttc" id="aclassRecord__adj_html_aa7ec392e600d85ea5a62ff0b6153151f"><div class="ttname"><a href="classRecord__adj.html#aa7ec392e600d85ea5a62ff0b6153151f">Record_adj::Record_adj</a></div><div class="ttdeci">Record_adj()</div><div class="ttdef"><b>Definition:</b> record_adj.cpp:6</div></div>
 <div class="ttc" id="astructParallel__Orbitals_html_af0aad33e50d95bb9a372fb2d5e4bd18d"><div class="ttname"><a href="structParallel__Orbitals.html#af0aad33e50d95bb9a372fb2d5e4bd18d">Parallel_Orbitals::nlocstart</a></div><div class="ttdeci">int * nlocstart</div><div class="ttdef"><b>Definition:</b> parallel_orbitals.h:71</div></div>
 <div class="ttc" id="aclassUnitCell_html_a80e58f240696f31129bfb32067a1d3dd"><div class="ttname"><a href="classUnitCell.html#a80e58f240696f31129bfb32067a1d3dd">UnitCell::iat2it</a></div><div class="ttdeci">int * iat2it</div><div class="ttdef"><b>Definition:</b> unitcell.h:65</div></div>
-<div class="ttc" id="anamespaceGlobalV_html_a97ef4b128d8c7eee952ee4eb9c7feda7"><div class="ttname"><a href="namespaceGlobalV.html#a97ef4b128d8c7eee952ee4eb9c7feda7">GlobalV::NPOL</a></div><div class="ttdeci">int NPOL</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:199</div></div>
+<div class="ttc" id="anamespaceGlobalV_html_a97ef4b128d8c7eee952ee4eb9c7feda7"><div class="ttname"><a href="namespaceGlobalV.html#a97ef4b128d8c7eee952ee4eb9c7feda7">GlobalV::NPOL</a></div><div class="ttdeci">int NPOL</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:198</div></div>
 <div class="ttc" id="asltk__grid__driver_8h_html"><div class="ttname"><a href="sltk__grid__driver_8h.html">sltk_grid_driver.h</a></div></div>
-<div class="ttc" id="aclassRecord__adj_html_af24af1560947346bd4e6f9ee853e0a4e"><div class="ttname"><a href="classRecord__adj.html#af24af1560947346bd4e6f9ee853e0a4e">Record_adj::na_each</a></div><div class="ttdeci">int * na_each</div><div class="ttdef"><b>Definition:</b> record_adj.h:33</div></div>
+<div class="ttc" id="aclassRecord__adj_html_af24af1560947346bd4e6f9ee853e0a4e"><div class="ttname"><a href="classRecord__adj.html#af24af1560947346bd4e6f9ee853e0a4e">Record_adj::na_each</a></div><div class="ttdeci">int * na_each</div><div class="ttdef"><b>Definition:</b> record_adj.h:35</div></div>
 <div class="ttc" id="aclassAtom_html_a2a0be020c478df03a9862cd9bf93bb7b"><div class="ttname"><a href="classAtom.html#a2a0be020c478df03a9862cd9bf93bb7b">Atom::tau</a></div><div class="ttdeci">ModuleBase::Vector3&lt; double &gt; * tau</div><div class="ttdef"><b>Definition:</b> atom_spec.h:38</div></div>
 <div class="ttc" id="aclassUnitCell_html_a986e83c6b0c44c0785fed0406859ba4d"><div class="ttname"><a href="classUnitCell.html#a986e83c6b0c44c0785fed0406859ba4d">UnitCell::itia2iat</a></div><div class="ttdeci">ModuleBase::IntArray itia2iat</div><div class="ttdef"><b>Definition:</b> unitcell.h:69</div></div>
-<div class="ttc" id="aclassUnitCell_html_aa7dd018ab334fe152be60e1e7e14e376"><div class="ttname"><a href="classUnitCell.html#aa7dd018ab334fe152be60e1e7e14e376">UnitCell::itiaiw2iwt</a></div><div class="ttdeci">ModuleBase::IntArray itiaiw2iwt</div><div class="ttdef"><b>Definition:</b> unitcell.h:70</div></div>
-<div class="ttc" id="aclassRecord__adj_html_afead56affc083b81c1ee957cfda43791"><div class="ttname"><a href="classRecord__adj.html#afead56affc083b81c1ee957cfda43791">Record_adj::~Record_adj</a></div><div class="ttdeci">~Record_adj()</div><div class="ttdef"><b>Definition:</b> record_adj.cpp:8</div></div>
+<div class="ttc" id="aclassRecord__adj_html_afead56affc083b81c1ee957cfda43791"><div class="ttname"><a href="classRecord__adj.html#afead56affc083b81c1ee957cfda43791">Record_adj::~Record_adj</a></div><div class="ttdeci">~Record_adj()</div><div class="ttdef"><b>Definition:</b> record_adj.cpp:7</div></div>
 <div class="ttc" id="anamespaceGlobalV_html_ab1540fb66afc18979e7df3c17374064e"><div class="ttname"><a href="namespaceGlobalV.html#ab1540fb66afc18979e7df3c17374064e">GlobalV::OUT_LEVEL</a></div><div class="ttdeci">std::string OUT_LEVEL</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:53</div></div>
 <div class="ttc" id="aclassUnitCell_html_aa2f36362705925bc69b705bf0d07b474"><div class="ttname"><a href="classUnitCell.html#aa2f36362705925bc69b705bf0d07b474">UnitCell::nat</a></div><div class="ttdeci">int nat</div><div class="ttdef"><b>Definition:</b> unitcell.h:31</div></div>
 <div class="ttc" id="aclassGrid__Driver_html_a13083b6b44127bd3400f46cf120bb3ea"><div class="ttname"><a href="classGrid__Driver.html#a13083b6b44127bd3400f46cf120bb3ea">Grid_Driver::Find_atom</a></div><div class="ttdeci">void Find_atom(const UnitCell &amp;ucell, const ModuleBase::Vector3&lt; double &gt; &amp;cartesian_posi, const int &amp;ntype, const int &amp;nnumber, AdjacentAtomInfo *adjs=nullptr)</div><div class="ttdef"><b>Definition:</b> sltk_grid_driver.cpp:26</div></div>
-<div class="ttc" id="aclassRecord__adj_html_a2b7640af4f2a25a07c4e2190f58e5e2d"><div class="ttname"><a href="classRecord__adj.html#a2b7640af4f2a25a07c4e2190f58e5e2d">Record_adj::delete_grid</a></div><div class="ttdeci">void delete_grid()</div><div class="ttdef"><b>Definition:</b> record_adj.cpp:10</div></div>
+<div class="ttc" id="aclassRecord__adj_html_a2b7640af4f2a25a07c4e2190f58e5e2d"><div class="ttname"><a href="classRecord__adj.html#a2b7640af4f2a25a07c4e2190f58e5e2d">Record_adj::delete_grid</a></div><div class="ttdeci">void delete_grid()</div><div class="ttdef"><b>Definition:</b> record_adj.cpp:12</div></div>
 <div class="ttc" id="aclassAdjacentAtomInfo_html_a107efcb5e038eec460b1cf30efdbbca5"><div class="ttname"><a href="classAdjacentAtomInfo.html#a107efcb5e038eec460b1cf30efdbbca5">AdjacentAtomInfo::adj_num</a></div><div class="ttdeci">int adj_num</div><div class="ttdef"><b>Definition:</b> sltk_grid_driver.h:22</div></div>
 <div class="ttc" id="aclassGrid__Technique_html"><div class="ttname"><a href="classGrid__Technique.html">Grid_Technique</a></div><div class="ttdef"><b>Definition:</b> grid_technique.h:10</div></div>
 <div class="ttc" id="aclassAtom_html_a5275f949b40661fbea4b21723b57eebf"><div class="ttname"><a href="classAtom.html#a5275f949b40661fbea4b21723b57eebf">Atom::na</a></div><div class="ttdeci">int na</div><div class="ttdef"><b>Definition:</b> atom_spec.h:29</div></div>

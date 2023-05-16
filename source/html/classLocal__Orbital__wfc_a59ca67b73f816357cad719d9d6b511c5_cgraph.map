@@ -1,12 +1,12 @@
 <map id="Local_Orbital_wfc::allocate_k" name="Local_Orbital_wfc::allocate_k">
-<area shape="rect" id="node1" title=" " alt="" coords="5,151,151,193"/>
-<area shape="rect" id="node2" href="$namespaceParallel__Common.html#a948e39313b7dec5fc96e407e0de09d41" title=" " alt="" coords="204,5,407,32"/>
-<area shape="rect" id="node3" href="$namespaceModuleIO.html#a767734bb5be529bc872f038c26159556" title=" " alt="" coords="230,57,381,98"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="223,122,387,163"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="233,188,378,215"/>
-<area shape="rect" id="node9" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="199,239,412,265"/>
-<area shape="rect" id="node10" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="214,290,397,331"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="469,115,633,157"/>
-<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="460,181,643,222"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="475,246,628,287"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,186,151,228"/>
+<area shape="rect" id="node2" href="$namespaceParallel__Common.html#a948e39313b7dec5fc96e407e0de09d41" title=" " alt="" coords="429,34,632,60"/>
+<area shape="rect" id="node3" href="$namespaceModuleIO.html#a478b24198628583bbd8c6fec0f11a1a4" title=" " alt="" coords="215,128,365,169"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="714,135,859,162"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="680,223,893,250"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="208,304,372,345"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="199,369,381,410"/>
+<area shape="rect" id="node4" href="$namespaceModuleIO.html#acb3651ae2e1a100d92fe71442ef53397" title=" " alt="" coords="453,186,608,228"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="442,84,619,111"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="449,304,613,345"/>
 </map>

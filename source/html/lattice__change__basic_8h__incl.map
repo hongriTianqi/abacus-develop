@@ -1,7 +1,12 @@
 <map id="module_relax/relax_old/lattice_change_basic.h" name="module_relax/relax_old/lattice_change_basic.h">
-<area shape="rect" id="node1" title=" " alt="" coords="67,5,215,61"/>
-<area shape="rect" id="node2" href="$matrix_8h.html" title=" " alt="" coords="57,109,225,136"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,184,81,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="106,184,175,211"/>
-<area shape="rect" id="node5" title=" " alt="" coords="200,184,273,211"/>
+<area shape="rect" id="node1" title=" " alt="" coords="138,5,286,61"/>
+<area shape="rect" id="node2" href="$matrix_8h.html" title=" " alt="" coords="5,273,173,300"/>
+<area shape="rect" id="node6" href="$unitcell_8h.html" title=" " alt="" coords="255,109,420,136"/>
+<area shape="rect" id="node3" title=" " alt="" coords="51,348,127,375"/>
+<area shape="rect" id="node4" title=" " alt="" coords="176,348,245,375"/>
+<area shape="rect" id="node5" title=" " alt="" coords="362,348,435,375"/>
+<area shape="rect" id="node7" href="$global__function_8h.html" title=" " alt="" coords="375,184,529,225"/>
+<area shape="rect" id="node8" href="$global__variable_8h.html" title=" " alt="" coords="499,273,634,300"/>
+<area shape="rect" id="node9" href="$matrix3_8h.html" title=" " alt="" coords="124,191,300,218"/>
+<area shape="rect" id="node10" href="$intarray_8h.html" title=" " alt="" coords="249,273,423,300"/>
 </map>

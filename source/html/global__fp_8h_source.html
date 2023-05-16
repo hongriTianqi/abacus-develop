@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: module_hamilt_lcao/hamilt_lcaodft/global_fp.h Source File</title>
+<title>3.2.2: module_hamilt_lcao/hamilt_lcaodft/global_fp.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -85,42 +85,38 @@ $(function() {
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ORB__read_8h.html">module_basis/module_ao/ORB_read.h</a>&quot;</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="ORB__gen__tables_8h.html">module_basis/module_ao/ORB_gen_tables.h</a>&quot;</span></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifdef __EXX</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="exx__lcao_8h.html">src_ri/exx_lcao.h</a>&quot;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Exx__LRI_8h.html">module_ri/Exx_LRI.h</a>&quot;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGlobalC.html">GlobalC</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="namespaceGlobalC.html#a4f0d56893ec1db18f5030ca512f00c99">   20</a></span>&#160;<span class="keyword">extern</span> <a class="code" href="classGrid__Driver.html">Grid_Driver</a> <a class="code" href="namespaceGlobalC.html#a4f0d56893ec1db18f5030ca512f00c99">GridD</a>;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#ifdef __EXX</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">extern</span> <a class="code" href="classExx__Lcao.html">Exx_Lcao</a> exx_lcao; <span class="comment">// Peize Lin add 2016-12-03</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">extern</span> <a class="code" href="classExx__LRI.html">Exx_LRI&lt;double&gt;</a> exx_lri_double; <span class="comment">// Peize Lin add 2022-08-06</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">extern</span> <a class="code" href="classExx__LRI.html">Exx_LRI&lt;std::complex&lt;double&gt;</a>&gt; exx_lri_complex; <span class="comment">// Peize Lin add 2022-08-06</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="Exx__LRI_8h.html">module_ri/Exx_LRI.h</a>&quot;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceGlobalC.html">GlobalC</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="namespaceGlobalC.html#a4f0d56893ec1db18f5030ca512f00c99">   19</a></span>&#160;<span class="keyword">extern</span> <a class="code" href="classGrid__Driver.html">Grid_Driver</a> <a class="code" href="namespaceGlobalC.html#a4f0d56893ec1db18f5030ca512f00c99">GridD</a>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifdef __EXX</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">extern</span> <a class="code" href="classExx__LRI.html">Exx_LRI&lt;double&gt;</a> exx_lri_double; <span class="comment">// Peize Lin add 2022-08-06</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">extern</span> <a class="code" href="classExx__LRI.html">Exx_LRI&lt;std::complex&lt;double&gt;</a>&gt; exx_lri_complex; <span class="comment">// Peize Lin add 2022-08-06</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;}</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div></div>
-<div class="ttc" id="aexx__lcao_8h_html"><div class="ttname"><a href="exx__lcao_8h.html">exx_lcao.h</a></div></div>
 <div class="ttc" id="aclassGrid__Driver_html"><div class="ttname"><a href="classGrid__Driver.html">Grid_Driver</a></div><div class="ttdef"><b>Definition:</b> sltk_grid_driver.h:29</div></div>
 <div class="ttc" id="aglobal__fp_8h_html"><div class="ttname"><a href="global__fp_8h.html">global_fp.h</a></div></div>
-<div class="ttc" id="anamespaceGlobalV_html_a2f64441c1972a89a7b81af19f5c041d9"><div class="ttname"><a href="namespaceGlobalV.html#a2f64441c1972a89a7b81af19f5c041d9">GlobalV::test_grid</a></div><div class="ttdeci">int test_grid</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:176</div></div>
+<div class="ttc" id="anamespaceGlobalV_html_a2f64441c1972a89a7b81af19f5c041d9"><div class="ttname"><a href="namespaceGlobalV.html#a2f64441c1972a89a7b81af19f5c041d9">GlobalV::test_grid</a></div><div class="ttdeci">int test_grid</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:175</div></div>
 <div class="ttc" id="aORB__gen__tables_8h_html"><div class="ttname"><a href="ORB__gen__tables_8h.html">ORB_gen_tables.h</a></div></div>
 <div class="ttc" id="aLCAO__hamilt_8h_html"><div class="ttname"><a href="LCAO__hamilt_8h.html">LCAO_hamilt.h</a></div></div>
-<div class="ttc" id="anamespaceGlobalC_html_a4f0d56893ec1db18f5030ca512f00c99"><div class="ttname"><a href="namespaceGlobalC.html#a4f0d56893ec1db18f5030ca512f00c99">GlobalC::GridD</a></div><div class="ttdeci">Grid_Driver GridD(GlobalV::test_deconstructor, GlobalV::test_grid_driver, GlobalV::test_grid)</div><div class="ttdef"><b>Definition:</b> global_fp.h:20</div></div>
+<div class="ttc" id="anamespaceGlobalC_html_a4f0d56893ec1db18f5030ca512f00c99"><div class="ttname"><a href="namespaceGlobalC.html#a4f0d56893ec1db18f5030ca512f00c99">GlobalC::GridD</a></div><div class="ttdeci">Grid_Driver GridD(GlobalV::test_deconstructor, GlobalV::test_grid_driver, GlobalV::test_grid)</div><div class="ttdef"><b>Definition:</b> global_fp.h:19</div></div>
 <div class="ttc" id="alocal__orbital__charge_8h_html"><div class="ttname"><a href="local__orbital__charge_8h.html">local_orbital_charge.h</a></div></div>
-<div class="ttc" id="anamespaceGlobalV_html_aee4c9269e1a0eb396402c8e4c06b24da"><div class="ttname"><a href="namespaceGlobalV.html#aee4c9269e1a0eb396402c8e4c06b24da">GlobalV::test_grid_driver</a></div><div class="ttdeci">int test_grid_driver</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:177</div></div>
+<div class="ttc" id="anamespaceGlobalV_html_aee4c9269e1a0eb396402c8e4c06b24da"><div class="ttname"><a href="namespaceGlobalV.html#aee4c9269e1a0eb396402c8e4c06b24da">GlobalV::test_grid_driver</a></div><div class="ttdeci">int test_grid_driver</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:176</div></div>
 <div class="ttc" id="aORB__read_8h_html"><div class="ttname"><a href="ORB__read_8h.html">ORB_read.h</a></div></div>
 <div class="ttc" id="aExx__LRI_8h_html"><div class="ttname"><a href="Exx__LRI_8h.html">Exx_LRI.h</a></div></div>
 <div class="ttc" id="anamespaceGlobalC_html"><div class="ttname"><a href="namespaceGlobalC.html">GlobalC</a></div><div class="ttdoc">PLEASE avoid using 'ORB' as global variable.</div><div class="ttdef"><b>Definition:</b> ORB_gen_tables.cpp:7</div></div>
 <div class="ttc" id="aLCAO__matrix_8h_html"><div class="ttname"><a href="LCAO__matrix_8h.html">LCAO_matrix.h</a></div></div>
 <div class="ttc" id="anamespaceGlobalC_html_ac48c3c72bbeb7a901b3f56709a856d91"><div class="ttname"><a href="namespaceGlobalC.html#ac48c3c72bbeb7a901b3f56709a856d91">GlobalC::exx_info</a></div><div class="ttdeci">Exx_Info exx_info</div><div class="ttdef"><b>Definition:</b> test_xc.cpp:28</div></div>
-<div class="ttc" id="anamespaceGlobalV_html_ace4c553742ed9797580eddd2e5015443"><div class="ttname"><a href="namespaceGlobalV.html#ace4c553742ed9797580eddd2e5015443">GlobalV::test_deconstructor</a></div><div class="ttdeci">int test_deconstructor</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:192</div></div>
+<div class="ttc" id="anamespaceGlobalV_html_ace4c553742ed9797580eddd2e5015443"><div class="ttname"><a href="namespaceGlobalV.html#ace4c553742ed9797580eddd2e5015443">GlobalV::test_deconstructor</a></div><div class="ttdeci">int test_deconstructor</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:191</div></div>
 <div class="ttc" id="agrid__technique_8h_html"><div class="ttname"><a href="grid__technique_8h.html">grid_technique.h</a></div></div>
 <div class="ttc" id="alocal__orbital__wfc_8h_html"><div class="ttname"><a href="local__orbital__wfc_8h.html">local_orbital_wfc.h</a></div></div>
-<div class="ttc" id="aclassExx__Lcao_html"><div class="ttname"><a href="classExx__Lcao.html">Exx_Lcao</a></div><div class="ttdef"><b>Definition:</b> exx_lcao.h:34</div></div>
 <div class="ttc" id="asltk__grid__driver_8h_html"><div class="ttname"><a href="sltk__grid__driver_8h.html">sltk_grid_driver.h</a></div></div>
-<div class="ttc" id="aclassExx__LRI_html"><div class="ttname"><a href="classExx__LRI.html">Exx_LRI</a></div><div class="ttdef"><b>Definition:</b> Exx_LRI.h:27</div></div>
+<div class="ttc" id="aclassExx__LRI_html"><div class="ttname"><a href="classExx__LRI.html">Exx_LRI</a></div><div class="ttdef"><b>Definition:</b> Exx_LRI.h:29</div></div>
 <div class="ttc" id="aLCAO__gen__fixedH_8h_html"><div class="ttname"><a href="LCAO__gen__fixedH_8h.html">LCAO_gen_fixedH.h</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

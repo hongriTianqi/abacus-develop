@@ -1,12 +1,12 @@
 <map id="module_elecstate/potentials/pot_surchem.hpp" name="module_elecstate/potentials/pot_surchem.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="479,5,686,47"/>
-<area shape="rect" id="node2" href="$surchem_8h.html" title=" " alt="" coords="389,95,600,136"/>
-<area shape="rect" id="node10" href="$pot__base_8h.html" title=" " alt="" coords="688,102,781,129"/>
-<area shape="rect" id="node3" href="$global__function_8h.html" title=" " alt="" coords="243,348,397,389"/>
-<area shape="rect" id="node4" href="$global__variable_8h.html" title=" " alt="" coords="310,437,445,464"/>
-<area shape="rect" id="node5" href="$matrix_8h.html" title=" " alt="" coords="636,273,804,300"/>
-<area shape="rect" id="node6" href="$unitcell_8h.html" title=" " alt="" coords="447,273,612,300"/>
-<area shape="rect" id="node7" href="$pw__basis_8h.html" title=" " alt="" coords="617,184,783,225"/>
-<area shape="rect" id="node8" href="$parallel__reduce_8h.html" title=" " alt="" coords="5,184,168,225"/>
-<area shape="rect" id="node9" href="$global_8h.html" title=" " alt="" coords="300,184,492,225"/>
+<area shape="rect" id="node1" title=" " alt="" coords="374,5,580,47"/>
+<area shape="rect" id="node2" href="$surchem_8h.html" title=" " alt="" coords="284,95,494,136"/>
+<area shape="rect" id="node10" href="$pot__base_8h.html" title=" " alt="" coords="588,102,681,129"/>
+<area shape="rect" id="node3" href="$atom__in_8h.html" title=" " alt="" coords="271,191,358,218"/>
+<area shape="rect" id="node4" href="$global__function_8h.html" title=" " alt="" coords="215,273,368,315"/>
+<area shape="rect" id="node5" href="$global__variable_8h.html" title=" " alt="" coords="224,363,359,389"/>
+<area shape="rect" id="node6" href="$matrix_8h.html" title=" " alt="" coords="621,281,789,307"/>
+<area shape="rect" id="node7" href="$parallel__reduce_8h.html" title=" " alt="" coords="33,184,196,225"/>
+<area shape="rect" id="node8" href="$pw__basis_8h.html" title=" " alt="" coords="622,184,788,225"/>
+<area shape="rect" id="node9" href="$unitcell_8h.html" title=" " alt="" coords="382,191,548,218"/>
 </map>

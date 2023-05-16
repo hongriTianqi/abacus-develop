@@ -1,8 +1,8 @@
 <map id="Ions_Move_Methods" name="Ions_Move_Methods">
-<area shape="rect" id="node1" title=" " alt="" coords="196,1116,387,1311"/>
-<area shape="rect" id="node2" href="$classIons__Move__BFGS.html" title=" " alt="" coords="19,815,190,980"/>
+<area shape="rect" id="node1" title=" " alt="" coords="196,1101,387,1296"/>
+<area shape="rect" id="node2" href="$classIons__Move__BFGS.html" title=" " alt="" coords="19,815,190,965"/>
 <area shape="rect" id="node3" href="$classBFGS__Basic.html" title=" " alt="" coords="5,321,204,692"/>
 <area shape="rect" id="node4" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="28,5,181,259"/>
-<area shape="rect" id="node5" href="$classIons__Move__SD.html" title=" " alt="" coords="215,815,368,980"/>
-<area shape="rect" id="node6" href="$classIons__Move__CG.html" title=" " alt="" coords="393,741,547,1053"/>
+<area shape="rect" id="node5" href="$classIons__Move__SD.html" title=" " alt="" coords="215,807,368,973"/>
+<area shape="rect" id="node6" href="$classIons__Move__CG.html" title=" " alt="" coords="393,741,547,1039"/>
 </map>

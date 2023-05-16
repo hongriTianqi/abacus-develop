@@ -1,8 +1,4 @@
 <map id="Parallel_Global::myProd" name="Parallel_Global::myProd">
-<area shape="rect" id="node1" title=" " alt="" coords="312,64,489,91"/>
-<area shape="rect" id="node2" href="$parallel__reduce__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="159,5,213,32"/>
-<area shape="rect" id="node3" href="$namespaceParallel__Global.html#a67e0e02fb1bcfe959e9897779f86842e" title=" " alt="" coords="108,57,264,98"/>
-<area shape="rect" id="node5" href="$test__tool_8h.html#a1cb2d7ed1593015f4beb58652d844142" title=" " alt="" coords="145,123,227,149"/>
-<area shape="rect" id="node4" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,64,60,91"/>
-<area shape="rect" id="node6" href="$diago__cg__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,123,60,149"/>
+<area shape="rect" id="node1" title=" " alt="" coords="108,5,285,32"/>
+<area shape="rect" id="node2" href="$parallel__global__test_8cpp.html#a9d748a542ce1dc41a1d7a5d6d669fa03" title=" " alt="" coords="5,5,60,32"/>
 </map>

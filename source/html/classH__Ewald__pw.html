@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: H_Ewald_pw Class Reference</title>
+<title>3.2.2: H_Ewald_pw Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -68,9 +68,6 @@ $(function() {
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
-<a href="#pri-static-methods">Static Private Member Functions</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
-<a href="#friends">Friends</a> &#124;
 <a href="classH__Ewald__pw-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">H_Ewald_pw Class Reference</div>  </div>
@@ -83,7 +80,7 @@ Collaboration diagram for H_Ewald_pw:</div>
 <div class="dyncontent">
 <div class="center"><img src="classH__Ewald__pw__coll__graph.png" border="0" usemap="#H__Ewald__pw_coll__map" alt="Collaboration graph"/></div>
 <map name="H__Ewald__pw_coll__map" id="H__Ewald__pw_coll__map">
-<area shape="rect" title=" " alt="" coords="5,5,156,156"/>
+<area shape="rect" title=" " alt="" coords="5,5,156,141"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -96,38 +93,17 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:aaa3df78758c3e66655104ea70221bc35"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classH__Ewald__pw.html#aaa3df78758c3e66655104ea70221bc35">compute_ewald</a> (const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;cell, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis)</td></tr>
-<tr class="separator:aaa3df78758c3e66655104ea70221bc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:a23ab82d03a3d60d6d22bf08bd6011c0b"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classH__Ewald__pw.html#a23ab82d03a3d60d6d22bf08bd6011c0b">ewald_energy</a> =0.0</td></tr>
-<tr class="separator:a23ab82d03a3d60d6d22bf08bd6011c0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-methods"></a>
-Static Private Member Functions</h2></td></tr>
+<tr class="memitem:a48711a11ff5ca4d9e6733a50d13d11d8"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classH__Ewald__pw.html#a48711a11ff5ca4d9e6733a50d13d11d8">compute_ewald</a> (const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;cell, const <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis, const <a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &amp;strucFac)</td></tr>
+<tr class="separator:a48711a11ff5ca4d9e6733a50d13d11d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a28648f8322cbd19746037ce9ed7de020"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classH__Ewald__pw.html#a28648f8322cbd19746037ce9ed7de020">rgen</a> (const <a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; &amp;dtau, const double &amp;rmax, int *irr, const <a class="el" href="classModuleBase_1_1Matrix3.html">ModuleBase::Matrix3</a> &amp;at, const <a class="el" href="classModuleBase_1_1Matrix3.html">ModuleBase::Matrix3</a> &amp;bg, <a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *r, double *r2, int &amp;nrm)</td></tr>
 <tr class="separator:a28648f8322cbd19746037ce9ed7de020"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
+Static Public Attributes</h2></td></tr>
 <tr class="memitem:ad70b0f60b2e59ef84c36649d9602d7c4"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classH__Ewald__pw.html#ad70b0f60b2e59ef84c36649d9602d7c4">alpha</a> =0.0</td></tr>
 <tr class="separator:ad70b0f60b2e59ef84c36649d9602d7c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab33523a934ced84818038fe6012e5287"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classH__Ewald__pw.html#ab33523a934ced84818038fe6012e5287">mxr</a> = 200</td></tr>
 <tr class="separator:ab33523a934ced84818038fe6012e5287"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
-Friends</h2></td></tr>
-<tr class="memitem:ad9665f035e788071eb3647bedd6b8489"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classH__Ewald__pw.html#ad9665f035e788071eb3647bedd6b8489">Stress_Func&lt; double, psi::DEVICE_CPU &gt;</a></td></tr>
-<tr class="separator:ad9665f035e788071eb3647bedd6b8489"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09ffb47b02f0dbb7b173fb028bc3cc4c"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classH__Ewald__pw.html#a09ffb47b02f0dbb7b173fb028bc3cc4c">Stress_Func&lt; double, psi::DEVICE_GPU &gt;</a></td></tr>
-<tr class="separator:a09ffb47b02f0dbb7b173fb028bc3cc4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa41563ae39863df69c376b900bf943b1"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classH__Ewald__pw.html#aa41563ae39863df69c376b900bf943b1">Forces&lt; double, psi::DEVICE_CPU &gt;</a></td></tr>
-<tr class="separator:aa41563ae39863df69c376b900bf943b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ea653ebbaf1bef4e079d1cbaf569446"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classH__Ewald__pw.html#a7ea653ebbaf1bef4e079d1cbaf569446">Forces&lt; double, psi::DEVICE_GPU &gt;</a></td></tr>
-<tr class="separator:a7ea653ebbaf1bef4e079d1cbaf569446"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9516f5efd7043748882e320853d90a65"><td class="memItemLeft" align="right" valign="top">class&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classH__Ewald__pw.html#a9516f5efd7043748882e320853d90a65">Force_LCAO</a></td></tr>
-<tr class="separator:a9516f5efd7043748882e320853d90a65"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae98095ac27e1e82cf66dc075b5c7e237"></a>
@@ -165,8 +141,8 @@ Friends</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aaa3df78758c3e66655104ea70221bc35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa3df78758c3e66655104ea70221bc35">&#9670;&nbsp;</a></span>compute_ewald()</h2>
+<a id="a48711a11ff5ca4d9e6733a50d13d11d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a48711a11ff5ca4d9e6733a50d13d11d8">&#9670;&nbsp;</a></span>compute_ewald()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -175,7 +151,7 @@ Friends</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void H_Ewald_pw::compute_ewald </td>
+          <td class="memname">double H_Ewald_pw::compute_ewald </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;&#160;</td>
           <td class="paramname"><em>cell</em>, </td>
@@ -183,8 +159,14 @@ Friends</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *&#160;</td>
-          <td class="paramname"><em>rho_basis</em>&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *&#160;</td>
+          <td class="paramname"><em>rho_basis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &amp;&#160;</td>
+          <td class="paramname"><em>strucFac</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -201,8 +183,8 @@ Friends</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classH__Ewald__pw_aaa3df78758c3e66655104ea70221bc35_cgraph.png" border="0" usemap="#classH__Ewald__pw_aaa3df78758c3e66655104ea70221bc35_cgraph" alt=""/></div>
-<map name="classH__Ewald__pw_aaa3df78758c3e66655104ea70221bc35_cgraph" id="classH__Ewald__pw_aaa3df78758c3e66655104ea70221bc35_cgraph">
+<div class="center"><img src="classH__Ewald__pw_a48711a11ff5ca4d9e6733a50d13d11d8_cgraph.png" border="0" usemap="#classH__Ewald__pw_a48711a11ff5ca4d9e6733a50d13d11d8_cgraph" alt=""/></div>
+<map name="classH__Ewald__pw_a48711a11ff5ca4d9e6733a50d13d11d8_cgraph" id="classH__Ewald__pw_a48711a11ff5ca4d9e6733a50d13d11d8_cgraph">
 <area shape="rect" title=" " alt="" coords="5,217,173,258"/>
 <area shape="rect" href="namespaceModuleBase.html#adeaaec1c2e00d3e37d62ae80ba994120" title=" " alt="" coords="259,5,397,32"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="243,56,413,83"/>
@@ -218,8 +200,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classH__Ewald__pw_aaa3df78758c3e66655104ea70221bc35_icgraph.png" border="0" usemap="#classH__Ewald__pw_aaa3df78758c3e66655104ea70221bc35_icgraph" alt=""/></div>
-<map name="classH__Ewald__pw_aaa3df78758c3e66655104ea70221bc35_icgraph" id="classH__Ewald__pw_aaa3df78758c3e66655104ea70221bc35_icgraph">
+<div class="center"><img src="classH__Ewald__pw_a48711a11ff5ca4d9e6733a50d13d11d8_icgraph.png" border="0" usemap="#classH__Ewald__pw_a48711a11ff5ca4d9e6733a50d13d11d8_icgraph" alt=""/></div>
+<map name="classH__Ewald__pw_a48711a11ff5ca4d9e6733a50d13d11d8_icgraph" id="classH__Ewald__pw_a48711a11ff5ca4d9e6733a50d13d11d8_icgraph">
 <area shape="rect" title=" " alt="" coords="495,71,663,112"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="250,5,426,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="250,71,426,112"/>
@@ -295,7 +277,7 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -319,8 +301,8 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classH__Ewald__pw_a28648f8322cbd19746037ce9ed7de020_icgraph.png" border="0" usemap="#classH__Ewald__pw_a28648f8322cbd19746037ce9ed7de020_icgraph" alt=""/></div>
 <map name="classH__Ewald__pw_a28648f8322cbd19746037ce9ed7de020_icgraph" id="classH__Ewald__pw_a28648f8322cbd19746037ce9ed7de020_icgraph">
 <area shape="rect" title=" " alt="" coords="711,78,851,105"/>
-<area shape="rect" href="classForces.html#aa64789246a49baf7a2fe1a3f421e157a" title=" " alt="" coords="496,5,661,47"/>
-<area shape="rect" href="classH__Ewald__pw.html#aaa3df78758c3e66655104ea70221bc35" title=" " alt="" coords="495,71,663,112"/>
+<area shape="rect" href="classForces.html#a1a612e1c46b80d750b9ef992b61dd3ae" title=" " alt="" coords="496,5,661,47"/>
+<area shape="rect" href="classH__Ewald__pw.html#a48711a11ff5ca4d9e6733a50d13d11d8" title=" " alt="" coords="495,71,663,112"/>
 <area shape="rect" href="classStress__Func.html#a123bfe3d6692f7863c5233b9d6f93215" title=" " alt="" coords="495,137,662,193"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="250,5,426,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="250,71,426,112"/>
@@ -328,117 +310,6 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a380b40f26c567a678ad6552068e6f4bc" title=" " alt="" coords="5,5,181,47"/>
 </map>
 </div>
-
-</div>
-</div>
-<h2 class="groupheader">Friends And Related Function Documentation</h2>
-<a id="a9516f5efd7043748882e320853d90a65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9516f5efd7043748882e320853d90a65">&#9670;&nbsp;</a></span>Force_LCAO</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class Force_LCAO</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="aa41563ae39863df69c376b900bf943b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa41563ae39863df69c376b900bf943b1">&#9670;&nbsp;</a></span>Forces&lt; double, psi::DEVICE_CPU &gt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classForces.html">Forces</a>&lt; double, psi::DEVICE_CPU &gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a7ea653ebbaf1bef4e079d1cbaf569446"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ea653ebbaf1bef4e079d1cbaf569446">&#9670;&nbsp;</a></span>Forces&lt; double, psi::DEVICE_GPU &gt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classForces.html">Forces</a>&lt; double, psi::DEVICE_GPU &gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="ad9665f035e788071eb3647bedd6b8489"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad9665f035e788071eb3647bedd6b8489">&#9670;&nbsp;</a></span>Stress_Func&lt; double, psi::DEVICE_CPU &gt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classStress__Func.html">Stress_Func</a>&lt; double, psi::DEVICE_CPU &gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a09ffb47b02f0dbb7b173fb028bc3cc4c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a09ffb47b02f0dbb7b173fb028bc3cc4c">&#9670;&nbsp;</a></span>Stress_Func&lt; double, psi::DEVICE_GPU &gt;</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">friend class <a class="el" href="classStress__Func.html">Stress_Func</a>&lt; double, psi::DEVICE_GPU &gt;</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">friend</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
 
 </div>
 </div>
@@ -454,28 +325,6 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">double H_Ewald_pw::alpha =0.0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="a23ab82d03a3d60d6d22bf08bd6011c0b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a23ab82d03a3d60d6d22bf08bd6011c0b">&#9670;&nbsp;</a></span>ewald_energy</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">double H_Ewald_pw::ewald_energy =0.0</td>
         </tr>
       </table>
   </td>
@@ -502,7 +351,7 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">

@@ -1,12 +1,12 @@
 <map id="module_hamilt_pw/hamilt_stodft/sto_forces.h" name="module_hamilt_pw/hamilt_stodft/sto_forces.h">
-<area shape="rect" id="node1" title=" " alt="" coords="691,5,883,47"/>
-<area shape="rect" id="node2" href="$forces_8h.html" title=" " alt="" coords="329,95,521,136"/>
-<area shape="rect" id="node8" href="$psi_8h.html" title=" " alt="" coords="658,273,790,300"/>
-<area shape="rect" id="node10" href="$sto__wf_8h.html" title=" " alt="" coords="825,102,901,129"/>
-<area shape="rect" id="node3" href="$global__function_8h.html" title=" " alt="" coords="291,184,445,225"/>
-<area shape="rect" id="node4" href="$global__variable_8h.html" title=" " alt="" coords="230,273,365,300"/>
-<area shape="rect" id="node5" href="$matrix_8h.html" title=" " alt="" coords="5,273,173,300"/>
-<area shape="rect" id="node6" href="$pw__basis_8h.html" title=" " alt="" coords="51,184,216,225"/>
-<area shape="rect" id="node7" href="$math__kernel__op_8h.html" title=" " alt="" coords="521,184,698,225"/>
-<area shape="rect" id="node9" href="$memory__op_8h.html" title=" " alt="" coords="535,348,683,389"/>
+<area shape="rect" id="node1" title=" " alt="" coords="246,5,438,47"/>
+<area shape="rect" id="node2" href="$forces_8h.html" title=" " alt="" coords="246,95,438,136"/>
+<area shape="rect" id="node7" href="$psi_8h.html" title=" " alt="" coords="568,281,700,307"/>
+<area shape="rect" id="node10" href="$sto__wf_8h.html" title=" " alt="" coords="109,102,185,129"/>
+<area shape="rect" id="node3" href="$global__function_8h.html" title=" " alt="" coords="312,273,465,315"/>
+<area shape="rect" id="node4" href="$global__variable_8h.html" title=" " alt="" coords="5,363,140,389"/>
+<area shape="rect" id="node5" href="$matrix_8h.html" title=" " alt="" coords="258,191,426,218"/>
+<area shape="rect" id="node6" href="$pw__basis__k_8h.html" title=" " alt="" coords="551,184,717,225"/>
+<area shape="rect" id="node8" href="$module__cell_2klist_8h.html" title=" " alt="" coords="37,191,183,218"/>
+<area shape="rect" id="node9" href="$symmetry_8h.html" title=" " alt="" coords="111,273,288,315"/>
 </map>

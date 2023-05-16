@@ -1,6 +1,5 @@
 <map id="elecstate::ElecStateLCAO" name="elecstate::ElecStateLCAO">
-<area shape="rect" id="node1" title=" " alt="" coords="125,439,311,648"/>
-<area shape="rect" id="node3" href="$classelecstate_1_1ElecStateLCAO__TDDFT.html" title=" " alt="" coords="5,696,199,817"/>
-<area shape="rect" id="node4" href="$classelecstate_1_1MockElecStateLCAO.html" title=" " alt="" coords="223,718,445,795"/>
-<area shape="rect" id="node2" href="$classelecstate_1_1ElecState.html" title=" " alt="" coords="136,5,300,391"/>
+<area shape="rect" id="node1" title=" " alt="" coords="9,453,195,677"/>
+<area shape="rect" id="node3" href="$classelecstate_1_1ElecStateLCAO__TDDFT.html" title=" " alt="" coords="5,725,199,847"/>
+<area shape="rect" id="node2" href="$classelecstate_1_1ElecState.html" title=" " alt="" coords="20,5,184,405"/>
 </map>

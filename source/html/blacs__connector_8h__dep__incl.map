@@ -1,9 +1,8 @@
 <map id="module_base/blacs_connector.h" name="module_base/blacs_connector.h">
-<area shape="rect" id="node1" title=" " alt="" coords="267,5,496,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="269,5,499,32"/>
 <area shape="rect" id="node2" href="$ORB__control_8cpp.html" title=" " alt="" coords="5,80,171,121"/>
 <area shape="rect" id="node3" href="$module__basis_2module__ao_2parallel__orbitals_8cpp.html" title=" " alt="" coords="195,80,376,121"/>
-<area shape="rect" id="node4" href="$diago__elpa__utils_8h.html" title=" " alt="" coords="400,80,555,121"/>
-<area shape="rect" id="node7" href="$diago__elpa_8cpp.html" title=" " alt="" coords="579,80,746,121"/>
-<area shape="rect" id="node5" href="$elecstate__lcao__test_8cpp.html" title=" " alt="" coords="292,169,471,211"/>
-<area shape="rect" id="node6" href="$diago__lcao__test_8cpp.html" title=" " alt="" coords="495,169,649,211"/>
+<area shape="rect" id="node4" href="$diago__elpa_8cpp.html" title=" " alt="" coords="401,80,567,121"/>
+<area shape="rect" id="node5" href="$diago__elpa__utils_8h.html" title=" " alt="" coords="592,80,747,121"/>
+<area shape="rect" id="node6" href="$diago__lcao__test_8cpp.html" title=" " alt="" coords="592,169,747,211"/>
 </map>

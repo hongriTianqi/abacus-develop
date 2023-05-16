@@ -1,5 +1,5 @@
 <map id="MSST::vel_sum" name="MSST::vel_sum">
-<area shape="rect" id="node1" title=" " alt="" coords="196,31,316,57"/>
-<area shape="rect" id="node2" href="$classMSST.html#aadf86d8c908345664a4739154be3b183" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,138,32"/>
+<area shape="rect" id="node1" title="get the sum of square of velocities" alt="" coords="196,31,316,57"/>
+<area shape="rect" id="node2" href="$classMSST.html#aa6e5fdfd75f51345b271ec9f410314ee" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,138,32"/>
 <area shape="rect" id="node3" href="$classMSST.html#ab05716f7f09d027861c7435dae09334f" title="the second half of equation of motion, update velocities" alt="" coords="5,56,148,83"/>
 </map>

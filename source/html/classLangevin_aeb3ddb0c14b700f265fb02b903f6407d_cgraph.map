@@ -1,4 +1,4 @@
 <map id="Langevin::post_force" name="Langevin::post_force">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,163,32"/>
-<area shape="rect" id="node2" href="$classMD__func.html#a6d8606bdc588c3fb21550c8486ad8c4c" title=" " alt="" coords="211,5,377,32"/>
+<area shape="rect" id="node1" title="calculate fictitious forces" alt="" coords="5,5,163,32"/>
+<area shape="rect" id="node2" href="$namespaceMD__func.html#a415136eb2d412f0823a132668832a1a2" title="get the target temperature of the current md step" alt="" coords="211,5,377,32"/>
 </map>

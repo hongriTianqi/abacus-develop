@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: MD_func_test Class Reference</title>
+<title>3.2.2: MD_func_test Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -136,32 +136,40 @@ Protected Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><ul>
 <li>Tested Function<ul>
-<li><a class="el" href="classMD__func.html#a36655a0860e146ab9c2ad9e3110cb8c9">MD_func::gaussrand</a><ul>
+<li><a class="el" href="namespaceMD__func.html#a36655a0860e146ab9c2ad9e3110cb8c9" title="generate a Gaussian random number">MD_func::gaussrand</a><ul>
 <li>genarate Gaussian random number</li>
 </ul>
 </li>
-<li><a class="el" href="classMD__func.html#a238d98d18a333f5d7f48d89f07c2bb98">MD_func::RandomVel</a><ul>
+<li><a class="el" href="namespaceMD__func.html#a7f85ba3093e13e9ddb37898814c0e356" title="generate atomic velocities that satisfy the Boltzmann distribution">MD_func::rand_vel</a><ul>
 <li>initialize atomic velocity randomly</li>
 </ul>
 </li>
-<li><a class="el" href="classMD__func.html#abad7340af4068b098a38addd7766af66">MD_func::getMassMbl</a><ul>
+<li><a class="el" href="namespaceMD__func.html#a4ac34d2ab4bcd2922b484ffd4f92a813" title="obtain the atomic mass and whether the freedom is fixed">MD_func::get_mass_mbl</a><ul>
 <li>initialize atomic mass and degree of freedom</li>
 </ul>
 </li>
-<li><a class="el" href="classMD__func.html#a6949fea92b6240b9433f377d7066224b">MD_func::ReadVel</a><ul>
+<li><a class="el" href="namespaceMD__func.html#aa6d1d7b2faa0e020d3132e39ddaf5f3f" title="read in atomic velocities from STRU">MD_func::read_vel</a><ul>
 <li>read atomic velocity from STRU</li>
 </ul>
 </li>
-<li><a class="el" href="classMD__func.html#a74016d09926da9592562873ce98f4da5">MD_func::compute_stress</a><ul>
+<li><a class="el" href="namespaceMD__func.html#a5cebc1780ba2bdf569a9844a5f6deb8c" title="calculate the total stress tensor">MD_func::compute_stress</a><ul>
 <li>calculate the contribution of classical kinetic energy of atoms to stress</li>
 </ul>
 </li>
-<li><a class="el" href="classMD__func.html#a62a1994e003004286002395b5af44880">MD_func::MDdump</a><ul>
+<li><a class="el" href="namespaceMD__func.html#ac19cd8984285af2a804c74b7de6bb62b" title="dump the md information">MD_func::dump_info</a><ul>
 <li>output MD dump information</li>
 </ul>
 </li>
-<li><a class="el" href="classMD__func.html#a99da8e2d5369eb9c2a2ba398497730b1">MD_func::outStress</a><ul>
-<li>output stress </li>
+<li><a class="el" href="namespaceMD__func.html#aaea37c0c850a62e46bf36533696046f0" title="output the stress information">MD_func::print_stress</a><ul>
+<li>output stress</li>
+</ul>
+</li>
+<li><a class="el" href="namespaceMD__func.html#a4b9005f86cac990b31c454b2f85da9e5" title="determine thr current md step">MD_func::current_step</a><ul>
+<li>test the current_step function with the correct file path</li>
+</ul>
+</li>
+<li>MD_func::current_step_warning<ul>
+<li>test the current_step function with an incorrect file path </li>
 </ul>
 </li>
 </ul>
@@ -484,7 +492,7 @@ Protected Attributes</h2></td></tr>
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>module_md/test/<a class="el" href="MD__func__test_8cpp.html">MD_func_test.cpp</a></li>
+<li>module_md/test/<a class="el" href="md__func__test_8cpp.html">md_func_test.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

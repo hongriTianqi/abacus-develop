@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: module_md/test/verlet_test.cpp File Reference</title>
+<title>3.2.2: module_md/test/verlet_test.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -76,26 +76,26 @@ $(function() {
 <div class="title">verlet_test.cpp File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;gtest/gtest.h&quot;</code><br />
-<code>#include &quot;gmock/gmock.h&quot;</code><br />
+<div class="textblock"><code>#include &quot;gmock/gmock.h&quot;</code><br />
+<code>#include &quot;gtest/gtest.h&quot;</code><br />
+<code>#include &quot;<a class="el" href="esolver__lj_8h_source.html">module_esolver/esolver_lj.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="setcell_8h_source.html">setcell.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="verlet_8h_source.html">module_md/verlet.h</a>&quot;</code><br />
-<code>#include &quot;<a class="el" href="esolver__lj_8h_source.html">module_esolver/esolver_lj.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for verlet_test.cpp:</div>
 <div class="dyncontent">
 <div class="center"><img src="verlet__test_8cpp__incl.png" border="0" usemap="#module__md_2test_2verlet__test_8cpp" alt=""/></div>
 <map name="module__md_2test_2verlet__test_8cpp" id="module__md_2test_2verlet__test_8cpp">
-<area shape="rect" title=" " alt="" coords="239,5,409,47"/>
-<area shape="rect" title=" " alt="" coords="5,95,109,121"/>
-<area shape="rect" title=" " alt="" coords="134,95,261,121"/>
-<area shape="rect" href="setcell_8h.html" title=" " alt="" coords="285,95,363,121"/>
-<area shape="rect" href="verlet_8h.html" title=" " alt="" coords="387,95,541,121"/>
-<area shape="rect" href="esolver__lj_8h.html" title=" " alt="" coords="565,95,771,121"/>
-<area shape="rect" href="input_8h.html" title=" " alt="" coords="91,184,229,211"/>
-<area shape="rect" href="unitcell_8h.html" title=" " alt="" coords="241,348,407,375"/>
-<area shape="rect" href="sltk__atom__arrange_8h.html" title=" " alt="" coords="304,169,459,225"/>
-<area shape="rect" href="sltk__grid__driver_8h.html" title=" " alt="" coords="314,273,449,300"/>
+<area shape="rect" title=" " alt="" coords="302,5,473,47"/>
+<area shape="rect" title=" " alt="" coords="5,95,132,121"/>
+<area shape="rect" title=" " alt="" coords="157,95,261,121"/>
+<area shape="rect" href="esolver__lj_8h.html" title=" " alt="" coords="285,95,490,121"/>
+<area shape="rect" href="setcell_8h.html" title=" " alt="" coords="514,95,591,121"/>
+<area shape="rect" href="verlet_8h.html" title=" " alt="" coords="616,95,769,121"/>
+<area shape="rect" href="esolver_8h.html" title=" " alt="" coords="327,273,416,300"/>
+<area shape="rect" href="unitcell_8h.html" title=" " alt="" coords="371,348,537,375"/>
+<area shape="rect" href="sltk__atom__arrange_8h.html" title=" " alt="" coords="491,169,646,225"/>
+<area shape="rect" href="sltk__grid__driver_8h.html" title=" " alt="" coords="501,273,636,300"/>
 </map>
 </div>
 </div><table class="memberdecls">
@@ -106,6 +106,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
+<tr class="memitem:a6a1d6e1a12975a4e9a0b5b952e79eaad"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="verlet__test_8cpp.html#a6a1d6e1a12975a4e9a0b5b952e79eaad">private</a>&#160;&#160;&#160;public</td></tr>
+<tr class="separator:a6a1d6e1a12975a4e9a0b5b952e79eaad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a363c8dcebb1777654ad1703136a14ec8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="verlet__test_8cpp.html#a363c8dcebb1777654ad1703136a14ec8">protected</a>&#160;&#160;&#160;public</td></tr>
+<tr class="separator:a363c8dcebb1777654ad1703136a14ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a634f133a63a4a2a1f393699915fbf216"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="verlet__test_8cpp.html#a634f133a63a4a2a1f393699915fbf216">doublethreshold</a>&#160;&#160;&#160;1e-12</td></tr>
 <tr class="separator:a634f133a63a4a2a1f393699915fbf216"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -129,8 +133,8 @@ Functions</h2></td></tr>
 <tr class="separator:a740b26e3c1e9903db9369d94357ae532"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a875ca46f666096651aa17c8413f3b3a0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="verlet__test_8cpp.html#a875ca46f666096651aa17c8413f3b3a0">TEST_F</a> (<a class="el" href="classVerlet__test.html">Verlet_test</a>, restart)</td></tr>
 <tr class="separator:a875ca46f666096651aa17c8413f3b3a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4ba7519fc4079e570f1fe604e933abea"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="verlet__test_8cpp.html#a4ba7519fc4079e570f1fe604e933abea">TEST_F</a> (<a class="el" href="classVerlet__test.html">Verlet_test</a>, outputMD)</td></tr>
-<tr class="separator:a4ba7519fc4079e570f1fe604e933abea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f912569bcb13e9a4a63d23985a11901"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="verlet__test_8cpp.html#a5f912569bcb13e9a4a63d23985a11901">TEST_F</a> (<a class="el" href="classVerlet__test.html">Verlet_test</a>, print_md)</td></tr>
+<tr class="separator:a5f912569bcb13e9a4a63d23985a11901"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a634f133a63a4a2a1f393699915fbf216"></a>
@@ -141,6 +145,34 @@ Functions</h2></td></tr>
       <table class="memname">
         <tr>
           <td class="memname">#define doublethreshold&#160;&#160;&#160;1e-12</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6a1d6e1a12975a4e9a0b5b952e79eaad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6a1d6e1a12975a4e9a0b5b952e79eaad">&#9670;&nbsp;</a></span>private</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define private&#160;&#160;&#160;public</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a363c8dcebb1777654ad1703136a14ec8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a363c8dcebb1777654ad1703136a14ec8">&#9670;&nbsp;</a></span>protected</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define protected&#160;&#160;&#160;public</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -179,11 +211,11 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="verlet__test_8cpp_ae167cfb870592eeaa7262fd24791b11d_cgraph.png" border="0" usemap="#verlet__test_8cpp_ae167cfb870592eeaa7262fd24791b11d_cgraph" alt=""/></div>
 <map name="verlet__test_8cpp_ae167cfb870592eeaa7262fd24791b11d_cgraph" id="verlet__test_8cpp_ae167cfb870592eeaa7262fd24791b11d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,75,57"/>
-<area shape="rect" href="classMDrun.html#a6f87ef70d9b4910b0a6399ed5b41307b" title="the first half of equation of motion, update velocities and positions" alt="" coords="133,5,263,32"/>
-<area shape="rect" href="classMDrun.html#a2b7f91ffa0d66ba98ca6c2cad87e3d49" title="the second half of equation of motion, update velocities" alt="" coords="123,56,273,83"/>
-<area shape="rect" href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f" title="perform one step update of pos due to atomic velocity" alt="" coords="321,5,469,32"/>
-<area shape="rect" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df" title="perform half&#45;step update of vel due to atomic force" alt="" coords="323,56,468,83"/>
-<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="517,5,711,32"/>
+<area shape="rect" href="classMD__base.html#af067d8c93a4f44f6a698aa0d3fe9ac9c" title="the first half of equation of motion, update velocities and positions" alt="" coords="133,5,280,32"/>
+<area shape="rect" href="classMD__base.html#ad851defa1ad207052885d78bc4a2f120" title="the second half of equation of motion, update velocities" alt="" coords="123,56,291,83"/>
+<area shape="rect" href="classMD__base.html#a1cf5142ddd12b55370f909ad0944da05" title="perform one step update of pos due to atomic velocity" alt="" coords="339,5,504,32"/>
+<area shape="rect" href="classMD__base.html#aa75ba376219066befd52fb6d52ef08b7" title="perform half&#45;step update of vel due to atomic force" alt="" coords="340,56,503,83"/>
+<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="552,5,745,32"/>
 </map>
 </div>
 
@@ -220,11 +252,11 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="verlet__test_8cpp_ac7c2d3090dae51db015c04391d9347a7_cgraph.png" border="0" usemap="#verlet__test_8cpp_ac7c2d3090dae51db015c04391d9347a7_cgraph" alt=""/></div>
 <map name="verlet__test_8cpp_ac7c2d3090dae51db015c04391d9347a7_cgraph" id="verlet__test_8cpp_ac7c2d3090dae51db015c04391d9347a7_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,75,57"/>
-<area shape="rect" href="classMDrun.html#a6f87ef70d9b4910b0a6399ed5b41307b" title="the first half of equation of motion, update velocities and positions" alt="" coords="133,5,263,32"/>
-<area shape="rect" href="classMDrun.html#a2b7f91ffa0d66ba98ca6c2cad87e3d49" title="the second half of equation of motion, update velocities" alt="" coords="123,56,273,83"/>
-<area shape="rect" href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f" title="perform one step update of pos due to atomic velocity" alt="" coords="321,5,469,32"/>
-<area shape="rect" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df" title="perform half&#45;step update of vel due to atomic force" alt="" coords="323,56,468,83"/>
-<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="517,5,711,32"/>
+<area shape="rect" href="classMD__base.html#af067d8c93a4f44f6a698aa0d3fe9ac9c" title="the first half of equation of motion, update velocities and positions" alt="" coords="133,5,280,32"/>
+<area shape="rect" href="classMD__base.html#ad851defa1ad207052885d78bc4a2f120" title="the second half of equation of motion, update velocities" alt="" coords="123,56,291,83"/>
+<area shape="rect" href="classMD__base.html#a1cf5142ddd12b55370f909ad0944da05" title="perform one step update of pos due to atomic velocity" alt="" coords="339,5,504,32"/>
+<area shape="rect" href="classMD__base.html#aa75ba376219066befd52fb6d52ef08b7" title="perform half&#45;step update of vel due to atomic force" alt="" coords="340,56,503,83"/>
+<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="552,5,745,32"/>
 </map>
 </div>
 
@@ -261,10 +293,10 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="verlet__test_8cpp_abe1e0306aa4823738aacb221dc3cef9f_cgraph.png" border="0" usemap="#verlet__test_8cpp_abe1e0306aa4823738aacb221dc3cef9f_cgraph" alt=""/></div>
 <map name="verlet__test_8cpp_abe1e0306aa4823738aacb221dc3cef9f_cgraph" id="verlet__test_8cpp_abe1e0306aa4823738aacb221dc3cef9f_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,75,57"/>
-<area shape="rect" href="classMDrun.html#a6f87ef70d9b4910b0a6399ed5b41307b" title="the first half of equation of motion, update velocities and positions" alt="" coords="123,31,253,57"/>
-<area shape="rect" href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f" title="perform one step update of pos due to atomic velocity" alt="" coords="301,5,449,32"/>
-<area shape="rect" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df" title="perform half&#45;step update of vel due to atomic force" alt="" coords="303,56,448,83"/>
-<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="497,5,691,32"/>
+<area shape="rect" href="classMD__base.html#af067d8c93a4f44f6a698aa0d3fe9ac9c" title="the first half of equation of motion, update velocities and positions" alt="" coords="123,31,269,57"/>
+<area shape="rect" href="classMD__base.html#a1cf5142ddd12b55370f909ad0944da05" title="perform one step update of pos due to atomic velocity" alt="" coords="317,5,483,32"/>
+<area shape="rect" href="classMD__base.html#aa75ba376219066befd52fb6d52ef08b7" title="perform half&#45;step update of vel due to atomic force" alt="" coords="319,56,481,83"/>
+<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="531,5,724,32"/>
 </map>
 </div>
 
@@ -301,18 +333,18 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="verlet__test_8cpp_a9641946d27ae8f257593e1d6474b0fe4_cgraph.png" border="0" usemap="#verlet__test_8cpp_a9641946d27ae8f257593e1d6474b0fe4_cgraph" alt=""/></div>
 <map name="verlet__test_8cpp_a9641946d27ae8f257593e1d6474b0fe4_cgraph" id="verlet__test_8cpp_a9641946d27ae8f257593e1d6474b0fe4_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,75,57"/>
-<area shape="rect" href="classMDrun.html#a6f87ef70d9b4910b0a6399ed5b41307b" title="the first half of equation of motion, update velocities and positions" alt="" coords="133,5,263,32"/>
-<area shape="rect" href="classMDrun.html#a2b7f91ffa0d66ba98ca6c2cad87e3d49" title="the second half of equation of motion, update velocities" alt="" coords="123,56,273,83"/>
-<area shape="rect" href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f" title="perform one step update of pos due to atomic velocity" alt="" coords="321,5,469,32"/>
-<area shape="rect" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df" title="perform half&#45;step update of vel due to atomic force" alt="" coords="323,56,468,83"/>
-<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="517,5,711,32"/>
+<area shape="rect" href="classMD__base.html#af067d8c93a4f44f6a698aa0d3fe9ac9c" title="the first half of equation of motion, update velocities and positions" alt="" coords="133,5,280,32"/>
+<area shape="rect" href="classMD__base.html#ad851defa1ad207052885d78bc4a2f120" title="the second half of equation of motion, update velocities" alt="" coords="123,56,291,83"/>
+<area shape="rect" href="classMD__base.html#a1cf5142ddd12b55370f909ad0944da05" title="perform one step update of pos due to atomic velocity" alt="" coords="339,5,504,32"/>
+<area shape="rect" href="classMD__base.html#aa75ba376219066befd52fb6d52ef08b7" title="perform half&#45;step update of vel due to atomic force" alt="" coords="340,56,503,83"/>
+<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="552,5,745,32"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a4ba7519fc4079e570f1fe604e933abea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4ba7519fc4079e570f1fe604e933abea">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[5/10]</span></h2>
+<a id="a5f912569bcb13e9a4a63d23985a11901"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f912569bcb13e9a4a63d23985a11901">&#9670;&nbsp;</a></span>TEST_F() <span class="overload">[5/10]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -326,7 +358,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">outputMD&#160;</td>
+          <td class="paramtype">print_md&#160;</td>
           <td class="paramname">&#160;</td>
         </tr>
         <tr>
@@ -339,15 +371,15 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="verlet__test_8cpp_a4ba7519fc4079e570f1fe604e933abea_cgraph.png" border="0" usemap="#verlet__test_8cpp_a4ba7519fc4079e570f1fe604e933abea_cgraph" alt=""/></div>
-<map name="verlet__test_8cpp_a4ba7519fc4079e570f1fe604e933abea_cgraph" id="verlet__test_8cpp_a4ba7519fc4079e570f1fe604e933abea_cgraph">
+<div class="center"><img src="verlet__test_8cpp_a5f912569bcb13e9a4a63d23985a11901_cgraph.png" border="0" usemap="#verlet__test_8cpp_a5f912569bcb13e9a4a63d23985a11901_cgraph" alt=""/></div>
+<map name="verlet__test_8cpp_a5f912569bcb13e9a4a63d23985a11901_cgraph" id="verlet__test_8cpp_a5f912569bcb13e9a4a63d23985a11901_cgraph">
 <area shape="rect" title=" " alt="" coords="5,42,75,69"/>
-<area shape="rect" href="classMDrun.html#a19356db7cdf6b48357ecfff93bccacf7" title="output MD information such as energy, temperature, and pressure" alt="" coords="123,42,260,69"/>
-<area shape="rect" href="classMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title=" " alt="" coords="308,15,483,42"/>
-<area shape="rect" href="classMD__func.html#a99da8e2d5369eb9c2a2ba398497730b1" title=" " alt="" coords="321,67,469,94"/>
-<area shape="rect" href="classMD__func.html#a97c6aca19e89e6f10684226358fcd820" title=" " alt="" coords="541,13,703,39"/>
-<area shape="rect" href="classModuleBase_1_1Vector3.html#a2eb1b82893764c1bd38a5993c6f6dcfb" title="Get the square of nomr of a Vector3." alt="" coords="761,5,920,47"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac3c6cb9eae3ff814df0a1e32876c5126" title=" " alt="" coords="531,64,713,105"/>
+<area shape="rect" href="classMD__base.html#a6b48d2dfbe305740bc978de1acaafa1d" title="output MD information such as energy, temperature, and pressure" alt="" coords="123,42,271,69"/>
+<area shape="rect" href="namespaceMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title="get the current temperature" alt="" coords="319,15,493,42"/>
+<area shape="rect" href="namespaceMD__func.html#aaea37c0c850a62e46bf36533696046f0" title="output the stress information" alt="" coords="325,67,487,94"/>
+<area shape="rect" href="namespaceMD__func.html#a6c0e776a467f2fadc838df160f220ecc" title="calculate the ionic kinetic energy" alt="" coords="541,13,724,39"/>
+<area shape="rect" href="classModuleBase_1_1Vector3.html#a2eb1b82893764c1bd38a5993c6f6dcfb" title="Get the square of nomr of a Vector3." alt="" coords="772,5,931,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac3c6cb9eae3ff814df0a1e32876c5126" title=" " alt="" coords="541,64,724,105"/>
 </map>
 </div>
 
@@ -384,11 +416,11 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="verlet__test_8cpp_ae160d8d965d663eeeacb65ded2bec3ef_cgraph.png" border="0" usemap="#verlet__test_8cpp_ae160d8d965d663eeeacb65ded2bec3ef_cgraph" alt=""/></div>
 <map name="verlet__test_8cpp_ae160d8d965d663eeeacb65ded2bec3ef_cgraph" id="verlet__test_8cpp_ae160d8d965d663eeeacb65ded2bec3ef_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,75,57"/>
-<area shape="rect" href="classMDrun.html#a6f87ef70d9b4910b0a6399ed5b41307b" title="the first half of equation of motion, update velocities and positions" alt="" coords="133,5,263,32"/>
-<area shape="rect" href="classMDrun.html#a2b7f91ffa0d66ba98ca6c2cad87e3d49" title="the second half of equation of motion, update velocities" alt="" coords="123,56,273,83"/>
-<area shape="rect" href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f" title="perform one step update of pos due to atomic velocity" alt="" coords="321,5,469,32"/>
-<area shape="rect" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df" title="perform half&#45;step update of vel due to atomic force" alt="" coords="323,56,468,83"/>
-<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="517,5,711,32"/>
+<area shape="rect" href="classMD__base.html#af067d8c93a4f44f6a698aa0d3fe9ac9c" title="the first half of equation of motion, update velocities and positions" alt="" coords="133,5,280,32"/>
+<area shape="rect" href="classMD__base.html#ad851defa1ad207052885d78bc4a2f120" title="the second half of equation of motion, update velocities" alt="" coords="123,56,291,83"/>
+<area shape="rect" href="classMD__base.html#a1cf5142ddd12b55370f909ad0944da05" title="perform one step update of pos due to atomic velocity" alt="" coords="339,5,504,32"/>
+<area shape="rect" href="classMD__base.html#aa75ba376219066befd52fb6d52ef08b7" title="perform half&#45;step update of vel due to atomic force" alt="" coords="340,56,503,83"/>
+<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="552,5,745,32"/>
 </map>
 </div>
 
@@ -425,11 +457,11 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="verlet__test_8cpp_aebe0b0d4322408ca1b0940c17fd2b9cd_cgraph.png" border="0" usemap="#verlet__test_8cpp_aebe0b0d4322408ca1b0940c17fd2b9cd_cgraph" alt=""/></div>
 <map name="verlet__test_8cpp_aebe0b0d4322408ca1b0940c17fd2b9cd_cgraph" id="verlet__test_8cpp_aebe0b0d4322408ca1b0940c17fd2b9cd_cgraph">
 <area shape="rect" title=" " alt="" coords="5,31,75,57"/>
-<area shape="rect" href="classMDrun.html#a6f87ef70d9b4910b0a6399ed5b41307b" title="the first half of equation of motion, update velocities and positions" alt="" coords="133,5,263,32"/>
-<area shape="rect" href="classMDrun.html#a2b7f91ffa0d66ba98ca6c2cad87e3d49" title="the second half of equation of motion, update velocities" alt="" coords="123,56,273,83"/>
-<area shape="rect" href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f" title="perform one step update of pos due to atomic velocity" alt="" coords="321,5,469,32"/>
-<area shape="rect" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df" title="perform half&#45;step update of vel due to atomic force" alt="" coords="323,56,468,83"/>
-<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="517,5,711,32"/>
+<area shape="rect" href="classMD__base.html#af067d8c93a4f44f6a698aa0d3fe9ac9c" title="the first half of equation of motion, update velocities and positions" alt="" coords="133,5,280,32"/>
+<area shape="rect" href="classMD__base.html#ad851defa1ad207052885d78bc4a2f120" title="the second half of equation of motion, update velocities" alt="" coords="123,56,291,83"/>
+<area shape="rect" href="classMD__base.html#a1cf5142ddd12b55370f909ad0944da05" title="perform one step update of pos due to atomic velocity" alt="" coords="339,5,504,32"/>
+<area shape="rect" href="classMD__base.html#aa75ba376219066befd52fb6d52ef08b7" title="perform half&#45;step update of vel due to atomic force" alt="" coords="340,56,503,83"/>
+<area shape="rect" href="classUnitCell.html#ae706ebc3838a96ccb2bb97497e82b39f" title=" " alt="" coords="552,5,745,32"/>
 </map>
 </div>
 
@@ -466,8 +498,8 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="verlet__test_8cpp_a875ca46f666096651aa17c8413f3b3a0_cgraph.png" border="0" usemap="#verlet__test_8cpp_a875ca46f666096651aa17c8413f3b3a0_cgraph" alt=""/></div>
 <map name="verlet__test_8cpp_a875ca46f666096651aa17c8413f3b3a0_cgraph" id="verlet__test_8cpp_a875ca46f666096651aa17c8413f3b3a0_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,75,32"/>
-<area shape="rect" href="classMDrun.html#ae5a5cac23232baaa0e027c00b20e2240" title="restart MD when md_restart is true" alt="" coords="123,5,239,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="287,5,500,32"/>
+<area shape="rect" href="classMD__base.html#a1d347efefe68147dc6da28cc28df42cf" title="restart MD when md_restart is true" alt="" coords="123,5,256,32"/>
+<area shape="rect" href="namespaceMD__func.html#a4b9005f86cac990b31c454b2f85da9e5" title="determine thr current md step" alt="" coords="304,5,472,32"/>
 </map>
 </div>
 
@@ -532,7 +564,7 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="verlet__test_8cpp_a740b26e3c1e9903db9369d94357ae532_cgraph.png" border="0" usemap="#verlet__test_8cpp_a740b26e3c1e9903db9369d94357ae532_cgraph" alt=""/></div>
 <map name="verlet__test_8cpp_a740b26e3c1e9903db9369d94357ae532_cgraph" id="verlet__test_8cpp_a740b26e3c1e9903db9369d94357ae532_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,75,32"/>
-<area shape="rect" href="classMDrun.html#a943294ad3074d8a96519e4aae5702455" title="write the information into files used for MD restarting" alt="" coords="123,5,279,32"/>
+<area shape="rect" href="classMD__base.html#a26411e73950e5aaee59646e44e4fce4d" title="write the information into files used for MD restarting" alt="" coords="123,5,296,32"/>
 </map>
 </div>
 

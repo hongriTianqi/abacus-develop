@@ -1,3 +1,9 @@
 <map id="Stochastic_hchi" name="Stochastic_hchi">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,240,185"/>
+<area shape="rect" id="node1" title=" " alt="" coords="89,2011,323,2191"/>
+<area shape="rect" id="node2" href="$classModulePW_1_1PW__Basis__K.html" title="Special pw_basis class. It includes different k&#45;points." alt="" coords="5,1409,185,1882"/>
+<area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="165,673,351,1293"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="7,152,165,420"/>
+<area shape="rect" id="node5" href="$classModulePW_1_1FFT.html" title=" " alt="" coords="193,5,315,567"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="339,93,499,479"/>
+<area shape="rect" id="node7" href="$classK__Vectors.html" title=" " alt="" coords="209,1343,424,1948"/>
 </map>

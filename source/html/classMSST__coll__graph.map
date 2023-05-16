@@ -1,12 +1,12 @@
 <map id="MSST" name="MSST">
-<area shape="rect" id="node1" title=" " alt="" coords="38,1711,199,2037"/>
-<area shape="rect" id="node2" href="$classMDrun.html" title=" " alt="" coords="399,1335,545,1661"/>
-<area shape="rect" id="node3" href="$classUnitCell.html" title=" " alt="" coords="275,887,413,1257"/>
-<area shape="rect" id="node4" href="$classMagnetism.html" title=" " alt="" coords="449,490,655,714"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="86,5,245,273"/>
-<area shape="rect" id="node7" href="$classAtom.html" title=" " alt="" coords="679,446,849,758"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="263,409,425,795"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="761,5,919,273"/>
-<area shape="rect" id="node9" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="438,945,591,1199"/>
-<area shape="rect" id="node10" href="$classMD__parameters.html" title=" " alt="" coords="616,953,779,1191"/>
+<area shape="rect" id="node1" title="MSST method." alt="" coords="39,1711,193,2023"/>
+<area shape="rect" id="node2" href="$classMD__base.html" title="base class of md" alt="" coords="385,1335,532,1661"/>
+<area shape="rect" id="node3" href="$classUnitCell.html" title=" " alt="" coords="268,887,407,1257"/>
+<area shape="rect" id="node4" href="$classMagnetism.html" title=" " alt="" coords="443,490,648,714"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="79,5,238,273"/>
+<area shape="rect" id="node7" href="$classAtom.html" title=" " alt="" coords="672,446,843,758"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="256,409,419,795"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="754,5,913,273"/>
+<area shape="rect" id="node9" href="$classMD__para.html" title="input parameters used in md" alt="" coords="431,953,569,1191"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="593,945,746,1199"/>
 </map>

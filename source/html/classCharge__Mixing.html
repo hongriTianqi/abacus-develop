@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Charge_Mixing Class Reference</title>
+<title>3.2.2: Charge_Mixing Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -80,8 +80,12 @@ Collaboration diagram for Charge_Mixing:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge__Mixing__coll__graph.png" border="0" usemap="#Charge__Mixing_coll__map" alt="Collaboration graph"/></div>
 <map name="Charge__Mixing_coll__map" id="Charge__Mixing_coll__map">
-<area shape="rect" title=" " alt="" coords="5,336,191,883"/>
-<area shape="rect" href="classModuleBase_1_1matrix.html" title=" " alt="" coords="21,5,175,259"/>
+<area shape="rect" title=" " alt="" coords="253,1371,439,1917"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="155,673,342,1293"/>
+<area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="5,152,164,420"/>
+<area shape="rect" href="classModulePW_1_1FFT.html" title=" " alt="" coords="188,5,309,567"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="334,93,494,479"/>
+<area shape="rect" href="classModuleBase_1_1matrix.html" title=" " alt="" coords="367,857,520,1110"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -103,6 +107,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5f384caeb948b56e72be963183666034"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6544f9d04ec4e8df4eedbc64dcd22c74"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Mixing.html#a6544f9d04ec4e8df4eedbc64dcd22c74">reset</a> ()</td></tr>
 <tr class="separator:a6544f9d04ec4e8df4eedbc64dcd22c74"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4a07e00881570fbdb9f99f5f4ef0b96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Mixing.html#ae4a07e00881570fbdb9f99f5f4ef0b96">set_rhopw</a> (<a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rhopw_in)</td></tr>
+<tr class="separator:ae4a07e00881570fbdb9f99f5f4ef0b96"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab31004c7df886fbf8b5aeb4afc3795a1"><td class="memItemLeft" align="right" valign="top">const std::string &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Mixing.html#ab31004c7df886fbf8b5aeb4afc3795a1">get_mixing_mode</a> () const</td></tr>
 <tr class="separator:ab31004c7df886fbf8b5aeb4afc3795a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adb7967537b3fec1b7fc6bab3d09e942a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Mixing.html#adb7967537b3fec1b7fc6bab3d09e942a">get_mixing_beta</a> () const</td></tr>
@@ -171,6 +177,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:ac4dfff479f2e92b5b3515f4b3fbfd6c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30f0b3ba05eb6187d219fd8a84f229b2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Mixing.html#a30f0b3ba05eb6187d219fd8a84f229b2">new_e_iteration</a></td></tr>
 <tr class="separator:a30f0b3ba05eb6187d219fd8a84f229b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade8ad32427b8c795e369c169ba6f47e7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Mixing.html#ade8ad32427b8c795e369c169ba6f47e7">rhopw</a> = nullptr</td></tr>
+<tr class="separator:ade8ad32427b8c795e369c169ba6f47e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0105630a9622ecbf3a618c0d7869362d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Mixing.html#a0105630a9622ecbf3a618c0d7869362d">initp</a></td></tr>
 <tr class="separator:a0105630a9622ecbf3a618c0d7869362d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2033c34167a4a0311609aac7d56fd7d5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Mixing.html#a2033c34167a4a0311609aac7d56fd7d5">irstep</a></td></tr>
@@ -412,8 +420,8 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="516,100,711,141"/>
 <area shape="rect" href="classCharge__Mixing.html#a6544f9d04ec4e8df4eedbc64dcd22c74" title=" " alt="" coords="296,78,456,105"/>
 <area shape="rect" href="classCharge__Mixing.html#a442dd0ec706f90a9ebc3867491d8fd9a" title=" " alt="" coords="284,129,468,171"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="11,5,230,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a336f7862c45f8e127f271a4e1263d68b" title=" " alt="" coords="33,71,209,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a336f7862c45f8e127f271a4e1263d68b" title=" " alt="" coords="33,5,209,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="11,71,230,112"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#abd37cb049beb73993a645f4a74db1a35" title=" " alt="" coords="5,136,236,177"/>
 </map>
 </div>
@@ -459,8 +467,8 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="516,100,711,141"/>
 <area shape="rect" href="classCharge__Mixing.html#a6544f9d04ec4e8df4eedbc64dcd22c74" title=" " alt="" coords="296,78,456,105"/>
 <area shape="rect" href="classCharge__Mixing.html#a442dd0ec706f90a9ebc3867491d8fd9a" title=" " alt="" coords="284,129,468,171"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="11,5,230,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a336f7862c45f8e127f271a4e1263d68b" title=" " alt="" coords="33,71,209,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a336f7862c45f8e127f271a4e1263d68b" title=" " alt="" coords="33,5,209,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="11,71,230,112"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#abd37cb049beb73993a645f4a74db1a35" title=" " alt="" coords="5,136,236,177"/>
 </map>
 </div>
@@ -605,10 +613,10 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2f2a32ecfab870b96d31593e742d02ed" title=" " alt="" coords="257,136,439,177"/>
 <area shape="rect" href="namespaceModuleBase.html#aa818ef3febfa7d41147bb7624097ce92" title=" " alt="" coords="243,202,453,229"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="239,253,457,279"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a743759a9021fc9d1cf570a7499e55b08" title=" " alt="" coords="267,304,429,345"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce" title=" " alt="" coords="267,369,429,411"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a187e988b2c81e3be3f905bf0f0834de6" title="transform real space to reciprocal space" alt="" coords="267,304,429,345"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#abe30432b8c7a5a3bec170b18ddfae010" title="transform reciprocal space to real space" alt="" coords="267,369,429,411"/>
 <area shape="rect" href="namespaceModuleBase.html#a1a315e8e18977070ee4e8f8f1962ff55" title=" " alt="" coords="245,435,451,462"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#ac5a1aa06f4c446a5456208e867e02cc5" title=" " alt="" coords="505,311,681,338"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a2b2fb5b4d2aeedb5f0daf43151f402d6" title=" " alt="" coords="505,311,681,338"/>
 </map>
 </div>
 <div class="dynheader">
@@ -814,9 +822,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge__Mixing_aa7205bbd322cecb32c8ba05ee944ad66_icgraph.png" border="0" usemap="#classCharge__Mixing_aa7205bbd322cecb32c8ba05ee944ad66_icgraph" alt=""/></div>
 <map name="classCharge__Mixing_aa7205bbd322cecb32c8ba05ee944ad66_icgraph" id="classCharge__Mixing_aa7205bbd322cecb32c8ba05ee944ad66_icgraph">
-<area shape="rect" title=" " alt="" coords="216,43,364,84"/>
-<area shape="rect" href="classExx__Abfs_1_1DM.html#a144a2328ff65db1c15271d1b43ffcf50" title=" " alt="" coords="9,5,165,47"/>
-<area shape="rect" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1Hexx.html#af54736576eb3571f2b9a14ba698097b0" title=" " alt="" coords="5,71,168,127"/>
+<area shape="rect" title=" " alt="" coords="693,5,841,47"/>
+<area shape="rect" href="namespaceRI__2D__Comm.html#a94cca8e243b7b876f969be6f614173ec" title=" " alt="" coords="439,13,645,39"/>
+<area shape="rect" href="namespaceRI__2D__Comm.html#aa9c895bfff609e1e0a05840a341b844a" title=" " alt="" coords="208,13,391,39"/>
+<area shape="rect" href="classhamilt_1_1OperatorEXX.html#ab4e0293992f563879322c7664cf99fed" title=" " alt="" coords="5,5,160,47"/>
 </map>
 </div>
 
@@ -852,16 +861,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge__Mixing_a30b48b467fb9f10f46c6ffefdbe67228_cgraph.png" border="0" usemap="#classCharge__Mixing_a30b48b467fb9f10f46c6ffefdbe67228_cgraph" alt=""/></div>
 <map name="classCharge__Mixing_a30b48b467fb9f10f46c6ffefdbe67228_cgraph" id="classCharge__Mixing_a30b48b467fb9f10f46c6ffefdbe67228_cgraph">
-<area shape="rect" title=" " alt="" coords="5,140,189,167"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2f2a32ecfab870b96d31593e742d02ed" title=" " alt="" coords="237,34,420,75"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a743759a9021fc9d1cf570a7499e55b08" title=" " alt="" coords="248,99,409,141"/>
-<area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="240,165,417,206"/>
-<area shape="rect" href="classCharge__Mixing.html#a8b3b365be955d98b527d05f53eb98e49" title=" " alt="" coords="251,230,407,271"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#ac5a1aa06f4c446a5456208e867e02cc5" title=" " alt="" coords="469,5,645,32"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a903c866d6f5dc8e8e3a483060ad198aa" title=" " alt="" coords="468,56,647,83"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#ad01da6b7d37afe506725bae4cbc87a6a" title=" " alt="" coords="474,107,641,133"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#aae091c3aec38ba253fdda8650c0d7b9a" title=" " alt="" coords="477,158,638,199"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a51172642621a79864bd8a34d02c27f3c" title=" " alt="" coords="483,223,632,265"/>
+<area shape="rect" title=" " alt="" coords="5,197,189,224"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2f2a32ecfab870b96d31593e742d02ed" title=" " alt="" coords="237,93,420,134"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a187e988b2c81e3be3f905bf0f0834de6" title="transform real space to reciprocal space" alt="" coords="248,158,409,199"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="469,289,646,330"/>
+<area shape="rect" href="classCharge__Mixing.html#a8b3b365be955d98b527d05f53eb98e49" title=" " alt="" coords="251,285,407,326"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a2b2fb5b4d2aeedb5f0daf43151f402d6" title=" " alt="" coords="469,5,645,32"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#ad69f35e96e5aeda8453143c32ba9cda9" title=" " alt="" coords="468,56,647,83"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#adc7dbc377da877b90e1331f1ae356870" title=" " alt="" coords="474,107,641,133"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a37a555990ae431f9d9b0b01e2579ac9e" title="gather planes and scatter sticks" alt="" coords="477,158,638,199"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#aed6a4e7684822156b64e646c74068d6b" title=" " alt="" coords="483,223,632,265"/>
 </map>
 </div>
 <div class="dynheader">
@@ -903,9 +912,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge__Mixing_af976d1a54ad3366a90ba66e659a287ba_icgraph.png" border="0" usemap="#classCharge__Mixing_af976d1a54ad3366a90ba66e659a287ba_icgraph" alt=""/></div>
 <map name="classCharge__Mixing_af976d1a54ad3366a90ba66e659a287ba_icgraph" id="classCharge__Mixing_af976d1a54ad3366a90ba66e659a287ba_icgraph">
-<area shape="rect" title=" " alt="" coords="216,43,364,84"/>
-<area shape="rect" href="classExx__Abfs_1_1DM.html#a144a2328ff65db1c15271d1b43ffcf50" title=" " alt="" coords="9,5,165,47"/>
-<area shape="rect" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1Hexx.html#af54736576eb3571f2b9a14ba698097b0" title=" " alt="" coords="5,71,168,127"/>
+<area shape="rect" title=" " alt="" coords="693,5,841,47"/>
+<area shape="rect" href="namespaceRI__2D__Comm.html#a94cca8e243b7b876f969be6f614173ec" title=" " alt="" coords="439,13,645,39"/>
+<area shape="rect" href="namespaceRI__2D__Comm.html#aa9c895bfff609e1e0a05840a341b844a" title=" " alt="" coords="208,13,391,39"/>
+<area shape="rect" href="classhamilt_1_1OperatorEXX.html#ab4e0293992f563879322c7664cf99fed" title=" " alt="" coords="5,5,160,47"/>
 </map>
 </div>
 
@@ -938,9 +948,10 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge__Mixing_aa706e6467d303024cc0eeea209d46eef_icgraph.png" border="0" usemap="#classCharge__Mixing_aa706e6467d303024cc0eeea209d46eef_icgraph" alt=""/></div>
 <map name="classCharge__Mixing_aa706e6467d303024cc0eeea209d46eef_icgraph" id="classCharge__Mixing_aa706e6467d303024cc0eeea209d46eef_icgraph">
-<area shape="rect" title=" " alt="" coords="216,43,364,84"/>
-<area shape="rect" href="classExx__Abfs_1_1DM.html#a144a2328ff65db1c15271d1b43ffcf50" title=" " alt="" coords="9,5,165,47"/>
-<area shape="rect" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1Hexx.html#af54736576eb3571f2b9a14ba698097b0" title=" " alt="" coords="5,71,168,127"/>
+<area shape="rect" title=" " alt="" coords="693,5,841,47"/>
+<area shape="rect" href="namespaceRI__2D__Comm.html#a94cca8e243b7b876f969be6f614173ec" title=" " alt="" coords="439,13,645,39"/>
+<area shape="rect" href="namespaceRI__2D__Comm.html#aa9c895bfff609e1e0a05840a341b844a" title=" " alt="" coords="208,13,391,39"/>
+<area shape="rect" href="classhamilt_1_1OperatorEXX.html#ab4e0293992f563879322c7664cf99fed" title=" " alt="" coords="5,5,160,47"/>
 </map>
 </div>
 
@@ -973,14 +984,13 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge__Mixing_adb7967537b3fec1b7fc6bab3d09e942a_icgraph.png" border="0" usemap="#classCharge__Mixing_adb7967537b3fec1b7fc6bab3d09e942a_icgraph" alt=""/></div>
 <map name="classCharge__Mixing_adb7967537b3fec1b7fc6bab3d09e942a_icgraph" id="classCharge__Mixing_adb7967537b3fec1b7fc6bab3d09e942a_icgraph">
-<area shape="rect" title=" " alt="" coords="700,90,848,131"/>
-<area shape="rect" href="classExx__Lcao.html#a0cf6e44caa8c70b72abb519991655035" title=" " alt="" coords="505,5,617,32"/>
-<area shape="rect" href="classModuleDFTU_1_1DFTU.html#a9c4ebe16a84b7e257a57a20dbc906da2" title=" " alt="" coords="471,57,652,98"/>
-<area shape="rect" href="classExx__Abfs_1_1DM.html#a1eda95af676902f4aaa3c52fc4b443e4" title=" " alt="" coords="485,122,637,163"/>
-<area shape="rect" href="classExx__Abfs_1_1DM.html#a144a2328ff65db1c15271d1b43ffcf50" title=" " alt="" coords="483,187,639,229"/>
-<area shape="rect" href="classModuleDFTU_1_1DFTU.html#a89f34b81d86cd8832ab54663bd729c1c" title=" " alt="" coords="248,25,423,66"/>
-<area shape="rect" href="classModuleDFTU_1_1DFTU.html#a5df7e562346fd9d763d3082b11275b96" title=" " alt="" coords="248,90,423,131"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad77b2f8850b54ceb66721e4f6afb290d" title=" " alt="" coords="5,58,200,99"/>
+<area shape="rect" title=" " alt="" coords="701,41,849,83"/>
+<area shape="rect" href="namespaceRI__2D__Comm.html#aa9c895bfff609e1e0a05840a341b844a" title=" " alt="" coords="471,17,653,43"/>
+<area shape="rect" href="classModuleDFTU_1_1DFTU.html#a9c4ebe16a84b7e257a57a20dbc906da2" title=" " alt="" coords="471,71,653,112"/>
+<area shape="rect" href="classhamilt_1_1OperatorEXX.html#ab4e0293992f563879322c7664cf99fed" title=" " alt="" coords="258,5,413,47"/>
+<area shape="rect" href="classModuleDFTU_1_1DFTU.html#a89f34b81d86cd8832ab54663bd729c1c" title=" " alt="" coords="248,71,423,112"/>
+<area shape="rect" href="classModuleDFTU_1_1DFTU.html#a5df7e562346fd9d763d3082b11275b96" title=" " alt="" coords="248,136,423,177"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad77b2f8850b54ceb66721e4f6afb290d" title=" " alt="" coords="5,104,200,145"/>
 </map>
 </div>
 
@@ -1038,13 +1048,9 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge__Mixing_ab31004c7df886fbf8b5aeb4afc3795a1_icgraph.png" border="0" usemap="#classCharge__Mixing_ab31004c7df886fbf8b5aeb4afc3795a1_icgraph" alt=""/></div>
 <map name="classCharge__Mixing_ab31004c7df886fbf8b5aeb4afc3795a1_icgraph" id="classCharge__Mixing_ab31004c7df886fbf8b5aeb4afc3795a1_icgraph">
-<area shape="rect" title=" " alt="" coords="753,42,901,83"/>
-<area shape="rect" href="classExx__Abfs_1_1DM.html#a3ae7b99ea8a0b99a1fdc69559b087d59" title=" " alt="" coords="529,13,705,54"/>
-<area shape="rect" href="namespaceCal__Test.html#a1a92d835c3712fbfc4e814bfab5eb23b" title=" " alt="" coords="532,79,703,105"/>
-<area shape="rect" href="classExx__Abfs_1_1DM.html#af84e59692cfc4fc0ea9fb43de9b586db" title=" " alt="" coords="267,20,435,47"/>
-<area shape="rect" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1DM2.html#acb6be9193907266af17e54fd79d58790" title=" " alt="" coords="5,5,172,61"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="250,71,451,113"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a2d7c936122c694417b9e4291f501e591" title=" " alt="" coords="220,137,481,178"/>
+<area shape="rect" title=" " alt="" coords="439,5,587,47"/>
+<area shape="rect" href="namespaceRI__2D__Comm.html#aa9c895bfff609e1e0a05840a341b844a" title=" " alt="" coords="208,13,391,39"/>
+<area shape="rect" href="classhamilt_1_1OperatorEXX.html#ab4e0293992f563879322c7664cf99fed" title=" " alt="" coords="5,5,160,47"/>
 </map>
 </div>
 
@@ -1072,17 +1078,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classCharge__Mixing_a68f9d5f2522a5273443134cd8a3df21f_icgraph.png" border="0" usemap="#classCharge__Mixing_a68f9d5f2522a5273443134cd8a3df21f_icgraph" alt=""/></div>
-<map name="classCharge__Mixing_a68f9d5f2522a5273443134cd8a3df21f_icgraph" id="classCharge__Mixing_a68f9d5f2522a5273443134cd8a3df21f_icgraph">
-<area shape="rect" title=" " alt="" coords="533,39,681,80"/>
-<area shape="rect" href="namespaceCal__Test.html#a1a92d835c3712fbfc4e814bfab5eb23b" title=" " alt="" coords="315,46,485,73"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="35,5,237,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a2d7c936122c694417b9e4291f501e591" title=" " alt="" coords="5,71,267,112"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1108,15 +1103,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classCharge__Mixing_a6da2530733bb84e8db6561ead2ed9368_icgraph.png" border="0" usemap="#classCharge__Mixing_a6da2530733bb84e8db6561ead2ed9368_icgraph" alt=""/></div>
-<map name="classCharge__Mixing_a6da2530733bb84e8db6561ead2ed9368_icgraph" id="classCharge__Mixing_a6da2530733bb84e8db6561ead2ed9368_icgraph">
-<area shape="rect" title=" " alt="" coords="209,5,357,47"/>
-<area shape="rect" href="classExx__Abfs_1_1DM.html#a144a2328ff65db1c15271d1b43ffcf50" title=" " alt="" coords="5,5,161,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1142,15 +1128,6 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classCharge__Mixing_a779f2d82619d3711192d126d89f7c041_icgraph.png" border="0" usemap="#classCharge__Mixing_a779f2d82619d3711192d126d89f7c041_icgraph" alt=""/></div>
-<map name="classCharge__Mixing_a779f2d82619d3711192d126d89f7c041_icgraph" id="classCharge__Mixing_a779f2d82619d3711192d126d89f7c041_icgraph">
-<area shape="rect" title=" " alt="" coords="209,5,357,47"/>
-<area shape="rect" href="classExx__Abfs_1_1DM.html#a144a2328ff65db1c15271d1b43ffcf50" title=" " alt="" coords="5,5,161,47"/>
-</map>
-</div>
 
 </div>
 </div>
@@ -1311,7 +1288,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classCharge__Mixing.html#a7caa94c767c1be10d51ea9e9f331fb92" title=" " alt="" coords="233,286,425,327"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="473,349,687,376"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="238,403,421,444"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a743759a9021fc9d1cf570a7499e55b08" title=" " alt="" coords="735,150,896,191"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a187e988b2c81e3be3f905bf0f0834de6" title="transform real space to reciprocal space" alt="" coords="735,150,896,191"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1386,14 +1363,14 @@ Here is the call graph for this function:</div>
 <map name="classCharge__Mixing_a6a20b9fcd551419a49d24b393147d72c_cgraph" id="classCharge__Mixing_a6a20b9fcd551419a49d24b393147d72c_cgraph">
 <area shape="rect" title=" " alt="" coords="5,243,164,285"/>
 <area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="221,123,364,165"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a743759a9021fc9d1cf570a7499e55b08" title=" " alt="" coords="212,189,373,230"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a187e988b2c81e3be3f905bf0f0834de6" title="transform real space to reciprocal space" alt="" coords="212,189,373,230"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="648,232,825,259"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce" title=" " alt="" coords="212,275,373,317"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#ac5a1aa06f4c446a5456208e867e02cc5" title=" " alt="" coords="423,173,599,200"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a903c866d6f5dc8e8e3a483060ad198aa" title=" " alt="" coords="421,224,600,251"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#ad01da6b7d37afe506725bae4cbc87a6a" title=" " alt="" coords="427,5,594,32"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#aae091c3aec38ba253fdda8650c0d7b9a" title=" " alt="" coords="430,57,591,98"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a51172642621a79864bd8a34d02c27f3c" title=" " alt="" coords="436,275,585,317"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#abe30432b8c7a5a3bec170b18ddfae010" title="transform reciprocal space to real space" alt="" coords="212,275,373,317"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a2b2fb5b4d2aeedb5f0daf43151f402d6" title=" " alt="" coords="423,173,599,200"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#ad69f35e96e5aeda8453143c32ba9cda9" title=" " alt="" coords="421,224,600,251"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#adc7dbc377da877b90e1331f1ae356870" title=" " alt="" coords="427,5,594,32"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a37a555990ae431f9d9b0b01e2579ac9e" title="gather planes and scatter sticks" alt="" coords="430,57,591,98"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#aed6a4e7684822156b64e646c74068d6b" title=" " alt="" coords="436,275,585,317"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1477,8 +1454,8 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classCharge__Mixing_a6544f9d04ec4e8df4eedbc64dcd22c74_icgraph.png" border="0" usemap="#classCharge__Mixing_a6544f9d04ec4e8df4eedbc64dcd22c74_icgraph" alt=""/></div>
 <map name="classCharge__Mixing_a6544f9d04ec4e8df4eedbc64dcd22c74_icgraph" id="classCharge__Mixing_a6544f9d04ec4e8df4eedbc64dcd22c74_icgraph">
 <area shape="rect" title=" " alt="" coords="284,78,444,105"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="11,5,230,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a336f7862c45f8e127f271a4e1263d68b" title=" " alt="" coords="33,71,209,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a336f7862c45f8e127f271a4e1263d68b" title=" " alt="" coords="33,5,209,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="11,71,230,112"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#abd37cb049beb73993a645f4a74db1a35" title=" " alt="" coords="5,136,236,177"/>
 </map>
 </div>
@@ -1523,13 +1500,15 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge__Mixing_a8b3b365be955d98b527d05f53eb98e49_cgraph.png" border="0" usemap="#classCharge__Mixing_a8b3b365be955d98b527d05f53eb98e49_cgraph" alt=""/></div>
 <map name="classCharge__Mixing_a8b3b365be955d98b527d05f53eb98e49_cgraph" id="classCharge__Mixing_a8b3b365be955d98b527d05f53eb98e49_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,161,47"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="636,13,813,39"/>
-<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="209,42,355,69"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="864,5,1017,47"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="403,100,585,141"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="417,35,571,76"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="633,100,816,141"/>
+<area shape="rect" title=" " alt="" coords="5,86,161,127"/>
+<area shape="rect" href="namespaceModuleBase.html#adeaaec1c2e00d3e37d62ae80ba994120" title=" " alt="" coords="229,5,367,32"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="209,57,387,98"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="668,152,845,179"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="225,181,371,208"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="896,145,1049,186"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="435,239,617,281"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="449,174,603,215"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="665,239,848,281"/>
 </map>
 </div>
 <div class="dynheader">
@@ -1606,6 +1585,33 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="ae4a07e00881570fbdb9f99f5f4ef0b96"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4a07e00881570fbdb9f99f5f4ef0b96">&#9670;&nbsp;</a></span>set_rhopw()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Charge_Mixing::set_rhopw </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *&#160;</td>
+          <td class="paramname"><em>rhopw_in</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCharge__Mixing_ae4a07e00881570fbdb9f99f5f4ef0b96_icgraph.png" border="0" usemap="#classCharge__Mixing_ae4a07e00881570fbdb9f99f5f4ef0b96_icgraph" alt=""/></div>
+<map name="classCharge__Mixing_ae4a07e00881570fbdb9f99f5f4ef0b96_icgraph" id="classCharge__Mixing_ae4a07e00881570fbdb9f99f5f4ef0b96_icgraph">
+<area shape="rect" title=" " alt="" coords="241,13,388,54"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a737624dc2db16ca114bb820f2a3cf1b2" title=" " alt="" coords="5,5,193,61"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="a7caa94c767c1be10d51ea9e9f331fb92"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7caa94c767c1be10d51ea9e9f331fb92">&#9670;&nbsp;</a></span>Simplified_Broyden_mixing()</h2>
 
@@ -1649,7 +1655,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="275,71,429,112"/>
 <area shape="rect" href="lapack__connector_8h.html#aeed9e2b3c7f66c9b8058915f35d5d68e" title=" " alt="" coords="319,137,385,163"/>
 <area shape="rect" href="lapack__connector_8h.html#a53f72797c82bd68b4162802b9366bdd2" title=" " alt="" coords="319,187,385,214"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce" title=" " alt="" coords="271,239,433,280"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#abe30432b8c7a5a3bec170b18ddfae010" title="transform reciprocal space to real space" alt="" coords="271,239,433,280"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="507,305,684,331"/>
 <area shape="rect" href="classCharge__Mixing.html#a8b3b365be955d98b527d05f53eb98e49" title=" " alt="" coords="274,356,430,397"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="523,393,668,419"/>
@@ -2165,6 +2171,28 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">double** Charge_Mixing::rho_save2</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ade8ad32427b8c795e369c169ba6f47e7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade8ad32427b8c795e369c169ba6f47e7">&#9670;&nbsp;</a></span>rhopw</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a>* Charge_Mixing::rhopw = nullptr</td>
         </tr>
       </table>
   </td>

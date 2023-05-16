@@ -1,12 +1,12 @@
 <map id="Langevin" name="Langevin">
-<area shape="rect" id="node1" title=" " alt="" coords="60,1711,191,1905"/>
-<area shape="rect" id="node2" href="$classMDrun.html" title=" " alt="" coords="423,1335,569,1661"/>
-<area shape="rect" id="node3" href="$classUnitCell.html" title=" " alt="" coords="299,887,437,1257"/>
-<area shape="rect" id="node4" href="$classMagnetism.html" title=" " alt="" coords="473,490,679,714"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="110,5,269,273"/>
-<area shape="rect" id="node7" href="$classAtom.html" title=" " alt="" coords="703,446,873,758"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="287,409,449,795"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="785,5,943,273"/>
-<area shape="rect" id="node9" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="462,945,615,1199"/>
-<area shape="rect" id="node10" href="$classMD__parameters.html" title=" " alt="" coords="640,953,803,1191"/>
+<area shape="rect" id="node1" title="Langevin method." alt="" coords="61,1711,185,1905"/>
+<area shape="rect" id="node2" href="$classMD__base.html" title="base class of md" alt="" coords="411,1335,557,1661"/>
+<area shape="rect" id="node3" href="$classUnitCell.html" title=" " alt="" coords="293,887,432,1257"/>
+<area shape="rect" id="node4" href="$classMagnetism.html" title=" " alt="" coords="468,490,673,714"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="105,5,263,273"/>
+<area shape="rect" id="node7" href="$classAtom.html" title=" " alt="" coords="697,446,868,758"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="281,409,444,795"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="779,5,938,273"/>
+<area shape="rect" id="node9" href="$classMD__para.html" title="input parameters used in md" alt="" coords="457,953,594,1191"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="618,945,771,1199"/>
 </map>

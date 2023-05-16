@@ -1,10 +1,5 @@
 <map id="Numerical_Orbital_Lm::getL" name="Numerical_Orbital_Lm::getL">
-<area shape="rect" id="node1" title=" " alt="" coords="453,188,620,229"/>
-<area shape="rect" id="node2" href="$classConv__Coulomb__Pot.html#a6824359487e165bb8b169d4dadd0db68" title=" " alt="" coords="229,5,404,47"/>
-<area shape="rect" id="node3" href="$classConv__Coulomb__Pot.html#a6e8efbb948e7967dbabe00efeb9a2e18" title=" " alt="" coords="5,35,180,76"/>
-<area shape="rect" id="node4" href="$classConv__Coulomb__Pot__K.html#ad9b0c4e69d176e36dfe92df73c0e1f92" title=" " alt="" coords="235,123,399,164"/>
-<area shape="rect" id="node5" href="$classConv__Coulomb__Pot.html#a6523394edc50d82fb7b7a3e74872079e" title=" " alt="" coords="228,188,405,229"/>
-<area shape="rect" id="node6" href="$classExx__Lcao.html#a0cf6e44caa8c70b72abb519991655035" title=" " alt="" coords="261,254,373,281"/>
-<area shape="rect" id="node7" href="$classCenter2__Orb_1_1Orb22__Ccp.html#a789bc48b9d94fd2d994962648164c12d" title=" " alt="" coords="233,305,400,347"/>
-<area shape="rect" id="node8" href="$ORB__read__test_8cpp.html#aae6ee2603573b9ca376958d9cccc0160" title=" " alt="" coords="282,371,351,398"/>
+<area shape="rect" id="node1" title=" " alt="" coords="217,35,384,76"/>
+<area shape="rect" id="node2" href="$classConv__Coulomb__Pot__K.html#aad3bce09384eb281d46934b50c5cedd6" title=" " alt="" coords="5,5,169,47"/>
+<area shape="rect" id="node3" href="$ORB__read__test_8cpp.html#aae6ee2603573b9ca376958d9cccc0160" title=" " alt="" coords="53,71,122,98"/>
 </map>

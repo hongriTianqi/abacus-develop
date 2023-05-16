@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['numerical_5forbital_14312',['Numerical_Orbital',['../classNumerical__Orbital__Lm.html#a4b6e241715e4ac3321d04182624e417d',1,'Numerical_Orbital_Lm']]]
+  ['rpa_5flri_3c_20tdata_20_3e_14100',['RPA_LRI&lt; Tdata &gt;',['../classExx__LRI.html#a891b43373b59185eb8ef24544824906b',1,'Exx_LRI']]]
 ];

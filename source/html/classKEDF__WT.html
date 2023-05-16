@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: KEDF_WT Class Reference</title>
+<title>3.2.2: KEDF_WT Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -67,11 +67,16 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classKEDF__WT-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">KEDF_WT Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A class which calculates kinetic energy, potential, and stress with Wang-Teter (WT) KEDF. See Wang L W, Teter M P. Physical Review B, 1992, 45(23): 13196.  
+ <a href="classKEDF__WT.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="kedf__wt_8h_source.html">kedf_wt.h</a>&gt;</code></p>
 <div class="dynheader">
@@ -79,7 +84,7 @@ Collaboration diagram for KEDF_WT:</div>
 <div class="dyncontent">
 <div class="center"><img src="classKEDF__WT__coll__graph.png" border="0" usemap="#KEDF__WT_coll__map" alt="Collaboration graph"/></div>
 <map name="KEDF__WT_coll__map" id="KEDF__WT_coll__map">
-<area shape="rect" title=" " alt="" coords="5,321,180,707"/>
+<area shape="rect" title="A class which calculates kinetic energy, potential, and stress with Wang&#45;Teter (WT) KEDF...." alt="" coords="5,321,180,707"/>
 <area shape="rect" href="classModuleBase_1_1matrix.html" title=" " alt="" coords="16,5,169,259"/>
 </map>
 </div>
@@ -100,6 +105,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af535b0b3344924bbb3b2cf08f961479e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4e924af90150938f8d02437af5517043"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a4e924af90150938f8d02437af5517043">get_stress</a> (double cellVol, const double *const *prho, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *pw_rho, double vw_weight)</td></tr>
 <tr class="separator:a4e924af90150938f8d02437af5517043"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a8efdd2f953c214a234cde7eba4181055"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a8efdd2f953c214a234cde7eba4181055">WTenergy</a> = 0.</td></tr>
+<tr class="separator:a8efdd2f953c214a234cde7eba4181055"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a962f9248a9ce2e3b4c390747d31829c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a962f9248a9ce2e3b4c390747d31829c7">stress</a></td></tr>
+<tr class="separator:a962f9248a9ce2e3b4c390747d31829c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
 <tr class="memitem:af0f2ae3513be83f2bd6f602204725d8b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#af0f2ae3513be83f2bd6f602204725d8b">WTkernel</a> (double eta, double tf_weight, double vw_weight)</td></tr>
 <tr class="separator:af0f2ae3513be83f2bd6f602204725d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70c20a6ecee7f9881dcfeb047d6c8e89"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a70c20a6ecee7f9881dcfeb047d6c8e89">diffLinhard</a> (double eta, double vw_weight)</td></tr>
@@ -111,8 +126,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afa78e0b14d75ac0a292f733786fccf5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#afa78e0b14d75ac0a292f733786fccf5f">fillKernel</a> (double tf_weight, double vw_weight, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *pw_rho)</td></tr>
 <tr class="separator:afa78e0b14d75ac0a292f733786fccf5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
 <tr class="memitem:af712c4c355d688ff0e5c3a6d71a967c4"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#af712c4c355d688ff0e5c3a6d71a967c4">nx</a> = 0</td></tr>
 <tr class="separator:af712c4c355d688ff0e5c3a6d71a967c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee5bb35a933c35204f8e8efa138d1b18"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#aee5bb35a933c35204f8e8efa138d1b18">dV</a> = 0.</td></tr>
@@ -123,22 +138,21 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a630d6496ec978ff434da274a5595f274"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ad57b7f8e8e2f4c455b82d44b9c8ddf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a1ad57b7f8e8e2f4c455b82d44b9c8ddf">tkF</a> = 0.</td></tr>
 <tr class="separator:a1ad57b7f8e8e2f4c455b82d44b9c8ddf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b49411064faa731640c0979a9b18eaf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a5b49411064faa731640c0979a9b18eaf">alpha</a> = 5./6.</td></tr>
+<tr class="memitem:a5b49411064faa731640c0979a9b18eaf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a5b49411064faa731640c0979a9b18eaf">alpha</a> = 5. / 6.</td></tr>
 <tr class="separator:a5b49411064faa731640c0979a9b18eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1a50bc7aa30db805a734fc16f5beae59"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a1a50bc7aa30db805a734fc16f5beae59">beta</a> = 5./6.</td></tr>
+<tr class="memitem:a1a50bc7aa30db805a734fc16f5beae59"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a1a50bc7aa30db805a734fc16f5beae59">beta</a> = 5. / 6.</td></tr>
 <tr class="separator:a1a50bc7aa30db805a734fc16f5beae59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a976ce214949c8026548cee332f9909da"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a976ce214949c8026548cee332f9909da">cTF</a> = 3.0/10.0 * pow(3*pow(M_PI, 2.0), 2.0/3.0) * 2</td></tr>
+<tr class="memitem:a976ce214949c8026548cee332f9909da"><td class="memItemLeft" align="right" valign="top">const double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a976ce214949c8026548cee332f9909da">cTF</a></td></tr>
 <tr class="separator:a976ce214949c8026548cee332f9909da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79f9339b0dab569e1a8008caa02563db"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a79f9339b0dab569e1a8008caa02563db">WTcoef</a> = 0.</td></tr>
 <tr class="separator:a79f9339b0dab569e1a8008caa02563db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8efdd2f953c214a234cde7eba4181055"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a8efdd2f953c214a234cde7eba4181055">WTenergy</a> = 0.</td></tr>
-<tr class="separator:a8efdd2f953c214a234cde7eba4181055"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6cb65f41d132eb7bb1ebec7be8ecd5c"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#af6cb65f41d132eb7bb1ebec7be8ecd5c">kernel</a></td></tr>
 <tr class="separator:af6cb65f41d132eb7bb1ebec7be8ecd5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a962f9248a9ce2e3b4c390747d31829c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classKEDF__WT.html#a962f9248a9ce2e3b4c390747d31829c7">stress</a></td></tr>
-<tr class="separator:a962f9248a9ce2e3b4c390747d31829c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A class which calculates kinetic energy, potential, and stress with Wang-Teter (WT) KEDF. See Wang L W, Teter M P. Physical Review B, 1992, 45(23): 13196. </p>
+<dl class="section author"><dt>Author</dt><dd>sunliang on 2022-06 </dd></dl>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad932271bb26c473e0a2d873177f97ef0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad932271bb26c473e0a2d873177f97ef0">&#9670;&nbsp;</a></span>KEDF_WT()</h2>
 
@@ -206,6 +220,9 @@ Here is the call graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double KEDF_WT::diffLinhard </td>
@@ -225,6 +242,11 @@ Here is the call graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -244,6 +266,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void KEDF_WT::fillKernel </td>
@@ -269,6 +294,11 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
@@ -414,13 +444,13 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,115,164,141"/>
 <area shape="rect" href="namespaceModuleBase.html#adeaaec1c2e00d3e37d62ae80ba994120" title=" " alt="" coords="232,5,369,32"/>
 <area shape="rect" href="classKEDF__WT.html#a70c20a6ecee7f9881dcfeb047d6c8e89" title=" " alt="" coords="220,56,381,83"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a743759a9021fc9d1cf570a7499e55b08" title=" " alt="" coords="220,107,381,149"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a187e988b2c81e3be3f905bf0f0834de6" title="transform real space to reciprocal space" alt="" coords="220,107,381,149"/>
 <area shape="rect" href="namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="212,173,389,214"/>
 <area shape="rect" href="classModuleBase_1_1matrix.html#a1a39a6d91c25fb1a71458dc6543f407d" title=" " alt="" coords="224,238,377,279"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#ac5a1aa06f4c446a5456208e867e02cc5" title=" " alt="" coords="439,39,615,65"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a903c866d6f5dc8e8e3a483060ad198aa" title=" " alt="" coords="437,89,616,116"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#ad01da6b7d37afe506725bae4cbc87a6a" title=" " alt="" coords="443,140,610,167"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#aae091c3aec38ba253fdda8650c0d7b9a" title=" " alt="" coords="446,191,607,233"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a2b2fb5b4d2aeedb5f0daf43151f402d6" title=" " alt="" coords="439,39,615,65"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#ad69f35e96e5aeda8453143c32ba9cda9" title=" " alt="" coords="437,89,616,116"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#adc7dbc377da877b90e1331f1ae356870" title=" " alt="" coords="443,140,610,167"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a37a555990ae431f9d9b0b01e2579ac9e" title="gather planes and scatter sticks" alt="" coords="446,191,607,233"/>
 </map>
 </div>
 <div class="dynheader">
@@ -440,6 +470,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void KEDF_WT::multiKernel </td>
@@ -471,6 +504,11 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
@@ -478,15 +516,15 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classKEDF__WT_adb82e617e2a9892dd9892876690f4c59_cgraph.png" border="0" usemap="#classKEDF__WT_adb82e617e2a9892dd9892876690f4c59_cgraph" alt=""/></div>
 <map name="classKEDF__WT_adb82e617e2a9892dd9892876690f4c59_cgraph" id="classKEDF__WT_adb82e617e2a9892dd9892876690f4c59_cgraph">
 <area shape="rect" title=" " alt="" coords="5,235,172,262"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a743759a9021fc9d1cf570a7499e55b08" title=" " alt="" coords="220,180,381,221"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce" title=" " alt="" coords="220,260,381,301"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#ac5a1aa06f4c446a5456208e867e02cc5" title=" " alt="" coords="431,71,607,98"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a903c866d6f5dc8e8e3a483060ad198aa" title=" " alt="" coords="429,122,608,149"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#ad01da6b7d37afe506725bae4cbc87a6a" title=" " alt="" coords="435,173,602,199"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#aae091c3aec38ba253fdda8650c0d7b9a" title=" " alt="" coords="438,5,599,47"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a51172642621a79864bd8a34d02c27f3c" title=" " alt="" coords="444,224,593,265"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#af4c076ea70f66d0c7011f0f318cfe808" title=" " alt="" coords="444,289,593,331"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#abafb29fca1142448e55e2f184c160124" title=" " alt="" coords="444,355,593,396"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a187e988b2c81e3be3f905bf0f0834de6" title="transform real space to reciprocal space" alt="" coords="220,180,381,221"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#abe30432b8c7a5a3bec170b18ddfae010" title="transform reciprocal space to real space" alt="" coords="220,260,381,301"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a2b2fb5b4d2aeedb5f0daf43151f402d6" title=" " alt="" coords="431,71,607,98"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#ad69f35e96e5aeda8453143c32ba9cda9" title=" " alt="" coords="429,122,608,149"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#adc7dbc377da877b90e1331f1ae356870" title=" " alt="" coords="435,173,602,199"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#a37a555990ae431f9d9b0b01e2579ac9e" title="gather planes and scatter sticks" alt="" coords="438,5,599,47"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#aed6a4e7684822156b64e646c74068d6b" title=" " alt="" coords="444,224,593,265"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#ab36840ed72d17de3906ff4d9aa6da636" title=" " alt="" coords="444,289,593,331"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a5684bb10580a5a28a166914df99e5349" title=" " alt="" coords="444,355,593,396"/>
 </map>
 </div>
 
@@ -497,6 +535,9 @@ Here is the call graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void KEDF_WT::readKernel </td>
@@ -516,6 +557,11 @@ Here is the call graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
@@ -710,6 +756,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double KEDF_WT::WTkernel </td>
@@ -735,6 +784,11 @@ Here is the caller graph for this function:</div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -756,11 +810,19 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double KEDF_WT::alpha = 5./6.</td>
+          <td class="memname">double KEDF_WT::alpha = 5. / 6.</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -770,11 +832,19 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double KEDF_WT::beta = 5./6.</td>
+          <td class="memname">double KEDF_WT::beta = 5. / 6.</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -784,13 +854,23 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">const double KEDF_WT::cTF = 3.0/10.0 * pow(3*pow(M_PI, 2.0), 2.0/3.0) * 2</td>
+          <td class="memname">const double KEDF_WT::cTF</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
-
+<b>Initial value:</b><div class="fragment"><div class="line">= 3.0 / 10.0 * std::pow(3 * std::pow(M_PI, 2.0), 2.0 / 3.0)</div>
+<div class="line">          * 2</div>
+</div><!-- fragment -->
 </div>
 </div>
 <a id="aee5bb35a933c35204f8e8efa138d1b18"></a>
@@ -798,11 +878,19 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double KEDF_WT::dV = 0.</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -812,11 +900,19 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double* KEDF_WT::kernel</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -826,11 +922,19 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double KEDF_WT::kF = 0.</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -840,11 +944,19 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int KEDF_WT::nx = 0</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -854,11 +966,19 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double KEDF_WT::rho0 = 0.</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -882,11 +1002,19 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double KEDF_WT::tkF = 0.</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>
@@ -896,11 +1024,19 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double KEDF_WT::WTcoef = 0.</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

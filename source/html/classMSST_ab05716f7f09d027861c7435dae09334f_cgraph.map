@@ -1,12 +1,12 @@
 <map id="MSST::second_half" name="MSST::second_half">
 <area shape="rect" id="node1" title="the second half of equation of motion, update velocities" alt="" coords="5,157,148,184"/>
-<area shape="rect" id="node2" href="$classMD__func.html#a74016d09926da9592562873ce98f4da5" title=" " alt="" coords="196,5,387,32"/>
-<area shape="rect" id="node4" href="$classMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title=" " alt="" coords="204,56,379,83"/>
-<area shape="rect" id="node6" href="$classMSST.html#afb555193b92b223924b68082c7376b1e" title=" " alt="" coords="212,107,371,133"/>
-<area shape="rect" id="node7" href="$classMSST.html#afb2b42d795b4d4b14e94805b032dba16" title=" " alt="" coords="202,157,381,184"/>
+<area shape="rect" id="node2" href="$namespaceMD__func.html#a5cebc1780ba2bdf569a9844a5f6deb8c" title="calculate the total stress tensor" alt="" coords="196,5,387,32"/>
+<area shape="rect" id="node4" href="$namespaceMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title="get the current temperature" alt="" coords="204,56,379,83"/>
+<area shape="rect" id="node6" href="$classMSST.html#afb555193b92b223924b68082c7376b1e" title="propagate atomic velocities" alt="" coords="212,107,371,133"/>
+<area shape="rect" id="node7" href="$classMSST.html#afb2b42d795b4d4b14e94805b032dba16" title="propagate the volume change rate" alt="" coords="202,157,381,184"/>
 <area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="203,208,380,235"/>
 <area shape="rect" id="node9" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="219,259,364,285"/>
-<area shape="rect" id="node10" href="$classMSST.html#af455d41cf14b2083792cff64371bbd94" title=" " alt="" coords="231,309,351,336"/>
-<area shape="rect" id="node3" href="$classMD__func.html#aa24b5553a117456119e4a8e1ab6789bf" title=" " alt="" coords="435,5,604,32"/>
-<area shape="rect" id="node5" href="$classMD__func.html#a97c6aca19e89e6f10684226358fcd820" title=" " alt="" coords="438,56,601,83"/>
+<area shape="rect" id="node10" href="$classMSST.html#af455d41cf14b2083792cff64371bbd94" title="get the sum of square of velocities" alt="" coords="231,309,351,336"/>
+<area shape="rect" id="node3" href="$namespaceMD__func.html#aa24b5553a117456119e4a8e1ab6789bf" title="get the temperature vectors" alt="" coords="441,5,611,32"/>
+<area shape="rect" id="node5" href="$namespaceMD__func.html#a6c0e776a467f2fadc838df160f220ecc" title="calculate the ionic kinetic energy" alt="" coords="435,56,617,83"/>
 </map>

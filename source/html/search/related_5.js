@@ -1,7 +1,4 @@
 var searchData=
 [
-  ['lcao_5fhamilt_14303',['LCAO_Hamilt',['../classLCAO__gen__fixedH.html#ac4bda4b429b1515e1611352e6561346b',1,'LCAO_gen_fixedH::LCAO_Hamilt()'],['../classExx__Lcao.html#ac4bda4b429b1515e1611352e6561346b',1,'Exx_Lcao::LCAO_Hamilt()']]],
-  ['lcao_5forbitals_14304',['LCAO_Orbitals',['../classNumerical__Orbital.html#ac3c1eda861c5bfa8f9d8e0cca9e718cf',1,'Numerical_Orbital']]],
-  ['local_5forbital_5fcharge_14305',['Local_Orbital_Charge',['../classExx__Lcao.html#a6c2eed941c03aff458708f47da8917e5',1,'Exx_Lcao']]],
-  ['loop_5felec_14306',['LOOP_elec',['../classenergy.html#ab592f3d79e44d8cf9c74ef3048da11c8',1,'energy']]]
+  ['numerical_5forbital_14098',['Numerical_Orbital',['../classNumerical__Orbital__Lm.html#a4b6e241715e4ac3321d04182624e417d',1,'Numerical_Orbital_Lm']]]
 ];

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Nose_Hoover Class Reference</title>
+<title>3.2.2: Nose_Hoover Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -66,22 +66,26 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-attribs">Public Attributes</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
+<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classNose__Hoover-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Nose_Hoover Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p><code>#include &lt;<a class="el" href="Nose__Hoover_8h_source.html">Nose_Hoover.h</a>&gt;</code></p>
+<p>Nose Hoover Chain.  
+ <a href="classNose__Hoover.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="nhchain_8h_source.html">nhchain.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for Nose_Hoover:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNose__Hoover__inherit__graph.png" border="0" usemap="#Nose__Hoover_inherit__map" alt="Inheritance graph"/></div>
 <map name="Nose__Hoover_inherit__map" id="Nose__Hoover_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,409,156,853"/>
-<area shape="rect" href="classMDrun.html" title=" " alt="" coords="7,5,154,361"/>
+<area shape="rect" title="Nose Hoover Chain." alt="" coords="6,497,151,941"/>
+<area shape="rect" href="classMD__base.html" title="base class of md" alt="" coords="5,5,152,449"/>
 </map>
 </div>
 <div class="dynheader">
@@ -89,165 +93,226 @@ Collaboration diagram for Nose_Hoover:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNose__Hoover__coll__graph.png" border="0" usemap="#Nose__Hoover_coll__map" alt="Collaboration graph"/></div>
 <map name="Nose__Hoover_coll__map" id="Nose__Hoover_coll__map">
-<area shape="rect" title=" " alt="" coords="752,1711,902,2155"/>
-<area shape="rect" href="classMDrun.html" title=" " alt="" coords="754,1335,900,1661"/>
+<area shape="rect" title="Nose Hoover Chain." alt="" coords="754,1711,900,2155"/>
+<area shape="rect" href="classMD__base.html" title="base class of md" alt="" coords="754,1335,900,1661"/>
 <area shape="rect" href="classUnitCell.html" title=" " alt="" coords="444,887,583,1257"/>
 <area shape="rect" href="classMagnetism.html" title=" " alt="" coords="203,490,408,714"/>
 <area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="77,5,236,273"/>
 <area shape="rect" href="classAtom.html" title=" " alt="" coords="619,446,790,758"/>
 <area shape="rect" href="classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="432,409,595,795"/>
 <area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="701,5,860,273"/>
-<area shape="rect" href="classModuleBase_1_1matrix.html" title=" " alt="" coords="865,945,1018,1199"/>
-<area shape="rect" href="classMD__parameters.html" title=" " alt="" coords="1043,953,1206,1191"/>
+<area shape="rect" href="classMD__para.html" title="input parameters used in md" alt="" coords="865,953,1002,1191"/>
+<area shape="rect" href="classModuleBase_1_1matrix.html" title=" " alt="" coords="1026,945,1180,1199"/>
 </map>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af80d23ecb27b1847c6d8b8478251cd54"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#af80d23ecb27b1847c6d8b8478251cd54">Nose_Hoover</a> (<a class="el" href="classMD__parameters.html">MD_parameters</a> &amp;MD_para_in, <a class="el" href="classUnitCell.html">UnitCell</a> &amp;unit_in)</td></tr>
-<tr class="separator:af80d23ecb27b1847c6d8b8478251cd54"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab1e3f44123539c12fedacfd8e537eaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#aab1e3f44123539c12fedacfd8e537eaf">Nose_Hoover</a> (<a class="el" href="classMD__para.html">MD_para</a> &amp;MD_para_in, <a class="el" href="classUnitCell.html">UnitCell</a> &amp;unit_in)</td></tr>
+<tr class="separator:aab1e3f44123539c12fedacfd8e537eaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe6938738ae876634b74dc5486825c59"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#afe6938738ae876634b74dc5486825c59">~Nose_Hoover</a> ()</td></tr>
 <tr class="separator:afe6938738ae876634b74dc5486825c59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afef45e7cf29d9880c32fab3a0570fbd8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#afef45e7cf29d9880c32fab3a0570fbd8">setup</a> (<a class="el" href="classModuleESolver_1_1ESolver.html">ModuleESolver::ESolver</a> *p_ensolve)</td></tr>
-<tr class="memdesc:afef45e7cf29d9880c32fab3a0570fbd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">init before running md, calculate energy, force, and stress of the initial configuration.  <a href="classNose__Hoover.html#afef45e7cf29d9880c32fab3a0570fbd8">More...</a><br /></td></tr>
-<tr class="separator:afef45e7cf29d9880c32fab3a0570fbd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2460699a58dd787699447714e3f87944"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a2460699a58dd787699447714e3f87944">first_half</a> ()</td></tr>
-<tr class="memdesc:a2460699a58dd787699447714e3f87944"><td class="mdescLeft">&#160;</td><td class="mdescRight">the first half of equation of motion, update velocities and positions  <a href="classNose__Hoover.html#a2460699a58dd787699447714e3f87944">More...</a><br /></td></tr>
-<tr class="separator:a2460699a58dd787699447714e3f87944"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_methods_classMD__base"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMD__base')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classMD__base.html">MD_base</a></td></tr>
+<tr class="memitem:a15fd5d2ff68df857d022fe9e53933938 inherit pub_methods_classMD__base"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a15fd5d2ff68df857d022fe9e53933938">MD_base</a> (<a class="el" href="classMD__para.html">MD_para</a> &amp;MD_para_in, <a class="el" href="classUnitCell.html">UnitCell</a> &amp;unit_in)</td></tr>
+<tr class="separator:a15fd5d2ff68df857d022fe9e53933938 inherit pub_methods_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af25f4216b8faea2c9d517d8da625e401 inherit pub_methods_classMD__base"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#af25f4216b8faea2c9d517d8da625e401">~MD_base</a> ()</td></tr>
+<tr class="separator:af25f4216b8faea2c9d517d8da625e401 inherit pub_methods_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a68ab9f4d9367505652834879351ef52c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a68ab9f4d9367505652834879351ef52c">setup</a> (<a class="el" href="classModuleESolver_1_1ESolver.html">ModuleESolver::ESolver</a> *p_esolver, const std::string &amp;global_readin_dir)</td></tr>
+<tr class="memdesc:a68ab9f4d9367505652834879351ef52c"><td class="mdescLeft">&#160;</td><td class="mdescRight">init before running md, calculate energy, force, and stress of the initial configuration.  <a href="classNose__Hoover.html#a68ab9f4d9367505652834879351ef52c">More...</a><br /></td></tr>
+<tr class="separator:a68ab9f4d9367505652834879351ef52c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bfbc8a6b4d4ba509b9459c9417ea8d3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a1bfbc8a6b4d4ba509b9459c9417ea8d3">first_half</a> (std::ofstream &amp;ofs)</td></tr>
+<tr class="memdesc:a1bfbc8a6b4d4ba509b9459c9417ea8d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">the first half of equation of motion, update velocities and positions  <a href="classNose__Hoover.html#a1bfbc8a6b4d4ba509b9459c9417ea8d3">More...</a><br /></td></tr>
+<tr class="separator:a1bfbc8a6b4d4ba509b9459c9417ea8d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d05097c9fc8a511256ca0a48d0ac0e4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a6d05097c9fc8a511256ca0a48d0ac0e4">second_half</a> ()</td></tr>
 <tr class="memdesc:a6d05097c9fc8a511256ca0a48d0ac0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">the second half of equation of motion, update velocities  <a href="classNose__Hoover.html#a6d05097c9fc8a511256ca0a48d0ac0e4">More...</a><br /></td></tr>
 <tr class="separator:a6d05097c9fc8a511256ca0a48d0ac0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa8bc8619be3ebf92f53d5121a3df3842"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#aa8bc8619be3ebf92f53d5121a3df3842">outputMD</a> (std::ofstream &amp;ofs, bool cal_stress)</td></tr>
-<tr class="memdesc:aa8bc8619be3ebf92f53d5121a3df3842"><td class="mdescLeft">&#160;</td><td class="mdescRight">output MD information such as energy, temperature, and pressure  <a href="classNose__Hoover.html#aa8bc8619be3ebf92f53d5121a3df3842">More...</a><br /></td></tr>
-<tr class="separator:aa8bc8619be3ebf92f53d5121a3df3842"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8738ff6586e4a9412c0a13d5430eda88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a8738ff6586e4a9412c0a13d5430eda88">write_restart</a> ()</td></tr>
-<tr class="memdesc:a8738ff6586e4a9412c0a13d5430eda88"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the information into files used for MD restarting  <a href="classNose__Hoover.html#a8738ff6586e4a9412c0a13d5430eda88">More...</a><br /></td></tr>
-<tr class="separator:a8738ff6586e4a9412c0a13d5430eda88"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd568e8a02799fb35f89ae3e97473c83"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#acd568e8a02799fb35f89ae3e97473c83">restart</a> ()</td></tr>
-<tr class="memdesc:acd568e8a02799fb35f89ae3e97473c83"><td class="mdescLeft">&#160;</td><td class="mdescRight">restart MD when md_restart is true  <a href="classNose__Hoover.html#acd568e8a02799fb35f89ae3e97473c83">More...</a><br /></td></tr>
-<tr class="separator:acd568e8a02799fb35f89ae3e97473c83"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5993afa7d2c9c93bed5ea11bd96bafd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#ab5993afa7d2c9c93bed5ea11bd96bafd">print_md</a> (std::ofstream &amp;ofs, const bool &amp;cal_stress)</td></tr>
+<tr class="memdesc:ab5993afa7d2c9c93bed5ea11bd96bafd"><td class="mdescLeft">&#160;</td><td class="mdescRight">output MD information such as energy, temperature, and pressure  <a href="classNose__Hoover.html#ab5993afa7d2c9c93bed5ea11bd96bafd">More...</a><br /></td></tr>
+<tr class="separator:ab5993afa7d2c9c93bed5ea11bd96bafd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2e4ed7bcbb6d85eaa00b57f4a10fd39"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#ab2e4ed7bcbb6d85eaa00b57f4a10fd39">write_restart</a> (const std::string &amp;global_out_dir)</td></tr>
+<tr class="memdesc:ab2e4ed7bcbb6d85eaa00b57f4a10fd39"><td class="mdescLeft">&#160;</td><td class="mdescRight">write the information into files used for MD restarting  <a href="classNose__Hoover.html#ab2e4ed7bcbb6d85eaa00b57f4a10fd39">More...</a><br /></td></tr>
+<tr class="separator:ab2e4ed7bcbb6d85eaa00b57f4a10fd39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0715fdffa16f90f6e628ba8bf4911162"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a0715fdffa16f90f6e628ba8bf4911162">restart</a> (const std::string &amp;global_readin_dir)</td></tr>
+<tr class="memdesc:a0715fdffa16f90f6e628ba8bf4911162"><td class="mdescLeft">&#160;</td><td class="mdescRight">restart MD when md_restart is true  <a href="classNose__Hoover.html#a0715fdffa16f90f6e628ba8bf4911162">More...</a><br /></td></tr>
+<tr class="separator:a0715fdffa16f90f6e628ba8bf4911162"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a46c5e895212fc93e643bd0b0a0128c91"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a46c5e895212fc93e643bd0b0a0128c91">particle_thermo</a> ()</td></tr>
+<tr class="memdesc:a46c5e895212fc93e643bd0b0a0128c91"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform half-step update of thermostats coupled with particles  <a href="classNose__Hoover.html#a46c5e895212fc93e643bd0b0a0128c91">More...</a><br /></td></tr>
 <tr class="separator:a46c5e895212fc93e643bd0b0a0128c91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd5cde823854e93ced3d173171c2e515"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#acd5cde823854e93ced3d173171c2e515">baro_thermo</a> ()</td></tr>
+<tr class="memdesc:acd5cde823854e93ced3d173171c2e515"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform half-step update of thermostats coupled with barostat  <a href="classNose__Hoover.html#acd5cde823854e93ced3d173171c2e515">More...</a><br /></td></tr>
 <tr class="separator:acd5cde823854e93ced3d173171c2e515"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3862f1714da9cf85bce0527c425ccab6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a3862f1714da9cf85bce0527c425ccab6">update_baro</a> ()</td></tr>
+<tr class="memdesc:a3862f1714da9cf85bce0527c425ccab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform half-step update of barostat velocity  <a href="classNose__Hoover.html#a3862f1714da9cf85bce0527c425ccab6">More...</a><br /></td></tr>
 <tr class="separator:a3862f1714da9cf85bce0527c425ccab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7ab218bac0dd1eb3238daff0858edfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#ad7ab218bac0dd1eb3238daff0858edfe">vel_baro</a> ()</td></tr>
+<tr class="memdesc:ad7ab218bac0dd1eb3238daff0858edfe"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform half-step update of velocity due to barostat  <a href="classNose__Hoover.html#ad7ab218bac0dd1eb3238daff0858edfe">More...</a><br /></td></tr>
 <tr class="separator:ad7ab218bac0dd1eb3238daff0858edfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a802722391bcda9c5d9e5d0e297859dd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a802722391bcda9c5d9e5d0e297859dd6">target_stress</a> ()</td></tr>
+<tr class="memdesc:a802722391bcda9c5d9e5d0e297859dd6"><td class="mdescLeft">&#160;</td><td class="mdescRight">determine target stress  <a href="classNose__Hoover.html#a802722391bcda9c5d9e5d0e297859dd6">More...</a><br /></td></tr>
 <tr class="separator:a802722391bcda9c5d9e5d0e297859dd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1450a01d04771482cd76d8b10315ec5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a1450a01d04771482cd76d8b10315ec5f">couple_stress</a> ()</td></tr>
+<tr class="memdesc:a1450a01d04771482cd76d8b10315ec5f"><td class="mdescLeft">&#160;</td><td class="mdescRight">couple stress component due to md_pcouple  <a href="classNose__Hoover.html#a1450a01d04771482cd76d8b10315ec5f">More...</a><br /></td></tr>
 <tr class="separator:a1450a01d04771482cd76d8b10315ec5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac459676ef3b9af8f26a00284eecd2957"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#ac459676ef3b9af8f26a00284eecd2957">update_volume</a> ()</td></tr>
-<tr class="separator:ac459676ef3b9af8f26a00284eecd2957"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classMDrun"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classMDrun')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classMDrun.html">MDrun</a></td></tr>
-<tr class="memitem:ae13c3615d2cf185d056e8a6bb1ce7e9d inherit pub_methods_classMDrun"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#ae13c3615d2cf185d056e8a6bb1ce7e9d">MDrun</a> (<a class="el" href="classMD__parameters.html">MD_parameters</a> &amp;MD_para_in, <a class="el" href="classUnitCell.html">UnitCell</a> &amp;unit_in)</td></tr>
-<tr class="separator:ae13c3615d2cf185d056e8a6bb1ce7e9d inherit pub_methods_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40231699e3268f07c8f9b18b0498d560 inherit pub_methods_classMDrun"><td class="memItemLeft" align="right" valign="top">virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a40231699e3268f07c8f9b18b0498d560">~MDrun</a> ()</td></tr>
-<tr class="separator:a40231699e3268f07c8f9b18b0498d560 inherit pub_methods_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a117831ce15e9c9ea3ecf0439da44225f inherit pub_methods_classMDrun"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f">update_pos</a> ()</td></tr>
-<tr class="memdesc:a117831ce15e9c9ea3ecf0439da44225f inherit pub_methods_classMDrun"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform one step update of pos due to atomic velocity  <a href="classMDrun.html#a117831ce15e9c9ea3ecf0439da44225f">More...</a><br /></td></tr>
-<tr class="separator:a117831ce15e9c9ea3ecf0439da44225f inherit pub_methods_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7b4e537c0e31069dcd68609f914234df inherit pub_methods_classMDrun"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df">update_vel</a> (const <a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *<a class="el" href="classMDrun.html#af606a44acc0c7a20a95358c784076acd">force</a>)</td></tr>
-<tr class="memdesc:a7b4e537c0e31069dcd68609f914234df inherit pub_methods_classMDrun"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform half-step update of vel due to atomic force  <a href="classMDrun.html#a7b4e537c0e31069dcd68609f914234df">More...</a><br /></td></tr>
-<tr class="separator:a7b4e537c0e31069dcd68609f914234df inherit pub_methods_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67d077e80aff0e03e5d85cc34003a56c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a67d077e80aff0e03e5d85cc34003a56c">update_volume</a> (std::ofstream &amp;ofs)</td></tr>
+<tr class="memdesc:a67d077e80aff0e03e5d85cc34003a56c"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform half-step update of volume  <a href="classNose__Hoover.html#a67d077e80aff0e03e5d85cc34003a56c">More...</a><br /></td></tr>
+<tr class="separator:a67d077e80aff0e03e5d85cc34003a56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
-Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
 <tr class="memitem:afce109fc9b764ac74dd5f88957ff809f"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#afce109fc9b764ac74dd5f88957ff809f">nc_tchain</a> = 1</td></tr>
+<tr class="memdesc:afce109fc9b764ac74dd5f88957ff809f"><td class="mdescLeft">&#160;</td><td class="mdescRight">the number of nc for nvt  <a href="classNose__Hoover.html#afce109fc9b764ac74dd5f88957ff809f">More...</a><br /></td></tr>
 <tr class="separator:afce109fc9b764ac74dd5f88957ff809f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d26e89887396878ab628c897a0b156d"><td class="memItemLeft" align="right" valign="top">const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a6d26e89887396878ab628c897a0b156d">nc_pchain</a> = 1</td></tr>
+<tr class="memdesc:a6d26e89887396878ab628c897a0b156d"><td class="mdescLeft">&#160;</td><td class="mdescRight">the number of nc for npt  <a href="classNose__Hoover.html#a6d26e89887396878ab628c897a0b156d">More...</a><br /></td></tr>
 <tr class="separator:a6d26e89887396878ab628c897a0b156d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cafbcaa66de7e881f242a6f0d692a1d"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a0cafbcaa66de7e881f242a6f0d692a1d">w</a> [<a class="el" href="classNose__Hoover.html#abbe4b1ba7ba9bb9f497710eaf7fe4c5c">nys</a>]</td></tr>
+<tr class="memdesc:a0cafbcaa66de7e881f242a6f0d692a1d"><td class="mdescLeft">&#160;</td><td class="mdescRight">scale evolution operator  <a href="classNose__Hoover.html#a0cafbcaa66de7e881f242a6f0d692a1d">More...</a><br /></td></tr>
 <tr class="separator:a0cafbcaa66de7e881f242a6f0d692a1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9fafe0f0126a2183addc3cda336add8"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#aa9fafe0f0126a2183addc3cda336add8">tdof</a></td></tr>
+<tr class="memdesc:aa9fafe0f0126a2183addc3cda336add8"><td class="mdescLeft">&#160;</td><td class="mdescRight">particle degree of freedom  <a href="classNose__Hoover.html#aa9fafe0f0126a2183addc3cda336add8">More...</a><br /></td></tr>
 <tr class="separator:aa9fafe0f0126a2183addc3cda336add8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b24dc2187aa7955156b4e130a64981b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a6b24dc2187aa7955156b4e130a64981b">t_target</a></td></tr>
+<tr class="memdesc:a6b24dc2187aa7955156b4e130a64981b"><td class="mdescLeft">&#160;</td><td class="mdescRight">target temperature  <a href="classNose__Hoover.html#a6b24dc2187aa7955156b4e130a64981b">More...</a><br /></td></tr>
 <tr class="separator:a6b24dc2187aa7955156b4e130a64981b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab23fd4ab518d3bd9a84f0e0bbef531c3"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#ab23fd4ab518d3bd9a84f0e0bbef531c3">mass_eta</a></td></tr>
+<tr class="memdesc:ab23fd4ab518d3bd9a84f0e0bbef531c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">mass of thermostats coupled with particles  <a href="classNose__Hoover.html#ab23fd4ab518d3bd9a84f0e0bbef531c3">More...</a><br /></td></tr>
 <tr class="separator:ab23fd4ab518d3bd9a84f0e0bbef531c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab207a90fc49cff7bb981f66c39fff4eb"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#ab207a90fc49cff7bb981f66c39fff4eb">eta</a></td></tr>
+<tr class="memdesc:ab207a90fc49cff7bb981f66c39fff4eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">position of thermostats coupled with particles  <a href="classNose__Hoover.html#ab207a90fc49cff7bb981f66c39fff4eb">More...</a><br /></td></tr>
 <tr class="separator:ab207a90fc49cff7bb981f66c39fff4eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b66fe5dd08b81aa12f1a35af46f6861"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a6b66fe5dd08b81aa12f1a35af46f6861">v_eta</a></td></tr>
+<tr class="memdesc:a6b66fe5dd08b81aa12f1a35af46f6861"><td class="mdescLeft">&#160;</td><td class="mdescRight">velocity of thermostats coupled with particles  <a href="classNose__Hoover.html#a6b66fe5dd08b81aa12f1a35af46f6861">More...</a><br /></td></tr>
 <tr class="separator:a6b66fe5dd08b81aa12f1a35af46f6861"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a050e8967ac021702c4c91b7cc2dfa4d7"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a050e8967ac021702c4c91b7cc2dfa4d7">g_eta</a></td></tr>
+<tr class="memdesc:a050e8967ac021702c4c91b7cc2dfa4d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">acceleration of thermostats coupled with particles  <a href="classNose__Hoover.html#a050e8967ac021702c4c91b7cc2dfa4d7">More...</a><br /></td></tr>
 <tr class="separator:a050e8967ac021702c4c91b7cc2dfa4d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00e4b61ba82537dd51ce630d38c30c01"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a00e4b61ba82537dd51ce630d38c30c01">npt_flag</a></td></tr>
+<tr class="memdesc:a00e4b61ba82537dd51ce630d38c30c01"><td class="mdescLeft">&#160;</td><td class="mdescRight">whether NPT ensemble  <a href="classNose__Hoover.html#a00e4b61ba82537dd51ce630d38c30c01">More...</a><br /></td></tr>
 <tr class="separator:a00e4b61ba82537dd51ce630d38c30c01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a033c6c3ab991660ac30425d47cb3b2e7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a033c6c3ab991660ac30425d47cb3b2e7">mass_omega</a> [6]</td></tr>
+<tr class="memdesc:a033c6c3ab991660ac30425d47cb3b2e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">mass of lattice component  <a href="classNose__Hoover.html#a033c6c3ab991660ac30425d47cb3b2e7">More...</a><br /></td></tr>
 <tr class="separator:a033c6c3ab991660ac30425d47cb3b2e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acc1b7451fc8670bdf8405f4e9d8badf1"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#acc1b7451fc8670bdf8405f4e9d8badf1">v_omega</a> [6]</td></tr>
+<tr class="memdesc:acc1b7451fc8670bdf8405f4e9d8badf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">velocity of lattice component  <a href="classNose__Hoover.html#acc1b7451fc8670bdf8405f4e9d8badf1">More...</a><br /></td></tr>
 <tr class="separator:acc1b7451fc8670bdf8405f4e9d8badf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29a05269d3080847d82421bbb0e20736"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a29a05269d3080847d82421bbb0e20736">pstart</a> [6]</td></tr>
+<tr class="memdesc:a29a05269d3080847d82421bbb0e20736"><td class="mdescLeft">&#160;</td><td class="mdescRight">initial stress components  <a href="classNose__Hoover.html#a29a05269d3080847d82421bbb0e20736">More...</a><br /></td></tr>
 <tr class="separator:a29a05269d3080847d82421bbb0e20736"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade2339555321bba4a06a13e24390bab6"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#ade2339555321bba4a06a13e24390bab6">pstop</a> [6]</td></tr>
+<tr class="memdesc:ade2339555321bba4a06a13e24390bab6"><td class="mdescLeft">&#160;</td><td class="mdescRight">final stress components  <a href="classNose__Hoover.html#ade2339555321bba4a06a13e24390bab6">More...</a><br /></td></tr>
 <tr class="separator:ade2339555321bba4a06a13e24390bab6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a237f5acdb95d20e144bdddc905fd8bdb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a237f5acdb95d20e144bdddc905fd8bdb">pfreq</a> [6]</td></tr>
+<tr class="memdesc:a237f5acdb95d20e144bdddc905fd8bdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Oscillation frequency, used to determine qmass of thermostats coupled with barostat.  <a href="classNose__Hoover.html#a237f5acdb95d20e144bdddc905fd8bdb">More...</a><br /></td></tr>
 <tr class="separator:a237f5acdb95d20e144bdddc905fd8bdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ebab05e14819ef8a9fbad486f7f39a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a1ebab05e14819ef8a9fbad486f7f39a3">pflag</a> [6]</td></tr>
+<tr class="memdesc:a1ebab05e14819ef8a9fbad486f7f39a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">control stress components  <a href="classNose__Hoover.html#a1ebab05e14819ef8a9fbad486f7f39a3">More...</a><br /></td></tr>
 <tr class="separator:a1ebab05e14819ef8a9fbad486f7f39a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a278cfe5f30fe5b2b74d17108c17dcb95"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a278cfe5f30fe5b2b74d17108c17dcb95">pdim</a></td></tr>
+<tr class="memdesc:a278cfe5f30fe5b2b74d17108c17dcb95"><td class="mdescLeft">&#160;</td><td class="mdescRight">pdim = pflag[0] + pflag[1] + pflag[2], number of barostatted dims  <a href="classNose__Hoover.html#a278cfe5f30fe5b2b74d17108c17dcb95">More...</a><br /></td></tr>
 <tr class="separator:a278cfe5f30fe5b2b74d17108c17dcb95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47649088b209db37d62134aa6bc5a575"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a47649088b209db37d62134aa6bc5a575">p_target</a> [6]</td></tr>
+<tr class="memdesc:a47649088b209db37d62134aa6bc5a575"><td class="mdescLeft">&#160;</td><td class="mdescRight">target stress components  <a href="classNose__Hoover.html#a47649088b209db37d62134aa6bc5a575">More...</a><br /></td></tr>
 <tr class="separator:a47649088b209db37d62134aa6bc5a575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae48b34cb8e4aa48a759b54229e9c77"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a1ae48b34cb8e4aa48a759b54229e9c77">p_hydro</a></td></tr>
+<tr class="memdesc:a1ae48b34cb8e4aa48a759b54229e9c77"><td class="mdescLeft">&#160;</td><td class="mdescRight">target hydrostatic target pressure  <a href="classNose__Hoover.html#a1ae48b34cb8e4aa48a759b54229e9c77">More...</a><br /></td></tr>
 <tr class="separator:a1ae48b34cb8e4aa48a759b54229e9c77"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a032f7ad2b828156a0c2271069f18e5c5"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a032f7ad2b828156a0c2271069f18e5c5">p_current</a> [6]</td></tr>
+<tr class="memdesc:a032f7ad2b828156a0c2271069f18e5c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">current stress after coupled  <a href="classNose__Hoover.html#a032f7ad2b828156a0c2271069f18e5c5">More...</a><br /></td></tr>
 <tr class="separator:a032f7ad2b828156a0c2271069f18e5c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25ee39a109d618ac89a0c6eaaa508691"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a25ee39a109d618ac89a0c6eaaa508691">mass_peta</a></td></tr>
+<tr class="memdesc:a25ee39a109d618ac89a0c6eaaa508691"><td class="mdescLeft">&#160;</td><td class="mdescRight">mass of thermostats coupled with barostat  <a href="classNose__Hoover.html#a25ee39a109d618ac89a0c6eaaa508691">More...</a><br /></td></tr>
 <tr class="separator:a25ee39a109d618ac89a0c6eaaa508691"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9e9f742ed26cdfd6ae6b191b807ed760"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a9e9f742ed26cdfd6ae6b191b807ed760">peta</a></td></tr>
+<tr class="memdesc:a9e9f742ed26cdfd6ae6b191b807ed760"><td class="mdescLeft">&#160;</td><td class="mdescRight">position of thermostats coupled with barostat  <a href="classNose__Hoover.html#a9e9f742ed26cdfd6ae6b191b807ed760">More...</a><br /></td></tr>
 <tr class="separator:a9e9f742ed26cdfd6ae6b191b807ed760"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a981bdff42e78896362da3623cc6c1506"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a981bdff42e78896362da3623cc6c1506">v_peta</a></td></tr>
+<tr class="memdesc:a981bdff42e78896362da3623cc6c1506"><td class="mdescLeft">&#160;</td><td class="mdescRight">velocity of thermostats coupled with barostat  <a href="classNose__Hoover.html#a981bdff42e78896362da3623cc6c1506">More...</a><br /></td></tr>
 <tr class="separator:a981bdff42e78896362da3623cc6c1506"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a815a641d4d770344c04ed71962c94524"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a815a641d4d770344c04ed71962c94524">g_peta</a></td></tr>
+<tr class="memdesc:a815a641d4d770344c04ed71962c94524"><td class="mdescLeft">&#160;</td><td class="mdescRight">acceleration of thermostats coupled with barostat  <a href="classNose__Hoover.html#a815a641d4d770344c04ed71962c94524">More...</a><br /></td></tr>
 <tr class="separator:a815a641d4d770344c04ed71962c94524"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ac6d368f6e6e534addcf28e69a7ff0f"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#a8ac6d368f6e6e534addcf28e69a7ff0f">mtk_term</a></td></tr>
+<tr class="memdesc:a8ac6d368f6e6e534addcf28e69a7ff0f"><td class="mdescLeft">&#160;</td><td class="mdescRight">mtk correction  <a href="classNose__Hoover.html#a8ac6d368f6e6e534addcf28e69a7ff0f">More...</a><br /></td></tr>
 <tr class="separator:a8ac6d368f6e6e534addcf28e69a7ff0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_attribs_classMDrun"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classMDrun')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classMDrun.html">MDrun</a></td></tr>
-<tr class="memitem:ae0e125883a2c39aaa41e46a64c14317f inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMD__parameters.html">MD_parameters</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#ae0e125883a2c39aaa41e46a64c14317f">mdp</a></td></tr>
-<tr class="separator:ae0e125883a2c39aaa41e46a64c14317f inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f02d300d87a3744bc2282673255422e inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUnitCell.html">UnitCell</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a4f02d300d87a3744bc2282673255422e">ucell</a></td></tr>
-<tr class="separator:a4f02d300d87a3744bc2282673255422e inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7430080491f2b6356282c69fbc1f02a3 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a7430080491f2b6356282c69fbc1f02a3">stop</a></td></tr>
-<tr class="separator:a7430080491f2b6356282c69fbc1f02a3 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af8422dfef8ccea2df3f6089cf5cfb7b4 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#af8422dfef8ccea2df3f6089cf5cfb7b4">t_current</a></td></tr>
-<tr class="separator:af8422dfef8ccea2df3f6089cf5cfb7b4 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a89ca568cb47db66c1ffddb2e94463053 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a89ca568cb47db66c1ffddb2e94463053">step_</a></td></tr>
-<tr class="separator:a89ca568cb47db66c1ffddb2e94463053 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae1f401c56897825d64f8469b8a541097 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#ae1f401c56897825d64f8469b8a541097">step_rst_</a></td></tr>
-<tr class="separator:ae1f401c56897825d64f8469b8a541097 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad2658178672035c84c94f264245999fa inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#ad2658178672035c84c94f264245999fa">energy_</a></td></tr>
-<tr class="separator:ad2658178672035c84c94f264245999fa inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad7c519249eb60110cf2527c1f761c0c8 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#ad7c519249eb60110cf2527c1f761c0c8">frozen_freedom_</a></td></tr>
-<tr class="separator:ad7c519249eb60110cf2527c1f761c0c8 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9db50772369ee01e72d59dca332ac4f8 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a9db50772369ee01e72d59dca332ac4f8">allmass</a></td></tr>
-<tr class="separator:a9db50772369ee01e72d59dca332ac4f8 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1f1bec983640aa906af5cbe9ab6f5ea2 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a1f1bec983640aa906af5cbe9ab6f5ea2">pos</a></td></tr>
-<tr class="separator:a1f1bec983640aa906af5cbe9ab6f5ea2 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab81005160b6f67a18370f1526bca0775 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#ab81005160b6f67a18370f1526bca0775">vel</a></td></tr>
-<tr class="separator:ab81005160b6f67a18370f1526bca0775 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7a67171bc30604d950fe3d2650dae4a7 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a7a67171bc30604d950fe3d2650dae4a7">ionmbl</a></td></tr>
-<tr class="separator:a7a67171bc30604d950fe3d2650dae4a7 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af606a44acc0c7a20a95358c784076acd inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#af606a44acc0c7a20a95358c784076acd">force</a></td></tr>
-<tr class="separator:af606a44acc0c7a20a95358c784076acd inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e7c36eb5297a8bb0bd597450668c20f inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a7e7c36eb5297a8bb0bd597450668c20f">virial</a></td></tr>
-<tr class="separator:a7e7c36eb5297a8bb0bd597450668c20f inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c010f96b6bf0a25933660552182b756 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a1c010f96b6bf0a25933660552182b756">stress</a></td></tr>
-<tr class="separator:a1c010f96b6bf0a25933660552182b756 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a41e4bc784742d37662f5f3a742de1234 inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#a41e4bc784742d37662f5f3a742de1234">potential</a></td></tr>
-<tr class="separator:a41e4bc784742d37662f5f3a742de1234 inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afa60177cbdae9236608ee6bee92c5e2e inherit pub_attribs_classMDrun"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMDrun.html#afa60177cbdae9236608ee6bee92c5e2e">kinetic</a></td></tr>
-<tr class="separator:afa60177cbdae9236608ee6bee92c5e2e inherit pub_attribs_classMDrun"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
+Static Private Attributes</h2></td></tr>
 <tr class="memitem:abbe4b1ba7ba9bb9f497710eaf7fe4c5c"><td class="memItemLeft" align="right" valign="top">const static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classNose__Hoover.html#abbe4b1ba7ba9bb9f497710eaf7fe4c5c">nys</a> = 7</td></tr>
+<tr class="memdesc:abbe4b1ba7ba9bb9f497710eaf7fe4c5c"><td class="mdescLeft">&#160;</td><td class="mdescRight">the number of scale evolution operator  <a href="classNose__Hoover.html#abbe4b1ba7ba9bb9f497710eaf7fe4c5c">More...</a><br /></td></tr>
 <tr class="separator:abbe4b1ba7ba9bb9f497710eaf7fe4c5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classMD__base"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classMD__base')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classMD__base.html">MD_base</a></td></tr>
+<tr class="memitem:afb78c708fe7fddd74d23ac0c867ea5c5 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#afb78c708fe7fddd74d23ac0c867ea5c5">stop</a></td></tr>
+<tr class="memdesc:afb78c708fe7fddd74d23ac0c867ea5c5 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">MD stop or not.  <a href="classMD__base.html#afb78c708fe7fddd74d23ac0c867ea5c5">More...</a><br /></td></tr>
+<tr class="separator:afb78c708fe7fddd74d23ac0c867ea5c5 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acefd4f52b6b8531f57b19ff2ebf0499f inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#acefd4f52b6b8531f57b19ff2ebf0499f">t_current</a></td></tr>
+<tr class="memdesc:acefd4f52b6b8531f57b19ff2ebf0499f inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">current temperature  <a href="classMD__base.html#acefd4f52b6b8531f57b19ff2ebf0499f">More...</a><br /></td></tr>
+<tr class="separator:acefd4f52b6b8531f57b19ff2ebf0499f inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a894498f316aeff8e4c6d511e36d1f074 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a894498f316aeff8e4c6d511e36d1f074">step_</a></td></tr>
+<tr class="memdesc:a894498f316aeff8e4c6d511e36d1f074 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">the MD step finished in current calculation  <a href="classMD__base.html#a894498f316aeff8e4c6d511e36d1f074">More...</a><br /></td></tr>
+<tr class="separator:a894498f316aeff8e4c6d511e36d1f074 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1f9c94b3aa87b41ea8bbd0da61c1f63 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#ad1f9c94b3aa87b41ea8bbd0da61c1f63">step_rst_</a></td></tr>
+<tr class="memdesc:ad1f9c94b3aa87b41ea8bbd0da61c1f63 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">the MD step finished in previous calculations  <a href="classMD__base.html#ad1f9c94b3aa87b41ea8bbd0da61c1f63">More...</a><br /></td></tr>
+<tr class="separator:ad1f9c94b3aa87b41ea8bbd0da61c1f63 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b3862fc02512105f6d6c03874488761 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a6b3862fc02512105f6d6c03874488761">frozen_freedom_</a></td></tr>
+<tr class="memdesc:a6b3862fc02512105f6d6c03874488761 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">the fixed freedom of the system  <a href="classMD__base.html#a6b3862fc02512105f6d6c03874488761">More...</a><br /></td></tr>
+<tr class="separator:a6b3862fc02512105f6d6c03874488761 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add44e60b8b5ee286ad7f30651c20df5a inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">double *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#add44e60b8b5ee286ad7f30651c20df5a">allmass</a></td></tr>
+<tr class="memdesc:add44e60b8b5ee286ad7f30651c20df5a inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">atom mass  <a href="classMD__base.html#add44e60b8b5ee286ad7f30651c20df5a">More...</a><br /></td></tr>
+<tr class="separator:add44e60b8b5ee286ad7f30651c20df5a inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af742a249145061eb098f4985cdff796b inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#af742a249145061eb098f4985cdff796b">pos</a></td></tr>
+<tr class="memdesc:af742a249145061eb098f4985cdff796b inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">atom displacements liuyu modify 2023-03-22  <a href="classMD__base.html#af742a249145061eb098f4985cdff796b">More...</a><br /></td></tr>
+<tr class="separator:af742a249145061eb098f4985cdff796b inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02737871f93193b048c4a19a224d9862 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a02737871f93193b048c4a19a224d9862">vel</a></td></tr>
+<tr class="memdesc:a02737871f93193b048c4a19a224d9862 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">atom velocity  <a href="classMD__base.html#a02737871f93193b048c4a19a224d9862">More...</a><br /></td></tr>
+<tr class="separator:a02737871f93193b048c4a19a224d9862 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aadf1a92c22dff7035ac55b7cc5f9530b inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; int &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#aadf1a92c22dff7035ac55b7cc5f9530b">ionmbl</a></td></tr>
+<tr class="memdesc:aadf1a92c22dff7035ac55b7cc5f9530b inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">atom is frozen or not  <a href="classMD__base.html#aadf1a92c22dff7035ac55b7cc5f9530b">More...</a><br /></td></tr>
+<tr class="separator:aadf1a92c22dff7035ac55b7cc5f9530b inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2432508044776c8cd8a9e68e81ce33d7 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a2432508044776c8cd8a9e68e81ce33d7">force</a></td></tr>
+<tr class="memdesc:a2432508044776c8cd8a9e68e81ce33d7 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">force of each atom  <a href="classMD__base.html#a2432508044776c8cd8a9e68e81ce33d7">More...</a><br /></td></tr>
+<tr class="separator:a2432508044776c8cd8a9e68e81ce33d7 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6889bb51ac2a28b443e0cb2f3522445b inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a6889bb51ac2a28b443e0cb2f3522445b">virial</a></td></tr>
+<tr class="memdesc:a6889bb51ac2a28b443e0cb2f3522445b inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">virial for this lattice  <a href="classMD__base.html#a6889bb51ac2a28b443e0cb2f3522445b">More...</a><br /></td></tr>
+<tr class="separator:a6889bb51ac2a28b443e0cb2f3522445b inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16835a08cebd9b67f90581c954ab9dcd inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a16835a08cebd9b67f90581c954ab9dcd">stress</a></td></tr>
+<tr class="memdesc:a16835a08cebd9b67f90581c954ab9dcd inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">stress for this lattice  <a href="classMD__base.html#a16835a08cebd9b67f90581c954ab9dcd">More...</a><br /></td></tr>
+<tr class="separator:a16835a08cebd9b67f90581c954ab9dcd inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18cd00104a7024f64a56e82dcae6ceb8 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a18cd00104a7024f64a56e82dcae6ceb8">potential</a></td></tr>
+<tr class="memdesc:a18cd00104a7024f64a56e82dcae6ceb8 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">potential energy  <a href="classMD__base.html#a18cd00104a7024f64a56e82dcae6ceb8">More...</a><br /></td></tr>
+<tr class="separator:a18cd00104a7024f64a56e82dcae6ceb8 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aceecd1918cea90b64a12a421a1e0b972 inherit pub_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#aceecd1918cea90b64a12a421a1e0b972">kinetic</a></td></tr>
+<tr class="memdesc:aceecd1918cea90b64a12a421a1e0b972 inherit pub_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">kinetic energy  <a href="classMD__base.html#aceecd1918cea90b64a12a421a1e0b972">More...</a><br /></td></tr>
+<tr class="separator:aceecd1918cea90b64a12a421a1e0b972 inherit pub_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_methods_classMD__base"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classMD__base')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classMD__base.html">MD_base</a></td></tr>
+<tr class="memitem:a1cf5142ddd12b55370f909ad0944da05 inherit pro_methods_classMD__base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a1cf5142ddd12b55370f909ad0944da05">update_pos</a> ()</td></tr>
+<tr class="memdesc:a1cf5142ddd12b55370f909ad0944da05 inherit pro_methods_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform one step update of pos due to atomic velocity  <a href="classMD__base.html#a1cf5142ddd12b55370f909ad0944da05">More...</a><br /></td></tr>
+<tr class="separator:a1cf5142ddd12b55370f909ad0944da05 inherit pro_methods_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa75ba376219066befd52fb6d52ef08b7 inherit pro_methods_classMD__base"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#aa75ba376219066befd52fb6d52ef08b7">update_vel</a> (const <a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; *<a class="el" href="classMD__base.html#a2432508044776c8cd8a9e68e81ce33d7">force</a>)</td></tr>
+<tr class="memdesc:aa75ba376219066befd52fb6d52ef08b7 inherit pro_methods_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">perform half-step update of vel due to atomic force  <a href="classMD__base.html#aa75ba376219066befd52fb6d52ef08b7">More...</a><br /></td></tr>
+<tr class="separator:aa75ba376219066befd52fb6d52ef08b7 inherit pro_methods_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pro_attribs_classMD__base"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classMD__base')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classMD__base.html">MD_base</a></td></tr>
+<tr class="memitem:a33383ae073c172d199ff47d3ec556c14 inherit pro_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classMD__para.html">MD_para</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a33383ae073c172d199ff47d3ec556c14">mdp</a></td></tr>
+<tr class="memdesc:a33383ae073c172d199ff47d3ec556c14 inherit pro_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">input parameters used in md  <a href="classMD__base.html#a33383ae073c172d199ff47d3ec556c14">More...</a><br /></td></tr>
+<tr class="separator:a33383ae073c172d199ff47d3ec556c14 inherit pro_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5765c37148db7f59b03ffca89afdcd2a inherit pro_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUnitCell.html">UnitCell</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a5765c37148db7f59b03ffca89afdcd2a">ucell</a></td></tr>
+<tr class="memdesc:a5765c37148db7f59b03ffca89afdcd2a inherit pro_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">unitcell information  <a href="classMD__base.html#a5765c37148db7f59b03ffca89afdcd2a">More...</a><br /></td></tr>
+<tr class="separator:a5765c37148db7f59b03ffca89afdcd2a inherit pro_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0009554d767d7d4e78767ed9776c6a05 inherit pro_attribs_classMD__base"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMD__base.html#a0009554d767d7d4e78767ed9776c6a05">energy_</a></td></tr>
+<tr class="memdesc:a0009554d767d7d4e78767ed9776c6a05 inherit pro_attribs_classMD__base"><td class="mdescLeft">&#160;</td><td class="mdescRight">total energy of the system  <a href="classMD__base.html#a0009554d767d7d4e78767ed9776c6a05">More...</a><br /></td></tr>
+<tr class="separator:a0009554d767d7d4e78767ed9776c6a05 inherit pro_attribs_classMD__base"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="af80d23ecb27b1847c6d8b8478251cd54"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af80d23ecb27b1847c6d8b8478251cd54">&#9670;&nbsp;</a></span>Nose_Hoover()</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Nose Hoover Chain. </p>
+<p>Nose-Hoover style non-Hamiltonian equations of motion. [Phys. Rev. A 31, 1695 (1985)] Designed to generate positions and velocities sampled from NVT and NPT ensemble. </p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aab1e3f44123539c12fedacfd8e537eaf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab1e3f44123539c12fedacfd8e537eaf">&#9670;&nbsp;</a></span>Nose_Hoover()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +320,7 @@ Static Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">Nose_Hoover::Nose_Hoover </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classMD__parameters.html">MD_parameters</a> &amp;&#160;</td>
+          <td class="paramtype"><a class="el" href="classMD__para.html">MD_para</a> &amp;&#160;</td>
           <td class="paramname"><em>MD_para_in</em>, </td>
         </tr>
         <tr>
@@ -271,11 +336,18 @@ Static Public Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<p>init NPT related variables</p>
+<p>determine the NPT methods</p>
+<p>The lattice must be lower-triangular under tri mode. e11 0 0 e21 e22 0 e31 e32 e33 Under Voigt notation, xx, yy, zz, yz, xz, xy.</p>
+<p>determine whether NPT ensemble</p>
+<p>allocate thermostats coupled with particles</p>
+<p>allocate barostat and thermostats coupled with barostat</p>
+<p>w[0] = 1;</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classNose__Hoover_af80d23ecb27b1847c6d8b8478251cd54_cgraph.png" border="0" usemap="#classNose__Hoover_af80d23ecb27b1847c6d8b8478251cd54_cgraph" alt=""/></div>
-<map name="classNose__Hoover_af80d23ecb27b1847c6d8b8478251cd54_cgraph" id="classNose__Hoover_af80d23ecb27b1847c6d8b8478251cd54_cgraph">
+<div class="center"><img src="classNose__Hoover_aab1e3f44123539c12fedacfd8e537eaf_cgraph.png" border="0" usemap="#classNose__Hoover_aab1e3f44123539c12fedacfd8e537eaf_cgraph" alt=""/></div>
+<map name="classNose__Hoover_aab1e3f44123539c12fedacfd8e537eaf_cgraph" id="classNose__Hoover_aab1e3f44123539c12fedacfd8e537eaf_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,209,32"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="257,5,471,32"/>
 </map>
@@ -306,6 +378,9 @@ Here is the call graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Nose_Hoover::baro_thermo </td>
@@ -314,13 +389,30 @@ Here is the call graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>perform half-step update of thermostats coupled with barostat </p>
+<p>the freedom of lattice</p>
+<p>update kenetic energy of lattice</p>
+<p>update force</p>
+<p>integrate loop</p>
+<p>propogate v_peta</p>
+<p>propogate peta</p>
+<p>update rescale factor of lattice velocity</p>
+<p>propogate g_peta</p>
+<p>propogate v_peta</p>
+<p>rescale lattice due to thermostats</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNose__Hoover_acd5cde823854e93ced3d173171c2e515_cgraph.png" border="0" usemap="#classNose__Hoover_acd5cde823854e93ced3d173171c2e515_cgraph" alt=""/></div>
 <map name="classNose__Hoover_acd5cde823854e93ced3d173171c2e515_cgraph" id="classNose__Hoover_acd5cde823854e93ced3d173171c2e515_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,205,32"/>
+<area shape="rect" title="perform half&#45;step update of thermostats coupled with barostat" alt="" coords="5,5,205,32"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="253,5,424,32"/>
 </map>
 </div>
@@ -329,8 +421,8 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNose__Hoover_acd5cde823854e93ced3d173171c2e515_icgraph.png" border="0" usemap="#classNose__Hoover_acd5cde823854e93ced3d173171c2e515_icgraph" alt=""/></div>
 <map name="classNose__Hoover_acd5cde823854e93ced3d173171c2e515_icgraph" id="classNose__Hoover_acd5cde823854e93ced3d173171c2e515_icgraph">
-<area shape="rect" title=" " alt="" coords="248,31,448,57"/>
-<area shape="rect" href="classNose__Hoover.html#a2460699a58dd787699447714e3f87944" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,190,32"/>
+<area shape="rect" title="perform half&#45;step update of thermostats coupled with barostat" alt="" coords="248,31,448,57"/>
+<area shape="rect" href="classNose__Hoover.html#a1bfbc8a6b4d4ba509b9459c9417ea8d3" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,190,32"/>
 <area shape="rect" href="classNose__Hoover.html#a6d05097c9fc8a511256ca0a48d0ac0e4" title="the second half of equation of motion, update velocities" alt="" coords="5,56,200,83"/>
 </map>
 </div>
@@ -342,6 +434,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Nose_Hoover::couple_stress </td>
@@ -350,13 +445,20 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>couple stress component due to md_pcouple </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNose__Hoover_a1450a01d04771482cd76d8b10315ec5f_cgraph.png" border="0" usemap="#classNose__Hoover_a1450a01d04771482cd76d8b10315ec5f_cgraph" alt=""/></div>
 <map name="classNose__Hoover_a1450a01d04771482cd76d8b10315ec5f_cgraph" id="classNose__Hoover_a1450a01d04771482cd76d8b10315ec5f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,165,47"/>
+<area shape="rect" title="couple stress component due to md_pcouple" alt="" coords="5,5,165,47"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="213,13,427,39"/>
 </map>
 </div>
@@ -365,17 +467,17 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNose__Hoover_a1450a01d04771482cd76d8b10315ec5f_icgraph.png" border="0" usemap="#classNose__Hoover_a1450a01d04771482cd76d8b10315ec5f_icgraph" alt=""/></div>
 <map name="classNose__Hoover_a1450a01d04771482cd76d8b10315ec5f_icgraph" id="classNose__Hoover_a1450a01d04771482cd76d8b10315ec5f_icgraph">
-<area shape="rect" title=" " alt="" coords="248,49,408,90"/>
-<area shape="rect" href="classNose__Hoover.html#a2460699a58dd787699447714e3f87944" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,190,32"/>
+<area shape="rect" title="couple stress component due to md_pcouple" alt="" coords="248,49,408,90"/>
+<area shape="rect" href="classNose__Hoover.html#a1bfbc8a6b4d4ba509b9459c9417ea8d3" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,190,32"/>
 <area shape="rect" href="classNose__Hoover.html#a6d05097c9fc8a511256ca0a48d0ac0e4" title="the second half of equation of motion, update velocities" alt="" coords="5,56,200,83"/>
-<area shape="rect" href="classNose__Hoover.html#afef45e7cf29d9880c32fab3a0570fbd8" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="26,107,179,133"/>
+<area shape="rect" href="classNose__Hoover.html#a68ab9f4d9367505652834879351ef52c" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="26,107,179,133"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a2460699a58dd787699447714e3f87944"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2460699a58dd787699447714e3f87944">&#9670;&nbsp;</a></span>first_half()</h2>
+<a id="a1bfbc8a6b4d4ba509b9459c9417ea8d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bfbc8a6b4d4ba509b9459c9417ea8d3">&#9670;&nbsp;</a></span>first_half()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -386,25 +488,44 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Nose_Hoover::first_half </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>ofs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>the first half of equation of motion, update velocities and positions </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ofs</td><td>determine the output files </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>update thermostats coupled with barostat if NPT ensemble</p>
+<p>update target T</p>
+<p>update thermostats coupled with particles</p>
+<p>update temperature and stress due to velocity rescaling</p>
+<p>couple stress component due to md_pcouple</p>
+<p>determine target stress</p>
+<p>update v_omega</p>
+<p>update vel due to barostat</p>
+<p>perform half-step update of vel due to atomic force</p>
+<p>perform half-step update of volume</p>
+<p>perform one step update of pos due to atomic velocity</p>
+<p>perform half-step update of volume</p>
 
-<p>Reimplemented from <a class="el" href="classMDrun.html#a6f87ef70d9b4910b0a6399ed5b41307b">MDrun</a>.</p>
+<p>Reimplemented from <a class="el" href="classMD__base.html#af067d8c93a4f44f6a698aa0d3fe9ac9c">MD_base</a>.</p>
 
 </div>
 </div>
-<a id="aa8bc8619be3ebf92f53d5121a3df3842"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa8bc8619be3ebf92f53d5121a3df3842">&#9670;&nbsp;</a></span>outputMD()</h2>
+<a id="a46c5e895212fc93e643bd0b0a0128c91"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46c5e895212fc93e643bd0b0a0128c91">&#9670;&nbsp;</a></span>particle_thermo()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -413,7 +534,63 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Nose_Hoover::outputMD </td>
+          <td class="memname">void Nose_Hoover::particle_thermo </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>perform half-step update of thermostats coupled with particles </p>
+<p>update mass_eta</p>
+<p>propogate g_eta</p>
+<p>integrate loop</p>
+<p>propogate v_eta</p>
+<p>propogate eta</p>
+<p>update rescale factor of particle velocity</p>
+<p>propogate g_eta</p>
+<p>propogate v_eta</p>
+<p>rescale velocity due to thermostats</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_cgraph.png" border="0" usemap="#classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_cgraph" alt=""/></div>
+<map name="classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_cgraph" id="classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_cgraph">
+<area shape="rect" title="perform half&#45;step update of thermostats coupled with particles" alt="" coords="5,23,172,65"/>
+<area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="241,5,412,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="220,56,433,83"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_icgraph.png" border="0" usemap="#classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_icgraph" alt=""/></div>
+<map name="classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_icgraph" id="classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_icgraph">
+<area shape="rect" title="perform half&#45;step update of thermostats coupled with particles" alt="" coords="248,23,415,65"/>
+<area shape="rect" href="classNose__Hoover.html#a1bfbc8a6b4d4ba509b9459c9417ea8d3" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,190,32"/>
+<area shape="rect" href="classNose__Hoover.html#a6d05097c9fc8a511256ca0a48d0ac0e4" title="the second half of equation of motion, update velocities" alt="" coords="5,56,200,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab5993afa7d2c9c93bed5ea11bd96bafd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5993afa7d2c9c93bed5ea11bd96bafd">&#9670;&nbsp;</a></span>print_md()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void Nose_Hoover::print_md </td>
           <td>(</td>
           <td class="paramtype">std::ofstream &amp;&#160;</td>
           <td class="paramname"><em>ofs</em>, </td>
@@ -421,7 +598,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">bool&#160;</td>
+          <td class="paramtype">const bool &amp;&#160;</td>
           <td class="paramname"><em>cal_stress</em>&#160;</td>
         </tr>
         <tr>
@@ -432,7 +609,7 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -446,63 +623,26 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Reimplemented from <a class="el" href="classMDrun.html#a19356db7cdf6b48357ecfff93bccacf7">MDrun</a>.</p>
+<p>Reimplemented from <a class="el" href="classMD__base.html#a6b48d2dfbe305740bc978de1acaafa1d">MD_base</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classNose__Hoover_aa8bc8619be3ebf92f53d5121a3df3842_cgraph.png" border="0" usemap="#classNose__Hoover_aa8bc8619be3ebf92f53d5121a3df3842_cgraph" alt=""/></div>
-<map name="classNose__Hoover_aa8bc8619be3ebf92f53d5121a3df3842_cgraph" id="classNose__Hoover_aa8bc8619be3ebf92f53d5121a3df3842_cgraph">
-<area shape="rect" title="output MD information such as energy, temperature, and pressure" alt="" coords="5,42,187,69"/>
-<area shape="rect" href="classMDrun.html#a19356db7cdf6b48357ecfff93bccacf7" title="output MD information such as energy, temperature, and pressure" alt="" coords="235,42,372,69"/>
-<area shape="rect" href="classMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title=" " alt="" coords="420,15,595,42"/>
-<area shape="rect" href="classMD__func.html#a99da8e2d5369eb9c2a2ba398497730b1" title=" " alt="" coords="433,67,581,94"/>
-<area shape="rect" href="classMD__func.html#a97c6aca19e89e6f10684226358fcd820" title=" " alt="" coords="653,13,815,39"/>
-<area shape="rect" href="classModuleBase_1_1Vector3.html#a2eb1b82893764c1bd38a5993c6f6dcfb" title="Get the square of nomr of a Vector3." alt="" coords="873,5,1032,47"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac3c6cb9eae3ff814df0a1e32876c5126" title=" " alt="" coords="643,64,825,105"/>
+<div class="center"><img src="classNose__Hoover_ab5993afa7d2c9c93bed5ea11bd96bafd_cgraph.png" border="0" usemap="#classNose__Hoover_ab5993afa7d2c9c93bed5ea11bd96bafd_cgraph" alt=""/></div>
+<map name="classNose__Hoover_ab5993afa7d2c9c93bed5ea11bd96bafd_cgraph" id="classNose__Hoover_ab5993afa7d2c9c93bed5ea11bd96bafd_cgraph">
+<area shape="rect" title="output MD information such as energy, temperature, and pressure" alt="" coords="5,42,180,69"/>
+<area shape="rect" href="classMD__base.html#a6b48d2dfbe305740bc978de1acaafa1d" title="output MD information such as energy, temperature, and pressure" alt="" coords="228,42,376,69"/>
+<area shape="rect" href="namespaceMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title="get the current temperature" alt="" coords="424,15,599,42"/>
+<area shape="rect" href="namespaceMD__func.html#aaea37c0c850a62e46bf36533696046f0" title="output the stress information" alt="" coords="430,67,593,94"/>
+<area shape="rect" href="namespaceMD__func.html#a6c0e776a467f2fadc838df160f220ecc" title="calculate the ionic kinetic energy" alt="" coords="647,13,829,39"/>
+<area shape="rect" href="classModuleBase_1_1Vector3.html#a2eb1b82893764c1bd38a5993c6f6dcfb" title="Get the square of nomr of a Vector3." alt="" coords="877,5,1036,47"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac3c6cb9eae3ff814df0a1e32876c5126" title=" " alt="" coords="647,64,829,105"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a46c5e895212fc93e643bd0b0a0128c91"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46c5e895212fc93e643bd0b0a0128c91">&#9670;&nbsp;</a></span>particle_thermo()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Nose_Hoover::particle_thermo </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_cgraph.png" border="0" usemap="#classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_cgraph" alt=""/></div>
-<map name="classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_cgraph" id="classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_cgraph">
-<area shape="rect" title=" " alt="" coords="5,23,172,65"/>
-<area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="241,5,412,32"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="220,56,433,83"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_icgraph.png" border="0" usemap="#classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_icgraph" alt=""/></div>
-<map name="classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_icgraph" id="classNose__Hoover_a46c5e895212fc93e643bd0b0a0128c91_icgraph">
-<area shape="rect" title=" " alt="" coords="248,23,415,65"/>
-<area shape="rect" href="classNose__Hoover.html#a2460699a58dd787699447714e3f87944" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,190,32"/>
-<area shape="rect" href="classNose__Hoover.html#a6d05097c9fc8a511256ca0a48d0ac0e4" title="the second half of equation of motion, update velocities" alt="" coords="5,56,200,83"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="acd568e8a02799fb35f89ae3e97473c83"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acd568e8a02799fb35f89ae3e97473c83">&#9670;&nbsp;</a></span>restart()</h2>
+<a id="a0715fdffa16f90f6e628ba8bf4911162"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0715fdffa16f90f6e628ba8bf4911162">&#9670;&nbsp;</a></span>restart()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -513,25 +653,33 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Nose_Hoover::restart </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>global_readin_dir</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>restart MD when md_restart is true </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">global_readin_dir</td><td>directory of files for reading </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>npt</p>
 
-<p>Reimplemented from <a class="el" href="classMDrun.html#ae5a5cac23232baaa0e027c00b20e2240">MDrun</a>.</p>
+<p>Reimplemented from <a class="el" href="classMD__base.html#a1d347efefe68147dc6da28cc28df42cf">MD_base</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classNose__Hoover_acd568e8a02799fb35f89ae3e97473c83_cgraph.png" border="0" usemap="#classNose__Hoover_acd568e8a02799fb35f89ae3e97473c83_cgraph" alt=""/></div>
-<map name="classNose__Hoover_acd568e8a02799fb35f89ae3e97473c83_cgraph" id="classNose__Hoover_acd568e8a02799fb35f89ae3e97473c83_cgraph">
+<div class="center"><img src="classNose__Hoover_a0715fdffa16f90f6e628ba8bf4911162_cgraph.png" border="0" usemap="#classNose__Hoover_a0715fdffa16f90f6e628ba8bf4911162_cgraph" alt=""/></div>
+<map name="classNose__Hoover_a0715fdffa16f90f6e628ba8bf4911162_cgraph" id="classNose__Hoover_a0715fdffa16f90f6e628ba8bf4911162_cgraph">
 <area shape="rect" title="restart MD when md_restart is true" alt="" coords="5,5,165,32"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="213,5,427,32"/>
 </map>
@@ -557,19 +705,27 @@ Here is the call graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>the second half of equation of motion, update velocities </p>
+<p>perform half-step update of vel due to atomic force</p>
+<p>update vel due to barostat</p>
+<p>update temperature and kinetic energy due to velocity rescaling</p>
+<p>update stress due to velocity rescaling</p>
+<p>couple stress component due to md_pcouple</p>
+<p>update v_omega</p>
+<p>update thermostats coupled with particles</p>
+<p>update thermostats coupled with barostat if NPT ensemble</p>
 
-<p>Reimplemented from <a class="el" href="classMDrun.html#a2b7f91ffa0d66ba98ca6c2cad87e3d49">MDrun</a>.</p>
+<p>Reimplemented from <a class="el" href="classMD__base.html#ad851defa1ad207052885d78bc4a2f120">MD_base</a>.</p>
 
 </div>
 </div>
-<a id="afef45e7cf29d9880c32fab3a0570fbd8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afef45e7cf29d9880c32fab3a0570fbd8">&#9670;&nbsp;</a></span>setup()</h2>
+<a id="a68ab9f4d9367505652834879351ef52c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a68ab9f4d9367505652834879351ef52c">&#9670;&nbsp;</a></span>setup()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -581,13 +737,23 @@ Here is the call graph for this function:</div>
           <td class="memname">void Nose_Hoover::setup </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classModuleESolver_1_1ESolver.html">ModuleESolver::ESolver</a> *&#160;</td>
-          <td class="paramname"><em>p_esolver</em></td><td>)</td>
+          <td class="paramname"><em>p_esolver</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>global_readin_dir</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -596,26 +762,34 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">p_esolver</td><td>the energy solver used in md </td></tr>
+    <tr><td class="paramname">global_readin_dir</td><td>directory of files for reading </td></tr>
   </table>
   </dd>
 </dl>
+<p>determine target temperature</p>
+<p>init thermostats coupled with particles</p>
+<p>NPT ensemble</p>
+<p>determine target stress</p>
+<p>couple stress component due to md_pcouple</p>
+<p>init barostat</p>
+<p>init thermostats coupled with barostat</p>
 
-<p>Reimplemented from <a class="el" href="classMDrun.html#ade9fa55197d9f546719b08b729fbf68e">MDrun</a>.</p>
+<p>Reimplemented from <a class="el" href="classMD__base.html#a78e4e9d290084b6ec0184c52b5d7bf0d">MD_base</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classNose__Hoover_afef45e7cf29d9880c32fab3a0570fbd8_cgraph.png" border="0" usemap="#classNose__Hoover_afef45e7cf29d9880c32fab3a0570fbd8_cgraph" alt=""/></div>
-<map name="classNose__Hoover_afef45e7cf29d9880c32fab3a0570fbd8_cgraph" id="classNose__Hoover_afef45e7cf29d9880c32fab3a0570fbd8_cgraph">
+<div class="center"><img src="classNose__Hoover_a68ab9f4d9367505652834879351ef52c_cgraph.png" border="0" usemap="#classNose__Hoover_a68ab9f4d9367505652834879351ef52c_cgraph" alt=""/></div>
+<map name="classNose__Hoover_a68ab9f4d9367505652834879351ef52c_cgraph" id="classNose__Hoover_a68ab9f4d9367505652834879351ef52c_cgraph">
 <area shape="rect" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="5,159,159,186"/>
-<area shape="rect" href="classNose__Hoover.html#a1450a01d04771482cd76d8b10315ec5f" title=" " alt="" coords="215,5,375,47"/>
-<area shape="rect" href="classMDrun.html#ade9fa55197d9f546719b08b729fbf68e" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="241,71,350,98"/>
-<area shape="rect" href="classNose__Hoover.html#a802722391bcda9c5d9e5d0e297859dd6" title=" " alt="" coords="217,123,373,164"/>
-<area shape="rect" href="classMD__func.html#a6d8606bdc588c3fb21550c8486ad8c4c" title=" " alt="" coords="212,189,379,215"/>
+<area shape="rect" href="classNose__Hoover.html#a1450a01d04771482cd76d8b10315ec5f" title="couple stress component due to md_pcouple" alt="" coords="215,5,375,47"/>
+<area shape="rect" href="classMD__base.html#a78e4e9d290084b6ec0184c52b5d7bf0d" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="232,71,359,98"/>
+<area shape="rect" href="classNose__Hoover.html#a802722391bcda9c5d9e5d0e297859dd6" title="determine target stress" alt="" coords="217,123,373,164"/>
+<area shape="rect" href="namespaceMD__func.html#a415136eb2d412f0823a132668832a1a2" title="get the target temperature of the current md step" alt="" coords="212,189,379,215"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="207,239,384,266"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="223,290,368,317"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="432,13,645,39"/>
-<area shape="rect" href="classMD__func.html#a74016d09926da9592562873ce98f4da5" title=" " alt="" coords="443,67,634,94"/>
-<area shape="rect" href="classMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title=" " alt="" coords="451,118,626,145"/>
+<area shape="rect" href="namespaceMD__func.html#a5cebc1780ba2bdf569a9844a5f6deb8c" title="calculate the total stress tensor" alt="" coords="443,67,634,94"/>
+<area shape="rect" href="namespaceMD__func.html#a1f22db73468b02599fd56f54743fbcc5" title="get the current temperature" alt="" coords="451,118,626,145"/>
 </map>
 </div>
 
@@ -626,6 +800,9 @@ Here is the call graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Nose_Hoover::target_stress </td>
@@ -634,15 +811,22 @@ Here is the call graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>determine target stress </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNose__Hoover_a802722391bcda9c5d9e5d0e297859dd6_icgraph.png" border="0" usemap="#classNose__Hoover_a802722391bcda9c5d9e5d0e297859dd6_icgraph" alt=""/></div>
 <map name="classNose__Hoover_a802722391bcda9c5d9e5d0e297859dd6_icgraph" id="classNose__Hoover_a802722391bcda9c5d9e5d0e297859dd6_icgraph">
-<area shape="rect" title=" " alt="" coords="228,23,384,65"/>
-<area shape="rect" href="classNose__Hoover.html#a2460699a58dd787699447714e3f87944" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,5,180,32"/>
-<area shape="rect" href="classNose__Hoover.html#afef45e7cf29d9880c32fab3a0570fbd8" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="16,56,169,83"/>
+<area shape="rect" title="determine target stress" alt="" coords="228,23,384,65"/>
+<area shape="rect" href="classNose__Hoover.html#a1bfbc8a6b4d4ba509b9459c9417ea8d3" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,5,180,32"/>
+<area shape="rect" href="classNose__Hoover.html#a68ab9f4d9367505652834879351ef52c" title="init before running md, calculate energy, force, and stress of the initial configuration." alt="" coords="16,56,169,83"/>
 </map>
 </div>
 
@@ -653,6 +837,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Nose_Hoover::update_baro </td>
@@ -661,14 +848,21 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>perform half-step update of barostat velocity </p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNose__Hoover_a3862f1714da9cf85bce0527c425ccab6_cgraph.png" border="0" usemap="#classNose__Hoover_a3862f1714da9cf85bce0527c425ccab6_cgraph" alt=""/></div>
 <map name="classNose__Hoover_a3862f1714da9cf85bce0527c425ccab6_cgraph" id="classNose__Hoover_a3862f1714da9cf85bce0527c425ccab6_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,204,39"/>
-<area shape="rect" href="classMD__func.html#aa24b5553a117456119e4a8e1ab6789bf" title=" " alt="" coords="252,13,421,39"/>
+<area shape="rect" title="perform half&#45;step update of barostat velocity" alt="" coords="5,13,204,39"/>
+<area shape="rect" href="namespaceMD__func.html#aa24b5553a117456119e4a8e1ab6789bf" title="get the temperature vectors" alt="" coords="252,13,421,39"/>
 <area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="469,5,623,47"/>
 <area shape="rect" href="namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="671,13,856,39"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="904,13,1117,39"/>
@@ -679,34 +873,55 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNose__Hoover_a3862f1714da9cf85bce0527c425ccab6_icgraph.png" border="0" usemap="#classNose__Hoover_a3862f1714da9cf85bce0527c425ccab6_icgraph" alt=""/></div>
 <map name="classNose__Hoover_a3862f1714da9cf85bce0527c425ccab6_icgraph" id="classNose__Hoover_a3862f1714da9cf85bce0527c425ccab6_icgraph">
-<area shape="rect" title=" " alt="" coords="248,31,447,57"/>
-<area shape="rect" href="classNose__Hoover.html#a2460699a58dd787699447714e3f87944" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,190,32"/>
+<area shape="rect" title="perform half&#45;step update of barostat velocity" alt="" coords="248,31,447,57"/>
+<area shape="rect" href="classNose__Hoover.html#a1bfbc8a6b4d4ba509b9459c9417ea8d3" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,190,32"/>
 <area shape="rect" href="classNose__Hoover.html#a6d05097c9fc8a511256ca0a48d0ac0e4" title="the second half of equation of motion, update velocities" alt="" coords="5,56,200,83"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ac459676ef3b9af8f26a00284eecd2957"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac459676ef3b9af8f26a00284eecd2957">&#9670;&nbsp;</a></span>update_volume()</h2>
+<a id="a67d077e80aff0e03e5d85cc34003a56c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67d077e80aff0e03e5d85cc34003a56c">&#9670;&nbsp;</a></span>update_volume()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Nose_Hoover::update_volume </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>ofs</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>perform half-step update of volume </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">ofs</td><td>determine the output files </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>tri mode, off-diagonal components, first half</p>
+<p>Diagonal components</p>
+<p>tri mode, off-diagonal components, second half</p>
+<p>reset ucell and pos due to change of lattice</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classNose__Hoover_ac459676ef3b9af8f26a00284eecd2957_cgraph.png" border="0" usemap="#classNose__Hoover_ac459676ef3b9af8f26a00284eecd2957_cgraph" alt=""/></div>
-<map name="classNose__Hoover_ac459676ef3b9af8f26a00284eecd2957_cgraph" id="classNose__Hoover_ac459676ef3b9af8f26a00284eecd2957_cgraph">
-<area shape="rect" title=" " alt="" coords="5,45,168,86"/>
+<div class="center"><img src="classNose__Hoover_a67d077e80aff0e03e5d85cc34003a56c_cgraph.png" border="0" usemap="#classNose__Hoover_a67d077e80aff0e03e5d85cc34003a56c_cgraph" alt=""/></div>
+<map name="classNose__Hoover_a67d077e80aff0e03e5d85cc34003a56c_cgraph" id="classNose__Hoover_a67d077e80aff0e03e5d85cc34003a56c_cgraph">
+<area shape="rect" title="perform half&#45;step update of volume" alt="" coords="5,45,168,86"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="216,23,387,49"/>
 <area shape="rect" href="classUnitCell.html#a0c497f4a41a710554e936f4e3d047835" title=" " alt="" coords="227,74,375,115"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="435,5,653,32"/>
@@ -721,10 +936,10 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classNose__Hoover_ac459676ef3b9af8f26a00284eecd2957_icgraph.png" border="0" usemap="#classNose__Hoover_ac459676ef3b9af8f26a00284eecd2957_icgraph" alt=""/></div>
-<map name="classNose__Hoover_ac459676ef3b9af8f26a00284eecd2957_icgraph" id="classNose__Hoover_ac459676ef3b9af8f26a00284eecd2957_icgraph">
-<area shape="rect" title=" " alt="" coords="228,5,391,47"/>
-<area shape="rect" href="classNose__Hoover.html#a2460699a58dd787699447714e3f87944" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,13,180,39"/>
+<div class="center"><img src="classNose__Hoover_a67d077e80aff0e03e5d85cc34003a56c_icgraph.png" border="0" usemap="#classNose__Hoover_a67d077e80aff0e03e5d85cc34003a56c_icgraph" alt=""/></div>
+<map name="classNose__Hoover_a67d077e80aff0e03e5d85cc34003a56c_icgraph" id="classNose__Hoover_a67d077e80aff0e03e5d85cc34003a56c_icgraph">
+<area shape="rect" title="perform half&#45;step update of volume" alt="" coords="228,5,391,47"/>
+<area shape="rect" href="classNose__Hoover.html#a1bfbc8a6b4d4ba509b9459c9417ea8d3" title="the first half of equation of motion, update velocities and positions" alt="" coords="5,13,180,39"/>
 </map>
 </div>
 
@@ -735,6 +950,9 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">void Nose_Hoover::vel_baro </td>
@@ -743,13 +961,21 @@ Here is the caller graph for this function:</div>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>perform half-step update of velocity due to barostat </p>
+<p>Note: I am not sure whether fixed atoms should update here</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNose__Hoover_ad7ab218bac0dd1eb3238daff0858edfe_cgraph.png" border="0" usemap="#classNose__Hoover_ad7ab218bac0dd1eb3238daff0858edfe_cgraph" alt=""/></div>
 <map name="classNose__Hoover_ad7ab218bac0dd1eb3238daff0858edfe_cgraph" id="classNose__Hoover_ad7ab218bac0dd1eb3238daff0858edfe_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,179,32"/>
+<area shape="rect" title="perform half&#45;step update of velocity due to barostat" alt="" coords="5,5,179,32"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="227,5,397,32"/>
 </map>
 </div>
@@ -758,16 +984,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classNose__Hoover_ad7ab218bac0dd1eb3238daff0858edfe_icgraph.png" border="0" usemap="#classNose__Hoover_ad7ab218bac0dd1eb3238daff0858edfe_icgraph" alt=""/></div>
 <map name="classNose__Hoover_ad7ab218bac0dd1eb3238daff0858edfe_icgraph" id="classNose__Hoover_ad7ab218bac0dd1eb3238daff0858edfe_icgraph">
-<area shape="rect" title=" " alt="" coords="248,31,421,57"/>
-<area shape="rect" href="classNose__Hoover.html#a2460699a58dd787699447714e3f87944" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,190,32"/>
+<area shape="rect" title="perform half&#45;step update of velocity due to barostat" alt="" coords="248,31,421,57"/>
+<area shape="rect" href="classNose__Hoover.html#a1bfbc8a6b4d4ba509b9459c9417ea8d3" title="the first half of equation of motion, update velocities and positions" alt="" coords="15,5,190,32"/>
 <area shape="rect" href="classNose__Hoover.html#a6d05097c9fc8a511256ca0a48d0ac0e4" title="the second half of equation of motion, update velocities" alt="" coords="5,56,200,83"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a8738ff6586e4a9412c0a13d5430eda88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8738ff6586e4a9412c0a13d5430eda88">&#9670;&nbsp;</a></span>write_restart()</h2>
+<a id="ab2e4ed7bcbb6d85eaa00b57f4a10fd39"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2e4ed7bcbb6d85eaa00b57f4a10fd39">&#9670;&nbsp;</a></span>write_restart()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -778,20 +1004,28 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Nose_Hoover::write_restart </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>global_out_dir</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
 <p>write the information into files used for MD restarting </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">global_out_dir</td><td>directory of output files </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>npt</p>
 
-<p>Reimplemented from <a class="el" href="classMDrun.html#a943294ad3074d8a96519e4aae5702455">MDrun</a>.</p>
+<p>Reimplemented from <a class="el" href="classMD__base.html#a26411e73950e5aaee59646e44e4fce4d">MD_base</a>.</p>
 
 </div>
 </div>
@@ -801,12 +1035,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double* Nose_Hoover::eta</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>position of thermostats coupled with particles </p>
 
 </div>
 </div>
@@ -815,12 +1059,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double* Nose_Hoover::g_eta</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>acceleration of thermostats coupled with particles </p>
 
 </div>
 </div>
@@ -829,12 +1083,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double* Nose_Hoover::g_peta</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>acceleration of thermostats coupled with barostat </p>
 
 </div>
 </div>
@@ -843,12 +1107,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double* Nose_Hoover::mass_eta</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>mass of thermostats coupled with particles </p>
 
 </div>
 </div>
@@ -857,12 +1131,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Nose_Hoover::mass_omega[6]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>mass of lattice component </p>
 
 </div>
 </div>
@@ -871,12 +1155,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double* Nose_Hoover::mass_peta</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>mass of thermostats coupled with barostat </p>
 
 </div>
 </div>
@@ -885,12 +1179,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Nose_Hoover::mtk_term</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>mtk correction </p>
 
 </div>
 </div>
@@ -899,12 +1203,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const int Nose_Hoover::nc_pchain = 1</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>the number of nc for npt </p>
 
 </div>
 </div>
@@ -913,12 +1227,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">const int Nose_Hoover::nc_tchain = 1</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>the number of nc for nvt </p>
 
 </div>
 </div>
@@ -927,12 +1251,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Nose_Hoover::npt_flag</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>whether NPT ensemble </p>
 
 </div>
 </div>
@@ -951,10 +1285,12 @@ Here is the caller graph for this function:</div>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>the number of scale evolution operator </p>
 
 </div>
 </div>
@@ -963,12 +1299,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Nose_Hoover::p_current[6]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>current stress after coupled </p>
 
 </div>
 </div>
@@ -977,12 +1323,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Nose_Hoover::p_hydro</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>target hydrostatic target pressure </p>
 
 </div>
 </div>
@@ -991,12 +1347,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Nose_Hoover::p_target[6]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>target stress components </p>
 
 </div>
 </div>
@@ -1005,12 +1371,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Nose_Hoover::pdim</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>pdim = pflag[0] + pflag[1] + pflag[2], number of barostatted dims </p>
 
 </div>
 </div>
@@ -1019,12 +1395,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double* Nose_Hoover::peta</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>position of thermostats coupled with barostat </p>
 
 </div>
 </div>
@@ -1033,12 +1419,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Nose_Hoover::pflag[6]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>control stress components </p>
 
 </div>
 </div>
@@ -1047,12 +1443,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Nose_Hoover::pfreq[6]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>Oscillation frequency, used to determine qmass of thermostats coupled with barostat. </p>
 
 </div>
 </div>
@@ -1061,12 +1467,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Nose_Hoover::pstart[6]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>initial stress components </p>
 
 </div>
 </div>
@@ -1075,12 +1491,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Nose_Hoover::pstop[6]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>final stress components </p>
 
 </div>
 </div>
@@ -1089,12 +1515,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Nose_Hoover::t_target</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>target temperature </p>
 
 </div>
 </div>
@@ -1103,12 +1539,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int Nose_Hoover::tdof</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>particle degree of freedom </p>
 
 </div>
 </div>
@@ -1117,12 +1563,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double* Nose_Hoover::v_eta</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>velocity of thermostats coupled with particles </p>
 
 </div>
 </div>
@@ -1131,12 +1587,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Nose_Hoover::v_omega[6]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>velocity of lattice component </p>
 
 </div>
 </div>
@@ -1145,12 +1611,22 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double* Nose_Hoover::v_peta</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>velocity of thermostats coupled with barostat </p>
 
 </div>
 </div>
@@ -1159,18 +1635,28 @@ Here is the caller graph for this function:</div>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">double Nose_Hoover::w[<a class="el" href="classNose__Hoover.html#abbe4b1ba7ba9bb9f497710eaf7fe4c5c">nys</a>]</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
+
+<p>scale evolution operator </p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>module_md/<a class="el" href="Nose__Hoover_8h_source.html">Nose_Hoover.h</a></li>
-<li>module_md/<a class="el" href="Nose__Hoover_8cpp.html">Nose_Hoover.cpp</a></li>
+<li>module_md/<a class="el" href="nhchain_8h_source.html">nhchain.h</a></li>
+<li>module_md/<a class="el" href="nhchain_8cpp.html">nhchain.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

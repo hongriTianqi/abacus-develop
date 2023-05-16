@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Class Members - Functions</title>
+<title>3.2.2: Class Members - Functions</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -67,11 +67,15 @@ $(function() {
 &#160;
 
 <h3><a id="index_d"></a>- d -</h3><ul>
-<li>D_phase()
-: <a class="el" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1DM3.html#a452d9c60a2003d6a772f73558b0ca034">Exx_Abfs::Parallel::Communicate::DM3</a>
-</li>
 <li>damping()
 : <a class="el" href="classvdw_1_1Vdwd2Parameters.html#a127fbc8aa8d45dc9e8948d9ed2de4908">vdw::Vdwd2Parameters</a>
+</li>
+<li>data()
+: <a class="el" href="classcontainer_1_1Tensor.html#a2ab509fe9411628a4e5c9d11880a5dc6">container::Tensor</a>
+, <a class="el" href="classcontainer_1_1TensorBuffer.html#a4f582601801d979707096bda28b6b98e">container::TensorBuffer</a>
+</li>
+<li>data_type()
+: <a class="el" href="classcontainer_1_1Tensor.html#a8bf0a6860243f0df59e88b18fe38c558">container::Tensor</a>
 </li>
 <li>dcSrch()
 : <a class="el" href="classModuleBase_1_1Opt__DCsrch.html#a65039e1d23d87052f2493dddbe619b60">ModuleBase::Opt_DCsrch</a>
@@ -116,29 +120,17 @@ $(function() {
 <li>delete_Cell()
 : <a class="el" href="classGrid.html#a8c4fec36925677d11168e9c8e06133c8">Grid</a>
 </li>
-<li>delete_empty_ptrs()
-: <a class="el" href="classAbfs.html#aba6e693ac0872d07821ca02fb1c6775c">Abfs</a>
-</li>
 <li>delete_grid()
 : <a class="el" href="classRecord__adj.html#a2b7640af4f2a25a07c4e2190f58e5e2d">Record_adj</a>
 </li>
 <li>delete_meshball_positions()
 : <a class="el" href="classGrid__MeshBall.html#a5eebd7e178344f3edf9723719c4b43ce">Grid_MeshBall</a>
 </li>
-<li>delete_threshold_ptrs()
-: <a class="el" href="classAbfs.html#a2084d5dcb626c4cbd38716db3b9c8b0a">Abfs</a>
-</li>
 <li>delete_vector()
 : <a class="el" href="classAdjacentSet.html#aae08f8770ba7c8cd20b822f3fa990a6c">AdjacentSet</a>
 , <a class="el" href="classatom__arrange.html#afa4b6f37829d2483318520c43c6a0f27">atom_arrange</a>
 , <a class="el" href="classFAtom.html#acb8c491f44b02725e7e47255a8b14efb">FAtom</a>
 , <a class="el" href="classGrid.html#aae48366b90761360696030a6f3502900">Grid</a>
-</li>
-<li>delta_e()
-: <a class="el" href="classenergy.html#ab646e9013cd5353bce3ed8908e27f3fa">energy</a>
-</li>
-<li>delta_escf()
-: <a class="el" href="classenergy.html#ade2b7b806a6294f619af6ecc6d8b7dfb">energy</a>
 </li>
 <li>deriv_drhoc()
 : <a class="el" href="classStress__Func.html#a56db0ba4eff8f3f0a5281f1d78ba7362">Stress_Func&lt; FPTYPE, Device &gt;</a>
@@ -187,7 +179,10 @@ $(function() {
 : <a class="el" href="classModuleBase_1_1matrix.html#aa2c0170c403037170f07470af1ea46db">ModuleBase::matrix</a>
 </li>
 <li>det_berryphase()
-: <a class="el" href="classunkOverlap__lcao.html#a548ff19fc2e4d2daf6f106bb74cf5c69">unkOverlap_lcao</a>
+: <a class="el" href="classunkOverlap__lcao.html#a3262e66c7e6d532886242a08b2a9c772">unkOverlap_lcao</a>
+</li>
+<li>device_type()
+: <a class="el" href="classcontainer_1_1Tensor.html#a63a036a916741a5d13211d7d6d60da03">container::Tensor</a>
 </li>
 <li>DFTU()
 : <a class="el" href="classModuleDFTU_1_1DFTU.html#a36bdc1fb7f0aca62d60bdb5598db1518">ModuleDFTU::DFTU</a>
@@ -208,7 +203,7 @@ $(function() {
 , <a class="el" href="classhsolver_1_1DiagoBlas.html#a94f48651a8dafce3bf6ca253cc0f8209">hsolver::DiagoBlas</a>
 , <a class="el" href="classhsolver_1_1DiagoCG.html#a7b1d1cb18008cb35829d641532a5e96c">hsolver::DiagoCG&lt; FPTYPE, Device &gt;</a>
 , <a class="el" href="classhsolver_1_1DiagoDavid.html#a64da2fc1651667779af91c2a13e5d713">hsolver::DiagoDavid&lt; FPTYPE, Device &gt;</a>
-, <a class="el" href="classhsolver_1_1DiagoElpa.html#a838818004e147dbf84cafa2e97db2d71">hsolver::DiagoElpa</a>
+, <a class="el" href="classhsolver_1_1DiagoElpa.html#a572a92f36c79731e78031d12b7d6aa53">hsolver::DiagoElpa</a>
 , <a class="el" href="classhsolver_1_1DiagoLapack.html#ab3b2f7c87889a0a2fde40d0c3ded2248">hsolver::DiagoLapack</a>
 </li>
 <li>diag_mock()
@@ -254,6 +249,12 @@ $(function() {
 <li>diffLinhard()
 : <a class="el" href="classKEDF__WT.html#a70c20a6ecee7f9881dcfeb047d6c8e89">KEDF_WT</a>
 </li>
+<li>dim_size()
+: <a class="el" href="classcontainer_1_1TensorShape.html#a5bb7a846556796fa76b69ecfcba1938e">container::TensorShape</a>
+</li>
+<li>dims()
+: <a class="el" href="classcontainer_1_1TensorShape.html#a80768c2e70222bc50b55be900f7563ca">container::TensorShape</a>
+</li>
 <li>Direct_to_Cartesian()
 : <a class="el" href="classModuleBase_1_1Mathzone.html#a54942d5ad8a5661ae13c6788b34d1bba">ModuleBase::Mathzone</a>
 </li>
@@ -261,26 +262,13 @@ $(function() {
 : <a class="el" href="classModuleBase_1_1timer.html#ae37ca9359591cd7eb49963d2858b808b">ModuleBase::timer</a>
 </li>
 <li>Distance()
-: <a class="el" href="classGrid__Driver.html#a728cc1e2a11d7b9a2a2722a67ab9684a">Grid_Driver</a>
-</li>
-<li>distribute()
-: <a class="el" href="classExx__Abfs_1_1Parallel_1_1Distribute_1_1Htime.html#a89f7ba7046e0a8d0be5d77dd56686174">Exx_Abfs::Parallel::Distribute::Htime</a>
-, <a class="el" href="classExx__Abfs_1_1Parallel_1_1Distribute_1_1Order.html#a08b64e7df9558c8fc5a86ec5ec478bca">Exx_Abfs::Parallel::Distribute::Order</a>
+: <a class="el" href="classGrid__Driver.html#a542a31832cebfd545c79263d24e737ae">Grid_Driver</a>
 </li>
 <li>distribute_data()
 : <a class="el" href="classDiagoPrepare.html#aae2f6355662f53670c8580d66f7a91c0">DiagoPrepare&lt; T &gt;</a>
 </li>
 <li>distribute_g()
 : <a class="el" href="classModulePW_1_1PW__Basis.html#a7d1b5f765b8f39b7100522a5d57e0fb0">ModulePW::PW_Basis</a>
-</li>
-<li>distribute_kmeans1()
-: <a class="el" href="classExx__Abfs_1_1Parallel_1_1Distribute_1_1Kmeans.html#a575d7aae0601eb9cd2ecb53c64a25715">Exx_Abfs::Parallel::Distribute::Kmeans</a>
-</li>
-<li>distribute_kmeans2()
-: <a class="el" href="classExx__Abfs_1_1Parallel_1_1Distribute_1_1Kmeans.html#a83f6558c98c65c5d04c4b1942a465f14">Exx_Abfs::Parallel::Distribute::Kmeans</a>
-</li>
-<li>distribute_psi_2d()
-: <a class="el" href="classElecStateLCAOPrepare.html#aed035ac729921e91eb9f134fe342a679">ElecStateLCAOPrepare&lt; T &gt;</a>
 </li>
 <li>distribute_pvdpR_soc_sparseMatrix()
 : <a class="el" href="classGint__k.html#ace16e345462099cd17fe530f24e1ff9a">Gint_k</a>
@@ -308,6 +296,9 @@ $(function() {
 <li>div_r()
 : <a class="el" href="classExx__Abfs_1_1Construct__Orbs.html#a16a084da95c05a76bcc9d4abbf2c5776">Exx_Abfs::Construct_Orbs</a>
 </li>
+<li>divergence()
+: <a class="el" href="classKEDF__LKT.html#ab4c9aba5d8d755057f5af96144c3775f">KEDF_LKT</a>
+</li>
 <li>divide_HS_2d()
 : <a class="el" href="classORB__control.html#a020411851995dfde40203b27d7e18bfd">ORB_control</a>
 </li>
@@ -325,19 +316,16 @@ $(function() {
 , <a class="el" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a23818a48729e12b585d49e93532bf9c0">ModuleESolver::ESolver_KS_LCAO</a>
 </li>
 <li>do_cellrelax()
-: <a class="el" href="classRelax__old.html#a70389ea5720506dd7debce843a98083e">Relax_old</a>
+: <a class="el" href="classRelax__old.html#a01f88f8a053da6e3e7566ea440eb6d80">Relax_old</a>
 </li>
 <li>do_relax()
-: <a class="el" href="classRelax__old.html#a63b72263f5ae9885239dfd209faafeaf">Relax_old</a>
+: <a class="el" href="classRelax__old.html#a73cedaff306befbb966b184e13951106">Relax_old</a>
 </li>
 <li>DosPrepare()
 : <a class="el" href="classDosPrepare.html#ae46a2c1380204b6c65600ba95cac408c">DosPrepare</a>
 </li>
 <li>dot()
-: <a class="el" href="classBlasConnector.html#a54f511d48bf1df74fdadca3d8ceb0dc1">BlasConnector</a>
-</li>
-<li>DPcal_C()
-: <a class="el" href="classAbfs.html#a0808f61282faf9f3e1e3b94b9575b47d">Abfs</a>
+: <a class="el" href="classBlasConnector.html#a17cbf3dfb39d0b07cbaeee41fdc65b10">BlasConnector</a>
 </li>
 <li>DPcal_C_dC()
 : <a class="el" href="classLRI__CV.html#a146b324b1d97f7720fbef5ccd7d7edd4">LRI_CV&lt; Tdata &gt;</a>
@@ -349,8 +337,7 @@ $(function() {
 : <a class="el" href="classLRI__CV.html#a5cdd59393d3a6ec2caf68deac2d9e4e0">LRI_CV&lt; Tdata &gt;</a>
 </li>
 <li>DPcal_V()
-: <a class="el" href="classAbfs.html#a9ecc1dac2752301cf793bea3bfcb66d7">Abfs</a>
-, <a class="el" href="classLRI__CV.html#a19111b35cc31b3c7bf42a774b552b0ef">LRI_CV&lt; Tdata &gt;</a>
+: <a class="el" href="classLRI__CV.html#a19111b35cc31b3c7bf42a774b552b0ef">LRI_CV&lt; Tdata &gt;</a>
 </li>
 <li>Driver()
 : <a class="el" href="classDriver.html#af0658d103e3e810a8e9ef0a53bb2e261">Driver</a>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Charge_Extra Class Reference</title>
+<title>3.2.2: Charge_Extra Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -91,10 +91,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a87a102c15e72f69bb32c7848b6d37488"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0f84eb4e0b69c1e4a84c70bbefa70e1a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Extra.html#a0f84eb4e0b69c1e4a84c70bbefa70e1a">~Charge_Extra</a> ()</td></tr>
 <tr class="separator:a0f84eb4e0b69c1e4a84c70bbefa70e1a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3be8e71a6d0c4c49d9540bff85036871"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Extra.html#a3be8e71a6d0c4c49d9540bff85036871">Init_CE</a> ()</td></tr>
-<tr class="separator:a3be8e71a6d0c4c49d9540bff85036871"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad6b3264e9fc967ef8d745df3250dfa85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Extra.html#ad6b3264e9fc967ef8d745df3250dfa85">extrapolate_charge</a> (<a class="el" href="classCharge.html">Charge</a> *chr)</td></tr>
-<tr class="separator:ad6b3264e9fc967ef8d745df3250dfa85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66a77bcd269db858c3bccb70810b288c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Extra.html#a66a77bcd269db858c3bccb70810b288c">Init_CE</a> (const int &amp;nrxx)</td></tr>
+<tr class="separator:a66a77bcd269db858c3bccb70810b288c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0fe660c9bd6887fb04667c29948be22"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Extra.html#ad0fe660c9bd6887fb04667c29948be22">extrapolate_charge</a> (<a class="el" href="classCharge.html">Charge</a> *chr, <a class="el" href="classStructure__Factor.html">Structure_Factor</a> *sf)</td></tr>
+<tr class="separator:ad0fe660c9bd6887fb04667c29948be22"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56fac5ef41039cfe1e8b2759e10f2525"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge__Extra.html#a56fac5ef41039cfe1e8b2759e10f2525">update_all_dis</a> (const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell)</td></tr>
 <tr class="separator:a56fac5ef41039cfe1e8b2759e10f2525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -166,8 +166,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad6b3264e9fc967ef8d745df3250dfa85"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad6b3264e9fc967ef8d745df3250dfa85">&#9670;&nbsp;</a></span>extrapolate_charge()</h2>
+<a id="ad0fe660c9bd6887fb04667c29948be22"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0fe660c9bd6887fb04667c29948be22">&#9670;&nbsp;</a></span>extrapolate_charge()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -176,33 +176,43 @@ Private Attributes</h2></td></tr>
           <td class="memname">void Charge_Extra::extrapolate_charge </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classCharge.html">Charge</a> *&#160;</td>
-          <td class="paramname"><em>chr</em></td><td>)</td>
+          <td class="paramname"><em>chr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classStructure__Factor.html">Structure_Factor</a> *&#160;</td>
+          <td class="paramname"><em>sf</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classCharge__Extra_ad6b3264e9fc967ef8d745df3250dfa85_cgraph.png" border="0" usemap="#classCharge__Extra_ad6b3264e9fc967ef8d745df3250dfa85_cgraph" alt=""/></div>
-<map name="classCharge__Extra_ad6b3264e9fc967ef8d745df3250dfa85_cgraph" id="classCharge__Extra_ad6b3264e9fc967ef8d745df3250dfa85_cgraph">
+<div class="center"><img src="classCharge__Extra_ad0fe660c9bd6887fb04667c29948be22_cgraph.png" border="0" usemap="#classCharge__Extra_ad0fe660c9bd6887fb04667c29948be22_cgraph" alt=""/></div>
+<map name="classCharge__Extra_ad0fe660c9bd6887fb04667c29948be22_cgraph" id="classCharge__Extra_ad0fe660c9bd6887fb04667c29948be22_cgraph">
 <area shape="rect" title=" " alt="" coords="5,207,197,248"/>
-<area shape="rect" href="classCharge.html#a2e56b3be24ef7fd48336380414feb1dc" title=" " alt="" coords="276,38,425,65"/>
+<area shape="rect" href="classCharge.html#a568da3705f0d45a6a18ad52a87903122" title=" " alt="" coords="276,38,425,65"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="517,122,662,149"/>
 <area shape="rect" href="namespaceModuleBase.html#a04d6e9eea9a131d0ccf54a74c65c0f71" title=" " alt="" coords="253,207,448,248"/>
 <area shape="rect" href="classCharge__Extra.html#acdb6daa1cf37777c66f7118d3b821adf" title=" " alt="" coords="280,272,421,313"/>
 <area shape="rect" href="namespaceModuleBase.html#aa818ef3febfa7d41147bb7624097ce92" title=" " alt="" coords="245,338,456,365"/>
-<area shape="rect" href="classStructure__Factor.html#a34e384dbd2dca46573ed777b03d7aa1b" title=" " alt="" coords="265,89,436,131"/>
+<area shape="rect" href="classStructure__Factor.html#aa611bb425e012b3bf560beb17ca5cd96" title=" " alt="" coords="265,89,436,131"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="259,389,442,431"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="504,71,675,98"/>
-<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="518,5,661,47"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#ab36840ed72d17de3906ff4d9aa6da636" title=" " alt="" coords="515,5,664,47"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classCharge__Extra_ad6b3264e9fc967ef8d745df3250dfa85_icgraph.png" border="0" usemap="#classCharge__Extra_ad6b3264e9fc967ef8d745df3250dfa85_icgraph" alt=""/></div>
-<map name="classCharge__Extra_ad6b3264e9fc967ef8d745df3250dfa85_icgraph" id="classCharge__Extra_ad6b3264e9fc967ef8d745df3250dfa85_icgraph">
+<div class="center"><img src="classCharge__Extra_ad0fe660c9bd6887fb04667c29948be22_icgraph.png" border="0" usemap="#classCharge__Extra_ad0fe660c9bd6887fb04667c29948be22_icgraph" alt=""/></div>
+<map name="classCharge__Extra_ad0fe660c9bd6887fb04667c29948be22_icgraph" id="classCharge__Extra_ad0fe660c9bd6887fb04667c29948be22_icgraph">
 <area shape="rect" title=" " alt="" coords="453,39,645,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="229,5,405,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="229,71,405,112"/>
@@ -253,7 +263,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classCharge__Extra_acdb6daa1cf37777c66f7118d3b821adf_icgraph.png" border="0" usemap="#classCharge__Extra_acdb6daa1cf37777c66f7118d3b821adf_icgraph" alt=""/></div>
 <map name="classCharge__Extra_acdb6daa1cf37777c66f7118d3b821adf_icgraph" id="classCharge__Extra_acdb6daa1cf37777c66f7118d3b821adf_icgraph">
 <area shape="rect" title=" " alt="" coords="693,39,835,80"/>
-<area shape="rect" href="classCharge__Extra.html#ad6b3264e9fc967ef8d745df3250dfa85" title=" " alt="" coords="453,39,645,80"/>
+<area shape="rect" href="classCharge__Extra.html#ad0fe660c9bd6887fb04667c29948be22" title=" " alt="" coords="453,39,645,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a6ec31babfb980d30e416d7da856f9de5" title=" " alt="" coords="229,5,405,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="229,71,405,112"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a380b40f26c567a678ad6552068e6f4bc" title=" " alt="" coords="5,5,181,47"/>
@@ -262,8 +272,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a3be8e71a6d0c4c49d9540bff85036871"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3be8e71a6d0c4c49d9540bff85036871">&#9670;&nbsp;</a></span>Init_CE()</h2>
+<a id="a66a77bcd269db858c3bccb70810b288c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66a77bcd269db858c3bccb70810b288c">&#9670;&nbsp;</a></span>Init_CE()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -271,7 +281,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Charge_Extra::Init_CE </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nrxx</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -279,8 +290,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classCharge__Extra_a3be8e71a6d0c4c49d9540bff85036871_cgraph.png" border="0" usemap="#classCharge__Extra_a3be8e71a6d0c4c49d9540bff85036871_cgraph" alt=""/></div>
-<map name="classCharge__Extra_a3be8e71a6d0c4c49d9540bff85036871_cgraph" id="classCharge__Extra_a3be8e71a6d0c4c49d9540bff85036871_cgraph">
+<div class="center"><img src="classCharge__Extra_a66a77bcd269db858c3bccb70810b288c_cgraph.png" border="0" usemap="#classCharge__Extra_a66a77bcd269db858c3bccb70810b288c_cgraph" alt=""/></div>
+<map name="classCharge__Extra_a66a77bcd269db858c3bccb70810b288c_cgraph" id="classCharge__Extra_a66a77bcd269db858c3bccb70810b288c_cgraph">
 <area shape="rect" title=" " alt="" coords="5,35,168,61"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="216,5,429,32"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="231,57,414,98"/>
@@ -289,8 +300,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classCharge__Extra_a3be8e71a6d0c4c49d9540bff85036871_icgraph.png" border="0" usemap="#classCharge__Extra_a3be8e71a6d0c4c49d9540bff85036871_icgraph" alt=""/></div>
-<map name="classCharge__Extra_a3be8e71a6d0c4c49d9540bff85036871_icgraph" id="classCharge__Extra_a3be8e71a6d0c4c49d9540bff85036871_icgraph">
+<div class="center"><img src="classCharge__Extra_a66a77bcd269db858c3bccb70810b288c_icgraph.png" border="0" usemap="#classCharge__Extra_a66a77bcd269db858c3bccb70810b288c_icgraph" alt=""/></div>
+<map name="classCharge__Extra_a66a77bcd269db858c3bccb70810b288c_icgraph" id="classCharge__Extra_a66a77bcd269db858c3bccb70810b288c_icgraph">
 <area shape="rect" title=" " alt="" coords="229,13,392,39"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="5,5,181,47"/>
 </map>

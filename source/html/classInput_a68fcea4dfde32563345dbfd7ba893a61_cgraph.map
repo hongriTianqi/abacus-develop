@@ -1,12 +1,12 @@
 <map id="Input::Read" name="Input::Read">
-<area shape="rect" id="node1" title=" " alt="" coords="5,143,101,170"/>
-<area shape="rect" id="node2" href="$classInput.html#a0014bea8bd01e89aac455c2c0207408c" title=" " alt="" coords="151,17,293,43"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="343,71,556,98"/>
-<area shape="rect" id="node5" href="$classInput.html#a3096f1ed2dcb8e830423b960838e113e" title=" " alt="" coords="159,118,285,145"/>
-<area shape="rect" id="node6" href="$classInput.html#a8dc0b78064193c3f967ada55fdfe42eb" title=" " alt="" coords="155,169,289,195"/>
-<area shape="rect" id="node7" href="$classInput.html#a52e287de884a72b9208184a95d8f864c" title=" " alt="" coords="157,219,287,246"/>
-<area shape="rect" id="node8" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="149,270,295,297"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase_1_1GlobalFunc.html#a5496667007afe5b237ec62f4e3f68baa" title=" " alt="" coords="358,5,541,47"/>
-<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="358,229,541,271"/>
-<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="373,295,526,336"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,169,101,195"/>
+<area shape="rect" id="node2" href="$classInput.html#a0014bea8bd01e89aac455c2c0207408c" title=" " alt="" coords="157,17,299,43"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="355,71,568,98"/>
+<area shape="rect" id="node5" href="$classInput.html#a3096f1ed2dcb8e830423b960838e113e" title=" " alt="" coords="165,118,291,145"/>
+<area shape="rect" id="node6" href="$classInput.html#a2e5fb1a3d56b4af05370dd1df04f4778" title=" " alt="" coords="149,169,307,195"/>
+<area shape="rect" id="node7" href="$classInput.html#a8dc0b78064193c3f967ada55fdfe42eb" title=" " alt="" coords="161,219,295,246"/>
+<area shape="rect" id="node8" href="$classInput.html#a52e287de884a72b9208184a95d8f864c" title=" " alt="" coords="163,270,293,297"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="155,321,301,347"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase_1_1GlobalFunc.html#a5496667007afe5b237ec62f4e3f68baa" title=" " alt="" coords="370,5,553,47"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="370,313,553,355"/>
 </map>

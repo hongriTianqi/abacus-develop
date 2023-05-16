@@ -1,10 +1,12 @@
 <map id="ModuleESolver::ESolver_OF::kineticPotential" name="ModuleESolver::ESolver_OF::kineticPotential">
-<area shape="rect" id="node1" title=" " alt="" coords="5,74,181,115"/>
-<area shape="rect" id="node2" href="$classKEDF__TF.html#a202d0c98ebb4b867810e46afb1d15960" title=" " alt="" coords="237,31,400,57"/>
-<area shape="rect" id="node7" href="$classKEDF__vW.html#aaca2f06bcbb0844621d18b7018fd473a" title=" " alt="" coords="229,81,408,108"/>
-<area shape="rect" id="node8" href="$classKEDF__WT.html#af535b0b3344924bbb3b2cf08f961479e" title=" " alt="" coords="229,132,408,159"/>
-<area shape="rect" id="node3" href="$classKEDF__TF.html#a08a0412cf1ee22589f53e55d05d79996" title=" " alt="" coords="465,5,625,32"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="456,107,633,133"/>
-<area shape="rect" id="node4" href="$namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="681,42,859,83"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="693,107,847,149"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,181,181,222"/>
+<area shape="rect" id="node2" href="$classKEDF__LKT.html#a4422d01ff7621147c0c822e2232439f4" title=" " alt="" coords="231,108,407,135"/>
+<area shape="rect" id="node8" href="$classKEDF__TF.html#a202d0c98ebb4b867810e46afb1d15960" title=" " alt="" coords="237,264,400,291"/>
+<area shape="rect" id="node9" href="$classKEDF__vW.html#aaca2f06bcbb0844621d18b7018fd473a" title=" " alt="" coords="229,163,408,189"/>
+<area shape="rect" id="node10" href="$classKEDF__WT.html#af535b0b3344924bbb3b2cf08f961479e" title=" " alt="" coords="229,213,408,240"/>
+<area shape="rect" id="node3" href="$classKEDF__LKT.html#ab4c9aba5d8d755057f5af96144c3775f" title=" " alt="" coords="461,5,628,32"/>
+<area shape="rect" id="node4" href="$classKEDF__LKT.html#a8193164100c8defa3ec899969451b430" title=" " alt="" coords="476,56,613,83"/>
+<area shape="rect" id="node5" href="$classKEDF__LKT.html#ab1704d63a06569a49f84e037cd4ad954" title=" " alt="" coords="479,107,610,133"/>
+<area shape="rect" id="node6" href="$namespaceParallel__Reduce.html#a084a3fade9af529400c21328d87ba915" title=" " alt="" coords="456,158,633,199"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="456,224,633,251"/>
 </map>

@@ -1,10 +1,12 @@
 <map id="hsolver::HSolverPW&lt; FPTYPE, Device &gt;" name="hsolver::HSolverPW&lt; FPTYPE, Device &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="119,1892,299,2145"/>
-<area shape="rect" id="node2" href="$classhsolver_1_1HSolver.html" title=" " alt="" coords="5,1481,201,1705"/>
-<area shape="rect" id="node3" href="$classhsolver_1_1DiagH.html" title=" " alt="" coords="11,923,196,1044"/>
-<area shape="rect" id="node4" href="$classModulePW_1_1PW__Basis__K.html" title="Special pw_basis class. It includes different k&#45;points." alt="" coords="225,1356,405,1829"/>
-<area shape="rect" id="node5" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="374,673,561,1293"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="216,152,375,420"/>
-<area shape="rect" id="node7" href="$classModulePW_1_1FFT.html" title=" " alt="" coords="403,5,524,567"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="549,93,709,479"/>
+<area shape="rect" id="node1" title=" " alt="" coords="281,1569,461,1823"/>
+<area shape="rect" id="node2" href="$classhsolver_1_1HSolver.html" title=" " alt="" coords="24,1158,220,1382"/>
+<area shape="rect" id="node3" href="$classhsolver_1_1DiagH.html" title=" " alt="" coords="5,600,191,721"/>
+<area shape="rect" id="node4" href="$classwavefunc.html" title=" " alt="" coords="293,1121,450,1419"/>
+<area shape="rect" id="node5" href="$classWF__atomic.html" title=" " alt="" coords="215,527,357,795"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1ComplexMatrix.html" title=" " alt="" coords="181,5,391,273"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="381,527,540,795"/>
+<area shape="rect" id="node8" href="$classModulePW_1_1PW__Basis__K.html" title="Special pw_basis class. It includes different k&#45;points." alt="" coords="499,1033,679,1507"/>
+<area shape="rect" id="node9" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="674,351,861,971"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="565,5,724,273"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: BlasConnector Class Reference</title>
+<title>3.2.2: BlasConnector Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -126,10 +126,121 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:a0c9d271433f0244a6b866aa564e34e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aff1df7c65dfa07dadb503fd70f73eeb5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#aff1df7c65dfa07dadb503fd70f73eeb5">copy</a> (const long n, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *a, const int incx, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *b, const int incy)</td></tr>
 <tr class="separator:aff1df7c65dfa07dadb503fd70f73eeb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad0c85ad6bb46f72f3581d7fb1e060e56"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#ad0c85ad6bb46f72f3581d7fb1e060e56">axpy</a> (const int n, const float alpha, const float *X, const int incX, float *Y, const int incY)</td></tr>
+<tr class="separator:ad0c85ad6bb46f72f3581d7fb1e060e56"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a129ebdd7d01d4a3f900a807ad8e1608b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a129ebdd7d01d4a3f900a807ad8e1608b">axpy</a> (const int n, const double alpha, const double *X, const int incX, double *Y, const int incY)</td></tr>
+<tr class="separator:a129ebdd7d01d4a3f900a807ad8e1608b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab37c2ccb8f71eb686f220d8e7e84514a"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#ab37c2ccb8f71eb686f220d8e7e84514a">axpy</a> (const int n, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; alpha, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *X, const int incX, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *Y, const int incY)</td></tr>
+<tr class="separator:ab37c2ccb8f71eb686f220d8e7e84514a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a977e0fa8bc7d1e31a4ef2fed9655f212"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a977e0fa8bc7d1e31a4ef2fed9655f212">axpy</a> (const int n, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; alpha, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *X, const int incX, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *Y, const int incY)</td></tr>
+<tr class="separator:a977e0fa8bc7d1e31a4ef2fed9655f212"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65fa97ab2ee173c4f1634ffca6afd80f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a65fa97ab2ee173c4f1634ffca6afd80f">scal</a> (const int n, const float alpha, float *X, const int incX)</td></tr>
+<tr class="separator:a65fa97ab2ee173c4f1634ffca6afd80f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86ddf95b951e9544574d31da5520b890"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a86ddf95b951e9544574d31da5520b890">scal</a> (const int n, const double alpha, double *X, const int incX)</td></tr>
+<tr class="separator:a86ddf95b951e9544574d31da5520b890"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21b90feabcd33e5ff93814d9d6fcce88"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a21b90feabcd33e5ff93814d9d6fcce88">scal</a> (const int n, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; alpha, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *X, const int incX)</td></tr>
+<tr class="separator:a21b90feabcd33e5ff93814d9d6fcce88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaa4de1dec7e054aafd428a7138c4dbb5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#aaa4de1dec7e054aafd428a7138c4dbb5">scal</a> (const int n, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; alpha, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *X, const int incX)</td></tr>
+<tr class="separator:aaa4de1dec7e054aafd428a7138c4dbb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a54f511d48bf1df74fdadca3d8ceb0dc1"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a54f511d48bf1df74fdadca3d8ceb0dc1">dot</a> (const int n, const float *X, const int incX, const float *Y, const int incY)</td></tr>
+<tr class="separator:a54f511d48bf1df74fdadca3d8ceb0dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17cbf3dfb39d0b07cbaeee41fdc65b10"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a17cbf3dfb39d0b07cbaeee41fdc65b10">dot</a> (const int n, const double *X, const int incX, const double *Y, const int incY)</td></tr>
+<tr class="separator:a17cbf3dfb39d0b07cbaeee41fdc65b10"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7fc631407a62968b5c7ea22257f96460"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a7fc631407a62968b5c7ea22257f96460">gemm</a> (const char transa, const char transb, const int m, const int n, const int k, const float alpha, const float *a, const int lda, const float *b, const int ldb, const float beta, float *c, const int ldc)</td></tr>
+<tr class="separator:a7fc631407a62968b5c7ea22257f96460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad650639672c8dd6f03b3a0de066418dc"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#ad650639672c8dd6f03b3a0de066418dc">gemm</a> (const char transa, const char transb, const int m, const int n, const int k, const double alpha, const double *a, const int lda, const double *b, const int ldb, const double beta, double *c, const int ldc)</td></tr>
+<tr class="separator:ad650639672c8dd6f03b3a0de066418dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9b693ba6e514c9684aff335b2f3bd384"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a9b693ba6e514c9684aff335b2f3bd384">gemm</a> (const char transa, const char transb, const int m, const int n, const int k, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; alpha, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *a, const int lda, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *b, const int ldb, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; beta, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *c, const int ldc)</td></tr>
+<tr class="separator:a9b693ba6e514c9684aff335b2f3bd384"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1348444ac2332c284a1bf1042c17075c"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a1348444ac2332c284a1bf1042c17075c">gemm</a> (const char transa, const char transb, const int m, const int n, const int k, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; alpha, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *a, const int lda, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *b, const int ldb, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; beta, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *c, const int ldc)</td></tr>
+<tr class="separator:a1348444ac2332c284a1bf1042c17075c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a560b8486ff129be042571c01a325b701"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a560b8486ff129be042571c01a325b701">gemv</a> (const char trans, const int m, const int n, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; alpha, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *A, const int lda, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *X, const int incx, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; beta, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *Y, const int incy)</td></tr>
+<tr class="separator:a560b8486ff129be042571c01a325b701"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3306760a91820e374b423409e994d811"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a3306760a91820e374b423409e994d811">gemv</a> (const char trans, const int m, const int n, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; alpha, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *A, const int lda, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *X, const int incx, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; beta, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *Y, const int incy)</td></tr>
+<tr class="separator:a3306760a91820e374b423409e994d811"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1fbe62be978b17cb59f13d755b86f2bb"><td class="memItemLeft" align="right" valign="top">static float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a1fbe62be978b17cb59f13d755b86f2bb">nrm2</a> (const int n, const float *X, const int incX)</td></tr>
+<tr class="separator:a1fbe62be978b17cb59f13d755b86f2bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a661a29127d67c5d5710fb092fcb8dee0"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a661a29127d67c5d5710fb092fcb8dee0">nrm2</a> (const int n, const double *X, const int incX)</td></tr>
+<tr class="separator:a661a29127d67c5d5710fb092fcb8dee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afcb7772ae12c831db7dcaac30d81827f"><td class="memItemLeft" align="right" valign="top">static double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#afcb7772ae12c831db7dcaac30d81827f">nrm2</a> (const int n, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *X, const int incX)</td></tr>
+<tr class="separator:afcb7772ae12c831db7dcaac30d81827f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0c9d271433f0244a6b866aa564e34e3f"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#a0c9d271433f0244a6b866aa564e34e3f">copy</a> (const long n, const double *a, const int incx, double *b, const int incy)</td></tr>
+<tr class="separator:a0c9d271433f0244a6b866aa564e34e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff1df7c65dfa07dadb503fd70f73eeb5"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBlasConnector.html#aff1df7c65dfa07dadb503fd70f73eeb5">copy</a> (const long n, const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *a, const int incx, <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *b, const int incy)</td></tr>
+<tr class="separator:aff1df7c65dfa07dadb503fd70f73eeb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
 <a id="a129ebdd7d01d4a3f900a807ad8e1608b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a129ebdd7d01d4a3f900a807ad8e1608b">&#9670;&nbsp;</a></span>axpy() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a129ebdd7d01d4a3f900a807ad8e1608b">&#9670;&nbsp;</a></span>axpy() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::axpy </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a129ebdd7d01d4a3f900a807ad8e1608b_cgraph.png" border="0" usemap="#classBlasConnector_a129ebdd7d01d4a3f900a807ad8e1608b_cgraph" alt=""/></div>
+<map name="classBlasConnector_a129ebdd7d01d4a3f900a807ad8e1608b_cgraph" id="classBlasConnector_a129ebdd7d01d4a3f900a807ad8e1608b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,161,32"/>
+<area shape="rect" href="blas__connector_8h.html#a518c29880a080640cd44e94c39073a68" title=" " alt="" coords="209,5,279,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a129ebdd7d01d4a3f900a807ad8e1608b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a129ebdd7d01d4a3f900a807ad8e1608b">&#9670;&nbsp;</a></span>axpy() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -198,7 +309,76 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ad0c85ad6bb46f72f3581d7fb1e060e56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0c85ad6bb46f72f3581d7fb1e060e56">&#9670;&nbsp;</a></span>axpy() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0c85ad6bb46f72f3581d7fb1e060e56">&#9670;&nbsp;</a></span>axpy() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::axpy </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_ad0c85ad6bb46f72f3581d7fb1e060e56_cgraph.png" border="0" usemap="#classBlasConnector_ad0c85ad6bb46f72f3581d7fb1e060e56_cgraph" alt=""/></div>
+<map name="classBlasConnector_ad0c85ad6bb46f72f3581d7fb1e060e56_cgraph" id="classBlasConnector_ad0c85ad6bb46f72f3581d7fb1e060e56_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,161,32"/>
+<area shape="rect" href="blas__connector_8h.html#af13e5284c714237f628ec1fa1e94e505" title=" " alt="" coords="209,5,277,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad0c85ad6bb46f72f3581d7fb1e060e56"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad0c85ad6bb46f72f3581d7fb1e060e56">&#9670;&nbsp;</a></span>axpy() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -268,19 +448,88 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBlasConnector_ad0c85ad6bb46f72f3581d7fb1e060e56_icgraph.png" border="0" usemap="#classBlasConnector_ad0c85ad6bb46f72f3581d7fb1e060e56_icgraph" alt=""/></div>
 <map name="classBlasConnector_ad0c85ad6bb46f72f3581d7fb1e060e56_icgraph" id="classBlasConnector_ad0c85ad6bb46f72f3581d7fb1e060e56_icgraph">
-<area shape="rect" title=" " alt="" coords="500,127,656,153"/>
+<area shape="rect" title=" " alt="" coords="500,137,656,164"/>
 <area shape="rect" href="classModuleBase_1_1Gram__Schmidt__Orth.html#a24d911ab6db0526914f2eb416a6aaa62" title=" " alt="" coords="237,5,444,61"/>
-<area shape="rect" href="structhsolver_1_1axpy__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a06d6b74f6521ed87512e9275c334cd17" title=" " alt="" coords="229,86,452,127"/>
-<area shape="rect" href="classExx__Abfs_1_1Inverse__Matrix__Double.html#af9d56325b654ede654ebcce715203c27" title=" " alt="" coords="247,151,434,193"/>
-<area shape="rect" href="namespaceModuleIO.html#a55eb550050b217a8ca9ecf8a0d0f8111" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="246,217,435,244"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,210,181,251"/>
+<area shape="rect" href="structcontainer_1_1op_1_1axpy__op_3_01T_00_01DEVICE__CPU_01_4.html#a1cf6e347719d20ddbf8ee76e6b8c6b4b" title=" " alt="" coords="254,85,427,141"/>
+<area shape="rect" href="structhsolver_1_1axpy__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a06d6b74f6521ed87512e9275c334cd17" title=" " alt="" coords="229,166,452,207"/>
+<area shape="rect" href="namespaceModuleIO.html#a40359ef286084e2268cff872dd4677d5" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="246,232,435,259"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,225,181,266"/>
 </map>
 </div>
 
 </div>
 </div>
 <a id="a977e0fa8bc7d1e31a4ef2fed9655f212"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a977e0fa8bc7d1e31a4ef2fed9655f212">&#9670;&nbsp;</a></span>axpy() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a977e0fa8bc7d1e31a4ef2fed9655f212">&#9670;&nbsp;</a></span>axpy() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::axpy </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a977e0fa8bc7d1e31a4ef2fed9655f212_cgraph.png" border="0" usemap="#classBlasConnector_a977e0fa8bc7d1e31a4ef2fed9655f212_cgraph" alt=""/></div>
+<map name="classBlasConnector_a977e0fa8bc7d1e31a4ef2fed9655f212_cgraph" id="classBlasConnector_a977e0fa8bc7d1e31a4ef2fed9655f212_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,161,32"/>
+<area shape="rect" href="blas__connector_8h.html#a99f70fad229a53d21f3012c9d0927a8d" title=" " alt="" coords="209,5,277,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a977e0fa8bc7d1e31a4ef2fed9655f212"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a977e0fa8bc7d1e31a4ef2fed9655f212">&#9670;&nbsp;</a></span>axpy() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -349,7 +598,76 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ab37c2ccb8f71eb686f220d8e7e84514a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab37c2ccb8f71eb686f220d8e7e84514a">&#9670;&nbsp;</a></span>axpy() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37c2ccb8f71eb686f220d8e7e84514a">&#9670;&nbsp;</a></span>axpy() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::axpy </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_ab37c2ccb8f71eb686f220d8e7e84514a_cgraph.png" border="0" usemap="#classBlasConnector_ab37c2ccb8f71eb686f220d8e7e84514a_cgraph" alt=""/></div>
+<map name="classBlasConnector_ab37c2ccb8f71eb686f220d8e7e84514a_cgraph" id="classBlasConnector_ab37c2ccb8f71eb686f220d8e7e84514a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,161,32"/>
+<area shape="rect" href="blas__connector_8h.html#ad585691d2e7376885f15906d9535a8de" title=" " alt="" coords="209,5,277,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab37c2ccb8f71eb686f220d8e7e84514a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab37c2ccb8f71eb686f220d8e7e84514a">&#9670;&nbsp;</a></span>axpy() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -418,7 +736,70 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a0c9d271433f0244a6b866aa564e34e3f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0c9d271433f0244a6b866aa564e34e3f">&#9670;&nbsp;</a></span>copy() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c9d271433f0244a6b866aa564e34e3f">&#9670;&nbsp;</a></span>copy() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::copy </td>
+          <td>(</td>
+          <td class="paramtype">const long&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a0c9d271433f0244a6b866aa564e34e3f_cgraph.png" border="0" usemap="#classBlasConnector_a0c9d271433f0244a6b866aa564e34e3f_cgraph" alt=""/></div>
+<map name="classBlasConnector_a0c9d271433f0244a6b866aa564e34e3f_cgraph" id="classBlasConnector_a0c9d271433f0244a6b866aa564e34e3f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,160,32"/>
+<area shape="rect" href="blas__connector_8h.html#aad2eb011ff28b56f4d4da7701baec2cc" title=" " alt="" coords="208,5,276,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a0c9d271433f0244a6b866aa564e34e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0c9d271433f0244a6b866aa564e34e3f">&#9670;&nbsp;</a></span>copy() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,7 +862,70 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="aff1df7c65dfa07dadb503fd70f73eeb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aff1df7c65dfa07dadb503fd70f73eeb5">&#9670;&nbsp;</a></span>copy() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aff1df7c65dfa07dadb503fd70f73eeb5">&#9670;&nbsp;</a></span>copy() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::copy </td>
+          <td>(</td>
+          <td class="paramtype">const long&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_aff1df7c65dfa07dadb503fd70f73eeb5_cgraph.png" border="0" usemap="#classBlasConnector_aff1df7c65dfa07dadb503fd70f73eeb5_cgraph" alt=""/></div>
+<map name="classBlasConnector_aff1df7c65dfa07dadb503fd70f73eeb5_cgraph" id="classBlasConnector_aff1df7c65dfa07dadb503fd70f73eeb5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,160,32"/>
+<area shape="rect" href="blas__connector_8h.html#aa786995208fbea7ec820306e310ea0a3" title=" " alt="" coords="208,5,275,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aff1df7c65dfa07dadb503fd70f73eeb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff1df7c65dfa07dadb503fd70f73eeb5">&#9670;&nbsp;</a></span>copy() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -544,7 +988,70 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a17cbf3dfb39d0b07cbaeee41fdc65b10"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a17cbf3dfb39d0b07cbaeee41fdc65b10">&#9670;&nbsp;</a></span>dot() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a17cbf3dfb39d0b07cbaeee41fdc65b10">&#9670;&nbsp;</a></span>dot() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double BlasConnector::dot </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a17cbf3dfb39d0b07cbaeee41fdc65b10_cgraph.png" border="0" usemap="#classBlasConnector_a17cbf3dfb39d0b07cbaeee41fdc65b10_cgraph" alt=""/></div>
+<map name="classBlasConnector_a17cbf3dfb39d0b07cbaeee41fdc65b10_cgraph" id="classBlasConnector_a17cbf3dfb39d0b07cbaeee41fdc65b10_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,151,32"/>
+<area shape="rect" href="blas__connector_8h.html#a14802ce6d8424abb471e028b29f6cd3d" title=" " alt="" coords="199,5,257,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a17cbf3dfb39d0b07cbaeee41fdc65b10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17cbf3dfb39d0b07cbaeee41fdc65b10">&#9670;&nbsp;</a></span>dot() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -607,7 +1114,70 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a54f511d48bf1df74fdadca3d8ceb0dc1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a54f511d48bf1df74fdadca3d8ceb0dc1">&#9670;&nbsp;</a></span>dot() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f511d48bf1df74fdadca3d8ceb0dc1">&#9670;&nbsp;</a></span>dot() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float BlasConnector::dot </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incX</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incY</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a54f511d48bf1df74fdadca3d8ceb0dc1_cgraph.png" border="0" usemap="#classBlasConnector_a54f511d48bf1df74fdadca3d8ceb0dc1_cgraph" alt=""/></div>
+<map name="classBlasConnector_a54f511d48bf1df74fdadca3d8ceb0dc1_cgraph" id="classBlasConnector_a54f511d48bf1df74fdadca3d8ceb0dc1_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,151,32"/>
+<area shape="rect" href="blas__connector_8h.html#ac860a706cffd631ffa0980834cf5d418" title=" " alt="" coords="199,5,256,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a54f511d48bf1df74fdadca3d8ceb0dc1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a54f511d48bf1df74fdadca3d8ceb0dc1">&#9670;&nbsp;</a></span>dot() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -670,7 +1240,118 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="ad650639672c8dd6f03b3a0de066418dc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad650639672c8dd6f03b3a0de066418dc">&#9670;&nbsp;</a></span>gemm() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ad650639672c8dd6f03b3a0de066418dc">&#9670;&nbsp;</a></span>gemm() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::gemm </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>transa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>transb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>lda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ldb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ldc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_ad650639672c8dd6f03b3a0de066418dc_cgraph.png" border="0" usemap="#classBlasConnector_ad650639672c8dd6f03b3a0de066418dc_cgraph" alt=""/></div>
+<map name="classBlasConnector_ad650639672c8dd6f03b3a0de066418dc_cgraph" id="classBlasConnector_ad650639672c8dd6f03b3a0de066418dc_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" href="blas__connector_8h.html#acd91e478fc0b939313049e2e895a39e1" title=" " alt="" coords="220,5,299,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad650639672c8dd6f03b3a0de066418dc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad650639672c8dd6f03b3a0de066418dc">&#9670;&nbsp;</a></span>gemm() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -781,7 +1462,118 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a7fc631407a62968b5c7ea22257f96460"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7fc631407a62968b5c7ea22257f96460">&#9670;&nbsp;</a></span>gemm() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc631407a62968b5c7ea22257f96460">&#9670;&nbsp;</a></span>gemm() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::gemm </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>transa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>transb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>lda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ldb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ldc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a7fc631407a62968b5c7ea22257f96460_cgraph.png" border="0" usemap="#classBlasConnector_a7fc631407a62968b5c7ea22257f96460_cgraph" alt=""/></div>
+<map name="classBlasConnector_a7fc631407a62968b5c7ea22257f96460_cgraph" id="classBlasConnector_a7fc631407a62968b5c7ea22257f96460_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" href="blas__connector_8h.html#a446ce29bad27f11ec0fd4962863eec9e" title=" " alt="" coords="220,5,299,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a7fc631407a62968b5c7ea22257f96460"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7fc631407a62968b5c7ea22257f96460">&#9670;&nbsp;</a></span>gemm() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -893,23 +1685,131 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBlasConnector_a7fc631407a62968b5c7ea22257f96460_icgraph.png" border="0" usemap="#classBlasConnector_a7fc631407a62968b5c7ea22257f96460_icgraph" alt=""/></div>
 <map name="classBlasConnector_a7fc631407a62968b5c7ea22257f96460_icgraph" id="classBlasConnector_a7fc631407a62968b5c7ea22257f96460_icgraph">
-<area shape="rect" title=" " alt="" coords="499,217,665,244"/>
-<area shape="rect" href="classExx__Lcao.html#afeac75b5a164d3d88435c7dc53d665dd" title=" " alt="" coords="264,5,415,32"/>
-<area shape="rect" href="classExx__Abfs_1_1Screen_1_1Schwarz.html#a3e8c0df842b8c261c6db13b03860d4cb" title=" " alt="" coords="241,57,437,98"/>
-<area shape="rect" href="classNumerical__Basis.html#a6f78255a176b2d28f41c0864f4fbab80" title=" " alt="" coords="260,122,419,163"/>
-<area shape="rect" href="classExx__Lcao.html#a80360a9aa1d5183e3503f09a022f3afa" title=" " alt="" coords="263,188,415,215"/>
-<area shape="rect" href="classExx__Abfs_1_1Screen_1_1Cauchy.html#a89e61e8e1770aad9778779f912d5e15e" title=" " alt="" coords="244,239,435,281"/>
-<area shape="rect" href="structhsolver_1_1gemm__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#ab8340e4da6cf528e5cb30b026bf4a83e" title=" " alt="" coords="228,305,451,346"/>
-<area shape="rect" href="namespaceModuleBase.html#a11784ac5df45d786d61e76857b2199d5" title=" " alt="" coords="253,371,425,397"/>
-<area shape="rect" href="classExx__Abfs_1_1Inverse__Matrix__Double.html#af9d56325b654ede654ebcce715203c27" title=" " alt="" coords="246,422,433,463"/>
-<area shape="rect" href="classExx__Lcao.html#ab1b88afdf96101971647a5ca13374395" title=" " alt="" coords="5,5,180,32"/>
+<area shape="rect" title=" " alt="" coords="788,123,955,150"/>
+<area shape="rect" href="classNumerical__Basis.html#af20bbc6466acd3e92febe7517961a7c3" title=" " alt="" coords="549,5,708,47"/>
+<area shape="rect" href="structcontainer_1_1op_1_1gemm__op_3_01T_00_01DEVICE__CPU_01_4.html#ac686556cc510684a1ab0976fd666c2ea" title=" " alt="" coords="542,71,715,127"/>
+<area shape="rect" href="structhsolver_1_1gemm__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#ab8340e4da6cf528e5cb30b026bf4a83e" title=" " alt="" coords="517,152,740,193"/>
+<area shape="rect" href="namespaceModuleBase.html#a11784ac5df45d786d61e76857b2199d5" title=" " alt="" coords="543,218,715,245"/>
+<area shape="rect" href="classNumerical__Basis.html#a14ddd7c2b3a50be3507427984511dd41" title=" " alt="" coords="288,5,469,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="5,5,240,47"/>
 </map>
 </div>
 
 </div>
 </div>
 <a id="a1348444ac2332c284a1bf1042c17075c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1348444ac2332c284a1bf1042c17075c">&#9670;&nbsp;</a></span>gemm() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1348444ac2332c284a1bf1042c17075c">&#9670;&nbsp;</a></span>gemm() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::gemm </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>transa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>transb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>lda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ldb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ldc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a1348444ac2332c284a1bf1042c17075c_cgraph.png" border="0" usemap="#classBlasConnector_a1348444ac2332c284a1bf1042c17075c_cgraph" alt=""/></div>
+<map name="classBlasConnector_a1348444ac2332c284a1bf1042c17075c_cgraph" id="classBlasConnector_a1348444ac2332c284a1bf1042c17075c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" href="blas__connector_8h.html#a5f3892f721a2dfc3b21e2ac92db07b18" title=" " alt="" coords="220,5,299,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1348444ac2332c284a1bf1042c17075c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1348444ac2332c284a1bf1042c17075c">&#9670;&nbsp;</a></span>gemm() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1020,7 +1920,118 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a9b693ba6e514c9684aff335b2f3bd384"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9b693ba6e514c9684aff335b2f3bd384">&#9670;&nbsp;</a></span>gemm() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b693ba6e514c9684aff335b2f3bd384">&#9670;&nbsp;</a></span>gemm() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::gemm </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>transa</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>transb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>a</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>lda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>b</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ldb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>c</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>ldc</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a9b693ba6e514c9684aff335b2f3bd384_cgraph.png" border="0" usemap="#classBlasConnector_a9b693ba6e514c9684aff335b2f3bd384_cgraph" alt=""/></div>
+<map name="classBlasConnector_a9b693ba6e514c9684aff335b2f3bd384_cgraph" id="classBlasConnector_a9b693ba6e514c9684aff335b2f3bd384_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" href="blas__connector_8h.html#aa37329147b350a119513644716d25854" title=" " alt="" coords="220,5,299,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a9b693ba6e514c9684aff335b2f3bd384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9b693ba6e514c9684aff335b2f3bd384">&#9670;&nbsp;</a></span>gemm() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1131,7 +2142,106 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a3306760a91820e374b423409e994d811"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3306760a91820e374b423409e994d811">&#9670;&nbsp;</a></span>gemv() <span class="overload">[1/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a3306760a91820e374b423409e994d811">&#9670;&nbsp;</a></span>gemv() <span class="overload">[1/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::gemv </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>lda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a3306760a91820e374b423409e994d811_cgraph.png" border="0" usemap="#classBlasConnector_a3306760a91820e374b423409e994d811_cgraph" alt=""/></div>
+<map name="classBlasConnector_a3306760a91820e374b423409e994d811_cgraph" id="classBlasConnector_a3306760a91820e374b423409e994d811_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,167,32"/>
+<area shape="rect" href="blas__connector_8h.html#af6e68bda698eaed2db4e4c1efcd9cfab" title=" " alt="" coords="215,5,288,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a3306760a91820e374b423409e994d811"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3306760a91820e374b423409e994d811">&#9670;&nbsp;</a></span>gemv() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1230,7 +2340,106 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a560b8486ff129be042571c01a325b701"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a560b8486ff129be042571c01a325b701">&#9670;&nbsp;</a></span>gemv() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a560b8486ff129be042571c01a325b701">&#9670;&nbsp;</a></span>gemv() <span class="overload">[3/4]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::gemv </td>
+          <td>(</td>
+          <td class="paramtype">const char&#160;</td>
+          <td class="paramname"><em>trans</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>m</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>A</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>lda</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>beta</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>Y</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a560b8486ff129be042571c01a325b701_cgraph.png" border="0" usemap="#classBlasConnector_a560b8486ff129be042571c01a325b701_cgraph" alt=""/></div>
+<map name="classBlasConnector_a560b8486ff129be042571c01a325b701_cgraph" id="classBlasConnector_a560b8486ff129be042571c01a325b701_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,167,32"/>
+<area shape="rect" href="blas__connector_8h.html#ae61eb64beb590c6a50e27f1842732902" title=" " alt="" coords="215,5,288,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a560b8486ff129be042571c01a325b701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a560b8486ff129be042571c01a325b701">&#9670;&nbsp;</a></span>gemv() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1330,15 +2539,67 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBlasConnector_a560b8486ff129be042571c01a325b701_icgraph.png" border="0" usemap="#classBlasConnector_a560b8486ff129be042571c01a325b701_icgraph" alt=""/></div>
 <map name="classBlasConnector_a560b8486ff129be042571c01a325b701_icgraph" id="classBlasConnector_a560b8486ff129be042571c01a325b701_icgraph">
-<area shape="rect" title=" " alt="" coords="276,13,437,39"/>
-<area shape="rect" href="structhsolver_1_1gemv__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a42c456523f87f4eabbb42ad9dc78bcf3" title=" " alt="" coords="5,5,228,47"/>
+<area shape="rect" title=" " alt="" coords="276,57,437,84"/>
+<area shape="rect" href="structcontainer_1_1op_1_1gemv__op_3_01T_00_01DEVICE__CPU_01_4.html#a4552d989c9ad022458631e9689dc631e" title=" " alt="" coords="30,5,203,61"/>
+<area shape="rect" href="structhsolver_1_1gemv__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a42c456523f87f4eabbb42ad9dc78bcf3" title=" " alt="" coords="5,86,228,127"/>
 </map>
 </div>
 
 </div>
 </div>
 <a id="a661a29127d67c5d5710fb092fcb8dee0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a661a29127d67c5d5710fb092fcb8dee0">&#9670;&nbsp;</a></span>nrm2() <span class="overload">[1/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a661a29127d67c5d5710fb092fcb8dee0">&#9670;&nbsp;</a></span>nrm2() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double BlasConnector::nrm2 </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incX</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a661a29127d67c5d5710fb092fcb8dee0_cgraph.png" border="0" usemap="#classBlasConnector_a661a29127d67c5d5710fb092fcb8dee0_cgraph" alt=""/></div>
+<map name="classBlasConnector_a661a29127d67c5d5710fb092fcb8dee0_cgraph" id="classBlasConnector_a661a29127d67c5d5710fb092fcb8dee0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,164,32"/>
+<area shape="rect" href="blas__connector_8h.html#af16f0dd7d8c3b149230360ed60767d9c" title=" " alt="" coords="212,5,283,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a661a29127d67c5d5710fb092fcb8dee0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a661a29127d67c5d5710fb092fcb8dee0">&#9670;&nbsp;</a></span>nrm2() <span class="overload">[2/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1389,7 +2650,58 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a1fbe62be978b17cb59f13d755b86f2bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1fbe62be978b17cb59f13d755b86f2bb">&#9670;&nbsp;</a></span>nrm2() <span class="overload">[2/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fbe62be978b17cb59f13d755b86f2bb">&#9670;&nbsp;</a></span>nrm2() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static float BlasConnector::nrm2 </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incX</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a1fbe62be978b17cb59f13d755b86f2bb_cgraph.png" border="0" usemap="#classBlasConnector_a1fbe62be978b17cb59f13d755b86f2bb_cgraph" alt=""/></div>
+<map name="classBlasConnector_a1fbe62be978b17cb59f13d755b86f2bb_cgraph" id="classBlasConnector_a1fbe62be978b17cb59f13d755b86f2bb_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,164,32"/>
+<area shape="rect" href="blas__connector_8h.html#ae1ed8c724b392a9fae51df9734cf3f43" title=" " alt="" coords="212,5,283,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1fbe62be978b17cb59f13d755b86f2bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1fbe62be978b17cb59f13d755b86f2bb">&#9670;&nbsp;</a></span>nrm2() <span class="overload">[4/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1441,18 +2753,66 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBlasConnector_a1fbe62be978b17cb59f13d755b86f2bb_icgraph.png" border="0" usemap="#classBlasConnector_a1fbe62be978b17cb59f13d755b86f2bb_icgraph" alt=""/></div>
 <map name="classBlasConnector_a1fbe62be978b17cb59f13d755b86f2bb_icgraph" id="classBlasConnector_a1fbe62be978b17cb59f13d755b86f2bb_icgraph">
-<area shape="rect" title=" " alt="" coords="483,71,641,98"/>
-<area shape="rect" href="classExx__Abfs_1_1Screen_1_1Cauchy.html#a903bb30a3bb46d67b2f8cd19e3b1204c" title=" " alt="" coords="244,5,435,47"/>
-<area shape="rect" href="classExx__Lcao.html#a0cf6e44caa8c70b72abb519991655035" title=" " alt="" coords="283,71,395,98"/>
-<area shape="rect" href="classModuleBase_1_1matrix.html#a84336cc86c8b1218d441ff0a7d891a71" title=" " alt="" coords="263,123,416,164"/>
-<area shape="rect" href="classExx__Abfs_1_1Screen_1_1Cauchy.html#ae2cacdf8b4fc70a6081c5a8ce61e1f5e" title=" " alt="" coords="5,123,196,164"/>
+<area shape="rect" title=" " alt="" coords="207,13,365,39"/>
+<area shape="rect" href="classModuleBase_1_1matrix.html#a84336cc86c8b1218d441ff0a7d891a71" title=" " alt="" coords="5,5,159,47"/>
 </map>
 </div>
 
 </div>
 </div>
 <a id="afcb7772ae12c831db7dcaac30d81827f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afcb7772ae12c831db7dcaac30d81827f">&#9670;&nbsp;</a></span>nrm2() <span class="overload">[3/3]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb7772ae12c831db7dcaac30d81827f">&#9670;&nbsp;</a></span>nrm2() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static double BlasConnector::nrm2 </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incX</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_afcb7772ae12c831db7dcaac30d81827f_cgraph.png" border="0" usemap="#classBlasConnector_afcb7772ae12c831db7dcaac30d81827f_cgraph" alt=""/></div>
+<map name="classBlasConnector_afcb7772ae12c831db7dcaac30d81827f_cgraph" id="classBlasConnector_afcb7772ae12c831db7dcaac30d81827f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,164,32"/>
+<area shape="rect" href="blas__connector_8h.html#ad261b24a5f93f0d9a590f08b10574b94" title=" " alt="" coords="212,5,291,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="afcb7772ae12c831db7dcaac30d81827f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afcb7772ae12c831db7dcaac30d81827f">&#9670;&nbsp;</a></span>nrm2() <span class="overload">[6/6]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1503,7 +2863,64 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a86ddf95b951e9544574d31da5520b890"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a86ddf95b951e9544574d31da5520b890">&#9670;&nbsp;</a></span>scal() <span class="overload">[1/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ddf95b951e9544574d31da5520b890">&#9670;&nbsp;</a></span>scal() <span class="overload">[1/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::scal </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const double&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incX</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a86ddf95b951e9544574d31da5520b890_cgraph.png" border="0" usemap="#classBlasConnector_a86ddf95b951e9544574d31da5520b890_cgraph" alt=""/></div>
+<map name="classBlasConnector_a86ddf95b951e9544574d31da5520b890_cgraph" id="classBlasConnector_a86ddf95b951e9544574d31da5520b890_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,156,32"/>
+<area shape="rect" href="blas__connector_8h.html#a2a522d360e8d0f37a13d9fecf66e3cf8" title=" " alt="" coords="204,5,267,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a86ddf95b951e9544574d31da5520b890"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86ddf95b951e9544574d31da5520b890">&#9670;&nbsp;</a></span>scal() <span class="overload">[2/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1560,7 +2977,64 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a65fa97ab2ee173c4f1634ffca6afd80f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a65fa97ab2ee173c4f1634ffca6afd80f">&#9670;&nbsp;</a></span>scal() <span class="overload">[2/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a65fa97ab2ee173c4f1634ffca6afd80f">&#9670;&nbsp;</a></span>scal() <span class="overload">[3/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::scal </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const float&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incX</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a65fa97ab2ee173c4f1634ffca6afd80f_cgraph.png" border="0" usemap="#classBlasConnector_a65fa97ab2ee173c4f1634ffca6afd80f_cgraph" alt=""/></div>
+<map name="classBlasConnector_a65fa97ab2ee173c4f1634ffca6afd80f_cgraph" id="classBlasConnector_a65fa97ab2ee173c4f1634ffca6afd80f_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,156,32"/>
+<area shape="rect" href="blas__connector_8h.html#a4f000413cab4edc6ff55e4b04f56bc91" title=" " alt="" coords="204,5,267,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a65fa97ab2ee173c4f1634ffca6afd80f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65fa97ab2ee173c4f1634ffca6afd80f">&#9670;&nbsp;</a></span>scal() <span class="overload">[4/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1618,23 +3092,80 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classBlasConnector_a65fa97ab2ee173c4f1634ffca6afd80f_icgraph.png" border="0" usemap="#classBlasConnector_a65fa97ab2ee173c4f1634ffca6afd80f_icgraph" alt=""/></div>
 <map name="classBlasConnector_a65fa97ab2ee173c4f1634ffca6afd80f_icgraph" id="classBlasConnector_a65fa97ab2ee173c4f1634ffca6afd80f_icgraph">
-<area shape="rect" title=" " alt="" coords="541,238,692,265"/>
-<area shape="rect" href="namespaceelecstate.html#a6d2a47f8eaa9f0592a121e8c62a97240" title=" " alt="" coords="313,107,451,134"/>
-<area shape="rect" href="classModuleBase_1_1Gram__Schmidt__Orth.html#a24d911ab6db0526914f2eb416a6aaa62" title=" " alt="" coords="279,158,485,214"/>
-<area shape="rect" href="classIState__Charge.html#a5f43634e4ac5d17a6a4f47d9a9082b2c" title=" " alt="" coords="294,238,470,265"/>
-<area shape="rect" href="structhsolver_1_1scal__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a1371067d56b1e32d4f5ea6388965060f" title=" " alt="" coords="271,289,493,331"/>
-<area shape="rect" href="blas__connector__test_8cpp.html#a40b982037591bdac51c1f7a699d2b489" title=" " alt="" coords="355,355,409,382"/>
+<area shape="rect" title=" " alt="" coords="541,242,692,269"/>
+<area shape="rect" href="namespaceelecstate.html#a6d2a47f8eaa9f0592a121e8c62a97240" title=" " alt="" coords="313,78,451,105"/>
+<area shape="rect" href="classModuleBase_1_1Gram__Schmidt__Orth.html#a24d911ab6db0526914f2eb416a6aaa62" title=" " alt="" coords="279,129,485,185"/>
+<area shape="rect" href="classIState__Charge.html#a5f43634e4ac5d17a6a4f47d9a9082b2c" title=" " alt="" coords="294,209,470,235"/>
+<area shape="rect" href="structcontainer_1_1op_1_1scal__op_3_01T_00_01DEVICE__CPU_01_4.html#afd6ac79b20f21a15700aff0857937d0d" title=" " alt="" coords="295,259,469,315"/>
+<area shape="rect" href="structhsolver_1_1scal__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a1371067d56b1e32d4f5ea6388965060f" title=" " alt="" coords="271,340,493,381"/>
+<area shape="rect" href="blas__connector__test_8cpp.html#a40b982037591bdac51c1f7a699d2b489" title=" " alt="" coords="355,406,409,433"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="26,5,202,47"/>
 <area shape="rect" href="classForce__LCAO__gamma.html#a2a22f95726bb35ea7be05a5206d09c30" title=" " alt="" coords="23,71,205,112"/>
 <area shape="rect" href="classForce__LCAO__k.html#aca4b159d50c6caf376b785828dbd8fae" title=" " alt="" coords="5,137,223,163"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="21,188,207,229"/>
 </map>
 </div>
 
 </div>
 </div>
 <a id="aaa4de1dec7e054aafd428a7138c4dbb5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aaa4de1dec7e054aafd428a7138c4dbb5">&#9670;&nbsp;</a></span>scal() <span class="overload">[3/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa4de1dec7e054aafd428a7138c4dbb5">&#9670;&nbsp;</a></span>scal() <span class="overload">[5/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::scal </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incX</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_aaa4de1dec7e054aafd428a7138c4dbb5_cgraph.png" border="0" usemap="#classBlasConnector_aaa4de1dec7e054aafd428a7138c4dbb5_cgraph" alt=""/></div>
+<map name="classBlasConnector_aaa4de1dec7e054aafd428a7138c4dbb5_cgraph" id="classBlasConnector_aaa4de1dec7e054aafd428a7138c4dbb5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,156,32"/>
+<area shape="rect" href="blas__connector_8h.html#a7368c9b5d7612fe8f5e2d1548d2cb558" title=" " alt="" coords="204,5,267,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aaa4de1dec7e054aafd428a7138c4dbb5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaa4de1dec7e054aafd428a7138c4dbb5">&#9670;&nbsp;</a></span>scal() <span class="overload">[6/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1691,7 +3222,64 @@ Here is the call graph for this function:</div>
 </div>
 </div>
 <a id="a21b90feabcd33e5ff93814d9d6fcce88"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21b90feabcd33e5ff93814d9d6fcce88">&#9670;&nbsp;</a></span>scal() <span class="overload">[4/4]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a21b90feabcd33e5ff93814d9d6fcce88">&#9670;&nbsp;</a></span>scal() <span class="overload">[7/8]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static void BlasConnector::scal </td>
+          <td>(</td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>n</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt;&#160;</td>
+          <td class="paramname"><em>alpha</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; float &gt; *&#160;</td>
+          <td class="paramname"><em>X</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>incX</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBlasConnector_a21b90feabcd33e5ff93814d9d6fcce88_cgraph.png" border="0" usemap="#classBlasConnector_a21b90feabcd33e5ff93814d9d6fcce88_cgraph" alt=""/></div>
+<map name="classBlasConnector_a21b90feabcd33e5ff93814d9d6fcce88_cgraph" id="classBlasConnector_a21b90feabcd33e5ff93814d9d6fcce88_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,156,32"/>
+<area shape="rect" href="blas__connector_8h.html#a2db29ca31e81db9d89c6c0c87d846d49" title=" " alt="" coords="204,5,267,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a21b90feabcd33e5ff93814d9d6fcce88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a21b90feabcd33e5ff93814d9d6fcce88">&#9670;&nbsp;</a></span>scal() <span class="overload">[8/8]</span></h2>
 
 <div class="memitem">
 <div class="memproto">

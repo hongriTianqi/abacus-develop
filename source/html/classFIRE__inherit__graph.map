@@ -1,4 +1,4 @@
 <map id="FIRE" name="FIRE">
-<area shape="rect" id="node1" title=" " alt="" coords="10,409,147,736"/>
-<area shape="rect" id="node2" href="$classMDrun.html" title=" " alt="" coords="5,5,152,361"/>
+<area shape="rect" id="node1" title="FIRE method." alt="" coords="13,497,144,824"/>
+<area shape="rect" id="node2" href="$classMD__base.html" title="base class of md" alt="" coords="5,5,152,449"/>
 </map>

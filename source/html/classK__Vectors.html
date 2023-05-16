@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: K_Vectors Class Reference</title>
+<title>3.2.2: K_Vectors Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -93,8 +93,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a5a75da6bda1edde3a6c0bef26c61fa09"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0155acd9a4eb60264ffe03b346a1e26"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK__Vectors.html#af0155acd9a4eb60264ffe03b346a1e26">set</a> (const <a class="el" href="classModuleSymmetry_1_1Symmetry.html">ModuleSymmetry::Symmetry</a> &amp;symm, const std::string &amp;k_file_name, const int &amp;<a class="el" href="classK__Vectors.html#a1d7e82a85a4be423f063dbe653714ca6">nspin</a>, const <a class="el" href="classModuleBase_1_1Matrix3.html">ModuleBase::Matrix3</a> &amp;reciprocal_vec, const <a class="el" href="classModuleBase_1_1Matrix3.html">ModuleBase::Matrix3</a> &amp;latvec)</td></tr>
 <tr class="separator:af0155acd9a4eb60264ffe03b346a1e26"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af2117429ed0db32c94d425174c951cfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK__Vectors.html#af2117429ed0db32c94d425174c951cfe">ibz_kpoint</a> (const <a class="el" href="classModuleSymmetry_1_1Symmetry.html">ModuleSymmetry::Symmetry</a> &amp;symm, bool use_symm, std::string &amp;skpt, const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell)</td></tr>
-<tr class="separator:af2117429ed0db32c94d425174c951cfe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab92f65a629a26a2dd0e4b6bd63d69ee5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK__Vectors.html#ab92f65a629a26a2dd0e4b6bd63d69ee5">ibz_kpoint</a> (const <a class="el" href="classModuleSymmetry_1_1Symmetry.html">ModuleSymmetry::Symmetry</a> &amp;symm, bool use_symm, std::string &amp;skpt, const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell, bool &amp;match)</td></tr>
+<tr class="separator:ab92f65a629a26a2dd0e4b6bd63d69ee5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1be850654cf7d90964c39b431dae8ae0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK__Vectors.html#a1be850654cf7d90964c39b431dae8ae0">set_after_vc</a> (const <a class="el" href="classModuleSymmetry_1_1Symmetry.html">ModuleSymmetry::Symmetry</a> &amp;symm, const std::string &amp;k_file_name, const int &amp;<a class="el" href="classK__Vectors.html#a1d7e82a85a4be423f063dbe653714ca6">nspin</a>, const <a class="el" href="classModuleBase_1_1Matrix3.html">ModuleBase::Matrix3</a> &amp;reciprocal_vec, const <a class="el" href="classModuleBase_1_1Matrix3.html">ModuleBase::Matrix3</a> &amp;latvec)</td></tr>
 <tr class="separator:a1be850654cf7d90964c39b431dae8ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91a688d5eca95c2cd6f82a6cb68cd3a0"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classK__Vectors.html#a91a688d5eca95c2cd6f82a6cb68cd3a0">getik_global</a> (const int &amp;ik) const</td></tr>
@@ -264,21 +264,20 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classK__Vectors_a91a688d5eca95c2cd6f82a6cb68cd3a0_icgraph.png" border="0" usemap="#classK__Vectors_a91a688d5eca95c2cd6f82a6cb68cd3a0_icgraph" alt=""/></div>
 <map name="classK__Vectors_a91a688d5eca95c2cd6f82a6cb68cd3a0_icgraph" id="classK__Vectors_a91a688d5eca95c2cd6f82a6cb68cd3a0_icgraph">
-<area shape="rect" title=" " alt="" coords="805,71,980,98"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a8cb30f8732a49321f5e031dab23844e8" title=" " alt="" coords="547,35,757,76"/>
-<area shape="rect" href="namespaceModuleIO.html#aa9ef58714bb2c79676c5abb86ff9676d" title=" " alt="" coords="561,101,743,127"/>
+<area shape="rect" title=" " alt="" coords="805,42,980,69"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a8cb30f8732a49321f5e031dab23844e8" title=" " alt="" coords="547,5,757,47"/>
+<area shape="rect" href="namespaceModuleIO.html#abcf93dbfe1e9a7aa74c6561fa4d8609d" title=" " alt="" coords="561,71,743,98"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#ae6d6b033f0537dc893a61f5159e85a8e" title=" " alt="" coords="274,5,479,47"/>
-<area shape="rect" href="classIState__Envelope.html#a26a721cfbef23d0a9cd55d4b1466be37" title="for gamma_only" alt="" coords="291,71,462,98"/>
+<area shape="rect" href="classIState__Envelope.html#ab477dddd987fa2adc5ec0b27be47f245" title="for gamma_only" alt="" coords="291,71,462,98"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#add0ad74bf7753d5019aa6f921eb8077d" title=" " alt="" coords="255,123,499,164"/>
-<area shape="rect" href="updaterhok__pw__test_8cpp.html#a8d8d0f6b8066294ef021796e6950d7bb" title=" " alt="" coords="342,189,411,215"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,64,207,105"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="af2117429ed0db32c94d425174c951cfe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af2117429ed0db32c94d425174c951cfe">&#9670;&nbsp;</a></span>ibz_kpoint()</h2>
+<a id="ab92f65a629a26a2dd0e4b6bd63d69ee5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab92f65a629a26a2dd0e4b6bd63d69ee5">&#9670;&nbsp;</a></span>ibz_kpoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -305,7 +304,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;&#160;</td>
-          <td class="paramname"><em>ucell</em>&#160;</td>
+          <td class="paramname"><em>ucell</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool &amp;&#160;</td>
+          <td class="paramname"><em>match</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -317,8 +322,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classK__Vectors_af2117429ed0db32c94d425174c951cfe_cgraph.png" border="0" usemap="#classK__Vectors_af2117429ed0db32c94d425174c951cfe_cgraph" alt=""/></div>
-<map name="classK__Vectors_af2117429ed0db32c94d425174c951cfe_cgraph" id="classK__Vectors_af2117429ed0db32c94d425174c951cfe_cgraph">
+<div class="center"><img src="classK__Vectors_ab92f65a629a26a2dd0e4b6bd63d69ee5_cgraph.png" border="0" usemap="#classK__Vectors_ab92f65a629a26a2dd0e4b6bd63d69ee5_cgraph" alt=""/></div>
+<map name="classK__Vectors_ab92f65a629a26a2dd0e4b6bd63d69ee5_cgraph" id="classK__Vectors_ab92f65a629a26a2dd0e4b6bd63d69ee5_cgraph">
 <area shape="rect" title=" " alt="" coords="5,205,167,232"/>
 <area shape="rect" href="classModuleSymmetry_1_1Symmetry__Basic.html#a4b54c9b42b122d0f80cc0a77076a9b8b" title=" " alt="" coords="479,22,692,63"/>
 <area shape="rect" href="classModuleSymmetry_1_1Symmetry.html#adfedc8b77fe3a670fe1c0ced21dff408" title=" " alt="" coords="215,336,428,378"/>
@@ -327,24 +332,24 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="476,117,695,144"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="513,176,658,202"/>
 <area shape="rect" href="classModuleSymmetry_1_1Symmetry__Basic.html#a99bb55d78f2c9883ee2db2f89ef0d0f4" title=" " alt="" coords="215,168,428,210"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="215,402,428,429"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html#afd6b233d57727a0b41ae4d92379e0056" title="Transpose a 3x3 matrix." alt="" coords="241,402,401,443"/>
 <area shape="rect" href="classModuleBase_1_1Matrix3.html#ab28d96cf2c851a6c1eae27ce780d2e90" title="Calculate the determinant of a 3x3 matrix." alt="" coords="743,314,933,341"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classK__Vectors_af2117429ed0db32c94d425174c951cfe_icgraph.png" border="0" usemap="#classK__Vectors_af2117429ed0db32c94d425174c951cfe_icgraph" alt=""/></div>
-<map name="classK__Vectors_af2117429ed0db32c94d425174c951cfe_icgraph" id="classK__Vectors_af2117429ed0db32c94d425174c951cfe_icgraph">
+<div class="center"><img src="classK__Vectors_ab92f65a629a26a2dd0e4b6bd63d69ee5_icgraph.png" border="0" usemap="#classK__Vectors_ab92f65a629a26a2dd0e4b6bd63d69ee5_icgraph" alt=""/></div>
+<map name="classK__Vectors_ab92f65a629a26a2dd0e4b6bd63d69ee5_icgraph" id="classK__Vectors_ab92f65a629a26a2dd0e4b6bd63d69ee5_icgraph">
 <area shape="rect" title=" " alt="" coords="553,185,715,211"/>
 <area shape="rect" href="classK__Vectors.html#af0155acd9a4eb60264ffe03b346a1e26" title=" " alt="" coords="391,159,505,186"/>
 <area shape="rect" href="klist__test_8cpp.html#a539b14ab62273d9a16d7f082b6809575" title=" " alt="" coords="413,210,483,237"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="161,5,337,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="155,71,343,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="161,152,337,193"/>
-<area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="167,218,330,245"/>
+<area shape="rect" href="classExx__Lip.html#ad5b53311310dc2bda790dbfd39527d6d" title=" " alt="" coords="167,218,330,245"/>
 <area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="214,269,283,295"/>
-<area shape="rect" href="classExx__Lip.html#ac94a9e681d40d939634735558235cb6a" title=" " alt="" coords="5,218,107,245"/>
+<area shape="rect" href="classExx__Lip.html#a3003f46a0b42e9d00b599ae7de28bd76" title=" " alt="" coords="5,218,107,245"/>
 </map>
 </div>
 
@@ -418,7 +423,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="11,5,187,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="5,71,193,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="11,152,187,193"/>
-<area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="18,218,181,245"/>
+<area shape="rect" href="classExx__Lip.html#ad5b53311310dc2bda790dbfd39527d6d" title=" " alt="" coords="18,218,181,245"/>
 <area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="65,269,134,295"/>
 </map>
 </div>
@@ -484,7 +489,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="11,5,187,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="5,71,193,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="11,152,187,193"/>
-<area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="18,218,181,245"/>
+<area shape="rect" href="classExx__Lip.html#ad5b53311310dc2bda790dbfd39527d6d" title=" " alt="" coords="18,218,181,245"/>
 </map>
 </div>
 
@@ -539,9 +544,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="161,5,337,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="155,71,343,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="161,152,337,193"/>
-<area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="167,218,330,245"/>
+<area shape="rect" href="classExx__Lip.html#ad5b53311310dc2bda790dbfd39527d6d" title=" " alt="" coords="167,218,330,245"/>
 <area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="214,269,283,295"/>
-<area shape="rect" href="classExx__Lip.html#ac94a9e681d40d939634735558235cb6a" title=" " alt="" coords="5,218,107,245"/>
+<area shape="rect" href="classExx__Lip.html#a3003f46a0b42e9d00b599ae7de28bd76" title=" " alt="" coords="5,218,107,245"/>
 </map>
 </div>
 
@@ -638,9 +643,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="161,5,337,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="155,71,343,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="161,152,337,193"/>
-<area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="167,218,330,245"/>
+<area shape="rect" href="classExx__Lip.html#ad5b53311310dc2bda790dbfd39527d6d" title=" " alt="" coords="167,218,330,245"/>
 <area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="214,269,283,295"/>
-<area shape="rect" href="classExx__Lip.html#ac94a9e681d40d939634735558235cb6a" title=" " alt="" coords="5,218,107,245"/>
+<area shape="rect" href="classExx__Lip.html#a3003f46a0b42e9d00b599ae7de28bd76" title=" " alt="" coords="5,218,107,245"/>
 </map>
 </div>
 
@@ -696,7 +701,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="11,5,187,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="5,71,193,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="11,152,187,193"/>
-<area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="18,218,181,245"/>
+<area shape="rect" href="classExx__Lip.html#ad5b53311310dc2bda790dbfd39527d6d" title=" " alt="" coords="18,218,181,245"/>
 <area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="65,269,134,295"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__FP.html#ac79873fb919bb929201e474013f717ad" title=" " alt="" coords="11,320,187,361"/>
 </map>
@@ -732,16 +737,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classK__Vectors_ab1380f72433577f42ac1647207540a8f_cgraph.png" border="0" usemap="#classK__Vectors_ab1380f72433577f42ac1647207540a8f_cgraph" alt=""/></div>
 <map name="classK__Vectors_ab1380f72433577f42ac1647207540a8f_cgraph" id="classK__Vectors_ab1380f72433577f42ac1647207540a8f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,115,184,141"/>
+<area shape="rect" title=" " alt="" coords="5,140,184,167"/>
 <area shape="rect" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4" title=" " alt="" coords="241,64,441,91"/>
 <area shape="rect" href="classK__Vectors.html#a51b81c571a38d4b7be36c516774c896e" title=" " alt="" coords="513,5,647,32"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="507,123,653,149"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="232,165,451,192"/>
 <area shape="rect" href="namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="254,216,429,243"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="235,267,448,293"/>
 <area shape="rect" href="classK__Vectors.html#a4c3b2b7c805406500abb80b6be6ef565" title=" " alt="" coords="499,57,661,98"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="709,82,892,123"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="724,147,877,189"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="940,82,1123,123"/>
 </map>
 </div>
 <div class="dynheader">
@@ -755,9 +760,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="161,5,337,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="155,71,343,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="161,152,337,193"/>
-<area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="167,218,330,245"/>
+<area shape="rect" href="classExx__Lip.html#ad5b53311310dc2bda790dbfd39527d6d" title=" " alt="" coords="167,218,330,245"/>
 <area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="214,269,283,295"/>
-<area shape="rect" href="classExx__Lip.html#ac94a9e681d40d939634735558235cb6a" title=" " alt="" coords="5,218,107,245"/>
+<area shape="rect" href="classExx__Lip.html#a3003f46a0b42e9d00b599ae7de28bd76" title=" " alt="" coords="5,218,107,245"/>
 </map>
 </div>
 
@@ -858,9 +863,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="161,5,337,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="155,71,343,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="161,152,337,193"/>
-<area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="167,218,330,245"/>
+<area shape="rect" href="classExx__Lip.html#ad5b53311310dc2bda790dbfd39527d6d" title=" " alt="" coords="167,218,330,245"/>
 <area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="214,269,283,295"/>
-<area shape="rect" href="classExx__Lip.html#ac94a9e681d40d939634735558235cb6a" title=" " alt="" coords="5,218,107,245"/>
+<area shape="rect" href="classExx__Lip.html#a3003f46a0b42e9d00b599ae7de28bd76" title=" " alt="" coords="5,218,107,245"/>
 </map>
 </div>
 
@@ -1004,9 +1009,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="161,5,337,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="155,71,343,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="161,152,337,193"/>
-<area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="167,218,330,245"/>
+<area shape="rect" href="classExx__Lip.html#ad5b53311310dc2bda790dbfd39527d6d" title=" " alt="" coords="167,218,330,245"/>
 <area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="214,269,283,295"/>
-<area shape="rect" href="classExx__Lip.html#ac94a9e681d40d939634735558235cb6a" title=" " alt="" coords="5,218,107,245"/>
+<area shape="rect" href="classExx__Lip.html#a3003f46a0b42e9d00b599ae7de28bd76" title=" " alt="" coords="5,218,107,245"/>
 </map>
 </div>
 
@@ -1123,9 +1128,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="161,5,337,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="155,71,343,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="161,152,337,193"/>
-<area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="167,218,330,245"/>
+<area shape="rect" href="classExx__Lip.html#ad5b53311310dc2bda790dbfd39527d6d" title=" " alt="" coords="167,218,330,245"/>
 <area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="214,269,283,295"/>
-<area shape="rect" href="classExx__Lip.html#ac94a9e681d40d939634735558235cb6a" title=" " alt="" coords="5,218,107,245"/>
+<area shape="rect" href="classExx__Lip.html#a3003f46a0b42e9d00b599ae7de28bd76" title=" " alt="" coords="5,218,107,245"/>
 </map>
 </div>
 
@@ -1236,9 +1241,9 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="161,5,337,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="155,71,343,127"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="161,152,337,193"/>
-<area shape="rect" href="classExx__Lip.html#a2c3463b7ed9578efed40175b40956c80" title=" " alt="" coords="167,218,330,245"/>
+<area shape="rect" href="classExx__Lip.html#ad5b53311310dc2bda790dbfd39527d6d" title=" " alt="" coords="167,218,330,245"/>
 <area shape="rect" href="klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="214,269,283,295"/>
-<area shape="rect" href="classExx__Lip.html#ac94a9e681d40d939634735558235cb6a" title=" " alt="" coords="5,218,107,245"/>
+<area shape="rect" href="classExx__Lip.html#a3003f46a0b42e9d00b599ae7de28bd76" title=" " alt="" coords="5,218,107,245"/>
 </map>
 </div>
 
@@ -1570,7 +1575,8 @@ Here is the caller graph for this function:</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>module_cell/<a class="el" href="module__cell_2klist_8h_source.html">klist.h</a></li>
 <li>module_cell/<a class="el" href="klist_8cpp.html">klist.cpp</a></li>
-<li>module_elecstate/test/<a class="el" href="elecstate__lcao__test_8cpp.html">elecstate_lcao_test.cpp</a></li>
+<li>module_hsolver/test/<a class="el" href="hsolver__supplementary__mock_8h_source.html">hsolver_supplementary_mock.h</a></li>
+<li>module_io/test_serial/<a class="el" href="nscf__band__test_8cpp.html">nscf_band_test.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

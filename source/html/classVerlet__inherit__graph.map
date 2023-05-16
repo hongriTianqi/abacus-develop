@@ -1,4 +1,4 @@
 <map id="Verlet" name="Verlet">
-<area shape="rect" id="node1" title=" " alt="" coords="5,409,168,619"/>
-<area shape="rect" id="node2" href="$classMDrun.html" title=" " alt="" coords="13,5,160,361"/>
+<area shape="rect" id="node1" title="the md methods based on the velocity&#45;Verlet equation" alt="" coords="5,497,161,707"/>
+<area shape="rect" id="node2" href="$classMD__base.html" title="base class of md" alt="" coords="10,5,157,449"/>
 </map>

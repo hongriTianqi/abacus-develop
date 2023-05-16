@@ -1,9 +1,12 @@
 <map id="Stochastic_Iter::orthog" name="Stochastic_Iter::orthog">
-<area shape="rect" id="node1" title=" " alt="" coords="5,46,173,73"/>
-<area shape="rect" id="node2" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="221,46,367,73"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="415,5,597,47"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="429,71,583,112"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="645,5,828,47"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="648,78,825,105"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="876,71,1029,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,144,173,171"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#a08328544923ea6b40a70dd1fe90bec2d" title=" " alt="" coords="223,5,397,32"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#a3dd5886827d91befd079da1e23921f07" title=" " alt="" coords="241,56,379,83"/>
+<area shape="rect" id="node4" href="$namespaceParallel__Reduce.html#a5ccf1f753c6fae3266e7e9b5e21f2712" title=" " alt="" coords="221,107,399,149"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="237,173,383,200"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase.html#afbf699235c354243775d842f3856702d" title=" " alt="" coords="237,224,383,251"/>
+<area shape="rect" id="node10" href="$blas__connector_8h.html#a5f3892f721a2dfc3b21e2ac92db07b18" title=" " alt="" coords="271,275,349,301"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="447,134,629,175"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="461,199,615,241"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="677,134,860,175"/>
 </map>

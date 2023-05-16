@@ -1,12 +1,12 @@
 <map id="module_cell/module_symmetry/symm_other.h" name="module_cell/module_symmetry/symm_other.h">
-<area shape="rect" id="node1" title=" " alt="" coords="585,5,778,47"/>
-<area shape="rect" id="node2" href="$symmetry__basic_8h.html" title=" " alt="" coords="453,95,673,136"/>
-<area shape="rect" id="node10" href="$symm__other_8cpp.html" title=" " alt="" coords="697,95,905,136"/>
-<area shape="rect" id="node3" href="$symmetry_8h.html" title=" " alt="" coords="218,184,395,225"/>
-<area shape="rect" id="node7" href="$updaterhok__pw__test_8h.html" title=" " alt="" coords="339,363,509,404"/>
-<area shape="rect" id="node4" href="$module__cell_2klist_8h.html" title=" " alt="" coords="73,281,218,307"/>
-<area shape="rect" id="node5" href="$global_8h.html" title=" " alt="" coords="123,363,315,404"/>
-<area shape="rect" id="node6" href="$klist_8cpp.html" title=" " alt="" coords="5,452,165,479"/>
-<area shape="rect" id="node8" href="$run__symmetry_8cpp.html" title=" " alt="" coords="345,273,565,315"/>
-<area shape="rect" id="node9" href="$symmetry_8cpp.html" title=" " alt="" coords="589,273,781,315"/>
+<area shape="rect" id="node1" title=" " alt="" coords="399,5,593,47"/>
+<area shape="rect" id="node2" href="$symmetry__basic_8h.html" title=" " alt="" coords="267,95,487,136"/>
+<area shape="rect" id="node10" href="$symm__other_8cpp.html" title=" " alt="" coords="512,95,720,136"/>
+<area shape="rect" id="node3" href="$symmetry_8h.html" title=" " alt="" coords="289,184,466,225"/>
+<area shape="rect" id="node4" href="$module__cell_2klist_8h.html" title=" " alt="" coords="121,281,266,307"/>
+<area shape="rect" id="node5" href="$global_8h.html" title=" " alt="" coords="5,363,197,404"/>
+<area shape="rect" id="node6" href="$klist_8cpp.html" title=" " alt="" coords="155,452,315,479"/>
+<area shape="rect" id="node7" href="$run__symmetry_8cpp.html" title=" " alt="" coords="342,273,562,315"/>
+<area shape="rect" id="node8" href="$symmetry_8cpp.html" title=" " alt="" coords="587,273,779,315"/>
+<area shape="rect" id="node9" href="$symmetry__basic_8cpp.html" title=" " alt="" coords="803,273,1037,315"/>
 </map>

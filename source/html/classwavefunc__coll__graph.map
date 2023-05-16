@@ -1,9 +1,10 @@
 <map id="wavefunc" name="wavefunc">
-<area shape="rect" id="node1" title=" " alt="" coords="437,857,595,1169"/>
-<area shape="rect" id="node2" href="$classWF__atomic.html" title=" " alt="" coords="339,512,506,795"/>
-<area shape="rect" id="node3" href="$classWF__igk.html" title=" " alt="" coords="5,130,187,310"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1ComplexMatrix.html" title=" " alt="" coords="211,86,421,354"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1realArray.html" title="double float array" alt="" coords="445,42,616,398"/>
-<area shape="rect" id="node6" href="$classpsi_1_1Psi.html" title=" " alt="" coords="641,5,807,435"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="530,519,689,787"/>
+<area shape="rect" id="node1" title=" " alt="" coords="395,1188,552,1485"/>
+<area shape="rect" id="node2" href="$classWF__atomic.html" title=" " alt="" coords="315,857,458,1125"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1ComplexMatrix.html" title=" " alt="" coords="5,5,216,273"/>
+<area shape="rect" id="node4" href="$classStructure__Factor.html" title=" " alt="" coords="135,402,329,773"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1realArray.html" title="double float array" alt="" coords="353,409,524,765"/>
+<area shape="rect" id="node6" href="$classpsi_1_1Psi.html" title=" " alt="" coords="549,380,715,795"/>
+<area shape="rect" id="node7" href="$structDEVICE__CPU.html" title="A tag type for identifying CPU and GPU devices." alt="" coords="580,101,684,178"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="482,857,641,1125"/>
 </map>

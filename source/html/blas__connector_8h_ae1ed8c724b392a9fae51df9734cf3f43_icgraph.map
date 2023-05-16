@@ -1,8 +1,5 @@
 <map id="snrm2_" name="snrm2_">
-<area shape="rect" id="node1" title=" " alt="" coords="689,71,760,98"/>
-<area shape="rect" id="node2" href="$classBlasConnector.html#a1fbe62be978b17cb59f13d755b86f2bb" title=" " alt="" coords="483,71,641,98"/>
-<area shape="rect" id="node3" href="$classExx__Abfs_1_1Screen_1_1Cauchy.html#a903bb30a3bb46d67b2f8cd19e3b1204c" title=" " alt="" coords="244,5,435,47"/>
-<area shape="rect" id="node4" href="$classExx__Lcao.html#a0cf6e44caa8c70b72abb519991655035" title=" " alt="" coords="283,71,395,98"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1matrix.html#a84336cc86c8b1218d441ff0a7d891a71" title=" " alt="" coords="263,123,416,164"/>
-<area shape="rect" id="node6" href="$classExx__Abfs_1_1Screen_1_1Cauchy.html#ae2cacdf8b4fc70a6081c5a8ce61e1f5e" title=" " alt="" coords="5,123,196,164"/>
+<area shape="rect" id="node1" title=" " alt="" coords="413,13,484,39"/>
+<area shape="rect" id="node2" href="$classBlasConnector.html#a1fbe62be978b17cb59f13d755b86f2bb" title=" " alt="" coords="207,13,365,39"/>
+<area shape="rect" id="node3" href="$classModuleBase_1_1matrix.html#a84336cc86c8b1218d441ff0a7d891a71" title=" " alt="" coords="5,5,159,47"/>
 </map>

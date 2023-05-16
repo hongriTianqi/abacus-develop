@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Stress_Func&lt; FPTYPE, Device &gt; Class Template Reference</title>
+<title>3.2.2: Stress_Func&lt; FPTYPE, Device &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -91,34 +91,34 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1e296d156f33bd3235f89f78d8fe3a13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50b50093a32d06c086fb6c15d5bc40f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a50b50093a32d06c086fb6c15d5bc40f9">~Stress_Func</a> ()</td></tr>
 <tr class="separator:a50b50093a32d06c086fb6c15d5bc40f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a581c9814b3e779edcba36cf3ff8097f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a581c9814b3e779edcba36cf3ff8097f1">stress_kin</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">complex</a>&lt; FPTYPE &gt;&gt; *psi_in=nullptr)</td></tr>
-<tr class="separator:a581c9814b3e779edcba36cf3ff8097f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acdce53040cc86613c88f4c7103777070"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#acdce53040cc86613c88f4c7103777070">stress_kin</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, <a class="el" href="classModuleSymmetry_1_1Symmetry.html">ModuleSymmetry::Symmetry</a> *p_symm, <a class="el" href="classK__Vectors.html">K_Vectors</a> *p_kv, <a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *wfc_basis, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">complex</a>&lt; FPTYPE &gt;&gt; *psi_in=nullptr)</td></tr>
+<tr class="separator:acdce53040cc86613c88f4c7103777070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a124c45025fb8cdda7ff05c4bfd6a48bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a124c45025fb8cdda7ff05c4bfd6a48bb">stress_har</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis, const bool is_pw, const <a class="el" href="classCharge.html">Charge</a> *const chr)</td></tr>
 <tr class="separator:a124c45025fb8cdda7ff05c4bfd6a48bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a123bfe3d6692f7863c5233b9d6f93215"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a123bfe3d6692f7863c5233b9d6f93215">stress_ewa</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis, const bool is_pw)</td></tr>
 <tr class="separator:a123bfe3d6692f7863c5233b9d6f93215"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04e4fa436039813323bde6c2bfcb2d5f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a04e4fa436039813323bde6c2bfcb2d5f">stress_loc</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis, const bool is_pw, const <a class="el" href="classCharge.html">Charge</a> *const chr)</td></tr>
-<tr class="separator:a04e4fa436039813323bde6c2bfcb2d5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20e8aca894b92e0a06fc4f686221619b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a20e8aca894b92e0a06fc4f686221619b">stress_loc</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis, <a class="el" href="classStructure__Factor.html">Structure_Factor</a> *p_sf, const bool is_pw, const <a class="el" href="classCharge.html">Charge</a> *const chr)</td></tr>
+<tr class="separator:a20e8aca894b92e0a06fc4f686221619b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a061fef4615b75d29e7354466972d75f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a061fef4615b75d29e7354466972d75f2">dvloc_of_g</a> (const int &amp;msh, const FPTYPE *rab, const FPTYPE *r, const FPTYPE *vloc_at, const FPTYPE &amp;zp, FPTYPE *dvloc, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis)</td></tr>
 <tr class="separator:a061fef4615b75d29e7354466972d75f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a670c5826121cb330454b8d47a22fac36"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a670c5826121cb330454b8d47a22fac36">dvloc_coul</a> (const FPTYPE &amp;zp, FPTYPE *dvloc, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis)</td></tr>
 <tr class="separator:a670c5826121cb330454b8d47a22fac36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afb4a91cc8729aa125799567996c3870c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#afb4a91cc8729aa125799567996c3870c">stress_cc</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis, const bool is_pw, const <a class="el" href="classCharge.html">Charge</a> *const chr)</td></tr>
-<tr class="separator:afb4a91cc8729aa125799567996c3870c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89bc9855bd9f55ae47e65b70edb0cc9e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a89bc9855bd9f55ae47e65b70edb0cc9e">stress_cc</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis, <a class="el" href="classStructure__Factor.html">Structure_Factor</a> *p_sf, const bool is_pw, const <a class="el" href="classCharge.html">Charge</a> *const chr)</td></tr>
+<tr class="separator:a89bc9855bd9f55ae47e65b70edb0cc9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a56db0ba4eff8f3f0a5281f1d78ba7362"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a56db0ba4eff8f3f0a5281f1d78ba7362">deriv_drhoc</a> (const bool &amp;numeric, const int mesh, const FPTYPE *r, const FPTYPE *rab, const FPTYPE *rhoc, FPTYPE *drhocg, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis)</td></tr>
 <tr class="separator:a56db0ba4eff8f3f0a5281f1d78ba7362"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6fc9b89334a17ad363da53de60e88ea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a6fc9b89334a17ad363da53de60e88ea8">stress_gga</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, const <a class="el" href="classCharge.html">Charge</a> *const chr)</td></tr>
-<tr class="separator:a6fc9b89334a17ad363da53de60e88ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00cd2c8bf58fb4579fa89276e4767329"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a00cd2c8bf58fb4579fa89276e4767329">stress_mgga</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;v_ofk, const <a class="el" href="classCharge.html">Charge</a> *const chr, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">complex</a>&lt; FPTYPE &gt;&gt; *psi_in=nullptr)</td></tr>
-<tr class="separator:a00cd2c8bf58fb4579fa89276e4767329"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3872140813071a0b0f2c116f2e66c517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a3872140813071a0b0f2c116f2e66c517">stress_nl</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">complex</a>&lt; FPTYPE &gt;, Device &gt; *psi_in=nullptr)</td></tr>
-<tr class="separator:a3872140813071a0b0f2c116f2e66c517"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac65ce961e4ab45a1a099e5865f9d44d1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#ac65ce961e4ab45a1a099e5865f9d44d1">get_dvnl1</a> (<a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &amp;vkb, const int ik, const int ipol)</td></tr>
-<tr class="separator:ac65ce961e4ab45a1a099e5865f9d44d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5942386b175ca859c1aceefc6f714dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#ab5942386b175ca859c1aceefc6f714dd">stress_gga</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis, const <a class="el" href="classCharge.html">Charge</a> *const chr)</td></tr>
+<tr class="separator:ab5942386b175ca859c1aceefc6f714dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a559db74aabff43be96609df027470808"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a559db74aabff43be96609df027470808">stress_mgga</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;v_ofk, const <a class="el" href="classCharge.html">Charge</a> *const chr, <a class="el" href="classK__Vectors.html">K_Vectors</a> *p_kv, <a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *wfc_basis, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">complex</a>&lt; FPTYPE &gt;&gt; *psi_in=nullptr)</td></tr>
+<tr class="separator:a559db74aabff43be96609df027470808"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2b50b9c5487cdd5fbac7efb90721e7fc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a2b50b9c5487cdd5fbac7efb90721e7fc">stress_nl</a> (<a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;sigma, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, <a class="el" href="classStructure__Factor.html">Structure_Factor</a> *p_sf, <a class="el" href="classK__Vectors.html">K_Vectors</a> *p_kv, <a class="el" href="classModuleSymmetry_1_1Symmetry.html">ModuleSymmetry::Symmetry</a> *p_symm, <a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *wfc_basis, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">complex</a>&lt; FPTYPE &gt;, Device &gt; *psi_in)</td></tr>
+<tr class="separator:a2b50b9c5487cdd5fbac7efb90721e7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4acb0ff4b3a95309b1bee5605f9adc2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a4acb0ff4b3a95309b1bee5605f9adc2a">get_dvnl1</a> (<a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &amp;vkb, const int ik, const int ipol, <a class="el" href="classStructure__Factor.html">Structure_Factor</a> *p_sf, <a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *wfc_basis)</td></tr>
+<tr class="separator:a4acb0ff4b3a95309b1bee5605f9adc2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab56632672a198791eb2eb94cbaafe733"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#ab56632672a198791eb2eb94cbaafe733">dylmr2</a> (const int nylm, const int ngy, <a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; FPTYPE &gt; *gk, <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;dylm, const int ipol)</td></tr>
 <tr class="separator:ab56632672a198791eb2eb94cbaafe733"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd558c6392aac372a1509345bfed1220"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#abd558c6392aac372a1509345bfed1220">get_dvnl2</a> (<a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &amp;vkb, const int ik)</td></tr>
-<tr class="separator:abd558c6392aac372a1509345bfed1220"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ba47ff30336823a081a0ddb7576d06b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a9ba47ff30336823a081a0ddb7576d06b">get_dvnl2</a> (<a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &amp;vkb, const int ik, <a class="el" href="classStructure__Factor.html">Structure_Factor</a> *p_sf, <a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *wfc_basis)</td></tr>
+<tr class="separator:a9ba47ff30336823a081a0ddb7576d06b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6b372e8c27086b15272a7998ff2f90e1"><td class="memItemLeft" align="right" valign="top">FPTYPE&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a6b372e8c27086b15272a7998ff2f90e1">Polynomial_Interpolation_nl</a> (const <a class="el" href="classModuleBase_1_1realArray.html">ModuleBase::realArray</a> &amp;table, const int &amp;dim1, const int &amp;dim2, const FPTYPE &amp;table_interval, const FPTYPE &amp;x)</td></tr>
 <tr class="separator:a6b372e8c27086b15272a7998ff2f90e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ec0c4ec6ec0bfd4af78d5b1c21a14f0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStress__Func.html#a0ec0c4ec6ec0bfd4af78d5b1c21a14f0">print_stress</a> (const std::string &amp;name, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;f, const bool screen, bool ry) const</td></tr>
@@ -926,8 +926,8 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
 
 </div>
 </div>
-<a id="ac65ce961e4ab45a1a099e5865f9d44d1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac65ce961e4ab45a1a099e5865f9d44d1">&#9670;&nbsp;</a></span>get_dvnl1()</h2>
+<a id="a4acb0ff4b3a95309b1bee5605f9adc2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4acb0ff4b3a95309b1bee5605f9adc2a">&#9670;&nbsp;</a></span>get_dvnl1()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -950,7 +950,19 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>ipol</em>&#160;</td>
+          <td class="paramname"><em>ipol</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classStructure__Factor.html">Structure_Factor</a> *&#160;</td>
+          <td class="paramname"><em>p_sf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *&#160;</td>
+          <td class="paramname"><em>wfc_basis</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -962,8 +974,8 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
 
 </div>
 </div>
-<a id="abd558c6392aac372a1509345bfed1220"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd558c6392aac372a1509345bfed1220">&#9670;&nbsp;</a></span>get_dvnl2()</h2>
+<a id="a9ba47ff30336823a081a0ddb7576d06b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ba47ff30336823a081a0ddb7576d06b">&#9670;&nbsp;</a></span>get_dvnl2()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -980,7 +992,19 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>ik</em>&#160;</td>
+          <td class="paramname"><em>ik</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classStructure__Factor.html">Structure_Factor</a> *&#160;</td>
+          <td class="paramname"><em>p_sf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *&#160;</td>
+          <td class="paramname"><em>wfc_basis</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1079,6 +1103,17 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classStress__Func_a0ec0c4ec6ec0bfd4af78d5b1c21a14f0_icgraph.png" border="0" usemap="#classStress__Func_a0ec0c4ec6ec0bfd4af78d5b1c21a14f0_icgraph" alt=""/></div>
+<map name="classStress__Func_a0ec0c4ec6ec0bfd4af78d5b1c21a14f0_icgraph" id="classStress__Func_a0ec0c4ec6ec0bfd4af78d5b1c21a14f0_icgraph">
+<area shape="rect" title=" " alt="" coords="656,5,793,47"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#a5c8c7969c28fabd7ead07d20e8bc3c4f" title=" " alt="" coords="453,5,608,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a716b45c5166cc186febb12e770ec90ba" title=" " alt="" coords="229,5,405,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad9ee1f7371488c9b715fe71662cd1456" title=" " alt="" coords="5,5,181,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -1109,11 +1144,22 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classStress__Func_a283a801fed548150170fa9626fc7c96a_icgraph.png" border="0" usemap="#classStress__Func_a283a801fed548150170fa9626fc7c96a_icgraph" alt=""/></div>
+<map name="classStress__Func_a283a801fed548150170fa9626fc7c96a_icgraph" id="classStress__Func_a283a801fed548150170fa9626fc7c96a_icgraph">
+<area shape="rect" title=" " alt="" coords="656,5,832,47"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#a5c8c7969c28fabd7ead07d20e8bc3c4f" title=" " alt="" coords="453,5,608,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a716b45c5166cc186febb12e770ec90ba" title=" " alt="" coords="229,5,405,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad9ee1f7371488c9b715fe71662cd1456" title=" " alt="" coords="5,5,181,47"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="afb4a91cc8729aa125799567996c3870c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afb4a91cc8729aa125799567996c3870c">&#9670;&nbsp;</a></span>stress_cc()</h2>
+<a id="a89bc9855bd9f55ae47e65b70edb0cc9e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89bc9855bd9f55ae47e65b70edb0cc9e">&#9670;&nbsp;</a></span>stress_cc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1131,6 +1177,12 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
           <td></td>
           <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *&#160;</td>
           <td class="paramname"><em>rho_basis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classStructure__Factor.html">Structure_Factor</a> *&#160;</td>
+          <td class="paramname"><em>p_sf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1154,10 +1206,10 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classStress__Func_afb4a91cc8729aa125799567996c3870c_icgraph.png" border="0" usemap="#classStress__Func_afb4a91cc8729aa125799567996c3870c_icgraph" alt=""/></div>
-<map name="classStress__Func_afb4a91cc8729aa125799567996c3870c_icgraph" id="classStress__Func_afb4a91cc8729aa125799567996c3870c_icgraph">
+<div class="center"><img src="classStress__Func_a89bc9855bd9f55ae47e65b70edb0cc9e_icgraph.png" border="0" usemap="#classStress__Func_a89bc9855bd9f55ae47e65b70edb0cc9e_icgraph" alt=""/></div>
+<map name="classStress__Func_a89bc9855bd9f55ae47e65b70edb0cc9e_icgraph" id="classStress__Func_a89bc9855bd9f55ae47e65b70edb0cc9e_icgraph">
 <area shape="rect" title=" " alt="" coords="859,13,1025,39"/>
-<area shape="rect" href="classForce__Stress__LCAO.html#acb5f6cced31f8fe9d8585eca360e54ca" title=" " alt="" coords="656,5,811,47"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#ab719ba9617479a5c262197f612d35c82" title=" " alt="" coords="656,5,811,47"/>
 <area shape="rect" href="classForce__Stress__LCAO.html#a5c8c7969c28fabd7ead07d20e8bc3c4f" title=" " alt="" coords="453,5,608,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a716b45c5166cc186febb12e770ec90ba" title=" " alt="" coords="229,5,405,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad9ee1f7371488c9b715fe71662cd1456" title=" " alt="" coords="5,5,181,47"/>
@@ -1205,7 +1257,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classStress__Func_a123bfe3d6692f7863c5233b9d6f93215_icgraph.png" border="0" usemap="#classStress__Func_a123bfe3d6692f7863c5233b9d6f93215_icgraph" alt=""/></div>
 <map name="classStress__Func_a123bfe3d6692f7863c5233b9d6f93215_icgraph" id="classStress__Func_a123bfe3d6692f7863c5233b9d6f93215_icgraph">
 <area shape="rect" title=" " alt="" coords="859,13,1039,39"/>
-<area shape="rect" href="classForce__Stress__LCAO.html#acb5f6cced31f8fe9d8585eca360e54ca" title=" " alt="" coords="656,5,811,47"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#ab719ba9617479a5c262197f612d35c82" title=" " alt="" coords="656,5,811,47"/>
 <area shape="rect" href="classForce__Stress__LCAO.html#a5c8c7969c28fabd7ead07d20e8bc3c4f" title=" " alt="" coords="453,5,608,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a716b45c5166cc186febb12e770ec90ba" title=" " alt="" coords="229,5,405,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad9ee1f7371488c9b715fe71662cd1456" title=" " alt="" coords="5,5,181,47"/>
@@ -1214,8 +1266,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a6fc9b89334a17ad363da53de60e88ea8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6fc9b89334a17ad363da53de60e88ea8">&#9670;&nbsp;</a></span>stress_gga()</h2>
+<a id="ab5942386b175ca859c1aceefc6f714dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5942386b175ca859c1aceefc6f714dd">&#9670;&nbsp;</a></span>stress_gga()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1227,6 +1279,12 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
           <td class="paramname"><em>sigma</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *&#160;</td>
+          <td class="paramname"><em>rho_basis</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1244,10 +1302,10 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classStress__Func_a6fc9b89334a17ad363da53de60e88ea8_icgraph.png" border="0" usemap="#classStress__Func_a6fc9b89334a17ad363da53de60e88ea8_icgraph" alt=""/></div>
-<map name="classStress__Func_a6fc9b89334a17ad363da53de60e88ea8_icgraph" id="classStress__Func_a6fc9b89334a17ad363da53de60e88ea8_icgraph">
+<div class="center"><img src="classStress__Func_ab5942386b175ca859c1aceefc6f714dd_icgraph.png" border="0" usemap="#classStress__Func_ab5942386b175ca859c1aceefc6f714dd_icgraph" alt=""/></div>
+<map name="classStress__Func_ab5942386b175ca859c1aceefc6f714dd_icgraph" id="classStress__Func_ab5942386b175ca859c1aceefc6f714dd_icgraph">
 <area shape="rect" title=" " alt="" coords="859,13,1036,39"/>
-<area shape="rect" href="classForce__Stress__LCAO.html#acb5f6cced31f8fe9d8585eca360e54ca" title=" " alt="" coords="656,5,811,47"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#ab719ba9617479a5c262197f612d35c82" title=" " alt="" coords="656,5,811,47"/>
 <area shape="rect" href="classForce__Stress__LCAO.html#a5c8c7969c28fabd7ead07d20e8bc3c4f" title=" " alt="" coords="453,5,608,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a716b45c5166cc186febb12e770ec90ba" title=" " alt="" coords="229,5,405,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad9ee1f7371488c9b715fe71662cd1456" title=" " alt="" coords="5,5,181,47"/>
@@ -1301,7 +1359,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classStress__Func_a124c45025fb8cdda7ff05c4bfd6a48bb_icgraph.png" border="0" usemap="#classStress__Func_a124c45025fb8cdda7ff05c4bfd6a48bb_icgraph" alt=""/></div>
 <map name="classStress__Func_a124c45025fb8cdda7ff05c4bfd6a48bb_icgraph" id="classStress__Func_a124c45025fb8cdda7ff05c4bfd6a48bb_icgraph">
 <area shape="rect" title=" " alt="" coords="859,13,1033,39"/>
-<area shape="rect" href="classForce__Stress__LCAO.html#acb5f6cced31f8fe9d8585eca360e54ca" title=" " alt="" coords="656,5,811,47"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#ab719ba9617479a5c262197f612d35c82" title=" " alt="" coords="656,5,811,47"/>
 <area shape="rect" href="classForce__Stress__LCAO.html#a5c8c7969c28fabd7ead07d20e8bc3c4f" title=" " alt="" coords="453,5,608,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a716b45c5166cc186febb12e770ec90ba" title=" " alt="" coords="229,5,405,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad9ee1f7371488c9b715fe71662cd1456" title=" " alt="" coords="5,5,181,47"/>
@@ -1310,8 +1368,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a581c9814b3e779edcba36cf3ff8097f1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a581c9814b3e779edcba36cf3ff8097f1">&#9670;&nbsp;</a></span>stress_kin()</h2>
+<a id="acdce53040cc86613c88f4c7103777070"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acdce53040cc86613c88f4c7103777070">&#9670;&nbsp;</a></span>stress_kin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1333,6 +1391,24 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classModuleSymmetry_1_1Symmetry.html">ModuleSymmetry::Symmetry</a> *&#160;</td>
+          <td class="paramname"><em>p_symm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classK__Vectors.html">K_Vectors</a> *&#160;</td>
+          <td class="paramname"><em>p_kv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *&#160;</td>
+          <td class="paramname"><em>wfc_basis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">complex</a>&lt; FPTYPE &gt;&gt; *&#160;</td>
           <td class="paramname"><em>psi_in</em> = <code>nullptr</code>&#160;</td>
         </tr>
@@ -1346,8 +1422,8 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
 
 </div>
 </div>
-<a id="a04e4fa436039813323bde6c2bfcb2d5f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04e4fa436039813323bde6c2bfcb2d5f">&#9670;&nbsp;</a></span>stress_loc()</h2>
+<a id="a20e8aca894b92e0a06fc4f686221619b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20e8aca894b92e0a06fc4f686221619b">&#9670;&nbsp;</a></span>stress_loc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1365,6 +1441,12 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
           <td></td>
           <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *&#160;</td>
           <td class="paramname"><em>rho_basis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classStructure__Factor.html">Structure_Factor</a> *&#160;</td>
+          <td class="paramname"><em>p_sf</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -1388,10 +1470,10 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classStress__Func_a04e4fa436039813323bde6c2bfcb2d5f_icgraph.png" border="0" usemap="#classStress__Func_a04e4fa436039813323bde6c2bfcb2d5f_icgraph" alt=""/></div>
-<map name="classStress__Func_a04e4fa436039813323bde6c2bfcb2d5f_icgraph" id="classStress__Func_a04e4fa436039813323bde6c2bfcb2d5f_icgraph">
+<div class="center"><img src="classStress__Func_a20e8aca894b92e0a06fc4f686221619b_icgraph.png" border="0" usemap="#classStress__Func_a20e8aca894b92e0a06fc4f686221619b_icgraph" alt=""/></div>
+<map name="classStress__Func_a20e8aca894b92e0a06fc4f686221619b_icgraph" id="classStress__Func_a20e8aca894b92e0a06fc4f686221619b_icgraph">
 <area shape="rect" title=" " alt="" coords="859,13,1031,39"/>
-<area shape="rect" href="classForce__Stress__LCAO.html#acb5f6cced31f8fe9d8585eca360e54ca" title=" " alt="" coords="656,5,811,47"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#ab719ba9617479a5c262197f612d35c82" title=" " alt="" coords="656,5,811,47"/>
 <area shape="rect" href="classForce__Stress__LCAO.html#a5c8c7969c28fabd7ead07d20e8bc3c4f" title=" " alt="" coords="453,5,608,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a716b45c5166cc186febb12e770ec90ba" title=" " alt="" coords="229,5,405,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad9ee1f7371488c9b715fe71662cd1456" title=" " alt="" coords="5,5,181,47"/>
@@ -1400,8 +1482,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a00cd2c8bf58fb4579fa89276e4767329"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00cd2c8bf58fb4579fa89276e4767329">&#9670;&nbsp;</a></span>stress_mgga()</h2>
+<a id="a559db74aabff43be96609df027470808"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a559db74aabff43be96609df027470808">&#9670;&nbsp;</a></span>stress_mgga()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1435,6 +1517,18 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classK__Vectors.html">K_Vectors</a> *&#160;</td>
+          <td class="paramname"><em>p_kv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *&#160;</td>
+          <td class="paramname"><em>wfc_basis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">complex</a>&lt; FPTYPE &gt;&gt; *&#160;</td>
           <td class="paramname"><em>psi_in</em> = <code>nullptr</code>&#160;</td>
         </tr>
@@ -1448,8 +1542,8 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
 
 </div>
 </div>
-<a id="a3872140813071a0b0f2c116f2e66c517"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3872140813071a0b0f2c116f2e66c517">&#9670;&nbsp;</a></span>stress_nl()</h2>
+<a id="a2b50b9c5487cdd5fbac7efb90721e7fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2b50b9c5487cdd5fbac7efb90721e7fc">&#9670;&nbsp;</a></span>stress_nl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1471,8 +1565,32 @@ template&lt;typename FPTYPE , typename Device &gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="classStructure__Factor.html">Structure_Factor</a> *&#160;</td>
+          <td class="paramname"><em>p_sf</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classK__Vectors.html">K_Vectors</a> *&#160;</td>
+          <td class="paramname"><em>p_kv</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classModuleSymmetry_1_1Symmetry.html">ModuleSymmetry::Symmetry</a> *&#160;</td>
+          <td class="paramname"><em>p_symm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *&#160;</td>
+          <td class="paramname"><em>wfc_basis</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
           <td class="paramtype">const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">complex</a>&lt; FPTYPE &gt;, Device &gt; *&#160;</td>
-          <td class="paramname"><em>psi_in</em> = <code>nullptr</code>&#160;</td>
+          <td class="paramname"><em>psi_in</em>&#160;</td>
         </tr>
         <tr>
           <td></td>

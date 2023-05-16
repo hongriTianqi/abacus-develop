@@ -1,4 +1,4 @@
 <map id="Verlet::apply_thermostat" name="Verlet::apply_thermostat">
-<area shape="rect" id="node1" title=" " alt="" coords="200,5,383,32"/>
+<area shape="rect" id="node1" title="apply specifical thermostats according to the input para" alt="" coords="200,5,383,32"/>
 <area shape="rect" id="node2" href="$classVerlet.html#a58f10f85ec6c5cf05486a07c27b379bc" title="the second half of equation of motion, update velocities" alt="" coords="5,5,152,32"/>
 </map>

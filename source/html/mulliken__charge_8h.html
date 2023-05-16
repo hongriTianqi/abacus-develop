@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: module_io/mulliken_charge.h File Reference</title>
+<title>3.2.2: module_io/mulliken_charge.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -69,25 +69,32 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
+<a href="#namespaces">Namespaces</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">mulliken_charge.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;<a class="el" href="matrix_8h_source.html">module_base/matrix.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="complexmatrix_8h_source.html">module_base/complexmatrix.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="local__orbital__charge_8h_source.html">module_hamilt_lcao/hamilt_lcaodft/local_orbital_charge.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="LCAO__hamilt_8h_source.html">module_hamilt_lcao/hamilt_lcaodft/LCAO_hamilt.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="module__cell_2klist_8h_source.html">module_cell/klist.h</a>&quot;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for mulliken_charge.h:</div>
 <div class="dyncontent">
 <div class="center"><img src="mulliken__charge_8h__incl.png" border="0" usemap="#module__io_2mulliken__charge_8h" alt=""/></div>
 <map name="module__io_2mulliken__charge_8h" id="module__io_2mulliken__charge_8h">
-<area shape="rect" title=" " alt="" coords="139,5,289,47"/>
-<area shape="rect" href="matrix_8h.html" title=" " alt="" coords="57,169,225,196"/>
-<area shape="rect" href="complexmatrix_8h.html" title=" " alt="" coords="177,95,401,121"/>
-<area shape="rect" title=" " alt="" coords="5,244,81,271"/>
-<area shape="rect" title=" " alt="" coords="106,244,175,271"/>
-<area shape="rect" title=" " alt="" coords="200,244,273,271"/>
-<area shape="rect" title=" " alt="" coords="249,169,328,196"/>
+<area shape="rect" title=" " alt="" coords="306,5,457,47"/>
+<area shape="rect" href="matrix_8h.html" title=" " alt="" coords="183,303,351,329"/>
+<area shape="rect" href="complexmatrix_8h.html" title=" " alt="" coords="5,213,229,240"/>
+<area shape="rect" href="local__orbital__charge_8h.html" title=" " alt="" coords="304,95,459,151"/>
+<area shape="rect" href="LCAO__hamilt_8h.html" title=" " alt="" coords="402,199,561,255"/>
+<area shape="rect" href="module__cell_2klist_8h.html" title=" " alt="" coords="534,109,679,136"/>
+<area shape="rect" title=" " alt="" coords="131,377,207,404"/>
+<area shape="rect" title=" " alt="" coords="232,377,301,404"/>
+<area shape="rect" title=" " alt="" coords="326,377,399,404"/>
+<area shape="rect" title=" " alt="" coords="78,303,157,329"/>
 </map>
 </div>
 </div><div class="textblock"><div class="dynheader">
@@ -103,10 +110,23 @@ This graph shows which files directly or indirectly include this file:</div>
 </div>
 <p><a href="mulliken__charge_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classMulliken__Charge.html">Mulliken_Charge</a></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Namespaces</h2></td></tr>
+<tr class="memitem:namespaceModuleIO"><td class="memItemLeft" align="right" valign="top"> &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html">ModuleIO</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a511598839c8e11af6a18f19b6084aa6f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a511598839c8e11af6a18f19b6084aa6f">ModuleIO::out_mulliken</a> (const int &amp;step, <a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;uhm, <a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a> &amp;loc, const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;kv)</td></tr>
+<tr class="separator:a511598839c8e11af6a18f19b6084aa6f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a672f3c2005fc4adb05191422856629c5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a672f3c2005fc4adb05191422856629c5">ModuleIO::cal_mulliken</a> (const std::vector&lt; <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &gt; &amp;dm, <a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;uhm)</td></tr>
+<tr class="separator:a672f3c2005fc4adb05191422856629c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add8f8d41d9548681f416f57e51fdea90"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#add8f8d41d9548681f416f57e51fdea90">ModuleIO::cal_mulliken_k</a> (const std::vector&lt; <a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &gt; &amp;dm, <a class="el" href="classLCAO__Hamilt.html">LCAO_Hamilt</a> &amp;uhm, const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;kv)</td></tr>
+<tr class="separator:add8f8d41d9548681f416f57e51fdea90"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7680382f81d18b1783c517cbcecf814f"><td class="memItemLeft" align="right" valign="top">std::vector&lt; std::vector&lt; std::vector&lt; double &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#a7680382f81d18b1783c517cbcecf814f">ModuleIO::convert</a> (const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;orbMulP)</td></tr>
+<tr class="separator:a7680382f81d18b1783c517cbcecf814f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4c44be33de5c29e289e67d6368ceeb7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceModuleIO.html#ae4c44be33de5c29e289e67d6368ceeb7">ModuleIO::output_cut</a> (const double &amp;result)</td></tr>
+<tr class="separator:ae4c44be33de5c29e289e67d6368ceeb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 </div><!-- contents -->
 <!-- start footer part -->

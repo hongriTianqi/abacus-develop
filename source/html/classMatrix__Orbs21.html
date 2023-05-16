@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Matrix_Orbs21 Class Reference</title>
+<title>3.2.2: Matrix_Orbs21 Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -80,7 +80,7 @@ Collaboration diagram for Matrix_Orbs21:</div>
 <div class="dyncontent">
 <div class="center"><img src="classMatrix__Orbs21__coll__graph.png" border="0" usemap="#Matrix__Orbs21_coll__map" alt="Collaboration graph"/></div>
 <map name="Matrix__Orbs21_coll__map" id="Matrix__Orbs21_coll__map">
-<area shape="rect" title=" " alt="" coords="281,1107,489,1272"/>
+<area shape="rect" title=" " alt="" coords="281,1107,489,1287"/>
 <area shape="rect" href="classORB__table__phi.html" title=" " alt="" coords="186,483,379,1044"/>
 <area shape="rect" href="classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="5,5,168,391"/>
 <area shape="rect" href="classModuleBase_1_1Sph__Bessel__Recursive_1_1D2.html" title=" " alt="" coords="192,86,376,310"/>
@@ -122,6 +122,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ab394247b882ff6abf41fd707171895ae"><td class="memTemplParams" colspan="2">template&lt;typename Tdata &gt; </td></tr>
 <tr class="memitem:ab394247b882ff6abf41fd707171895ae"><td class="memTemplItemLeft" align="right" valign="top">std::array&lt; RI::Tensor&lt; Tdata &gt;, 3 &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMatrix__Orbs21.html#ab394247b882ff6abf41fd707171895ae">cal_grad_overlap_matrix</a> (const size_t TA, const size_t TB, const <a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; &amp;tauA, const <a class="el" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3</a>&lt; double &gt; &amp;tauB, const <a class="el" href="classModuleBase_1_1Element__Basis__Index.html#a8c8ab0d12d07c4ffabe81cd1b97088b5">ModuleBase::Element_Basis_Index::IndexLNM</a> &amp;index_A1, const <a class="el" href="classModuleBase_1_1Element__Basis__Index.html#a8c8ab0d12d07c4ffabe81cd1b97088b5">ModuleBase::Element_Basis_Index::IndexLNM</a> &amp;index_A2, const <a class="el" href="classModuleBase_1_1Element__Basis__Index.html#a8c8ab0d12d07c4ffabe81cd1b97088b5">ModuleBase::Element_Basis_Index::IndexLNM</a> &amp;index_B, const <a class="el" href="classMatrix__Orbs21.html#af1c69b05013120061e7c8255d34f0eef">Matrix_Order</a> &amp;matrix_order) const</td></tr>
 <tr class="separator:ab394247b882ff6abf41fd707171895ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a76c6357bfd712facd7c1e033e5d471"><td class="memTemplParams" colspan="2">template&lt;typename Tdata &gt; </td></tr>
+<tr class="memitem:a1a76c6357bfd712facd7c1e033e5d471"><td class="memTemplItemLeft" align="right" valign="top">std::map&lt; size_t, std::map&lt; size_t, std::map&lt; size_t, std::map&lt; size_t, std::vector&lt; RI::Tensor&lt; Tdata &gt; &gt; &gt; &gt; &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classMatrix__Orbs21.html#a1a76c6357bfd712facd7c1e033e5d471">cal_overlap_matrix_all</a> (const <a class="el" href="classModuleBase_1_1Element__Basis__Index.html#a8c8ab0d12d07c4ffabe81cd1b97088b5">ModuleBase::Element_Basis_Index::IndexLNM</a> &amp;index_A1, const <a class="el" href="classModuleBase_1_1Element__Basis__Index.html#a8c8ab0d12d07c4ffabe81cd1b97088b5">ModuleBase::Element_Basis_Index::IndexLNM</a> &amp;index_A2, const <a class="el" href="classModuleBase_1_1Element__Basis__Index.html#a8c8ab0d12d07c4ffabe81cd1b97088b5">ModuleBase::Element_Basis_Index::IndexLNM</a> &amp;index_B) const</td></tr>
+<tr class="separator:a1a76c6357bfd712facd7c1e033e5d471"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -302,6 +305,76 @@ template&lt;typename Tdata &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMatrix__Orbs21_af01af1732fa232cde6003268565c261d_icgraph.png" border="0" usemap="#classMatrix__Orbs21_af01af1732fa232cde6003268565c261d_icgraph" alt=""/></div>
+<map name="classMatrix__Orbs21_af01af1732fa232cde6003268565c261d_icgraph" id="classMatrix__Orbs21_af01af1732fa232cde6003268565c261d_icgraph">
+<area shape="rect" title=" " alt="" coords="429,5,573,47"/>
+<area shape="rect" href="classExx__Abfs_1_1PCA.html#aee3a6a501735b465654bfa4a983987da" title=" " alt="" coords="205,13,381,39"/>
+<area shape="rect" href="classExx__Abfs_1_1Construct__Orbs.html#ac88e053ddd65692360d88d1467930ced" title=" " alt="" coords="5,5,157,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1a76c6357bfd712facd7c1e033e5d471"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a76c6357bfd712facd7c1e033e5d471">&#9670;&nbsp;</a></span>cal_overlap_matrix_all()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename Tdata &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt; size_t, std::map&lt; size_t, std::map&lt; size_t, std::map&lt; size_t, std::vector&lt; RI::Tensor&lt; Tdata &gt; &gt; &gt; &gt; &gt; &gt; Matrix_Orbs21::cal_overlap_matrix_all </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1Element__Basis__Index.html#a8c8ab0d12d07c4ffabe81cd1b97088b5">ModuleBase::Element_Basis_Index::IndexLNM</a> &amp;&#160;</td>
+          <td class="paramname"><em>index_A1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1Element__Basis__Index.html#a8c8ab0d12d07c4ffabe81cd1b97088b5">ModuleBase::Element_Basis_Index::IndexLNM</a> &amp;&#160;</td>
+          <td class="paramname"><em>index_A2</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classModuleBase_1_1Element__Basis__Index.html#a8c8ab0d12d07c4ffabe81cd1b97088b5">ModuleBase::Element_Basis_Index::IndexLNM</a> &amp;&#160;</td>
+          <td class="paramname"><em>index_B</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMatrix__Orbs21_a1a76c6357bfd712facd7c1e033e5d471_cgraph.png" border="0" usemap="#classMatrix__Orbs21_a1a76c6357bfd712facd7c1e033e5d471_cgraph" alt=""/></div>
+<map name="classMatrix__Orbs21_a1a76c6357bfd712facd7c1e033e5d471_cgraph" id="classMatrix__Orbs21_a1a76c6357bfd712facd7c1e033e5d471_cgraph">
+<area shape="rect" title=" " alt="" coords="5,39,156,80"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="204,46,349,73"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="397,5,580,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="412,71,565,112"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="628,5,811,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="631,78,808,105"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="859,71,1012,112"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMatrix__Orbs21_a1a76c6357bfd712facd7c1e033e5d471_icgraph.png" border="0" usemap="#classMatrix__Orbs21_a1a76c6357bfd712facd7c1e033e5d471_icgraph" alt=""/></div>
+<map name="classMatrix__Orbs21_a1a76c6357bfd712facd7c1e033e5d471_icgraph" id="classMatrix__Orbs21_a1a76c6357bfd712facd7c1e033e5d471_icgraph">
+<area shape="rect" title=" " alt="" coords="449,5,600,47"/>
+<area shape="rect" href="classExx__Opt__Orb.html#acde5b368bc39d637e183a3a1dbd7fd7c" title=" " alt="" coords="229,5,401,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="5,5,181,47"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -336,6 +409,18 @@ template&lt;typename Tdata &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMatrix__Orbs21_a31199c2b61d029f298e5cffcdae31ec4_icgraph.png" border="0" usemap="#classMatrix__Orbs21_a31199c2b61d029f298e5cffcdae31ec4_icgraph" alt=""/></div>
+<map name="classMatrix__Orbs21_a31199c2b61d029f298e5cffcdae31ec4_icgraph" id="classMatrix__Orbs21_a31199c2b61d029f298e5cffcdae31ec4_icgraph">
+<area shape="rect" title=" " alt="" coords="453,46,600,73"/>
+<area shape="rect" href="classExx__Abfs_1_1PCA.html#aee3a6a501735b465654bfa4a983987da" title=" " alt="" coords="229,15,405,42"/>
+<area shape="rect" href="classExx__Opt__Orb.html#acde5b368bc39d637e183a3a1dbd7fd7c" title=" " alt="" coords="231,68,403,109"/>
+<area shape="rect" href="classExx__Abfs_1_1Construct__Orbs.html#ac88e053ddd65692360d88d1467930ced" title=" " alt="" coords="17,5,169,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="5,71,181,112"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -435,6 +520,18 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="624,100,807,141"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMatrix__Orbs21_ae61502b0edb4b6ab09ae676cf230d0ac_icgraph.png" border="0" usemap="#classMatrix__Orbs21_ae61502b0edb4b6ab09ae676cf230d0ac_icgraph" alt=""/></div>
+<map name="classMatrix__Orbs21_ae61502b0edb4b6ab09ae676cf230d0ac_icgraph" id="classMatrix__Orbs21_ae61502b0edb4b6ab09ae676cf230d0ac_icgraph">
+<area shape="rect" title=" " alt="" coords="453,39,600,80"/>
+<area shape="rect" href="classExx__Abfs_1_1PCA.html#aee3a6a501735b465654bfa4a983987da" title=" " alt="" coords="229,15,405,42"/>
+<area shape="rect" href="classExx__Opt__Orb.html#acde5b368bc39d637e183a3a1dbd7fd7c" title=" " alt="" coords="231,68,403,109"/>
+<area shape="rect" href="classExx__Abfs_1_1Construct__Orbs.html#ac88e053ddd65692360d88d1467930ced" title=" " alt="" coords="17,5,169,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="5,71,181,112"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -464,6 +561,18 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="393,100,576,141"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="408,35,561,76"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="624,100,807,141"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classMatrix__Orbs21_ac86ba52eae282c603fbffb372ed65b6c_icgraph.png" border="0" usemap="#classMatrix__Orbs21_ac86ba52eae282c603fbffb372ed65b6c_icgraph" alt=""/></div>
+<map name="classMatrix__Orbs21_ac86ba52eae282c603fbffb372ed65b6c_icgraph" id="classMatrix__Orbs21_ac86ba52eae282c603fbffb372ed65b6c_icgraph">
+<area shape="rect" title=" " alt="" coords="453,39,600,80"/>
+<area shape="rect" href="classExx__Abfs_1_1PCA.html#aee3a6a501735b465654bfa4a983987da" title=" " alt="" coords="229,15,405,42"/>
+<area shape="rect" href="classExx__Opt__Orb.html#acde5b368bc39d637e183a3a1dbd7fd7c" title=" " alt="" coords="231,68,403,109"/>
+<area shape="rect" href="classExx__Abfs_1_1Construct__Orbs.html#ac88e053ddd65692360d88d1467930ced" title=" " alt="" coords="17,5,169,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="5,71,181,112"/>
 </map>
 </div>
 

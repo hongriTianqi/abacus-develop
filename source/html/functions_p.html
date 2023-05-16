@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Class Members</title>
+<title>3.2.2: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -102,6 +102,10 @@ $(function() {
 </li>
 <li>p_hydro
 : <a class="el" href="classNose__Hoover.html#a1ae48b34cb8e4aa48a759b54229e9c77">Nose_Hoover</a>
+</li>
+<li>p_kv
+: <a class="el" href="classExx__LRI.html#af16dd3985ed5dea20f9ee2218f94ce37">Exx_LRI&lt; Tdata &gt;</a>
+, <a class="el" href="classRPA__LRI.html#a9527ecca2bf6b395d63324e42a3cef10">RPA_LRI&lt; Tdata &gt;</a>
 </li>
 <li>p_rot
 : <a class="el" href="classSoc.html#accd0249d1b6cc5751192503e2d34530c">Soc</a>
@@ -188,7 +192,6 @@ $(function() {
 </li>
 <li>pca_threshold
 : <a class="el" href="structExx__Info_1_1Exx__Info__RI.html#ad25dd153e6ab923bb3c2fc4c94e70aed">Exx_Info::Exx_Info_RI</a>
-, <a class="el" href="structExx__Lcao_1_1Exx__Info__Lcao.html#ab0354b5dbc48979e31c297c8c8a42860">Exx_Lcao::Exx_Info_Lcao</a>
 </li>
 <li>pcel_const
 : <a class="el" href="classModuleSymmetry_1_1Symmetry.html#a11d517a4440e38fae3486aef1a16a26f">ModuleSymmetry::Symmetry</a>
@@ -305,11 +308,15 @@ $(function() {
 : <a class="el" href="classOccupy.html#a733db19c5498a3154403cc8e575f1161">Occupy</a>
 </li>
 <li>Pkpoints
-: <a class="el" href="classIstateInfoTest.html#a3468d0274b7d9abf5a27b728c4d538ba">IstateInfoTest</a>
+: <a class="el" href="classBandTest.html#afcdf49e1823bba158fa4d0ba7764297c">BandTest</a>
+, <a class="el" href="classIstateInfoTest.html#a3468d0274b7d9abf5a27b728c4d538ba">IstateInfoTest</a>
+</li>
+<li>pkv
+: <a class="el" href="classStochastic__hchi.html#a0a26718261670b96495e65d9a063527e">Stochastic_hchi</a>
+, <a class="el" href="classStochastic__Iter.html#a419164f6234f3c0d4c54a90ca543de82">Stochastic_Iter</a>
 </li>
 <li>plain_mixing()
 : <a class="el" href="classCharge__Mixing.html#a6a20b9fcd551419a49d24b393147d72c">Charge_Mixing</a>
-, <a class="el" href="classExx__Abfs_1_1DM.html#a1eda95af676902f4aaa3c52fc4b443e4">Exx_Abfs::DM</a>
 </li>
 <li>planSchmitOrth()
 : <a class="el" href="classhsolver_1_1DiagoDavid.html#a6f268be8c7ceacbed06e914b6e846eb4">hsolver::DiagoDavid&lt; FPTYPE, Device &gt;</a>
@@ -392,7 +399,7 @@ $(function() {
 </li>
 <li>Polynomial_Interpolation()
 : <a class="el" href="classBessel__Basis.html#a06d2b9d727ce7bc6ff8d33bcfd12f3df">Bessel_Basis</a>
-, <a class="el" href="classModuleBase_1_1PolyInt.html#a2cc43dc9ab841c286d71e3ee57248240">ModuleBase::PolyInt</a>
+, <a class="el" href="classModuleBase_1_1PolyInt.html#a927062b42779504459c094e48887f484">ModuleBase::PolyInt</a>
 </li>
 <li>Polynomial_Interpolation2()
 : <a class="el" href="classBessel__Basis.html#a44ce1481b351755c9e7aa361ece3797d">Bessel_Basis</a>
@@ -427,8 +434,9 @@ $(function() {
 </li>
 <li>pos
 : <a class="el" href="classBFGS__Basic.html#abe599d192e581523d6220f137e859ae7">BFGS_Basic</a>
+, <a class="el" href="classIonsMoveBasicTest.html#aef7d8159621ceb4cddf46b1205bb7081">IonsMoveBasicTest</a>
+, <a class="el" href="classMD__base.html#af742a249145061eb098f4985cdff796b">MD_base</a>
 , <a class="el" href="classMD__func__test.html#aae1080462403b3921cd7b38c5951729c">MD_func_test</a>
-, <a class="el" href="classMDrun.html#a1f1bec983640aa906af5cbe9ab6f5ea2">MDrun</a>
 </li>
 <li>pos0
 : <a class="el" href="classIons__Move__CG.html#ab5ab528e7c8d44ce5f3c223a068c8f51">Ions_Move_CG</a>
@@ -451,18 +459,6 @@ $(function() {
 <li>post_processing()
 : <a class="el" href="classhsolver_1_1DiagoBlas.html#a98d6ad18b1e6ebfcfe7178360bc1bb2b">hsolver::DiagoBlas</a>
 </li>
-<li>postcalA()
-: <a class="el" href="classExx__Abfs_1_1Screen_1_1Cauchy.html#ac77bb1db54a582b41be442b6dcaba874">Exx_Abfs::Screen::Cauchy</a>
-</li>
-<li>postcalB()
-: <a class="el" href="classExx__Abfs_1_1Screen_1_1Cauchy.html#ac37e19b49b2b5dc08be324cdafc5ddd8">Exx_Abfs::Screen::Cauchy</a>
-</li>
-<li>postcalC()
-: <a class="el" href="classExx__Abfs_1_1Screen_1_1Cauchy.html#a4f77585f72dbe2abbcce81202e5592b1">Exx_Abfs::Screen::Cauchy</a>
-</li>
-<li>postcalD()
-: <a class="el" href="classExx__Abfs_1_1Screen_1_1Cauchy.html#a8ca2aee383c107552d3ae0ee42207f99">Exx_Abfs::Screen::Cauchy</a>
-</li>
 <li>postprocess()
 : <a class="el" href="classModuleESolver_1_1ESolver.html#afebac9618aebc91ecc0ab8c88ef7714a">ModuleESolver::ESolver</a>
 , <a class="el" href="classModuleESolver_1_1ESolver__DP.html#a905f4a52e3710c1eabc237fcdef8f8b5">ModuleESolver::ESolver_DP</a>
@@ -478,7 +474,7 @@ $(function() {
 , <a class="el" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a85e696fd7607e2785a7e254ea92141ef">hamilt::Veff&lt; OperatorLCAO&lt; T &gt; &gt;</a>
 </li>
 <li>pot_file
-: <a class="el" href="classMD__parameters.html#ad0f09471356a07d12f6ac9ea96812c7c">MD_parameters</a>
+: <a class="el" href="classMD__para.html#ad3555f24a0d2b3d1adf78e918558f69a">MD_para</a>
 </li>
 <li>pot_order
 : <a class="el" href="classCharge__Extra.html#ae5595a984ded2eb25fd4ae7b229e1ffa">Charge_Extra</a>
@@ -494,15 +490,11 @@ $(function() {
 </li>
 <li>Potential()
 : <a class="el" href="classelecstate_1_1Potential.html#a5b45278b3882a05540463d0ac4617edf">elecstate::Potential</a>
-, <a class="el" href="classenergy.html#a35e73aa3aea5fb91d6610c7b6c24c893">energy</a>
 </li>
 <li>potential
 : <a class="el" href="classLJ__pot__test.html#a70c80310840156d55929d3be901f64b2">LJ_pot_test</a>
+, <a class="el" href="classMD__base.html#a18cd00104a7024f64a56e82dcae6ceb8">MD_base</a>
 , <a class="el" href="classMD__func__test.html#a882365f10570de9296e5bf5172d7a12d">MD_func_test</a>
-, <a class="el" href="classMDrun.html#a41e4bc784742d37662f5f3a742de1234">MDrun</a>
-</li>
-<li>Potential
-: <a class="el" href="classpseudopot__cell__vnl.html#a35e73aa3aea5fb91d6610c7b6c24c893">pseudopot_cell_vnl</a>
 </li>
 <li>PotGate()
 : <a class="el" href="classelecstate_1_1PotGate.html#a57a64820fd80beb0bf24b590930fd1d1">elecstate::PotGate</a>
@@ -563,8 +555,14 @@ $(function() {
 , <a class="el" href="classModulePW_1_1FFT.html#adede53aa7533b8526b9b08a38698ac5f">ModulePW::FFT</a>
 , <a class="el" href="classModulePW_1_1PW__Basis.html#a24a0ec8915413ebb11e254cf63b5f037">ModulePW::PW_Basis</a>
 </li>
+<li>precision_double
+: <a class="el" href="classPWBasisKTEST.html#adfa82861cc8f5d522e8661bdf39d1768">PWBasisKTEST</a>
+</li>
 <li>precision_flag
 : <a class="el" href="classPWBasisTEST.html#aace0c8b8c62ece9efc17d4a8d21df3a2">PWBasisTEST</a>
+</li>
+<li>precision_single
+: <a class="el" href="classPWBasisKTEST.html#a3c3ee6f5060ce8dc6f7edb4684c999e3">PWBasisKTEST</a>
 </li>
 <li>precond()
 : <a class="el" href="classHPsi.html#a63e3a9ce087d80cbf61558ae9d66eedd">HPsi</a>
@@ -581,9 +579,6 @@ $(function() {
 : <a class="el" href="classCharge.html#ac7a8164f030e4f4bd977fc2bd0525e10">Charge</a>
 , <a class="el" href="classRhoIOTest.html#a44197f27c56ccdaf36ca06bbfdfac2ba">RhoIOTest</a>
 </li>
-<li>prenspin_
-: <a class="el" href="structENVPrepare.html#af3d1eaf8e1c4c4c9e58d8a12ce75a4ad">ENVPrepare</a>
-</li>
 <li>prep_grid()
 : <a class="el" href="classGint.html#a6b66a3f5ad069a1f61e82dd091871de7">Gint</a>
 </li>
@@ -595,12 +590,13 @@ $(function() {
 </li>
 <li>prepare()
 : <a class="el" href="classelecstate_1_1Efield.html#a5854a7c0a26eb3c5deed698c1bf63269">elecstate::Efield</a>
+, <a class="el" href="classelecstate_1_1H__TDDFT__pw.html#a1b2d7ad9ae17dae7821e9f39f219fec9">elecstate::H_TDDFT_pw</a>
 </li>
 <li>prepare_k()
 : <a class="el" href="classwavefunc.html#ad82ca47fd59a4b0ccccd0a587c301f4b">wavefunc</a>
 </li>
 <li>prepare_midmatrix_pblas()
-: <a class="el" href="classunkOverlap__lcao.html#a23e878cb7c202ab350f37adeab3208e9">unkOverlap_lcao</a>
+: <a class="el" href="classunkOverlap__lcao.html#a333807551a13787eb94551b6553d40b1">unkOverlap_lcao</a>
 </li>
 <li>press1
 : <a class="el" href="classInput.html#ab0f2f94860d73ce6ac2aca5262f1afbb">Input</a>
@@ -634,7 +630,8 @@ $(function() {
 : <a class="el" href="classwinput.html#a39baf5e5b844c10ad093afb0fbce76d1">winput</a>
 </li>
 <li>print_all()
-: <a class="el" href="classModuleBase_1_1Memory.html#ad117abb25dd10a4b3c00c363076690c5">ModuleBase::Memory</a>
+: <a class="el" href="structelecstate_1_1fenergy.html#a735b8b3ac7118f56637a40871fbb5251">elecstate::fenergy</a>
+, <a class="el" href="classModuleBase_1_1Memory.html#ad117abb25dd10a4b3c00c363076690c5">ModuleBase::Memory</a>
 , <a class="el" href="classModuleBase_1_1timer.html#ac4c6e76df32609d3a8fbda5457317dab">ModuleBase::timer</a>
 </li>
 <li>print_Atom()
@@ -662,13 +659,13 @@ $(function() {
 : <a class="el" href="classelecstate_1_1ElecState.html#a3f59ac82399a4968c83367a40c3f6032">elecstate::ElecState</a>
 </li>
 <li>print_etot()
-: <a class="el" href="classenergy.html#ae30e891c5e649a6f247eaf72e74ec178">energy</a>
+: <a class="el" href="classelecstate_1_1ElecState.html#ac248e5b117b53224f8f214e755a9a0f6">elecstate::ElecState</a>
 </li>
 <li>print_force()
 : <a class="el" href="classForce__Stress__LCAO.html#a11f0eb5318c5c22541edb5507884279b">Force_Stress_LCAO</a>
 </li>
 <li>print_format()
-: <a class="el" href="classenergy.html#a31c1e74a0b322883b0ed0e8d2466ff9b">energy</a>
+: <a class="el" href="classelecstate_1_1ElecState.html#a0fa57fc90dedc25b0a568804f348bf88">elecstate::ElecState</a>
 </li>
 <li>print_hs()
 : <a class="el" href="classDiagoPrepare.html#adb3ed25e143a08a83b4772c8dd63effa">DiagoPrepare&lt; T &gt;</a>
@@ -687,8 +684,15 @@ $(function() {
 , <a class="el" href="classTest__Deepks_1_1K__Vectors.html#a3cf3d1e3359d34dfde470ecb2cece68c">Test_Deepks::K_Vectors</a>
 </li>
 <li>print_matrix()
-: <a class="el" href="classExx__Abfs_1_1IO.html#a0ab098c6a81dabe50cd47c2aa8b9f36a">Exx_Abfs::IO</a>
-, <a class="el" href="classExx__Opt__Orb.html#a3852feb99157f94296afb19cee601162">Exx_Opt_Orb</a>
+: <a class="el" href="classExx__Opt__Orb.html#a8d85ed7e43e36a2f10f280f67aaaa281">Exx_Opt_Orb</a>
+</li>
+<li>print_md()
+: <a class="el" href="classFIRE.html#a621ddd341177a1a164554911bdec4daa">FIRE</a>
+, <a class="el" href="classLangevin.html#ad2309b570786063c2358f1e427025155">Langevin</a>
+, <a class="el" href="classMD__base.html#a6b48d2dfbe305740bc978de1acaafa1d">MD_base</a>
+, <a class="el" href="classMSST.html#a93935d927d32ac0988d7badca0d41176">MSST</a>
+, <a class="el" href="classNose__Hoover.html#ab5993afa7d2c9c93bed5ea11bd96bafd">Nose_Hoover</a>
+, <a class="el" href="classVerlet.html#a418ad4bdd9ee426ecd6e0af2fb1e7379">Verlet</a>
 </li>
 <li>print_orbs_size()
 : <a class="el" href="classExx__Abfs_1_1Construct__Orbs.html#abb334de1bc4e677b616a532ad6eba9a0">Exx_Abfs::Construct_Orbs</a>
@@ -752,7 +756,7 @@ $(function() {
 : <a class="el" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2">ModuleBase::timer</a>
 </li>
 <li>print_vloc()
-: <a class="el" href="classpseudopot__cell__vl.html#ac134729515450d25343d02332e43a55c">pseudopot_cell_vl</a>
+: <a class="el" href="classpseudopot__cell__vl.html#a1b99c7251cbb306ca02ba01664ec4637">pseudopot_cell_vl</a>
 </li>
 <li>print_vnl()
 : <a class="el" href="classpseudopot__cell__vnl.html#a6fa3e8a46f7ff0b85ae2ad08ca269b51">pseudopot_cell_vnl</a>
@@ -776,8 +780,7 @@ $(function() {
 : <a class="el" href="classoutput.html#a6dbb101c8f4c9d3a3ca74b04d3481781">output</a>
 </li>
 <li>printe
-: <a class="el" href="classenergy.html#af3602362cda148c89d6ea02afea4a404">energy</a>
-, <a class="el" href="classInput.html#aa6370464e5791a588ed75207bcc2bea7">Input</a>
+: <a class="el" href="classInput.html#aa6370464e5791a588ed75207bcc2bea7">Input</a>
 </li>
 <li>printforce_total()
 : <a class="el" href="classForce__Stress__LCAO.html#a9394a2933c26f3c529864aad62af7b1a">Force_Stress_LCAO</a>
@@ -798,7 +801,7 @@ $(function() {
 : <a class="el" href="classModuleESolver_1_1ESolver.html#ade3bf60275966f3c1b3505ea8ee7c96e">ModuleESolver::ESolver</a>
 </li>
 <li>printr1_d()
-: <a class="el" href="classoutput.html#a8e5b5eb6441684c56ffff11e57460911">output</a>
+: <a class="el" href="classoutput.html#a406eedaea7bad563eaed99e7e6450eca">output</a>
 </li>
 <li>printr3_d()
 : <a class="el" href="classoutput.html#a87704fcf20b40a4e1a22390c6d135366">output</a>
@@ -813,19 +816,16 @@ $(function() {
 : <a class="el" href="classStress__Func.html#a283a801fed548150170fa9626fc7c96a">Stress_Func&lt; FPTYPE, Device &gt;</a>
 </li>
 <li>printV3()
-: <a class="el" href="classoutput.html#ac5505190d2c50da110d2aa165751ec30">output</a>
+: <a class="el" href="classoutput.html#a62e440661052021eebabce27d69ca7b9">output</a>
 </li>
 <li>printv31_d()
 : <a class="el" href="classoutput.html#afecf1367a681c26ab2567e6ee8729246">output</a>
-</li>
-<li>process
-: <a class="el" href="classExx__Lcao.html#ab6fd585515efdcb599b9134ab0ef3c2d">Exx_Lcao</a>
 </li>
 <li>produce_HS()
 : <a class="el" href="classDiagoPrepare.html#abe66a6a74a0a561a69cc2a984a9e3699">DiagoPrepare&lt; T &gt;</a>
 </li>
 <li>produce_trial_in_pw()
-: <a class="el" href="classtoWannier90.html#a8cecde372b9321d6e2db4e4737740242">toWannier90</a>
+: <a class="el" href="classtoWannier90.html#a6ec111d5be032a5b48128a49ad6e21da">toWannier90</a>
 </li>
 <li>Proj
 : <a class="el" href="classNumerical__Nonlocal.html#a8322afd8defcf274702b331ba57ea12e">Numerical_Nonlocal</a>
@@ -835,6 +835,9 @@ $(function() {
 </li>
 <li>propagate_voldot()
 : <a class="el" href="classMSST.html#afb2b42d795b4d4b14e94805b032dba16">MSST</a>
+</li>
+<li>propagator
+: <a class="el" href="classInput.html#a94da2839be69c106a17d3017deb571e9">Input</a>
 </li>
 <li>ps
 : <a class="el" href="classhamilt_1_1Nonlocal_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#a3ee4f230bff7f3428f73012755146bd9">hamilt::Nonlocal&lt; OperatorPW&lt; FPTYPE, Device &gt; &gt;</a>
@@ -849,9 +852,6 @@ $(function() {
 <li>pseudo_dir
 : <a class="el" href="classInput.html#add04ac69ac99790c117b864a77a10c49">Input</a>
 </li>
-<li>pseudo_dir_
-: <a class="el" href="structENVPrepare.html#abef4a2a8a0136865dbfb4940e069f382">ENVPrepare</a>
-</li>
 <li>pseudo_fn
 : <a class="el" href="classUnitCell.html#a69b45d2b1bada79bf2a88a9426e2a51a">UnitCell</a>
 </li>
@@ -863,9 +863,6 @@ $(function() {
 </li>
 <li>pseudo_rcut
 : <a class="el" href="classInput.html#a6aeca1ff7931a9520d9e8becd23f4587">Input</a>
-</li>
-<li>pseudo_rcut_
-: <a class="el" href="structENVPrepare.html#afb7abf31fa88e1db9dbc35bc9b0c4e94">ENVPrepare</a>
 </li>
 <li>pseudo_type
 : <a class="el" href="classUnitCell.html#a4efde467e56e566b6296f2d67cf122ee">UnitCell</a>
@@ -879,34 +876,29 @@ $(function() {
 <li>Pseudopot_upf()
 : <a class="el" href="classPseudopot__upf.html#ac2bbd5ccba466ab5ec7fe4fa4ce40f04">Pseudopot_upf</a>
 </li>
+<li>psf
+: <a class="el" href="classpseudopot__cell__vnl.html#a1a424eace224659b883796c0dbb3d246">pseudopot_cell_vnl</a>
+, <a class="el" href="classWF__atomic.html#aeb7bd77107202b4462c4570394d110d1">WF_atomic</a>
+</li>
 <li>psi
 : <a class="el" href="classDiagoPrepare.html#a699a163bcfa38d0fef4e9eae733a86fb">DiagoPrepare&lt; T &gt;</a>
-, <a class="el" href="classElecStateLCAOPrepare.html#a3bba573fbf5ef3062a3e76f8b135d397">ElecStateLCAOPrepare&lt; T &gt;</a>
 , <a class="el" href="classExx__Lip.html#a1dd94c5c6a9a9b53f47a829b55e837db">Exx_Lip</a>
 , <a class="el" href="classHPsi.html#accbdf39b1ceec7068cb29b88d7cbcdd2">HPsi</a>
 , <a class="el" href="classHPsi__f.html#ac2681cfa7da154ac81ab0b810c5bd4de">HPsi_f</a>
-, <a class="el" href="classModuleESolver_1_1ESolver.html#a1f85724fce0d18d8b880c3ca586a3e33">ModuleESolver::ESolver</a>
+, <a class="el" href="classModuleESolver_1_1ESolver__FP.html#a985f6926b044c7cda3af3abd4a81feda">ModuleESolver::ESolver_FP</a>
 , <a class="el" href="classModuleESolver_1_1ESolver__OF.html#afd9e3e4a15851666aaf83a7bddbd8c94">ModuleESolver::ESolver_OF</a>
 , <a class="el" href="classNumerical__Orbital__Lm.html#a7b878a7b6cafaa30f991912041098793">Numerical_Orbital_Lm</a>
 </li>
 <li>Psi()
-: <a class="el" href="classpsi_1_1Psi.html#a84572063943990c589ca3e4c67783fa9">psi::Psi&lt; T, Device &gt;</a>
+: <a class="el" href="classpsi_1_1Psi.html#a8d4d5ee166e874cc3283d0114620698f">psi::Psi&lt; T, Device &gt;</a>
 </li>
 <li>psi
 : <a class="el" href="classpsi_1_1Psi.html#a3bf3d0330de0e69fdb7dfa5d519dde68">psi::Psi&lt; T, Device &gt;</a>
-</li>
-<li>Psi()
-: <a class="el" href="classpsi_1_1Psi.html#a9d5f8b7d5db78c1cddf7a51257705a11">psi::Psi&lt; T, Device &gt;</a>
-</li>
-<li>psi
-: <a class="el" href="classTestModuleHamiltEkinetic.html#afbd729098227f17325f626978b351e01">TestModuleHamiltEkinetic</a>
+, <a class="el" href="classTestModuleHamiltEkinetic.html#afbd729098227f17325f626978b351e01">TestModuleHamiltEkinetic</a>
 , <a class="el" href="classWF__atomic.html#a1bd702b61855d03add5f2f41b9be25fa">WF_atomic</a>
 </li>
 <li>psi_bias
 : <a class="el" href="classpsi_1_1Psi.html#aa45bdfa2d8134cc54b007fe3c848e10a">psi::Psi&lt; T, Device &gt;</a>
-</li>
-<li>psi_cal()
-: <a class="el" href="classExx__Lip.html#aa18b3873716f2d1448215bbd77e03b6f">Exx_Lip</a>
 </li>
 <li>psi_current
 : <a class="el" href="classpsi_1_1Psi.html#adc347f5390901a2332da380e67f72af4">psi::Psi&lt; T, Device &gt;</a>
@@ -922,9 +914,6 @@ $(function() {
 </li>
 <li>psi_laststep
 : <a class="el" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a77a95560cf43cacd900807df4b0ba62c">ModuleESolver::ESolver_KS_LCAO_TDDFT</a>
-</li>
-<li>psi_local
-: <a class="el" href="classElecStateLCAOPrepare.html#a834f6603f5c26c43b731f99d2ecf4104">ElecStateLCAOPrepare&lt; T &gt;</a>
 </li>
 <li>psi_mult_psi()
 : <a class="el" href="classExx__Abfs_1_1Construct__Orbs.html#a13e037407a95a04bfbac47d5995e6f1d">Exx_Abfs::Construct_Orbs</a>
@@ -979,9 +968,6 @@ $(function() {
 <li>psi_test_no
 : <a class="el" href="classTestHSolverPW__SDFT.html#a8e800d4791acbcda0ff692464be38d95">TestHSolverPW_SDFT</a>
 </li>
-<li>psi_transform_evc()
-: <a class="el" href="classWF__atomic.html#ae9ead26e952f92aabe25a2f94111164a">WF_atomic</a>
-</li>
 <li>Psi_Type
 : <a class="el" href="classNumerical__Orbital__Lm.html#a58f04338fe2a265976cf4df2fdc59b6a">Numerical_Orbital_Lm</a>
 </li>
@@ -992,7 +978,7 @@ $(function() {
 : <a class="el" href="classNumerical__Orbital__Lm.html#a2791685621bb9f18870ba4283846a20d">Numerical_Orbital_Lm</a>
 </li>
 <li>psid
-: <a class="el" href="classModuleESolver_1_1ESolver.html#accd3c1f8fe931005ef866706d3d54c57">ModuleESolver::ESolver</a>
+: <a class="el" href="classModuleESolver_1_1ESolver__FP.html#a904f89403f227cecedf0418da836475f">ModuleESolver::ESolver_FP</a>
 </li>
 <li>psif
 : <a class="el" href="classNumerical__Orbital__Lm.html#ab580608587dfb820621a7e16f163de28">Numerical_Orbital_Lm</a>
@@ -1034,6 +1020,9 @@ $(function() {
 <li>psymmg()
 : <a class="el" href="classSymmetry__rho.html#a55b2578d61b7481066d4fc6587b32227">Symmetry_rho</a>
 </li>
+<li>ptempRho
+: <a class="el" href="classModuleESolver_1_1ESolver__OF.html#a6dd3a86ef2824904ec6f15a4bff5cec2">ModuleESolver::ESolver_OF</a>
+</li>
 <li>ptr
 : <a class="el" href="structChunkS.html#a95125508acd63c64f703b75b8bd5ddcc">ChunkS</a>
 , <a class="el" href="classModuleBase_1_1ComplexArray.html#a15e4e1207604d7817d252b7278521b83">ModuleBase::ComplexArray</a>
@@ -1051,10 +1040,6 @@ $(function() {
 </li>
 <li>Pulay_mixing()
 : <a class="el" href="classCharge__Mixing.html#a091ccdd59998a426169d76f9a7b23beb">Charge_Mixing</a>
-</li>
-<li>pulay_mixing()
-: <a class="el" href="classExx__Abfs_1_1DM.html#a144a2328ff65db1c15271d1b43ffcf50">Exx_Abfs::DM</a>
-, <a class="el" href="classExx__Abfs_1_1Parallel_1_1Communicate_1_1Hexx.html#a6dea8a03e2f9ff9d6d491806bdd70626">Exx_Abfs::Parallel::Communicate::Hexx</a>
 </li>
 <li>Push()
 : <a class="el" href="classGrid.html#ae5680bfbf7bdce4bf653393fd00f84d5">Grid</a>
@@ -1087,7 +1072,7 @@ $(function() {
 : <a class="el" href="classModulePW_1_1PW__Basis.html#a465c155d29fe97e8703360888468f9a7">ModulePW::PW_Basis</a>
 </li>
 <li>PW_Basis_Big()
-: <a class="el" href="classModulePW_1_1PW__Basis__Big.html#a598abee0ec52ccaebf4451df0e17f390">ModulePW::PW_Basis_Big</a>
+: <a class="el" href="classModulePW_1_1PW__Basis__Big.html#a8bcc71b75113e73bbbf8f02f0de553b1">ModulePW::PW_Basis_Big</a>
 </li>
 <li>PW_Basis_K()
 : <a class="el" href="classModulePW_1_1PW__Basis__K.html#a20798602f63a30dbd1e25f0e811493f6">ModulePW::PW_Basis_K</a>
@@ -1123,9 +1108,6 @@ $(function() {
 : <a class="el" href="classInput.html#ad77aec2f4fedc3fff85aec00bb8f6aac">Input</a>
 , <a class="el" href="classWF__atomic.html#a2f46490ccade6a7cf4a619ad74f9ef93">WF_atomic</a>
 </li>
-<li>pw_seed_
-: <a class="el" href="structENVPrepare.html#af0453efcf5b03db7ea37d8a466f0e08f">ENVPrepare</a>
-</li>
 <li>pw_spin()
 : <a class="el" href="classXC__Functional.html#a7572818da99e31cd7ba41a045d713520">XC_Functional</a>
 </li>
@@ -1144,6 +1126,9 @@ $(function() {
 </li>
 <li>pwcorr()
 : <a class="el" href="classXC__Functional.html#aff556d3a5e1e91d0da95fbea644cef3f">XC_Functional</a>
+</li>
+<li>pwf
+: <a class="el" href="classhsolver_1_1HSolverPW.html#a39ae2d49aa5c0bc3bb62c2b96b8282e5">hsolver::HSolverPW&lt; FPTYPE, Device &gt;</a>
 </li>
 <li>pwtest
 : <a class="el" href="classTestPW__Basis__Big.html#a4f9a3dadda5010df41af56cda11a61fe">TestPW_Basis_Big</a>

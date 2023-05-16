@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: module_hamilt_general/module_surchem/cal_vcav.cpp File Reference</title>
+<title>3.2.2: module_hamilt_general/module_surchem/cal_vcav.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -97,14 +97,14 @@ Include dependency graph for cal_vcav.cpp:</div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a58960bd6315964fd8851326e3b0af42f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cal__vcav_8cpp.html#a58960bd6315964fd8851326e3b0af42f">lapl_rho</a> (const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *rhog, double *lapn, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis)</td></tr>
-<tr class="separator:a58960bd6315964fd8851326e3b0af42f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5de52bab85f2c7563bb7d3183cf214e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cal__vcav_8cpp.html#a5de52bab85f2c7563bb7d3183cf214e2">shape_gradn</a> (const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">complex</a>&lt; double &gt; *PS_TOTN, <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis, double *eprime)</td></tr>
-<tr class="separator:a5de52bab85f2c7563bb7d3183cf214e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa57a5ec46810e48de3ac2e388ba36766"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cal__vcav_8cpp.html#aa57a5ec46810e48de3ac2e388ba36766">lapl_rho</a> (const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt; *rhog, double *lapn, const <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis)</td></tr>
+<tr class="separator:aa57a5ec46810e48de3ac2e388ba36766"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2570cfb02a71b77ac4c0e45047b60c53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="cal__vcav_8cpp.html#a2570cfb02a71b77ac4c0e45047b60c53">shape_gradn</a> (const <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">complex</a>&lt; double &gt; *PS_TOTN, const <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *rho_basis, double *eprime)</td></tr>
+<tr class="separator:a2570cfb02a71b77ac4c0e45047b60c53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a58960bd6315964fd8851326e3b0af42f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a58960bd6315964fd8851326e3b0af42f">&#9670;&nbsp;</a></span>lapl_rho()</h2>
+<a id="aa57a5ec46810e48de3ac2e388ba36766"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa57a5ec46810e48de3ac2e388ba36766">&#9670;&nbsp;</a></span>lapl_rho()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -124,7 +124,7 @@ Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *&#160;</td>
           <td class="paramname"><em>rho_basis</em>&#160;</td>
         </tr>
         <tr>
@@ -137,37 +137,37 @@ Functions</h2></td></tr>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="cal__vcav_8cpp_a58960bd6315964fd8851326e3b0af42f_cgraph.png" border="0" usemap="#cal__vcav_8cpp_a58960bd6315964fd8851326e3b0af42f_cgraph" alt=""/></div>
-<map name="cal__vcav_8cpp_a58960bd6315964fd8851326e3b0af42f_cgraph" id="cal__vcav_8cpp_a58960bd6315964fd8851326e3b0af42f_cgraph">
+<div class="center"><img src="cal__vcav_8cpp_aa57a5ec46810e48de3ac2e388ba36766_cgraph.png" border="0" usemap="#cal__vcav_8cpp_aa57a5ec46810e48de3ac2e388ba36766_cgraph" alt=""/></div>
+<map name="cal__vcav_8cpp_aa57a5ec46810e48de3ac2e388ba36766_cgraph" id="cal__vcav_8cpp_aa57a5ec46810e48de3ac2e388ba36766_cgraph">
 <area shape="rect" title=" " alt="" coords="5,199,80,225"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce" title=" " alt="" coords="139,158,300,199"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#abe30432b8c7a5a3bec170b18ddfae010" title="transform reciprocal space to real space" alt="" coords="139,158,300,199"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="128,223,311,265"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a6a0f22482d8f7ef0b166b326ba0d6a44" title=" " alt="" coords="359,5,540,32"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a3d62d6b321ce67c013623e32bc2d671b" title=" " alt="" coords="360,56,539,83"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a095c2e1e1febc9130f27b467ba079438" title=" " alt="" coords="363,107,535,133"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a9bbea0367082dfbad3ca06a1b8f0c6d5" title=" " alt="" coords="369,158,530,199"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a51172642621a79864bd8a34d02c27f3c" title=" " alt="" coords="375,223,524,265"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#af4c076ea70f66d0c7011f0f318cfe808" title=" " alt="" coords="375,289,524,330"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#abafb29fca1142448e55e2f184c160124" title=" " alt="" coords="375,354,524,395"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#afa647610b8012a98b1025904c2fce5b8" title=" " alt="" coords="359,5,540,32"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a5f48bb5ca6e2bcf20e5c3705c809d6fc" title=" " alt="" coords="360,56,539,83"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a60d5dfc168c4542267aed833bb6c8c09" title=" " alt="" coords="363,107,535,133"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#ac29c0e2d22dca1ffaec4fcff28656b31" title="gather sticks and scatter planes" alt="" coords="369,158,530,199"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#aed6a4e7684822156b64e646c74068d6b" title=" " alt="" coords="375,223,524,265"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#ab36840ed72d17de3906ff4d9aa6da636" title=" " alt="" coords="375,289,524,330"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a5684bb10580a5a28a166914df99e5349" title=" " alt="" coords="375,354,524,395"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="cal__vcav_8cpp_a58960bd6315964fd8851326e3b0af42f_icgraph.png" border="0" usemap="#cal__vcav_8cpp_a58960bd6315964fd8851326e3b0af42f_icgraph" alt=""/></div>
-<map name="cal__vcav_8cpp_a58960bd6315964fd8851326e3b0af42f_icgraph" id="cal__vcav_8cpp_a58960bd6315964fd8851326e3b0af42f_icgraph">
+<div class="center"><img src="cal__vcav_8cpp_aa57a5ec46810e48de3ac2e388ba36766_icgraph.png" border="0" usemap="#cal__vcav_8cpp_aa57a5ec46810e48de3ac2e388ba36766_icgraph" alt=""/></div>
+<map name="cal__vcav_8cpp_aa57a5ec46810e48de3ac2e388ba36766_icgraph" id="cal__vcav_8cpp_aa57a5ec46810e48de3ac2e388ba36766_icgraph">
 <area shape="rect" title=" " alt="" coords="844,13,919,39"/>
-<area shape="rect" href="classsurchem.html#a73936b665eeaf85987d2471d1743c2a7" title=" " alt="" coords="629,13,796,39"/>
-<area shape="rect" href="classsurchem.html#a4e8a8d430bdc856e2c30cc510921c7fa" title=" " alt="" coords="439,13,581,39"/>
-<area shape="rect" href="classsurchem.html#a979251283fdf3501926dfe2977e445cf" title=" " alt="" coords="224,13,391,39"/>
+<area shape="rect" href="classsurchem.html#a85fa11b9318a2e46143d24e1dd2762e0" title=" " alt="" coords="629,13,796,39"/>
+<area shape="rect" href="classsurchem.html#a3dff2e94fcb29ac58644921da0f72e35" title=" " alt="" coords="439,13,581,39"/>
+<area shape="rect" href="classsurchem.html#a23c6c825c455dcaf51fb005c045330ca" title=" " alt="" coords="224,13,391,39"/>
 <area shape="rect" href="classelecstate_1_1PotSurChem.html#ad93c35546a239ae51246724ae9c5da56" title=" " alt="" coords="5,5,176,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a5de52bab85f2c7563bb7d3183cf214e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5de52bab85f2c7563bb7d3183cf214e2">&#9670;&nbsp;</a></span>shape_gradn()</h2>
+<a id="a2570cfb02a71b77ac4c0e45047b60c53"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2570cfb02a71b77ac4c0e45047b60c53">&#9670;&nbsp;</a></span>shape_gradn()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -181,7 +181,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *&#160;</td>
+          <td class="paramtype">const <a class="el" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a> *&#160;</td>
           <td class="paramname"><em>rho_basis</em>, </td>
         </tr>
         <tr>
@@ -200,29 +200,29 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="cal__vcav_8cpp_a5de52bab85f2c7563bb7d3183cf214e2_cgraph.png" border="0" usemap="#cal__vcav_8cpp_a5de52bab85f2c7563bb7d3183cf214e2_cgraph" alt=""/></div>
-<map name="cal__vcav_8cpp_a5de52bab85f2c7563bb7d3183cf214e2_cgraph" id="cal__vcav_8cpp_a5de52bab85f2c7563bb7d3183cf214e2_cgraph">
+<div class="center"><img src="cal__vcav_8cpp_a2570cfb02a71b77ac4c0e45047b60c53_cgraph.png" border="0" usemap="#cal__vcav_8cpp_a2570cfb02a71b77ac4c0e45047b60c53_cgraph" alt=""/></div>
+<map name="cal__vcav_8cpp_a2570cfb02a71b77ac4c0e45047b60c53_cgraph" id="cal__vcav_8cpp_a2570cfb02a71b77ac4c0e45047b60c53_cgraph">
 <area shape="rect" title=" " alt="" coords="5,136,111,163"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="165,77,335,104"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a44f9ba80877c6b193837f946055319ce" title=" " alt="" coords="169,129,331,170"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#abe30432b8c7a5a3bec170b18ddfae010" title="transform reciprocal space to real space" alt="" coords="169,129,331,170"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="159,194,341,235"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a6a0f22482d8f7ef0b166b326ba0d6a44" title=" " alt="" coords="389,5,571,32"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a3d62d6b321ce67c013623e32bc2d671b" title=" " alt="" coords="391,56,569,83"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a095c2e1e1febc9130f27b467ba079438" title=" " alt="" coords="394,107,566,133"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis.html#a9bbea0367082dfbad3ca06a1b8f0c6d5" title=" " alt="" coords="399,158,561,199"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#a51172642621a79864bd8a34d02c27f3c" title=" " alt="" coords="405,223,555,265"/>
-<area shape="rect" href="classModulePW_1_1FFT.html#af4c076ea70f66d0c7011f0f318cfe808" title=" " alt="" coords="405,289,555,330"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#afa647610b8012a98b1025904c2fce5b8" title=" " alt="" coords="389,5,571,32"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a5f48bb5ca6e2bcf20e5c3705c809d6fc" title=" " alt="" coords="391,56,569,83"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#a60d5dfc168c4542267aed833bb6c8c09" title=" " alt="" coords="394,107,566,133"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html#ac29c0e2d22dca1ffaec4fcff28656b31" title="gather sticks and scatter planes" alt="" coords="399,158,561,199"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#aed6a4e7684822156b64e646c74068d6b" title=" " alt="" coords="405,223,555,265"/>
+<area shape="rect" href="classModulePW_1_1FFT.html#ab36840ed72d17de3906ff4d9aa6da636" title=" " alt="" coords="405,289,555,330"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="cal__vcav_8cpp_a5de52bab85f2c7563bb7d3183cf214e2_icgraph.png" border="0" usemap="#cal__vcav_8cpp_a5de52bab85f2c7563bb7d3183cf214e2_icgraph" alt=""/></div>
-<map name="cal__vcav_8cpp_a5de52bab85f2c7563bb7d3183cf214e2_icgraph" id="cal__vcav_8cpp_a5de52bab85f2c7563bb7d3183cf214e2_icgraph">
+<div class="center"><img src="cal__vcav_8cpp_a2570cfb02a71b77ac4c0e45047b60c53_icgraph.png" border="0" usemap="#cal__vcav_8cpp_a2570cfb02a71b77ac4c0e45047b60c53_icgraph" alt=""/></div>
+<map name="cal__vcav_8cpp_a2570cfb02a71b77ac4c0e45047b60c53_icgraph" id="cal__vcav_8cpp_a2570cfb02a71b77ac4c0e45047b60c53_icgraph">
 <area shape="rect" title=" " alt="" coords="844,13,949,39"/>
-<area shape="rect" href="classsurchem.html#a73936b665eeaf85987d2471d1743c2a7" title=" " alt="" coords="629,13,796,39"/>
-<area shape="rect" href="classsurchem.html#a4e8a8d430bdc856e2c30cc510921c7fa" title=" " alt="" coords="439,13,581,39"/>
-<area shape="rect" href="classsurchem.html#a979251283fdf3501926dfe2977e445cf" title=" " alt="" coords="224,13,391,39"/>
+<area shape="rect" href="classsurchem.html#a85fa11b9318a2e46143d24e1dd2762e0" title=" " alt="" coords="629,13,796,39"/>
+<area shape="rect" href="classsurchem.html#a3dff2e94fcb29ac58644921da0f72e35" title=" " alt="" coords="439,13,581,39"/>
+<area shape="rect" href="classsurchem.html#a23c6c825c455dcaf51fb005c045330ca" title=" " alt="" coords="224,13,391,39"/>
 <area shape="rect" href="classelecstate_1_1PotSurChem.html#ad93c35546a239ae51246724ae9c5da56" title=" " alt="" coords="5,5,176,47"/>
 </map>
 </div>

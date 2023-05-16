@@ -1,12 +1,8 @@
 <map id="Parallel_Global::split_grid_world" name="Parallel_Global::split_grid_world">
-<area shape="rect" id="node1" title=" " alt="" coords="581,191,736,233"/>
-<area shape="rect" id="node2" href="$elecstate__lcao__test_8cpp.html#a02fd73d861ef2e4aabb38c0c9ff82947" title=" " alt="" coords="453,111,495,137"/>
-<area shape="rect" id="node7" href="$classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="415,173,533,200"/>
-<area shape="rect" id="node9" href="$parallel__global__test_8cpp.html#ab0b944cf0e1cf4d9d9a61f663460959a" title=" " alt="" coords="447,224,501,251"/>
-<area shape="rect" id="node10" href="$parallel__reduce__test_8cpp.html#ad0970cf88958a80eabfb858d41b99edd" title=" " alt="" coords="439,275,509,301"/>
-<area shape="rect" id="node3" href="$classExx__Abfs_1_1Parallel_1_1Distribute_1_1Kmeans.html#ae18dd7035a1825c3e651dd8d775dca5a" title=" " alt="" coords="212,5,367,61"/>
-<area shape="rect" id="node5" href="$elecstate__lcao__test_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="262,85,317,112"/>
-<area shape="rect" id="node6" href="$ORB__atomic__lm__test_8cpp.html#a75bef6b7d0c9dec81074c9a28d6b4fdc" title=" " alt="" coords="255,136,324,163"/>
-<area shape="rect" id="node4" href="$classExx__Abfs_1_1Parallel_1_1Distribute_1_1Kmeans.html#a575d7aae0601eb9cd2ecb53c64a25715" title=" " alt="" coords="5,5,164,61"/>
-<area shape="rect" id="node8" href="$classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="244,187,335,213"/>
+<area shape="rect" id="node1" title=" " alt="" coords="413,49,568,90"/>
+<area shape="rect" id="node2" href="$classDriver.html#a3183cc571b4fed2696588b72dc49f68b" title=" " alt="" coords="247,5,365,32"/>
+<area shape="rect" id="node5" href="$parallel__global__test_8cpp.html#ab0b944cf0e1cf4d9d9a61f663460959a" title=" " alt="" coords="279,56,333,83"/>
+<area shape="rect" id="node6" href="$parallel__reduce__test_8cpp.html#ad0970cf88958a80eabfb858d41b99edd" title=" " alt="" coords="271,107,341,133"/>
+<area shape="rect" id="node3" href="$classDriver.html#a4c9a69e6620d74074275517d79e7db27" title=" " alt="" coords="108,5,199,32"/>
+<area shape="rect" id="node4" href="$main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627" title=" " alt="" coords="5,5,60,32"/>
 </map>

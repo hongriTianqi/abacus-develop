@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Stochastic_Iter Class Reference</title>
+<title>3.2.2: Stochastic_Iter Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -67,6 +67,7 @@ $(function() {
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classStochastic__Iter-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">Stochastic_Iter Class Reference</div>  </div>
@@ -79,12 +80,16 @@ Collaboration diagram for Stochastic_Iter:</div>
 <div class="dyncontent">
 <div class="center"><img src="classStochastic__Iter__coll__graph.png" border="0" usemap="#Stochastic__Iter_coll__map" alt="Collaboration graph"/></div>
 <map name="Stochastic__Iter_coll__map" id="Stochastic__Iter_coll__map">
-<area shape="rect" title=" " alt="" coords="381,608,535,993"/>
-<area shape="rect" href="classModuleBase_1_1Chebyshev.html" title=" " alt="" coords="24,204,207,545"/>
-<area shape="rect" href="classModuleBase_1_1FFTW_3_01double_01_4.html" title=" " alt="" coords="5,5,225,141"/>
-<area shape="rect" href="classStochastic__hchi.html" title=" " alt="" coords="231,285,466,465"/>
-<area shape="rect" href="classSto__Func.html" title=" " alt="" coords="490,219,645,531"/>
-<area shape="rect" href="classModuleBase_1_1ComplexMatrix.html" title=" " alt="" coords="669,241,879,509"/>
+<area shape="rect" title=" " alt="" coords="471,2092,626,2477"/>
+<area shape="rect" href="classModuleBase_1_1Chebyshev.html" title=" " alt="" coords="47,1688,229,2029"/>
+<area shape="rect" href="classModuleBase_1_1FFTW_3_01double_01_4.html" title=" " alt="" coords="5,1255,225,1391"/>
+<area shape="rect" href="classStochastic__hchi.html" title=" " alt="" coords="266,1769,501,1949"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__K.html" title="Special pw_basis class. It includes different k&#45;points." alt="" coords="249,1086,429,1559"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="371,351,558,971"/>
+<area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="228,5,387,273"/>
+<area shape="rect" href="classK__Vectors.html" title=" " alt="" coords="453,1020,668,1625"/>
+<area shape="rect" href="classSto__Func.html" title=" " alt="" coords="606,1703,761,2015"/>
+<area shape="rect" href="classModuleBase_1_1ComplexMatrix.html" title=" " alt="" coords="785,1725,995,1993"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -94,10 +99,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af9ec04c0cb81edb0e1157fa27d428751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1710d23e31bc9967531851424f8e613f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStochastic__Iter.html#a1710d23e31bc9967531851424f8e613f">~Stochastic_Iter</a> ()</td></tr>
 <tr class="separator:a1710d23e31bc9967531851424f8e613f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9b5afc90f701cf165e7d356a1ce7525"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStochastic__Iter.html#ab9b5afc90f701cf165e7d356a1ce7525">init</a> (const int, int *nchip_in, const int method_in, <a class="el" href="classStochastic__WF.html">Stochastic_WF</a> &amp;stowf)</td></tr>
-<tr class="separator:ab9b5afc90f701cf165e7d356a1ce7525"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6547caaa896fb1ca5c9b2ae83e0c0262"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStochastic__Iter.html#a6547caaa896fb1ca5c9b2ae83e0c0262">sum_stoband</a> (<a class="el" href="classStochastic__WF.html">Stochastic_WF</a> &amp;stowf, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pes, <a class="el" href="classhamilt_1_1Hamilt.html">hamilt::Hamilt</a>&lt; double &gt; *pHamilt)</td></tr>
-<tr class="separator:a6547caaa896fb1ca5c9b2ae83e0c0262"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5862186c3951a805016ded27f5a22281"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStochastic__Iter.html#a5862186c3951a805016ded27f5a22281">init</a> (int *nchip_in, const int method_in, <a class="el" href="classK__Vectors.html">K_Vectors</a> *pkv_in, <a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *wfc_basis, <a class="el" href="classStochastic__WF.html">Stochastic_WF</a> &amp;stowf)</td></tr>
+<tr class="separator:a5862186c3951a805016ded27f5a22281"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9745008383b4862dcf9d508020a6c9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStochastic__Iter.html#ad9745008383b4862dcf9d508020a6c9c">sum_stoband</a> (<a class="el" href="classStochastic__WF.html">Stochastic_WF</a> &amp;stowf, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pes, <a class="el" href="classhamilt_1_1Hamilt.html">hamilt::Hamilt</a>&lt; double &gt; *pHamilt, <a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *wfc_basis)</td></tr>
+<tr class="separator:ad9745008383b4862dcf9d508020a6c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7337c9b834722a888cb2e3fce1f87825"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStochastic__Iter.html#a7337c9b834722a888cb2e3fce1f87825">calne</a> (<a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pes)</td></tr>
 <tr class="separator:a7337c9b834722a888cb2e3fce1f87825"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aac1e4d06764c9068c1675b31e76d9251"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStochastic__Iter.html#aac1e4d06764c9068c1675b31e76d9251">itermu</a> (const int iter, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pes)</td></tr>
@@ -147,6 +152,11 @@ Public Attributes</h2></td></tr>
 <tr class="separator:a911bfa5d9953f72fb85692148f0b6db4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6167ea78a6bbccead2d35863c420e19f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStochastic__Iter.html#a6167ea78a6bbccead2d35863c420e19f">chiallorder</a> = nullptr</td></tr>
 <tr class="separator:a6167ea78a6bbccead2d35863c420e19f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a419164f6234f3c0d4c54a90ca543de82"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classK__Vectors.html">K_Vectors</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classStochastic__Iter.html#a419164f6234f3c0d4c54a90ca543de82">pkv</a></td></tr>
+<tr class="separator:a419164f6234f3c0d4c54a90ca543de82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="af9ec04c0cb81edb0e1157fa27d428751"></a>
@@ -204,16 +214,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classStochastic__Iter_a72e77f55e8f7ea709bc54ceedf488956_cgraph.png" border="0" usemap="#classStochastic__Iter_a72e77f55e8f7ea709bc54ceedf488956_cgraph" alt=""/></div>
 <map name="classStochastic__Iter_a72e77f55e8f7ea709bc54ceedf488956_cgraph" id="classStochastic__Iter_a72e77f55e8f7ea709bc54ceedf488956_cgraph">
-<area shape="rect" title=" " alt="" coords="5,107,204,134"/>
-<area shape="rect" href="classModuleBase_1_1Chebyshev.html#acfb89fdcc229dae9e7c2b01a1c04e176" title=" " alt="" coords="260,41,443,83"/>
-<area shape="rect" href="classStochastic__Iter.html#a1a3fe3e0b121647a095facea48a6059f" title=" " alt="" coords="252,107,451,134"/>
-<area shape="rect" href="classpseudopot__cell__vnl.html#a2fb7c26fb6107fca6a9943141b99f032" title=" " alt="" coords="278,180,425,221"/>
-<area shape="rect" href="classModuleBase_1_1Chebyshev.html#a1831618166f6a623703c365fd16a3aff" title=" " alt="" coords="513,5,696,47"/>
-<area shape="rect" href="classStochastic__hchi.html#ae00a42cc25853724fc41316f3290d2db" title=" " alt="" coords="505,71,704,98"/>
-<area shape="rect" href="blas__connector_8h.html#af6e68bda698eaed2db4e4c1efcd9cfab" title=" " alt="" coords="568,122,641,149"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="759,122,936,149"/>
-<area shape="rect" href="classWF__igk.html#ae332dba4fe2ba0188c07382eb49d4267" title=" " alt="" coords="499,223,711,250"/>
-<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="532,274,677,301"/>
+<area shape="rect" title=" " alt="" coords="5,106,204,133"/>
+<area shape="rect" href="classModuleBase_1_1Chebyshev.html#acfb89fdcc229dae9e7c2b01a1c04e176" title=" " alt="" coords="260,40,443,81"/>
+<area shape="rect" href="classStochastic__Iter.html#a1a3fe3e0b121647a095facea48a6059f" title=" " alt="" coords="252,106,451,133"/>
+<area shape="rect" href="classpseudopot__cell__vnl.html#a2fb7c26fb6107fca6a9943141b99f032" title=" " alt="" coords="278,183,425,224"/>
+<area shape="rect" href="classModuleBase_1_1Chebyshev.html#a1831618166f6a623703c365fd16a3aff" title=" " alt="" coords="507,5,689,47"/>
+<area shape="rect" href="classStochastic__hchi.html#ae00a42cc25853724fc41316f3290d2db" title=" " alt="" coords="499,71,697,98"/>
+<area shape="rect" href="blas__connector_8h.html#af6e68bda698eaed2db4e4c1efcd9cfab" title=" " alt="" coords="561,122,635,149"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="745,122,923,149"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a95b24e597b47294a9d6b46bfe8393de9" title=" " alt="" coords="517,224,679,265"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="525,290,671,317"/>
 </map>
 </div>
 <div class="dynheader">
@@ -222,7 +232,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classStochastic__Iter_a72e77f55e8f7ea709bc54ceedf488956_icgraph.png" border="0" usemap="#classStochastic__Iter_a72e77f55e8f7ea709bc54ceedf488956_icgraph" alt=""/></div>
 <map name="classStochastic__Iter_a72e77f55e8f7ea709bc54ceedf488956_icgraph" id="classStochastic__Iter_a72e77f55e8f7ea709bc54ceedf488956_icgraph">
 <area shape="rect" title=" " alt="" coords="204,13,403,39"/>
-<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#a67fac2dbe18507b048188cdb4f3d2d6b" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#adfd550380d2f03535a2c4ceb7033208c" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
 
@@ -266,7 +276,7 @@ Here is the caller graph for this function:</div>
 <map name="classStochastic__Iter_a7337c9b834722a888cb2e3fce1f87825_icgraph" id="classStochastic__Iter_a7337c9b834722a888cb2e3fce1f87825_icgraph">
 <area shape="rect" title=" " alt="" coords="421,13,583,39"/>
 <area shape="rect" href="classStochastic__Iter.html#aac1e4d06764c9068c1675b31e76d9251" title=" " alt="" coords="204,13,373,39"/>
-<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#a67fac2dbe18507b048188cdb4f3d2d6b" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#adfd550380d2f03535a2c4ceb7033208c" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
 
@@ -320,7 +330,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classStochastic__Iter_a9c426fe4f84e20021c57027f1d048f9c_icgraph.png" border="0" usemap="#classStochastic__Iter_a9c426fe4f84e20021c57027f1d048f9c_icgraph" alt=""/></div>
 <map name="classStochastic__Iter_a9c426fe4f84e20021c57027f1d048f9c_icgraph" id="classStochastic__Iter_a9c426fe4f84e20021c57027f1d048f9c_icgraph">
 <area shape="rect" title=" " alt="" coords="204,13,365,39"/>
-<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#a67fac2dbe18507b048188cdb4f3d2d6b" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#adfd550380d2f03535a2c4ceb7033208c" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
 
@@ -364,8 +374,8 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="915,135,1092,162"/>
 <area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a51c442ce0bb572b813626cfc3f3a6b81" title=" " alt="" coords="705,101,867,142"/>
 <area shape="rect" href="namespaceModuleBase.html#a3dd5886827d91befd079da1e23921f07" title=" " alt="" coords="717,167,855,194"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a97ed9dc5408318cc47463effacd41ebb" title=" " alt="" coords="705,218,867,260"/>
-<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a6fadd5f43b7c9b1ea6bbe560733f7f05" title=" " alt="" coords="705,36,867,77"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a5d5567554c5b30468e6d444d58d4aed0" title="transform real space to reciprocal space" alt="" coords="705,218,867,260"/>
+<area shape="rect" href="classModulePW_1_1PW__Basis__K.html#a3f5ff6f74c7686268879ce8e228e9e63" title="transform reciprocal space to real space" alt="" coords="705,36,867,77"/>
 </map>
 </div>
 <div class="dynheader">
@@ -375,7 +385,7 @@ Here is the caller graph for this function:</div>
 <map name="classStochastic__Iter_a1a3fe3e0b121647a095facea48a6059f_icgraph" id="classStochastic__Iter_a1a3fe3e0b121647a095facea48a6059f_icgraph">
 <area shape="rect" title=" " alt="" coords="451,13,649,39"/>
 <area shape="rect" href="classStochastic__Iter.html#a72e77f55e8f7ea709bc54ceedf488956" title=" " alt="" coords="204,13,403,39"/>
-<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#a67fac2dbe18507b048188cdb4f3d2d6b" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#adfd550380d2f03535a2c4ceb7033208c" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
 
@@ -430,8 +440,8 @@ Here is the caller graph for this function:</div>
 <map name="classStochastic__Iter_ae6fecdc2a708da6ba5e34cd778dd2868_icgraph" id="classStochastic__Iter_ae6fecdc2a708da6ba5e34cd778dd2868_icgraph">
 <area shape="rect" title=" " alt="" coords="421,27,585,69"/>
 <area shape="rect" href="classStochastic__Iter.html#aac1e4d06764c9068c1675b31e76d9251" title=" " alt="" coords="204,5,373,32"/>
-<area shape="rect" href="classStochastic__Iter.html#a6547caaa896fb1ca5c9b2ae83e0c0262" title=" " alt="" coords="211,57,366,98"/>
-<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#a67fac2dbe18507b048188cdb4f3d2d6b" title=" " alt="" coords="5,27,156,69"/>
+<area shape="rect" href="classStochastic__Iter.html#ad9745008383b4862dcf9d508020a6c9c" title=" " alt="" coords="211,57,366,98"/>
+<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#adfd550380d2f03535a2c4ceb7033208c" title=" " alt="" coords="5,27,156,69"/>
 </map>
 </div>
 
@@ -497,7 +507,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classStochastic__Iter_ab61c7ffcd4a9b9a543bdc088516e24a2_icgraph.png" border="0" usemap="#classStochastic__Iter_ab61c7ffcd4a9b9a543bdc088516e24a2_icgraph" alt=""/></div>
 <map name="classStochastic__Iter_ab61c7ffcd4a9b9a543bdc088516e24a2_icgraph" id="classStochastic__Iter_ab61c7ffcd4a9b9a543bdc088516e24a2_icgraph">
 <area shape="rect" title=" " alt="" coords="204,13,401,39"/>
-<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#a67fac2dbe18507b048188cdb4f3d2d6b" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#adfd550380d2f03535a2c4ceb7033208c" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
 
@@ -520,8 +530,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ab9b5afc90f701cf165e7d356a1ce7525"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9b5afc90f701cf165e7d356a1ce7525">&#9670;&nbsp;</a></span>init()</h2>
+<a id="a5862186c3951a805016ded27f5a22281"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5862186c3951a805016ded27f5a22281">&#9670;&nbsp;</a></span>init()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -529,12 +539,6 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Stochastic_Iter::init </td>
           <td>(</td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>dim</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">int *&#160;</td>
           <td class="paramname"><em>nchip_in</em>, </td>
         </tr>
@@ -543,6 +547,18 @@ Here is the caller graph for this function:</div>
           <td></td>
           <td class="paramtype">const int&#160;</td>
           <td class="paramname"><em>method_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classK__Vectors.html">K_Vectors</a> *&#160;</td>
+          <td class="paramname"><em>pkv_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *&#160;</td>
+          <td class="paramname"><em>wfc_basis</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -560,21 +576,21 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classStochastic__Iter_ab9b5afc90f701cf165e7d356a1ce7525_cgraph.png" border="0" usemap="#classStochastic__Iter_ab9b5afc90f701cf165e7d356a1ce7525_cgraph" alt=""/></div>
-<map name="classStochastic__Iter_ab9b5afc90f701cf165e7d356a1ce7525_cgraph" id="classStochastic__Iter_ab9b5afc90f701cf165e7d356a1ce7525_cgraph">
+<div class="center"><img src="classStochastic__Iter_a5862186c3951a805016ded27f5a22281_cgraph.png" border="0" usemap="#classStochastic__Iter_a5862186c3951a805016ded27f5a22281_cgraph" alt=""/></div>
+<map name="classStochastic__Iter_a5862186c3951a805016ded27f5a22281_cgraph" id="classStochastic__Iter_a5862186c3951a805016ded27f5a22281_cgraph">
 <area shape="rect" title=" " alt="" coords="5,42,152,69"/>
 <area shape="rect" href="classModuleBase_1_1ComplexMatrix.html#a5c1453ebc08a2889d5b77e310256ad44" title=" " alt="" coords="200,5,411,47"/>
-<area shape="rect" href="classStochastic__hchi.html#a6c6a710be71b13e6607af190d3ad813d" title=" " alt="" coords="229,71,381,98"/>
+<area shape="rect" href="classStochastic__hchi.html#aa20c4391065da961caa7105e43eb95bd" title=" " alt="" coords="229,71,381,98"/>
 <area shape="rect" href="classModuleBase_1_1ComplexMatrix.html#a3838106abe74b149f792daadd79fb027" title=" " alt="" coords="459,5,669,47"/>
 </map>
 </div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classStochastic__Iter_ab9b5afc90f701cf165e7d356a1ce7525_icgraph.png" border="0" usemap="#classStochastic__Iter_ab9b5afc90f701cf165e7d356a1ce7525_icgraph" alt=""/></div>
-<map name="classStochastic__Iter_ab9b5afc90f701cf165e7d356a1ce7525_icgraph" id="classStochastic__Iter_ab9b5afc90f701cf165e7d356a1ce7525_icgraph">
+<div class="center"><img src="classStochastic__Iter_a5862186c3951a805016ded27f5a22281_icgraph.png" border="0" usemap="#classStochastic__Iter_a5862186c3951a805016ded27f5a22281_icgraph" alt=""/></div>
+<map name="classStochastic__Iter_a5862186c3951a805016ded27f5a22281_icgraph" id="classStochastic__Iter_a5862186c3951a805016ded27f5a22281_icgraph">
 <area shape="rect" title=" " alt="" coords="235,13,381,39"/>
-<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#a51a28566610771426be44d29b5d296a2" title=" " alt="" coords="5,5,187,47"/>
+<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#acb9d378094d1d1c209724aab961b5fbe" title=" " alt="" coords="5,5,187,47"/>
 </map>
 </div>
 
@@ -628,7 +644,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classStochastic__Iter_aac1e4d06764c9068c1675b31e76d9251_icgraph.png" border="0" usemap="#classStochastic__Iter_aac1e4d06764c9068c1675b31e76d9251_icgraph" alt=""/></div>
 <map name="classStochastic__Iter_aac1e4d06764c9068c1675b31e76d9251_icgraph" id="classStochastic__Iter_aac1e4d06764c9068c1675b31e76d9251_icgraph">
 <area shape="rect" title=" " alt="" coords="204,13,373,39"/>
-<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#a67fac2dbe18507b048188cdb4f3d2d6b" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#adfd550380d2f03535a2c4ceb7033208c" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
 
@@ -670,13 +686,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classStochastic__Iter_a2d801f3aa4e71f1176aaa9a4930e4bff_cgraph.png" border="0" usemap="#classStochastic__Iter_a2d801f3aa4e71f1176aaa9a4930e4bff_cgraph" alt=""/></div>
 <map name="classStochastic__Iter_a2d801f3aa4e71f1176aaa9a4930e4bff_cgraph" id="classStochastic__Iter_a2d801f3aa4e71f1176aaa9a4930e4bff_cgraph">
-<area shape="rect" title=" " alt="" coords="5,46,173,73"/>
-<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="221,46,367,73"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="415,5,597,47"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="429,71,583,112"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="645,5,828,47"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="648,78,825,105"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="876,71,1029,112"/>
+<area shape="rect" title=" " alt="" coords="5,144,173,171"/>
+<area shape="rect" href="namespaceModuleBase.html#a08328544923ea6b40a70dd1fe90bec2d" title=" " alt="" coords="223,5,397,32"/>
+<area shape="rect" href="namespaceModuleBase.html#a3dd5886827d91befd079da1e23921f07" title=" " alt="" coords="241,56,379,83"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a5ccf1f753c6fae3266e7e9b5e21f2712" title=" " alt="" coords="221,107,399,149"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="237,173,383,200"/>
+<area shape="rect" href="namespaceModuleBase.html#afbf699235c354243775d842f3856702d" title=" " alt="" coords="237,224,383,251"/>
+<area shape="rect" href="blas__connector_8h.html#a5f3892f721a2dfc3b21e2ac92db07b18" title=" " alt="" coords="271,275,349,301"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="447,134,629,175"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="461,199,615,241"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="677,134,860,175"/>
 </map>
 </div>
 <div class="dynheader">
@@ -685,14 +704,14 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classStochastic__Iter_a2d801f3aa4e71f1176aaa9a4930e4bff_icgraph.png" border="0" usemap="#classStochastic__Iter_a2d801f3aa4e71f1176aaa9a4930e4bff_icgraph" alt=""/></div>
 <map name="classStochastic__Iter_a2d801f3aa4e71f1176aaa9a4930e4bff_icgraph" id="classStochastic__Iter_a2d801f3aa4e71f1176aaa9a4930e4bff_icgraph">
 <area shape="rect" title=" " alt="" coords="204,13,372,39"/>
-<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#a67fac2dbe18507b048188cdb4f3d2d6b" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#adfd550380d2f03535a2c4ceb7033208c" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a6547caaa896fb1ca5c9b2ae83e0c0262"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6547caaa896fb1ca5c9b2ae83e0c0262">&#9670;&nbsp;</a></span>sum_stoband()</h2>
+<a id="ad9745008383b4862dcf9d508020a6c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9745008383b4862dcf9d508020a6c9c">&#9670;&nbsp;</a></span>sum_stoband()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -713,7 +732,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classhamilt_1_1Hamilt.html">hamilt::Hamilt</a>&lt; double &gt; *&#160;</td>
-          <td class="paramname"><em>pHamilt</em>&#160;</td>
+          <td class="paramname"><em>pHamilt</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a> *&#160;</td>
+          <td class="paramname"><em>wfc_basis</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -725,10 +750,10 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classStochastic__Iter_a6547caaa896fb1ca5c9b2ae83e0c0262_icgraph.png" border="0" usemap="#classStochastic__Iter_a6547caaa896fb1ca5c9b2ae83e0c0262_icgraph" alt=""/></div>
-<map name="classStochastic__Iter_a6547caaa896fb1ca5c9b2ae83e0c0262_icgraph" id="classStochastic__Iter_a6547caaa896fb1ca5c9b2ae83e0c0262_icgraph">
+<div class="center"><img src="classStochastic__Iter_ad9745008383b4862dcf9d508020a6c9c_icgraph.png" border="0" usemap="#classStochastic__Iter_ad9745008383b4862dcf9d508020a6c9c_icgraph" alt=""/></div>
+<map name="classStochastic__Iter_ad9745008383b4862dcf9d508020a6c9c_icgraph" id="classStochastic__Iter_ad9745008383b4862dcf9d508020a6c9c_icgraph">
 <area shape="rect" title=" " alt="" coords="204,5,359,47"/>
-<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#a67fac2dbe18507b048188cdb4f3d2d6b" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#adfd550380d2f03535a2c4ceb7033208c" title=" " alt="" coords="5,5,156,47"/>
 </map>
 </div>
 
@@ -784,10 +809,10 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="652,71,815,98"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a99471a240e5778162f7e45e3f829d384" title=" " alt="" coords="428,5,604,47"/>
 <area shape="rect" href="classStochastic__Iter.html#a7337c9b834722a888cb2e3fce1f87825" title=" " alt="" coords="435,71,597,98"/>
-<area shape="rect" href="classStochastic__Iter.html#a6547caaa896fb1ca5c9b2ae83e0c0262" title=" " alt="" coords="215,123,369,164"/>
+<area shape="rect" href="classStochastic__Iter.html#ad9745008383b4862dcf9d508020a6c9c" title=" " alt="" coords="215,123,369,164"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a8508b2564b3ed0e7250ba70385f13e1e" title=" " alt="" coords="204,5,380,47"/>
 <area shape="rect" href="classStochastic__Iter.html#aac1e4d06764c9068c1675b31e76d9251" title=" " alt="" coords="207,71,377,98"/>
-<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#a67fac2dbe18507b048188cdb4f3d2d6b" title=" " alt="" coords="5,93,156,135"/>
+<area shape="rect" href="classhsolver_1_1HSolverPW__SDFT.html#adfd550380d2f03535a2c4ceb7033208c" title=" " alt="" coords="5,93,156,135"/>
 </map>
 </div>
 
@@ -902,6 +927,28 @@ Here is the caller graph for this function:</div>
           <td class="memname"><a class="el" href="classModuleBase_1_1Chebyshev.html">ModuleBase::Chebyshev</a>&lt;double&gt;* Stochastic_Iter::p_che = nullptr</td>
         </tr>
       </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a419164f6234f3c0d4c54a90ca543de82"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a419164f6234f3c0d4c54a90ca543de82">&#9670;&nbsp;</a></span>pkv</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classK__Vectors.html">K_Vectors</a>* Stochastic_Iter::pkv</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 </div>

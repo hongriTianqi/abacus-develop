@@ -1,10 +1,8 @@
 <map id="ORB_control::mpi_creat_cart" name="ORB_control::mpi_creat_cart">
-<area shape="rect" id="node1" title=" " alt="" coords="868,107,1075,134"/>
-<area shape="rect" id="node2" href="$classORB__control.html#a020411851995dfde40203b27d7e18bfd" title=" " alt="" coords="669,100,820,141"/>
-<area shape="rect" id="node3" href="$classORB__control.html#a18cbab992a640bf45a685de715744f90" title="set 2D&#45;block&#45;cyclic division according to the basis" alt="" coords="475,100,621,141"/>
-<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a0f476fb59643c0d712877a15a8d9a62f" title=" " alt="" coords="231,71,425,112"/>
-<area shape="rect" id="node7" href="$classElecStateLCAOPrepare.html#a3a3a3bfc0cb8a67a387ef05b39f3ce0e" title=" " alt="" coords="229,137,427,163"/>
+<area shape="rect" id="node1" title=" " alt="" coords="864,46,1071,73"/>
+<area shape="rect" id="node2" href="$classORB__control.html#a020411851995dfde40203b27d7e18bfd" title=" " alt="" coords="665,39,816,80"/>
+<area shape="rect" id="node3" href="$classORB__control.html#a18cbab992a640bf45a685de715744f90" title="set 2D&#45;block&#45;cyclic division according to the basis" alt="" coords="471,39,617,80"/>
+<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a0f476fb59643c0d712877a15a8d9a62f" title=" " alt="" coords="229,39,423,80"/>
 <area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="5,5,181,47"/>
 <area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a9062d41b281c0efb4ec25752c0496f9e" title=" " alt="" coords="5,71,181,112"/>
-<area shape="rect" id="node8" href="$elecstate__lcao__test_8cpp.html#a70603d7f4921613799c6ec2f99505525" title=" " alt="" coords="66,137,121,163"/>
 </map>

@@ -1,12 +1,12 @@
 <map id="ModuleESolver::ESolver_SDFT_PW::afterscf" name="ModuleESolver::ESolver_SDFT_PW::afterscf">
-<area shape="rect" id="node1" title=" " alt="" coords="5,49,181,90"/>
-<area shape="rect" id="node2" href="$module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0" title=" " alt="" coords="279,5,333,32"/>
-<area shape="rect" id="node3" href="$classenergy.html#a64344ea129ad123e088a20e7678a9296" title=" " alt="" coords="249,56,363,83"/>
-<area shape="rect" id="node5" href="$namespaceModuleIO.html#a047c6203f4fd97139b8d5e093e15ed0b" title=" " alt="" coords="229,140,383,167"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="431,23,644,49"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase_1_1GlobalFunc.html#a5f13944ea3a04330fb2cc24e1c96a307" title=" " alt="" coords="446,74,629,115"/>
-<area shape="rect" id="node7" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="465,140,610,167"/>
-<area shape="rect" id="node9" href="$namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="450,191,625,217"/>
-<area shape="rect" id="node10" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="446,242,629,283"/>
-<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="692,133,875,174"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,64,181,105"/>
+<area shape="rect" id="node2" href="$module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0" title=" " alt="" coords="510,71,565,98"/>
+<area shape="rect" id="node3" href="$structelecstate_1_1efermi.html#af9b48d6e6d7b5fb34ba8c5ac540a68e8" title="get the value of fermi of a specific spin" alt="" coords="235,5,377,47"/>
+<area shape="rect" id="node5" href="$namespaceModuleIO.html#a047c6203f4fd97139b8d5e093e15ed0b" title=" " alt="" coords="229,122,383,149"/>
+<area shape="rect" id="node4" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="431,13,644,39"/>
+<area shape="rect" id="node6" href="$namespaceModuleIO.html#adb299b4504ba1070cf7e9c6d6203bd5e" title=" " alt="" coords="456,122,619,149"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#a5f13944ea3a04330fb2cc24e1c96a307" title=" " alt="" coords="692,31,875,72"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="711,97,856,123"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="696,147,871,174"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="692,199,875,240"/>
 </map>

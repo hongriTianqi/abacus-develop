@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Relax Class Reference</title>
+<title>3.2.2: Relax Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -93,8 +93,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aceef3b9c6df0afa10a1f551aab87adb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a803fc0770f7f8b8dab88c1a6ee3b268e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelax.html#a803fc0770f7f8b8dab88c1a6ee3b268e">~Relax</a> ()</td></tr>
 <tr class="separator:a803fc0770f7f8b8dab88c1a6ee3b268e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab8fe093e761549a8d5613997d6955f80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelax.html#ab8fe093e761549a8d5613997d6955f80">init_relax</a> (const int nat_in, const int out_stru_in)</td></tr>
-<tr class="separator:ab8fe093e761549a8d5613997d6955f80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac85dd2a62b6bc9ed65cd1f8856e25ab8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelax.html#ac85dd2a62b6bc9ed65cd1f8856e25ab8">init_relax</a> (const int nat_in)</td></tr>
+<tr class="separator:ac85dd2a62b6bc9ed65cd1f8856e25ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a089d0c7ae02c19abf4f2a9544c23aa"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelax.html#a0a089d0c7ae02c19abf4f2a9544c23aa">relax_step</a> (const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;force, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;stress, const double etot_in)</td></tr>
 <tr class="separator:a0a089d0c7ae02c19abf4f2a9544c23aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -119,8 +119,6 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a15b3a7add89787a9a7a3c1fdd2912966"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9742e04db124b73d16d994a2b2d4d21"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelax.html#ab9742e04db124b73d16d994a2b2d4d21">nat</a></td></tr>
 <tr class="separator:ab9742e04db124b73d16d994a2b2d4d21"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af7f0dd1ff4e35239abd78254d8e28a8a"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelax.html#af7f0dd1ff4e35239abd78254d8e28a8a">out_stru</a></td></tr>
-<tr class="separator:af7f0dd1ff4e35239abd78254d8e28a8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea7508053460927e0c190d4f3b524907"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelax.html#aea7508053460927e0c190d4f3b524907">ltrial</a></td></tr>
 <tr class="separator:aea7508053460927e0c190d4f3b524907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1f8ee474a30f93741ade0a6052403ccb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelax.html#a1f8ee474a30f93741ade0a6052403ccb">step_size</a></td></tr>
@@ -175,6 +173,8 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a4e57a7f88c66fb1fc13a9ac387bc2c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e584925c14aa0275b1e605b6bbdffdf"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelax.html#a0e584925c14aa0275b1e605b6bbdffdf">etot</a></td></tr>
 <tr class="separator:a0e584925c14aa0275b1e605b6bbdffdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf0f82c0c2483831948baaa859bbdffe"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelax.html#adf0f82c0c2483831948baaa859bbdffe">etot_p</a></td></tr>
+<tr class="separator:adf0f82c0c2483831948baaa859bbdffe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39919bb198f3f2b40b1a6ffa9363aef7"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelax.html#a39919bb198f3f2b40b1a6ffa9363aef7">force_thr_eva</a></td></tr>
 <tr class="separator:a39919bb198f3f2b40b1a6ffa9363aef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3482b3cdf5325126969cc537c1575328"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRelax.html#a3482b3cdf5325126969cc537c1575328">brent_done</a></td></tr>
@@ -350,8 +350,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ab8fe093e761549a8d5613997d6955f80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8fe093e761549a8d5613997d6955f80">&#9670;&nbsp;</a></span>init_relax()</h2>
+<a id="ac85dd2a62b6bc9ed65cd1f8856e25ab8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac85dd2a62b6bc9ed65cd1f8856e25ab8">&#9670;&nbsp;</a></span>init_relax()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -360,26 +360,16 @@ Here is the caller graph for this function:</div>
           <td class="memname">void Relax::init_relax </td>
           <td>(</td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>nat_in</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramname"><em>nat_in</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>out_stru_in</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRelax_ab8fe093e761549a8d5613997d6955f80_cgraph.png" border="0" usemap="#classRelax_ab8fe093e761549a8d5613997d6955f80_cgraph" alt=""/></div>
-<map name="classRelax_ab8fe093e761549a8d5613997d6955f80_cgraph" id="classRelax_ab8fe093e761549a8d5613997d6955f80_cgraph">
+<div class="center"><img src="classRelax_ac85dd2a62b6bc9ed65cd1f8856e25ab8_cgraph.png" border="0" usemap="#classRelax_ac85dd2a62b6bc9ed65cd1f8856e25ab8_cgraph" alt=""/></div>
+<map name="classRelax_ac85dd2a62b6bc9ed65cd1f8856e25ab8_cgraph" id="classRelax_ac85dd2a62b6bc9ed65cd1f8856e25ab8_cgraph">
 <area shape="rect" title=" " alt="" coords="5,42,133,69"/>
 <area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="181,5,335,47"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="185,71,331,98"/>
@@ -395,8 +385,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRelax_ab8fe093e761549a8d5613997d6955f80_icgraph.png" border="0" usemap="#classRelax_ab8fe093e761549a8d5613997d6955f80_icgraph" alt=""/></div>
-<map name="classRelax_ab8fe093e761549a8d5613997d6955f80_icgraph" id="classRelax_ab8fe093e761549a8d5613997d6955f80_icgraph">
+<div class="center"><img src="classRelax_ac85dd2a62b6bc9ed65cd1f8856e25ab8_icgraph.png" border="0" usemap="#classRelax_ac85dd2a62b6bc9ed65cd1f8856e25ab8_icgraph" alt=""/></div>
+<map name="classRelax_ac85dd2a62b6bc9ed65cd1f8856e25ab8_icgraph" id="classRelax_ac85dd2a62b6bc9ed65cd1f8856e25ab8_icgraph">
 <area shape="rect" title=" " alt="" coords="849,71,977,98"/>
 <area shape="rect" href="classRelax__Driver.html#a96d381221cd3909b3f242097e45fcc27" title=" " alt="" coords="646,5,793,47"/>
 <area shape="rect" href="classTest__SETGRAD.html#a4a886e1784512929183c3556d0ac3216" title=" " alt="" coords="637,71,801,98"/>
@@ -922,6 +912,28 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="adf0f82c0c2483831948baaa859bbdffe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf0f82c0c2483831948baaa859bbdffe">&#9670;&nbsp;</a></span>etot_p</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double Relax::etot_p</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="ad360158147800fa9e11ab4c0563a9d63"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad360158147800fa9e11ab4c0563a9d63">&#9670;&nbsp;</a></span>fac_force</h2>
 
@@ -1307,28 +1319,6 @@ Here is the caller graph for this function:</div>
       <table class="memname">
         <tr>
           <td class="memname">int Relax::nat</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-</div>
-</div>
-<a id="af7f0dd1ff4e35239abd78254d8e28a8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af7f0dd1ff4e35239abd78254d8e28a8a">&#9670;&nbsp;</a></span>out_stru</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Relax::out_stru</td>
         </tr>
       </table>
   </td>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Member List</title>
+<title>3.2.2: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -71,14 +71,14 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classRelax__old.html">Relax_old</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classRelax__old.html#a70389ea5720506dd7debce843a98083e">do_cellrelax</a>(const int &amp;istep, const int &amp;stress_step, const ModuleBase::matrix &amp;stress, const double &amp;total_energy)</td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classRelax__old.html#a63b72263f5ae9885239dfd209faafeaf">do_relax</a>(const int &amp;istep, int &amp;jstep, const ModuleBase::matrix &amp;ionic_force, const double &amp;total_energy)</td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classRelax__old.html#a071116d3ae937ebc538cfe247f1544d6">if_do_cellrelax</a>()</td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classRelax__old.html#adf88ac0b4e25ecc1d4de05faf28838d3">if_do_relax</a>()</td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRelax__old.html#a01f88f8a053da6e3e7566ea440eb6d80">do_cellrelax</a>(const int &amp;istep, const int &amp;stress_step, const ModuleBase::matrix &amp;stress, const double &amp;total_energy, UnitCell &amp;ucell)</td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classRelax__old.html#a73cedaff306befbb966b184e13951106">do_relax</a>(const int &amp;istep, const ModuleBase::matrix &amp;ionic_force, const double &amp;total_energy, UnitCell &amp;ucell, int &amp;jstep)</td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classRelax__old.html#ade52a800a3c95d1967a11cece25d0c94">if_do_cellrelax</a>(const UnitCell &amp;ucell)</td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
+  <tr><td class="entry"><a class="el" href="classRelax__old.html#a9df44228d4b76471be4d3e7d6bf727a0">if_do_relax</a>(const UnitCell &amp;ucell)</td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classRelax__old.html#a0f8745a5cb01e80a1743ba2c190d314a">IMM</a></td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classRelax__old.html#a11f16df359d2bb2f79f2b2a9b8607f4f">init_relax</a>()</td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classRelax__old.html#ac0fc4051cee1b2060e75e78455eea8d5">init_relax</a>(const int &amp;natom)</td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classRelax__old.html#a710bc13e80c43276c8018c6ae0ce2931">LCM</a></td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr><td class="entry"><a class="el" href="classRelax__old.html#abbaac9bfb31bd988b310722e28241f90">relax_step</a>(ModuleBase::matrix force, ModuleBase::matrix stress, const int &amp;istep, int &amp;force_step, int &amp;stress_step)</td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classRelax__old.html#ae9151471fe11cbe1bcc7e80edacfbf04">relax_step</a>(const int &amp;istep, const double &amp;energy, UnitCell &amp;ucell, ModuleBase::matrix force, ModuleBase::matrix stress, int &amp;force_step, int &amp;stress_step)</td><td class="entry"><a class="el" href="classRelax__old.html">Relax_old</a></td><td class="entry"></td></tr>
 </table></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

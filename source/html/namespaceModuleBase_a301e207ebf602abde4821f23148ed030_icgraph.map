@@ -1,7 +1,6 @@
 <map id="ModuleBase::abs2" name="ModuleBase::abs2">
-<area shape="rect" id="node1" title="Sum of absolute squares of all elements in cd." alt="" coords="224,81,365,108"/>
-<area shape="rect" id="node2" href="$namespaceModuleBase.html#a47deb6998860edcc1074500495dc5632" title=" " alt="" coords="20,5,161,32"/>
-<area shape="rect" id="node3" href="$classWF__atomic.html#a71f3b80e8df8045644733b742b3bb012" title=" " alt="" coords="5,56,176,83"/>
-<area shape="rect" id="node4" href="$complexarray__test_8cpp.html#a619d18c106de66fe099dab4efe8e2d18" title=" " alt="" coords="63,107,118,133"/>
-<area shape="rect" id="node5" href="$complexmatrix__test_8cpp.html#a1522d733e92a51378c1a10c056798332" title=" " alt="" coords="56,157,125,184"/>
+<area shape="rect" id="node1" title="Sum of absolute squares of all elements in cd." alt="" coords="195,56,336,83"/>
+<area shape="rect" id="node2" href="$namespaceModuleBase.html#a47deb6998860edcc1074500495dc5632" title=" " alt="" coords="5,5,147,32"/>
+<area shape="rect" id="node3" href="$complexarray__test_8cpp.html#a619d18c106de66fe099dab4efe8e2d18" title=" " alt="" coords="49,56,103,83"/>
+<area shape="rect" id="node4" href="$complexmatrix__test_8cpp.html#a1522d733e92a51378c1a10c056798332" title=" " alt="" coords="41,107,111,133"/>
 </map>

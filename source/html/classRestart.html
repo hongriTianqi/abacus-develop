@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.0: Restart Class Reference</title>
+<title>3.2.2: Restart Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.0
-   &#160;<span id="projectnumber">2023-04-11</span>
+   <div id="projectname">3.2.2
+   &#160;<span id="projectnumber">2023-05-16</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -96,10 +96,10 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af8d8f530deb15d4316f6846d9b0017f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRestart.html#af8d8f530deb15d4316f6846d9b0017f3">save_disk</a> (const std::string mode, const int i, double **rho) const</td></tr>
-<tr class="separator:af8d8f530deb15d4316f6846d9b0017f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aceee5a5a7ae52578f8b7f4fb8d4a2a2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRestart.html#aceee5a5a7ae52578f8b7f4fb8d4a2a2c">load_disk</a> (const std::string mode, const int i, double **rho) const</td></tr>
-<tr class="separator:aceee5a5a7ae52578f8b7f4fb8d4a2a2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ddc32aab7aac3f2542e48b7f318a3c7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRestart.html#a1ddc32aab7aac3f2542e48b7f318a3c7">save_disk</a> (const std::string mode, const int is, const int nrxx, double **rho) const</td></tr>
+<tr class="separator:a1ddc32aab7aac3f2542e48b7f318a3c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab962badf580fc85812bc090962cd635d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classRestart.html#ab962badf580fc85812bc090962cd635d">load_disk</a> (const std::string mode, const int is, const int nrxx, double **rho) const</td></tr>
+<tr class="separator:ab962badf580fc85812bc090962cd635d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -122,8 +122,8 @@ Private Member Functions</h2></td></tr>
 <tr class="separator:a97552420666e3761000c4239d6ccb8ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aceee5a5a7ae52578f8b7f4fb8d4a2a2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aceee5a5a7ae52578f8b7f4fb8d4a2a2c">&#9670;&nbsp;</a></span>load_disk()</h2>
+<a id="ab962badf580fc85812bc090962cd635d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab962badf580fc85812bc090962cd635d">&#9670;&nbsp;</a></span>load_disk()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -138,7 +138,13 @@ Private Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>nrxx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -154,12 +160,22 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRestart_ab962badf580fc85812bc090962cd635d_cgraph.png" border="0" usemap="#classRestart_ab962badf580fc85812bc090962cd635d_cgraph" alt=""/></div>
+<map name="classRestart_ab962badf580fc85812bc090962cd635d_cgraph" id="classRestart_ab962badf580fc85812bc090962cd635d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,144,57"/>
+<area shape="rect" href="classRestart.html#a97552420666e3761000c4239d6ccb8ab" title=" " alt="" coords="192,5,333,32"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="381,23,564,65"/>
+</map>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRestart_aceee5a5a7ae52578f8b7f4fb8d4a2a2c_icgraph.png" border="0" usemap="#classRestart_aceee5a5a7ae52578f8b7f4fb8d4a2a2c_icgraph" alt=""/></div>
-<map name="classRestart_aceee5a5a7ae52578f8b7f4fb8d4a2a2c_icgraph" id="classRestart_aceee5a5a7ae52578f8b7f4fb8d4a2a2c_icgraph">
+<div class="center"><img src="classRestart_ab962badf580fc85812bc090962cd635d_icgraph.png" border="0" usemap="#classRestart_ab962badf580fc85812bc090962cd635d_icgraph" alt=""/></div>
+<map name="classRestart_ab962badf580fc85812bc090962cd635d_icgraph" id="classRestart_ab962badf580fc85812bc090962cd635d_icgraph">
 <area shape="rect" title=" " alt="" coords="627,46,765,73"/>
-<area shape="rect" href="classCharge.html#a6ef62c006a967148f156fa5db8fa752e" title=" " alt="" coords="453,46,579,73"/>
+<area shape="rect" href="classCharge.html#a1eb5a4819a36afe9ad0843db8f5d1957" title=" " alt="" coords="453,46,579,73"/>
 <area shape="rect" href="classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651" title=" " alt="" coords="255,39,405,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,71,207,112"/>
@@ -258,11 +274,24 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="195,5,377,47"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classRestart_a97552420666e3761000c4239d6ccb8ab_icgraph.png" border="0" usemap="#classRestart_a97552420666e3761000c4239d6ccb8ab_icgraph" alt=""/></div>
+<map name="classRestart_a97552420666e3761000c4239d6ccb8ab_icgraph" id="classRestart_a97552420666e3761000c4239d6ccb8ab_icgraph">
+<area shape="rect" title=" " alt="" coords="813,46,955,73"/>
+<area shape="rect" href="classRestart.html#ab962badf580fc85812bc090962cd635d" title=" " alt="" coords="627,46,765,73"/>
+<area shape="rect" href="classCharge.html#a1eb5a4819a36afe9ad0843db8f5d1957" title=" " alt="" coords="453,46,579,73"/>
+<area shape="rect" href="classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651" title=" " alt="" coords="255,39,405,80"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,71,207,112"/>
+</map>
+</div>
 
 </div>
 </div>
-<a id="af8d8f530deb15d4316f6846d9b0017f3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af8d8f530deb15d4316f6846d9b0017f3">&#9670;&nbsp;</a></span>save_disk()</h2>
+<a id="a1ddc32aab7aac3f2542e48b7f318a3c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1ddc32aab7aac3f2542e48b7f318a3c7">&#9670;&nbsp;</a></span>save_disk()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -277,7 +306,13 @@ Here is the call graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>i</em>, </td>
+          <td class="paramname"><em>is</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int&#160;</td>
+          <td class="paramname"><em>nrxx</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -295,8 +330,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRestart_af8d8f530deb15d4316f6846d9b0017f3_cgraph.png" border="0" usemap="#classRestart_af8d8f530deb15d4316f6846d9b0017f3_cgraph" alt=""/></div>
-<map name="classRestart_af8d8f530deb15d4316f6846d9b0017f3_cgraph" id="classRestart_af8d8f530deb15d4316f6846d9b0017f3_cgraph">
+<div class="center"><img src="classRestart_a1ddc32aab7aac3f2542e48b7f318a3c7_cgraph.png" border="0" usemap="#classRestart_a1ddc32aab7aac3f2542e48b7f318a3c7_cgraph" alt=""/></div>
+<map name="classRestart_a1ddc32aab7aac3f2542e48b7f318a3c7_cgraph" id="classRestart_a1ddc32aab7aac3f2542e48b7f318a3c7_cgraph">
 <area shape="rect" title=" " alt="" coords="5,13,148,39"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="389,5,572,47"/>
 <area shape="rect" href="classRestart.html#a368e3cb1f7ea069afa5b97057ba620e1" title=" " alt="" coords="196,38,341,65"/>
@@ -305,8 +340,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classRestart_af8d8f530deb15d4316f6846d9b0017f3_icgraph.png" border="0" usemap="#classRestart_af8d8f530deb15d4316f6846d9b0017f3_icgraph" alt=""/></div>
-<map name="classRestart_af8d8f530deb15d4316f6846d9b0017f3_icgraph" id="classRestart_af8d8f530deb15d4316f6846d9b0017f3_icgraph">
+<div class="center"><img src="classRestart_a1ddc32aab7aac3f2542e48b7f318a3c7_icgraph.png" border="0" usemap="#classRestart_a1ddc32aab7aac3f2542e48b7f318a3c7_icgraph" alt=""/></div>
+<map name="classRestart_a1ddc32aab7aac3f2542e48b7f318a3c7_icgraph" id="classRestart_a1ddc32aab7aac3f2542e48b7f318a3c7_icgraph">
 <area shape="rect" title=" " alt="" coords="237,13,380,39"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ac3772ee0b74a42065551d48c90c703c0" title=" " alt="" coords="5,5,189,47"/>
 </map>
@@ -410,7 +445,7 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classRestart_a368e3cb1f7ea069afa5b97057ba620e1_icgraph.png" border="0" usemap="#classRestart_a368e3cb1f7ea069afa5b97057ba620e1_icgraph" alt=""/></div>
 <map name="classRestart_a368e3cb1f7ea069afa5b97057ba620e1_icgraph" id="classRestart_a368e3cb1f7ea069afa5b97057ba620e1_icgraph">
 <area shape="rect" title=" " alt="" coords="428,13,573,39"/>
-<area shape="rect" href="classRestart.html#af8d8f530deb15d4316f6846d9b0017f3" title=" " alt="" coords="237,13,380,39"/>
+<area shape="rect" href="classRestart.html#a1ddc32aab7aac3f2542e48b7f318a3c7" title=" " alt="" coords="237,13,380,39"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ac3772ee0b74a42065551d48c90c703c0" title=" " alt="" coords="5,5,189,47"/>
 </map>
 </div>
@@ -462,8 +497,6 @@ Here is the caller graph for this function:</div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>module_io/<a class="el" href="restart_8h_source.html">restart.h</a></li>
-<li>module_elecstate/test/<a class="el" href="elecstate__lcao__test_8cpp.html">elecstate_lcao_test.cpp</a></li>
-<li>module_elecstate/test/<a class="el" href="updaterhok__pw__test_8h_source.html">updaterhok_pw_test.h</a></li>
 <li>module_io/<a class="el" href="restart_8cpp.html">restart.cpp</a></li>
 </ul>
 </div><!-- contents -->

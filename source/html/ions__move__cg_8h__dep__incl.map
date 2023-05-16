@@ -1,12 +1,12 @@
 <map id="module_relax/relax_old/ions_move_cg.h" name="module_relax/relax_old/ions_move_cg.h">
-<area shape="rect" id="node1" title=" " alt="" coords="255,5,414,47"/>
-<area shape="rect" id="node2" href="$ions__move__methods_8h.html" title=" " alt="" coords="235,95,435,136"/>
-<area shape="rect" id="node6" href="$ions__move__cg_8cpp.html" title=" " alt="" coords="5,452,179,493"/>
-<area shape="rect" id="node9" href="$for__testing__input__conv_8h.html" title=" " alt="" coords="471,95,633,136"/>
-<area shape="rect" id="node3" href="$relax__old_8h.html" title=" " alt="" coords="239,184,387,225"/>
-<area shape="rect" id="node7" href="$ions__move__methods_8cpp.html" title=" " alt="" coords="375,452,590,493"/>
-<area shape="rect" id="node4" href="$relax__driver_8h.html" title=" " alt="" coords="239,273,387,315"/>
-<area shape="rect" id="node8" href="$relax__old_8cpp.html" title=" " alt="" coords="203,452,351,493"/>
-<area shape="rect" id="node5" href="$global_8h.html" title=" " alt="" coords="217,363,409,404"/>
-<area shape="rect" id="node10" href="$input__conv__test_8cpp.html" title=" " alt="" coords="485,184,641,225"/>
+<area shape="rect" id="node1" title=" " alt="" coords="643,5,801,47"/>
+<area shape="rect" id="node2" href="$ions__move__methods_8h.html" title=" " alt="" coords="275,102,475,143"/>
+<area shape="rect" id="node7" href="$for__testing__input__conv_8h.html" title=" " alt="" coords="545,102,707,143"/>
+<area shape="rect" id="node9" href="$ions__move__cg_8cpp.html" title=" " alt="" coords="731,102,905,143"/>
+<area shape="rect" id="node10" href="$ions__move__cg__test_8cpp.html" title=" " alt="" coords="929,95,1083,151"/>
+<area shape="rect" id="node3" href="$relax__old_8h.html" title=" " alt="" coords="5,206,153,247"/>
+<area shape="rect" id="node5" href="$ions__move__methods_8cpp.html" title=" " alt="" coords="177,206,392,247"/>
+<area shape="rect" id="node6" href="$ions__move__methods__test_8cpp.html" title=" " alt="" coords="416,199,569,255"/>
+<area shape="rect" id="node4" href="$relax__driver_8h.html" title=" " alt="" coords="5,303,153,344"/>
+<area shape="rect" id="node8" href="$input__conv__test_8cpp.html" title=" " alt="" coords="593,206,749,247"/>
 </map>

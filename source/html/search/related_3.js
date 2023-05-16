@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['hamilt_5fpw_14299',['Hamilt_PW',['../classpseudopot__cell__vnl.html#a0312ac56e30ba90ecae12b4fbc182823',1,'pseudopot_cell_vnl']]],
-  ['hamiltpw_14300',['HamiltPW',['../classpseudopot__cell__vnl.html#a2415cc97602c1947df0ada0027ec257e',1,'pseudopot_cell_vnl']]]
+  ['lcao_5fhamilt_14093',['LCAO_Hamilt',['../classLCAO__gen__fixedH.html#ac4bda4b429b1515e1611352e6561346b',1,'LCAO_gen_fixedH']]],
+  ['lcao_5forbitals_14094',['LCAO_Orbitals',['../classNumerical__Orbital.html#ac3c1eda861c5bfa8f9d8e0cca9e718cf',1,'Numerical_Orbital']]]
 ];
