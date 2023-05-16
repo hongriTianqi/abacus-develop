@@ -39,7 +39,6 @@ UnitCell::UnitCell()
 
     itia2iat.create(1, 1);
     lc = new int[3];
-    itiaiw2iwt.create(1, 1, 1);
 
     latvec = ModuleBase::Matrix3();
     latvec_supercell = ModuleBase::Matrix3();
@@ -219,11 +218,11 @@ void UnitCell::print_cell_cif(const std::string& fn) const
     ofs << "_cell_angle_beta " << angle_beta << std::endl;
     ofs << "_cell_angle_gamma " << angle_gamma << std::endl;
     ofs << std::endl;
-    ofs << "_symmetry_space_group_name_H-M"
-        << " " << std::endl;
-    ofs << "_symmetry_Int_Tables_number"
-        << " " << std::endl;
-    ofs << std::endl;
+    // ofs << "_symmetry_space_group_name_H-M"
+    //     << " " << std::endl;
+    // ofs << "_symmetry_Int_Tables_number"
+    //     << " " << std::endl;
+    // ofs << std::endl;
     ofs << "loop_" << std::endl;
     ofs << "_atom_site_label" << std::endl;
     ofs << "_atom_site_fract_x" << std::endl;
@@ -873,7 +872,8 @@ void UnitCell::cal_nwfc(std::ofstream &log)
 	this->iwt2iw = new int[GlobalV::NLOCAL];
 
 	this->itia2iat.create(ntype, namax);
-	this->itiaiw2iwt.create(ntype, namax, nwmax*GlobalV::NPOL);
+	//this->itiaiw2iwt.create(ntype, namax, nwmax*GlobalV::NPOL);
+	this->iat2iwt.resize(nat);
 	int iat=0;
 	int iwt=0;
 	for(int it = 0;it < ntype;it++)
@@ -882,9 +882,10 @@ void UnitCell::cal_nwfc(std::ofstream &log)
 		{
 			this->itia2iat(it, ia) = iat;
 			//this->iat2ia[iat] = ia;
+			this->iat2iwt[iat] = iwt;
 			for(int iw=0; iw<atoms[it].nw * GlobalV::NPOL; iw++)
 			{
-				this->itiaiw2iwt(it, ia, iw) = iwt;
+				//this->itiaiw2iwt(it, ia, iw) = iwt;
 				this->iwt2iat[iwt] = iat;
 				this->iwt2iw[iwt] = iw;
 				++iwt;

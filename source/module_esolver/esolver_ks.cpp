@@ -35,6 +35,7 @@ namespace ModuleESolver
         GlobalC::wfcpw = this->pw_wfc; //Temporary
         ModulePW::PW_Basis_K_Big* tmp = static_cast<ModulePW::PW_Basis_K_Big*>(pw_wfc);
         tmp->setbxyz(INPUT.bx,INPUT.by,INPUT.bz);
+        GlobalC::CHR_MIX.set_rhopw(this->pw_rho);
     }
 
     template<typename FPTYPE, typename Device>
@@ -99,7 +100,7 @@ namespace ModuleESolver
         GlobalC::sf.setup_structure_factor(&GlobalC::ucell, GlobalC::rhopw);
 
         // Initialize charge extrapolation
-        CE.Init_CE();
+        CE.Init_CE(this->pw_rho->nrxx);
     }
 
     template<typename FPTYPE, typename Device>
@@ -245,13 +246,13 @@ namespace ModuleESolver
                             double bandgap_for_autoset = 0.0;
                             if (!GlobalV::TWO_EFERMI)
                             {
-                                GlobalC::en.cal_bandgap(this->pelec);
-                                bandgap_for_autoset = GlobalC::en.bandgap;
+                                this->pelec->cal_bandgap();
+                                bandgap_for_autoset = this->pelec->bandgap;
                             }
                             else
                             {
-                                GlobalC::en.cal_bandgap_updw(this->pelec);
-                                bandgap_for_autoset = std::min(GlobalC::en.bandgap_up, GlobalC::en.bandgap_dw);
+                                this->pelec->cal_bandgap_updw();
+                                bandgap_for_autoset = std::min(this->pelec->bandgap_up, this->pelec->bandgap_dw);
                             }
                             GlobalC::CHR_MIX.auto_set(bandgap_for_autoset, GlobalC::ucell);
                         }
@@ -273,7 +274,7 @@ namespace ModuleESolver
 #ifdef __MPI
                 FPTYPE duration = (FPTYPE)(MPI_Wtime() - iterstart);
 #else
-                FPTYPE duration = (std::chrono::system_clock::now() - iterstart).count() / CLOCKS_PER_SEC;
+                FPTYPE duration = (std::chrono::duration_cast<std::chrono::microseconds>(std::chrono::system_clock::now() - iterstart)).count() / static_cast<FPTYPE>(1e6);
 #endif
                 printiter(iter, drho, duration, diag_ethr);
                 if (this->conv_elec)
@@ -309,7 +310,7 @@ namespace ModuleESolver
     template<typename FPTYPE, typename Device>
     void ESolver_KS<FPTYPE, Device>::printiter(const int iter, const FPTYPE drho, const FPTYPE duration, const FPTYPE ethr)
     {
-        GlobalC::en.print_etot(this->conv_elec, iter, drho, duration, ethr);
+        this->pelec->print_etot(this->conv_elec, iter, drho, duration, INPUT.printe, ethr);
     }
 
     template<typename FPTYPE, typename Device>

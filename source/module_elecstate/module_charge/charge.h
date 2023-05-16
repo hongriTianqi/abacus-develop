@@ -4,8 +4,9 @@
 #include "module_base/complexmatrix.h"
 #include "module_base/global_function.h"
 #include "module_base/global_variable.h"
-#include "module_basis/module_pw/pw_basis.h"
 #include "module_base/parallel_global.h"
+#include "module_basis/module_pw/pw_basis.h"
+#include "module_elecstate/fp_energy.h"
 
 //==========================================================
 // Electron Charge Density
@@ -44,11 +45,13 @@ class Charge
 
     int prenspin = 1;
 
-    void init_rho();
-    // mohan update 2021-02-20
-    void allocate(const int &nspin_in, const int &nrxx_in, const int &ngmc_in);
+    void set_rhopw(ModulePW::PW_Basis* rhopw_in);
 
-    void atomic_rho(const int spin_number_need, double **rho_in, ModulePW::PW_Basis *rho_basis) const;
+    void init_rho(elecstate::efermi& eferm_iout, const ModuleBase::ComplexMatrix& strucFac);
+    // mohan update 2021-02-20
+    void allocate(const int &nspin_in);
+
+    void atomic_rho(const int spin_number_need, const double& omega, double **rho_in, const ModuleBase::ComplexMatrix &strucFac) const;
 
     void set_rho_core(const ModuleBase::ComplexMatrix &structure_factor);
 
@@ -66,8 +69,7 @@ class Charge
         const double *r,
         const double *rab,
         const double *rhoc,
-        double *rhocg,
-        ModulePW::PW_Basis* rho_basis
+        double *rhocg
     ) const;
 
 	double check_ne(const double *rho_in) const;
@@ -76,12 +78,14 @@ class Charge
 
 	public:
 
-    void rho_mpi(void);
+    void rho_mpi(const int& nbz, const int& bz);
 
     // mohan add 2021-02-20
     int nrxx; // number of r vectors in this processor
+    int nxyz; // total nuber of r vectors
     int ngmc; // number of g vectors in this processor
     int nspin; // number of spins
+    ModulePW::PW_Basis* rhopw = nullptr;
   private:
     double sum_rho(void) const;
 

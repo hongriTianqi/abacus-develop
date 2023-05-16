@@ -10,8 +10,9 @@
 #include "module_io/berryphase.h"
 #include "module_io/input.h"
 #include "module_relax/relax_old/ions_move_basic.h"
+#include "module_relax/relax_old/lattice_change_basic.h"
 #ifdef __EXX
-#include "src_ri/exx_abfs-jle.h"
+#include "module_ri/exx_abfs-jle.h"
 #endif
 #ifdef __LCAO
 #include "module_hamilt_lcao/hamilt_lcaodft/FORCE_STRESS.h"
@@ -27,6 +28,7 @@
 #include "module_elecstate/potentials/gatefield.h"
 #include "module_hsolver/hsolver_lcao.h"
 #include "module_psi/kernels/device.h"
+#include "module_md/md_func.h"
 
 template <typename T> void Input_Conv::parse_expression(const std::string &fn, std::vector<T> &vec)
 {
@@ -34,20 +36,32 @@ template <typename T> void Input_Conv::parse_expression(const std::string &fn, s
     int count = 0;
     std::string pattern("([0-9]+\\*[0-9.]+|[0-9,.]+)");
     std::vector<std::string> str;
-    std::string::size_type pos1, pos2;
-    std::string c = " ";
-    pos2 = fn.find(c);
-    pos1 = 0;
-    while (std::string::npos != pos2)
-    {
-        str.push_back(fn.substr(pos1, pos2 - pos1));
-        pos1 = pos2 + c.size();
-        pos2 = fn.find(c, pos1);
+    std::stringstream ss(fn);
+    std::string section;
+    while (ss >> section) {
+        int index = 0;
+        if (str.empty()) {
+            while (index < section.size() && std::isspace(section[index])) {
+                index++;
+            }
+        }
+        section.erase(0, index);
+        str.push_back(section);
     }
-    if (pos1 != fn.length())
-    {
-        str.push_back(fn.substr(pos1));
-    }
+    // std::string::size_type pos1, pos2;
+    // std::string c = " ";
+    // pos2 = fn.find(c);
+    // pos1 = 0;
+    // while (std::string::npos != pos2)
+    // {
+    //     str.push_back(fn.substr(pos1, pos2 - pos1));
+    //     pos1 = pos2 + c.size();
+    //     pos2 = fn.find(c, pos1);
+    // }
+    // if (pos1 != fn.length())
+    // {
+    //     str.push_back(fn.substr(pos1));
+    // }
     regex_t reg;
     regcomp(&reg, pattern.c_str(), REG_EXTENDED);
     regmatch_t pmatch[1];
@@ -91,19 +105,39 @@ template <typename T> void Input_Conv::parse_expression(const std::string &fn, s
             convert >> occ;
             vec.emplace_back(occ);
         }
+        regfree(&sub_reg);
     }
+    regfree(&reg);
 }
 
 void Input_Conv::Convert(void)
 {
     ModuleBase::TITLE("Input_Conv", "Convert");
     ModuleBase::timer::tick("Input_Conv", "Convert");
+    //-----------------------------------------------
+    // set read_file_dir
+    //-----------------------------------------------
+    if (INPUT.read_file_dir == "auto")
+    {
+        GlobalV::global_readin_dir = GlobalV::global_out_dir;
+    }
+    else
+    {
+        GlobalV::global_readin_dir = INPUT.read_file_dir + '/';
+    }
     //----------------------------------------------------------
     // main parameters / electrons / spin ( 10/16 )
     //----------------------------------------------------------
     //  suffix
-    if (INPUT.stru_file != "")
+    if (INPUT.calculation == "md" && INPUT.mdp.md_restart) // md restart  liuyu add 2023-04-12
+    {
+        int istep = MD_func::current_step(GlobalV::MY_RANK, GlobalV::global_readin_dir);
+        GlobalV::stru_file = INPUT.stru_file = GlobalV::global_stru_dir + "STRU_MD_" + std::to_string(istep);
+    }
+    else if (INPUT.stru_file != "")
+    {
         GlobalV::stru_file = INPUT.stru_file;
+    }
     GlobalV::global_wannier_card = INPUT.wannier_card;
     if (INPUT.kpoint_file != "")
         GlobalV::global_kpoint_card = INPUT.kpoint_file;
@@ -139,7 +173,10 @@ void Input_Conv::Convert(void)
         GlobalV::fixed_atoms = INPUT.fixed_atoms;
     }
 
-    GlobalV::KSPACING = INPUT.kspacing;
+    for(int i=0;i<3;i++)
+    {
+        GlobalV::KSPACING[i] = INPUT.kspacing[i];
+    }
     GlobalV::MIN_DIST_COEF = INPUT.min_dist_coef;
     GlobalV::NBANDS = INPUT.nbands;
     GlobalC::wf.pw_seed = INPUT.pw_seed;
@@ -192,7 +229,7 @@ void Input_Conv::Convert(void)
     Ions_Move_Basic::relax_bfgs_rmin = INPUT.relax_bfgs_rmin;
     Ions_Move_Basic::relax_bfgs_init = INPUT.relax_bfgs_init;
     Ions_Move_Basic::out_stru = INPUT.out_stru; // mohan add 2012-03-23
-    Lattice_Change_Basic::out_stru = INPUT.out_stru;
+    Lattice_Change_Basic::fixed_axes = INPUT.fixed_axes;
 
     GlobalV::CAL_STRESS = INPUT.cal_stress;
 
@@ -246,7 +283,6 @@ void Input_Conv::Convert(void)
     //----------------------------------------------------------
     GlobalC::wf.init_wfc = INPUT.init_wfc;
     GlobalC::wf.mem_saver = INPUT.mem_saver; // mohan add 2010-09-07
-    GlobalC::en.printe = INPUT.printe; // mohan add 2011-03-16
 #ifdef __LCAO
     if (INPUT.dft_plus_u)
     {
@@ -287,6 +323,11 @@ void Input_Conv::Convert(void)
         {
             ModuleBase::WARNING_QUIT("input_conv", "force & stress not ready for soc yet!");
         }
+
+        if(INPUT.gamma_only_local)
+        {
+            ModuleBase::WARNING_QUIT("input_conv", "soc does not support gamma only calculation");
+        }
     }
     else
     {
@@ -324,14 +365,18 @@ void Input_Conv::Convert(void)
     elecstate::Gatefield::block_up = INPUT.block_up;
     elecstate::Gatefield::block_height = INPUT.block_height;
 
+    //----------------------------------------------------------
+    // Yu Liu add 2023-05-09
+    //----------------------------------------------------------
+    INPUT.mdp.force_thr = GlobalV::FORCE_THR;
+    INPUT.mdp.my_rank = GlobalV::MY_RANK;
+    INPUT.mdp.cal_stress = GlobalV::CAL_STRESS;
+
 //----------------------------------------------------------
 // Fuxiang He add 2016-10-26
 //----------------------------------------------------------
 #ifdef __LCAO
     ELEC_evolve::td_force_dt = INPUT.td_force_dt;
-    ELEC_evolve::td_val_elec_01 = INPUT.td_val_elec_01;
-    ELEC_evolve::td_val_elec_02 = INPUT.td_val_elec_02;
-    ELEC_evolve::td_val_elec_03 = INPUT.td_val_elec_03;
     ELEC_evolve::td_vext = INPUT.td_vext;
     if (ELEC_evolve::td_vext)
     {
@@ -433,6 +478,7 @@ void Input_Conv::Convert(void)
         GlobalC::exx_info.info_global.hse_omega = INPUT.exx_hse_omega;
         GlobalC::exx_info.info_global.separate_loop = INPUT.exx_separate_loop;
         GlobalC::exx_info.info_global.hybrid_step = INPUT.exx_hybrid_step;
+        GlobalC::exx_info.info_global.mixing_beta_for_loop1 = INPUT.exx_mixing_beta;
         GlobalC::exx_info.info_lip.lambda = INPUT.exx_lambda;
 
         GlobalC::exx_info.info_ri.real_number = std::stoi(INPUT.exx_real_number);
@@ -493,7 +539,6 @@ void Input_Conv::Convert(void)
     //----------------------------------------------------------
     GlobalV::SCF_NMAX = INPUT.scf_nmax;
     GlobalV::RELAX_NMAX = INPUT.relax_nmax;
-    GlobalV::MD_NSTEP = INPUT.mdp.md_nstep;
     GlobalV::md_prec_level = INPUT.mdp.md_prec_level;
 
     //----------------------------------------------------------
@@ -508,12 +553,10 @@ void Input_Conv::Convert(void)
     GlobalV::out_pot = INPUT.out_pot;
     GlobalC::wf.out_wfc_pw = INPUT.out_wfc_pw;
     GlobalC::wf.out_wfc_r = INPUT.out_wfc_r;
-    GlobalC::en.out_dos = INPUT.out_dos;
-    GlobalC::en.out_band = INPUT.out_band;
-    GlobalC::en.out_proj_band = INPUT.out_proj_band;
     GlobalV::out_app_flag = INPUT.out_app_flag;
 
     GlobalV::out_bandgap = INPUT.out_bandgap; // QO added for bandgap printing
+    GlobalV::out_interval = INPUT.out_interval;
 #ifdef __LCAO
     Local_Orbital_Charge::out_dm = INPUT.out_dm;
     Local_Orbital_Charge::out_dm1 = INPUT.out_dm1;
@@ -521,7 +564,6 @@ void Input_Conv::Convert(void)
     hsolver::HSolverLCAO::out_mat_hsR = INPUT.out_mat_hs2; // LiuXh add 2019-07-16
     hsolver::HSolverLCAO::out_mat_t = INPUT.out_mat_t;
     hsolver::HSolverLCAO::out_mat_dh = INPUT.out_mat_dh;
-    hsolver::HSolverLCAO::out_hsR_interval = INPUT.out_hs2_interval;
     elecstate::ElecStateLCAO::out_wfc_lcao = INPUT.out_wfc_lcao;
     if (INPUT.calculation == "nscf" && !INPUT.towannier90 && !INPUT.berry_phase)
     {
@@ -532,12 +574,6 @@ void Input_Conv::Convert(void)
         ModuleBase::WARNING_QUIT("Input_conv", "test_neighbour must be done with 1 processor");
     }
 #endif
-
-    GlobalC::en.dos_emin_ev = INPUT.dos_emin_ev;
-    GlobalC::en.dos_emax_ev = INPUT.dos_emax_ev;
-    GlobalC::en.dos_edelta_ev = INPUT.dos_edelta_ev;
-    GlobalC::en.dos_scale = INPUT.dos_scale;
-    GlobalC::en.bcoeff = INPUT.dos_sigma;
 
     //----------------------------------------------------------
     // About LCAO
@@ -601,21 +637,11 @@ void Input_Conv::Convert(void)
     GlobalV::of_wt_beta = INPUT.of_wt_beta;
     GlobalV::of_wt_rho0 = INPUT.of_wt_rho0;
     GlobalV::of_hold_rho0 = INPUT.of_hold_rho0;
+    GlobalV::of_lkt_a = INPUT.of_lkt_a;
     GlobalV::of_full_pw = INPUT.of_full_pw;
     GlobalV::of_full_pw_dim = INPUT.of_full_pw_dim;
     GlobalV::of_read_kernel = INPUT.of_read_kernel;
     GlobalV::of_kernel_file = INPUT.of_kernel_file;
-    //-----------------------------------------------
-    // set read_file_dir
-    //-----------------------------------------------
-    if (INPUT.read_file_dir == "auto")
-    {
-        GlobalV::global_readin_dir = GlobalV::global_out_dir;
-    }
-    else
-    {
-        GlobalV::global_readin_dir = INPUT.read_file_dir + '/';
-    }
 
     ModuleBase::timer::tick("Input_Conv", "Convert");
     return;
