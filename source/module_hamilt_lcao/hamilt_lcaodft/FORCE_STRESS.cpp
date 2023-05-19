@@ -1,15 +1,16 @@
 #include "FORCE_STRESS.h"
-#include "module_hamilt_pw/hamilt_pwdft/global.h"
+
 #include "module_hamilt_lcao/hamilt_lcaodft/global_fp.h"
-#include "module_hamilt_lcao/module_dftu/dftu.h"  //Quxin add for DFT+U on 20201029
+#include "module_hamilt_lcao/module_dftu/dftu.h" //Quxin add for DFT+U on 20201029
+#include "module_hamilt_pw/hamilt_pwdft/global.h"
 // new
 #include "module_base/timer.h"
-#include "module_elecstate/potentials/efield.h"        // liuyu add 2022-05-18
-#include "module_hamilt_general/module_surchem/surchem.h"		 //sunml add 2022-08-10
+#include "module_elecstate/potentials/efield.h"           // liuyu add 2022-05-18
 #include "module_elecstate/potentials/gatefield.h"        // liuyu add 2022-09-13
+#include "module_hamilt_general/module_surchem/surchem.h" //sunml add 2022-08-10
 #include "module_hamilt_general/module_vdw/vdw.h"
 #ifdef __DEEPKS
-#include "module_hamilt_lcao/module_deepks/LCAO_deepks.h"	//caoyu add for deepks 2021-06-03
+#include "module_hamilt_lcao/module_deepks/LCAO_deepks.h" //caoyu add for deepks 2021-06-03
 #endif
 
 double Force_Stress_LCAO::force_invalid_threshold_ev = 0.00;
@@ -30,22 +31,23 @@ void Force_Stress_LCAO::getForceStress(
 	const psi::Psi<std::complex<double>>* psi,
     LCAO_Hamilt &uhm,
     ModuleBase::matrix& fcs,
-	ModuleBase::matrix &scs)
+	ModuleBase::matrix &scs,
+	const K_Vectors& kv)
 {
-    ModuleBase::TITLE("Force_Stress_LCAO","getForceStress");
-	ModuleBase::timer::tick("Force_Stress_LCAO","getForceStress");
-	
-	if(!isforce&&!isstress)
-	{
-		ModuleBase::timer::tick("Force_Stress_LCAO","getForceStress");
-		return;
-	} 
+    ModuleBase::TITLE("Force_Stress_LCAO", "getForceStress");
+    ModuleBase::timer::tick("Force_Stress_LCAO", "getForceStress");
 
-	const int nat = GlobalC::ucell.nat;
+    if (!isforce && !isstress)
+    {
+        ModuleBase::timer::tick("Force_Stress_LCAO", "getForceStress");
+        return;
+    }
 
-	//total force : ModuleBase::matrix fcs;
+    const int nat = GlobalC::ucell.nat;
 
-	// part of total force
+    // total force : ModuleBase::matrix fcs;
+
+    // part of total force
     ModuleBase::matrix foverlap;
     ModuleBase::matrix ftvnl_dphi;
     ModuleBase::matrix fvnl_dbeta;
@@ -53,21 +55,21 @@ void Force_Stress_LCAO::getForceStress(
     ModuleBase::matrix fvl_dvl;
     ModuleBase::matrix fewalds;
     ModuleBase::matrix fcc;
-	ModuleBase::matrix fscc;
+    ModuleBase::matrix fscc;
 
-	fvl_dphi.create (nat, 3);//must do it now, update it later, noted by zhengdy
+    fvl_dphi.create(nat, 3); // must do it now, update it later, noted by zhengdy
 
-	if(isforce)
-	{
-		fcs.create (nat, 3);
-		foverlap.create (nat, 3);
-		ftvnl_dphi.create (nat, 3);
-		fvnl_dbeta.create (nat, 3);
-		fvl_dvl.create (nat, 3);
-		fewalds.create (nat, 3);
-		fcc.create (nat, 3);
-		fscc.create (nat, 3);
-		//calculate basic terms in Force, same method with PW base
+    if (isforce)
+    {
+        fcs.create(nat, 3);
+        foverlap.create(nat, 3);
+        ftvnl_dphi.create(nat, 3);
+        fvnl_dbeta.create(nat, 3);
+        fvl_dvl.create(nat, 3);
+        fewalds.create(nat, 3);
+        fcc.create(nat, 3);
+        fscc.create(nat, 3);
+        // calculate basic terms in Force, same method with PW base
         this->calForcePwPart(fvl_dvl,
                              fewalds,
                              fcc,
@@ -134,12 +136,14 @@ void Force_Stress_LCAO::getForceStress(
 #else
                                      svl_dphi,
 #endif
-                                     uhm);
-    // implement vdw force or stress here
-    //  Peize Lin add 2014-04-04, update 2021-03-09
-    //  jiyy add 2019-05-18, update 2021-05-02
-    ModuleBase::matrix force_vdw;
-    ModuleBase::matrix stress_vdw;
+                                     uhm,
+				                             kv);
+    //implement vdw force or stress here
+	// Peize Lin add 2014-04-04, update 2021-03-09
+    // jiyy add 2019-05-18, update 2021-05-02
+	ModuleBase::matrix force_vdw;
+	ModuleBase::matrix stress_vdw;
+  
     auto vdw_solver = vdw::make_vdw(GlobalC::ucell, INPUT);
     if (vdw_solver != nullptr)
     {
@@ -167,6 +171,15 @@ void Force_Stress_LCAO::getForceStress(
         fefield.create(nat, 3);
         elecstate::Efield::compute_force(GlobalC::ucell, fefield);
     }
+
+    // implement force from E-field of tddft
+    ModuleBase::matrix fefield_tddft;
+    if (GlobalV::ESOLVER_TYPE == "TDDFT" && isforce)
+    {
+        fefield_tddft.create(nat, 3);
+        elecstate::Efield::compute_force(GlobalC::ucell, fefield_tddft);
+    }
+
     // implement force from gate field
     ModuleBase::matrix fgate;
     if (GlobalV::GATE_FLAG && isforce)
@@ -189,13 +202,13 @@ void Force_Stress_LCAO::getForceStress(
         if (isforce)
         {
             force_dftu.create(nat, 3);
-        }
-        if (isstress)
-        {
-            stress_dftu.create(3, 3);
-        }
-        GlobalC::dftu.force_stress(loc.dm_gamma, loc.dm_k, *uhm.LM, force_dftu, stress_dftu);
-    }
+		}
+		if(isstress)
+		{
+			stress_dftu.create(3, 3);
+		}
+		GlobalC::dftu.force_stress(loc.dm_gamma, loc.dm_k, *uhm.LM, force_dftu, stress_dftu, kv);
+	}
 
     if (!GlobalV::GAMMA_ONLY_LOCAL)
         this->flk.finish_k();
@@ -275,6 +288,11 @@ void Force_Stress_LCAO::getForceStress(
                 {
                     fcs(iat, i) += fefield(iat, i);
                 }
+                // E-field force of tddft
+                if (GlobalV::ESOLVER_TYPE == "TDDFT")
+                {
+                    fcs(iat, i) += fefield_tddft(iat, i);
+                }
                 // Gate field force
                 if (GlobalV::GATE_FLAG)
                 {
@@ -331,37 +349,35 @@ void Force_Stress_LCAO::getForceStress(
             GlobalC::ld.save_npy_f(fcs, "f_tot.npy", GlobalC::ucell.nat); // Ty/Bohr, F_tot
             if (GlobalV::deepks_scf)
             {
-                GlobalC::ld.save_npy_f(fcs - GlobalC::ld.F_delta, "f_base.npy", GlobalC::ucell.nat); // Ry/Bohr, F_base
+                GlobalC::ld.save_npy_f(fcs - GlobalC::ld.F_delta, "f_base.npy", GlobalC::ucell.nat); //Ry/Bohr, F_base
 
-                if (GlobalV::GAMMA_ONLY_LOCAL)
+                if(GlobalV::GAMMA_ONLY_LOCAL)
                 {
                     GlobalC::ld.cal_gdmx(loc.dm_gamma[0],
-                                         GlobalC::ucell,
-                                         GlobalC::ORB,
-                                         GlobalC::GridD,
-                                         pv->trace_loc_row,
-                                         pv->trace_loc_col,
-                                         isstress);
+                    GlobalC::ucell,
+                    GlobalC::ORB,
+                    GlobalC::GridD,
+                    pv->trace_loc_row,
+                    pv->trace_loc_col,
+                    isstress);
                 }
                 else
-                {
-                    GlobalC::ld.cal_gdmx_k(loc.dm_k,
-                                           GlobalC::ucell,
-                                           GlobalC::ORB,
-                                           GlobalC::GridD,
-                                           pv->trace_loc_row,
-                                           pv->trace_loc_col,
-                                           GlobalC::kv.nks,
-                                           GlobalC::kv.kvec_d,
-                                           isstress);
+                {			
+                  GlobalC::ld.cal_gdmx_k(loc.dm_k,
+                    GlobalC::ucell,
+                    GlobalC::ORB,
+                    GlobalC::GridD,
+                    pv->trace_loc_row,
+                    pv->trace_loc_col,
+                    kv.nks,
+                    kv.kvec_d,
+                    isstress);	
                 }
-                if (GlobalV::deepks_out_unittest)
-                    GlobalC::ld.check_gdmx(GlobalC::ucell.nat);
+                if(GlobalV::deepks_out_unittest) GlobalC::ld.check_gdmx(GlobalC::ucell.nat);
                 GlobalC::ld.cal_gvx(GlobalC::ucell.nat);
 
-                if (GlobalV::deepks_out_unittest)
-                    GlobalC::ld.check_gvx(GlobalC::ucell.nat);
-                GlobalC::ld.save_npy_gvx(GlobalC::ucell.nat); //  /Bohr, grad_vx
+                if(GlobalV::deepks_out_unittest) GlobalC::ld.check_gvx(GlobalC::ucell.nat);
+                GlobalC::ld.save_npy_gvx(GlobalC::ucell.nat);//  /Bohr, grad_vx
             }
             else
             {
@@ -417,6 +433,11 @@ void Force_Stress_LCAO::getForceStress(
             {
                 f_pw.print("EFIELD     FORCE", fefield, 0);
                 // this->print_force("EFIELD     FORCE",fefield,1,ry);
+            }
+            if (GlobalV::ESOLVER_TYPE == "TDDFT")
+            {
+                f_pw.print("EFIELD_TDDFT     FORCE", fefield_tddft, 0);
+                // this->print_force("EFIELD_TDDFT     FORCE",fefield_tddft,1,ry);
             }
             if (GlobalV::GATE_FLAG)
             {
@@ -670,9 +691,10 @@ void Force_Stress_LCAO::calForceStressIntegralPart(const bool isGammaOnly,
                                                    ModuleBase::matrix& svl_dphi,
                                                    ModuleBase::matrix& svnl_dalpha,
 #else
-                                                    ModuleBase::matrix& svl_dphi,
+                                                   ModuleBase::matrix& svl_dphi,
 #endif
-                                                   LCAO_Hamilt& uhm)
+                                                   LCAO_Hamilt &uhm,
+                                                   const K_Vectors& kv)
 {
     if (isGammaOnly)
     {
@@ -692,7 +714,7 @@ void Force_Stress_LCAO::calForceStressIntegralPart(const bool isGammaOnly,
                          svl_dphi,
                          svnl_dalpha,
 #else
-                          svl_dphi,
+                         svl_dphi,
 #endif
                          uhm);
     }
@@ -715,9 +737,10 @@ void Force_Stress_LCAO::calForceStressIntegralPart(const bool isGammaOnly,
                      svl_dphi,
                      svnl_dalpha,
 #else
-                      svl_dphi,
+                     svl_dphi,
 #endif
-                     uhm);
+                     uhm,
+				             kv);
     }
     return;
 }
@@ -760,59 +783,83 @@ void Force_Stress_LCAO::calStressPwPart(ModuleBase::matrix& sigmadvl,
     {
         sigmaxc(i, i) = -etxc / GlobalC::ucell.omega;
     }
-    //Exchange-correlation for PBE
+    // Exchange-correlation for PBE
     sc_pw.stress_gga(sigmaxc, GlobalC::rhopw, chr);
 
     return;
 }
 
 #include "module_base/mathzone.h"
-//do symmetry for total force
+// do symmetry for total force
 void Force_Stress_LCAO::forceSymmetry(ModuleBase::matrix& fcs)
 {
-	double *pos;
-	double d1,d2,d3;
-	pos = new double[GlobalC::ucell.nat*3];
-	ModuleBase::GlobalFunc::ZEROS(pos, GlobalC::ucell.nat*3);
-	int iat = 0;
-	for(int it = 0;it < GlobalC::ucell.ntype;it++)
-	{
-		for(int ia =0;ia< GlobalC::ucell.atoms[it].na;ia++)
-		{
-			pos[3*iat  ] = GlobalC::ucell.atoms[it].taud[ia].x ;
-			pos[3*iat+1] = GlobalC::ucell.atoms[it].taud[ia].y ;
-			pos[3*iat+2] = GlobalC::ucell.atoms[it].taud[ia].z;
-			for(int k=0; k<3; ++k)
-			{
-				GlobalC::symm.check_translation( pos[iat*3+k], -floor(pos[iat*3+k]));
-				GlobalC::symm.check_boundary( pos[iat*3+k] );
-			}
-			iat++;
-		}
-	}
+    double* pos;
+    double d1, d2, d3;
+    pos = new double[GlobalC::ucell.nat * 3];
+    ModuleBase::GlobalFunc::ZEROS(pos, GlobalC::ucell.nat * 3);
+    int iat = 0;
+    for (int it = 0; it < GlobalC::ucell.ntype; it++)
+    {
+        for (int ia = 0; ia < GlobalC::ucell.atoms[it].na; ia++)
+        {
+            pos[3 * iat] = GlobalC::ucell.atoms[it].taud[ia].x;
+            pos[3 * iat + 1] = GlobalC::ucell.atoms[it].taud[ia].y;
+            pos[3 * iat + 2] = GlobalC::ucell.atoms[it].taud[ia].z;
+            for (int k = 0; k < 3; ++k)
+            {
+                GlobalC::symm.check_translation(pos[iat * 3 + k], -floor(pos[iat * 3 + k]));
+                GlobalC::symm.check_boundary(pos[iat * 3 + k]);
+            }
+            iat++;
+        }
+    }
 
-	for(int iat=0; iat<GlobalC::ucell.nat; iat++)
-	{
-		ModuleBase::Mathzone::Cartesian_to_Direct(fcs(iat,0),fcs(iat,1),fcs(iat,2),
-							GlobalC::ucell.a1.x, GlobalC::ucell.a1.y, GlobalC::ucell.a1.z,
-							GlobalC::ucell.a2.x, GlobalC::ucell.a2.y, GlobalC::ucell.a2.z,
-							GlobalC::ucell.a3.x, GlobalC::ucell.a3.y, GlobalC::ucell.a3.z,
-							d1,d2,d3);
+    for (int iat = 0; iat < GlobalC::ucell.nat; iat++)
+    {
+        ModuleBase::Mathzone::Cartesian_to_Direct(fcs(iat, 0),
+                                                  fcs(iat, 1),
+                                                  fcs(iat, 2),
+                                                  GlobalC::ucell.a1.x,
+                                                  GlobalC::ucell.a1.y,
+                                                  GlobalC::ucell.a1.z,
+                                                  GlobalC::ucell.a2.x,
+                                                  GlobalC::ucell.a2.y,
+                                                  GlobalC::ucell.a2.z,
+                                                  GlobalC::ucell.a3.x,
+                                                  GlobalC::ucell.a3.y,
+                                                  GlobalC::ucell.a3.z,
+                                                  d1,
+                                                  d2,
+                                                  d3);
 
-		fcs(iat,0) = d1;fcs(iat,1) = d2;fcs(iat,2) = d3;
-	}
-	GlobalC::symm.force_symmetry(fcs , pos, GlobalC::ucell);
-	for(int iat=0; iat<GlobalC::ucell.nat; iat++)
-	{
-		ModuleBase::Mathzone::Direct_to_Cartesian(fcs(iat,0),fcs(iat,1),fcs(iat,2),
-							GlobalC::ucell.a1.x, GlobalC::ucell.a1.y, GlobalC::ucell.a1.z,
-							GlobalC::ucell.a2.x, GlobalC::ucell.a2.y, GlobalC::ucell.a2.z,
-							GlobalC::ucell.a3.x, GlobalC::ucell.a3.y, GlobalC::ucell.a3.z,
-							d1,d2,d3);
+        fcs(iat, 0) = d1;
+        fcs(iat, 1) = d2;
+        fcs(iat, 2) = d3;
+    }
+    GlobalC::symm.force_symmetry(fcs, pos, GlobalC::ucell);
+    for (int iat = 0; iat < GlobalC::ucell.nat; iat++)
+    {
+        ModuleBase::Mathzone::Direct_to_Cartesian(fcs(iat, 0),
+                                                  fcs(iat, 1),
+                                                  fcs(iat, 2),
+                                                  GlobalC::ucell.a1.x,
+                                                  GlobalC::ucell.a1.y,
+                                                  GlobalC::ucell.a1.z,
+                                                  GlobalC::ucell.a2.x,
+                                                  GlobalC::ucell.a2.y,
+                                                  GlobalC::ucell.a2.z,
+                                                  GlobalC::ucell.a3.x,
+                                                  GlobalC::ucell.a3.y,
+                                                  GlobalC::ucell.a3.z,
+                                                  d1,
+                                                  d2,
+                                                  d3);
 
-		fcs(iat,0) = d1;fcs(iat,1) = d2;fcs(iat,2) = d3;
-	}
-	//std::cout << "nrotk =" << GlobalC::symm.nrotk << std::endl;
-	delete[] pos;
-	return;
+        fcs(iat, 0) = d1;
+        fcs(iat, 1) = d2;
+        fcs(iat, 2) = d3;
+    }
+    // std::cout << "nrotk =" << GlobalC::symm.nrotk << std::endl;
+    delete[] pos;
+    return;
 }
