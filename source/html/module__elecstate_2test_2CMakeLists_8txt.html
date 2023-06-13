@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: module_elecstate/test/CMakeLists.txt File Reference</title>
+<title>3.2.4: module_elecstate/test/CMakeLists.txt File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -73,14 +73,94 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a8fef3477a22f575903d6b60176636bcf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__elecstate_2test_2CMakeLists_8txt.html#a8fef3477a22f575903d6b60176636bcf">remove_definitions</a> (-D__MPI) remove_definitions(-D__EXX) remove_definitions(-D__CUDA) remove_definitions(-D__ROCM) remove_definitions(-D__DEEPKS) <a class="el" href="module__relax_2relax__old_2test_2CMakeLists_8txt.html#a8397424e06f50f30815cdbe8d1b3db36">AddTest</a>(TARGET Elecstate_Op_UTs LIBS $</td></tr>
-<tr class="separator:a8fef3477a22f575903d6b60176636bcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8518e36aaf3b48671c816a487df1948"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__elecstate_2test_2CMakeLists_8txt.html#ab8518e36aaf3b48671c816a487df1948">remove_definitions</a> (-D__MPI) remove_definitions(-D__EXX) remove_definitions(-D__CUDA) remove_definitions(-D__UT_USE_CUDA) remove_definitions(-D__UT_USE_ROCM) remove_definitions(-D__ROCM) remove_definitions(-D__DEEPKS) remove_definitions(-D_OPENMP) <a class="el" href="module__relax_2relax__old_2test_2CMakeLists_8txt.html#a8397424e06f50f30815cdbe8d1b3db36">AddTest</a>(TARGET Elecstate_Op_UTs LIBS $</td></tr>
+<tr class="separator:ab8518e36aaf3b48671c816a487df1948"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af0413ad3e84d01d53ee3a40c4abbba53"><td class="memItemLeft" align="right" valign="top">psi base device SOURCES kernels test elecstate_op_test cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__elecstate_2test_2CMakeLists_8txt.html#af0413ad3e84d01d53ee3a40c4abbba53">AddTest</a> (TARGET elecstate_occupy LIBS ${math_libs} base device SOURCES elecstate_occupy_test.cpp ../occupy.cpp) AddTest(TARGET elecstate_magnetism LIBS $</td></tr>
 <tr class="separator:af0413ad3e84d01d53ee3a40c4abbba53"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab79260e05cbc76316007058f142d52e"><td class="memItemLeft" align="right" valign="top">base device SOURCES elecstate_magnetism_test cpp magnetism cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__elecstate_2test_2CMakeLists_8txt.html#aab79260e05cbc76316007058f142d52e">AddTest</a> (TARGET elecstate_fp_energy LIBS ${math_libs} base device SOURCES elecstate_fp_energy_test.cpp ../fp_energy.cpp) AddTest(TARGET elecstate_print LIBS $</td></tr>
+<tr class="separator:aab79260e05cbc76316007058f142d52e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4b10b180c69ed194b7c0a92c4a5fda04"><td class="memItemLeft" align="right" valign="top">base device SOURCES elecstate_print_test cpp elecstate_print cpp occupy cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__elecstate_2test_2CMakeLists_8txt.html#a4b10b180c69ed194b7c0a92c4a5fda04">AddTest</a> (TARGET elecstate_base LIBS ${math_libs} base device SOURCES elecstate_base_test.cpp ../elecstate.cpp ../occupy.cpp ../../module_psi/psi.cpp) AddTest(TARGET elecstate_pw LIBS $</td></tr>
+<tr class="separator:a4b10b180c69ed194b7c0a92c4a5fda04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab28d21b9ab343d226ce6d73924574bc5"><td class="memItemLeft" align="right" valign="top">base device SOURCES elecstate_pw_test cpp elecstate_pw cpp elecstate cpp occupy cpp module_psi psi cpp module_basis module_pw pw_basis_k cpp module_basis module_pw pw_basis cpp module_basis module_pw pw_init cpp module_basis module_pw pw_distributeg cpp module_basis module_pw pw_distributer cpp module_basis module_pw pw_distributeg_method1 cpp module_basis module_pw pw_distributeg_method2 cpp module_basis module_pw pw_transform_k cpp module_basis module_pw fft cpp module_psi kernels memory_op cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__elecstate_2test_2CMakeLists_8txt.html#ab28d21b9ab343d226ce6d73924574bc5">AddTest</a> (TARGET elecstate_energy LIBS ${math_libs} base device SOURCES elecstate_energy_test.cpp ../elecstate_energy.cpp ../fp_energy.cpp) AddTest(TARGET potentials_base SOURCES potentials_base_test.cpp) AddTest(TARGET potentials_new LIBS $</td></tr>
+<tr class="separator:ab28d21b9ab343d226ce6d73924574bc5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab5a22f7d9cc19abb471df343691abd8c"><td class="memItemLeft" align="right" valign="top">base device SOURCES potential_new_test cpp potentials potential_new cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__elecstate_2test_2CMakeLists_8txt.html#ab5a22f7d9cc19abb471df343691abd8c">AddTest</a> (TARGET charge_test LIBS ${math_libs} base device SOURCES charge_test.cpp ../module_charge/charge.cpp ../../module_basis/module_pw/pw_basis.cpp ../../module_basis/module_pw/pw_init.cpp ../../module_basis/module_pw/pw_distributeg.cpp ../../module_basis/module_pw/pw_distributer.cpp ../../module_basis/module_pw/pw_distributeg_method1.cpp ../../module_basis/module_pw/pw_distributeg_method2.cpp ../../module_basis/module_pw/pw_transform.cpp ../../module_basis/module_pw/fft.cpp ../../module_cell/unitcell.cpp ../../module_cell/read_atoms.cpp ../../module_cell/read_cell_pseudopots.cpp ../../module_cell/atom_spec.cpp ../../module_cell/atom_pseudo.cpp ../../module_cell/pseudo_nc.cpp ../../module_cell/read_pp.cpp ../../module_cell/read_pp_upf201.cpp ../../module_cell/read_pp_upf100.cpp ../../module_cell/read_pp_vwr.cpp ../../module_cell/read_pp_blps.cpp ../../module_io/output.cpp) AddTest(TARGET charge_mixing LIBS base $</td></tr>
+<tr class="separator:ab5a22f7d9cc19abb471df343691abd8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="ab5a22f7d9cc19abb471df343691abd8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab5a22f7d9cc19abb471df343691abd8c">&#9670;&nbsp;</a></span>AddTest() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">base device SOURCES potential_new_test cpp potentials potential_new cpp AddTest </td>
+          <td>(</td>
+          <td class="paramtype">TARGET charge_test LIBS ${math_libs} base device SOURCES charge_test.cpp ../module_charge/charge.cpp ../../module_basis/module_pw/pw_basis.cpp ../../module_basis/module_pw/pw_init.cpp ../../module_basis/module_pw/pw_distributeg.cpp ../../module_basis/module_pw/pw_distributer.cpp ../../module_basis/module_pw/pw_distributeg_method1.cpp ../../module_basis/module_pw/pw_distributeg_method2.cpp ../../module_basis/module_pw/pw_transform.cpp ../../module_basis/module_pw/fft.cpp ../../module_cell/unitcell.cpp ../../module_cell/read_atoms.cpp ../../module_cell/read_cell_pseudopots.cpp ../../module_cell/atom_spec.cpp ../../module_cell/atom_pseudo.cpp ../../module_cell/pseudo_nc.cpp ../../module_cell/read_pp.cpp ../../module_cell/read_pp_upf201.cpp ../../module_cell/read_pp_upf100.cpp ../../module_cell/read_pp_vwr.cpp ../../module_cell/read_pp_blps.cpp ../../module_io/output.&#160;</td>
+          <td class="paramname"><em>cpp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b10b180c69ed194b7c0a92c4a5fda04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b10b180c69ed194b7c0a92c4a5fda04">&#9670;&nbsp;</a></span>AddTest() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">base device SOURCES elecstate_print_test cpp elecstate_print cpp occupy cpp AddTest </td>
+          <td>(</td>
+          <td class="paramtype">TARGET elecstate_base LIBS ${math_libs} base device SOURCES elecstate_base_test.cpp ../elecstate.cpp ../occupy.cpp ../../module_psi/psi.&#160;</td>
+          <td class="paramname"><em>cpp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab28d21b9ab343d226ce6d73924574bc5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab28d21b9ab343d226ce6d73924574bc5">&#9670;&nbsp;</a></span>AddTest() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">base device SOURCES elecstate_pw_test cpp elecstate_pw cpp elecstate cpp occupy cpp module_psi psi cpp module_basis module_pw pw_basis_k cpp module_basis module_pw pw_basis cpp module_basis module_pw pw_init cpp module_basis module_pw pw_distributeg cpp module_basis module_pw pw_distributer cpp module_basis module_pw pw_distributeg_method1 cpp module_basis module_pw pw_distributeg_method2 cpp module_basis module_pw pw_transform_k cpp module_basis module_pw fft cpp module_psi kernels memory_op cpp AddTest </td>
+          <td>(</td>
+          <td class="paramtype">TARGET elecstate_energy LIBS ${math_libs} base device SOURCES elecstate_energy_test.cpp ../elecstate_energy.cpp ../fp_energy.&#160;</td>
+          <td class="paramname"><em>cpp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aab79260e05cbc76316007058f142d52e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab79260e05cbc76316007058f142d52e">&#9670;&nbsp;</a></span>AddTest() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">base device SOURCES elecstate_magnetism_test cpp magnetism cpp AddTest </td>
+          <td>(</td>
+          <td class="paramtype">TARGET elecstate_fp_energy LIBS ${math_libs} base device SOURCES elecstate_fp_energy_test.cpp ../fp_energy.&#160;</td>
+          <td class="paramname"><em>cpp</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
 <a id="af0413ad3e84d01d53ee3a40c4abbba53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af0413ad3e84d01d53ee3a40c4abbba53">&#9670;&nbsp;</a></span>AddTest()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#af0413ad3e84d01d53ee3a40c4abbba53">&#9670;&nbsp;</a></span>AddTest() <span class="overload">[5/5]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -97,8 +177,8 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a8fef3477a22f575903d6b60176636bcf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8fef3477a22f575903d6b60176636bcf">&#9670;&nbsp;</a></span>remove_definitions()</h2>
+<a id="ab8518e36aaf3b48671c816a487df1948"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8518e36aaf3b48671c816a487df1948">&#9670;&nbsp;</a></span>remove_definitions()</h2>
 
 <div class="memitem">
 <div class="memproto">

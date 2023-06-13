@@ -1,8 +1,7 @@
 <map id="hamilt::Operator::add" name="hamilt::Operator::add">
-<area shape="rect" id="node1" title=" " alt="" coords="519,107,680,134"/>
-<area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a23818a48729e12b585d49e93532bf9c0" title=" " alt="" coords="255,5,471,47"/>
-<area shape="rect" id="node3" href="$classhamilt_1_1HamiltLCAO.html#ae1603158638b3df141cfcd0120c102c1" title=" " alt="" coords="287,71,438,112"/>
-<area shape="rect" id="node4" href="$classhamilt_1_1HamiltPW.html#a241426d6aa506dcface977a6bda6c4fb" title=" " alt="" coords="258,137,467,163"/>
-<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a624766fb2ebfccd12416cb7dd89b0f70" title=" " alt="" coords="275,188,451,229"/>
-<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,188,207,229"/>
+<area shape="rect" id="node1" title=" " alt="" coords="512,71,673,98"/>
+<area shape="rect" id="node2" href="$classhamilt_1_1HamiltLCAO.html#a0c41a21eaebc11c8d3c94c2e1a810bf5" title=" " alt="" coords="284,5,435,47"/>
+<area shape="rect" id="node3" href="$classhamilt_1_1HamiltPW.html#a241426d6aa506dcface977a6bda6c4fb" title=" " alt="" coords="255,71,464,98"/>
+<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a624766fb2ebfccd12416cb7dd89b0f70" title=" " alt="" coords="271,123,447,164"/>
+<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,123,207,164"/>
 </map>

@@ -2,11 +2,11 @@
 <area shape="rect" id="node1" title=" " alt="" coords="472,187,649,229"/>
 <area shape="rect" id="node2" href="$namespaceModuleIO.html#a2deddafb1cb5949c20e093db8eb715cb" title=" " alt="" coords="243,81,424,108"/>
 <area shape="rect" id="node6" href="$classelecstate_1_1ElecState.html#aee098bd1a0a4792cca287ca7bd76c3d6" title=" " alt="" coords="258,158,409,199"/>
-<area shape="rect" id="node8" href="$classOccupy.html#a46bb4260cf8057b461253407838a6204" title=" " alt="" coords="273,224,394,251"/>
+<area shape="rect" id="node8" href="$classOccupy.html#a6e8d1146846d1fa1fee72b915ad2d1b6" title="This function computes the number of states under a given energy e." alt="" coords="273,224,394,251"/>
 <area shape="rect" id="node10" href="$parallel__reduce__test_8cpp.html#a744e91b21f098acdbe551196d445d739" title=" " alt="" coords="299,275,368,301"/>
-<area shape="rect" id="node3" href="$dos__test_8cpp.html#abe39b5b710352d3e1e78c5677856c2af" title=" " alt="" coords="65,5,135,32"/>
+<area shape="rect" id="node3" href="$cal__dos__test_8cpp.html#abe39b5b710352d3e1e78c5677856c2af" title=" " alt="" coords="65,5,135,32"/>
 <area shape="rect" id="node4" href="$namespaceModuleIO.html#a40359ef286084e2268cff872dd4677d5" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="5,56,195,83"/>
 <area shape="rect" id="node5" href="$namespaceModuleIO.html#adafa0eec4d754ce86305d801bf52ecb6" title="calculate density of states(DOS) for PW base" alt="" coords="9,107,191,133"/>
 <area shape="rect" id="node7" href="$classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="7,158,193,199"/>
-<area shape="rect" id="node9" href="$classOccupy.html#a8859bd7135067293db02c90d0115cfd2" title=" " alt="" coords="36,224,164,251"/>
+<area shape="rect" id="node9" href="$classOccupy.html#ab3385272163a2f655fa9f17412c41b55" title="Finds the Fermi energy." alt="" coords="36,224,164,251"/>
 </map>

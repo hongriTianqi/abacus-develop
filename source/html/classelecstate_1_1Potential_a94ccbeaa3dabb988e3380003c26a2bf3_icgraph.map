@@ -1,5 +1,6 @@
 <map id="elecstate::Potential::pot_register" name="elecstate::Potential::pot_register">
-<area shape="rect" id="node1" title=" " alt="" coords="263,35,411,76"/>
-<area shape="rect" id="node2" href="$classhamilt_1_1HamiltLCAO.html#a633d50610a09a6b27036abc5e02ff04d" title=" " alt="" coords="35,5,185,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="263,64,411,105"/>
+<area shape="rect" id="node2" href="$classhamilt_1_1HamiltLCAO.html#a4db0b36f2a3550b0d35f26d97af76e4d" title=" " alt="" coords="35,5,185,47"/>
 <area shape="rect" id="node3" href="$classhamilt_1_1HamiltPW.html#a241426d6aa506dcface977a6bda6c4fb" title=" " alt="" coords="5,71,215,98"/>
+<area shape="rect" id="node4" href="$potential__new__test_8cpp.html#a2eecec8cc8e3d8e8c7358c23a60ea547" title=" " alt="" coords="75,122,145,149"/>
 </map>

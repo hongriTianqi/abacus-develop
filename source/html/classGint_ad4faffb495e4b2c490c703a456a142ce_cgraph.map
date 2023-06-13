@@ -2,11 +2,11 @@
 <area shape="rect" id="node1" title=" " alt="" coords="5,137,180,163"/>
 <area shape="rect" id="node2" href="$classGint.html#a6f661ded23f7bf6a7313205b884f6a7d" title=" " alt="" coords="253,5,395,47"/>
 <area shape="rect" id="node4" href="$classGint.html#a2f675360199067e33647808da60da051" title=" " alt="" coords="253,71,395,112"/>
-<area shape="rect" id="node6" href="$namespaceGint__Tools.html#a68d2d5b656d38608610e873decdf1132" title=" " alt="" coords="235,137,413,163"/>
-<area shape="rect" id="node9" href="$namespaceGint__Tools.html#a3fe28976d650f9238c2225d00af23634" title=" " alt="" coords="228,187,420,214"/>
-<area shape="rect" id="node10" href="$namespaceGint__Tools.html#ab3ecfb5981a5b52f1343a32b179bdd01" title=" " alt="" coords="249,239,399,280"/>
-<area shape="rect" id="node3" href="$blas__connector_8h.html#acd91e478fc0b939313049e2e895a39e1" title=" " alt="" coords="532,21,611,47"/>
-<area shape="rect" id="node5" href="$gint__vl_8cpp.html#afacced1a01058a0970ec5972ed90df8d" title=" " alt="" coords="526,78,617,105"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1Ylm.html#a3226b51ada4223b1c81f0de127046a03" title="Get the ylm real object (used in grid integration)" alt="" coords="468,133,675,159"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="483,183,660,210"/>
+<area shape="rect" id="node7" href="$namespaceGint__Tools.html#a7393024c715d070fce4e16d4c340c32e" title=" " alt="" coords="235,137,413,163"/>
+<area shape="rect" id="node9" href="$namespaceGint__Tools.html#aa70e661ca9e3329d602b48da05a1c24f" title=" " alt="" coords="228,187,420,214"/>
+<area shape="rect" id="node10" href="$namespaceGint__Tools.html#ae732d79b96811440ed7094347ddb54cf" title=" " alt="" coords="249,239,399,280"/>
+<area shape="rect" id="node3" href="$blas__connector_8h.html#acd91e478fc0b939313049e2e895a39e1" title=" " alt="" coords="532,13,611,39"/>
+<area shape="rect" id="node5" href="$classGrid__Technique.html#a6620a69b822ed659b7cf3792d3e12b1b" title=" " alt="" coords="486,64,657,105"/>
+<area shape="rect" id="node6" href="$classGrid__Technique.html#a49a2a597a7b490f5ef4eacd01e98f414" title=" " alt="" coords="497,129,645,171"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1Ylm.html#a3226b51ada4223b1c81f0de127046a03" title="Get the ylm real object (used in grid integration)" alt="" coords="468,195,675,222"/>
 </map>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: elecstate Namespace Reference</title>
+<title>3.2.4: elecstate Namespace Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -66,7 +66,8 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle">
 <div class="title">elecstate Namespace Reference</div>  </div>
 </div><!--header-->
@@ -101,6 +102,10 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1H__TDDFT__pw.html">H_TDDFT_pw</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1MockElecState.html">MockElecState</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1MockPot.html">MockPot</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1PotBase.html">PotBase</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classelecstate_1_1PotEfield.html">PotEfield</a></td></tr>
@@ -125,9 +130,108 @@ Functions</h2></td></tr>
 <tr class="memitem:a26ab0eedda8028c108ec7965b68f7fd6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#a26ab0eedda8028c108ec7965b68f7fd6">cal_dm</a> (const <a class="el" href="structParallel__Orbitals.html">Parallel_Orbitals</a> *ParaV, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg, const <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; &amp;wfc, std::vector&lt; <a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &gt; &amp;dm)</td></tr>
 <tr class="separator:a26ab0eedda8028c108ec7965b68f7fd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb96cf9fc561d8074c7ef6cbf487377b"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#abb96cf9fc561d8074c7ef6cbf487377b">get_ucell_omega</a> ()</td></tr>
+<tr class="memdesc:abb96cf9fc561d8074c7ef6cbf487377b"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the value of GlobalC::ucell.omega  <a href="namespaceelecstate.html#abb96cf9fc561d8074c7ef6cbf487377b">More...</a><br /></td></tr>
 <tr class="separator:abb96cf9fc561d8074c7ef6cbf487377b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78712b5792eac5a8eb16510f12d2ffdd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#a78712b5792eac5a8eb16510f12d2ffdd">get_ucell_tpiba</a> ()</td></tr>
+<tr class="memdesc:a78712b5792eac5a8eb16510f12d2ffdd"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the value of GlobalC::ucell.tpiba  <a href="namespaceelecstate.html#a78712b5792eac5a8eb16510f12d2ffdd">More...</a><br /></td></tr>
+<tr class="separator:a78712b5792eac5a8eb16510f12d2ffdd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12c4e4e71cc5208ffd2994dee1d5e444"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#a12c4e4e71cc5208ffd2994dee1d5e444">get_xc_func_type</a> ()</td></tr>
+<tr class="memdesc:a12c4e4e71cc5208ffd2994dee1d5e444"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the value of <a class="el" href="classXC__Functional.html#aad6a458ca9ce9a24a1d74f693fdfb013">XC_Functional::func_type</a>  <a href="namespaceelecstate.html#a12c4e4e71cc5208ffd2994dee1d5e444">More...</a><br /></td></tr>
+<tr class="separator:a12c4e4e71cc5208ffd2994dee1d5e444"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac38df367870f90c3cdb45409beb5fb32"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#ac38df367870f90c3cdb45409beb5fb32">get_input_vdw_method</a> ()</td></tr>
+<tr class="memdesc:ac38df367870f90c3cdb45409beb5fb32"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the value of INPUT.vdw_method  <a href="namespaceelecstate.html#ac38df367870f90c3cdb45409beb5fb32">More...</a><br /></td></tr>
+<tr class="separator:ac38df367870f90c3cdb45409beb5fb32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9717a85c48a4758436a909e556e816d3"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#a9717a85c48a4758436a909e556e816d3">get_ucell_tot_magnetization</a> ()</td></tr>
+<tr class="memdesc:a9717a85c48a4758436a909e556e816d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the value of GlobalC::ucell.magnet.tot_magnetization  <a href="namespaceelecstate.html#a9717a85c48a4758436a909e556e816d3">More...</a><br /></td></tr>
+<tr class="separator:a9717a85c48a4758436a909e556e816d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33644269a26a092fc05b00e1b331f867"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#a33644269a26a092fc05b00e1b331f867">get_ucell_abs_magnetization</a> ()</td></tr>
+<tr class="memdesc:a33644269a26a092fc05b00e1b331f867"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the value of GlobalC::ucell.magnet.abs_magnetization  <a href="namespaceelecstate.html#a33644269a26a092fc05b00e1b331f867">More...</a><br /></td></tr>
+<tr class="separator:a33644269a26a092fc05b00e1b331f867"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0f56c76a42ffdda8318c9f3ee9f819a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#ac0f56c76a42ffdda8318c9f3ee9f819a">get_ucell_tot_magnetization_nc_x</a> ()</td></tr>
+<tr class="memdesc:ac0f56c76a42ffdda8318c9f3ee9f819a"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the value of GlobalC::ucell.magnet.tot_magnetization_nc[0]  <a href="namespaceelecstate.html#ac0f56c76a42ffdda8318c9f3ee9f819a">More...</a><br /></td></tr>
+<tr class="separator:ac0f56c76a42ffdda8318c9f3ee9f819a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b109cfed2fec8b60c2c00834d3130e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#ae4b109cfed2fec8b60c2c00834d3130e">get_ucell_tot_magnetization_nc_y</a> ()</td></tr>
+<tr class="memdesc:ae4b109cfed2fec8b60c2c00834d3130e"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the value of GlobalC::ucell.magnet.tot_magnetization_nc[1]  <a href="namespaceelecstate.html#ae4b109cfed2fec8b60c2c00834d3130e">More...</a><br /></td></tr>
+<tr class="separator:ae4b109cfed2fec8b60c2c00834d3130e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad17b26b0a9c4b532483f7fa2e2928395"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#ad17b26b0a9c4b532483f7fa2e2928395">get_ucell_tot_magnetization_nc_z</a> ()</td></tr>
+<tr class="memdesc:ad17b26b0a9c4b532483f7fa2e2928395"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the value of GlobalC::ucell.magnet.tot_magnetization_nc[2]  <a href="namespaceelecstate.html#ad17b26b0a9c4b532483f7fa2e2928395">More...</a><br /></td></tr>
+<tr class="separator:ad17b26b0a9c4b532483f7fa2e2928395"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8f76041a76988c7c8ec0c04406d7a44"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#ab8f76041a76988c7c8ec0c04406d7a44">get_ks_solver_type</a> ()</td></tr>
+<tr class="memdesc:ab8f76041a76988c7c8ec0c04406d7a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">get the type of KS_SOLVER  <a href="namespaceelecstate.html#ab8f76041a76988c7c8ec0c04406d7a44">More...</a><br /></td></tr>
+<tr class="separator:ab8f76041a76988c7c8ec0c04406d7a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f7fe70b8f9815394ab28d248e7abd06"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#a5f7fe70b8f9815394ab28d248e7abd06">Set_GlobalV_Default</a> ()</td></tr>
+<tr class="separator:a5f7fe70b8f9815394ab28d248e7abd06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a480064d78bb3af6087bdb9f905496c3f"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#a480064d78bb3af6087bdb9f905496c3f">tmp_xc_func_type</a> = 1</td></tr>
+<tr class="separator:a480064d78bb3af6087bdb9f905496c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acb7d4850cfa7848e68f649ae84f9c07e"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#acb7d4850cfa7848e68f649ae84f9c07e">tmp_ucell_omega</a> = 500.0</td></tr>
+<tr class="separator:acb7d4850cfa7848e68f649ae84f9c07e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28e5ebc65e2d29556203ea24a3c40dbc"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#a28e5ebc65e2d29556203ea24a3c40dbc">tmp_gridecut</a> = 80.0</td></tr>
+<tr class="separator:a28e5ebc65e2d29556203ea24a3c40dbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a80d43b7a9f504dd7ef6d090fd081fd62"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#a80d43b7a9f504dd7ef6d090fd081fd62">tmp_vdw_method</a> = &quot;d2&quot;</td></tr>
+<tr class="separator:a80d43b7a9f504dd7ef6d090fd081fd62"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a375af8bc03f890cc17df2dcdcdc6ab10"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceelecstate.html#a375af8bc03f890cc17df2dcdcdc6ab10">tmp_ks_solver</a> = &quot;dav&quot;</td></tr>
+<tr class="separator:a375af8bc03f890cc17df2dcdcdc6ab10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><ul>
+<li>Tested Functions:<ul>
+<li>InitNelecSpin: <a class="el" href="classelecstate_1_1ElecState.html#a8970f18371cd1752de00db4e8adb7532">elecstate::ElecState::init_nelec_spin()</a><ul>
+<li>determine the number of electrons for spin up and down</li>
+</ul>
+</li>
+<li>Constructor: <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState(charge, rhopw, bigpw)</a><ul>
+<li>constructor <a class="el" href="classelecstate_1_1ElecState.html">ElecState</a> using existing charge, rhopw, bigpw</li>
+</ul>
+</li>
+<li>CalNbands: <a class="el" href="classelecstate_1_1ElecState.html#aa1f8dff7a14373ce13729866ec6df3dc">elecstate::ElecState::cal_nbands()</a><ul>
+<li>calculate the number of bands</li>
+</ul>
+</li>
+<li>InitKS: <a class="el" href="classelecstate_1_1ElecState.html#a5037379556b160c93b7f877bcf16c8f2">elecstate::ElecState::init_ks()</a><ul>
+<li>initialize the elecstate for KS-DFT</li>
+</ul>
+</li>
+<li>GetRho: <a class="el" href="classelecstate_1_1ElecState.html#a39871cdb12d68aa39e54df58d36f1804">elecstate::ElecState::getRho()</a><ul>
+<li>get the pointer to this-&gt;charge-&gt;rho</li>
+</ul>
+</li>
+<li>VirtualBaseFuncs:<ul>
+<li>trivial calling to virtual functions including<ul>
+<li><a class="el" href="classelecstate_1_1ElecState.html#a95d9ce13f8e55476dc3d98a21ff9efe7">elecstate::ElecState::psiToRho()</a></li>
+<li><a class="el" href="classelecstate_1_1ElecState.html#ae8907bc22f379514af3ac43b4305bb18">elecstate::ElecState::print_psi()</a></li>
+<li><a class="el" href="classelecstate_1_1ElecState.html#abdcecb9f8ba77345bf291692d28e012c">elecstate::ElecState::getNewRho()</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>InitSCF: <a class="el" href="classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651">elecstate::ElecState::init_scf()</a></p><ul>
+<li>trivial calling to <a class="el" href="classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651">elecstate::ElecState::init_scf()</a></li>
+<li>the production function is init charge and pot for scf calculation</li>
+</ul>
+<p>FixedWeights: <a class="el" href="classelecstate_1_1ElecState.html#af3ed7bb583f331c27623231416504da2">elecstate::ElecState::fixed_weights()</a></p><ul>
+<li>fix wg using external weights: ocp_kb</li>
+</ul>
+<p>CalEBand: elecstate::ElecState::cal_eband()</p><ul>
+<li>calculate the electronic states energy contribution to total energy</li>
+</ul>
+<p>CalculateWeights: <a class="el" href="classelecstate_1_1ElecState.html#aee098bd1a0a4792cca287ca7bd76c3d6">elecstate::ElecState::calculate_weights()</a></p><ul>
+<li>calculate the weights for each electronic state</li>
+</ul>
+<p>Tested functions:</p>
+<ul>
+<li>Tested functions:<ul>
+<li><a class="el" href="classelecstate_1_1PotBase.html#a43c60802d0a92be011e071d4109e764c">elecstate::PotBase::cal_v_eff()</a></li>
+<li><a class="el" href="classelecstate_1_1PotBase.html#a077edb559b3c3f5f8678bcfc50c56a16">elecstate::PotBase::cal_fixed_v()</a> </li>
+</ul>
+</li>
+</ul>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a6d2a47f8eaa9f0592a121e8c62a97240"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6d2a47f8eaa9f0592a121e8c62a97240">&#9670;&nbsp;</a></span>cal_dm() <span class="overload">[1/2]</span></h2>
 
@@ -195,16 +299,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceelecstate_a6d2a47f8eaa9f0592a121e8c62a97240_icgraph.png" border="0" usemap="#namespaceelecstate_a6d2a47f8eaa9f0592a121e8c62a97240_icgraph" alt=""/></div>
 <map name="namespaceelecstate_a6d2a47f8eaa9f0592a121e8c62a97240_icgraph" id="namespaceelecstate_a6d2a47f8eaa9f0592a121e8c62a97240_icgraph">
-<area shape="rect" title=" " alt="" coords="561,137,699,163"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="317,5,493,47"/>
-<area shape="rect" href="classForce__LCAO__gamma.html#a2a22f95726bb35ea7be05a5206d09c30" title=" " alt="" coords="313,71,496,112"/>
-<area shape="rect" href="classForce__LCAO__k.html#aca4b159d50c6caf376b785828dbd8fae" title=" " alt="" coords="296,137,513,163"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="311,188,498,229"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="311,253,498,295"/>
-<area shape="rect" href="classForce__LCAO__gamma.html#a1f1d4ecc486d17e6201f5a8a4d29942b" title=" " alt="" coords="26,71,227,112"/>
-<area shape="rect" href="classForce__LCAO__k.html#ae2c554f465bc6b480664f9cf3fbd9919" title=" " alt="" coords="39,137,214,163"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="17,188,236,229"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="5,253,248,295"/>
+<area shape="rect" title=" " alt="" coords="800,130,937,157"/>
+<area shape="rect" href="classForce__LCAO__gamma.html#a2a22f95726bb35ea7be05a5206d09c30" title=" " alt="" coords="552,5,735,47"/>
+<area shape="rect" href="classForce__LCAO__k.html#aff30c5f623bbe61981990b4204768eef" title=" " alt="" coords="535,71,752,98"/>
+<area shape="rect" href="classLCAO__Deepks__Interface.html#ae64410a1bbe9b895c0a4f1c1292fb365" title="output deepks&#45;related labels, descriptors and energy corrections" alt="" coords="554,123,733,164"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="550,188,737,229"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="550,253,737,295"/>
+<area shape="rect" href="classForce__LCAO__gamma.html#a1f1d4ecc486d17e6201f5a8a4d29942b" title=" " alt="" coords="265,5,466,47"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#affbd210d5611a9c86225eadbc879e87a" title=" " alt="" coords="5,35,196,76"/>
+<area shape="rect" href="classForce__LCAO__k.html#a98faf22de1275401637f4642f93a2f72" title=" " alt="" coords="278,71,453,98"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="244,253,487,295"/>
 </map>
 </div>
 
@@ -275,6 +379,90 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
+<a id="ac38df367870f90c3cdb45409beb5fb32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac38df367870f90c3cdb45409beb5fb32">&#9670;&nbsp;</a></span>get_input_vdw_method()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string elecstate::get_input_vdw_method </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the value of INPUT.vdw_method </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceelecstate_ac38df367870f90c3cdb45409beb5fb32_icgraph.png" border="0" usemap="#namespaceelecstate_ac38df367870f90c3cdb45409beb5fb32_icgraph" alt=""/></div>
+<map name="namespaceelecstate_ac38df367870f90c3cdb45409beb5fb32_icgraph" id="namespaceelecstate_ac38df367870f90c3cdb45409beb5fb32_icgraph">
+<area shape="rect" title="get the value of INPUT.vdw_method" alt="" coords="204,5,355,47"/>
+<area shape="rect" href="classelecstate_1_1ElecState.html#ac248e5b117b53224f8f214e755a9a0f6" title="print total free energy and other energies" alt="" coords="5,5,156,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab8f76041a76988c7c8ec0c04406d7a44"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8f76041a76988c7c8ec0c04406d7a44">&#9670;&nbsp;</a></span>get_ks_solver_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string elecstate::get_ks_solver_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the type of KS_SOLVER </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceelecstate_ab8f76041a76988c7c8ec0c04406d7a44_icgraph.png" border="0" usemap="#namespaceelecstate_ab8f76041a76988c7c8ec0c04406d7a44_icgraph" alt=""/></div>
+<map name="namespaceelecstate_ab8f76041a76988c7c8ec0c04406d7a44_icgraph" id="namespaceelecstate_ab8f76041a76988c7c8ec0c04406d7a44_icgraph">
+<area shape="rect" title="get the type of KS_SOLVER" alt="" coords="204,13,420,39"/>
+<area shape="rect" href="classelecstate_1_1ElecState.html#ac248e5b117b53224f8f214e755a9a0f6" title="print total free energy and other energies" alt="" coords="5,5,156,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a33644269a26a092fc05b00e1b331f867"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33644269a26a092fc05b00e1b331f867">&#9670;&nbsp;</a></span>get_ucell_abs_magnetization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double elecstate::get_ucell_abs_magnetization </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the value of GlobalC::ucell.magnet.abs_magnetization </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceelecstate_a33644269a26a092fc05b00e1b331f867_icgraph.png" border="0" usemap="#namespaceelecstate_a33644269a26a092fc05b00e1b331f867_icgraph" alt=""/></div>
+<map name="namespaceelecstate_a33644269a26a092fc05b00e1b331f867_icgraph" id="namespaceelecstate_a33644269a26a092fc05b00e1b331f867_icgraph">
+<area shape="rect" title="get the value of GlobalC::ucell.magnet.abs_magnetization" alt="" coords="204,5,357,47"/>
+<area shape="rect" href="classelecstate_1_1ElecState.html#ac248e5b117b53224f8f214e755a9a0f6" title="print total free energy and other energies" alt="" coords="5,5,156,47"/>
+</map>
+</div>
+
+</div>
+</div>
 <a id="abb96cf9fc561d8074c7ef6cbf487377b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb96cf9fc561d8074c7ef6cbf487377b">&#9670;&nbsp;</a></span>get_ucell_omega()</h2>
 
@@ -289,19 +477,281 @@ Here is the call graph for this function:</div>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>get the value of GlobalC::ucell.omega </p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="namespaceelecstate_abb96cf9fc561d8074c7ef6cbf487377b_icgraph.png" border="0" usemap="#namespaceelecstate_abb96cf9fc561d8074c7ef6cbf487377b_icgraph" alt=""/></div>
 <map name="namespaceelecstate_abb96cf9fc561d8074c7ef6cbf487377b_icgraph" id="namespaceelecstate_abb96cf9fc561d8074c7ef6cbf487377b_icgraph">
-<area shape="rect" title=" " alt="" coords="516,100,665,141"/>
-<area shape="rect" href="classMagnetism.html#afd6f158461dcf95ff3c0301554cc83ff" title=" " alt="" coords="308,71,468,112"/>
-<area shape="rect" href="elecstate__magnetism__test_8cpp.html#ae7d5ef929ef7be0691bd0c3481da0cd6" title=" " alt="" coords="353,137,423,163"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a8cd1ebf60aadee55cd2c98acdfbee50a" title=" " alt="" coords="5,5,260,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="11,71,254,112"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad77b2f8850b54ceb66721e4f6afb290d" title=" " alt="" coords="35,136,230,177"/>
+<area shape="rect" title="get the value of GlobalC::ucell.omega" alt="" coords="528,179,677,221"/>
+<area shape="rect" href="classCharge.html#adc8d0693d347e97655772c3b3fc79d0f" title=" " alt="" coords="325,23,463,49"/>
+<area shape="rect" href="classMagnetism.html#afd6f158461dcf95ff3c0301554cc83ff" title=" " alt="" coords="314,106,474,147"/>
+<area shape="rect" href="classelecstate_1_1ElecStatePW.html#ad892f2cbde42c134e1b59d7f6333d153" title=" " alt="" coords="308,172,480,228"/>
+<area shape="rect" href="classCharge.html#acaba94e803083e82aff5f6a0c14e1356" title=" " alt="" coords="328,252,460,279"/>
+<area shape="rect" href="elecstate__magnetism__test_8cpp.html#ae7d5ef929ef7be0691bd0c3481da0cd6" title=" " alt="" coords="359,303,429,329"/>
+<area shape="rect" href="charge__test_8cpp.html#a2f3cd9e98fd49ac9ea80e6b623f87f9a" title=" " alt="" coords="98,5,167,32"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__PW.html#a8cd1ebf60aadee55cd2c98acdfbee50a" title=" " alt="" coords="5,57,260,98"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="11,122,254,163"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad77b2f8850b54ceb66721e4f6afb290d" title=" " alt="" coords="35,187,230,229"/>
 </map>
 </div>
+
+</div>
+</div>
+<a id="a9717a85c48a4758436a909e556e816d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9717a85c48a4758436a909e556e816d3">&#9670;&nbsp;</a></span>get_ucell_tot_magnetization()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double elecstate::get_ucell_tot_magnetization </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the value of GlobalC::ucell.magnet.tot_magnetization </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceelecstate_a9717a85c48a4758436a909e556e816d3_icgraph.png" border="0" usemap="#namespaceelecstate_a9717a85c48a4758436a909e556e816d3_icgraph" alt=""/></div>
+<map name="namespaceelecstate_a9717a85c48a4758436a909e556e816d3_icgraph" id="namespaceelecstate_a9717a85c48a4758436a909e556e816d3_icgraph">
+<area shape="rect" title="get the value of GlobalC::ucell.magnet.tot_magnetization" alt="" coords="204,5,353,47"/>
+<area shape="rect" href="classelecstate_1_1ElecState.html#ac248e5b117b53224f8f214e755a9a0f6" title="print total free energy and other energies" alt="" coords="5,5,156,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ac0f56c76a42ffdda8318c9f3ee9f819a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0f56c76a42ffdda8318c9f3ee9f819a">&#9670;&nbsp;</a></span>get_ucell_tot_magnetization_nc_x()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double elecstate::get_ucell_tot_magnetization_nc_x </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the value of GlobalC::ucell.magnet.tot_magnetization_nc[0] </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceelecstate_ac0f56c76a42ffdda8318c9f3ee9f819a_icgraph.png" border="0" usemap="#namespaceelecstate_ac0f56c76a42ffdda8318c9f3ee9f819a_icgraph" alt=""/></div>
+<map name="namespaceelecstate_ac0f56c76a42ffdda8318c9f3ee9f819a_icgraph" id="namespaceelecstate_ac0f56c76a42ffdda8318c9f3ee9f819a_icgraph">
+<area shape="rect" title="get the value of GlobalC::ucell.magnet.tot_magnetization_nc[0]" alt="" coords="204,5,389,47"/>
+<area shape="rect" href="classelecstate_1_1ElecState.html#ac248e5b117b53224f8f214e755a9a0f6" title="print total free energy and other energies" alt="" coords="5,5,156,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae4b109cfed2fec8b60c2c00834d3130e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae4b109cfed2fec8b60c2c00834d3130e">&#9670;&nbsp;</a></span>get_ucell_tot_magnetization_nc_y()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double elecstate::get_ucell_tot_magnetization_nc_y </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the value of GlobalC::ucell.magnet.tot_magnetization_nc[1] </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceelecstate_ae4b109cfed2fec8b60c2c00834d3130e_icgraph.png" border="0" usemap="#namespaceelecstate_ae4b109cfed2fec8b60c2c00834d3130e_icgraph" alt=""/></div>
+<map name="namespaceelecstate_ae4b109cfed2fec8b60c2c00834d3130e_icgraph" id="namespaceelecstate_ae4b109cfed2fec8b60c2c00834d3130e_icgraph">
+<area shape="rect" title="get the value of GlobalC::ucell.magnet.tot_magnetization_nc[1]" alt="" coords="204,5,389,47"/>
+<area shape="rect" href="classelecstate_1_1ElecState.html#ac248e5b117b53224f8f214e755a9a0f6" title="print total free energy and other energies" alt="" coords="5,5,156,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad17b26b0a9c4b532483f7fa2e2928395"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad17b26b0a9c4b532483f7fa2e2928395">&#9670;&nbsp;</a></span>get_ucell_tot_magnetization_nc_z()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double elecstate::get_ucell_tot_magnetization_nc_z </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the value of GlobalC::ucell.magnet.tot_magnetization_nc[2] </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceelecstate_ad17b26b0a9c4b532483f7fa2e2928395_icgraph.png" border="0" usemap="#namespaceelecstate_ad17b26b0a9c4b532483f7fa2e2928395_icgraph" alt=""/></div>
+<map name="namespaceelecstate_ad17b26b0a9c4b532483f7fa2e2928395_icgraph" id="namespaceelecstate_ad17b26b0a9c4b532483f7fa2e2928395_icgraph">
+<area shape="rect" title="get the value of GlobalC::ucell.magnet.tot_magnetization_nc[2]" alt="" coords="204,5,388,47"/>
+<area shape="rect" href="classelecstate_1_1ElecState.html#ac248e5b117b53224f8f214e755a9a0f6" title="print total free energy and other energies" alt="" coords="5,5,156,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a78712b5792eac5a8eb16510f12d2ffdd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78712b5792eac5a8eb16510f12d2ffdd">&#9670;&nbsp;</a></span>get_ucell_tpiba()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double elecstate::get_ucell_tpiba </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the value of GlobalC::ucell.tpiba </p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceelecstate_a78712b5792eac5a8eb16510f12d2ffdd_icgraph.png" border="0" usemap="#namespaceelecstate_a78712b5792eac5a8eb16510f12d2ffdd_icgraph" alt=""/></div>
+<map name="namespaceelecstate_a78712b5792eac5a8eb16510f12d2ffdd_icgraph" id="namespaceelecstate_a78712b5792eac5a8eb16510f12d2ffdd_icgraph">
+<area shape="rect" title="get the value of GlobalC::ucell.tpiba" alt="" coords="225,13,375,54"/>
+<area shape="rect" href="classelecstate_1_1ElecStatePW.html#ad892f2cbde42c134e1b59d7f6333d153" title=" " alt="" coords="5,5,177,61"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a12c4e4e71cc5208ffd2994dee1d5e444"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12c4e4e71cc5208ffd2994dee1d5e444">&#9670;&nbsp;</a></span>get_xc_func_type()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int elecstate::get_xc_func_type </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>get the value of <a class="el" href="classXC__Functional.html#aad6a458ca9ce9a24a1d74f693fdfb013">XC_Functional::func_type</a> </p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="namespaceelecstate_a12c4e4e71cc5208ffd2994dee1d5e444_cgraph.png" border="0" usemap="#namespaceelecstate_a12c4e4e71cc5208ffd2994dee1d5e444_cgraph" alt=""/></div>
+<map name="namespaceelecstate_a12c4e4e71cc5208ffd2994dee1d5e444_cgraph" id="namespaceelecstate_a12c4e4e71cc5208ffd2994dee1d5e444_cgraph">
+<area shape="rect" title="get the value of XC_Functional::func_type" alt="" coords="5,13,209,39"/>
+<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="257,5,400,47"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a5f7fe70b8f9815394ab28d248e7abd06"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f7fe70b8f9815394ab28d248e7abd06">&#9670;&nbsp;</a></span>Set_GlobalV_Default()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void elecstate::Set_GlobalV_Default </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a28e5ebc65e2d29556203ea24a3c40dbc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28e5ebc65e2d29556203ea24a3c40dbc">&#9670;&nbsp;</a></span>tmp_gridecut</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double elecstate::tmp_gridecut = 80.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a375af8bc03f890cc17df2dcdcdc6ab10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a375af8bc03f890cc17df2dcdcdc6ab10">&#9670;&nbsp;</a></span>tmp_ks_solver</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string elecstate::tmp_ks_solver = &quot;dav&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="acb7d4850cfa7848e68f649ae84f9c07e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acb7d4850cfa7848e68f649ae84f9c07e">&#9670;&nbsp;</a></span>tmp_ucell_omega</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double elecstate::tmp_ucell_omega = 500.0</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a80d43b7a9f504dd7ef6d090fd081fd62"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a80d43b7a9f504dd7ef6d090fd081fd62">&#9670;&nbsp;</a></span>tmp_vdw_method</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string elecstate::tmp_vdw_method = &quot;d2&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a480064d78bb3af6087bdb9f905496c3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a480064d78bb3af6087bdb9f905496c3f">&#9670;&nbsp;</a></span>tmp_xc_func_type</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int elecstate::tmp_xc_func_type = 1</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
 
 </div>
 </div>

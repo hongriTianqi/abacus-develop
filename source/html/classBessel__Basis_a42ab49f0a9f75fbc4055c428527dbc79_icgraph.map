@@ -1,5 +1,5 @@
 <map id="Bessel_Basis::get_ecut_number" name="Bessel_Basis::get_ecut_number">
-<area shape="rect" id="node1" title=" " alt="" coords="1088,110,1259,152"/>
+<area shape="rect" id="node1" title="return number of SBFs used for one chi (see details for more information)" alt="" coords="1088,110,1259,152"/>
 <area shape="rect" id="node2" href="$classNumerical__Basis.html#aa2c75129f9b2db202695e85d0738fd85" title=" " alt="" coords="843,42,1024,68"/>
 <area shape="rect" id="node3" href="$classNumerical__Basis.html#aa3077d881a12e3a138fafcf47a07b196" title=" " alt="" coords="569,12,727,53"/>
 <area shape="rect" id="node4" href="$classNumerical__Basis.html#a14ddd7c2b3a50be3507427984511dd41" title=" " alt="" coords="288,106,469,148"/>

@@ -1,8 +1,8 @@
 <map id="module_elecstate/potentials/H_Hartree_pw.h" name="module_elecstate/potentials/H_Hartree_pw.h">
 <area shape="rect" id="node1" title=" " alt="" coords="459,5,666,47"/>
-<area shape="rect" id="node2" href="$elecstate__energy_8cpp.html" title=" " alt="" coords="5,95,208,136"/>
+<area shape="rect" id="node2" href="$elecstate__energy__terms_8cpp.html" title=" " alt="" coords="5,95,208,136"/>
 <area shape="rect" id="node3" href="$elecstate__print_8cpp.html" title=" " alt="" coords="232,95,435,136"/>
 <area shape="rect" id="node4" href="$H__Hartree__pw_8cpp.html" title=" " alt="" coords="459,95,666,136"/>
-<area shape="rect" id="node5" href="$potential__new_8cpp.html" title=" " alt="" coords="690,95,897,136"/>
+<area shape="rect" id="node5" href="$potential__types_8cpp.html" title=" " alt="" coords="690,95,897,136"/>
 <area shape="rect" id="node6" href="$stress__func__har_8cpp.html" title=" " alt="" coords="921,95,1119,136"/>
 </map>

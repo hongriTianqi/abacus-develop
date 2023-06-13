@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: module_hamilt_lcao/hamilt_lcaodft/operator_lcao/op_exx_lcao.h Source File</title>
+<title>3.2.4: module_hamilt_lcao/hamilt_lcaodft/operator_lcao/op_exx_lcao.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -74,67 +74,71 @@ $(function() {
 <div class="contents">
 <a href="op__exx__lcao_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef OPEXXLCAO_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define OPEXXLCAO_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operator__lcao_8h.html">operator_lcao.h</a>&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="timer_8h.html">module_base/timer.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehamilt.html">hamilt</a></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;{</div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#ifndef __OPEXXTEMPLATE</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="op__exx__lcao_8h.html#a6ec4d66d785955ebcc83d05b10996960">   10</a></span>&#160;<span class="preprocessor">#define __OPEXXTEMPLATE</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
-<div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorEXX.html">   12</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">class </span><a class="code" href="classhamilt_1_1OperatorEXX.html">OperatorEXX</a> : <span class="keyword">public</span> <a class="code" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a> </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{};</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classhamilt_1_1OperatorEXX.html">OperatorEXX</a>&lt;<a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;<a class="code" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a>&gt;&gt; : <span class="keyword">public</span> <a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;T&gt; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html#a22cd1195f2b6030c312f1df460431165">   22</a></span>&#160;    <a class="code" href="classhamilt_1_1OperatorEXX.html">OperatorEXX&lt;OperatorLCAO&lt;T&gt;</a>&gt;(</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classLCAO__Matrix.html">LCAO_Matrix</a>* LM_in,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::vector&lt;double&gt;* HR_pointer_in,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        std::vector&lt;T&gt;* HK_pointer_in):HR_pointer(HR_pointer_in), HK_pointer(HK_pointer_in)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        this-&gt;LM = LM_in;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        this-&gt;cal_type = <a class="code" href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a8f0209d0164ec1d15e1bee26853ab330">lcao_exx</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> contributeHR() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhamilt_1_1OperatorEXX.html#ab4e0293992f563879322c7664cf99fed">contributeHk</a>(<span class="keywordtype">int</span> ik) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html#aedffd5ad362fcdc9717ec7671b23f2e9">   37</a></span>&#160;    std::vector&lt;double&gt;* HR_pointer = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html#ad98e6385270a296b0905817acce3ff07">   39</a></span>&#160;    std::vector&lt;T&gt;* HK_pointer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="timer_8h.html">module_base/timer.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operator__lcao_8h.html">operator_lcao.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="module__cell_2klist_8h.html">module_cell/klist.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehamilt.html">hamilt</a></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef __OPEXXTEMPLATE</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="op__exx__lcao_8h.html#a6ec4d66d785955ebcc83d05b10996960">   11</a></span>&#160;<span class="preprocessor">#define __OPEXXTEMPLATE</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorEXX.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classhamilt_1_1OperatorEXX.html">OperatorEXX</a> : <span class="keyword">public</span> <a class="code" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classhamilt_1_1OperatorEXX.html">OperatorEXX</a>&lt;<a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;<a class="code" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a>&gt;&gt; : <span class="keyword">public</span> <a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;T&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html#a8ecde04c07d75cd6090f213f2097a48f">   24</a></span>&#160;    <a class="code" href="classhamilt_1_1OperatorEXX.html">OperatorEXX&lt;OperatorLCAO&lt;T&gt;</a>&gt;(<a class="code" href="classLCAO__Matrix.html">LCAO_Matrix</a>* LM_in,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                 std::vector&lt;double&gt;* HR_pointer_in,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                 std::vector&lt;T&gt;* HK_pointer_in,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                 <span class="keyword">const</span> <a class="code" href="classK__Vectors.html">K_Vectors</a>&amp; kv_in)</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        : HR_pointer(HR_pointer_in), HK_pointer(HK_pointer_in), kv(kv_in), <a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO&lt;T&gt;</a>(kv_in.kvec_d)</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    {</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        this-&gt;LM = LM_in;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        this-&gt;cal_type = <a class="code" href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a8f0209d0164ec1d15e1bee26853ab330">lcao_exx</a>;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    }</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> contributeHR() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> contributeHk(<span class="keywordtype">int</span> ik) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html#aedffd5ad362fcdc9717ec7671b23f2e9">   39</a></span>&#160;    std::vector&lt;double&gt;* HR_pointer = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html#a08d27cc2ea50cf65ec65f9aad3fba10d">   41</a></span>&#160;    <span class="keywordtype">bool</span> HR_fixed_done = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html#ad98e6385270a296b0905817acce3ff07">   41</a></span>&#160;    std::vector&lt;T&gt;* HK_pointer = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html#a08d27cc2ea50cf65ec65f9aad3fba10d">   43</a></span>&#160;    <span class="keywordtype">bool</span> HR_fixed_done = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html#a29ab08868d4c97f2ed5c2410a7d6a4fa">   45</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classK__Vectors.html">K_Vectors</a>&amp; <a class="code" href="classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html#a29ab08868d4c97f2ed5c2410a7d6a4fa">kv</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;} <span class="comment">// namespace hamilt</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div></div>
 <div class="ttc" id="aoperator__lcao_8h_html"><div class="ttname"><a href="operator__lcao_8h.html">operator_lcao.h</a></div></div>
-<div class="ttc" id="aglobal__fp_8h_html"><div class="ttname"><a href="global__fp_8h.html">global_fp.h</a></div></div>
-<div class="ttc" id="aclassXC__Functional_html_a6bf3c50d992d4191f089867af29a2a76"><div class="ttname"><a href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76">XC_Functional::get_func_type</a></div><div class="ttdeci">static int get_func_type()</div><div class="ttdef"><b>Definition:</b> xc_functional.cpp:19</div></div>
+<div class="ttc" id="aRI__2D__Comm_8h_html"><div class="ttname"><a href="RI__2D__Comm_8h.html">RI_2D_Comm.h</a></div></div>
+<div class="ttc" id="aclassXC__Functional_html_a6bf3c50d992d4191f089867af29a2a76"><div class="ttname"><a href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76">XC_Functional::get_func_type</a></div><div class="ttdeci">static int get_func_type()</div><div class="ttdef"><b>Definition:</b> charge_mixing_test.cpp:10</div></div>
 <div class="ttc" id="anamespaceGlobalC_html_ac48c3c72bbeb7a901b3f56709a856d91"><div class="ttname"><a href="namespaceGlobalC.html#ac48c3c72bbeb7a901b3f56709a856d91">GlobalC::exx_info</a></div><div class="ttdeci">Exx_Info exx_info</div><div class="ttdef"><b>Definition:</b> test_xc.cpp:28</div></div>
 <div class="ttc" id="anamespacehamilt_html_a506eac2a013daa2c2bd7d5248c6e6991a8f0209d0164ec1d15e1bee26853ab330"><div class="ttname"><a href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a8f0209d0164ec1d15e1bee26853ab330">hamilt::lcao_exx</a></div><div class="ttdeci">@ lcao_exx</div><div class="ttdef"><b>Definition:</b> operator.h:22</div></div>
 <div class="ttc" id="atimer_8h_html"><div class="ttname"><a href="timer_8h.html">timer.h</a></div></div>
+<div class="ttc" id="aclasshamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4_html_a29ab08868d4c97f2ed5c2410a7d6a4fa"><div class="ttname"><a href="classhamilt_1_1OperatorEXX_3_01OperatorLCAO_3_01T_01_4_01_4.html#a29ab08868d4c97f2ed5c2410a7d6a4fa">hamilt::OperatorEXX&lt; OperatorLCAO&lt; T &gt; &gt;::kv</a></div><div class="ttdeci">const K_Vectors &amp; kv</div><div class="ttdef"><b>Definition:</b> op_exx_lcao.h:45</div></div>
 <div class="ttc" id="axc__functional_8h_html"><div class="ttname"><a href="xc__functional_8h.html">xc_functional.h</a></div></div>
+<div class="ttc" id="anamespaceRI__2D__Comm_html_a0b6ea7a60d5e4cee590a04767715f8b9"><div class="ttname"><a href="namespaceRI__2D__Comm.html#a0b6ea7a60d5e4cee590a04767715f8b9">RI_2D_Comm::add_Hexx</a></div><div class="ttdeci">void add_Hexx(const K_Vectors &amp;kv, const int ik, const double alpha, const std::vector&lt; std::map&lt; TA, std::map&lt; TAC, RI::Tensor&lt; Tdata &gt;&gt;&gt;&gt; &amp;Hs, LCAO_Matrix &amp;lm)</div><div class="ttdef"><b>Definition:</b> RI_2D_Comm.hpp:86</div></div>
 <div class="ttc" id="atool__title_8h_html"><div class="ttname"><a href="tool__title_8h.html">tool_title.h</a></div></div>
-<div class="ttc" id="aclasshamilt_1_1OperatorEXX_html_ab4e0293992f563879322c7664cf99fed"><div class="ttname"><a href="classhamilt_1_1OperatorEXX.html#ab4e0293992f563879322c7664cf99fed">hamilt::OperatorEXX::contributeHk</a></div><div class="ttdeci">void contributeHk(int ik)</div><div class="ttdef"><b>Definition:</b> op_exx_lcao.cpp:23</div></div>
-<div class="ttc" id="aclasshamilt_1_1OperatorLCAO_html"><div class="ttname"><a href="classhamilt_1_1OperatorLCAO.html">hamilt::OperatorLCAO</a></div><div class="ttdef"><b>Definition:</b> operator_lcao.h:11</div></div>
-<div class="ttc" id="anamespaceRI__2D__Comm_html_aa9c895bfff609e1e0a05840a341b844a"><div class="ttname"><a href="namespaceRI__2D__Comm.html#aa9c895bfff609e1e0a05840a341b844a">RI_2D_Comm::add_Hexx</a></div><div class="ttdeci">void add_Hexx(const K_Vectors &amp;kv, const int ik, const double alpha, const std::vector&lt; std::map&lt; TA, std::map&lt; TAC, RI::Tensor&lt; Tdata &gt;&gt;&gt;&gt; &amp;Hs, const Parallel_Orbitals &amp;pv, LCAO_Matrix &amp;lm, std::vector&lt; std::deque&lt; std::vector&lt; std::vector&lt; Tdata &gt;&gt;&gt;&gt; &amp;Hk_seq)</div><div class="ttdef"><b>Definition:</b> RI_2D_Comm.hpp:86</div></div>
+<div class="ttc" id="amodule__cell_2klist_8h_html"><div class="ttname"><a href="module__cell_2klist_8h.html">klist.h</a></div></div>
+<div class="ttc" id="aclasshamilt_1_1OperatorLCAO_html"><div class="ttname"><a href="classhamilt_1_1OperatorLCAO.html">hamilt::OperatorLCAO</a></div><div class="ttdef"><b>Definition:</b> operator_lcao.h:12</div></div>
+<div class="ttc" id="aclassK__Vectors_html"><div class="ttname"><a href="classK__Vectors.html">K_Vectors</a></div><div class="ttdef"><b>Definition:</b> klist.h:10</div></div>
 <div class="ttc" id="aexp_8cpp_html_a0acb682b8260ab1c60b918599864e2e5"><div class="ttname"><a href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div><div class="ttdeci">#define T</div><div class="ttdef"><b>Definition:</b> exp.cpp:237</div></div>
-<div class="ttc" id="anamespaceGlobalC_html_a82e5b30ae8436fb8721ae845114b1100"><div class="ttname"><a href="namespaceGlobalC.html#a82e5b30ae8436fb8721ae845114b1100">GlobalC::kv</a></div><div class="ttdeci">K_Vectors kv</div><div class="ttdef"><b>Definition:</b> global.cpp:7</div></div>
-<div class="ttc" id="aclasshamilt_1_1OperatorEXX_html"><div class="ttname"><a href="classhamilt_1_1OperatorEXX.html">hamilt::OperatorEXX</a></div><div class="ttdef"><b>Definition:</b> op_exx_lcao.h:12</div></div>
-<div class="ttc" id="aclassLCAO__Matrix_html"><div class="ttname"><a href="classLCAO__Matrix.html">LCAO_Matrix</a></div><div class="ttdef"><b>Definition:</b> LCAO_matrix.h:13</div></div>
+<div class="ttc" id="aclasshamilt_1_1OperatorEXX_html"><div class="ttname"><a href="classhamilt_1_1OperatorEXX.html">hamilt::OperatorEXX</a></div><div class="ttdef"><b>Definition:</b> op_exx_lcao.h:14</div></div>
+<div class="ttc" id="aclassLCAO__Matrix_html"><div class="ttname"><a href="classLCAO__Matrix.html">LCAO_Matrix</a></div><div class="ttdef"><b>Definition:</b> LCAO_matrix.h:16</div></div>
 <div class="ttc" id="anamespacehamilt_html"><div class="ttname"><a href="namespacehamilt.html">hamilt</a></div><div class="ttdef"><b>Definition:</b> hamilt.h:11</div></div>
 <div class="ttc" id="aop__exx__lcao_8h_html"><div class="ttname"><a href="op__exx__lcao_8h.html">op_exx_lcao.h</a></div></div>
 <!-- start footer part -->

@@ -1,11 +1,12 @@
 <map id="hamilt::OperatorLCAO::init" name="hamilt::OperatorLCAO::init">
-<area shape="rect" id="node1" title=" " alt="" coords="5,100,169,141"/>
-<area shape="rect" id="node2" href="$classhamilt_1_1OperatorLCAO.html#a2c1077942acb09f8e82bbb53dc9f814a" title=" " alt="" coords="217,5,381,47"/>
-<area shape="rect" id="node3" href="$classhamilt_1_1OperatorLCAO.html#a7509b64d012bafc72a995aa69e9a1d19" title=" " alt="" coords="217,71,381,112"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="663,166,840,193"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="227,195,372,222"/>
-<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="891,159,1044,200"/>
-<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="429,253,612,295"/>
-<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="444,188,597,229"/>
-<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="660,253,843,295"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,129,169,171"/>
+<area shape="rect" id="node2" href="$classhamilt_1_1OperatorLCAO.html#a2c1077942acb09f8e82bbb53dc9f814a" title=" " alt="" coords="242,5,406,47"/>
+<area shape="rect" id="node3" href="$classhamilt_1_1OperatorLCAO.html#a7509b64d012bafc72a995aa69e9a1d19" title=" " alt="" coords="242,71,406,112"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="712,166,889,193"/>
+<area shape="rect" id="node6" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="251,191,397,218"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="217,242,431,269"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="940,159,1093,200"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="479,253,661,295"/>
+<area shape="rect" id="node9" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="493,188,647,229"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="709,253,892,295"/>
 </map>

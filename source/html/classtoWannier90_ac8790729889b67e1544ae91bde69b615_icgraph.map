@@ -1,7 +1,5 @@
 <map id="toWannier90::outEIG" name="toWannier90::outEIG">
-<area shape="rect" id="node1" title=" " alt="" coords="725,46,880,73"/>
-<area shape="rect" id="node2" href="$classtoWannier90.html#adf722fe6cf74e657bb9cbe61914e584d" title=" " alt="" coords="485,46,677,73"/>
-<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a624766fb2ebfccd12416cb7dd89b0f70" title=" " alt="" coords="258,5,434,47"/>
-<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__PW.html#ac07d1904b2b135e395d408de775b44da" title=" " alt="" coords="255,71,437,112"/>
-<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,5,207,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="503,13,657,39"/>
+<area shape="rect" id="node2" href="$classtoWannier90.html#a95bb0e3bba60e149cccd5faf06d326eb" title=" " alt="" coords="236,13,455,39"/>
+<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__PW.html#ac07d1904b2b135e395d408de775b44da" title=" " alt="" coords="5,5,188,47"/>
 </map>

@@ -1,12 +1,12 @@
 <map id="elecstate::Potential::get_effective_vofk" name="elecstate::Potential::get_effective_vofk">
 <area shape="rect" id="node1" title=" " alt="" coords="553,169,704,211"/>
-<area shape="rect" id="node2" href="$classelecstate_1_1ElecState.html#a932dbf2f9a53ebee5c674457c68c0748" title="calculate deband" alt="" coords="325,104,476,145"/>
-<area shape="rect" id="node7" href="$classelecstate_1_1ElecState.html#a6ffe4386e4b3bd8d5d12ff7313fc5207" title="calculate descf" alt="" coords="325,39,476,80"/>
-<area shape="rect" id="node8" href="$classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="309,169,492,211"/>
-<area shape="rect" id="node9" href="$classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="318,235,483,276"/>
-<area shape="rect" id="node10" href="$classhamilt_1_1HamiltPW.html#a241426d6aa506dcface977a6bda6c4fb" title=" " alt="" coords="296,301,505,327"/>
+<area shape="rect" id="node2" href="$classelecstate_1_1ElecState.html#a932dbf2f9a53ebee5c674457c68c0748" title="calculate deband" alt="" coords="325,71,476,112"/>
+<area shape="rect" id="node6" href="$classelecstate_1_1ElecState.html#a6ffe4386e4b3bd8d5d12ff7313fc5207" title="calculate descf" alt="" coords="325,5,476,47"/>
+<area shape="rect" id="node7" href="$classForce__LCAO__gamma.html#ac86f1a81dfec4130744a5e9d3af43dc9" title=" " alt="" coords="309,136,492,177"/>
+<area shape="rect" id="node8" href="$classForce__LCAO__k.html#a4bc6745b4ee748cccd68b9c973f54e34" title=" " alt="" coords="318,201,483,243"/>
+<area shape="rect" id="node9" href="$classhamilt_1_1HamiltPW.html#a241426d6aa506dcface977a6bda6c4fb" title=" " alt="" coords="296,267,505,294"/>
+<area shape="rect" id="node10" href="$potential__new__test_8cpp.html#af863938ed14426c0901e0bbd3ef66d0f" title=" " alt="" coords="366,318,435,345"/>
 <area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a336f7862c45f8e127f271a4e1263d68b" title=" " alt="" coords="39,5,215,47"/>
-<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="17,71,236,112"/>
-<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__SDFT__PW.html#a51a0b6eba4b623909cd141d219748853" title=" " alt="" coords="29,136,224,177"/>
-<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="5,201,248,243"/>
+<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__SDFT__PW.html#a51a0b6eba4b623909cd141d219748853" title=" " alt="" coords="29,71,224,112"/>
+<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="5,136,248,177"/>
 </map>

@@ -1,12 +1,12 @@
 <map id="LCAO_Matrix::set_HSgamma" name="LCAO_Matrix::set_HSgamma">
-<area shape="rect" id="node1" title=" " alt="" coords="500,137,709,163"/>
-<area shape="rect" id="node2" href="$namespaceRI__2D__Comm.html#aa9c895bfff609e1e0a05840a341b844a" title=" " alt="" coords="269,13,452,39"/>
-<area shape="rect" id="node4" href="$classLCAO__gen__fixedH.html#a3305c82406cf05cc81ee5d46241e75a8" title=" " alt="" coords="273,64,449,105"/>
-<area shape="rect" id="node6" href="$classLCAO__gen__fixedH.html#a46576390147c76ff8c30146fe8235d4f" title=" " alt="" coords="273,129,449,171"/>
-<area shape="rect" id="node9" href="$classLCAO__gen__fixedH.html#a13bc49e3cbb3ad3b12f77118896b7438" title=" " alt="" coords="273,195,449,236"/>
-<area shape="rect" id="node10" href="$classGint__Gamma.html#ad9121ea4e7f1a332a8d36952ae95c14d" title=" " alt="" coords="281,260,441,301"/>
-<area shape="rect" id="node3" href="$classhamilt_1_1OperatorEXX.html#ab4e0293992f563879322c7664cf99fed" title=" " alt="" coords="36,5,191,47"/>
-<area shape="rect" id="node5" href="$classLCAO__gen__fixedH.html#a7133d01461b3583ea89d9b8d824e1be7" title=" " alt="" coords="12,71,215,112"/>
-<area shape="rect" id="node7" href="$classForce__LCAO__gamma.html#a6a2ac4aa03c2f6428d4ed4263eed309f" title=" " alt="" coords="5,136,221,177"/>
-<area shape="rect" id="node8" href="$classForce__LCAO__k.html#a80c8caa156eda5d990074791bcb3a42d" title=" " alt="" coords="19,202,208,229"/>
+<area shape="rect" id="node1" title=" " alt="" coords="500,129,709,156"/>
+<area shape="rect" id="node2" href="$namespaceRI__2D__Comm.html#a0b6ea7a60d5e4cee590a04767715f8b9" title=" " alt="" coords="269,5,452,32"/>
+<area shape="rect" id="node3" href="$classLCAO__gen__fixedH.html#a3305c82406cf05cc81ee5d46241e75a8" title=" " alt="" coords="273,57,449,98"/>
+<area shape="rect" id="node5" href="$classLCAO__gen__fixedH.html#a46576390147c76ff8c30146fe8235d4f" title=" " alt="" coords="273,122,449,163"/>
+<area shape="rect" id="node9" href="$classLCAO__gen__fixedH.html#a13bc49e3cbb3ad3b12f77118896b7438" title=" " alt="" coords="273,187,449,229"/>
+<area shape="rect" id="node10" href="$classGint__Gamma.html#ad9121ea4e7f1a332a8d36952ae95c14d" title=" " alt="" coords="281,253,441,294"/>
+<area shape="rect" id="node4" href="$classLCAO__gen__fixedH.html#a7133d01461b3583ea89d9b8d824e1be7" title=" " alt="" coords="12,57,215,98"/>
+<area shape="rect" id="node6" href="$classForce__LCAO__gamma.html#a6a2ac4aa03c2f6428d4ed4263eed309f" title=" " alt="" coords="5,122,221,163"/>
+<area shape="rect" id="node7" href="$classForce__LCAO__k.html#a48dea0012a6b66ebb7405ca33f252634" title=" " alt="" coords="19,188,208,215"/>
+<area shape="rect" id="node8" href="$classLCAO__Hamilt.html#a92bcfc332b2966a939d9e5b37adba655" title=" " alt="" coords="26,239,201,281"/>
 </map>

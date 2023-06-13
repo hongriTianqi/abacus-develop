@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: module_hamilt_lcao/hamilt_lcaodft/operator_lcao/op_dftu_lcao.h Source File</title>
+<title>3.2.4: module_hamilt_lcao/hamilt_lcaodft/operator_lcao/op_dftu_lcao.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -92,48 +92,51 @@ $(function() {
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classhamilt_1_1OperatorDFTU.html">OperatorDFTU</a>&lt;<a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;<a class="code" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a>&gt;&gt; : <span class="keyword">public</span> <a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;T&gt; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html#a5f083ee256945d9a3ff10638e9e6a6ca">   22</a></span>&#160;    <a class="code" href="classhamilt_1_1OperatorDFTU.html">OperatorDFTU&lt;OperatorLCAO&lt;T&gt;</a>&gt;(</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;        <a class="code" href="classLCAO__Matrix.html">LCAO_Matrix</a>* LM_in,</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        std::vector&lt;double&gt;* HR_pointer_in,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        std::vector&lt;T&gt;* HK_pointer_in):HR_pointer(HR_pointer_in), HK_pointer(HK_pointer_in)</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    {</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        this-&gt;LM = LM_in;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        this-&gt;cal_type = <a class="code" href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a4418a5b4c462171de2252b9d44df0aee">lcao_dftu</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> contributeHR() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhamilt_1_1OperatorDFTU.html#a68192c04522a191dc78045776bd75a39">contributeHk</a>(<span class="keywordtype">int</span> ik) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html#a7a652f5fe1670f920d1aecfc772756b5">   37</a></span>&#160;    std::vector&lt;double&gt;* HR_pointer = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html#a0db46bed1eef2a66078ec4b72e3f489e">   39</a></span>&#160;    std::vector&lt;T&gt;* HK_pointer = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html#ae96197f3294cec449c66c5b96570073e">   41</a></span>&#160;    <span class="keywordtype">bool</span> HR_fixed_done = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html#a273e544bb66a86f48af8aacbbbf9dcd4">   21</a></span>&#160;      <a class="code" href="classhamilt_1_1OperatorDFTU.html">OperatorDFTU&lt;OperatorLCAO&lt;T&gt;</a>&gt;(<a class="code" href="classLCAO__Matrix.html">LCAO_Matrix</a>* LM_in,</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                    <span class="keyword">const</span> std::vector&lt;ModuleBase::Vector3&lt;double&gt;&gt;&amp; kvec_d_in,</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                    std::vector&lt;double&gt;* HR_pointer_in,</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;                                    std::vector&lt;T&gt;* HK_pointer_in,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                    <span class="keyword">const</span> std::vector&lt;int&gt;&amp; isk_in)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;          : HR_pointer(HR_pointer_in), HK_pointer(HK_pointer_in), isk(isk_in), <a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO&lt;T&gt;</a>(kvec_d_in)</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;      {</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;          this-&gt;LM = LM_in;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;          this-&gt;cal_type = <a class="code" href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a4418a5b4c462171de2252b9d44df0aee">lcao_dftu</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    }</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> contributeHR() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhamilt_1_1OperatorDFTU.html#a68192c04522a191dc78045776bd75a39">contributeHk</a>(<span class="keywordtype">int</span> ik) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html#a7a652f5fe1670f920d1aecfc772756b5">   38</a></span>&#160;    std::vector&lt;double&gt;* HR_pointer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html#a0db46bed1eef2a66078ec4b72e3f489e">   40</a></span>&#160;    std::vector&lt;T&gt;* HK_pointer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html#ae96197f3294cec449c66c5b96570073e">   42</a></span>&#160;    <span class="keywordtype">bool</span> HR_fixed_done = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html#ab977ce4847a26f149faaeac047b222e9">   44</a></span>&#160;    <span class="keyword">const</span> std::vector&lt;int&gt;&amp; <a class="code" href="classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html#ab977ce4847a26f149faaeac047b222e9">isk</a>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;};</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespaceGlobalC_html_a315063cc1804b049a732c8b061972d38"><div class="ttname"><a href="namespaceGlobalC.html#a315063cc1804b049a732c8b061972d38">GlobalC::dftu</a></div><div class="ttdeci">ModuleDFTU::DFTU dftu</div><div class="ttdef"><b>Definition:</b> dftu.cpp:31</div></div>
+<div class="ttc" id="anamespaceGlobalC_html_a315063cc1804b049a732c8b061972d38"><div class="ttname"><a href="namespaceGlobalC.html#a315063cc1804b049a732c8b061972d38">GlobalC::dftu</a></div><div class="ttdeci">ModuleDFTU::DFTU dftu</div><div class="ttdef"><b>Definition:</b> dftu.cpp:30</div></div>
+<div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div></div>
 <div class="ttc" id="aoperator__lcao_8h_html"><div class="ttname"><a href="operator__lcao_8h.html">operator_lcao.h</a></div></div>
-<div class="ttc" id="aclasshamilt_1_1OperatorDFTU_html_a68192c04522a191dc78045776bd75a39"><div class="ttname"><a href="classhamilt_1_1OperatorDFTU.html#a68192c04522a191dc78045776bd75a39">hamilt::OperatorDFTU::contributeHk</a></div><div class="ttdeci">void contributeHk(int ik)</div><div class="ttdef"><b>Definition:</b> op_dftu_lcao.cpp:21</div></div>
+<div class="ttc" id="aclassModuleDFTU_1_1DFTU_html_a6586fca469477dc1334ef2cb823bf48a"><div class="ttname"><a href="classModuleDFTU_1_1DFTU.html#a6586fca469477dc1334ef2cb823bf48a">ModuleDFTU::DFTU::cal_eff_pot_mat_complex</a></div><div class="ttdeci">void cal_eff_pot_mat_complex(const int ik, std::complex&lt; double &gt; *eff_pot, const std::vector&lt; int &gt; &amp;isk)</div><div class="ttdef"><b>Definition:</b> dftu_hamilt.cpp:9</div></div>
+<div class="ttc" id="aclasshamilt_1_1OperatorDFTU_html_a68192c04522a191dc78045776bd75a39"><div class="ttname"><a href="classhamilt_1_1OperatorDFTU.html#a68192c04522a191dc78045776bd75a39">hamilt::OperatorDFTU::contributeHk</a></div><div class="ttdeci">void contributeHk(int ik)</div><div class="ttdef"><b>Definition:</b> op_dftu_lcao.cpp:22</div></div>
 <div class="ttc" id="anamespaceModuleBase_html_ad0b268ded393d31b0dd1a795366af4a6"><div class="ttname"><a href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6">ModuleBase::TITLE</a></div><div class="ttdeci">void TITLE(const std::string &amp;class_name, const std::string &amp;function_name, const bool disable)</div><div class="ttdef"><b>Definition:</b> tool_title.cpp:18</div></div>
 <div class="ttc" id="adftu_8h_html"><div class="ttname"><a href="dftu_8h.html">dftu.h</a></div></div>
+<div class="ttc" id="aclasshamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4_html_ab977ce4847a26f149faaeac047b222e9"><div class="ttname"><a href="classhamilt_1_1OperatorDFTU_3_01OperatorLCAO_3_01T_01_4_01_4.html#ab977ce4847a26f149faaeac047b222e9">hamilt::OperatorDFTU&lt; OperatorLCAO&lt; T &gt; &gt;::isk</a></div><div class="ttdeci">const std::vector&lt; int &gt; &amp; isk</div><div class="ttdef"><b>Definition:</b> op_dftu_lcao.h:44</div></div>
 <div class="ttc" id="aclassModuleBase_1_1timer_html_a7d5a9dd381e39259fb92b31a89140206"><div class="ttname"><a href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206">ModuleBase::timer::tick</a></div><div class="ttdeci">static void tick(const std::string &amp;class_name_in, const std::string &amp;name_in)</div><div class="ttdoc">Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur...</div><div class="ttdef"><b>Definition:</b> timer.cpp:66</div></div>
 <div class="ttc" id="atimer_8h_html"><div class="ttname"><a href="timer_8h.html">timer.h</a></div></div>
 <div class="ttc" id="anamespacehamilt_html_a506eac2a013daa2c2bd7d5248c6e6991a4418a5b4c462171de2252b9d44df0aee"><div class="ttname"><a href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a4418a5b4c462171de2252b9d44df0aee">hamilt::lcao_dftu</a></div><div class="ttdeci">@ lcao_dftu</div><div class="ttdef"><b>Definition:</b> operator.h:23</div></div>
-<div class="ttc" id="aclassModuleDFTU_1_1DFTU_html_acd0310ab2595d3fdb44efd723cdbdb48"><div class="ttname"><a href="classModuleDFTU_1_1DFTU.html#acd0310ab2595d3fdb44efd723cdbdb48">ModuleDFTU::DFTU::cal_eff_pot_mat_real</a></div><div class="ttdeci">void cal_eff_pot_mat_real(const int ik, double *eff_pot)</div><div class="ttdef"><b>Definition:</b> dftu_hamilt.cpp:60</div></div>
-<div class="ttc" id="aclassModuleDFTU_1_1DFTU_html_a248eade1326fa22b83505d57d62d550f"><div class="ttname"><a href="classModuleDFTU_1_1DFTU.html#a248eade1326fa22b83505d57d62d550f">ModuleDFTU::DFTU::cal_eff_pot_mat_complex</a></div><div class="ttdeci">void cal_eff_pot_mat_complex(const int ik, std::complex&lt; double &gt; *eff_pot)</div><div class="ttdef"><b>Definition:</b> dftu_hamilt.cpp:9</div></div>
+<div class="ttc" id="aclassModuleDFTU_1_1DFTU_html_ae770b430f48b19cf135c4e8e26aee560"><div class="ttname"><a href="classModuleDFTU_1_1DFTU.html#ae770b430f48b19cf135c4e8e26aee560">ModuleDFTU::DFTU::cal_eff_pot_mat_real</a></div><div class="ttdeci">void cal_eff_pot_mat_real(const int ik, double *eff_pot, const std::vector&lt; int &gt; &amp;isk)</div><div class="ttdef"><b>Definition:</b> dftu_hamilt.cpp:60</div></div>
 <div class="ttc" id="atool__title_8h_html"><div class="ttname"><a href="tool__title_8h.html">tool_title.h</a></div></div>
-<div class="ttc" id="aclasshamilt_1_1OperatorLCAO_html"><div class="ttname"><a href="classhamilt_1_1OperatorLCAO.html">hamilt::OperatorLCAO</a></div><div class="ttdef"><b>Definition:</b> operator_lcao.h:11</div></div>
+<div class="ttc" id="aclasshamilt_1_1OperatorLCAO_html"><div class="ttname"><a href="classhamilt_1_1OperatorLCAO.html">hamilt::OperatorLCAO</a></div><div class="ttdef"><b>Definition:</b> operator_lcao.h:12</div></div>
 <div class="ttc" id="aclasshamilt_1_1OperatorDFTU_html"><div class="ttname"><a href="classhamilt_1_1OperatorDFTU.html">hamilt::OperatorDFTU</a></div><div class="ttdef"><b>Definition:</b> op_dftu_lcao.h:12</div></div>
 <div class="ttc" id="aexp_8cpp_html_a0acb682b8260ab1c60b918599864e2e5"><div class="ttname"><a href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div><div class="ttdeci">#define T</div><div class="ttdef"><b>Definition:</b> exp.cpp:237</div></div>
-<div class="ttc" id="aclassLCAO__Matrix_html"><div class="ttname"><a href="classLCAO__Matrix.html">LCAO_Matrix</a></div><div class="ttdef"><b>Definition:</b> LCAO_matrix.h:13</div></div>
+<div class="ttc" id="aclassLCAO__Matrix_html"><div class="ttname"><a href="classLCAO__Matrix.html">LCAO_Matrix</a></div><div class="ttdef"><b>Definition:</b> LCAO_matrix.h:16</div></div>
 <div class="ttc" id="anamespacehamilt_html"><div class="ttname"><a href="namespacehamilt.html">hamilt</a></div><div class="ttdef"><b>Definition:</b> hamilt.h:11</div></div>
 <div class="ttc" id="aop__dftu__lcao_8h_html"><div class="ttname"><a href="op__dftu__lcao_8h.html">op_dftu_lcao.h</a></div></div>
 <!-- start footer part -->

@@ -1,10 +1,12 @@
 <map id="LCAO_Hamilt" name="LCAO_Hamilt">
-<area shape="rect" id="node1" title=" " alt="" coords="261,1475,475,1743"/>
-<area shape="rect" id="node2" href="$classGint__k.html" title=" " alt="" coords="5,1129,152,1353"/>
-<area shape="rect" id="node3" href="$classGint.html" title=" " alt="" coords="105,564,311,1008"/>
-<area shape="rect" id="node4" href="$classGint__Gamma.html" title=" " alt="" coords="176,1071,355,1412"/>
-<area shape="rect" id="node5" href="$classLCAO__gen__fixedH.html" title=" " alt="" coords="462,1151,669,1331"/>
-<area shape="rect" id="node6" href="$classLCAO__Matrix.html" title=" " alt="" coords="343,593,518,979"/>
-<area shape="rect" id="node7" href="$structParallel__Orbitals.html" title=" " alt="" coords="349,248,513,501"/>
-<area shape="rect" id="node8" href="$structLocalMatrix.html" title=" " alt="" coords="381,5,480,185"/>
+<area shape="rect" id="node1" title=" " alt="" coords="261,1812,475,2080"/>
+<area shape="rect" id="node2" href="$classGint__k.html" title=" " alt="" coords="5,1467,152,1691"/>
+<area shape="rect" id="node3" href="$classGint.html" title=" " alt="" coords="105,901,311,1345"/>
+<area shape="rect" id="node6" href="$classGint__Gamma.html" title=" " alt="" coords="176,1408,355,1749"/>
+<area shape="rect" id="node4" href="$classGrid__Technique.html" title=" " alt="" coords="121,263,295,839"/>
+<area shape="rect" id="node5" href="$classGrid__MeshBall.html" title=" " alt="" coords="97,5,319,200"/>
+<area shape="rect" id="node7" href="$classLCAO__gen__fixedH.html" title=" " alt="" coords="462,1489,669,1669"/>
+<area shape="rect" id="node8" href="$classLCAO__Matrix.html" title=" " alt="" coords="343,931,518,1316"/>
+<area shape="rect" id="node9" href="$structParallel__Orbitals.html" title=" " alt="" coords="349,424,513,677"/>
+<area shape="rect" id="node10" href="$structLocalMatrix.html" title=" " alt="" coords="381,13,480,193"/>
 </map>

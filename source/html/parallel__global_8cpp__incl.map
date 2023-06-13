@@ -1,12 +1,12 @@
 <map id="module_base/parallel_global.cpp" name="module_base/parallel_global.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="332,5,495,47"/>
-<area shape="rect" id="node2" href="$parallel__global_8h.html" title=" " alt="" coords="186,102,316,129"/>
-<area shape="rect" id="node4" title=" " alt="" coords="131,184,190,211"/>
-<area shape="rect" id="node5" href="$parallel__common_8h.html" title=" " alt="" coords="340,102,487,129"/>
-<area shape="rect" id="node7" href="$parallel__reduce_8h.html" title=" " alt="" coords="26,102,161,129"/>
-<area shape="rect" id="node8" href="$global__function_8h.html" title=" " alt="" coords="511,95,676,136"/>
-<area shape="rect" id="node9" title=" " alt="" coords="614,184,694,211"/>
-<area shape="rect" id="node10" title=" " alt="" coords="751,102,815,129"/>
-<area shape="rect" id="node3" title=" " alt="" coords="246,184,325,211"/>
-<area shape="rect" id="node6" title=" " alt="" coords="427,184,486,211"/>
+<area shape="rect" id="node1" title=" " alt="" coords="426,5,589,47"/>
+<area shape="rect" id="node2" href="$parallel__global_8h.html" title=" " alt="" coords="28,102,158,129"/>
+<area shape="rect" id="node4" title=" " alt="" coords="162,184,221,211"/>
+<area shape="rect" id="node5" href="$version_8h.html" title=" " alt="" coords="753,102,836,129"/>
+<area shape="rect" id="node6" href="$parallel__common_8h.html" title=" " alt="" coords="182,102,329,129"/>
+<area shape="rect" id="node7" href="$parallel__reduce_8h.html" title=" " alt="" coords="354,102,488,129"/>
+<area shape="rect" id="node8" href="$global__function_8h.html" title=" " alt="" coords="513,95,678,136"/>
+<area shape="rect" id="node9" title=" " alt="" coords="616,184,696,211"/>
+<area shape="rect" id="node10" title=" " alt="" coords="860,102,924,129"/>
+<area shape="rect" id="node3" title=" " alt="" coords="280,184,359,211"/>
 </map>

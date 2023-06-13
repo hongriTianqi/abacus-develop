@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: module_hamilt_pw/hamilt_pwdft/operator_pw/meta_pw.h Source File</title>
+<title>3.2.4: module_hamilt_pw/hamilt_pwdft/operator_pw/meta_pw.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -102,7 +102,7 @@ $(function() {
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;           <span class="keyword">const</span> FPTYPE* vk_in,</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">int</span> vk_row,</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;           <span class="keyword">const</span> <span class="keywordtype">int</span> vk_col,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;           <span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* <a class="code" href="namespaceGlobalC.html#a73ba10f89d1a15cc4a17ca592a78835f">wfcpw</a>);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;           <span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* wfcpw);</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T_in, <span class="keyword">typename</span> Device_in = Device&gt;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      <span class="keyword">explicit</span> <a class="code" href="classhamilt_1_1Meta.html">Meta</a>(<span class="keyword">const</span> <a class="code" href="classhamilt_1_1Meta.html">Meta</a>&lt;<a class="code" href="classhamilt_1_1OperatorPW.html">OperatorPW&lt;T_in, Device_in&gt;</a>&gt;* meta);</div>
@@ -125,7 +125,7 @@ $(function() {
 <div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#a18722a0b6207ce65385926572bc6158d">   51</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#a18722a0b6207ce65385926572bc6158d">get_vk_col</a>()<span class="keyword"> const </span>{<span class="keywordflow">return</span> this-&gt;vk_col;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#a143aa9be99f1c96e3f5c74f91e025648">   52</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* <a class="code" href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#a143aa9be99f1c96e3f5c74f91e025648">get_wfcpw</a>()<span class="keyword"> const</span></div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          <span class="keywordflow">return</span> this-&gt;<a class="code" href="namespaceGlobalC.html#a73ba10f89d1a15cc4a17ca592a78835f">wfcpw</a>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;          <span class="keywordflow">return</span> this-&gt;wfcpw;</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">private</span>:</div>
@@ -143,7 +143,7 @@ $(function() {
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#af0932bf1b34bc18a66bfbb15923d1bbb">   70</a></span>&#160;    <span class="keyword">const</span> FPTYPE * vk = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#a24f4eb70ed0eb90d86e6b48106648a53">   72</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* <a class="code" href="namespaceGlobalC.html#a73ba10f89d1a15cc4a17ca592a78835f">wfcpw</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#a24f4eb70ed0eb90d86e6b48106648a53">   72</a></span>&#160;    <span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* wfcpw = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#aa6bd69d138a21224bf88c8940f98220b">   74</a></span>&#160;    Device* ctx = {};</div>
 <div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#aa46e46575850a237e161bc0dd8ca5964">   75</a></span>&#160;    psi::DEVICE_CPU* cpu_ctx = {};</div>
@@ -161,14 +161,11 @@ $(function() {
 <div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div></div>
 <div class="ttc" id="amath__kernel__op_8h_html"><div class="ttname"><a href="math__kernel__op_8h.html">math_kernel_op.h</a></div></div>
 <div class="ttc" id="aclassModulePW_1_1PW__Basis__K_html"><div class="ttname"><a href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a></div><div class="ttdoc">Special pw_basis class. It includes different k-points.</div><div class="ttdef"><b>Definition:</b> pw_basis_k.h:52</div></div>
-<div class="ttc" id="aclassModulePW_1_1PW__Basis__K_html_a2f6e25f4871577ba92c8c6836a2fd504"><div class="ttname"><a href="classModulePW_1_1PW__Basis__K.html#a2f6e25f4871577ba92c8c6836a2fd504">ModulePW::PW_Basis_K::npwk_max</a></div><div class="ttdeci">int npwk_max</div><div class="ttdef"><b>Definition:</b> pw_basis_k.h:77</div></div>
 <div class="ttc" id="apw__basis__k_8h_html"><div class="ttname"><a href="pw__basis__k_8h.html">pw_basis_k.h</a></div></div>
 <div class="ttc" id="aclasspsi_1_1Psi_html"><div class="ttname"><a href="classpsi_1_1Psi.html">psi::Psi</a></div><div class="ttdef"><b>Definition:</b> psi.h:33</div></div>
-<div class="ttc" id="aclassXC__Functional_html_a6bf3c50d992d4191f089867af29a2a76"><div class="ttname"><a href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76">XC_Functional::get_func_type</a></div><div class="ttdeci">static int get_func_type()</div><div class="ttdef"><b>Definition:</b> xc_functional.cpp:19</div></div>
+<div class="ttc" id="aclassXC__Functional_html_a6bf3c50d992d4191f089867af29a2a76"><div class="ttname"><a href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76">XC_Functional::get_func_type</a></div><div class="ttdeci">static int get_func_type()</div><div class="ttdef"><b>Definition:</b> charge_mixing_test.cpp:10</div></div>
 <div class="ttc" id="astructpsi_1_1memory_1_1resize__memory__op_html"><div class="ttname"><a href="structpsi_1_1memory_1_1resize__memory__op.html">psi::memory::resize_memory_op</a></div><div class="ttdef"><b>Definition:</b> memory_op.h:16</div></div>
-<div class="ttc" id="anamespaceGlobalC_html_a73ba10f89d1a15cc4a17ca592a78835f"><div class="ttname"><a href="namespaceGlobalC.html#a73ba10f89d1a15cc4a17ca592a78835f">GlobalC::wfcpw</a></div><div class="ttdeci">ModulePW::PW_Basis_K * wfcpw</div><div class="ttdef"><b>Definition:</b> global.cpp:11</div></div>
 <div class="ttc" id="amatrix_8h_html"><div class="ttname"><a href="matrix_8h.html">matrix.h</a></div></div>
-<div class="ttc" id="aclassModulePW_1_1PW__Basis__K_html_a1cc1cdd12e1a508807ccc998e773e2fa"><div class="ttname"><a href="classModulePW_1_1PW__Basis__K.html#a1cc1cdd12e1a508807ccc998e773e2fa">ModulePW::PW_Basis_K::real_to_recip</a></div><div class="ttdeci">void real_to_recip(const Device *ctx, const std::complex&lt; FPTYPE &gt; *in, std::complex&lt; FPTYPE &gt; *out, const int ik, const bool add=false, const FPTYPE factor=1.0) const</div></div>
 <div class="ttc" id="anamespaceDIAGOTEST_html_a0c8319a6e067c53d82f3f3f210021fa4"><div class="ttname"><a href="namespaceDIAGOTEST.html#a0c8319a6e067c53d82f3f3f210021fa4">DIAGOTEST::npw</a></div><div class="ttdeci">int npw</div><div class="ttdef"><b>Definition:</b> diago_mock.h:16</div></div>
 <div class="ttc" id="aclasshamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4_html_ad1497f6b575b24590c68cbbe395f6678"><div class="ttname"><a href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#ad1497f6b575b24590c68cbbe395f6678">hamilt::Meta&lt; OperatorPW&lt; FPTYPE, Device &gt; &gt;::get_isk</a></div><div class="ttdeci">const int * get_isk() const</div><div class="ttdef"><b>Definition:</b> meta_pw.h:48</div></div>
 <div class="ttc" id="astructhamilt_1_1meta__pw__op_html"><div class="ttname"><a href="structhamilt_1_1meta__pw__op.html">hamilt::meta_pw_op</a></div><div class="ttdef"><b>Definition:</b> meta_op.h:9</div></div>
@@ -181,7 +178,6 @@ $(function() {
 <div class="ttc" id="aclasshamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4_html_a18722a0b6207ce65385926572bc6158d"><div class="ttname"><a href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#a18722a0b6207ce65385926572bc6158d">hamilt::Meta&lt; OperatorPW&lt; FPTYPE, Device &gt; &gt;::get_vk_col</a></div><div class="ttdeci">int get_vk_col() const</div><div class="ttdef"><b>Definition:</b> meta_pw.h:51</div></div>
 <div class="ttc" id="ameta__pw_8h_html"><div class="ttname"><a href="meta__pw_8h.html">meta_pw.h</a></div></div>
 <div class="ttc" id="aclasshamilt_1_1Meta_html_a6a2199955a1318b54f7d4d2a0e470b36"><div class="ttname"><a href="classhamilt_1_1Meta.html#a6a2199955a1318b54f7d4d2a0e470b36">hamilt::Meta::~Meta</a></div><div class="ttdeci">~Meta()</div><div class="ttdef"><b>Definition:</b> meta_lcao.cpp:14</div></div>
-<div class="ttc" id="aclassModulePW_1_1PW__Basis__K_html_ac6abe3cffda8bb02edbc619429dc723e"><div class="ttname"><a href="classModulePW_1_1PW__Basis__K.html#ac6abe3cffda8bb02edbc619429dc723e">ModulePW::PW_Basis_K::get_gcar_data</a></div><div class="ttdeci">FPTYPE * get_gcar_data() const</div></div>
 <div class="ttc" id="atool__quit_8h_html"><div class="ttname"><a href="tool__quit_8h.html">tool_quit.h</a></div></div>
 <div class="ttc" id="anamespacehamilt_html_a506eac2a013daa2c2bd7d5248c6e6991a7a82a922090d59c1a157056e7a6bbdf9"><div class="ttname"><a href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a7a82a922090d59c1a157056e7a6bbdf9">hamilt::pw_meta</a></div><div class="ttdeci">@ pw_meta</div><div class="ttdef"><b>Definition:</b> operator.h:18</div></div>
 <div class="ttc" id="aexp_8cpp_html_a0acb682b8260ab1c60b918599864e2e5"><div class="ttname"><a href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div><div class="ttdeci">#define T</div><div class="ttdef"><b>Definition:</b> exp.cpp:237</div></div>
@@ -189,14 +185,11 @@ $(function() {
 <div class="ttc" id="aclasshamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4_html_ab0442956808c3d0b3fabd7163edf2eb5"><div class="ttname"><a href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#ab0442956808c3d0b3fabd7163edf2eb5">hamilt::Meta&lt; OperatorPW&lt; FPTYPE, Device &gt; &gt;::get_vk_row</a></div><div class="ttdeci">int get_vk_row() const</div><div class="ttdef"><b>Definition:</b> meta_pw.h:50</div></div>
 <div class="ttc" id="aclasshamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4_html_a6df755f49f0c581f9a83da4abe1b48fa"><div class="ttname"><a href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#a6df755f49f0c581f9a83da4abe1b48fa">hamilt::Meta&lt; OperatorPW&lt; FPTYPE, Device &gt; &gt;::get_vk</a></div><div class="ttdeci">const FPTYPE * get_vk() const</div><div class="ttdef"><b>Definition:</b> meta_pw.h:49</div></div>
 <div class="ttc" id="aoperator__pw_8h_html"><div class="ttname"><a href="operator__pw_8h.html">operator_pw.h</a></div></div>
-<div class="ttc" id="aclassModulePW_1_1PW__Basis__K_html_a3109b870aa22848b242751179afba92a"><div class="ttname"><a href="classModulePW_1_1PW__Basis__K.html#a3109b870aa22848b242751179afba92a">ModulePW::PW_Basis_K::get_kvec_c_data</a></div><div class="ttdeci">FPTYPE * get_kvec_c_data() const</div></div>
 <div class="ttc" id="ameta__op_8h_html"><div class="ttname"><a href="meta__op_8h.html">meta_op.h</a></div></div>
 <div class="ttc" id="aclasshamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4_html_a3c2cf76b809046febbbed81114e038a6"><div class="ttname"><a href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#a3c2cf76b809046febbbed81114e038a6">hamilt::Meta&lt; OperatorPW&lt; FPTYPE, Device &gt; &gt;::get_tpiba</a></div><div class="ttdeci">FPTYPE get_tpiba() const</div><div class="ttdef"><b>Definition:</b> meta_pw.h:44</div></div>
 <div class="ttc" id="anamespaceModuleBase_html_a319c957fc399a519aa4cdd447bdee1aa"><div class="ttname"><a href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa">ModuleBase::WARNING_QUIT</a></div><div class="ttdeci">void WARNING_QUIT(const std::string &amp;file, const std::string &amp;description)</div><div class="ttdoc">Combine the functions of WARNING and QUIT.</div><div class="ttdef"><b>Definition:</b> complexmatrix_test.cpp:46</div></div>
 <div class="ttc" id="anamespacehamilt_html"><div class="ttname"><a href="namespacehamilt.html">hamilt</a></div><div class="ttdef"><b>Definition:</b> hamilt.h:11</div></div>
 <div class="ttc" id="aclasshamilt_1_1OperatorPW_html"><div class="ttname"><a href="classhamilt_1_1OperatorPW.html">hamilt::OperatorPW</a></div><div class="ttdef"><b>Definition:</b> operator_pw.h:7</div></div>
-<div class="ttc" id="aclassModulePW_1_1PW__Basis__K_html_a54b102cf9ee9c5c3e1154e15724194d1"><div class="ttname"><a href="classModulePW_1_1PW__Basis__K.html#a54b102cf9ee9c5c3e1154e15724194d1">ModulePW::PW_Basis_K::recip_to_real</a></div><div class="ttdeci">void recip_to_real(const Device *ctx, const std::complex&lt; FPTYPE &gt; *in, std::complex&lt; FPTYPE &gt; *out, const int ik, const bool add=false, const FPTYPE factor=1.0) const</div></div>
-<div class="ttc" id="aclassModulePW_1_1PW__Basis_html_a12369284adfaede2fa644d132f44ce0c"><div class="ttname"><a href="classModulePW_1_1PW__Basis.html#a12369284adfaede2fa644d132f44ce0c">ModulePW::PW_Basis::nmaxgr</a></div><div class="ttdeci">int nmaxgr</div><div class="ttdef"><b>Definition:</b> pw_basis.h:242</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

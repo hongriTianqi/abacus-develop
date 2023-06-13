@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: Gint_Gamma Class Reference</title>
+<title>3.2.4: Gint_Gamma Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -80,8 +80,8 @@ Inheritance diagram for Gint_Gamma:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGint__Gamma__inherit__graph.png" border="0" usemap="#Gint__Gamma_inherit__map" alt="Inheritance graph"/></div>
 <map name="Gint__Gamma_inherit__map" id="Gint__Gamma_inherit__map">
-<area shape="rect" title=" " alt="" coords="19,497,198,839"/>
-<area shape="rect" href="classGint.html" title=" " alt="" coords="5,5,212,449"/>
+<area shape="rect" title=" " alt="" coords="19,512,198,853"/>
+<area shape="rect" href="classGint.html" title=" " alt="" coords="5,5,212,464"/>
 </map>
 </div>
 <div class="dynheader">
@@ -89,8 +89,14 @@ Collaboration diagram for Gint_Gamma:</div>
 <div class="dyncontent">
 <div class="center"><img src="classGint__Gamma__coll__graph.png" border="0" usemap="#Gint__Gamma_coll__map" alt="Collaboration graph"/></div>
 <map name="Gint__Gamma_coll__map" id="Gint__Gamma_coll__map">
-<area shape="rect" title=" " alt="" coords="19,497,198,839"/>
-<area shape="rect" href="classGint.html" title=" " alt="" coords="5,5,212,449"/>
+<area shape="rect" title=" " alt="" coords="100,2552,279,2893"/>
+<area shape="rect" href="classGint.html" title=" " alt="" coords="86,2059,293,2503"/>
+<area shape="rect" href="classGrid__Technique.html" title=" " alt="" coords="103,1420,276,1996"/>
+<area shape="rect" href="classGrid__MeshBall.html" title=" " alt="" coords="79,1176,300,1371"/>
+<area shape="rect" href="classGrid__BigCell.html" title=" " alt="" coords="95,815,284,1127"/>
+<area shape="rect" href="classGrid__MeshCell.html" title=" " alt="" coords="35,468,199,765"/>
+<area shape="rect" href="classGrid__MeshK.html" title=" " alt="" coords="5,57,141,339"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="173,5,333,391"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -107,8 +113,8 @@ Public Member Functions</h2></td></tr>
 <tr class="inherit_header pub_methods_classGint"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classGint')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classGint.html">Gint</a></td></tr>
 <tr class="memitem:ac7bf53713917f2a2545c7f98e5b056a3 inherit pub_methods_classGint"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#ac7bf53713917f2a2545c7f98e5b056a3">cal_gint</a> (<a class="el" href="classGint__inout.html">Gint_inout</a> *inout)</td></tr>
 <tr class="separator:ac7bf53713917f2a2545c7f98e5b056a3 inherit pub_methods_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b66a3f5ad069a1f61e82dd091871de7 inherit pub_methods_classGint"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#a6b66a3f5ad069a1f61e82dd091871de7">prep_grid</a> (const int &amp;nbx_in, const int &amp;nby_in, const int &amp;nbz_in, const int &amp;nbz_start_in, const int &amp;ncxyz_in)</td></tr>
-<tr class="separator:a6b66a3f5ad069a1f61e82dd091871de7 inherit pub_methods_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ace93600371a0ec55c3576859b75d43f0 inherit pub_methods_classGint"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#ace93600371a0ec55c3576859b75d43f0">prep_grid</a> (const <a class="el" href="classGrid__Technique.html">Grid_Technique</a> &amp;gt, const int &amp;nbx_in, const int &amp;nby_in, const int &amp;nbz_in, const int &amp;nbz_start_in, const int &amp;ncxyz_in, const int &amp;bx_in, const int &amp;by_in, const int &amp;bz_in, const int &amp;bxyz_in, const int &amp;nbxx_in, const int &amp;ny_in, const int &amp;nplane_in, const int &amp;startz_current_in)</td></tr>
+<tr class="separator:ace93600371a0ec55c3576859b75d43f0 inherit pub_methods_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -146,6 +152,9 @@ Private Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_attribs_classGint"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_classGint')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="classGint.html">Gint</a></td></tr>
+<tr class="memitem:ad440620fa0ad122e685350a704d18418 inherit pub_attribs_classGint"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classGrid__Technique.html">Grid_Technique</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#ad440620fa0ad122e685350a704d18418">gridt</a> = nullptr</td></tr>
+<tr class="separator:ad440620fa0ad122e685350a704d18418 inherit pub_attribs_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classGint"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classGint')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classGint.html">Gint</a></td></tr>
 <tr class="memitem:ad4faffb495e4b2c490c703a456a142ce inherit pro_methods_classGint"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#ad4faffb495e4b2c490c703a456a142ce">gint_kernel_vlocal</a> (const int na_grid, const int grid_index, const double delta_r, double *vldr3, const int LD_pool, double *<a class="el" href="classGint.html#ae73ed02bdf8720eb95dcf5df67cf06a8">pvpR_reduced</a>)</td></tr>
 <tr class="separator:ad4faffb495e4b2c490c703a456a142ce inherit pro_methods_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -184,6 +193,22 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:ab91c195fb3dc2f26a37419f58da5e7a2 inherit pro_attribs_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a30237f98bddec9347c9c4d6a66c65c09 inherit pro_attribs_classGint"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#a30237f98bddec9347c9c4d6a66c65c09">nbz_start</a></td></tr>
 <tr class="separator:a30237f98bddec9347c9c4d6a66c65c09 inherit pro_attribs_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b169b71a38e9016624fe957f8946221 inherit pro_attribs_classGint"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#a5b169b71a38e9016624fe957f8946221">bx</a></td></tr>
+<tr class="separator:a5b169b71a38e9016624fe957f8946221 inherit pro_attribs_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28cf8c8b72c501f6d32f29eb865facb6 inherit pro_attribs_classGint"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#a28cf8c8b72c501f6d32f29eb865facb6">by</a></td></tr>
+<tr class="separator:a28cf8c8b72c501f6d32f29eb865facb6 inherit pro_attribs_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60de71bab780d12455a8616d445b4be1 inherit pro_attribs_classGint"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#a60de71bab780d12455a8616d445b4be1">bz</a></td></tr>
+<tr class="separator:a60de71bab780d12455a8616d445b4be1 inherit pro_attribs_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93ed3d6ad591c86b9db2efe428d5b890 inherit pro_attribs_classGint"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#a93ed3d6ad591c86b9db2efe428d5b890">bxyz</a></td></tr>
+<tr class="separator:a93ed3d6ad591c86b9db2efe428d5b890 inherit pro_attribs_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf243765c9f6e47a45169dd3e47f80f4 inherit pro_attribs_classGint"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#adf243765c9f6e47a45169dd3e47f80f4">nbxx</a></td></tr>
+<tr class="separator:adf243765c9f6e47a45169dd3e47f80f4 inherit pro_attribs_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65fe832077d5528e0cd51cceaec7f2a inherit pro_attribs_classGint"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#aa65fe832077d5528e0cd51cceaec7f2a">ny</a></td></tr>
+<tr class="separator:aa65fe832077d5528e0cd51cceaec7f2a inherit pro_attribs_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14ffe062832c1bb54c9bd421d5a1ef9f inherit pro_attribs_classGint"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#a14ffe062832c1bb54c9bd421d5a1ef9f">nplane</a></td></tr>
+<tr class="separator:a14ffe062832c1bb54c9bd421d5a1ef9f inherit pro_attribs_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaef341e3bfc169243920ddbd9f075158 inherit pro_attribs_classGint"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#aaef341e3bfc169243920ddbd9f075158">startz_current</a></td></tr>
+<tr class="separator:aaef341e3bfc169243920ddbd9f075158 inherit pro_attribs_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7387fd99972ae38726e68b95b01647fe inherit pro_attribs_classGint"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#a7387fd99972ae38726e68b95b01647fe">pvpR_alloc_flag</a> = false</td></tr>
 <tr class="separator:a7387fd99972ae38726e68b95b01647fe inherit pro_attribs_classGint"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae73ed02bdf8720eb95dcf5df67cf06a8 inherit pro_attribs_classGint"><td class="memItemLeft" align="right" valign="top">double **&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classGint.html#ae73ed02bdf8720eb95dcf5df67cf06a8">pvpR_reduced</a> = nullptr</td></tr>
@@ -264,10 +289,10 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classGint__Gamma_a8eea25f6a32fb96083c120c8f5566a47_cgraph.png" border="0" usemap="#classGint__Gamma_a8eea25f6a32fb96083c120c8f5566a47_cgraph" alt=""/></div>
 <map name="classGint__Gamma_a8eea25f6a32fb96083c120c8f5566a47_cgraph" id="classGint__Gamma_a8eea25f6a32fb96083c120c8f5566a47_cgraph">
 <area shape="rect" title=" " alt="" coords="5,173,172,200"/>
-<area shape="rect" href="namespaceGint__Tools.html#a68d2d5b656d38608610e873decdf1132" title=" " alt="" coords="227,64,405,91"/>
-<area shape="rect" href="namespaceGint__Tools.html#a3fe28976d650f9238c2225d00af23634" title=" " alt="" coords="220,123,412,149"/>
+<area shape="rect" href="namespaceGint__Tools.html#a7393024c715d070fce4e16d4c340c32e" title=" " alt="" coords="227,64,405,91"/>
+<area shape="rect" href="namespaceGint__Tools.html#aa70e661ca9e3329d602b48da05a1c24f" title=" " alt="" coords="220,123,412,149"/>
 <area shape="rect" href="classUnitCell.html#a146dc70d7ae0f08edf4ae7c93fc6af0a" title=" " alt="" coords="490,173,637,200"/>
-<area shape="rect" href="namespaceGint__Tools.html#a71bef6de27b1addd129e88d07012baeb" title=" " alt="" coords="231,224,401,251"/>
+<area shape="rect" href="namespaceGint__Tools.html#a61b7c374e5578e41d2d2d4d35b33a040" title=" " alt="" coords="231,224,401,251"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="243,275,389,301"/>
 <area shape="rect" href="classModuleBase_1_1Ylm.html#a3226b51ada4223b1c81f0de127046a03" title="Get the ylm real object (used in grid integration)" alt="" coords="460,5,667,32"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="475,56,652,83"/>
@@ -323,8 +348,8 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="701,292,884,333"/>
 <area shape="rect" href="classGint__Gamma.html#ad9121ea4e7f1a332a8d36952ae95c14d" title=" " alt="" coords="235,427,395,468"/>
 <area shape="rect" href="classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="471,5,625,47"/>
-<area shape="rect" href="namespaceGint__Tools.html#a71bef6de27b1addd129e88d07012baeb" title=" " alt="" coords="708,97,877,123"/>
-<area shape="rect" href="namespaceGint__Tools.html#a5e4d7527e06f24793b47350abb59b543" title=" " alt="" coords="469,122,627,149"/>
+<area shape="rect" href="namespaceGint__Tools.html#a61b7c374e5578e41d2d2d4d35b33a040" title=" " alt="" coords="708,97,877,123"/>
+<area shape="rect" href="namespaceGint__Tools.html#aecec6d3612c4e3a9b75cf8384157cff6" title=" " alt="" coords="469,122,627,149"/>
 <area shape="rect" href="classGint.html#ab8fe999b55583c2059a1b925c350be71" title=" " alt="" coords="457,173,639,199"/>
 <area shape="rect" href="classGint.html#ad69a0a53aa47ccb9bf9d153eb33f96f7" title=" " alt="" coords="463,223,633,250"/>
 <area shape="rect" href="classGint.html#a01995852d9f3f1d88aa43419d89e17cd" title=" " alt="" coords="443,325,653,351"/>
@@ -380,7 +405,7 @@ Here is the call graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="5,74,165,115"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="213,5,432,32"/>
 <area shape="rect" href="classLCAO__Matrix.html#a9a13e2a1807a0532a336a40221c16268" title=" " alt="" coords="218,56,427,83"/>
-<area shape="rect" href="gint__gamma__vl_8cpp.html#a1101d9ecf36a2eb5a4cde9ebf79e38b7" title=" " alt="" coords="249,107,397,133"/>
+<area shape="rect" href="gint__gamma__vl_8cpp.html#af0a422b876d3fc6fba07a11ceb853646" title=" " alt="" coords="249,107,397,133"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="234,157,411,184"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="480,5,693,32"/>
 <area shape="rect" href="gint__gamma__vl_8cpp.html#ae3b0677b0e09884d640aef46976bcd45" title=" " alt="" coords="525,56,648,83"/>
@@ -620,7 +645,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 <p>=============================== Use MPI_Alltoallv to convert a grid distributed matrix </p>
-<h1><a class="anchor" id="autotoc_md17"></a>
+<h1><a class="anchor" id="autotoc_md19"></a>
 to 2D - block cyclic distributed matrix.</h1>
 
 </div>

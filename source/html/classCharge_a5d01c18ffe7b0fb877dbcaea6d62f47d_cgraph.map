@@ -1,4 +1,5 @@
 <map id="Charge::save_rho_before_sum_band" name="Charge::save_rho_before_sum_band">
 <area shape="rect" id="node1" title=" " alt="" coords="5,5,189,47"/>
-<area shape="rect" id="node2" href="$classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="237,5,380,47"/>
+<area shape="rect" id="node2" href="$namespaceelecstate.html#a12c4e4e71cc5208ffd2994dee1d5e444" title="get the value of XC_Functional::func_type" alt="" coords="237,13,441,39"/>
+<area shape="rect" id="node3" href="$classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="489,5,632,47"/>
 </map>

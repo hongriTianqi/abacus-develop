@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: module_hamilt_general/module_xc/xc_functional.h Source File</title>
+<title>3.2.4: module_hamilt_general/module_xc/xc_functional.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -436,7 +436,7 @@ $(function() {
 <div class="ttc" id="aclassXC__Functional_html_a96f41f239f3058eae26a15d11904bc86"><div class="ttname"><a href="classXC__Functional.html#a96f41f239f3058eae26a15d11904bc86">XC_Functional::set_xc_type</a></div><div class="ttdeci">static void set_xc_type(const std::string xc_func_in)</div><div class="ttdef"><b>Definition:</b> xc_functional.cpp:26</div></div>
 <div class="ttc" id="axc__funcs_8h_html_aecf15c19828d33ebf8073f50daa562ba"><div class="ttname"><a href="xc__funcs_8h.html#aecf15c19828d33ebf8073f50daa562ba">XC_GGA_X_PBE_SOL</a></div><div class="ttdeci">#define XC_GGA_X_PBE_SOL</div><div class="ttdef"><b>Definition:</b> xc_funcs.h:12</div></div>
 <div class="ttc" id="aclassXC__Functional_html_aab1eb0226e5fe9b62bf79fb0c3c43f3a"><div class="ttname"><a href="classXC__Functional.html#aab1eb0226e5fe9b62bf79fb0c3c43f3a">XC_Functional::slater_rxc_spin</a></div><div class="ttdeci">static void slater_rxc_spin(const double &amp;rho, const double &amp;z, double &amp;ex, double &amp;vxup, double &amp;vxdw)</div><div class="ttdef"><b>Definition:</b> xc_funct_exch_lda.cpp:101</div></div>
-<div class="ttc" id="aclassXC__Functional_html_a6bf3c50d992d4191f089867af29a2a76"><div class="ttname"><a href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76">XC_Functional::get_func_type</a></div><div class="ttdeci">static int get_func_type()</div><div class="ttdef"><b>Definition:</b> xc_functional.cpp:19</div></div>
+<div class="ttc" id="aclassXC__Functional_html_a6bf3c50d992d4191f089867af29a2a76"><div class="ttname"><a href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76">XC_Functional::get_func_type</a></div><div class="ttdeci">static int get_func_type()</div><div class="ttdef"><b>Definition:</b> charge_mixing_test.cpp:10</div></div>
 <div class="ttc" id="aclassXC__Functional_html_a5915c3923096eeed314980cf18d6bd49"><div class="ttname"><a href="classXC__Functional.html#a5915c3923096eeed314980cf18d6bd49">XC_Functional::pbec</a></div><div class="ttdeci">static void pbec(const double &amp;rho, const double &amp;grho, const int &amp;flag, double &amp;sc, double &amp;v1c, double &amp;v2c)</div><div class="ttdef"><b>Definition:</b> xc_funct_corr_gga.cpp:135</div></div>
 <div class="ttc" id="aclassXC__Functional_html_aef785752be4e99282b15ce31c2d5e832"><div class="ttname"><a href="classXC__Functional.html#aef785752be4e99282b15ce31c2d5e832">XC_Functional::perdew86_spin</a></div><div class="ttdeci">static void perdew86_spin(double rho, double zeta, double grho, double &amp;sc, double &amp;v1cup, double &amp;v1cdw, double &amp;v2c)</div><div class="ttdef"><b>Definition:</b> xc_funct_corr_gga.cpp:212</div></div>
 <div class="ttc" id="axc__funcs_8h_html_ac60c25eddcd27885f425456b1dd536c2"><div class="ttname"><a href="xc__funcs_8h.html#ac60c25eddcd27885f425456b1dd536c2">XC_GGA_X_OPTX</a></div><div class="ttdeci">#define XC_GGA_X_OPTX</div><div class="ttdef"><b>Definition:</b> xc_funcs.h:11</div></div>
@@ -496,7 +496,7 @@ $(function() {
 <div class="ttc" id="aclassXC__Functional_html_acd3f2e95b5432678733749d91eda4ec7"><div class="ttname"><a href="classXC__Functional.html#acd3f2e95b5432678733749d91eda4ec7">XC_Functional::grad_wfc</a></div><div class="ttdeci">static void grad_wfc(const std::complex&lt; double &gt; *rhog, const int ik, std::complex&lt; double &gt; **grad, ModulePW::PW_Basis_K *wfc_basis, const double tpiba)</div><div class="ttdef"><b>Definition:</b> xc_functional_gradcorr.cpp:574</div></div>
 <div class="ttc" id="aclassXC__Functional_html_a6a512462c5c80656543341528008f382"><div class="ttname"><a href="classXC__Functional.html#a6a512462c5c80656543341528008f382">XC_Functional::noncolin_rho</a></div><div class="ttdeci">static void noncolin_rho(double *rhoout1, double *rhoout2, double *seg, const double *const *const rho, const int nrxx, const double *ux_, const bool lsign_)</div><div class="ttdef"><b>Definition:</b> xc_functional_gradcorr.cpp:687</div></div>
 <div class="ttc" id="aclassXC__Functional_html_a08045cb243bc6c5b0e8725ab42546bd5"><div class="ttname"><a href="classXC__Functional.html#a08045cb243bc6c5b0e8725ab42546bd5">XC_Functional::gradcorr</a></div><div class="ttdeci">static void gradcorr(double &amp;etxc, double &amp;vtxc, ModuleBase::matrix &amp;v, const Charge *const chr, ModulePW::PW_Basis *rhopw, const UnitCell *ucell, std::vector&lt; double &gt; &amp;stress_gga, const bool is_stress=0)</div><div class="ttdef"><b>Definition:</b> xc_functional_gradcorr.cpp:15</div></div>
-<div class="ttc" id="aclassCharge_html"><div class="ttname"><a href="classCharge.html">Charge</a></div><div class="ttdef"><b>Definition:</b> charge.h:14</div></div>
+<div class="ttc" id="aclassCharge_html"><div class="ttname"><a href="classCharge.html">Charge</a></div><div class="ttdef"><b>Definition:</b> charge.h:17</div></div>
 <div class="ttc" id="aclassXC__Functional_html_a8e84b873fd30954b12e9c49f1b89d025"><div class="ttname"><a href="classXC__Functional.html#a8e84b873fd30954b12e9c49f1b89d025">XC_Functional::xc_spin</a></div><div class="ttdeci">static void xc_spin(const double &amp;rho, const double &amp;zeta, double &amp;exc, double &amp;vxcup, double &amp;vxcdw)</div><div class="ttdef"><b>Definition:</b> xc_functional_wrapper_xc.cpp:69</div></div>
 <div class="ttc" id="aclassXC__Functional_html_aff556d3a5e1e91d0da95fbea644cef3f"><div class="ttname"><a href="classXC__Functional.html#aff556d3a5e1e91d0da95fbea644cef3f">XC_Functional::pwcorr</a></div><div class="ttdeci">static void pwcorr(const double r, const double c[], double &amp;g, double &amp;dg)</div><div class="ttdef"><b>Definition:</b> xc_funct_hcth.cpp:130</div></div>
 <div class="ttc" id="axc__funcs_8h_html"><div class="ttname"><a href="xc__funcs_8h.html">xc_funcs.h</a></div></div>

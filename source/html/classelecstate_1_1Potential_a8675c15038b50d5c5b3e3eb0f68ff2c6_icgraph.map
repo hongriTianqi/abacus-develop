@@ -1,4 +1,5 @@
 <map id="elecstate::Potential::get_v_effective_data" name="elecstate::Potential::get_v_effective_data">
-<area shape="rect" id="node1" title=" " alt="" coords="263,5,429,47"/>
-<area shape="rect" id="node2" href="$classhamilt_1_1HamiltPW.html#a241426d6aa506dcface977a6bda6c4fb" title=" " alt="" coords="5,13,215,39"/>
+<area shape="rect" id="node1" title=" " alt="" coords="263,23,429,65"/>
+<area shape="rect" id="node2" href="$classhamilt_1_1HamiltPW.html#a241426d6aa506dcface977a6bda6c4fb" title=" " alt="" coords="5,5,215,32"/>
+<area shape="rect" id="node3" href="$potential__new__test_8cpp.html#a438a499539b0cd88ba4b67018dd86d32" title=" " alt="" coords="75,56,145,83"/>
 </map>

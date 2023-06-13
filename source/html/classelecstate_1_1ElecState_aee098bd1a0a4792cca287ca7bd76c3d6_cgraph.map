@@ -1,12 +1,12 @@
 <map id="elecstate::ElecState::calculate_weights" name="elecstate::ElecState::calculate_weights">
-<area shape="rect" id="node1" title=" " alt="" coords="5,157,156,199"/>
-<area shape="rect" id="node2" href="$namespaceParallel__Reduce.html#a20b908f647927836ab12eb9a9ad9fcea" title=" " alt="" coords="612,5,787,47"/>
-<area shape="rect" id="node4" href="$namespaceParallel__Reduce.html#ad66f969cf8cda732e4f22b8d23f40423" title=" " alt="" coords="612,71,787,112"/>
-<area shape="rect" id="node5" href="$classOccupy.html#abd74a9130e5b8c6855f8d163e7962205" title=" " alt="" coords="225,89,361,115"/>
-<area shape="rect" id="node8" href="$classOccupy.html#a8a136b9cd02e5c55f74c937de9b86c94" title=" " alt="" coords="227,190,359,217"/>
-<area shape="rect" id="node9" href="$namespaceParallel__Reduce.html#a58cd25c0bca55c28727e26eecbfe7a8c" title=" " alt="" coords="204,241,381,283"/>
-<area shape="rect" id="node10" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="220,307,365,334"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="835,39,1017,80"/>
-<area shape="rect" id="node6" href="$classOccupy.html#a8859bd7135067293db02c90d0115cfd2" title=" " alt="" coords="433,38,561,65"/>
-<area shape="rect" id="node7" href="$classOccupy.html#a307783457e5e0fbf9a71c3f4ea740e72" title=" " alt="" coords="429,89,564,115"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,201,156,242"/>
+<area shape="rect" id="node2" href="$classOccupy.html#a5cb4188d599a9693d068f709d8c53f59" title="calculates weights with the gaussian spreading technique" alt="" coords="225,132,361,159"/>
+<area shape="rect" id="node5" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="612,157,825,184"/>
+<area shape="rect" id="node8" href="$classOccupy.html#a31d35d20354d1d2434750127a91317c5" title="calculates weights and fermi energy for semiconductors and insulators" alt="" coords="431,5,563,32"/>
+<area shape="rect" id="node9" href="$namespaceParallel__Reduce.html#a58cd25c0bca55c28727e26eecbfe7a8c" title=" " alt="" coords="204,259,381,301"/>
+<area shape="rect" id="node10" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="220,325,365,352"/>
+<area shape="rect" id="node3" href="$classOccupy.html#ab3385272163a2f655fa9f17412c41b55" title="Finds the Fermi energy." alt="" coords="433,157,561,184"/>
+<area shape="rect" id="node6" href="$classOccupy.html#a307783457e5e0fbf9a71c3f4ea740e72" title=" " alt="" coords="429,107,564,133"/>
+<area shape="rect" id="node7" href="$classOccupy.html#a389a0b9ea52aad123b54b2a2585e10eb" title=" " alt="" coords="433,56,560,83"/>
+<area shape="rect" id="node4" href="$namespaceParallel__Reduce.html#a20b908f647927836ab12eb9a9ad9fcea" title=" " alt="" coords="631,45,806,86"/>
 </map>

@@ -1,12 +1,12 @@
 <map id="module_elecstate/potentials/potential_new.h" name="module_elecstate/potentials/potential_new.h">
-<area shape="rect" id="node1" title=" " alt="" coords="431,5,638,47"/>
-<area shape="rect" id="node2" href="$complexmatrix_8h.html" title=" " alt="" coords="220,281,444,307"/>
-<area shape="rect" id="node5" href="$pot__base_8h.html" title=" " alt="" coords="193,102,286,129"/>
-<area shape="rect" id="node9" href="$VNL__in__pw_8h.html" title=" " alt="" coords="372,95,564,136"/>
-<area shape="rect" id="node10" title=" " alt="" coords="639,102,702,129"/>
-<area shape="rect" id="node3" title=" " alt="" coords="234,363,312,389"/>
-<area shape="rect" id="node4" href="$matrix_8h.html" title=" " alt="" coords="74,363,152,389"/>
-<area shape="rect" id="node6" href="$unitcell_8h.html" title=" " alt="" coords="348,191,513,218"/>
-<area shape="rect" id="node7" href="$pw__basis_8h.html" title=" " alt="" coords="30,273,196,315"/>
-<area shape="rect" id="node8" href="$charge_8h.html" title=" " alt="" coords="82,184,272,225"/>
+<area shape="rect" id="node1" title=" " alt="" coords="201,5,407,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="70,102,133,129"/>
+<area shape="rect" id="node3" href="$complexmatrix_8h.html" title=" " alt="" coords="243,273,467,300"/>
+<area shape="rect" id="node6" href="$VNL__in__pw_8h.html" title=" " alt="" coords="341,95,533,136"/>
+<area shape="rect" id="node9" href="$structure__factor_8h.html" title=" " alt="" coords="208,184,400,225"/>
+<area shape="rect" id="node10" href="$pot__base_8h.html" title=" " alt="" coords="576,191,669,218"/>
+<area shape="rect" id="node4" title=" " alt="" coords="194,348,273,375"/>
+<area shape="rect" id="node5" href="$matrix_8h.html" title=" " alt="" coords="500,348,577,375"/>
+<area shape="rect" id="node7" href="$VL__in__pw_8h.html" title=" " alt="" coords="491,273,586,300"/>
+<area shape="rect" id="node8" href="$complexarray_8h.html" title=" " alt="" coords="5,273,219,300"/>
 </map>

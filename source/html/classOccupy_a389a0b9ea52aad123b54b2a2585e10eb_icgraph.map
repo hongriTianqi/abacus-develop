@@ -1,9 +1,8 @@
 <map id="Occupy::wgauss" name="Occupy::wgauss">
-<area shape="rect" id="node1" title=" " alt="" coords="1235,13,1361,39"/>
-<area shape="rect" id="node2" href="$classOccupy.html#abd74a9130e5b8c6855f8d163e7962205" title=" " alt="" coords="705,13,841,39"/>
-<area shape="rect" id="node6" href="$classOccupy.html#a46bb4260cf8057b461253407838a6204" title=" " alt="" coords="1065,38,1187,65"/>
-<area shape="rect" id="node3" href="$classelecstate_1_1ElecState.html#aee098bd1a0a4792cca287ca7bd76c3d6" title=" " alt="" coords="507,5,657,47"/>
-<area shape="rect" id="node4" href="$classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="272,5,459,47"/>
-<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="5,5,224,47"/>
-<area shape="rect" id="node7" href="$classOccupy.html#a8859bd7135067293db02c90d0115cfd2" title=" " alt="" coords="889,38,1017,65"/>
+<area shape="rect" id="node1" title=" " alt="" coords="968,13,1095,39"/>
+<area shape="rect" id="node2" href="$classOccupy.html#a5cb4188d599a9693d068f709d8c53f59" title="calculates weights with the gaussian spreading technique" alt="" coords="439,13,575,39"/>
+<area shape="rect" id="node5" href="$classOccupy.html#a6e8d1146846d1fa1fee72b915ad2d1b6" title="This function computes the number of states under a given energy e." alt="" coords="799,38,920,65"/>
+<area shape="rect" id="node3" href="$classelecstate_1_1ElecState.html#aee098bd1a0a4792cca287ca7bd76c3d6" title=" " alt="" coords="240,5,391,47"/>
+<area shape="rect" id="node4" href="$classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,5,192,47"/>
+<area shape="rect" id="node6" href="$classOccupy.html#ab3385272163a2f655fa9f17412c41b55" title="Finds the Fermi energy." alt="" coords="623,38,751,65"/>
 </map>

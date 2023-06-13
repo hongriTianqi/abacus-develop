@@ -1,12 +1,12 @@
 <map id="elecstate::ElecState" name="elecstate::ElecState">
-<area shape="rect" id="node1" title=" " alt="" coords="395,2160,559,2516"/>
-<area shape="rect" id="node2" href="$structelecstate_1_1efermi.html" title="Fermi energies." alt="" coords="19,1727,152,1863"/>
-<area shape="rect" id="node3" href="$classCharge.html" title=" " alt="" coords="5,965,235,1468"/>
+<area shape="rect" id="node1" title=" " alt="" coords="395,2145,559,2501"/>
+<area shape="rect" id="node2" href="$structelecstate_1_1efermi.html" title="Fermi energies." alt="" coords="19,1712,152,1848"/>
+<area shape="rect" id="node3" href="$classCharge.html" title=" " alt="" coords="5,965,235,1453"/>
 <area shape="rect" id="node4" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="241,5,428,625"/>
-<area shape="rect" id="node6" href="$classModulePW_1_1PW__Basis__Big.html" title=" " alt="" coords="241,1061,431,1373"/>
+<area shape="rect" id="node6" href="$classModulePW_1_1PW__Basis__Big.html" title=" " alt="" coords="241,1053,431,1365"/>
 <area shape="rect" id="node8" href="$classelecstate_1_1PotBase.html" title=" " alt="" coords="373,747,515,883"/>
-<area shape="rect" id="node5" href="$structelecstate_1_1fenergy.html" title=" " alt="" coords="691,1661,842,1929"/>
-<area shape="rect" id="node7" href="$classelecstate_1_1Potential.html" title=" " alt="" coords="387,1602,568,1987"/>
+<area shape="rect" id="node5" href="$structelecstate_1_1fenergy.html" title=" " alt="" coords="691,1646,842,1914"/>
+<area shape="rect" id="node7" href="$classelecstate_1_1Potential.html" title=" " alt="" coords="387,1587,568,1973"/>
 <area shape="rect" id="node9" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="539,688,693,941"/>
-<area shape="rect" id="node10" href="$classK__Vectors.html" title=" " alt="" coords="866,1492,1081,2097"/>
+<area shape="rect" id="node10" href="$classK__Vectors.html" title=" " alt="" coords="866,1477,1081,2083"/>
 </map>

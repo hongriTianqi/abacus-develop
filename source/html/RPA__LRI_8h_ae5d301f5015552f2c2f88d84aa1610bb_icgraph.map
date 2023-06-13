@@ -1,9 +1,10 @@
 <map id="exx_lri_rpa" name="exx_lri_rpa">
-<area shape="rect" id="node1" title=" " alt="" coords="469,107,564,133"/>
-<area shape="rect" id="node2" href="$classRPA__LRI.html#a279e4c73810479bb5edee030829042aa" title=" " alt="" coords="229,5,421,32"/>
-<area shape="rect" id="node4" href="$classRPA__LRI.html#a854a0660fc6420e49f6c2549368a06cb" title=" " alt="" coords="250,56,401,83"/>
-<area shape="rect" id="node5" href="$classRPA__LRI.html#a72d40740522615e491ee4ffe35336547" title=" " alt="" coords="274,107,377,133"/>
-<area shape="rect" id="node6" href="$classRPA__LRI.html#ae4fdf8a171fa77feac76fe62489fcfa0" title=" " alt="" coords="235,157,416,184"/>
-<area shape="rect" id="node7" href="$classRPA__LRI.html#a6c1164aad23d15b2b0cbbda179761f7b" title=" " alt="" coords="245,208,405,235"/>
-<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="5,99,181,141"/>
+<area shape="rect" id="node1" title=" " alt="" coords="712,107,807,133"/>
+<area shape="rect" id="node2" href="$classRPA__LRI.html#aeaa2ff090e2afff73ed3614b5934b46a" title=" " alt="" coords="472,5,664,32"/>
+<area shape="rect" id="node5" href="$classRPA__LRI.html#a854a0660fc6420e49f6c2549368a06cb" title=" " alt="" coords="493,56,643,83"/>
+<area shape="rect" id="node6" href="$classRPA__LRI.html#a72d40740522615e491ee4ffe35336547" title=" " alt="" coords="517,107,619,133"/>
+<area shape="rect" id="node7" href="$classRPA__LRI.html#ae4fdf8a171fa77feac76fe62489fcfa0" title=" " alt="" coords="477,157,659,184"/>
+<area shape="rect" id="node8" href="$classRPA__LRI.html#ab18d91b836949fbb55cc216f90511f00" title=" " alt="" coords="488,208,648,235"/>
+<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="248,99,424,141"/>
+<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="5,99,200,141"/>
 </map>

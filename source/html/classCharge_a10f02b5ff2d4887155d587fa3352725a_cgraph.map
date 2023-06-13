@@ -1,5 +1,6 @@
 <map id="Charge::~Charge" name="Charge::~Charge">
 <area shape="rect" id="node1" title=" " alt="" coords="5,13,139,39"/>
 <area shape="rect" id="node2" href="$classCharge.html#ada28366defcbf80e1f11e9b9a1a873e7" title=" " alt="" coords="187,13,312,39"/>
-<area shape="rect" id="node3" href="$classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="360,5,503,47"/>
+<area shape="rect" id="node3" href="$namespaceelecstate.html#a12c4e4e71cc5208ffd2994dee1d5e444" title="get the value of XC_Functional::func_type" alt="" coords="360,13,564,39"/>
+<area shape="rect" id="node4" href="$classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="612,5,755,47"/>
 </map>

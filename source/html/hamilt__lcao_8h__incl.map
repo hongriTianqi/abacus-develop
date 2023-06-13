@@ -1,12 +1,12 @@
 <map id="module_hamilt_lcao/hamilt_lcaodft/hamilt_lcao.h" name="module_hamilt_lcao/hamilt_lcaodft/hamilt_lcao.h">
-<area shape="rect" id="node1" title=" " alt="" coords="403,5,568,61"/>
-<area shape="rect" id="node2" href="$hamilt_8h.html" title=" " alt="" coords="5,117,181,158"/>
-<area shape="rect" id="node3" href="$LCAO__gen__fixedH_8h.html" title=" " alt="" coords="257,317,415,373"/>
-<area shape="rect" id="node4" href="$LCAO__matrix_8h.html" title=" " alt="" coords="359,421,518,477"/>
-<area shape="rect" id="node5" href="$LCAO__hamilt_8h.html" title=" " alt="" coords="315,213,474,269"/>
-<area shape="rect" id="node6" href="$gint__gamma_8h.html" title=" " alt="" coords="440,325,645,366"/>
-<area shape="rect" id="node7" href="$gint__k_8h.html" title=" " alt="" coords="669,325,832,366"/>
-<area shape="rect" id="node8" href="$local__orbital__charge_8h.html" title=" " alt="" coords="408,109,563,165"/>
-<area shape="rect" id="node9" href="$local__orbital__wfc_8h.html" title=" " alt="" coords="499,213,653,269"/>
-<area shape="rect" id="node10" href="$potential__new_8h.html" title=" " alt="" coords="779,117,928,158"/>
+<area shape="rect" id="node1" title=" " alt="" coords="478,5,643,61"/>
+<area shape="rect" id="node2" href="$potential__new_8h.html" title=" " alt="" coords="5,117,212,158"/>
+<area shape="rect" id="node3" href="$hamilt_8h.html" title=" " alt="" coords="237,117,413,158"/>
+<area shape="rect" id="node4" href="$LCAO__gen__fixedH_8h.html" title=" " alt="" coords="488,317,647,373"/>
+<area shape="rect" id="node5" href="$LCAO__matrix_8h.html" title=" " alt="" coords="591,421,749,477"/>
+<area shape="rect" id="node6" href="$LCAO__hamilt_8h.html" title=" " alt="" coords="539,213,697,269"/>
+<area shape="rect" id="node7" href="$gint__gamma_8h.html" title=" " alt="" coords="671,325,877,366"/>
+<area shape="rect" id="node8" href="$gint__k_8h.html" title=" " alt="" coords="901,325,1063,366"/>
+<area shape="rect" id="node9" href="$local__orbital__charge_8h.html" title=" " alt="" coords="598,109,753,165"/>
+<area shape="rect" id="node10" href="$local__orbital__wfc_8h.html" title=" " alt="" coords="722,213,877,269"/>
 </map>

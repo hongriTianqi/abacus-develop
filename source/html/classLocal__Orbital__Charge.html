@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: Local_Orbital_Charge Class Reference</title>
+<title>3.2.4: Local_Orbital_Charge Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -82,10 +82,16 @@ Collaboration diagram for Local_Orbital_Charge:</div>
 <div class="dyncontent">
 <div class="center"><img src="classLocal__Orbital__Charge__coll__graph.png" border="0" usemap="#Local__Orbital__Charge_coll__map" alt="Collaboration graph"/></div>
 <map name="Local__Orbital__Charge_coll__map" id="Local__Orbital__Charge_coll__map">
-<area shape="rect" title=" " alt="" coords="5,865,245,1368"/>
-<area shape="rect" href="structParallel__Orbitals.html" title=" " alt="" coords="43,248,207,501"/>
-<area shape="rect" href="classLocal__Orbital__wfc.html" title=" " alt="" coords="181,564,355,803"/>
-<area shape="rect" href="structLocalMatrix.html" title=" " alt="" coords="76,5,175,185"/>
+<area shape="rect" title=" " alt="" coords="195,2388,435,2891"/>
+<area shape="rect" href="structParallel__Orbitals.html" title=" " alt="" coords="301,1595,465,1848"/>
+<area shape="rect" href="classLocal__Orbital__wfc.html" title=" " alt="" coords="161,2072,335,2325"/>
+<area shape="rect" href="structLocalMatrix.html" title=" " alt="" coords="333,1183,432,1363"/>
+<area shape="rect" href="classGrid__Technique.html" title=" " alt="" coords="103,1433,276,2009"/>
+<area shape="rect" href="classGrid__MeshBall.html" title=" " alt="" coords="79,1176,300,1371"/>
+<area shape="rect" href="classGrid__BigCell.html" title=" " alt="" coords="95,815,284,1127"/>
+<area shape="rect" href="classGrid__MeshCell.html" title=" " alt="" coords="35,468,199,765"/>
+<area shape="rect" href="classGrid__MeshK.html" title=" " alt="" coords="5,57,141,339"/>
+<area shape="rect" href="classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="173,5,333,391"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -95,22 +101,22 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a67074dd50d721d8f92f9feaa9ecf0a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3b9e42e7788b21c5c61fd26615bee146"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#a3b9e42e7788b21c5c61fd26615bee146">~Local_Orbital_Charge</a> ()</td></tr>
 <tr class="separator:a3b9e42e7788b21c5c61fd26615bee146"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdb87aaed59940ee43dce98b17e7c1d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#abdb87aaed59940ee43dce98b17e7c1d9">allocate_dm_wfc</a> (const int &amp;lgd, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pelec, <a class="el" href="classLocal__Orbital__wfc.html">Local_Orbital_wfc</a> &amp;lowf, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *psid, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *psi)</td></tr>
-<tr class="separator:abdb87aaed59940ee43dce98b17e7c1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8578427bfbbd7f87d5204cd195e526e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#a8578427bfbbd7f87d5204cd195e526e2">allocate_gamma</a> (const int &amp;lgd, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *psid, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pelec)</td></tr>
-<tr class="separator:a8578427bfbbd7f87d5204cd195e526e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0f624b292d25a3a3d02fc9e77b5e10da"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#a0f624b292d25a3a3d02fc9e77b5e10da">allocate_dm_wfc</a> (const <a class="el" href="classGrid__Technique.html">Grid_Technique</a> &amp;gt, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pelec, <a class="el" href="classLocal__Orbital__wfc.html">Local_Orbital_wfc</a> &amp;lowf, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *psid, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *psi, const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;kv)</td></tr>
+<tr class="separator:a0f624b292d25a3a3d02fc9e77b5e10da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdcb58905e7ed78fa155fded35397ea8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#abdcb58905e7ed78fa155fded35397ea8">allocate_gamma</a> (const int &amp;lgd, <a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *psid, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pelec, const int &amp;nks)</td></tr>
+<tr class="separator:abdcb58905e7ed78fa155fded35397ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae82f43ef7d90a624e9d494e96d231314"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#ae82f43ef7d90a624e9d494e96d231314">gamma_file</a> (<a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; double &gt; *psid, <a class="el" href="classLocal__Orbital__wfc.html">Local_Orbital_wfc</a> &amp;lowf, <a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *pelec)</td></tr>
 <tr class="separator:ae82f43ef7d90a624e9d494e96d231314"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95c0fe907abd4e09f700aff6f4a488db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#a95c0fe907abd4e09f700aff6f4a488db">cal_dk_gamma_from_2D_pub</a> (void)</td></tr>
 <tr class="separator:a95c0fe907abd4e09f700aff6f4a488db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac4b93b4805998f628733e67d8cfd48fd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#ac4b93b4805998f628733e67d8cfd48fd">allocate_DM_k</a> (void)</td></tr>
-<tr class="separator:ac4b93b4805998f628733e67d8cfd48fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6469780732365657483b503a4bb26a2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#a6469780732365657483b503a4bb26a2f">init_dm_2d</a> (void)</td></tr>
-<tr class="separator:a6469780732365657483b503a4bb26a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac413f1e4d0397b162637e34f3dcbf10b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#ac413f1e4d0397b162637e34f3dcbf10b">cal_dm_R</a> (std::vector&lt; <a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &gt; &amp;<a class="el" href="classLocal__Orbital__Charge.html#a5bdacec0b560ea5bee414eb70688b5b3">dm_k</a>, <a class="el" href="classRecord__adj.html">Record_adj</a> &amp;ra, double **dm2d)</td></tr>
-<tr class="separator:ac413f1e4d0397b162637e34f3dcbf10b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae48c633772508b908d398ae8b0e638c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#ae48c633772508b908d398ae8b0e638c1">cal_dk_k</a> (const <a class="el" href="classGrid__Technique.html">Grid_Technique</a> &amp;gt, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg_in)</td></tr>
-<tr class="separator:ae48c633772508b908d398ae8b0e638c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae1fdd39fb4c0cf07d111dd17fb824895"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#ae1fdd39fb4c0cf07d111dd17fb824895">allocate_DM_k</a> (const int &amp;nks, const int &amp;nnrg)</td></tr>
+<tr class="separator:ae1fdd39fb4c0cf07d111dd17fb824895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bbb83bba68b43f73895b3c90971af2a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#a7bbb83bba68b43f73895b3c90971af2a">init_dm_2d</a> (const int &amp;nks)</td></tr>
+<tr class="separator:a7bbb83bba68b43f73895b3c90971af2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff07a593942f6979ecd20d318374883b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#aff07a593942f6979ecd20d318374883b">cal_dm_R</a> (std::vector&lt; <a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &gt; &amp;<a class="el" href="classLocal__Orbital__Charge.html#a5bdacec0b560ea5bee414eb70688b5b3">dm_k</a>, <a class="el" href="classRecord__adj.html">Record_adj</a> &amp;ra, double **dm2d, const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;kv)</td></tr>
+<tr class="separator:aff07a593942f6979ecd20d318374883b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6dd374141d9b34310ad5298181070dc7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classLocal__Orbital__Charge.html#a6dd374141d9b34310ad5298181070dc7">cal_dk_k</a> (const <a class="el" href="classGrid__Technique.html">Grid_Technique</a> &amp;gt, const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;wg_in, const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;kv)</td></tr>
+<tr class="separator:a6dd374141d9b34310ad5298181070dc7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -218,8 +224,8 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ac4b93b4805998f628733e67d8cfd48fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac4b93b4805998f628733e67d8cfd48fd">&#9670;&nbsp;</a></span>allocate_DM_k()</h2>
+<a id="ae1fdd39fb4c0cf07d111dd17fb824895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae1fdd39fb4c0cf07d111dd17fb824895">&#9670;&nbsp;</a></span>allocate_DM_k()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,19 +233,29 @@ Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">void Local_Orbital_Charge::allocate_DM_k </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nks</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nnrg</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLocal__Orbital__Charge_ac4b93b4805998f628733e67d8cfd48fd_cgraph.png" border="0" usemap="#classLocal__Orbital__Charge_ac4b93b4805998f628733e67d8cfd48fd_cgraph" alt=""/></div>
-<map name="classLocal__Orbital__Charge_ac4b93b4805998f628733e67d8cfd48fd_cgraph" id="classLocal__Orbital__Charge_ac4b93b4805998f628733e67d8cfd48fd_cgraph">
+<div class="center"><img src="classLocal__Orbital__Charge_ae1fdd39fb4c0cf07d111dd17fb824895_cgraph.png" border="0" usemap="#classLocal__Orbital__Charge_ae1fdd39fb4c0cf07d111dd17fb824895_cgraph" alt=""/></div>
+<map name="classLocal__Orbital__Charge_ae1fdd39fb4c0cf07d111dd17fb824895_cgraph" id="classLocal__Orbital__Charge_ae1fdd39fb4c0cf07d111dd17fb824895_cgraph">
 <area shape="rect" title=" " alt="" coords="5,152,165,193"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#a6469780732365657483b503a4bb26a2f" title=" " alt="" coords="243,5,403,47"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#a7bbb83bba68b43f73895b3c90971af2a" title=" " alt="" coords="243,5,403,47"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="213,71,432,98"/>
 <area shape="rect" href="classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="241,123,405,164"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="250,189,395,215"/>
@@ -253,10 +269,10 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLocal__Orbital__Charge_ac4b93b4805998f628733e67d8cfd48fd_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_ac4b93b4805998f628733e67d8cfd48fd_icgraph" alt=""/></div>
-<map name="classLocal__Orbital__Charge_ac4b93b4805998f628733e67d8cfd48fd_icgraph" id="classLocal__Orbital__Charge_ac4b93b4805998f628733e67d8cfd48fd_icgraph">
+<div class="center"><img src="classLocal__Orbital__Charge_ae1fdd39fb4c0cf07d111dd17fb824895_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_ae1fdd39fb4c0cf07d111dd17fb824895_icgraph" alt=""/></div>
+<map name="classLocal__Orbital__Charge_ae1fdd39fb4c0cf07d111dd17fb824895_icgraph" id="classLocal__Orbital__Charge_ae1fdd39fb4c0cf07d111dd17fb824895_icgraph">
 <area shape="rect" title=" " alt="" coords="689,39,849,80"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#abdb87aaed59940ee43dce98b17e7c1d9" title=" " alt="" coords="481,39,641,80"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#a0f624b292d25a3a3d02fc9e77b5e10da" title=" " alt="" coords="481,39,641,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="255,39,433,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,71,207,112"/>
@@ -265,8 +281,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="abdb87aaed59940ee43dce98b17e7c1d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdb87aaed59940ee43dce98b17e7c1d9">&#9670;&nbsp;</a></span>allocate_dm_wfc()</h2>
+<a id="a0f624b292d25a3a3d02fc9e77b5e10da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0f624b292d25a3a3d02fc9e77b5e10da">&#9670;&nbsp;</a></span>allocate_dm_wfc()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -274,8 +290,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Local_Orbital_Charge::allocate_dm_wfc </td>
           <td>(</td>
-          <td class="paramtype">const int &amp;&#160;</td>
-          <td class="paramname"><em>lgd</em>, </td>
+          <td class="paramtype">const <a class="el" href="classGrid__Technique.html">Grid_Technique</a> &amp;&#160;</td>
+          <td class="paramname"><em>gt</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -299,7 +315,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classpsi_1_1Psi.html">psi::Psi</a>&lt; <a class="el" href="elpa__new_8h.html#a0fa4878c968311979d497ccc322e0b9b">std::complex</a>&lt; double &gt;&gt; *&#160;</td>
-          <td class="paramname"><em>psi</em>&#160;</td>
+          <td class="paramname"><em>psi</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;&#160;</td>
+          <td class="paramname"><em>kv</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -311,14 +333,14 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLocal__Orbital__Charge_abdb87aaed59940ee43dce98b17e7c1d9_cgraph.png" border="0" usemap="#classLocal__Orbital__Charge_abdb87aaed59940ee43dce98b17e7c1d9_cgraph" alt=""/></div>
-<map name="classLocal__Orbital__Charge_abdb87aaed59940ee43dce98b17e7c1d9_cgraph" id="classLocal__Orbital__Charge_abdb87aaed59940ee43dce98b17e7c1d9_cgraph">
+<div class="center"><img src="classLocal__Orbital__Charge_a0f624b292d25a3a3d02fc9e77b5e10da_cgraph.png" border="0" usemap="#classLocal__Orbital__Charge_a0f624b292d25a3a3d02fc9e77b5e10da_cgraph" alt=""/></div>
+<map name="classLocal__Orbital__Charge_a0f624b292d25a3a3d02fc9e77b5e10da_cgraph" id="classLocal__Orbital__Charge_a0f624b292d25a3a3d02fc9e77b5e10da_cgraph">
 <area shape="rect" title=" " alt="" coords="5,208,165,249"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#ac4b93b4805998f628733e67d8cfd48fd" title=" " alt="" coords="213,109,373,151"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#ae1fdd39fb4c0cf07d111dd17fb824895" title=" " alt="" coords="213,109,373,151"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="458,306,603,333"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#a8578427bfbbd7f87d5204cd195e526e2" title=" " alt="" coords="213,175,373,216"/>
-<area shape="rect" href="classLocal__Orbital__wfc.html#a59ca67b73f816357cad719d9d6b511c5" title=" " alt="" coords="221,240,366,281"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#a6469780732365657483b503a4bb26a2f" title=" " alt="" coords="451,5,611,47"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#abdcb58905e7ed78fa155fded35397ea8" title=" " alt="" coords="213,175,373,216"/>
+<area shape="rect" href="classLocal__Orbital__wfc.html#a83bab89595b642b5282873e09d296beb" title=" " alt="" coords="221,240,366,281"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#a7bbb83bba68b43f73895b3c90971af2a" title=" " alt="" coords="451,5,611,47"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="421,71,640,98"/>
 <area shape="rect" href="classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="449,123,613,164"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="424,189,637,215"/>
@@ -328,8 +350,8 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLocal__Orbital__Charge_abdb87aaed59940ee43dce98b17e7c1d9_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_abdb87aaed59940ee43dce98b17e7c1d9_icgraph" alt=""/></div>
-<map name="classLocal__Orbital__Charge_abdb87aaed59940ee43dce98b17e7c1d9_icgraph" id="classLocal__Orbital__Charge_abdb87aaed59940ee43dce98b17e7c1d9_icgraph">
+<div class="center"><img src="classLocal__Orbital__Charge_a0f624b292d25a3a3d02fc9e77b5e10da_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_a0f624b292d25a3a3d02fc9e77b5e10da_icgraph" alt=""/></div>
+<map name="classLocal__Orbital__Charge_a0f624b292d25a3a3d02fc9e77b5e10da_icgraph" id="classLocal__Orbital__Charge_a0f624b292d25a3a3d02fc9e77b5e10da_icgraph">
 <area shape="rect" title=" " alt="" coords="481,39,641,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="255,39,433,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
@@ -339,8 +361,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a8578427bfbbd7f87d5204cd195e526e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8578427bfbbd7f87d5204cd195e526e2">&#9670;&nbsp;</a></span>allocate_gamma()</h2>
+<a id="abdcb58905e7ed78fa155fded35397ea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdcb58905e7ed78fa155fded35397ea8">&#9670;&nbsp;</a></span>allocate_gamma()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -361,7 +383,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classelecstate_1_1ElecState.html">elecstate::ElecState</a> *&#160;</td>
-          <td class="paramname"><em>pelec</em>&#160;</td>
+          <td class="paramname"><em>pelec</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nks</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -373,14 +401,14 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLocal__Orbital__Charge_a8578427bfbbd7f87d5204cd195e526e2_cgraph.png" border="0" usemap="#classLocal__Orbital__Charge_a8578427bfbbd7f87d5204cd195e526e2_cgraph" alt=""/></div>
-<map name="classLocal__Orbital__Charge_a8578427bfbbd7f87d5204cd195e526e2_cgraph" id="classLocal__Orbital__Charge_a8578427bfbbd7f87d5204cd195e526e2_cgraph">
+<div class="center"><img src="classLocal__Orbital__Charge_abdcb58905e7ed78fa155fded35397ea8_cgraph.png" border="0" usemap="#classLocal__Orbital__Charge_abdcb58905e7ed78fa155fded35397ea8_cgraph" alt=""/></div>
+<map name="classLocal__Orbital__Charge_abdcb58905e7ed78fa155fded35397ea8_cgraph" id="classLocal__Orbital__Charge_abdcb58905e7ed78fa155fded35397ea8_cgraph">
 <area shape="rect" title=" " alt="" coords="5,195,165,236"/>
 <area shape="rect" href="classLocal__Orbital__Charge.html#ae82f43ef7d90a624e9d494e96d231314" title=" " alt="" coords="219,56,379,97"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="469,9,614,35"/>
 <area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="435,114,648,141"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="450,165,633,207"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#a6469780732365657483b503a4bb26a2f" title=" " alt="" coords="219,224,379,265"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#a7bbb83bba68b43f73895b3c90971af2a" title=" " alt="" coords="219,224,379,265"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="432,319,651,346"/>
 <area shape="rect" href="classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="459,385,623,427"/>
 <area shape="rect" href="classLocal__Orbital__Charge.html#acb83582c2e5d80daa9c81d648819eaef" title=" " alt="" coords="213,341,384,383"/>
@@ -390,10 +418,10 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLocal__Orbital__Charge_a8578427bfbbd7f87d5204cd195e526e2_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_a8578427bfbbd7f87d5204cd195e526e2_icgraph" alt=""/></div>
-<map name="classLocal__Orbital__Charge_a8578427bfbbd7f87d5204cd195e526e2_icgraph" id="classLocal__Orbital__Charge_a8578427bfbbd7f87d5204cd195e526e2_icgraph">
+<div class="center"><img src="classLocal__Orbital__Charge_abdcb58905e7ed78fa155fded35397ea8_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_abdcb58905e7ed78fa155fded35397ea8_icgraph" alt=""/></div>
+<map name="classLocal__Orbital__Charge_abdcb58905e7ed78fa155fded35397ea8_icgraph" id="classLocal__Orbital__Charge_abdcb58905e7ed78fa155fded35397ea8_icgraph">
 <area shape="rect" title=" " alt="" coords="689,39,849,80"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#abdb87aaed59940ee43dce98b17e7c1d9" title=" " alt="" coords="481,39,641,80"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#a0f624b292d25a3a3d02fc9e77b5e10da" title=" " alt="" coords="481,39,641,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="255,39,433,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,71,207,112"/>
@@ -498,8 +526,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="ae48c633772508b908d398ae8b0e638c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae48c633772508b908d398ae8b0e638c1">&#9670;&nbsp;</a></span>cal_dk_k()</h2>
+<a id="a6dd374141d9b34310ad5298181070dc7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6dd374141d9b34310ad5298181070dc7">&#9670;&nbsp;</a></span>cal_dk_k()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -514,7 +542,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classModuleBase_1_1matrix.html">ModuleBase::matrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>wg_in</em>&#160;</td>
+          <td class="paramname"><em>wg_in</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;&#160;</td>
+          <td class="paramname"><em>kv</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -526,12 +560,12 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLocal__Orbital__Charge_ae48c633772508b908d398ae8b0e638c1_cgraph.png" border="0" usemap="#classLocal__Orbital__Charge_ae48c633772508b908d398ae8b0e638c1_cgraph" alt=""/></div>
-<map name="classLocal__Orbital__Charge_ae48c633772508b908d398ae8b0e638c1_cgraph" id="classLocal__Orbital__Charge_ae48c633772508b908d398ae8b0e638c1_cgraph">
+<div class="center"><img src="classLocal__Orbital__Charge_a6dd374141d9b34310ad5298181070dc7_cgraph.png" border="0" usemap="#classLocal__Orbital__Charge_a6dd374141d9b34310ad5298181070dc7_cgraph" alt=""/></div>
+<map name="classLocal__Orbital__Charge_a6dd374141d9b34310ad5298181070dc7_cgraph" id="classLocal__Orbital__Charge_a6dd374141d9b34310ad5298181070dc7_cgraph">
 <area shape="rect" title=" " alt="" coords="5,186,165,227"/>
-<area shape="rect" href="DM__k_8cpp.html#adc181d314541f61069ed269ad495505b" title=" " alt="" coords="248,41,363,68"/>
+<area shape="rect" href="DM__k_8cpp.html#ad627fc4033f2b8531d03fc2889cd4688" title=" " alt="" coords="248,41,363,68"/>
 <area shape="rect" href="classUnitCell.html#a146dc70d7ae0f08edf4ae7c93fc6af0a" title=" " alt="" coords="463,41,610,68"/>
-<area shape="rect" href="DM__k_8cpp.html#a427871c31e5d03b16593c38a21761423" title=" " alt="" coords="237,92,374,118"/>
+<area shape="rect" href="DM__k_8cpp.html#ac844f4c664fce924d656066e1af6e280" title=" " alt="" coords="237,92,374,118"/>
 <area shape="rect" href="classRecord__adj.html#a2b7640af4f2a25a07c4e2190f58e5e2d" title=" " alt="" coords="218,142,393,169"/>
 <area shape="rect" href="classRecord__adj.html#a84cfb4cbe5d398b5b7ca50cc4f6b1436" title=" " alt="" coords="229,294,381,321"/>
 <area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="448,214,625,241"/>
@@ -543,20 +577,19 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLocal__Orbital__Charge_ae48c633772508b908d398ae8b0e638c1_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_ae48c633772508b908d398ae8b0e638c1_icgraph" alt=""/></div>
-<map name="classLocal__Orbital__Charge_ae48c633772508b908d398ae8b0e638c1_icgraph" id="classLocal__Orbital__Charge_ae48c633772508b908d398ae8b0e638c1_icgraph">
+<div class="center"><img src="classLocal__Orbital__Charge_a6dd374141d9b34310ad5298181070dc7_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_a6dd374141d9b34310ad5298181070dc7_icgraph" alt=""/></div>
+<map name="classLocal__Orbital__Charge_a6dd374141d9b34310ad5298181070dc7_icgraph" id="classLocal__Orbital__Charge_a6dd374141d9b34310ad5298181070dc7_icgraph">
 <area shape="rect" title=" " alt="" coords="531,39,691,80"/>
 <area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="296,5,483,47"/>
 <area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="296,71,483,112"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="17,5,236,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="5,71,248,112"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="ac413f1e4d0397b162637e34f3dcbf10b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac413f1e4d0397b162637e34f3dcbf10b">&#9670;&nbsp;</a></span>cal_dm_R()</h2>
+<a id="aff07a593942f6979ecd20d318374883b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff07a593942f6979ecd20d318374883b">&#9670;&nbsp;</a></span>cal_dm_R()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -577,7 +610,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">double **&#160;</td>
-          <td class="paramname"><em>dm2d</em>&#160;</td>
+          <td class="paramname"><em>dm2d</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classK__Vectors.html">K_Vectors</a> &amp;&#160;</td>
+          <td class="paramname"><em>kv</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -589,8 +628,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLocal__Orbital__Charge_ac413f1e4d0397b162637e34f3dcbf10b_cgraph.png" border="0" usemap="#classLocal__Orbital__Charge_ac413f1e4d0397b162637e34f3dcbf10b_cgraph" alt=""/></div>
-<map name="classLocal__Orbital__Charge_ac413f1e4d0397b162637e34f3dcbf10b_cgraph" id="classLocal__Orbital__Charge_ac413f1e4d0397b162637e34f3dcbf10b_cgraph">
+<div class="center"><img src="classLocal__Orbital__Charge_aff07a593942f6979ecd20d318374883b_cgraph.png" border="0" usemap="#classLocal__Orbital__Charge_aff07a593942f6979ecd20d318374883b_cgraph" alt=""/></div>
+<map name="classLocal__Orbital__Charge_aff07a593942f6979ecd20d318374883b_cgraph" id="classLocal__Orbital__Charge_aff07a593942f6979ecd20d318374883b_cgraph">
 <area shape="rect" title=" " alt="" coords="5,99,165,141"/>
 <area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="220,5,391,32"/>
 <area shape="rect" href="namespaceModuleBase.html#a4226cc0dab4f99d513d87e0c663f3ca8" title=" " alt="" coords="213,56,397,83"/>
@@ -606,16 +645,18 @@ Here is the call graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLocal__Orbital__Charge_ac413f1e4d0397b162637e34f3dcbf10b_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_ac413f1e4d0397b162637e34f3dcbf10b_icgraph" alt=""/></div>
-<map name="classLocal__Orbital__Charge_ac413f1e4d0397b162637e34f3dcbf10b_icgraph" id="classLocal__Orbital__Charge_ac413f1e4d0397b162637e34f3dcbf10b_icgraph">
-<area shape="rect" title=" " alt="" coords="1383,64,1543,105"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="1138,5,1314,47"/>
-<area shape="rect" href="classForce__LCAO__k.html#aca4b159d50c6caf376b785828dbd8fae" title=" " alt="" coords="1117,71,1335,98"/>
-<area shape="rect" href="classForce__LCAO__k.html#ae2c554f465bc6b480664f9cf3fbd9919" title=" " alt="" coords="895,97,1069,123"/>
-<area shape="rect" href="classForce__Stress__LCAO.html#a8b6e20d17ff9f86cb6560d007804cd08" title=" " alt="" coords="656,89,847,131"/>
-<area shape="rect" href="classForce__Stress__LCAO.html#a5c8c7969c28fabd7ead07d20e8bc3c4f" title=" " alt="" coords="453,89,608,131"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a716b45c5166cc186febb12e770ec90ba" title=" " alt="" coords="229,89,405,131"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad9ee1f7371488c9b715fe71662cd1456" title=" " alt="" coords="5,89,181,131"/>
+<div class="center"><img src="classLocal__Orbital__Charge_aff07a593942f6979ecd20d318374883b_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_aff07a593942f6979ecd20d318374883b_icgraph" alt=""/></div>
+<map name="classLocal__Orbital__Charge_aff07a593942f6979ecd20d318374883b_icgraph" id="classLocal__Orbital__Charge_aff07a593942f6979ecd20d318374883b_icgraph">
+<area shape="rect" title=" " alt="" coords="1388,49,1548,90"/>
+<area shape="rect" href="classForce__LCAO__k.html#aff30c5f623bbe61981990b4204768eef" title=" " alt="" coords="1123,5,1340,32"/>
+<area shape="rect" href="classForce__LCAO__k.html#a98faf22de1275401637f4642f93a2f72" title=" " alt="" coords="899,28,1074,55"/>
+<area shape="rect" href="classModuleIO_1_1Output__DM1.html#adb82e22d1b359f394cbf279412d6d256" title=" " alt="" coords="1145,107,1318,149"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#affbd210d5611a9c86225eadbc879e87a" title=" " alt="" coords="658,21,849,62"/>
+<area shape="rect" href="classForce__Stress__LCAO.html#a4b7013e1f3457d672374d069b0fcd767" title=" " alt="" coords="453,21,608,62"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a716b45c5166cc186febb12e770ec90ba" title=" " alt="" coords="229,21,405,62"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad9ee1f7371488c9b715fe71662cd1456" title=" " alt="" coords="5,21,181,62"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#aafd57181d30960a9ec7c918a7d526bd1" title=" " alt="" coords="899,107,1075,149"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a90254f1daba36ca31b17161ffcfb20ab" title=" " alt="" coords="656,107,851,149"/>
 </map>
 </div>
 
@@ -675,8 +716,8 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classLocal__Orbital__Charge_ae82f43ef7d90a624e9d494e96d231314_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_ae82f43ef7d90a624e9d494e96d231314_icgraph" alt=""/></div>
 <map name="classLocal__Orbital__Charge_ae82f43ef7d90a624e9d494e96d231314_icgraph" id="classLocal__Orbital__Charge_ae82f43ef7d90a624e9d494e96d231314_icgraph">
 <area shape="rect" title=" " alt="" coords="897,39,1057,80"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#a8578427bfbbd7f87d5204cd195e526e2" title=" " alt="" coords="689,39,849,80"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#abdb87aaed59940ee43dce98b17e7c1d9" title=" " alt="" coords="481,39,641,80"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#abdcb58905e7ed78fa155fded35397ea8" title=" " alt="" coords="689,39,849,80"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#a0f624b292d25a3a3d02fc9e77b5e10da" title=" " alt="" coords="481,39,641,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="255,39,433,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,71,207,112"/>
@@ -685,8 +726,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a6469780732365657483b503a4bb26a2f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6469780732365657483b503a4bb26a2f">&#9670;&nbsp;</a></span>init_dm_2d()</h2>
+<a id="a7bbb83bba68b43f73895b3c90971af2a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bbb83bba68b43f73895b3c90971af2a">&#9670;&nbsp;</a></span>init_dm_2d()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -694,8 +735,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">void Local_Orbital_Charge::init_dm_2d </td>
           <td>(</td>
-          <td class="paramtype">void&#160;</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">const int &amp;&#160;</td>
+          <td class="paramname"><em>nks</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -703,12 +744,12 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classLocal__Orbital__Charge_a6469780732365657483b503a4bb26a2f_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_a6469780732365657483b503a4bb26a2f_icgraph" alt=""/></div>
-<map name="classLocal__Orbital__Charge_a6469780732365657483b503a4bb26a2f_icgraph" id="classLocal__Orbital__Charge_a6469780732365657483b503a4bb26a2f_icgraph">
+<div class="center"><img src="classLocal__Orbital__Charge_a7bbb83bba68b43f73895b3c90971af2a_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_a7bbb83bba68b43f73895b3c90971af2a_icgraph" alt=""/></div>
+<map name="classLocal__Orbital__Charge_a7bbb83bba68b43f73895b3c90971af2a_icgraph" id="classLocal__Orbital__Charge_a7bbb83bba68b43f73895b3c90971af2a_icgraph">
 <area shape="rect" title=" " alt="" coords="897,39,1057,80"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#ac4b93b4805998f628733e67d8cfd48fd" title=" " alt="" coords="689,5,849,47"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#a8578427bfbbd7f87d5204cd195e526e2" title=" " alt="" coords="689,71,849,112"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#abdb87aaed59940ee43dce98b17e7c1d9" title=" " alt="" coords="481,39,641,80"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#ae1fdd39fb4c0cf07d111dd17fb824895" title=" " alt="" coords="689,5,849,47"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#abdcb58905e7ed78fa155fded35397ea8" title=" " alt="" coords="689,71,849,112"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#a0f624b292d25a3a3d02fc9e77b5e10da" title=" " alt="" coords="481,39,641,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="255,39,433,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,71,207,112"/>
@@ -779,8 +820,8 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="classLocal__Orbital__Charge_acb83582c2e5d80daa9c81d648819eaef_icgraph.png" border="0" usemap="#classLocal__Orbital__Charge_acb83582c2e5d80daa9c81d648819eaef_icgraph" alt=""/></div>
 <map name="classLocal__Orbital__Charge_acb83582c2e5d80daa9c81d648819eaef_icgraph" id="classLocal__Orbital__Charge_acb83582c2e5d80daa9c81d648819eaef_icgraph">
 <area shape="rect" title=" " alt="" coords="897,39,1068,80"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#a8578427bfbbd7f87d5204cd195e526e2" title=" " alt="" coords="689,39,849,80"/>
-<area shape="rect" href="classLocal__Orbital__Charge.html#abdb87aaed59940ee43dce98b17e7c1d9" title=" " alt="" coords="481,39,641,80"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#abdcb58905e7ed78fa155fded35397ea8" title=" " alt="" coords="689,39,849,80"/>
+<area shape="rect" href="classLocal__Orbital__Charge.html#a0f624b292d25a3a3d02fc9e77b5e10da" title=" " alt="" coords="481,39,641,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="255,39,433,80"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,71,207,112"/>

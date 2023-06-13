@@ -1,6 +1,7 @@
 <map id="elecstate::Potential::get_vnew" name="elecstate::Potential::get_vnew">
-<area shape="rect" id="node1" title=" " alt="" coords="463,39,611,80"/>
+<area shape="rect" id="node1" title=" " alt="" coords="463,68,611,109"/>
 <area shape="rect" id="node2" href="$classelecstate_1_1ElecState.html#ae40102080f266fff3ff6418e4a4f3aad" title="calculation if converged" alt="" coords="264,39,415,80"/>
+<area shape="rect" id="node5" href="$potential__new__test_8cpp.html#a91bbfb97d56970c70f0aa737a0da289f" title=" " alt="" coords="305,105,374,131"/>
 <area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#ab018811c84928fe8f01ae25646e57201" title=" " alt="" coords="5,5,216,47"/>
 <area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#ae0cd9310438ff79da094fc161c3602d9" title=" " alt="" coords="23,71,199,112"/>
 </map>

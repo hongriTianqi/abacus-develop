@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: Class Members</title>
+<title>3.2.4: Class Members</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -135,6 +135,12 @@ $(function() {
 <li>mass_peta
 : <a class="el" href="classNose__Hoover.html#a25ee39a109d618ac89a0c6eaaa508691">Nose_Hoover</a>
 </li>
+<li>mat1_complex
+: <a class="el" href="classDM__Mixing__Test.html#a5f00d51be3e79dc6e7bf3bbe97a301b8">DM_Mixing_Test</a>
+</li>
+<li>mat1_double
+: <a class="el" href="classDM__Mixing__Test.html#a58c58b377efc4b55442676e483eff0c8">DM_Mixing_Test</a>
+</li>
 <li>mat_2d()
 : <a class="el" href="classORB__control.html#a4c4ef810157e3f4c6fec2d01c2727cd9">ORB_control</a>
 </li>
@@ -151,7 +157,7 @@ $(function() {
 : <a class="el" href="classhamilt_1_1Hamilt.html#abc2177ba7c8bf11be21fed333c570126">hamilt::Hamilt&lt; FPTYPE, Device &gt;</a>
 , <a class="el" href="classhamilt_1_1HamiltLCAO.html#ac4f129a4b5e538266877885b1caed5b5">hamilt::HamiltLCAO&lt; T &gt;</a>
 , <a class="el" href="classHamiltTEST.html#a9a1fe3679645087d61ab8c3752246865">HamiltTEST&lt; T &gt;</a>
-, <a class="el" href="classModuleBase_1_1matrix.html#a8286b80132df30094c582a44282c8081">ModuleBase::matrix</a>
+, <a class="el" href="classModuleBase_1_1matrix.html#a06491dbecbbb49a984e07ac108d2cf63">ModuleBase::matrix</a>
 </li>
 <li>Matrix3()
 : <a class="el" href="classModuleBase_1_1Matrix3.html#ab4e79a25b7f2a84f6356c9ef804775d7">ModuleBase::Matrix3</a>
@@ -237,6 +243,7 @@ $(function() {
 : <a class="el" href="classCG__test.html#a2ae8366a69413b75eb73fc49bd66104b">CG_test</a>
 , <a class="el" href="classDiagoCGPrepare.html#a36f232a4a3dfcf6fe14a107eb36c3d45">DiagoCGPrepare</a>
 , <a class="el" href="classDiagoDavPrepare.html#a730e10bb5c8f5ff611ff3ff52916909f">DiagoDavPrepare</a>
+, <a class="el" href="classDM__Mixing__Test.html#a015ae0384e2a9c51249c2805fbbce6a6">DM_Mixing_Test</a>
 </li>
 <li>maxIter
 : <a class="el" href="classModuleESolver_1_1ESolver__OF.html#af098646369c086ae1c415da40f07ad80">ModuleESolver::ESolver_OF</a>
@@ -314,6 +321,9 @@ $(function() {
 <li>md_seed
 : <a class="el" href="classMD__para.html#aae8b048ec944653ef2887d89d8aa1802">MD_para</a>
 </li>
+<li>md_skip_out()
+: <a class="el" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a417a7c8527e1a12487d05e8f343a2c57">ModuleESolver::ESolver_KS_LCAO</a>
+</li>
 <li>md_tchain
 : <a class="el" href="classMD__para.html#ae03e3bcb1874f0f0ef220eae54333e44">MD_para</a>
 </li>
@@ -390,7 +400,7 @@ $(function() {
 : <a class="el" href="classUnitCell.html#a535ff04e6c4a1aabb2f1d53b59cb7ac3">UnitCell</a>
 </li>
 <li>Meta()
-: <a class="el" href="classhamilt_1_1Meta_3_01OperatorLCAO_3_01T_01_4_01_4.html#a2189f3575380f095a245cb9de8e23321">hamilt::Meta&lt; OperatorLCAO&lt; T &gt; &gt;</a>
+: <a class="el" href="classhamilt_1_1Meta_3_01OperatorLCAO_3_01T_01_4_01_4.html#ae3fcc2d20fdacfd7899576d71927e067">hamilt::Meta&lt; OperatorLCAO&lt; T &gt; &gt;</a>
 , <a class="el" href="classhamilt_1_1Meta_3_01OperatorPW_3_01FPTYPE_00_01Device_01_4_01_4.html#a2e816d1670957daae090e3c032bd267b">hamilt::Meta&lt; OperatorPW&lt; FPTYPE, Device &gt; &gt;</a>
 </li>
 <li>meta_cpu_op
@@ -475,8 +485,27 @@ $(function() {
 <li>minZ()
 : <a class="el" href="classAtom__input.html#a6e309223635fe713877eff5e06216ba2">Atom_input</a>
 </li>
+<li>mix()
+: <a class="el" href="classMix__Data.html#a01d2da64210ccd8e2a6e9e09a12fcc74">Mix_Data&lt; Tdata &gt;</a>
+, <a class="el" href="classMix__DMk__2D.html#a94c3d8edf2a39e707bdd5932b113961b">Mix_DMk_2D</a>
+</li>
+<li>mix_data_complex
+: <a class="el" href="classDM__Mixing__Test.html#ab295140d970c432a07faa1dee156d48f">DM_Mixing_Test</a>
+</li>
+<li>mix_data_double
+: <a class="el" href="classDM__Mixing__Test.html#a81945e08fb9912c300fd0a28949fac0c">DM_Mixing_Test</a>
+</li>
+<li>mix_DMk_2D
+: <a class="el" href="classExx__LRI.html#a686e73da34b3b31b8f7875a5fb0d63f7">Exx_LRI&lt; Tdata &gt;</a>
+</li>
+<li>mix_DMk_gamma
+: <a class="el" href="classMix__DMk__2D.html#a9688ec6dec2a3b4717c357bc845cc12a">Mix_DMk_2D</a>
+</li>
+<li>mix_DMk_k
+: <a class="el" href="classMix__DMk__2D.html#a0435ac36802400cba1a4f7ee0853cc8d">Mix_DMk_2D</a>
+</li>
 <li>mix_locale()
-: <a class="el" href="classModuleDFTU_1_1DFTU.html#a9c4ebe16a84b7e257a57a20dbc906da2">ModuleDFTU::DFTU</a>
+: <a class="el" href="classModuleDFTU_1_1DFTU.html#a4b770b47cbf2603ab0603689a989cb3d">ModuleDFTU::DFTU</a>
 </li>
 <li>mix_rho()
 : <a class="el" href="classCharge__Mixing.html#a5f384caeb948b56e72be963183666034">Charge_Mixing</a>
@@ -486,7 +515,10 @@ $(function() {
 </li>
 <li>mixing_beta
 : <a class="el" href="classCharge__Mixing.html#aaf86e8d08ce087ca40f8dc2e455017be">Charge_Mixing</a>
+, <a class="el" href="classCharge__Mixing__Helper.html#a70cad868e646c90d2ee5310ea77c43f1">Charge_Mixing_Helper</a>
+, <a class="el" href="classDM__Mixing__Test.html#a5ac5b6a1ce2ee99c698dd53b8717c8cf">DM_Mixing_Test</a>
 , <a class="el" href="classInput.html#a84b2c38ad88cb6ee26ce0cc9c6300a6f">Input</a>
+, <a class="el" href="classMix__Data.html#aba0eb995663514b06b62af78357c687d">Mix_Data&lt; Tdata &gt;</a>
 </li>
 <li>mixing_beta_for_loop1
 : <a class="el" href="structExx__Info_1_1Exx__Info__Global.html#a5d5c55b64c17a262fa4cc97603fc7e8f">Exx_Info::Exx_Info_Global</a>
@@ -502,14 +534,20 @@ $(function() {
 <li>mixing_mode
 : <a class="el" href="classCharge__Mixing.html#a7a4c143d369884e8f7d2c274b5458668">Charge_Mixing</a>
 , <a class="el" href="classInput.html#a484141a54ff8499e4d724a3204a9757e">Input</a>
+, <a class="el" href="classMix__Data.html#a6874d60ef327c6acb70714ddc1e88e53">Mix_Data&lt; Tdata &gt;</a>
 </li>
 <li>mixing_ndim
 : <a class="el" href="classCharge__Mixing.html#ace64ee88221d8ba19eefb8db729ad473">Charge_Mixing</a>
+, <a class="el" href="classCharge__Mixing__Helper.html#a7ee64b6da845087132cebb52c2a9a2bc">Charge_Mixing_Helper</a>
+, <a class="el" href="classDM__Mixing__Test.html#a9b34592a690fb823ddb0abb1c5f42603">DM_Mixing_Test</a>
 , <a class="el" href="classInput.html#aa282192772ebbd8b54be12de5b46debb">Input</a>
 </li>
 <li>mixing_tau
 : <a class="el" href="classCharge__Mixing.html#ac4dfff479f2e92b5b3515f4b3fbfd6c8">Charge_Mixing</a>
 , <a class="el" href="classInput.html#a167824a40f42229f077599a028668f72">Input</a>
+</li>
+<li>MOCK_METHOD0()
+: <a class="el" href="classMock__Charge__Mixing.html#a0706b00e9114e80ee8be0111bff350a2">Mock_Charge_Mixing</a>
 </li>
 <li>model()
 : <a class="el" href="classvdw_1_1VdwParameters.html#ad61306087ef9256bbd67ed85de098265">vdw::VdwParameters</a>
@@ -521,10 +559,10 @@ $(function() {
 : <a class="el" href="classLCAO__Deepks.html#ad328abc0a60f4ad79f5246ae2d250451">LCAO_Deepks</a>
 </li>
 <li>ModuleESolver::ESolver_KS_LCAO
-: <a class="el" href="classELEC__evolve.html#a223035ec5c7e1c780968ff9d08e20e4f">ELEC_evolve</a>
+: <a class="el" href="classmodule__tddft_1_1Evolve__elec.html#a223035ec5c7e1c780968ff9d08e20e4f">module_tddft::Evolve_elec</a>
 </li>
 <li>ModuleESolver::ESolver_KS_LCAO_TDDFT
-: <a class="el" href="classELEC__evolve.html#ad1438d7d87449a5c1eb95a38d1c7c1a7">ELEC_evolve</a>
+: <a class="el" href="classmodule__tddft_1_1Evolve__elec.html#ad1438d7d87449a5c1eb95a38d1c7c1a7">module_tddft::Evolve_elec</a>
 </li>
 <li>Monkhorst_Pack()
 : <a class="el" href="classK__Vectors.html#a38e6e25cef174cb151e0b489958184e4">K_Vectors</a>

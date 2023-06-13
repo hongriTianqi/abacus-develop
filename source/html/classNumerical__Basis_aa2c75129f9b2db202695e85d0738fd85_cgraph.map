@@ -1,5 +1,5 @@
 <map id="Numerical_Basis::cal_flq" name="Numerical_Basis::cal_flq">
 <area shape="rect" id="node1" title=" " alt="" coords="5,46,187,73"/>
-<area shape="rect" id="node2" href="$classBessel__Basis.html#a42ab49f0a9f75fbc4055c428527dbc79" title=" " alt="" coords="243,5,414,47"/>
-<area shape="rect" id="node3" href="$classBessel__Basis.html#a44ce1481b351755c9e7aa361ece3797d" title=" " alt="" coords="235,71,423,112"/>
+<area shape="rect" id="node2" href="$classBessel__Basis.html#a42ab49f0a9f75fbc4055c428527dbc79" title="return number of SBFs used for one chi (see details for more information)" alt="" coords="243,5,414,47"/>
+<area shape="rect" id="node3" href="$classBessel__Basis.html#a44ce1481b351755c9e7aa361ece3797d" title="Cubic spline interpolation for matrix TableOne." alt="" coords="235,71,423,112"/>
 </map>

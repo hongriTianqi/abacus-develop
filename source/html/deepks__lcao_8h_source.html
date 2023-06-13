@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: module_hamilt_lcao/hamilt_lcaodft/operator_lcao/deepks_lcao.h Source File</title>
+<title>3.2.4: module_hamilt_lcao/hamilt_lcaodft/operator_lcao/deepks_lcao.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -74,9 +74,9 @@ $(function() {
 <div class="contents">
 <a href="deepks__lcao_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef DEEPKSLCAO_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define DEEPKSLCAO_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operator__lcao_8h.html">operator_lcao.h</a>&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="timer_8h.html">module_base/timer.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="local__orbital__charge_8h.html">module_hamilt_lcao/hamilt_lcaodft/local_orbital_charge.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="timer_8h.html">module_base/timer.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="local__orbital__charge_8h.html">module_hamilt_lcao/hamilt_lcaodft/local_orbital_charge.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operator__lcao_8h.html">operator_lcao.h</a>&quot;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehamilt.html">hamilt</a></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;{</div>
@@ -84,54 +84,55 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef __DEEPKSTEMPLATE</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="deepks__lcao_8h.html#a5b83aa67ead5a80b5f0bbdb991b8fde5">   11</a></span>&#160;<span class="preprocessor">#define __DEEPKSTEMPLATE</span></div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS.html">   13</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">class </span><a class="code" href="classhamilt_1_1DeePKS.html">DeePKS</a> : <span class="keyword">public</span> <a class="code" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a> </div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{};</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS.html">   14</a></span>&#160;<span class="keyword">class </span><a class="code" href="classhamilt_1_1DeePKS.html">DeePKS</a> : <span class="keyword">public</span> <a class="code" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;{</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;};</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html">   19</a></span>&#160;<span class="keyword">class </span><a class="code" href="classhamilt_1_1DeePKS.html">DeePKS</a>&lt;<a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;<a class="code" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a>&gt;&gt; : <span class="keyword">public</span> <a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;T&gt; </div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#a655fe1faed9d608f1c5da53003f0cebc">   23</a></span>&#160;    <a class="code" href="classhamilt_1_1DeePKS.html">DeePKS&lt;OperatorLCAO&lt;T&gt;</a>&gt;(</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;        <a class="code" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a>* loc_in,</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;        <a class="code" href="classLCAO__Matrix.html">LCAO_Matrix</a>* LM_in,</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;        std::vector&lt;double&gt;* HR_pointer_in,</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        std::vector&lt;T&gt;* HK_pointer_in):loc(loc_in), HR_pointer(HR_pointer_in), HK_pointer(HK_pointer_in)</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        this-&gt;LM = LM_in;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        this-&gt;cal_type = <a class="code" href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a4e6059818e676a909b3bb20d54722d1b">lcao_deepks</a>;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhamilt_1_1DeePKS.html#a35a4c8cd8daa16cae40147785d8bbf0f">contributeHR</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhamilt_1_1DeePKS.html#ae610ec7b9c760aa585533c891a0cd50f">contributeHk</a>(<span class="keywordtype">int</span> ik) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#ac28b08d0da881e8bf544e439169f845e">   39</a></span>&#160;    <a class="code" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a>* <a class="code" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#ac28b08d0da881e8bf544e439169f845e">loc</a>;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#a04b44f9f7259cd3693807d6674d6e6d2">   41</a></span>&#160;    std::vector&lt;double&gt;* HR_pointer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="classhamilt_1_1DeePKS.html">DeePKS</a>&lt;<a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;<a class="code" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a>&gt;&gt; : <span class="keyword">public</span> <a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;T&gt;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#a338719235690475ab3209eb1266991f9">   24</a></span>&#160;    <a class="code" href="classhamilt_1_1DeePKS.html">DeePKS&lt;OperatorLCAO&lt;T&gt;</a>&gt;(<a class="code" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a>* loc_in,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                            <a class="code" href="classLCAO__Matrix.html">LCAO_Matrix</a>* LM_in,</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                            <span class="keyword">const</span> std::vector&lt;ModuleBase::Vector3&lt;double&gt;&gt;&amp; kvec_d_in,</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                            std::vector&lt;double&gt;* HR_pointer_in,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                            std::vector&lt;T&gt;* HK_pointer_in,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                            <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; nks_in)</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        : loc(loc_in), HR_pointer(HR_pointer_in), HK_pointer(HK_pointer_in), nks(nks_in), <a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO&lt;T&gt;</a>(kvec_d_in)</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        this-&gt;LM = LM_in;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        this-&gt;cal_type = <a class="code" href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a4e6059818e676a909b3bb20d54722d1b">lcao_deepks</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhamilt_1_1DeePKS.html#a35a4c8cd8daa16cae40147785d8bbf0f">contributeHR</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhamilt_1_1DeePKS.html#ae610ec7b9c760aa585533c891a0cd50f">contributeHk</a>(<span class="keywordtype">int</span> ik) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#ac28b08d0da881e8bf544e439169f845e">   41</a></span>&#160;    <a class="code" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a>* <a class="code" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#ac28b08d0da881e8bf544e439169f845e">loc</a>;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#a4dd549e7e42e750d22f33349c19832b0">   43</a></span>&#160;    std::vector&lt;T&gt;* HK_pointer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#a04b44f9f7259cd3693807d6674d6e6d2">   43</a></span>&#160;    std::vector&lt;double&gt;* HR_pointer = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#a54559d8548307fed2d2e7b1d1173f373">   45</a></span>&#160;    <span class="keywordtype">bool</span> HR_fixed_done = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#a4dd549e7e42e750d22f33349c19832b0">   45</a></span>&#160;    std::vector&lt;T&gt;* HK_pointer = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;};</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#a54559d8548307fed2d2e7b1d1173f373">   47</a></span>&#160;    <span class="keywordtype">bool</span> HR_fixed_done = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#a90f9ece79d4fb3712ae1d0b573b740a2">   49</a></span>&#160;    <span class="keyword">const</span> <span class="keywordtype">int</span>&amp; <a class="code" href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#a90f9ece79d4fb3712ae1d0b573b740a2">nks</a>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;};</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;} <span class="comment">// namespace hamilt</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div></div>
 <div class="ttc" id="aclasshamilt_1_1DeePKS_html_ae610ec7b9c760aa585533c891a0cd50f"><div class="ttname"><a href="classhamilt_1_1DeePKS.html#ae610ec7b9c760aa585533c891a0cd50f">hamilt::DeePKS::contributeHk</a></div><div class="ttdeci">void contributeHk(int ik)</div><div class="ttdef"><b>Definition:</b> deepks_lcao.cpp:86</div></div>
 <div class="ttc" id="aoperator__lcao_8h_html"><div class="ttname"><a href="operator__lcao_8h.html">operator_lcao.h</a></div></div>
-<div class="ttc" id="aglobal__fp_8h_html"><div class="ttname"><a href="global__fp_8h.html">global_fp.h</a></div></div>
 <div class="ttc" id="adeepks__lcao_8h_html"><div class="ttname"><a href="deepks__lcao_8h.html">deepks_lcao.h</a></div></div>
-<div class="ttc" id="aclassK__Vectors_html_a4d5a2f6cb33ba0408a5f56914c79d8e2"><div class="ttname"><a href="classK__Vectors.html#a4d5a2f6cb33ba0408a5f56914c79d8e2">K_Vectors::kvec_d</a></div><div class="ttdeci">std::vector&lt; ModuleBase::Vector3&lt; double &gt; &gt; kvec_d</div><div class="ttdef"><b>Definition:</b> klist.h:15</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_a308ae579bbafe593ce4734c77ddc7148"><div class="ttname"><a href="classLCAO__Deepks.html#a308ae579bbafe593ce4734c77ddc7148">LCAO_Deepks::add_v_delta_k</a></div><div class="ttdeci">void add_v_delta_k(const UnitCell &amp;ucell, const LCAO_Orbitals &amp;orb, Grid_Driver &amp;GridD, const int *trace_loc_row, const int *trace_loc_col, const int nnr_in)</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_vdelta.cpp:161</div></div>
-<div class="ttc" id="aclasshamilt_1_1DeePKS_html"><div class="ttname"><a href="classhamilt_1_1DeePKS.html">hamilt::DeePKS</a></div><div class="ttdef"><b>Definition:</b> deepks_lcao.h:13</div></div>
-<div class="ttc" id="anamespaceGlobalC_html_a4f0d56893ec1db18f5030ca512f00c99"><div class="ttname"><a href="namespaceGlobalC.html#a4f0d56893ec1db18f5030ca512f00c99">GlobalC::GridD</a></div><div class="ttdeci">Grid_Driver GridD(GlobalV::test_deconstructor, GlobalV::test_grid_driver, GlobalV::test_grid)</div><div class="ttdef"><b>Definition:</b> global_fp.h:19</div></div>
+<div class="ttc" id="aclasshamilt_1_1DeePKS_html"><div class="ttname"><a href="classhamilt_1_1DeePKS.html">hamilt::DeePKS</a></div><div class="ttdef"><b>Definition:</b> deepks_lcao.h:14</div></div>
+<div class="ttc" id="anamespaceGlobalC_html_a4f0d56893ec1db18f5030ca512f00c99"><div class="ttname"><a href="namespaceGlobalC.html#a4f0d56893ec1db18f5030ca512f00c99">GlobalC::GridD</a></div><div class="ttdeci">Grid_Driver GridD(GlobalV::test_deconstructor, GlobalV::test_grid_driver, GlobalV::test_grid)</div><div class="ttdef"><b>Definition:</b> sltk_grid_driver.h:130</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_aff087f4ae036efbdc9e900b5ab15767e"><div class="ttname"><a href="classLCAO__Deepks.html#aff087f4ae036efbdc9e900b5ab15767e">LCAO_Deepks::cal_gedm</a></div><div class="ttdeci">void cal_gedm(const int nat)</div><div class="ttdoc">calculate partial of energy correction to descriptors</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_torch.cpp:359</div></div>
 <div class="ttc" id="alocal__orbital__charge_8h_html"><div class="ttname"><a href="local__orbital__charge_8h.html">local_orbital_charge.h</a></div></div>
 <div class="ttc" id="anamespaceModuleBase_html_ad0b268ded393d31b0dd1a795366af4a6"><div class="ttname"><a href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6">ModuleBase::TITLE</a></div><div class="ttdeci">void TITLE(const std::string &amp;class_name, const std::string &amp;function_name, const bool disable)</div><div class="ttdef"><b>Definition:</b> tool_title.cpp:18</div></div>
@@ -140,26 +141,26 @@ $(function() {
 <div class="ttc" id="anamespaceGlobalC_html_a99a09ccc0fa804708c7fe59f2ee7ad3b"><div class="ttname"><a href="namespaceGlobalC.html#a99a09ccc0fa804708c7fe59f2ee7ad3b">GlobalC::ORB</a></div><div class="ttdeci">LCAO_Orbitals ORB</div><div class="ttdef"><b>Definition:</b> ORB_read.cpp:18</div></div>
 <div class="ttc" id="anamespaceGlobalC_html_ad13900463d5f46ae6dc8854de86b6198"><div class="ttname"><a href="namespaceGlobalC.html#ad13900463d5f46ae6dc8854de86b6198">GlobalC::ucell</a></div><div class="ttdeci">UnitCell ucell</div><div class="ttdef"><b>Definition:</b> klist_test.cpp:46</div></div>
 <div class="ttc" id="astructParallel__Orbitals_html_aa8850d4a7237ff910f69cc23a3d3a0d5"><div class="ttname"><a href="structParallel__Orbitals.html#aa8850d4a7237ff910f69cc23a3d3a0d5">Parallel_Orbitals::nrow</a></div><div class="ttdeci">int nrow</div><div class="ttdoc">local size (nloc = nrow * ncol)</div><div class="ttdef"><b>Definition:</b> parallel_orbitals.h:40</div></div>
-<div class="ttc" id="aclassK__Vectors_html_a9c1560cb5c6ad972f2f22a1d1d3b29eb"><div class="ttname"><a href="classK__Vectors.html#a9c1560cb5c6ad972f2f22a1d1d3b29eb">K_Vectors::nks</a></div><div class="ttdeci">int nks</div><div class="ttdef"><b>Definition:</b> klist.h:25</div></div>
 <div class="ttc" id="aclassModuleBase_1_1timer_html_a7d5a9dd381e39259fb92b31a89140206"><div class="ttname"><a href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206">ModuleBase::timer::tick</a></div><div class="ttdeci">static void tick(const std::string &amp;class_name_in, const std::string &amp;name_in)</div><div class="ttdoc">Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur...</div><div class="ttdef"><b>Definition:</b> timer.cpp:66</div></div>
 <div class="ttc" id="atimer_8h_html"><div class="ttname"><a href="timer_8h.html">timer.h</a></div></div>
-<div class="ttc" id="anamespaceGlobalC_html_a385573cb3a339f21703a1ae6b7f80b09"><div class="ttname"><a href="namespaceGlobalC.html#a385573cb3a339f21703a1ae6b7f80b09">GlobalC::ld</a></div><div class="ttdeci">LCAO_Deepks ld</div><div class="ttdef"><b>Definition:</b> LCAO_deepks.cpp:29</div></div>
+<div class="ttc" id="anamespaceGlobalC_html_a385573cb3a339f21703a1ae6b7f80b09"><div class="ttname"><a href="namespaceGlobalC.html#a385573cb3a339f21703a1ae6b7f80b09">GlobalC::ld</a></div><div class="ttdeci">LCAO_Deepks ld</div><div class="ttdef"><b>Definition:</b> LCAO_deepks.cpp:28</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_a129ecdbc98f0407ae4636c168b528bea"><div class="ttname"><a href="classLCAO__Deepks.html#a129ecdbc98f0407ae4636c168b528bea">LCAO_Deepks::cal_projected_DM_k</a></div><div class="ttdeci">void cal_projected_DM_k(const std::vector&lt; ModuleBase::ComplexMatrix &gt; &amp;dm, const UnitCell &amp;ucell, const LCAO_Orbitals &amp;orb, Grid_Driver &amp;GridD, const int *trace_loc_row, const int *trace_loc_col, const int nks, const std::vector&lt; ModuleBase::Vector3&lt; double &gt;&gt; &amp;kvec_d)</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_pdm.cpp:160</div></div>
 <div class="ttc" id="astructParallel__Orbitals_html_a398afc0a45b91a94af2afd2c330a824b"><div class="ttname"><a href="structParallel__Orbitals.html#a398afc0a45b91a94af2afd2c330a824b">Parallel_Orbitals::ncol</a></div><div class="ttdeci">int ncol</div><div class="ttdef"><b>Definition:</b> parallel_orbitals.h:41</div></div>
-<div class="ttc" id="aclasshamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4_html_ac28b08d0da881e8bf544e439169f845e"><div class="ttname"><a href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#ac28b08d0da881e8bf544e439169f845e">hamilt::DeePKS&lt; OperatorLCAO&lt; T &gt; &gt;::loc</a></div><div class="ttdeci">Local_Orbital_Charge * loc</div><div class="ttdef"><b>Definition:</b> deepks_lcao.h:39</div></div>
+<div class="ttc" id="aclasshamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4_html_ac28b08d0da881e8bf544e439169f845e"><div class="ttname"><a href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#ac28b08d0da881e8bf544e439169f845e">hamilt::DeePKS&lt; OperatorLCAO&lt; T &gt; &gt;::loc</a></div><div class="ttdeci">Local_Orbital_Charge * loc</div><div class="ttdef"><b>Definition:</b> deepks_lcao.h:41</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_a7ae2d099677eb37d8446b82dbebee925"><div class="ttname"><a href="classLCAO__Deepks.html#a7ae2d099677eb37d8446b82dbebee925">LCAO_Deepks::add_v_delta</a></div><div class="ttdeci">void add_v_delta(const UnitCell &amp;ucell, const LCAO_Orbitals &amp;orb, Grid_Driver &amp;GridD, const int *trace_loc_row, const int *trace_loc_col, const int nrow, const int ncol)</div><div class="ttdoc">add dV to the Hamiltonian matrix</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_vdelta.cpp:24</div></div>
 <div class="ttc" id="astructParallel__Orbitals_html_a99a0a7a0f65b66d651d7b75a517688ad"><div class="ttname"><a href="structParallel__Orbitals.html#a99a0a7a0f65b66d651d7b75a517688ad">Parallel_Orbitals::trace_loc_col</a></div><div class="ttdeci">int * trace_loc_col</div><div class="ttdef"><b>Definition:</b> parallel_orbitals.h:37</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_a7bf4048c62f86103da686c075dcbfff7"><div class="ttname"><a href="classLCAO__Deepks.html#a7bf4048c62f86103da686c075dcbfff7">LCAO_Deepks::H_V_delta</a></div><div class="ttdeci">double * H_V_delta</div><div class="ttdoc">Correction term to the Hamiltonian matrix:  (for gamma only)</div><div class="ttdef"><b>Definition:</b> LCAO_deepks.h:60</div></div>
 <div class="ttc" id="atool__title_8h_html"><div class="ttname"><a href="tool__title_8h.html">tool_title.h</a></div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_a175a442597754c6374bb51d826edc270"><div class="ttname"><a href="classLCAO__Deepks.html#a175a442597754c6374bb51d826edc270">LCAO_Deepks::set_hr_cal</a></div><div class="ttdeci">void set_hr_cal(bool cal)</div><div class="ttdef"><b>Definition:</b> LCAO_deepks.h:78</div></div>
-<div class="ttc" id="aclasshamilt_1_1OperatorLCAO_html"><div class="ttname"><a href="classhamilt_1_1OperatorLCAO.html">hamilt::OperatorLCAO</a></div><div class="ttdef"><b>Definition:</b> operator_lcao.h:11</div></div>
+<div class="ttc" id="aclasshamilt_1_1OperatorLCAO_html"><div class="ttname"><a href="classhamilt_1_1OperatorLCAO.html">hamilt::OperatorLCAO</a></div><div class="ttdef"><b>Definition:</b> operator_lcao.h:12</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_ab3e0af2a92d4a4d68505b43d6b51d0d3"><div class="ttname"><a href="classLCAO__Deepks.html#ab3e0af2a92d4a4d68505b43d6b51d0d3">LCAO_Deepks::cal_descriptor</a></div><div class="ttdeci">void cal_descriptor(void)</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_torch.cpp:31</div></div>
 <div class="ttc" id="anamespacehamilt_html_a506eac2a013daa2c2bd7d5248c6e6991a4e6059818e676a909b3bb20d54722d1b"><div class="ttname"><a href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a4e6059818e676a909b3bb20d54722d1b">hamilt::lcao_deepks</a></div><div class="ttdeci">@ lcao_deepks</div><div class="ttdef"><b>Definition:</b> operator.h:21</div></div>
 <div class="ttc" id="aclassLCAO__Deepks_html_aed181b6ed140a2023b1520e27e6cec8b"><div class="ttname"><a href="classLCAO__Deepks.html#aed181b6ed140a2023b1520e27e6cec8b">LCAO_Deepks::cal_projected_DM</a></div><div class="ttdeci">void cal_projected_DM(const ModuleBase::matrix &amp;dm, const UnitCell &amp;ucell, const LCAO_Orbitals &amp;orb, Grid_Driver &amp;GridD, const int *trace_loc_row, const int *trace_loc_col)</div><div class="ttdef"><b>Definition:</b> LCAO_deepks_pdm.cpp:28</div></div>
+<div class="ttc" id="asltk__grid__driver_8h_html"><div class="ttname"><a href="sltk__grid__driver_8h.html">sltk_grid_driver.h</a></div></div>
+<div class="ttc" id="aclasshamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4_html_a90f9ece79d4fb3712ae1d0b573b740a2"><div class="ttname"><a href="classhamilt_1_1DeePKS_3_01OperatorLCAO_3_01T_01_4_01_4.html#a90f9ece79d4fb3712ae1d0b573b740a2">hamilt::DeePKS&lt; OperatorLCAO&lt; T &gt; &gt;::nks</a></div><div class="ttdeci">const int &amp; nks</div><div class="ttdef"><b>Definition:</b> deepks_lcao.h:49</div></div>
 <div class="ttc" id="aexp_8cpp_html_a0acb682b8260ab1c60b918599864e2e5"><div class="ttname"><a href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div><div class="ttdeci">#define T</div><div class="ttdef"><b>Definition:</b> exp.cpp:237</div></div>
-<div class="ttc" id="anamespaceGlobalC_html_a82e5b30ae8436fb8721ae845114b1100"><div class="ttname"><a href="namespaceGlobalC.html#a82e5b30ae8436fb8721ae845114b1100">GlobalC::kv</a></div><div class="ttdeci">K_Vectors kv</div><div class="ttdef"><b>Definition:</b> global.cpp:7</div></div>
 <div class="ttc" id="aLCAO__deepks_8h_html"><div class="ttname"><a href="LCAO__deepks_8h.html">LCAO_deepks.h</a></div></div>
-<div class="ttc" id="aclassLCAO__Matrix_html"><div class="ttname"><a href="classLCAO__Matrix.html">LCAO_Matrix</a></div><div class="ttdef"><b>Definition:</b> LCAO_matrix.h:13</div></div>
+<div class="ttc" id="aclassLCAO__Matrix_html"><div class="ttname"><a href="classLCAO__Matrix.html">LCAO_Matrix</a></div><div class="ttdef"><b>Definition:</b> LCAO_matrix.h:16</div></div>
 <div class="ttc" id="astructParallel__Orbitals_html"><div class="ttname"><a href="structParallel__Orbitals.html">Parallel_Orbitals</a></div><div class="ttdef"><b>Definition:</b> parallel_orbitals.h:29</div></div>
 <div class="ttc" id="astructParallel__Orbitals_html_a62480b31c161771c6b80c457a74161cd"><div class="ttname"><a href="structParallel__Orbitals.html#a62480b31c161771c6b80c457a74161cd">Parallel_Orbitals::trace_loc_row</a></div><div class="ttdeci">int * trace_loc_row</div><div class="ttdoc">map from global-index to local-index</div><div class="ttdef"><b>Definition:</b> parallel_orbitals.h:36</div></div>
 <div class="ttc" id="anamespacehamilt_html"><div class="ttname"><a href="namespacehamilt.html">hamilt</a></div><div class="ttdef"><b>Definition:</b> hamilt.h:11</div></div>

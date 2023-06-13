@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: Member List</title>
+<title>3.2.4: Member List</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -71,13 +71,13 @@ $(function() {
 
 <p>This is the complete list of members for <a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a>, including all inherited members.</p>
 <table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#ac4b93b4805998f628733e67d8cfd48fd">allocate_DM_k</a>(void)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#abdb87aaed59940ee43dce98b17e7c1d9">allocate_dm_wfc</a>(const int &amp;lgd, elecstate::ElecState *pelec, Local_Orbital_wfc &amp;lowf, psi::Psi&lt; double &gt; *psid, psi::Psi&lt; std::complex&lt; double &gt;&gt; *psi)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a8578427bfbbd7f87d5204cd195e526e2">allocate_gamma</a>(const int &amp;lgd, psi::Psi&lt; double &gt; *psid, elecstate::ElecState *pelec)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#ae1fdd39fb4c0cf07d111dd17fb824895">allocate_DM_k</a>(const int &amp;nks, const int &amp;nnrg)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a0f624b292d25a3a3d02fc9e77b5e10da">allocate_dm_wfc</a>(const Grid_Technique &amp;gt, elecstate::ElecState *pelec, Local_Orbital_wfc &amp;lowf, psi::Psi&lt; double &gt; *psid, psi::Psi&lt; std::complex&lt; double &gt;&gt; *psi, const K_Vectors &amp;kv)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#abdcb58905e7ed78fa155fded35397ea8">allocate_gamma</a>(const int &amp;lgd, psi::Psi&lt; double &gt; *psid, elecstate::ElecState *pelec, const int &amp;nks)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a68eabf7e8d2054c43cc27a712b6104d4">cal_dk_gamma_from_2D</a>(void)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a95c0fe907abd4e09f700aff6f4a488db">cal_dk_gamma_from_2D_pub</a>(void)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#ae48c633772508b908d398ae8b0e638c1">cal_dk_k</a>(const Grid_Technique &amp;gt, const ModuleBase::matrix &amp;wg_in)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#ac413f1e4d0397b162637e34f3dcbf10b">cal_dm_R</a>(std::vector&lt; ModuleBase::ComplexMatrix &gt; &amp;dm_k, Record_adj &amp;ra, double **dm2d)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
+  <tr><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a6dd374141d9b34310ad5298181070dc7">cal_dk_k</a>(const Grid_Technique &amp;gt, const ModuleBase::matrix &amp;wg_in, const K_Vectors &amp;kv)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#aff07a593942f6979ecd20d318374883b">cal_dm_R</a>(std::vector&lt; ModuleBase::ComplexMatrix &gt; &amp;dm_k, Record_adj &amp;ra, double **dm2d, const K_Vectors &amp;kv)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#ac7e64795211b512320b94b3aaf52a5d6">DM</a></td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a045d76d9bf21862c738079b0f56c6a1a">dm_gamma</a></td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a5bdacec0b560ea5bee414eb70688b5b3">dm_k</a></td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
@@ -87,7 +87,7 @@ $(function() {
   <tr><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a390acb18c111c0f5629c19f80ab6efeb">edm_k_tddft</a></td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#ae82f43ef7d90a624e9d494e96d231314">gamma_file</a>(psi::Psi&lt; double &gt; *psid, Local_Orbital_wfc &amp;lowf, elecstate::ElecState *pelec)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a4d4276f33099a38e57d3cded8659c799">init_DM</a></td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a6469780732365657483b503a4bb26a2f">init_dm_2d</a>(void)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
+  <tr class="even"><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a7bbb83bba68b43f73895b3c90971af2a">init_dm_2d</a>(const int &amp;nks)</td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"></td></tr>
   <tr><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a01584ce70a559cda6ffd24fb3dde0718">init_DM_R</a></td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr class="even"><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a0420ac91efa14ac678df3c5d9b4877ee">lgd_last</a></td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"><span class="mlabel">private</span></td></tr>
   <tr><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html#a4fe40c6fd333bd3c79834ec577910f7f">lgd_now</a></td><td class="entry"><a class="el" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></td><td class="entry"><span class="mlabel">private</span></td></tr>

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: module_hsolver/genelpa/elpa_solver.h Source File</title>
+<title>3.2.4: module_hsolver/genelpa/elpa_solver.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -177,7 +177,6 @@ $(function() {
 <div class="ttc" id="aelpa__solver_8h_html"><div class="ttname"><a href="elpa__solver_8h.html">elpa_solver.h</a></div></div>
 <div class="ttc" id="aelpa__generic_8hpp_html_a537ec2fcf84b9c08d4ca1f63122a44ed"><div class="ttname"><a href="elpa__generic_8hpp.html#a537ec2fcf84b9c08d4ca1f63122a44ed">elpa_cholesky</a></div><div class="ttdeci">void elpa_cholesky(elpa_t handle, double *a, int *error)</div><div class="ttdoc">generic C method for elpa_cholesky</div><div class="ttdef"><b>Definition:</b> elpa_generic.hpp:305</div></div>
 <div class="ttc" id="aclassELPA__Solver_html_a52da0eaba9e4fcca54c72bd1cca4f343"><div class="ttname"><a href="classELPA__Solver.html#a52da0eaba9e4fcca54c72bd1cca4f343">ELPA_Solver::timer</a></div><div class="ttdeci">void timer(int myid, const char function[], const char step[], double &amp;t0)</div><div class="ttdef"><b>Definition:</b> elpa_new.cpp:449</div></div>
-<div class="ttc" id="aLCAO__evolve_8cpp_html_a8e0d6487c17ff3c013141f2ea4cccc60"><div class="ttname"><a href="LCAO__evolve_8cpp.html#a8e0d6487c17ff3c013141f2ea4cccc60">globalIndex</a></div><div class="ttdeci">int globalIndex(int localindex, int nblk, int nprocs, int myproc)</div><div class="ttdef"><b>Definition:</b> LCAO_evolve.cpp:18</div></div>
 <div class="ttc" id="aclassELPA__Solver_html_aa586559617e9120a381cab99012db650"><div class="ttname"><a href="classELPA__Solver.html#aa586559617e9120a381cab99012db650">ELPA_Solver::logfile</a></div><div class="ttdeci">std::ofstream logfile</div><div class="ttdef"><b>Definition:</b> elpa_solver.h:76</div></div>
 <div class="ttc" id="aelpa__new_8h_html"><div class="ttname"><a href="elpa__new_8h.html">elpa_new.h</a></div></div>
 <div class="ttc" id="aclassELPA__Solver_html_a510a62ce2f9c30c4215dbc1c3b7e1e1c"><div class="ttname"><a href="classELPA__Solver.html#a510a62ce2f9c30c4215dbc1c3b7e1e1c">ELPA_Solver::nacols</a></div><div class="ttdeci">int nacols</div><div class="ttdef"><b>Definition:</b> elpa_solver.h:59</div></div>
@@ -191,17 +190,20 @@ $(function() {
 <div class="ttc" id="aclassELPA__Solver_html_a721d5d362d54be732c27dee44905497c"><div class="ttname"><a href="classELPA__Solver.html#a721d5d362d54be732c27dee44905497c">ELPA_Solver::decomposeRightMatrix</a></div><div class="ttdeci">int decomposeRightMatrix(double *B, double *EigenValue, double *EigenVector, int &amp;DecomposedState)</div><div class="ttdef"><b>Definition:</b> elpa_new_real.cpp:165</div></div>
 <div class="ttc" id="aclassELPA__Solver_html_a28576e907a97b6238208d6fd56d4243d"><div class="ttname"><a href="classELPA__Solver.html#a28576e907a97b6238208d6fd56d4243d">ELPA_Solver::useQR</a></div><div class="ttdeci">int useQR</div><div class="ttdef"><b>Definition:</b> elpa_solver.h:73</div></div>
 <div class="ttc" id="aclassELPA__Solver_html_a270c61ae29f0595001824607c34ae52a"><div class="ttname"><a href="classELPA__Solver.html#a270c61ae29f0595001824607c34ae52a">ELPA_Solver::cblacs_ctxt</a></div><div class="ttdeci">int cblacs_ctxt</div><div class="ttdef"><b>Definition:</b> elpa_solver.h:63</div></div>
+<div class="ttc" id="anamespacemodule__tddft_html_a4de0752bcc80f779dd2ec1fecb8a6637"><div class="ttname"><a href="namespacemodule__tddft.html#a4de0752bcc80f779dd2ec1fecb8a6637">module_tddft::globalIndex</a></div><div class="ttdeci">int globalIndex(int localindex, int nblk, int nprocs, int myproc)</div><div class="ttdef"><b>Definition:</b> bandenergy.cpp:14</div></div>
 <div class="ttc" id="aclassELPA__Solver_html_a716a93cefdb959afa2c96f9b6324c896"><div class="ttname"><a href="classELPA__Solver.html#a716a93cefdb959afa2c96f9b6324c896">ELPA_Solver::nFull</a></div><div class="ttdeci">int nFull</div><div class="ttdef"><b>Definition:</b> elpa_solver.h:56</div></div>
 <div class="ttc" id="aclassELPA__Solver_html_a2dc47a202efc05f23a28412029dd2eb0"><div class="ttname"><a href="classELPA__Solver.html#a2dc47a202efc05f23a28412029dd2eb0">ELPA_Solver::dwork</a></div><div class="ttdeci">std::vector&lt; double &gt; dwork</div><div class="ttdef"><b>Definition:</b> elpa_solver.h:66</div></div>
 <div class="ttc" id="aclassELPA__Solver_html_acd18827444e538619ca45a53f84b37c5"><div class="ttname"><a href="classELPA__Solver.html#acd18827444e538619ca45a53f84b37c5">ELPA_Solver::verify</a></div><div class="ttdeci">void verify(double *A, double *EigenValue, double *EigenVector, double &amp;maxRemain, double &amp;meanRemain)</div><div class="ttdef"><b>Definition:</b> elpa_new_real.cpp:357</div></div>
 <div class="ttc" id="aelpa__new__complex_8cpp_html_ae61a70adbcf2ddd69f43b56c8a35946f"><div class="ttname"><a href="elpa__new__complex_8cpp.html#ae61a70adbcf2ddd69f43b56c8a35946f">NEW_ELPA_HANDLE_POOL</a></div><div class="ttdeci">map&lt; int, elpa_t &gt; NEW_ELPA_HANDLE_POOL</div><div class="ttdef"><b>Definition:</b> elpa_new.cpp:23</div></div>
 <div class="ttc" id="aclassELPA__Solver_html_a8dbbae2e413ca995716d08c753c45f51"><div class="ttname"><a href="classELPA__Solver.html#a8dbbae2e413ca995716d08c753c45f51">ELPA_Solver::setKernel</a></div><div class="ttdeci">void setKernel(bool isReal, int Kernel)</div><div class="ttdef"><b>Definition:</b> elpa_new.cpp:186</div></div>
 <div class="ttc" id="aclassELPA__Solver_html_aaa863abe0e6de611bf736cdf79f474c3"><div class="ttname"><a href="classELPA__Solver.html#aaa863abe0e6de611bf736cdf79f474c3">ELPA_Solver::read_complex_kernel</a></div><div class="ttdeci">int read_complex_kernel()</div><div class="ttdef"><b>Definition:</b> elpa_new.cpp:358</div></div>
+<div class="ttc" id="atddft__test_8cpp_html_a54a3a20636e9a02c45a2fbff3a205924"><div class="ttname"><a href="tddft__test_8cpp.html#a54a3a20636e9a02c45a2fbff3a205924">myprow</a></div><div class="ttdeci">int myprow</div><div class="ttdef"><b>Definition:</b> tddft_test.cpp:14</div></div>
 <div class="ttc" id="autils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div></div>
 <div class="ttc" id="aelpa__generic_8hpp_html_acf7553524265b4ac20a50c9cdc47bea6"><div class="ttname"><a href="elpa__generic_8hpp.html#acf7553524265b4ac20a50c9cdc47bea6">elpa_invert_triangular</a></div><div class="ttdeci">void elpa_invert_triangular(elpa_t handle, double *a, int *error)</div><div class="ttdoc">generic C method for elpa_invert_triangular</div><div class="ttdef"><b>Definition:</b> elpa_generic.hpp:411</div></div>
 <div class="ttc" id="aclassELPA__Solver_html_ae9f648a3d1841b76cc060c94d062bf22"><div class="ttname"><a href="classELPA__Solver.html#ae9f648a3d1841b76cc060c94d062bf22">ELPA_Solver::handle_id</a></div><div class="ttdeci">int handle_id</div><div class="ttdef"><b>Definition:</b> elpa_solver.h:82</div></div>
 <div class="ttc" id="aclassELPA__Solver_html_a328e57ca698c940ba5c7e0b17296b60a"><div class="ttname"><a href="classELPA__Solver.html#a328e57ca698c940ba5c7e0b17296b60a">ELPA_Solver::comm</a></div><div class="ttdeci">MPI_Comm comm</div><div class="ttdef"><b>Definition:</b> elpa_solver.h:55</div></div>
 <div class="ttc" id="abranred_8cpp_html_ac39d9cef6a5e030ba8d9e11121054268"><div class="ttname"><a href="branred_8cpp.html#ac39d9cef6a5e030ba8d9e11121054268">max</a></div><div class="ttdeci">#define max(x, y)</div><div class="ttdef"><b>Definition:</b> branred.cpp:17</div></div>
+<div class="ttc" id="atddft__test_8cpp_html_a19cb9894faffb278fd16eec1fb1bc0a7"><div class="ttname"><a href="tddft__test_8cpp.html#a19cb9894faffb278fd16eec1fb1bc0a7">mypcol</a></div><div class="ttdeci">int mypcol</div><div class="ttdef"><b>Definition:</b> tddft_test.cpp:14</div></div>
 <div class="ttc" id="aclassELPA__Solver_html"><div class="ttname"><a href="classELPA__Solver.html">ELPA_Solver</a></div><div class="ttdef"><b>Definition:</b> elpa_solver.h:8</div></div>
 <div class="ttc" id="aclassELPA__Solver_html_a2bd18049c1cf7569f9ff61d0ad8735e4"><div class="ttname"><a href="classELPA__Solver.html#a2bd18049c1cf7569f9ff61d0ad8735e4">ELPA_Solver::wantDebug</a></div><div class="ttdeci">int wantDebug</div><div class="ttdef"><b>Definition:</b> elpa_solver.h:74</div></div>
 <div class="ttc" id="aclassELPA__Solver_html_ae2dd768352b626f5fb938859f8774080"><div class="ttname"><a href="classELPA__Solver.html#ae2dd768352b626f5fb938859f8774080">ELPA_Solver::read_cpuflag</a></div><div class="ttdeci">int read_cpuflag()</div><div class="ttdef"><b>Definition:</b> elpa_new.cpp:213</div></div>

@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classNumerical__Basis.html" title=" " alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node1" href="$classModuleIO_1_1Output__Interface.html" title="base class for interface output classes" alt="" coords="5,115,207,141"/>
+<area shape="rect" id="node2" href="$classModuleIO_1_1Output__DM.html" title="the output interface to write the density matrix" alt="" coords="273,5,438,32"/>
+<area shape="rect" id="node3" href="$classModuleIO_1_1Output__DM1.html" title="the output interface to write the sparse density matrix" alt="" coords="269,56,442,83"/>
+<area shape="rect" id="node4" href="$classModuleIO_1_1Output__Mat__Sparse.html" title="the output interface to write the sparse matrix of H, S, T, and r" alt="" coords="271,107,439,149"/>
+<area shape="rect" id="node5" href="$classModuleIO_1_1Output__Potential.html" title="the output interface to write the potential" alt="" coords="255,173,456,200"/>
+<area shape="rect" id="node6" href="$classModuleIO_1_1Output__Rho.html" title="the output interface to write the charge density" alt="" coords="271,224,439,251"/>
 </map>

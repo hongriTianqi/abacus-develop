@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: Charge Class Reference</title>
+<title>3.2.4: Charge Class Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -81,7 +81,7 @@ Collaboration diagram for Charge:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge__coll__graph.png" border="0" usemap="#Charge_coll__map" alt="Collaboration graph"/></div>
 <map name="Charge_coll__map" id="Charge_coll__map">
-<area shape="rect" title=" " alt="" coords="134,1356,363,1859"/>
+<area shape="rect" title=" " alt="" coords="134,1356,363,1844"/>
 <area shape="rect" href="classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="155,673,342,1293"/>
 <area shape="rect" href="classModuleBase_1_1Vector3.html" title=" " alt="" coords="5,152,164,420"/>
 <area shape="rect" href="classModulePW_1_1FFT.html" title=" " alt="" coords="188,5,309,567"/>
@@ -101,12 +101,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a1eb5a4819a36afe9ad0843db8f5d1957"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad64b6e0a1dec668d2aa38afe9b989bd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge.html#aad64b6e0a1dec668d2aa38afe9b989bd">allocate</a> (const int &amp;nspin_in)</td></tr>
 <tr class="separator:aad64b6e0a1dec668d2aa38afe9b989bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a568da3705f0d45a6a18ad52a87903122"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge.html#a568da3705f0d45a6a18ad52a87903122">atomic_rho</a> (const int spin_number_need, const double &amp;omega, double **rho_in, const <a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &amp;strucFac) const</td></tr>
-<tr class="separator:a568da3705f0d45a6a18ad52a87903122"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f532c4eb8ab8838833d4a7d94998ae0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge.html#a7f532c4eb8ab8838833d4a7d94998ae0">atomic_rho</a> (const int spin_number_need, const double &amp;omega, double **rho_in, const <a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &amp;strucFac, const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;ucell) const</td></tr>
+<tr class="separator:a7f532c4eb8ab8838833d4a7d94998ae0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe553c3901db57ef8814c39c2baa241a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge.html#abe553c3901db57ef8814c39c2baa241a">set_rho_core</a> (const <a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &amp;structure_factor)</td></tr>
 <tr class="separator:abe553c3901db57ef8814c39c2baa241a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8155aa32f29524a85eef0cbf1de9d451"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge.html#a8155aa32f29524a85eef0cbf1de9d451">cal_nelec</a> ()</td></tr>
-<tr class="separator:a8155aa32f29524a85eef0cbf1de9d451"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e8abf190a520a7a25a2ccd845d71d10"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge.html#a7e8abf190a520a7a25a2ccd845d71d10">renormalize_rho</a> (void)</td></tr>
 <tr class="separator:a7e8abf190a520a7a25a2ccd845d71d10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d01c18ffe7b0fb877dbcaea6d62f47d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classCharge.html#a5d01c18ffe7b0fb877dbcaea6d62f47d">save_rho_before_sum_band</a> (void)</td></tr>
@@ -204,7 +202,8 @@ Here is the call graph for this function:</div>
 <map name="classCharge_a10f02b5ff2d4887155d587fa3352725a_cgraph" id="classCharge_a10f02b5ff2d4887155d587fa3352725a_cgraph">
 <area shape="rect" title=" " alt="" coords="5,13,139,39"/>
 <area shape="rect" href="classCharge.html#ada28366defcbf80e1f11e9b9a1a873e7" title=" " alt="" coords="187,13,312,39"/>
-<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="360,5,503,47"/>
+<area shape="rect" href="namespaceelecstate.html#a12c4e4e71cc5208ffd2994dee1d5e444" title="get the value of XC_Functional::func_type" alt="" coords="360,13,564,39"/>
+<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="612,5,755,47"/>
 </map>
 </div>
 
@@ -233,14 +232,14 @@ Here is the call graph for this function:</div>
 <map name="classCharge_aad64b6e0a1dec668d2aa38afe9b989bd_cgraph" id="classCharge_aad64b6e0a1dec668d2aa38afe9b989bd_cgraph">
 <area shape="rect" title=" " alt="" coords="5,115,133,141"/>
 <area shape="rect" href="classCharge.html#ada28366defcbf80e1f11e9b9a1a873e7" title=" " alt="" coords="210,5,335,32"/>
-<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="432,17,575,58"/>
+<area shape="rect" href="namespaceelecstate.html#a12c4e4e71cc5208ffd2994dee1d5e444" title="get the value of XC_Functional::func_type" alt="" coords="412,27,616,53"/>
 <area shape="rect" href="classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="191,107,355,149"/>
 <area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="200,173,345,200"/>
 <area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="181,225,364,266"/>
-<area shape="rect" href="classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="421,101,585,142"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="412,166,595,207"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="427,231,580,273"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="643,166,825,207"/>
+<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="664,19,807,61"/>
+<area shape="rect" href="classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="432,101,596,142"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="423,166,605,207"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="437,231,591,273"/>
 </map>
 </div>
 <div class="dynheader">
@@ -248,20 +247,21 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge_aad64b6e0a1dec668d2aa38afe9b989bd_icgraph.png" border="0" usemap="#classCharge_aad64b6e0a1dec668d2aa38afe9b989bd_icgraph" alt=""/></div>
 <map name="classCharge_aad64b6e0a1dec668d2aa38afe9b989bd_icgraph" id="classCharge_aad64b6e0a1dec668d2aa38afe9b989bd_icgraph">
-<area shape="rect" title=" " alt="" coords="453,143,581,170"/>
+<area shape="rect" title=" " alt="" coords="453,177,581,203"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a5da528c585deda3e93483bb394d67713" title=" " alt="" coords="229,5,405,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="229,71,405,112"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a9062d41b281c0efb4ec25752c0496f9e" title=" " alt="" coords="229,136,405,177"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a9062d41b281c0efb4ec25752c0496f9e" title=" " alt="" coords="229,71,405,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="229,136,405,177"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="229,201,405,243"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad316c994ae1b69629b29a0eb7f98536f" title=" " alt="" coords="229,267,405,308"/>
+<area shape="rect" href="charge__test_8cpp.html#a43500c78cdca2cc3d6eaaef365a28f3a" title=" " alt="" coords="283,333,352,359"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="5,267,181,308"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a568da3705f0d45a6a18ad52a87903122"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a568da3705f0d45a6a18ad52a87903122">&#9670;&nbsp;</a></span>atomic_rho()</h2>
+<a id="a7f532c4eb8ab8838833d4a7d94998ae0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f532c4eb8ab8838833d4a7d94998ae0">&#9670;&nbsp;</a></span>atomic_rho()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -288,7 +288,13 @@ Here is the caller graph for this function:</div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classModuleBase_1_1ComplexMatrix.html">ModuleBase::ComplexMatrix</a> &amp;&#160;</td>
-          <td class="paramname"><em>strucFac</em>&#160;</td>
+          <td class="paramname"><em>strucFac</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classUnitCell.html">UnitCell</a> &amp;&#160;</td>
+          <td class="paramname"><em>ucell</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -300,8 +306,8 @@ Here is the caller graph for this function:</div>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classCharge_a568da3705f0d45a6a18ad52a87903122_icgraph.png" border="0" usemap="#classCharge_a568da3705f0d45a6a18ad52a87903122_icgraph" alt=""/></div>
-<map name="classCharge_a568da3705f0d45a6a18ad52a87903122_icgraph" id="classCharge_a568da3705f0d45a6a18ad52a87903122_icgraph">
+<div class="center"><img src="classCharge_a7f532c4eb8ab8838833d4a7d94998ae0_icgraph.png" border="0" usemap="#classCharge_a7f532c4eb8ab8838833d4a7d94998ae0_icgraph" alt=""/></div>
+<map name="classCharge_a7f532c4eb8ab8838833d4a7d94998ae0_icgraph" id="classCharge_a7f532c4eb8ab8838833d4a7d94998ae0_icgraph">
 <area shape="rect" title=" " alt="" coords="719,106,868,133"/>
 <area shape="rect" href="classCharge__Extra.html#ad0fe660c9bd6887fb04667c29948be22" title=" " alt="" coords="479,69,671,111"/>
 <area shape="rect" href="classCharge.html#a1eb5a4819a36afe9ad0843db8f5d1957" title=" " alt="" coords="512,135,637,162"/>
@@ -310,38 +316,6 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a380b40f26c567a678ad6552068e6f4bc" title=" " alt="" coords="18,5,194,47"/>
 <area shape="rect" href="classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651" title=" " alt="" coords="267,128,418,169"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,136,207,177"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a8155aa32f29524a85eef0cbf1de9d451"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8155aa32f29524a85eef0cbf1de9d451">&#9670;&nbsp;</a></span>cal_nelec()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Charge::cal_nelec </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classCharge_a8155aa32f29524a85eef0cbf1de9d451_cgraph.png" border="0" usemap="#classCharge_a8155aa32f29524a85eef0cbf1de9d451_cgraph" alt=""/></div>
-<map name="classCharge_a8155aa32f29524a85eef0cbf1de9d451_cgraph" id="classCharge_a8155aa32f29524a85eef0cbf1de9d451_cgraph">
-<area shape="rect" title=" " alt="" coords="5,31,143,57"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="191,5,409,32"/>
-<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="227,56,373,83"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="457,15,640,57"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="472,81,625,122"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="688,15,871,57"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="691,88,868,115"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="919,81,1072,122"/>
 </map>
 </div>
 
@@ -367,8 +341,18 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge_adc8d0693d347e97655772c3b3fc79d0f_cgraph.png" border="0" usemap="#classCharge_adc8d0693d347e97655772c3b3fc79d0f_cgraph" alt=""/></div>
 <map name="classCharge_adc8d0693d347e97655772c3b3fc79d0f_cgraph" id="classCharge_adc8d0693d347e97655772c3b3fc79d0f_cgraph">
-<area shape="rect" title=" " alt="" coords="5,13,143,39"/>
-<area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="191,5,368,47"/>
+<area shape="rect" title=" " alt="" coords="5,46,143,73"/>
+<area shape="rect" href="namespaceelecstate.html#abb96cf9fc561d8074c7ef6cbf487377b" title="get the value of GlobalC::ucell.omega" alt="" coords="205,5,354,47"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="191,71,368,112"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCharge_adc8d0693d347e97655772c3b3fc79d0f_icgraph.png" border="0" usemap="#classCharge_adc8d0693d347e97655772c3b3fc79d0f_icgraph" alt=""/></div>
+<map name="classCharge_adc8d0693d347e97655772c3b3fc79d0f_icgraph" id="classCharge_adc8d0693d347e97655772c3b3fc79d0f_icgraph">
+<area shape="rect" title=" " alt="" coords="123,5,260,32"/>
+<area shape="rect" href="charge__test_8cpp.html#a2f3cd9e98fd49ac9ea80e6b623f87f9a" title=" " alt="" coords="5,5,75,32"/>
 </map>
 </div>
 
@@ -402,7 +386,8 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classCharge_ada28366defcbf80e1f11e9b9a1a873e7_cgraph.png" border="0" usemap="#classCharge_ada28366defcbf80e1f11e9b9a1a873e7_cgraph" alt=""/></div>
 <map name="classCharge_ada28366defcbf80e1f11e9b9a1a873e7_cgraph" id="classCharge_ada28366defcbf80e1f11e9b9a1a873e7_cgraph">
 <area shape="rect" title=" " alt="" coords="5,13,131,39"/>
-<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="179,5,321,47"/>
+<area shape="rect" href="namespaceelecstate.html#a12c4e4e71cc5208ffd2994dee1d5e444" title="get the value of XC_Functional::func_type" alt="" coords="179,13,383,39"/>
+<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="431,5,573,47"/>
 </map>
 </div>
 <div class="dynheader">
@@ -410,14 +395,15 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge_ada28366defcbf80e1f11e9b9a1a873e7_icgraph.png" border="0" usemap="#classCharge_ada28366defcbf80e1f11e9b9a1a873e7_icgraph" alt=""/></div>
 <map name="classCharge_ada28366defcbf80e1f11e9b9a1a873e7_icgraph" id="classCharge_ada28366defcbf80e1f11e9b9a1a873e7_icgraph">
-<area shape="rect" title=" " alt="" coords="635,169,760,195"/>
-<area shape="rect" href="classCharge.html#aad64b6e0a1dec668d2aa38afe9b989bd" title=" " alt="" coords="456,143,584,170"/>
-<area shape="rect" href="classCharge.html#a10f02b5ff2d4887155d587fa3352725a" title=" " alt="" coords="453,194,587,221"/>
+<area shape="rect" title=" " alt="" coords="635,202,760,229"/>
+<area shape="rect" href="classCharge.html#aad64b6e0a1dec668d2aa38afe9b989bd" title=" " alt="" coords="456,177,584,203"/>
+<area shape="rect" href="classCharge.html#a10f02b5ff2d4887155d587fa3352725a" title=" " alt="" coords="453,227,587,254"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__SDFT__PW.html#a5da528c585deda3e93483bb394d67713" title=" " alt="" coords="229,5,405,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="229,71,405,112"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a9062d41b281c0efb4ec25752c0496f9e" title=" " alt="" coords="229,136,405,177"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a9062d41b281c0efb4ec25752c0496f9e" title=" " alt="" coords="229,71,405,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="229,136,405,177"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="229,201,405,243"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad316c994ae1b69629b29a0eb7f98536f" title=" " alt="" coords="229,267,405,308"/>
+<area shape="rect" href="charge__test_8cpp.html#a43500c78cdca2cc3d6eaaef365a28f3a" title=" " alt="" coords="283,333,352,359"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="5,267,181,308"/>
 </map>
 </div>
@@ -455,6 +441,15 @@ Here is the call graph for this function:</div>
 <area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="904,136,1057,177"/>
 </map>
 </div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classCharge_a5ec0a1c28e765143f412403450f7b6cc_icgraph.png" border="0" usemap="#classCharge_a5ec0a1c28e765143f412403450f7b6cc_icgraph" alt=""/></div>
+<map name="classCharge_a5ec0a1c28e765143f412403450f7b6cc_icgraph" id="classCharge_a5ec0a1c28e765143f412403450f7b6cc_icgraph">
+<area shape="rect" title=" " alt="" coords="123,5,281,32"/>
+<area shape="rect" href="charge__test_8cpp.html#a57659baba74ad3a93e5fcd6268cdd807" title=" " alt="" coords="5,5,75,32"/>
+</map>
+</div>
 
 </div>
 </div>
@@ -488,16 +483,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge_a1eb5a4819a36afe9ad0843db8f5d1957_cgraph.png" border="0" usemap="#classCharge_a1eb5a4819a36afe9ad0843db8f5d1957_cgraph" alt=""/></div>
 <map name="classCharge_a1eb5a4819a36afe9ad0843db8f5d1957_cgraph" id="classCharge_a1eb5a4819a36afe9ad0843db8f5d1957_cgraph">
-<area shape="rect" title=" " alt="" coords="5,202,131,229"/>
-<area shape="rect" href="classCharge.html#a568da3705f0d45a6a18ad52a87903122" title=" " alt="" coords="179,71,328,98"/>
-<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="414,5,557,47"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="376,122,595,149"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="379,173,592,199"/>
-<area shape="rect" href="module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0" title=" " alt="" coords="458,315,513,342"/>
-<area shape="rect" href="structelecstate_1_1efermi.html#a8c8bfa1f4128cfd970a8a5fa5ce70ff5" title="get the reference of fermi of a specific spin" alt="" coords="183,224,324,265"/>
-<area shape="rect" href="classRestart.html#ab962badf580fc85812bc090962cd635d" title=" " alt="" coords="184,391,323,418"/>
-<area shape="rect" href="namespaceModuleIO.html#a17a82ff18c4eec3cdca9b446d737bd4c" title=" " alt="" coords="179,341,328,367"/>
-<area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="400,71,571,98"/>
+<area shape="rect" title=" " alt="" coords="5,195,131,222"/>
+<area shape="rect" href="classCharge.html#a7f532c4eb8ab8838833d4a7d94998ae0" title=" " alt="" coords="179,57,328,83"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="376,6,595,33"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="379,107,592,134"/>
+<area shape="rect" href="module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0" title=" " alt="" coords="458,309,513,335"/>
+<area shape="rect" href="structelecstate_1_1efermi.html#a8c8bfa1f4128cfd970a8a5fa5ce70ff5" title="get the reference of fermi of a specific spin" alt="" coords="183,159,324,200"/>
+<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="182,276,325,317"/>
+<area shape="rect" href="classRestart.html#ab962badf580fc85812bc090962cd635d" title=" " alt="" coords="184,342,323,369"/>
+<area shape="rect" href="namespaceModuleIO.html#a17a82ff18c4eec3cdca9b446d737bd4c" title=" " alt="" coords="179,393,328,419"/>
+<area shape="rect" href="namespaceModuleBase_1_1libm.html#aee5a8e0b6865a68073202e1acddfaf68" title=" " alt="" coords="400,57,571,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -588,7 +583,7 @@ Here is the caller graph for this function:</div>
 <area shape="rect" title=" " alt="" coords="668,64,812,105"/>
 <area shape="rect" href="classForces.html#ae52a9fdf7bcb35ac20b51f9708124527" title=" " alt="" coords="454,5,619,47"/>
 <area shape="rect" href="classCharge.html#abe553c3901db57ef8814c39c2baa241a" title=" " alt="" coords="457,71,616,98"/>
-<area shape="rect" href="classStress__Func.html#a89bc9855bd9f55ae47e65b70edb0cc9e" title=" " alt="" coords="453,122,620,178"/>
+<area shape="rect" href="classStress__Func.html#a28a85933e41887b02c513c88b151487e" title=" " alt="" coords="453,122,620,178"/>
 <area shape="rect" href="classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651" title=" " alt="" coords="255,64,405,105"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,31,194,72"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,96,207,137"/>
@@ -617,16 +612,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge_a7e8abf190a520a7a25a2ccd845d71d10_cgraph.png" border="0" usemap="#classCharge_a7e8abf190a520a7a25a2ccd845d71d10_cgraph" alt=""/></div>
 <map name="classCharge_a7e8abf190a520a7a25a2ccd845d71d10_cgraph" id="classCharge_a7e8abf190a520a7a25a2ccd845d71d10_cgraph">
-<area shape="rect" title=" " alt="" coords="5,71,188,98"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="236,21,455,47"/>
-<area shape="rect" href="classCharge.html#acaba94e803083e82aff5f6a0c14e1356" title=" " alt="" coords="279,71,411,98"/>
-<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="537,122,682,149"/>
-<area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="521,5,698,47"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="503,71,716,98"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="764,81,947,123"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="779,147,932,188"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="995,81,1177,123"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="997,154,1175,181"/>
+<area shape="rect" title=" " alt="" coords="5,137,188,163"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ae14c43041594db3a042c9ce69a6caeb9" title=" " alt="" coords="236,86,455,113"/>
+<area shape="rect" href="classCharge.html#acaba94e803083e82aff5f6a0c14e1356" title=" " alt="" coords="279,137,411,163"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="537,187,682,214"/>
+<area shape="rect" href="namespaceelecstate.html#abb96cf9fc561d8074c7ef6cbf487377b" title="get the value of GlobalC::ucell.omega" alt="" coords="535,5,684,47"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="521,71,698,112"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="503,137,716,163"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="764,147,947,188"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="779,212,932,253"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="995,147,1177,188"/>
 </map>
 </div>
 <div class="dynheader">
@@ -634,14 +629,14 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge_a7e8abf190a520a7a25a2ccd845d71d10_icgraph.png" border="0" usemap="#classCharge_a7e8abf190a520a7a25a2ccd845d71d10_icgraph" alt=""/></div>
 <map name="classCharge_a7e8abf190a520a7a25a2ccd845d71d10_icgraph" id="classCharge_a7e8abf190a520a7a25a2ccd845d71d10_icgraph">
-<area shape="rect" title=" " alt="" coords="531,111,713,138"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="300,5,479,47"/>
-<area shape="rect" href="classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651" title=" " alt="" coords="314,71,465,112"/>
+<area shape="rect" title=" " alt="" coords="531,143,713,170"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="300,71,479,112"/>
+<area shape="rect" href="classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651" title=" " alt="" coords="314,5,465,47"/>
 <area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="296,136,483,177"/>
 <area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="296,201,483,243"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="39,5,215,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="26,71,227,112"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="17,136,236,177"/>
+<area shape="rect" href="charge__test_8cpp.html#aae4b41f6cf327fc35eff3359bc5bc61f" title=" " alt="" coords="355,267,424,294"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="39,71,215,112"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="26,5,227,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="5,201,248,243"/>
 </map>
 </div>
@@ -679,14 +674,15 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classCharge_af2a21bce9cd89c61b2ca165cd57c0fc7_cgraph.png" border="0" usemap="#classCharge_af2a21bce9cd89c61b2ca165cd57c0fc7_cgraph" alt=""/></div>
 <map name="classCharge_af2a21bce9cd89c61b2ca165cd57c0fc7_cgraph" id="classCharge_af2a21bce9cd89c61b2ca165cd57c0fc7_cgraph">
 <area shape="rect" title=" " alt="" coords="5,97,135,123"/>
-<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="203,5,345,47"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="647,101,824,127"/>
-<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="201,126,347,153"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="183,177,365,219"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="875,93,1028,135"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="413,188,596,229"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="428,123,581,164"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="644,188,827,229"/>
+<area shape="rect" href="namespaceelecstate.html#a12c4e4e71cc5208ffd2994dee1d5e444" title="get the value of XC_Functional::func_type" alt="" coords="183,17,387,43"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="668,101,845,127"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="212,126,357,153"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="193,177,376,219"/>
+<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="455,5,597,47"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="896,93,1049,135"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="435,188,617,229"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="449,123,603,164"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="665,188,848,229"/>
 </map>
 </div>
 <div class="dynheader">
@@ -723,7 +719,8 @@ Here is the call graph for this function:</div>
 <div class="center"><img src="classCharge_a5d01c18ffe7b0fb877dbcaea6d62f47d_cgraph.png" border="0" usemap="#classCharge_a5d01c18ffe7b0fb877dbcaea6d62f47d_cgraph" alt=""/></div>
 <map name="classCharge_a5d01c18ffe7b0fb877dbcaea6d62f47d_cgraph" id="classCharge_a5d01c18ffe7b0fb877dbcaea6d62f47d_cgraph">
 <area shape="rect" title=" " alt="" coords="5,5,189,47"/>
-<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="237,5,380,47"/>
+<area shape="rect" href="namespaceelecstate.html#a12c4e4e71cc5208ffd2994dee1d5e444" title="get the value of XC_Functional::func_type" alt="" coords="237,13,441,39"/>
+<area shape="rect" href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="489,5,632,47"/>
 </map>
 </div>
 <div class="dynheader">
@@ -731,11 +728,12 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge_a5d01c18ffe7b0fb877dbcaea6d62f47d_icgraph.png" border="0" usemap="#classCharge_a5d01c18ffe7b0fb877dbcaea6d62f47d_icgraph" alt=""/></div>
 <map name="classCharge_a5d01c18ffe7b0fb877dbcaea6d62f47d_icgraph" id="classCharge_a5d01c18ffe7b0fb877dbcaea6d62f47d_icgraph">
-<area shape="rect" title=" " alt="" coords="545,78,729,119"/>
+<area shape="rect" title=" " alt="" coords="545,107,729,149"/>
 <area shape="rect" href="classIState__Envelope.html#ab477dddd987fa2adc5ec0b27be47f245" title="for gamma_only" alt="" coords="291,5,461,32"/>
 <area shape="rect" href="classIState__Charge.html#a42cf0be33969b28185217b2f02b3d436" title=" " alt="" coords="297,56,455,83"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="255,107,497,149"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ad77b2f8850b54ceb66721e4f6afb290d" title=" " alt="" coords="279,173,473,214"/>
+<area shape="rect" href="charge__test_8cpp.html#a1caf8c74e7b970f9e92fb2dbcc551545" title=" " alt="" coords="341,239,411,265"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,23,207,65"/>
 </map>
 </div>
@@ -808,10 +806,11 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge_a7659987db575172ae04c8b268beeecba_icgraph.png" border="0" usemap="#classCharge_a7659987db575172ae04c8b268beeecba_icgraph" alt=""/></div>
 <map name="classCharge_a7659987db575172ae04c8b268beeecba_icgraph" id="classCharge_a7659987db575172ae04c8b268beeecba_icgraph">
-<area shape="rect" title=" " alt="" coords="503,78,645,105"/>
+<area shape="rect" title=" " alt="" coords="503,111,645,138"/>
 <area shape="rect" href="classelecstate_1_1ElecState.html#a8bb767d4480bf8d09279f04f5910821d" title=" " alt="" coords="291,5,442,47"/>
 <area shape="rect" href="classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="279,71,455,112"/>
 <area shape="rect" href="classelecstate_1_1ElecState.html#a5037379556b160c93b7f877bcf16c8f2" title=" " alt="" coords="291,136,442,177"/>
+<area shape="rect" href="charge__test_8cpp.html#a43500c78cdca2cc3d6eaaef365a28f3a" title=" " alt="" coords="332,202,401,229"/>
 <area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a3dd6823b67199861b9727d621a1d16c9" title=" " alt="" coords="25,103,211,144"/>
 <area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#aa0a68f88c0a63f766f016945a066db7d" title=" " alt="" coords="5,168,231,209"/>
 </map>
@@ -847,15 +846,16 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge_acaba94e803083e82aff5f6a0c14e1356_cgraph.png" border="0" usemap="#classCharge_acaba94e803083e82aff5f6a0c14e1356_cgraph" alt=""/></div>
 <map name="classCharge_acaba94e803083e82aff5f6a0c14e1356_cgraph" id="classCharge_acaba94e803083e82aff5f6a0c14e1356_cgraph">
-<area shape="rect" title=" " alt="" coords="5,71,137,98"/>
-<area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="203,5,381,47"/>
-<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="219,71,365,98"/>
-<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="185,122,399,149"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="447,31,629,72"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="461,96,615,137"/>
-<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="677,31,860,72"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="680,103,857,130"/>
-<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="908,96,1061,137"/>
+<area shape="rect" title=" " alt="" coords="5,107,137,134"/>
+<area shape="rect" href="namespaceelecstate.html#abb96cf9fc561d8074c7ef6cbf487377b" title="get the value of GlobalC::ucell.omega" alt="" coords="217,5,367,47"/>
+<area shape="rect" href="namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="203,71,381,112"/>
+<area shape="rect" href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="219,137,365,163"/>
+<area shape="rect" href="namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="185,187,399,214"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="447,96,629,137"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="461,161,615,203"/>
+<area shape="rect" href="namespaceModuleBase_1_1GlobalFunc.html#a2951c6789427db1f9d91f62a0e84e2a6" title=" " alt="" coords="677,96,860,137"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="680,169,857,195"/>
+<area shape="rect" href="classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="908,161,1061,203"/>
 </map>
 </div>
 <div class="dynheader">
@@ -863,16 +863,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classCharge_acaba94e803083e82aff5f6a0c14e1356_icgraph.png" border="0" usemap="#classCharge_acaba94e803083e82aff5f6a0c14e1356_icgraph" alt=""/></div>
 <map name="classCharge_acaba94e803083e82aff5f6a0c14e1356_icgraph" id="classCharge_acaba94e803083e82aff5f6a0c14e1356_icgraph">
-<area shape="rect" title=" " alt="" coords="761,111,893,138"/>
-<area shape="rect" href="classCharge.html#a7e8abf190a520a7a25a2ccd845d71d10" title=" " alt="" coords="531,111,713,138"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="300,5,479,47"/>
-<area shape="rect" href="classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651" title=" " alt="" coords="314,71,465,112"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="296,136,483,177"/>
-<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="296,201,483,243"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="39,5,215,47"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="26,71,227,112"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="17,136,236,177"/>
-<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="5,201,248,243"/>
+<area shape="rect" title=" " alt="" coords="720,169,852,195"/>
+<area shape="rect" href="classCharge.html#a7e8abf190a520a7a25a2ccd845d71d10" title=" " alt="" coords="489,143,672,170"/>
+<area shape="rect" href="charge__test_8cpp.html#a9531ac4fefe6e778e1a1213c33e6d7e1" title=" " alt="" coords="546,194,615,221"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a5c37d8e86bda1a0e5619dd851968387d" title=" " alt="" coords="259,71,437,112"/>
+<area shape="rect" href="classelecstate_1_1ElecState.html#ae2a5e309a4380055007c1b2c1a17d651" title=" " alt="" coords="273,5,423,47"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="255,136,441,177"/>
+<area shape="rect" href="classelecstate_1_1ElecStateLCAO__TDDFT.html#afba010b9f9975c1f20a34c3a28589afe" title=" " alt="" coords="255,201,441,243"/>
+<area shape="rect" href="charge__test_8cpp.html#aae4b41f6cf327fc35eff3359bc5bc61f" title=" " alt="" coords="313,267,383,294"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#ae188e193b29feae4ec255165515f95c5" title=" " alt="" coords="18,5,194,47"/>
+<area shape="rect" href="classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,71,207,112"/>
 </map>
 </div>
 
@@ -1122,7 +1122,13 @@ Here is the caller graph for this function:</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>module_elecstate/module_charge/<a class="el" href="charge_8h_source.html">charge.h</a></li>
 <li>module_elecstate/module_charge/<a class="el" href="charge_8cpp.html">charge.cpp</a></li>
+<li>module_elecstate/module_charge/<a class="el" href="charge__init_8cpp.html">charge_init.cpp</a></li>
+<li>module_elecstate/module_charge/<a class="el" href="charge__mpi_8cpp.html">charge_mpi.cpp</a></li>
+<li>module_elecstate/test/<a class="el" href="elecstate__base__test_8cpp.html">elecstate_base_test.cpp</a></li>
 <li>module_elecstate/test/<a class="el" href="elecstate__magnetism__test_8cpp.html">elecstate_magnetism_test.cpp</a></li>
+<li>module_elecstate/test/<a class="el" href="elecstate__print__test_8cpp.html">elecstate_print_test.cpp</a></li>
+<li>module_elecstate/test/<a class="el" href="elecstate__pw__test_8cpp.html">elecstate_pw_test.cpp</a></li>
+<li>module_elecstate/test/<a class="el" href="potential__new__test_8cpp.html">potential_new_test.cpp</a></li>
 <li>module_hamilt_general/module_xc/test/<a class="el" href="xc3__mock_8h_source.html">xc3_mock.h</a></li>
 <li>module_hsolver/test/<a class="el" href="test__hsolver__sdft_8cpp.html">test_hsolver_sdft.cpp</a></li>
 </ul>

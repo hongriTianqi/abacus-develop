@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: Parallel_Orbitals Struct Reference</title>
+<title>3.2.4: Parallel_Orbitals Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -178,6 +178,13 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <ul>
+<li>Tested Function<ul>
+<li>upsi<ul>
+<li>apply U_operator to the wave function of the previous step for new wave function.</li>
+</ul>
+</li>
+</ul>
+</li>
 <li>Tested Functions:<ul>
 <li><a class="el" href="namespaceModuleIO.html#a1013bb33b63a153e291ad7b1b58beed4">ModuleIO::output_single_R</a><ul>
 <li>output single R data </li>
@@ -238,16 +245,16 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="structParallel__Orbitals_af9f4eeaafdfa96f52d721cc48d045b40_icgraph.png" border="0" usemap="#structParallel__Orbitals_af9f4eeaafdfa96f52d721cc48d045b40_icgraph" alt=""/></div>
 <map name="structParallel__Orbitals_af9f4eeaafdfa96f52d721cc48d045b40_icgraph" id="structParallel__Orbitals_af9f4eeaafdfa96f52d721cc48d045b40_icgraph">
-<area shape="rect" title=" " alt="" coords="700,184,836,225"/>
-<area shape="rect" href="namespaceRI__2D__Comm.html#aa9c895bfff609e1e0a05840a341b844a" title=" " alt="" coords="211,271,394,298"/>
-<area shape="rect" href="classLCAO__gen__fixedH.html#a13bc49e3cbb3ad3b12f77118896b7438" title=" " alt="" coords="461,49,637,91"/>
-<area shape="rect" href="namespaceModuleIO.html#a40359ef286084e2268cff872dd4677d5" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="208,27,397,54"/>
-<area shape="rect" href="namespaceModuleIO.html#af713f77d248a53dd8a2bbf22df580c12" title=" " alt="" coords="224,108,381,149"/>
-<area shape="rect" href="namespaceModuleIO.html#a672f3c2005fc4adb05191422856629c5" title=" " alt="" coords="461,217,636,243"/>
-<area shape="rect" href="namespaceModuleIO.html#add8f8d41d9548681f416f57e51fdea90" title=" " alt="" coords="454,267,643,294"/>
-<area shape="rect" href="classGint__k.html#a54241a1709590487d938ae04e3c20de2" title=" " alt="" coords="473,318,624,345"/>
-<area shape="rect" href="namespaceRI__2D__Comm.html#a94cca8e243b7b876f969be6f614173ec" title=" " alt="" coords="445,369,652,395"/>
-<area shape="rect" href="classhamilt_1_1OperatorEXX.html#ab4e0293992f563879322c7664cf99fed" title=" " alt="" coords="5,264,160,305"/>
+<area shape="rect" title=" " alt="" coords="507,257,643,299"/>
+<area shape="rect" href="classLCAO__gen__fixedH.html#a13bc49e3cbb3ad3b12f77118896b7438" title=" " alt="" coords="276,123,452,164"/>
+<area shape="rect" href="namespaceModuleIO.html#a40359ef286084e2268cff872dd4677d5" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="19,189,208,215"/>
+<area shape="rect" href="namespaceModuleIO.html#af713f77d248a53dd8a2bbf22df580c12" title=" " alt="" coords="35,240,192,281"/>
+<area shape="rect" href="namespaceModuleIO.html#a672f3c2005fc4adb05191422856629c5" title=" " alt="" coords="277,290,451,317"/>
+<area shape="rect" href="namespaceModuleIO.html#add8f8d41d9548681f416f57e51fdea90" title=" " alt="" coords="269,341,459,367"/>
+<area shape="rect" href="classGint__k.html#af3a3b808bcc51aa03d16d3f2db872974" title=" " alt="" coords="289,391,439,418"/>
+<area shape="rect" href="classForce__LCAO__gamma.html#a6a2ac4aa03c2f6428d4ed4263eed309f" title=" " alt="" coords="5,5,221,47"/>
+<area shape="rect" href="classForce__LCAO__k.html#a48dea0012a6b66ebb7405ca33f252634" title=" " alt="" coords="19,71,208,98"/>
+<area shape="rect" href="classLCAO__Hamilt.html#a92bcfc332b2966a939d9e5b37adba655" title=" " alt="" coords="26,123,201,164"/>
 </map>
 </div>
 
@@ -670,6 +677,11 @@ on all adjacent atoms-pairs(2D division)</h2>
 <hr/>The documentation for this struct was generated from the following files:<ul>
 <li>module_basis/module_ao/<a class="el" href="module__basis_2module__ao_2parallel__orbitals_8h_source.html">parallel_orbitals.h</a></li>
 <li>module_basis/module_ao/<a class="el" href="module__basis_2module__ao_2parallel__orbitals_8cpp.html">parallel_orbitals.cpp</a></li>
+<li>module_hamilt_lcao/module_tddft/test/<a class="el" href="bandenergy__test_8cpp.html">bandenergy_test.cpp</a></li>
+<li>module_hamilt_lcao/module_tddft/test/<a class="el" href="middle__hamilt__test_8cpp.html">middle_hamilt_test.cpp</a></li>
+<li>module_hamilt_lcao/module_tddft/test/<a class="el" href="norm__psi__test_8cpp.html">norm_psi_test.cpp</a></li>
+<li>module_hamilt_lcao/module_tddft/test/<a class="el" href="propagator__test1_8cpp.html">propagator_test1.cpp</a></li>
+<li>module_hamilt_lcao/module_tddft/test/<a class="el" href="upsi__test1_8cpp.html">upsi_test1.cpp</a></li>
 <li>module_io/test/<a class="el" href="single__R__io__test_8cpp.html">single_R_io_test.cpp</a></li>
 <li>module_io/test_serial/<a class="el" href="read__wfc__nao__test_8cpp.html">read_wfc_nao_test.cpp</a></li>
 </ul>

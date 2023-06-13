@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: module_cell/test/CMakeLists.txt File Reference</title>
+<title>3.2.4: module_cell/test/CMakeLists.txt File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -85,8 +85,8 @@ Functions</h2></td></tr>
 <tr class="separator:a9d288c2da7da98918fca791c8e454513"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7a72d8b65e22a09899b621d696d0feb0"><td class="memItemLeft" align="right" valign="top">base device SOURCES atom_pseudo_test cpp atom_pseudo cpp <a class="el" href="classpseudo__nc.html">pseudo_nc</a> cpp read_pp cpp read_pp_upf201 cpp read_pp_upf100 cpp read_pp_vwr cpp read_pp_blps cpp module_io <a class="el" href="classoutput.html">output</a> cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__cell_2test_2CMakeLists_8txt.html#a7a72d8b65e22a09899b621d696d0feb0">AddTest</a> (TARGET cell_atom_spec LIBS ${math_libs} base device SOURCES atom_spec_test.cpp ../atom_spec.cpp ../atom_pseudo.cpp ../pseudo_nc.cpp ../read_pp.cpp ../read_pp_upf201.cpp ../read_pp_upf100.cpp ../read_pp_vwr.cpp ../read_pp_blps.cpp ../../module_io/output.cpp) AddTest(TARGET cell_klist_test LIBS $</td></tr>
 <tr class="separator:a7a72d8b65e22a09899b621d696d0feb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a42c7e4a60d5d1a6c2147482a91294bf5"><td class="memItemLeft" align="right" valign="top">base device SOURCES klist_test cpp klist cpp parallel_kpoints cpp module_io <a class="el" href="classoutput.html">output</a> cpp module_symmetry symm_other cpp module_symmetry symmetry_basic cpp module_symmetry symmetry cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__cell_2test_2CMakeLists_8txt.html#a42c7e4a60d5d1a6c2147482a91294bf5">AddTest</a> (TARGET cell_klist_test_para1 LIBS ${math_libs} base device SOURCES klist_test_para.cpp ../klist.cpp ../parallel_kpoints.cpp ../../module_io/output.cpp ../module_symmetry/symm_other.cpp ../module_symmetry/symmetry_basic.cpp ../module_symmetry/symmetry.cpp) add_test(NAME cell_klist_test_para4 COMMAND $</td></tr>
-<tr class="separator:a42c7e4a60d5d1a6c2147482a91294bf5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6a10796b5bb2ac1b9c737c50b4bd197"><td class="memItemLeft" align="right" valign="top">base device symmetry SOURCES klist_test cpp klist cpp parallel_kpoints cpp module_io <a class="el" href="classoutput.html">output</a> cpp&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="module__cell_2test_2CMakeLists_8txt.html#af6a10796b5bb2ac1b9c737c50b4bd197">AddTest</a> (TARGET cell_klist_test_para1 LIBS ${math_libs} base device symmetry SOURCES klist_test_para.cpp ../klist.cpp ../parallel_kpoints.cpp ../../module_io/output.cpp) add_test(NAME cell_klist_test_para4 COMMAND $</td></tr>
+<tr class="separator:af6a10796b5bb2ac1b9c737c50b4bd197"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a7a72d8b65e22a09899b621d696d0feb0"></a>
@@ -107,16 +107,16 @@ Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a42c7e4a60d5d1a6c2147482a91294bf5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a42c7e4a60d5d1a6c2147482a91294bf5">&#9670;&nbsp;</a></span>AddTest() <span class="overload">[2/3]</span></h2>
+<a id="af6a10796b5bb2ac1b9c737c50b4bd197"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6a10796b5bb2ac1b9c737c50b4bd197">&#9670;&nbsp;</a></span>AddTest() <span class="overload">[2/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">base device SOURCES klist_test cpp klist cpp parallel_kpoints cpp module_io <a class="el" href="classoutput.html">output</a> cpp module_symmetry symm_other cpp module_symmetry symmetry_basic cpp module_symmetry symmetry cpp AddTest </td>
+          <td class="memname">base device symmetry SOURCES klist_test cpp klist cpp parallel_kpoints cpp module_io <a class="el" href="classoutput.html">output</a> cpp AddTest </td>
           <td>(</td>
-          <td class="paramtype">TARGET cell_klist_test_para1 LIBS ${math_libs} base device SOURCES klist_test_para.cpp ../klist.cpp ../parallel_kpoints.cpp ../../module_io/output.cpp ../module_symmetry/symm_other.cpp ../module_symmetry/symmetry_basic.cpp ../module_symmetry/symmetry.&#160;</td>
+          <td class="paramtype">TARGET cell_klist_test_para1 LIBS ${math_libs} base device symmetry SOURCES klist_test_para.cpp ../klist.cpp ../parallel_kpoints.cpp ../../module_io/output.&#160;</td>
           <td class="paramname"><em>cpp</em></td><td>)</td>
           <td></td>
         </tr>

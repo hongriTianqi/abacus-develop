@@ -1,9 +1,4 @@
 <map id="Charge_Mixing::get_mixing_beta" name="Charge_Mixing::get_mixing_beta">
-<area shape="rect" id="node1" title=" " alt="" coords="701,41,849,83"/>
-<area shape="rect" id="node2" href="$namespaceRI__2D__Comm.html#aa9c895bfff609e1e0a05840a341b844a" title=" " alt="" coords="471,17,653,43"/>
-<area shape="rect" id="node4" href="$classModuleDFTU_1_1DFTU.html#a9c4ebe16a84b7e257a57a20dbc906da2" title=" " alt="" coords="471,71,653,112"/>
-<area shape="rect" id="node3" href="$classhamilt_1_1OperatorEXX.html#ab4e0293992f563879322c7664cf99fed" title=" " alt="" coords="258,5,413,47"/>
-<area shape="rect" id="node5" href="$classModuleDFTU_1_1DFTU.html#a89f34b81d86cd8832ab54663bd729c1c" title=" " alt="" coords="248,71,423,112"/>
-<area shape="rect" id="node7" href="$classModuleDFTU_1_1DFTU.html#a5df7e562346fd9d763d3082b11275b96" title=" " alt="" coords="248,136,423,177"/>
-<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#ad77b2f8850b54ceb66721e4f6afb290d" title=" " alt="" coords="5,104,200,145"/>
+<area shape="rect" id="node1" title=" " alt="" coords="200,5,348,47"/>
+<area shape="rect" id="node2" href="$classExx__LRI__Interface.html#ad197ce431f47084f195d71468989f943" title="in eachiterinit: do DM mixing and calculate Hexx when entering 2nd SCF" alt="" coords="5,5,152,47"/>
 </map>

@@ -1,12 +1,12 @@
 <map id="elecstate::Potential::allocate" name="elecstate::Potential::allocate">
-<area shape="rect" id="node1" title=" " alt="" coords="5,104,153,145"/>
-<area shape="rect" id="node2" href="$classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="207,5,360,47"/>
-<area shape="rect" id="node5" href="$classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="212,71,355,112"/>
-<area shape="rect" id="node6" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="201,136,365,177"/>
-<area shape="rect" id="node8" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="211,205,356,231"/>
-<area shape="rect" id="node3" href="$namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="413,13,599,39"/>
-<area shape="rect" id="node4" href="$namespaceModuleBase.html#a319c957fc399a519aa4cdd447bdee1aa" title="Combine the functions of WARNING and QUIT." alt="" coords="647,13,860,39"/>
-<area shape="rect" id="node7" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="424,132,588,173"/>
-<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="415,197,597,239"/>
-<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="429,263,583,304"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,153,139"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1matrix.html#abc8c011ec78c8d2f2cf98e69227314b0" title=" " alt="" coords="227,5,380,47"/>
+<area shape="rect" id="node4" href="$namespaceelecstate.html#a12c4e4e71cc5208ffd2994dee1d5e444" title="get the value of XC_Functional::func_type" alt="" coords="201,73,405,99"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="221,127,385,168"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="231,201,376,227"/>
+<area shape="rect" id="node3" href="$namespaceModuleBase.html#a8941662011fdfa623f13d5b40d674947" title=" " alt="" coords="453,11,639,38"/>
+<area shape="rect" id="node5" href="$classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="475,63,617,104"/>
+<area shape="rect" id="node7" href="$classModuleBase_1_1Memory.html#ad049209360aff12c0003bd6c14cd2dfc" title="Calculate memory requirements for various types of data." alt="" coords="464,128,628,169"/>
+<area shape="rect" id="node9" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="455,193,637,235"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="469,259,623,300"/>
 </map>

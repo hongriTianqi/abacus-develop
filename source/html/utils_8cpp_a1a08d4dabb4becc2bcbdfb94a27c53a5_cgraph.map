@@ -1,7 +1,7 @@
 <map id="initBlacsGrid" name="initBlacsGrid">
 <area shape="rect" id="node1" title=" " alt="" coords="5,157,111,184"/>
 <area shape="rect" id="node2" href="$blacs__connector_8h.html#ae3b0677b0e09884d640aef46976bcd45" title=" " alt="" coords="171,5,293,32"/>
-<area shape="rect" id="node3" href="$Cblacs_8h.html#af987ba5046511311675dd3e65722cc19" title=" " alt="" coords="173,56,291,83"/>
+<area shape="rect" id="node3" href="$blacs__connector_8h.html#af987ba5046511311675dd3e65722cc19" title=" " alt="" coords="173,56,291,83"/>
 <area shape="rect" id="node4" href="$blacs__connector_8h.html#a38270c5b86788cb4ef93d825166c8b30" title=" " alt="" coords="174,107,290,133"/>
 <area shape="rect" id="node5" href="$blacs__connector_8h.html#ac582040a70677419d461b192b3ee54e9" title=" " alt="" coords="177,157,287,184"/>
 <area shape="rect" id="node6" href="$Cblacs_8h.html#ad79c95eebe720b798592a836bd483613" title=" " alt="" coords="159,208,305,235"/>

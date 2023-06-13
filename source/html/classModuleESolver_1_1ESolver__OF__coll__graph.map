@@ -1,12 +1,12 @@
 <map id="ModuleESolver::ESolver_OF" name="ModuleESolver::ESolver_OF">
-<area shape="rect" id="node1" title=" " alt="" coords="843,1033,1044,1683"/>
-<area shape="rect" id="node2" href="$classKEDF__vW.html" title="A class which calculates kinetic energy, potential, and stress with von Weizsäcker (vW) KEDF...." alt="" coords="5,607,180,831"/>
-<area shape="rect" id="node3" href="$classKEDF__TF.html" title="A class which calculates kinetic energy, potential, and stress with Thomas&#45;Fermi (TF) KEDF...." alt="" coords="204,607,379,831"/>
-<area shape="rect" id="node4" href="$classCharge.html" title=" " alt="" coords="403,468,633,971"/>
-<area shape="rect" id="node5" href="$classKEDF__WT.html" title="A class which calculates kinetic energy, potential, and stress with Wang&#45;Teter (WT) KEDF...." alt="" coords="657,527,832,912"/>
-<area shape="rect" id="node6" href="$classKEDF__LKT.html" title="A class which calculates kinetic energy, potential, and stress with Luo&#45;Karasiev&#45;Trickey (LKT) KEDF...." alt="" coords="856,578,1031,861"/>
-<area shape="rect" id="node7" href="$classpsi_1_1Psi.html" title=" " alt="" coords="1055,519,1197,919"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1Opt__DCsrch.html" title=" " alt="" coords="1222,615,1409,824"/>
+<area shape="rect" id="node1" title=" " alt="" coords="843,1019,1044,1668"/>
+<area shape="rect" id="node2" href="$classKEDF__vW.html" title="A class which calculates kinetic energy, potential, and stress with von Weizsäcker (vW) KEDF...." alt="" coords="5,600,180,824"/>
+<area shape="rect" id="node3" href="$classKEDF__TF.html" title="A class which calculates kinetic energy, potential, and stress with Thomas&#45;Fermi (TF) KEDF...." alt="" coords="204,600,379,824"/>
+<area shape="rect" id="node4" href="$classCharge.html" title=" " alt="" coords="403,468,633,956"/>
+<area shape="rect" id="node5" href="$classKEDF__WT.html" title="A class which calculates kinetic energy, potential, and stress with Wang&#45;Teter (WT) KEDF...." alt="" coords="657,519,832,905"/>
+<area shape="rect" id="node6" href="$classKEDF__LKT.html" title="A class which calculates kinetic energy, potential, and stress with Luo&#45;Karasiev&#45;Trickey (LKT) KEDF...." alt="" coords="856,571,1031,853"/>
+<area shape="rect" id="node7" href="$classpsi_1_1Psi.html" title=" " alt="" coords="1055,512,1197,912"/>
+<area shape="rect" id="node8" href="$classModuleBase_1_1Opt__DCsrch.html" title=" " alt="" coords="1222,607,1409,817"/>
 <area shape="rect" id="node9" href="$classModuleBase_1_1Opt__CG.html" title=" " alt="" coords="1399,5,1557,405"/>
-<area shape="rect" id="node10" href="$classModuleBase_1_1Opt__TN.html" title=" " alt="" coords="1567,593,1725,846"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1Opt__TN.html" title=" " alt="" coords="1567,585,1725,839"/>
 </map>

@@ -1,6 +1,12 @@
 <map id="Local_Orbital_Charge" name="Local_Orbital_Charge">
-<area shape="rect" id="node1" title=" " alt="" coords="5,865,245,1368"/>
-<area shape="rect" id="node2" href="$structParallel__Orbitals.html" title=" " alt="" coords="43,248,207,501"/>
-<area shape="rect" id="node4" href="$classLocal__Orbital__wfc.html" title=" " alt="" coords="181,564,355,803"/>
-<area shape="rect" id="node3" href="$structLocalMatrix.html" title=" " alt="" coords="76,5,175,185"/>
+<area shape="rect" id="node1" title=" " alt="" coords="195,2388,435,2891"/>
+<area shape="rect" id="node2" href="$structParallel__Orbitals.html" title=" " alt="" coords="301,1595,465,1848"/>
+<area shape="rect" id="node4" href="$classLocal__Orbital__wfc.html" title=" " alt="" coords="161,2072,335,2325"/>
+<area shape="rect" id="node3" href="$structLocalMatrix.html" title=" " alt="" coords="333,1183,432,1363"/>
+<area shape="rect" id="node5" href="$classGrid__Technique.html" title=" " alt="" coords="103,1433,276,2009"/>
+<area shape="rect" id="node6" href="$classGrid__MeshBall.html" title=" " alt="" coords="79,1176,300,1371"/>
+<area shape="rect" id="node7" href="$classGrid__BigCell.html" title=" " alt="" coords="95,815,284,1127"/>
+<area shape="rect" id="node8" href="$classGrid__MeshCell.html" title=" " alt="" coords="35,468,199,765"/>
+<area shape="rect" id="node9" href="$classGrid__MeshK.html" title=" " alt="" coords="5,57,141,339"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="173,5,333,391"/>
 </map>

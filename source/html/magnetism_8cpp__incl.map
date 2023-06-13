@@ -1,12 +1,12 @@
 <map id="module_elecstate/magnetism.cpp" name="module_elecstate/magnetism.cpp">
-<area shape="rect" id="node1" title=" " alt="" coords="265,5,507,32"/>
-<area shape="rect" id="node2" href="$magnetism_8h.html" title=" " alt="" coords="180,87,288,114"/>
-<area shape="rect" id="node8" href="$elecstate__getters_8h.html" title=" " alt="" coords="313,87,459,114"/>
-<area shape="rect" id="node9" href="$parallel__reduce_8h.html" title=" " alt="" coords="483,80,646,121"/>
-<area shape="rect" id="node3" href="$global__function_8h.html" title=" " alt="" coords="359,259,512,300"/>
-<area shape="rect" id="node5" href="$global__variable_8h.html" title=" " alt="" coords="253,348,388,375"/>
+<area shape="rect" id="node1" title=" " alt="" coords="425,5,667,32"/>
+<area shape="rect" id="node2" href="$magnetism_8h.html" title=" " alt="" coords="297,87,405,114"/>
+<area shape="rect" id="node8" href="$elecstate__getters_8h.html" title=" " alt="" coords="485,266,631,293"/>
+<area shape="rect" id="node9" href="$parallel__reduce_8h.html" title=" " alt="" coords="583,80,746,121"/>
+<area shape="rect" id="node3" href="$global__function_8h.html" title=" " alt="" coords="307,259,460,300"/>
+<area shape="rect" id="node5" href="$global__variable_8h.html" title=" " alt="" coords="207,348,341,375"/>
 <area shape="rect" id="node6" href="$vector3_8h.html" title=" " alt="" coords="5,177,180,203"/>
 <area shape="rect" id="node7" href="$charge_8h.html" title=" " alt="" coords="256,169,447,211"/>
-<area shape="rect" id="node4" title=" " alt="" coords="461,348,540,375"/>
-<area shape="rect" id="node10" title=" " alt="" coords="587,177,646,203"/>
+<area shape="rect" id="node4" title=" " alt="" coords="354,423,413,449"/>
+<area shape="rect" id="node10" title=" " alt="" coords="635,177,694,203"/>
 </map>

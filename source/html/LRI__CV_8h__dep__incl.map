@@ -1,8 +1,10 @@
 <map id="module_ri/LRI_CV.h" name="module_ri/LRI_CV.h">
-<area shape="rect" id="node1" title=" " alt="" coords="200,5,347,32"/>
-<area shape="rect" id="node2" href="$Exx__LRI_8h.html" title=" " alt="" coords="13,80,168,107"/>
-<area shape="rect" id="node4" href="$LRI__CV_8hpp.html" title=" " alt="" coords="192,80,355,107"/>
-<area shape="rect" id="node5" href="$RPA__LRI_8h.html" title=" " alt="" coords="379,80,533,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="253,5,400,32"/>
+<area shape="rect" id="node2" href="$Exx__LRI_8h.html" title=" " alt="" coords="31,80,185,107"/>
+<area shape="rect" id="node6" href="$LRI__CV_8hpp.html" title=" " alt="" coords="245,80,408,107"/>
+<area shape="rect" id="node7" href="$RPA__LRI_8h.html" title=" " alt="" coords="451,80,605,107"/>
 <area shape="rect" id="node3" href="$Exx__LRI_8hpp.html" title=" " alt="" coords="5,155,176,181"/>
-<area shape="rect" id="node6" href="$RPA__LRI_8hpp.html" title=" " alt="" coords="371,155,541,181"/>
+<area shape="rect" id="node4" href="$Exx__LRI__interface_8h.html" title=" " alt="" coords="200,155,419,181"/>
+<area shape="rect" id="node5" href="$Exx__LRI__interface_8hpp.html" title=" " alt="" coords="192,229,427,256"/>
+<area shape="rect" id="node8" href="$RPA__LRI_8hpp.html" title=" " alt="" coords="443,155,613,181"/>
 </map>

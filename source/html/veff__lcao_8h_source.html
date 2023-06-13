@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: module_hamilt_lcao/hamilt_lcaodft/operator_lcao/veff_lcao.h Source File</title>
+<title>3.2.4: module_hamilt_lcao/hamilt_lcaodft/operator_lcao/veff_lcao.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -74,12 +74,12 @@ $(function() {
 <div class="contents">
 <a href="veff__lcao_8h.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef VEFFLCAO_H</span></div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define VEFFLCAO_H</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operator__lcao_8h.html">operator_lcao.h</a>&quot;</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="timer_8h.html">module_base/timer.h</a>&quot;</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gint__gamma_8h.html">module_hamilt_lcao/module_gint/gint_gamma.h</a>&quot;</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gint__k_8h.html">module_hamilt_lcao/module_gint/gint_k.h</a>&quot;</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="local__orbital__charge_8h.html">module_hamilt_lcao/hamilt_lcaodft/local_orbital_charge.h</a>&quot;</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="potential__new_8h.html">module_elecstate/potentials/potential_new.h</a>&quot;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="timer_8h.html">module_base/timer.h</a>&quot;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="potential__new_8h.html">module_elecstate/potentials/potential_new.h</a>&quot;</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="local__orbital__charge_8h.html">module_hamilt_lcao/hamilt_lcaodft/local_orbital_charge.h</a>&quot;</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gint__gamma_8h.html">module_hamilt_lcao/module_gint/gint_gamma.h</a>&quot;</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="gint__k_8h.html">module_hamilt_lcao/module_gint/gint_k.h</a>&quot;</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="operator__lcao_8h.html">operator_lcao.h</a>&quot;</span></div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacehamilt.html">hamilt</a></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;{</div>
@@ -87,87 +87,94 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#ifndef __VEFFTEMPLATE</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="veff__lcao_8h.html#a25e2961aababc2378e99c0b01a08803c">   14</a></span>&#160;<span class="preprocessor">#define __VEFFTEMPLATE</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff.html">   16</a></span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">class</span> T&gt; <span class="keyword">class </span><a class="code" href="classhamilt_1_1Veff.html">Veff</a> : <span class="keyword">public</span> <a class="code" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a> </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{};</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">class</span> T&gt;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="classhamilt_1_1Veff.html">Veff</a> : <span class="keyword">public</span> <a class="code" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;};</div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classhamilt_1_1Veff.html">Veff</a>&lt;<a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;<a class="code" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a>&gt;&gt; : <span class="keyword">public</span> <a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;T&gt; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#ad3a59d94a3322cbb7e1da6e2de49f0ff">   26</a></span>&#160;    <a class="code" href="classhamilt_1_1Veff.html">Veff&lt;OperatorLCAO&lt;T&gt;</a>&gt;(</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;        <a class="code" href="classGint__k.html">Gint_k</a>* GK_in,</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;        <a class="code" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a>* loc_in,</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <a class="code" href="classLCAO__Matrix.html">LCAO_Matrix</a>* LM_in,</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;        <a class="code" href="classelecstate_1_1Potential.html">elecstate::Potential</a>* pot_in,</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;        std::vector&lt;double&gt;* HR_pointer_in,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        std::vector&lt;T&gt;* HK_pointer_in):GK(GK_in), loc(loc_in), pot(pot_in), HR_pointer(HR_pointer_in), HK_pointer(HK_pointer_in)</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        this-&gt;LM = LM_in;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        this-&gt;cal_type = <a class="code" href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a0bf1f3a9a3f4a151d833eb4e9aac6be9">lcao_gint</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    }</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a3c35bae6de7e866ffce8beb6b640fd49">   37</a></span>&#160;    <a class="code" href="classhamilt_1_1Veff.html">Veff&lt;OperatorLCAO&lt;T&gt;</a>&gt;(</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classGint__Gamma.html">Gint_Gamma</a>* GG_in,</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <a class="code" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a>* loc_in,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <a class="code" href="classLCAO__Matrix.html">LCAO_Matrix</a>* LM_in,</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classelecstate_1_1Potential.html">elecstate::Potential</a>* pot_in,</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::vector&lt;double&gt;* HR_pointer_in,</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::vector&lt;T&gt;* HK_pointer_in):GG(GG_in), loc(loc_in), pot(pot_in), HR_pointer(HR_pointer_in), HK_pointer(HK_pointer_in)</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        this-&gt;LM = LM_in;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        this-&gt;cal_type = <a class="code" href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a0bf1f3a9a3f4a151d833eb4e9aac6be9">lcao_gint</a>;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    ~<a class="code" href="classhamilt_1_1Veff.html">Veff&lt;OperatorLCAO&lt;T&gt;</a>&gt;();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhamilt_1_1Veff.html#a0b2a55905d138a29956c4d6f09f54ee8">contributeHR</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhamilt_1_1Veff.html#a9644bed64894d61c5c375bc8a470f81e">contributeHk</a>(<span class="keywordtype">int</span> ik) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html">   24</a></span>&#160;<span class="keyword">class </span><a class="code" href="classhamilt_1_1Veff.html">Veff</a>&lt;<a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;<a class="code" href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a>&gt;&gt; : <span class="keyword">public</span> <a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO</a>&lt;T&gt;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;{</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a86bba588eb5431195b2ac69a9e2061ec">   27</a></span>&#160;    <a class="code" href="classhamilt_1_1Veff.html">Veff&lt;OperatorLCAO&lt;T&gt;</a>&gt;(<a class="code" href="classGint__k.html">Gint_k</a>* GK_in,</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                          <a class="code" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a>* loc_in,</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                          <a class="code" href="classLCAO__Matrix.html">LCAO_Matrix</a>* LM_in,</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                          <span class="keyword">const</span> std::vector&lt;ModuleBase::Vector3&lt;double&gt;&gt;&amp; kvec_d_in,</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;                          <a class="code" href="classelecstate_1_1Potential.html">elecstate::Potential</a>* pot_in,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                          std::vector&lt;double&gt;* HR_pointer_in,</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                          std::vector&lt;T&gt;* HK_pointer_in)</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        : GK(GK_in),</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;          loc(loc_in),</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;          pot(pot_in),</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;          HR_pointer(HR_pointer_in),</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;          HK_pointer(HK_pointer_in),</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;          <a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO&lt;T&gt;</a>(kvec_d_in)</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        this-&gt;LM = LM_in;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        this-&gt;cal_type = <a class="code" href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a0bf1f3a9a3f4a151d833eb4e9aac6be9">lcao_gint</a>;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    }</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a36849cd6312e06fd8c4eb2637dc2cad3">   44</a></span>&#160;    <a class="code" href="classhamilt_1_1Veff.html">Veff&lt;OperatorLCAO&lt;T&gt;</a>&gt;(<a class="code" href="classGint__Gamma.html">Gint_Gamma</a>* GG_in,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                          <a class="code" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a>* loc_in,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                          <a class="code" href="classLCAO__Matrix.html">LCAO_Matrix</a>* LM_in,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                          <a class="code" href="classelecstate_1_1Potential.html">elecstate::Potential</a>* pot_in,</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                          std::vector&lt;double&gt;* HR_pointer_in,</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                          std::vector&lt;T&gt;* HK_pointer_in,</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                          std::vector&lt;ModuleBase::Vector3&lt;double&gt;&gt; kvec_d_in)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        : GG(GG_in), loc(loc_in), pot(pot_in), HR_pointer(HR_pointer_in), HK_pointer(HK_pointer_in), <a class="code" href="classhamilt_1_1OperatorLCAO.html">OperatorLCAO&lt;T&gt;</a>(std::vector&lt;<a class="code" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3&lt;double&gt;</a>&gt;{<a class="code" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3&lt;double&gt;</a>(0,0,0)})</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    {</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        this-&gt;LM = LM_in;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        this-&gt;cal_type = <a class="code" href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a0bf1f3a9a3f4a151d833eb4e9aac6be9">lcao_gint</a>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="comment">// used for k-dependent grid integration.</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a25a6f111bf9d6f7860621564ebf352e7">   58</a></span>&#160;    <a class="code" href="classGint__k.html">Gint_k</a>* GK = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="comment">// used for gamma only algorithms.</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#ac48d8e771e55cfbb398cc631f1926ee4">   61</a></span>&#160;    <a class="code" href="classGint__Gamma.html">Gint_Gamma</a>* GG = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    ~Veff&lt;OperatorLCAO&lt;T&gt;&gt;();</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhamilt_1_1Veff.html#a0b2a55905d138a29956c4d6f09f54ee8">contributeHR</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classhamilt_1_1Veff.html#a9644bed64894d61c5c375bc8a470f81e">contributeHk</a>(<span class="keywordtype">int</span> ik) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// Charge calculating method in LCAO base and contained grid base calculation: DM_R, DM, pvpR_reduced</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a225f5072796e22c66e436b444dd74c17">   64</a></span>&#160;    <a class="code" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a>* loc = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a0b424d9063d19e8738c94776e94e5b00">   66</a></span>&#160;    std::vector&lt;double&gt;* HR_pointer = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#af8acd37697a71001c4640dabc8dddfd7">   68</a></span>&#160;    std::vector&lt;T&gt;* HK_pointer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// used for k-dependent grid integration.</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a25a6f111bf9d6f7860621564ebf352e7">   65</a></span>&#160;    <a class="code" href="classGint__k.html">Gint_k</a>* GK = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// used for gamma only algorithms.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#ac48d8e771e55cfbb398cc631f1926ee4">   68</a></span>&#160;    <a class="code" href="classGint__Gamma.html">Gint_Gamma</a>* GG = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a85e696fd7607e2785a7e254ea92141ef">   70</a></span>&#160;    <a class="code" href="classelecstate_1_1Potential.html">elecstate::Potential</a>* pot = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a946842a8d4b94736b949d0a91e9a7ab3">   72</a></span>&#160;    <span class="keywordtype">bool</span> allocated_pvpR = <span class="keyword">false</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;};</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="comment">// Charge calculating method in LCAO base and contained grid base calculation: DM_R, DM, pvpR_reduced</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a225f5072796e22c66e436b444dd74c17">   71</a></span>&#160;    <a class="code" href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a>* loc = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a0b424d9063d19e8738c94776e94e5b00">   73</a></span>&#160;    std::vector&lt;double&gt;* HR_pointer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#af8acd37697a71001c4640dabc8dddfd7">   75</a></span>&#160;    std::vector&lt;T&gt;* HK_pointer = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a85e696fd7607e2785a7e254ea92141ef">   77</a></span>&#160;    <a class="code" href="classelecstate_1_1Potential.html">elecstate::Potential</a>* pot = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classhamilt_1_1Veff_3_01OperatorLCAO_3_01T_01_4_01_4.html#a946842a8d4b94736b949d0a91e9a7ab3">   79</a></span>&#160;    <span class="keywordtype">bool</span> allocated_pvpR = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;};</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;} <span class="comment">// namespace hamilt</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aglobal_8h_html"><div class="ttname"><a href="global_8h.html">global.h</a></div></div>
 <div class="ttc" id="aoperator__lcao_8h_html"><div class="ttname"><a href="operator__lcao_8h.html">operator_lcao.h</a></div></div>
 <div class="ttc" id="anamespaceGlobalV_html_aa21d3bb9a3dd12f2b025fb31ff8cd0ee"><div class="ttname"><a href="namespaceGlobalV.html#aa21d3bb9a3dd12f2b025fb31ff8cd0ee">GlobalV::NSPIN</a></div><div class="ttdeci">int NSPIN</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:40</div></div>
+<div class="ttc" id="aclassModuleBase_1_1Vector3_html"><div class="ttname"><a href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3&lt; double &gt;</a></div></div>
 <div class="ttc" id="alocal__orbital__charge_8h_html"><div class="ttname"><a href="local__orbital__charge_8h.html">local_orbital_charge.h</a></div></div>
 <div class="ttc" id="anamespaceModuleBase_html_ad0b268ded393d31b0dd1a795366af4a6"><div class="ttname"><a href="namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6">ModuleBase::TITLE</a></div><div class="ttdeci">void TITLE(const std::string &amp;class_name, const std::string &amp;function_name, const bool disable)</div><div class="ttdef"><b>Definition:</b> tool_title.cpp:18</div></div>
-<div class="ttc" id="aclassXC__Functional_html_a6bf3c50d992d4191f089867af29a2a76"><div class="ttname"><a href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76">XC_Functional::get_func_type</a></div><div class="ttdeci">static int get_func_type()</div><div class="ttdef"><b>Definition:</b> xc_functional.cpp:19</div></div>
+<div class="ttc" id="aclassXC__Functional_html_a6bf3c50d992d4191f089867af29a2a76"><div class="ttname"><a href="classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76">XC_Functional::get_func_type</a></div><div class="ttdeci">static int get_func_type()</div><div class="ttdef"><b>Definition:</b> charge_mixing_test.cpp:10</div></div>
 <div class="ttc" id="anamespaceGint__Tools_html_ad276e8a689e997611e199e9468cf034daa7ce7eaba0c641cefd98846889ccc982"><div class="ttname"><a href="namespaceGint__Tools.html#ad276e8a689e997611e199e9468cf034daa7ce7eaba0c641cefd98846889ccc982">Gint_Tools::job_type::vlocal</a></div><div class="ttdeci">@ vlocal</div></div>
 <div class="ttc" id="aclassLocal__Orbital__Charge_html"><div class="ttname"><a href="classLocal__Orbital__Charge.html">Local_Orbital_Charge</a></div><div class="ttdef"><b>Definition:</b> local_orbital_charge.h:16</div></div>
 <div class="ttc" id="aveff__lcao_8h_html"><div class="ttname"><a href="veff__lcao_8h.html">veff_lcao.h</a></div></div>
-<div class="ttc" id="aclasshamilt_1_1Veff_html"><div class="ttname"><a href="classhamilt_1_1Veff.html">hamilt::Veff</a></div><div class="ttdef"><b>Definition:</b> veff_lcao.h:16</div></div>
+<div class="ttc" id="aclasshamilt_1_1Veff_html"><div class="ttname"><a href="classhamilt_1_1Veff.html">hamilt::Veff</a></div><div class="ttdef"><b>Definition:</b> veff_lcao.h:17</div></div>
 <div class="ttc" id="aclasshamilt_1_1Veff_html_a0b2a55905d138a29956c4d6f09f54ee8"><div class="ttname"><a href="classhamilt_1_1Veff.html#a0b2a55905d138a29956c4d6f09f54ee8">hamilt::Veff::contributeHR</a></div><div class="ttdeci">void contributeHR()</div><div class="ttdef"><b>Definition:</b> veff_lcao.cpp:28</div></div>
 <div class="ttc" id="aclassModuleBase_1_1timer_html_a7d5a9dd381e39259fb92b31a89140206"><div class="ttname"><a href="classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206">ModuleBase::timer::tick</a></div><div class="ttdeci">static void tick(const std::string &amp;class_name_in, const std::string &amp;name_in)</div><div class="ttdoc">Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur...</div><div class="ttdef"><b>Definition:</b> timer.cpp:66</div></div>
 <div class="ttc" id="atimer_8h_html"><div class="ttname"><a href="timer_8h.html">timer.h</a></div></div>
-<div class="ttc" id="aclasselecstate_1_1Potential_html"><div class="ttname"><a href="classelecstate_1_1Potential.html">elecstate::Potential</a></div><div class="ttdef"><b>Definition:</b> potential_new.h:43</div></div>
+<div class="ttc" id="aclasselecstate_1_1Potential_html"><div class="ttname"><a href="classelecstate_1_1Potential.html">elecstate::Potential</a></div><div class="ttdef"><b>Definition:</b> potential_new.h:44</div></div>
 <div class="ttc" id="aclassGint__k_html"><div class="ttname"><a href="classGint__k.html">Gint_k</a></div><div class="ttdef"><b>Definition:</b> gint_k.h:13</div></div>
 <div class="ttc" id="atool__title_8h_html"><div class="ttname"><a href="tool__title_8h.html">tool_title.h</a></div></div>
 <div class="ttc" id="aclasshamilt_1_1Veff_html_a9644bed64894d61c5c375bc8a470f81e"><div class="ttname"><a href="classhamilt_1_1Veff.html#a9644bed64894d61c5c375bc8a470f81e">hamilt::Veff::contributeHk</a></div><div class="ttdeci">void contributeHk(int ik)</div><div class="ttdef"><b>Definition:</b> veff_lcao.cpp:41</div></div>
-<div class="ttc" id="aclasshamilt_1_1OperatorLCAO_html"><div class="ttname"><a href="classhamilt_1_1OperatorLCAO.html">hamilt::OperatorLCAO</a></div><div class="ttdef"><b>Definition:</b> operator_lcao.h:11</div></div>
+<div class="ttc" id="aclasshamilt_1_1OperatorLCAO_html"><div class="ttname"><a href="classhamilt_1_1OperatorLCAO.html">hamilt::OperatorLCAO</a></div><div class="ttdef"><b>Definition:</b> operator_lcao.h:12</div></div>
 <div class="ttc" id="aclassGint__inout_html"><div class="ttname"><a href="classGint__inout.html">Gint_inout</a></div><div class="ttdef"><b>Definition:</b> gint_tools.h:20</div></div>
 <div class="ttc" id="agint__k_8h_html"><div class="ttname"><a href="gint__k_8h.html">gint_k.h</a></div></div>
 <div class="ttc" id="agint__gamma_8h_html"><div class="ttname"><a href="gint__gamma_8h.html">gint_gamma.h</a></div></div>
@@ -175,7 +182,7 @@ $(function() {
 <div class="ttc" id="apotential__new_8h_html"><div class="ttname"><a href="potential__new_8h.html">potential_new.h</a></div></div>
 <div class="ttc" id="aexp_8cpp_html_a0acb682b8260ab1c60b918599864e2e5"><div class="ttname"><a href="exp_8cpp.html#a0acb682b8260ab1c60b918599864e2e5">T</a></div><div class="ttdeci">#define T</div><div class="ttdef"><b>Definition:</b> exp.cpp:237</div></div>
 <div class="ttc" id="anamespacehamilt_html_a506eac2a013daa2c2bd7d5248c6e6991a0bf1f3a9a3f4a151d833eb4e9aac6be9"><div class="ttname"><a href="namespacehamilt.html#a506eac2a013daa2c2bd7d5248c6e6991a0bf1f3a9a3f4a151d833eb4e9aac6be9">hamilt::lcao_gint</a></div><div class="ttdeci">@ lcao_gint</div><div class="ttdef"><b>Definition:</b> operator.h:20</div></div>
-<div class="ttc" id="aclassLCAO__Matrix_html"><div class="ttname"><a href="classLCAO__Matrix.html">LCAO_Matrix</a></div><div class="ttdef"><b>Definition:</b> LCAO_matrix.h:13</div></div>
+<div class="ttc" id="aclassLCAO__Matrix_html"><div class="ttname"><a href="classLCAO__Matrix.html">LCAO_Matrix</a></div><div class="ttdef"><b>Definition:</b> LCAO_matrix.h:16</div></div>
 <div class="ttc" id="anamespaceGlobalV_html_adccb0f203eee6753d047044b6e6f00c7"><div class="ttname"><a href="namespaceGlobalV.html#adccb0f203eee6753d047044b6e6f00c7">GlobalV::CURRENT_SPIN</a></div><div class="ttdeci">int CURRENT_SPIN</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:43</div></div>
 <div class="ttc" id="anamespaceGint__Tools_html_ad276e8a689e997611e199e9468cf034da4568332b91a8853d0be537e00e710fa4"><div class="ttname"><a href="namespaceGint__Tools.html#ad276e8a689e997611e199e9468cf034da4568332b91a8853d0be537e00e710fa4">Gint_Tools::job_type::vlocal_meta</a></div><div class="ttdeci">@ vlocal_meta</div></div>
 <div class="ttc" id="anamespacehamilt_html"><div class="ttname"><a href="namespacehamilt.html">hamilt</a></div><div class="ttdef"><b>Definition:</b> hamilt.h:11</div></div>

@@ -1,4 +1,5 @@
 <map id="Charge::check_ne" name="Charge::check_ne">
-<area shape="rect" id="node1" title=" " alt="" coords="5,13,143,39"/>
-<area shape="rect" id="node2" href="$namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="191,5,368,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,143,73"/>
+<area shape="rect" id="node2" href="$namespaceelecstate.html#abb96cf9fc561d8074c7ef6cbf487377b" title="get the value of GlobalC::ucell.omega" alt="" coords="205,5,354,47"/>
+<area shape="rect" id="node3" href="$namespaceParallel__Reduce.html#a3ba1cd04fa87f0be0907b857e5964b4c" title=" " alt="" coords="191,71,368,112"/>
 </map>

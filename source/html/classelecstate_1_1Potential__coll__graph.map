@@ -1,5 +1,5 @@
 <map id="elecstate::Potential" name="elecstate::Potential">
-<area shape="rect" id="node1" title=" " alt="" coords="497,1555,679,1940"/>
+<area shape="rect" id="node1" title=" " alt="" coords="492,1555,673,1940"/>
 <area shape="rect" id="node2" href="$classelecstate_1_1PotBase.html" title=" " alt="" coords="125,1209,267,1345"/>
 <area shape="rect" id="node3" href="$classModulePW_1_1PW__Basis.html" title="A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ..." alt="" coords="5,409,192,1029"/>
 <area shape="rect" id="node4" href="$classModuleBase_1_1Vector3.html" title=" " alt="" coords="182,5,341,273"/>
@@ -7,6 +7,6 @@
 <area shape="rect" id="node6" href="$classMagnetism.html" title=" " alt="" coords="337,607,543,831"/>
 <area shape="rect" id="node8" href="$classAtom.html" title=" " alt="" coords="567,563,737,875"/>
 <area shape="rect" id="node7" href="$classModuleBase_1_1IntArray.html" title="Integer array." alt="" coords="761,527,924,912"/>
-<area shape="rect" id="node9" href="$classModuleBase_1_1ComplexMatrix.html" title=" " alt="" coords="533,1143,744,1411"/>
-<area shape="rect" id="node10" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="767,1151,921,1404"/>
+<area shape="rect" id="node9" href="$classStructure__Factor.html" title=" " alt="" coords="534,1092,727,1463"/>
+<area shape="rect" id="node10" href="$classModuleBase_1_1matrix.html" title=" " alt="" coords="751,1151,905,1404"/>
 </map>

@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classSto__Func.html" title=" " alt="" coords="5,5,148,32"/>
+<area shape="rect" id="node1" href="$classRadialSet.html" title="An abstract class representing a related set of numerical radial functions." alt="" coords="5,31,89,57"/>
+<area shape="rect" id="node2" href="$classAtomicRadials.html" title="The radial part of numerical atomic orbitals of a single element." alt="" coords="137,5,253,32"/>
+<area shape="rect" id="node3" href="$classBetaRadials.html" title="The radial part of beta functions of a single element." alt="" coords="145,56,245,83"/>
 </map>

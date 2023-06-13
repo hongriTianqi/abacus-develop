@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: module_hsolver/genelpa/utils.h Source File</title>
+<title>3.2.4: module_hsolver/genelpa/utils.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -76,7 +76,7 @@ $(function() {
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#include &lt;complex&gt;</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#include &lt;mpi.h&gt;</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="LCAO__evolve_8cpp.html#a8e0d6487c17ff3c013141f2ea4cccc60">globalIndex</a>(<span class="keywordtype">int</span> localIndex, <span class="keywordtype">int</span> nblk, <span class="keywordtype">int</span> nprocs, <span class="keywordtype">int</span> myproc)</div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="namespacemodule__tddft.html#a4de0752bcc80f779dd2ec1fecb8a6637">globalIndex</a>(<span class="keywordtype">int</span> localIndex, <span class="keywordtype">int</span> nblk, <span class="keywordtype">int</span> nprocs, <span class="keywordtype">int</span> myproc)</div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;{</div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;    <span class="keywordtype">int</span> iblock, gIndex;</div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;    iblock = localIndex / nblk;</div>
@@ -84,10 +84,10 @@ $(function() {
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    <span class="keywordflow">return</span> gIndex;</div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;}</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> localIndex(<span class="keywordtype">int</span> <a class="code" href="LCAO__evolve_8cpp.html#a8e0d6487c17ff3c013141f2ea4cccc60">globalIndex</a>, <span class="keywordtype">int</span> nblk, <span class="keywordtype">int</span> nprocs, <span class="keywordtype">int</span>&amp; lcoalProc)</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">static</span> <span class="keyword">inline</span> <span class="keywordtype">int</span> localIndex(<span class="keywordtype">int</span> globalIndex, <span class="keywordtype">int</span> nblk, <span class="keywordtype">int</span> nprocs, <span class="keywordtype">int</span>&amp; lcoalProc)</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;{</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    lcoalProc = int((<a class="code" href="LCAO__evolve_8cpp.html#a8e0d6487c17ff3c013141f2ea4cccc60">globalIndex</a> % (nblk * nprocs)) / nblk);</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> int(<a class="code" href="LCAO__evolve_8cpp.html#a8e0d6487c17ff3c013141f2ea4cccc60">globalIndex</a> / (nblk * nprocs)) * nblk + <a class="code" href="LCAO__evolve_8cpp.html#a8e0d6487c17ff3c013141f2ea4cccc60">globalIndex</a> % nblk;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    lcoalProc = int((globalIndex % (nblk * nprocs)) / nblk);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordflow">return</span> int(globalIndex / (nblk * nprocs)) * nblk + <a class="code" href="namespacemodule__tddft.html#a4de0752bcc80f779dd2ec1fecb8a6637">globalIndex</a> % nblk;</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;}</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#ifdef __MPI</span></div>
@@ -119,17 +119,19 @@ $(function() {
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keywordtype">void</span> <a class="code" href="utils_8h.html#a50c749d907be2f81f668d5b1a002f8ab">saveMatrix</a>(<span class="keyword">const</span> <span class="keywordtype">char</span> FileName[], <span class="keywordtype">int</span> nFull, std::complex&lt;double&gt;* a, <span class="keywordtype">int</span>* desca, <span class="keywordtype">int</span> blacs_ctxt);</div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="autils_8h_html_a1a08d4dabb4becc2bcbdfb94a27c53a5"><div class="ttname"><a href="utils_8h.html#a1a08d4dabb4becc2bcbdfb94a27c53a5">initBlacsGrid</a></div><div class="ttdeci">void initBlacsGrid(int loglevel, MPI_Comm comm, int nFull, int nblk, int &amp;blacs_ctxt, int &amp;narows, int &amp;nacols, int desc[])</div><div class="ttdef"><b>Definition:</b> utils.cpp:12</div></div>
-<div class="ttc" id="aLCAO__evolve_8cpp_html_a8e0d6487c17ff3c013141f2ea4cccc60"><div class="ttname"><a href="LCAO__evolve_8cpp.html#a8e0d6487c17ff3c013141f2ea4cccc60">globalIndex</a></div><div class="ttdeci">int globalIndex(int localindex, int nblk, int nprocs, int myproc)</div><div class="ttdef"><b>Definition:</b> LCAO_evolve.cpp:18</div></div>
 <div class="ttc" id="ablacs__connector_8h_html_ac582040a70677419d461b192b3ee54e9"><div class="ttname"><a href="blacs__connector_8h.html#ac582040a70677419d461b192b3ee54e9">Cblacs_pnum</a></div><div class="ttdeci">int Cblacs_pnum(int icontxt, int prow, int pcol)</div></div>
 <div class="ttc" id="ablacs__connector_8h_html_ae3b0677b0e09884d640aef46976bcd45"><div class="ttname"><a href="blacs__connector_8h.html#ae3b0677b0e09884d640aef46976bcd45">Cblacs_gridinfo</a></div><div class="ttdeci">void Cblacs_gridinfo(int icontxt, int *nprow, int *npcol, int *myprow, int *mypcol)</div></div>
 <div class="ttc" id="anamespaceModuleBase_1_1libm_html_a53ba939830541970fa8cdc6973c806e5"><div class="ttname"><a href="namespaceModuleBase_1_1libm.html#a53ba939830541970fa8cdc6973c806e5">ModuleBase::libm::i</a></div><div class="ttdeci">int4 i[880]</div><div class="ttdef"><b>Definition:</b> sincos.cpp:28</div></div>
 <div class="ttc" id="autils_8h_html_aeb900a0d70c73d93b608aa802fc4d16e"><div class="ttname"><a href="utils_8h.html#aeb900a0d70c73d93b608aa802fc4d16e">saveLocalMatrix</a></div><div class="ttdeci">void saveLocalMatrix(const char filePrefix[], int narows, int nacols, double *a)</div><div class="ttdef"><b>Definition:</b> utils.cpp:136</div></div>
-<div class="ttc" id="aCblacs_8h_html_af987ba5046511311675dd3e65722cc19"><div class="ttname"><a href="Cblacs_8h.html#af987ba5046511311675dd3e65722cc19">Cblacs_gridinit</a></div><div class="ttdeci">void Cblacs_gridinit(int *icontxt, char *layout, int nprow, int npcol)</div></div>
+<div class="ttc" id="anamespacemodule__tddft_html_a4de0752bcc80f779dd2ec1fecb8a6637"><div class="ttname"><a href="namespacemodule__tddft.html#a4de0752bcc80f779dd2ec1fecb8a6637">module_tddft::globalIndex</a></div><div class="ttdeci">int globalIndex(int localindex, int nblk, int nprocs, int myproc)</div><div class="ttdef"><b>Definition:</b> bandenergy.cpp:14</div></div>
 <div class="ttc" id="ascalapack__connector_8h_html_abe0f95f6fad2450624061b5bb6fd4b4b"><div class="ttname"><a href="scalapack__connector_8h.html#abe0f95f6fad2450624061b5bb6fd4b4b">descinit_</a></div><div class="ttdeci">void descinit_(int *desc, const int *m, const int *n, const int *mb, const int *nb, const int *irsrc, const int *icsrc, const int *ictxt, const int *lld, int *info)</div></div>
+<div class="ttc" id="ablacs__connector_8h_html_af987ba5046511311675dd3e65722cc19"><div class="ttname"><a href="blacs__connector_8h.html#af987ba5046511311675dd3e65722cc19">Cblacs_gridinit</a></div><div class="ttdeci">void Cblacs_gridinit(int *icontxt, char *layout, int nprow, int npcol)</div></div>
+<div class="ttc" id="atddft__test_8cpp_html_a54a3a20636e9a02c45a2fbff3a205924"><div class="ttname"><a href="tddft__test_8cpp.html#a54a3a20636e9a02c45a2fbff3a205924">myprow</a></div><div class="ttdeci">int myprow</div><div class="ttdef"><b>Definition:</b> tddft_test.cpp:14</div></div>
 <div class="ttc" id="autils_8h_html"><div class="ttname"><a href="utils_8h.html">utils.h</a></div></div>
 <div class="ttc" id="ablacs__connector_8h_html_a38270c5b86788cb4ef93d825166c8b30"><div class="ttname"><a href="blacs__connector_8h.html#a38270c5b86788cb4ef93d825166c8b30">Cblacs_pcoord</a></div><div class="ttdeci">void Cblacs_pcoord(int icontxt, int pnum, int *prow, int *pcol)</div></div>
 <div class="ttc" id="ascalapack__connector_8h_html_a4b472809cdd9a32a7d09ee7617cbc5eb"><div class="ttname"><a href="scalapack__connector_8h.html#a4b472809cdd9a32a7d09ee7617cbc5eb">numroc_</a></div><div class="ttdeci">int numroc_(const int *n, const int *nb, const int *iproc, const int *srcproc, const int *nprocs)</div></div>
 <div class="ttc" id="abranred_8cpp_html_ac39d9cef6a5e030ba8d9e11121054268"><div class="ttname"><a href="branred_8cpp.html#ac39d9cef6a5e030ba8d9e11121054268">max</a></div><div class="ttdeci">#define max(x, y)</div><div class="ttdef"><b>Definition:</b> branred.cpp:17</div></div>
+<div class="ttc" id="atddft__test_8cpp_html_a19cb9894faffb278fd16eec1fb1bc0a7"><div class="ttname"><a href="tddft__test_8cpp.html#a19cb9894faffb278fd16eec1fb1bc0a7">mypcol</a></div><div class="ttdeci">int mypcol</div><div class="ttdef"><b>Definition:</b> tddft_test.cpp:14</div></div>
 <div class="ttc" id="autils_8cpp_html_aeb900a0d70c73d93b608aa802fc4d16e"><div class="ttname"><a href="utils_8cpp.html#aeb900a0d70c73d93b608aa802fc4d16e">saveLocalMatrix</a></div><div class="ttdeci">void saveLocalMatrix(const char filePrefix[], int narows, int nacols, double *a)</div><div class="ttdef"><b>Definition:</b> utils.cpp:136</div></div>
 <div class="ttc" id="autils_8h_html_a88352c8e2c7d4c31e54c5196b0b9bf6f"><div class="ttname"><a href="utils_8h.html#a88352c8e2c7d4c31e54c5196b0b9bf6f">loadMatrix</a></div><div class="ttdeci">void loadMatrix(const char FileName[], int nFull, double *a, int *desca, int blacs_ctxt)</div><div class="ttdef"><b>Definition:</b> utils.cpp:85</div></div>
 <div class="ttc" id="autils_8cpp_html_a1a08d4dabb4becc2bcbdfb94a27c53a5"><div class="ttname"><a href="utils_8cpp.html#a1a08d4dabb4becc2bcbdfb94a27c53a5">initBlacsGrid</a></div><div class="ttdeci">void initBlacsGrid(int loglevel, MPI_Comm comm, int nFull, int nblk, int &amp;blacs_ctxt, int &amp;narows, int &amp;nacols, int desc[])</div><div class="ttdef"><b>Definition:</b> utils.cpp:12</div></div>

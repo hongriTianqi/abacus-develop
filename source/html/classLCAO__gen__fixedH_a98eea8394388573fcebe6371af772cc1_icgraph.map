@@ -1,8 +1,9 @@
 <map id="LCAO_gen_fixedH::calculate_S_no" name="LCAO_gen_fixedH::calculate_S_no">
-<area shape="rect" id="node1" title=" " alt="" coords="492,71,733,98"/>
-<area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a8b339edbf7eee63e294ff452ac1ef9df" title=" " alt="" coords="261,5,437,47"/>
-<area shape="rect" id="node4" href="$namespaceModuleIO.html#a40359ef286084e2268cff872dd4677d5" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="255,71,444,98"/>
-<area shape="rect" id="node6" href="$namespaceModuleIO.html#af713f77d248a53dd8a2bbf22df580c12" title=" " alt="" coords="271,123,428,164"/>
-<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,5,207,47"/>
-<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="18,96,194,137"/>
+<area shape="rect" id="node1" title=" " alt="" coords="716,71,957,98"/>
+<area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a8b339edbf7eee63e294ff452ac1ef9df" title=" " alt="" coords="485,5,661,47"/>
+<area shape="rect" id="node4" href="$namespaceModuleIO.html#a40359ef286084e2268cff872dd4677d5" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="479,71,668,98"/>
+<area shape="rect" id="node7" href="$namespaceModuleIO.html#af713f77d248a53dd8a2bbf22df580c12" title=" " alt="" coords="251,123,409,164"/>
+<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="229,5,431,47"/>
+<area shape="rect" id="node5" href="$namespaceModuleIO.html#a1a7bee4b21fbafb5e358e7054bfb1fd1" title="manege the output of dos in numerical atomic basis case" alt="" coords="243,71,417,98"/>
+<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,93,181,135"/>
 </map>

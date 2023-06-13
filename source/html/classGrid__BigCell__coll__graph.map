@@ -1,6 +1,6 @@
 <map id="Grid_BigCell" name="Grid_BigCell">
-<area shape="rect" id="node1" title=" " alt="" coords="109,800,298,1112"/>
-<area shape="rect" id="node2" href="$classGrid__MeshCell.html" title=" " alt="" coords="49,468,213,751"/>
-<area shape="rect" id="node3" href="$classGrid__MeshK.html" title=" " alt="" coords="5,49,169,347"/>
-<area shape="rect" id="node4" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="195,5,355,391"/>
+<area shape="rect" id="node1" title=" " alt="" coords="95,815,284,1127"/>
+<area shape="rect" id="node2" href="$classGrid__MeshCell.html" title=" " alt="" coords="35,468,199,765"/>
+<area shape="rect" id="node3" href="$classGrid__MeshK.html" title=" " alt="" coords="5,57,141,339"/>
+<area shape="rect" id="node4" href="$classModuleBase_1_1Matrix3.html" title="3x3 matrix and related mathamatical operations" alt="" coords="173,5,333,391"/>
 </map>

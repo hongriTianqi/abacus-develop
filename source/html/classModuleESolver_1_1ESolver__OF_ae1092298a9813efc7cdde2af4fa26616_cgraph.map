@@ -1,12 +1,12 @@
 <map id="ModuleESolver::ESolver_OF::afterOpt" name="ModuleESolver::ESolver_OF::afterOpt">
-<area shape="rect" id="node1" title=" " alt="" coords="5,64,181,105"/>
-<area shape="rect" id="node2" href="$module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0" title=" " alt="" coords="485,46,539,73"/>
-<area shape="rect" id="node3" href="$namespaceModuleIO.html#a047c6203f4fd97139b8d5e093e15ed0b" title=" " alt="" coords="229,97,383,123"/>
-<area shape="rect" id="node4" href="$namespaceModuleIO.html#adb299b4504ba1070cf7e9c6d6203bd5e" title=" " alt="" coords="431,97,593,123"/>
-<area shape="rect" id="node5" href="$namespaceModuleBase_1_1GlobalFunc.html#a5f13944ea3a04330fb2cc24e1c96a307" title=" " alt="" coords="641,5,824,47"/>
-<area shape="rect" id="node6" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="660,71,805,98"/>
-<area shape="rect" id="node9" href="$namespaceModuleBase.html#a9f78a123dd5c71cdb9a894a0ad180526" title="Print out warning information in warning.log file." alt="" coords="645,122,820,149"/>
-<area shape="rect" id="node10" href="$namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056" title=" " alt="" coords="641,173,824,215"/>
-<area shape="rect" id="node7" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="872,32,1055,73"/>
-<area shape="rect" id="node8" href="$classModuleBase_1_1timer.html#a923c532e5daca4dfbf48b6994817f1f2" title="Stop total time calculation, print total time until now, and then start total time calculation again." alt="" coords="887,97,1040,139"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,74,181,115"/>
+<area shape="rect" id="node2" href="$module__hsolver_2test_2CMakeLists_8txt.html#a44eaede0efa2e49af7d69a911f20b1a0" title=" " alt="" coords="563,5,617,32"/>
+<area shape="rect" id="node3" href="$namespaceModuleIO.html#a926b6f1a67826cb076bb8d62d47a2e83" title="output if is convergence and energy after scf" alt="" coords="229,158,453,199"/>
+<area shape="rect" id="node4" href="$namespaceModuleIO.html#a49e0a3146216765686d4b3f13f568733" title="write potential to file" alt="" coords="246,107,437,133"/>
+<area shape="rect" id="node10" href="$namespaceModuleIO.html#a047c6203f4fd97139b8d5e093e15ed0b" title=" " alt="" coords="265,56,418,83"/>
+<area shape="rect" id="node5" href="$classModuleBase_1_1timer.html#a7d5a9dd381e39259fb92b31a89140206" title="Use twice at a time: the first time, set start_flag to false; the second time, calculate the time dur..." alt="" coords="501,157,679,184"/>
+<area shape="rect" id="node7" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="731,77,876,104"/>
+<area shape="rect" id="node9" href="$namespaceModuleIO.html#adb299b4504ba1070cf7e9c6d6203bd5e" title=" " alt="" coords="509,56,671,83"/>
+<area shape="rect" id="node6" href="$classModuleBase_1_1timer.html#ae8bbbda5c7016f1daaf498cf653978d8" title="Member function: calculate time." alt="" coords="727,150,880,191"/>
+<area shape="rect" id="node8" href="$namespaceModuleBase_1_1GlobalFunc.html#ac2c43828a4fbf89f35f92165ab4cf69c" title=" " alt="" coords="928,70,1111,111"/>
 </map>

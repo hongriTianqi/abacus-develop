@@ -1,12 +1,12 @@
 <map id="module_hamilt_general/operator.h" name="module_hamilt_general/operator.h">
-<area shape="rect" id="node1" title=" " alt="" coords="637,5,813,47"/>
-<area shape="rect" id="node2" href="$hamilt_8h.html" title=" " alt="" coords="241,102,417,143"/>
-<area shape="rect" id="node7" href="$operator__pw_8h.html" title=" " alt="" coords="442,102,689,143"/>
-<area shape="rect" id="node8" href="$operator__pw_8cpp.html" title=" " alt="" coords="589,199,798,255"/>
-<area shape="rect" id="node9" href="$operator__lcao_8h.html" title=" " alt="" coords="763,95,941,151"/>
-<area shape="rect" id="node10" href="$operator_8cpp.html" title=" " alt="" coords="965,102,1141,143"/>
-<area shape="rect" id="node3" href="$wavefunc_8h.html" title=" " alt="" coords="5,206,197,247"/>
-<area shape="rect" id="node4" href="$hsolver_8h.html" title=" " alt="" coords="201,303,391,329"/>
-<area shape="rect" id="node5" href="$esolver__ks_8h.html" title=" " alt="" coords="255,377,467,404"/>
-<area shape="rect" id="node6" href="$diagh_8h.html" title=" " alt="" coords="272,213,451,240"/>
+<area shape="rect" id="node1" title=" " alt="" coords="554,5,730,47"/>
+<area shape="rect" id="node2" href="$hamilt_8h.html" title=" " alt="" coords="158,102,334,143"/>
+<area shape="rect" id="node7" href="$operator__pw_8h.html" title=" " alt="" coords="359,102,605,143"/>
+<area shape="rect" id="node8" href="$operator__pw_8cpp.html" title=" " alt="" coords="525,199,735,255"/>
+<area shape="rect" id="node9" href="$operator__lcao_8h.html" title=" " alt="" coords="679,95,858,151"/>
+<area shape="rect" id="node10" href="$operator_8cpp.html" title=" " alt="" coords="882,102,1058,143"/>
+<area shape="rect" id="node3" href="$esolver__ks_8h.html" title=" " alt="" coords="20,377,232,404"/>
+<area shape="rect" id="node4" href="$wavefunc_8h.html" title=" " alt="" coords="30,206,222,247"/>
+<area shape="rect" id="node5" href="$hsolver_8h.html" title=" " alt="" coords="163,303,353,329"/>
+<area shape="rect" id="node6" href="$diagh_8h.html" title=" " alt="" coords="297,213,475,240"/>
 </map>

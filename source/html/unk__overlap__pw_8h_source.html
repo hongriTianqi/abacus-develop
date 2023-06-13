@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.8.17"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>3.2.2: module_io/unk_overlap_pw.h Source File</title>
+<title>3.2.4: module_io/unk_overlap_pw.h Source File</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -22,8 +22,8 @@
  <tr style="height: 56px;">
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">3.2.2
-   &#160;<span id="projectnumber">2023-05-16</span>
+   <div id="projectname">3.2.4
+   &#160;<span id="projectnumber">2023-06-13</span>
    </div>
    <div id="projectbrief">Molecule Simulates the Future</div>
   </td>
@@ -96,21 +96,21 @@ $(function() {
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  <span class="keyword">public</span>:</div>
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classunkOverlap__pw.html">unkOverlap_pw</a>();</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    ~<a class="code" href="classunkOverlap__pw.html">unkOverlap_pw</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    std::complex&lt;double&gt; unkdotp_G(<span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* <a class="code" href="namespaceGlobalC.html#a73ba10f89d1a15cc4a17ca592a78835f">wfcpw</a>,</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    std::complex&lt;double&gt; unkdotp_G(<span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* wfcpw,</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">int</span> ik_L,</div>
 <div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">int</span> ik_R,</div>
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">int</span> iband_L,</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                   <span class="keyword">const</span> <span class="keywordtype">int</span> iband_R,</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                   <span class="keyword">const</span> <a class="code" href="classpsi_1_1Psi.html">psi::Psi</a>&lt;std::complex&lt;double&gt;&gt;* evc);</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    std::complex&lt;double&gt; unkdotp_G0(<span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a>* <a class="code" href="namespaceGlobalC.html#a80055879eba0f2c036c369f16ecfbf3b">rhopw</a>,</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                    <span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* <a class="code" href="namespaceGlobalC.html#a73ba10f89d1a15cc4a17ca592a78835f">wfcpw</a>,</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                    <span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* wfcpw,</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">int</span> ik_L,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">int</span> ik_R,</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">int</span> iband_L,</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                    <span class="keyword">const</span> <span class="keywordtype">int</span> iband_R,</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;                                    <span class="keyword">const</span> <a class="code" href="classpsi_1_1Psi.html">psi::Psi</a>&lt;std::complex&lt;double&gt;&gt;* evc,</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                                    <span class="keyword">const</span> <a class="code" href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3&lt;double&gt;</a> G);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::complex&lt;double&gt; unkdotp_soc_G(<span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* <a class="code" href="namespaceGlobalC.html#a73ba10f89d1a15cc4a17ca592a78835f">wfcpw</a>,</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    std::complex&lt;double&gt; unkdotp_soc_G(<span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* wfcpw,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                                       <span class="keyword">const</span> <span class="keywordtype">int</span> ik_L,</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                       <span class="keyword">const</span> <span class="keywordtype">int</span> ik_R,</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                                       <span class="keyword">const</span> <span class="keywordtype">int</span> iband_L,</div>
@@ -118,7 +118,7 @@ $(function() {
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                                       <span class="keyword">const</span> <span class="keywordtype">int</span> npwx,</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                       <span class="keyword">const</span> <a class="code" href="classpsi_1_1Psi.html">psi::Psi</a>&lt;std::complex&lt;double&gt;&gt;* evc);</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::complex&lt;double&gt; unkdotp_soc_G0(<span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a>* <a class="code" href="namespaceGlobalC.html#a80055879eba0f2c036c369f16ecfbf3b">rhopw</a>,</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                        <span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* <a class="code" href="namespaceGlobalC.html#a73ba10f89d1a15cc4a17ca592a78835f">wfcpw</a>,</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                                        <span class="keyword">const</span> <a class="code" href="classModulePW_1_1PW__Basis__K.html">ModulePW::PW_Basis_K</a>* wfcpw,</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                        <span class="keyword">const</span> <span class="keywordtype">int</span> ik_L,</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                        <span class="keyword">const</span> <span class="keywordtype">int</span> ik_R,</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                        <span class="keyword">const</span> <span class="keywordtype">int</span> iband_L,</div>
@@ -149,7 +149,6 @@ $(function() {
 <div class="ttc" id="aclassModuleBase_1_1Vector3_html"><div class="ttname"><a href="classModuleBase_1_1Vector3.html">ModuleBase::Vector3&lt; double &gt;</a></div></div>
 <div class="ttc" id="aclasspsi_1_1Psi_html"><div class="ttname"><a href="classpsi_1_1Psi.html">psi::Psi</a></div><div class="ttdef"><b>Definition:</b> psi.h:33</div></div>
 <div class="ttc" id="aclassunkOverlap__pw_html_a2b7f78ca74999e0d6988eb1b165b0f71"><div class="ttname"><a href="classunkOverlap__pw.html#a2b7f78ca74999e0d6988eb1b165b0f71">unkOverlap_pw::unkdotp_soc_G0</a></div><div class="ttdeci">std::complex&lt; double &gt; unkdotp_soc_G0(const ModulePW::PW_Basis *rhopw, const ModulePW::PW_Basis_K *wfcpw, const int ik_L, const int ik_R, const int iband_L, const int iband_R, const psi::Psi&lt; std::complex&lt; double &gt;&gt; *evc, const ModuleBase::Vector3&lt; double &gt; G)</div><div class="ttdef"><b>Definition:</b> unk_overlap_pw.cpp:180</div></div>
-<div class="ttc" id="anamespaceGlobalC_html_a73ba10f89d1a15cc4a17ca592a78835f"><div class="ttname"><a href="namespaceGlobalC.html#a73ba10f89d1a15cc4a17ca592a78835f">GlobalC::wfcpw</a></div><div class="ttdeci">ModulePW::PW_Basis_K * wfcpw</div><div class="ttdef"><b>Definition:</b> global.cpp:11</div></div>
 <div class="ttc" id="anamespaceGlobalC_html_a80055879eba0f2c036c369f16ecfbf3b"><div class="ttname"><a href="namespaceGlobalC.html#a80055879eba0f2c036c369f16ecfbf3b">GlobalC::rhopw</a></div><div class="ttdeci">ModulePW::PW_Basis * rhopw</div><div class="ttdef"><b>Definition:</b> cal_epsilon_test.cpp:33</div></div>
 <div class="ttc" id="aparallel__reduce_8h_html"><div class="ttname"><a href="parallel__reduce_8h.html">parallel_reduce.h</a></div></div>
 <div class="ttc" id="apw__basis_8h_html"><div class="ttname"><a href="pw__basis_8h.html">pw_basis.h</a></div></div>
@@ -162,9 +161,9 @@ $(function() {
 <div class="ttc" id="aunk__overlap__pw_8h_html"><div class="ttname"><a href="unk__overlap__pw_8h.html">unk_overlap_pw.h</a></div></div>
 <div class="ttc" id="avector3_8h_html"><div class="ttname"><a href="vector3_8h.html">vector3.h</a></div></div>
 <div class="ttc" id="aclassModulePW_1_1PW__Basis_html_abe30432b8c7a5a3bec170b18ddfae010"><div class="ttname"><a href="classModulePW_1_1PW__Basis.html#abe30432b8c7a5a3bec170b18ddfae010">ModulePW::PW_Basis::recip2real</a></div><div class="ttdeci">void recip2real(const std::complex&lt; FPTYPE &gt; *in, FPTYPE *out, const bool add=false, const FPTYPE factor=1.0) const</div><div class="ttdoc">transform reciprocal space to real space</div><div class="ttdef"><b>Definition:</b> pw_transform.cpp:194</div></div>
-<div class="ttc" id="anamespaceGlobalV_html_a97ef4b128d8c7eee952ee4eb9c7feda7"><div class="ttname"><a href="namespaceGlobalV.html#a97ef4b128d8c7eee952ee4eb9c7feda7">GlobalV::NPOL</a></div><div class="ttdeci">int NPOL</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:198</div></div>
+<div class="ttc" id="anamespaceGlobalV_html_a97ef4b128d8c7eee952ee4eb9c7feda7"><div class="ttname"><a href="namespaceGlobalV.html#a97ef4b128d8c7eee952ee4eb9c7feda7">GlobalV::NPOL</a></div><div class="ttdeci">int NPOL</div><div class="ttdef"><b>Definition:</b> global_variable.cpp:199</div></div>
 <div class="ttc" id="aclassModulePW_1_1PW__Basis__K_html_a3f5ff6f74c7686268879ce8e228e9e63"><div class="ttname"><a href="classModulePW_1_1PW__Basis__K.html#a3f5ff6f74c7686268879ce8e228e9e63">ModulePW::PW_Basis_K::recip2real</a></div><div class="ttdeci">void recip2real(const std::complex&lt; FPTYPE &gt; *in, FPTYPE *out, const int ik, const bool add=false, const FPTYPE factor=1.0) const</div><div class="ttdoc">transform reciprocal space to real space</div><div class="ttdef"><b>Definition:</b> pw_transform_k.cpp:204</div></div>
-<div class="ttc" id="aparallel__global_8cpp_html_af6c42710e15aa576a5c5f7273b58827f"><div class="ttname"><a href="parallel__global_8cpp.html#af6c42710e15aa576a5c5f7273b58827f">POOL_WORLD</a></div><div class="ttdeci">MPI_Comm POOL_WORLD</div><div class="ttdef"><b>Definition:</b> parallel_global.cpp:20</div></div>
+<div class="ttc" id="aparallel__global_8cpp_html_af6c42710e15aa576a5c5f7273b58827f"><div class="ttname"><a href="parallel__global_8cpp.html#af6c42710e15aa576a5c5f7273b58827f">POOL_WORLD</a></div><div class="ttdeci">MPI_Comm POOL_WORLD</div><div class="ttdef"><b>Definition:</b> parallel_global.cpp:21</div></div>
 <div class="ttc" id="alapack__connector_8h_html"><div class="ttname"><a href="lapack__connector_8h.html">lapack_connector.h</a></div></div>
 <div class="ttc" id="apsi_8h_html"><div class="ttname"><a href="psi_8h.html">psi.h</a></div></div>
 <div class="ttc" id="acomplexmatrix_8h_html"><div class="ttname"><a href="complexmatrix_8h.html">complexmatrix.h</a></div></div>
@@ -172,7 +171,7 @@ $(function() {
 <div class="ttc" id="aclassunkOverlap__pw_html_aa70b4061299f1be93f2db76f01a66920"><div class="ttname"><a href="classunkOverlap__pw.html#aa70b4061299f1be93f2db76f01a66920">unkOverlap_pw::~unkOverlap_pw</a></div><div class="ttdeci">~unkOverlap_pw()</div><div class="ttdef"><b>Definition:</b> unk_overlap_pw.cpp:9</div></div>
 <div class="ttc" id="aclassunkOverlap__pw_html_aff2abe19fdeec9e54d1ba1574ca4811e"><div class="ttname"><a href="classunkOverlap__pw.html#aff2abe19fdeec9e54d1ba1574ca4811e">unkOverlap_pw::unkOverlap_pw</a></div><div class="ttdeci">unkOverlap_pw()</div><div class="ttdef"><b>Definition:</b> unk_overlap_pw.cpp:4</div></div>
 <div class="ttc" id="aclassModulePW_1_1PW__Basis_html"><div class="ttname"><a href="classModulePW_1_1PW__Basis.html">ModulePW::PW_Basis</a></div><div class="ttdoc">A class which can convert a function of &quot;r&quot; to the corresponding linear superposition of plane waves ...</div><div class="ttdef"><b>Definition:</b> pw_basis.h:53</div></div>
-<div class="ttc" id="anamespaceModuleBase_1_1GlobalFunc_html_ab0d97a1e0e2c8216c3b1cc50cd735056"><div class="ttname"><a href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056">ModuleBase::GlobalFunc::ZEROS</a></div><div class="ttdeci">void ZEROS(std::complex&lt; T &gt; *u, const TI n)</div><div class="ttdef"><b>Definition:</b> global_function.h:119</div></div>
+<div class="ttc" id="anamespaceModuleBase_1_1GlobalFunc_html_ab0d97a1e0e2c8216c3b1cc50cd735056"><div class="ttname"><a href="namespaceModuleBase_1_1GlobalFunc.html#ab0d97a1e0e2c8216c3b1cc50cd735056">ModuleBase::GlobalFunc::ZEROS</a></div><div class="ttdeci">void ZEROS(std::complex&lt; T &gt; *u, const TI n)</div><div class="ttdef"><b>Definition:</b> global_function.h:115</div></div>
 <div class="ttc" id="aclassModulePW_1_1PW__Basis_html_a12369284adfaede2fa644d132f44ce0c"><div class="ttname"><a href="classModulePW_1_1PW__Basis.html#a12369284adfaede2fa644d132f44ce0c">ModulePW::PW_Basis::nmaxgr</a></div><div class="ttdeci">int nmaxgr</div><div class="ttdef"><b>Definition:</b> pw_basis.h:242</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

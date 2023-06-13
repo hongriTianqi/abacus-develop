@@ -1,8 +1,9 @@
 <map id="Charge::save_rho_before_sum_band" name="Charge::save_rho_before_sum_band">
-<area shape="rect" id="node1" title=" " alt="" coords="545,78,729,119"/>
+<area shape="rect" id="node1" title=" " alt="" coords="545,107,729,149"/>
 <area shape="rect" id="node2" href="$classIState__Envelope.html#ab477dddd987fa2adc5ec0b27be47f245" title="for gamma_only" alt="" coords="291,5,461,32"/>
 <area shape="rect" id="node4" href="$classIState__Charge.html#a42cf0be33969b28185217b2f02b3d436" title=" " alt="" coords="297,56,455,83"/>
 <area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a69e776170383781b9476e598130ffe52" title=" " alt="" coords="255,107,497,149"/>
 <area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#ad77b2f8850b54ceb66721e4f6afb290d" title=" " alt="" coords="279,173,473,214"/>
+<area shape="rect" id="node7" href="$charge__test_8cpp.html#a1caf8c74e7b970f9e92fb2dbcc551545" title=" " alt="" coords="341,239,411,265"/>
 <area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a9c5dada815d4ce58e6adcdf93e48aff6" title=" " alt="" coords="5,23,207,65"/>
 </map>

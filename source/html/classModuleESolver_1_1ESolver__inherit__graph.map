@@ -1,11 +1,11 @@
 <map id="ModuleESolver::ESolver" name="ModuleESolver::ESolver">
-<area shape="rect" id="node1" title=" " alt="" coords="368,5,544,229"/>
-<area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver__DP.html" title=" " alt="" coords="131,277,333,560"/>
-<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__FP.html" title=" " alt="" coords="357,314,555,523"/>
-<area shape="rect" id="node9" href="$classModuleESolver_1_1ESolver__LJ.html" title=" " alt="" coords="580,277,775,560"/>
-<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS.html" title=" " alt="" coords="5,608,181,1096"/>
-<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS.html" title=" " alt="" coords="205,608,443,1096"/>
-<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__KS.html" title=" " alt="" coords="467,608,709,1096"/>
-<area shape="rect" id="node8" href="$classModuleESolver_1_1ESolver__KS.html" title=" " alt="" coords="733,608,910,1096"/>
-<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__LCAO.html" title=" " alt="" coords="5,1144,181,1647"/>
+<area shape="rect" id="node1" title=" " alt="" coords="406,5,582,229"/>
+<area shape="rect" id="node2" href="$classModuleESolver_1_1ESolver__DP.html" title=" " alt="" coords="169,277,371,560"/>
+<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__FP.html" title=" " alt="" coords="395,285,593,553"/>
+<area shape="rect" id="node9" href="$classModuleESolver_1_1ESolver__LJ.html" title=" " alt="" coords="618,277,813,560"/>
+<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS.html" title=" " alt="" coords="15,608,219,1169"/>
+<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS.html" title=" " alt="" coords="243,608,481,1169"/>
+<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__KS.html" title=" " alt="" coords="505,608,747,1169"/>
+<area shape="rect" id="node8" href="$classModuleESolver_1_1ESolver__KS.html" title=" " alt="" coords="771,608,975,1169"/>
+<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__KS__LCAO.html" title=" " alt="" coords="5,1217,228,1779"/>
 </map>

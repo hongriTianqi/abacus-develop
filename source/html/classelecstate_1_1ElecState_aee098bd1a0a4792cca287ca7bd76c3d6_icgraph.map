@@ -1,5 +1,4 @@
 <map id="elecstate::ElecState::calculate_weights" name="elecstate::ElecState::calculate_weights">
-<area shape="rect" id="node1" title=" " alt="" coords="507,5,657,47"/>
-<area shape="rect" id="node2" href="$classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="272,5,459,47"/>
-<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a23f961e2d2511f96656df1491eb9df16" title=" " alt="" coords="5,5,224,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="240,5,391,47"/>
+<area shape="rect" id="node2" href="$classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,5,192,47"/>
 </map>

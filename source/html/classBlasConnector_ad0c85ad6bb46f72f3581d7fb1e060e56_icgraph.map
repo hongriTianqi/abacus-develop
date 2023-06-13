@@ -1,8 +1,9 @@
 <map id="BlasConnector::axpy" name="BlasConnector::axpy">
-<area shape="rect" id="node1" title=" " alt="" coords="500,137,656,164"/>
-<area shape="rect" id="node2" href="$classModuleBase_1_1Gram__Schmidt__Orth.html#a24d911ab6db0526914f2eb416a6aaa62" title=" " alt="" coords="237,5,444,61"/>
-<area shape="rect" id="node3" href="$structcontainer_1_1op_1_1axpy__op_3_01T_00_01DEVICE__CPU_01_4.html#a1cf6e347719d20ddbf8ee76e6b8c6b4b" title=" " alt="" coords="254,85,427,141"/>
-<area shape="rect" id="node4" href="$structhsolver_1_1axpy__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a06d6b74f6521ed87512e9275c334cd17" title=" " alt="" coords="229,166,452,207"/>
-<area shape="rect" id="node5" href="$namespaceModuleIO.html#a40359ef286084e2268cff872dd4677d5" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="246,232,435,259"/>
-<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,225,181,266"/>
+<area shape="rect" id="node1" title=" " alt="" coords="723,137,879,164"/>
+<area shape="rect" id="node2" href="$classModuleBase_1_1Gram__Schmidt__Orth.html#a24d911ab6db0526914f2eb416a6aaa62" title=" " alt="" coords="460,5,667,61"/>
+<area shape="rect" id="node3" href="$structcontainer_1_1op_1_1axpy__op_3_01T_00_01DEVICE__CPU_01_4.html#a1cf6e347719d20ddbf8ee76e6b8c6b4b" title=" " alt="" coords="477,85,650,141"/>
+<area shape="rect" id="node4" href="$structhsolver_1_1axpy__op_3_01FPTYPE_00_01psi_1_1DEVICE__CPU_01_4.html#a06d6b74f6521ed87512e9275c334cd17" title=" " alt="" coords="452,166,675,207"/>
+<area shape="rect" id="node5" href="$namespaceModuleIO.html#a40359ef286084e2268cff872dd4677d5" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="469,232,658,259"/>
+<area shape="rect" id="node6" href="$namespaceModuleIO.html#a1a7bee4b21fbafb5e358e7054bfb1fd1" title="manege the output of dos in numerical atomic basis case" alt="" coords="229,232,404,259"/>
+<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,225,181,266"/>
 </map>

@@ -1,9 +1,10 @@
 <map id="LCAO_Matrix::allocate_HS_k" name="LCAO_Matrix::allocate_HS_k">
-<area shape="rect" id="node1" title=" " alt="" coords="467,123,673,150"/>
-<area shape="rect" id="node2" href="$classLCAO__Matrix.html#a156176dd6b68c606f63ca6ca7ea4965d" title=" " alt="" coords="247,57,401,99"/>
-<area shape="rect" id="node5" href="$namespaceModuleIO.html#a40359ef286084e2268cff872dd4677d5" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="229,123,419,150"/>
-<area shape="rect" id="node7" href="$namespaceModuleIO.html#af713f77d248a53dd8a2bbf22df580c12" title=" " alt="" coords="245,175,403,216"/>
-<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="5,5,181,47"/>
-<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a9062d41b281c0efb4ec25752c0496f9e" title=" " alt="" coords="5,71,181,112"/>
-<area shape="rect" id="node6" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,149,181,191"/>
+<area shape="rect" id="node1" title=" " alt="" coords="691,135,897,162"/>
+<area shape="rect" id="node2" href="$classLCAO__Matrix.html#a1646a46cef14ebb1d1ede49d6bd4d246" title=" " alt="" coords="471,69,625,111"/>
+<area shape="rect" id="node5" href="$namespaceModuleIO.html#a40359ef286084e2268cff872dd4677d5" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="453,135,643,162"/>
+<area shape="rect" id="node8" href="$namespaceModuleIO.html#af713f77d248a53dd8a2bbf22df580c12" title=" " alt="" coords="469,187,627,228"/>
+<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO__TDDFT.html#a9062d41b281c0efb4ec25752c0496f9e" title=" " alt="" coords="229,5,405,47"/>
+<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="229,71,405,112"/>
+<area shape="rect" id="node6" href="$namespaceModuleIO.html#a1a7bee4b21fbafb5e358e7054bfb1fd1" title="manege the output of dos in numerical atomic basis case" alt="" coords="230,138,405,165"/>
+<area shape="rect" id="node7" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="5,157,181,199"/>
 </map>

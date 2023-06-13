@@ -1,12 +1,12 @@
 <map id="ModuleESolver::ESolver_KS_LCAO_TDDFT::Init" name="ModuleESolver::ESolver_KS_LCAO_TDDFT::Init">
 <area shape="rect" id="node1" title=" " alt="" coords="5,202,181,243"/>
 <area shape="rect" id="node2" href="$classCharge.html#aad64b6e0a1dec668d2aa38afe9b989bd" title=" " alt="" coords="262,85,390,112"/>
-<area shape="rect" id="node7" href="$classLCAO__Matrix.html#a156176dd6b68c606f63ca6ca7ea4965d" title=" " alt="" coords="249,137,403,178"/>
+<area shape="rect" id="node7" href="$classLCAO__Matrix.html#a1646a46cef14ebb1d1ede49d6bd4d246" title=" " alt="" coords="249,137,403,178"/>
 <area shape="rect" id="node8" href="$classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="238,202,414,243"/>
 <area shape="rect" id="node9" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a0f476fb59643c0d712877a15a8d9a62f" title=" " alt="" coords="229,267,423,309"/>
 <area shape="rect" id="node10" href="$classpseudopot__cell__vl.html#af0e66ffecbd3a9f9cae3784f5a1809d8" title=" " alt="" coords="253,333,399,374"/>
 <area shape="rect" id="node3" href="$classCharge.html#ada28366defcbf80e1f11e9b9a1a873e7" title=" " alt="" coords="490,5,615,32"/>
-<area shape="rect" id="node4" href="$classXC__Functional.html#a6bf3c50d992d4191f089867af29a2a76" title=" " alt="" coords="683,23,825,65"/>
+<area shape="rect" id="node4" href="$namespaceelecstate.html#a12c4e4e71cc5208ffd2994dee1d5e444" title="get the value of XC_Functional::func_type" alt="" coords="683,31,887,57"/>
 <area shape="rect" id="node5" href="$classModuleBase_1_1Memory.html#aeb0ee609df8fc31710d8604e8d468ca9" title="Record memory consumed during computation." alt="" coords="471,107,635,149"/>
 <area shape="rect" id="node6" href="$namespaceModuleBase.html#ad0b268ded393d31b0dd1a795366af4a6" title=" " alt="" coords="480,173,625,200"/>
 </map>

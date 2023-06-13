@@ -1,11 +1,7 @@
 <map id="K_Vectors::set_kup_and_kdw" name="K_Vectors::set_kup_and_kdw">
-<area shape="rect" id="node1" title=" " alt="" coords="553,177,697,219"/>
-<area shape="rect" id="node2" href="$classK__Vectors.html#af0155acd9a4eb60264ffe03b346a1e26" title=" " alt="" coords="391,159,505,186"/>
-<area shape="rect" id="node9" href="$klist__test_8cpp.html#ae6708f5088c73e0be2d4c145c72eb8bb" title=" " alt="" coords="413,210,483,237"/>
-<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="161,5,337,47"/>
-<area shape="rect" id="node4" href="$classModuleESolver_1_1ESolver__KS.html#a776be0680b67f8d920622db2e6107320" title=" " alt="" coords="155,71,343,127"/>
-<area shape="rect" id="node5" href="$classModuleESolver_1_1ESolver__OF.html#a9475e8c5873dc90118377c2978123914" title=" " alt="" coords="161,152,337,193"/>
-<area shape="rect" id="node6" href="$classExx__Lip.html#ad5b53311310dc2bda790dbfd39527d6d" title=" " alt="" coords="167,218,330,245"/>
-<area shape="rect" id="node8" href="$klist__test__para_8cpp.html#aac48d88698394529a70df2d2f64c3e8f" title=" " alt="" coords="214,269,283,295"/>
-<area shape="rect" id="node7" href="$classExx__Lip.html#a3003f46a0b42e9d00b599ae7de28bd76" title=" " alt="" coords="5,218,107,245"/>
+<area shape="rect" id="node1" title=" " alt="" coords="541,35,685,76"/>
+<area shape="rect" id="node2" href="$classK__Vectors.html#af0155acd9a4eb60264ffe03b346a1e26" title=" " alt="" coords="379,42,493,69"/>
+<area shape="rect" id="node3" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a049a967352c8d56d9288885f9af1a03c" title=" " alt="" coords="155,5,331,47"/>
+<area shape="rect" id="node4" href="$classExx__Lip.html#a4b034c6405130d417823f1bc3a481e59" title=" " alt="" coords="161,71,324,98"/>
+<area shape="rect" id="node5" href="$classExx__Lip.html#af67468cf72c1a54ed738d4dcf2bcf90e" title=" " alt="" coords="5,71,107,98"/>
 </map>

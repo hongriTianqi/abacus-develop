@@ -1,8 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classelecstate_1_1ElecState.html" title=" " alt="" coords="5,71,156,98"/>
-<area shape="rect" id="node2" href="$classelecstate_1_1ElecStateLCAO.html" title=" " alt="" coords="204,13,391,39"/>
-<area shape="rect" id="node4" href="$classelecstate_1_1ElecStatePW.html" title=" " alt="" coords="211,64,383,105"/>
-<area shape="rect" id="node5" href="$classelecstate_1_1ElecStatePW.html" title=" " alt="" coords="211,129,383,171"/>
-<area shape="rect" id="node3" href="$classelecstate_1_1ElecStateLCAO__TDDFT.html" title=" " alt="" coords="451,5,638,47"/>
-<area shape="rect" id="node6" href="$classelecstate_1_1ElecStatePW__SDFT.html" title=" " alt="" coords="439,137,651,163"/>
+<area shape="rect" id="node1" href="$classelecstate_1_1ElecState.html" title=" " alt="" coords="5,159,156,186"/>
+<area shape="rect" id="node2" href="$classelecstate_1_1ElecStateLCAO.html" title=" " alt="" coords="217,13,404,39"/>
+<area shape="rect" id="node4" href="$classelecstate_1_1ElecStatePW.html" title=" " alt="" coords="225,64,397,105"/>
+<area shape="rect" id="node5" href="$classelecstate_1_1MockElecState.html" title=" " alt="" coords="217,130,404,157"/>
+<area shape="rect" id="node6" href="$classelecstate_1_1ElecStatePW.html" title=" " alt="" coords="225,181,397,223"/>
+<area shape="rect" id="node8" href="$classelecstate_1_1ElecStatePW.html" title=" " alt="" coords="204,247,417,288"/>
+<area shape="rect" id="node9" href="$classelecstate_1_1ElecStatePW.html" title=" " alt="" coords="211,312,410,353"/>
+<area shape="rect" id="node3" href="$classelecstate_1_1ElecStateLCAO__TDDFT.html" title=" " alt="" coords="478,5,665,47"/>
+<area shape="rect" id="node7" href="$classelecstate_1_1ElecStatePW__SDFT.html" title=" " alt="" coords="465,189,677,215"/>
 </map>

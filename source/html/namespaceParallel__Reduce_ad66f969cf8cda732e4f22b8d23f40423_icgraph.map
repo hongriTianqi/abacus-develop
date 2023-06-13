@@ -1,12 +1,12 @@
 <map id="Parallel_Reduce::gather_min_double_all" name="Parallel_Reduce::gather_min_double_all">
-<area shape="rect" id="node1" title=" " alt="" coords="959,91,1133,132"/>
-<area shape="rect" id="node2" href="$classelecstate_1_1ElecState.html#aee098bd1a0a4792cca287ca7bd76c3d6" title=" " alt="" coords="240,15,391,56"/>
-<area shape="rect" id="node4" href="$classOccupy.html#a8859bd7135067293db02c90d0115cfd2" title=" " alt="" coords="752,47,880,74"/>
-<area shape="rect" id="node6" href="$parallel__reduce__test_8cpp.html#ad089b2df176a70f2ac58526377bfd76d" title=" " alt="" coords="781,98,851,125"/>
-<area shape="rect" id="node7" href="$namespaceModuleIO.html#a40359ef286084e2268cff872dd4677d5" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="721,149,911,175"/>
-<area shape="rect" id="node9" href="$namespaceModuleIO.html#adafa0eec4d754ce86305d801bf52ecb6" title="calculate density of states(DOS) for PW base" alt="" coords="725,203,907,230"/>
-<area shape="rect" id="node3" href="$classelecstate_1_1ElecStateLCAO.html#a2d5c239852bf45ccb92539e0fb71d8a3" title=" " alt="" coords="5,15,192,56"/>
-<area shape="rect" id="node5" href="$classOccupy.html#abd74a9130e5b8c6855f8d163e7962205" title=" " alt="" coords="488,47,624,74"/>
-<area shape="rect" id="node8" href="$classModuleESolver_1_1ESolver__KS__LCAO.html#a8d89bd435e667c657d2b46ca74dc8462" title=" " alt="" coords="468,137,644,179"/>
-<area shape="rect" id="node10" href="$classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="439,203,673,244"/>
+<area shape="rect" id="node1" title=" " alt="" coords="724,81,899,123"/>
+<area shape="rect" id="node2" href="$classOccupy.html#ab3385272163a2f655fa9f17412c41b55" title="Finds the Fermi energy." alt="" coords="517,13,645,39"/>
+<area shape="rect" id="node5" href="$parallel__reduce__test_8cpp.html#ad089b2df176a70f2ac58526377bfd76d" title=" " alt="" coords="547,63,616,90"/>
+<area shape="rect" id="node6" href="$namespaceModuleIO.html#a40359ef286084e2268cff872dd4677d5" title="calculate density of states(DOS) and partial density of states(PDOS) and mulliken charge for LCAO bas..." alt="" coords="487,114,676,141"/>
+<area shape="rect" id="node8" href="$namespaceModuleIO.html#adafa0eec4d754ce86305d801bf52ecb6" title="calculate density of states(DOS) for PW base" alt="" coords="491,169,672,195"/>
+<area shape="rect" id="node3" href="$classOccupy.html#a5cb4188d599a9693d068f709d8c53f59" title="calculates weights with the gaussian spreading technique" alt="" coords="253,13,389,39"/>
+<area shape="rect" id="node4" href="$classelecstate_1_1ElecState.html#aee098bd1a0a4792cca287ca7bd76c3d6" title=" " alt="" coords="5,5,156,47"/>
+<area shape="rect" id="node7" href="$namespaceModuleIO.html#a1a7bee4b21fbafb5e358e7054bfb1fd1" title="manege the output of dos in numerical atomic basis case" alt="" coords="234,110,409,137"/>
+<area shape="rect" id="node9" href="$classModuleESolver_1_1ESolver__KS__PW.html#a59de826fcb6cfafad0fe65073dd570fd" title=" " alt="" coords="204,161,439,203"/>
+<area shape="rect" id="node10" href="$write__dos__pw__test_8cpp.html#a99684cd3880b183f8e1de04d444ce9fa" title=" " alt="" coords="287,227,356,254"/>
 </map>

@@ -1,12 +1,12 @@
 <map id="module_hamilt_general/module_surchem/surchem.h" name="module_hamilt_general/module_surchem/surchem.h">
-<area shape="rect" id="node1" title=" " alt="" coords="361,5,571,47"/>
+<area shape="rect" id="node1" title=" " alt="" coords="342,5,553,47"/>
 <area shape="rect" id="node2" href="$atom__in_8h.html" title=" " alt="" coords="5,102,92,129"/>
-<area shape="rect" id="node3" href="$global__function_8h.html" title=" " alt="" coords="269,348,423,389"/>
-<area shape="rect" id="node4" href="$global__variable_8h.html" title=" " alt="" coords="221,437,356,464"/>
-<area shape="rect" id="node5" href="$matrix_8h.html" title=" " alt="" coords="661,191,829,218"/>
-<area shape="rect" id="node6" href="$parallel__reduce_8h.html" title=" " alt="" coords="863,95,1026,136"/>
-<area shape="rect" id="node7" href="$pw__basis_8h.html" title=" " alt="" coords="674,95,839,136"/>
-<area shape="rect" id="node8" href="$unitcell_8h.html" title=" " alt="" coords="378,273,543,300"/>
-<area shape="rect" id="node9" href="$global_8h.html" title=" " alt="" coords="237,95,429,136"/>
-<area shape="rect" id="node10" href="$structure__factor_8h.html" title=" " alt="" coords="370,184,562,225"/>
+<area shape="rect" id="node3" href="$global__function_8h.html" title=" " alt="" coords="368,259,521,300"/>
+<area shape="rect" id="node4" href="$global__variable_8h.html" title=" " alt="" coords="320,348,455,375"/>
+<area shape="rect" id="node5" href="$matrix_8h.html" title=" " alt="" coords="759,184,927,211"/>
+<area shape="rect" id="node6" href="$parallel__reduce_8h.html" title=" " alt="" coords="941,95,1103,136"/>
+<area shape="rect" id="node7" href="$pw__basis_8h.html" title=" " alt="" coords="701,95,866,136"/>
+<area shape="rect" id="node8" href="$unitcell_8h.html" title=" " alt="" coords="245,184,410,211"/>
+<area shape="rect" id="node9" href="$global_8h.html" title=" " alt="" coords="485,95,677,136"/>
+<area shape="rect" id="node10" href="$structure__factor_8h.html" title=" " alt="" coords="218,95,410,136"/>
 </map>
