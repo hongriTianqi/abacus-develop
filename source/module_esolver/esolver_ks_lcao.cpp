@@ -1319,14 +1319,14 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
         {
             const std::vector<std::vector<TK>>& dm
             = dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM()->get_DMK_vector();
+            auto cell_index = CellIndex(GlobalC::ucell, GlobalV::NPOL);
             auto mulp = ModuleIO::Output_Mulliken<TK>(&(this->LM),
                     this->p_hamilt,
                     &(this->orb_con.ParaV),
-                    GlobalC::ucell,
+                    cell_index,
                     dm,
                     this->kv,
-                    GlobalV::NSPIN,
-                    GlobalV::NPOL);
+                    GlobalV::NSPIN);
             auto atom_chg = mulp.get_atom_chg();
             /// used in updating mag info in STRU file
             GlobalC::ucell.atom_mulliken = mulp.get_atom_mulliken(atom_chg);
