@@ -82,7 +82,7 @@ private:
     LCAO_Matrix* LM_ = nullptr;
     hamilt::Hamilt<TK>* p_hamilt_ = nullptr;
     Parallel_Orbitals *ParaV_ = nullptr;
-    const std::vector<std::vector<TK>> dm_;
+    const std::vector<std::vector<TK>>& dm_;
     const K_Vectors& kv_;
     int nspin_;
     CellIndex cell_index_;
