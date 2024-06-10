@@ -306,11 +306,21 @@ public:
     /// @brief check consistency between two atom labels from STRU and pseudo or orb file
     void compare_atom_labels(std::string label1, std::string label2);
     /// @brief get atomCounts, which is a map from element type to atom number
-    std::map<int, int> get_atomCounts() const;
+    std::map<int, int> get_atom_Counts() const;
     /// @brief get orbitalCounts, which is a map from element type to orbital number
-    std::map<int, int> get_orbitalCounts() const;
+    std::map<int, int> get_orbital_Counts() const;
     /// @brief get lnchiCounts, which is a map from element type to the l:nchi map
-    std::map<int, std::map<int, int>> get_lnchiCounts() const;
+    std::map<int, std::map<int, int>> get_lnchi_Counts() const;
+    /// these are newly added functions, the three above functions are deprecated
+    /// and will be removed in the future
+    /// @brief get atom labels
+    std::vector<std::string> get_atomLabels() const;
+    /// @brief get atomCounts, which is a vector of element type with atom number
+    std::vector<int> get_atomCounts() const;
+    /// @brief get orbitalCounts, which is a vector of element type with orbital number
+    std::vector<int> get_orbitalCounts() const;
+    /// @brief get lnchiCounts, which is a vector of element type with the l:nchi vector
+    std::vector<std::vector<int>> get_lnchiCounts() const;
 };
 
 #endif //unitcell class

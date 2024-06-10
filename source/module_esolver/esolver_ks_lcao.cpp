@@ -3,7 +3,7 @@
 
 #include "module_base/global_variable.h"
 #include "module_io/dos_nao.h"
-#include "module_io/mulliken_charge.h"
+#include "module_io/output_mulliken.h"
 #include "module_io/nscf_band.h"
 #include "module_io/write_HS.h"
 #include "module_io/write_istate_info.h"
@@ -1317,8 +1317,27 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
         // GlobalV::mulliken charge analysis
         if (GlobalV::out_mul)
         {
-            ModuleIO::out_mulliken(istep, &this->LM, this->pelec, this->kv, this->p_hamilt);
-        } // qifeng add 2019/9/10, jiyy modify 2023/2/27, liuyu move here 2023-04-18
+            const std::vector<std::vector<TK>>& dm
+            = dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM()->get_DMK_vector();
+            auto mulp = ModuleIO::Output_Mulliken<TK>(&(this->LM),
+                    this->p_hamilt,
+                    &(this->orb_con.ParaV),
+                    GlobalC::ucell,
+                    dm,
+                    this->kv,
+                    GlobalV::NSPIN,
+                    GlobalV::NPOL);
+            auto atom_chg = mulp.get_atom_chg();
+            /// used in updating mag info in STRU file
+            GlobalC::ucell.atom_mulliken = mulp.get_atom_mulliken(atom_chg);
+            if (GlobalV::MY_RANK == 0)
+            {
+                /// write mulliken.txt
+                mulp.write(istep, GlobalV::global_out_dir);
+                /// write atomic mag info in running log file
+                mulp.print_atom_mag(atom_chg, GlobalV::ofs_running);
+            }
+        }
     }
 
     // 16) write spin constrian MW?

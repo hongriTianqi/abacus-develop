@@ -65,10 +65,10 @@ if(ENABLE_LCAO)
       to_qo_kernel.cpp
       to_qo_mpi.cpp
       to_qo_structures.cpp
+      output_mulliken.cpp
   )
   list(APPEND objects_advanced
       unk_overlap_lcao.cpp
-      mulliken_charge.cpp
       write_HS_R.cpp
       write_HS_sparse.cpp
       single_R_io.cpp
