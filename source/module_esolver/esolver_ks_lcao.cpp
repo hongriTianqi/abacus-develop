@@ -4,6 +4,7 @@
 #include "module_base/global_variable.h"
 #include "module_io/dos_nao.h"
 #include "module_io/output_mulliken.h"
+#include "module_io/output_sk.h"
 #include "module_io/nscf_band.h"
 #include "module_io/write_HS.h"
 #include "module_io/write_istate_info.h"
@@ -1320,6 +1321,11 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
             const std::vector<std::vector<TK>>& dm
             = dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM()->get_DMK_vector();
             auto cell_index = CellIndex(GlobalC::ucell, GlobalV::NSPIN);
+            auto out_sk = ModuleIO::Output_Sk<TK>(&(this->LM),
+                    this->p_hamilt,
+                    &(this->orb_con.ParaV),
+                    GlobalV::NSPIN,
+                    this->kv.get_nks());
             auto mulp = ModuleIO::Output_Mulliken<TK>(&(this->LM),
                     this->p_hamilt,
                     &(this->orb_con.ParaV),
