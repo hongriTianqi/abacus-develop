@@ -8,7 +8,10 @@ CellIndex::CellIndex(const UnitCell& ucell, const int& nspin)
     this->atomCounts = ucell.get_atomCounts();
     this->orbitalCounts = ucell.get_orbitalCounts();
     this->lnchiCounts = ucell.get_lnchiCounts();
-    if (this->check_nspin(nspin)) this->npol_ = (nspin == 4) ? 2 : 1;
+    if (this->check_nspin(nspin))
+    {
+        this->npol_ = (nspin == 4) ? 2 : 1;
+    }
     this->check_atomCounts();
 }
 
@@ -207,13 +210,13 @@ int CellIndex::iw2m(int iat, int iw)
     }
 }
 
-int CellIndex::check_nspin(int nspin)
+bool CellIndex::check_nspin(int nspin)
 {
     if (nspin != 1 && nspin != 2 && nspin != 4)
     {
         ModuleBase::WARNING_QUIT("CellIndex::check_nspin","nspin must be 1, 2, or 4");
     }
-    return nspin;
+    return true;
 }
 
 void CellIndex::write_orb_info(std::string out_dir)

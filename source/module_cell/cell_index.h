@@ -41,7 +41,7 @@ private:
     /// npol is determined by nspin and used in get_iwt and get_nw
     int npol_;
     /// check nspin
-    int check_nspin(int nspin);
+    bool check_nspin(int nspin);
     /// check if atomCounts is set ok
     void check_atomCounts();
     /// get type of atom from total order
