@@ -1,13 +1,13 @@
 #include "cell_index.h"
 #include "module_base/tool_quit.h"
 
-CellIndex::CellIndex(const UnitCell& ucell, int& npol)
+CellIndex::CellIndex(const UnitCell& ucell, const int& nspin)
 {
     this->atomLabels = ucell.get_atomLabels();
     this->atomCounts = ucell.get_atomCounts();
     this->orbitalCounts = ucell.get_orbitalCounts();
     this->lnchiCounts = ucell.get_lnchiCounts();
-    this->npol_ = npol;
+    this->npol_ = (nspin == 4) ? 2 : 1;
     this->check_atomCounts();
 }
 

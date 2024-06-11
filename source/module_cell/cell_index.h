@@ -7,7 +7,7 @@ class CellIndex
 {
 public:
     CellIndex() = default;
-    CellIndex(const UnitCell& ucell, int& npol);
+    CellIndex(const UnitCell& ucell, const int& nspin);
 public:
     /// @brief the total number of atoms
     int get_nat();
