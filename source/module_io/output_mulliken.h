@@ -82,7 +82,7 @@ private:
     Output_Sk<TK>* output_sk_ = nullptr;
     Output_DMK<TK>* output_dmk_ = nullptr;
     Parallel_Orbitals *ParaV_ = nullptr;
-    CellIndex* cell_index_;
+    CellIndex* cell_index_ = nullptr;
     const std::vector<int>& isk_;
     int nspin_;
     ModuleBase::matrix orbMulP_;
