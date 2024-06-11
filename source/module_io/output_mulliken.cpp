@@ -617,9 +617,9 @@ void Output_Mulliken<double>::cal_orbMulP(LCAO_Matrix* LM, const std::vector<std
         const double one_float = 1.0, zero_float = 0.0;        
         pdgemm_(&N_char,
                 &T_char,
-                &GlobalV::NLOCAL,
-                &GlobalV::NLOCAL,
-                &GlobalV::NLOCAL,
+                &nw,
+                &nw,
+                &nw,
                 &one_float,
                 dm[is].data(),
                 &one_int,
@@ -636,7 +636,7 @@ void Output_Mulliken<double>::cal_orbMulP(LCAO_Matrix* LM, const std::vector<std
                 this->ParaV_->desc);
         if(this->nspin_ == 1 || this->nspin_ == 2)
         {
-            for(size_t i=0; i!=GlobalV::NLOCAL; ++i)
+            for(size_t i=0; i!=nw; ++i)
                 if(this->ParaV_->in_this_processor(i, i))
                 {
                     const int ir = this->ParaV_->global2local_row(i);
