@@ -577,7 +577,7 @@ TEST_F(UcellTest,GetAtomCounts)
 	ucell = utp.SetUcellInfo();
 	//test set_iat2itia
 	ucell->set_iat2itia();
-	std::map<int, int> atomCounts = ucell->get_atomCounts();
+	std::map<int, int> atomCounts = ucell->get_atom_Counts();
 	EXPECT_EQ(atomCounts[0],1);
 	EXPECT_EQ(atomCounts[1],2);
 }
@@ -589,7 +589,7 @@ TEST_F(UcellTest,GetOrbitalCounts)
 	ucell = utp.SetUcellInfo();
 	//test set_iat2itia
 	ucell->set_iat2itia();
-	std::map<int, int> orbitalCounts = ucell->get_orbitalCounts();
+	std::map<int, int> orbitalCounts = ucell->get_orbital_Counts();
 	EXPECT_EQ(orbitalCounts[0],9);
 	EXPECT_EQ(orbitalCounts[1],9);
 }
@@ -601,7 +601,7 @@ TEST_F(UcellTest, GetLnchiCounts)
     ucell = utp.SetUcellInfo();
     // test set_iat2itia
     ucell->set_iat2itia();
-    std::map<int, std::map<int, int>> LnchiCounts = ucell->get_lnchiCounts();
+    std::map<int, std::map<int, int>> LnchiCounts = ucell->get_lnchi_Counts();
     EXPECT_EQ(LnchiCounts[0][0], 1);
     EXPECT_EQ(LnchiCounts[0][1], 1);
     EXPECT_EQ(LnchiCounts[0][2], 1);
