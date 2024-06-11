@@ -5,6 +5,7 @@
 #include "module_io/dos_nao.h"
 #include "module_io/output_mulliken.h"
 #include "module_io/output_sk.h"
+#include "module_io/output_dmk.h"
 #include "module_io/nscf_band.h"
 #include "module_io/write_HS.h"
 #include "module_io/write_istate_info.h"
@@ -1326,6 +1327,7 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
                     &(this->orb_con.ParaV),
                     GlobalV::NSPIN,
                     this->kv.get_nks());
+            auto out_dmk = ModuleIO::Output_DMK<TK>(dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM());
             auto mulp = ModuleIO::Output_Mulliken<TK>(&(out_sk),
                     &(this->orb_con.ParaV),
                     &cell_index,

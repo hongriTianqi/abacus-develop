@@ -20,4 +20,7 @@ void Output_DMK<TK>::write()
 {
 }
 
+template class Output_DMK<double>;
+template class Output_DMK<std::complex<double>>;
+
 } // namespace ModuleIO

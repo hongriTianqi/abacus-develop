@@ -1,3 +1,5 @@
+#ifndef MODULE_IO_OUTPUT_DMK_H
+#define MODULE_IO_OUTPUT_DMK_H
 #include "module_io/output_interface.h"
 #include "module_elecstate/module_dm/density_matrix.h"
 
@@ -16,3 +18,5 @@ private:
 };
     
 } // namespace ModuleIO
+
+#endif // MODULE_IO_OUTPUT_DMK_H
