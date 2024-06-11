@@ -20,12 +20,13 @@ class Output_Mulliken : public Output_Interface
 {
 public:
     /// constructor of Output_Mulliken
-    Output_Mulliken(LCAO_Matrix* LM,
+    Output_Mulliken(
+        LCAO_Matrix* LM,
         hamilt::Hamilt<TK>* p_hamilt,
         Parallel_Orbitals *ParaV,
         CellIndex* cell_index,
+        const std::vector<int>& isk,
         const std::vector<std::vector<TK>>& dm,
-        const K_Vectors& kv,
         int nspin);
     /// the outer interface to write the Mulliken population charges
     void write(int istep, std::string out_dir);
@@ -81,8 +82,8 @@ private:
     hamilt::Hamilt<TK>* p_hamilt_ = nullptr;
     Parallel_Orbitals *ParaV_ = nullptr;
     CellIndex* cell_index_;
+    const std::vector<int>& isk_;
     const std::vector<std::vector<TK>>& dm_;
-    const K_Vectors& kv_;
     int nspin_;
     ModuleBase::matrix orbMulP_;
 };

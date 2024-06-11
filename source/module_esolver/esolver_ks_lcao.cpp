@@ -1324,8 +1324,8 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
                     this->p_hamilt,
                     &(this->orb_con.ParaV),
                     &cell_index,
+                    this->kv.isk,
                     dm,
-                    this->kv,
                     GlobalV::NSPIN);
             auto atom_chg = mulp.get_atom_chg();
             /// used in updating mag info in STRU file

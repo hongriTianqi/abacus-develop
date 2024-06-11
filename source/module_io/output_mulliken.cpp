@@ -14,10 +14,10 @@ Output_Mulliken<TK>::Output_Mulliken(LCAO_Matrix* LM,
     hamilt::Hamilt<TK>* p_hamilt,
     Parallel_Orbitals *ParaV,
     CellIndex* cell_index,
+    const std::vector<int>& isk,
     const std::vector<std::vector<TK>>& dm,
-    const K_Vectors& kv,
     int nspin)
-    : LM_(LM), p_hamilt_(p_hamilt), ParaV_(ParaV), cell_index_(cell_index), dm_(dm), kv_(kv), nspin_(nspin)
+    : LM_(LM), p_hamilt_(p_hamilt), ParaV_(ParaV), cell_index_(cell_index), isk_(isk), dm_(dm), nspin_(nspin)
 {
     this->set_nspin(nspin);
     this->set_ParaV(ParaV);
@@ -549,7 +549,7 @@ void Output_Mulliken<std::complex<double>>::cal_orbMulP(LCAO_Matrix* LM, const s
     const int nlocal = (this->nspin_ == 4) ? nw / 2 : nw;
     ModuleBase::matrix MecMulP(this->nspin_, nlocal, true);
     this->orbMulP_.create(this->nspin_, nlocal, true);
-    for(size_t ik = 0; ik != this->kv_.get_nks(); ++ik)
+    for(size_t ik = 0; ik != this->isk_.size(); ++ik)
     {
         if (this->nspin_ == 4)
         {
@@ -584,7 +584,7 @@ void Output_Mulliken<std::complex<double>>::cal_orbMulP(LCAO_Matrix* LM, const s
                 &one_int,
                 &one_int,
                 this->ParaV_->desc);
-        this->collect_MW(MecMulP, mud, nw, this->kv_.isk[ik]);
+        this->collect_MW(MecMulP, mud, nw, this->isk_[ik]);
 #endif
     }
 #ifdef __MPI
