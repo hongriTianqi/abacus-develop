@@ -580,6 +580,10 @@ TEST_F(UcellTest,GetAtomCounts)
 	std::map<int, int> atomCounts = ucell->get_atom_Counts();
 	EXPECT_EQ(atomCounts[0],1);
 	EXPECT_EQ(atomCounts[1],2);
+	/// atomCounts as vector
+	std::vector<int> atomCounts2 = ucell->get_atomCounts();
+	EXPECT_EQ(atomCounts2[0],1);
+	EXPECT_EQ(atomCounts2[1],2);
 }
 
 TEST_F(UcellTest,GetOrbitalCounts)
@@ -592,6 +596,10 @@ TEST_F(UcellTest,GetOrbitalCounts)
 	std::map<int, int> orbitalCounts = ucell->get_orbital_Counts();
 	EXPECT_EQ(orbitalCounts[0],9);
 	EXPECT_EQ(orbitalCounts[1],9);
+	/// orbitalCounts as vector
+	std::vector<int> orbitalCounts2 = ucell->get_orbitalCounts();
+	EXPECT_EQ(orbitalCounts2[0],9);
+	EXPECT_EQ(orbitalCounts2[1],9);
 }
 
 TEST_F(UcellTest, GetLnchiCounts)
@@ -608,6 +616,14 @@ TEST_F(UcellTest, GetLnchiCounts)
     EXPECT_EQ(LnchiCounts[1][0], 1);
     EXPECT_EQ(LnchiCounts[1][1], 1);
     EXPECT_EQ(LnchiCounts[1][2], 1);
+	/// LnchiCounts as vector
+	std::vector<std::vector<int>> LnchiCounts2 = ucell->get_lnchiCounts();
+	EXPECT_EQ(LnchiCounts2[0][0],1);
+	EXPECT_EQ(LnchiCounts2[0][1],1);
+	EXPECT_EQ(LnchiCounts2[0][2],1);
+	EXPECT_EQ(LnchiCounts2[1][0],1);
+	EXPECT_EQ(LnchiCounts2[1][1],1);
+	EXPECT_EQ(LnchiCounts2[1][2],1);
 }
 
 TEST_F(UcellTest,CheckDTau)
