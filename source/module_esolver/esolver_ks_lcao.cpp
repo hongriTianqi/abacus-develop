@@ -1323,7 +1323,7 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
             auto mulp = ModuleIO::Output_Mulliken<TK>(&(this->LM),
                     this->p_hamilt,
                     &(this->orb_con.ParaV),
-                    cell_index,
+                    &cell_index,
                     dm,
                     this->kv,
                     GlobalV::NSPIN);

@@ -23,7 +23,7 @@ public:
     Output_Mulliken(LCAO_Matrix* LM,
         hamilt::Hamilt<TK>* p_hamilt,
         Parallel_Orbitals *ParaV,
-        const CellIndex& cell_index,
+        CellIndex* cell_index,
         const std::vector<std::vector<TK>>& dm,
         const K_Vectors& kv,
         int nspin);
@@ -80,10 +80,10 @@ private:
     LCAO_Matrix* LM_ = nullptr;
     hamilt::Hamilt<TK>* p_hamilt_ = nullptr;
     Parallel_Orbitals *ParaV_ = nullptr;
+    CellIndex* cell_index_;
     const std::vector<std::vector<TK>>& dm_;
     const K_Vectors& kv_;
     int nspin_;
-    CellIndex cell_index_;
     ModuleBase::matrix orbMulP_;
 };
 

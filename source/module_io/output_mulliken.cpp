@@ -13,13 +13,12 @@ template <typename TK>
 Output_Mulliken<TK>::Output_Mulliken(LCAO_Matrix* LM,
     hamilt::Hamilt<TK>* p_hamilt,
     Parallel_Orbitals *ParaV,
-    const CellIndex& cell_index,
+    CellIndex* cell_index,
     const std::vector<std::vector<TK>>& dm,
     const K_Vectors& kv,
     int nspin)
     : LM_(LM), p_hamilt_(p_hamilt), ParaV_(ParaV), cell_index_(cell_index), dm_(dm), kv_(kv), nspin_(nspin)
 {
-    this->cell_index_ = cell_index;
     this->set_nspin(nspin);
     this->set_ParaV(ParaV);
     this->cal_orbMulP(LM, dm);
@@ -78,18 +77,18 @@ void Output_Mulliken<TK>::write_mulliken_nspin1(int istep,
     FmtCore fmt_of_label("%-20s");
     FmtCore fmt_of_Z("%20d");
     os << "Decomposed Mulliken populations" << std::endl;
-    for (int iat = 0; iat < this->cell_index_.get_nat(); ++iat)
+    for (int iat = 0; iat < this->cell_index_->get_nat(); ++iat)
     {
         /// header of the table
-        std::string atom_label = this->cell_index_.get_atom_label(iat);
+        std::string atom_label = this->cell_index_->get_atom_label(iat);
         os << FmtCore::format("%-20d", iat) << FmtCore::format("%20s", std::string("Zeta of ") + atom_label)
             << FmtCore::format("%20s", std::string("Spin 1"))
             << std::endl;
         /// loop of L
-        for (int L = 0; L <= this->cell_index_.get_maxL(iat); L++)
+        for (int L = 0; L <= this->cell_index_->get_maxL(iat); L++)
         {
             std::vector<double> sum_over_m_and_z(this->nspin_, 0.0);
-            for (int Z = 0; Z < this->cell_index_.get_nchi(iat, L); Z++)
+            for (int Z = 0; Z < this->cell_index_->get_nchi(iat, L); Z++)
             {
                 for (int M = 0; M < (2*L + 1); M++)
                 {
@@ -144,10 +143,10 @@ void Output_Mulliken<TK>::write_mulliken_nspin2(int istep,
     FmtCore fmt_of_label("%-20s");
     FmtCore fmt_of_Z("%20d");
     os << "Decomposed Mulliken populations" << std::endl;
-    for (int iat = 0; iat < this->cell_index_.get_nat(); ++iat)
+    for (int iat = 0; iat < this->cell_index_->get_nat(); ++iat)
     {
         /// header of the table
-        std::string atom_label = this->cell_index_.get_atom_label(iat);
+        std::string atom_label = this->cell_index_->get_atom_label(iat);
         os << FmtCore::format("%-20d", iat) << FmtCore::format("%20s", std::string("Zeta of ") + atom_label)
                 << FmtCore::format("%20s", std::string("Spin 1"))
                 << FmtCore::format("%20s", std::string("Spin 2"))
@@ -155,10 +154,10 @@ void Output_Mulliken<TK>::write_mulliken_nspin2(int istep,
                 << FmtCore::format("%20s", std::string("Diff"))
                 << std::endl;
         /// loop of L
-        for (int L = 0; L <= this->cell_index_.get_maxL(iat); L++)
+        for (int L = 0; L <= this->cell_index_->get_maxL(iat); L++)
         {
             std::vector<double> sum_over_m_and_z(this->nspin_, 0.0);
-            for (int Z = 0; Z < this->cell_index_.get_nchi(iat, L); Z++)
+            for (int Z = 0; Z < this->cell_index_->get_nchi(iat, L); Z++)
             {
                 for (int M = 0; M < (2*L + 1); M++)
                 {
@@ -230,10 +229,10 @@ void Output_Mulliken<TK>::write_mulliken_nspin4(int istep,
     FmtCore fmt_of_label("%-20s");
     FmtCore fmt_of_Z("%20d");
     os << "Decomposed Mulliken populations" << std::endl;
-    for (int iat = 0; iat < this->cell_index_.get_nat(); ++iat)
+    for (int iat = 0; iat < this->cell_index_->get_nat(); ++iat)
     {
         /// header of the table
-        std::string atom_label = this->cell_index_.get_atom_label(iat);
+        std::string atom_label = this->cell_index_->get_atom_label(iat);
         os << FmtCore::format("%-20d", iat) << FmtCore::format("%20s", std::string("Zeta of ") + atom_label)
             << FmtCore::format("%20s", std::string("Spin 1"))
             << FmtCore::format("%20s", std::string("Spin 2"))
@@ -241,10 +240,10 @@ void Output_Mulliken<TK>::write_mulliken_nspin4(int istep,
             << FmtCore::format("%20s", std::string("Spin 4"))
             << std::endl;
         /// loop of L
-        for (int L = 0; L <= this->cell_index_.get_maxL(iat); L++)
+        for (int L = 0; L <= this->cell_index_->get_maxL(iat); L++)
         {
             std::vector<double> sum_over_m_and_z(this->nspin_, 0.0);
-            for (int Z = 0; Z < this->cell_index_.get_nchi(iat, L); Z++)
+            for (int Z = 0; Z < this->cell_index_->get_nchi(iat, L); Z++)
             {
                 for (int M = 0; M < (2*L + 1); M++)
                 {
@@ -332,7 +331,7 @@ template <typename TK>
 std::vector<double> Output_Mulliken<TK>::get_tot_chg()
 {
     std::vector<double> tot_chg(this->nspin_, 0.0);
-    int nw = this->cell_index_.get_nw();
+    int nw = this->cell_index_->get_nw();
     const int nlocal = (this->nspin_ == 4) ? nw / 2 : nw;
     for(int is=0; is!=this->nspin_; ++is)
     {
@@ -347,12 +346,12 @@ std::vector<double> Output_Mulliken<TK>::get_tot_chg()
 template <typename TK>
 std::vector<std::vector<double>> Output_Mulliken<TK>::get_atom_chg()
 {
-    int nat = this->cell_index_.get_nat();
+    int nat = this->cell_index_->get_nat();
     std::vector<std::vector<double>> atom_chg(nat, std::vector<double>(this->nspin_, 0.0));
     int num = 0;
     for (int iat = 0; iat < nat; iat++)
     {
-        int nw_it = this->cell_index_.get_nw(iat);
+        int nw_it = this->cell_index_->get_nw(iat);
         for (int iw = 0; iw < nw_it; iw++)
         {
             for (int is = 0; is < this->nspin_; is++)
@@ -368,7 +367,7 @@ std::vector<std::vector<double>> Output_Mulliken<TK>::get_atom_chg()
 template <typename TK>
 std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>> Output_Mulliken<TK>::get_orb_chg()
 {
-    int nat = this->cell_index_.get_nat();
+    int nat = this->cell_index_->get_nat();
     std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>> orb_chg(
         nat, std::vector<std::vector<std::vector<std::vector<double>>>>(
             this->nspin_, std::vector<std::vector<std::vector<double>>>()
@@ -379,13 +378,13 @@ std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>> Output_M
         int num = 0;
         for (int iat = 0; iat < nat; iat++)
         {
-            int maxL = this->cell_index_.get_maxL(iat);
+            int maxL = this->cell_index_->get_maxL(iat);
             orb_chg[iat][is].resize(maxL + 1);
 	        for (int L = 0; L <= maxL; L++)
             {
-                int nchi = this->cell_index_.get_nchi(iat, L);
+                int nchi = this->cell_index_->get_nchi(iat, L);
                 orb_chg[iat][is][L].resize(nchi);
-                for (int Z = 0; Z < this->cell_index_.get_nchi(iat, L); Z++)
+                for (int Z = 0; Z < this->cell_index_->get_nchi(iat, L); Z++)
                 {
                     orb_chg[iat][is][L][Z].resize(2*L + 1, 0.0);
                     for (int M = 0; M < (2*L + 1); M++)
@@ -467,7 +466,7 @@ void Output_Mulliken<TK>::collect_MW(ModuleBase::matrix& MecMulP,
 template <typename TK>
 void Output_Mulliken<TK>::print_atom_mag(const std::vector<std::vector<double>>& atom_chg, std::ostream& os)
 {
-    int nat = this->cell_index_.get_nat();
+    int nat = this->cell_index_->get_nat();
     std::vector<std::string> atom_label;
     std::vector<double> mag_x(nat, 0.0);
     std::vector<double> mag_y(nat, 0.0);
@@ -479,7 +478,7 @@ void Output_Mulliken<TK>::print_atom_mag(const std::vector<std::vector<double>>&
         FmtTable table(title, nat, fmts, {FmtTable::Align::RIGHT, FmtTable::Align::LEFT});
         for (int iat = 0; iat < nat; ++iat)
         {
-            atom_label.push_back(this->cell_index_.get_atom_label(iat, true));
+            atom_label.push_back(this->cell_index_->get_atom_label(iat, true));
             mag_z[iat] = atom_chg[iat][0] - atom_chg[iat][1];
         }
         table << atom_label << mag_z;
@@ -492,7 +491,7 @@ void Output_Mulliken<TK>::print_atom_mag(const std::vector<std::vector<double>>&
         FmtTable table(title, nat, fmts, {FmtTable::Align::RIGHT, FmtTable::Align::LEFT});
         for (int iat = 0; iat < nat; ++iat)
         {
-            atom_label.push_back(this->cell_index_.get_atom_label(iat, true));
+            atom_label.push_back(this->cell_index_->get_atom_label(iat, true));
             mag_x[iat] = atom_chg[iat][1];
             mag_y[iat] = atom_chg[iat][2];
             mag_z[iat] = atom_chg[iat][3];
@@ -513,7 +512,7 @@ void Output_Mulliken<TK>::print_atom_mag(const std::vector<std::vector<double>>&
 template <typename TK>
 std::vector<std::vector<double>> Output_Mulliken<TK>::get_atom_mulliken(std::vector<std::vector<double>>& atom_chg)
 {
-    int nat = this->cell_index_.get_nat();
+    int nat = this->cell_index_->get_nat();
     std::vector<std::vector<double>> atom_mulliken(nat, std::vector<double>(this->nspin_, 0.0));
     for (int iat = 0; iat < nat; iat++)
     {
@@ -546,7 +545,7 @@ template<>
 void Output_Mulliken<std::complex<double>>::cal_orbMulP(LCAO_Matrix* LM, const std::vector<std::vector<std::complex<double>>>& dm)
 {
     ModuleBase::TITLE("module_deltaspin", "cal_MW_k");
-    int nw = this->cell_index_.get_nw();
+    int nw = this->cell_index_->get_nw();
     const int nlocal = (this->nspin_ == 4) ? nw / 2 : nw;
     ModuleBase::matrix MecMulP(this->nspin_, nlocal, true);
     this->orbMulP_.create(this->nspin_, nlocal, true);
@@ -598,7 +597,7 @@ void Output_Mulliken<double>::cal_orbMulP(LCAO_Matrix* LM, const std::vector<std
 )
 {
     ModuleBase::TITLE("Mulliken_Charge", "cal_mulliken");
-    int nw = this->cell_index_.get_nw();
+    int nw = this->cell_index_->get_nw();
     const int nspin = (this->nspin_ == 2) ? 2 : 1;
     const int nlocal = (this->nspin_ == 4) ? nw / 2 : nw;
     // std::vector<std::vector<double>> MecMulP(GlobalV::NSPIN, std::vector<double>(nlocal, 0));
