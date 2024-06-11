@@ -42,6 +42,7 @@ private:
     std::vector<std::string> atomLabels;
     int npol_;
     void check_atomCounts();
+    int check_nspin(int nspin);
     int iat2it(int iat);
     int iat2ia(int iat);
 };
