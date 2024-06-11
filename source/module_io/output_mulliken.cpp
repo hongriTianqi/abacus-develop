@@ -3,6 +3,7 @@
 #include "module_base/formatter.h"
 #include "module_base/scalapack_connector.h"
 #include "module_base/name_angular.h"
+
 #include <numeric>
 
 namespace ModuleIO
@@ -58,39 +59,6 @@ void Output_Mulliken<TK>::write(int istep, std::string out_dir)
         ModuleBase::WARNING_QUIT("Output_Mulliken::write", "nspin must be 1, 2 or 4");
     }
     os.close();
-    /// write orbital info
-    this->write_orb_info(out_dir);
-}
-
-template <typename TK>
-void Output_Mulliken<TK>::write_orb_info(std::string out_dir)
-{
-    std::stringstream os;
-    os << out_dir << "Orbital";
-    std::ofstream out(os.str().c_str());
-    out << std::setw(5) << "#io" << std::setw(8) << "spec" << std::setw(5) << "l" << std::setw(5) << "m" << std::setw(5)
-        << "z" << std::setw(5) << "sym" << std::endl;
-
-    for (int iat = 0; iat < this->cell_index_.get_nat(); iat++)
-    {
-        for (int iw = 0; iw < this->cell_index_.get_nw(iat); ++iw)
-        {
-            const int L = this->cell_index_.iw2l(iat, iw);
-            const int Z = this->cell_index_.iw2z(iat, iw);
-            const int M = this->cell_index_.iw2m(iat, iw);
-            out << std::setw(5) << iat << std::setw(8) << this->cell_index_.get_atom_label(iat) << std::setw(5) << L
-                << std::setw(5) << M << std::setw(5) << Z + 1 << std::setw(15) << ModuleBase::Name_Angular[L][M]
-                << std::endl;
-        }
-    }
-    out << std::endl << std::endl;
-    out << std::setw(5) << "#io" << std::setw(2) << "=" << std::setw(2) << "Orbital index in supercell" << std::endl;
-    out << std::setw(5) << "#spec" << std::setw(2) << "=" << std::setw(2) << "Atomic species label" << std::endl;
-    out << std::setw(5) << "#l" << std::setw(2) << "=" << std::setw(2) << "Angular mumentum quantum number" << std::endl;
-    out << std::setw(5) << "#m" << std::setw(2) << "=" << std::setw(2) << "Magnetic quantum number" << std::endl;
-    out << std::setw(5) << "#z" << std::setw(2) << "=" << std::setw(2) << "Zeta index of orbital" << std::endl;
-    out << std::setw(5) << "#sym" << std::setw(2) << "=" << std::setw(2) << "Symmetry name of real orbital" << std::endl;
-    out.close();
 }
 
 template <typename TK>

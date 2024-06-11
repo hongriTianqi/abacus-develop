@@ -1,5 +1,6 @@
 #include "cell_index.h"
 #include "module_base/tool_quit.h"
+#include "module_base/name_angular.h"
 
 CellIndex::CellIndex(const UnitCell& ucell, const int& nspin)
 {
@@ -28,29 +29,6 @@ int CellIndex::get_nat()
 int CellIndex::get_nat(int it)
 {
     return this->atomCounts[it];
-}
-
-// get iat
-int CellIndex::get_iat(int itype, int atom_index)
-{
-    if (itype < 0 || itype >= this->get_ntype())
-    {
-        ModuleBase::WARNING_QUIT("CellIndex::get_iat","itype out of range [0, ntype)");
-    }
-    if (atom_index < 0 || atom_index >= this->atomCounts[itype])
-    {
-        ModuleBase::WARNING_QUIT("CellIndex::get_iat","atom index out of range [0, nat)");
-    }
-    int iat = 0;
-    for (int it = 0; it < this->atomCounts.size(); ++it) {
-        if (it == itype)
-        {
-            break;
-        }
-        iat += this->atomCounts[it];
-    }
-    iat += atom_index;
-    return iat;
 }
 
 int CellIndex::get_nw()
@@ -236,4 +214,34 @@ int CellIndex::check_nspin(int nspin)
         ModuleBase::WARNING_QUIT("CellIndex::check_nspin","nspin must be 1, 2, or 4");
     }
     return nspin;
+}
+
+void CellIndex::write_orb_info(std::string out_dir)
+{
+    std::stringstream os;
+    os << out_dir << "Orbital";
+    std::ofstream out(os.str().c_str());
+    out << std::setw(5) << "#io" << std::setw(8) << "spec" << std::setw(5) << "l" << std::setw(5) << "m" << std::setw(5)
+        << "z" << std::setw(5) << "sym" << std::endl;
+
+    for (int iat = 0; iat < this->get_nat(); iat++)
+    {
+        for (int iw = 0; iw < this->get_nw(iat); ++iw)
+        {
+            const int L = this->iw2l(iat, iw);
+            const int Z = this->iw2z(iat, iw);
+            const int M = this->iw2m(iat, iw);
+            out << std::setw(5) << iat << std::setw(8) << this->get_atom_label(iat) << std::setw(5) << L
+                << std::setw(5) << M << std::setw(5) << Z + 1 << std::setw(15) << ModuleBase::Name_Angular[L][M]
+                << std::endl;
+        }
+    }
+    out << std::endl << std::endl;
+    out << std::setw(5) << "#io" << std::setw(2) << "=" << std::setw(2) << "Orbital index in supercell" << std::endl;
+    out << std::setw(5) << "#spec" << std::setw(2) << "=" << std::setw(2) << "Atomic species label" << std::endl;
+    out << std::setw(5) << "#l" << std::setw(2) << "=" << std::setw(2) << "Angular mumentum quantum number" << std::endl;
+    out << std::setw(5) << "#m" << std::setw(2) << "=" << std::setw(2) << "Magnetic quantum number" << std::endl;
+    out << std::setw(5) << "#z" << std::setw(2) << "=" << std::setw(2) << "Zeta index of orbital" << std::endl;
+    out << std::setw(5) << "#sym" << std::setw(2) << "=" << std::setw(2) << "Symmetry name of real orbital" << std::endl;
+    out.close();
 }

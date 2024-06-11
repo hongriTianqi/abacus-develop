@@ -13,38 +13,47 @@ public:
     int get_nat();
     /// @brief the total number of atoms of a given type
     int get_nat(int it);
-    /// get ntype
+    /// @brief get ntype
     int get_ntype();
-    /// get iat
-    int get_iat(int itype, int atom_index);
-    /// get nw
+    /// @brief get nw
     int get_nw();
-    /// get nw of a given type
+    /// @brief get nw of a given type
     int get_nw(int iat);
-    /// get iwt
+    /// @brief get iwt
     int get_iwt(int iat, int orbital_index);
-    /// check atomCounts
+    /// @brief get maximum L of a given atom
     int get_maxL(int iat);
-    /// @brief  get nchi
+    /// @brief  get nchi of a given atom and a give L
     int get_nchi(int iat, int L);
-    /// get atom label
+    /// @brief get atom label of a given atom
     std::string get_atom_label(int iat, bool order=false);
+    /// @brief write orbital info into file
+    void write_orb_info(std::string out_dir);
+private:
+    /// atomCounts is a vector used to store the number of atoms for each type
+    std::vector<int> atomCounts;
+    /// orbitalCounts is a vector used to store the number of orbitals for each type
+    std::vector<int> orbitalCounts;
+    /// lnchiCounts is a vector used to store the number of chi for each L
+    std::vector<std::vector<int>> lnchiCounts;
+    /// atomLabels is a vector used to store the atom labels
+    std::vector<std::string> atomLabels;
+    /// npol is determined by nspin and used in get_iwt and get_nw
+    int npol_;
+    /// check nspin
+    int check_nspin(int nspin);
+    /// check if atomCounts is set ok
+    void check_atomCounts();
+    /// get type of atom from total order
+    int iat2it(int iat);
+    /// get index of atom in the same type
+    int iat2ia(int iat);
     /// get L from iw
     int iw2l(int iat, int iw);
     /// get Z from iw
     int iw2z(int iat, int iw);
     /// get m from iw
     int iw2m(int iat, int iw);
-private:
-    std::vector<int> atomCounts;
-    std::vector<int> orbitalCounts;
-    std::vector<std::vector<int>> lnchiCounts;
-    std::vector<std::string> atomLabels;
-    int npol_;
-    void check_atomCounts();
-    int check_nspin(int nspin);
-    int iat2it(int iat);
-    int iat2ia(int iat);
 };
 
 

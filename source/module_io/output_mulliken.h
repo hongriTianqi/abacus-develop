@@ -37,8 +37,6 @@ public:
     std::vector<std::vector<double>> get_atom_chg();
     /// get orbital charge
     std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>> get_orb_chg();
-    /// write orbital info
-    void write_orb_info(std::string out_dir);
     /// an empty write function
     void write() override;
     /// returun atom_mulliken for updateing STRU file

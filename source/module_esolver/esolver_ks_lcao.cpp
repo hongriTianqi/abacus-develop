@@ -1332,6 +1332,8 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
             GlobalC::ucell.atom_mulliken = mulp.get_atom_mulliken(atom_chg);
             if (GlobalV::MY_RANK == 0)
             {
+                /// write the Orbital file
+                cell_index.write_orb_info(GlobalV::global_out_dir);
                 /// write mulliken.txt
                 mulp.write(istep, GlobalV::global_out_dir);
                 /// write atomic mag info in running log file
