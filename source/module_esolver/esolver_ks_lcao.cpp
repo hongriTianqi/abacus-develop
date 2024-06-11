@@ -1329,10 +1329,10 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
                     this->kv.get_nks());
             auto out_dmk = ModuleIO::Output_DMK<TK>(dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM());
             auto mulp = ModuleIO::Output_Mulliken<TK>(&(out_sk),
+                    &(out_dmk),
                     &(this->orb_con.ParaV),
                     &cell_index,
                     this->kv.isk,
-                    dm,
                     GlobalV::NSPIN);
             auto atom_chg = mulp.get_atom_chg();
             /// used in updating mag info in STRU file

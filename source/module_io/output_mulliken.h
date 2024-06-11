@@ -24,10 +24,10 @@ public:
     /// constructor of Output_Mulliken
     Output_Mulliken(
         Output_Sk<TK>* output_sk,
+        Output_DMK<TK>* output_dmk,
         Parallel_Orbitals *ParaV,
         CellIndex* cell_index,
         const std::vector<int>& isk,
-        const std::vector<std::vector<TK>>& dm,
         int nspin);
     /// the outer interface to write the Mulliken population charges
     void write(int istep, std::string out_dir);
@@ -73,17 +73,17 @@ private:
     /// collect_mw from matrix multiplication result
     void collect_MW(ModuleBase::matrix& MecMulP, const ModuleBase::ComplexMatrix& mud, int nw, int isk);
     /// mulliken population = trace(dm*overlap)
-    void cal_orbMulP(const std::vector<std::vector<TK>>& dm);
+    void cal_orbMulP();
 
 private:
     /******************************************************************
      * private variables
     *******************************************************************/
     Output_Sk<TK>* output_sk_ = nullptr;
+    Output_DMK<TK>* output_dmk_ = nullptr;
     Parallel_Orbitals *ParaV_ = nullptr;
     CellIndex* cell_index_;
     const std::vector<int>& isk_;
-    const std::vector<std::vector<TK>>& dm_;
     int nspin_;
     ModuleBase::matrix orbMulP_;
 };

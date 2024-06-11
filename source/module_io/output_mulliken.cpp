@@ -12,16 +12,16 @@ namespace ModuleIO
 template <typename TK>
 Output_Mulliken<TK>::Output_Mulliken(
     Output_Sk<TK>* output_sk,
+    Output_DMK<TK>* output_dmk,
     Parallel_Orbitals *ParaV,
     CellIndex* cell_index,
     const std::vector<int>& isk,
-    const std::vector<std::vector<TK>>& dm,
     int nspin)
-    : output_sk_(output_sk), ParaV_(ParaV), cell_index_(cell_index), isk_(isk), dm_(dm), nspin_(nspin)
+    : output_sk_(output_sk), output_dmk_(output_dmk), ParaV_(ParaV), cell_index_(cell_index), isk_(isk), nspin_(nspin)
 {
     this->set_nspin(nspin);
     this->set_ParaV(ParaV);
-    this->cal_orbMulP(dm);
+    this->cal_orbMulP();
 }
 
 template <typename TK>
@@ -542,7 +542,7 @@ std::vector<std::vector<double>> Output_Mulliken<TK>::get_atom_mulliken(std::vec
 
 
 template<>
-void Output_Mulliken<std::complex<double>>::cal_orbMulP(const std::vector<std::vector<std::complex<double>>>& dm)
+void Output_Mulliken<std::complex<double>>::cal_orbMulP()
 {
     ModuleBase::TITLE("module_deltaspin", "cal_MW_k");
     int nw = this->cell_index_->get_nw();
@@ -552,6 +552,7 @@ void Output_Mulliken<std::complex<double>>::cal_orbMulP(const std::vector<std::v
     for(size_t ik = 0; ik != this->isk_.size(); ++ik)
     {
         auto p_Sk = this->output_sk_->get_Sk(ik);
+        auto p_DMk = this->output_dmk_->get_DMK(ik);
         ModuleBase::ComplexMatrix mud(this->ParaV_->ncol, this->ParaV_->nrow, true);
 #ifdef __MPI
         const char T_char = 'T';
@@ -564,7 +565,7 @@ void Output_Mulliken<std::complex<double>>::cal_orbMulP(const std::vector<std::v
                 &nw,
                 &nw,
                 &one_float,
-                dm[ik].data(),
+                p_DMk,
                 &one_int,
                 &one_int,
                 this->ParaV_->desc,
@@ -586,8 +587,7 @@ void Output_Mulliken<std::complex<double>>::cal_orbMulP(const std::vector<std::v
 }
 
 template<>
-void Output_Mulliken<double>::cal_orbMulP(const std::vector<std::vector<double>> &dm
-)
+void Output_Mulliken<double>::cal_orbMulP()
 {
     ModuleBase::TITLE("Mulliken_Charge", "cal_mulliken");
     int nw = this->cell_index_->get_nw();
@@ -602,6 +602,7 @@ void Output_Mulliken<double>::cal_orbMulP(const std::vector<std::vector<double>>
     {
         ModuleBase::matrix mud;
         auto p_Sk = this->output_sk_->get_Sk(0);
+        auto p_DMk = this->output_dmk_->get_DMK(0);
         mud.create(this->ParaV_->ncol, this->ParaV_->nrow);
 #ifdef __MPI
         const char T_char = 'T';
@@ -614,7 +615,7 @@ void Output_Mulliken<double>::cal_orbMulP(const std::vector<std::vector<double>>
                 &nw,
                 &nw,
                 &one_float,
-                dm[is].data(),
+                p_DMk,
                 &one_int,
                 &one_int,
                 this->ParaV_->desc,
