@@ -609,7 +609,7 @@ void Output_Mulliken<double>::cal_orbMulP(LCAO_Matrix* LM, const std::vector<std
     for(size_t is=0; is!=nspin; ++is)
     {
         ModuleBase::matrix mud;
-        mud.create(LM->ParaV->ncol, LM->ParaV->nrow);
+        mud.create(this->ParaV_->ncol, this->ParaV_->nrow);
 #ifdef __MPI
         const char T_char = 'T';
         const char N_char = 'N';
@@ -624,7 +624,7 @@ void Output_Mulliken<double>::cal_orbMulP(LCAO_Matrix* LM, const std::vector<std
                 dm[is].data(),
                 &one_int,
                 &one_int,
-                LM->ParaV->desc,
+                this->ParaV_->desc,
                 LM->Sloc.data(),
                 &one_int,
                 &one_int,
@@ -633,21 +633,21 @@ void Output_Mulliken<double>::cal_orbMulP(LCAO_Matrix* LM, const std::vector<std
                 mud.c,
                 &one_int,
                 &one_int,
-                LM->ParaV->desc);
+                this->ParaV_->desc);
         if(this->nspin_ == 1 || this->nspin_ == 2)
         {
             for(size_t i=0; i!=GlobalV::NLOCAL; ++i)
-                if(LM->ParaV->in_this_processor(i, i))
+                if(this->ParaV_->in_this_processor(i, i))
                 {
-                    const int ir = LM->ParaV->global2local_row(i);
-                    const int ic = LM->ParaV->global2local_col(i);
+                    const int ir = this->ParaV_->global2local_row(i);
+                    const int ic = this->ParaV_->global2local_col(i);
                     MecMulP(is, i) += mud(ic, ir);
                 }
         }
 #endif
     }
 #ifdef __MPI 
-    MPI_Reduce(MecMulP.c, this->orbMulP_.c, GlobalV::NSPIN*nlocal, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
+    MPI_Reduce(MecMulP.c, this->orbMulP_.c, this->nspin_*nlocal, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
 #endif 
 }
 
