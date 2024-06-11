@@ -10,6 +10,7 @@
 #include "module_basis/module_ao/parallel_orbitals.h"
 #include "module_cell/unitcell.h"
 #include "module_cell/cell_index.h"
+#include "module_io/output_sk.h"
 
 namespace ModuleIO
 {
@@ -21,8 +22,7 @@ class Output_Mulliken : public Output_Interface
 public:
     /// constructor of Output_Mulliken
     Output_Mulliken(
-        LCAO_Matrix* LM,
-        hamilt::Hamilt<TK>* p_hamilt,
+        Output_Sk<TK>* output_sk,
         Parallel_Orbitals *ParaV,
         CellIndex* cell_index,
         const std::vector<int>& isk,
@@ -72,14 +72,13 @@ private:
     /// collect_mw from matrix multiplication result
     void collect_MW(ModuleBase::matrix& MecMulP, const ModuleBase::ComplexMatrix& mud, int nw, int isk);
     /// mulliken population = trace(dm*overlap)
-    void cal_orbMulP(LCAO_Matrix* LM, const std::vector<std::vector<TK>>& dm);
+    void cal_orbMulP(const std::vector<std::vector<TK>>& dm);
 
 private:
     /******************************************************************
      * private variables
     *******************************************************************/
-    LCAO_Matrix* LM_ = nullptr;
-    hamilt::Hamilt<TK>* p_hamilt_ = nullptr;
+    Output_Sk<TK>* output_sk_ = nullptr;
     Parallel_Orbitals *ParaV_ = nullptr;
     CellIndex* cell_index_;
     const std::vector<int>& isk_;
