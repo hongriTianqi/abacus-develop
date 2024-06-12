@@ -182,10 +182,9 @@ AddTest(
 
 AddTest(
   TARGET io_mulliken_test
-  LIBS base ${math_libs} device cell_info
+  LIBS base ${math_libs} device
   SOURCES output_mulliken_test.cpp output_mulliken_mock.cpp ../output_mulliken.cpp
   ../../module_cell/cell_index.cpp
   ../../module_basis/module_ao/parallel_2d.cpp
   ../../module_basis/module_ao/parallel_orbitals.cpp
-  ../output.cpp
 )
