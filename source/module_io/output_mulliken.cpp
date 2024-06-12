@@ -601,8 +601,8 @@ void Output_Mulliken<double>::cal_orbMulP()
     for(size_t is=0; is!=nspin; ++is)
     {
         ModuleBase::matrix mud;
-        auto p_Sk = this->output_sk_->get_Sk(0);
-        auto p_DMk = this->output_dmk_->get_DMK(0);
+        auto p_Sk = this->output_sk_->get_Sk(is);
+        auto p_DMk = this->output_dmk_->get_DMK(is);
         mud.create(this->ParaV_->ncol, this->ParaV_->nrow);
 #ifdef __MPI
         const char T_char = 'T';

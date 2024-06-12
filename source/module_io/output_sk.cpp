@@ -17,9 +17,9 @@ Output_Sk<TK>::Output_Sk(LCAO_Matrix* LM,
 template <>
 double* Output_Sk<double>::get_Sk(int ik)
 {
-    if (ik != 0)
+    if (ik < 0 || ik >= this->nks_)
     {
-        ModuleBase::WARNING_QUIT("Output_Sk::get_sk", "ik must be 0 for double type");
+        ModuleBase::WARNING_QUIT("Output_Sk::get_sk", "ik out of range");
     }
     return this->LM_->Sloc.data();
 }
