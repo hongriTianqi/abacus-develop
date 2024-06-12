@@ -1,3 +1,62 @@
+#include <fstream>
+#include <vector>
+#include <string>
+#include <sstream>
+#include <iostream>
+
+namespace ModuleIO
+{
+
+std::vector<double> read_k(std::string filename, int ik)
+{
+    std::ifstream skFile(filename);
+    // Initialize variables for file parsing
+    std::string line;
+    int nrow = 0;
+    int ncol = 0;
+
+    // find ik before read the following
+    while (std::getline(skFile, line)) {
+        if (line.rfind("# k-point", 0) == 0) {
+            std::istringstream ss(line.substr(9)); // 9 to skip "# k-point"
+            int ik_read;
+            ss >> ik_read;
+            if (ik_read == ik) {
+                break;
+            }
+        }
+    }
+
+    // Read the file comments, begin parsing when nrow and ncol are found
+    while (std::getline(skFile, line)) {
+        if (line.rfind("# nrow", 0) == 0) {
+            std::istringstream ss(line.substr(7)); // 7 to skip "# nrow "
+            ss >> nrow;
+        } else if (line.rfind("# ncol", 0) == 0) {
+            std::istringstream ss(line.substr(7)); // 7 to skip "# ncol "
+            ss >> ncol;
+            break;
+        }
+    }
+
+    // Initialize a vector of size nrow * ncol with default values of 0.0
+    std::vector<double> matrix(nrow * ncol, 0.0);
+
+    // Read the rest of the file and populate the vector
+    int index;
+    double value;
+    while (skFile >> index >> value) {
+        if (index >= 0 && index < nrow * ncol) {
+            matrix[index] = value;
+        }
+    }
+
+    skFile.close();
+    return matrix;
+}
+
+}
+
 #include "module_io/output_dmk.h"
 #include "module_io/output_sk.h"
 
@@ -7,16 +66,38 @@ namespace ModuleIO
 template <typename TK>
 Output_DMK<TK>::Output_DMK(elecstate::DensityMatrix<TK,double>* p_DM,
     Parallel_Orbitals *ParaV,
+    int nspin,
     int nks)
-    : p_DM_(p_DM), ParaV_(ParaV), nks_(nks)
+    : p_DM_(p_DM), ParaV_(ParaV), nspin_(nspin), nks_(nks)
 {
 }
 
 template <typename TK>
 TK* Output_DMK<TK>::get_DMK(int ik)
 {
-    TK* p_DMK = nullptr;
-    return p_DMK;
+    if (this->nspin_ == 1)
+    {
+        std::vector<double> dmk = read_k("./support/DMK_nspin1", ik);
+        ///convert sk to TK
+        this->DMK.resize(dmk.size());
+        for (size_t i = 0; i < dmk.size(); i++)
+        {
+            this->DMK[i] = dmk[i];
+            //std::cout << "DMK[" << i << "] = " << DMK[i] << std::endl;
+        }
+    }
+    else if (this->nspin_ == 2)
+    {
+        std::vector<double> dmk = read_k("./support/DMK_nspin2", ik);
+        ///convert sk to TK
+        this->DMK.resize(dmk.size());
+        for (size_t i = 0; i < dmk.size(); i++)
+        {
+            this->DMK[i] = dmk[i];
+            //std::cout << "DMK[" << i << "] = " << DMK[i] << std::endl;
+        }
+    }
+    return this->DMK.data();
 }
 
 template <typename TK>
@@ -40,9 +121,29 @@ Output_Sk<TK>::Output_Sk(LCAO_Matrix* LM,
 template <typename TK>
 TK* Output_Sk<TK>::get_Sk(int ik)
 {
-    TK* p_Sk = nullptr;
-    return p_Sk;
-    
+    if (this->nspin_ == 1)
+    {
+        std::vector<double> sk = read_k("./support/SK_nspin1", ik);
+        ///convert sk to TK
+        this->SK.resize(sk.size());
+        for (size_t i = 0; i < sk.size(); i++)
+        {
+            this->SK[i] = sk[i];
+            //std::cout << "SK[" << i << "] = " << SK[i] << std::endl;
+        }
+    }
+    else if (this->nspin_ == 2)
+    {
+        std::vector<double> sk = read_k("./support/SK_nspin2", ik);
+        ///convert sk to TK
+        this->SK.resize(sk.size());
+        for (size_t i = 0; i < sk.size(); i++)
+        {
+            this->SK[i] = sk[i];
+            //std::cout << "SK[" << i << "] = " << SK[i] << std::endl;
+        }
+    }
+    return this->SK.data();
 }
 
 template <typename TK>

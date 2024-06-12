@@ -22,6 +22,7 @@ private:
     Parallel_Orbitals *ParaV_ = nullptr;
     int nks_;
     int nspin_;
+    std::vector<TK> DMK;
 };
     
 } // namespace ModuleIO
