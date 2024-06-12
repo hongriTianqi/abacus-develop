@@ -1,27 +1,7 @@
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
-#include "module_base/mathzone.h"
-#include "module_cell/unitcell.h"
-#include "prepare_unitcell.h"
 #include "module_cell/cell_index.h"
-
-#ifdef __LCAO
-#include "module_basis/module_ao/ORB_read.h"
-InfoNonlocal::InfoNonlocal(){}
-InfoNonlocal::~InfoNonlocal(){}
-LCAO_Orbitals::LCAO_Orbitals(){}
-LCAO_Orbitals::~LCAO_Orbitals(){}
-#endif
-Magnetism::Magnetism()
-{
-	this->tot_magnetization = 0.0;
-	this->abs_magnetization = 0.0;
-	this->start_magnetization = nullptr;
-}
-Magnetism::~Magnetism()
-{
-	delete[] this->start_magnetization;
-}
+#include <fstream>
 
 /************************************************
  *  unit test of class CellIndex
@@ -34,20 +14,16 @@ Magnetism::~Magnetism()
 
 class CellIndexTest : public testing::Test
 {
-    protected:
-	std::unique_ptr<UnitCell> ucell{new UnitCell};
-	std::string output;
+protected:
+    std::vector<std::string> atom_labels = {"C", "H"};
+    std::vector<int> atom_counts = {1, 2};
+    std::vector<int> orbital_counts = {9, 9};
+    std::vector<std::vector<int>> lnchi_counts = {{1, 3, 5}, {1, 3, 5}};
+    CellIndex cell_index = CellIndex(atom_labels, atom_counts, orbital_counts, lnchi_counts, 1);
 };
 
 TEST_F(CellIndexTest, Index)
 {
-    UcellTestPrepare utp = UcellTestLib["C1H2-Index"];
-    ucell = utp.SetUcellInfo();
-    auto cell_index = CellIndex((*ucell).get_atomLabels(),
-                (*ucell).get_atomCounts(),
-                (*ucell).get_orbitalCounts(),
-                (*ucell).get_lnchiCounts(),
-                1);
     EXPECT_EQ(2, cell_index.get_ntype());
     EXPECT_EQ(3, cell_index.get_nat());
     EXPECT_EQ(1, cell_index.get_nat(0));
@@ -68,13 +44,6 @@ TEST_F(CellIndexTest, Index)
 
 TEST_F(CellIndexTest, WriteOrbInfo)
 {
-    UcellTestPrepare utp = UcellTestLib["C1H2-Index"];
-    ucell = utp.SetUcellInfo();
-    auto cell_index = CellIndex((*ucell).get_atomLabels(),
-                (*ucell).get_atomCounts(),
-                (*ucell).get_orbitalCounts(),
-                (*ucell).get_lnchiCounts(),
-                1);
     cell_index.write_orb_info("./");
     std::ifstream ifs("./Orbital");
     std::string str((std::istreambuf_iterator<char>(ifs)),std::istreambuf_iterator<char>());
