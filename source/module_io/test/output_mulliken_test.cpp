@@ -17,9 +17,13 @@ class OutputMullikenTest : public testing::Test
 using MyTypes = ::testing::Types<double, std::complex<double>>;
 TYPED_TEST_SUITE(OutputMullikenTest, MyTypes);
 
-TYPED_TEST(OutputMullikenTest, EmptyWrite)
+TYPED_TEST(OutputMullikenTest, OrbInfo)
 {
     CellIndex cell_index = CellIndex(this->atomLabels, this->atomCounts, this->lnchiCounts, 1);
     cell_index.write_orb_info("./");
-    EXPECT_EQ(1, 1);
+    std::ifstream ifs("./Orbital");
+    std::string str((std::istreambuf_iterator<char>(ifs)),std::istreambuf_iterator<char>());
+    EXPECT_THAT(str, testing::HasSubstr("#io    spec    l    m    z  sym"));
+    EXPECT_THAT(str, testing::HasSubstr("0      Si    2    3    1       dx^2-y^2"));
+    remove("./Orbital");
 }
