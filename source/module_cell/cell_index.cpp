@@ -2,12 +2,16 @@
 #include "module_base/tool_quit.h"
 #include "module_base/name_angular.h"
 
-CellIndex::CellIndex(const UnitCell& ucell, const int& nspin)
+CellIndex::CellIndex(const std::vector<std::string>& atomLabels_in,
+        const std::vector<int>& atomCounts_in,
+        const std::vector<int>& orbitalCounts_in,
+        const std::vector<std::vector<int>>& lnchiCounts_in,
+        const int& nspin)
+        : atomLabels(atomLabels_in),
+          atomCounts(atomCounts_in),
+          orbitalCounts(orbitalCounts_in),
+          lnchiCounts(lnchiCounts_in)
 {
-    this->atomLabels = ucell.get_atomLabels();
-    this->atomCounts = ucell.get_atomCounts();
-    this->orbitalCounts = ucell.get_orbitalCounts();
-    this->lnchiCounts = ucell.get_lnchiCounts();
     if (this->check_nspin(nspin))
     {
         this->npol_ = (nspin == 4) ? 2 : 1;

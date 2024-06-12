@@ -1,13 +1,18 @@
 #ifndef CELL_INDEX_H
 #define CELL_INDEX_H
 #include <map>
-#include "module_cell/unitcell.h"
+#include <vector>
+#include <string>
 
 class CellIndex
 {
 public:
     CellIndex() = default;
-    CellIndex(const UnitCell& ucell, const int& nspin);
+    CellIndex(const std::vector<std::string>& atomLabels_in,
+        const std::vector<int>& atomCounts_in,
+        const std::vector<int>& orbitalCounts_in,
+        const std::vector<std::vector<int>>& lnchiCounts_in,
+        const int& nspin);
 public:
     /// @brief the total number of atoms
     int get_nat();

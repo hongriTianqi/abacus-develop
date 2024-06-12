@@ -43,7 +43,11 @@ TEST_F(CellIndexTest, Index)
 {
     UcellTestPrepare utp = UcellTestLib["C1H2-Index"];
     ucell = utp.SetUcellInfo();
-    auto cell_index = CellIndex(*ucell, 1);
+    auto cell_index = CellIndex((*ucell).get_atomLabels(),
+                (*ucell).get_atomCounts(),
+                (*ucell).get_orbitalCounts(),
+                (*ucell).get_lnchiCounts(),
+                1);
     EXPECT_EQ(2, cell_index.get_ntype());
     EXPECT_EQ(3, cell_index.get_nat());
     EXPECT_EQ(1, cell_index.get_nat(0));
@@ -66,7 +70,11 @@ TEST_F(CellIndexTest, WriteOrbInfo)
 {
     UcellTestPrepare utp = UcellTestLib["C1H2-Index"];
     ucell = utp.SetUcellInfo();
-    auto cell_index = CellIndex(*ucell, 1);
+    auto cell_index = CellIndex((*ucell).get_atomLabels(),
+                (*ucell).get_atomCounts(),
+                (*ucell).get_orbitalCounts(),
+                (*ucell).get_lnchiCounts(),
+                1);
     cell_index.write_orb_info("./");
     std::ifstream ifs("./Orbital");
     std::string str((std::istreambuf_iterator<char>(ifs)),std::istreambuf_iterator<char>());

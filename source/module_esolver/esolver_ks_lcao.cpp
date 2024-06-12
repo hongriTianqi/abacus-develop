@@ -1319,21 +1319,23 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
         // GlobalV::mulliken charge analysis
         if (GlobalV::out_mul)
         {
-            const std::vector<std::vector<TK>>& dm
-            = dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM()->get_DMK_vector();
-            auto cell_index = CellIndex(GlobalC::ucell, GlobalV::NSPIN);
+            auto cell_index = CellIndex(GlobalC::ucell.get_atomLabels(),
+                            GlobalC::ucell.get_atomCounts(),
+                            GlobalC::ucell.get_orbitalCounts(),
+                            GlobalC::ucell.get_lnchiCounts(),
+                            GlobalV::NSPIN);
             auto out_sk = ModuleIO::Output_Sk<TK>(&(this->LM),
-                    this->p_hamilt,
-                    &(this->orb_con.ParaV),
-                    GlobalV::NSPIN,
-                    this->kv.get_nks());
+                            this->p_hamilt,
+                            &(this->orb_con.ParaV),
+                            GlobalV::NSPIN,
+                            this->kv.get_nks());
             auto out_dmk = ModuleIO::Output_DMK<TK>(dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM());
             auto mulp = ModuleIO::Output_Mulliken<TK>(&(out_sk),
-                    &(out_dmk),
-                    &(this->orb_con.ParaV),
-                    &cell_index,
-                    this->kv.isk,
-                    GlobalV::NSPIN);
+                            &(out_dmk),
+                            &(this->orb_con.ParaV),
+                            &cell_index,
+                            this->kv.isk,
+                            GlobalV::NSPIN);
             auto atom_chg = mulp.get_atom_chg();
             /// used in updating mag info in STRU file
             GlobalC::ucell.atom_mulliken = mulp.get_atom_mulliken(atom_chg);
