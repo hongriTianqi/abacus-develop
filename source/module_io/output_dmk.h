@@ -13,6 +13,7 @@ class Output_DMK : public Output_Interface
 public:
     Output_DMK(elecstate::DensityMatrix<TK,double>* p_DM,
         Parallel_Orbitals *ParaV,
+        int nspin,
         int nks);
     TK* get_DMK(int ik);
     void write() override;
@@ -20,6 +21,7 @@ private:
     elecstate::DensityMatrix<TK,double>* p_DM_ = nullptr;
     Parallel_Orbitals *ParaV_ = nullptr;
     int nks_;
+    int nspin_;
 };
     
 } // namespace ModuleIO
