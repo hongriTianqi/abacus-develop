@@ -179,3 +179,13 @@ AddTest(
   LIBS base ${math_libs} device numerical_atomic_orbitals container orb
   SOURCES numerical_basis_test.cpp ../numerical_basis_jyjy.cpp
 )
+
+AddTest(
+  TARGET io_mulliken_test
+  LIBS base ${math_libs} device cell_info
+  SOURCES output_mulliken_test.cpp output_mulliken_mock.cpp ../output_mulliken.cpp
+  ../../module_cell/cell_index.cpp
+  ../../module_basis/module_ao/parallel_2d.cpp
+  ../../module_basis/module_ao/parallel_orbitals.cpp
+  ../output.cpp
+)
