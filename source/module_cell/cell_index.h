@@ -10,7 +10,6 @@ public:
     CellIndex() = default;
     CellIndex(const std::vector<std::string>& atomLabels_in,
         const std::vector<int>& atomCounts_in,
-        const std::vector<int>& orbitalCounts_in,
         const std::vector<std::vector<int>>& lnchiCounts_in,
         const int& nspin);
 public:
@@ -45,6 +44,8 @@ private:
     std::vector<std::string> atomLabels;
     /// npol is determined by nspin and used in get_iwt and get_nw
     int npol_;
+    /// calculate orbitalCounts from lnchiCounts
+    void cal_orbitalCounts();
     /// check nspin
     bool check_nspin(int nspin);
     /// check if atomCounts is set ok

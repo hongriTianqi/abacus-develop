@@ -1321,7 +1321,6 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
         {
             auto cell_index = CellIndex(GlobalC::ucell.get_atomLabels(),
                             GlobalC::ucell.get_atomCounts(),
-                            GlobalC::ucell.get_orbitalCounts(),
                             GlobalC::ucell.get_lnchiCounts(),
                             GlobalV::NSPIN);
             auto out_sk = ModuleIO::Output_Sk<TK>(&(this->LM),

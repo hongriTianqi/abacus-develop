@@ -362,16 +362,6 @@ std::vector<int> UnitCell::get_atomCounts() const
 	return atomCounts;
 }
 
-std::vector<int> UnitCell::get_orbitalCounts() const
-{
-	std::vector<int> orbitalCounts(this->ntype);
-	for (int it = 0; it < this->ntype; it++)
-	{
-		orbitalCounts[it] = this->atoms[it].nw;
-	}
-	return orbitalCounts;
-}
-
 std::vector<std::vector<int>> UnitCell::get_lnchiCounts() const
 {
     std::vector<std::vector<int>> lnchiCounts(this->ntype);

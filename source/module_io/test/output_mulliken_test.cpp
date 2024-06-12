@@ -11,7 +11,6 @@ class OutputMullikenTest : public testing::Test
   protected:
     std::vector<std::string> atomLabels = {"Si"};
     std::vector<int> atomCounts = {1};
-    std::vector<int> orbitalCounts = {13};
     std::vector<std::vector<int>> lnchiCounts = {{2, 2, 1}};
 };
 
@@ -20,7 +19,7 @@ TYPED_TEST_SUITE(OutputMullikenTest, MyTypes);
 
 TYPED_TEST(OutputMullikenTest, EmptyWrite)
 {
-    CellIndex cell_index = CellIndex(this->atomLabels, this->atomCounts, this->orbitalCounts, this->lnchiCounts, 1);
+    CellIndex cell_index = CellIndex(this->atomLabels, this->atomCounts, this->lnchiCounts, 1);
     cell_index.write_orb_info("./");
     EXPECT_EQ(1, 1);
 }

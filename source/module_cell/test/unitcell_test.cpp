@@ -596,10 +596,6 @@ TEST_F(UcellTest,GetOrbitalCounts)
 	std::map<int, int> orbitalCounts = ucell->get_orbital_Counts();
 	EXPECT_EQ(orbitalCounts[0],9);
 	EXPECT_EQ(orbitalCounts[1],9);
-	/// orbitalCounts as vector
-	std::vector<int> orbitalCounts2 = ucell->get_orbitalCounts();
-	EXPECT_EQ(orbitalCounts2[0],9);
-	EXPECT_EQ(orbitalCounts2[1],9);
 }
 
 TEST_F(UcellTest, GetLnchiCounts)

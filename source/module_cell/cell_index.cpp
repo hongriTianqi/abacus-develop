@@ -4,12 +4,10 @@
 
 CellIndex::CellIndex(const std::vector<std::string>& atomLabels_in,
         const std::vector<int>& atomCounts_in,
-        const std::vector<int>& orbitalCounts_in,
         const std::vector<std::vector<int>>& lnchiCounts_in,
         const int& nspin)
         : atomLabels(atomLabels_in),
           atomCounts(atomCounts_in),
-          orbitalCounts(orbitalCounts_in),
           lnchiCounts(lnchiCounts_in)
 {
     if (this->check_nspin(nspin))
@@ -17,6 +15,7 @@ CellIndex::CellIndex(const std::vector<std::string>& atomLabels_in,
         this->npol_ = (nspin == 4) ? 2 : 1;
     }
     this->check_atomCounts();
+    this->cal_orbitalCounts();
 }
 
 int CellIndex::get_ntype()
@@ -221,6 +220,19 @@ bool CellIndex::check_nspin(int nspin)
         ModuleBase::WARNING_QUIT("CellIndex::check_nspin","nspin must be 1, 2, or 4");
     }
     return true;
+}
+
+void CellIndex::cal_orbitalCounts()
+{
+    int ntype = this->lnchiCounts.size();
+    this->orbitalCounts.resize(ntype, 0);
+    for (int it = 0; it < ntype; ++it) {
+        int orbitalCount = 0;
+        for (int L = 0; L < this->lnchiCounts[it].size(); ++L) {
+            orbitalCount += this->lnchiCounts[it][L] * (2 * L + 1);
+        }
+        this->orbitalCounts[it] = orbitalCount;
+    }
 }
 
 void CellIndex::write_orb_info(std::string out_dir)

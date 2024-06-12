@@ -17,9 +17,8 @@ class CellIndexTest : public testing::Test
 protected:
     std::vector<std::string> atom_labels = {"C", "H"};
     std::vector<int> atom_counts = {1, 2};
-    std::vector<int> orbital_counts = {9, 9};
-    std::vector<std::vector<int>> lnchi_counts = {{1, 3, 5}, {1, 3, 5}};
-    CellIndex cell_index = CellIndex(atom_labels, atom_counts, orbital_counts, lnchi_counts, 1);
+    std::vector<std::vector<int>> lnchi_counts = {{1, 1, 1}, {1, 1, 1}};
+    CellIndex cell_index = CellIndex(atom_labels, atom_counts, lnchi_counts, 1);
 };
 
 TEST_F(CellIndexTest, Index)

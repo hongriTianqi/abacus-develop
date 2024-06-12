@@ -317,8 +317,6 @@ public:
     std::vector<std::string> get_atomLabels() const;
     /// @brief get atomCounts, which is a vector of element type with atom number
     std::vector<int> get_atomCounts() const;
-    /// @brief get orbitalCounts, which is a vector of element type with orbital number
-    std::vector<int> get_orbitalCounts() const;
     /// @brief get lnchiCounts, which is a vector of element type with the l:nchi vector
     std::vector<std::vector<int>> get_lnchiCounts() const;
 };
