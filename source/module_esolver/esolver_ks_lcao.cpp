@@ -1328,7 +1328,10 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
                             &(this->orb_con.ParaV),
                             GlobalV::NSPIN,
                             this->kv.get_nks());
-            auto out_dmk = ModuleIO::Output_DMK<TK>(dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM());
+            auto out_dmk = ModuleIO::Output_DMK<TK>(
+                            dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM(),
+                            &(this->orb_con.ParaV),
+                            this->kv.get_nks());
             auto mulp = ModuleIO::Output_Mulliken<TK>(&(out_sk),
                             &(out_dmk),
                             &(this->orb_con.ParaV),

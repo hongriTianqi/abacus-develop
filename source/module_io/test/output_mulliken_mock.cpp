@@ -5,8 +5,10 @@ namespace ModuleIO
 {
 
 template <typename TK>
-Output_DMK<TK>::Output_DMK(elecstate::DensityMatrix<TK,double>* p_DM)
-    : p_DM_(p_DM)
+Output_DMK<TK>::Output_DMK(elecstate::DensityMatrix<TK,double>* p_DM,
+    Parallel_Orbitals *ParaV,
+    int nks)
+    : p_DM_(p_DM), ParaV_(ParaV), nks_(nks)
 {
 }
 
