@@ -45,6 +45,8 @@ namespace ModuleESolver
 
         void get_S();
 
+        void cal_mag(const int istep, const bool print = false);
+
     protected:
 
         virtual void before_scf(const int istep) override;
