@@ -97,6 +97,24 @@ TK* Output_DMK<TK>::get_DMK(int ik)
             //std::cout << "DMK[" << i << "] = " << DMK[i] << std::endl;
         }
     }
+    else if (this->nspin_ == 4)
+    {
+        std::vector<double> dmk1 = read_k("./support/DMK_nspin2", 0);
+        std::vector<double> dmk2 = read_k("./support/DMK_nspin2", 1);
+        this->DMK.resize(dmk1.size()*4, 0.0);
+        for (size_t i = 0; i < dmk1.size(); i++)
+        {
+            /// sk1 is column-major, find ir and irc
+            int ir_nspin2 = i % (ParaV_->nrow / 2);
+            int ic_nspin2 = i / (ParaV_->nrow / 2);
+            int ir_nspin4 = ir_nspin2 * 2;
+            int ic_nspin4 = ic_nspin2 * 2;
+            int index_nspin4_up = ir_nspin4 + ic_nspin4 * ParaV_->nrow;
+            int index_nspin4_dn = ir_nspin4 + 1 + (ic_nspin4 + 1) * ParaV_->nrow;
+            this->DMK[index_nspin4_up] = dmk1[i];
+            this->DMK[index_nspin4_dn] = dmk2[i];
+        }
+    }
     return this->DMK.data();
 }
 
@@ -141,6 +159,24 @@ TK* Output_Sk<TK>::get_Sk(int ik)
         {
             this->SK[i] = sk[i];
             //std::cout << "SK[" << i << "] = " << SK[i] << std::endl;
+        }
+    }
+    else if (this->nspin_ == 4)
+    {
+        std::vector<double> sk1 = read_k("./support/SK_nspin2", 0);
+        std::vector<double> sk2 = read_k("./support/SK_nspin2", 1);
+        this->SK.resize(sk1.size()*4, 0.0);
+        for (size_t i = 0; i < sk1.size(); i++)
+        {
+            /// sk1 is column-major, find ir and irc
+            int ir_nspin2 = i % (ParaV_->nrow / 2);
+            int ic_nspin2 = i / (ParaV_->nrow / 2);
+            int ir_nspin4 = ir_nspin2 * 2;
+            int ic_nspin4 = ic_nspin2 * 2;
+            int index_nspin4_up = ir_nspin4 + ic_nspin4 * ParaV_->nrow;
+            int index_nspin4_dn = ir_nspin4 + 1 + (ic_nspin4 + 1) * ParaV_->nrow;
+            this->SK[index_nspin4_up] = sk1[i];
+            this->SK[index_nspin4_dn] = sk2[i];
         }
     }
     return this->SK.data();
