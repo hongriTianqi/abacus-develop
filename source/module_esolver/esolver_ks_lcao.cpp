@@ -1300,11 +1300,10 @@ void ESolver_KS_LCAO<TK, TR>::cal_mag(const int istep, const bool print)
                                 GlobalC::ucell.get_lnchiCounts(), GlobalV::NSPIN);
     auto out_sk = ModuleIO::Output_Sk<TK>(&(this->LM), this->p_hamilt, &(this->orb_con.ParaV), GlobalV::NSPIN,
                                           this->kv.get_nks());
-    auto out_dmk
-        = ModuleIO::Output_DMK<TK>(dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM(),
-                                   &(this->orb_con.ParaV), GlobalV::NSPIN, this->kv.get_nks());
-    auto mulp = ModuleIO::Output_Mulliken<TK>(&(out_sk), &(out_dmk), &(this->orb_con.ParaV), &cell_index,
-                                              this->kv.isk, GlobalV::NSPIN);
+    auto out_dmk = ModuleIO::Output_DMK<TK>(dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM(),
+                                            &(this->orb_con.ParaV), GlobalV::NSPIN, this->kv.get_nks());
+    auto mulp = ModuleIO::Output_Mulliken<TK>(&(out_sk), &(out_dmk), &(this->orb_con.ParaV), &cell_index, this->kv.isk,
+                                              GlobalV::NSPIN);
     auto atom_chg = mulp.get_atom_chg();
     /// used in updating mag info in STRU file
     GlobalC::ucell.atom_mulliken = mulp.get_atom_mulliken(atom_chg);
