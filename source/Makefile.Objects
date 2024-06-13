@@ -488,6 +488,8 @@ OBJS_IO_LCAO=cal_r_overlap_R.o\
       write_dm_sparse.o\
       sparse_matrix.o\
       output_mulliken.o\
+      output_sk.o\
+      output_dmk.o\
 
 OBJS_LCAO=DM_gamma.o\
       DM_gamma_2d_to_grid.o\
