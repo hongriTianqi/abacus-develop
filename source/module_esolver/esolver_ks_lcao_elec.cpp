@@ -17,6 +17,7 @@
 #include "module_hamilt_lcao/module_deepks/LCAO_deepks.h"
 #endif
 #include "module_elecstate/elecstate_lcao.h"
+#include "module_elecstate/module_dm/cal_dm_psi.h"
 #include "module_hamilt_general/module_ewald/H_Ewald_pw.h"
 #include "module_hamilt_general/module_vdw/vdw.h"
 #include "module_hamilt_lcao/hamilt_lcaodft/LCAO_domain.h"
@@ -580,6 +581,15 @@ void ESolver_KS_LCAO<TK, TR>::nscf(void)
 #endif // __MPI
 #endif // __EXX
 
+    if (GlobalV::out_mul)
+    {
+        // initalize DMR
+        // DMR should be same size with Hamiltonian(R)
+        dynamic_cast<elecstate::ElecStateLCAO<TK>*>(this->pelec)
+            ->get_DM()
+            ->init_DMR(*(dynamic_cast<hamilt::HamiltLCAO<TK, TR>*>(this->p_hamilt)->getHR()));
+    }
+
     // mohan add 2021-02-09
     // in ions, istep starts from 1,
     // then when the istep is a variable of scf or nscf,
@@ -702,6 +712,17 @@ void ESolver_KS_LCAO<TK, TR>::nscf(void)
 #endif
 
     this->create_Output_Mat_Sparse(0).write();
+
+    // mulliken charge analysis
+    if (GlobalV::out_mul)
+    {
+        elecstate::ElecStateLCAO<TK>* pelec_lcao
+        = dynamic_cast<elecstate::ElecStateLCAO<TK>*>(this->pelec);
+        this->pelec->calculate_weights();
+        this->pelec->calEBand();
+        elecstate::cal_dm_psi(&(this->orb_con.ParaV), pelec_lcao->wg, *(this->psi), *(pelec_lcao->get_DM()));
+        this->cal_mag(istep, true);
+    }
 
     return;
 }
