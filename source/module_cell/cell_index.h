@@ -1,18 +1,17 @@
 #ifndef CELL_INDEX_H
 #define CELL_INDEX_H
 #include <map>
-#include <vector>
 #include <string>
+#include <vector>
 
 class CellIndex
 {
-public:
+  public:
     CellIndex() = default;
-    CellIndex(const std::vector<std::string>& atomLabels_in,
-        const std::vector<int>& atomCounts_in,
-        const std::vector<std::vector<int>>& lnchiCounts_in,
-        const int& nspin);
-public:
+    CellIndex(const std::vector<std::string>& atomLabels_in, const std::vector<int>& atomCounts_in,
+              const std::vector<std::vector<int>>& lnchiCounts_in, const int& nspin);
+
+  public:
     /// @brief the total number of atoms
     int get_nat();
     /// @brief the total number of atoms of a given type
@@ -30,10 +29,11 @@ public:
     /// @brief  get nchi of a given atom and a give L
     int get_nchi(int iat, int L);
     /// @brief get atom label of a given atom
-    std::string get_atom_label(int iat, bool order=false);
+    std::string get_atom_label(int iat, bool order = false);
     /// @brief write orbital info into file
     void write_orb_info(std::string out_dir);
-private:
+
+  private:
     /// atomCounts is a vector used to store the number of atoms for each type
     std::vector<int> atomCounts;
     /// orbitalCounts is a vector used to store the number of orbitals for each type
@@ -61,6 +61,5 @@ private:
     /// get m from iw
     int iw2m(int iat, int iw);
 };
-
 
 #endif // CELL_INDEX_H

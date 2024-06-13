@@ -1,14 +1,15 @@
 #ifndef OUTPUT_MULLIKEN_H
 #define OUTPUT_MULLIKEN_H
-#include <map>
-#include <vector>
-#include "module_io/output_interface.h"
-#include "module_base/matrix.h"
 #include "module_base/complexmatrix.h"
+#include "module_base/matrix.h"
 #include "module_basis/module_ao/parallel_orbitals.h"
 #include "module_cell/cell_index.h"
-#include "module_io/output_sk.h"
 #include "module_io/output_dmk.h"
+#include "module_io/output_interface.h"
+#include "module_io/output_sk.h"
+
+#include <map>
+#include <vector>
 
 namespace ModuleIO
 {
@@ -17,15 +18,10 @@ namespace ModuleIO
 template <typename TK>
 class Output_Mulliken : public Output_Interface
 {
-public:
+  public:
     /// constructor of Output_Mulliken
-    Output_Mulliken(
-        Output_Sk<TK>* output_sk,
-        Output_DMK<TK>* output_dmk,
-        Parallel_Orbitals *ParaV,
-        CellIndex* cell_index,
-        const std::vector<int>& isk,
-        int nspin);
+    Output_Mulliken(Output_Sk<TK>* output_sk, Output_DMK<TK>* output_dmk, Parallel_Orbitals* ParaV,
+                    CellIndex* cell_index, const std::vector<int>& isk, int nspin);
     /// the outer interface to write the Mulliken population charges
     void write(int istep, std::string out_dir);
     /// print atom mag to running log file
@@ -41,28 +37,25 @@ public:
     /// returun atom_mulliken for updateing STRU file
     std::vector<std::vector<double>> get_atom_mulliken(std::vector<std::vector<double>>& atom_chg);
 
-private:
+  private:
     /******************************************************************
      * private functions
-    *******************************************************************/
+     *******************************************************************/
     /// write mulliken.txt for the case of nspin=1
-    void write_mulliken_nspin1(int istep,
-            const std::vector<double>& tot_chg,
-            const std::vector<std::vector<double>>& atom_chg,
-            const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg,
-            std::ofstream& os);
+    void write_mulliken_nspin1(int istep, const std::vector<double>& tot_chg,
+                               const std::vector<std::vector<double>>& atom_chg,
+                               const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg,
+                               std::ofstream& os);
     /// write mulliken.txt for the case of nspin=2
-    void write_mulliken_nspin2(int istep,
-            const std::vector<double>& tot_chg,
-            const std::vector<std::vector<double>>& atom_chg,
-            const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg,
-            std::ofstream& os);
+    void write_mulliken_nspin2(int istep, const std::vector<double>& tot_chg,
+                               const std::vector<std::vector<double>>& atom_chg,
+                               const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg,
+                               std::ofstream& os);
     /// write mulliken.txt for the case of nspin=4
-    void write_mulliken_nspin4(int istep,
-            const std::vector<double>& tot_chg,
-            const std::vector<std::vector<double>>& atom_chg,
-            const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg,
-            std::ofstream& os);
+    void write_mulliken_nspin4(int istep, const std::vector<double>& tot_chg,
+                               const std::vector<std::vector<double>>& atom_chg,
+                               const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg,
+                               std::ofstream& os);
     /// set nspin
     void set_nspin(int nspin_in);
     /// set orbital parallel info
@@ -72,13 +65,13 @@ private:
     /// mulliken population = trace(dm*overlap)
     void cal_orbMulP();
 
-private:
+  private:
     /******************************************************************
      * private variables
-    *******************************************************************/
+     *******************************************************************/
     Output_Sk<TK>* output_sk_ = nullptr;
     Output_DMK<TK>* output_dmk_ = nullptr;
-    Parallel_Orbitals *ParaV_ = nullptr;
+    Parallel_Orbitals* ParaV_ = nullptr;
     CellIndex* cell_index_ = nullptr;
     const std::vector<int>& isk_;
     int nspin_;

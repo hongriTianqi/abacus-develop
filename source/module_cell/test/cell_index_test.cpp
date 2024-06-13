@@ -1,6 +1,7 @@
-#include "gtest/gtest.h"
-#include "gmock/gmock.h"
 #include "module_cell/cell_index.h"
+
+#include "gmock/gmock.h"
+#include "gtest/gtest.h"
 #include <fstream>
 
 /************************************************
@@ -14,7 +15,7 @@
 
 class CellIndexTest : public testing::Test
 {
-protected:
+  protected:
     std::vector<std::string> atom_labels = {"C", "H"};
     std::vector<int> atom_counts = {1, 2};
     std::vector<std::vector<int>> lnchi_counts = {{1, 1, 1}, {1, 1, 1}};
@@ -45,7 +46,7 @@ TEST_F(CellIndexTest, WriteOrbInfo)
 {
     cell_index.write_orb_info("./");
     std::ifstream ifs("./Orbital");
-    std::string str((std::istreambuf_iterator<char>(ifs)),std::istreambuf_iterator<char>());
+    std::string str((std::istreambuf_iterator<char>(ifs)), std::istreambuf_iterator<char>());
     EXPECT_THAT(str, testing::HasSubstr("#io    spec    l    m    z  sym"));
     EXPECT_THAT(str, testing::HasSubstr("0       C    2    4    1            dxy"));
     EXPECT_THAT(str, testing::HasSubstr("1       H    2    4    1            dxy"));

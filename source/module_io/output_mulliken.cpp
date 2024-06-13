@@ -1,8 +1,9 @@
 #include "module_io/output_mulliken.h"
-#include "module_base/tool_quit.h"
+
 #include "module_base/formatter.h"
-#include "module_base/scalapack_connector.h"
 #include "module_base/name_angular.h"
+#include "module_base/scalapack_connector.h"
+#include "module_base/tool_quit.h"
 
 #include <numeric>
 
@@ -10,13 +11,8 @@ namespace ModuleIO
 {
 
 template <typename TK>
-Output_Mulliken<TK>::Output_Mulliken(
-    Output_Sk<TK>* output_sk,
-    Output_DMK<TK>* output_dmk,
-    Parallel_Orbitals *ParaV,
-    CellIndex* cell_index,
-    const std::vector<int>& isk,
-    int nspin)
+Output_Mulliken<TK>::Output_Mulliken(Output_Sk<TK>* output_sk, Output_DMK<TK>* output_dmk, Parallel_Orbitals* ParaV,
+                                     CellIndex* cell_index, const std::vector<int>& isk, int nspin)
     : output_sk_(output_sk), output_dmk_(output_dmk), ParaV_(ParaV), cell_index_(cell_index), isk_(isk), nspin_(nspin)
 {
     this->set_nspin(nspin);
@@ -61,17 +57,15 @@ void Output_Mulliken<TK>::write(int istep, std::string out_dir)
 }
 
 template <typename TK>
-void Output_Mulliken<TK>::write_mulliken_nspin1(int istep,
-            const std::vector<double>& tot_chg,
-            const std::vector<std::vector<double>>& atom_chg,
-            const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg,
-            std::ofstream& os)
+void Output_Mulliken<TK>::write_mulliken_nspin1(
+    int istep, const std::vector<double>& tot_chg, const std::vector<std::vector<double>>& atom_chg,
+    const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg, std::ofstream& os)
 {
     os << std::setprecision(4);
     /// step info
     os << "STEP: " << istep << std::endl;
     os << "CALCULATE THE MULLIkEN ANALYSIS FOR EACH ATOM" << std::endl;
-    os << " Total charge:\t" << tot_chg[0]<< std::endl;
+    os << " Total charge:\t" << tot_chg[0] << std::endl;
     /// orbital decomposed mulliken populations
     FmtCore fmt_of_chg("%20.4f");
     FmtCore fmt_of_label("%-20s");
@@ -82,18 +76,17 @@ void Output_Mulliken<TK>::write_mulliken_nspin1(int istep,
         /// header of the table
         std::string atom_label = this->cell_index_->get_atom_label(iat);
         os << FmtCore::format("%-20d", iat) << FmtCore::format("%20s", std::string("Zeta of ") + atom_label)
-            << FmtCore::format("%20s", std::string("Spin 1"))
-            << std::endl;
+           << FmtCore::format("%20s", std::string("Spin 1")) << std::endl;
         /// loop of L
         for (int L = 0; L <= this->cell_index_->get_maxL(iat); L++)
         {
             std::vector<double> sum_over_m_and_z(this->nspin_, 0.0);
             for (int Z = 0; Z < this->cell_index_->get_nchi(iat, L); Z++)
             {
-                for (int M = 0; M < (2*L + 1); M++)
+                for (int M = 0; M < (2 * L + 1); M++)
                 {
                     os << fmt_of_label.format(ModuleBase::Name_Angular[L][M]) << fmt_of_Z.format(Z)
-                        << fmt_of_chg.format(orb_chg[iat][0][L][Z][M]) << std::endl;
+                       << fmt_of_chg.format(orb_chg[iat][0][L][Z][M]) << std::endl;
                 }
                 // sum over m
                 std::vector<double> sum_over_m(this->nspin_, 0.0);
@@ -104,32 +97,27 @@ void Output_Mulliken<TK>::write_mulliken_nspin1(int istep,
                 }
                 if (L > 0)
                 {
-                    os << fmt_of_label.format(std::string("SUM OVER M"))
-                        << std::setw(20) << ""
-                        << fmt_of_chg.format(sum_over_m[0]) << std::endl;
+                    os << fmt_of_label.format(std::string("SUM OVER M")) << std::setw(20) << ""
+                       << fmt_of_chg.format(sum_over_m[0]) << std::endl;
                 }
             }
-            os << fmt_of_label.format(std::string("SUM OVER M+Zeta"))
-                << std::setw(20) << ""
-                << fmt_of_chg.format(sum_over_m_and_z[0]) << std::endl;
+            os << fmt_of_label.format(std::string("SUM OVER M+Zeta")) << std::setw(20) << ""
+               << fmt_of_chg.format(sum_over_m_and_z[0]) << std::endl;
             os << std::endl;
         }
-        os << fmt_of_label.format(std::string("SUM OVER M+Zeta+L"))
-            << std::setw(20) << ""
-            << fmt_of_chg.format(atom_chg[iat][0]) << std::endl;
+        os << fmt_of_label.format(std::string("SUM OVER M+Zeta+L")) << std::setw(20) << ""
+           << fmt_of_chg.format(atom_chg[iat][0]) << std::endl;
         os << std::endl;
         os << std::left << std::setw(30) << "Total Charge on atom:" << std::right << std::setw(10) << atom_label
-            << fmt_of_chg.format(atom_chg[iat][0]) <<std::endl;
+           << fmt_of_chg.format(atom_chg[iat][0]) << std::endl;
         os << std::endl << std::endl;
     }
 }
 
 template <typename TK>
-void Output_Mulliken<TK>::write_mulliken_nspin2(int istep,
-            const std::vector<double>& tot_chg,
-            const std::vector<std::vector<double>>& atom_chg,
-            const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg,
-            std::ofstream& os)
+void Output_Mulliken<TK>::write_mulliken_nspin2(
+    int istep, const std::vector<double>& tot_chg, const std::vector<std::vector<double>>& atom_chg,
+    const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg, std::ofstream& os)
 {
     os << std::setprecision(4);
     /// step info
@@ -148,111 +136,20 @@ void Output_Mulliken<TK>::write_mulliken_nspin2(int istep,
         /// header of the table
         std::string atom_label = this->cell_index_->get_atom_label(iat);
         os << FmtCore::format("%-20d", iat) << FmtCore::format("%20s", std::string("Zeta of ") + atom_label)
-                << FmtCore::format("%20s", std::string("Spin 1"))
-                << FmtCore::format("%20s", std::string("Spin 2"))
-                << FmtCore::format("%20s", std::string("Sum"))
-                << FmtCore::format("%20s", std::string("Diff"))
-                << std::endl;
+           << FmtCore::format("%20s", std::string("Spin 1")) << FmtCore::format("%20s", std::string("Spin 2"))
+           << FmtCore::format("%20s", std::string("Sum")) << FmtCore::format("%20s", std::string("Diff")) << std::endl;
         /// loop of L
         for (int L = 0; L <= this->cell_index_->get_maxL(iat); L++)
         {
             std::vector<double> sum_over_m_and_z(this->nspin_, 0.0);
             for (int Z = 0; Z < this->cell_index_->get_nchi(iat, L); Z++)
             {
-                for (int M = 0; M < (2*L + 1); M++)
+                for (int M = 0; M < (2 * L + 1); M++)
                 {
                     os << fmt_of_label.format(ModuleBase::Name_Angular[L][M]) << fmt_of_Z.format(Z)
-                            << fmt_of_chg.format(orb_chg[iat][0][L][Z][M])
-                            << fmt_of_chg.format(orb_chg[iat][1][L][Z][M])
-                            << fmt_of_chg.format(orb_chg[iat][0][L][Z][M] + orb_chg[iat][1][L][Z][M])
-                            << fmt_of_chg.format(orb_chg[iat][0][L][Z][M] - orb_chg[iat][1][L][Z][M]) << std::endl;
-                }
-                // sum over m
-                std::vector<double> sum_over_m(this->nspin_, 0.0);
-                for (int is = 0; is < this->nspin_; is++)
-                {
-                    sum_over_m[is] = std::accumulate(orb_chg[iat][is][L][Z].begin(), orb_chg[iat][is][L][Z].end(), 0.0);
-                    sum_over_m_and_z[is] += sum_over_m[is];
-                }
-                if (L > 0)
-                {
-                    os << fmt_of_label.format(std::string("SUM OVER M"))
-                        << std::setw(20) << ""
-                        << fmt_of_chg.format(sum_over_m[0])
-                        << fmt_of_chg.format(sum_over_m[1])
-                        << fmt_of_chg.format(sum_over_m[0] + sum_over_m[1])
-                        << fmt_of_chg.format(sum_over_m[0] - sum_over_m[1])
-                        << std::endl;
-                }
-            }
-            os << fmt_of_label.format(std::string("SUM OVER M+Zeta"))
-                << std::setw(20) << ""
-                << fmt_of_chg.format(sum_over_m_and_z[0])
-                << fmt_of_chg.format(sum_over_m_and_z[1])
-                << fmt_of_chg.format(sum_over_m_and_z[0] + sum_over_m_and_z[1])
-                << fmt_of_chg.format(sum_over_m_and_z[0] - sum_over_m_and_z[1])
-                << std::endl;
-            os << std::endl;
-        }
-        os << fmt_of_label.format(std::string("SUM OVER M+Zeta+L"))
-            << std::setw(20) << ""
-            << fmt_of_chg.format(atom_chg[iat][0])
-            << fmt_of_chg.format(atom_chg[iat][1])
-            << fmt_of_chg.format(atom_chg[iat][0] + atom_chg[iat][1])
-            << fmt_of_chg.format(atom_chg[iat][0] - atom_chg[iat][1])
-            << std::endl;
-        os << std::endl;
-        os << std::left << std::setw(30) << "Total Charge on atom:" << std::right << std::setw(10) << atom_label
-            << fmt_of_chg.format(atom_chg[iat][0] + atom_chg[iat][1])
-            << std::endl;
-        os << std::left << std::setw(30) << "Total Magnetism on atom: " << std::right << std::setw(10) << atom_label
-            << fmt_of_chg.format(atom_chg[iat][0] - atom_chg[iat][1])
-            << std::endl;
-        os << std::endl << std::endl;
-    }
-}
-
-template <typename TK>
-void Output_Mulliken<TK>::write_mulliken_nspin4(int istep,
-            const std::vector<double>& tot_chg,
-            const std::vector<std::vector<double>>& atom_chg,
-            const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg,
-            std::ofstream& os)
-{
-    os << std::setprecision(4);
-    /// step info
-    os << "STEP: " << istep << std::endl;
-    os << "CALCULATE THE MULLIkEN ANALYSIS FOR EACH ATOM" << std::endl;
-    os << " Total charge:\t" << tot_chg[0]<< std::endl;
-    /// orbital decomposed mulliken populations
-    FmtCore fmt_of_chg("%20.4f");
-    FmtCore fmt_of_label("%-20s");
-    FmtCore fmt_of_Z("%20d");
-    os << "Decomposed Mulliken populations" << std::endl;
-    for (int iat = 0; iat < this->cell_index_->get_nat(); ++iat)
-    {
-        /// header of the table
-        std::string atom_label = this->cell_index_->get_atom_label(iat);
-        os << FmtCore::format("%-20d", iat) << FmtCore::format("%20s", std::string("Zeta of ") + atom_label)
-            << FmtCore::format("%20s", std::string("Spin 1"))
-            << FmtCore::format("%20s", std::string("Spin 2"))
-            << FmtCore::format("%20s", std::string("Spin 3"))
-            << FmtCore::format("%20s", std::string("Spin 4"))
-            << std::endl;
-        /// loop of L
-        for (int L = 0; L <= this->cell_index_->get_maxL(iat); L++)
-        {
-            std::vector<double> sum_over_m_and_z(this->nspin_, 0.0);
-            for (int Z = 0; Z < this->cell_index_->get_nchi(iat, L); Z++)
-            {
-                for (int M = 0; M < (2*L + 1); M++)
-                {
-                    os << fmt_of_label.format(ModuleBase::Name_Angular[L][M]) << fmt_of_Z.format(Z)
-                        << fmt_of_chg.format(orb_chg[iat][0][L][Z][M])
-                        << fmt_of_chg.format(orb_chg[iat][1][L][Z][M])
-                        << fmt_of_chg.format(orb_chg[iat][2][L][Z][M])
-                        << fmt_of_chg.format(orb_chg[iat][3][L][Z][M])
-                        << std::endl;
+                       << fmt_of_chg.format(orb_chg[iat][0][L][Z][M]) << fmt_of_chg.format(orb_chg[iat][1][L][Z][M])
+                       << fmt_of_chg.format(orb_chg[iat][0][L][Z][M] + orb_chg[iat][1][L][Z][M])
+                       << fmt_of_chg.format(orb_chg[iat][0][L][Z][M] - orb_chg[iat][1][L][Z][M]) << std::endl;
                 }
                 // sum over m
                 std::vector<double> sum_over_m(this->nspin_, 0.0);
@@ -264,36 +161,94 @@ void Output_Mulliken<TK>::write_mulliken_nspin4(int istep,
                 if (L > 0)
                 {
                     os << fmt_of_label.format(std::string("SUM OVER M")) << std::setw(20) << ""
-                        << fmt_of_chg.format(sum_over_m[0])
-                        << fmt_of_chg.format(sum_over_m[1])
-                        << fmt_of_chg.format(sum_over_m[2])
-                        << fmt_of_chg.format(sum_over_m[3])
-                        << std::endl;
+                       << fmt_of_chg.format(sum_over_m[0]) << fmt_of_chg.format(sum_over_m[1])
+                       << fmt_of_chg.format(sum_over_m[0] + sum_over_m[1])
+                       << fmt_of_chg.format(sum_over_m[0] - sum_over_m[1]) << std::endl;
                 }
             }
             os << fmt_of_label.format(std::string("SUM OVER M+Zeta")) << std::setw(20) << ""
-                << fmt_of_chg.format(sum_over_m_and_z[0])
-                << fmt_of_chg.format(sum_over_m_and_z[1])
-                << fmt_of_chg.format(sum_over_m_and_z[2])
-                << fmt_of_chg.format(sum_over_m_and_z[3])
-                << std::endl;
+               << fmt_of_chg.format(sum_over_m_and_z[0]) << fmt_of_chg.format(sum_over_m_and_z[1])
+               << fmt_of_chg.format(sum_over_m_and_z[0] + sum_over_m_and_z[1])
+               << fmt_of_chg.format(sum_over_m_and_z[0] - sum_over_m_and_z[1]) << std::endl;
             os << std::endl;
         }
-        os << fmt_of_label.format(std::string("SUM OVER M+Zeta+L"))
-            << std::setw(20) << ""
-            << fmt_of_chg.format(atom_chg[iat][0])
-            << fmt_of_chg.format(atom_chg[iat][1])
-            << fmt_of_chg.format(atom_chg[iat][2])
-            << fmt_of_chg.format(atom_chg[iat][3])
-            << std::endl;
+        os << fmt_of_label.format(std::string("SUM OVER M+Zeta+L")) << std::setw(20) << ""
+           << fmt_of_chg.format(atom_chg[iat][0]) << fmt_of_chg.format(atom_chg[iat][1])
+           << fmt_of_chg.format(atom_chg[iat][0] + atom_chg[iat][1])
+           << fmt_of_chg.format(atom_chg[iat][0] - atom_chg[iat][1]) << std::endl;
         os << std::endl;
         os << std::left << std::setw(30) << "Total Charge on atom:" << std::right << std::setw(10) << atom_label
-            << fmt_of_chg.format(atom_chg[iat][0]) <<std::endl;
+           << fmt_of_chg.format(atom_chg[iat][0] + atom_chg[iat][1]) << std::endl;
         os << std::left << std::setw(30) << "Total Magnetism on atom: " << std::right << std::setw(10) << atom_label
-            << fmt_of_chg.format(atom_chg[iat][1])
-            << fmt_of_chg.format(atom_chg[iat][2])
-            << fmt_of_chg.format(atom_chg[iat][3])
-            << std::endl;
+           << fmt_of_chg.format(atom_chg[iat][0] - atom_chg[iat][1]) << std::endl;
+        os << std::endl << std::endl;
+    }
+}
+
+template <typename TK>
+void Output_Mulliken<TK>::write_mulliken_nspin4(
+    int istep, const std::vector<double>& tot_chg, const std::vector<std::vector<double>>& atom_chg,
+    const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg, std::ofstream& os)
+{
+    os << std::setprecision(4);
+    /// step info
+    os << "STEP: " << istep << std::endl;
+    os << "CALCULATE THE MULLIkEN ANALYSIS FOR EACH ATOM" << std::endl;
+    os << " Total charge:\t" << tot_chg[0] << std::endl;
+    /// orbital decomposed mulliken populations
+    FmtCore fmt_of_chg("%20.4f");
+    FmtCore fmt_of_label("%-20s");
+    FmtCore fmt_of_Z("%20d");
+    os << "Decomposed Mulliken populations" << std::endl;
+    for (int iat = 0; iat < this->cell_index_->get_nat(); ++iat)
+    {
+        /// header of the table
+        std::string atom_label = this->cell_index_->get_atom_label(iat);
+        os << FmtCore::format("%-20d", iat) << FmtCore::format("%20s", std::string("Zeta of ") + atom_label)
+           << FmtCore::format("%20s", std::string("Spin 1")) << FmtCore::format("%20s", std::string("Spin 2"))
+           << FmtCore::format("%20s", std::string("Spin 3")) << FmtCore::format("%20s", std::string("Spin 4"))
+           << std::endl;
+        /// loop of L
+        for (int L = 0; L <= this->cell_index_->get_maxL(iat); L++)
+        {
+            std::vector<double> sum_over_m_and_z(this->nspin_, 0.0);
+            for (int Z = 0; Z < this->cell_index_->get_nchi(iat, L); Z++)
+            {
+                for (int M = 0; M < (2 * L + 1); M++)
+                {
+                    os << fmt_of_label.format(ModuleBase::Name_Angular[L][M]) << fmt_of_Z.format(Z)
+                       << fmt_of_chg.format(orb_chg[iat][0][L][Z][M]) << fmt_of_chg.format(orb_chg[iat][1][L][Z][M])
+                       << fmt_of_chg.format(orb_chg[iat][2][L][Z][M]) << fmt_of_chg.format(orb_chg[iat][3][L][Z][M])
+                       << std::endl;
+                }
+                // sum over m
+                std::vector<double> sum_over_m(this->nspin_, 0.0);
+                for (int is = 0; is < this->nspin_; is++)
+                {
+                    sum_over_m[is] = std::accumulate(orb_chg[iat][is][L][Z].begin(), orb_chg[iat][is][L][Z].end(), 0.0);
+                    sum_over_m_and_z[is] += sum_over_m[is];
+                }
+                if (L > 0)
+                {
+                    os << fmt_of_label.format(std::string("SUM OVER M")) << std::setw(20) << ""
+                       << fmt_of_chg.format(sum_over_m[0]) << fmt_of_chg.format(sum_over_m[1])
+                       << fmt_of_chg.format(sum_over_m[2]) << fmt_of_chg.format(sum_over_m[3]) << std::endl;
+                }
+            }
+            os << fmt_of_label.format(std::string("SUM OVER M+Zeta")) << std::setw(20) << ""
+               << fmt_of_chg.format(sum_over_m_and_z[0]) << fmt_of_chg.format(sum_over_m_and_z[1])
+               << fmt_of_chg.format(sum_over_m_and_z[2]) << fmt_of_chg.format(sum_over_m_and_z[3]) << std::endl;
+            os << std::endl;
+        }
+        os << fmt_of_label.format(std::string("SUM OVER M+Zeta+L")) << std::setw(20) << ""
+           << fmt_of_chg.format(atom_chg[iat][0]) << fmt_of_chg.format(atom_chg[iat][1])
+           << fmt_of_chg.format(atom_chg[iat][2]) << fmt_of_chg.format(atom_chg[iat][3]) << std::endl;
+        os << std::endl;
+        os << std::left << std::setw(30) << "Total Charge on atom:" << std::right << std::setw(10) << atom_label
+           << fmt_of_chg.format(atom_chg[iat][0]) << std::endl;
+        os << std::left << std::setw(30) << "Total Magnetism on atom: " << std::right << std::setw(10) << atom_label
+           << fmt_of_chg.format(atom_chg[iat][1]) << fmt_of_chg.format(atom_chg[iat][2])
+           << fmt_of_chg.format(atom_chg[iat][3]) << std::endl;
         os << std::endl << std::endl;
     }
 }
@@ -309,11 +264,10 @@ void Output_Mulliken<TK>::set_nspin(int nspin_in)
 {
     if (nspin_in != 1 && nspin_in != 2 && nspin_in != 4)
     {
-        ModuleBase::WARNING_QUIT("SpinConstrain::set_nspin","nspin must be 1, 2 or 4");
+        ModuleBase::WARNING_QUIT("SpinConstrain::set_nspin", "nspin must be 1, 2 or 4");
     }
     this->nspin_ = nspin_in;
 }
-
 
 /// @brief  set ParaV
 template <typename TK>
@@ -333,9 +287,9 @@ std::vector<double> Output_Mulliken<TK>::get_tot_chg()
     std::vector<double> tot_chg(this->nspin_, 0.0);
     int nw = this->cell_index_->get_nw();
     const int nlocal = (this->nspin_ == 4) ? nw / 2 : nw;
-    for(int is=0; is!=this->nspin_; ++is)
+    for (int is = 0; is != this->nspin_; ++is)
     {
-        for(size_t iw=0; iw!=nlocal; ++iw)
+        for (size_t iw = 0; iw != nlocal; ++iw)
         {
             tot_chg[is] += this->orbMulP_(is, iw);
         }
@@ -356,7 +310,7 @@ std::vector<std::vector<double>> Output_Mulliken<TK>::get_atom_chg()
         {
             for (int is = 0; is < this->nspin_; is++)
             {
-                atom_chg[iat][is] += std::abs(this->orbMulP_(is, num))< 1e-10 ? 0.0 : this->orbMulP_(is, num);
+                atom_chg[iat][is] += std::abs(this->orbMulP_(is, num)) < 1e-10 ? 0.0 : this->orbMulP_(is, num);
             }
             num++;
         }
@@ -370,9 +324,7 @@ std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>> Output_M
     int nat = this->cell_index_->get_nat();
     std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>> orb_chg(
         nat, std::vector<std::vector<std::vector<std::vector<double>>>>(
-            this->nspin_, std::vector<std::vector<std::vector<double>>>()
-        )
-    );
+                 this->nspin_, std::vector<std::vector<std::vector<double>>>()));
     for (int is = 0; is < this->nspin_; is++)
     {
         int num = 0;
@@ -380,16 +332,17 @@ std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>> Output_M
         {
             int maxL = this->cell_index_->get_maxL(iat);
             orb_chg[iat][is].resize(maxL + 1);
-	        for (int L = 0; L <= maxL; L++)
+            for (int L = 0; L <= maxL; L++)
             {
                 int nchi = this->cell_index_->get_nchi(iat, L);
                 orb_chg[iat][is][L].resize(nchi);
                 for (int Z = 0; Z < this->cell_index_->get_nchi(iat, L); Z++)
                 {
-                    orb_chg[iat][is][L][Z].resize(2*L + 1, 0.0);
-                    for (int M = 0; M < (2*L + 1); M++)
+                    orb_chg[iat][is][L][Z].resize(2 * L + 1, 0.0);
+                    for (int M = 0; M < (2 * L + 1); M++)
                     {
-                        orb_chg[iat][is][L][Z][M] += std::abs(this->orbMulP_(is, num))< 1e-10 ? 0.0 : this->orbMulP_(is, num);
+                        orb_chg[iat][is][L][Z][M]
+                            += std::abs(this->orbMulP_(is, num)) < 1e-10 ? 0.0 : this->orbMulP_(is, num);
                         num++;
                     }
                 }
@@ -400,14 +353,11 @@ std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>> Output_M
 }
 
 template <typename TK>
-void Output_Mulliken<TK>::collect_MW(ModuleBase::matrix& MecMulP,
-                                          const ModuleBase::ComplexMatrix& mud,
-                                          int nw,
-                                          int isk)
+void Output_Mulliken<TK>::collect_MW(ModuleBase::matrix& MecMulP, const ModuleBase::ComplexMatrix& mud, int nw, int isk)
 {
     if (this->nspin_ == 1 || this->nspin_ == 2)
     {
-        for (size_t i=0; i < nw; ++i)
+        for (size_t i = 0; i < nw; ++i)
         {
             if (this->ParaV_->in_this_processor(i, i))
             {
@@ -470,7 +420,7 @@ void Output_Mulliken<TK>::print_atom_mag(const std::vector<std::vector<double>>&
     std::vector<std::string> atom_label;
     std::vector<double> mag_x(nat, 0.0);
     std::vector<double> mag_y(nat, 0.0);
-    std::vector<double> mag_z(nat ,0.0);
+    std::vector<double> mag_z(nat, 0.0);
     if (this->nspin_ == 2)
     {
         const std::vector<std::string> title = {"Total Magnetism (uB)", ""};
@@ -540,8 +490,7 @@ std::vector<std::vector<double>> Output_Mulliken<TK>::get_atom_mulliken(std::vec
     return atom_mulliken;
 }
 
-
-template<>
+template <>
 void Output_Mulliken<std::complex<double>>::cal_orbMulP()
 {
     ModuleBase::TITLE("module_deltaspin", "cal_MW_k");
@@ -549,7 +498,7 @@ void Output_Mulliken<std::complex<double>>::cal_orbMulP()
     const int nlocal = (this->nspin_ == 4) ? nw / 2 : nw;
     ModuleBase::matrix MecMulP(this->nspin_, nlocal, true);
     this->orbMulP_.create(this->nspin_, nlocal, true);
-    for(size_t ik = 0; ik != this->isk_.size(); ++ik)
+    for (size_t ik = 0; ik != this->isk_.size(); ++ik)
     {
         auto p_Sk = this->output_sk_->get_Sk(ik);
         auto p_DMk = this->output_dmk_->get_DMK(ik);
@@ -558,35 +507,18 @@ void Output_Mulliken<std::complex<double>>::cal_orbMulP()
         const char T_char = 'T';
         const char N_char = 'N';
         const int one_int = 1;
-        const std::complex<double> one_float = {1.0, 0.0}, zero_float = {0.0, 0.0};        
-        pzgemm_(&N_char,
-                &T_char,
-                &nw,
-                &nw,
-                &nw,
-                &one_float,
-                p_DMk,
-                &one_int,
-                &one_int,
-                this->ParaV_->desc,
-                p_Sk,
-                &one_int,
-                &one_int,
-                this->ParaV_->desc,
-                &zero_float,
-                mud.c,
-                &one_int,
-                &one_int,
-                this->ParaV_->desc);
+        const std::complex<double> one_float = {1.0, 0.0}, zero_float = {0.0, 0.0};
+        pzgemm_(&N_char, &T_char, &nw, &nw, &nw, &one_float, p_DMk, &one_int, &one_int, this->ParaV_->desc, p_Sk,
+                &one_int, &one_int, this->ParaV_->desc, &zero_float, mud.c, &one_int, &one_int, this->ParaV_->desc);
         this->collect_MW(MecMulP, mud, nw, this->isk_[ik]);
 #endif
     }
 #ifdef __MPI
-    MPI_Allreduce(MecMulP.c, this->orbMulP_.c, this->nspin_*nlocal, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
-#endif 
+    MPI_Allreduce(MecMulP.c, this->orbMulP_.c, this->nspin_ * nlocal, MPI_DOUBLE, MPI_SUM, MPI_COMM_WORLD);
+#endif
 }
 
-template<>
+template <>
 void Output_Mulliken<double>::cal_orbMulP()
 {
     ModuleBase::TITLE("Mulliken_Charge", "cal_mulliken");
@@ -598,7 +530,7 @@ void Output_Mulliken<double>::cal_orbMulP()
     ModuleBase::matrix MecMulP(this->nspin_, nlocal, true);
     this->orbMulP_.create(this->nspin_, nlocal, true);
 
-    for(size_t is=0; is!=nspin; ++is)
+    for (size_t is = 0; is != nspin; ++is)
     {
         ModuleBase::matrix mud;
         auto p_Sk = this->output_sk_->get_Sk(is);
@@ -608,30 +540,13 @@ void Output_Mulliken<double>::cal_orbMulP()
         const char T_char = 'T';
         const char N_char = 'N';
         const int one_int = 1;
-        const double one_float = 1.0, zero_float = 0.0;        
-        pdgemm_(&N_char,
-                &T_char,
-                &nw,
-                &nw,
-                &nw,
-                &one_float,
-                p_DMk,
-                &one_int,
-                &one_int,
-                this->ParaV_->desc,
-                p_Sk,
-                &one_int,
-                &one_int,
-                this->ParaV_->desc,
-                &zero_float,
-                mud.c,
-                &one_int,
-                &one_int,
-                this->ParaV_->desc);
-        if(this->nspin_ == 1 || this->nspin_ == 2)
+        const double one_float = 1.0, zero_float = 0.0;
+        pdgemm_(&N_char, &T_char, &nw, &nw, &nw, &one_float, p_DMk, &one_int, &one_int, this->ParaV_->desc, p_Sk,
+                &one_int, &one_int, this->ParaV_->desc, &zero_float, mud.c, &one_int, &one_int, this->ParaV_->desc);
+        if (this->nspin_ == 1 || this->nspin_ == 2)
         {
-            for(size_t i=0; i!=nw; ++i)
-                if(this->ParaV_->in_this_processor(i, i))
+            for (size_t i = 0; i != nw; ++i)
+                if (this->ParaV_->in_this_processor(i, i))
                 {
                     const int ir = this->ParaV_->global2local_row(i);
                     const int ic = this->ParaV_->global2local_col(i);
@@ -640,9 +555,9 @@ void Output_Mulliken<double>::cal_orbMulP()
         }
 #endif
     }
-#ifdef __MPI 
-    MPI_Reduce(MecMulP.c, this->orbMulP_.c, this->nspin_*nlocal, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
-#endif 
+#ifdef __MPI
+    MPI_Reduce(MecMulP.c, this->orbMulP_.c, this->nspin_ * nlocal, MPI_DOUBLE, MPI_SUM, 0, MPI_COMM_WORLD);
+#endif
 }
 
 // case for nspin<4, gamma-only k-point
