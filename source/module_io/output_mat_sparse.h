@@ -6,13 +6,12 @@
 #include "module_hamilt_lcao/hamilt_lcaodft/LCAO_gen_fixedH.h"
 #include "module_hamilt_lcao/module_gint/gint_k.h"
 #include "module_hsolver/hsolver_lcao.h"
-#include "output_interface.h"
 
 namespace ModuleIO
 {
     /// @brief the output interface to write the sparse matrix of H, S, T, and r
     template<typename T>
-    class Output_Mat_Sparse : public Output_Interface
+    class Output_Mat_Sparse
 {
   public:
     Output_Mat_Sparse(
@@ -31,7 +30,7 @@ namespace ModuleIO
         const K_Vectors &kv,
         hamilt::Hamilt<T> *p_ham);
 
-    void write() override;
+    void write();
 
   private:
 

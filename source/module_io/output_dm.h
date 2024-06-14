@@ -5,13 +5,12 @@
 
 #include "module_cell/unitcell.h"
 #include "module_hamilt_lcao/module_gint/grid_technique.h"
-#include "module_io/output_interface.h"
 
 namespace ModuleIO
 {
   
 /// @brief the output interface to write the density matrix
-class Output_DM : public Output_Interface
+class Output_DM
 {
   public:
     Output_DM(const Grid_Technique& GridT,
@@ -24,7 +23,7 @@ class Output_DM : public Output_Interface
               const UnitCell* ucell,
               const std::string& directory,
               bool gamma_only_local);
-    void write() override;
+    void write();
 
   private:
     const Grid_Technique& _GridT;
