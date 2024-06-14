@@ -49,15 +49,15 @@ class CellIndex
 
   private:
     /// atomCounts is a vector used to store the number of atoms for each type
-    std::vector<int> atomCounts;
+    std::vector<int> atomCounts = {};
     /// orbitalCounts is a vector used to store the number of orbitals for each type
-    std::vector<int> orbitalCounts;
+    std::vector<int> orbitalCounts = {};
     /// lnchiCounts is a vector used to store the number of chi for each L
-    std::vector<std::vector<int>> lnchiCounts;
+    std::vector<std::vector<int>> lnchiCounts = {};
     /// atomLabels is a vector used to store the atom labels
-    std::vector<std::string> atomLabels;
+    std::vector<std::string> atomLabels = {};
     /// npol is determined by nspin and used in get_iwt and get_nw
-    int npol_;
+    int npol_ = 1;
     /// calculate orbitalCounts from lnchiCounts
     void cal_orbitalCounts();
     /// check nspin

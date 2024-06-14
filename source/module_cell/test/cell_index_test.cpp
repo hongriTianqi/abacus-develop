@@ -22,6 +22,17 @@ class CellIndexTest : public testing::Test
     CellIndex cell_index = CellIndex(atom_labels, atom_counts, lnchi_counts, 1);
 };
 
+TEST_F(CellIndexTest, EmptyTest)
+{
+    CellIndex cell_index1;
+    EXPECT_EQ(0, cell_index1.get_ntype());
+    EXPECT_EQ(0, cell_index1.get_nw());
+    testing::internal::CaptureStdout();
+    EXPECT_EXIT(cell_index1.get_atom_label(0), ::testing::ExitedWithCode(0), "");
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_THAT(output,testing::HasSubstr("iat out of range [0, nat)"));
+}
+
 TEST_F(CellIndexTest, Index)
 {
     EXPECT_EQ(2, cell_index.get_ntype());
