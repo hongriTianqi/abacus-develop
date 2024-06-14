@@ -465,15 +465,6 @@ void ESolver_KS_LCAO<TK, TR>::nscf(void)
 #endif // __MPI
 #endif // __EXX
 
-    if (GlobalV::out_mul)
-    {
-        // initalize DMR
-        // DMR should be same size with Hamiltonian(R)
-        dynamic_cast<elecstate::ElecStateLCAO<TK>*>(this->pelec)
-            ->get_DM()
-            ->init_DMR(*(dynamic_cast<hamilt::HamiltLCAO<TK, TR>*>(this->p_hamilt)->getHR()));
-    }
-
     // mohan add 2021-02-09
     // in ions, istep starts from 1,
     // then when the istep is a variable of scf or nscf,
