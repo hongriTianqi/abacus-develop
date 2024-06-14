@@ -269,7 +269,8 @@ TEST_F(UcellDeathTest, SetupWarningQuit1)
     std::string fixed_axes_in = "volume";
     testing::internal::CaptureStdout();
     EXPECT_EXIT(ucell->setup(latname_in, ntype_in, lmaxmax_in, init_vel_in, fixed_axes_in),
-                ::testing::ExitedWithCode(0), "");
+                ::testing::ExitedWithCode(0),
+                "");
     output = testing::internal::GetCapturedStdout();
     EXPECT_THAT(output,
                 testing::HasSubstr(
@@ -286,7 +287,8 @@ TEST_F(UcellDeathTest, SetupWarningQuit2)
     std::string fixed_axes_in = "shape";
     testing::internal::CaptureStdout();
     EXPECT_EXIT(ucell->setup(latname_in, ntype_in, lmaxmax_in, init_vel_in, fixed_axes_in),
-                ::testing::ExitedWithCode(0), "");
+                ::testing::ExitedWithCode(0),
+                "");
     output = testing::internal::GetCapturedStdout();
     EXPECT_THAT(output, testing::HasSubstr("set relax_new to be 1 for fixed_shape relaxation"));
 }
@@ -314,8 +316,20 @@ TEST_F(UcellDeathTest, CompareAatomLabel)
 
 TEST_F(UcellTest, RemakeCell)
 {
-    std::vector<std::string> latname_in = {"sc", "fcc",  "bcc", "hexagonal", "trigonal", "st",   "bct",
-                                           "so", "baco", "fco", "bco",       "sm",       "bacm", "triclinic"};
+    std::vector<std::string> latname_in = {"sc",
+                                           "fcc",
+                                           "bcc",
+                                           "hexagonal",
+                                           "trigonal",
+                                           "st",
+                                           "bct",
+                                           "so",
+                                           "baco",
+                                           "fco",
+                                           "bco",
+                                           "sm",
+                                           "bacm",
+                                           "triclinic"};
     for (int i = 0; i < latname_in.size(); ++i)
     {
         ucell->latvec.e11 = 10.0;
@@ -912,15 +926,18 @@ TEST_F(UcellTest, PrintSTRU)
     EXPECT_THAT(str, testing::HasSubstr("C #label"));
     EXPECT_THAT(str, testing::HasSubstr("0.0000   #magnetism"));
     EXPECT_THAT(str, testing::HasSubstr("1 #number of atoms"));
-    EXPECT_THAT(str, testing::HasSubstr("        0.1000000000        0.1000000000        0.1000000000 m 1 1 1 v        "
-                                        "0.1000000000        0.1000000000        0.1000000000"));
+    EXPECT_THAT(str,
+                testing::HasSubstr("        0.1000000000        0.1000000000        0.1000000000 m 1 1 1 v        "
+                                   "0.1000000000        0.1000000000        0.1000000000"));
     EXPECT_THAT(str, testing::HasSubstr("H #label"));
     EXPECT_THAT(str, testing::HasSubstr("0.0000   #magnetism"));
     EXPECT_THAT(str, testing::HasSubstr("2 #number of atoms"));
-    EXPECT_THAT(str, testing::HasSubstr("        0.1500000000        0.1500000000        0.1500000000 m 0 0 0 v        "
-                                        "0.1000000000        0.1000000000        0.1000000000"));
-    EXPECT_THAT(str, testing::HasSubstr("        0.0500000000        0.0500000000        0.0500000000 m 0 0 1 v        "
-                                        "0.1000000000        0.1000000000        0.1000000000"));
+    EXPECT_THAT(str,
+                testing::HasSubstr("        0.1500000000        0.1500000000        0.1500000000 m 0 0 0 v        "
+                                   "0.1000000000        0.1000000000        0.1000000000"));
+    EXPECT_THAT(str,
+                testing::HasSubstr("        0.0500000000        0.0500000000        0.0500000000 m 0 0 1 v        "
+                                   "0.1000000000        0.1000000000        0.1000000000"));
     str.clear();
     ifs.close();
     remove("C1H2_STRU");
@@ -1187,8 +1204,20 @@ TEST_F(UcellTest, ReadAtomSpeciesLatName)
     ucell->ntype = 2;
     ucell->atoms = new Atom[ucell->ntype];
     ucell->set_atom_flag = true;
-    std::vector<std::string> latName_in = {"sc", "fcc",  "bcc", "hexagonal", "trigonal", "st",   "bct",
-                                           "so", "baco", "fco", "bco",       "sm",       "bacm", "triclinic"};
+    std::vector<std::string> latName_in = {"sc",
+                                           "fcc",
+                                           "bcc",
+                                           "hexagonal",
+                                           "trigonal",
+                                           "st",
+                                           "bct",
+                                           "so",
+                                           "baco",
+                                           "fco",
+                                           "bco",
+                                           "sm",
+                                           "bacm",
+                                           "triclinic"};
     for (int i = 0; i < latName_in.size(); ++i)
     {
         std::string fn = "./support/STRU_MgO_LatName";

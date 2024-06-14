@@ -19,8 +19,12 @@ class Output_Mulliken
 {
   public:
     /// constructor of Output_Mulliken
-    Output_Mulliken(Output_Sk<TK>* output_sk, Output_DMK<TK>* output_dmk, Parallel_Orbitals* ParaV,
-                    CellIndex* cell_index, const std::vector<int>& isk, int nspin);
+    Output_Mulliken(Output_Sk<TK>* output_sk,
+                    Output_DMK<TK>* output_dmk,
+                    Parallel_Orbitals* ParaV,
+                    CellIndex* cell_index,
+                    const std::vector<int>& isk,
+                    int nspin);
     /// the outer interface to write the Mulliken population charges
     void write(int istep, std::string out_dir);
     /// print atom mag to running log file
@@ -39,17 +43,20 @@ class Output_Mulliken
      * private functions
      *******************************************************************/
     /// write mulliken.txt for the case of nspin=1
-    void write_mulliken_nspin1(int istep, const std::vector<double>& tot_chg,
+    void write_mulliken_nspin1(int istep,
+                               const std::vector<double>& tot_chg,
                                const std::vector<std::vector<double>>& atom_chg,
                                std::map<std::vector<int>, double> orb_chg,
                                std::ofstream& os);
     /// write mulliken.txt for the case of nspin=2
-    void write_mulliken_nspin2(int istep, const std::vector<double>& tot_chg,
+    void write_mulliken_nspin2(int istep,
+                               const std::vector<double>& tot_chg,
                                const std::vector<std::vector<double>>& atom_chg,
                                std::map<std::vector<int>, double> orb_chg,
                                std::ofstream& os);
     /// write mulliken.txt for the case of nspin=4
-    void write_mulliken_nspin4(int istep, const std::vector<double>& tot_chg,
+    void write_mulliken_nspin4(int istep,
+                               const std::vector<double>& tot_chg,
                                const std::vector<std::vector<double>>& atom_chg,
                                std::map<std::vector<int>, double> orb_chg,
                                std::ofstream& os);

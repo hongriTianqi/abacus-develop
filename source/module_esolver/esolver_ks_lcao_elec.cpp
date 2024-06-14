@@ -37,20 +37,39 @@ void ESolver_KS_LCAO<TK, TR>::set_matrix_grid(Record_adj& ra)
     ModuleBase::timer::tick("ESolver_KS_LCAO", "set_matrix_grid");
 
     // (1) Find adjacent atoms for each atom.
-    GlobalV::SEARCH_RADIUS
-        = atom_arrange::set_sr_NL(GlobalV::ofs_running, GlobalV::OUT_LEVEL, GlobalC::ORB.get_rcutmax_Phi(),
-                                  GlobalC::ucell.infoNL.get_rcutmax_Beta(), GlobalV::GAMMA_ONLY_LOCAL);
+    GlobalV::SEARCH_RADIUS = atom_arrange::set_sr_NL(GlobalV::ofs_running,
+                                                     GlobalV::OUT_LEVEL,
+                                                     GlobalC::ORB.get_rcutmax_Phi(),
+                                                     GlobalC::ucell.infoNL.get_rcutmax_Beta(),
+                                                     GlobalV::GAMMA_ONLY_LOCAL);
 
-    atom_arrange::search(GlobalV::SEARCH_PBC, GlobalV::ofs_running, GlobalC::GridD, GlobalC::ucell,
-                         GlobalV::SEARCH_RADIUS, GlobalV::test_atom_input);
+    atom_arrange::search(GlobalV::SEARCH_PBC,
+                         GlobalV::ofs_running,
+                         GlobalC::GridD,
+                         GlobalC::ucell,
+                         GlobalV::SEARCH_RADIUS,
+                         GlobalV::test_atom_input);
 
     // ModuleBase::GlobalFunc::DONE(GlobalV::ofs_running,"SEARCH ADJACENT ATOMS");
 
     // (3) Periodic condition search for each grid.
-    this->GridT.set_pbc_grid(this->pw_rho->nx, this->pw_rho->ny, this->pw_rho->nz, this->pw_big->bx, this->pw_big->by,
-                             this->pw_big->bz, this->pw_big->nbx, this->pw_big->nby, this->pw_big->nbz,
-                             this->pw_big->nbxx, this->pw_big->nbzp_start, this->pw_big->nbzp, this->pw_rho->ny,
-                             this->pw_rho->nplane, this->pw_rho->startz_current, GlobalC::ucell, GlobalC::ORB,
+    this->GridT.set_pbc_grid(this->pw_rho->nx,
+                             this->pw_rho->ny,
+                             this->pw_rho->nz,
+                             this->pw_big->bx,
+                             this->pw_big->by,
+                             this->pw_big->bz,
+                             this->pw_big->nbx,
+                             this->pw_big->nby,
+                             this->pw_big->nbz,
+                             this->pw_big->nbxx,
+                             this->pw_big->nbzp_start,
+                             this->pw_big->nbzp,
+                             this->pw_rho->ny,
+                             this->pw_rho->nplane,
+                             this->pw_rho->startz_current,
+                             GlobalC::ucell,
+                             GlobalC::ORB,
                              GlobalV::NUM_STREAM);
 
     // (2)For each atom, calculate the adjacent atoms in different cells
@@ -125,10 +144,17 @@ void ESolver_KS_LCAO<TK, TR>::beforesolver(const int istep)
     {
         elecstate::DensityMatrix<TK, double>* DM = dynamic_cast<elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM();
         this->p_hamilt = new hamilt::HamiltLCAO<TK, TR>(
-            GlobalV::GAMMA_ONLY_LOCAL ? &(this->GG) : nullptr, GlobalV::GAMMA_ONLY_LOCAL ? nullptr : &(this->GK),
-            &(this->gen_h), &(this->LM), &(this->LOC), this->pelec->pot, this->kv, uot_,
+            GlobalV::GAMMA_ONLY_LOCAL ? &(this->GG) : nullptr,
+            GlobalV::GAMMA_ONLY_LOCAL ? nullptr : &(this->GK),
+            &(this->gen_h),
+            &(this->LM),
+            &(this->LOC),
+            this->pelec->pot,
+            this->kv,
+            uot_,
 #ifdef __EXX
-            DM, GlobalC::exx_info.info_ri.real_number ? &this->exd->two_level_step : &this->exc->two_level_step);
+            DM,
+            GlobalC::exx_info.info_ri.real_number ? &this->exd->two_level_step : &this->exc->two_level_step);
 #else
             DM);
 #endif
@@ -154,9 +180,23 @@ void ESolver_KS_LCAO<TK, TR>::beforesolver(const int istep)
     if (GlobalV::sc_mag_switch)
     {
         SpinConstrain<TK, base_device::DEVICE_CPU>& sc = SpinConstrain<TK, base_device::DEVICE_CPU>::getScInstance();
-        sc.init_sc(GlobalV::sc_thr, GlobalV::nsc, GlobalV::nsc_min, GlobalV::alpha_trial, GlobalV::sccut,
-                   GlobalV::decay_grad_switch, GlobalC::ucell, GlobalV::sc_file, GlobalV::NPOL, &(this->orb_con.ParaV),
-                   GlobalV::NSPIN, this->kv, GlobalV::KS_SOLVER, &(this->LM), this->phsol, this->p_hamilt, this->psi,
+        sc.init_sc(GlobalV::sc_thr,
+                   GlobalV::nsc,
+                   GlobalV::nsc_min,
+                   GlobalV::alpha_trial,
+                   GlobalV::sccut,
+                   GlobalV::decay_grad_switch,
+                   GlobalC::ucell,
+                   GlobalV::sc_file,
+                   GlobalV::NPOL,
+                   &(this->orb_con.ParaV),
+                   GlobalV::NSPIN,
+                   this->kv,
+                   GlobalV::KS_SOLVER,
+                   &(this->LM),
+                   this->phsol,
+                   this->p_hamilt,
+                   this->psi,
                    this->pelec);
     }
     //=========================================================
@@ -187,7 +227,9 @@ void ESolver_KS_LCAO<TK, TR>::before_scf(const int istep)
 #ifdef __MPI
             &(GlobalC::Pgrid),
 #endif
-            GlobalC::ucell, this->pelec->charge, &(this->sf));
+            GlobalC::ucell,
+            this->pelec->charge,
+            &(this->sf));
     }
 
     //----------------------------------------------------------
@@ -223,18 +265,37 @@ void ESolver_KS_LCAO<TK, TR>::before_scf(const int istep)
             ModuleIO::write_rho(
 #ifdef __MPI
                 this->pw_big->bz, // bz first, then nbz
-                this->pw_big->nbz, this->pw_rho->nplane, this->pw_rho->startz_current,
+                this->pw_big->nbz,
+                this->pw_rho->nplane,
+                this->pw_rho->startz_current,
 #endif
-                this->pelec->charge->rho[is], is, GlobalV::NSPIN, 0, ss.str(), this->pw_rho->nx, this->pw_rho->ny,
-                this->pw_rho->nz, this->pelec->eferm.ef, &(GlobalC::ucell), 11);
+                this->pelec->charge->rho[is],
+                is,
+                GlobalV::NSPIN,
+                0,
+                ss.str(),
+                this->pw_rho->nx,
+                this->pw_rho->ny,
+                this->pw_rho->nz,
+                this->pelec->eferm.ef,
+                &(GlobalC::ucell),
+                11);
         }
     }
 
-    ModuleIO::write_pot(GlobalV::out_pot, GlobalV::NSPIN, GlobalV::global_out_dir,
+    ModuleIO::write_pot(GlobalV::out_pot,
+                        GlobalV::NSPIN,
+                        GlobalV::global_out_dir,
 #ifdef __MPI
-                        this->pw_big->bz, this->pw_big->nbz, this->pw_rho->nplane, this->pw_rho->startz_current,
+                        this->pw_big->bz,
+                        this->pw_big->nbz,
+                        this->pw_rho->nplane,
+                        this->pw_rho->startz_current,
 #endif
-                        this->pw_rho->nx, this->pw_rho->ny, this->pw_rho->nz, this->pelec->pot->get_effective_v());
+                        this->pw_rho->nx,
+                        this->pw_rho->ny,
+                        this->pw_rho->nz,
+                        this->pelec->pot->get_effective_v());
 
     // initalize DMR
     // DMR should be same size with Hamiltonian(R)
@@ -308,7 +369,9 @@ void ESolver_KS_LCAO<TK, TR>::others(const int istep)
     }
     else if (cal_type == "test_memory")
     {
-        Cal_Test::test_memory(this->pw_rho, this->pw_wfc, this->p_chgmix->get_mixing_mode(),
+        Cal_Test::test_memory(this->pw_rho,
+                              this->pw_wfc,
+                              this->p_chgmix->get_mixing_mode(),
                               this->p_chgmix->get_mixing_ndim());
         return;
     }
@@ -321,8 +384,13 @@ void ESolver_KS_LCAO<TK, TR>::others(const int istep)
             std::cout << " please make sure search_radius > 0" << std::endl;
         }
 
-        atom_arrange::search(GlobalV::SEARCH_PBC, GlobalV::ofs_running, GlobalC::GridD, GlobalC::ucell,
-                             GlobalV::SEARCH_RADIUS, GlobalV::test_atom_input, 1);
+        atom_arrange::search(GlobalV::SEARCH_PBC,
+                             GlobalV::ofs_running,
+                             GlobalC::GridD,
+                             GlobalC::ucell,
+                             GlobalV::SEARCH_RADIUS,
+                             GlobalV::test_atom_input,
+                             1);
         return;
     }
 
@@ -337,26 +405,67 @@ void ESolver_KS_LCAO<TK, TR>::others(const int istep)
     else if (cal_type == "get_pchg")
     {
         IState_Charge ISC(this->psi, this->LOC);
-        ISC.begin(this->GG, this->pelec->charge->rho, this->pelec->wg, this->pelec->eferm.get_all_ef(),
-                  this->pw_rho->nrxx, this->pw_rho->nplane, this->pw_rho->startz_current, this->pw_rho->nx,
-                  this->pw_rho->ny, this->pw_rho->nz, this->pw_big->bz, this->pw_big->nbz, GlobalV::GAMMA_ONLY_LOCAL,
-                  GlobalV::NBANDS_ISTATE, INPUT.get_out_band_kb(), GlobalV::NBANDS, GlobalV::nelec, GlobalV::NSPIN,
-                  GlobalV::NLOCAL, GlobalV::global_out_dir, GlobalV::MY_RANK, GlobalV::ofs_warning);
+        ISC.begin(this->GG,
+                  this->pelec->charge->rho,
+                  this->pelec->wg,
+                  this->pelec->eferm.get_all_ef(),
+                  this->pw_rho->nrxx,
+                  this->pw_rho->nplane,
+                  this->pw_rho->startz_current,
+                  this->pw_rho->nx,
+                  this->pw_rho->ny,
+                  this->pw_rho->nz,
+                  this->pw_big->bz,
+                  this->pw_big->nbz,
+                  GlobalV::GAMMA_ONLY_LOCAL,
+                  GlobalV::NBANDS_ISTATE,
+                  INPUT.get_out_band_kb(),
+                  GlobalV::NBANDS,
+                  GlobalV::nelec,
+                  GlobalV::NSPIN,
+                  GlobalV::NLOCAL,
+                  GlobalV::global_out_dir,
+                  GlobalV::MY_RANK,
+                  GlobalV::ofs_warning);
     }
     else if (cal_type == "get_wf")
     {
         IState_Envelope IEP(this->pelec);
         if (GlobalV::GAMMA_ONLY_LOCAL)
         {
-            IEP.begin(this->psi, this->pw_rho, this->pw_wfc, this->pw_big, this->LOWF, this->GG, INPUT.out_wfc_pw,
-                      this->wf.out_wfc_r, this->kv, GlobalV::nelec, GlobalV::NBANDS_ISTATE, GlobalV::NBANDS,
-                      GlobalV::NSPIN, GlobalV::NLOCAL, GlobalV::global_out_dir);
+            IEP.begin(this->psi,
+                      this->pw_rho,
+                      this->pw_wfc,
+                      this->pw_big,
+                      this->LOWF,
+                      this->GG,
+                      INPUT.out_wfc_pw,
+                      this->wf.out_wfc_r,
+                      this->kv,
+                      GlobalV::nelec,
+                      GlobalV::NBANDS_ISTATE,
+                      GlobalV::NBANDS,
+                      GlobalV::NSPIN,
+                      GlobalV::NLOCAL,
+                      GlobalV::global_out_dir);
         }
         else
         {
-            IEP.begin(this->psi, this->pw_rho, this->pw_wfc, this->pw_big, this->LOWF, this->GK, INPUT.out_wfc_pw,
-                      this->wf.out_wfc_r, this->kv, GlobalV::nelec, GlobalV::NBANDS_ISTATE, GlobalV::NBANDS,
-                      GlobalV::NSPIN, GlobalV::NLOCAL, GlobalV::global_out_dir);
+            IEP.begin(this->psi,
+                      this->pw_rho,
+                      this->pw_wfc,
+                      this->pw_big,
+                      this->LOWF,
+                      this->GK,
+                      INPUT.out_wfc_pw,
+                      this->wf.out_wfc_r,
+                      this->kv,
+                      GlobalV::nelec,
+                      GlobalV::NBANDS_ISTATE,
+                      GlobalV::NBANDS,
+                      GlobalV::NSPIN,
+                      GlobalV::NLOCAL,
+                      GlobalV::global_out_dir);
         }
     }
     else
@@ -380,12 +489,18 @@ void ESolver_KS_LCAO<std::complex<double>, double>::get_S(void)
 {
     ModuleBase::TITLE("ESolver_KS_LCAO", "get_S");
     // (1) Find adjacent atoms for each atom.
-    GlobalV::SEARCH_RADIUS
-        = atom_arrange::set_sr_NL(GlobalV::ofs_running, GlobalV::OUT_LEVEL, GlobalC::ORB.get_rcutmax_Phi(),
-                                  GlobalC::ucell.infoNL.get_rcutmax_Beta(), GlobalV::GAMMA_ONLY_LOCAL);
+    GlobalV::SEARCH_RADIUS = atom_arrange::set_sr_NL(GlobalV::ofs_running,
+                                                     GlobalV::OUT_LEVEL,
+                                                     GlobalC::ORB.get_rcutmax_Phi(),
+                                                     GlobalC::ucell.infoNL.get_rcutmax_Beta(),
+                                                     GlobalV::GAMMA_ONLY_LOCAL);
 
-    atom_arrange::search(GlobalV::SEARCH_PBC, GlobalV::ofs_running, GlobalC::GridD, GlobalC::ucell,
-                         GlobalV::SEARCH_RADIUS, GlobalV::test_atom_input);
+    atom_arrange::search(GlobalV::SEARCH_PBC,
+                         GlobalV::ofs_running,
+                         GlobalC::GridD,
+                         GlobalC::ucell,
+                         GlobalV::SEARCH_RADIUS,
+                         GlobalV::test_atom_input);
 
     this->RA.for_2d(this->orb_con.ParaV, GlobalV::GAMMA_ONLY_LOCAL);
 
@@ -412,12 +527,18 @@ void ESolver_KS_LCAO<std::complex<double>, std::complex<double>>::get_S(void)
 {
     ModuleBase::TITLE("ESolver_KS_LCAO", "get_S");
     // (1) Find adjacent atoms for each atom.
-    GlobalV::SEARCH_RADIUS
-        = atom_arrange::set_sr_NL(GlobalV::ofs_running, GlobalV::OUT_LEVEL, GlobalC::ORB.get_rcutmax_Phi(),
-                                  GlobalC::ucell.infoNL.get_rcutmax_Beta(), GlobalV::GAMMA_ONLY_LOCAL);
+    GlobalV::SEARCH_RADIUS = atom_arrange::set_sr_NL(GlobalV::ofs_running,
+                                                     GlobalV::OUT_LEVEL,
+                                                     GlobalC::ORB.get_rcutmax_Phi(),
+                                                     GlobalC::ucell.infoNL.get_rcutmax_Beta(),
+                                                     GlobalV::GAMMA_ONLY_LOCAL);
 
-    atom_arrange::search(GlobalV::SEARCH_PBC, GlobalV::ofs_running, GlobalC::GridD, GlobalC::ucell,
-                         GlobalV::SEARCH_RADIUS, GlobalV::test_atom_input);
+    atom_arrange::search(GlobalV::SEARCH_PBC,
+                         GlobalV::ofs_running,
+                         GlobalC::GridD,
+                         GlobalC::ucell,
+                         GlobalV::SEARCH_RADIUS,
+                         GlobalV::test_atom_input);
 
     this->RA.for_2d(this->orb_con.ParaV, GlobalV::GAMMA_ONLY_LOCAL);
     this->LM.ParaV = &this->orb_con.ParaV;
@@ -536,17 +657,30 @@ void ESolver_KS_LCAO<TK, TR>::nscf(void)
 #ifdef __LCAO
         if (INPUT.wannier_method == 1)
         {
-            toWannier90_LCAO_IN_PW myWannier(INPUT.out_wannier_mmn, INPUT.out_wannier_amn, INPUT.out_wannier_unk,
-                                             INPUT.out_wannier_eig, INPUT.out_wannier_wvfn_formatted, INPUT.nnkpfile,
+            toWannier90_LCAO_IN_PW myWannier(INPUT.out_wannier_mmn,
+                                             INPUT.out_wannier_amn,
+                                             INPUT.out_wannier_unk,
+                                             INPUT.out_wannier_eig,
+                                             INPUT.out_wannier_wvfn_formatted,
+                                             INPUT.nnkpfile,
                                              INPUT.wannier_spin);
 
-            myWannier.calculate(this->pelec->ekb, this->pw_wfc, this->pw_big, this->sf, this->kv, this->psi,
+            myWannier.calculate(this->pelec->ekb,
+                                this->pw_wfc,
+                                this->pw_big,
+                                this->sf,
+                                this->kv,
+                                this->psi,
                                 &(this->orb_con.ParaV));
         }
         else if (INPUT.wannier_method == 2)
         {
-            toWannier90_LCAO myWannier(INPUT.out_wannier_mmn, INPUT.out_wannier_amn, INPUT.out_wannier_unk,
-                                       INPUT.out_wannier_eig, INPUT.out_wannier_wvfn_formatted, INPUT.nnkpfile,
+            toWannier90_LCAO myWannier(INPUT.out_wannier_mmn,
+                                       INPUT.out_wannier_amn,
+                                       INPUT.out_wannier_unk,
+                                       INPUT.out_wannier_eig,
+                                       INPUT.out_wannier_wvfn_formatted,
+                                       INPUT.nnkpfile,
                                        INPUT.wannier_spin);
 
             myWannier.calculate(this->pelec->ekb, this->kv, *(this->psi), &(this->orb_con.ParaV));

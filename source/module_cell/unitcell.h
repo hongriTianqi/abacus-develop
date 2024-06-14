@@ -166,7 +166,8 @@ class UnitCell
     }
 
     // calculate vector between two atoms with R cell
-    inline const ModuleBase::Vector3<double> cal_dtau(const int& iat1, const int& iat2,
+    inline const ModuleBase::Vector3<double> cal_dtau(const int& iat1,
+                                                      const int& iat2,
                                                       const ModuleBase::Vector3<int>& R) const
     {
         return get_tau(iat2) + double(R.x) * a1 + double(R.y) * a2 + double(R.z) * a3 - get_tau(iat1);
@@ -250,7 +251,8 @@ class UnitCell
     void read_orb_file(int it, std::string& orb_file, std::ofstream& ofs_running, Atom* atom);
     int read_atom_species(std::ifstream& ifa,
                           std::ofstream& ofs_running); // read in the atom information for each type of atom
-    bool read_atom_positions(std::ifstream& ifpos, std::ofstream& ofs_running,
+    bool read_atom_positions(std::ifstream& ifpos,
+                             std::ofstream& ofs_running,
                              std::ofstream& ofs_warning); // read in atomic positions
 
     void read_pseudo(std::ofstream& ofs);
@@ -269,9 +271,14 @@ class UnitCell
      * @param dpks_desc true for printing NUMERICAL_DESCRIPTOR section
      * @param iproc GlobalV::MY_RANK feed in
      */
-    void print_stru_file(const std::string& fn, const int& nspin = 1, const bool& direct = false,
-                         const bool& vel = false, const bool& magmom = false, const bool& orb = false,
-                         const bool& dpks_desc = false, const int& iproc = 0) const;
+    void print_stru_file(const std::string& fn,
+                         const int& nspin = 1,
+                         const bool& direct = false,
+                         const bool& vel = false,
+                         const bool& magmom = false,
+                         const bool& orb = false,
+                         const bool& dpks_desc = false,
+                         const int& iproc = 0) const;
     void check_dtau(void);
     void setup_cell_after_vc(std::ofstream& log); // LiuXh add 20180515
 
@@ -294,7 +301,10 @@ class UnitCell
     bool check_tau(void) const; // mohan add 2011-03-03
     bool if_atoms_can_move() const;
     bool if_cell_can_change() const;
-    void setup(const std::string& latname_in, const int& ntype_in, const int& lmaxmax_in, const bool& init_vel_in,
+    void setup(const std::string& latname_in,
+               const int& ntype_in,
+               const int& lmaxmax_in,
+               const bool& init_vel_in,
                const std::string& fixed_axes_in);
 
     void check_structure(double factor);

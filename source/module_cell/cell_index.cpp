@@ -3,8 +3,10 @@
 #include "module_base/name_angular.h"
 #include "module_base/tool_quit.h"
 
-CellIndex::CellIndex(const std::vector<std::string>& atomLabels_in, const std::vector<int>& atomCounts_in,
-                     const std::vector<std::vector<int>>& lnchiCounts_in, const int& nspin)
+CellIndex::CellIndex(const std::vector<std::string>& atomLabels_in,
+                     const std::vector<int>& atomCounts_in,
+                     const std::vector<std::vector<int>>& lnchiCounts_in,
+                     const int& nspin)
     : atomLabels(atomLabels_in), atomCounts(atomCounts_in), lnchiCounts(lnchiCounts_in)
 {
     if (this->check_nspin(nspin))

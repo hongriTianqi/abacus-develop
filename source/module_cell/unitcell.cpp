@@ -1304,7 +1304,10 @@ bool UnitCell::if_cell_can_change() const
     return 0;
 }
 
-void UnitCell::setup(const std::string& latname_in, const int& ntype_in, const int& lmaxmax_in, const bool& init_vel_in,
+void UnitCell::setup(const std::string& latname_in,
+                     const int& ntype_in,
+                     const int& lmaxmax_in,
+                     const bool& init_vel_in,
                      const std::string& fixed_axes_in)
 {
     this->latName = latname_in;
@@ -1326,7 +1329,8 @@ void UnitCell::setup(const std::string& latname_in, const int& ntype_in, const i
         if (!GlobalV::relax_new)
         {
             ModuleBase::WARNING_QUIT(
-                "Input", "there are bugs in the old implementation; set relax_new to be 1 for fixed_volume relaxation");
+                "Input",
+                "there are bugs in the old implementation; set relax_new to be 1 for fixed_volume relaxation");
         }
     }
     else if (fixed_axes_in == "shape")

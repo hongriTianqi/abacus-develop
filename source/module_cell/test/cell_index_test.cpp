@@ -30,7 +30,7 @@ TEST_F(CellIndexTest, EmptyTest)
     testing::internal::CaptureStdout();
     EXPECT_EXIT(cell_index1.get_atom_label(0), ::testing::ExitedWithCode(0), "");
     std::string output = testing::internal::GetCapturedStdout();
-    EXPECT_THAT(output,testing::HasSubstr("iat out of range [0, nat)"));
+    EXPECT_THAT(output, testing::HasSubstr("iat out of range [0, nat)"));
 }
 
 TEST_F(CellIndexTest, Index)

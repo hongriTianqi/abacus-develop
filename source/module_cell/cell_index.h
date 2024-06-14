@@ -9,12 +9,11 @@
  * @brief This class is used to get the information of the atoms and orbitals indices in the unit cell.
  * @details
  *    The information includes the number of atoms, the number of orbitals, the number of chi, the atom labels,
- *    the maximum L of a given atom, the number of chi of a given atom and a given L, the atom label of a given atom, etc.
- *    The class provides the interface to get the information of the atoms and orbitals indices in the unit cell.
- *    It also provides the interface to write the orbital information into a file.
- *    It is now used only in the Output_Mulliken class. However, it is supposed to be able to replace GlobalC::ucell
- *    in LCAO codes where only cell indices are needed. Take care that the three key vectors
- *    atomCounts, lnchiCounts, and atomLabels should be set from the UnitCell class.
+ *    the maximum L of a given atom, the number of chi of a given atom and a given L, the atom label of a given atom,
+ * etc. The class provides the interface to get the information of the atoms and orbitals indices in the unit cell. It
+ * also provides the interface to write the orbital information into a file. It is now used only in the Output_Mulliken
+ * class. However, it is supposed to be able to replace GlobalC::ucell in LCAO codes where only cell indices are needed.
+ * Take care that the three key vectors atomCounts, lnchiCounts, and atomLabels should be set from the UnitCell class.
  *    It depends on nspin because the functions get_nw() and get_iwt() are related to nspin, and can
  *    be used in the LCAO Hamiltonian construction.
  */
@@ -22,8 +21,10 @@ class CellIndex
 {
   public:
     CellIndex() = default;
-    CellIndex(const std::vector<std::string>& atomLabels_in, const std::vector<int>& atomCounts_in,
-              const std::vector<std::vector<int>>& lnchiCounts_in, const int& nspin);
+    CellIndex(const std::vector<std::string>& atomLabels_in,
+              const std::vector<int>& atomCounts_in,
+              const std::vector<std::vector<int>>& lnchiCounts_in,
+              const int& nspin);
 
   public:
     /// @brief the total number of atoms

@@ -11,8 +11,12 @@ namespace ModuleIO
 {
 
 template <typename TK>
-Output_Mulliken<TK>::Output_Mulliken(Output_Sk<TK>* output_sk, Output_DMK<TK>* output_dmk, Parallel_Orbitals* ParaV,
-                                     CellIndex* cell_index, const std::vector<int>& isk, int nspin)
+Output_Mulliken<TK>::Output_Mulliken(Output_Sk<TK>* output_sk,
+                                     Output_DMK<TK>* output_dmk,
+                                     Parallel_Orbitals* ParaV,
+                                     CellIndex* cell_index,
+                                     const std::vector<int>& isk,
+                                     int nspin)
     : output_sk_(output_sk), output_dmk_(output_dmk), ParaV_(ParaV), cell_index_(cell_index), isk_(isk), nspin_(nspin)
 {
     this->set_nspin(nspin);
@@ -57,9 +61,11 @@ void Output_Mulliken<TK>::write(int istep, std::string out_dir)
 }
 
 template <typename TK>
-void Output_Mulliken<TK>::write_mulliken_nspin1(
-    int istep, const std::vector<double>& tot_chg, const std::vector<std::vector<double>>& atom_chg,
-    std::map<std::vector<int>, double> orb_chg, std::ofstream& os)
+void Output_Mulliken<TK>::write_mulliken_nspin1(int istep,
+                                                const std::vector<double>& tot_chg,
+                                                const std::vector<std::vector<double>>& atom_chg,
+                                                std::map<std::vector<int>, double> orb_chg,
+                                                std::ofstream& os)
 {
     os << std::setprecision(4);
     /// step info
@@ -118,9 +124,11 @@ void Output_Mulliken<TK>::write_mulliken_nspin1(
 }
 
 template <typename TK>
-void Output_Mulliken<TK>::write_mulliken_nspin2(
-    int istep, const std::vector<double>& tot_chg, const std::vector<std::vector<double>>& atom_chg,
-    std::map<std::vector<int>, double> orb_chg, std::ofstream& os)
+void Output_Mulliken<TK>::write_mulliken_nspin2(int istep,
+                                                const std::vector<double>& tot_chg,
+                                                const std::vector<std::vector<double>>& atom_chg,
+                                                std::map<std::vector<int>, double> orb_chg,
+                                                std::ofstream& os)
 {
     os << std::setprecision(4);
     /// step info
@@ -150,9 +158,13 @@ void Output_Mulliken<TK>::write_mulliken_nspin2(
                 for (int M = 0; M < (2 * L + 1); M++)
                 {
                     os << fmt_of_label.format(ModuleBase::Name_Angular[L][M]) << fmt_of_Z.format(Z)
-                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 0, L, Z, M}]) << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 1, L, Z, M}])
-                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 0, L, Z, M}] + orb_chg[std::vector<int>{iat, 1, L, Z, M}])
-                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 0, L, Z, M}] - orb_chg[std::vector<int>{iat, 1, L, Z, M}]) << std::endl;
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 0, L, Z, M}])
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 1, L, Z, M}])
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 0, L, Z, M}]
+                                            + orb_chg[std::vector<int>{iat, 1, L, Z, M}])
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 0, L, Z, M}]
+                                            - orb_chg[std::vector<int>{iat, 1, L, Z, M}])
+                       << std::endl;
                 }
                 // sum over m
                 std::vector<double> sum_over_m(this->nspin_, 0.0);
@@ -192,9 +204,11 @@ void Output_Mulliken<TK>::write_mulliken_nspin2(
 }
 
 template <typename TK>
-void Output_Mulliken<TK>::write_mulliken_nspin4(
-    int istep, const std::vector<double>& tot_chg, const std::vector<std::vector<double>>& atom_chg,
-    std::map<std::vector<int>, double> orb_chg, std::ofstream& os)
+void Output_Mulliken<TK>::write_mulliken_nspin4(int istep,
+                                                const std::vector<double>& tot_chg,
+                                                const std::vector<std::vector<double>>& atom_chg,
+                                                std::map<std::vector<int>, double> orb_chg,
+                                                std::ofstream& os)
 {
     os << std::setprecision(4);
     /// step info
@@ -223,9 +237,10 @@ void Output_Mulliken<TK>::write_mulliken_nspin4(
                 for (int M = 0; M < (2 * L + 1); M++)
                 {
                     os << fmt_of_label.format(ModuleBase::Name_Angular[L][M]) << fmt_of_Z.format(Z)
-                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 0, L, Z, M}]) << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 1, L, Z, M}])
-                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 2, L, Z, M}]) << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 3, L, Z, M}])
-                       << std::endl;
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 0, L, Z, M}])
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 1, L, Z, M}])
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 2, L, Z, M}])
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 3, L, Z, M}]) << std::endl;
                 }
                 // sum over m
                 std::vector<double> sum_over_m(this->nspin_, 0.0);
@@ -340,7 +355,8 @@ std::map<std::vector<int>, double> Output_Mulliken<TK>::get_orb_chg()
                 {
                     for (int M = 0; M < (2 * L + 1); M++)
                     {
-                        orb_chg[std::vector<int>{iat, is, L, Z, M}] = std::abs(this->orbMulP_(is, num)) < 1e-10 ? 0.0 : this->orbMulP_(is, num);
+                        orb_chg[std::vector<int>{iat, is, L, Z, M}]
+                            = std::abs(this->orbMulP_(is, num)) < 1e-10 ? 0.0 : this->orbMulP_(is, num);
                         num++;
                     }
                 }
@@ -506,8 +522,25 @@ void Output_Mulliken<std::complex<double>>::cal_orbMulP()
         const char N_char = 'N';
         const int one_int = 1;
         const std::complex<double> one_float = {1.0, 0.0}, zero_float = {0.0, 0.0};
-        pzgemm_(&N_char, &T_char, &nw, &nw, &nw, &one_float, p_DMk, &one_int, &one_int, this->ParaV_->desc, p_Sk,
-                &one_int, &one_int, this->ParaV_->desc, &zero_float, mud.c, &one_int, &one_int, this->ParaV_->desc);
+        pzgemm_(&N_char,
+                &T_char,
+                &nw,
+                &nw,
+                &nw,
+                &one_float,
+                p_DMk,
+                &one_int,
+                &one_int,
+                this->ParaV_->desc,
+                p_Sk,
+                &one_int,
+                &one_int,
+                this->ParaV_->desc,
+                &zero_float,
+                mud.c,
+                &one_int,
+                &one_int,
+                this->ParaV_->desc);
         this->collect_MW(MecMulP, mud, nw, this->isk_[ik]);
 #endif
     }
@@ -539,8 +572,25 @@ void Output_Mulliken<double>::cal_orbMulP()
         const char N_char = 'N';
         const int one_int = 1;
         const double one_float = 1.0, zero_float = 0.0;
-        pdgemm_(&N_char, &T_char, &nw, &nw, &nw, &one_float, p_DMk, &one_int, &one_int, this->ParaV_->desc, p_Sk,
-                &one_int, &one_int, this->ParaV_->desc, &zero_float, mud.c, &one_int, &one_int, this->ParaV_->desc);
+        pdgemm_(&N_char,
+                &T_char,
+                &nw,
+                &nw,
+                &nw,
+                &one_float,
+                p_DMk,
+                &one_int,
+                &one_int,
+                this->ParaV_->desc,
+                p_Sk,
+                &one_int,
+                &one_int,
+                this->ParaV_->desc,
+                &zero_float,
+                mud.c,
+                &one_int,
+                &one_int,
+                this->ParaV_->desc);
         if (this->nspin_ == 1 || this->nspin_ == 2)
         {
             for (size_t i = 0; i != nw; ++i)
