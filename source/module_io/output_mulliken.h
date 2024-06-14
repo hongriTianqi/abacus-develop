@@ -30,7 +30,7 @@ class Output_Mulliken
     /// get atom charge
     std::vector<std::vector<double>> get_atom_chg();
     /// get orbital charge
-    std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>> get_orb_chg();
+    std::map<std::vector<int>, double> get_orb_chg();
     /// returun atom_mulliken for updateing STRU file
     std::vector<std::vector<double>> get_atom_mulliken(std::vector<std::vector<double>>& atom_chg);
 
@@ -41,17 +41,17 @@ class Output_Mulliken
     /// write mulliken.txt for the case of nspin=1
     void write_mulliken_nspin1(int istep, const std::vector<double>& tot_chg,
                                const std::vector<std::vector<double>>& atom_chg,
-                               const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg,
+                               std::map<std::vector<int>, double> orb_chg,
                                std::ofstream& os);
     /// write mulliken.txt for the case of nspin=2
     void write_mulliken_nspin2(int istep, const std::vector<double>& tot_chg,
                                const std::vector<std::vector<double>>& atom_chg,
-                               const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg,
+                               std::map<std::vector<int>, double> orb_chg,
                                std::ofstream& os);
     /// write mulliken.txt for the case of nspin=4
     void write_mulliken_nspin4(int istep, const std::vector<double>& tot_chg,
                                const std::vector<std::vector<double>>& atom_chg,
-                               const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg,
+                               std::map<std::vector<int>, double> orb_chg,
                                std::ofstream& os);
     /// set nspin
     void set_nspin(int nspin_in);

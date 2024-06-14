@@ -25,7 +25,7 @@ void Output_Mulliken<TK>::write(int istep, std::string out_dir)
 {
     std::vector<double> tot_chg = this->get_tot_chg();
     std::vector<std::vector<double>> atom_chg = this->get_atom_chg();
-    std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>> orb_chg = this->get_orb_chg();
+    std::map<std::vector<int>, double> orb_chg = this->get_orb_chg();
     std::stringstream as;
     as << out_dir << "mulliken.txt";
     std::ofstream os;
@@ -59,7 +59,7 @@ void Output_Mulliken<TK>::write(int istep, std::string out_dir)
 template <typename TK>
 void Output_Mulliken<TK>::write_mulliken_nspin1(
     int istep, const std::vector<double>& tot_chg, const std::vector<std::vector<double>>& atom_chg,
-    const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg, std::ofstream& os)
+    std::map<std::vector<int>, double> orb_chg, std::ofstream& os)
 {
     os << std::setprecision(4);
     /// step info
@@ -86,13 +86,16 @@ void Output_Mulliken<TK>::write_mulliken_nspin1(
                 for (int M = 0; M < (2 * L + 1); M++)
                 {
                     os << fmt_of_label.format(ModuleBase::Name_Angular[L][M]) << fmt_of_Z.format(Z)
-                       << fmt_of_chg.format(orb_chg[iat][0][L][Z][M]) << std::endl;
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 0, L, Z, M}]) << std::endl;
                 }
                 // sum over m
                 std::vector<double> sum_over_m(this->nspin_, 0.0);
                 for (int is = 0; is < this->nspin_; is++)
                 {
-                    sum_over_m[is] = std::accumulate(orb_chg[iat][is][L][Z].begin(), orb_chg[iat][is][L][Z].end(), 0.0);
+                    for (int M = 0; M < (2 * L + 1); M++)
+                    {
+                        sum_over_m[is] += orb_chg[std::vector<int>{iat, is, L, Z, M}];
+                    }
                     sum_over_m_and_z[is] += sum_over_m[is];
                 }
                 if (L > 0)
@@ -117,7 +120,7 @@ void Output_Mulliken<TK>::write_mulliken_nspin1(
 template <typename TK>
 void Output_Mulliken<TK>::write_mulliken_nspin2(
     int istep, const std::vector<double>& tot_chg, const std::vector<std::vector<double>>& atom_chg,
-    const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg, std::ofstream& os)
+    std::map<std::vector<int>, double> orb_chg, std::ofstream& os)
 {
     os << std::setprecision(4);
     /// step info
@@ -147,15 +150,18 @@ void Output_Mulliken<TK>::write_mulliken_nspin2(
                 for (int M = 0; M < (2 * L + 1); M++)
                 {
                     os << fmt_of_label.format(ModuleBase::Name_Angular[L][M]) << fmt_of_Z.format(Z)
-                       << fmt_of_chg.format(orb_chg[iat][0][L][Z][M]) << fmt_of_chg.format(orb_chg[iat][1][L][Z][M])
-                       << fmt_of_chg.format(orb_chg[iat][0][L][Z][M] + orb_chg[iat][1][L][Z][M])
-                       << fmt_of_chg.format(orb_chg[iat][0][L][Z][M] - orb_chg[iat][1][L][Z][M]) << std::endl;
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 0, L, Z, M}]) << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 1, L, Z, M}])
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 0, L, Z, M}] + orb_chg[std::vector<int>{iat, 1, L, Z, M}])
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 0, L, Z, M}] - orb_chg[std::vector<int>{iat, 1, L, Z, M}]) << std::endl;
                 }
                 // sum over m
                 std::vector<double> sum_over_m(this->nspin_, 0.0);
                 for (int is = 0; is < this->nspin_; is++)
                 {
-                    sum_over_m[is] = std::accumulate(orb_chg[iat][is][L][Z].begin(), orb_chg[iat][is][L][Z].end(), 0.0);
+                    for (int M = 0; M < (2 * L + 1); M++)
+                    {
+                        sum_over_m[is] += orb_chg[std::vector<int>{iat, is, L, Z, M}];
+                    }
                     sum_over_m_and_z[is] += sum_over_m[is];
                 }
                 if (L > 0)
@@ -188,7 +194,7 @@ void Output_Mulliken<TK>::write_mulliken_nspin2(
 template <typename TK>
 void Output_Mulliken<TK>::write_mulliken_nspin4(
     int istep, const std::vector<double>& tot_chg, const std::vector<std::vector<double>>& atom_chg,
-    const std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>>& orb_chg, std::ofstream& os)
+    std::map<std::vector<int>, double> orb_chg, std::ofstream& os)
 {
     os << std::setprecision(4);
     /// step info
@@ -217,15 +223,18 @@ void Output_Mulliken<TK>::write_mulliken_nspin4(
                 for (int M = 0; M < (2 * L + 1); M++)
                 {
                     os << fmt_of_label.format(ModuleBase::Name_Angular[L][M]) << fmt_of_Z.format(Z)
-                       << fmt_of_chg.format(orb_chg[iat][0][L][Z][M]) << fmt_of_chg.format(orb_chg[iat][1][L][Z][M])
-                       << fmt_of_chg.format(orb_chg[iat][2][L][Z][M]) << fmt_of_chg.format(orb_chg[iat][3][L][Z][M])
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 0, L, Z, M}]) << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 1, L, Z, M}])
+                       << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 2, L, Z, M}]) << fmt_of_chg.format(orb_chg[std::vector<int>{iat, 3, L, Z, M}])
                        << std::endl;
                 }
                 // sum over m
                 std::vector<double> sum_over_m(this->nspin_, 0.0);
                 for (int is = 0; is < this->nspin_; is++)
                 {
-                    sum_over_m[is] = std::accumulate(orb_chg[iat][is][L][Z].begin(), orb_chg[iat][is][L][Z].end(), 0.0);
+                    for (int M = 0; M < (2 * L + 1); M++)
+                    {
+                        sum_over_m[is] += orb_chg[std::vector<int>{iat, is, L, Z, M}];
+                    }
                     sum_over_m_and_z[is] += sum_over_m[is];
                 }
                 if (L > 0)
@@ -314,30 +323,24 @@ std::vector<std::vector<double>> Output_Mulliken<TK>::get_atom_chg()
 }
 
 template <typename TK>
-std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>> Output_Mulliken<TK>::get_orb_chg()
+std::map<std::vector<int>, double> Output_Mulliken<TK>::get_orb_chg()
 {
     int nat = this->cell_index_->get_nat();
-    std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>> orb_chg(
-        nat, std::vector<std::vector<std::vector<std::vector<double>>>>(
-                 this->nspin_, std::vector<std::vector<std::vector<double>>>()));
+    std::map<std::vector<int>, double> orb_chg;
     for (int is = 0; is < this->nspin_; is++)
     {
         int num = 0;
         for (int iat = 0; iat < nat; iat++)
         {
             int maxL = this->cell_index_->get_maxL(iat);
-            orb_chg[iat][is].resize(maxL + 1);
             for (int L = 0; L <= maxL; L++)
             {
                 int nchi = this->cell_index_->get_nchi(iat, L);
-                orb_chg[iat][is][L].resize(nchi);
                 for (int Z = 0; Z < this->cell_index_->get_nchi(iat, L); Z++)
                 {
-                    orb_chg[iat][is][L][Z].resize(2 * L + 1, 0.0);
                     for (int M = 0; M < (2 * L + 1); M++)
                     {
-                        orb_chg[iat][is][L][Z][M]
-                            += std::abs(this->orbMulP_(is, num)) < 1e-10 ? 0.0 : this->orbMulP_(is, num);
+                        orb_chg[std::vector<int>{iat, is, L, Z, M}] = std::abs(this->orbMulP_(is, num)) < 1e-10 ? 0.0 : this->orbMulP_(is, num);
                         num++;
                     }
                 }
