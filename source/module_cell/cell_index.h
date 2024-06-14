@@ -15,7 +15,7 @@
  *    It is now used only in Output_Mulliken class. However It is assummed to be able to replace GlobalC::ucell
  *    in LCAO codes where only cell indices are needed. Take care that the three key vectors
  *    atomCounts, lnchiCounts, and atomLabels should be set from the UnitCell class.
- *    It depends only nspin because the functions get_nw() and get_iwt() are related to nspin, and are assumed to
+ *    It depends on nspin because the functions get_nw() and get_iwt() are related to nspin, and are assumed to
  *    be used in the LCAO Hamiltonian construction, for example.
  */
 class CellIndex
