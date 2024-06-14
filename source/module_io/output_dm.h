@@ -1,14 +1,14 @@
 #ifndef OUTPUT_DM_H
 #define OUTPUT_DM_H
 
-#include <string>
-
 #include "module_cell/unitcell.h"
 #include "module_hamilt_lcao/module_gint/grid_technique.h"
 
+#include <string>
+
 namespace ModuleIO
 {
-  
+
 /// @brief the output interface to write the density matrix
 class Output_DM
 {

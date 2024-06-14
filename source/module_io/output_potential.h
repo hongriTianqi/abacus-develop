@@ -1,10 +1,11 @@
 #ifndef OUTPUT_POTENTIAL_H
 #define OUTPUT_POTENTIAL_H
 
-#include <string>
 #include "module_basis/module_pw/pw_basis.h"
 #include "module_cell/unitcell.h"
 #include "module_elecstate/module_charge/charge.h"
+
+#include <string>
 
 namespace ModuleIO
 {
