@@ -253,11 +253,6 @@ void Output_Mulliken<TK>::write_mulliken_nspin4(
     }
 }
 
-template <typename TK>
-void Output_Mulliken<TK>::write()
-{
-}
-
 /// set nspin
 template <typename TK>
 void Output_Mulliken<TK>::set_nspin(int nspin_in)

@@ -124,11 +124,6 @@ TK* Output_DMK<TK>::get_DMK(int ik)
     return this->DMK.data();
 }
 
-template <typename TK>
-void Output_DMK<TK>::write()
-{
-}
-
 template class Output_DMK<double>;
 template class Output_DMK<std::complex<double>>;
 
@@ -182,11 +177,6 @@ TK* Output_Sk<TK>::get_Sk(int ik)
         }
     }
     return this->SK.data();
-}
-
-template <typename TK>
-void Output_Sk<TK>::write()
-{
 }
 
 template class Output_Sk<double>;

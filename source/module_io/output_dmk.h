@@ -2,18 +2,16 @@
 #define MODULE_IO_OUTPUT_DMK_H
 #include "module_basis/module_ao/parallel_orbitals.h"
 #include "module_elecstate/module_dm/density_matrix.h"
-#include "module_io/output_interface.h"
 
 namespace ModuleIO
 {
 
 template <typename TK>
-class Output_DMK : public Output_Interface
+class Output_DMK
 {
   public:
     Output_DMK(elecstate::DensityMatrix<TK, double>* p_DM, Parallel_Orbitals* ParaV, int nspin, int nks);
     TK* get_DMK(int ik);
-    void write() override;
 
   private:
     elecstate::DensityMatrix<TK, double>* p_DM_ = nullptr;

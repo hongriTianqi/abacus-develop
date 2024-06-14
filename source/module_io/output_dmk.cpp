@@ -15,11 +15,6 @@ TK* Output_DMK<TK>::get_DMK(int ik)
     return p_DM_->get_DMK_vector()[ik].data();
 }
 
-template <typename TK>
-void Output_DMK<TK>::write()
-{
-}
-
 template class Output_DMK<double>;
 template class Output_DMK<std::complex<double>>;
 

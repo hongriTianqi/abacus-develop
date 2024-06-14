@@ -5,7 +5,6 @@
 #include "module_basis/module_ao/parallel_orbitals.h"
 #include "module_cell/cell_index.h"
 #include "module_io/output_dmk.h"
-#include "module_io/output_interface.h"
 #include "module_io/output_sk.h"
 
 #include <map>
@@ -16,7 +15,7 @@ namespace ModuleIO
 
 /// @brief the output interface to write the Mulliken population charges
 template <typename TK>
-class Output_Mulliken : public Output_Interface
+class Output_Mulliken
 {
   public:
     /// constructor of Output_Mulliken
@@ -32,8 +31,6 @@ class Output_Mulliken : public Output_Interface
     std::vector<std::vector<double>> get_atom_chg();
     /// get orbital charge
     std::vector<std::vector<std::vector<std::vector<std::vector<double>>>>> get_orb_chg();
-    /// an empty write function
-    void write() override;
     /// returun atom_mulliken for updateing STRU file
     std::vector<std::vector<double>> get_atom_mulliken(std::vector<std::vector<double>>& atom_chg);
 

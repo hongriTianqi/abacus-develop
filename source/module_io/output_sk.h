@@ -3,21 +3,18 @@
 
 #include "module_basis/module_ao/parallel_orbitals.h"
 #include "module_hamilt_lcao/hamilt_lcaodft/hamilt_lcao.h"
-#include "module_io/output_interface.h"
 
 namespace ModuleIO
 {
 
 template <typename TK>
-class Output_Sk : public Output_Interface
+class Output_Sk
 {
   public:
     /// constructur of Output_Sk
     Output_Sk(LCAO_Matrix* LM, hamilt::Hamilt<TK>* p_hamilt, Parallel_Orbitals* ParaV, int nspin, int nks);
     /// @brief the function to get Sk for a given k-point
     TK* get_Sk(int ik);
-    /// @brief an empty write function
-    void write() override;
 
   private:
     LCAO_Matrix* LM_ = nullptr;

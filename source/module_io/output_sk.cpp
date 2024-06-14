@@ -40,11 +40,6 @@ std::complex<double>* Output_Sk<std::complex<double>>::get_Sk(int ik)
     return this->LM_->Sloc2.data();
 }
 
-template <typename TK>
-void Output_Sk<TK>::write()
-{
-}
-
 template class Output_Sk<double>;
 template class Output_Sk<std::complex<double>>;
 
