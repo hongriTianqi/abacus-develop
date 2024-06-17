@@ -21,6 +21,7 @@ add_library(
     setup_nonlocal.cpp
     klist.cpp
     parallel_kpoints.cpp
+    parallel_k2d.cpp
 )
 
 if(ENABLE_COVERAGE)
