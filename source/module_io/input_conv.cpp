@@ -515,7 +515,6 @@ void Input_Conv::Convert(void)
     //----------------------------------------------------------
     GlobalV::GATE_FLAG = INPUT.gate_flag;
     GlobalV::nelec = INPUT.nelec;
-    std::cout << "test " <<  std::abs(INPUT.nupdown - INPUT.NUPDOWN_SENTINEL)   << std::endl;
     if (std::abs(INPUT.nupdown - INPUT.NUPDOWN_SENTINEL) > 1e-6)
     {
         GlobalV::TWO_EFERMI = true;
