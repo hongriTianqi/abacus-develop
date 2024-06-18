@@ -111,7 +111,9 @@ class Input
     std::string dft_functional; // input DFT functional.
     double xc_temperature; // only relevant if finite temperature functional is used
     int nspin; // LDA ; LSDA ; non-linear spin
-    double nupdown = 0.0;
+    // Define a sentinel value that is unlikely to be a valid nupdown value.
+    const double NUPDOWN_SENTINEL = 1e30; // This should be a value that is never expected to be a valid nupdown.
+    double nupdown = NUPDOWN_SENTINEL; // number of up-down electrons
     double nelec; // total number of electrons
     double nelec_delta; // change in the number of total electrons
     int lmaxmax;
