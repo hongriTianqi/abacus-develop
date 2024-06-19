@@ -240,7 +240,12 @@ TEST_P(ParaKpoints,DividePools)
                                 GlobalV::RANK_IN_POOL,
                                 GlobalV::MY_POOL);
 		pp.test_init_pools();
-		Pkpoints->kinfo(pp.nkstot_);
+		Pkpoints->kinfo(pp.nkstot_,
+			GlobalV::KPAR,
+			GlobalV::MY_POOL,
+			GlobalV::RANK_IN_POOL,
+			GlobalV::NPROC,
+			1);
 		pp.test_kinfo(Pkpoints);
 	}
 	delete Pkpoints;

@@ -3,7 +3,6 @@
 
 #include "module_base/complexarray.h"
 #include "module_base/global_function.h"
-#include "module_base/global_variable.h"
 #include "module_base/realarray.h"
 #include "module_base/vector3.h"
 
@@ -13,7 +12,12 @@ class Parallel_Kpoints
     Parallel_Kpoints();
     ~Parallel_Kpoints();
 
-    void kinfo(int& nkstot);
+    void kinfo(int &nkstot_in,
+      const int &kpar_in,
+      const int &my_pool_in,
+      const int &rank_in_pool_in,
+      const int &nproc_in,
+      const int &nspin_in);
 
     // collect value from each pool to wk.
     void pool_collection(double& value, const double* wk, const int& ik);
@@ -37,10 +41,10 @@ class Parallel_Kpoints
                     std::vector<ModuleBase::Vector3<double>>& vec_global) const;
 #endif
 
-    // information about pool, dim: GlobalV::KPAR
+    // information about pool, dim: KPAR
     //int* nproc_pool = nullptr;    it is not used
 
-    // inforamation about kpoints, dim: GlobalV::KPAR
+    // inforamation about kpoints, dim: KPAR
     std::vector<int> nks_pool;    // number of k-points in each pool
     std::vector<int> startk_pool; // the first k-point in each pool
 

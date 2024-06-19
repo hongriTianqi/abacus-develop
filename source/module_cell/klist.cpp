@@ -158,7 +158,12 @@ void K_Vectors::set(const ModuleSymmetry::Symmetry& symm,
     // It's very important in parallel case,
     // firstly do the mpi_k() and then
     // do set_kup_and_kdw()
-	GlobalC::Pkpoints.kinfo(nkstot);    //assign k points to several process pools
+	GlobalC::Pkpoints.kinfo(nkstot,
+        GlobalV::KPAR,
+        GlobalV::MY_POOL,
+        GlobalV::RANK_IN_POOL,
+        GlobalV::NPROC,
+        nspin_in);    //assign k points to several process pools
 #ifdef __MPI
     // distribute K point data to the corresponding process
     this->mpi_k();//2008-4-29

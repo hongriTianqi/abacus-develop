@@ -60,7 +60,12 @@ TEST_F(IstateInfoTest,OutIstateInfoS1)
                                 GlobalV::MY_POOL);
 	kv->set_nkstot(100);
 	int nkstot = kv->get_nkstot(); 
-	Pkpoints->kinfo(nkstot);
+	Pkpoints->kinfo(nkstot,
+		GlobalV::KPAR,
+		GlobalV::MY_POOL,
+		GlobalV::RANK_IN_POOL,
+		GlobalV::NPROC_IN_POOL,
+		GlobalV::NSPIN);
 	//std::cout<<"my_rank "<<GlobalV::MY_RANK<<" pool rank/size: "
 	//	<<GlobalV::RANK_IN_POOL<<"/"<<GlobalV::NPROC_IN_POOL<<std::endl;
 	//std::cout<<"MY_POOL "<<GlobalV::MY_POOL<<std::endl;
@@ -107,7 +112,12 @@ TEST_F(IstateInfoTest,OutIstateInfoS2)
                                 GlobalV::MY_POOL);
 	kv->set_nkstot(100);
 	int nkstot = kv->get_nkstot(); 
-	Pkpoints->kinfo(nkstot);
+	Pkpoints->kinfo(nkstot,
+		GlobalV::KPAR,
+		GlobalV::MY_POOL,
+		GlobalV::RANK_IN_POOL,
+		GlobalV::NPROC_IN_POOL,
+		GlobalV::NSPIN);
 	//std::cout<<"my_rank "<<GlobalV::MY_RANK<<" pool rank/size: "
 	//	<<GlobalV::RANK_IN_POOL<<"/"<<GlobalV::NPROC_IN_POOL<<std::endl;
 	//std::cout<<"MY_POOL "<<GlobalV::MY_POOL<<std::endl;
