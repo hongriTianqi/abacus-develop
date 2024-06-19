@@ -117,25 +117,25 @@ void Parallel_Reduce::reduce_pool<double>(double* object, const int n)
 
 // (1) the value is same in each pool.
 // (2) we need to reduce the value from different pool.
-void Parallel_Reduce::reduce_double_allpool(double &object)
+void Parallel_Reduce::reduce_double_allpool(const int& kpar, const int& nproc_in_pool, double &object)
 {
-	if(GlobalV::KPAR==1) return;
+	if(kpar==1) return;
 #ifdef __MPI
-	double swap = object / GlobalV::NPROC_IN_POOL;
+	double swap = object / nproc_in_pool;
 	MPI_Allreduce(&swap , &object , 1, MPI_DOUBLE , MPI_SUM , MPI_COMM_WORLD);
 #endif
 }
 
 // (1) the value is same in each pool.
 // (2) we need to reduce the value from different pool.
-void Parallel_Reduce::reduce_double_allpool(double *object, const int n)
+void Parallel_Reduce::reduce_double_allpool(const int& kpar, const int& nproc_in_pool, double *object, const int n)
 {
-	if(GlobalV::KPAR==1) return;
+	if(kpar==1) return;
 #ifdef __MPI
 	double *swap = new double[n];
 	for(int i=0; i<n; i++)
 	{
-		swap[i] = object[i] / GlobalV::NPROC_IN_POOL;
+		swap[i] = object[i] / nproc_in_pool;
 	}
 	MPI_Allreduce(swap , object , n, MPI_DOUBLE , MPI_SUM , MPI_COMM_WORLD);
 	delete[] swap;

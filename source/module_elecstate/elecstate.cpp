@@ -169,7 +169,7 @@ void ElecState::calculate_weights()
         }
 #ifdef __MPI
         // qianrui fix a bug on 2021-7-21
-        Parallel_Reduce::reduce_double_allpool(this->f_en.demet);
+        Parallel_Reduce::reduce_double_allpool(GlobalV::KPAR, GlobalV::NPROC_IN_POOL, this->f_en.demet);
 #endif
     }
     else if (Occupy::fixed_occupations)

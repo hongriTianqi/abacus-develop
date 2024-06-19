@@ -100,7 +100,7 @@ bool ModuleIO::calculate_dos
 			}
 		}
 #ifdef __MPI
-		Parallel_Reduce::reduce_double_allpool(count);
+		Parallel_Reduce::reduce_double_allpool(GlobalV::KPAR, GlobalV::NPROC_IN_POOL, count);
 #endif
 		count = count / static_cast<double>(nkstot);
 		sum += count;

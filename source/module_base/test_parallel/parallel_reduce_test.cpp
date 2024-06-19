@@ -441,9 +441,9 @@ TEST_F(ParaReduce,ReduceDoublePool)
 
 		// first way of calculating global sum
 		double global_sum_first = pool_sum_first;
-		Parallel_Reduce::reduce_double_allpool(global_sum_first);
+		Parallel_Reduce::reduce_double_allpool(GlobalV::KPAR, GlobalV::NPROC_IN_POOL, global_sum_first);
 		// second way of calculating pool sum
-		Parallel_Reduce::reduce_double_allpool(rand_array,num_per_process);
+		Parallel_Reduce::reduce_double_allpool(GlobalV::KPAR, GlobalV::NPROC_IN_POOL, rand_array,num_per_process);
 		double global_sum_second = 0.0;
 		for(int i=0;i<num_per_process;i++)
 		{
