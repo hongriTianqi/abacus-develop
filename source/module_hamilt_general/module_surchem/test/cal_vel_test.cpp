@@ -85,9 +85,7 @@ TEST_F(cal_vel_test, eps_pot)
     //init
 #ifdef __MPI
     MPI_Comm_size(MPI_COMM_WORLD,&GlobalV::NPROC);
-	MPI_Comm_rank(MPI_COMM_WORLD,&GlobalV::MY_RANK); 
-    Parallel_Global::split_diag_world(GlobalV::NPROC);
-    Parallel_Global::split_grid_world(GlobalV::NPROC);
+	MPI_Comm_rank(MPI_COMM_WORLD,&GlobalV::MY_RANK);
     MPI_Comm_split(MPI_COMM_WORLD,0,1,&POOL_WORLD); //in LCAO kpar=1
 #endif
 
@@ -179,9 +177,7 @@ TEST_F(cal_vel_test, cal_vel)
     //init
 #ifdef __MPI
     MPI_Comm_size(MPI_COMM_WORLD,&GlobalV::NPROC);
-	MPI_Comm_rank(MPI_COMM_WORLD,&GlobalV::MY_RANK); 
-    Parallel_Global::split_diag_world(GlobalV::NPROC);
-    Parallel_Global::split_grid_world(GlobalV::NPROC);
+	MPI_Comm_rank(MPI_COMM_WORLD,&GlobalV::MY_RANK);
     MPI_Comm_split(MPI_COMM_WORLD,0,1,&POOL_WORLD); //in LCAO kpar=1
 #endif
 

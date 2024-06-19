@@ -230,7 +230,7 @@ TEST_F(ParaReduce,ReduceIntDiag)
 	// NPROC is set to 4 in parallel_global_test.sh
 	if(GlobalV::NPROC==4)
 	{
-		Parallel_Global::split_diag_world(2);
+		Parallel_Global::split_diag_world(2, GlobalV::NPROC, GlobalV::MY_RANK, GlobalV::DRANK, GlobalV::DSIZE, GlobalV::DCOLOR);
 		// generate a random array
 		int *rand_array = NULL;
 		rand_array = get_rand_array<int>(num_per_process);
@@ -272,7 +272,7 @@ TEST_F(ParaReduce,ReduceDoubleDiag)
 	// NPROC is set to 4 in parallel_global_test.sh
 	if(GlobalV::NPROC==4)
 	{
-		Parallel_Global::split_diag_world(2);
+		Parallel_Global::split_diag_world(2, GlobalV::NPROC, GlobalV::MY_RANK, GlobalV::DRANK, GlobalV::DSIZE, GlobalV::DCOLOR);
 		// generate a random array
 		double *rand_array = NULL;
 		rand_array = get_rand_array<double>(num_per_process);
@@ -314,7 +314,7 @@ TEST_F(ParaReduce,ReduceIntGrid)
 	// NPROC is set to 4 in parallel_global_test.sh
 	if(GlobalV::NPROC==4)
 	{
-		Parallel_Global::split_grid_world(2);
+		Parallel_Global::split_grid_world(2, GlobalV::NPROC, GlobalV::MY_RANK, GlobalV::GRANK, GlobalV::GSIZE);
 		// generate a random array
 		int *rand_array = NULL;
 		rand_array = get_rand_array<int>(num_per_process);
@@ -356,7 +356,7 @@ TEST_F(ParaReduce,ReduceDoubleGrid)
 	// NPROC is set to 4 in parallel_global_test.sh
 	if(GlobalV::NPROC==4)
 	{
-		Parallel_Global::split_grid_world(2);
+		Parallel_Global::split_grid_world(2, GlobalV::NPROC, GlobalV::MY_RANK, GlobalV::GRANK, GlobalV::GSIZE);
 		// generate a random array
 		double *rand_array = NULL;
 		rand_array = get_rand_array<double>(num_per_process);

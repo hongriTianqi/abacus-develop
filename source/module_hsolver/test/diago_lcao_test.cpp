@@ -312,7 +312,6 @@ int main(int argc, char **argv)
     MPI_Comm_rank(MPI_COMM_WORLD, &mypnum);
 
     testing::InitGoogleTest(&argc, argv);
-    //Parallel_Global::split_diag_world(dsize);
     ::testing::TestEventListeners &listeners = ::testing::UnitTest::GetInstance()->listeners();
     if (mypnum != 0)
     {

@@ -51,107 +51,51 @@ void Parallel_Global::myProd(std::complex<double> *in,std::complex<double> *inou
 #endif
 
 
-void Parallel_Global::split_diag_world(const int &diag_np)
+void Parallel_Global::split_diag_world(const int &diag_np,
+                                    const int &nproc,
+                                    const int &my_rank,
+                                    int &drank,
+                                    int &dsize,
+                                    int &dcolor)
 {
 #ifdef __MPI
 	assert(diag_np>0);
-	// number of processors in each 'grid group'.
-	int* group_grid_np = new int[diag_np];
-	ModuleBase::GlobalFunc::ZEROS(group_grid_np, diag_np);
-	// average processors in each 'grid group'
-	int ave = GlobalV::NPROC/diag_np;
-	// remain processors.
-	int remain = GlobalV::NPROC - ave * diag_np;
-
-	for(int i=0; i<diag_np; ++i)
-	{
-		group_grid_np[i] = ave;
-		if(i<remain)
-		{
-			++group_grid_np[i];
-		}
-	}
-
-	// color: same color will stay in same group.
-	// key: rank in each fragment group.
-	int color = -1;		// Peize Lin add initialization for compiler warning at 2020.01.31
-	int key = -1;		// Peize Lin add initialization for compiler warning at 2020.01.31
-
-	int np_now = 0;
-	for(int i=0; i<diag_np; ++i)
-	{
-		np_now += group_grid_np[i];
-		if(GlobalV::MY_RANK < np_now)
-		{
-			key = i;
-			color = group_grid_np[i] - (np_now - GlobalV::MY_RANK);
-			break;
-		}
-	}
-
+    int group_grid_np = -1;
+    int color = -1;
+    int key = -1;
+	divide_mpi_groups(nproc, diag_np, my_rank, group_grid_np, key, color);
 	MPI_Comm_split(MPI_COMM_WORLD, color, key, &DIAG_WORLD);
-	MPI_Comm_rank(DIAG_WORLD, &GlobalV::DRANK);
-	MPI_Comm_size(DIAG_WORLD, &GlobalV::DSIZE);
-	GlobalV::DCOLOR=color;
-
-
-	delete[] group_grid_np;
+	MPI_Comm_rank(DIAG_WORLD, &drank);
+	MPI_Comm_size(DIAG_WORLD, &dsize);
+	dcolor=color;
 #else
-	GlobalV::DCOLOR=0; //mohan fix bug 2012-02-04
-	GlobalV::DRANK=0;
-	GlobalV::DSIZE=1;
+	dcolor=0; //mohan fix bug 2012-02-04
+	drank=0;
+	dsize=1;
 #endif
 	return;
 }
 
 
 
-void Parallel_Global::split_grid_world(const int &diag_np)
+void Parallel_Global::split_grid_world(const int diag_np,
+                                    const int &nproc,
+                                    const int &my_rank,
+                                    int &grank,
+                                    int &gsize)
 {
 #ifdef __MPI
 	assert(diag_np>0);
-	// number of processors in each 'grid group'.
-	int* group_grid_np = new int[diag_np];
-	ModuleBase::GlobalFunc::ZEROS(group_grid_np, diag_np);
-	// average processors in each 'grid group'
-	int ave = GlobalV::NPROC/diag_np;
-	// remain processors.
-	int remain = GlobalV::NPROC - ave * diag_np;
-
-	for(int i=0; i<diag_np; ++i)
-	{
-		group_grid_np[i] = ave;
-		if(i<remain)
-		{
-			++group_grid_np[i];
-		}
-	}
-
-	// color: same color will stay in same group.
-	// key: rank in each fragment group.
-	int color = -1;		// Peize Lin add initialization for compiler warning at 2020.01.31
-	int key = -1;		// Peize Lin add initialization for compiler warning at 2020.01.31
-
-	int np_now = 0;
-	for(int i=0; i<diag_np; ++i)
-	{
-		np_now += group_grid_np[i];
-		if(GlobalV::MY_RANK < np_now)
-		{
-			color = i;
-			key = group_grid_np[i] - (np_now - GlobalV::MY_RANK);
-			break;
-		}
-	}
-
+    int group_grid_np = -1;
+    int color = -1;
+    int key = -1;
+    divide_mpi_groups(nproc, diag_np, my_rank, group_grid_np, color, key);
 	MPI_Comm_split(MPI_COMM_WORLD, color, key, &GRID_WORLD);
-	MPI_Comm_rank(GRID_WORLD, &GlobalV::GRANK);
-	MPI_Comm_size(GRID_WORLD, &GlobalV::GSIZE);
-
-	delete[] group_grid_np;
+	MPI_Comm_rank(GRID_WORLD, &grank);
+	MPI_Comm_size(GRID_WORLD, &gsize);
 #else
-	GlobalV::GRANK=0;  //mohan fix bug 2012-02-04
-	GlobalV::GSIZE=1;
+	grank=0;  //mohan fix bug 2012-02-04
+	gsize=1;
 #endif
 	return;
 }
@@ -407,7 +351,7 @@ void Parallel_Global::divide_pools(const int &NPROC,
 }
 
 void Parallel_Global::divide_mpi_groups(
-    const int procs, const int num_groups, const int rank,
+    const int &procs, const int &num_groups, const int &rank,
     int &procs_in_group, int &my_group, int &rank_in_group, const bool even)
 {
     // Calculate the distribution of processes among pools.

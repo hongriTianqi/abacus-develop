@@ -59,8 +59,17 @@ void Driver::reading()
     Input_Conv::Convert();
 
     // (3) define the 'DIAGONALIZATION' world in MPI
-    Parallel_Global::split_diag_world(GlobalV::DIAGO_PROC);
-    Parallel_Global::split_grid_world(GlobalV::DIAGO_PROC);
+    Parallel_Global::split_diag_world(GlobalV::DIAGO_PROC,
+                                      GlobalV::NPROC,
+                                      GlobalV::MY_RANK,
+                                      GlobalV::DRANK,
+                                      GlobalV::DSIZE,
+                                      GlobalV::DCOLOR);
+    Parallel_Global::split_grid_world(GlobalV::DIAGO_PROC,
+                                      GlobalV::NPROC,
+                                      GlobalV::MY_RANK,
+                                      GlobalV::GRANK,
+                                      GlobalV::GSIZE);
     ModuleBase::GlobalFunc::OUT(GlobalV::ofs_running, "DRANK", GlobalV::DRANK + 1);
     ModuleBase::GlobalFunc::OUT(GlobalV::ofs_running, "DSIZE", GlobalV::DSIZE);
     ModuleBase::GlobalFunc::OUT(GlobalV::ofs_running, "DCOLOR", GlobalV::DCOLOR + 1);
