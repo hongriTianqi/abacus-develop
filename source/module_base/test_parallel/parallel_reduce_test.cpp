@@ -189,7 +189,7 @@ TEST_F(ParaReduce,GatherIntAll)
 	EXPECT_EQ(local_number,array[GlobalV::MY_RANK]);
 	// get minimum integer among all processes
 	int min_number = local_number;
-	Parallel_Reduce::gather_min_int_all(min_number);
+	Parallel_Reduce::gather_min_int_all(GlobalV::NPROC, min_number);
 	for(int i=0;i<GlobalV::NPROC;i++)
 	{
 		EXPECT_LE(min_number,array[i]);
@@ -211,10 +211,10 @@ TEST_F(ParaReduce,GatherDoubleAll)
 	EXPECT_EQ(local_number,array[GlobalV::MY_RANK]);
 	// get minimum integer among all processes
 	double min_number = local_number;
-	Parallel_Reduce::gather_min_double_all(min_number);
+	Parallel_Reduce::gather_min_double_all(GlobalV::NPROC, min_number);
 	// get maximum integer among all processes
 	double max_number = local_number;
-	Parallel_Reduce::gather_max_double_all(max_number);
+	Parallel_Reduce::gather_max_double_all(GlobalV::NPROC, max_number);
 	for(int i=0;i<GlobalV::NPROC;i++)
 	{
 		EXPECT_LE(min_number,array[i]);
@@ -551,10 +551,10 @@ TEST_F(ParaReduce,GatherDoublePool)
 		EXPECT_EQ(local_number,array[GlobalV::RANK_IN_POOL]);
 		// get minimum integer among all processes
 		double min_number = local_number;
-		Parallel_Reduce::gather_min_double_pool(min_number);
+		Parallel_Reduce::gather_min_double_pool(GlobalV::NPROC_IN_POOL, min_number);
 		// get maximum integer among all processes
 		double max_number = local_number;
-		Parallel_Reduce::gather_max_double_pool(max_number);
+		Parallel_Reduce::gather_max_double_pool(GlobalV::NPROC_IN_POOL, max_number);
 		for(int i=0;i<GlobalV::NPROC_IN_POOL;i++)
 		{
 			EXPECT_LE(min_number,array[i]);

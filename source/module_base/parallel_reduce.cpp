@@ -1,7 +1,6 @@
 #include "parallel_reduce.h"
 
 #include "module_base/global_function.h"
-#include "module_base/global_variable.h"
 #include "parallel_global.h"
 
 template<>
@@ -199,12 +198,12 @@ void Parallel_Reduce::gather_int_all(int &v, int *all)
 	return;
 }
 
-void Parallel_Reduce::gather_min_int_all(int &v)
+void Parallel_Reduce::gather_min_int_all(const int&nproc, int &v)
 {
 #ifdef __MPI
-	int *all = new int[GlobalV::NPROC];
+	int *all = new int[nproc];
 	MPI_Allgather(&v, 1, MPI_INT, all, 1, MPI_INT, MPI_COMM_WORLD);
-	for(int i=0; i<GlobalV::NPROC; i++)
+	for(int i=0; i<nproc; i++)
 	{
 		if(v>all[i])
 		{
@@ -216,13 +215,13 @@ void Parallel_Reduce::gather_min_int_all(int &v)
 }
 
 
-void Parallel_Reduce::gather_max_double_all(double &v)
+void Parallel_Reduce::gather_max_double_all(const int& nproc, double &v)
 {
 #ifdef __MPI
-	double *value=new double[GlobalV::NPROC];
-	ModuleBase::GlobalFunc::ZEROS(value, GlobalV::NPROC);
+	double *value=new double[nproc];
+	ModuleBase::GlobalFunc::ZEROS(value, nproc);
 	MPI_Allgather(&v, 1, MPI_DOUBLE, value, 1, MPI_DOUBLE, MPI_COMM_WORLD);
-	for(int i=0; i<GlobalV::NPROC; i++)
+	for(int i=0; i<nproc; i++)
 	{
 		if(v<value[i])
 		{
@@ -233,14 +232,14 @@ void Parallel_Reduce::gather_max_double_all(double &v)
 #endif
 }
 
-void Parallel_Reduce::gather_max_double_pool(double &v)
+void Parallel_Reduce::gather_max_double_pool(const int& nproc_in_pool, double &v)
 {
 #ifdef __MPI
-	if(GlobalV::NPROC_IN_POOL == 1) return;
-	double *value=new double[GlobalV::NPROC_IN_POOL];
-	ModuleBase::GlobalFunc::ZEROS(value, GlobalV::NPROC_IN_POOL);
+	if(nproc_in_pool == 1) return;
+	double *value=new double[nproc_in_pool];
+	ModuleBase::GlobalFunc::ZEROS(value, nproc_in_pool);
 	MPI_Allgather(&v, 1, MPI_DOUBLE, value, 1, MPI_DOUBLE, POOL_WORLD);
-	for(int i=0; i<GlobalV::NPROC_IN_POOL; i++)
+	for(int i=0; i<nproc_in_pool; i++)
 	{
 		if(v<value[i])
 		{
@@ -251,14 +250,14 @@ void Parallel_Reduce::gather_max_double_pool(double &v)
 #endif
 }
 
-void Parallel_Reduce::gather_min_double_pool(double &v)
+void Parallel_Reduce::gather_min_double_pool(const int& nproc_in_pool, double &v)
 {
 #ifdef __MPI
-	if(GlobalV::NPROC_IN_POOL == 1) return;
-	double *value=new double[GlobalV::NPROC_IN_POOL];
-	ModuleBase::GlobalFunc::ZEROS(value, GlobalV::NPROC_IN_POOL);
+	if(nproc_in_pool == 1) return;
+	double *value=new double[nproc_in_pool];
+	ModuleBase::GlobalFunc::ZEROS(value, nproc_in_pool);
 	MPI_Allgather(&v, 1, MPI_DOUBLE, value, 1, MPI_DOUBLE, POOL_WORLD);
-	for(int i=0; i<GlobalV::NPROC_IN_POOL; i++)
+	for(int i=0; i<nproc_in_pool; i++)
 	{
 		if(v>value[i])
 		{
@@ -269,13 +268,13 @@ void Parallel_Reduce::gather_min_double_pool(double &v)
 #endif
 }
 
-void Parallel_Reduce::gather_min_double_all(double &v)
+void Parallel_Reduce::gather_min_double_all(const int& nproc, double &v)
 {
 #ifdef __MPI
-	double *value=new double[GlobalV::NPROC];
-	ModuleBase::GlobalFunc::ZEROS(value, GlobalV::NPROC);
+	double *value=new double[nproc];
+	ModuleBase::GlobalFunc::ZEROS(value, nproc);
 	MPI_Allgather(&v, 1, MPI_DOUBLE, value, 1, MPI_DOUBLE, MPI_COMM_WORLD);
-	for(int i=0; i<GlobalV::NPROC; i++)
+	for(int i=0; i<nproc; i++)
 	{
 		if(v>value[i])
 		{

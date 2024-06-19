@@ -32,11 +32,11 @@ namespace Parallel_Reduce
 	void reduce_double_allpool(const int& kpar, const int& nproc_in_pool, double &object);
 	void reduce_double_allpool(const int& kpar, const int& nproc_in_pool, double *object, const int n);
 
-	void gather_min_int_all(int &v);
-	void gather_max_double_all(double &v);
-	void gather_min_double_all(double &v);
-	void gather_max_double_pool(double &v);
-	void gather_min_double_pool(double &v);
+	void gather_min_int_all(const int&nproc, int &v);
+	void gather_max_double_all(const int& nproc, double &v);
+	void gather_min_double_all(const int& nproc, double &v);
+	void gather_max_double_pool(const int& nproc_in_pool, double &v);
+	void gather_min_double_pool(const int& nproc_in_pool, double &v);
 
 	// mohan add 2011-04-21
 	void gather_int_all(int &v, int *all);

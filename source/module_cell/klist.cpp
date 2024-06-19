@@ -1084,7 +1084,7 @@ void K_Vectors::mpi_k(void)
     ModuleBase::GlobalFunc::OUT(GlobalV::ofs_running, "k-point number in this process", nks);
     int nks_minimum = this->nks;
 
-    Parallel_Reduce::gather_min_int_all(nks_minimum);
+    Parallel_Reduce::gather_min_int_all(GlobalV::NPROC, nks_minimum);
 
     if (nks_minimum == 0)
     {

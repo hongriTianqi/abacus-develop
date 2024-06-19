@@ -30,8 +30,8 @@ void ModuleIO::write_dos_pw(const ModuleBase::matrix &ekb,
 	}
 
 #ifdef __MPI
-	Parallel_Reduce::gather_max_double_all(emax);
-	Parallel_Reduce::gather_min_double_all(emin);
+	Parallel_Reduce::gather_max_double_all(GlobalV::NPROC, emax);
+	Parallel_Reduce::gather_min_double_all(GlobalV::NPROC, emin);
 #endif
 
 	emax *= ModuleBase::Ry_to_eV;
