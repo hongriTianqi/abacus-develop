@@ -100,14 +100,16 @@ void Parallel_Global::split_grid_world(const int diag_np,
 	return;
 }
 
-void Parallel_Global::read_mpi_parameters(int argc, char **argv, int &NPROC, int &MY_RANK, std::ofstream &ofs_warning)
+void Parallel_Global::read_mpi_parameters(int argc, char **argv, int &NPROC, int &MY_RANK)
 {
 #ifdef __MPI
 #ifdef _OPENMP
 	int provided = 0;
 	MPI_Init_thread(&argc,&argv,MPI_THREAD_MULTIPLE,&provided);
 	if( provided != MPI_THREAD_MULTIPLE )
-		ofs_warning<<"MPI_Init_thread request "<<MPI_THREAD_MULTIPLE<<" but provide "<<provided<<std::endl;
+    {
+        std::cerr <<"MPI_Init_thread request "<<MPI_THREAD_MULTIPLE<<" but provide "<<provided<<std::endl;
+    }
 	// Peize Lin change 2022.08.08
 	// MPI_THREAD_FUNNELED is enough for ABACUS. Using MPI_THREAD_SERIALIZED for elpa, using MPI_THREAD_MULTIPLE for libRI.
 #else
