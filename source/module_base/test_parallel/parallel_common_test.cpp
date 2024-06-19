@@ -54,7 +54,6 @@ TEST_F(ParaCommon,Bcast)
 {
     // reset data in the first process
 	int MY_RANK = mpiContext.GetRank();
-	std::cout << "MY_RANK: " << MY_RANK << std::endl;
     if(MY_RANK==0)
     {
 	    boo=false;
