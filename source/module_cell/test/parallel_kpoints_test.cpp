@@ -7,7 +7,6 @@
 
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
-#include "module_base/global_variable.h"
 #include "module_base/parallel_global.h"
 
 /************************************************
@@ -30,6 +29,28 @@
  * environment.
  */
 
+class MPIContext
+{
+public:
+   MPIContext()
+   {
+       MPI_Comm_rank(MPI_COMM_WORLD, &_rank);
+       MPI_Comm_size(MPI_COMM_WORLD, &_size);
+   }
+
+   int GetRank() const { return _rank; }
+   int GetSize() const { return _size; }
+
+   int KPAR;
+   int NPROC_IN_POOL;
+   int MY_POOL;
+   int RANK_IN_POOL;
+
+private:
+   int _rank;
+   int _size;
+};
+
 class ParaPrepare
 {
 public:
@@ -37,7 +58,11 @@ public:
 		KPAR_(KPAR_in),nkstot_(nkstot_in){}
 	int KPAR_;
 	int nkstot_;
-	void test_init_pools(void);
+	void test_init_pools(const int& NPROC,
+				const int& MY_RANK,
+				const int& MY_POOL,
+				const int& RANK_IN_POOL,
+				const int& NPROC_IN_POOL);
 	void test_kinfo(const Parallel_Kpoints* Pkpts);
 };
 
@@ -77,11 +102,15 @@ void ParaPrepare::test_kinfo(const Parallel_Kpoints* Pkpts)
 }
 
 
-void ParaPrepare::test_init_pools()
+void ParaPrepare::test_init_pools(const int& NPROC,
+				const int& MY_RANK,
+				const int& MY_POOL,
+				const int& RANK_IN_POOL,
+				const int& NPROC_IN_POOL)
 {
 	int* nproc_pool_= new int[KPAR_];
-	int quotient = GlobalV::NPROC/KPAR_;
-	int residue  = GlobalV::NPROC%KPAR_;
+	int quotient = NPROC/KPAR_;
+	int residue  = NPROC%KPAR_;
 	// the previous "residue" pools have (quotient+1) processes
 	for(int i=0;i<KPAR_;i++)
 	{
@@ -96,33 +125,42 @@ void ParaPrepare::test_init_pools()
 	for(int i=0;i<KPAR_;i++)
 	{
 		np_now += nproc_pool_[i];
-		if(GlobalV::MY_RANK < np_now)
+		if(MY_RANK < np_now)
 		{
 			color = i;
-			// GlobalV::MY_POOL is the pool where this process resides
-			EXPECT_EQ(GlobalV::MY_POOL,i);
+			// MY_POOL is the pool where this process resides
+			EXPECT_EQ(MY_POOL,i);
 			break;
 		}
 	}
 	MPI_Comm test_comm;
 	int test_rank, test_size;
-	MPI_Comm_split(MPI_COMM_WORLD, color, GlobalV::MY_RANK, &test_comm);
+	MPI_Comm_split(MPI_COMM_WORLD, color, MY_RANK, &test_comm);
 	MPI_Comm_rank(test_comm, &test_rank);
 	MPI_Comm_size(test_comm, &test_size);
-	// GlobalV::RANK_IN_POOL is the rank of this process in GlobalV::MY_POOL
-	EXPECT_EQ(GlobalV::RANK_IN_POOL,test_rank);
-	// GlobalV::NPROC_IN_POOL is the number of processes in GlobalV::MY_POOL where this process resides
-	EXPECT_EQ(GlobalV::NPROC_IN_POOL,test_size);
+	// RANK_IN_POOL is the rank of this process in MY_POOL
+	EXPECT_EQ(RANK_IN_POOL,test_rank);
+	// NPROC_IN_POOL is the number of processes in MY_POOL where this process resides
+	EXPECT_EQ(NPROC_IN_POOL,test_size);
         //printf("my_rank: %d \t test rank/size: %d/%d \t pool rank/size: %d/%d\n",
-	//       GlobalV::MY_RANK,test_rank,test_size,GlobalV::RANK_IN_POOL,GlobalV::NPROC_IN_POOL);
+	//       MY_RANK,test_rank,test_size,RANK_IN_POOL,NPROC_IN_POOL);
 	MPI_Comm_free(&test_comm);
 }
 
 class ParaKpoints : public ::testing::TestWithParam<ParaPrepare>
 {
+protected:
+	MPIContext mpi;
+	int NPROC;
+	int MY_RANK;
+	void SetUp() override
+	{
+		NPROC = mpi.GetSize();
+		MY_RANK = mpi.GetRank();
+	}
 };
 
-TEST(Parallel_KpointsTest, GatherkvecTest) {
+TEST_F(ParaKpoints, GatherkvecTest) {
     // Initialize Parallel_Kpoints object
     Parallel_Kpoints parallel_kpoints;
 
@@ -132,36 +170,36 @@ TEST(Parallel_KpointsTest, GatherkvecTest) {
 
     // Populate vec_local with some data
 	int npool = 1;
-	if(GlobalV::NPROC > 2)
+	if(this->NPROC > 2)
 	{
 		npool = 3;
 	}
-	else if(GlobalV::NPROC == 2)
+	else if(this->NPROC == 2)
 	{
 		npool = 2;
 	}
-	GlobalV::KPAR = npool;
+	mpi.KPAR = npool;
 
-	if(GlobalV::MY_RANK == 0)
+	if(this->MY_RANK == 0)
 	{
     	vec_local.push_back(ModuleBase::Vector3<double>(1.0, 1.0, 1.0));
-		GlobalV::NPROC_IN_POOL = 1;
-		GlobalV::MY_POOL = 0;
+		mpi.NPROC_IN_POOL = 1;
+		mpi.MY_POOL = 0;
 		parallel_kpoints.nks_np = 1;
 	}
-	else if(GlobalV::MY_RANK == 1)
+	else if(this->MY_RANK == 1)
 	{
 		vec_local.push_back(ModuleBase::Vector3<double>(2.0, 2.0, 2.0));
 		vec_local.push_back(ModuleBase::Vector3<double>(3.0, 4.0, 5.0));
-		GlobalV::NPROC_IN_POOL = 1;
-		GlobalV::MY_POOL = 1;
+		mpi.NPROC_IN_POOL = 1;
+		mpi.MY_POOL = 1;
 		parallel_kpoints.nks_np = 2;
 	}
 	else
 	{
 		vec_local.push_back(ModuleBase::Vector3<double>(3.0, 3.0, 3.0));
-		GlobalV::NPROC_IN_POOL = GlobalV::NPROC - 2;
-		GlobalV::MY_POOL = 2;
+		mpi.NPROC_IN_POOL = NPROC - 2;
+		mpi.MY_POOL = 2;
 		parallel_kpoints.nks_np = 1;
 	}
 
@@ -209,42 +247,39 @@ TEST_P(ParaKpoints,DividePools)
 	ParaPrepare pp = GetParam();
 	Parallel_Kpoints* Pkpoints;
 	Pkpoints = new Parallel_Kpoints;
-	GlobalV::KPAR = pp.KPAR_;
-	if(pp.KPAR_>GlobalV::NPROC)
+	mpi.KPAR = pp.KPAR_;
+	if(mpi.KPAR>NPROC)
 	{
 		std::string output;
 		testing::internal::CaptureStdout();
-		EXPECT_EXIT(Parallel_Global::init_pools(GlobalV::NPROC,
-                                GlobalV::MY_RANK,
-                                GlobalV::NSTOGROUP,
-                                GlobalV::KPAR,
-                                GlobalV::NPROC_IN_STOGROUP,
-                                GlobalV::RANK_IN_STOGROUP,
-                                GlobalV::MY_STOGROUP,
-                                GlobalV::NPROC_IN_POOL,
-                                GlobalV::RANK_IN_POOL,
-                                GlobalV::MY_POOL),testing::ExitedWithCode(1),"");
+		EXPECT_EXIT(Parallel_Global::divide_mpi_groups(this->NPROC,
+								mpi.KPAR,
+                                this->MY_RANK,
+                                mpi.NPROC_IN_POOL,
+								mpi.MY_POOL,
+                                mpi.RANK_IN_POOL),testing::ExitedWithCode(1),"");
 		output = testing::internal::GetCapturedStdout();
-		EXPECT_THAT(output,testing::HasSubstr("Too many pools"));
+		EXPECT_THAT(output,testing::HasSubstr("must be greater than the number of groups"));
 	}
 	else
 	{
-		Parallel_Global::init_pools(GlobalV::NPROC,
-                                GlobalV::MY_RANK,
-                                GlobalV::NSTOGROUP,
-                                GlobalV::KPAR,
-                                GlobalV::NPROC_IN_STOGROUP,
-                                GlobalV::RANK_IN_STOGROUP,
-                                GlobalV::MY_STOGROUP,
-                                GlobalV::NPROC_IN_POOL,
-                                GlobalV::RANK_IN_POOL,
-                                GlobalV::MY_POOL);
-		pp.test_init_pools();
+		Parallel_Global::divide_mpi_groups(this->NPROC,
+								mpi.KPAR,
+                                this->MY_RANK,
+                                mpi.NPROC_IN_POOL,
+								mpi.MY_POOL,
+                                mpi.RANK_IN_POOL);
+		MPI_Comm_split(MPI_COMM_WORLD,mpi.MY_POOL,mpi.RANK_IN_POOL,&POOL_WORLD);
+		pp.test_init_pools(this->NPROC,
+				this->MY_RANK,
+				mpi.MY_POOL,
+				mpi.RANK_IN_POOL,
+				mpi.NPROC_IN_POOL);
 		Pkpoints->kinfo(pp.nkstot_,
-			GlobalV::KPAR,
-			GlobalV::MY_POOL,
-			GlobalV::RANK_IN_POOL,
-			GlobalV::NPROC,
+			mpi.KPAR,
+			mpi.MY_POOL,
+			mpi.RANK_IN_POOL,
+			this->NPROC,
 			1);
 		pp.test_kinfo(Pkpoints);
 	}
@@ -261,17 +296,10 @@ INSTANTIATE_TEST_SUITE_P(TESTPK,ParaKpoints,::testing::Values(
 
 int main(int argc, char **argv)
 {
-
     MPI_Init(&argc, &argv);
     testing::InitGoogleTest(&argc, argv);
-
-    MPI_Comm_size(MPI_COMM_WORLD,&GlobalV::NPROC);
-    MPI_Comm_rank(MPI_COMM_WORLD,&GlobalV::MY_RANK);
-
     int result = RUN_ALL_TESTS();
-
     MPI_Finalize();
-
     return result;
 }
 #endif

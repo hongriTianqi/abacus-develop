@@ -318,23 +318,9 @@ void Parallel_Global::divide_pools(const int &NPROC,
                                 int &RANK_IN_POOL,
                                 int &MY_POOL)
 {
-    if (NPROC < KPAR)
-    {
-        std::cout<<"\n NPROC=" << NPROC << " KPAR=" << KPAR;
-        std::cout<<"Error : Too many pools !"<<std::endl;
-        exit(1);
-    }
     // Divide the global communicator into stogroups.
     divide_mpi_groups(NPROC, NSTOGROUP, MY_RANK,
                     NPROC_IN_STOGROUP, MY_STOGROUP, RANK_IN_STOGROUP, true);
-
-    if (NPROC_IN_STOGROUP < KPAR)
-    {
-        std::cout<<"\n Error! NPROC_IN_BNDGROUP=" << NPROC_IN_STOGROUP
-            <<" is smaller than"<< " KPAR=" << KPAR<<std::endl;
-        std::cout<<" Please reduce KPAR or reduce BNDPAR"<<std::endl;
-        exit(1);
-    }
 
     // (2) per process in each pool
     divide_mpi_groups(NPROC_IN_STOGROUP, KPAR, RANK_IN_STOGROUP,
@@ -365,16 +351,28 @@ void Parallel_Global::divide_mpi_groups(
     const int &procs, const int &num_groups, const int &rank,
     int &procs_in_group, int &my_group, int &rank_in_group, const bool even)
 {
+    if (num_groups == 0)
+    {
+        std::cout << "Error: Number of groups must be greater than 0." << std::endl;
+        exit(1);
+    }
+    if (procs < num_groups)
+    {
+        std::cout << "Error: Number of processes (" << procs
+                  << ") must be greater than the number of groups ("
+                  << num_groups << ")." << std::endl;
+        exit(1);
+    }
     // Calculate the distribution of processes among pools.
     procs_in_group = procs / num_groups;
     int extra_procs = procs % num_groups;
 
     if (even && extra_procs != 0)
     {
-        std::cerr << "Error: Number of processes (" << procs
+        std::cout << "Error: Number of processes (" << procs
                   << ") must be evenly divisible by the number of groups ("
                   << num_groups << " in the even partition case)." << std::endl;
-        MPI_Abort(MPI_COMM_WORLD, 1);
+        exit(1);
     }
 
     int *nproc_group_ = new int[num_groups];
