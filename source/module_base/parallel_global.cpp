@@ -227,10 +227,10 @@ void Parallel_Global::read_mpi_parameters(int argc,char **argv)
 }
 
 #ifdef __MPI
-void Parallel_Global::finalize_mpi()
+void Parallel_Global::finalize_mpi(const int &NPROC_IN_STOGROUP, const int &KPAR)
 {
 	MPI_Comm_free(&POOL_WORLD);
-    if (GlobalV::NPROC_IN_STOGROUP % GlobalV::KPAR == 0)
+    if (NPROC_IN_STOGROUP % KPAR == 0)
     {
         MPI_Comm_free(&INTER_POOL);
     }

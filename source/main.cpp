@@ -7,6 +7,7 @@
 #include "module_base/parallel_global.h"
 #include "module_io/parse_args.h"
 #include "fftw3.h"
+#include "global_variable.h"
 #ifdef _OPENMP
 #include <omp.h>
 #endif
@@ -41,7 +42,7 @@ int main(int argc, char** argv)
     After running mpi version of abacus, release the mpi resources.
     */
 #ifdef __MPI
-    Parallel_Global::finalize_mpi();
+    Parallel_Global::finalize_mpi(GlobalV::NPROC_IN_STOGROUP, GlobalV::KPAR);
 #endif
 #ifdef _OPENMP
 	fftw_cleanup_threads();

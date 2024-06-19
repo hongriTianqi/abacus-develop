@@ -106,7 +106,7 @@ void divide_mpi_groups(const int &procs,
  *
  */
 #ifdef __MPI
-void finalize_mpi();
+void finalize_mpi(const int &NPROC_IN_STOGROUP, const int &KPAR);
 #endif
 
 } // namespace Parallel_Global
