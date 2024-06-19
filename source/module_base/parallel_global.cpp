@@ -100,26 +100,26 @@ void Parallel_Global::split_grid_world(const int diag_np,
 	return;
 }
 
-void Parallel_Global::read_mpi_parameters(int argc,char **argv)
+void Parallel_Global::read_mpi_parameters(int argc, char **argv, int &NPROC, int &MY_RANK, std::ofstream &ofs_warning)
 {
 #ifdef __MPI
 #ifdef _OPENMP
 	int provided = 0;
 	MPI_Init_thread(&argc,&argv,MPI_THREAD_MULTIPLE,&provided);
 	if( provided != MPI_THREAD_MULTIPLE )
-		GlobalV::ofs_warning<<"MPI_Init_thread request "<<MPI_THREAD_MULTIPLE<<" but provide "<<provided<<std::endl;
+		ofs_warning<<"MPI_Init_thread request "<<MPI_THREAD_MULTIPLE<<" but provide "<<provided<<std::endl;
 	// Peize Lin change 2022.08.08
 	// MPI_THREAD_FUNNELED is enough for ABACUS. Using MPI_THREAD_SERIALIZED for elpa, using MPI_THREAD_MULTIPLE for libRI.
 #else
 	MPI_Init(&argc,&argv);					// Peize Lin change 2018-07-12
 #endif //_OPENMP
 
-    //  GlobalV::KPAR = atoi(argv[1]); // mohan abandon 2010-06-09
+    //  KPAR = atoi(argv[1]); // mohan abandon 2010-06-09
 
-    // get world size --> GlobalV::NPROC
-    // get global rank --> GlobalV::MY_RANK
-    MPI_Comm_size(MPI_COMM_WORLD,&GlobalV::NPROC);
-    MPI_Comm_rank(MPI_COMM_WORLD, &GlobalV::MY_RANK);
+    // get world size --> NPROC
+    // get global rank --> MY_RANK
+    MPI_Comm_size(MPI_COMM_WORLD,&NPROC);
+    MPI_Comm_rank(MPI_COMM_WORLD, &MY_RANK);
     int process_num = 0; // number of processes in the current node
     int local_rank = 0;  // rank of the process in the current node
     MPI_Comm shmcomm;
@@ -173,7 +173,7 @@ void Parallel_Global::read_mpi_parameters(int argc,char **argv)
     }
 
 
-    if (GlobalV::MY_RANK == 0)
+    if (MY_RANK == 0)
     {
 #ifdef VERSION
         const char* version = VERSION;
@@ -204,11 +204,11 @@ void Parallel_Global::read_mpi_parameters(int argc,char **argv)
 
     // for test
     /*
-	for (int i=0; i<GlobalV::NPROC; i++)
+	for (int i=0; i<NPROC; i++)
     {
-        if (GlobalV::MY_RANK == i)
+        if (MY_RANK == i)
         {
-            std::cout << " PROCESSOR " << std::setw(4) << GlobalV::MY_RANK+1 << " IS READY." << std::endl;
+            std::cout << " PROCESSOR " << std::setw(4) << MY_RANK+1 << " IS READY." << std::endl;
         }
         MPI_Barrier(MPI_COMM_WORLD);
     }
@@ -216,7 +216,7 @@ void Parallel_Global::read_mpi_parameters(int argc,char **argv)
 
 	// This section can be chosen !!
 	// mohan 2011-03-15
-    if (GlobalV::MY_RANK != 0 )
+    if (MY_RANK != 0 )
     {
         //std::cout.rdbuf(NULL);
 		std::cout.setstate(std::ios::failbit);//qianrui modify 2020-10-14

@@ -28,7 +28,7 @@ extern int omp_number;
 //---------------------------
 // call at the very first.
 //---------------------------
-void read_mpi_parameters(int argc, char** argv);
+void read_mpi_parameters(int argc, char **argv, int &NPROC, int &MY_RANK, std::ofstream &ofs_warning);
 #ifdef __MPI
 void myProd(std::complex<double>* in, std::complex<double>* inout, int* len, MPI_Datatype* dptr);
 #endif
