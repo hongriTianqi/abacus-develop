@@ -182,7 +182,16 @@ TEST_F(KlistParaTest,Set)
 	kv->nspin = 1;
 	GlobalV::NSPIN = 1;
 	if(GlobalV::NPROC == 4) {GlobalV::KPAR = 2;}
-	Parallel_Global::init_pools();
+	Parallel_Global::init_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
 	ModuleSymmetry::Symmetry::symm_flag=1;
 	kv->set(symm,k_file,kv->nspin,GlobalC::ucell.G,GlobalC::ucell.latvec, GlobalV::ofs_running);
 	EXPECT_EQ(kv->get_nkstot(),35);
@@ -217,7 +226,16 @@ TEST_F(KlistParaTest,SetAfterVC)
 	kv->nspin = 1;
 	GlobalV::NSPIN = 1;
 	if(GlobalV::NPROC == 4) {GlobalV::KPAR = 1;}
-	Parallel_Global::init_pools();
+	Parallel_Global::init_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
 	ModuleSymmetry::Symmetry::symm_flag=1;
 	kv->set(symm,k_file,kv->nspin,GlobalC::ucell.G,GlobalC::ucell.latvec, GlobalV::ofs_running);
 	EXPECT_EQ(kv->get_nkstot(),35);

@@ -48,7 +48,16 @@ TEST_F(IstateInfoTest,OutIstateInfoS1)
 	GlobalV::NSPIN = 1;
 	GlobalV::global_out_dir = "./";
 	//mpi setting
-	Parallel_Global::init_pools();
+	Parallel_Global::init_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
 	kv->set_nkstot(100);
 	int nkstot = kv->get_nkstot(); 
 	Pkpoints->kinfo(nkstot);
@@ -86,7 +95,16 @@ TEST_F(IstateInfoTest,OutIstateInfoS2)
 	GlobalV::NSPIN = 2;
 	GlobalV::global_out_dir = "./";
 	//mpi setting
-	Parallel_Global::init_pools();
+	Parallel_Global::init_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
 	kv->set_nkstot(100);
 	int nkstot = kv->get_nkstot(); 
 	Pkpoints->kinfo(nkstot);

@@ -242,22 +242,31 @@ void Parallel_Global::finalize_mpi()
 }
 #endif
 
-void Parallel_Global::init_pools(void)
+void Parallel_Global::init_pools(const int &NPROC,
+                                const int &MY_RANK,
+                                const int &NSTOGROUP,
+                                const int &KPAR,
+                                int &NPROC_IN_STOGROUP,
+                                int &RANK_IN_STOGROUP,
+                                int &MY_STOGROUP,
+                                int &NPROC_IN_POOL,
+                                int &RANK_IN_POOL,
+                                int &MY_POOL)
 {
 #ifdef __MPI
 //----------------------------------------------------------
 // CALL Function : divide_pools
 //----------------------------------------------------------
-    Parallel_Global::divide_pools(GlobalV::NPROC,
-                                GlobalV::MY_RANK,
-                                GlobalV::NSTOGROUP,
-                                GlobalV::KPAR,
-                                GlobalV::NPROC_IN_STOGROUP,
-                                GlobalV::RANK_IN_STOGROUP,
-                                GlobalV::MY_STOGROUP,
-                                GlobalV::NPROC_IN_POOL,
-                                GlobalV::RANK_IN_POOL,
-                                GlobalV::MY_POOL);
+    Parallel_Global::divide_pools(NPROC,
+                                MY_RANK,
+                                NSTOGROUP,
+                                KPAR,
+                                NPROC_IN_STOGROUP,
+                                RANK_IN_STOGROUP,
+                                MY_STOGROUP,
+                                NPROC_IN_POOL,
+                                RANK_IN_POOL,
+                                MY_POOL);
 
 // for test
 // turn on when you want to check the index of pools.

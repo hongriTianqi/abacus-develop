@@ -61,7 +61,16 @@ void split_grid_world(const int diag_np,
  * @brief An interface function to call "Parallel_Global::divide_pools()"
  *
  */
-void init_pools();
+void init_pools(const int &NPROC,
+                const int &MY_RANK,
+                const int &NSTOGROUP,
+                const int &KPAR,
+                int &NPROC_IN_STOGROUP,
+                int &RANK_IN_STOGROUP,
+                int &MY_STOGROUP,
+                int &NPROC_IN_POOL,
+                int &RANK_IN_POOL,
+                int &MY_POOL);
 
 void divide_pools(const int &NPROC,
                 const int &MY_RANK,

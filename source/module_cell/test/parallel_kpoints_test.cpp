@@ -214,13 +214,31 @@ TEST_P(ParaKpoints,DividePools)
 	{
 		std::string output;
 		testing::internal::CaptureStdout();
-		EXPECT_EXIT(Parallel_Global::init_pools(),testing::ExitedWithCode(1),"");
+		EXPECT_EXIT(Parallel_Global::init_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL),testing::ExitedWithCode(1),"");
 		output = testing::internal::GetCapturedStdout();
 		EXPECT_THAT(output,testing::HasSubstr("Too many pools"));
 	}
 	else
 	{
-		Parallel_Global::init_pools();
+		Parallel_Global::init_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
 		pp.test_init_pools();
 		Pkpoints->kinfo(pp.nkstot_);
 		pp.test_kinfo(Pkpoints);

@@ -399,7 +399,16 @@ TEST_F(ParaReduce,ReduceDoublePool)
 	if(GlobalV::NPROC==4)
 	{
 		GlobalV::KPAR = 2;
-		Parallel_Global::init_pools();
+		Parallel_Global::init_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
 		///printf("word_rank/world_size = %d/%d, pool_rank/pool_size = %d/%d \n",
 		///		GlobalV::MY_RANK,GlobalV::NPROC,
 		///		GlobalV::RANK_IN_POOL,GlobalV::NPROC_IN_POOL);
@@ -457,7 +466,16 @@ TEST_F(ParaReduce,ReduceComplexPool)
 	if(GlobalV::NPROC==4)
 	{
 		GlobalV::KPAR = 2;
-		Parallel_Global::init_pools();
+		Parallel_Global::init_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
 		///printf("word_rank/world_size = %d/%d, pool_rank/pool_size = %d/%d \n",
 		///		GlobalV::MY_RANK,GlobalV::NPROC,
 		///		GlobalV::RANK_IN_POOL,GlobalV::NPROC_IN_POOL);
@@ -510,7 +528,16 @@ TEST_F(ParaReduce,GatherDoublePool)
 	if(GlobalV::NPROC==4)
 	{
 		GlobalV::KPAR = 2;
-		Parallel_Global::init_pools();
+		Parallel_Global::init_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
 
 
   		std::default_random_engine e(time(NULL)*(GlobalV::MY_RANK+1));

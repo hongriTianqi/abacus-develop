@@ -78,7 +78,16 @@ void Driver::reading()
 
 #ifdef __MPI
     // (4)  divide the GlobalV::NPROC processors into GlobalV::KPAR for k-points parallelization.
-    Parallel_Global::init_pools();
+    Parallel_Global::init_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
 #endif
 
     // (5) Read in parameters about wannier functions.

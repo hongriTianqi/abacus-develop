@@ -127,7 +127,16 @@ TEST(ParaGlobal, InitPools)
     GlobalV::NSTOGROUP = stogroup;
     GlobalV::MY_RANK = myrank;
 
-    Parallel_Global::init_pools();
+    Parallel_Global::init_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
     EXPECT_EQ(GlobalV::NPROC_IN_STOGROUP, 4);
     EXPECT_EQ(GlobalV::MY_STOGROUP, 1);
     EXPECT_EQ(GlobalV::RANK_IN_STOGROUP, 1);
