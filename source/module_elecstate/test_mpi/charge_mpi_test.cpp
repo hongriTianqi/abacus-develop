@@ -61,7 +61,16 @@ TEST_F(ChargeMpiTest, reduce_diff_pools1)
     if (GlobalV::NPROC >= 2 && GlobalV::NPROC % 2 == 0)
     {
         GlobalV::KPAR = 2;
-        Parallel_Global::divide_pools();
+        Parallel_Global::divide_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
         ModulePW::PW_Basis* rhopw = new ModulePW::PW_Basis();
         rhopw->initmpi(GlobalV::NPROC_IN_POOL, GlobalV::RANK_IN_POOL, POOL_WORLD);
         rhopw->initgrids(lat0, latvec, 40);
@@ -98,7 +107,16 @@ TEST_F(ChargeMpiTest, reduce_diff_pools2)
     if (GlobalV::NPROC >= 3)
     {
         GlobalV::KPAR = 3;
-        Parallel_Global::divide_pools();
+        Parallel_Global::divide_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
         ModulePW::PW_Basis* rhopw = new ModulePW::PW_Basis();
         rhopw->initmpi(GlobalV::NPROC_IN_POOL, GlobalV::RANK_IN_POOL, POOL_WORLD);
         rhopw->initgrids(lat0, latvec, 40);
@@ -144,7 +162,16 @@ TEST_F(ChargeMpiTest, rho_mpi)
     if (GlobalV::NPROC >= 2)
     {
         GlobalV::KPAR = 2;
-        Parallel_Global::divide_pools();
+        Parallel_Global::divide_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
         ModulePW::PW_Basis* rhopw = new ModulePW::PW_Basis();
         rhopw->initmpi(GlobalV::NPROC_IN_POOL, GlobalV::RANK_IN_POOL, POOL_WORLD);
         rhopw->initgrids(lat0, latvec, 40);

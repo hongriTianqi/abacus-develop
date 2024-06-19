@@ -54,7 +54,34 @@ void split_grid_world(const int& diag_np);
  */
 void init_pools();
 
-void divide_pools(void);
+void divide_pools(const int &NPROC,
+                const int &MY_RANK,
+                const int &NSTOGROUP,
+                const int &KPAR,
+                int &NPROC_IN_STOGROUP,
+                int &RANK_IN_STOGROUP,
+                int &MY_STOGROUP,
+                int &NPROC_IN_POOL,
+                int &RANK_IN_POOL,
+                int &MY_POOL);
+
+/**
+ * @brief Divide MPI processes into groups
+ * @param[in] procs Number of MPI processes
+ * @param[in] num_groups Number of groups
+ * @param[in] rank Rank of the process
+ * @param[out] procs_in_group Number of processes in each group
+ * @param[out] my_group Group number of the process
+ * @param[out] rank_in_group Rank of the process in the group
+ * @param[in] even If true, require the number of processes in each group is the same
+ */
+void divide_mpi_groups(const int procs,
+                const int num_groups,
+                const int rank,
+                int &procs_in_group,
+                int &my_group,
+                int &rank_in_group,
+                const bool even = false);
 
 /**
  * @brief Release MPI communicator and resources

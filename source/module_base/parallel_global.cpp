@@ -304,7 +304,16 @@ void Parallel_Global::init_pools(void)
 //----------------------------------------------------------
 // CALL Function : divide_pools
 //----------------------------------------------------------
-    Parallel_Global::divide_pools();
+    Parallel_Global::divide_pools(GlobalV::NPROC,
+                                GlobalV::MY_RANK,
+                                GlobalV::NSTOGROUP,
+                                GlobalV::KPAR,
+                                GlobalV::NPROC_IN_STOGROUP,
+                                GlobalV::RANK_IN_STOGROUP,
+                                GlobalV::MY_STOGROUP,
+                                GlobalV::NPROC_IN_POOL,
+                                GlobalV::RANK_IN_POOL,
+                                GlobalV::MY_POOL);
 
 // for test
 // turn on when you want to check the index of pools.
@@ -343,68 +352,101 @@ void Parallel_Global::init_pools(void)
 }
 
 #ifdef __MPI
-void Parallel_Global::divide_pools(void)
+void Parallel_Global::divide_pools(const int &NPROC,
+                                const int &MY_RANK,
+                                const int &NSTOGROUP,
+                                const int &KPAR,
+                                int &NPROC_IN_STOGROUP,
+                                int &RANK_IN_STOGROUP,
+                                int &MY_STOGROUP,
+                                int &NPROC_IN_POOL,
+                                int &RANK_IN_POOL,
+                                int &MY_POOL)
 {
-    if (GlobalV::NPROC < GlobalV::KPAR)
+    if (NPROC < KPAR)
     {
-        std::cout<<"\n NPROC=" << GlobalV::NPROC << " KPAR=" << GlobalV::KPAR;
+        std::cout<<"\n NPROC=" << NPROC << " KPAR=" << KPAR;
         std::cout<<"Error : Too many pools !"<<std::endl;
         exit(1);
     }
+    // Divide the global communicator into stogroups.
+    divide_mpi_groups(NPROC, NSTOGROUP, MY_RANK,
+                    NPROC_IN_STOGROUP, MY_STOGROUP, RANK_IN_STOGROUP, true);
 
-    // (1) per process in each stogroup
-    if(GlobalV::NPROC%GlobalV::NSTOGROUP!=0)
+    if (NPROC_IN_STOGROUP < KPAR)
     {
-        std::cout<<"\n Error! NPROC="<<GlobalV::NPROC
-        <<" must be divided evenly by BNDPAR="<<GlobalV::NSTOGROUP<<std::endl;
-        exit(1);
-    }
-    GlobalV::NPROC_IN_STOGROUP = GlobalV::NPROC/GlobalV::NSTOGROUP;
-    GlobalV::MY_STOGROUP = int(GlobalV::MY_RANK / GlobalV::NPROC_IN_STOGROUP);
-    GlobalV::RANK_IN_STOGROUP = GlobalV::MY_RANK%GlobalV::NPROC_IN_STOGROUP;
-    if (GlobalV::NPROC_IN_STOGROUP < GlobalV::KPAR)
-    {
-        std::cout<<"\n Error! NPROC_IN_BNDGROUP=" << GlobalV::NPROC_IN_STOGROUP
-            <<" is smaller than"<< " KPAR=" << GlobalV::KPAR<<std::endl;
+        std::cout<<"\n Error! NPROC_IN_BNDGROUP=" << NPROC_IN_STOGROUP
+            <<" is smaller than"<< " KPAR=" << KPAR<<std::endl;
         std::cout<<" Please reduce KPAR or reduce BNDPAR"<<std::endl;
         exit(1);
     }
 
     // (2) per process in each pool
-    GlobalV::NPROC_IN_POOL = GlobalV::NPROC_IN_STOGROUP/GlobalV::KPAR;
-    if (GlobalV::RANK_IN_STOGROUP < (GlobalV::NPROC_IN_STOGROUP%GlobalV::KPAR)*(GlobalV::NPROC_IN_POOL+1))
-    {
-        GlobalV::NPROC_IN_POOL++;
-        GlobalV::MY_POOL = int(GlobalV::RANK_IN_STOGROUP / GlobalV::NPROC_IN_POOL);
-        GlobalV::RANK_IN_POOL = GlobalV::RANK_IN_STOGROUP%GlobalV::NPROC_IN_POOL;
-    }
-    else
-    {
-        GlobalV::MY_POOL = int( (GlobalV::RANK_IN_STOGROUP-GlobalV::NPROC_IN_STOGROUP%GlobalV::KPAR) / GlobalV::NPROC_IN_POOL);
-        GlobalV::RANK_IN_POOL = (GlobalV::RANK_IN_STOGROUP-GlobalV::NPROC_IN_STOGROUP%GlobalV::KPAR)%GlobalV::NPROC_IN_POOL;
-    }
-
-
-
+    divide_mpi_groups(NPROC_IN_STOGROUP, KPAR, RANK_IN_STOGROUP,
+                    NPROC_IN_POOL, MY_POOL, RANK_IN_POOL);
 
     int key = 1;
-    MPI_Comm_split(MPI_COMM_WORLD,GlobalV::MY_STOGROUP,key,&STO_WORLD);
+    MPI_Comm_split(MPI_COMM_WORLD,MY_STOGROUP,key,&STO_WORLD);
 
     //========================================================
     // MPI_Comm_Split: Creates new communicators based on
     // colors(2nd parameter) and keys(3rd parameter)
     // Note: The color must be non-negative or MPI_UNDEFINED.
     //========================================================
-    MPI_Comm_split(STO_WORLD,GlobalV::MY_POOL,key,&POOL_WORLD);
+    MPI_Comm_split(STO_WORLD,MY_POOL,key,&POOL_WORLD);
 
-    if (GlobalV::NPROC_IN_STOGROUP % GlobalV::KPAR == 0)
+    if (NPROC_IN_STOGROUP % KPAR == 0)
     {
-        MPI_Comm_split(STO_WORLD, GlobalV::RANK_IN_POOL, key, &INTER_POOL);
+        MPI_Comm_split(STO_WORLD, RANK_IN_POOL, key, &INTER_POOL);
     }
 
-    int color = GlobalV::MY_RANK % GlobalV::NPROC_IN_STOGROUP;
+    int color = MY_RANK % NPROC_IN_STOGROUP;
 	MPI_Comm_split(MPI_COMM_WORLD, color, key, &PARAPW_WORLD);
 
     return;
 }
+
+void Parallel_Global::divide_mpi_groups(
+    const int procs, const int num_groups, const int rank,
+    int &procs_in_group, int &my_group, int &rank_in_group, const bool even)
+{
+    // Calculate the distribution of processes among pools.
+    procs_in_group = procs / num_groups;
+    int extra_procs = procs % num_groups;
+
+    if (even && extra_procs != 0)
+    {
+        std::cerr << "Error: Number of processes (" << procs
+                  << ") must be evenly divisible by the number of groups ("
+                  << num_groups << " in the even partition case)." << std::endl;
+        MPI_Abort(MPI_COMM_WORLD, 1);
+    }
+
+    int *nproc_group_ = new int[num_groups];
+
+    for(int i=0;i< num_groups;i++)
+	{
+        nproc_group_[i] = procs_in_group;
+		if(i<extra_procs)
+		{
+			++nproc_group_[i];
+		}
+	}
+
+    int np_now = 0;
+    for (int i = 0; i < num_groups; i++)
+    {
+        np_now += nproc_group_[i];
+        if (rank < np_now)
+        {
+            my_group = i;
+            procs_in_group = nproc_group_[i];
+            rank_in_group = rank - (np_now - procs_in_group);
+            break;
+        }
+    }
+
+    delete[] nproc_group_;
+}
+
 #endif
