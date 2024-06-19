@@ -15,7 +15,7 @@ void TwoCenterBundle::build_orb(int ntype, const std::string* file_orb0)
                 [](const std::string& file) { return GlobalV::global_orbital_dir + file; });
     }
 #ifdef __MPI
-    Parallel_Common::bcast_string(file_orb.data(), ntype);
+    Parallel_Common::bcast_string(GlobalV::MY_RANK, file_orb.data(), ntype);
 #endif
 
     orb_ = std::unique_ptr<RadialCollection>(new RadialCollection);
@@ -38,7 +38,7 @@ void TwoCenterBundle::build_alpha(int ndesc, std::string* file_desc0)
             std::copy(file_desc0, file_desc0 + ndesc, file_desc.begin());
         }
 #ifdef __MPI
-        Parallel_Common::bcast_string(file_desc.data(), ndesc);
+        Parallel_Common::bcast_string(GlobalV::MY_RANK, file_desc.data(), ndesc);
 #endif
 
         alpha_ = std::unique_ptr<RadialCollection>(new RadialCollection);

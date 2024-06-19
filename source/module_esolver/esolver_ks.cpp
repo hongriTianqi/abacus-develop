@@ -161,7 +161,7 @@ void ESolver_KS<T, Device>::before_all_runners(Input& inp, UnitCell& ucell)
 #ifdef __MPI
 		for(int it = 0; it < ucell.ntype; it++)
 		{
-			Parallel_Common::bcast_string(filename_list[it]);
+			Parallel_Common::bcast_string(GlobalV::MY_RANK, filename_list[it]);
 		}
 #endif
 

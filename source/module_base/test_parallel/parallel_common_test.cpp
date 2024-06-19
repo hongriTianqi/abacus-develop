@@ -1,7 +1,6 @@
 #ifdef __MPI
 #include "mpi.h"
 #include "gtest/gtest.h"
-#include "module_base/global_variable.h"
 #include "module_base/parallel_common.h"
 #include <complex>
 #include <string>
@@ -18,6 +17,23 @@
  * wrappers.
  */
 
+class MPIContext
+{
+public:
+   MPIContext()
+   {
+       MPI_Comm_rank(MPI_COMM_WORLD, &_rank);
+       MPI_Comm_size(MPI_COMM_WORLD, &_size);
+   }
+
+   int GetRank() const { return _rank; }
+   int GetSize() const { return _size; }
+
+private:
+   int _rank;
+   int _size;
+};
+
 class ParaCommon : public testing::Test
 {
 protected:
@@ -31,12 +47,15 @@ protected:
 	double fv[10] = {0};
 	std::complex<double> imgv[10]={0.0,0.0};
 	std::string chv[10] = {""};
+	MPIContext mpiContext;
 };
 
 TEST_F(ParaCommon,Bcast)
 {
     // reset data in the first process
-    if(GlobalV::MY_RANK==0) 
+	int MY_RANK = mpiContext.GetRank();
+	std::cout << "MY_RANK: " << MY_RANK << std::endl;
+    if(MY_RANK==0)
     {
 	    boo=false;
 	    is=1;
@@ -56,16 +75,16 @@ TEST_F(ParaCommon,Bcast)
 	    }
     }
     // call bcast wrappers
-    Parallel_Common::bcast_bool(boo);
+    Parallel_Common::bcast_bool(MY_RANK, boo);
     Parallel_Common::bcast_int(is);
     Parallel_Common::bcast_double(fs);
     Parallel_Common::bcast_complex_double(imgs);
-    Parallel_Common::bcast_string(chs);
+    Parallel_Common::bcast_string(MY_RANK, chs);
     Parallel_Common::bcast_char(cha,7);
     Parallel_Common::bcast_int(iv,10);
     Parallel_Common::bcast_double(fv,10);
     Parallel_Common::bcast_complex_double(imgv,10);
-    Parallel_Common::bcast_string(chv,10);
+    Parallel_Common::bcast_string(MY_RANK, chv,10);
     // make comparisons
     EXPECT_FALSE(boo);
     EXPECT_EQ(is,1);
@@ -92,9 +111,6 @@ int main(int argc, char **argv)
 
     MPI_Init(&argc, &argv);
     testing::InitGoogleTest(&argc, argv);
-
-    MPI_Comm_size(MPI_COMM_WORLD,&GlobalV::NPROC);
-    MPI_Comm_rank(MPI_COMM_WORLD,&GlobalV::MY_RANK);
 
     int result = RUN_ALL_TESTS();
 

@@ -232,8 +232,8 @@ namespace ModuleESolver
         }
 
 #ifdef __MPI
-        Parallel_Common::bcast_bool(ok);
-        Parallel_Common::bcast_bool(find_type);
+        Parallel_Common::bcast_bool(GlobalV::MY_RANK, ok);
+        Parallel_Common::bcast_bool(GlobalV::MY_RANK, find_type);
         Parallel_Common::bcast_int(dp_type.data(), ucell.ntype);
 #endif
 

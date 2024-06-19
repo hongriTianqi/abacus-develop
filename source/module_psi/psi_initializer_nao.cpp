@@ -175,7 +175,7 @@ void psi_initializer_nao<T, Device>::read_external_orbs(std::string* orbital_fil
 	{
 		this->orbital_files_.resize(this->p_ucell_->ntype);
 	}
-    Parallel_Common::bcast_string(this->orbital_files_.data(), this->p_ucell_->ntype);
+    Parallel_Common::bcast_string(GlobalV::MY_RANK, this->orbital_files_.data(), this->p_ucell_->ntype);
 
     // bcast orbital data
     // resize

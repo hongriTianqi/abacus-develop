@@ -117,8 +117,8 @@ void ModuleIO::read_dm(
 
     // distribution of necessary data
     //xiaohui modify 2015-03-25
-    //Parallel_Common::bcast_bool(quit_mesia);
-    Parallel_Common::bcast_bool(quit_abacus);
+    //Parallel_Common::bcast_bool(GlobalV::MY_RANK, quit_mesia);
+    Parallel_Common::bcast_bool(GlobalV::MY_RANK, quit_abacus);
     //xiaohui modify 2015-03-25
     //if(quit_mesia)
     if(quit_abacus)

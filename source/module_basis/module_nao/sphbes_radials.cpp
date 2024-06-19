@@ -34,7 +34,7 @@ void SphbesRadials::build(const std::string& file, const double dr, const int it
     }
 
 #ifdef __MPI
-    Parallel_Common::bcast_bool(is_open);
+    Parallel_Common::bcast_bool(GlobalV::MY_RANK, is_open);
 #endif
 
     if (!is_open)
@@ -121,7 +121,7 @@ void SphbesRadials::read_coeff(std::ifstream& ifs, std::ofstream* ptr_log, const
     }
 
 #ifdef __MPI
-    Parallel_Common::bcast_string(info);
+    Parallel_Common::bcast_string(GlobalV::MY_RANK, info);
 #endif
 
     // extract rcut & sigma from the pattern KEYWORD=" VALUE "

@@ -46,7 +46,7 @@ void UnitCell::read_cell_pseudopots(const std::string &pp_dir, std::ofstream &lo
 #ifdef __MPI
 		Parallel_Common::bcast_int(error);
 		Parallel_Common::bcast_int(error_ap);
-        Parallel_Common::bcast_bool(atoms[i].coulomb_potential);
+        Parallel_Common::bcast_bool(GlobalV::MY_RANK, atoms[i].coulomb_potential);
 #endif
 
 		if(error_ap) 

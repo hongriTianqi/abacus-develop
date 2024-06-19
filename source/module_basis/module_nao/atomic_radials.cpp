@@ -31,7 +31,7 @@ void AtomicRadials::build(const std::string& file, const int itype, std::ofstrea
     }
 
 #ifdef __MPI
-    Parallel_Common::bcast_bool(is_open);
+    Parallel_Common::bcast_bool(GlobalV::MY_RANK, is_open);
 #endif
 
     if (!is_open)
@@ -179,7 +179,7 @@ void AtomicRadials::read_abacus_orb(std::ifstream& ifs, std::ofstream* ptr_log, 
     }
 
 #ifdef __MPI
-    Parallel_Common::bcast_string(symbol_);
+    Parallel_Common::bcast_string(GlobalV::MY_RANK, symbol_);
     Parallel_Common::bcast_double(orb_ecut_);
     Parallel_Common::bcast_int(lmax_);
 

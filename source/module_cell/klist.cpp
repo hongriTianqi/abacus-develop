@@ -85,7 +85,7 @@ void K_Vectors::set(const ModuleSymmetry::Symmetry& symm,
     // read KPT file and generate K-point grid
 	bool read_succesfully = this->read_kpoints(k_file_name);
 #ifdef __MPI
-    Parallel_Common::bcast_bool(read_succesfully);
+    Parallel_Common::bcast_bool(GlobalV::MY_RANK, read_succesfully);
 #endif
     if (!read_succesfully)
     {
@@ -105,7 +105,7 @@ void K_Vectors::set(const ModuleSymmetry::Symmetry& symm,
         // calculate kpoints in IBZ and reduce kpoints according to symmetry
         this->ibz_kpoint(symm, ModuleSymmetry::Symmetry::symm_flag, skpt1, GlobalC::ucell, match);
 #ifdef __MPI
-        Parallel_Common::bcast_bool(match);
+        Parallel_Common::bcast_bool(GlobalV::MY_RANK, match);
 #endif
         if (!match)
         {
@@ -1061,9 +1061,9 @@ void K_Vectors::mpi_k(void)
 {
     ModuleBase::TITLE("K_Vectors", "mpi_k");
 
-    Parallel_Common::bcast_bool(kc_done);
+    Parallel_Common::bcast_bool(GlobalV::MY_RANK, kc_done);
 
-    Parallel_Common::bcast_bool(kd_done);
+    Parallel_Common::bcast_bool(GlobalV::MY_RANK, kd_done);
 
     Parallel_Common::bcast_int(nspin);
 
