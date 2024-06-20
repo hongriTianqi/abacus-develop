@@ -93,8 +93,8 @@ bool ModuleIO::calculate_dos(const int& is,
                         // because count is 'double' type,so
                         // we can't write count++ or ++count
                         count += wk[ik] * nkstot; // mohanix bug 2012-04-23
-                        //						GlobalV::ofs_running << " count = " << count << " wk = " << wk[ik] << " nks = " <<
-                        //nks << std::endl;
+                        //						GlobalV::ofs_running << " count = " << count << " wk = " << wk[ik] << " nks = "
+                        //<< nks << std::endl;
                     }
                 }
             }

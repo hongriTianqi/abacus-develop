@@ -297,7 +297,7 @@ void InfoNonlocal::Read_NonLocal(const int& it,
                     ifs >> coefficient_D_in(L1_read, L2_read);
 
                     //					GlobalV::ofs_running << " L1=" << L1_read << " L2=" << L2_read << " Coef=" <<
-                    //coefficient_D_in(L1_read,L2_read) << std::endl;
+                    // coefficient_D_in(L1_read,L2_read) << std::endl;
                 }
             }
             ModuleBase::GlobalFunc::SCAN_END(ifs, "</DIJ>");
