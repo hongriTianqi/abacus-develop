@@ -36,7 +36,7 @@ void PswfcRadials::build(const std::string& file,
     }
 
 #ifdef __MPI
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, is_open);
+    Parallel_Common::bcast_bool(is_open);
 #endif
 
     if (!is_open)
@@ -349,7 +349,7 @@ void PswfcRadials::read_upf_pswfc(std::ifstream& ifs,
     if (rank == 0)
         printf("PswfcRadials: pseudowavefunction read on rank 0, broadcast start.\n");
 
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, symbol_);
+    Parallel_Common::bcast_string(symbol_);
     Parallel_Common::bcast_int(lmax_);
 
     Parallel_Common::bcast_int(nchi_);

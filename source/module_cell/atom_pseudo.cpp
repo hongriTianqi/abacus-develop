@@ -172,14 +172,14 @@ void Atom_pseudo::bcast_atom_pseudo(void)
     Parallel_Common::bcast_double(ecutrho);
 
     // bool
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, tvanp);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, nlcc);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, has_so);
+    Parallel_Common::bcast_bool(tvanp);
+    Parallel_Common::bcast_bool(nlcc);
+    Parallel_Common::bcast_bool(has_so);
 
     // std::string
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, psd);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, pp_type);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, xc_func);
+    Parallel_Common::bcast_string(psd);
+    Parallel_Common::bcast_string(pp_type);
+    Parallel_Common::bcast_string(xc_func);
 
     if (GlobalV::MY_RANK != 0)
     {
@@ -198,7 +198,7 @@ void Atom_pseudo::bcast_atom_pseudo(void)
     }
 
     Parallel_Common::bcast_double(jjj, nbeta);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, els, nchi);
+    Parallel_Common::bcast_string(els, nchi);
     Parallel_Common::bcast_int(lchi, nchi);
     Parallel_Common::bcast_double(oc, nchi);
     Parallel_Common::bcast_double(jchi, nchi);

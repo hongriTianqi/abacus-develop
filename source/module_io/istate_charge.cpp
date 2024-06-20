@@ -184,7 +184,7 @@ void IState_Charge::begin(Gint_Gamma& gg,
         }
 
 #ifdef __MPI
-        Parallel_Common::bcast_bool(GlobalV::MY_RANK, stop);
+        Parallel_Common::bcast_bool(stop);
         Parallel_Common::bcast_int(bands_picked_.data(), nbands);
 #endif
         if (stop)

@@ -93,7 +93,7 @@ void UnitCell::bcast_unitcell(void)
 {
     if (GlobalV::test_unitcell)
         ModuleBase::TITLE("UnitCell", "bcast_unitcell");
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, Coordinate);
+    Parallel_Common::bcast_string(Coordinate);
     Parallel_Common::bcast_int(nat);
 
     Parallel_Common::bcast_double(lat0);
@@ -644,12 +644,12 @@ void UnitCell::setup_cell(const std::string& fn, std::ofstream& log)
         }
     }
 #ifdef __MPI
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, ok);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, ok2);
+    Parallel_Common::bcast_bool(ok);
+    Parallel_Common::bcast_bool(ok2);
     if (GlobalV::NSPIN == 4)
     {
-        Parallel_Common::bcast_bool(GlobalV::MY_RANK, GlobalV::DOMAG);
-        Parallel_Common::bcast_bool(GlobalV::MY_RANK, GlobalV::DOMAG_Z);
+        Parallel_Common::bcast_bool(GlobalV::DOMAG);
+        Parallel_Common::bcast_bool(GlobalV::DOMAG_Z);
     }
 #endif
     if (!ok)

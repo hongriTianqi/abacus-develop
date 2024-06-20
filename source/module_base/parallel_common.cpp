@@ -7,11 +7,13 @@
 #include <cstring>
 
 #ifdef __MPI
-void Parallel_Common::bcast_string(const int& my_rank, std::string& object) // Peize Lin fix bug 2019-03-18
+void Parallel_Common::bcast_string(std::string& object) // Peize Lin fix bug 2019-03-18
 {
     int size = object.size();
     MPI_Bcast(&size, 1, MPI_INT, 0, MPI_COMM_WORLD);
     char* swap = new char[size + 1];
+    int my_rank;
+    MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
     if (0 == my_rank)
         strcpy(swap, object.c_str());
     MPI_Bcast(swap, size + 1, MPI_CHAR, 0, MPI_COMM_WORLD);
@@ -21,10 +23,10 @@ void Parallel_Common::bcast_string(const int& my_rank, std::string& object) // P
     return;
 }
 
-void Parallel_Common::bcast_string(const int& my_rank, std::string* object, const int n) // Peize Lin fix bug 2019-03-18
+void Parallel_Common::bcast_string(std::string* object, const int n) // Peize Lin fix bug 2019-03-18
 {
     for (int i = 0; i < n; i++)
-        bcast_string(my_rank, object[i]);
+        bcast_string(object[i]);
     return;
 }
 
@@ -58,9 +60,11 @@ void Parallel_Common::bcast_int(int* object, const int n)
     MPI_Bcast(object, n, MPI_INT, 0, MPI_COMM_WORLD);
 }
 
-void Parallel_Common::bcast_bool(const int& my_rank, bool& object)
+void Parallel_Common::bcast_bool(bool& object)
 {
     int swap = object;
+    int my_rank;
+    MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
     if (my_rank == 0)
         swap = object;
     MPI_Bcast(&swap, 1, MPI_INT, 0, MPI_COMM_WORLD);

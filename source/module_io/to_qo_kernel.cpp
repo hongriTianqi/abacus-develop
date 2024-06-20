@@ -125,7 +125,7 @@ void toQO::build_nao(const int ntype,
         }
     }
 #ifdef __MPI
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, orbital_fn_, ntype_);
+    Parallel_Common::bcast_string(orbital_fn_, ntype_);
 #endif
     // this method is done by RANK-0, then broadcast to other processes.
     nao_->build(ntype_, orbital_fn_, 'o');
@@ -225,7 +225,7 @@ void toQO::build_pswfc(const int ntype,
         pspot_fn_[it] = pseudo_dir + pspot_fn[it];
     }
 #ifdef __MPI
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, pspot_fn_, ntype_);
+    Parallel_Common::bcast_string(pspot_fn_, ntype_);
 #endif
     // for this method, all processes MIGHT NOT do together, because of possible conflict of reading files
     // in the following build function, the file reading is done by RANK-0, then broadcast to other processes

@@ -844,27 +844,27 @@ void winput::Bcast()
     if (GlobalV::test_winput)
         ModuleBase::TITLE("winput", "Bcast");
 
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, target);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, before_iter);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, after_iter);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, begin_stop_flag);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, end_flag);
+    Parallel_Common::bcast_string(target);
+    Parallel_Common::bcast_bool(before_iter);
+    Parallel_Common::bcast_bool(after_iter);
+    Parallel_Common::bcast_bool(begin_stop_flag);
+    Parallel_Common::bcast_bool(end_flag);
 
     Parallel_Common::bcast_double(rcut);
     Parallel_Common::bcast_double(trunc_ao);
     Parallel_Common::bcast_double(trunc_wlmr);
     Parallel_Common::bcast_double(trunc_wan);
 
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, wlmr_dir);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, wf_type);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, build_wf);
+    Parallel_Common::bcast_string(wlmr_dir);
+    Parallel_Common::bcast_string(wf_type);
+    Parallel_Common::bcast_bool(build_wf);
     Parallel_Common::bcast_int(imp_pao);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, b_out_wf);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, b_fftwan);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, b_plot_build);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, b_plot_atomic);
+    Parallel_Common::bcast_bool(b_out_wf);
+    Parallel_Common::bcast_bool(b_fftwan);
+    Parallel_Common::bcast_bool(b_plot_build);
+    Parallel_Common::bcast_bool(b_plot_atomic);
 
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, trial);
+    Parallel_Common::bcast_string(trial);
     Parallel_Common::bcast_double(bs);
     Parallel_Common::bcast_double(bp);
     Parallel_Common::bcast_double(px);
@@ -877,16 +877,16 @@ void winput::Bcast()
     Parallel_Common::bcast_double(clm2_lowest);
 
     Parallel_Common::bcast_int(sph_proj);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, sph_type);
+    Parallel_Common::bcast_bool(sph_type);
 
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, b_recon);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, b_mix_wf);
+    Parallel_Common::bcast_bool(b_recon);
+    Parallel_Common::bcast_bool(b_mix_wf);
     Parallel_Common::bcast_double(mix_wf);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, recon_wanq);
+    Parallel_Common::bcast_bool(recon_wanq);
 
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, speed_mode);
+    Parallel_Common::bcast_bool(speed_mode);
 
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, b_near_atom);
+    Parallel_Common::bcast_bool(b_near_atom);
     Parallel_Common::bcast_double(range0);
     Parallel_Common::bcast_double(range1);
 
@@ -895,25 +895,25 @@ void winput::Bcast()
     Parallel_Common::bcast_int(atom_start);
     Parallel_Common::bcast_int(atom_end);
 
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, plot_wanq);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, plot_option);
+    Parallel_Common::bcast_bool(plot_wanq);
+    Parallel_Common::bcast_string(plot_option);
     Parallel_Common::bcast_int(n_unitcell);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_all);
+    Parallel_Common::bcast_bool(out_all);
     Parallel_Common::bcast_int(out_chg);
 
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, charge_type);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, cal_bands);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, cal_bands2);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, cal_dos);
+    Parallel_Common::bcast_string(charge_type);
+    Parallel_Common::bcast_bool(cal_bands);
+    Parallel_Common::bcast_bool(cal_bands2);
+    Parallel_Common::bcast_bool(cal_dos);
     Parallel_Common::bcast_int(mesh);
     Parallel_Common::bcast_double(dr);
 
     Parallel_Common::bcast_int(out_spillage);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, spillage_outdir);
+    Parallel_Common::bcast_string(spillage_outdir);
 
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, no_center);
+    Parallel_Common::bcast_bool(no_center);
     Parallel_Common::bcast_int(sum_lm);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, compare_atomic);
+    Parallel_Common::bcast_bool(compare_atomic);
 
     return;
 }

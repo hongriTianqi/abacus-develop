@@ -81,7 +81,7 @@ void toWannier90::read_nnkp(const K_Vectors& kv)
     }
 
 #ifdef __MPI
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, read_success);
+    Parallel_Common::bcast_bool(read_success);
 #endif
 
     if (GlobalV::MY_RANK != 0 && read_success)

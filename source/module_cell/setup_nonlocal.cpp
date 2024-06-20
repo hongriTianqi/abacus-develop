@@ -189,7 +189,7 @@ void InfoNonlocal::Read_NonLocal(const int& it,
         }
     }
 #ifdef __MPI
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, open);
+    Parallel_Common::bcast_bool(open);
 #endif
     if (!open)
     {
@@ -226,8 +226,8 @@ void InfoNonlocal::Read_NonLocal(const int& it,
     }
 
 #ifdef __MPI
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, label);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, ps_type);
+    Parallel_Common::bcast_string(label);
+    Parallel_Common::bcast_string(ps_type);
     Parallel_Common::bcast_int(nlmax);
 #endif
 

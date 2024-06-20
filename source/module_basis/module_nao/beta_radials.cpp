@@ -57,7 +57,7 @@ void BetaRadials::build(const Numerical_Nonlocal& nl, const int itype, std::ofst
 //     }
 //
 //#ifdef __MPI
-//     Parallel_Common::bcast_bool(GlobalV::MY_RANK, is_open);
+//     Parallel_Common::bcast_bool(is_open);
 //#endif
 //
 //     if (!is_open)
@@ -179,8 +179,8 @@ void BetaRadials::build(const Numerical_Nonlocal& nl, const int itype, std::ofst
 //     }
 //
 //#ifdef __MPI
-//     Parallel_Common::bcast_bool(GlobalV::MY_RANK, is_good);
-//     Parallel_Common::bcast_string(GlobalV::MY_RANK, symbol_);
+//     Parallel_Common::bcast_bool(is_good);
+//     Parallel_Common::bcast_string(symbol_);
 //     Parallel_Common::bcast_int(lmax_);
 //     Parallel_Common::bcast_int(nchi_);
 //     Parallel_Common::bcast_int(ngrid_max);
@@ -386,7 +386,7 @@ void BetaRadials::build(const Numerical_Nonlocal& nl, const int itype, std::ofst
 //    }
 //
 //#ifdef __MPI
-//    Parallel_Common::bcast_bool(GlobalV::MY_RANK, is_good);
+//    Parallel_Common::bcast_bool(is_good);
 //#endif
 //    if (!is_good)
 //    {
@@ -394,11 +394,11 @@ void BetaRadials::build(const Numerical_Nonlocal& nl, const int itype, std::ofst
 //    }
 //
 //#ifdef __MPI
-//    Parallel_Common::bcast_string(GlobalV::MY_RANK, symbol_);
+//    Parallel_Common::bcast_string(symbol_);
 //    Parallel_Common::bcast_int(lmax_);
 //    Parallel_Common::bcast_int(ngrid_max);
 //    Parallel_Common::bcast_int(nbeta);
-//    Parallel_Common::bcast_bool(GlobalV::MY_RANK, has_so);
+//    Parallel_Common::bcast_bool(has_so);
 //#endif
 //
 //    // It is an error if lspinorb is set to true but the pseudopotential file does not contain spin-orbit information
@@ -531,7 +531,7 @@ void BetaRadials::build(const Numerical_Nonlocal& nl, const int itype, std::ofst
 //    }// rank == 0
 //
 //#ifdef __MPI
-//    Parallel_Common::bcast_bool(GlobalV::MY_RANK, is_good);
+//    Parallel_Common::bcast_bool(is_good);
 //#endif
 //    if (!is_good)
 //    {
@@ -676,7 +676,7 @@ void BetaRadials::build(const Numerical_Nonlocal& nl, const int itype, std::ofst
 //        }
 //    }
 //#ifdef __MPI
-//    Parallel_Common::bcast_bool(GlobalV::MY_RANK, is_good);
+//    Parallel_Common::bcast_bool(is_good);
 //#endif
 //    if (!is_good)
 //    {

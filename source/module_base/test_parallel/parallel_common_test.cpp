@@ -82,16 +82,16 @@ TEST_F(ParaCommon, Bcast)
         }
     }
     // call bcast wrappers
-    Parallel_Common::bcast_bool(MY_RANK, boo);
+    Parallel_Common::bcast_bool(boo);
     Parallel_Common::bcast_int(is);
     Parallel_Common::bcast_double(fs);
     Parallel_Common::bcast_complex_double(imgs);
-    Parallel_Common::bcast_string(MY_RANK, chs);
+    Parallel_Common::bcast_string(chs);
     Parallel_Common::bcast_char(cha, 7);
     Parallel_Common::bcast_int(iv, 10);
     Parallel_Common::bcast_double(fv, 10);
     Parallel_Common::bcast_complex_double(imgv, 10);
-    Parallel_Common::bcast_string(MY_RANK, chv, 10);
+    Parallel_Common::bcast_string(chv, 10);
     // make comparisons
     EXPECT_FALSE(boo);
     EXPECT_EQ(is, 1);

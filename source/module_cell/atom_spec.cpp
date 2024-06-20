@@ -130,15 +130,15 @@ void Atom::bcast_atom(void)
     Parallel_Common::bcast_double(Rcut); // pengfei Li 16-2-29
     Parallel_Common::bcast_int(nw);
     Parallel_Common::bcast_int(stapos_wf);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, label);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, coulomb_potential);
+    Parallel_Common::bcast_string(label);
+    Parallel_Common::bcast_bool(coulomb_potential);
     if (GlobalV::MY_RANK != 0)
     {
         delete[] l_nchi;
         l_nchi = new int[nwl + 1];
     }
     Parallel_Common::bcast_int(l_nchi, nwl + 1);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, this->flag_empty_element);
+    Parallel_Common::bcast_bool(this->flag_empty_element);
     Parallel_Common::bcast_double(mass);
 
     if (GlobalV::MY_RANK != 0)

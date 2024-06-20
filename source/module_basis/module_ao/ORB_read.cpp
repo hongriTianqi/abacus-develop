@@ -54,8 +54,8 @@ void LCAO_Orbitals::bcast_files(const int& ntype_in, const int& my_rank)
     // 'read_in_flag' is true when there is a
     // block "NUMERICAL_ORBITAL" in structure
     // file.
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, read_in_flag);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, descriptor_file);
+    Parallel_Common::bcast_bool(read_in_flag);
+    Parallel_Common::bcast_string(descriptor_file);
     if (!read_in_flag)
     {
         return;
@@ -81,12 +81,12 @@ void LCAO_Orbitals::bcast_files(const int& ntype_in, const int& my_rank)
 
         // PLEASE avoid using 'bcast_string' as global variable
         // mohan note 2021-03-23
-        Parallel_Common::bcast_string(GlobalV::MY_RANK, ofile);
+        Parallel_Common::bcast_string(ofile);
         //-----------------------------------
         // Turn off the read in NONLOCAL file
         // function since 2013-08-02 by mohan
         //-----------------------------------
-        //		Parallel_Common::bcast_string(GlobalV::MY_RANK, nfile);
+        //		Parallel_Common::bcast_string(nfile);
 
         if (my_rank != 0)
         {
@@ -249,7 +249,7 @@ void LCAO_Orbitals::Read_PAO(std::ofstream& ofs_in,
         }
     }
 #ifdef __MPI
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, open);
+    Parallel_Common::bcast_bool(open);
 #endif
     if (!open)
     {
@@ -298,7 +298,7 @@ void LCAO_Orbitals::Read_Descriptor(std::ofstream& ofs_in,
         }
     }
 #ifdef __MPI
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, open);
+    Parallel_Common::bcast_bool(open);
 #endif
     if (!open)
     {
@@ -490,7 +490,7 @@ void LCAO_Orbitals::read_orb_file(std::ofstream& ofs_in, // GlobalV::ofs_running
             }
 
 #ifdef __MPI
-            Parallel_Common::bcast_bool(GlobalV::MY_RANK, find);
+            Parallel_Common::bcast_bool(find);
 #endif
             if (!find)
             {

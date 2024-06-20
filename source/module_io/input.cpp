@@ -36,7 +36,7 @@ void Input::Init(const std::string& fn)
 
 // xiaohui add 2015-09-16
 #ifdef __MPI
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, input_error);
+    Parallel_Common::bcast_bool(input_error);
 #endif
     if (input_error == 1)
     {
@@ -44,7 +44,7 @@ void Input::Init(const std::string& fn)
     }
 
 #ifdef __MPI
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, success);
+    Parallel_Common::bcast_bool(success);
 #endif
     if (!success)
     {
@@ -3434,23 +3434,23 @@ void Input::Bcast()
     //----------------------------------------------------------
     // main parameters
     //----------------------------------------------------------
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, suffix);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, stru_file); // xiaohui modify 2015-02-01
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, pseudo_dir);
-    // Parallel_Common::bcast_string(GlobalV::MY_RANK, pseudo_type); // mohan add 2013-05-20 (xiaohui add 2013-06-23)
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, orbital_dir);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, kpoint_file); // xiaohui modify 2015-02-01
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, wannier_card);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, latname);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, calculation);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, esolver_type);
+    Parallel_Common::bcast_string(suffix);
+    Parallel_Common::bcast_string(stru_file); // xiaohui modify 2015-02-01
+    Parallel_Common::bcast_string(pseudo_dir);
+    // Parallel_Common::bcast_string(pseudo_type); // mohan add 2013-05-20 (xiaohui add 2013-06-23)
+    Parallel_Common::bcast_string(orbital_dir);
+    Parallel_Common::bcast_string(kpoint_file); // xiaohui modify 2015-02-01
+    Parallel_Common::bcast_string(wannier_card);
+    Parallel_Common::bcast_string(latname);
+    Parallel_Common::bcast_string(calculation);
+    Parallel_Common::bcast_string(esolver_type);
     Parallel_Common::bcast_double(pseudo_rcut);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, pseudo_mesh);
+    Parallel_Common::bcast_bool(pseudo_mesh);
     Parallel_Common::bcast_int(ntype);
     Parallel_Common::bcast_int(nbands);
     Parallel_Common::bcast_int(nbands_sto);
     Parallel_Common::bcast_int(nbands_istate);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, bands_to_print_);
+    Parallel_Common::bcast_string(bands_to_print_);
     for (int i = 0; i < 3; i++)
     {
         Parallel_Common::bcast_double(kspacing[i]);
@@ -3465,7 +3465,7 @@ void Input::Bcast()
     Parallel_Common::bcast_int(initsto_freq);
     Parallel_Common::bcast_int(method_sto);
     Parallel_Common::bcast_int(npart_sto);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, cal_cond);
+    Parallel_Common::bcast_bool(cal_cond);
     Parallel_Common::bcast_double(cond_che_thr);
     Parallel_Common::bcast_double(cond_dw);
     Parallel_Common::bcast_double(cond_wcut);
@@ -3473,72 +3473,72 @@ void Input::Bcast()
     Parallel_Common::bcast_int(cond_dtbatch);
     Parallel_Common::bcast_int(cond_smear);
     Parallel_Common::bcast_double(cond_fwhm);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, cond_nonlocal);
+    Parallel_Common::bcast_bool(cond_nonlocal);
     Parallel_Common::bcast_int(bndpar);
     Parallel_Common::bcast_int(kpar);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, berry_phase);
+    Parallel_Common::bcast_bool(berry_phase);
     Parallel_Common::bcast_int(gdir);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, towannier90);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, nnkpfile);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, wannier_spin);
+    Parallel_Common::bcast_bool(towannier90);
+    Parallel_Common::bcast_string(nnkpfile);
+    Parallel_Common::bcast_string(wannier_spin);
     Parallel_Common::bcast_int(wannier_method);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_wannier_mmn);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_wannier_amn);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_wannier_unk);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_wannier_eig);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_wannier_wvfn_formatted);
+    Parallel_Common::bcast_bool(out_wannier_mmn);
+    Parallel_Common::bcast_bool(out_wannier_amn);
+    Parallel_Common::bcast_bool(out_wannier_unk);
+    Parallel_Common::bcast_bool(out_wannier_eig);
+    Parallel_Common::bcast_bool(out_wannier_wvfn_formatted);
 
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, dft_functional);
+    Parallel_Common::bcast_string(dft_functional);
     Parallel_Common::bcast_double(xc_temperature);
     Parallel_Common::bcast_int(nspin);
     Parallel_Common::bcast_double(nelec);
     Parallel_Common::bcast_double(nelec_delta);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, two_fermi);
+    Parallel_Common::bcast_bool(two_fermi);
     Parallel_Common::bcast_double(nupdown);
     Parallel_Common::bcast_int(lmaxmax);
 
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, basis_type); // xiaohui add 2013-09-01
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, ks_solver);  // xiaohui add 2013-09-01
+    Parallel_Common::bcast_string(basis_type); // xiaohui add 2013-09-01
+    Parallel_Common::bcast_string(ks_solver);  // xiaohui add 2013-09-01
     Parallel_Common::bcast_int(nstream);
     Parallel_Common::bcast_double(search_radius);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, search_pbc);
+    Parallel_Common::bcast_bool(search_pbc);
     Parallel_Common::bcast_double(search_radius);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, symmetry);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, init_vel); // liuyu 2021-07-14
+    Parallel_Common::bcast_string(symmetry);
+    Parallel_Common::bcast_bool(init_vel); // liuyu 2021-07-14
     Parallel_Common::bcast_double(ref_cell_factor);
     Parallel_Common::bcast_double(symmetry_prec); // LiuXh add 2021-08-12, accuracy for symmetry
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, symmetry_autoclose);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, cal_force);
+    Parallel_Common::bcast_bool(symmetry_autoclose);
+    Parallel_Common::bcast_bool(cal_force);
     Parallel_Common::bcast_double(force_thr);
     Parallel_Common::bcast_double(force_thr_ev2);
     Parallel_Common::bcast_double(stress_thr); // LiuXh add 20180515
     Parallel_Common::bcast_double(press1);
     Parallel_Common::bcast_double(press2);
     Parallel_Common::bcast_double(press3);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, cal_stress);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, fixed_axes);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, fixed_ibrav);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, fixed_atoms);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, relax_method);
+    Parallel_Common::bcast_bool(cal_stress);
+    Parallel_Common::bcast_string(fixed_axes);
+    Parallel_Common::bcast_bool(fixed_ibrav);
+    Parallel_Common::bcast_bool(fixed_atoms);
+    Parallel_Common::bcast_string(relax_method);
     Parallel_Common::bcast_double(relax_cg_thr); // pengfei add 2013-08-15
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, out_level);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_md_control);
+    Parallel_Common::bcast_string(out_level);
+    Parallel_Common::bcast_bool(out_md_control);
     Parallel_Common::bcast_double(relax_bfgs_w1);
     Parallel_Common::bcast_double(relax_bfgs_w2);
     Parallel_Common::bcast_double(relax_bfgs_rmax);
     Parallel_Common::bcast_double(relax_bfgs_rmin);
     Parallel_Common::bcast_double(relax_bfgs_init);
     Parallel_Common::bcast_double(relax_scale_force);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, relax_new);
+    Parallel_Common::bcast_bool(relax_new);
 
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, use_paw);
+    Parallel_Common::bcast_bool(use_paw);
 
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, gamma_only);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, gamma_only_local);
+    Parallel_Common::bcast_bool(gamma_only);
+    Parallel_Common::bcast_bool(gamma_only_local);
     Parallel_Common::bcast_int(fft_mode);
     Parallel_Common::bcast_double(ecutwfc);
     Parallel_Common::bcast_double(ecutrho);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, GlobalV::double_grid);
+    Parallel_Common::bcast_bool(GlobalV::double_grid);
     Parallel_Common::bcast_int(ncx);
     Parallel_Common::bcast_int(ncy);
     Parallel_Common::bcast_int(ncz);
@@ -3559,32 +3559,32 @@ void Input::Bcast()
     Parallel_Common::bcast_int(pw_diag_nmax);
     Parallel_Common::bcast_int(diago_cg_prec);
     Parallel_Common::bcast_int(pw_diag_ndim);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, diago_full_acc);
+    Parallel_Common::bcast_bool(diago_full_acc);
     Parallel_Common::bcast_double(pw_diag_thr);
     Parallel_Common::bcast_int(nb2d);
     Parallel_Common::bcast_int(nurse);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, colour);
+    Parallel_Common::bcast_bool(colour);
     Parallel_Common::bcast_int(nbspline);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, t_in_h);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, vl_in_h);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, vnl_in_h);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, vh_in_h);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, vion_in_h);
+    Parallel_Common::bcast_bool(t_in_h);
+    Parallel_Common::bcast_bool(vl_in_h);
+    Parallel_Common::bcast_bool(vnl_in_h);
+    Parallel_Common::bcast_bool(vh_in_h);
+    Parallel_Common::bcast_bool(vion_in_h);
 
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, test_force);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, test_stress);
+    Parallel_Common::bcast_bool(test_force);
+    Parallel_Common::bcast_bool(test_stress);
 
     Parallel_Common::bcast_double(scf_thr);
     Parallel_Common::bcast_int(scf_thr_type);
     Parallel_Common::bcast_int(scf_nmax);
     Parallel_Common::bcast_int(this->relax_nmax);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_stru); // mohan add 2012-03-23
+    Parallel_Common::bcast_bool(out_stru); // mohan add 2012-03-23
 
-    // Parallel_Common::bcast_string(GlobalV::MY_RANK,  occupations );
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, smearing_method);
+    // Parallel_Common::bcast_string( occupations );
+    Parallel_Common::bcast_string(smearing_method);
     Parallel_Common::bcast_double(smearing_sigma);
 
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, mixing_mode);
+    Parallel_Common::bcast_string(mixing_mode);
     Parallel_Common::bcast_double(mixing_beta);
     Parallel_Common::bcast_int(mixing_ndim);
     Parallel_Common::bcast_double(mixing_restart);
@@ -3593,56 +3593,55 @@ void Input::Bcast()
     Parallel_Common::bcast_double(mixing_gg0_mag);
     Parallel_Common::bcast_double(mixing_gg0_min);
     Parallel_Common::bcast_double(mixing_angle);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, mixing_tau);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, mixing_dftu);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, mixing_dmr);
+    Parallel_Common::bcast_bool(mixing_tau);
+    Parallel_Common::bcast_bool(mixing_dftu);
+    Parallel_Common::bcast_bool(mixing_dmr);
 
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, read_file_dir);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, init_wfc);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, psi_initializer);
+    Parallel_Common::bcast_string(read_file_dir);
+    Parallel_Common::bcast_string(init_wfc);
+    Parallel_Common::bcast_bool(psi_initializer);
 
     Parallel_Common::bcast_int(mem_saver);
     Parallel_Common::bcast_int(printe);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, init_chg);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, chg_extrap); // xiaohui modify 2015-02-01
+    Parallel_Common::bcast_string(init_chg);
+    Parallel_Common::bcast_string(chg_extrap); // xiaohui modify 2015-02-01
     Parallel_Common::bcast_int(out_freq_elec);
     Parallel_Common::bcast_int(out_freq_ion);
     Parallel_Common::bcast_int(out_chg);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_dm);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_dm1);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_bandgap); // for bandgap printing
+    Parallel_Common::bcast_bool(out_dm);
+    Parallel_Common::bcast_bool(out_dm1);
+    Parallel_Common::bcast_bool(out_bandgap); // for bandgap printing
 
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK,
-                                deepks_out_labels); // caoyu added 2020-11-24, mohan modified 2021-01-03
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, deepks_scf);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, deepks_bandgap);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, deepks_out_unittest);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, deepks_model);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, deepks_equiv);
+    Parallel_Common::bcast_bool(deepks_out_labels); // caoyu added 2020-11-24, mohan modified 2021-01-03
+    Parallel_Common::bcast_bool(deepks_scf);
+    Parallel_Common::bcast_bool(deepks_bandgap);
+    Parallel_Common::bcast_bool(deepks_out_unittest);
+    Parallel_Common::bcast_string(deepks_model);
+    Parallel_Common::bcast_bool(deepks_equiv);
 
     Parallel_Common::bcast_int(out_pot);
     Parallel_Common::bcast_int(out_wfc_pw);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_wfc_r);
+    Parallel_Common::bcast_bool(out_wfc_r);
     Parallel_Common::bcast_int(out_dos);
     if (GlobalV::MY_RANK != 0)
         out_band.resize(2); /* If this line is absent, will cause segmentation fault in io_input_test_para */
     Parallel_Common::bcast_int(out_band.data(), 2);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_proj_band);
+    Parallel_Common::bcast_bool(out_proj_band);
     if (GlobalV::MY_RANK != 0)
         out_mat_hs.resize(2); /* If this line is absent, will cause segmentation fault in io_input_test_para */
     Parallel_Common::bcast_int(out_mat_hs.data(), 2);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_mat_hs2); // LiuXh add 2019-07-15
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_mat_t);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_mat_dh);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_mat_xc);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_hr_npz);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_dm_npz);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, dm_to_rho);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_mat_r); // jingan add 2019-8-14
+    Parallel_Common::bcast_bool(out_mat_hs2); // LiuXh add 2019-07-15
+    Parallel_Common::bcast_bool(out_mat_t);
+    Parallel_Common::bcast_bool(out_mat_dh);
+    Parallel_Common::bcast_bool(out_mat_xc);
+    Parallel_Common::bcast_bool(out_hr_npz);
+    Parallel_Common::bcast_bool(out_dm_npz);
+    Parallel_Common::bcast_bool(dm_to_rho);
+    Parallel_Common::bcast_bool(out_mat_r); // jingan add 2019-8-14
     Parallel_Common::bcast_int(out_wfc_lcao);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_alllog);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_element_info);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_app_flag);
+    Parallel_Common::bcast_bool(out_alllog);
+    Parallel_Common::bcast_bool(out_element_info);
+    Parallel_Common::bcast_bool(out_app_flag);
     Parallel_Common::bcast_int(out_ndigits);
     Parallel_Common::bcast_int(out_interval);
 
@@ -3650,8 +3649,8 @@ void Input::Bcast()
     Parallel_Common::bcast_double(dos_emax_ev);
     Parallel_Common::bcast_double(dos_edelta_ev);
     Parallel_Common::bcast_double(dos_scale);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, dos_setemin);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, dos_setemax);
+    Parallel_Common::bcast_bool(dos_setemin);
+    Parallel_Common::bcast_bool(dos_setemax);
     Parallel_Common::bcast_int(dos_nche);
     Parallel_Common::bcast_double(dos_sigma);
 
@@ -3662,8 +3661,8 @@ void Input::Bcast()
     Parallel_Common::bcast_double(lcao_rmax);
     Parallel_Common::bcast_double(onsite_radius);
     // zheng daye add 2014/5/5
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, mdp.md_type);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, mdp.md_thermostat);
+    Parallel_Common::bcast_string(mdp.md_type);
+    Parallel_Common::bcast_string(mdp.md_thermostat);
     Parallel_Common::bcast_int(mdp.md_nstep);
     Parallel_Common::bcast_double(mdp.md_dt);
     Parallel_Common::bcast_int(mdp.md_tchain);
@@ -3674,7 +3673,7 @@ void Input::Bcast()
     Parallel_Common::bcast_int(mdp.md_restartfreq);
     Parallel_Common::bcast_int(mdp.md_seed);
     Parallel_Common::bcast_int(mdp.md_prec_level);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, mdp.md_restart);
+    Parallel_Common::bcast_bool(mdp.md_restart);
     Parallel_Common::bcast_double(mdp.lj_rcut);
     Parallel_Common::bcast_double(mdp.lj_epsilon);
     Parallel_Common::bcast_double(mdp.lj_sigma);
@@ -3684,128 +3683,128 @@ void Input::Bcast()
     Parallel_Common::bcast_double(mdp.msst_tscale);
     Parallel_Common::bcast_double(mdp.md_tfreq);
     Parallel_Common::bcast_double(mdp.md_damp);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, mdp.pot_file);
+    Parallel_Common::bcast_string(mdp.pot_file);
     Parallel_Common::bcast_int(mdp.md_nraise);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, cal_syns);
+    Parallel_Common::bcast_bool(cal_syns);
     Parallel_Common::bcast_double(dmax);
     Parallel_Common::bcast_double(mdp.md_tolerance);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, mdp.md_pmode);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, mdp.md_pcouple);
+    Parallel_Common::bcast_string(mdp.md_pmode);
+    Parallel_Common::bcast_string(mdp.md_pcouple);
     Parallel_Common::bcast_int(mdp.md_pchain);
     Parallel_Common::bcast_double(mdp.md_pfirst);
     Parallel_Common::bcast_double(mdp.md_plast);
     Parallel_Common::bcast_double(mdp.md_pfreq);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, mdp.dump_force);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, mdp.dump_vel);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, mdp.dump_virial);
+    Parallel_Common::bcast_bool(mdp.dump_force);
+    Parallel_Common::bcast_bool(mdp.dump_vel);
+    Parallel_Common::bcast_bool(mdp.dump_virial);
     // Yu Liu add 2022-05-18
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, efield_flag);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, dip_cor_flag);
+    Parallel_Common::bcast_bool(efield_flag);
+    Parallel_Common::bcast_bool(dip_cor_flag);
     Parallel_Common::bcast_int(efield_dir);
     Parallel_Common::bcast_double(efield_pos_max);
     Parallel_Common::bcast_double(efield_pos_dec);
     Parallel_Common::bcast_double(efield_amp);
     // Yu Liu add 2022-09-13
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, gate_flag);
+    Parallel_Common::bcast_bool(gate_flag);
     Parallel_Common::bcast_double(zgate);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, relax);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, block);
+    Parallel_Common::bcast_bool(relax);
+    Parallel_Common::bcast_bool(block);
     Parallel_Common::bcast_double(block_down);
     Parallel_Common::bcast_double(block_up);
     Parallel_Common::bcast_double(block_height);
     /* 	// Peize Lin add 2014-04-07
-        Parallel_Common::bcast_bool(GlobalV::MY_RANK,  vdwD2 );
+        Parallel_Common::bcast_bool( vdwD2 );
         Parallel_Common::bcast_double( vdwD2_scaling );
         Parallel_Common::bcast_double( vdwD2_d );
-        Parallel_Common::bcast_string(GlobalV::MY_RANK,  vdwD2_C6_file );
-        Parallel_Common::bcast_string(GlobalV::MY_RANK,  vdwD2_C6_unit );
-        Parallel_Common::bcast_string(GlobalV::MY_RANK,  vdwD2_R0_file );
-        Parallel_Common::bcast_string(GlobalV::MY_RANK,  vdwD2_R0_unit );
-        Parallel_Common::bcast_string(GlobalV::MY_RANK,  vdwD2_model );
+        Parallel_Common::bcast_string( vdwD2_C6_file );
+        Parallel_Common::bcast_string( vdwD2_C6_unit );
+        Parallel_Common::bcast_string( vdwD2_R0_file );
+        Parallel_Common::bcast_string( vdwD2_R0_unit );
+        Parallel_Common::bcast_string( vdwD2_model );
         Parallel_Common::bcast_int( vdwD2_period.x );
         Parallel_Common::bcast_int( vdwD2_period.y );
         Parallel_Common::bcast_int( vdwD2_period.z );
         Parallel_Common::bcast_double( vdwD2_radius );
-        Parallel_Common::bcast_string(GlobalV::MY_RANK,  vdwD2_radius_unit ); */
+        Parallel_Common::bcast_string( vdwD2_radius_unit ); */
     // jiyy add 2019-08-04
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, vdw_method);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, vdw_s6);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, vdw_s8);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, vdw_a1);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, vdw_a2);
+    Parallel_Common::bcast_string(vdw_method);
+    Parallel_Common::bcast_string(vdw_s6);
+    Parallel_Common::bcast_string(vdw_s8);
+    Parallel_Common::bcast_string(vdw_a1);
+    Parallel_Common::bcast_string(vdw_a2);
     Parallel_Common::bcast_double(vdw_d);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, vdw_abc);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, vdw_cutoff_radius);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, vdw_radius_unit);
+    Parallel_Common::bcast_bool(vdw_abc);
+    Parallel_Common::bcast_string(vdw_cutoff_radius);
+    Parallel_Common::bcast_string(vdw_radius_unit);
     Parallel_Common::bcast_double(vdw_cn_thr);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, vdw_cn_thr_unit);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, vdw_C6_file);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, vdw_C6_unit);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, vdw_R0_file);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, vdw_R0_unit);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, vdw_cutoff_type);
+    Parallel_Common::bcast_string(vdw_cn_thr_unit);
+    Parallel_Common::bcast_string(vdw_C6_file);
+    Parallel_Common::bcast_string(vdw_C6_unit);
+    Parallel_Common::bcast_string(vdw_R0_file);
+    Parallel_Common::bcast_string(vdw_R0_unit);
+    Parallel_Common::bcast_string(vdw_cutoff_type);
     Parallel_Common::bcast_int(vdw_cutoff_period.x);
     Parallel_Common::bcast_int(vdw_cutoff_period.y);
     Parallel_Common::bcast_int(vdw_cutoff_period.z);
     // Fuxiang He add 2016-10-26
     Parallel_Common::bcast_double(td_force_dt);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, td_vext);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_vext_dire);
+    Parallel_Common::bcast_bool(td_vext);
+    Parallel_Common::bcast_string(td_vext_dire);
     Parallel_Common::bcast_int(propagator);
     Parallel_Common::bcast_int(td_stype);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_ttype);
+    Parallel_Common::bcast_string(td_ttype);
     Parallel_Common::bcast_int(td_tstart);
     Parallel_Common::bcast_int(td_tend);
     Parallel_Common::bcast_double(td_lcut1);
     Parallel_Common::bcast_double(td_lcut2);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_gauss_freq);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_gauss_phase);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_gauss_sigma);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_gauss_t0);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_gauss_amp);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_trape_freq);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_trape_phase);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_trape_t1);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_trape_t2);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_trape_t3);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_trape_amp);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_trigo_freq1);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_trigo_freq2);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_trigo_phase1);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_trigo_phase2);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_trigo_amp);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_heavi_t0);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, td_heavi_amp);
-    // Parallel_Common::bcast_string(GlobalV::MY_RANK, td_hhg_freq1);
-    // Parallel_Common::bcast_string(GlobalV::MY_RANK, td_hhg_freq2);
-    // Parallel_Common::bcast_string(GlobalV::MY_RANK, td_hhg_amp1);
-    // Parallel_Common::bcast_string(GlobalV::MY_RANK, td_hhg_amp2);
-    // Parallel_Common::bcast_string(GlobalV::MY_RANK, td_hhg_phase1);
-    // Parallel_Common::bcast_string(GlobalV::MY_RANK, td_hhg_phase2);
-    // Parallel_Common::bcast_string(GlobalV::MY_RANK, td_hhg_freq1);
-    // Parallel_Common::bcast_string(GlobalV::MY_RANK, td_hhg_freq2);
-    // Parallel_Common::bcast_string(GlobalV::MY_RANK, td_hhg_t0);
-    // Parallel_Common::bcast_string(GlobalV::MY_RANK, td_hhg_sigma);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_dipole);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_efield);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_current);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_vecpot);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, init_vecpot_file);
+    Parallel_Common::bcast_string(td_gauss_freq);
+    Parallel_Common::bcast_string(td_gauss_phase);
+    Parallel_Common::bcast_string(td_gauss_sigma);
+    Parallel_Common::bcast_string(td_gauss_t0);
+    Parallel_Common::bcast_string(td_gauss_amp);
+    Parallel_Common::bcast_string(td_trape_freq);
+    Parallel_Common::bcast_string(td_trape_phase);
+    Parallel_Common::bcast_string(td_trape_t1);
+    Parallel_Common::bcast_string(td_trape_t2);
+    Parallel_Common::bcast_string(td_trape_t3);
+    Parallel_Common::bcast_string(td_trape_amp);
+    Parallel_Common::bcast_string(td_trigo_freq1);
+    Parallel_Common::bcast_string(td_trigo_freq2);
+    Parallel_Common::bcast_string(td_trigo_phase1);
+    Parallel_Common::bcast_string(td_trigo_phase2);
+    Parallel_Common::bcast_string(td_trigo_amp);
+    Parallel_Common::bcast_string(td_heavi_t0);
+    Parallel_Common::bcast_string(td_heavi_amp);
+    // Parallel_Common::bcast_string(td_hhg_freq1);
+    // Parallel_Common::bcast_string(td_hhg_freq2);
+    // Parallel_Common::bcast_string(td_hhg_amp1);
+    // Parallel_Common::bcast_string(td_hhg_amp2);
+    // Parallel_Common::bcast_string(td_hhg_phase1);
+    // Parallel_Common::bcast_string(td_hhg_phase2);
+    // Parallel_Common::bcast_string(td_hhg_freq1);
+    // Parallel_Common::bcast_string(td_hhg_freq2);
+    // Parallel_Common::bcast_string(td_hhg_t0);
+    // Parallel_Common::bcast_string(td_hhg_sigma);
+    Parallel_Common::bcast_bool(out_dipole);
+    Parallel_Common::bcast_bool(out_efield);
+    Parallel_Common::bcast_bool(out_current);
+    Parallel_Common::bcast_bool(out_vecpot);
+    Parallel_Common::bcast_bool(init_vecpot_file);
     Parallel_Common::bcast_double(td_print_eij);
     Parallel_Common::bcast_int(td_edm);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, test_skip_ewald);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, ocp);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, ocp_set);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, out_mul); // qifeng add 2019/9/10
+    Parallel_Common::bcast_bool(test_skip_ewald);
+    Parallel_Common::bcast_bool(ocp);
+    Parallel_Common::bcast_string(ocp_set);
+    Parallel_Common::bcast_bool(out_mul); // qifeng add 2019/9/10
 
     // Peize Lin add 2018-06-20
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, exx_hybrid_alpha);
+    Parallel_Common::bcast_string(exx_hybrid_alpha);
     Parallel_Common::bcast_double(exx_hse_omega);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, exx_separate_loop);
+    Parallel_Common::bcast_bool(exx_separate_loop);
     Parallel_Common::bcast_int(exx_hybrid_step);
     Parallel_Common::bcast_double(exx_lambda);
     Parallel_Common::bcast_double(exx_mixing_beta);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, exx_real_number);
+    Parallel_Common::bcast_string(exx_real_number);
     Parallel_Common::bcast_double(exx_pca_threshold);
     Parallel_Common::bcast_double(exx_c_threshold);
     Parallel_Common::bcast_double(exx_v_threshold);
@@ -3817,26 +3816,26 @@ void Input::Bcast()
     Parallel_Common::bcast_double(exx_cauchy_force_threshold);
     Parallel_Common::bcast_double(exx_cauchy_stress_threshold);
     Parallel_Common::bcast_double(exx_ccp_threshold);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, exx_ccp_rmesh_times);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, exx_distribute_type);
+    Parallel_Common::bcast_string(exx_ccp_rmesh_times);
+    Parallel_Common::bcast_string(exx_distribute_type);
     Parallel_Common::bcast_int(exx_opt_orb_lmax);
     Parallel_Common::bcast_double(exx_opt_orb_ecut);
     Parallel_Common::bcast_double(exx_opt_orb_tolerence);
 
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, noncolin);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, lspinorb);
+    Parallel_Common::bcast_bool(noncolin);
+    Parallel_Common::bcast_bool(lspinorb);
     Parallel_Common::bcast_double(soc_lambda);
 
     // Parallel_Common::bcast_int( epsilon0_choice );
     Parallel_Common::bcast_double(cell_factor);                  // LiuXh add 20180619
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, restart_save); // Peize Lin add 2020.04.04
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, restart_load); // Peize Lin add 2020.04.04
+    Parallel_Common::bcast_bool(restart_save); // Peize Lin add 2020.04.04
+    Parallel_Common::bcast_bool(restart_load); // Peize Lin add 2020.04.04
 
     //-----------------------------------------------------------------------------------
     // DFT+U (added by Quxin 2020-10-29)
     //-----------------------------------------------------------------------------------
     Parallel_Common::bcast_int(dft_plus_u);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, yukawa_potential);
+    Parallel_Common::bcast_bool(yukawa_potential);
     Parallel_Common::bcast_double(uramping);
     Parallel_Common::bcast_int(omc);
     Parallel_Common::bcast_double(yukawa_lambda);
@@ -3855,18 +3854,18 @@ void Input::Bcast()
     //-----------------------------------------------------------------------------------
     // DFT+DMFT (added by Quxin 2020-08)
     //-----------------------------------------------------------------------------------
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, dft_plus_dmft);
+    Parallel_Common::bcast_bool(dft_plus_dmft);
 
     //-----------------------------------------------------------------------------------
     // RPA
     //-----------------------------------------------------------------------------------
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, rpa);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, GlobalV::rpa_setorb);
+    Parallel_Common::bcast_bool(rpa);
+    Parallel_Common::bcast_bool(GlobalV::rpa_setorb);
 
     //----------------------------------------------------------------------------------
     //    implicit solvation model        (sunml added on 2022-04-04)
     //----------------------------------------------------------------------------------
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, imp_sol);
+    Parallel_Common::bcast_bool(imp_sol);
     Parallel_Common::bcast_double(eb_k);
     Parallel_Common::bcast_double(tau);
     Parallel_Common::bcast_double(sigma_k);
@@ -3875,9 +3874,9 @@ void Input::Bcast()
     //----------------------------------------------------------------------------------
     //    OFDFT sunliang added on 2022-05-05
     //----------------------------------------------------------------------------------
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, of_kinetic);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, of_method);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, of_conv);
+    Parallel_Common::bcast_string(of_kinetic);
+    Parallel_Common::bcast_string(of_method);
+    Parallel_Common::bcast_string(of_conv);
     Parallel_Common::bcast_double(of_tole);
     Parallel_Common::bcast_double(of_tolp);
     Parallel_Common::bcast_double(of_tf_weight);
@@ -3885,19 +3884,19 @@ void Input::Bcast()
     Parallel_Common::bcast_double(of_wt_alpha);
     Parallel_Common::bcast_double(of_wt_beta);
     Parallel_Common::bcast_double(of_wt_rho0);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, of_hold_rho0);
+    Parallel_Common::bcast_bool(of_hold_rho0);
     Parallel_Common::bcast_double(of_lkt_a);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, of_full_pw);
+    Parallel_Common::bcast_bool(of_full_pw);
     Parallel_Common::bcast_int(of_full_pw_dim);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, of_read_kernel);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, of_kernel_file);
+    Parallel_Common::bcast_bool(of_read_kernel);
+    Parallel_Common::bcast_string(of_kernel_file);
 
     //==========================================================
     // spherical bessel  Peize Lin added on 2022-12-15
     //==========================================================
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, bessel_nao_smooth);
+    Parallel_Common::bcast_bool(bessel_nao_smooth);
     Parallel_Common::bcast_double(bessel_nao_sigma);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, bessel_nao_ecut);
+    Parallel_Common::bcast_string(bessel_nao_ecut);
     /* newly support vector/list input of bessel_nao_rcut */
     int nrcut = bessel_nao_rcuts.size();
     Parallel_Common::bcast_int(nrcut);
@@ -3910,45 +3909,45 @@ void Input::Bcast()
     Parallel_Common::bcast_double(bessel_nao_rcut);
     Parallel_Common::bcast_double(bessel_nao_tolerence);
     Parallel_Common::bcast_int(bessel_descriptor_lmax);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, bessel_descriptor_smooth);
+    Parallel_Common::bcast_bool(bessel_descriptor_smooth);
     Parallel_Common::bcast_double(bessel_descriptor_sigma);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, bessel_descriptor_ecut);
+    Parallel_Common::bcast_string(bessel_descriptor_ecut);
     Parallel_Common::bcast_double(bessel_descriptor_rcut);
     Parallel_Common::bcast_double(bessel_descriptor_tolerence);
     //----------------------------------------------------------------------------------
     //    device control denghui added on 2022-11-05
     //----------------------------------------------------------------------------------
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, device);
+    Parallel_Common::bcast_string(device);
     /**
      *  Deltaspin variables
      */
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, sc_mag_switch);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, decay_grad_switch);
+    Parallel_Common::bcast_bool(sc_mag_switch);
+    Parallel_Common::bcast_bool(decay_grad_switch);
     Parallel_Common::bcast_double(sc_thr);
     Parallel_Common::bcast_int(nsc);
     Parallel_Common::bcast_int(nsc_min);
     Parallel_Common::bcast_int(sc_scf_nmin);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, sc_file);
+    Parallel_Common::bcast_string(sc_file);
     Parallel_Common::bcast_double(alpha_trial);
     Parallel_Common::bcast_double(sccut);
 
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, qo_switch);
-    Parallel_Common::bcast_string(GlobalV::MY_RANK, qo_basis);
+    Parallel_Common::bcast_bool(qo_switch);
+    Parallel_Common::bcast_string(qo_basis);
     Parallel_Common::bcast_double(qo_thr);
     //==========================================================
     // PEXSI
     //==========================================================
     Parallel_Common::bcast_int(pexsi_npole);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, pexsi_inertia);
+    Parallel_Common::bcast_bool(pexsi_inertia);
     Parallel_Common::bcast_int(pexsi_nmax);
     // Parallel_Common::bcast_int(pexsi_symbolic);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, pexsi_comm);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, pexsi_storage);
+    Parallel_Common::bcast_bool(pexsi_comm);
+    Parallel_Common::bcast_bool(pexsi_storage);
     Parallel_Common::bcast_int(pexsi_ordering);
     Parallel_Common::bcast_int(pexsi_row_ordering);
     Parallel_Common::bcast_int(pexsi_nproc);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, pexsi_symm);
-    Parallel_Common::bcast_bool(GlobalV::MY_RANK, pexsi_trans);
+    Parallel_Common::bcast_bool(pexsi_symm);
+    Parallel_Common::bcast_bool(pexsi_trans);
     Parallel_Common::bcast_int(pexsi_method);
     Parallel_Common::bcast_int(pexsi_nproc_pole);
     // Parallel_Common::bcast_double(pexsi_spin);
@@ -3967,7 +3966,7 @@ void Input::Bcast()
     if (ntype != 0) /* ntype has been broadcasted before */
     {
         qo_strategy.resize(ntype);
-        Parallel_Common::bcast_string(GlobalV::MY_RANK, qo_strategy.data(), ntype);
+        Parallel_Common::bcast_string(qo_strategy.data(), ntype);
         qo_screening_coeff.resize(ntype);
         Parallel_Common::bcast_double(qo_screening_coeff.data(), ntype);
     }
