@@ -42,7 +42,7 @@ int main(int argc, char** argv)
     After running mpi version of abacus, release the mpi resources.
     */
 #ifdef __MPI
-    Parallel_Global::finalize_mpi(GlobalV::NPROC_IN_STOGROUP, GlobalV::KPAR);
+    Parallel_Global::finalize_mpi();
 #endif
 #ifdef _OPENMP
 	fftw_cleanup_threads();

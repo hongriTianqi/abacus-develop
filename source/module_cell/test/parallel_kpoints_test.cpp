@@ -1,10 +1,6 @@
 #ifdef __MPI
-#include "module_cell/parallel_kpoints.h"
-
 #include <mpi.h>
-
 #include <vector>
-
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 #include "module_base/parallel_global.h"
@@ -28,6 +24,8 @@
  * One may modify it to do more tests, or adapt this unittest to local
  * environment.
  */
+
+#include "module_cell/parallel_kpoints.h"
 
 class MPIContext
 {
@@ -64,7 +62,26 @@ public:
 				const int& RANK_IN_POOL,
 				const int& NPROC_IN_POOL);
 	void test_kinfo(const Parallel_Kpoints* Pkpts);
+	void test_gatherkvec(const Parallel_Kpoints* Pkpts, const MPIContext& mpi);
 };
+
+void ParaPrepare::test_gatherkvec(const Parallel_Kpoints* Pkpts, const MPIContext& mpi)
+{
+	std::vector<ModuleBase::Vector3<double>> vec_local(Pkpts->nks_np);
+	std::vector<ModuleBase::Vector3<double>> vec_global;
+	for (int i = 0; i < Pkpts->nks_np; ++i)
+	{
+		int k_now = i + Pkpts->startk_pool[mpi.MY_POOL];
+		vec_local[i] = ModuleBase::Vector3<double>(k_now, k_now, k_now);
+	}
+	Pkpts->gatherkvec(vec_local,vec_global);
+	for (int i = 0; i < Pkpts->nkstot_np; ++i)
+	{
+		EXPECT_DOUBLE_EQ(vec_global[i].x,i);
+		EXPECT_DOUBLE_EQ(vec_global[i].y,i);
+		EXPECT_DOUBLE_EQ(vec_global[i].z,i);
+	}
+}
 
 void ParaPrepare::test_kinfo(const Parallel_Kpoints* Pkpts)
 {
@@ -160,87 +177,51 @@ protected:
 	}
 };
 
-TEST_F(ParaKpoints, GatherkvecTest) {
-    // Initialize Parallel_Kpoints object
-    Parallel_Kpoints parallel_kpoints;
-
-    // Initialize local and global vectors
-    std::vector<ModuleBase::Vector3<double>> vec_local;
-    std::vector<ModuleBase::Vector3<double>> vec_global;
-
-    // Populate vec_local with some data
-	int npool = 1;
-	if(this->NPROC > 2)
+TEST_P(ParaKpoints, GatherkvecTest)
+{
+	ParaPrepare pp = GetParam();
+	Parallel_Kpoints* Pkpoints;
+	Pkpoints = new Parallel_Kpoints;
+	mpi.KPAR = pp.KPAR_;
+	if(mpi.KPAR>NPROC)
 	{
-		npool = 3;
-	}
-	else if(this->NPROC == 2)
-	{
-		npool = 2;
-	}
-	mpi.KPAR = npool;
-
-	if(this->MY_RANK == 0)
-	{
-    	vec_local.push_back(ModuleBase::Vector3<double>(1.0, 1.0, 1.0));
-		mpi.NPROC_IN_POOL = 1;
-		mpi.MY_POOL = 0;
-		parallel_kpoints.nks_np = 1;
-	}
-	else if(this->MY_RANK == 1)
-	{
-		vec_local.push_back(ModuleBase::Vector3<double>(2.0, 2.0, 2.0));
-		vec_local.push_back(ModuleBase::Vector3<double>(3.0, 4.0, 5.0));
-		mpi.NPROC_IN_POOL = 1;
-		mpi.MY_POOL = 1;
-		parallel_kpoints.nks_np = 2;
+		std::string output;
+		testing::internal::CaptureStdout();
+		EXPECT_EXIT(Parallel_Global::divide_mpi_groups(this->NPROC,
+								mpi.KPAR,
+                                this->MY_RANK,
+                                mpi.NPROC_IN_POOL,
+								mpi.MY_POOL,
+                                mpi.RANK_IN_POOL),testing::ExitedWithCode(1),"");
+		output = testing::internal::GetCapturedStdout();
+		EXPECT_THAT(output,testing::HasSubstr("must be greater than the number of groups"));
 	}
 	else
 	{
-		vec_local.push_back(ModuleBase::Vector3<double>(3.0, 3.0, 3.0));
-		mpi.NPROC_IN_POOL = NPROC - 2;
-		mpi.MY_POOL = 2;
-		parallel_kpoints.nks_np = 1;
+		Parallel_Global::divide_mpi_groups(this->NPROC,
+								mpi.KPAR,
+                                this->MY_RANK,
+                                mpi.NPROC_IN_POOL,
+								mpi.MY_POOL,
+                                mpi.RANK_IN_POOL);
+		MPI_Comm_split(MPI_COMM_WORLD,mpi.MY_POOL,mpi.RANK_IN_POOL,&POOL_WORLD);
+		pp.test_init_pools(this->NPROC,
+				this->MY_RANK,
+				mpi.MY_POOL,
+				mpi.RANK_IN_POOL,
+				mpi.NPROC_IN_POOL);
+		Pkpoints->kinfo(pp.nkstot_,
+			mpi.KPAR,
+			mpi.MY_POOL,
+			mpi.RANK_IN_POOL,
+			this->NPROC,
+			1);
+		pp.test_kinfo(Pkpoints);
+		pp.test_gatherkvec(Pkpoints, mpi);
 	}
-
-	parallel_kpoints.startk_pool.resize(npool);
-	parallel_kpoints.nkstot_np = 1;
-	parallel_kpoints.startk_pool[0] = 0;
-	if (npool >= 2)
-	{
-		parallel_kpoints.nkstot_np += 2;
-		parallel_kpoints.startk_pool[1] = 1;
-	}
-	if(npool >= 3)
-	{
-		parallel_kpoints.nkstot_np += 1;
-		parallel_kpoints.startk_pool[2] = 3;
-	}
-
-    // Call gatherkvec method
-    parallel_kpoints.gatherkvec(vec_local, vec_global);
-
-    // Check the values of vec_global
-    EXPECT_EQ(vec_global[0].x, 1.0);
-	EXPECT_EQ(vec_global[0].y, 1.0);
-	EXPECT_EQ(vec_global[0].z, 1.0);
-
-	if(npool >= 2)
-	{
-		EXPECT_EQ(vec_global[1].x, 2.0);
-		EXPECT_EQ(vec_global[1].y, 2.0);
-		EXPECT_EQ(vec_global[1].z, 2.0);
-		EXPECT_EQ(vec_global[2].x, 3.0);
-		EXPECT_EQ(vec_global[2].y, 4.0);
-		EXPECT_EQ(vec_global[2].z, 5.0);
-	}
-	if(npool >= 3)
-	{
-		EXPECT_EQ(vec_global[3].x, 3.0);
-		EXPECT_EQ(vec_global[3].y, 3.0);
-		EXPECT_EQ(vec_global[3].z, 3.0);
-	}
+	delete Pkpoints;
 }
+
 
 TEST_P(ParaKpoints,DividePools)
 {

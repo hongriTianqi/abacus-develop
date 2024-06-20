@@ -21,7 +21,7 @@
 
 #if defined __MPI
 MPI_Comm POOL_WORLD;
-MPI_Comm INTER_POOL;
+MPI_Comm INTER_POOL = MPI_COMM_NULL;
 MPI_Comm STO_WORLD;
 MPI_Comm PARAPW_WORLD; // qianrui add it for sto-dft 2021-4-14
 MPI_Comm GRID_WORLD; // mohan add 2012-01-13z
@@ -229,10 +229,10 @@ void Parallel_Global::read_mpi_parameters(int argc, char **argv, int &NPROC, int
 }
 
 #ifdef __MPI
-void Parallel_Global::finalize_mpi(const int &NPROC_IN_STOGROUP, const int &KPAR)
+void Parallel_Global::finalize_mpi()
 {
 	MPI_Comm_free(&POOL_WORLD);
-    if (NPROC_IN_STOGROUP % KPAR == 0)
+    if (INTER_POOL != MPI_COMM_NULL)
     {
         MPI_Comm_free(&INTER_POOL);
     }
