@@ -3493,7 +3493,7 @@ void Input::Bcast()
     Parallel_Common::bcast_int(nspin);
     Parallel_Common::bcast_double(nelec);
     Parallel_Common::bcast_double(nelec_delta);
-    Parallel_Common::bcast_bool(two_fermi);
+    Parallel_Common::bcast_bool(GlobalV::MY_RANK, two_fermi);
     Parallel_Common::bcast_double(nupdown);
     Parallel_Common::bcast_int(lmaxmax);
 
