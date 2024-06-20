@@ -1,10 +1,10 @@
-#include <vector>
-
-#include "gtest/gtest.h"
 #include "module_hsolver/diago_scalapack.h"
 #include "module_hsolver/test/diago_elpa_utils.h"
 #include "mpi.h"
 #include "string.h"
+
+#include "gtest/gtest.h"
+#include <vector>
 #ifdef __ELPA
 #include "module_hsolver/diago_elpa.h"
 #endif
@@ -64,12 +64,7 @@ class DiagoPrepare
                  std::string ks_solver,
                  std::string hfname,
                  std::string sfname)
-        : nlocal(nlocal),
-          nbands(nbands),
-          nb2d(nb2d),
-          sparsity(sparsity),
-          ks_solver(ks_solver),
-          hfname(hfname),
+        : nlocal(nlocal), nbands(nbands), nb2d(nb2d), sparsity(sparsity), ks_solver(ks_solver), hfname(hfname),
           sfname(sfname)
     {
         MPI_Comm_size(MPI_COMM_WORLD, &dsize);

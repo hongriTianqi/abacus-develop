@@ -4,10 +4,10 @@
 //==========================================================
 
 #include "driver.h"
-#include "module_base/parallel_global.h"
-#include "module_io/parse_args.h"
 #include "fftw3.h"
 #include "module_base/global_variable.h"
+#include "module_base/parallel_global.h"
+#include "module_io/parse_args.h"
 #ifdef _OPENMP
 #include <omp.h>
 #endif
@@ -28,8 +28,8 @@ int main(int argc, char** argv)
     Parallel_Global::read_mpi_parameters(argc, argv, GlobalV::NPROC, GlobalV::MY_RANK);
 #ifdef _OPENMP
     // ref: https://www.fftw.org/fftw3_doc/Usage-of-Multi_002dthreaded-FFTW.html
-	fftw_init_threads();
-	fftw_plan_with_nthreads(omp_get_max_threads());
+    fftw_init_threads();
+    fftw_plan_with_nthreads(omp_get_max_threads());
 #endif
 
     /*
@@ -45,7 +45,7 @@ int main(int argc, char** argv)
     Parallel_Global::finalize_mpi();
 #endif
 #ifdef _OPENMP
-	fftw_cleanup_threads();
+    fftw_cleanup_threads();
 #endif
 
     return 0;
