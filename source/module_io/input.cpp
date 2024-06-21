@@ -692,7 +692,7 @@ void Input::Default(void)
     //==========================================================
     // variables for elpa
     //==========================================================
-    elpa_num_thread=-1;
+    elpa_num_thread = -1;
     return;
 }
 
@@ -2545,8 +2545,9 @@ bool Input::Read(const std::string& fn)
         //==========================================================
         // variables for elpa
         //==========================================================
-        else if(strcmp("elpa_num_thread",word) == 0){
-            read_value(ifs,elpa_num_thread);
+        else if (strcmp("elpa_num_thread", word) == 0)
+        {
+            read_value(ifs, elpa_num_thread);
         }
         else
         {
@@ -3837,9 +3838,9 @@ void Input::Bcast()
     Parallel_Common::bcast_double(soc_lambda);
 
     // Parallel_Common::bcast_int( epsilon0_choice );
-    Parallel_Common::bcast_double(cell_factor);                  // LiuXh add 20180619
-    Parallel_Common::bcast_bool(restart_save); // Peize Lin add 2020.04.04
-    Parallel_Common::bcast_bool(restart_load); // Peize Lin add 2020.04.04
+    Parallel_Common::bcast_double(cell_factor); // LiuXh add 20180619
+    Parallel_Common::bcast_bool(restart_save);  // Peize Lin add 2020.04.04
+    Parallel_Common::bcast_bool(restart_load);  // Peize Lin add 2020.04.04
 
     //-----------------------------------------------------------------------------------
     // DFT+U (added by Quxin 2020-10-29)

@@ -96,8 +96,8 @@ void Atom_pseudo::set_d_so(ModuleBase::ComplexMatrix& d_so_in,
                                 if (fabs(this->d_so(is, L1, L2).real()) > 1.0e-8
                                     || fabs(this->d_so(is, L1, L2).imag()) > 1.0e-8)
                                 {
-                                    //									std::cout << "tt in atom is=" << is << " L1=" << L1 <<
-                                    //" L2="
+                                    //									std::cout << "tt in atom is=" << is << " L1=" << L1
+                                    //<< " L2="
                                     //									<< L2 << " " << d_so(is, L1, L2) << std::endl;
 
                                     this->index1_soc[is][non_zero_count_soc[is]] = L1;
@@ -154,7 +154,7 @@ void Atom_pseudo::set_d_so(ModuleBase::ComplexMatrix& d_so_in,
 #include "module_base/parallel_common.h"
 #ifdef __MPI
 
-void Atom_pseudo::bcast_atom_pseudo(void)
+void Atom_pseudo::bcast_atom_pseudo()
 {
     ModuleBase::TITLE("Atom_pseudo", "bcast_atom_pseudo");
     // == pseudo_h ==
