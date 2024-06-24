@@ -98,6 +98,18 @@ TEST_P(ParallelK2DTest, DividePools)
                                            mpi.RANK_IN_POOL);
         MPI_Comm_split(MPI_COMM_WORLD, mpi.MY_POOL, mpi.RANK_IN_POOL, &POOL_WORLD);
         k2d.Pkpoints->kinfo(pp.nkstot_, mpi.KPAR, mpi.MY_POOL, mpi.RANK_IN_POOL, this->NPROC, 1);
+        /*
+        for (int ik = 0; ik < pp.nkstot_; ik++)
+        {
+            std::cout << "whichpool[" << ik << "] = " << k2d.Pkpoints->whichpool[ik] << std::endl;
+        }
+        */
+        for (int ipool = 0; ipool < mpi.KPAR; ipool++)
+        {
+            std::cout << "nks_pool[" << ipool << "] = " << k2d.Pkpoints->nks_pool[ipool] << std::endl;
+            std::cout << "startk_pool[" << ipool << "] = " << k2d.Pkpoints->startk_pool[ipool] << std::endl;
+            std::cout << "startpro_pool[" << ipool << "] = " << k2d.Pkpoints->get_startpro_pool(ipool) << std::endl;
+        }
     }
     delete k2d.Pkpoints;
 }
@@ -107,7 +119,7 @@ INSTANTIATE_TEST_SUITE_P(TESTPK,
                          ParallelK2DTest,
                          ::testing::Values(
                              // KPAR, nkstot
-                             ParaPrepare(2, 8)));
+                             ParaPrepare(2, 16)));
 
 int main(int argc, char** argv)
 {
