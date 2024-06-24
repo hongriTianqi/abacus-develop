@@ -131,3 +131,9 @@ AddTest(
   LIBS ${math_libs} base device
   SOURCES cell_index_test.cpp ../cell_index.cpp
 )
+
+AddTest(
+  TARGET cell_parak2d_test
+  LIBS ${math_libs} base device
+  SOURCES parallel_k2d_test.cpp ../parallel_k2d.cpp
+)
