@@ -2,6 +2,7 @@
 #define PARALLEL_K2D_H
 
 #include "module_cell/parallel_kpoints.h"
+#include "module_basis/module_ao/parallel_2d.h"
 
 /***
  * This is a class to realize k-points parallelism in LCAO code.
@@ -40,6 +41,7 @@ public:
      * the pointer to Parallel_Kpoints
      */
     Parallel_Kpoints* Pkpoints = nullptr;
+    Parallel_2D* P2D = nullptr;
 
 private:
     /**
