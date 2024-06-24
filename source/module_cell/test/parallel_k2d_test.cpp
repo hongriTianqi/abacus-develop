@@ -65,7 +65,6 @@ protected:
     }
     void TearDown() override
     {
-        if(POOL_WORLD != MPI_COMM_NULL)MPI_Comm_free(&POOL_WORLD);
     }
 };
 
