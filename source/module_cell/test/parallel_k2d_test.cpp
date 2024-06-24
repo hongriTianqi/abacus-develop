@@ -1,6 +1,8 @@
 #ifdef __MPI
+#include "module_base/parallel_global.h"
 #include "module_cell/parallel_k2d.h"
 #include "gtest/gtest.h"
+#include "gmock/gmock.h"
 
 #include <mpi.h>
 /************************************************
@@ -49,7 +51,7 @@ class ParaPrepare
     int nkstot_;
 };
 
-class Parallel_K2DTest : public ::testing::TestWithParam<ParaPrepare>
+class ParallelK2DTest : public ::testing::TestWithParam<ParaPrepare>
 {
 protected:
     Parallel_K2D &k2d = Parallel_K2D::get_instance();
@@ -61,22 +63,49 @@ protected:
         NPROC = mpi.GetSize();
         MY_RANK = mpi.GetRank();
     }
+    void TearDown() override
+    {
+        if(POOL_WORLD != MPI_COMM_NULL)MPI_Comm_free(&POOL_WORLD);
+    }
 };
 
-TEST_P(Parallel_K2DTest, set_kpar)
+TEST_P(ParallelK2DTest, DividePools)
 {
     ParaPrepare pp = GetParam();
-    int kpar = pp.KPAR_;
-    int nkstot = pp.nkstot_;
-    std::cout << "MY_RANK = " << MY_RANK << " NPROC = " << NPROC << " kpar = " << kpar << " nkstot = " << nkstot << std::endl;
-    k2d.set_kpar(kpar);
-    EXPECT_EQ(k2d.get_kpar(), kpar);
-    k2d.set_nkstot(nkstot);
-    EXPECT_EQ(k2d.get_nkstot(), nkstot);
+    k2d.Pkpoints = new Parallel_Kpoints;
+    mpi.KPAR = pp.KPAR_;
+    if (mpi.KPAR > NPROC)
+    {
+        std::string output;
+        testing::internal::CaptureStdout();
+        EXPECT_EXIT(Parallel_Global::divide_mpi_groups(this->NPROC,
+                                                       mpi.KPAR,
+                                                       this->MY_RANK,
+                                                       mpi.NPROC_IN_POOL,
+                                                       mpi.MY_POOL,
+                                                       mpi.RANK_IN_POOL),
+                    testing::ExitedWithCode(1),
+                    "");
+        output = testing::internal::GetCapturedStdout();
+        EXPECT_THAT(output, testing::HasSubstr("must be greater than the number of groups"));
+    }
+    else
+    {
+        Parallel_Global::divide_mpi_groups(this->NPROC,
+                                           mpi.KPAR,
+                                           this->MY_RANK,
+                                           mpi.NPROC_IN_POOL,
+                                           mpi.MY_POOL,
+                                           mpi.RANK_IN_POOL);
+        MPI_Comm_split(MPI_COMM_WORLD, mpi.MY_POOL, mpi.RANK_IN_POOL, &POOL_WORLD);
+        k2d.Pkpoints->kinfo(pp.nkstot_, mpi.KPAR, mpi.MY_POOL, mpi.RANK_IN_POOL, this->NPROC, 1);
+    }
+    delete k2d.Pkpoints;
 }
 
+
 INSTANTIATE_TEST_SUITE_P(TESTPK,
-                         Parallel_K2DTest,
+                         ParallelK2DTest,
                          ::testing::Values(
                              // KPAR, nkstot
                              ParaPrepare(2, 8)));

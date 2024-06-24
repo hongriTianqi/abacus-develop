@@ -136,7 +136,7 @@ AddTest(
 AddTest(
   TARGET cell_parak2d_test
   LIBS ${math_libs} base device MPI::MPI_CXX
-  SOURCES parallel_k2d_test.cpp ../parallel_k2d.cpp
+  SOURCES parallel_k2d_test.cpp ../parallel_k2d.cpp ../parallel_kpoints.cpp
 )
 
 add_test(NAME cell_parak2d_test_parallel

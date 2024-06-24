@@ -1,6 +1,7 @@
 #ifndef PARALLEL_K2D_H
 #define PARALLEL_K2D_H
 
+#include "module_cell/parallel_kpoints.h"
 
 /***
  * This is a class to realize k-points parallelism in LCAO code.
@@ -34,6 +35,11 @@ public:
     void set_nkstot(int nkstot) { nkstot_ = nkstot; }
     /// get the total number of k-points
     int get_nkstot() const { return nkstot_; }
+
+    /**
+     * the pointer to Parallel_Kpoints
+     */
+    Parallel_Kpoints* Pkpoints = nullptr;
 
 private:
     /**
