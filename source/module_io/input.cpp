@@ -12,9 +12,6 @@
 #include "module_base/parallel_common.h"
 #include "module_base/timer.h"
 #include "version.h"
-
-#include "module_cell/parallel_k2d.h"
-
 #include <algorithm>
 #include <fstream>
 #include <iomanip>
@@ -4286,13 +4283,9 @@ void Input::Check(void)
         {
             ModuleBase::WARNING_QUIT("Input", "please check the ks_solver parameter!");
         }
-        /// get instance of the Parallel_K2D singleton
-        Parallel_K2D &k2d = Parallel_K2D::get_instance();
-        k2d.set_kpar(kpar);
         if (kpar > 1)
         {
             ModuleBase::WARNING("Input", "kpar > 1 has not been supported for lcao calculation.");
-            kpar = 1;
         }
 
         if (out_wfc_lcao != 0 && out_wfc_lcao != 1 && out_wfc_lcao != 2)

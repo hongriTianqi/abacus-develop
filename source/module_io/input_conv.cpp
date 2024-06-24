@@ -12,6 +12,8 @@
 #include "module_relax/relax_old/ions_move_basic.h"
 #include "module_relax/relax_old/lattice_change_basic.h"
 
+#include "module_cell/parallel_k2d.h"
+
 #include <algorithm>
 
 #ifdef __EXX
@@ -349,6 +351,10 @@ void Input_Conv::Convert(void)
         GlobalV::KPAR = INPUT.kpar;
         GlobalV::NSTOGROUP = INPUT.bndpar;
     }
+    /// get instance of the Parallel_K2D singleton
+    auto &k2d = Parallel_K2D::get_instance();
+    k2d.set_kpar(INPUT.kpar);
+    GlobalV::KPAR = 1;
     GlobalV::precision_flag = INPUT.precision;
     if (GlobalV::device_flag == "cpu" and GlobalV::precision_flag == "single")
     {

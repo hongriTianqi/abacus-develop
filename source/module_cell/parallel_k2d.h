@@ -30,6 +30,10 @@ public:
     void set_kpar(int kpar) { kpar_ = kpar; }
     /// get the number of k-points
     int get_kpar() const { return kpar_; }
+    /// set the total number of k-points
+    void set_nkstot(int nkstot) { nkstot_ = nkstot; }
+    /// get the total number of k-points
+    int get_nkstot() const { return nkstot_; }
 
 private:
     /**
@@ -45,6 +49,7 @@ private:
      * Private member variables
      */
     int kpar_ = 1;
+    int nkstot_ = 0;
 
 };
 
