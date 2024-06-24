@@ -11,6 +11,7 @@ install(FILES bcast_atom_spec_test.sh DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 install(FILES parallel_kpoints_test.sh DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 install(FILES klist_test_para.sh DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 install(FILES unitcell_test_parallel.sh DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
+install(FILES parallel_k2d_test.sh DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 
 list(APPEND cell_simple_srcs
     ../unitcell.cpp
@@ -134,6 +135,11 @@ AddTest(
 
 AddTest(
   TARGET cell_parak2d_test
-  LIBS ${math_libs} base device
+  LIBS ${math_libs} base device MPI::MPI_CXX
   SOURCES parallel_k2d_test.cpp ../parallel_k2d.cpp
+)
+
+add_test(NAME cell_parak2d_test_parallel
+      COMMAND ${BASH} parallel_k2d_test.sh
+      WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
 )
