@@ -22,6 +22,7 @@ add_library(
     klist.cpp
     parallel_kpoints.cpp
     parallel_k2d.cpp
+    cell_index.cpp
 )
 
 if(ENABLE_COVERAGE)
