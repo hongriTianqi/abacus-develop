@@ -10,6 +10,7 @@
  * It is now designed only to work with 2D Eigenvalue solver parallelism.
  */
 
+template <typename TK>
 class Parallel_K2D
 {
 public:
@@ -48,15 +49,14 @@ public:
     /**
      * the global Hk, Sk, and dmk matrices in large Parallel_2D format
      */
-    std::vector<std::vector<std::complex<double>>> Hk_global;
-    std::vector<std::vector<std::complex<double>>> Sk_global;
-    std::vector<std::vector<std::complex<double>>> dmk_global;
+    std::vector<hamilt::MatrixBlock<TK>> HK_global;
+    std::vector<hamilt::MatrixBlock<TK>> SK_global;
+
     /**
      * the local Hk, Sk, and dmk matrices in small Parallel_2D format
      */
-    std::vector<std::vector<std::complex<double>>> Hk_local;
-    std::vector<std::vector<std::complex<double>>> Sk_local;
-    std::vector<std::vector<std::complex<double>>> dmk_local;
+    std::vector<hamilt::MatrixBlock<TK>> HK_local;
+    std::vector<hamilt::MatrixBlock<TK>> SK_local;
 
 private:
     /**

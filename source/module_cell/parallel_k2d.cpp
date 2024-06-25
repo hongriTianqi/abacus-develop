@@ -1,11 +1,4 @@
 #include "parallel_k2d.h"
 
-/*
-Parallel_K2D::Parallel_K2D()
-{
-}
-
-Parallel_K2D::~Parallel_K2D()
-{
-}
-*/
+template class Parallel_K2D<double>;
+template class Parallel_K2D<std::complex<double>>;
