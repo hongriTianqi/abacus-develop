@@ -24,6 +24,8 @@
 #include "module_elecstate/elecstate_lcao.h"
 #endif
 
+#include "module_cell/parallel_k2d.h"
+
 namespace hsolver
 {
 
@@ -201,6 +203,12 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
             precondition_lcao[i] = 1.0;
         }
     }
+
+    int nk = psi.get_nk();
+    /// get instance of the Parallel_K2D singleton
+    auto &k2d = Parallel_K2D::get_instance();
+    k2d.set_nkstot(nk);
+    std::cout << "nkstot = " << k2d.get_nkstot() << std::endl;
 
     /// Loop over k points for solve Hamiltonian to charge density
     for (int ik = 0; ik < psi.get_nk(); ++ik)

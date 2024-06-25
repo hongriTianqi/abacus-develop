@@ -3,6 +3,7 @@
 
 #include "module_cell/parallel_kpoints.h"
 #include "module_basis/module_ao/parallel_2d.h"
+#include "module_hamilt_general/matrixblock.h"
 
 /***
  * This is a class to realize k-points parallelism in LCAO code.
@@ -41,16 +42,30 @@ public:
      * the pointer to Parallel_Kpoints
      */
     Parallel_Kpoints* Pkpoints = nullptr;
-    Parallel_2D* P2D = nullptr;
+    Parallel_2D* P2D_global = nullptr;
+    Parallel_2D* P2D_local = nullptr;
+
+    /**
+     * the global Hk, Sk, and dmk matrices in large Parallel_2D format
+     */
+    std::vector<std::vector<std::complex<double>>> Hk_global;
+    std::vector<std::vector<std::complex<double>>> Sk_global;
+    std::vector<std::vector<std::complex<double>>> dmk_global;
+    /**
+     * the local Hk, Sk, and dmk matrices in small Parallel_2D format
+     */
+    std::vector<std::vector<std::complex<double>>> Hk_local;
+    std::vector<std::vector<std::complex<double>>> Sk_local;
+    std::vector<std::vector<std::complex<double>>> dmk_local;
 
 private:
     /**
      * Public member functions
      */
     /// private constructor
-    Parallel_K2D();
+    Parallel_K2D() = default;
     /// private destructor
-    ~Parallel_K2D();
+    ~Parallel_K2D() = default;
 
 private:
     /**

@@ -354,6 +354,7 @@ void Input_Conv::Convert(void)
     /// get instance of the Parallel_K2D singleton
     auto &k2d = Parallel_K2D::get_instance();
     k2d.set_kpar(INPUT.kpar);
+    std::cout << "npar = " << k2d.get_kpar() << std::endl;
     GlobalV::KPAR = 1;
     GlobalV::precision_flag = INPUT.precision;
     if (GlobalV::device_flag == "cpu" and GlobalV::precision_flag == "single")
