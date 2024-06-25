@@ -4,6 +4,9 @@
 #include "module_cell/parallel_kpoints.h"
 #include "module_basis/module_ao/parallel_2d.h"
 #include "module_hamilt_general/matrixblock.h"
+#ifdef __MPI
+#include "mpi.h"
+#endif
 
 /***
  * This is a class to realize k-points parallelism in LCAO code.
@@ -57,15 +60,29 @@ public:
      */
     std::vector<hamilt::MatrixBlock<TK>> HK_local;
     std::vector<hamilt::MatrixBlock<TK>> SK_local;
+    /**
+     * public mpi info
+     */
+    int NPROC_IN_POOL;
+    int MY_POOL;
+    int RANK_IN_POOL;
+
+#ifdef __MPI
+    MPI_Comm POOL_WORLD_K2D; // mohan add 2012-01-13
+#endif
 
 private:
     /**
      * Public member functions
      */
     /// private constructor
-    Parallel_K2D() = default;
+    Parallel_K2D()
+    {
+    }
     /// private destructor
-    ~Parallel_K2D() = default;
+    ~Parallel_K2D()
+    {
+    }
 
 private:
     /**
