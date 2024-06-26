@@ -251,18 +251,17 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                 sk_full.data() + ik * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_helper.desc, pv_helper.blacs_ctxt);
         }
         pv_helper.set(GlobalV::NLOCAL, GlobalV::NLOCAL, GlobalV::NLOCAL, k2d.P2D_local->comm_2D, k2d.P2D_local->blacs_ctxt);
-        int nks_pool = k2d.Pkpoints->nks_pool[k2d.MY_POOL];
-        k2d.hk_local.resize(nks_pool * k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size());
-        k2d.sk_local.resize(nks_pool * k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size());
-        for (int ik = 0; ik < nks_pool; ik++)
+        k2d.hk_local.resize(k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size());
+        k2d.sk_local.resize(k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size());
+        for (int ik = 0; ik < k2d.Pkpoints->nks_pool[k2d.MY_POOL]; ik++)
         {
             int ik_global = ik + k2d.Pkpoints->startk_pool[k2d.MY_POOL];
             // distribute Hk to hk_local
             Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, hk_full.data() + ik_global * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_helper.desc,
-                k2d.hk_local.data() + ik * k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size(), 1, 1, k2d.P2D_local->desc, pv_helper.blacs_ctxt);
+                k2d.hk_local.data(), 1, 1, k2d.P2D_local->desc, pv_helper.blacs_ctxt);
             // distribute Sk to sk_local
             Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, sk_full.data() + ik_global * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_helper.desc,
-                k2d.sk_local.data() + ik * k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size(), 1, 1, k2d.P2D_local->desc, pv_helper.blacs_ctxt);
+                k2d.sk_local.data(), 1, 1, k2d.P2D_local->desc, pv_helper.blacs_ctxt);
         }
         delete k2d.Pkpoints;
         delete k2d.P2D_local;
