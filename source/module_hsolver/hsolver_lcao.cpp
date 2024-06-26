@@ -205,10 +205,10 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         }
     }
 
-    int nk = psi.get_nk();
+    int nks = psi.get_nk();
     /// get instance of the Parallel_K2D singleton
     auto &k2d = Parallel_K2D<T>::get_instance();
-    k2d.set_nkstot(nk);
+    k2d.set_nkstot(nks);
     std::cout << "nkstot = " << k2d.get_nkstot() << std::endl;
     std::cout << "kpar = " << k2d.get_kpar() << std::endl;
     Parallel_Global::divide_mpi_groups(GlobalV::NPROC,
@@ -221,7 +221,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
     k2d.Pkpoints = new Parallel_Kpoints;
     k2d.P2D_global = new Parallel_2D;
     k2d.P2D_local = new Parallel_2D;
-    k2d.Pkpoints->kinfo(nk, k2d.get_kpar(), k2d.MY_POOL, k2d.RANK_IN_POOL, GlobalV::NPROC, GlobalV::NSPIN);
+    k2d.Pkpoints->kinfo(nks, k2d.get_kpar(), k2d.MY_POOL, k2d.RANK_IN_POOL, GlobalV::NPROC, GlobalV::NSPIN);
     /*
     for (int ipool = 0; ipool < k2d.get_kpar(); ipool++)
     {
@@ -231,8 +231,8 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
     }
     */
     int nks_pool = k2d.Pkpoints->nks_pool[k2d.MY_POOL];
-    k2d.HK_global.resize(nk);
-    k2d.SK_global.resize(nk);
+    k2d.HK_global.resize(nks);
+    k2d.SK_global.resize(nks);
     k2d.HK_local.resize(nks_pool);
     k2d.SK_local.resize(nks_pool);
     //int num_proc = 0;
@@ -243,38 +243,41 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
     //MPI_Comm_size(k2d.POOL_WORLD_K2D, &num_proc);
     //std::cout << "num_proc in k2d = " << num_proc << std::endl;
     // hk_full is used to collect Hk from all processors
-    std::vector<T> hk_full(nks_pool * GlobalV::NLOCAL*GlobalV::NLOCAL);
+    std::vector<T> hk_full(nks * GlobalV::NLOCAL*GlobalV::NLOCAL);
     // hk_local is used to distribute Hk to all pool processors
     std::vector<T> hk_local(nks_pool * k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size());
     // sk_full is used to collect Sk from all processors
-    std::vector<T> sk_full(nks_pool * GlobalV::NLOCAL*GlobalV::NLOCAL);
+    std::vector<T> sk_full(nks * GlobalV::NLOCAL*GlobalV::NLOCAL);
     // sk_local is used to distribute Sk to all pool processors
     std::vector<T> sk_local(nks_pool * k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size());
+    Parallel_2D pv_helper;
+    pv_helper.set(GlobalV::NLOCAL, GlobalV::NLOCAL, GlobalV::NLOCAL, k2d.P2D_global->comm_2D, k2d.P2D_global->blacs_ctxt);
+    for (int ik = 0; ik < psi.get_nk(); ++ik)
+    {
+        pHamilt->updateHk(ik);
+        pHamilt->matrix(k2d.HK_global[ik], k2d.SK_global[ik]);
+        //Parallel_2D pv_glb;
+        //pv_glb.set(GlobalV::NLOCAL, GlobalV::NLOCAL, GlobalV::NLOCAL, k2d.P2D_global->comm_2D, k2d.P2D_global->blacs_ctxt);
+        // collect Hk to hk_full
+        Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, k2d.HK_global[ik].p, 1, 1, k2d.HK_global[ik].desc,
+            hk_full.data() + ik * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_helper.desc, pv_helper.blacs_ctxt);
+        // collect Sk to sk_full
+        Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, k2d.SK_global[ik].p, 1, 1, k2d.SK_global[ik].desc,
+            sk_full.data() + ik * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_helper.desc, pv_helper.blacs_ctxt);
+    }
+    pv_helper.set(GlobalV::NLOCAL, GlobalV::NLOCAL, GlobalV::NLOCAL, k2d.P2D_local->comm_2D, k2d.P2D_local->blacs_ctxt);
     for (int ik = 0; ik < nks_pool; ik++)
     {
         //std::cout << "MY_RANK = " << GlobalV::MY_RANK << " MY_POOL " << k2d.MY_POOL << " k index = " << ik + k2d.Pkpoints->startk_pool[k2d.MY_POOL] << std::endl;
         int ik_global = ik + k2d.Pkpoints->startk_pool[k2d.MY_POOL];
-        pHamilt->updateHk(ik_global);
-        pHamilt->matrix(k2d.HK_global[ik_global], k2d.SK_global[ik_global]);
-        //std::cout << "globa row " << k2d.HK_global[ik_global].row << std::endl;
-        //std::cout << "globa col " << k2d.HK_global[ik_global].col << std::endl;
-        //std::cout << "NLOCAL = " << GlobalV::NLOCAL << " NB2D = " << GlobalV::NB2D << std::endl;
-        //std::cout << "dim0 = " << k2d.P2D_local->dim0 << " dim1 = " << k2d.P2D_local->dim1 << std::endl;
-        //std::cout << " nrow = " << k2d.P2D_local->nrow << " ncol = " << k2d.P2D_local->ncol << std::endl;
-        Parallel_2D pv_glb;
-        pv_glb.set(GlobalV::NLOCAL, GlobalV::NLOCAL, GlobalV::NLOCAL, k2d.P2D_global->comm_2D, k2d.P2D_global->blacs_ctxt);
-        // collect Hk to hk_full
-        Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, k2d.HK_global[ik_global].p, 1, 1, k2d.HK_global[ik_global].desc,
-            hk_full.data() + ik * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_glb.desc, pv_glb.blacs_ctxt);
+        //Parallel_2D pv_glb;
+        //pv_glb.set(GlobalV::NLOCAL, GlobalV::NLOCAL, GlobalV::NLOCAL, k2d.P2D_local->comm_2D, k2d.P2D_local->blacs_ctxt);
         // distribute Hk to hk_local
-        Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, hk_full.data() + ik * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_glb.desc,
-            hk_local.data() + ik * k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size(), 1, 1, k2d.P2D_local->desc, pv_glb.blacs_ctxt);
-        // collect Sk to sk_full
-        Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, k2d.SK_global[ik_global].p, 1, 1, k2d.SK_global[ik_global].desc,
-            sk_full.data() + ik * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_glb.desc, pv_glb.blacs_ctxt);
+        Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, hk_full.data() + ik_global * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_helper.desc,
+            hk_local.data() + ik * k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size(), 1, 1, k2d.P2D_local->desc, pv_helper.blacs_ctxt);
         // distribute Sk to sk_local
-        Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, sk_full.data() + ik * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_glb.desc,
-            sk_local.data() + ik * k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size(), 1, 1, k2d.P2D_local->desc, pv_glb.blacs_ctxt);
+        Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, sk_full.data() + ik_global * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_helper.desc,
+            sk_local.data() + ik * k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size(), 1, 1, k2d.P2D_local->desc, pv_helper.blacs_ctxt);
     }
     delete k2d.Pkpoints;
     delete k2d.P2D_local;
