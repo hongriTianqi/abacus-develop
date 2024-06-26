@@ -50,16 +50,10 @@ public:
     Parallel_2D* P2D_local = nullptr;
 
     /**
-     * the global Hk, Sk, and dmk matrices in large Parallel_2D format
-     */
-    std::vector<hamilt::MatrixBlock<TK>> HK_global;
-    std::vector<hamilt::MatrixBlock<TK>> SK_global;
-
-    /**
      * the local Hk, Sk, and dmk matrices in small Parallel_2D format
      */
-    std::vector<hamilt::MatrixBlock<TK>> HK_local;
-    std::vector<hamilt::MatrixBlock<TK>> SK_local;
+    std::vector<TK> hk_local;
+    std::vector<TK> sk_local;
     /**
      * public mpi info
      */
