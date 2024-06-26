@@ -354,8 +354,14 @@ void Input_Conv::Convert(void)
     /// get instance of the Parallel_K2D singleton
     auto &k2d = Parallel_K2D<double>::get_instance();
     auto &k2d1 = Parallel_K2D<std::complex<double>>::get_instance();
+    std::cout << __LINE__ << " check init = " << k2d.get_initialized() << std::endl;
+    std::cout << __LINE__ << " check init1 = " << k2d1.get_initialized() << std::endl;
     k2d.set_kpar(INPUT.kpar);
     k2d1.set_kpar(INPUT.kpar);
+    k2d.set_initialized(true);
+    k2d1.set_initialized(true);
+    std::cout << __LINE__ << " check init = " << k2d.get_initialized() << std::endl;
+    std::cout << __LINE__ << " check init1 = " << k2d1.get_initialized() << std::endl;
     std::cout << "npar = " << k2d.get_kpar() << std::endl;
     std::cout << "npar1 = " << k2d1.get_kpar() << std::endl;
     GlobalV::KPAR = 1;

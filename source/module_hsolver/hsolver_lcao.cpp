@@ -205,6 +205,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         }
     }
 
+    std::cout << __LINE__ << " check init = " << Parallel_K2D<T>::get_initialized() << std::endl;
     int nks = psi.get_nk();
     /// get instance of the Parallel_K2D singleton
     auto &k2d = Parallel_K2D<T>::get_instance();

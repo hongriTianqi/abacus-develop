@@ -90,6 +90,20 @@ private:
      */
     int kpar_ = 1;
     int nkstot_ = 0;
+private:
+    /**
+     * Private variables to deal with input
+     */
+    static bool initialized;
+
+public:
+    /**
+     * Public member functions for inputs
+     */
+    /// initialize the Parallel_K2D class
+    static void set_initialized(bool initialized_in) { Parallel_K2D<TK>::initialized = initialized_in; }
+    /// check if the Parallel_K2D class is initialized
+    static bool get_initialized() { return Parallel_K2D<TK>::initialized; }
 
 };
 
