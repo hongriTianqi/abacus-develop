@@ -271,3 +271,8 @@ Numerical_Orbital::~Numerical_Orbital()
 void Numerical_Orbital::set_orbital_info(const int&, const std::string&, const int&, const int*, const int&)
 {
 }
+
+template <>
+bool Parallel_K2D<double>::initialized = false;
+template<>
+bool Parallel_K2D<std::complex<double>>::initialized = false;

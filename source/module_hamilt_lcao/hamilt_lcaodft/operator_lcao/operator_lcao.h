@@ -5,6 +5,7 @@
 #include "module_hamilt_general/operator.h"
 #include "module_hamilt_lcao/hamilt_lcaodft/LCAO_matrix.h"
 #include "module_hamilt_lcao/module_hcontainer/hcontainer.h"
+#include "module_cell/parallel_k2d.h"
 
 namespace hamilt
 {
@@ -52,7 +53,26 @@ class OperatorLCAO : public Operator<TK>
     */
     void matrixHk(MatrixBlock<TK>& hk_in, MatrixBlock<TK>& sk_in)
     {
-        this->get_hs_pointers();
+      this->get_hs_pointers();
+      if (Parallel_K2D<TK>::get_initialized())
+      {
+        auto &k2d = Parallel_K2D<TK>::get_instance();
+#ifdef __MPI
+        hk_in = MatrixBlock<TK>{hmatrix_k,
+                               (size_t)k2d.P2D_local->nrow,
+                               (size_t)k2d.P2D_local->ncol,
+                               k2d.P2D_local->desc};
+        sk_in = MatrixBlock<TK>{smatrix_k,
+                               (size_t)k2d.P2D_local->nrow,
+                               (size_t)k2d.P2D_local->ncol,
+                               k2d.P2D_local->desc};
+#else
+        hk_in = MatrixBlock<TK>{hmatrix_k, (size_t)k2d.P2D_local->nrow, (size_t)k2d.P2D_local->ncol, nullptr};
+        sk_in = MatrixBlock<TK>{smatrix_k, (size_t)k2d.P2D_local->nrow, (size_t)k2d.P2D_local->ncol, nullptr};
+#endif
+      }
+      else
+      {
 #ifdef __MPI
         hk_in = MatrixBlock<TK>{hmatrix_k,
                                (size_t)this->LM->ParaV->nrow,
@@ -66,6 +86,7 @@ class OperatorLCAO : public Operator<TK>
         hk_in = MatrixBlock<TK>{hmatrix_k, (size_t)this->LM->ParaV->nrow, (size_t)this->LM->ParaV->ncol, nullptr};
         sk_in = MatrixBlock<TK>{smatrix_k, (size_t)this->LM->ParaV->nrow, (size_t)this->LM->ParaV->ncol, nullptr};
 #endif
+      }
     }
 
     /* Function contributeHk() is defined in derived class, for constructing <phi_{\mu}|H|phi_{\nu}>(K)
