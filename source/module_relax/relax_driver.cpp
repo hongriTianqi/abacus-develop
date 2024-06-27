@@ -107,7 +107,7 @@ void Relax_Driver::relax_driver(ModuleESolver::ESolver *p_esolver)
                 {
                     ss1 << GlobalV::global_out_dir << "STRU_ION";
                     ss1 << istep << "_D";
-                    GlobalC::ucell.print_stru_file(ss.str(), GlobalV::NSPIN, true, GlobalV::CALCULATION == "md",
+                    GlobalC::ucell.print_stru_file(ss1.str(), GlobalV::NSPIN, true, GlobalV::CALCULATION == "md",
                         GlobalV::out_mul, need_orb, GlobalV::deepks_setorb, GlobalV::MY_RANK);
 
                     GlobalC::ucell.print_cell_cif("STRU_NOW.cif");
