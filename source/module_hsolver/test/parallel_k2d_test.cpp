@@ -1,6 +1,6 @@
 #ifdef __MPI
 #include "module_base/parallel_global.h"
-#include "module_cell/parallel_k2d.h"
+#include "module_hsolver/parallel_k2d.h"
 #include "gtest/gtest.h"
 #include "gmock/gmock.h"
 

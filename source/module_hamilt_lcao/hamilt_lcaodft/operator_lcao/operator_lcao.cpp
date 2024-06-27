@@ -15,20 +15,42 @@ template<>
 void OperatorLCAO<double, double>::get_hs_pointers()
 {
     ModuleBase::timer::tick("OperatorLCAO", "get_hs_pointers");
-    this->hmatrix_k = this->LM->Hloc.data();
-    if ((this->new_e_iteration && ik == 0) || hsolver::HSolverLCAO<double>::out_mat_hs[0])
+    if (Parallel_K2D<double>::get_instance().get_initialized())
     {
-        if (this->smatrix_k == nullptr)
+        auto &k2d = Parallel_K2D<double>::get_instance();
+        this->hmatrix_k = k2d.hk_local.data();
+        if ((this->new_e_iteration && ik == 0) || hsolver::HSolverLCAO<double>::out_mat_hs[0])
         {
-            this->smatrix_k = new double[this->LM->Sloc.size()];
-            this->allocated_smatrix = true;
-        }
-        const int inc = 1;
-        BlasConnector::copy(this->LM->Sloc.size(), this->LM->Sloc.data(), inc, this->smatrix_k, inc);
+            if (this->smatrix_k == nullptr)
+            {
+                this->smatrix_k = new double[k2d.sk_local.size()];
+                this->allocated_smatrix = true;
+            }
+            const int inc = 1;
+            BlasConnector::copy(k2d.sk_local.size(), k2d.sk_local.data(), inc, this->smatrix_k, inc);
 #ifdef __ELPA
-        hsolver::DiagoElpa<double>::DecomposedState = 0;
+            hsolver::DiagoElpa<double>::DecomposedState = 0;
 #endif
-        this->new_e_iteration = false;
+            this->new_e_iteration = false;
+        }
+    }
+    else
+    {
+        this->hmatrix_k = this->LM->Hloc.data();
+        if ((this->new_e_iteration && ik == 0) || hsolver::HSolverLCAO<double>::out_mat_hs[0])
+        {
+            if (this->smatrix_k == nullptr)
+            {
+                this->smatrix_k = new double[this->LM->Sloc.size()];
+                this->allocated_smatrix = true;
+            }
+            const int inc = 1;
+            BlasConnector::copy(this->LM->Sloc.size(), this->LM->Sloc.data(), inc, this->smatrix_k, inc);
+#ifdef __ELPA
+            hsolver::DiagoElpa<double>::DecomposedState = 0;
+#endif
+            this->new_e_iteration = false;
+        }
     }
     ModuleBase::timer::tick("OperatorLCAO", "get_hs_pointers");
 }
@@ -36,15 +58,33 @@ void OperatorLCAO<double, double>::get_hs_pointers()
 template<>
 void OperatorLCAO<std::complex<double>, double>::get_hs_pointers()
 {
-    this->hmatrix_k = this->LM->Hloc2.data();
-    this->smatrix_k = this->LM->Sloc2.data();
+    if (Parallel_K2D<std::complex<double>>::get_instance().get_initialized())
+    {
+        auto &k2d = Parallel_K2D<std::complex<double>>::get_instance();
+        this->hmatrix_k = k2d.hk_local.data();
+        this->smatrix_k = k2d.sk_local.data();
+    }
+    else
+    {
+        this->hmatrix_k = this->LM->Hloc2.data();
+        this->smatrix_k = this->LM->Sloc2.data();
+    }
 }
 
 template<>
 void OperatorLCAO<std::complex<double>, std::complex<double>>::get_hs_pointers()
 {
-    this->hmatrix_k = this->LM->Hloc2.data();
-    this->smatrix_k = this->LM->Sloc2.data();
+    if (Parallel_K2D<std::complex<double>>::get_instance().get_initialized())
+    {
+        auto &k2d = Parallel_K2D<std::complex<double>>::get_instance();
+        this->hmatrix_k = k2d.hk_local.data();
+        this->smatrix_k = k2d.sk_local.data();
+    }
+    else
+    {
+        this->hmatrix_k = this->LM->Hloc2.data();
+        this->smatrix_k = this->LM->Sloc2.data();
+    }
 }
 
 template<>

@@ -8,6 +8,6 @@ for i in 8;do
         continue
     fi
     echo "TEST in parallel, nprocs=$i"
-    mpirun -np $i ./cell_parak2d_test
+    mpirun -np $i ./hsolver_parak2d_test
     break    
 done

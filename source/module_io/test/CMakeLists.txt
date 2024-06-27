@@ -29,7 +29,7 @@ add_test(NAME io_input_test_para4
 AddTest(
   TARGET io_input_conv
   LIBS ${math_libs} base device
-  SOURCES input_conv_test.cpp ../input.cpp ../input_conv.cpp ../../module_cell/parallel_k2d.cpp
+  SOURCES input_conv_test.cpp ../input.cpp ../input_conv.cpp
 )
 
 AddTest(

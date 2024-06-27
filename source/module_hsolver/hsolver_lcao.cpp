@@ -24,8 +24,7 @@
 #include "module_elecstate/elecstate_lcao.h"
 #endif
 
-#include "module_cell/parallel_k2d.h"
-#include "module_base/scalapack_connector.h"
+#include "module_hsolver/parallel_k2d.h"
 
 namespace hsolver
 {
@@ -205,67 +204,17 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         }
     }
 
-    if (Parallel_K2D<T>::get_initialized())
+    if (Parallel_K2D<double>::get_instance().get_kpar() > 0)
     {
-        int nks = psi.get_nk();
-        /// get instance of the Parallel_K2D singleton
         auto &k2d = Parallel_K2D<T>::get_instance();
-        k2d.set_nkstot(nks);
-        std::cout << "nkstot = " << k2d.get_nkstot() << std::endl;
-        std::cout << "kpar = " << k2d.get_kpar() << std::endl;
-        Parallel_Global::divide_mpi_groups(GlobalV::NPROC,
-                                               k2d.get_kpar(),
-                                               GlobalV::MY_RANK,
-                                               k2d.NPROC_IN_POOL,
-                                               k2d.MY_POOL,
-                                               k2d.RANK_IN_POOL);
-        MPI_Comm_split(MPI_COMM_WORLD, k2d.MY_POOL, k2d.RANK_IN_POOL, &k2d.POOL_WORLD_K2D);
-        k2d.Pkpoints = new Parallel_Kpoints;
-        k2d.P2D_global = new Parallel_2D;
-        k2d.P2D_local = new Parallel_2D;
-        k2d.Pkpoints->kinfo(nks, k2d.get_kpar(), k2d.MY_POOL, k2d.RANK_IN_POOL, GlobalV::NPROC, GlobalV::NSPIN);
-        /*
-        for (int ipool = 0; ipool < k2d.get_kpar(); ipool++)
-        {
-            std::cout << "nks_pool[" << ipool << "] = " << k2d.Pkpoints->nks_pool[ipool] << std::endl;
-            std::cout << "startk_pool[" << ipool << "] = " << k2d.Pkpoints->startk_pool[ipool] << std::endl;
-            std::cout << "startpro_pool[" << ipool << "] = " << k2d.Pkpoints->get_startpro_pool(ipool) << std::endl;
-        }
-        */
-        k2d.P2D_global->init(GlobalV::NLOCAL, GlobalV::NLOCAL, GlobalV::NB2D, MPI_COMM_WORLD);
-        k2d.P2D_local->init(GlobalV::NLOCAL, GlobalV::NLOCAL, GlobalV::NB2D, k2d.POOL_WORLD_K2D);
-        std::vector<T> hk_full(nks * GlobalV::NLOCAL*GlobalV::NLOCAL);
-        std::vector<T> sk_full(nks * GlobalV::NLOCAL*GlobalV::NLOCAL);
-        Parallel_2D pv_helper;
-        pv_helper.set(GlobalV::NLOCAL, GlobalV::NLOCAL, GlobalV::NLOCAL, k2d.P2D_global->comm_2D, k2d.P2D_global->blacs_ctxt);
-        for (int ik = 0; ik < psi.get_nk(); ++ik)
-        {
-            pHamilt->updateHk(ik);
-            hamilt::MatrixBlock<T> HK_global, SK_global;
-            pHamilt->matrix(HK_global, SK_global);
-            // collect Hk to hk_full
-            Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, HK_global.p, 1, 1, HK_global.desc,
-                hk_full.data() + ik * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_helper.desc, pv_helper.blacs_ctxt);
-            // collect Sk to sk_full
-            Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, SK_global.p, 1, 1, SK_global.desc,
-                sk_full.data() + ik * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_helper.desc, pv_helper.blacs_ctxt);
-        }
-        pv_helper.set(GlobalV::NLOCAL, GlobalV::NLOCAL, GlobalV::NLOCAL, k2d.P2D_local->comm_2D, k2d.P2D_local->blacs_ctxt);
-        k2d.hk_local.resize(k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size());
-        k2d.sk_local.resize(k2d.P2D_local->get_row_size() * k2d.P2D_local->get_col_size());
-        for (int ik = 0; ik < k2d.Pkpoints->nks_pool[k2d.MY_POOL]; ik++)
-        {
-            int ik_global = ik + k2d.Pkpoints->startk_pool[k2d.MY_POOL];
-            // distribute Hk to hk_local
-            Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, hk_full.data() + ik_global * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_helper.desc,
-                k2d.hk_local.data(), 1, 1, k2d.P2D_local->desc, pv_helper.blacs_ctxt);
-            // distribute Sk to sk_local
-            Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, sk_full.data() + ik_global * GlobalV::NLOCAL * GlobalV::NLOCAL, 1, 1, pv_helper.desc,
-                k2d.sk_local.data(), 1, 1, k2d.P2D_local->desc, pv_helper.blacs_ctxt);
-        }
-        delete k2d.Pkpoints;
-        delete k2d.P2D_local;
-        delete k2d.P2D_global;
+        k2d.set_para_env(pHamilt,
+                        psi.get_nk(),
+                        GlobalV::NLOCAL,
+                        GlobalV::NB2D,
+                        GlobalV::NPROC,
+                        GlobalV::MY_RANK,
+                        GlobalV::NSPIN);
+        k2d.set_initialized(false);
         /// Loop over k points for solve Hamiltonian to charge density
         for (int ik = 0; ik < psi.get_nk(); ++ik)
         {
@@ -277,6 +226,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
             // solve eigenvector and eigenvalue for H(k)
             this->hamiltSolvePsiK(pHamilt, psi, &(pes->ekb(ik, 0)));
         }
+        k2d.unset_para_env();
     }
     else
     {

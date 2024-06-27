@@ -7,6 +7,7 @@
 #ifdef __MPI
 #include "mpi.h"
 #endif
+#include "module_hamilt_general/hamilt.h"
 
 /***
  * This is a class to realize k-points parallelism in LCAO code.
@@ -33,10 +34,6 @@ public:
     /**
      * Public member functions
      */
-    /// set the number of k-points
-    void set_kpar(int kpar) { kpar_ = kpar; }
-    /// get the number of k-points
-    int get_kpar() const { return kpar_; }
     /// set the total number of k-points
     void set_nkstot(int nkstot) { nkstot_ = nkstot; }
     /// get the total number of k-points
@@ -62,10 +59,10 @@ public:
     int RANK_IN_POOL;
 
 #ifdef __MPI
-    MPI_Comm POOL_WORLD_K2D; // mohan add 2012-01-13
+    MPI_Comm POOL_WORLD_K2D;
 #endif
 
-private:
+public:
     /**
      * Public member functions
      */
@@ -77,28 +74,33 @@ private:
     ~Parallel_K2D()
     {
     }
+    /// set the environment for parallelism
+    void set_para_env(hamilt::Hamilt<TK>* pHamilt,
+                        int nks,
+                        const int& nw,
+                        const int& nb2d,
+                        const int& nproc,
+                        const int& my_rank,
+                        const int& nspin);
+    
+    void unset_para_env();
+
+    /// set the number of k-points
+    void set_kpar(int kpar) { this->kpar_ = kpar; }
+    /// get the number of k-points
+    int get_kpar() { return this->kpar_; }
+     /// initialize the Parallel_K2D class
+    void set_initialized(bool initialized) { this->initialized_ = initialized; }
+    /// check if the Parallel_K2D class is initialized
+    bool get_initialized() { return this->initialized_; }
 
 private:
     /**
      * Private member variables
      */
-    int kpar_ = 1;
     int nkstot_ = 0;
-private:
-    /**
-     * Private variables to deal with input
-     */
-    static bool initialized;
-
-public:
-    /**
-     * Public member functions for inputs
-     */
-    /// initialize the Parallel_K2D class
-    static void set_initialized(bool initialized_in) { Parallel_K2D<TK>::initialized = initialized_in; }
-    /// check if the Parallel_K2D class is initialized
-    static bool get_initialized() { return Parallel_K2D<TK>::initialized; }
-
+    int kpar_   = 0;
+    bool initialized_ = false;
 };
 
 #endif
