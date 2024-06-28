@@ -204,7 +204,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         }
     }
 
-    if (Parallel_K2D<double>::get_instance().get_kpar() > 0)
+    if (Parallel_K2D<double>::get_instance().get_kpar() > 1)
     {
         auto &k2d = Parallel_K2D<T>::get_instance();
         k2d.set_para_env(pHamilt,
