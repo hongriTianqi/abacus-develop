@@ -214,7 +214,6 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                         GlobalV::NPROC,
                         GlobalV::MY_RANK,
                         GlobalV::NSPIN);
-        k2d.set_initialized(false);
         /// Loop over k points for solve Hamiltonian to charge density
         for (int ik = 0; ik < psi.get_nk(); ++ik)
         {
