@@ -11,7 +11,7 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
     const int& my_rank,
     const int& nspin)
 {
-    k2d.set_initialized(false);
+    this->set_initialized(false);
     int kpar = this->get_kpar();
     std::cout << "nkstot = " << nks << std::endl;
     std::cout << "kpar = " << kpar << std::endl;
@@ -65,7 +65,7 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
         Cpxgemr2d(nw, nw, sk_full.data() + ik_global * nw * nw, 1, 1, pv_helper.desc,
             this->sk_local.data(), 1, 1, this->P2D_local->desc, pv_helper.blacs_ctxt);
     }
-    k2d.set_initialized(true);
+    this->set_initialized(true);
 }
 
 template <typename TK>
