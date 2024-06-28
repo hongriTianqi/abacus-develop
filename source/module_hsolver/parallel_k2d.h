@@ -32,14 +32,6 @@ public:
     Parallel_K2D& operator=(const Parallel_K2D&) = delete;
 
     /**
-     * Public member functions
-     */
-    /// set the total number of k-points
-    void set_nkstot(int nkstot) { nkstot_ = nkstot; }
-    /// get the total number of k-points
-    int get_nkstot() const { return nkstot_; }
-
-    /**
      * the pointer to Parallel_Kpoints
      */
     Parallel_Kpoints* Pkpoints = nullptr;
@@ -98,7 +90,6 @@ private:
     /**
      * Private member variables
      */
-    int nkstot_ = 0;
     int kpar_   = 0;
     bool initialized_ = false;
 };

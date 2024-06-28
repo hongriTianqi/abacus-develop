@@ -11,10 +11,9 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
     const int& my_rank,
     const int& nspin)
 {
-    this->set_nkstot(nks);
     int kpar = this->get_kpar();
-    std::cout << "nkstot = " << this->get_nkstot() << std::endl;
-    std::cout << "kpar = " << this->get_kpar() << std::endl;
+    std::cout << "nkstot = " << nks << std::endl;
+    std::cout << "kpar = " << kpar << std::endl;
     Parallel_Global::divide_mpi_groups(nproc,
                                            kpar,
                                            my_rank,
