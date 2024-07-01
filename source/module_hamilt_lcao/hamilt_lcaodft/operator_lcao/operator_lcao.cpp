@@ -34,7 +34,6 @@ void OperatorLCAO<double, double>::get_hs_pointers()
 #endif
             this->new_e_iteration = false;
         }
-        k2d.ik += 1;
     }
     else
     {
@@ -66,7 +65,6 @@ void OperatorLCAO<std::complex<double>, double>::get_hs_pointers()
         assert(k2d.ik < k2d.hk_local.size());
         this->hmatrix_k = k2d.hk_local[k2d.ik].data();
         this->smatrix_k = k2d.sk_local[k2d.ik].data();
-        k2d.ik += 1;
     }
     else
     {
@@ -84,7 +82,6 @@ void OperatorLCAO<std::complex<double>, std::complex<double>>::get_hs_pointers()
         assert(k2d.ik < k2d.hk_local.size());
         this->hmatrix_k = k2d.hk_local[k2d.ik].data();
         this->smatrix_k = k2d.sk_local[k2d.ik].data();
-        k2d.ik += 1;
     }
     else
     {
