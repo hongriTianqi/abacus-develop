@@ -41,8 +41,9 @@ public:
     /**
      * the local Hk, Sk, and dmk matrices in small Parallel_2D format
      */
-    std::vector<TK> hk_local;
-    std::vector<TK> sk_local;
+    std::vector<std::vector<TK>> hk_local;
+    std::vector<std::vector<TK>> sk_local;
+    static int ik;
     /**
      * public mpi info
      */

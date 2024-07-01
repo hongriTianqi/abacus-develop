@@ -18,7 +18,8 @@ void OperatorLCAO<double, double>::get_hs_pointers()
     if (Parallel_K2D<double>::get_instance().get_initialized())
     {
         auto &k2d = Parallel_K2D<double>::get_instance();
-        this->hmatrix_k = k2d.hk_local.data();
+        assert(k2d.ik < k2d.hk_local.size());
+        this->hmatrix_k = k2d.hk_local[k2d.ik].data();
         if ((this->new_e_iteration && ik == 0) || hsolver::HSolverLCAO<double>::out_mat_hs[0])
         {
             if (this->smatrix_k == nullptr)
@@ -27,12 +28,13 @@ void OperatorLCAO<double, double>::get_hs_pointers()
                 this->allocated_smatrix = true;
             }
             const int inc = 1;
-            BlasConnector::copy(k2d.sk_local.size(), k2d.sk_local.data(), inc, this->smatrix_k, inc);
+            BlasConnector::copy(k2d.sk_local[k2d.ik].size(), k2d.sk_local[k2d.ik].data(), inc, this->smatrix_k, inc);
 #ifdef __ELPA
             hsolver::DiagoElpa<double>::DecomposedState = 0;
 #endif
             this->new_e_iteration = false;
         }
+        k2d.ik += 1;
     }
     else
     {
@@ -61,8 +63,10 @@ void OperatorLCAO<std::complex<double>, double>::get_hs_pointers()
     if (Parallel_K2D<std::complex<double>>::get_instance().get_initialized())
     {
         auto &k2d = Parallel_K2D<std::complex<double>>::get_instance();
-        this->hmatrix_k = k2d.hk_local.data();
-        this->smatrix_k = k2d.sk_local.data();
+        assert(k2d.ik < k2d.hk_local.size());
+        this->hmatrix_k = k2d.hk_local[k2d.ik].data();
+        this->smatrix_k = k2d.sk_local[k2d.ik].data();
+        k2d.ik += 1;
     }
     else
     {
@@ -77,8 +81,10 @@ void OperatorLCAO<std::complex<double>, std::complex<double>>::get_hs_pointers()
     if (Parallel_K2D<std::complex<double>>::get_instance().get_initialized())
     {
         auto &k2d = Parallel_K2D<std::complex<double>>::get_instance();
-        this->hmatrix_k = k2d.hk_local.data();
-        this->smatrix_k = k2d.sk_local.data();
+        assert(k2d.ik < k2d.hk_local.size());
+        this->hmatrix_k = k2d.hk_local[k2d.ik].data();
+        this->smatrix_k = k2d.sk_local[k2d.ik].data();
+        k2d.ik += 1;
     }
     else
     {

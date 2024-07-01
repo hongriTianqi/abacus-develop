@@ -40,30 +40,32 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
     std::vector<TK> sk_full(nks * nw*nw);
     Parallel_2D pv_helper;
     pv_helper.set(nw, nw, nw, this->P2D_global->comm_2D, this->P2D_global->blacs_ctxt);
+
+    int nks_pool = this->Pkpoints->nks_pool[this->MY_POOL];
+    hk_local.resize(nks_pool);
+    sk_local.resize(nks_pool);
+    for (int ik = 0; ik < nks_pool; ik++)
+    {
+        hk_local[ik].resize(this->P2D_local->get_local_size(), 0.0);
+        sk_local[ik].resize(this->P2D_local->get_local_size(), 0.0);
+    }
+    /// distribute Hk and Sk to hk_local and sk_local
     for (int ik = 0; ik < nks; ++ik)
     {
         pHamilt->updateHk(ik);
         hamilt::MatrixBlock<TK> HK_global, SK_global;
         pHamilt->matrix(HK_global, SK_global);
-        // collect Hk to hk_full
-        Cpxgemr2d(nw, nw, HK_global.p, 1, 1, HK_global.desc,
-            hk_full.data() + ik * nw * nw, 1, 1, pv_helper.desc, pv_helper.blacs_ctxt);
-        // collect Sk to sk_full
-        Cpxgemr2d(nw, nw, SK_global.p, 1, 1, SK_global.desc,
-            sk_full.data() + ik * nw * nw, 1, 1, pv_helper.desc, pv_helper.blacs_ctxt);
-    }
-    pv_helper.set(nw, nw, nw, this->P2D_local->comm_2D, this->P2D_local->blacs_ctxt);
-    this->hk_local.resize(this->P2D_local->get_row_size() * this->P2D_local->get_col_size());
-    this->sk_local.resize(this->P2D_local->get_row_size() * this->P2D_local->get_col_size());
-    for (int ik = 0; ik < this->Pkpoints->nks_pool[this->MY_POOL]; ik++)
-    {
-        int ik_global = ik + this->Pkpoints->startk_pool[this->MY_POOL];
-        // distribute Hk to hk_local
-        Cpxgemr2d(nw, nw, hk_full.data() + ik_global * nw * nw, 1, 1, pv_helper.desc,
-            this->hk_local.data(), 1, 1, this->P2D_local->desc, pv_helper.blacs_ctxt);
-        // distribute Sk to sk_local
-        Cpxgemr2d(nw, nw, sk_full.data() + ik_global * nw * nw, 1, 1, pv_helper.desc,
-            this->sk_local.data(), 1, 1, this->P2D_local->desc, pv_helper.blacs_ctxt);
+        //
+        int desc_pool[9];
+        std::copy(this->P2D_local->desc, this->P2D_local->desc + 9, desc_pool);
+        if (this->MY_POOL != this->Pkpoints->whichpool[ik]) {
+            desc_pool[1] = -1;
+        }
+        int ik_pool = ik - this->Pkpoints->startk_pool[this->MY_POOL];
+        Cpxgemr2d(nw, nw, HK_global.p, 1, 1, this->P2D_global->desc,
+            hk_local[ik_pool].data(), 1, 1, desc_pool, this->P2D_global->blacs_ctxt);
+        Cpxgemr2d(nw, nw, SK_global.p, 1, 1, this->P2D_global->desc,
+            sk_local[ik_pool].data(), 1, 1, desc_pool, this->P2D_global->blacs_ctxt);
     }
     this->set_initialized(true);
 }
@@ -76,6 +78,9 @@ void Parallel_K2D<TK>::unset_para_env()
     if (this->P2D_local != nullptr) delete this->P2D_local;
     MPI_Comm_free(&this->POOL_WORLD_K2D);
 }
+
+template <typename TK>
+int Parallel_K2D<TK>::ik = 0;
 
 template class Parallel_K2D<double>;
 template class Parallel_K2D<std::complex<double>>;

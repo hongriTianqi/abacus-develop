@@ -215,15 +215,17 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                         GlobalV::MY_RANK,
                         GlobalV::NSPIN);
         /// Loop over k points for solve Hamiltonian to charge density
-        for (int ik = 0; ik < psi.get_nk(); ++ik)
+        for (int ik = 0; ik < k2d.Pkpoints->nks_pool[k2d.MY_POOL]; ++ik)
         {
-            /// update H(k) for each k point
-            pHamilt->updateHk(ik);
+            /// global index of k point
+            int ik_global = ik + k2d.Pkpoints->startk_pool[k2d.MY_POOL];
+            std::cout << "my_rank = " << GlobalV::MY_RANK << " ik_global = " << ik_global << std::endl;
+            /// local psi in pool
+            auto psi_pool = psi::Psi<T>(1, psi.get_nbands(), k2d.P2D_local->nrow, nullptr);
+            /// solve eigenvector and eigenvalue for H(k)
+            this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik, 0)));
 
-            psi.fix_k(ik);
-
-            // solve eigenvector and eigenvalue for H(k)
-            this->hamiltSolvePsiK(pHamilt, psi, &(pes->ekb(ik, 0)));
+            exit(0);
         }
         k2d.unset_para_env();
     }
