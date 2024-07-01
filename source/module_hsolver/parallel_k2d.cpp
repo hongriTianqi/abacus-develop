@@ -88,7 +88,7 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
             {
                 int ik_pool = ik - this->Pkpoints->startk_pool[this->MY_POOL];
                 if (GlobalV::MY_RANK == irank) {
-                    std::cout << " MY_RANK = " << GlobalV::MY_RANK << " HK matrix for ik = " << ik << " ik_pool = " << ik_pool << " with dim of " <<
+                    std::cout << " MY_RANK = " << GlobalV::MY_RANK << " HK local matrix for ik = " << ik << " ik_pool = " << ik_pool << " with dim of " <<
                         this->P2D_local->get_row_size() << " x " << this->P2D_local->get_col_size() << " ";
                     for (int i = 0; i < this->P2D_local->get_row_size(); i++) {
                         for (int j = 0; j < this->P2D_local->get_col_size(); j++) {

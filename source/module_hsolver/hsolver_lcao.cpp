@@ -225,6 +225,26 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
             auto psi_pool = psi::Psi<T>(1, psi.get_nbands(), k2d.P2D_local->nrow, nullptr);
             /// solve eigenvector and eigenvalue for H(k)
             this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik, 0)));
+            /*
+            for (int irank = 0; irank < GlobalV::NPROC; irank++)
+            {
+                if (GlobalV::MY_RANK == irank)
+                {
+                    std::cout << " MY_RANK = " << GlobalV::MY_RANK << " ik_global = " << ik_global
+                    << " nbands = " << psi_pool.get_nbands()
+                    << " nbasis = " << psi_pool.get_nbasis() << " ";
+                    for (int ib = 0; ib < psi_pool.get_nbands(); ib++)
+                    {
+                        for (int i = 0; i < psi_pool.get_nbasis(); i++)
+                        {
+                            std::cout << psi_pool(ib, i) << " ";
+                        }
+                    }
+                    std::cout << std::endl;
+                    std::cout << std::endl;
+                }
+            }
+            */
         }
         k2d.unset_para_env();
         std::cout << __FILE__ << " " << __LINE__ << std::endl;
@@ -242,6 +262,26 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
 
             // solve eigenvector and eigenvalue for H(k)
             this->hamiltSolvePsiK(pHamilt, psi, &(pes->ekb(ik, 0)));
+            /*
+            for (int irank = 0; irank < GlobalV::NPROC; irank++)
+            {
+                if (GlobalV::MY_RANK == irank)
+                {
+                    std::cout << " MY_RANK = " << GlobalV::MY_RANK << " ik_global = " << ik
+                    << " nbands = " << psi.get_nbands()
+                    << " nbasis = " << psi.get_nbasis() << " ";
+                    for (int ib = 0; ib < psi.get_nbands(); ib++)
+                    {
+                        for (int i = 0; i < psi.get_nbasis(); i++)
+                        {
+                            std::cout << psi(ib, i) << " ";
+                        }
+                    }
+                    std::cout << std::endl;
+                    std::cout << std::endl;
+                }
+            }
+            */
         }
     }
 
