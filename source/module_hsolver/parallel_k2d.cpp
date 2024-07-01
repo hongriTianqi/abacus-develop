@@ -36,11 +36,6 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
     */
     this->P2D_global->init(nw, nw, nb2d, MPI_COMM_WORLD);
     this->P2D_local->init(nw, nw, nb2d, this->POOL_WORLD_K2D);
-    std::vector<TK> hk_full(nks * nw*nw);
-    std::vector<TK> sk_full(nks * nw*nw);
-    Parallel_2D pv_helper;
-    pv_helper.set(nw, nw, nw, this->P2D_global->comm_2D, this->P2D_global->blacs_ctxt);
-
     int nks_pool = this->Pkpoints->nks_pool[this->MY_POOL];
     hk_local.resize(nks_pool);
     sk_local.resize(nks_pool);
