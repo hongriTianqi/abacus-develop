@@ -50,17 +50,40 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
         pHamilt->updateHk(ik);
         hamilt::MatrixBlock<TK> HK_global, SK_global;
         pHamilt->matrix(HK_global, SK_global);
-        //
+        /*
+        for (int irank = 0; irank < GlobalV::NPROC; irank++)
+        {
+            if (GlobalV::MY_RANK == irank) {
+                std::cout << " MY_RANK = " << GlobalV::MY_RANK << " HK matrix for ik = " << ik << " with dim of " <<
+                    this->P2D_global->get_row_size() << " x " << this->P2D_global->get_col_size() << " ";
+                for (int i = 0; i < this->P2D_global->get_row_size(); i++) {
+                    for (int j = 0; j < this->P2D_global->get_col_size(); j++) {
+                        std::cout << HK_global.p[i + j * this->P2D_global->get_row_size()] << " ";
+                    }
+                }
+                std::cout << std::endl;
+                std::cout << std::endl;
+            }
+        }
+        */
         int desc_pool[9];
         std::copy(this->P2D_local->desc, this->P2D_local->desc + 9, desc_pool);
-        if (this->MY_POOL != this->Pkpoints->whichpool[ik]) {
+        if (this->MY_POOL != this->Pkpoints->whichpool[ik])
+        {
             desc_pool[1] = -1;
         }
-        int ik_pool = ik - this->Pkpoints->startk_pool[this->MY_POOL];
+        std::vector<TK> hk(this->P2D_local->get_local_size(), 0.0);
+        std::vector<TK> sk(this->P2D_local->get_local_size(), 0.0);
         Cpxgemr2d(nw, nw, HK_global.p, 1, 1, this->P2D_global->desc,
-            hk_local[ik_pool].data(), 1, 1, desc_pool, this->P2D_global->blacs_ctxt);
+            hk.data(), 1, 1, desc_pool, this->P2D_global->blacs_ctxt);
         Cpxgemr2d(nw, nw, SK_global.p, 1, 1, this->P2D_global->desc,
-            sk_local[ik_pool].data(), 1, 1, desc_pool, this->P2D_global->blacs_ctxt);
+            sk.data(), 1, 1, desc_pool, this->P2D_global->blacs_ctxt);
+        if (this->MY_POOL == this->Pkpoints->whichpool[ik])
+        {
+            int ik_pool = ik - this->Pkpoints->startk_pool[this->MY_POOL];
+            hk_local[ik_pool] = hk;
+            sk_local[ik_pool] = sk;
+        }
     }
     this->set_initialized(true);
 }
