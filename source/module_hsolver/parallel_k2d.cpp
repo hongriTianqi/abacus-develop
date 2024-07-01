@@ -108,9 +108,21 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
 template <typename TK>
 void Parallel_K2D<TK>::unset_para_env()
 {
-    if (this->Pkpoints != nullptr) delete this->Pkpoints;
-    if (this->P2D_global != nullptr) delete this->P2D_global;
-    if (this->P2D_local != nullptr) delete this->P2D_local;
+    if (this->Pkpoints != nullptr)
+    {
+        delete this->Pkpoints;
+        this->Pkpoints = nullptr;
+    }
+    if (this->P2D_global != nullptr)
+    {
+        delete this->P2D_global;
+        this->P2D_global = nullptr;
+    }
+    if (this->P2D_local != nullptr)
+    {
+        delete this->P2D_local;
+        this->P2D_local = nullptr;
+    }
     MPI_Comm_free(&this->POOL_WORLD_K2D);
 }
 
