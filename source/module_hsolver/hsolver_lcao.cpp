@@ -26,6 +26,7 @@
 
 #include "module_hsolver/parallel_k2d.h"
 #include "module_base/scalapack_connector.h"
+#include <unistd.h>
 
 namespace hsolver
 {
@@ -215,25 +216,39 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                         GlobalV::NPROC,
                         GlobalV::MY_RANK,
                         GlobalV::NSPIN);
+        /// set psi_pool
+        auto psi_pool = psi::Psi<T>(psi.get_nk(), psi.get_nbands(), k2d.P2D_local->nrow, nullptr);
+        for (int ik = 0; ik < psi.get_nk(); ++ik)
+        {
+            for (int ib = 0; ib < psi_pool.get_nbands(); ++ib)
+            {
+                for (int i = 0; i < psi_pool.get_nbasis(); ++i)
+                {
+                    psi_pool(ik, ib, i) = 0.0;
+                }
+            }
+        }
         /// Loop over k points for solve Hamiltonian to charge density
         for (int ik = 0; ik < k2d.Pkpoints->nks_pool[k2d.MY_POOL]; ++ik)
         {
             k2d.ik = ik;
             /// global index of k point
             int ik_global = ik + k2d.Pkpoints->startk_pool[k2d.MY_POOL];
-            std::cout << "my_rank = " << GlobalV::MY_RANK << " ik_global = " << ik_global << std::endl;
-            std::cout << "row test " << k2d.P2D_local->nrow << std::endl;
             /// local psi in pool
-            auto psi_pool = psi::Psi<T>(1, psi.get_nbands(), k2d.P2D_local->nrow, nullptr);
-            std::cout << "0000 psi_pool.nbands = " << psi_pool.get_nbands() << " psi_pool.nbasis = " << psi_pool.get_nbasis() << std::endl;
+            psi_pool.fix_k(ik_global);
             /// solve eigenvector and eigenvalue for H(k)
-            this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik, 0)));
+            this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
+        }
+
+        for (int ik = 0; ik < 1; ++ik)
+        {
+            psi_pool.fix_k(ik);
             /*
             for (int irank = 0; irank < GlobalV::NPROC; irank++)
             {
                 if (GlobalV::MY_RANK == irank)
                 {
-                    std::cout << " MY_RANK = " << GlobalV::MY_RANK << " ik_global = " << ik_global
+                    std::cout << " psi_pool MY_RANK = " << GlobalV::MY_RANK << " ik = " << ik
                     << " nbands = " << psi_pool.get_nbands()
                     << " nbasis = " << psi_pool.get_nbasis() << " ";
                     for (int ib = 0; ib < psi_pool.get_nbands(); ib++)
@@ -246,21 +261,45 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                     std::cout << std::endl;
                     std::cout << std::endl;
                 }
+                usleep(10000);
             }
             */
-            std::cout << "psi_pool.nbands = " << psi_pool.get_nbands() << " psi_pool.nbasis = " << psi_pool.get_nbasis() << std::endl;
-            int desc_global[9];
-            std::copy(k2d.P2D_global->desc, k2d.P2D_global->desc + 9, desc_global);
-            if (k2d.MY_POOL != k2d.Pkpoints->whichpool[ik_global])
+            psi.fix_k(ik);
+            int desc_pool[9];
+            std::copy(k2d.P2D_local->desc, k2d.P2D_local->desc + 9, desc_pool);
+            if (k2d.MY_POOL != k2d.Pkpoints->whichpool[ik])
             {
-                desc_global[1] = -1;
+                desc_pool[1] = -1;
             }
-            Cpxgemr2d(psi_pool.get_nbasis(), psi_pool.get_nbands(), psi_pool.get_pointer(), 1, 1, k2d.P2D_local->desc,
-                psi.get_pointer(ik_global), 1, 1, desc_global, k2d.P2D_global->blacs_ctxt);
+            Cpxgemr2d(k2d.P2D_global->get_row_size(), k2d.P2D_global->get_col_size(), psi_pool.get_pointer(), 1, 1, desc_pool,
+                    psi.get_pointer(), 1, 1, k2d.P2D_global->desc, k2d.P2D_global->blacs_ctxt);
+            /*
+            for (int irank = 0; irank < GlobalV::NPROC; irank++)
+            {
+                if (GlobalV::MY_RANK == irank)
+                {
+                    std::cout << " psi MY_RANK = " << GlobalV::MY_RANK << " ik_global = " << ik
+                    << " nbands = " << psi.get_nbands()
+                    << " nbasis = " << psi.get_nbasis() << " ";
+                    //std::cout << "ik = " << ik << " MY_RANK = " << GlobalV::MY_RANK << " MY_POOL " << k2d.MY_POOL << " desc_pool[ik][1] = " << desc_pool[1] << std::endl;
+                    for (int ib = 0; ib < psi.get_nbands(); ib++)
+                    {
+                        for (int i = 0; i < psi.get_nbasis(); i++)
+                        {
+                            std::cout << psi(ib, i) << " ";
+                        }
+                    }
+                    std::cout << std::endl;
+                    std::cout << std::endl;
+                }
+                usleep(10000);
+            }
+            */
+        //
         }
         k2d.unset_para_env();
         MPI_Barrier(MPI_COMM_WORLD);
-        std::cout << __FILE__ << " " << __LINE__ << std::endl;
+        //std::cout << __FILE__ << " " << __LINE__ << std::endl;
         //exit(0);
         //exit(0);
     }
@@ -276,7 +315,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
 
             // solve eigenvector and eigenvalue for H(k)
             this->hamiltSolvePsiK(pHamilt, psi, &(pes->ekb(ik, 0)));
-            /*
+            //
             for (int irank = 0; irank < GlobalV::NPROC; irank++)
             {
                 if (GlobalV::MY_RANK == irank)
@@ -295,7 +334,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                     std::cout << std::endl;
                 }
             }
-            */
+            //
         }
     }
 
