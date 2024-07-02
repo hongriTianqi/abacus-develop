@@ -346,8 +346,6 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                 }
                 usleep(10000);
             }
-            */
-            /*
             for (int irank = 0; irank < GlobalV::NPROC; irank++)
             {
                 if (GlobalV::MY_RANK == irank)
@@ -365,6 +363,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                     std::cout << std::endl;
                     std::cout << std::endl;
                 }
+                usleep(10000);
             }
             */
         }
