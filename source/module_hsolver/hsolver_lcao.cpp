@@ -238,6 +238,22 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
             psi_pool.fix_k(ik_global);
             /// solve eigenvector and eigenvalue for H(k)
             this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
+            /* check ekb
+            for (int irank = 0; irank < GlobalV::NPROC; irank++)
+            {
+                std::cout << " MY_RANK = " << GlobalV::MY_RANK << " ik = " << ik << " ";
+                if (GlobalV::MY_RANK == irank)
+                {
+                    for (int ib = 0; ib < GlobalV::NBANDS; ++ib)
+                    {
+                        std::cout << "ekb( " << ik_global << ", " << ib << " ) = " << pes->ekb(ik_global, ib) << std::endl;
+                    }
+                    std::cout << std::endl;
+                    std::cout << std::endl;
+                }
+                usleep(10000);
+            }
+            */
         }
 
         for (int ik = 0; ik < 1; ++ik)
@@ -315,7 +331,23 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
 
             // solve eigenvector and eigenvalue for H(k)
             this->hamiltSolvePsiK(pHamilt, psi, &(pes->ekb(ik, 0)));
-            //
+            /* check ekb
+            for (int irank = 0; irank < GlobalV::NPROC; irank++)
+            {
+                if (GlobalV::MY_RANK == irank)
+                {
+                    std::cout << " MY_RANK = " << GlobalV::MY_RANK << " ik = " << ik << " ";
+                    for (int ib = 0; ib < GlobalV::NBANDS; ++ib)
+                    {
+                        std::cout << "ekb( " << ik << ", " << ib << " ) = " << pes->ekb(ik, ib) << std::endl;
+                    }
+                    std::cout << std::endl;
+                    std::cout << std::endl;
+                }
+                usleep(10000);
+            }
+            */
+            /*
             for (int irank = 0; irank < GlobalV::NPROC; irank++)
             {
                 if (GlobalV::MY_RANK == irank)
@@ -334,7 +366,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                     std::cout << std::endl;
                 }
             }
-            //
+            */
         }
     }
 
