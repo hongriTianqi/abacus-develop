@@ -206,7 +206,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         }
     }
 
-    if (Parallel_K2D<double>::get_instance().get_kpar() > 1)
+    if (Parallel_K2D<double>::get_instance().get_kpar() > 0)
     {
         auto &k2d = Parallel_K2D<T>::get_instance();
         k2d.set_para_env(pHamilt,
@@ -256,7 +256,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
             */
         }
 
-        for (int ik = 0; ik < 1; ++ik)
+        for (int ik = 0; ik < psi.get_nk(); ++ik)
         {
             psi_pool.fix_k(ik);
             /*
