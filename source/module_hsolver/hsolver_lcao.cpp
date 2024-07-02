@@ -287,7 +287,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
             {
                 desc_pool[1] = -1;
             }
-            Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NLOCAL, psi_pool.get_pointer(), 1, 1, desc_pool,
+            Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NBANDS, psi_pool.get_pointer(), 1, 1, desc_pool,
                     psi.get_pointer(), 1, 1, k2d.P2D_global->desc, k2d.P2D_global->blacs_ctxt);
             /*
             for (int irank = 0; irank < GlobalV::NPROC; irank++)
