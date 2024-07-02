@@ -314,7 +314,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         //
         }
         k2d.unset_para_env();
-        MPI_Barrier(MPI_COMM_WORLD);
+        k2d.set_initialized(false);
         //std::cout << __FILE__ << " " << __LINE__ << std::endl;
         //exit(0);
         //exit(0);
