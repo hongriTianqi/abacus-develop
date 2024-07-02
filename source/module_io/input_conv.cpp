@@ -354,8 +354,6 @@ void Input_Conv::Convert(void)
     /// get instance of the Parallel_K2D singleton
     Parallel_K2D<double>::get_instance().set_kpar(INPUT.kpar);
     Parallel_K2D<std::complex<double>>::get_instance().set_kpar(INPUT.kpar);
-    std::cout << "npar = " << Parallel_K2D<double>::get_instance().get_kpar() << std::endl;
-    std::cout << "npar1 = " << Parallel_K2D<double>::get_instance().get_kpar() << std::endl;
     GlobalV::KPAR = 1;
     GlobalV::precision_flag = INPUT.precision;
     if (GlobalV::device_flag == "cpu" and GlobalV::precision_flag == "single")
