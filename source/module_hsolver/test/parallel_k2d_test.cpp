@@ -114,7 +114,14 @@ TEST_P(ParallelK2DTest, DividePools)
         }
         */
         k2d.P2D_pool->init(10, 10, 1, POOL_WORLD, 0);
-        k2d.cal_ncol_bands(10, k2d.P2D_pool);
+        EXPECT_EQ(this->NPROC, 8);
+        EXPECT_EQ(k2d.P2D_pool->dim0, 2);
+        EXPECT_EQ(k2d.P2D_pool->dim1, 2);
+        EXPECT_EQ(k2d.P2D_pool->get_row_size(), 5);
+        EXPECT_EQ(k2d.P2D_pool->get_col_size(), 5);
+        int ncol_bands = k2d.cal_ncol_bands(7, k2d.P2D_pool);
+        if (this->MY_RANK%2 == 0) EXPECT_EQ(ncol_bands, 4);
+        if (this->MY_RANK%2 == 1) EXPECT_EQ(ncol_bands, 3);
         k2d.set_kpar(10);
         EXPECT_EQ(k2d.get_kpar(), 10);
         k2d.set_initialized(true);
