@@ -24,90 +24,72 @@
 #include "module_elecstate/elecstate_lcao.h"
 #endif
 
-#include "module_hsolver/parallel_k2d.h"
 #include "module_base/scalapack_connector.h"
+#include "module_hsolver/parallel_k2d.h"
+
 #include <unistd.h>
 
-namespace hsolver
-{
+namespace hsolver {
 
 template <typename T, typename Device>
 void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                                            psi::Psi<T>& psi,
                                            elecstate::ElecState* pes,
                                            const std::string method_in,
-                                           const bool skip_charge)
-{
+                                           const bool skip_charge) {
     ModuleBase::TITLE("HSolverLCAO", "solve");
     ModuleBase::timer::tick("HSolverLCAO", "solve");
     // select the method of diagonalization
     this->method = method_in;
 
     // init
-    if (this->method == "scalapack_gvx")
-    {
-        if (this->pdiagh != nullptr)
-        {
-            if (this->pdiagh->method != this->method)
-            {
+    if (this->method == "scalapack_gvx") {
+        if (this->pdiagh != nullptr) {
+            if (this->pdiagh->method != this->method) {
                 delete[] this->pdiagh;
                 this->pdiagh = nullptr;
             }
         }
-        if (this->pdiagh == nullptr)
-        {
+        if (this->pdiagh == nullptr) {
             this->pdiagh = new DiagoScalapack<T>();
             this->pdiagh->method = this->method;
         }
     }
 #ifdef __ELPA
-    else if (this->method == "genelpa")
-    {
-        if (this->pdiagh != nullptr)
-        {
-            if (this->pdiagh->method != this->method)
-            {
+    else if (this->method == "genelpa") {
+        if (this->pdiagh != nullptr) {
+            if (this->pdiagh->method != this->method) {
                 delete[] this->pdiagh;
                 this->pdiagh = nullptr;
             }
         }
-        if (this->pdiagh == nullptr)
-        {
+        if (this->pdiagh == nullptr) {
             this->pdiagh = new DiagoElpa<T>();
             this->pdiagh->method = this->method;
         }
     }
 #endif
 #ifdef __CUDA
-    else if (this->method == "cusolver")
-    {
-        if (this->pdiagh != nullptr)
-        {
-            if (this->pdiagh->method != this->method)
-            {
+    else if (this->method == "cusolver") {
+        if (this->pdiagh != nullptr) {
+            if (this->pdiagh->method != this->method) {
                 delete[] this->pdiagh;
                 this->pdiagh = nullptr;
             }
         }
-        if (this->pdiagh == nullptr)
-        {
+        if (this->pdiagh == nullptr) {
             this->pdiagh = new DiagoCusolver<T>(this->ParaV);
             this->pdiagh->method = this->method;
         }
-    }
-    else if (this->method == "cusolvermp")
-    {
+    } else if (this->method == "cusolvermp") {
 #ifdef __CUSOLVERMP
-        if (this->pdiagh != nullptr)
-        {
-            if (this->pdiagh->method != this->method)
-            {
+        if (this->pdiagh != nullptr) {
+            if (this->pdiagh->method != this->method) {
                 delete[] this->pdiagh;
                 this->pdiagh = nullptr;
             }
         }
-        if (this->pdiagh == nullptr)
-        {
+        if (this->pdiagh == nullptr) {
             this->pdiagh = new DiagoCusolverMP<T>();
             this->pdiagh->method = this->method;
         }
@@ -116,8 +98,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
 #endif
     }
 #endif
-    else if (this->method == "lapack")
-    {
+    else if (this->method == "lapack") {
         ModuleBase::WARNING_QUIT("hsolver_lcao", "please fix lapack solver!!!");
         // We are not supporting diagonalization with lapack
         // until the obsolete globalc::hm is removed from
@@ -137,26 +118,24 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
             this->pdiagh->method = this->method;
         }
         */
-        ModuleBase::WARNING_QUIT("HSolverLCAO::solve", "This method of DiagH is not supported!");
-    }
-    else if (this->method == "cg_in_lcao")
-    {
+        ModuleBase::WARNING_QUIT("HSolverLCAO::solve",
+                                 "This method of DiagH is not supported!");
+    } else if (this->method == "cg_in_lcao") {
 
-        if (this->pdiagh != nullptr)
-        {
-            if (this->pdiagh->method != this->method)
-            {
+        if (this->pdiagh != nullptr) {
+            if (this->pdiagh->method != this->method) {
                 delete reinterpret_cast<DiagoCG<T>*>(this->pdiagh);
                 this->pdiagh = nullptr;
             }
         }
-        if (this->pdiagh == nullptr)
-        {
-            auto subspace_func = [](const ct::Tensor& psi_in, ct::Tensor& psi_out) {
+        if (this->pdiagh == nullptr) {
+            auto subspace_func = [](const ct::Tensor& psi_in,
+                                    ct::Tensor& psi_out) {
                 // psi_in should be a 2D tensor:
                 // psi_in.shape() = [nbands, nbasis]
                 const auto ndim = psi_in.shape().ndim();
-                REQUIRES_OK(ndim == 2, "dims of psi_in should be less than or equal to 2");
+                REQUIRES_OK(ndim == 2,
+                            "dims of psi_in should be less than or equal to 2");
             };
             this->pdiagh = new DiagoCG<T>(GlobalV::BASIS_TYPE,
                                           GlobalV::CALCULATION,
@@ -169,19 +148,15 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         }
     }
 #ifdef __PEXSI
-    else if (this->method == "pexsi")
-    {
-        if (this->pdiagh != nullptr)
-        {
-            if (this->pdiagh->method != this->method)
-            {
+    else if (this->method == "pexsi") {
+        if (this->pdiagh != nullptr) {
+            if (this->pdiagh->method != this->method) {
                 delete[] this->pdiagh;
                 this->pdiagh = nullptr;
             }
             auto tem = dynamic_cast<DiagoPexsi<T>*>(this->pdiagh);
         }
-        if (this->pdiagh == nullptr)
-        {
+        if (this->pdiagh == nullptr) {
             DiagoPexsi<T>* tem = new DiagoPexsi<T>(this->ParaV);
             this->pdiagh = tem;
             // this->pdiagh = dynamic_cast<DiagoPexsi<T>*>(tem);
@@ -189,33 +164,38 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         }
     }
 #endif
-    else
-    {
-        ModuleBase::WARNING_QUIT("HSolverLCAO::solve", "This method of DiagH is not supported!");
+    else {
+        ModuleBase::WARNING_QUIT("HSolverLCAO::solve",
+                                 "This method of DiagH is not supported!");
     }
 
-    if (this->method == "cg_in_lcao")
-    {
+    if (this->method == "cg_in_lcao") {
         this->precondition_lcao.resize(psi.get_nbasis());
 
         using Real = typename GetTypeReal<T>::type;
         // set precondition
-        for (size_t i = 0; i < precondition_lcao.size(); i++)
-        {
+        for (size_t i = 0; i < precondition_lcao.size(); i++) {
             precondition_lcao[i] = 1.0;
         }
     }
 
-    if (Parallel_K2D<double>::get_instance().get_kpar() > 1)
-    {
-        auto &k2d = Parallel_K2D<T>::get_instance();
-        k2d.set_para_env(pHamilt, psi.get_nk(), GlobalV::NLOCAL, GlobalV::NB2D, GlobalV::NPROC, GlobalV::MY_RANK, GlobalV::NSPIN);
+    if (Parallel_K2D<double>::get_instance().get_kpar() > 1) {
+        auto& k2d = Parallel_K2D<T>::get_instance();
+        k2d.set_para_env(pHamilt,
+                         psi.get_nk(),
+                         GlobalV::NLOCAL,
+                         GlobalV::NB2D,
+                         GlobalV::NPROC,
+                         GlobalV::MY_RANK,
+                         GlobalV::NSPIN);
         /// set psi_pool
         int ncol_bands_pool = k2d.cal_ncol_bands(GlobalV::NBANDS, k2d.P2D_pool);
-        auto psi_pool = psi::Psi<T>(psi.get_nk(), ncol_bands_pool, k2d.P2D_pool->nrow, nullptr);
+        auto psi_pool = psi::Psi<T>(psi.get_nk(),
+                                    ncol_bands_pool,
+                                    k2d.P2D_pool->nrow,
+                                    nullptr);
         /// Loop over k points for solve Hamiltonian to charge density
-        for (int ik = 0; ik < k2d.Pkpoints->nks_pool[k2d.MY_POOL]; ++ik)
-        {
+        for (int ik = 0; ik < k2d.Pkpoints->nks_pool[k2d.MY_POOL]; ++ik) {
             /// k2d.ik is needed in OperatorLCAO::get_hs_pointers()
             k2d.ik = ik;
             /// global index of k point
@@ -225,30 +205,40 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
             /// solve eigenvector and eigenvalue for H(k)
             this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
         }
-        for (int ik = 0; ik < psi.get_nk(); ++ik)
-        {
+        for (int ik = 0; ik < psi.get_nk(); ++ik) {
             /// bcast ekb
-            int source = k2d.Pkpoints->get_startpro_pool(k2d.Pkpoints->whichpool[ik]);
-            MPI_Bcast(&(pes->ekb(ik, 0)), GlobalV::NBANDS, MPI_DOUBLE, source, MPI_COMM_WORLD);
+            int source
+                = k2d.Pkpoints->get_startpro_pool(k2d.Pkpoints->whichpool[ik]);
+            MPI_Bcast(&(pes->ekb(ik, 0)),
+                      GlobalV::NBANDS,
+                      MPI_DOUBLE,
+                      source,
+                      MPI_COMM_WORLD);
             /// bcast psi
             int desc_pool[9];
             std::copy(k2d.P2D_pool->desc, k2d.P2D_pool->desc + 9, desc_pool);
-            if (k2d.MY_POOL != k2d.Pkpoints->whichpool[ik])
-            {
+            if (k2d.MY_POOL != k2d.Pkpoints->whichpool[ik]) {
                 desc_pool[1] = -1;
             }
-            psi_pool.fix_k(ik); psi.fix_k(ik);
-            Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NBANDS, psi_pool.get_pointer(), 1, 1, desc_pool,
-                    psi.get_pointer(), 1, 1, k2d.P2D_global->desc, k2d.P2D_global->blacs_ctxt);
+            psi_pool.fix_k(ik);
+            psi.fix_k(ik);
+            Cpxgemr2d(GlobalV::NLOCAL,
+                      GlobalV::NBANDS,
+                      psi_pool.get_pointer(),
+                      1,
+                      1,
+                      desc_pool,
+                      psi.get_pointer(),
+                      1,
+                      1,
+                      k2d.P2D_global->desc,
+                      k2d.P2D_global->blacs_ctxt);
         }
         k2d.unset_para_env();
         k2d.set_initialized(false);
-    }
-    else
-    {
+    } else {
         /// Loop over k points for solve Hamiltonian to charge density
-        for (int ik = 0; ik < psi.get_nk(); ++ik)
-        {
+        for (int ik = 0; ik < psi.get_nk(); ++ik) {
             /// update H(k) for each k point
             pHamilt->updateHk(ik);
 
@@ -259,22 +249,20 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         }
     }
 
-    if (this->method == "cg_in_lcao")
-    {
+    if (this->method == "cg_in_lcao") {
         this->is_first_scf = false;
     }
 
-    if (this->method != "genelpa" && this->method != "scalapack_gvx" && this->method != "lapack"
-        && this->method != "cusolver" && this->method != "cusolvermp" && this->method != "cg_in_lcao"
-        && this->method != "pexsi")
-    {
+    if (this->method != "genelpa" && this->method != "scalapack_gvx"
+        && this->method != "lapack" && this->method != "cusolver"
+        && this->method != "cusolvermp" && this->method != "cg_in_lcao"
+        && this->method != "pexsi") {
         delete this->pdiagh;
         this->pdiagh = nullptr;
     }
 
     // used in nscf calculation
-    if (skip_charge)
-    {
+    if (skip_charge) {
         ModuleBase::timer::tick("HSolverLCAO", "solve");
         return;
     }
@@ -282,17 +270,16 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
     // calculate charge by psi
     // called in scf calculation
 #ifdef __PEXSI
-    if (this->method == "pexsi")
-    {
+    if (this->method == "pexsi") {
         DiagoPexsi<T>* tem = dynamic_cast<DiagoPexsi<T>*>(this->pdiagh);
         if (tem == nullptr)
             ModuleBase::WARNING_QUIT("HSolverLCAO", "pexsi need debug!");
-        elecstate::ElecStateLCAO<T>* _pes = dynamic_cast<elecstate::ElecStateLCAO<T>*>(pes);
+        elecstate::ElecStateLCAO<T>* _pes
+            = dynamic_cast<elecstate::ElecStateLCAO<T>*>(pes);
         pes->f_en.eband = tem->totalFreeEnergy;
         // maybe eferm could be dealt with in the future
         _pes->dmToRho(tem->DM, tem->EDM);
-    }
-    else
+    } else
 #endif
     {
         pes->psiToRho(psi);
@@ -305,37 +292,35 @@ void HSolverLCAO<T, Device>::solve(hamilt::Hamilt<T>* pHamilt,
                                    psi::Psi<T>& psi,
                                    elecstate::ElecState* pes,
                                    const std::string method_in,
-                                   const bool skip_charge)
-{
+                                   const bool skip_charge) {
     this->solveTemplate(pHamilt, psi, pes, this->method, skip_charge);
 }
 
 template <typename T, typename Device>
-void HSolverLCAO<T, Device>::hamiltSolvePsiK(hamilt::Hamilt<T>* hm, psi::Psi<T>& psi, double* eigenvalue)
-{
+void HSolverLCAO<T, Device>::hamiltSolvePsiK(hamilt::Hamilt<T>* hm,
+                                             psi::Psi<T>& psi,
+                                             double* eigenvalue) {
     ModuleBase::TITLE("HSolverLCAO", "hamiltSolvePsiK");
     ModuleBase::timer::tick("HSolverLCAO", "hamiltSolvePsiK");
 
-    if (this->method != "cg_in_lcao")
-    {
+    if (this->method != "cg_in_lcao") {
         this->pdiagh->diag(hm, psi, eigenvalue);
-    }
-    else
-    {
+    } else {
 
-        using ct_Device = typename ct::PsiToContainer<base_device::DEVICE_CPU>::type;
+        using ct_Device =
+            typename ct::PsiToContainer<base_device::DEVICE_CPU>::type;
         auto cg = reinterpret_cast<DiagoCG<T>*>(this->pdiagh);
 
         hamilt::MatrixBlock<T> h_mat, s_mat;
         hm->matrix(h_mat, s_mat);
 
         // set h_mat & s_mat
-        for (int i = 0; i < h_mat.row; i++)
-        {
-            for (int j = i; j < h_mat.col; j++)
-            {
-                h_mat.p[h_mat.row * j + i] = hsolver::my_conj(h_mat.p[h_mat.row * i + j]);
-                s_mat.p[s_mat.row * j + i] = hsolver::my_conj(s_mat.p[s_mat.row * i + j]);
+        for (int i = 0; i < h_mat.row; i++) {
+            for (int j = i; j < h_mat.col; j++) {
+                h_mat.p[h_mat.row * j + i]
+                    = hsolver::my_conj(h_mat.p[h_mat.row * i + j]);
+                s_mat.p[s_mat.row * j + i]
+                    = hsolver::my_conj(s_mat.p[s_mat.row * i + j]);
             }
         }
 
@@ -343,12 +328,14 @@ void HSolverLCAO<T, Device>::hamiltSolvePsiK(hamilt::Hamilt<T>* hm, psi::Psi<T>&
         one_ = new T(static_cast<T>(1.0));
         zero_ = new T(static_cast<T>(0.0));
 
-        auto hpsi_func = [h_mat, one_, zero_](const ct::Tensor& psi_in, ct::Tensor& hpsi_out) {
+        auto hpsi_func = [h_mat, one_, zero_](const ct::Tensor& psi_in,
+                                              ct::Tensor& hpsi_out) {
             ModuleBase::timer::tick("DiagoCG_New", "hpsi_func");
             // psi_in should be a 2D tensor:
             // psi_in.shape() = [nbands, nbasis]
             const auto ndim = psi_in.shape().ndim();
-            REQUIRES_OK(ndim <= 2, "dims of psi_in should be less than or equal to 2");
+            REQUIRES_OK(ndim <= 2,
+                        "dims of psi_in should be less than or equal to 2");
 
             Device* ctx = {};
 
@@ -368,12 +355,14 @@ void HSolverLCAO<T, Device>::hamiltSolvePsiK(hamilt::Hamilt<T>* hm, psi::Psi<T>&
             ModuleBase::timer::tick("DiagoCG_New", "hpsi_func");
         };
 
-        auto spsi_func = [s_mat, one_, zero_](const ct::Tensor& psi_in, ct::Tensor& spsi_out) {
+        auto spsi_func = [s_mat, one_, zero_](const ct::Tensor& psi_in,
+                                              ct::Tensor& spsi_out) {
             ModuleBase::timer::tick("DiagoCG_New", "spsi_func");
             // psi_in should be a 2D tensor:
             // psi_in.shape() = [nbands, nbasis]
             const auto ndim = psi_in.shape().ndim();
-            REQUIRES_OK(ndim <= 2, "dims of psi_in should be less than or equal to 2");
+            REQUIRES_OK(ndim <= 2,
+                        "dims of psi_in should be less than or equal to 2");
 
             Device* ctx = {};
 
@@ -393,39 +382,44 @@ void HSolverLCAO<T, Device>::hamiltSolvePsiK(hamilt::Hamilt<T>* hm, psi::Psi<T>&
             ModuleBase::timer::tick("DiagoCG_New", "spsi_func");
         };
 
-        if (this->is_first_scf)
-        {
-            for (size_t i = 0; i < psi.get_nbands(); i++)
-            {
-                for (size_t j = 0; j < psi.get_nbasis(); j++)
-                {
+        if (this->is_first_scf) {
+            for (size_t i = 0; i < psi.get_nbands(); i++) {
+                for (size_t j = 0; j < psi.get_nbasis(); j++) {
                     psi(i, j) = *zero_;
                 }
                 psi(i, i) = *one_;
             }
         }
 
-        auto psi_tensor = ct::TensorMap(psi.get_pointer(),
-                                        ct::DataTypeToEnum<T>::value,
-                                        ct::DeviceTypeToEnum<ct_Device>::value,
-                                        ct::TensorShape({psi.get_nbands(), psi.get_nbasis()}))
-                              .slice({0, 0}, {psi.get_nbands(), psi.get_current_nbas()});
+        auto psi_tensor
+            = ct::TensorMap(
+                  psi.get_pointer(),
+                  ct::DataTypeToEnum<T>::value,
+                  ct::DeviceTypeToEnum<ct_Device>::value,
+                  ct::TensorShape({psi.get_nbands(), psi.get_nbasis()}))
+                  .slice({0, 0}, {psi.get_nbands(), psi.get_current_nbas()});
 
-        auto eigen_tensor = ct::TensorMap(eigenvalue,
-                                          ct::DataTypeToEnum<Real>::value,
-                                          ct::DeviceTypeToEnum<ct::DEVICE_CPU>::value,
-                                          ct::TensorShape({psi.get_nbands()}));
+        auto eigen_tensor
+            = ct::TensorMap(eigenvalue,
+                            ct::DataTypeToEnum<Real>::value,
+                            ct::DeviceTypeToEnum<ct::DEVICE_CPU>::value,
+                            ct::TensorShape({psi.get_nbands()}));
 
-        auto prec_tensor = ct::TensorMap(this->precondition_lcao.data(),
-                                         ct::DataTypeToEnum<Real>::value,
-                                         ct::DeviceTypeToEnum<ct::DEVICE_CPU>::value,
-                                         ct::TensorShape({static_cast<int>(this->precondition_lcao.size())}))
-                               .slice({0}, {psi.get_current_nbas()});
+        auto prec_tensor
+            = ct::TensorMap(this->precondition_lcao.data(),
+                            ct::DataTypeToEnum<Real>::value,
+                            ct::DeviceTypeToEnum<ct::DEVICE_CPU>::value,
+                            ct::TensorShape({static_cast<int>(
+                                this->precondition_lcao.size())}))
+                  .slice({0}, {psi.get_current_nbas()});
 
         cg->diag(hpsi_func, spsi_func, psi_tensor, eigen_tensor, prec_tensor);
 
         // TODO: Double check tensormap's potential problem
-        ct::TensorMap(psi.get_pointer(), psi_tensor, {psi.get_nbands(), psi.get_nbasis()}).sync(psi_tensor);
+        ct::TensorMap(psi.get_pointer(),
+                      psi_tensor,
+                      {psi.get_nbands(), psi.get_nbasis()})
+            .sync(psi_tensor);
     }
 
     ModuleBase::timer::tick("HSolverLCAO", "hamiltSolvePsiK");

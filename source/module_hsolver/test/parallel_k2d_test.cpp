@@ -1,9 +1,10 @@
 #ifdef __MPI
-#include "module_base/parallel_global.h"
 #include "module_hsolver/parallel_k2d.h"
-#include "gtest/gtest.h"
-#include "gmock/gmock.h"
 
+#include "module_base/parallel_global.h"
+
+#include "gmock/gmock.h"
+#include "gtest/gtest.h"
 #include <mpi.h>
 /************************************************
  *  unit test of class Parallel_K2D
@@ -13,23 +14,15 @@
  * Test fixture for class Parallel_K2D
  */
 
-class MPIContext
-{
+class MPIContext {
   public:
-    MPIContext()
-    {
+    MPIContext() {
         MPI_Comm_rank(MPI_COMM_WORLD, &_rank);
         MPI_Comm_size(MPI_COMM_WORLD, &_size);
     }
 
-    int GetRank() const
-    {
-        return _rank;
-    }
-    int GetSize() const
-    {
-        return _size;
-    }
+    int GetRank() const { return _rank; }
+    int GetSize() const { return _size; }
 
     int KPAR;
     int NPROC_IN_POOL;
@@ -41,41 +34,33 @@ class MPIContext
     int _size;
 };
 
-class ParaPrepare
-{
+class ParaPrepare {
   public:
-    ParaPrepare(int KPAR_in, int nkstot_in) : KPAR_(KPAR_in), nkstot_(nkstot_in)
-    {
-    }
+    ParaPrepare(int KPAR_in, int nkstot_in)
+        : KPAR_(KPAR_in), nkstot_(nkstot_in) {}
     int KPAR_;
     int nkstot_;
 };
 
-class ParallelK2DTest : public ::testing::TestWithParam<ParaPrepare>
-{
-protected:
-    Parallel_K2D<double> &k2d = Parallel_K2D<double>::get_instance();
+class ParallelK2DTest : public ::testing::TestWithParam<ParaPrepare> {
+  protected:
+    Parallel_K2D<double>& k2d = Parallel_K2D<double>::get_instance();
     MPIContext mpi;
     int NPROC;
     int MY_RANK;
-    void SetUp() override
-    {
+    void SetUp() override {
         NPROC = mpi.GetSize();
         MY_RANK = mpi.GetRank();
     }
-    void TearDown() override
-    {
-    }
+    void TearDown() override {}
 };
 
-TEST_P(ParallelK2DTest, DividePools)
-{
+TEST_P(ParallelK2DTest, DividePools) {
     ParaPrepare pp = GetParam();
     mpi.KPAR = pp.KPAR_;
     k2d.Pkpoints = new Parallel_Kpoints;
     k2d.P2D_pool = new Parallel_2D;
-    if (mpi.KPAR > NPROC)
-    {
+    if (mpi.KPAR > NPROC) {
         std::string output;
         testing::internal::CaptureStdout();
         EXPECT_EXIT(Parallel_Global::divide_mpi_groups(this->NPROC,
@@ -87,30 +72,41 @@ TEST_P(ParallelK2DTest, DividePools)
                     testing::ExitedWithCode(1),
                     "");
         output = testing::internal::GetCapturedStdout();
-        EXPECT_THAT(output, testing::HasSubstr("must be greater than the number of groups"));
-    }
-    else
-    {
+        EXPECT_THAT(
+            output,
+            testing::HasSubstr("must be greater than the number of groups"));
+    } else {
         Parallel_Global::divide_mpi_groups(this->NPROC,
                                            mpi.KPAR,
                                            this->MY_RANK,
                                            mpi.NPROC_IN_POOL,
                                            mpi.MY_POOL,
                                            mpi.RANK_IN_POOL);
-        MPI_Comm_split(MPI_COMM_WORLD, mpi.MY_POOL, mpi.RANK_IN_POOL, &POOL_WORLD);
-        k2d.Pkpoints->kinfo(pp.nkstot_, mpi.KPAR, mpi.MY_POOL, mpi.RANK_IN_POOL, this->NPROC, 1);
+        MPI_Comm_split(MPI_COMM_WORLD,
+                       mpi.MY_POOL,
+                       mpi.RANK_IN_POOL,
+                       &POOL_WORLD);
+        k2d.Pkpoints->kinfo(pp.nkstot_,
+                            mpi.KPAR,
+                            mpi.MY_POOL,
+                            mpi.RANK_IN_POOL,
+                            this->NPROC,
+                            1);
         /*
         for (int ik = 0; ik < pp.nkstot_; ik++)
         {
-            std::cout << "whichpool[" << ik << "] = " << k2d.Pkpoints->whichpool[ik] << std::endl;
+            std::cout << "whichpool[" << ik << "] = " <<
+        k2d.Pkpoints->whichpool[ik] << std::endl;
         }
         */
         /*
         for (int ipool = 0; ipool < mpi.KPAR; ipool++)
         {
-            std::cout << "nks_pool[" << ipool << "] = " << k2d.Pkpoints->nks_pool[ipool] << std::endl;
-            std::cout << "startk_pool[" << ipool << "] = " << k2d.Pkpoints->startk_pool[ipool] << std::endl;
-            std::cout << "startpro_pool[" << ipool << "] = " << k2d.Pkpoints->get_startpro_pool(ipool) << std::endl;
+            std::cout << "nks_pool[" << ipool << "] = " <<
+        k2d.Pkpoints->nks_pool[ipool] << std::endl; std::cout << "startk_pool["
+        << ipool << "] = " << k2d.Pkpoints->startk_pool[ipool] << std::endl;
+            std::cout << "startpro_pool[" << ipool << "] = " <<
+        k2d.Pkpoints->get_startpro_pool(ipool) << std::endl;
         }
         */
         k2d.P2D_pool->init(10, 10, 1, POOL_WORLD, 0);
@@ -120,8 +116,10 @@ TEST_P(ParallelK2DTest, DividePools)
         EXPECT_EQ(k2d.P2D_pool->get_row_size(), 5);
         EXPECT_EQ(k2d.P2D_pool->get_col_size(), 5);
         int ncol_bands = k2d.cal_ncol_bands(7, k2d.P2D_pool);
-        if (this->MY_RANK%2 == 0) EXPECT_EQ(ncol_bands, 4);
-        if (this->MY_RANK%2 == 1) EXPECT_EQ(ncol_bands, 3);
+        if (this->MY_RANK % 2 == 0)
+            EXPECT_EQ(ncol_bands, 4);
+        if (this->MY_RANK % 2 == 1)
+            EXPECT_EQ(ncol_bands, 3);
         k2d.set_kpar(10);
         EXPECT_EQ(k2d.get_kpar(), 10);
         k2d.set_initialized(true);
@@ -129,9 +127,7 @@ TEST_P(ParallelK2DTest, DividePools)
     }
     delete k2d.Pkpoints;
     delete k2d.P2D_pool;
-
 }
-
 
 INSTANTIATE_TEST_SUITE_P(TESTPK,
                          ParallelK2DTest,
@@ -139,8 +135,7 @@ INSTANTIATE_TEST_SUITE_P(TESTPK,
                              // KPAR, nkstot
                              ParaPrepare(2, 16)));
 
-int main(int argc, char** argv)
-{
+int main(int argc, char** argv) {
     MPI_Init(&argc, &argv);
     testing::InitGoogleTest(&argc, argv);
     int result = RUN_ALL_TESTS();

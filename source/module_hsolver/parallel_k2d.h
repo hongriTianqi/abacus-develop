@@ -1,8 +1,8 @@
 #ifndef PARALLEL_K2D_H
 #define PARALLEL_K2D_H
 
-#include "module_cell/parallel_kpoints.h"
 #include "module_basis/module_ao/parallel_2d.h"
+#include "module_cell/parallel_kpoints.h"
 #include "module_hamilt_general/matrixblock.h"
 #ifdef __MPI
 #include "mpi.h"
@@ -15,14 +15,12 @@
  */
 
 template <typename TK>
-class Parallel_K2D
-{
-public:
+class Parallel_K2D {
+  public:
     /**
      * Define Parallel_K2D as a singleton class
      */
-    static Parallel_K2D& get_instance()
-    {
+    static Parallel_K2D& get_instance() {
         static Parallel_K2D instance;
         return instance;
     }
@@ -55,7 +53,7 @@ public:
     MPI_Comm POOL_WORLD_K2D;
 #endif
 
-public:
+  public:
     /**
      * Public member functions
      */
@@ -63,18 +61,18 @@ public:
     /// including the glabal and pool 2D parallel distribution
     /// it also distributes the Hk and Sk matrices to hk_pool and sk_pool
     void set_para_env(hamilt::Hamilt<TK>* pHamilt,
-                        int nks,
-                        const int& nw,
-                        const int& nb2d,
-                        const int& nproc,
-                        const int& my_rank,
-                        const int& nspin);
+                      int nks,
+                      const int& nw,
+                      const int& nb2d,
+                      const int& nproc,
+                      const int& my_rank,
+                      const int& nspin);
 
-    /// this function calculates the number of columns in the 2D parallel distribution
-    /// given the number of bands and the 2D parallel distribution
+    /// this function calculates the number of columns in the 2D parallel
+    /// distribution given the number of bands and the 2D parallel distribution
     /// it is used in calculating the wavefunction size in poll world
     int cal_ncol_bands(int nbands, Parallel_2D* p2d);
-    
+
     /// this function unsets the parallel environment for k-points parallelism
     /// including the glabal and pool 2D parallel distribution
     void unset_para_env();
@@ -82,25 +80,21 @@ public:
     void set_kpar(int kpar);
     /// get the number of k-points
     int get_kpar() { return this->kpar_; }
-     /// initialize the Parallel_K2D class
+    /// initialize the Parallel_K2D class
     void set_initialized(bool initialized) { this->initialized_ = initialized; }
     /// check if the Parallel_K2D class is initialized
     bool get_initialized() { return this->initialized_; }
 
-private:
+  private:
     /**
      * Private member variables
      */
-    int kpar_   = 0;
+    int kpar_ = 0;
     bool initialized_ = false;
     /// private constructor
-    Parallel_K2D()
-    {
-    }
+    Parallel_K2D() {}
     /// private destructor
-    ~Parallel_K2D()
-    {
-    }
+    ~Parallel_K2D() {}
 };
 
 #endif
