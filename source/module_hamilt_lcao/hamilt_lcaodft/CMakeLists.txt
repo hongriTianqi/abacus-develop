@@ -40,6 +40,7 @@ if(ENABLE_LCAO)
 		LCAO_nl_beta.cpp
         LCAO_set_zero.cpp
 		record_adj.cpp
+        center2_orb.cpp
         center2_orb-orb11.cpp
         center2_orb-orb21.cpp
         center2_orb-orb22.cpp
@@ -47,7 +48,6 @@ if(ENABLE_LCAO)
         DM_gamma_2d_to_grid.cpp
         DM_k.cpp
         local_orbital_charge.cpp
-        local_orbital_wfc.cpp
         dm_2d.cpp
         wavefunc_in_pw.cpp
     )

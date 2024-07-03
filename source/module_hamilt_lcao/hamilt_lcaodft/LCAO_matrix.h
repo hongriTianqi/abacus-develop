@@ -6,6 +6,7 @@
 #include "module_base/global_variable.h"
 #include "module_base/vector3.h"
 #include "module_basis/module_ao/parallel_orbitals.h"
+#include "module_hamilt_lcao/hamilt_lcaodft/LCAO_HS_arrays.hpp"
 
 // add by jingan for map<> in 2021-12-2, will be deleted in the future
 #include "module_base/abfs-vector3_order.h"
@@ -81,19 +82,6 @@ class LCAO_Matrix
     std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, double>>> SR_sparse;
     std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, double>>> TR_sparse;
 
-    std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, double>>> dHRx_sparse[2];
-    std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, double>>> dHRy_sparse[2];
-    std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, double>>> dHRz_sparse[2];
-
-    // For nspin = 4
-    std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, std::complex<double>>>> HR_soc_sparse;
-    std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, std::complex<double>>>> SR_soc_sparse;
-    std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, std::complex<double>>>> TR_soc_sparse;
-
-    std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, std::complex<double>>>> dHRx_soc_sparse;
-    std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, std::complex<double>>>> dHRy_soc_sparse;
-    std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, std::complex<double>>>> dHRz_soc_sparse;
-
     // Record all R direct coordinate information, even if HR or SR is a zero matrix
     std::set<Abfs::Vector3_Order<int>> all_R_coor;
 
@@ -105,12 +93,6 @@ class LCAO_Matrix
     static void set_mat2d(const int& global_ir, const int& global_ic, const T& v, const Parallel_Orbitals& pv, T* mat);
 
     void set_HSgamma(const int& iw1_all, const int& iw2_all, const double& v, double* HSloc);
-
-    void set_HSk(const int& iw1_all,
-                 const int& iw2_all,
-                 const std::complex<double>& v,
-                 const char& dtype,
-                 const int spin = 0);
 
     void set_HR_tr(const int& Rx,
                    const int& Ry,
@@ -137,11 +119,9 @@ class LCAO_Matrix
     void output_HSk(const char& mtype, std::string& fn);
 
     // jingan add 2021-6-4, modify 2021-12-2
-    void destroy_HS_R_sparse(void);
+    void destroy_HS_R_sparse(LCAO_HS_Arrays& HS_Arrays);
 
     void destroy_T_R_sparse(void);
-
-    void destroy_dH_R_sparse(void);
 };
 
 #include "LCAO_matrix.hpp"

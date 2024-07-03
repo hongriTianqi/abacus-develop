@@ -5,6 +5,7 @@
 #include "grid_technique.h"
 #include "module_basis/module_ao/ORB_atomic_lm.h"
 #include "module_elecstate/module_charge/charge.h"
+#include "module_hamilt_lcao/hamilt_lcaodft/LCAO_HS_arrays.hpp"
 #include "module_hamilt_lcao/hamilt_lcaodft/LCAO_matrix.h"
 
 // add by jingan for map<> in 2021-12-2, will be deleted in the future
@@ -61,17 +62,6 @@ class Gint_k : public Gint
     // destroy the temporary <phi_0 | V | dphi_R> matrix element.
     void destroy_pvdpR();
 
-    // folding the < phi_0 | V | phi_R> matrix to
-    // <phi_0i | V | phi_0j>
-    // V is (Vl + Vh + Vxc) if no Vna is used,
-    // and is (Vna + delta_Vh + Vxc) if Vna is used.
-    void folding_vl_k(const int& ik,
-                      LCAO_Matrix* LM,
-                      Parallel_Orbitals* pv,
-                      const std::vector<ModuleBase::Vector3<double>>& kvec_d,
-                      const UnitCell& ucell,
-                      Grid_Driver& gd);
-
     /**
      * @brief transfer pvpR to this->hRGint
      * then pass this->hRGint to Veff<OperatorLCAO>::hR
@@ -102,20 +92,6 @@ class Gint_k : public Gint
         LCAO_Matrix* LM,
         Parallel_Orbitals* pv);
 
-    void distribute_pvpR_soc_sparseMatrix(
-        const double& sparse_threshold,
-        const std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, std::complex<double>>>>&
-            pvpR_soc_sparseMatrix,
-        LCAO_Matrix* LM,
-        Parallel_Orbitals* pv);
-
-    void cal_vlocal_R_sparseMatrix(const int& current_spin,
-                                   const double& sparse_threshold,
-                                   LCAO_Matrix* LM,
-                                   Parallel_Orbitals* pv,
-                                   UnitCell& ucell,
-                                   Grid_Driver& gdriver);
-
     //------------------------------------------------------
     // in gint_k_sparse1.cpp
     //------------------------------------------------------
@@ -126,6 +102,7 @@ class Gint_k : public Gint
         const double& sparse_threshold,
         const std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, double>>>& pvdpR_sparseMatrix,
         LCAO_Matrix* LM,
+        LCAO_HS_Arrays& HS_Arrays,
         Parallel_Orbitals* pv);
 
     void distribute_pvdpR_soc_sparseMatrix(
@@ -134,11 +111,13 @@ class Gint_k : public Gint
         const std::map<Abfs::Vector3_Order<int>, std::map<size_t, std::map<size_t, std::complex<double>>>>&
             pvdpR_soc_sparseMatrix,
         LCAO_Matrix* LM,
+        LCAO_HS_Arrays& HS_Arrays,
         Parallel_Orbitals* pv);
 
     void cal_dvlocal_R_sparseMatrix(const int& current_spin,
                                     const double& sparse_threshold,
                                     LCAO_Matrix* LM,
+                                    LCAO_HS_Arrays& HS_Arrays,
                                     Parallel_Orbitals* pv,
                                     UnitCell& ucell,
                                     Grid_Driver& gdriver);
