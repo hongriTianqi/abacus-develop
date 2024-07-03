@@ -241,7 +241,6 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
             this->hamiltSolvePsiK(pHamilt, psi_pool, ekb[ik_global].data());
             //this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
         }
-
         for (int ik = 0; ik < psi.get_nk(); ++ik)
         {
             int whichpool = k2d.Pkpoints->whichpool[ik];
@@ -251,44 +250,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
             {
                 pes->ekb(ik, ib) = ekb[ik][ib];
             }
-            /* check ekb
-            for (int irank = 0; irank < GlobalV::NPROC; irank++)
-            {
-                std::cout << " MY_RANK = " << GlobalV::MY_RANK << " ik = " << ik << " ";
-                if (GlobalV::MY_RANK == irank)
-                {
-                    for (int ib = 0; ib < GlobalV::NBANDS; ++ib)
-                    {
-                        std::cout << "ekb( " << ik << ", " << ib << " ) = " << pes->ekb(ik,ib) << std::endl;
-                    }
-                    std::cout << std::endl;
-                    std::cout << std::endl;
-                }
-                usleep(10000);
-            }
-            */
             psi_pool.fix_k(ik);
-            /*
-            for (int irank = 0; irank < GlobalV::NPROC; irank++)
-            {
-                if (GlobalV::MY_RANK == irank)
-                {
-                    std::cout << " psi_pool MY_RANK = " << GlobalV::MY_RANK << " ik = " << ik
-                    << " nbands = " << psi_pool.get_nbands()
-                    << " nbasis = " << psi_pool.get_nbasis() << " ";
-                    for (int ib = 0; ib < psi_pool.get_nbands(); ib++)
-                    {
-                        for (int i = 0; i < psi_pool.get_nbasis(); i++)
-                        {
-                            std::cout << psi_pool(ib, i) << " ";
-                        }
-                    }
-                    std::cout << std::endl;
-                    std::cout << std::endl;
-                }
-                usleep(10000);
-            }
-            */
             psi.fix_k(ik);
             int desc_pool[9];
             std::copy(k2d.P2D_local->desc, k2d.P2D_local->desc + 9, desc_pool);
@@ -298,35 +260,9 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
             }
             Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NBANDS, psi_pool.get_pointer(), 1, 1, desc_pool,
                     psi.get_pointer(), 1, 1, k2d.P2D_global->desc, k2d.P2D_global->blacs_ctxt);
-            /*
-            for (int irank = 0; irank < GlobalV::NPROC; irank++)
-            {
-                if (GlobalV::MY_RANK == irank)
-                {
-                    std::cout << " psi MY_RANK = " << GlobalV::MY_RANK << " ik_global = " << ik
-                    << " nbands = " << psi.get_nbands()
-                    << " nbasis = " << psi.get_nbasis() << " ";
-                    //std::cout << "ik = " << ik << " MY_RANK = " << GlobalV::MY_RANK << " MY_POOL " << k2d.MY_POOL << " desc_pool[ik][1] = " << desc_pool[1] << std::endl;
-                    for (int ib = 0; ib < psi.get_nbands(); ib++)
-                    {
-                        for (int i = 0; i < psi.get_nbasis(); i++)
-                        {
-                            std::cout << psi(ib, i) << " ";
-                        }
-                    }
-                    std::cout << std::endl;
-                    std::cout << std::endl;
-                }
-                usleep(10000);
-            }
-            */
-        //
         }
         k2d.unset_para_env();
         k2d.set_initialized(false);
-        //std::cout << __FILE__ << " " << __LINE__ << std::endl;
-        //exit(0);
-        //exit(0);
     }
     else
     {
@@ -340,41 +276,6 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
 
             // solve eigenvector and eigenvalue for H(k)
             this->hamiltSolvePsiK(pHamilt, psi, &(pes->ekb(ik, 0)));
-            /* check ekb
-            for (int irank = 0; irank < GlobalV::NPROC; irank++)
-            {
-                if (GlobalV::MY_RANK == irank)
-                {
-                    std::cout << " MY_RANK = " << GlobalV::MY_RANK << " ik = " << ik << " ";
-                    for (int ib = 0; ib < GlobalV::NBANDS; ++ib)
-                    {
-                        std::cout << "ekb( " << ik << ", " << ib << " ) = " << pes->ekb(ik, ib) << std::endl;
-                    }
-                    std::cout << std::endl;
-                    std::cout << std::endl;
-                }
-                usleep(10000);
-            }
-            for (int irank = 0; irank < GlobalV::NPROC; irank++)
-            {
-                if (GlobalV::MY_RANK == irank)
-                {
-                    std::cout << " MY_RANK = " << GlobalV::MY_RANK << " ik_global = " << ik
-                    << " nbands = " << psi.get_nbands()
-                    << " nbasis = " << psi.get_nbasis() << " ";
-                    for (int ib = 0; ib < psi.get_nbands(); ib++)
-                    {
-                        for (int i = 0; i < psi.get_nbasis(); i++)
-                        {
-                            std::cout << psi(ib, i) << " ";
-                        }
-                    }
-                    std::cout << std::endl;
-                    std::cout << std::endl;
-                }
-                usleep(10000);
-            }
-            */
         }
     }
 

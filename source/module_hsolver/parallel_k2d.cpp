@@ -13,8 +13,6 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
 {
     this->set_initialized(false);
     int kpar = this->get_kpar();
-    //std::cout << "nkstot = " << nks << std::endl;
-    //std::cout << "kpar = " << kpar << std::endl;
     Parallel_Global::divide_mpi_groups(nproc,
                                            kpar,
                                            my_rank,
@@ -26,14 +24,6 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
     this->P2D_global = new Parallel_2D;
     this->P2D_local = new Parallel_2D;
     this->Pkpoints->kinfo(nks, kpar, this->MY_POOL, this->RANK_IN_POOL, nproc, nspin);
-    /*
-    for (int ipool = 0; ipool < k2d.get_kpar(); ipool++)
-    {
-        std::cout << "nks_pool[" << ipool << "] = " << k2d.Pkpoints->nks_pool[ipool] << std::endl;
-        std::cout << "startk_pool[" << ipool << "] = " << k2d.Pkpoints->startk_pool[ipool] << std::endl;
-        std::cout << "startpro_pool[" << ipool << "] = " << k2d.Pkpoints->get_startpro_pool(ipool) << std::endl;
-    }
-    */
     this->P2D_global->init(nw, nw, nb2d, MPI_COMM_WORLD);
     this->P2D_local->init(nw, nw, nb2d, this->POOL_WORLD_K2D);
     int nks_pool = this->Pkpoints->nks_pool[this->MY_POOL];
@@ -50,22 +40,6 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
         pHamilt->updateHk(ik);
         hamilt::MatrixBlock<TK> HK_global, SK_global;
         pHamilt->matrix(HK_global, SK_global);
-        /*
-        for (int irank = 0; irank < GlobalV::NPROC; irank++)
-        {
-            if (GlobalV::MY_RANK == irank) {
-                std::cout << " MY_RANK = " << GlobalV::MY_RANK << " HK matrix for ik = " << ik << " with dim of " <<
-                    this->P2D_global->get_row_size() << " x " << this->P2D_global->get_col_size() << " ";
-                for (int i = 0; i < this->P2D_global->get_row_size(); i++) {
-                    for (int j = 0; j < this->P2D_global->get_col_size(); j++) {
-                        std::cout << HK_global.p[i + j * this->P2D_global->get_row_size()] << " ";
-                    }
-                }
-                std::cout << std::endl;
-                std::cout << std::endl;
-            }
-        }
-        */
         int desc_pool[9];
         std::copy(this->P2D_local->desc, this->P2D_local->desc + 9, desc_pool);
         if (this->MY_POOL != this->Pkpoints->whichpool[ik])
@@ -83,23 +57,6 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
             int ik_pool = ik - this->Pkpoints->startk_pool[this->MY_POOL];
             hk_local[ik_pool] = hk;
             sk_local[ik_pool] = sk;
-            /*
-            for (int irank = 0; irank < GlobalV::NPROC; irank++)
-            {
-                int ik_pool = ik - this->Pkpoints->startk_pool[this->MY_POOL];
-                if (GlobalV::MY_RANK == irank) {
-                    std::cout << " MY_RANK = " << GlobalV::MY_RANK << " HK local matrix for ik = " << ik << " ik_pool = " << ik_pool << " with dim of " <<
-                        this->P2D_local->get_row_size() << " x " << this->P2D_local->get_col_size() << " ";
-                    for (int i = 0; i < this->P2D_local->get_row_size(); i++) {
-                        for (int j = 0; j < this->P2D_local->get_col_size(); j++) {
-                            std::cout << hk_local[ik_pool][i + j * this->P2D_local->get_row_size()] << " ";
-                        }
-                    }
-                    std::cout << std::endl;
-                    std::cout << std::endl;
-                }
-            }
-            */
         }
     }
     this->set_initialized(true);
