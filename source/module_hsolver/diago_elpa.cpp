@@ -7,6 +7,7 @@
 #include "module_base/scalapack_connector.h"
 #include "module_base/timer.h"
 #include "module_base/tool_quit.h"
+#include "module_hsolver/parallel_k2d.h"
 
 typedef hamilt::MatrixBlock<double> matd;
 typedef hamilt::MatrixBlock<std::complex<double>> matcd;
@@ -93,7 +94,15 @@ void DiagoElpa<std::complex<double>>::diag(hamilt::Hamilt<std::complex<double>>*
     std::vector<double> eigen(GlobalV::NLOCAL, 0.0);
 
     bool isReal = false;
-    const MPI_Comm COMM_DIAG = setmpicomm(); // set mpi_comm needed
+    MPI_Comm COMM_DIAG = MPI_COMM_NULL;
+    if (Parallel_K2D<std::complex<double>>::get_instance().get_initialized())
+    {
+        COMM_DIAG = Parallel_K2D<std::complex<double>>::get_instance().POOL_WORLD_K2D;
+    }
+    else
+    {
+        COMM_DIAG = setmpicomm(); // set mpi_comm needed
+    }
     ELPA_Solver es((const bool)isReal, COMM_DIAG, (const int)GlobalV::NBANDS, (const int)h_mat.row,
                    (const int)h_mat.col, (const int*)h_mat.desc);
     this->DecomposedState = 0; // for k pointer, the decomposed s_mat can not be reused
@@ -120,7 +129,15 @@ void DiagoElpa<double>::diag(hamilt::Hamilt<double>* phm_in, psi::Psi<double>& p
     std::vector<double> eigen(GlobalV::NLOCAL, 0.0);
 
     bool isReal = true;
-    MPI_Comm COMM_DIAG = setmpicomm(); // set mpi needed;
+    MPI_Comm COMM_DIAG = MPI_COMM_NULL;
+    if (Parallel_K2D<double>::get_instance().get_initialized())
+    {
+        COMM_DIAG = Parallel_K2D<double>::get_instance().POOL_WORLD_K2D;
+    }
+    else
+    {
+        COMM_DIAG = setmpicomm(); // set mpi_comm needed
+    }
     // ELPA_Solver es(isReal, COMM_DIAG, GlobalV::NBANDS, h_mat.row, h_mat.col, h_mat.desc);
     ELPA_Solver es((const bool)isReal, COMM_DIAG, (const int)GlobalV::NBANDS, (const int)h_mat.row,
                    (const int)h_mat.col, (const int*)h_mat.desc);
