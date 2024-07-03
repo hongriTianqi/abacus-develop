@@ -211,8 +211,8 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         auto &k2d = Parallel_K2D<T>::get_instance();
         k2d.set_para_env(pHamilt, psi.get_nk(), GlobalV::NLOCAL, GlobalV::NB2D, GlobalV::NPROC, GlobalV::MY_RANK, GlobalV::NSPIN);
         /// set psi_pool
-        int ncol_bands_local = k2d.cal_ncol_bands(GlobalV::NBANDS, k2d.P2D_local);
-        auto psi_pool = psi::Psi<T>(psi.get_nk(), ncol_bands_local, k2d.P2D_local->nrow, nullptr);
+        int ncol_bands_pool = k2d.cal_ncol_bands(GlobalV::NBANDS, k2d.P2D_pool);
+        auto psi_pool = psi::Psi<T>(psi.get_nk(), ncol_bands_pool, k2d.P2D_pool->nrow, nullptr);
         /// Loop over k points for solve Hamiltonian to charge density
         for (int ik = 0; ik < k2d.Pkpoints->nks_pool[k2d.MY_POOL]; ++ik)
         {
@@ -232,7 +232,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
             MPI_Bcast(&(pes->ekb(ik, 0)), GlobalV::NBANDS, MPI_DOUBLE, source, MPI_COMM_WORLD);
             /// bcast psi
             int desc_pool[9];
-            std::copy(k2d.P2D_local->desc, k2d.P2D_local->desc + 9, desc_pool);
+            std::copy(k2d.P2D_pool->desc, k2d.P2D_pool->desc + 9, desc_pool);
             if (k2d.MY_POOL != k2d.Pkpoints->whichpool[ik])
             {
                 desc_pool[1] = -1;

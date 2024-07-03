@@ -36,13 +36,13 @@ public:
      */
     Parallel_Kpoints* Pkpoints = nullptr;
     Parallel_2D* P2D_global = nullptr;
-    Parallel_2D* P2D_local = nullptr;
+    Parallel_2D* P2D_pool = nullptr;
 
     /**
      * the local Hk, Sk matrices in POOL_WORLD_K2D
      */
-    std::vector<std::vector<TK>> hk_local;
-    std::vector<std::vector<TK>> sk_local;
+    std::vector<std::vector<TK>> hk_pool;
+    std::vector<std::vector<TK>> sk_pool;
     static int ik;
     /**
      * public mpi info

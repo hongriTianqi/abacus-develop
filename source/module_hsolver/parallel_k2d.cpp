@@ -22,32 +22,32 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
     MPI_Comm_split(MPI_COMM_WORLD, this->MY_POOL, this->RANK_IN_POOL,&this->POOL_WORLD_K2D);
     this->Pkpoints = new Parallel_Kpoints;
     this->P2D_global = new Parallel_2D;
-    this->P2D_local = new Parallel_2D;
+    this->P2D_pool = new Parallel_2D;
     this->Pkpoints->kinfo(nks, kpar, this->MY_POOL, this->RANK_IN_POOL, nproc, nspin);
     this->P2D_global->init(nw, nw, nb2d, MPI_COMM_WORLD);
-    this->P2D_local->init(nw, nw, nb2d, this->POOL_WORLD_K2D);
+    this->P2D_pool->init(nw, nw, nb2d, this->POOL_WORLD_K2D);
     int nks_pool = this->Pkpoints->nks_pool[this->MY_POOL];
-    hk_local.resize(nks_pool);
-    sk_local.resize(nks_pool);
+    hk_pool.resize(nks_pool);
+    sk_pool.resize(nks_pool);
     for (int ik = 0; ik < nks_pool; ik++)
     {
-        hk_local[ik].resize(this->P2D_local->get_local_size(), 0.0);
-        sk_local[ik].resize(this->P2D_local->get_local_size(), 0.0);
+        hk_pool[ik].resize(this->P2D_pool->get_local_size(), 0.0);
+        sk_pool[ik].resize(this->P2D_pool->get_local_size(), 0.0);
     }
-    /// distribute Hk and Sk to hk_local and sk_local
+    /// distribute Hk and Sk to hk_pool and sk_pool
     for (int ik = 0; ik < nks; ++ik)
     {
         pHamilt->updateHk(ik);
         hamilt::MatrixBlock<TK> HK_global, SK_global;
         pHamilt->matrix(HK_global, SK_global);
         int desc_pool[9];
-        std::copy(this->P2D_local->desc, this->P2D_local->desc + 9, desc_pool);
+        std::copy(this->P2D_pool->desc, this->P2D_pool->desc + 9, desc_pool);
         if (this->MY_POOL != this->Pkpoints->whichpool[ik])
         {
             desc_pool[1] = -1;
         }
-        std::vector<TK> hk(this->P2D_local->get_local_size(), 0.0);
-        std::vector<TK> sk(this->P2D_local->get_local_size(), 0.0);
+        std::vector<TK> hk(this->P2D_pool->get_local_size(), 0.0);
+        std::vector<TK> sk(this->P2D_pool->get_local_size(), 0.0);
         Cpxgemr2d(nw, nw, HK_global.p, 1, 1, this->P2D_global->desc,
             hk.data(), 1, 1, desc_pool, this->P2D_global->blacs_ctxt);
         Cpxgemr2d(nw, nw, SK_global.p, 1, 1, this->P2D_global->desc,
@@ -55,8 +55,8 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
         if (this->MY_POOL == this->Pkpoints->whichpool[ik])
         {
             int ik_pool = ik - this->Pkpoints->startk_pool[this->MY_POOL];
-            hk_local[ik_pool] = hk;
-            sk_local[ik_pool] = sk;
+            hk_pool[ik_pool] = hk;
+            sk_pool[ik_pool] = sk;
         }
     }
     this->set_initialized(true);
@@ -75,10 +75,10 @@ void Parallel_K2D<TK>::unset_para_env()
         delete this->P2D_global;
         this->P2D_global = nullptr;
     }
-    if (this->P2D_local != nullptr)
+    if (this->P2D_pool != nullptr)
     {
-        delete this->P2D_local;
-        this->P2D_local = nullptr;
+        delete this->P2D_pool;
+        this->P2D_pool = nullptr;
     }
     MPI_Comm_free(&this->POOL_WORLD_K2D);
 }

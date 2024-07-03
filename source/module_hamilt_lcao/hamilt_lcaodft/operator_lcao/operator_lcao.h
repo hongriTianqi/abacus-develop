@@ -59,16 +59,16 @@ class OperatorLCAO : public Operator<TK>
         auto &k2d = Parallel_K2D<TK>::get_instance();
 #ifdef __MPI
         hk_in = MatrixBlock<TK>{hmatrix_k,
-                               (size_t)k2d.P2D_local->nrow,
-                               (size_t)k2d.P2D_local->ncol,
-                               k2d.P2D_local->desc};
+                               (size_t)k2d.P2D_pool->nrow,
+                               (size_t)k2d.P2D_pool->ncol,
+                               k2d.P2D_pool->desc};
         sk_in = MatrixBlock<TK>{smatrix_k,
-                               (size_t)k2d.P2D_local->nrow,
-                               (size_t)k2d.P2D_local->ncol,
-                               k2d.P2D_local->desc};
+                               (size_t)k2d.P2D_pool->nrow,
+                               (size_t)k2d.P2D_pool->ncol,
+                               k2d.P2D_pool->desc};
 #else
-        hk_in = MatrixBlock<TK>{hmatrix_k, (size_t)k2d.P2D_local->nrow, (size_t)k2d.P2D_local->ncol, nullptr};
-        sk_in = MatrixBlock<TK>{smatrix_k, (size_t)k2d.P2D_local->nrow, (size_t)k2d.P2D_local->ncol, nullptr};
+        hk_in = MatrixBlock<TK>{hmatrix_k, (size_t)k2d.P2D_pool->nrow, (size_t)k2d.P2D_pool->ncol, nullptr};
+        sk_in = MatrixBlock<TK>{smatrix_k, (size_t)k2d.P2D_pool->nrow, (size_t)k2d.P2D_pool->ncol, nullptr};
 #endif
       }
       else

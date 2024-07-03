@@ -73,7 +73,7 @@ TEST_P(ParallelK2DTest, DividePools)
     ParaPrepare pp = GetParam();
     mpi.KPAR = pp.KPAR_;
     k2d.Pkpoints = new Parallel_Kpoints;
-    k2d.P2D_local = new Parallel_2D;
+    k2d.P2D_pool = new Parallel_2D;
     if (mpi.KPAR > NPROC)
     {
         std::string output;
@@ -113,15 +113,15 @@ TEST_P(ParallelK2DTest, DividePools)
             std::cout << "startpro_pool[" << ipool << "] = " << k2d.Pkpoints->get_startpro_pool(ipool) << std::endl;
         }
         */
-        k2d.P2D_local->init(10, 10, 1, POOL_WORLD, 0);
-        k2d.cal_ncol_bands(10, k2d.P2D_local);
+        k2d.P2D_pool->init(10, 10, 1, POOL_WORLD, 0);
+        k2d.cal_ncol_bands(10, k2d.P2D_pool);
         k2d.set_kpar(10);
         EXPECT_EQ(k2d.get_kpar(), 10);
         k2d.set_initialized(true);
         EXPECT_TRUE(k2d.get_initialized());
     }
     delete k2d.Pkpoints;
-    delete k2d.P2D_local;
+    delete k2d.P2D_pool;
 
 }
 
