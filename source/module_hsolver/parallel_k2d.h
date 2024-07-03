@@ -59,14 +59,6 @@ public:
     /**
      * Public member functions
      */
-    /// private constructor
-    Parallel_K2D()
-    {
-    }
-    /// private destructor
-    ~Parallel_K2D()
-    {
-    }
     /// set the environment for parallelism
     void set_para_env(hamilt::Hamilt<TK>* pHamilt,
                         int nks,
@@ -75,6 +67,8 @@ public:
                         const int& nproc,
                         const int& my_rank,
                         const int& nspin);
+
+    int cal_ncol_bands(int nbands, Parallel_2D* p2d);
     
     void unset_para_env();
 
@@ -93,6 +87,14 @@ private:
      */
     int kpar_   = 0;
     bool initialized_ = false;
+    /// private constructor
+    Parallel_K2D()
+    {
+    }
+    /// private destructor
+    ~Parallel_K2D()
+    {
+    }
 };
 
 #endif

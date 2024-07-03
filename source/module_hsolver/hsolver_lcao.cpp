@@ -211,7 +211,8 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         auto &k2d = Parallel_K2D<T>::get_instance();
         k2d.set_para_env(pHamilt, psi.get_nk(), GlobalV::NLOCAL, GlobalV::NB2D, GlobalV::NPROC, GlobalV::MY_RANK, GlobalV::NSPIN);
         /// set psi_pool
-        auto psi_pool = psi::Psi<T>(psi.get_nk(), psi.get_nbands(), k2d.P2D_local->nrow, nullptr);
+        int ncol_bands_local = k2d.cal_ncol_bands(GlobalV::NBANDS, k2d.P2D_local);
+        auto psi_pool = psi::Psi<T>(psi.get_nk(), ncol_bands_local, k2d.P2D_local->nrow, nullptr);
         /// Loop over k points for solve Hamiltonian to charge density
         for (int ik = 0; ik < k2d.Pkpoints->nks_pool[k2d.MY_POOL]; ++ik)
         {
