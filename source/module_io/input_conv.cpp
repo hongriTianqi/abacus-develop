@@ -346,6 +346,7 @@ void Input_Conv::Convert(void)
     {
         GlobalV::KPAR = base_device::information::get_device_kpar(INPUT.kpar);
     }
+#ifdef __LCAO
     else if (INPUT.basis_type == "lcao")
     {
         /// kpar in Parallel_K2D do diagonalization in lcao codes with k-points parallelism
@@ -354,6 +355,7 @@ void Input_Conv::Convert(void)
         /// GlobalV::KPAR still have effects on other parts of the code
         GlobalV::KPAR = 1;
     }
+#endif
     else
     {
         GlobalV::KPAR = INPUT.kpar;
