@@ -346,15 +346,19 @@ void Input_Conv::Convert(void)
     {
         GlobalV::KPAR = base_device::information::get_device_kpar(INPUT.kpar);
     }
+    else if (INPUT.basis_type == "lcao")
+    {
+        /// kpar in Parallel_K2D do diagonalization in lcao codes with k-points parallelism
+        Parallel_K2D<double>::get_instance().set_kpar(INPUT.kpar);
+        Parallel_K2D<std::complex<double>>::get_instance().set_kpar(INPUT.kpar);
+        /// GlobalV::KPAR still have effects on other parts of the code
+        GlobalV::KPAR = 1;
+    }
     else
     {
         GlobalV::KPAR = INPUT.kpar;
         GlobalV::NSTOGROUP = INPUT.bndpar;
     }
-    /// get instance of the Parallel_K2D singleton
-    Parallel_K2D<double>::get_instance().set_kpar(INPUT.kpar);
-    Parallel_K2D<std::complex<double>>::get_instance().set_kpar(INPUT.kpar);
-    GlobalV::KPAR = 1;
     GlobalV::precision_flag = INPUT.precision;
     if (GlobalV::device_flag == "cpu" and GlobalV::precision_flag == "single")
     {
