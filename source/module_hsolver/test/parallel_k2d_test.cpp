@@ -105,14 +105,20 @@ TEST_P(ParallelK2DTest, DividePools)
             std::cout << "whichpool[" << ik << "] = " << k2d.Pkpoints->whichpool[ik] << std::endl;
         }
         */
+        /*
         for (int ipool = 0; ipool < mpi.KPAR; ipool++)
         {
             std::cout << "nks_pool[" << ipool << "] = " << k2d.Pkpoints->nks_pool[ipool] << std::endl;
             std::cout << "startk_pool[" << ipool << "] = " << k2d.Pkpoints->startk_pool[ipool] << std::endl;
             std::cout << "startpro_pool[" << ipool << "] = " << k2d.Pkpoints->get_startpro_pool(ipool) << std::endl;
         }
+        */
         k2d.P2D_local->init(10, 10, 1, POOL_WORLD, 0);
-        std::cout << k2d.P2D_local->dim0 << " " << k2d.P2D_local->dim1 << std::endl;
+        k2d.cal_ncol_bands(10, k2d.P2D_local);
+        k2d.set_kpar(10);
+        EXPECT_EQ(k2d.get_kpar(), 10);
+        k2d.set_initialized(true);
+        EXPECT_TRUE(k2d.get_initialized());
     }
     delete k2d.Pkpoints;
     delete k2d.P2D_local;
