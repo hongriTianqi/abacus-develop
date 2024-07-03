@@ -84,6 +84,16 @@ void Parallel_K2D<TK>::unset_para_env()
 }
 
 template <typename TK>
+void Parallel_K2D<TK>::set_kpar(int kpar)
+{
+    if (kpar < 1)
+    {
+        ModuleBase::WARNING_QUIT("Parallel_K2D::set_kpar", "kpar must be greater than 0.");
+    }
+    this->kpar_ = kpar;
+}
+
+template <typename TK>
 int Parallel_K2D<TK>::cal_ncol_bands(int nbands, Parallel_2D* p2d)
 {
     // for psi

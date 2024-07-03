@@ -59,7 +59,9 @@ public:
     /**
      * Public member functions
      */
-    /// set the environment for parallelism
+    /// this function sets the parallel environment for k-points parallelism
+    /// including the glabal and pool 2D parallel distribution
+    /// it also distributes the Hk and Sk matrices to hk_pool and sk_pool
     void set_para_env(hamilt::Hamilt<TK>* pHamilt,
                         int nks,
                         const int& nw,
@@ -68,12 +70,16 @@ public:
                         const int& my_rank,
                         const int& nspin);
 
+    /// this function calculates the number of columns in the 2D parallel distribution
+    /// given the number of bands and the 2D parallel distribution
+    /// it is used in calculating the wavefunction size in poll world
     int cal_ncol_bands(int nbands, Parallel_2D* p2d);
     
+    /// this function unsets the parallel environment for k-points parallelism
+    /// including the glabal and pool 2D parallel distribution
     void unset_para_env();
-
     /// set the number of k-points
-    void set_kpar(int kpar) { this->kpar_ = kpar; }
+    void set_kpar(int kpar);
     /// get the number of k-points
     int get_kpar() { return this->kpar_; }
      /// initialize the Parallel_K2D class
