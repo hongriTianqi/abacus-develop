@@ -209,55 +209,34 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
     if (Parallel_K2D<double>::get_instance().get_kpar() > 1)
     {
         auto &k2d = Parallel_K2D<T>::get_instance();
-        k2d.set_para_env(pHamilt,
-                        psi.get_nk(),
-                        GlobalV::NLOCAL,
-                        GlobalV::NB2D,
-                        GlobalV::NPROC,
-                        GlobalV::MY_RANK,
-                        GlobalV::NSPIN);
+        k2d.set_para_env(pHamilt, psi.get_nk(), GlobalV::NLOCAL, GlobalV::NB2D, GlobalV::NPROC, GlobalV::MY_RANK, GlobalV::NSPIN);
         /// set psi_pool
         auto psi_pool = psi::Psi<T>(psi.get_nk(), psi.get_nbands(), k2d.P2D_local->nrow, nullptr);
-        std::vector<std::vector<double>> ekb(psi.get_nk(), std::vector<double>(GlobalV::NBANDS, 0.0));
-        for (int ik = 0; ik < psi.get_nk(); ++ik)
-        {
-            for (int ib = 0; ib < psi_pool.get_nbands(); ++ib)
-            {
-                for (int i = 0; i < psi_pool.get_nbasis(); ++i)
-                {
-                    psi_pool(ik, ib, i) = 0.0;
-                }
-            }
-        }
         /// Loop over k points for solve Hamiltonian to charge density
         for (int ik = 0; ik < k2d.Pkpoints->nks_pool[k2d.MY_POOL]; ++ik)
         {
+            /// k2d.ik is needed in OperatorLCAO::get_hs_pointers()
             k2d.ik = ik;
             /// global index of k point
             int ik_global = ik + k2d.Pkpoints->startk_pool[k2d.MY_POOL];
             /// local psi in pool
             psi_pool.fix_k(ik_global);
             /// solve eigenvector and eigenvalue for H(k)
-            this->hamiltSolvePsiK(pHamilt, psi_pool, ekb[ik_global].data());
-            //this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
+            this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
         }
         for (int ik = 0; ik < psi.get_nk(); ++ik)
         {
-            int whichpool = k2d.Pkpoints->whichpool[ik];
-            int source = k2d.Pkpoints->get_startpro_pool(whichpool);
-            MPI_Bcast(ekb[ik].data(), GlobalV::NBANDS, MPI_DOUBLE, source, MPI_COMM_WORLD);
-            for (int ib = 0; ib < GlobalV::NBANDS; ++ib)
-            {
-                pes->ekb(ik, ib) = ekb[ik][ib];
-            }
-            psi_pool.fix_k(ik);
-            psi.fix_k(ik);
+            /// bcast ekb
+            int source = k2d.Pkpoints->get_startpro_pool(k2d.Pkpoints->whichpool[ik]);
+            MPI_Bcast(&(pes->ekb(ik, 0)), GlobalV::NBANDS, MPI_DOUBLE, source, MPI_COMM_WORLD);
+            /// bcast psi
             int desc_pool[9];
             std::copy(k2d.P2D_local->desc, k2d.P2D_local->desc + 9, desc_pool);
             if (k2d.MY_POOL != k2d.Pkpoints->whichpool[ik])
             {
                 desc_pool[1] = -1;
             }
+            psi_pool.fix_k(ik); psi.fix_k(ik);
             Cpxgemr2d(GlobalV::NLOCAL, GlobalV::NBANDS, psi_pool.get_pointer(), 1, 1, desc_pool,
                     psi.get_pointer(), 1, 1, k2d.P2D_global->desc, k2d.P2D_global->blacs_ctxt);
         }

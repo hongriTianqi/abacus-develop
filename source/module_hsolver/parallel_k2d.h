@@ -19,7 +19,7 @@ class Parallel_K2D
 {
 public:
     /**
-     * Define Parallel_K2D as a signleton class
+     * Define Parallel_K2D as a singleton class
      */
     static Parallel_K2D& get_instance()
     {
@@ -39,7 +39,7 @@ public:
     Parallel_2D* P2D_local = nullptr;
 
     /**
-     * the local Hk, Sk, and dmk matrices in small Parallel_2D format
+     * the local Hk, Sk matrices in POOL_WORLD_K2D
      */
     std::vector<std::vector<TK>> hk_local;
     std::vector<std::vector<TK>> sk_local;
