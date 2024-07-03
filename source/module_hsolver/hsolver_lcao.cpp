@@ -218,6 +218,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                         GlobalV::NSPIN);
         /// set psi_pool
         auto psi_pool = psi::Psi<T>(psi.get_nk(), psi.get_nbands(), k2d.P2D_local->nrow, nullptr);
+        std::vector<std::vector<double>> ekb(psi.get_nk(), std::vector<double>(GlobalV::NBANDS, 0.0));
         for (int ik = 0; ik < psi.get_nk(); ++ik)
         {
             for (int ib = 0; ib < psi_pool.get_nbands(); ++ib)
@@ -237,7 +238,19 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
             /// local psi in pool
             psi_pool.fix_k(ik_global);
             /// solve eigenvector and eigenvalue for H(k)
-            this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
+            this->hamiltSolvePsiK(pHamilt, psi_pool, ekb[ik_global].data());
+            //this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
+        }
+
+        for (int ik = 0; ik < psi.get_nk(); ++ik)
+        {
+            int whichpool = k2d.Pkpoints->whichpool[ik];
+            int source = k2d.Pkpoints->get_startpro_pool(whichpool);
+            MPI_Bcast(ekb[ik].data(), GlobalV::NBANDS, MPI_DOUBLE, source, MPI_COMM_WORLD);
+            for (int ib = 0; ib < GlobalV::NBANDS; ++ib)
+            {
+                pes->ekb(ik, ib) = ekb[ik][ib];
+            }
             /* check ekb
             for (int irank = 0; irank < GlobalV::NPROC; irank++)
             {
@@ -246,7 +259,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                 {
                     for (int ib = 0; ib < GlobalV::NBANDS; ++ib)
                     {
-                        std::cout << "ekb( " << ik_global << ", " << ib << " ) = " << pes->ekb(ik_global, ib) << std::endl;
+                        std::cout << "ekb( " << ik << ", " << ib << " ) = " << pes->ekb(ik,ib) << std::endl;
                     }
                     std::cout << std::endl;
                     std::cout << std::endl;
@@ -254,10 +267,6 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                 usleep(10000);
             }
             */
-        }
-
-        for (int ik = 0; ik < psi.get_nk(); ++ik)
-        {
             psi_pool.fix_k(ik);
             /*
             for (int irank = 0; irank < GlobalV::NPROC; irank++)
