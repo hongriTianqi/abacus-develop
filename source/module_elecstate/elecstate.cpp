@@ -274,16 +274,6 @@ void ElecState::cal_nbands()
 
     ModuleBase::GlobalFunc::OUT(GlobalV::ofs_running, "occupied bands", occupied_bands);
 
-    // mohan add 2010-09-04
-    // std::cout << "nbands(this-> = " <<GlobalV::NBANDS <<std::endl;
-    if (GlobalV::NBANDS == occupied_bands)
-    {
-        if (Occupy::gauss())
-        {
-            ModuleBase::WARNING_QUIT("ElecState::cal_nbands", "for smearing, num. of bands > num. of occupied bands");
-        }
-    }
-
     if (GlobalV::NBANDS == 0)
     {
         if (GlobalV::NSPIN == 1)
@@ -331,6 +321,16 @@ void ElecState::cal_nbands()
                 ModuleBase::GlobalFunc::OUT(GlobalV::ofs_running, "nelec_down", this->nelec_spin[1]);
                 ModuleBase::WARNING_QUIT("ElecState::cal_nbands", "Too few spin down bands!");
             }
+        }
+    }
+
+    // mohan add 2010-09-04
+    // std::cout << "nbands(this-> = " <<GlobalV::NBANDS <<std::endl;
+    if (GlobalV::NBANDS == occupied_bands)
+    {
+        if (Occupy::gauss())
+        {
+            ModuleBase::WARNING_QUIT("ElecState::cal_nbands", "for smearing, num. of bands > num. of occupied bands");
         }
     }
 
