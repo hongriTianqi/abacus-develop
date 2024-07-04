@@ -264,8 +264,9 @@ void ElecState::cal_nbands()
     // calculate number of bands (setup.f90)
     //=======================================
     double occupied_bands = static_cast<double>(GlobalV::nelec / ModuleBase::DEGSPIN);
-    if (GlobalV::LSPINORB == 1)
+    if (GlobalV::LSPINORB == 1) {
         occupied_bands = static_cast<double>(GlobalV::nelec);
+    }
 
     if ((occupied_bands - std::floor(occupied_bands)) > 0.0)
     {
@@ -281,16 +282,18 @@ void ElecState::cal_nbands()
             const int nbands1 = static_cast<int>(occupied_bands) + 10;
             const int nbands2 = static_cast<int>(1.2 * occupied_bands) + 1;
             GlobalV::NBANDS = std::max(nbands1, nbands2);
-            if (GlobalV::BASIS_TYPE != "pw")
+            if (GlobalV::BASIS_TYPE != "pw") {
                 GlobalV::NBANDS = std::min(GlobalV::NBANDS, GlobalV::NLOCAL);
+            }
         }
         else if (GlobalV::NSPIN == 4)
         {
             const int nbands3 = GlobalV::nelec + 20;
             const int nbands4 = static_cast<int>(1.2 * GlobalV::nelec) + 1;
             GlobalV::NBANDS = std::max(nbands3, nbands4);
-            if (GlobalV::BASIS_TYPE != "pw")
+            if (GlobalV::BASIS_TYPE != "pw") {
                 GlobalV::NBANDS = std::min(GlobalV::NBANDS, GlobalV::NLOCAL);
+            }
         }
         else if (GlobalV::NSPIN == 2)
         {
@@ -298,8 +301,9 @@ void ElecState::cal_nbands()
             const int nbands3 = static_cast<int>(max_occ) + 11;
             const int nbands4 = static_cast<int>(1.2 * max_occ) + 1;
             GlobalV::NBANDS = std::max(nbands3, nbands4);
-            if (GlobalV::BASIS_TYPE != "pw")
+            if (GlobalV::BASIS_TYPE != "pw") {
                 GlobalV::NBANDS = std::min(GlobalV::NBANDS, GlobalV::NLOCAL);
+            }
         }
         ModuleBase::GlobalFunc::AUTO_SET("NBANDS", GlobalV::NBANDS);
     }
@@ -307,8 +311,9 @@ void ElecState::cal_nbands()
     // 2014-10-13
     else
     {
-        if (GlobalV::NBANDS < occupied_bands)
+        if (GlobalV::NBANDS < occupied_bands) {
             ModuleBase::WARNING_QUIT("unitcell", "Too few bands!");
+        }
         if (GlobalV::NSPIN == 2)
         {
             if (GlobalV::NBANDS < this->nelec_spin[0])
