@@ -878,7 +878,6 @@ bool UnitCell::read_atom_positions(std::ifstream &ifpos, std::ofstream &ofs_runn
     this->print_tau();
     //xiaohui modify 2015-03-15, cancel outputfile "STRU_READIN.xyz"
     //this->print_cell_xyz("STRU_READIN_ADJUST.xyz");
-    this->print_cell_cif("STRU_READIN_ADJUST.cif");
 
     return 1;
 }//end read_atom_positions

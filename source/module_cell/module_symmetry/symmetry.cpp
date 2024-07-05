@@ -717,6 +717,7 @@ void Symmetry::lattice_type(
                             ++at;
                     }
             }       
+            /*
             std::stringstream ss;
             ss << GlobalV::global_out_dir << "STRU_SIMPLE.cif";
 
@@ -742,6 +743,7 @@ void Symmetry::lattice_type(
                 }
             }
             ofs.close();
+            */
         }
         // return the optimized lattice in v1, v2, v3
         v1=q1;
@@ -1731,6 +1733,36 @@ void Symmetry::set_atom_map(const Atom* atoms)
             }
         }
     }
+}
+
+/// @brief return a map that is inequivalent atom index to its symmetry multiplicity
+std::map<int, int> Symmetry::inequivalent_atoms() const
+{
+    // do not use get_inequivalent_atom_positions() to avoid redundant calculation
+    std::map<int, int> inequivalent_atoms;
+    std::vector<bool> is_equivalent(this->nat, false);
+    // Iterate over all atoms
+    for (int ia = 0; ia < this->nat; ++ia) {
+        if (!is_equivalent[ia]) {
+            // If this atom has not been marked as equivalent to another, it's inequivalent
+            int multiplicity = 0;
+            // Now mark all atoms equivalent to this one under any symmetry operation
+            std::vector<int> equivalent_atoms;
+            for (int k = 0; k < this->nrotk; ++k) {
+                int equivalent_atom = this->isym_rotiat_[k][ia];
+                if (equivalent_atom != -1) { // Check if a mapping exists
+                    is_equivalent[equivalent_atom] = true;
+                    if (std::find(equivalent_atoms.begin(), equivalent_atoms.end(), equivalent_atom) == equivalent_atoms.end())
+                    {
+                        equivalent_atoms.push_back(equivalent_atom);
+                        multiplicity++;
+                    }
+                }
+            }
+            inequivalent_atoms[ia] = multiplicity;
+        }
+    }
+    return inequivalent_atoms;
 }
 
 void Symmetry::symmetrize_vec3_nat(double* v)const   // pengfei 2016-12-20
