@@ -193,8 +193,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
 
     if (Parallel_K2D<double>::get_instance().get_kpar() > 1) {
         auto& k2d = Parallel_K2D<T>::get_instance();
-        k2d.set_para_env(pHamilt,
-                         psi.get_nk(),
+        k2d.set_para_env(psi.get_nk(),
                          GlobalV::NLOCAL,
                          GlobalV::NB2D,
                          GlobalV::NPROC,
@@ -206,16 +205,43 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                                     ncol_bands_pool,
                                     k2d.P2D_pool->nrow,
                                     nullptr);
+        int max_nks_pool = -1;
+        for (int ipool=0; ipool < k2d.get_kpar(); ipool++) {
+            if (k2d.Pkpoints->nks_pool[ipool] > max_nks_pool) {
+                max_nks_pool = k2d.Pkpoints->nks_pool[ipool];
+            }
+        }
         /// Loop over k points for solve Hamiltonian to charge density
-        for (int ik = 0; ik < k2d.Pkpoints->nks_pool[k2d.MY_POOL]; ++ik) {
-            /// k2d.ik is needed in OperatorLCAO::get_hs_pointers()
-            k2d.ik = ik;
+        for (int ik = 0; ik < max_nks_pool; ++ik)
+        {
+            // if nks is not equal to the number of k points in the pool
+            std::vector<int> ik_kpar;
+            int ik_avail = 0;
+            for (int i = 0; i < k2d.get_kpar(); i++) {
+                if (ik + k2d.Pkpoints->startk_pool[i] < psi.get_nk()) {
+                    ik_avail++;
+                }
+            }
+            if (ik_avail == 0) {
+                ModuleBase::WARNING_QUIT("HSolverLCAO::solve",
+                                         "ik_avail is 0!");
+            } else {
+                ik_kpar.resize(ik_avail);
+                for (int i = 0; i < ik_avail; i++) {
+                    ik_kpar[i] = ik + k2d.Pkpoints->startk_pool[i];
+                }
+            }
+            k2d.distribute_hsk(pHamilt, ik_kpar, GlobalV::NLOCAL);
             /// global index of k point
             int ik_global = ik + k2d.Pkpoints->startk_pool[k2d.MY_POOL];
-            /// local psi in pool
-            psi_pool.fix_k(ik_global);
-            /// solve eigenvector and eigenvalue for H(k)
-            this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
+
+            if (ik_global < psi.get_nk())
+            {
+                /// local psi in pool
+                psi_pool.fix_k(ik_global);
+                /// solve eigenvector and eigenvalue for H(k)
+                this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
+            }
         }
         for (int ik = 0; ik < psi.get_nk(); ++ik) {
             /// bcast ekb

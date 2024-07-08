@@ -16,8 +16,7 @@ void OperatorLCAO<double, double>::get_hs_pointers() {
     ModuleBase::timer::tick("OperatorLCAO", "get_hs_pointers");
     if (Parallel_K2D<double>::get_instance().get_initialized()) {
         auto& k2d = Parallel_K2D<double>::get_instance();
-        assert(k2d.ik < k2d.hk_pool.size());
-        this->hmatrix_k = k2d.hk_pool[k2d.ik].data();
+        this->hmatrix_k = k2d.hk_pool.data();
         if ((this->new_e_iteration && ik == 0)
             || hsolver::HSolverLCAO<double>::out_mat_hs[0]) {
             if (this->smatrix_k == nullptr) {
@@ -25,8 +24,8 @@ void OperatorLCAO<double, double>::get_hs_pointers() {
                 this->allocated_smatrix = true;
             }
             const int inc = 1;
-            BlasConnector::copy(k2d.sk_pool[k2d.ik].size(),
-                                k2d.sk_pool[k2d.ik].data(),
+            BlasConnector::copy(k2d.sk_pool.size(),
+                                k2d.sk_pool.data(),
                                 inc,
                                 this->smatrix_k,
                                 inc);
@@ -60,9 +59,8 @@ void OperatorLCAO<std::complex<double>, double>::get_hs_pointers()
 {
     if (Parallel_K2D<std::complex<double>>::get_instance().get_initialized()) {
         auto& k2d = Parallel_K2D<std::complex<double>>::get_instance();
-        assert(k2d.ik < k2d.hk_pool.size());
-        this->hmatrix_k = k2d.hk_pool[k2d.ik].data();
-        this->smatrix_k = k2d.sk_pool[k2d.ik].data();
+        this->hmatrix_k = k2d.hk_pool.data();
+        this->smatrix_k = k2d.sk_pool.data();
     }
     else
     {
@@ -76,9 +74,8 @@ void OperatorLCAO<std::complex<double>, std::complex<double>>::get_hs_pointers()
 {
     if (Parallel_K2D<std::complex<double>>::get_instance().get_initialized()) {
         auto& k2d = Parallel_K2D<std::complex<double>>::get_instance();
-        assert(k2d.ik < k2d.hk_pool.size());
-        this->hmatrix_k = k2d.hk_pool[k2d.ik].data();
-        this->smatrix_k = k2d.sk_pool[k2d.ik].data();
+        this->hmatrix_k = k2d.hk_pool.data();
+        this->smatrix_k = k2d.sk_pool.data();
     } else {
         this->hmatrix_k = this->hsk->get_hk();
         this->smatrix_k = this->hsk->get_sk();

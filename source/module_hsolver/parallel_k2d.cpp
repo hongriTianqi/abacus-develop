@@ -4,14 +4,12 @@
 #include "module_base/scalapack_connector.h"
 
 template <typename TK>
-void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
-                                    int nks,
+void Parallel_K2D<TK>::set_para_env(int nks,
                                     const int& nw,
                                     const int& nb2d,
                                     const int& nproc,
                                     const int& my_rank,
                                     const int& nspin) {
-    this->set_initialized(false);
     int kpar = this->get_kpar();
     Parallel_Global::divide_mpi_groups(nproc,
                                        kpar,
@@ -30,32 +28,34 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
         ->kinfo(nks, kpar, this->MY_POOL, this->RANK_IN_POOL, nproc, nspin);
     this->P2D_global->init(nw, nw, nb2d, MPI_COMM_WORLD);
     this->P2D_pool->init(nw, nw, nb2d, this->POOL_WORLD_K2D);
-    int nks_pool = this->Pkpoints->nks_pool[this->MY_POOL];
-    hk_pool.resize(nks_pool);
-    sk_pool.resize(nks_pool);
-    for (int ik = 0; ik < nks_pool; ik++) {
-        hk_pool[ik].resize(this->P2D_pool->get_local_size(), 0.0);
-        sk_pool[ik].resize(this->P2D_pool->get_local_size(), 0.0);
-    }
-    /// distribute Hk and Sk to hk_pool and sk_pool
-    for (int ik = 0; ik < nks; ++ik) {
-        pHamilt->updateHk(ik);
+}
+
+template <typename TK>
+void Parallel_K2D<TK>::distribute_hsk(hamilt::Hamilt<TK>* pHamilt,
+                                      const std::vector<int>& ik_kpar,
+                                      const int& nw) {
+    this->set_initialized(false);
+    for (int ipool = 0; ipool < ik_kpar.size(); ++ipool)
+    {
+        pHamilt->updateHk(ik_kpar[ipool]);
         hamilt::MatrixBlock<TK> HK_global, SK_global;
         pHamilt->matrix(HK_global, SK_global);
+        if (this->MY_POOL == this->Pkpoints->whichpool[ik_kpar[ipool]]) {
+            this->hk_pool.resize(this->P2D_pool->get_local_size(), 0.0);
+            this->sk_pool.resize(this->P2D_pool->get_local_size(), 0.0);
+        }
         int desc_pool[9];
         std::copy(this->P2D_pool->desc, this->P2D_pool->desc + 9, desc_pool);
-        if (this->MY_POOL != this->Pkpoints->whichpool[ik]) {
+        if (this->MY_POOL != this->Pkpoints->whichpool[ik_kpar[ipool]]) {
             desc_pool[1] = -1;
         }
-        std::vector<TK> hk(this->P2D_pool->get_local_size(), 0.0);
-        std::vector<TK> sk(this->P2D_pool->get_local_size(), 0.0);
         Cpxgemr2d(nw,
                   nw,
                   HK_global.p,
                   1,
                   1,
                   this->P2D_global->desc,
-                  hk.data(),
+                  hk_pool.data(),
                   1,
                   1,
                   desc_pool,
@@ -66,16 +66,11 @@ void Parallel_K2D<TK>::set_para_env(hamilt::Hamilt<TK>* pHamilt,
                   1,
                   1,
                   this->P2D_global->desc,
-                  sk.data(),
+                  sk_pool.data(),
                   1,
                   1,
                   desc_pool,
                   this->P2D_global->blacs_ctxt);
-        if (this->MY_POOL == this->Pkpoints->whichpool[ik]) {
-            int ik_pool = ik - this->Pkpoints->startk_pool[this->MY_POOL];
-            hk_pool[ik_pool] = hk;
-            sk_pool[ik_pool] = sk;
-        }
     }
     this->set_initialized(true);
 }
@@ -140,9 +135,6 @@ int Parallel_K2D<TK>::cal_ncol_bands(int nbands, Parallel_2D* p2d) {
     }
     return ncol_bands;
 }
-
-template <typename TK>
-int Parallel_K2D<TK>::ik = 0;
 
 template class Parallel_K2D<double>;
 template class Parallel_K2D<std::complex<double>>;

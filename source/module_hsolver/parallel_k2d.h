@@ -39,9 +39,8 @@ class Parallel_K2D {
     /**
      * the local Hk, Sk matrices in POOL_WORLD_K2D
      */
-    std::vector<std::vector<TK>> hk_pool;
-    std::vector<std::vector<TK>> sk_pool;
-    static int ik;
+    std::vector<TK> hk_pool;
+    std::vector<TK> sk_pool;
     /**
      * public mpi info
      */
@@ -59,14 +58,17 @@ class Parallel_K2D {
      */
     /// this function sets the parallel environment for k-points parallelism
     /// including the glabal and pool 2D parallel distribution
-    /// it also distributes the Hk and Sk matrices to hk_pool and sk_pool
-    void set_para_env(hamilt::Hamilt<TK>* pHamilt,
-                      int nks,
-                      const int& nw,
-                      const int& nb2d,
-                      const int& nproc,
-                      const int& my_rank,
-                      const int& nspin);
+    void set_para_env(int nks,
+                    const int& nw,
+                    const int& nb2d,
+                    const int& nproc,
+                    const int& my_rank,
+                    const int& nspin);
+
+    /// this function distributes the Hk and Sk matrices to hk_pool and sk_pool
+    void distribute_hsk(hamilt::Hamilt<TK>* pHamilt,
+                        const std::vector<int>& ik_kpar,
+                        const int& nw);
 
     /// this function calculates the number of columns in the 2D parallel
     /// distribution given the number of bands and the 2D parallel distribution
