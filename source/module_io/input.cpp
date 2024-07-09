@@ -3518,7 +3518,7 @@ void Input::Check() {
         }
 
         if (kpar > 1) {
-            ModuleBase::WARNING_QUIT(
+            ModuleBase::WARNING(
                 "Input",
                 "kpar > 1 has not been supported for lcao calculation.");
         }

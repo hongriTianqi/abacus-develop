@@ -344,6 +344,13 @@ void Input_Conv::Convert(void)
     {
         GlobalV::KPAR = base_device::information::get_device_kpar(INPUT.kpar);
     }
+#ifdef __LCAO
+    else if (INPUT.basis_type == "lcao") {
+        /// INPUT.kpar will be used to start parak in HamiltLCAO
+        /// GlobalV::KPAR still have effects on other parts of the code
+        GlobalV::KPAR = 1;
+    }
+#endif
     else
     {
         GlobalV::KPAR = INPUT.kpar;
