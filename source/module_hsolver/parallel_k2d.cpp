@@ -101,40 +101,5 @@ void Parallel_K2D<TK>::set_kpar(int kpar) {
     this->kpar_ = kpar;
 }
 
-template <typename TK>
-int Parallel_K2D<TK>::cal_ncol_bands(int nbands, Parallel_2D* p2d) {
-    // for psi
-    int end_id = 0;
-    int block = nbands / p2d->nb;
-    if (block * p2d->nb < nbands) {
-        block++;
-    }
-    if (p2d->dim1 > block) {
-        std::cout << " cpu 2D distribution : " << p2d->dim0 << "*" << p2d->dim1
-                  << std::endl;
-        std::cout << " but, the number of bands-row-block is " << block
-                  << std::endl;
-        ModuleBase::WARNING_QUIT("Parallel_K2D::cal_ncol_bands",
-                                 "some processor has no bands-row-blocks.");
-    }
-    int col_b_bands = block / p2d->dim1;
-    if (p2d->coord[1] < block % p2d->dim1) {
-        col_b_bands++;
-    }
-    if (block % p2d->dim1 == 0) {
-        end_id = p2d->dim1 - 1;
-    } else {
-        end_id = block % p2d->dim1 - 1;
-    }
-    int ncol_bands = 0;
-    if (p2d->coord[1] == end_id) {
-        ncol_bands
-            = (col_b_bands - 1) * p2d->nb + (nbands - (block - 1) * p2d->nb);
-    } else {
-        ncol_bands = col_b_bands * p2d->nb;
-    }
-    return ncol_bands;
-}
-
 template class Parallel_K2D<double>;
 template class Parallel_K2D<std::complex<double>>;

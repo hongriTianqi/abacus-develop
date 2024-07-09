@@ -70,11 +70,6 @@ class Parallel_K2D {
                         const std::vector<int>& ik_kpar,
                         const int& nw);
 
-    /// this function calculates the number of columns in the 2D parallel
-    /// distribution given the number of bands and the 2D parallel distribution
-    /// it is used in calculating the wavefunction size in poll world
-    int cal_ncol_bands(int nbands, Parallel_2D* p2d);
-
     /// this function unsets the parallel environment for k-points parallelism
     /// including the glabal and pool 2D parallel distribution
     void unset_para_env();

@@ -200,7 +200,8 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
                          GlobalV::MY_RANK,
                          GlobalV::NSPIN);
         /// set psi_pool
-        int ncol_bands_pool = k2d.cal_ncol_bands(GlobalV::NBANDS, k2d.P2D_pool);
+        const int zero = 0;
+        int ncol_bands_pool = numroc_(&(GlobalV::NBANDS), &(GlobalV::NB2D), &(k2d.P2D_pool->coord[1]), &zero, &(k2d.P2D_pool->dim1));
         auto psi_pool = psi::Psi<T>(psi.get_nk(),
                                     ncol_bands_pool,
                                     k2d.P2D_pool->nrow,
