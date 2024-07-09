@@ -64,6 +64,7 @@ HamiltLCAO<TK, TR>::HamiltLCAO(Gint_Gamma* GG_in,
                                elecstate::Potential* pot_in,
                                const K_Vectors& kv_in,
                                const TwoCenterBundle& two_center_bundle,
+                               const int kpar_in,
                                elecstate::DensityMatrix<TK, double>* DM_in,
                                int* exx_two_level_step)
 {
@@ -381,6 +382,8 @@ HamiltLCAO<TK, TR>::HamiltLCAO(Gint_Gamma* GG_in,
         this->hR->allocate(this->hRS2.data(), 0);
         memory_fold = 2;
     }
+
+    this->kpar = kpar_in;
 
     ModuleBase::Memory::record("HamiltLCAO::hR", this->hR->get_memory_size() * memory_fold);
     ModuleBase::Memory::record("HamiltLCAO::sR", this->sR->get_memory_size());

@@ -11,6 +11,7 @@
 #include "module_hamilt_lcao/module_gint/gint_k.h"
 #include "module_hamilt_lcao/module_hcontainer/hcontainer.h"
 #include "module_hamilt_lcao/hamilt_lcaodft/hs_matrix_k.hpp"
+#include "module_cell/parallel_kpoints.h"
 namespace hamilt
 {
 
@@ -31,6 +32,7 @@ class HamiltLCAO : public Hamilt<TK>
                elecstate::Potential* pot_in,
                const K_Vectors& kv_in,
                const TwoCenterBundle& two_center_bundle,
+               const int kpar_in,
                elecstate::DensityMatrix<TK, double>* DM_in,
                int* exx_two_level_step = nullptr);
     /**
@@ -96,9 +98,14 @@ class HamiltLCAO : public Hamilt<TK>
     /// current_spin for NSPIN=2, 0: hamiltonian for spin up, 1: hamiltonian for spin down
     int current_spin = 0;
 
-    // sk and hk will be refactored to HamiltLCAO later
-    // std::vector<TK> sk;
-    // std::vector<TK> hk;
+    /// kpar for parallel calculation
+    int kpar = 1;
+    /// the pointer to Parallel_Kpoints
+    Parallel_Kpoints* Pkpoints = nullptr;
+    /// the pointer to manage 2D parallel in k pool
+    Parallel_2D* P2D_pool = nullptr;
+    /// the pointer to hsk_pool
+    HS_Matrix_K<TK>* hsk_pool = nullptr;
 };
 
 } // namespace hamilt

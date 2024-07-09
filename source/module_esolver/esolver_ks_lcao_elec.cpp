@@ -179,6 +179,7 @@ void ESolver_KS_LCAO<TK, TR>::beforesolver(const int istep) {
             this->pelec->pot,
             this->kv,
             two_center_bundle_,
+            INPUT.kpar,
 #ifdef __EXX
             DM,
             GlobalC::exx_info.info_ri.real_number ? &this->exd->two_level_step
