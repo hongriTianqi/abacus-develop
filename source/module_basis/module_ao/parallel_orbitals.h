@@ -15,6 +15,8 @@ public:
     /// must divided on dim1 because of elpa interface
     int ncol_bands;
     int nrow_bands;
+    /// nbands
+    int nbands;
     
     /// ncol_bands*nrow
     long nloc_wfc;

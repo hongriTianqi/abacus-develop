@@ -4,6 +4,7 @@
 
 #ifdef __MPI
 #include "diago_scalapack.h"
+#include "mpi.h"
 #else
 #include "diago_lapack.h"
 #endif
@@ -29,6 +30,7 @@
 #include "diago_pexsi.h"
 #include "module_elecstate/elecstate_lcao.h"
 #endif
+#include "module_base/scalapack_connector.h"
 
 namespace hsolver
 {
@@ -209,16 +211,35 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         }
     }
 
-    /// Loop over k points for solve Hamiltonian to charge density
-    for (int ik = 0; ik < psi.get_nk(); ++ik)
+    if (pHamilt->get_kpar() > 1)
     {
-        /// update H(k) for each k point
-        pHamilt->updateHk(ik);
+        this->init_psi_pool(pHamilt, psi.get_nk());
+        for (int ik = 0; ik < pHamilt->Pkpoints->get_max_nks_pool(); ++ik)
+        {
+            pHamilt->distribute_hsk(ik);
+            int ik_global = ik + pHamilt->Pkpoints->startk_pool[pHamilt->get_my_pool()];
+            if (ik_global < psi.get_nk())
+            {
+                this->psi_pool.fix_k(ik_global);
+                this->hamiltSolvePsiK(pHamilt, this->psi_pool, &(pes->ekb(ik_global, 0)));
+            }
+        }
+        this->collect_psi_pool(pHamilt, pes, psi);
+        pHamilt->set_parak_init(false);
+    }
+    else
+    {
+        /// Loop over k points for solve Hamiltonian to charge density
+        for (int ik = 0; ik < psi.get_nk(); ++ik)
+        {
+            /// update H(k) for each k point
+            pHamilt->updateHk(ik);
 
-        psi.fix_k(ik);
+            psi.fix_k(ik);
 
-        // solve eigenvector and eigenvalue for H(k)
-        this->hamiltSolvePsiK(pHamilt, psi, &(pes->ekb(ik, 0)));
+            // solve eigenvector and eigenvalue for H(k)
+            this->hamiltSolvePsiK(pHamilt, psi, &(pes->ekb(ik, 0)));
+        }
     }
 
     if (this->method == "cg_in_lcao")
@@ -391,6 +412,54 @@ void HSolverLCAO<T, Device>::hamiltSolvePsiK(hamilt::Hamilt<T>* hm, psi::Psi<T>&
     }
 
     ModuleBase::timer::tick("HSolverLCAO", "hamiltSolvePsiK");
+}
+
+template <typename T, typename Device>
+void HSolverLCAO<T, Device>::init_psi_pool(hamilt::Hamilt<T>* pHamilt, int nks)
+{
+    const int zero = 0;
+    int nbands = this->ParaV->nbands;
+    int nb2d = this->ParaV->get_block_size();
+    int ncol_bands_pool = numroc_(&nbands, &nb2d, &(pHamilt->P2D_pool->coord[1]), &zero, &(pHamilt->P2D_pool->dim1));
+    this->psi_pool = psi::Psi<T>(nks, ncol_bands_pool, pHamilt->P2D_pool->nrow, nullptr);
+}
+
+template <typename T, typename Device>
+void HSolverLCAO<T, Device>::collect_psi_pool(hamilt::Hamilt<T>* pHamilt, elecstate::ElecState* pes, psi::Psi<T>& psi)
+{
+    int nbands = this->ParaV->nbands;
+    int nrow = this->ParaV->get_global_row_size();
+    for (int ik = 0; ik < psi->get_nk(); ++ik)
+    {
+        /// bcast ekb
+        int source
+            = pHamilt->Pkpoints->get_startpro_pool(pHamilt->Pkpoints->whichpool[ik]);
+        MPI_Bcast(&(pes->ekb(ik, 0)),
+                  nbands,
+                  MPI_DOUBLE,
+                  source,
+                  MPI_COMM_WORLD);
+        /// bcast psi
+        int desc_pool[9];
+        std::copy(pHamilt->P2D_pool->desc, pHamilt->P2D_pool->desc + 9, desc_pool);
+        if (pHamilt->get_my_pool() != pHamilt->Pkpoints->whichpool[ik]) {
+            desc_pool[1] = -1;
+        }
+        psi_pool.fix_k(ik);
+        psi.fix_k(ik);
+        Cpxgemr2d(nrow,
+                  nbands,
+                  psi_pool.get_pointer(),
+                  1,
+                  1,
+                  desc_pool,
+                  psi.get_pointer(),
+                  1,
+                  1,
+                  this->ParaV->desc,
+                  this->ParaV->blacs_ctxt);
+    }
+    pHamilt->set_parak_init(false);
 }
 
 template class HSolverLCAO<double>;

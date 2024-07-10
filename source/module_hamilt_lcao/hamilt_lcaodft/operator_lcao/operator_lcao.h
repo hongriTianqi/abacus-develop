@@ -90,6 +90,11 @@ class OperatorLCAO : public Operator<TK>
     HS_Matrix_K<TK>* hsk = nullptr;
     const std::vector<ModuleBase::Vector3<double>>& kvec_d;
 
+    void set_hsk_pool(HS_Matrix_K<TK>* hsk_pool_in)
+    {
+        this->hsk_pool = hsk_pool_in;
+    }
+
   protected:
     bool new_e_iteration = true;
 
@@ -106,9 +111,12 @@ class OperatorLCAO : public Operator<TK>
 
     // only used for Gamma_only case
     bool allocated_smatrix = false;
-    
+
     // if HR is calculated
     bool hr_done = false;
+
+    /// the pointer to hsk_pool
+    HS_Matrix_K<TK>* hsk_pool = nullptr;
 };
 
 } // end namespace hamilt

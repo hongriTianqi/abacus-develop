@@ -384,6 +384,18 @@ HamiltLCAO<TK, TR>::HamiltLCAO(Gint_Gamma* GG_in,
     }
 
     this->kpar = kpar_in;
+    if (this->kpar > 1)
+    {
+        this->Pkpoints = new Parallel_Kpoints;
+        this->P2D_pool = new Parallel_Orbitals;
+        int nks = this->kv->get_nks();
+        int nproc = paraV->dim0*paraV->dim1;
+        int nrow = paraV->get_global_row_size();
+        int ncol = paraV->get_global_col_size();
+        int nb2d = paraV->get_block_size();
+        this->Pkpoints->kinfo(nks, this->kpar, this->MY_POOL, this->RANK_IN_POOL, nproc, GlobalV::NSPIN);
+        this->P2D_pool->init(nrow, ncol, nb2d, this->POOL_WORLD_K2D);
+    }
 
     ModuleBase::Memory::record("HamiltLCAO::hR", this->hR->get_memory_size() * memory_fold);
     ModuleBase::Memory::record("HamiltLCAO::sR", this->sR->get_memory_size());
@@ -423,6 +435,81 @@ void HamiltLCAO<TK, TR>::updateHk(const int ik)
     }
     this->getOperator()->init(ik);
     ModuleBase::timer::tick("HamiltLCAO", "updateHk");
+}
+
+template <typename TK, typename TR>
+void HamiltLCAO<TK, TR>::distribute_HSk(const int ik)
+{
+    this->set_parak_init(false);
+    int nks = this->kv->get_nks();
+    std::vector<int> ik_kpar;
+    int ik_avail = 0;
+    for (int ipool = 0; ipool < this->kpar; ++ipool) {
+        if (ik + this->Pkpoints->startk_pool[ipool] < nks) {
+            ik_avail++;
+        }
+    }
+    if (ik_avail == 0) {
+        ModuleBase::WARNING_QUIT("HSolverLCAO::solve", "ik_avail is 0!");
+    } else {
+        ik_kpar.resize(ik_avail);
+        for (int ipool = 0; ipool < ik_avail; ++ipool) {
+            ik_kpar[ipool] = ik + this->Pkpoints->startk_pool[ipool];
+        }
+    }
+    int nrow = this->P2D_pool->get_global_row_size();
+    int ncol = this->P2D_pool->get_global_col_size();
+    for (int ipool = 0; ipool < ik_kpar.size(); ++ipool)
+    {
+        this->updateHk(ik_kpar[ipool]);
+        hamilt::MatrixBlock<TK> HK_global, SK_global;
+        this->matrix(HK_global, SK_global);
+        if (this->MY_POOL == this->Pkpoints->whichpool[ik_kpar[ipool]]) {
+            this->hsk_pool = new HS_Matrix_K<TK>(this->P2D_pool);
+        }
+        int desc_pool[9];
+        std::copy(this->P2D_pool->desc, this->P2D_pool->desc + 9, desc_pool);
+        if (this->MY_POOL != this->Pkpoints->whichpool[ik_kpar[ipool]]) {
+            desc_pool[1] = -1;
+        }
+        Cpxgemr2d(nrow,
+                  ncol,
+                  HK_global.p,
+                  1,
+                  1,
+                  this->P2D_global->desc,
+                  this->hsk_pool->get_hk(),
+                  1,
+                  1,
+                  desc_pool,
+                  this->P2D_global->blacs_ctxt);
+        Cpxgemr2d(nrow,
+                  ncol,
+                  SK_global.p,
+                  1,
+                  1,
+                  this->P2D_global->desc,
+                  this->hsk_pool->get_sk(),
+                  1,
+                  1,
+                  desc_pool,
+                  this->P2D_global->blacs_ctxt);
+    }
+    this->set_parak_init(true);
+}
+
+/// set parak init
+template <typename TK, typename TR>
+void HamiltLCAO<TK, TR>::set_parak_init(const bool parak_init_in)
+{
+    if (parak_init_in)
+    {
+        this->getOperator()->set_hsk_pool(this->hsk_pool);
+    }
+    else
+    {
+        this->getOperator()->set_hsk_pool(nullptr);
+    }
 }
 
 template <typename TK, typename TR>

@@ -11,7 +11,7 @@ template <typename T, typename Device = base_device::DEVICE_CPU>
 class HSolverLCAO : public HSolver<T, Device>
 {
   public:
-    HSolverLCAO(const Parallel_Orbitals* ParaV_in)
+    HSolverLCAO(const Parallel_Orbitals* ParaV_in, const K_Vectors* kv)
     {
       this->classname = "HSolverPW"; 
       this->ParaV = ParaV_in;
@@ -39,6 +39,7 @@ class HSolverLCAO : public HSolver<T, Device>
         psi::Psi<std::complex<double>>& psi,
         elecstate::ElecState* pes
     );*/
+
     const Parallel_Orbitals* ParaV;
 
 
@@ -46,6 +47,14 @@ class HSolverLCAO : public HSolver<T, Device>
 
     using Real = typename GetTypeReal<T>::type;
     std::vector<Real> precondition_lcao;
+
+    /// psi in pool
+    psi::Psi<T> psi_pool;
+    /// @brief initialize psi_pool in k parallel case
+    /// @param nks
+    void init_psi_pool(hamilt::Hamilt<T>* pHamilt, int nks);
+    /// collect psi_pool from each pool to psi
+    void collect_psi_pool(hamilt::Hamilt<T>* pHamilt, elecstate::ElecState* pes, psi::Psi<T>& psi);
 };
 
 template <typename T, typename Device>
