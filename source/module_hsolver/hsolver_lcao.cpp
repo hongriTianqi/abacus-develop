@@ -31,6 +31,7 @@
 #include "module_elecstate/elecstate_lcao.h"
 #endif
 #include "module_base/scalapack_connector.h"
+#include "module_hamilt_lcao/hamilt_lcaodft/hamilt_lcao.h"
 
 namespace hsolver
 {
@@ -211,34 +212,75 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         }
     }
 
-    if (pHamilt->get_kpar() > 1)
+    auto pHamiltLCAO_complex = dynamic_cast<hamilt::HamiltLCAO<T, std::complex<double>>*>(pHamilt);
+    auto pHamiltLCAO_real = dynamic_cast<hamilt::HamiltLCAO<T, double>*>(pHamilt);
+    if (pHamiltLCAO_complex != nullptr)
     {
-        this->init_psi_pool(pHamilt, psi.get_nk());
-        for (int ik = 0; ik < pHamilt->Pkpoints->get_max_nks_pool(); ++ik)
+        if (pHamiltLCAO_complex->get_kpar() > 1)
         {
-            pHamilt->distribute_hsk(ik);
-            int ik_global = ik + pHamilt->Pkpoints->startk_pool[pHamilt->get_my_pool()];
-            if (ik_global < psi.get_nk())
+            this->set_parak_env();
+            this->init_psi_pool(pHamiltLCAO_complex, psi.get_nk());
+            pHamiltLCAO_complex->set_parak_init(true);
+            for (int ik = 0; ik < pHamiltLCAO_complex->get_Pkpoints()->get_max_nks_pool(); ++ik)
             {
-                this->psi_pool.fix_k(ik_global);
-                this->hamiltSolvePsiK(pHamilt, this->psi_pool, &(pes->ekb(ik_global, 0)));
+                pHamiltLCAO_complex->updateHk(ik);
+                int ik_global = ik + pHamiltLCAO_complex->get_Pkpoints()->startk_pool[pHamiltLCAO_complex->get_my_pool()];
+                if (ik_global < psi.get_nk())
+                {
+                    this->psi_pool.fix_k(ik_global);
+                    this->hamiltSolvePsiK(pHamiltLCAO_complex, this->psi_pool, &(pes->ekb(ik_global, 0)));
+                }
+            }
+            this->collect_psi_pool(pHamiltLCAO_complex, pes, psi);
+            pHamiltLCAO_complex->set_parak_init(false);
+        }
+        else
+        {
+            /// Loop over k points for solve Hamiltonian to charge density
+            for (int ik = 0; ik < psi.get_nk(); ++ik)
+            {
+                /// update H(k) for each k point
+                pHamilt->updateHk(ik);
+
+                psi.fix_k(ik);
+
+                // solve eigenvector and eigenvalue for H(k)
+                this->hamiltSolvePsiK(pHamilt, psi, &(pes->ekb(ik, 0)));
             }
         }
-        this->collect_psi_pool(pHamilt, pes, psi);
-        pHamilt->set_parak_init(false);
     }
-    else
+    else if (pHamiltLCAO_real != nullptr)
     {
-        /// Loop over k points for solve Hamiltonian to charge density
-        for (int ik = 0; ik < psi.get_nk(); ++ik)
+        if (pHamiltLCAO_real->get_kpar() > 1)
         {
-            /// update H(k) for each k point
-            pHamilt->updateHk(ik);
+            this->init_psi_pool(pHamiltLCAO_real, psi.get_nk());
+            pHamiltLCAO_real->set_parak_init(true);
+            for (int ik = 0; ik < pHamiltLCAO_real->get_Pkpoints()->get_max_nks_pool(); ++ik)
+            {
+                pHamiltLCAO_real->updateHk(ik);
+                int ik_global = ik + pHamiltLCAO_real->get_Pkpoints()->startk_pool[pHamiltLCAO_real->get_my_pool()];
+                if (ik_global < psi.get_nk())
+                {
+                    this->psi_pool.fix_k(ik_global);
+                    this->hamiltSolvePsiK(pHamiltLCAO_real, this->psi_pool, &(pes->ekb(ik_global, 0)));
+                }
+            }
+            this->collect_psi_pool(pHamiltLCAO_real, pes, psi);
+            pHamiltLCAO_real->set_parak_init(false);
+        }
+        else
+        {
+            /// Loop over k points for solve Hamiltonian to charge density
+            for (int ik = 0; ik < psi.get_nk(); ++ik)
+            {
+                /// update H(k) for each k point
+                pHamilt->updateHk(ik);
 
-            psi.fix_k(ik);
+                psi.fix_k(ik);
 
-            // solve eigenvector and eigenvalue for H(k)
-            this->hamiltSolvePsiK(pHamilt, psi, &(pes->ekb(ik, 0)));
+                // solve eigenvector and eigenvalue for H(k)
+                this->hamiltSolvePsiK(pHamilt, psi, &(pes->ekb(ik, 0)));
+            }
         }
     }
 
@@ -423,6 +465,7 @@ void HSolverLCAO<T, Device>::init_psi_pool(hamilt::Hamilt<T>* pHamilt, int nks)
     int ncol_bands_pool = numroc_(&nbands, &nb2d, &(pHamilt->P2D_pool->coord[1]), &zero, &(pHamilt->P2D_pool->dim1));
     this->psi_pool = psi::Psi<T>(nks, ncol_bands_pool, pHamilt->P2D_pool->nrow, nullptr);
 }
+
 
 template <typename T, typename Device>
 void HSolverLCAO<T, Device>::collect_psi_pool(hamilt::Hamilt<T>* pHamilt, elecstate::ElecState* pes, psi::Psi<T>& psi)

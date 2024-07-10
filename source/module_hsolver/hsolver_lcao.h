@@ -11,10 +11,11 @@ template <typename T, typename Device = base_device::DEVICE_CPU>
 class HSolverLCAO : public HSolver<T, Device>
 {
   public:
-    HSolverLCAO(const Parallel_Orbitals* ParaV_in, const K_Vectors* kv)
+    HSolverLCAO(const Parallel_Orbitals* ParaV_in, int nspin_in = 1)
     {
       this->classname = "HSolverPW"; 
       this->ParaV = ParaV_in;
+      this->nspin = nspin_in;
       }
     /*void init(
         const Basis* pbas
@@ -30,6 +31,14 @@ class HSolverLCAO : public HSolver<T, Device>
     static int out_mat_t;
     static int out_mat_dh;
 
+    /// get kpar
+    int get_kpar() const{return this->kpar;}
+
+    /// get my pool
+    int get_my_pool() const{return this->MY_POOL;}
+
+    void set_parak_env();
+
   private:
       void hamiltSolvePsiK(hamilt::Hamilt<T>* hm, psi::Psi<T>& psi, double* eigenvalue);
 
@@ -42,6 +51,7 @@ class HSolverLCAO : public HSolver<T, Device>
 
     const Parallel_Orbitals* ParaV;
 
+    int nspin;
 
     bool is_first_scf = true;
 
@@ -55,6 +65,18 @@ class HSolverLCAO : public HSolver<T, Device>
     void init_psi_pool(hamilt::Hamilt<T>* pHamilt, int nks);
     /// collect psi_pool from each pool to psi
     void collect_psi_pool(hamilt::Hamilt<T>* pHamilt, elecstate::ElecState* pes, psi::Psi<T>& psi);
+
+    /// MY_POOL
+    int MY_POOL = 0;
+    /// RANK_IN_POOL
+    int RANK_IN_POOL = 0;
+#ifdef __MPI
+    MPI_Comm POOL_WORLD_K2D = MPI_COMM_NULL;
+#endif
+    /// the pointer to manage 2D parallel in k pool
+    Parallel_Orbitals* P2D_pool = nullptr;
+    /// the pointer to hsk_pool
+    HS_Matrix_K<TK>* hsk_pool = nullptr;
 };
 
 template <typename T, typename Device>

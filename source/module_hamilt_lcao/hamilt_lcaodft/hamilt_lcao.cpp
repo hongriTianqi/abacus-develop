@@ -417,85 +417,86 @@ void HamiltLCAO<TK, TR>::updateHk(const int ik)
 {
     ModuleBase::TITLE("HamiltLCAO", "updateHk");
     ModuleBase::timer::tick("HamiltLCAO", "updateHk");
-    // update global spin index
-    if (GlobalV::NSPIN == 2)
+    if (this->get_parak_init() == true)
     {
-        // if Veff is added and current_spin is changed, refresh HR
-        if (GlobalV::VL_IN_H && this->kv->isk[ik] != this->current_spin)
-        {
-            // change data pointer of HR
-            this->hR->allocate(this->hRS2.data() + this->hRS2.size() / 2 * this->kv->isk[ik], 0);
-            if (this->refresh_times > 0)
-            {
-                this->refresh_times--;
-                dynamic_cast<hamilt::OperatorLCAO<TK, TR>*>(this->ops)->set_hr_done(false);
+        this->set_parak_init(false);
+        int nks = this->kv->get_nks();
+        std::vector<int> ik_kpar;
+        int ik_avail = 0;
+        for (int ipool = 0; ipool < this->kpar; ++ipool) {
+            if (ik + this->Pkpoints->startk_pool[ipool] < nks) {
+                ik_avail++;
             }
         }
-        this->current_spin = this->kv->isk[ik];
-    }
-    this->getOperator()->init(ik);
-    ModuleBase::timer::tick("HamiltLCAO", "updateHk");
-}
-
-template <typename TK, typename TR>
-void HamiltLCAO<TK, TR>::distribute_HSk(const int ik)
-{
-    this->set_parak_init(false);
-    int nks = this->kv->get_nks();
-    std::vector<int> ik_kpar;
-    int ik_avail = 0;
-    for (int ipool = 0; ipool < this->kpar; ++ipool) {
-        if (ik + this->Pkpoints->startk_pool[ipool] < nks) {
-            ik_avail++;
+        if (ik_avail == 0) {
+            ModuleBase::WARNING_QUIT("HSolverLCAO::solve", "ik_avail is 0!");
+        } else {
+            ik_kpar.resize(ik_avail);
+            for (int ipool = 0; ipool < ik_avail; ++ipool) {
+                ik_kpar[ipool] = ik + this->Pkpoints->startk_pool[ipool];
+            }
         }
-    }
-    if (ik_avail == 0) {
-        ModuleBase::WARNING_QUIT("HSolverLCAO::solve", "ik_avail is 0!");
-    } else {
-        ik_kpar.resize(ik_avail);
-        for (int ipool = 0; ipool < ik_avail; ++ipool) {
-            ik_kpar[ipool] = ik + this->Pkpoints->startk_pool[ipool];
+        int nrow = this->P2D_pool->get_global_row_size();
+        int ncol = this->P2D_pool->get_global_col_size();
+        for (int ipool = 0; ipool < ik_kpar.size(); ++ipool)
+        {
+            this->updateHk(ik_kpar[ipool]);
+            hamilt::MatrixBlock<TK> HK_global, SK_global;
+            this->matrix(HK_global, SK_global);
+            if (this->MY_POOL == this->Pkpoints->whichpool[ik_kpar[ipool]]) {
+                this->hsk_pool = new HS_Matrix_K<TK>(this->P2D_pool);
+            }
+            int desc_pool[9];
+            std::copy(this->P2D_pool->desc, this->P2D_pool->desc + 9, desc_pool);
+            if (this->MY_POOL != this->Pkpoints->whichpool[ik_kpar[ipool]]) {
+                desc_pool[1] = -1;
+            }
+            Cpxgemr2d(nrow,
+                      ncol,
+                      HK_global.p,
+                      1,
+                      1,
+                      this->paraV->desc,
+                      this->hsk_pool->get_hk(),
+                      1,
+                      1,
+                      desc_pool,
+                      this->P2D_global->blacs_ctxt);
+            Cpxgemr2d(nrow,
+                      ncol,
+                      SK_global.p,
+                      1,
+                      1,
+                      this->paraV->desc,
+                      this->hsk_pool->get_sk(),
+                      1,
+                      1,
+                      desc_pool,
+                      this->P2D_global->blacs_ctxt);
         }
+        this->set_parak_init(true);
     }
-    int nrow = this->P2D_pool->get_global_row_size();
-    int ncol = this->P2D_pool->get_global_col_size();
-    for (int ipool = 0; ipool < ik_kpar.size(); ++ipool)
+    else if (this->get_parak_init() == false)
     {
-        this->updateHk(ik_kpar[ipool]);
-        hamilt::MatrixBlock<TK> HK_global, SK_global;
-        this->matrix(HK_global, SK_global);
-        if (this->MY_POOL == this->Pkpoints->whichpool[ik_kpar[ipool]]) {
-            this->hsk_pool = new HS_Matrix_K<TK>(this->P2D_pool);
+        // update global spin index
+        if (GlobalV::NSPIN == 2)
+        {
+            // if Veff is added and current_spin is changed, refresh HR
+            if (GlobalV::VL_IN_H && this->kv->isk[ik] != this->current_spin)
+            {
+                // change data pointer of HR
+                this->hR->allocate(this->hRS2.data() + this->hRS2.size() / 2 * this->kv->isk[ik], 0);
+                if (this->refresh_times > 0)
+                {
+                    this->refresh_times--;
+                    dynamic_cast<hamilt::OperatorLCAO<TK, TR>*>(this->ops)->set_hr_done(false);
+                }
+            }
+            this->current_spin = this->kv->isk[ik];
         }
-        int desc_pool[9];
-        std::copy(this->P2D_pool->desc, this->P2D_pool->desc + 9, desc_pool);
-        if (this->MY_POOL != this->Pkpoints->whichpool[ik_kpar[ipool]]) {
-            desc_pool[1] = -1;
-        }
-        Cpxgemr2d(nrow,
-                  ncol,
-                  HK_global.p,
-                  1,
-                  1,
-                  this->P2D_global->desc,
-                  this->hsk_pool->get_hk(),
-                  1,
-                  1,
-                  desc_pool,
-                  this->P2D_global->blacs_ctxt);
-        Cpxgemr2d(nrow,
-                  ncol,
-                  SK_global.p,
-                  1,
-                  1,
-                  this->P2D_global->desc,
-                  this->hsk_pool->get_sk(),
-                  1,
-                  1,
-                  desc_pool,
-                  this->P2D_global->blacs_ctxt);
+        this->getOperator()->init(ik);
     }
-    this->set_parak_init(true);
+    ModuleBase::timer::tick("HamiltLCAO", "updateHk");
 }
 
 /// set parak init
@@ -504,10 +505,12 @@ void HamiltLCAO<TK, TR>::set_parak_init(const bool parak_init_in)
 {
     if (parak_init_in)
     {
+        this->parak_init = true;
         this->getOperator()->set_hsk_pool(this->hsk_pool);
     }
     else
     {
+        this->parak_init = false;
         this->getOperator()->set_hsk_pool(nullptr);
     }
 }

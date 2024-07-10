@@ -221,7 +221,7 @@ void ESolver_KS_LCAO<TK, TR>::before_all_runners(Input& inp, UnitCell& ucell) {
 
     // 10) initialize the HSolver
     if (this->phsol == nullptr) {
-        this->phsol = new hsolver::HSolverLCAO<TK>(&(this->orb_con.ParaV));
+        this->phsol = new hsolver::HSolverLCAO<TK>(&(this->orb_con.ParaV), GlobalV::NSPIN);
         this->phsol->method = GlobalV::KS_SOLVER;
     }
 

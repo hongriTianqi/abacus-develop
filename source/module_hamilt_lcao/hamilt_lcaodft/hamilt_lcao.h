@@ -103,17 +103,14 @@ class HamiltLCAO : public Hamilt<TK>
     // void matrix(MatrixBlock<std::complex<double>> &hk_in, MatrixBlock<std::complex<double>> &sk_in) override;
     void matrix(MatrixBlock<TK>& hk_in, MatrixBlock<TK>& sk_in) override;
 
-    /// get kpar
-    int get_kpar() const{return this->kpar;}
-
-    /// get my pool
-    int get_my_pool() const{return this->MY_POOL;}
-
-    /// distribute Hk and Sk to each pool
-    void distribute_HSk(const int ik);
+    /// get pointer to Pkpoints
+    Parallel_Kpoints* get_Pkpoints() const{return this->Pkpoints;}
 
     /// set parak init
     void set_parak_init(const bool parak_init_in);
+
+    /// get parak init
+    bool get_parak_init() const{return this->parak_init;}
 
   private:
     const K_Vectors* kv = nullptr;
@@ -135,17 +132,8 @@ class HamiltLCAO : public Hamilt<TK>
     int kpar = 1;
     /// the pointer to Parallel_Kpoints
     Parallel_Kpoints* Pkpoints = nullptr;
-    /// MY_POOL
-    int MY_POOL = 0;
-    /// RANK_IN_POOL
-    int RANK_IN_POOL = 0;
-#ifdef __MPI
-    MPI_Comm POOL_WORLD_K2D = MPI_COMM_NULL;
-#endif
-    /// the pointer to manage 2D parallel in k pool
-    Parallel_Orbitals* P2D_pool = nullptr;
-    /// the pointer to hsk_pool
-    HS_Matrix_K<TK>* hsk_pool = nullptr;
+    /// bool for parak_init
+    bool parak_init = false;
 };
 
 } // namespace hamilt
