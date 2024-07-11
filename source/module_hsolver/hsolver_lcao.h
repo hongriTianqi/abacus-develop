@@ -41,6 +41,8 @@ class HSolverLCAO : public HSolver<T, Device>
     );*/
     const Parallel_Orbitals* ParaV;
 
+    void parakSolve(hamilt::Hamilt<T>* pHamilt, psi::Psi<T>& psi, elecstate::ElecState* pes);
+
 
     bool is_first_scf = true;
 

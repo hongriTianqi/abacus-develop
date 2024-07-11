@@ -191,91 +191,12 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         }
     }
 
-    if (Parallel_K2D<double>::get_instance().get_kpar() > 1) {
-        auto& k2d = Parallel_K2D<T>::get_instance();
-        k2d.set_para_env(psi.get_nk(),
-                         GlobalV::NLOCAL,
-                         GlobalV::NB2D,
-                         GlobalV::NPROC,
-                         GlobalV::MY_RANK,
-                         GlobalV::NSPIN);
-        /// set psi_pool
-        const int zero = 0;
-        int ncol_bands_pool = numroc_(&(GlobalV::NBANDS), &(GlobalV::NB2D), &(k2d.P2D_pool->coord[1]), &zero, &(k2d.P2D_pool->dim1));
-        auto psi_pool = psi::Psi<T>(psi.get_nk(),
-                                    ncol_bands_pool,
-                                    k2d.P2D_pool->nrow,
-                                    nullptr);
-        int max_nks_pool = -1;
-        for (int ipool=0; ipool < k2d.get_kpar(); ipool++) {
-            if (k2d.Pkpoints->nks_pool[ipool] > max_nks_pool) {
-                max_nks_pool = k2d.Pkpoints->nks_pool[ipool];
-            }
-        }
-        /// Loop over k points for solve Hamiltonian to charge density
-        for (int ik = 0; ik < max_nks_pool; ++ik)
-        {
-            // if nks is not equal to the number of k points in the pool
-            std::vector<int> ik_kpar;
-            int ik_avail = 0;
-            for (int i = 0; i < k2d.get_kpar(); i++) {
-                if (ik + k2d.Pkpoints->startk_pool[i] < psi.get_nk()) {
-                    ik_avail++;
-                }
-            }
-            if (ik_avail == 0) {
-                ModuleBase::WARNING_QUIT("HSolverLCAO::solve",
-                                         "ik_avail is 0!");
-            } else {
-                ik_kpar.resize(ik_avail);
-                for (int i = 0; i < ik_avail; i++) {
-                    ik_kpar[i] = ik + k2d.Pkpoints->startk_pool[i];
-                }
-            }
-            k2d.distribute_hsk(pHamilt, ik_kpar, GlobalV::NLOCAL);
-            /// global index of k point
-            int ik_global = ik + k2d.Pkpoints->startk_pool[k2d.MY_POOL];
-
-            if (ik_global < psi.get_nk())
-            {
-                /// local psi in pool
-                psi_pool.fix_k(ik_global);
-                /// solve eigenvector and eigenvalue for H(k)
-                this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
-            }
-        }
-        for (int ik = 0; ik < psi.get_nk(); ++ik) {
-            /// bcast ekb
-            int source
-                = k2d.Pkpoints->get_startpro_pool(k2d.Pkpoints->whichpool[ik]);
-            MPI_Bcast(&(pes->ekb(ik, 0)),
-                      GlobalV::NBANDS,
-                      MPI_DOUBLE,
-                      source,
-                      MPI_COMM_WORLD);
-            /// bcast psi
-            int desc_pool[9];
-            std::copy(k2d.P2D_pool->desc, k2d.P2D_pool->desc + 9, desc_pool);
-            if (k2d.MY_POOL != k2d.Pkpoints->whichpool[ik]) {
-                desc_pool[1] = -1;
-            }
-            psi_pool.fix_k(ik);
-            psi.fix_k(ik);
-            Cpxgemr2d(GlobalV::NLOCAL,
-                      GlobalV::NBANDS,
-                      psi_pool.get_pointer(),
-                      1,
-                      1,
-                      desc_pool,
-                      psi.get_pointer(),
-                      1,
-                      1,
-                      k2d.P2D_global->desc,
-                      k2d.P2D_global->blacs_ctxt);
-        }
-        k2d.unset_para_env();
-        k2d.set_initialized(false);
-    } else {
+    if (Parallel_K2D<double>::get_instance().get_kpar() > 1)
+    {
+        this->parakSolve(pHamilt, psi, pes);    
+    }
+    else
+    {
         /// Loop over k points for solve Hamiltonian to charge density
         for (int ik = 0; ik < psi.get_nk(); ++ik) {
             /// update H(k) for each k point
@@ -333,6 +254,96 @@ void HSolverLCAO<T, Device>::solve(hamilt::Hamilt<T>* pHamilt,
                                    const std::string method_in,
                                    const bool skip_charge) {
     this->solveTemplate(pHamilt, psi, pes, this->method, skip_charge);
+}
+
+template <typename T, typename Device>
+void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
+                                   psi::Psi<T>& psi,
+                                   elecstate::ElecState* pes)
+{
+    auto& k2d = Parallel_K2D<T>::get_instance();
+    k2d.set_para_env(psi.get_nk(),
+                     GlobalV::NLOCAL,
+                     GlobalV::NB2D,
+                     GlobalV::NPROC,
+                     GlobalV::MY_RANK,
+                     GlobalV::NSPIN);
+    /// set psi_pool
+    const int zero = 0;
+    int ncol_bands_pool = numroc_(&(GlobalV::NBANDS), &(GlobalV::NB2D), &(k2d.P2D_pool->coord[1]), &zero, &(k2d.P2D_pool->dim1));
+    auto psi_pool = psi::Psi<T>(psi.get_nk(),
+                                ncol_bands_pool,
+                                k2d.P2D_pool->nrow,
+                                nullptr);
+    int max_nks_pool = -1;
+    for (int ipool=0; ipool < k2d.get_kpar(); ipool++) {
+        if (k2d.Pkpoints->nks_pool[ipool] > max_nks_pool) {
+            max_nks_pool = k2d.Pkpoints->nks_pool[ipool];
+        }
+    }
+    /// Loop over k points for solve Hamiltonian to charge density
+    for (int ik = 0; ik < max_nks_pool; ++ik)
+    {
+        // if nks is not equal to the number of k points in the pool
+        std::vector<int> ik_kpar;
+        int ik_avail = 0;
+        for (int i = 0; i < k2d.get_kpar(); i++) {
+            if (ik + k2d.Pkpoints->startk_pool[i] < psi.get_nk()) {
+                ik_avail++;
+            }
+        }
+        if (ik_avail == 0) {
+            ModuleBase::WARNING_QUIT("HSolverLCAO::solve",
+                                     "ik_avail is 0!");
+        } else {
+            ik_kpar.resize(ik_avail);
+            for (int i = 0; i < ik_avail; i++) {
+                ik_kpar[i] = ik + k2d.Pkpoints->startk_pool[i];
+            }
+        }
+        k2d.distribute_hsk(pHamilt, ik_kpar, GlobalV::NLOCAL);
+        /// global index of k point
+        int ik_global = ik + k2d.Pkpoints->startk_pool[k2d.MY_POOL];
+
+        if (ik_global < psi.get_nk())
+        {
+            /// local psi in pool
+            psi_pool.fix_k(ik_global);
+            /// solve eigenvector and eigenvalue for H(k)
+            this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
+        }
+    }
+    for (int ik = 0; ik < psi.get_nk(); ++ik) {
+        /// bcast ekb
+        int source
+            = k2d.Pkpoints->get_startpro_pool(k2d.Pkpoints->whichpool[ik]);
+        MPI_Bcast(&(pes->ekb(ik, 0)),
+                  GlobalV::NBANDS,
+                  MPI_DOUBLE,
+                  source,
+                  MPI_COMM_WORLD);
+        /// bcast psi
+        int desc_pool[9];
+        std::copy(k2d.P2D_pool->desc, k2d.P2D_pool->desc + 9, desc_pool);
+        if (k2d.MY_POOL != k2d.Pkpoints->whichpool[ik]) {
+            desc_pool[1] = -1;
+        }
+        psi_pool.fix_k(ik);
+        psi.fix_k(ik);
+        Cpxgemr2d(GlobalV::NLOCAL,
+                  GlobalV::NBANDS,
+                  psi_pool.get_pointer(),
+                  1,
+                  1,
+                  desc_pool,
+                  psi.get_pointer(),
+                  1,
+                  1,
+                  k2d.P2D_global->desc,
+                  k2d.P2D_global->blacs_ctxt);
+    }
+    k2d.unset_para_env();
+    k2d.set_initialized(false);
 }
 
 template <typename T, typename Device>
