@@ -262,15 +262,18 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                                    elecstate::ElecState* pes)
 {
     auto& k2d = Parallel_K2D<T>::get_instance();
+    int nrow = this->ParaV->get_global_row_size();
+    int nbands = this->ParaV->get_nbands();
+    int nb2d = this->ParaV->get_block_size();
     k2d.set_para_env(psi.get_nk(),
-                     GlobalV::NLOCAL,
-                     GlobalV::NB2D,
+                     nrow,
+                     nb2d,
                      GlobalV::NPROC,
                      GlobalV::MY_RANK,
                      GlobalV::NSPIN);
     /// set psi_pool
     const int zero = 0;
-    int ncol_bands_pool = numroc_(&(GlobalV::NBANDS), &(GlobalV::NB2D), &(k2d.P2D_pool->coord[1]), &zero, &(k2d.P2D_pool->dim1));
+    int ncol_bands_pool = numroc_(&(nbands), &(nb2d), &(k2d.P2D_pool->coord[1]), &zero, &(k2d.P2D_pool->dim1));
     auto psi_pool = psi::Psi<T>(psi.get_nk(),
                                 ncol_bands_pool,
                                 k2d.P2D_pool->nrow,
@@ -295,7 +298,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                 ik_kpar[i] = ik + k2d.Pkpoints->startk_pool[i];
             }
         }
-        k2d.distribute_hsk(pHamilt, ik_kpar, GlobalV::NLOCAL);
+        k2d.distribute_hsk(pHamilt, ik_kpar, nrow);
         /// global index of k point
         int ik_global = ik + k2d.Pkpoints->startk_pool[k2d.MY_POOL];
 
@@ -312,7 +315,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
         int source
             = k2d.Pkpoints->get_startpro_pool(k2d.Pkpoints->whichpool[ik]);
         MPI_Bcast(&(pes->ekb(ik, 0)),
-                  GlobalV::NBANDS,
+                  nbands,
                   MPI_DOUBLE,
                   source,
                   MPI_COMM_WORLD);
@@ -324,8 +327,8 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
         }
         psi_pool.fix_k(ik);
         psi.fix_k(ik);
-        Cpxgemr2d(GlobalV::NLOCAL,
-                  GlobalV::NBANDS,
+        Cpxgemr2d(nrow,
+                  nbands,
                   psi_pool.get_pointer(),
                   1,
                   1,
