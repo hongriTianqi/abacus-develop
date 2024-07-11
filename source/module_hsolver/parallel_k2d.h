@@ -28,18 +28,6 @@ class Parallel_K2D {
     Parallel_K2D(const Parallel_K2D&) = delete;
     /// delete copy assignment
     Parallel_K2D& operator=(const Parallel_K2D&) = delete;
-
-    /**
-     * the local Hk, Sk matrices in POOL_WORLD_K2D
-     */
-    std::vector<TK> hk_pool;
-    std::vector<TK> sk_pool;
-
-#ifdef __MPI
-    MPI_Comm POOL_WORLD_K2D;
-#endif
-
-  public:
     /**
      * Public member functions
      */
@@ -76,6 +64,16 @@ class Parallel_K2D {
     Parallel_2D* get_p2D_global() { return this->P2D_global; }
     /// get p2D_pool
     Parallel_2D* get_p2D_pool() { return this->P2D_pool; }
+
+    /**
+     * the local Hk, Sk matrices in POOL_WORLD_K2D
+     */
+    std::vector<TK> hk_pool;
+    std::vector<TK> sk_pool;
+
+#ifdef __MPI
+    MPI_Comm POOL_WORLD_K2D;
+#endif
 
   private:
     /**
