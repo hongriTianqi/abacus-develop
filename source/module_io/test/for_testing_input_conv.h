@@ -12,7 +12,6 @@
 #include "module_elecstate/potentials/efield.h"
 #include "module_elecstate/potentials/gatefield.h"
 #include "module_hamilt_lcao/hamilt_lcaodft/FORCE_STRESS.h"
-#include "module_hamilt_lcao/hamilt_lcaodft/local_orbital_charge.h"
 #include "module_hamilt_lcao/module_dftu/dftu.h"
 #include "module_hamilt_lcao/module_tddft/evolve_elec.h"
 #include "module_hamilt_lcao/module_tddft/td_velocity.h"
@@ -33,8 +32,6 @@
 
 bool berryphase::berry_phase_flag = false;
 
-int Local_Orbital_Charge::out_dm = 0;
-int Local_Orbital_Charge::out_dm1 = 0;
 double module_tddft::Evolve_elec::td_force_dt;
 bool module_tddft::Evolve_elec::td_vext;
 std::vector<int> module_tddft::Evolve_elec::td_vext_dire_case;
@@ -128,6 +125,7 @@ std::string Lattice_Change_Basic::fixed_axes = "None";
 int ModuleSymmetry::Symmetry::symm_flag = 0;
 bool ModuleSymmetry::Symmetry::symm_autoclose = false;
 
+<<<<<<< HEAD
 Charge_Mixing::Charge_Mixing() {}
 Charge_Mixing::~Charge_Mixing() {}
 pseudopot_cell_vnl::pseudopot_cell_vnl() {}
@@ -148,7 +146,67 @@ wavefunc::wavefunc() {}
 wavefunc::~wavefunc() {}
 UnitCell::UnitCell() {
     if (GlobalV::test_unitcell)
+=======
+Charge_Mixing::Charge_Mixing()
+{
+}
+Charge_Mixing::~Charge_Mixing()
+{
+}
+pseudopot_cell_vnl::pseudopot_cell_vnl()
+{
+}
+pseudopot_cell_vnl::~pseudopot_cell_vnl()
+{
+}
+Soc::~Soc()
+{
+}
+Fcoef::~Fcoef()
+{
+}
+pseudopot_cell_vl::pseudopot_cell_vl()
+{
+}
+pseudopot_cell_vl::~pseudopot_cell_vl()
+{
+}
+ORB_gaunt_table::ORB_gaunt_table()
+{
+}
+ORB_gaunt_table::~ORB_gaunt_table()
+{
+}
+ModuleDFTU::DFTU::DFTU()
+{
+}
+ModuleDFTU::DFTU::~DFTU()
+{
+}
+Structure_Factor::Structure_Factor()
+{
+}
+Structure_Factor::~Structure_Factor()
+{
+}
+WF_atomic::WF_atomic()
+{
+}
+WF_atomic::~WF_atomic()
+{
+}
+wavefunc::wavefunc()
+{
+}
+wavefunc::~wavefunc()
+{
+}
+UnitCell::UnitCell()
+{
+    if (GlobalV::test_unitcell) {
+>>>>>>> develop
         ModuleBase::TITLE("unitcell", "Constructor");
+}
     Coordinate = "Direct";
     latName = "none";
     lat0 = 0.0;

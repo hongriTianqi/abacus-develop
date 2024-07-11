@@ -43,11 +43,9 @@ class OperatorLCAO : public Operator<TK> {
      */
     virtual void contributeHR() { return; }
 
-    /* Function matrixHk() is used for get information of HK matrix and SK
-    matrix for diagolization. Matrixes HK and SK come from LCAO_Matrix class.
-    Gamma_only case (TK = double), SK would not changed during one SCF loop, a
-    template triangle matrix SK_temp is used for accelerating. General case (TK
-    = std::complex<double>), only pointers of HK and SK saved in OperatorLCAO
+    /* Function matrixHk() is used for get information of HK matrix and SK matrix for diagolization.
+    Gamma_only case (TK = double), SK would not changed during one SCF loop, a template triangle matrix SK_temp is used
+    for accelerating. General case (TK = std::complex<double>), only pointers of HK and SK saved in OperatorLCAO
     */
     void matrixHk(MatrixBlock<TK>& hk_in, MatrixBlock<TK>& sk_in) {
         this->get_hs_pointers();
@@ -107,7 +105,7 @@ class OperatorLCAO : public Operator<TK> {
     void set_hr_done(bool hr_done_in);
 
     // protected:
-    //  Hamiltonian matrix which are stored in LCAO_Matrix and calculated in OperatorLCAO
+    //  Hamiltonian matrix which are calculated in OperatorLCAO
     HS_Matrix_K<TK>* hsk = nullptr;
     const std::vector<ModuleBase::Vector3<double>>& kvec_d;
 
