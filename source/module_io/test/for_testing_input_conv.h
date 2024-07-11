@@ -125,28 +125,6 @@ std::string Lattice_Change_Basic::fixed_axes = "None";
 int ModuleSymmetry::Symmetry::symm_flag = 0;
 bool ModuleSymmetry::Symmetry::symm_autoclose = false;
 
-<<<<<<< HEAD
-Charge_Mixing::Charge_Mixing() {}
-Charge_Mixing::~Charge_Mixing() {}
-pseudopot_cell_vnl::pseudopot_cell_vnl() {}
-pseudopot_cell_vnl::~pseudopot_cell_vnl() {}
-Soc::~Soc() {}
-Fcoef::~Fcoef() {}
-pseudopot_cell_vl::pseudopot_cell_vl() {}
-pseudopot_cell_vl::~pseudopot_cell_vl() {}
-ORB_gaunt_table::ORB_gaunt_table() {}
-ORB_gaunt_table::~ORB_gaunt_table() {}
-ModuleDFTU::DFTU::DFTU() {}
-ModuleDFTU::DFTU::~DFTU() {}
-Structure_Factor::Structure_Factor() {}
-Structure_Factor::~Structure_Factor() {}
-WF_atomic::WF_atomic() {}
-WF_atomic::~WF_atomic() {}
-wavefunc::wavefunc() {}
-wavefunc::~wavefunc() {}
-UnitCell::UnitCell() {
-    if (GlobalV::test_unitcell)
-=======
 Charge_Mixing::Charge_Mixing()
 {
 }
@@ -204,7 +182,6 @@ wavefunc::~wavefunc()
 UnitCell::UnitCell()
 {
     if (GlobalV::test_unitcell) {
->>>>>>> develop
         ModuleBase::TITLE("unitcell", "Constructor");
 }
     Coordinate = "Direct";
