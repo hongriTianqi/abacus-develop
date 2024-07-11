@@ -41,12 +41,6 @@ class Parallel_K2D {
      */
     std::vector<TK> hk_pool;
     std::vector<TK> sk_pool;
-    /**
-     * public mpi info
-     */
-    int NPROC_IN_POOL;
-    int MY_POOL;
-    int RANK_IN_POOL;
 
 #ifdef __MPI
     MPI_Comm POOL_WORLD_K2D;
@@ -81,6 +75,8 @@ class Parallel_K2D {
     void set_initialized(bool initialized) { this->initialized_ = initialized; }
     /// check if the Parallel_K2D class is initialized
     bool get_initialized() { return this->initialized_; }
+    /// get my pool
+    int get_my_pool() { return this->MY_POOL; }
 
   private:
     /**
@@ -92,6 +88,13 @@ class Parallel_K2D {
     Parallel_K2D() {}
     /// private destructor
     ~Parallel_K2D() {}
+
+    /**
+     * public mpi info
+     */
+    int NPROC_IN_POOL;
+    int MY_POOL;
+    int RANK_IN_POOL;
 };
 
 #endif

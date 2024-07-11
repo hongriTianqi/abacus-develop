@@ -300,7 +300,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
         }
         k2d.distribute_hsk(pHamilt, ik_kpar, nrow);
         /// global index of k point
-        int ik_global = ik + k2d.Pkpoints->startk_pool[k2d.MY_POOL];
+        int ik_global = ik + k2d.Pkpoints->startk_pool[k2d.get_my_pool()];
 
         if (ik_global < psi.get_nk())
         {
@@ -322,7 +322,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
         /// bcast psi
         int desc_pool[9];
         std::copy(k2d.P2D_pool->desc, k2d.P2D_pool->desc + 9, desc_pool);
-        if (k2d.MY_POOL != k2d.Pkpoints->whichpool[ik]) {
+        if (k2d.get_my_pool() != k2d.Pkpoints->whichpool[ik]) {
             desc_pool[1] = -1;
         }
         psi_pool.fix_k(ik);
