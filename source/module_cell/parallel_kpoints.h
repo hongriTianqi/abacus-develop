@@ -57,6 +57,7 @@ class Parallel_Kpoints
 
     // get the first processor in the pool
     int get_startpro_pool(const int& pool) const
+
     {
         return startpro_pool[pool];
     }
@@ -68,6 +69,7 @@ class Parallel_Kpoints
     }
 
   private:
+
     int kpar = 0;         // number of pools
     int my_pool = 0;      // the pool index of the present processor
     int rank_in_pool = 0; // the rank in the present pool
