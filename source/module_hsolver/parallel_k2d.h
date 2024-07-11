@@ -30,13 +30,6 @@ class Parallel_K2D {
     Parallel_K2D& operator=(const Parallel_K2D&) = delete;
 
     /**
-     * the pointer to Parallel_Kpoints
-     */
-    Parallel_Kpoints* Pkpoints = nullptr;
-    Parallel_2D* P2D_global = nullptr;
-    Parallel_2D* P2D_pool = nullptr;
-
-    /**
      * the local Hk, Sk matrices in POOL_WORLD_K2D
      */
     std::vector<TK> hk_pool;
@@ -77,6 +70,12 @@ class Parallel_K2D {
     bool get_initialized() { return this->initialized_; }
     /// get my pool
     int get_my_pool() { return this->MY_POOL; }
+    /// get pKpoints
+    Parallel_Kpoints* get_pKpoints() { return this->Pkpoints; }
+    /// get p2D_global
+    Parallel_2D* get_p2D_global() { return this->P2D_global; }
+    /// get p2D_pool
+    Parallel_2D* get_p2D_pool() { return this->P2D_pool; }
 
   private:
     /**
@@ -90,11 +89,18 @@ class Parallel_K2D {
     ~Parallel_K2D() {}
 
     /**
-     * public mpi info
+     * mpi info
      */
     int NPROC_IN_POOL;
     int MY_POOL;
     int RANK_IN_POOL;
+
+    /**
+     * the pointer to Parallel_Kpoints
+     */
+    Parallel_Kpoints* Pkpoints = nullptr;
+    Parallel_2D* P2D_global = nullptr;
+    Parallel_2D* P2D_pool = nullptr;
 };
 
 #endif

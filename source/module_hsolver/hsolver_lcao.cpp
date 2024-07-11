@@ -273,19 +273,19 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                      GlobalV::NSPIN);
     /// set psi_pool
     const int zero = 0;
-    int ncol_bands_pool = numroc_(&(nbands), &(nb2d), &(k2d.P2D_pool->coord[1]), &zero, &(k2d.P2D_pool->dim1));
+    int ncol_bands_pool = numroc_(&(nbands), &(nb2d), &(k2d.get_p2D_pool()->coord[1]), &zero, &(k2d.get_p2D_pool()->dim1));
     auto psi_pool = psi::Psi<T>(psi.get_nk(),
                                 ncol_bands_pool,
-                                k2d.P2D_pool->nrow,
+                                k2d.get_p2D_pool()->nrow,
                                 nullptr);
     /// Loop over k points for solve Hamiltonian to charge density
-    for (int ik = 0; ik < k2d.Pkpoints->get_max_nks_pool(); ++ik)
+    for (int ik = 0; ik < k2d.get_pKpoints()->get_max_nks_pool(); ++ik)
     {
         // if nks is not equal to the number of k points in the pool
         std::vector<int> ik_kpar;
         int ik_avail = 0;
         for (int i = 0; i < k2d.get_kpar(); i++) {
-            if (ik + k2d.Pkpoints->startk_pool[i] < psi.get_nk()) {
+            if (ik + k2d.get_pKpoints()->startk_pool[i] < psi.get_nk()) {
                 ik_avail++;
             }
         }
@@ -295,12 +295,12 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
         } else {
             ik_kpar.resize(ik_avail);
             for (int i = 0; i < ik_avail; i++) {
-                ik_kpar[i] = ik + k2d.Pkpoints->startk_pool[i];
+                ik_kpar[i] = ik + k2d.get_pKpoints()->startk_pool[i];
             }
         }
         k2d.distribute_hsk(pHamilt, ik_kpar, nrow);
         /// global index of k point
-        int ik_global = ik + k2d.Pkpoints->startk_pool[k2d.get_my_pool()];
+        int ik_global = ik + k2d.get_pKpoints()->startk_pool[k2d.get_my_pool()];
 
         if (ik_global < psi.get_nk())
         {
@@ -313,7 +313,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
     for (int ik = 0; ik < psi.get_nk(); ++ik) {
         /// bcast ekb
         int source
-            = k2d.Pkpoints->get_startpro_pool(k2d.Pkpoints->whichpool[ik]);
+            = k2d.get_pKpoints()->get_startpro_pool(k2d.get_pKpoints()->whichpool[ik]);
         MPI_Bcast(&(pes->ekb(ik, 0)),
                   nbands,
                   MPI_DOUBLE,
@@ -321,8 +321,8 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                   MPI_COMM_WORLD);
         /// bcast psi
         int desc_pool[9];
-        std::copy(k2d.P2D_pool->desc, k2d.P2D_pool->desc + 9, desc_pool);
-        if (k2d.get_my_pool() != k2d.Pkpoints->whichpool[ik]) {
+        std::copy(k2d.get_p2D_pool()->desc, k2d.get_p2D_pool()->desc + 9, desc_pool);
+        if (k2d.get_my_pool() != k2d.get_pKpoints()->whichpool[ik]) {
             desc_pool[1] = -1;
         }
         psi_pool.fix_k(ik);
@@ -336,8 +336,8 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                   psi.get_pointer(),
                   1,
                   1,
-                  k2d.P2D_global->desc,
-                  k2d.P2D_global->blacs_ctxt);
+                  k2d.get_p2D_global()->desc,
+                  k2d.get_p2D_global()->blacs_ctxt);
     }
     k2d.unset_para_env();
     k2d.set_initialized(false);
