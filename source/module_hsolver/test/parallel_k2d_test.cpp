@@ -58,8 +58,8 @@ class ParallelK2DTest : public ::testing::TestWithParam<ParaPrepare> {
 TEST_P(ParallelK2DTest, DividePools) {
     ParaPrepare pp = GetParam();
     mpi.KPAR = pp.KPAR_;
-    k2d.Pkpoints = new Parallel_Kpoints;
-    k2d.P2D_pool = new Parallel_2D;
+    //k2d.Pkpoints = new Parallel_Kpoints;
+    //k2d.P2D_pool = new Parallel_2D;
     if (mpi.KPAR > NPROC) {
         std::string output;
         testing::internal::CaptureStdout();
@@ -76,6 +76,9 @@ TEST_P(ParallelK2DTest, DividePools) {
             output,
             testing::HasSubstr("must be greater than the number of groups"));
     } else {
+        k2d.set_kpar(mpi.KPAR);
+        k2d.set_para_env(pp.nkstot_, 10, 1, this->NPROC, this->MY_RANK, 1);
+        /*
         Parallel_Global::divide_mpi_groups(this->NPROC,
                                            mpi.KPAR,
                                            this->MY_RANK,
@@ -92,7 +95,6 @@ TEST_P(ParallelK2DTest, DividePools) {
                             mpi.RANK_IN_POOL,
                             this->NPROC,
                             1);
-        /*
         for (int ik = 0; ik < pp.nkstot_; ik++)
         {
             std::cout << "whichpool[" << ik << "] = " <<
@@ -109,7 +111,7 @@ TEST_P(ParallelK2DTest, DividePools) {
         k2d.Pkpoints->get_startpro_pool(ipool) << std::endl;
         }
         */
-        k2d.P2D_pool->init(10, 10, 1, POOL_WORLD, 0);
+        //k2d.P2D_pool->init(10, 10, 1, POOL_WORLD, 0);
         EXPECT_EQ(this->NPROC, 8);
         EXPECT_EQ(k2d.P2D_pool->dim0, 2);
         EXPECT_EQ(k2d.P2D_pool->dim1, 2);
@@ -120,8 +122,8 @@ TEST_P(ParallelK2DTest, DividePools) {
         k2d.set_initialized(true);
         EXPECT_TRUE(k2d.get_initialized());
     }
-    delete k2d.Pkpoints;
-    delete k2d.P2D_pool;
+    //delete k2d.Pkpoints;
+    //delete k2d.P2D_pool;
 }
 
 INSTANTIATE_TEST_SUITE_P(TESTPK,
