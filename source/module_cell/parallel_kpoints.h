@@ -61,6 +61,12 @@ class Parallel_Kpoints
         return startpro_pool[pool];
     }
 
+    // get the maximum number of k-points in all pools
+    int get_max_nks_pool() const
+    {
+        return *std::max_element(nks_pool.begin(), nks_pool.end());
+    }
+
   private:
     int kpar = 0;         // number of pools
     int my_pool = 0;      // the pool index of the present processor

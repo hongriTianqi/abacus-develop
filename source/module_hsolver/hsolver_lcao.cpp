@@ -275,14 +275,8 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                                 ncol_bands_pool,
                                 k2d.P2D_pool->nrow,
                                 nullptr);
-    int max_nks_pool = -1;
-    for (int ipool=0; ipool < k2d.get_kpar(); ipool++) {
-        if (k2d.Pkpoints->nks_pool[ipool] > max_nks_pool) {
-            max_nks_pool = k2d.Pkpoints->nks_pool[ipool];
-        }
-    }
     /// Loop over k points for solve Hamiltonian to charge density
-    for (int ik = 0; ik < max_nks_pool; ++ik)
+    for (int ik = 0; ik < k2d.Pkpoints->get_max_nks_pool(); ++ik)
     {
         // if nks is not equal to the number of k points in the pool
         std::vector<int> ik_kpar;
