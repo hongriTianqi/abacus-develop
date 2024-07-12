@@ -135,6 +135,7 @@ void UnitCell::print_cell_cif(const std::string& fn) const
         ofs << "_atom_site_fract_x" << std::endl;
         ofs << "_atom_site_fract_y" << std::endl;
         ofs << "_atom_site_fract_z" << std::endl;
+        ofs << "_atom_site_occupancy" << std::endl;
 
         auto inequivalent_atoms = this->symm.inequivalent_atoms();
         // ofs << std::endl;
@@ -144,7 +145,7 @@ void UnitCell::print_cell_cif(const std::string& fn) const
                 if (inequivalent_atoms.find(iat) == inequivalent_atoms.end())
                     continue;
                 ofs << atoms[it].label << " " << atoms[it].label << " " << inequivalent_atoms[iat] << " " << atoms[it].taud[ia].x << " "
-                    << atoms[it].taud[ia].y << " " << atoms[it].taud[ia].z
+                    << atoms[it].taud[ia].y << " " << atoms[it].taud[ia].z << " " << 1
                     << std::endl;
             }
         }
