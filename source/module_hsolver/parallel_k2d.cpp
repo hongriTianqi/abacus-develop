@@ -76,7 +76,7 @@ void Parallel_K2D<TK>::distribute_hsk(hamilt::Hamilt<TK>* pHamilt,
                   this->P2D_global->blacs_ctxt);
     }
     this->set_initialized(true);
-    ModuleBase::Memory::record("HSolverLCAO::parakSolver", ik_kpar.size() * this->P2D_pool->get_local_size() * 2 * sizeof(TK));
+    ModuleBase::Memory::record("HSolverLCAO::parakSolver", this->P2D_pool->get_local_size() * 2 * sizeof(TK));
     ModuleBase::timer::tick("Parallel_K2D", "distribute_hsk");
 }
 
