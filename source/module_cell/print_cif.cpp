@@ -139,14 +139,15 @@ void UnitCell::print_cell_cif(const std::string& fn) const
 
         auto inequivalent_atoms = this->symm.inequivalent_atoms();
         // ofs << std::endl;
+        int iat = 0;
         for (int it = 0; it < ntype; it++) {
             for (int ia = 0; ia < atoms[it].na; ia++) {
-                int iat = this->itia2iat(it, ia);
                 if (inequivalent_atoms.find(iat) == inequivalent_atoms.end())
                     continue;
                 ofs << atoms[it].label << " " << atoms[it].label << " " << inequivalent_atoms[iat] << " " << atoms[it].taud[ia].x << " "
                     << atoms[it].taud[ia].y << " " << atoms[it].taud[ia].z << " " << 1
                     << std::endl;
+                iat++;
             }
         }
     }
