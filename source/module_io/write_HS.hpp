@@ -93,20 +93,22 @@ void ModuleIO::save_mat(const int istep,
     const std::string label,
     const std::string& file_name,
     const Parallel_2D& pv,
-    const int drank)
+    const int drank,
+    const bool reduce)
 {
     ModuleBase::TITLE("ModuleIO", "save_mat");
     ModuleBase::timer::tick("ModuleIO", "save_mat");
     ModuleBase::GlobalFunc::OUT(GlobalV::ofs_running, "Dimension of " + label + " : ", dim);
 
     std::stringstream ss;
-    if (bit)ss << GlobalV::global_out_dir << file_name + "-" + label + "-bit";
-    else
+    if (bit) {ss << GlobalV::global_out_dir << file_name + "-" + label + "-bit";
+    } else
     {
-        if (app || istep < 0)
+        if (app || istep < 0) {
             ss << GlobalV::global_out_dir << file_name + "-" + label;
-        else
+        } else {
             ss << GlobalV::global_out_dir << istep << "_" << file_name + "-" + label;
+}
     }
     if (bit)
     {
@@ -148,7 +150,7 @@ void ModuleIO::save_mat(const int istep,
                 }
             }
 
-            Parallel_Reduce::reduce_all(line, tri ? dim - i : dim);
+            if (reduce) Parallel_Reduce::reduce_all(line, tri ? dim - i : dim);
 
             if (drank == 0)
             {
@@ -162,8 +164,9 @@ void ModuleIO::save_mat(const int istep,
             MPI_Barrier(DIAG_WORLD);
         }
 
-        if (drank == 0)
+        if (drank == 0) {
             fclose(g);
+}
 #else
         FILE* g = fopen(ss.str().c_str(), "wb");
 
@@ -186,10 +189,11 @@ void ModuleIO::save_mat(const int istep,
 #ifdef __MPI
         if (drank == 0)
         {
-            if (app)
+            if (app && istep > 0) {
                 g.open(ss.str().c_str(), std::ofstream::app);
-            else
+            } else {
                 g.open(ss.str().c_str());
+}
             g << dim;
         }
 
@@ -222,18 +226,20 @@ void ModuleIO::save_mat(const int istep,
                 }
             }
 
-            Parallel_Reduce::reduce_all(line, tri ? dim - i : dim);
+            if (reduce) Parallel_Reduce::reduce_all(line, tri ? dim - i : dim);
 
             if (drank == 0)
             {
-                for (int j = (tri ? i : 0); j < dim; j++) g << " " << line[tri ? j - i : j];
+                for (int j = (tri ? i : 0); j < dim; j++) { g << " " << line[tri ? j - i : j];
+}
                 g << std::endl;
             }
             delete[] line;
         }
 
-        if (drank == 0) // Peize Lin delete ; at 2020.01.31
+        if (drank == 0) { // Peize Lin delete ; at 2020.01.31
             g.close();
+}
 #else
         if (app)
             std::ofstream g(ss.str().c_str(), std::ofstream::app);
