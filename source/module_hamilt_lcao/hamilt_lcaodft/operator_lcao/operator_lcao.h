@@ -19,8 +19,9 @@ class OperatorLCAO : public Operator<TK> {
         : hsk(hsk_in), kvec_d(kvec_d_in), hR(hR_in){}
     virtual ~OperatorLCAO()
     {
-        if (this->allocated_smatrix)
+        if (this->allocated_smatrix) {
             delete[] this->smatrix_k;
+}
     }
 
     /* Function init(k) is used for update HR and HK ,
