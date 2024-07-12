@@ -2,6 +2,8 @@
 
 #include "module_base/parallel_global.h"
 #include "module_base/scalapack_connector.h"
+#include "module_base/timer.h"
+#include "module_base/memory.h"
 
 template <typename TK>
 void Parallel_K2D<TK>::set_para_env(int nks,
@@ -34,6 +36,7 @@ template <typename TK>
 void Parallel_K2D<TK>::distribute_hsk(hamilt::Hamilt<TK>* pHamilt,
                                       const std::vector<int>& ik_kpar,
                                       const int& nw) {
+    ModuleBase::timer::tick("Parallel_K2D", "distribute_hsk");
     this->set_initialized(false);
     for (int ipool = 0; ipool < ik_kpar.size(); ++ipool)
     {
@@ -73,6 +76,8 @@ void Parallel_K2D<TK>::distribute_hsk(hamilt::Hamilt<TK>* pHamilt,
                   this->P2D_global->blacs_ctxt);
     }
     this->set_initialized(true);
+    ModuleBase::Memory::record("HSolverLCAO::parakSolver", ik_kpar.size() * this->P2D_pool->get_local_size() * 2 * sizeof(TK));
+    ModuleBase::timer::tick("Parallel_K2D", "distribute_hsk");
 }
 
 template <typename TK>

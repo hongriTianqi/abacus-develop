@@ -32,6 +32,7 @@
 
 #include "module_base/scalapack_connector.h"
 #include "module_hsolver/parallel_k2d.h"
+#include "module_base/memory.h"
 
 #include <unistd.h>
 
@@ -261,6 +262,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                                    psi::Psi<T>& psi,
                                    elecstate::ElecState* pes)
 {
+    ModuleBase::timer::tick("HSolverLCAO", "parakSolver");
     auto& k2d = Parallel_K2D<T>::get_instance();
     int nrow = this->ParaV->get_global_row_size();
     int nbands = this->ParaV->get_nbands();
@@ -278,6 +280,8 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                                 ncol_bands_pool,
                                 k2d.get_p2D_pool()->nrow,
                                 nullptr);
+    int nks = psi.get_nk();
+    ModuleBase::Memory::record("HSolverLCAO::parakSolve", nks * nrow * ncol_bands_pool * sizeof(T));
     /// Loop over k points for solve Hamiltonian to charge density
     for (int ik = 0; ik < k2d.get_pKpoints()->get_max_nks_pool(); ++ik)
     {
@@ -310,6 +314,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
             this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
         }
     }
+    ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
     for (int ik = 0; ik < psi.get_nk(); ++ik) {
         /// bcast ekb
         int source
@@ -339,8 +344,10 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                   k2d.get_p2D_global()->desc,
                   k2d.get_p2D_global()->blacs_ctxt);
     }
+    ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
     k2d.unset_para_env();
     k2d.set_initialized(false);
+    ModuleBase::timer::tick("HSolverLCAO", "parakSolve");
 }
 
 template <typename T, typename Device>
