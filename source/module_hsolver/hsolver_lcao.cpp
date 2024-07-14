@@ -289,7 +289,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
         std::vector<int> ik_kpar;
         int ik_avail = 0;
         for (int i = 0; i < k2d.get_kpar(); i++) {
-            if (ik + k2d.get_pKpoints()->startk_pool[i] < psi.get_nk()) {
+            if (ik + k2d.get_pKpoints()->startk_pool[i] < psi.get_nk() && ik < k2d.get_pKpoints()->nks_pool[i]) {
                 ik_avail++;
             }
         }
@@ -306,7 +306,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
         /// global index of k point
         int ik_global = ik + k2d.get_pKpoints()->startk_pool[k2d.get_my_pool()];
 
-        if (ik_global < psi.get_nk())
+        if (ik_global < psi.get_nk() && ik < k2d.get_pKpoints()->nks_pool[k2d.get_my_pool()])
         {
             /// local psi in pool
             psi_pool.fix_k(ik_global);
