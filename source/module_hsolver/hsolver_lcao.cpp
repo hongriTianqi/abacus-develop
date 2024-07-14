@@ -266,9 +266,9 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
     auto& k2d = Parallel_K2D<T>::get_instance();
     int nbands = this->ParaV->get_nbands();
     int nks = psi.get_nk();
-#ifdef __MPI
     int nrow = this->ParaV->get_global_row_size();
     int nb2d = this->ParaV->get_block_size();
+#ifdef __MPI
     k2d.set_para_env(psi.get_nk(),
                      nrow,
                      nb2d,
