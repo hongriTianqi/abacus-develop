@@ -277,6 +277,8 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
     const int zero = 0;
 #ifdef __MPI
     int ncol_bands_pool = numroc_(&(nbands), &(nb2d), &(k2d.get_p2D_pool()->coord[1]), &zero, &(k2d.get_p2D_pool()->dim1));
+#else
+    int ncol_bands_pool = nbands;
 #endif
     auto psi_pool = psi::Psi<T>(psi.get_nk(),
                                 ncol_bands_pool,
@@ -348,6 +350,8 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                   1,
                   k2d.get_p2D_global()->desc,
                   k2d.get_p2D_global()->blacs_ctxt);
+#else
+        psi = psi_pool;
 #endif
     }
     ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
