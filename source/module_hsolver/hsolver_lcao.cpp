@@ -280,11 +280,6 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
     /// set psi_pool
     const int zero = 0;
     int ncol_bands_pool = numroc_(&(nbands), &(nb2d), &(k2d.get_p2D_pool()->coord[1]), &zero, &(k2d.get_p2D_pool()->dim1));
-    auto psi_pool = psi::Psi<T>(psi.get_nk(),
-                            ncol_bands_pool,
-                            k2d.get_p2D_pool()->nrow,
-                            nullptr);
-    ModuleBase::Memory::record("HSolverLCAO::parakSolve", nks * nrow * ncol_bands_pool * sizeof(T));
     /// Loop over k points for solve Hamiltonian to charge density
     for (int ik = 0; ik < k2d.get_pKpoints()->get_max_nks_pool(); ++ik)
     {
@@ -308,46 +303,40 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
         k2d.distribute_hsk(pHamilt, ik_kpar, nrow);
         /// global index of k point
         int ik_global = ik + k2d.get_pKpoints()->startk_pool[k2d.get_my_pool()];
-
+        auto psi_pool = psi::Psi<T>(1, ncol_bands_pool, k2d.get_p2D_pool()->nrow, nullptr);
+        ModuleBase::Memory::record("HSolverLCAO::parakSolve", nrow * ncol_bands_pool * sizeof(T));
         if (ik_global < psi.get_nk() && ik < k2d.get_pKpoints()->nks_pool[k2d.get_my_pool()])
         {
             /// local psi in pool
-            psi_pool.fix_k(ik_global);
+            psi_pool.fix_k(0);
             /// solve eigenvector and eigenvalue for H(k)
             this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
         }
-    }
-    ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
-    for (int ik = 0; ik < nks; ++ik) {
-        psi_pool.fix_k(ik);
-        psi.fix_k(ik);
-        /// bcast ekb
-        int source
-            = k2d.get_pKpoints()->get_startpro_pool(k2d.get_pKpoints()->whichpool[ik]);
-        MPI_Bcast(&(pes->ekb(ik, 0)),
-                  nbands,
-                  MPI_DOUBLE,
-                  source,
-                  MPI_COMM_WORLD);
-        /// bcast psi
-        int desc_pool[9];
-        std::copy(k2d.get_p2D_pool()->desc, k2d.get_p2D_pool()->desc + 9, desc_pool);
-        if (k2d.get_my_pool() != k2d.get_pKpoints()->whichpool[ik]) {
-            desc_pool[1] = -1;
+        ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
+        for (int ipool = 0; ipool < ik_kpar.size(); ++ipool)
+        {
+            int source = k2d.get_pKpoints()->get_startpro_pool(ipool);
+            MPI_Bcast(&(pes->ekb(ik_kpar[ipool], 0)), nbands, MPI_DOUBLE, source, MPI_COMM_WORLD);
+            int desc_pool[9];
+            std::copy(k2d.get_p2D_pool()->desc, k2d.get_p2D_pool()->desc + 9, desc_pool);
+            if (k2d.get_my_pool() != ipool) {
+                desc_pool[1] = -1;
+            }
+            psi.fix_k(ik_kpar[ipool]);
+            Cpxgemr2d(nrow,
+                    nbands,
+                    psi_pool.get_pointer(),
+                    1,
+                    1,
+                    desc_pool,
+                    psi.get_pointer(),
+                    1,
+                    1,
+                    k2d.get_p2D_global()->desc,
+                    k2d.get_p2D_global()->blacs_ctxt);
         }
-        Cpxgemr2d(nrow,
-                  nbands,
-                  psi_pool.get_pointer(),
-                  1,
-                  1,
-                  desc_pool,
-                  psi.get_pointer(),
-                  1,
-                  1,
-                  k2d.get_p2D_global()->desc,
-                  k2d.get_p2D_global()->blacs_ctxt);
+        ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
     }
-    ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
     k2d.unset_para_env();
     k2d.set_initialized(false);
     ModuleBase::timer::tick("HSolverLCAO", "parakSolve");
