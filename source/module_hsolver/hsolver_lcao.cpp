@@ -265,7 +265,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                                    elecstate::ElecState* pes)
 {
 #ifdef __MPI
-    ModuleBase::timer::tick("HSolverLCAO", "parakSolver");
+    ModuleBase::timer::tick("HSolverLCAO", "parakSolve");
     auto& k2d = Parallel_K2D<T>::get_instance();
     int nbands = this->ParaV->get_nbands();
     int nks = psi.get_nk();
