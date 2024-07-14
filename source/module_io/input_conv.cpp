@@ -346,9 +346,11 @@ void Input_Conv::Convert()
         /// GlobalV::KPAR_LCAO is used in LCAO diagonalization only and all other parts of the code
         /// use GlobalV::KPAR = 1
         GlobalV::KPAR_LCAO = INPUT.kpar;
+#ifdef __MPI
         /// kpar in Parallel_K2D do diagonalization in lcao codes with k-points parallelism
         Parallel_K2D<double>::get_instance().set_kpar(GlobalV::KPAR_LCAO);
         Parallel_K2D<std::complex<double>>::get_instance().set_kpar(GlobalV::KPAR_LCAO);
+#endif
         /// GlobalV::KPAR still have effects on other parts of the code
         GlobalV::KPAR = 1;
     }
