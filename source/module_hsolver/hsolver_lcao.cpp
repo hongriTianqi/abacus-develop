@@ -192,11 +192,13 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
         }
     }
 
+#ifdef __MPI
     if (Parallel_K2D<double>::get_instance().get_kpar() > 1)
     {
         this->parakSolve(pHamilt, psi, pes);    
     }
     else
+#endif
     {
         /// Loop over k points for solve Hamiltonian to charge density
         for (int ik = 0; ik < psi.get_nk(); ++ik) {
@@ -262,13 +264,13 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                                    psi::Psi<T>& psi,
                                    elecstate::ElecState* pes)
 {
+#ifdef __MPI
     ModuleBase::timer::tick("HSolverLCAO", "parakSolver");
     auto& k2d = Parallel_K2D<T>::get_instance();
     int nbands = this->ParaV->get_nbands();
     int nks = psi.get_nk();
     int nrow = this->ParaV->get_global_row_size();
     int nb2d = this->ParaV->get_block_size();
-#ifdef __MPI
     k2d.set_para_env(psi.get_nk(),
                      nrow,
                      nb2d,
@@ -283,7 +285,6 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                             k2d.get_p2D_pool()->nrow,
                             nullptr);
     ModuleBase::Memory::record("HSolverLCAO::parakSolve", nks * nrow * ncol_bands_pool * sizeof(T));
-#endif
     /// Loop over k points for solve Hamiltonian to charge density
     for (int ik = 0; ik < k2d.get_pKpoints()->get_max_nks_pool(); ++ik)
     {
@@ -320,7 +321,6 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
     for (int ik = 0; ik < nks; ++ik) {
         psi_pool.fix_k(ik);
         psi.fix_k(ik);
-#ifdef __MPI
         /// bcast ekb
         int source
             = k2d.get_pKpoints()->get_startpro_pool(k2d.get_pKpoints()->whichpool[ik]);
@@ -346,16 +346,12 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                   1,
                   k2d.get_p2D_global()->desc,
                   k2d.get_p2D_global()->blacs_ctxt);
-#else
-        psi = psi_pool;
-#endif
     }
     ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
-#ifdef __MPI
     k2d.unset_para_env();
-#endif
     k2d.set_initialized(false);
     ModuleBase::timer::tick("HSolverLCAO", "parakSolve");
+#endif
 }
 
 template <typename T, typename Device>
