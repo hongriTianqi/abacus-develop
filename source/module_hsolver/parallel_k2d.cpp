@@ -19,10 +19,12 @@ void Parallel_K2D<TK>::set_para_env(int nks,
                                        this->NPROC_IN_POOL,
                                        this->MY_POOL,
                                        this->RANK_IN_POOL);
+#ifdef __MPI
     MPI_Comm_split(MPI_COMM_WORLD,
                    this->MY_POOL,
                    this->RANK_IN_POOL,
                    &this->POOL_WORLD_K2D);
+#endif
     this->Pkpoints = new Parallel_Kpoints;
     this->P2D_global = new Parallel_2D;
     this->P2D_pool = new Parallel_2D;
@@ -52,6 +54,7 @@ void Parallel_K2D<TK>::distribute_hsk(hamilt::Hamilt<TK>* pHamilt,
         if (this->MY_POOL != this->Pkpoints->whichpool[ik_kpar[ipool]]) {
             desc_pool[1] = -1;
         }
+#ifdef __MPI
         Cpxgemr2d(nw,
                   nw,
                   HK_global.p,
@@ -74,6 +77,7 @@ void Parallel_K2D<TK>::distribute_hsk(hamilt::Hamilt<TK>* pHamilt,
                   1,
                   desc_pool,
                   this->P2D_global->blacs_ctxt);
+#endif
     }
     this->set_initialized(true);
     ModuleBase::Memory::record("HSolverLCAO::parakSolver", this->P2D_pool->get_local_size() * 2 * sizeof(TK));

@@ -275,7 +275,9 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                      GlobalV::NSPIN);
     /// set psi_pool
     const int zero = 0;
+#ifdef __MPI
     int ncol_bands_pool = numroc_(&(nbands), &(nb2d), &(k2d.get_p2D_pool()->coord[1]), &zero, &(k2d.get_p2D_pool()->dim1));
+#endif
     auto psi_pool = psi::Psi<T>(psi.get_nk(),
                                 ncol_bands_pool,
                                 k2d.get_p2D_pool()->nrow,
@@ -319,11 +321,13 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
         /// bcast ekb
         int source
             = k2d.get_pKpoints()->get_startpro_pool(k2d.get_pKpoints()->whichpool[ik]);
+#ifdef __MPI
         MPI_Bcast(&(pes->ekb(ik, 0)),
                   nbands,
                   MPI_DOUBLE,
                   source,
                   MPI_COMM_WORLD);
+#endif
         /// bcast psi
         int desc_pool[9];
         std::copy(k2d.get_p2D_pool()->desc, k2d.get_p2D_pool()->desc + 9, desc_pool);
@@ -332,6 +336,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
         }
         psi_pool.fix_k(ik);
         psi.fix_k(ik);
+#ifdef __MPI
         Cpxgemr2d(nrow,
                   nbands,
                   psi_pool.get_pointer(),
@@ -343,6 +348,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                   1,
                   k2d.get_p2D_global()->desc,
                   k2d.get_p2D_global()->blacs_ctxt);
+#endif
     }
     ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
     k2d.unset_para_env();
