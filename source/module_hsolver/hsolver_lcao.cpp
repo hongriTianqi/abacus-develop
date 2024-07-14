@@ -320,25 +320,23 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
     }
     ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
     for (int ik = 0; ik < psi.get_nk(); ++ik) {
+        psi_pool.fix_k(ik);
+        psi.fix_k(ik);
+#ifdef __MPI
         /// bcast ekb
         int source
             = k2d.get_pKpoints()->get_startpro_pool(k2d.get_pKpoints()->whichpool[ik]);
-#ifdef __MPI
         MPI_Bcast(&(pes->ekb(ik, 0)),
                   nbands,
                   MPI_DOUBLE,
                   source,
                   MPI_COMM_WORLD);
-#endif
         /// bcast psi
         int desc_pool[9];
         std::copy(k2d.get_p2D_pool()->desc, k2d.get_p2D_pool()->desc + 9, desc_pool);
         if (k2d.get_my_pool() != k2d.get_pKpoints()->whichpool[ik]) {
             desc_pool[1] = -1;
         }
-        psi_pool.fix_k(ik);
-        psi.fix_k(ik);
-#ifdef __MPI
         Cpxgemr2d(nrow,
                   nbands,
                   psi_pool.get_pointer(),
