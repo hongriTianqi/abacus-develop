@@ -350,6 +350,7 @@ void HSolverLCAO<T, Device>::hamiltSolvePsiK(hamilt::Hamilt<T>* hm,
                                              psi::Psi<T>& psi,
                                              double* eigenvalue) {
     ModuleBase::TITLE("HSolverLCAO", "hamiltSolvePsiK");
+    MPI_Barrier(MPI_COMM_WORLD);
     ModuleBase::timer::tick("HSolverLCAO", "hamiltSolvePsiK");
 
     if (this->method != "cg_in_lcao") {
@@ -470,7 +471,7 @@ void HSolverLCAO<T, Device>::hamiltSolvePsiK(hamilt::Hamilt<T>* hm,
                       {psi.get_nbands(), psi.get_nbasis()})
             .sync(psi_tensor);
     }
-
+    MPI_Barrier(MPI_COMM_WORLD);
     ModuleBase::timer::tick("HSolverLCAO", "hamiltSolvePsiK");
 }
 
