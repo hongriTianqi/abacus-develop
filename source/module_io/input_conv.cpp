@@ -312,7 +312,7 @@ void Input_Conv::Convert()
         GlobalV::KPAR = base_device::information::get_device_kpar(PARAM.inp.kpar);
     }
 #ifdef __LCAO
-    else if (INPUT.basis_type == "lcao") {
+    else if (PARAM.inp.basis_type == "lcao") {
         /// GlobalV::KPAR_LCAO is used in LCAO diagonalization only and all other parts of the code
         /// use GlobalV::KPAR = 1
         GlobalV::KPAR_LCAO = INPUT.kpar;
