@@ -304,7 +304,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
         /// global index of k point
         int ik_global = ik + k2d.get_pKpoints()->startk_pool[k2d.get_my_pool()];
         auto psi_pool = psi::Psi<T>(1, ncol_bands_pool, k2d.get_p2D_pool()->nrow, nullptr);
-        ModuleBase::Memory::record("HSolverLCAO::parakSolve", nrow * ncol_bands_pool * sizeof(T));
+        ModuleBase::Memory::record("HSolverLCAO::psi_pool", nrow * ncol_bands_pool * sizeof(T));
         if (ik_global < psi.get_nk() && ik < k2d.get_pKpoints()->nks_pool[k2d.get_my_pool()])
         {
             /// local psi in pool
@@ -312,6 +312,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
             /// solve eigenvector and eigenvalue for H(k)
             this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
         }
+        MPI_Barrier(MPI_COMM_WORLD);
         ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
         for (int ipool = 0; ipool < ik_kpar.size(); ++ipool)
         {
@@ -335,6 +336,7 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                     k2d.get_p2D_global()->desc,
                     k2d.get_p2D_global()->blacs_ctxt);
         }
+        MPI_Barrier(MPI_COMM_WORLD);
         ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
     }
     k2d.unset_para_env();
