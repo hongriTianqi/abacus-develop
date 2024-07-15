@@ -315,7 +315,7 @@ void Input_Conv::Convert()
     else if (PARAM.inp.basis_type == "lcao") {
         /// GlobalV::KPAR_LCAO is used in LCAO diagonalization only and all other parts of the code
         /// use GlobalV::KPAR = 1
-        GlobalV::KPAR_LCAO = INPUT.kpar;
+        GlobalV::KPAR_LCAO = base_device::information::get_device_kpar(PARAM.inp.kpar);
 #ifdef __MPI
         /// kpar in Parallel_K2D do diagonalization in lcao codes with k-points parallelism
         Parallel_K2D<double>::get_instance().set_kpar(GlobalV::KPAR_LCAO);
