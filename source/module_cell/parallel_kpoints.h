@@ -82,7 +82,7 @@ class Parallel_Kpoints
     void get_startk_pool(const int& nkstot);
     void get_whichpool(const int& nkstot);
 
-    void set_startpro_pool(void);
+    void set_startpro_pool();
 #endif
 };
 
