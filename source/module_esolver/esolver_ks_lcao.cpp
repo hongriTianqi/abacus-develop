@@ -244,6 +244,27 @@ void ESolver_KS_LCAO<TK, TR>::before_all_runners(const Input_para& inp, UnitCell
         this->pelec->fixed_weights(GlobalV::ocp_kb, GlobalV::NBANDS, GlobalV::nelec);
     }
 
+    // 15) if kpar is not divisible by nks, print a warning
+    if (Parallel_K2D<TK>::get_instance().get_kpar() > 1)
+    {
+        if (this->kv.get_nks() % Parallel_K2D<TK>::get_instance().get_kpar() != 0)
+        {
+            ModuleBase::WARNING("ESolver_KS_LCAO::before_all_runners",
+                                 "nks is not divisible by kpar.");
+            std::cout << "\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+                        "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+                        "%%%%%%%%%%%%%%%%%%%%%%%%%%" << std::endl;
+            std::cout << " Warning: nks (" << this->kv.get_nks() << ") is not divisible by kpar ("
+                      << Parallel_K2D<TK>::get_instance().get_kpar() << ")." << std::endl;
+            std::cout << " This may lead to poor load balance. It is strongly suggested to" << std::endl;
+            std::cout << " set nks to be divisible by kpar, but if this is really what" << std::endl;
+            std::cout << " you want, please ignore this warning." << std::endl;
+            std::cout << "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+                             "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
+                             "%%%%%%%%%%%%\n";
+        }
+    }
+
     ModuleBase::timer::tick("ESolver_KS_LCAO", "before_all_runners");
     return;
 }

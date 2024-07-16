@@ -33,6 +33,7 @@
 #include "module_base/scalapack_connector.h"
 #include "module_hsolver/parallel_k2d.h"
 #include "module_base/memory.h"
+#include "module_hsolver/parallel_k2d.h"
 
 #include <unistd.h>
 
@@ -195,7 +196,7 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
 #ifdef __MPI
     if (Parallel_K2D<double>::get_instance().get_kpar() > 1)
     {
-        this->parakSolve(pHamilt, psi, pes);    
+        this->parakSolve(pHamilt, psi, pes);
     }
     else
 #endif
