@@ -9,7 +9,6 @@
 #include "module_elecstate/occupy.h"
 #include "module_hamilt_general/module_surchem/surchem.h"
 #include "module_hamilt_pw/hamilt_pwdft/global.h"
-#include "module_hsolver/parallel_k2d.h"
 #include "module_io/berryphase.h"
 #include "module_io/input.h"
 #include "module_parameter/parameter.h"
@@ -313,15 +312,9 @@ void Input_Conv::Convert()
     }
 #ifdef __LCAO
     else if (PARAM.inp.basis_type == "lcao") {
-        /// GlobalV::KPAR_LCAO is used in LCAO diagonalization only and all other parts of the code
-        /// use GlobalV::KPAR = 1
-        GlobalV::KPAR_LCAO = base_device::information::get_device_kpar(PARAM.inp.kpar);
-#ifdef __MPI
-        /// kpar in Parallel_K2D do diagonalization in lcao codes with k-points parallelism
-        Parallel_K2D<double>::get_instance().set_kpar(GlobalV::KPAR_LCAO);
-        Parallel_K2D<std::complex<double>>::get_instance().set_kpar(GlobalV::KPAR_LCAO);
-#endif
-        /// GlobalV::KPAR still have effects on other parts of the code
+        /// GlobalV::KPAR_LCAO is used in LCAO diagonalization only
+        GlobalV::KPAR_LCAO = PARAM.inp.kpar;
+        /// all other parts of the code use GlobalV::KPAR = 1
         GlobalV::KPAR = 1;
     }
 #endif

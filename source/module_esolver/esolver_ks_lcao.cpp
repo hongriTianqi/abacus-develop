@@ -50,6 +50,7 @@
 #include "module_io/io_dmk.h"
 #include "module_io/write_dmr.h"
 #include "module_io/write_wfc_nao.h"
+#include "module_hsolver/parallel_k2d.h"
 
 namespace ModuleESolver
 {
@@ -245,9 +246,9 @@ void ESolver_KS_LCAO<TK, TR>::before_all_runners(const Input_para& inp, UnitCell
     }
 
     // 15) if kpar is not divisible by nks, print a warning
-    if (Parallel_K2D<TK>::get_instance().get_kpar() > 1)
+    if (GlobalV::KPAR_LCAO > 1)
     {
-        if (this->kv.get_nks() % Parallel_K2D<TK>::get_instance().get_kpar() != 0)
+        if (this->kv.get_nks() % GlobalV::KPAR_LCAO != 0)
         {
             ModuleBase::WARNING("ESolver_KS_LCAO::before_all_runners",
                                  "nks is not divisible by kpar.");
@@ -255,7 +256,7 @@ void ESolver_KS_LCAO<TK, TR>::before_all_runners(const Input_para& inp, UnitCell
                         "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
                         "%%%%%%%%%%%%%%%%%%%%%%%%%%" << std::endl;
             std::cout << " Warning: nks (" << this->kv.get_nks() << ") is not divisible by kpar ("
-                      << Parallel_K2D<TK>::get_instance().get_kpar() << ")." << std::endl;
+                      << GlobalV::KPAR_LCAO << ")." << std::endl;
             std::cout << " This may lead to poor load balance. It is strongly suggested to" << std::endl;
             std::cout << " set nks to be divisible by kpar, but if this is really what" << std::endl;
             std::cout << " you want, please ignore this warning." << std::endl;
@@ -263,6 +264,11 @@ void ESolver_KS_LCAO<TK, TR>::before_all_runners(const Input_para& inp, UnitCell
                              "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%"
                              "%%%%%%%%%%%%\n";
         }
+#ifdef __MPI
+        /// kpar in Parallel_K2D do diagonalization in lcao codes with k-points parallelism
+        Parallel_K2D<double>::get_instance().set_kpar(GlobalV::KPAR_LCAO);
+        Parallel_K2D<std::complex<double>>::get_instance().set_kpar(GlobalV::KPAR_LCAO);
+#endif
     }
 
     ModuleBase::timer::tick("ESolver_KS_LCAO", "before_all_runners");
