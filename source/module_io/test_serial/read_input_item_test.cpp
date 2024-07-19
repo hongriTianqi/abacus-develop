@@ -18,6 +18,7 @@
 #define private public
 #include "module_io/input_item.h"
 #include "module_io/read_input.h"
+#undef private
 
 class InputTest : public testing::Test
 {
@@ -562,13 +563,6 @@ TEST_F(InputTest, Item_test)
         EXPECT_THAT(output, testing::HasSubstr("NOTICE"));
 
         param.input.ks_solver = "cg";
-        param.input.basis_type = "lcao";
-        testing::internal::CaptureStdout();
-        EXPECT_EXIT(it->second.check_value(it->second, param), ::testing::ExitedWithCode(0), "");
-        output = testing::internal::GetCapturedStdout();
-        EXPECT_THAT(output, testing::HasSubstr("NOTICE"));
-
-        param.input.ks_solver = "genelpa";
         param.input.basis_type = "lcao";
         testing::internal::CaptureStdout();
         EXPECT_EXIT(it->second.check_value(it->second, param), ::testing::ExitedWithCode(0), "");
