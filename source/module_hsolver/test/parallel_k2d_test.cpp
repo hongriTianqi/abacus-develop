@@ -44,7 +44,7 @@ class ParaPrepare {
 
 class ParallelK2DTest : public ::testing::TestWithParam<ParaPrepare> {
   protected:
-    Parallel_K2D<double>& k2d = Parallel_K2D<double>::get_instance();
+    Parallel_K2D<double> k2d = Parallel_K2D<double>();
     MPIContext mpi;
     int NPROC;
     int MY_RANK;
@@ -119,8 +119,6 @@ TEST_P(ParallelK2DTest, DividePools) {
         EXPECT_EQ(k2d.get_p2D_pool()->get_col_size(), 5);
         k2d.set_kpar(10);
         EXPECT_EQ(k2d.get_kpar(), 10);
-        k2d.set_initialized(true);
-        EXPECT_TRUE(k2d.get_initialized());
     }
     //delete k2d.Pkpoints;
     //delete k2d.get_p2D_pool();

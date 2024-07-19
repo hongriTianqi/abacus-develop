@@ -17,17 +17,10 @@
 template <typename TK>
 class Parallel_K2D {
   public:
-    /**
-     * Define Parallel_K2D as a singleton class
-     */
-    static Parallel_K2D& get_instance() {
-        static Parallel_K2D instance;
-        return instance;
-    }
-    /// delete copy constructor
-    Parallel_K2D(const Parallel_K2D&) = delete;
-    /// delete copy assignment
-    Parallel_K2D& operator=(const Parallel_K2D&) = delete;
+      /// private constructor
+    Parallel_K2D() {}
+    /// private destructor
+    ~Parallel_K2D() {}
     /**
      * Public member functions
      */
@@ -52,10 +45,6 @@ class Parallel_K2D {
     void set_kpar(int kpar);
     /// get the number of k-points
     int get_kpar() { return this->kpar_; }
-    /// initialize the Parallel_K2D class
-    void set_initialized(bool initialized) { this->initialized_ = initialized; }
-    /// check if the Parallel_K2D class is initialized
-    bool get_initialized() { return this->initialized_; }
     /// get my pool
     int get_my_pool() { return this->MY_POOL; }
     /// get pKpoints
@@ -80,11 +69,6 @@ class Parallel_K2D {
      * Private member variables
      */
     int kpar_ = 0;
-    bool initialized_ = false;
-    /// private constructor
-    Parallel_K2D() {}
-    /// private destructor
-    ~Parallel_K2D() {}
 
     /**
      * mpi info

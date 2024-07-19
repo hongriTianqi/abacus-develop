@@ -7,7 +7,6 @@
 #include "module_base/scalapack_connector.h"
 #include "module_base/timer.h"
 #include "module_base/tool_quit.h"
-#include "module_hsolver/parallel_k2d.h"
 
 typedef hamilt::MatrixBlock<double> matd;
 typedef hamilt::MatrixBlock<std::complex<double>> matcd;
@@ -78,13 +77,7 @@ void DiagoElpa<std::complex<double>>::diag(
     std::vector<double> eigen(GlobalV::NLOCAL, 0.0);
 
     bool isReal = false;
-    MPI_Comm COMM_DIAG = MPI_COMM_NULL;
-    if (Parallel_K2D<std::complex<double>>::get_instance().get_initialized()) {
-        COMM_DIAG
-            = Parallel_K2D<std::complex<double>>::get_instance().POOL_WORLD_K2D;
-    } else {
-        COMM_DIAG = setmpicomm(); // set mpi_comm needed
-    }
+    MPI_Comm COMM_DIAG = setmpicomm(); // set mpi_comm needed
     ELPA_Solver es((const bool)isReal,
                    COMM_DIAG,
                    (const int)GlobalV::NBANDS,
@@ -122,12 +115,7 @@ void DiagoElpa<double>::diag(hamilt::Hamilt<double>* phm_in,
     std::vector<double> eigen(GlobalV::NLOCAL, 0.0);
 
     bool isReal = true;
-    MPI_Comm COMM_DIAG = MPI_COMM_NULL;
-    if (Parallel_K2D<double>::get_instance().get_initialized()) {
-        COMM_DIAG = Parallel_K2D<double>::get_instance().POOL_WORLD_K2D;
-    } else {
-        COMM_DIAG = setmpicomm(); // set mpi_comm needed
-    }
+    MPI_Comm COMM_DIAG = setmpicomm(); // set mpi_comm needed
     // ELPA_Solver es(isReal, COMM_DIAG, GlobalV::NBANDS, h_mat.row, h_mat.col,
     // h_mat.desc);
     ELPA_Solver es((const bool)isReal,
@@ -156,6 +144,75 @@ void DiagoElpa<double>::diag(hamilt::Hamilt<double>* phm_in,
                              "DiagoElpa only can be used with macro __MPI");
 #endif
 }
+
+
+#ifdef __MPI
+template <>
+void DiagoElpa<std::complex<double>>::diag_pool(hamilt::MatrixBlock<std::complex<double>>& h_mat,
+    hamilt::MatrixBlock<std::complex<double>>& s_mat,
+    psi::Psi<std::complex<double>>& psi,
+    Real* eigenvalue_in,
+    MPI_Comm comm)
+{
+    std::vector<double> eigen(GlobalV::NLOCAL, 0.0);
+    bool isReal = false;
+    ELPA_Solver es((const bool)isReal,
+                   comm,
+                   (const int)GlobalV::NBANDS,
+                   (const int)h_mat.row,
+                   (const int)h_mat.col,
+                   (const int*)h_mat.desc);
+    this->DecomposedState
+        = 0; // for k pointer, the decomposed s_mat can not be reused
+    ModuleBase::timer::tick("DiagoElpa", "elpa_solve");
+    es.generalized_eigenvector(h_mat.p,
+                               s_mat.p,
+                               this->DecomposedState,
+                               eigen.data(),
+                               psi.get_pointer());
+    ModuleBase::timer::tick("DiagoElpa", "elpa_solve");
+    es.exit();
+    const int inc = 1;
+    BlasConnector::copy(GlobalV::NBANDS, eigen.data(), inc, eigenvalue_in, inc);
+}
+
+template <>
+void DiagoElpa<double>::diag_pool(hamilt::MatrixBlock<double>& h_mat,
+    hamilt::MatrixBlock<double>& s_mat,
+    psi::Psi<double>& psi,
+    Real* eigenvalue_in,
+    MPI_Comm comm)
+{
+    std::vector<double> eigen(GlobalV::NLOCAL, 0.0);
+
+    bool isReal = true;
+    // ELPA_Solver es(isReal, COMM_DIAG, GlobalV::NBANDS, h_mat.row, h_mat.col,
+    // h_mat.desc);
+    ELPA_Solver es((const bool)isReal,
+                   comm,
+                   (const int)GlobalV::NBANDS,
+                   (const int)h_mat.row,
+                   (const int)h_mat.col,
+                   (const int*)h_mat.desc);
+    ModuleBase::timer::tick("DiagoElpa", "elpa_solve");
+    es.generalized_eigenvector(h_mat.p,
+                               s_mat.p,
+                               this->DecomposedState,
+                               eigen.data(),
+                               psi.get_pointer());
+    ModuleBase::timer::tick("DiagoElpa", "elpa_solve");
+    es.exit();
+
+    const int inc = 1;
+    ModuleBase::GlobalFunc::OUT(GlobalV::ofs_running,
+                                "K-S equation was solved by genelpa2");
+    BlasConnector::copy(GlobalV::NBANDS, eigen.data(), inc, eigenvalue_in, inc);
+    ModuleBase::GlobalFunc::OUT(GlobalV::ofs_running,
+                                "eigenvalues were copied to ekb");
+}
+#endif
+
+
 
 #ifdef __MPI
 template <typename T>

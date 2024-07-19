@@ -45,6 +45,37 @@ namespace hsolver
     BlasConnector::copy(GlobalV::NBANDS, eigen.data(), inc, eigenvalue_in, inc);
 }
 
+#ifdef __MPI
+ template<>
+    void DiagoScalapack<double>::diag_pool(hamilt::MatrixBlock<double>& h_mat,
+    hamilt::MatrixBlock<double>& s_mat,
+    psi::Psi<double>& psi,
+    Real* eigenvalue_in,
+    MPI_Comm comm)
+{
+    ModuleBase::TITLE("DiagoScalapack", "diag_pool");
+    assert(h_mat.col == s_mat.col && h_mat.row == s_mat.row && h_mat.desc == s_mat.desc);
+    std::vector<double> eigen(GlobalV::NLOCAL, 0.0);
+    this->pdsygvx_diag(h_mat.desc, h_mat.col, h_mat.row, h_mat.p, s_mat.p, eigen.data(), psi);
+    const int inc = 1;
+    BlasConnector::copy(GlobalV::NBANDS, eigen.data(), inc, eigenvalue_in, inc);
+}
+    template<>
+    void DiagoScalapack<std::complex<double>>::diag_pool(hamilt::MatrixBlock<std::complex<double>>& h_mat,
+    hamilt::MatrixBlock<std::complex<double>>& s_mat,
+    psi::Psi<std::complex<double>>& psi,
+    Real* eigenvalue_in,
+    MPI_Comm comm)
+{
+    ModuleBase::TITLE("DiagoScalapack", "diag_pool");
+    assert(h_mat.col == s_mat.col && h_mat.row == s_mat.row && h_mat.desc == s_mat.desc);
+    std::vector<double> eigen(GlobalV::NLOCAL, 0.0);
+    this->pzhegvx_diag(h_mat.desc, h_mat.col, h_mat.row, h_mat.p, s_mat.p, eigen.data(), psi);
+    const int inc = 1;
+    BlasConnector::copy(GlobalV::NBANDS, eigen.data(), inc, eigenvalue_in, inc);
+}
+#endif
+
     template<typename T>
     std::pair<int, std::vector<int>> DiagoScalapack<T>::pdsygvx_once(const int* const desc,
                                                          const int ncol,

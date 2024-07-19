@@ -4,7 +4,6 @@
 #include "module_hamilt_general/matrixblock.h"
 #include "module_hamilt_general/operator.h"
 #include "module_hamilt_lcao/module_hcontainer/hcontainer.h"
-#include "module_hsolver/parallel_k2d.h"
 #include "module_hamilt_lcao/hamilt_lcaodft/hs_matrix_k.hpp"
 
 namespace hamilt {
@@ -50,28 +49,6 @@ class OperatorLCAO : public Operator<TK> {
     */
     void matrixHk(MatrixBlock<TK>& hk_in, MatrixBlock<TK>& sk_in) {
         this->get_hs_pointers();
-        if (Parallel_K2D<TK>::get_instance().get_initialized()) {
-            auto& k2d = Parallel_K2D<TK>::get_instance();
-#ifdef __MPI
-            hk_in = MatrixBlock<TK>{hmatrix_k,
-                                    (size_t)k2d.get_p2D_pool()->nrow,
-                                    (size_t)k2d.get_p2D_pool()->ncol,
-                                    k2d.get_p2D_pool()->desc};
-            sk_in = MatrixBlock<TK>{smatrix_k,
-                                    (size_t)k2d.get_p2D_pool()->nrow,
-                                    (size_t)k2d.get_p2D_pool()->ncol,
-                                    k2d.get_p2D_pool()->desc};
-#else
-            hk_in = MatrixBlock<TK>{hmatrix_k,
-                                    (size_t)k2d.get_p2D_pool()->nrow,
-                                    (size_t)k2d.get_p2D_pool()->ncol,
-                                    nullptr};
-            sk_in = MatrixBlock<TK>{smatrix_k,
-                                    (size_t)k2d.get_p2D_pool()->nrow,
-                                    (size_t)k2d.get_p2D_pool()->ncol,
-                                    nullptr};
-#endif
-        } else {
 #ifdef __MPI
         hk_in = MatrixBlock<TK>{hmatrix_k,
                                (size_t)this->hsk->get_pv()->nrow,
@@ -85,7 +62,6 @@ class OperatorLCAO : public Operator<TK> {
         hk_in = MatrixBlock<TK>{hmatrix_k, (size_t)this->hsk->get_pv()->nrow, (size_t)this->hsk->get_pv()->ncol, nullptr};
         sk_in = MatrixBlock<TK>{smatrix_k, (size_t)this->hsk->get_pv()->nrow, (size_t)this->hsk->get_pv()->ncol, nullptr};
 #endif
-        }
     }
 
     /* Function contributeHk() is defined in derived class, for constructing

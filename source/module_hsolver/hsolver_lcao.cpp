@@ -33,7 +33,6 @@
 #include "module_base/scalapack_connector.h"
 #include "module_hsolver/parallel_k2d.h"
 #include "module_base/memory.h"
-#include "module_hsolver/parallel_k2d.h"
 
 #include <unistd.h>
 
@@ -194,9 +193,10 @@ void HSolverLCAO<T, Device>::solveTemplate(hamilt::Hamilt<T>* pHamilt,
     }
 
 #ifdef __MPI
-    if (Parallel_K2D<double>::get_instance().get_kpar() > 1)
+    if (GlobalV::KPAR_LCAO > 1 &&
+        (this->method == "genelpa" || this->method == "scalapack_gvx"))
     {
-        this->parakSolve(pHamilt, psi, pes);
+        this->parakSolve(pHamilt, psi, pes, GlobalV::KPAR_LCAO);
     }
     else
 #endif
@@ -263,11 +263,27 @@ void HSolverLCAO<T, Device>::solve(hamilt::Hamilt<T>* pHamilt,
 template <typename T, typename Device>
 void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
                                    psi::Psi<T>& psi,
-                                   elecstate::ElecState* pes)
+                                   elecstate::ElecState* pes,
+                                   int kpar)
 {
 #ifdef __MPI
+    DiagH<T>* pdiag_parak = nullptr;
+    if (this->method == "genelpa")
+    {
+        pdiag_parak = dynamic_cast<DiagoElpa<T>*>(this->pdiagh);
+    }
+    else if (this->method == "scalapack_gvx")
+    {
+        pdiag_parak = dynamic_cast<DiagoScalapack<T>*>(this->pdiagh);
+    }
+    else
+    {
+        ModuleBase::WARNING_QUIT("HSolverLCAO::solve",
+                                 "This method of DiagH for k-parallelism diagnolization is not supported!");
+    }
     ModuleBase::timer::tick("HSolverLCAO", "parakSolve");
-    auto& k2d = Parallel_K2D<T>::get_instance();
+    auto k2d = Parallel_K2D<T>();
+    k2d.set_kpar(kpar);
     int nbands = this->ParaV->get_nbands();
     int nks = psi.get_nk();
     int nrow = this->ParaV->get_global_row_size();
@@ -310,8 +326,13 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
         {
             /// local psi in pool
             psi_pool.fix_k(0);
+            hamilt::MatrixBlock<T> hk_pool = hamilt::MatrixBlock<T>{k2d.hk_pool.data(),
+                (size_t)k2d.get_p2D_pool()->get_row_size(), (size_t)k2d.get_p2D_pool()->get_col_size(), k2d.get_p2D_pool()->desc};
+            hamilt::MatrixBlock<T> sk_pool = hamilt::MatrixBlock<T>{k2d.sk_pool.data(),
+                (size_t)k2d.get_p2D_pool()->get_row_size(), (size_t)k2d.get_p2D_pool()->get_col_size(), k2d.get_p2D_pool()->desc};
             /// solve eigenvector and eigenvalue for H(k)
-            this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
+            pdiag_parak->diag_pool(hk_pool, sk_pool, psi_pool,&(pes->ekb(ik_global, 0)), k2d.POOL_WORLD_K2D);
+            //this->hamiltSolvePsiK(pHamilt, psi_pool, &(pes->ekb(ik_global, 0)));
         }
         MPI_Barrier(MPI_COMM_WORLD);
         ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
@@ -341,7 +362,6 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
         ModuleBase::timer::tick("HSolverLCAO", "collect_psi");
     }
     k2d.unset_para_env();
-    k2d.set_initialized(false);
     ModuleBase::timer::tick("HSolverLCAO", "parakSolve");
 #endif
 }
