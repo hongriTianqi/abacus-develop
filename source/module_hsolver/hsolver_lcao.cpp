@@ -268,14 +268,16 @@ void HSolverLCAO<T, Device>::parakSolve(hamilt::Hamilt<T>* pHamilt,
 {
 #ifdef __MPI
     DiagH<T>* pdiag_parak = nullptr;
-    if (this->method == "genelpa")
-    {
-        pdiag_parak = dynamic_cast<DiagoElpa<T>*>(this->pdiagh);
-    }
-    else if (this->method == "scalapack_gvx")
+    if (this->method == "scalapack_gvx")
     {
         pdiag_parak = dynamic_cast<DiagoScalapack<T>*>(this->pdiagh);
     }
+#ifdef __ELPA
+    else if (this->method == "genelpa")
+    {
+        pdiag_parak = dynamic_cast<DiagoElpa<T>*>(this->pdiagh);
+    }
+#endif
     else
     {
         ModuleBase::WARNING_QUIT("HSolverLCAO::solve",
