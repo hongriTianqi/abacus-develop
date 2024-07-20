@@ -152,7 +152,7 @@ void DiagoElpa<std::complex<double>>::diag_pool(hamilt::MatrixBlock<std::complex
     hamilt::MatrixBlock<std::complex<double>>& s_mat,
     psi::Psi<std::complex<double>>& psi,
     Real* eigenvalue_in,
-    MPI_Comm comm)
+    MPI_Comm& comm)
 {
     std::vector<double> eigen(GlobalV::NLOCAL, 0.0);
     bool isReal = false;
@@ -181,7 +181,7 @@ void DiagoElpa<double>::diag_pool(hamilt::MatrixBlock<double>& h_mat,
     hamilt::MatrixBlock<double>& s_mat,
     psi::Psi<double>& psi,
     Real* eigenvalue_in,
-    MPI_Comm comm)
+    MPI_Comm& comm)
 {
     std::vector<double> eigen(GlobalV::NLOCAL, 0.0);
 

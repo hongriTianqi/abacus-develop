@@ -51,7 +51,7 @@ namespace hsolver
     hamilt::MatrixBlock<double>& s_mat,
     psi::Psi<double>& psi,
     Real* eigenvalue_in,
-    MPI_Comm comm)
+    MPI_Comm& comm)
 {
     ModuleBase::TITLE("DiagoScalapack", "diag_pool");
     assert(h_mat.col == s_mat.col && h_mat.row == s_mat.row && h_mat.desc == s_mat.desc);
@@ -65,7 +65,7 @@ namespace hsolver
     hamilt::MatrixBlock<std::complex<double>>& s_mat,
     psi::Psi<std::complex<double>>& psi,
     Real* eigenvalue_in,
-    MPI_Comm comm)
+    MPI_Comm& comm)
 {
     ModuleBase::TITLE("DiagoScalapack", "diag_pool");
     assert(h_mat.col == s_mat.col && h_mat.row == s_mat.row && h_mat.desc == s_mat.desc);

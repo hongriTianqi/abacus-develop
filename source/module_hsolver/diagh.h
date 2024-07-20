@@ -41,7 +41,7 @@ class DiagH
     };
 #ifdef __MPI
     // diagnolization used in parallel-k case
-    virtual void diag_pool(hamilt::MatrixBlock<T>& h_mat, hamilt::MatrixBlock<T>& s_mat, psi::Psi<T>& psi, Real* eigenvalue_in, MPI_Comm comm)
+    virtual void diag_pool(hamilt::MatrixBlock<T>& h_mat, hamilt::MatrixBlock<T>& s_mat, psi::Psi<T>& psi, Real* eigenvalue_in, MPI_Comm& comm)
     {
         ModuleBase::WARNING_QUIT("diagh", "diag_pool method not implemented for the base class!");
     };

@@ -12,7 +12,7 @@ void Parallel_K2D<TK>::set_para_env(int nks,
                                     const int& nproc,
                                     const int& my_rank,
                                     const int& nspin) {
-    int kpar = this->get_kpar();
+    const int kpar = this->get_kpar();
     Parallel_Global::divide_mpi_groups(nproc,
                                        kpar,
                                        my_rank,
