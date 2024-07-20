@@ -31,14 +31,8 @@ class HSolverLCAO : public HSolver<T, Device>
     static int out_mat_dh;
 
   private:
-      void hamiltSolvePsiK(hamilt::Hamilt<T>* hm, psi::Psi<T>& psi, double* eigenvalue);
+    void hamiltSolvePsiK(hamilt::Hamilt<T>* hm, psi::Psi<T>& psi, double* eigenvalue);
 
-      void solveTemplate(hamilt::Hamilt<T>* pHamilt, psi::Psi<T>& psi, elecstate::ElecState* pes, const std::string method_in, const bool skip_charge);
-    /*void solveTemplate(
-        hamilt::Hamilt* pHamilt,
-        psi::Psi<std::complex<double>>& psi,
-        elecstate::ElecState* pes
-    );*/
     const Parallel_Orbitals* ParaV;
 
     void parakSolve(hamilt::Hamilt<T>* pHamilt, psi::Psi<T>& psi, elecstate::ElecState* pes, int kpar);
