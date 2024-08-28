@@ -425,6 +425,7 @@ void ESolver_KS<T, Device>::runner(const int istep, UnitCell& ucell)
     bool firstscf = true;
     this->conv_elec = false;
     this->niter = this->maxniter;
+    this->energy_stable_count = 0;
 
     // 4) SCF iterations
     double diag_ethr = GlobalV::PW_DIAG_THR;
@@ -644,8 +645,18 @@ void ESolver_KS<T, Device>::iter_finish(int& iter)
     // add a energy threshold for SCF convergence
     if (this->conv_elec == 0) // only check when density is not converged
     {
-        this->conv_elec
-            = (iter != 1 && std::abs(this->pelec->f_en.etot_delta * ModuleBase::Ry_to_eV) < this->scf_ene_thr);
+        if (iter != 1 && std::abs(this->pelec->f_en.etot_delta * ModuleBase::Ry_to_eV) < this->scf_ene_thr)
+        {
+            this->energy_stable_count++;
+        }
+        else
+        {
+            this->energy_stable_count = 0;
+        }
+        if (this->energy_stable_count >= 2) // energy stable for 2 steps
+        {
+            this->conv_elec = true;
+        }
     }
 }
 

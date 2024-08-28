@@ -53,7 +53,7 @@ public:
         const int& nspin,
         int& iter,
         const double& etot,
-        const double& scf_ene_thr);
+        const int& energy_stable_count);
     int two_level_step = 0;
     double etot_last_outer_loop = 0.0;
 private:

@@ -130,7 +130,7 @@ bool Exx_LRI_Interface<T, Tdata>::exx_after_converge(
     const int& nspin,
     int& iter,
     const double& etot,
-    const double& scf_ene_thr)
+    const int& energy_stable_count)
 {   // only called if (GlobalC::exx_info.info_global.cal_exx)
     auto restart_reset = [this]()
         { // avoid calling restart related procedure in the subsequent ion steps
@@ -169,7 +169,7 @@ bool Exx_LRI_Interface<T, Tdata>::exx_after_converge(
             // exx converged or get max exx steps
             if (this->two_level_step == GlobalC::exx_info.info_global.hybrid_step
                 || (iter == 1 && this->two_level_step != 0) // density convergence of outer loop
-                || (ediff < scf_ene_thr && this->two_level_step != 0))   //energy convergence of outer loop
+                || (energy_stable_count >= 2 && this->two_level_step != 0))   //energy convergence of outer loop
             {
                 restart_reset();
                 return true;
