@@ -1,5 +1,6 @@
 #include "dftu.h"
 
+#include "module_parameter/parameter.h"
 #include "module_base/constants.h"
 #include "module_base/global_function.h"
 #include "module_base/inverse_matrix.h"
@@ -18,6 +19,7 @@
 #include <iomanip>
 #include <iostream>
 #include <sstream>
+#include <vector>
 
 namespace GlobalC
 {
@@ -36,7 +38,9 @@ DFTU::~DFTU()
 
 void DFTU::init(UnitCell& cell, // unitcell class
                 const Parallel_Orbitals* pv,
-                const int& nks)
+                const int& nks,
+                const LCAO_Orbitals& orb
+                )
 {
     ModuleBase::TITLE("DFTU", "init");
 
@@ -46,6 +50,9 @@ void DFTU::init(UnitCell& cell, // unitcell class
 #endif
 
     this->paraV = pv;
+    
+    ptr_orb_ = &orb;
+    orb_cutoff_ = orb.cutoffs();
 
     // needs reconstructions in future
     // global parameters, need to be removed in future
@@ -182,7 +189,7 @@ void DFTU::init(UnitCell& cell, // unitcell class
     }
     else
     {
-        if (GlobalV::init_chg == "file")
+        if (PARAM.inp.init_chg == "file")
         {
             std::stringstream sst;
             sst << GlobalV::global_out_dir << "onsite.dm";

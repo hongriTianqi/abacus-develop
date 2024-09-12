@@ -243,6 +243,7 @@
     - [exx\_opt\_orb\_ecut](#exx_opt_orb_ecut)
     - [exx\_opt\_orb\_tolerence](#exx_opt_orb_tolerence)
     - [exx\_real\_number](#exx_real_number)
+    - [exx\_symmetry\_realspace](#exx_symmetry_realspace)
     - [rpa\_ccp\_rmesh\_times](#rpa_ccp_rmesh_times)
   - [Molecular dynamics](#molecular-dynamics)
     - [md\_type](#md_type)
@@ -366,7 +367,6 @@
     - [vion\_in\_h](#vion_in_h)
     - [test\_force](#test_force)
     - [test\_stress](#test_stress)
-    - [colour](#colour)
     - [test\_skip\_ewald](#test_skip_ewald)
   - [Electronic conductivities](#electronic-conductivities)
     - [cal\_cond](#cal_cond)
@@ -2426,6 +2426,15 @@ These variables are relevant when using hybrid functionals.
 - **Description**: How many times larger the radial mesh required is to that of atomic orbitals in the postprocess calculation of the **bare** Coulomb matrix for RPA, GW, etc.
 - **Default**: 10
 
+### exx_symmetry_realspace
+
+- **Type**: Boolean
+- **Availability**: *[symmetry](#symmetry)==1* and exx calculation  (*[dft_fuctional](#dft_functional)==hse/hf/pbe0/scan0/opt_orb* or *[rpa](#rpa)==True*)
+- **Description**: 
+  - False: only rotate k-space density matrix D(k) from irreducible k-points to accelerate diagonalization
+  - True: rotate both D(k) and Hexx(R) to accelerate both diagonalization and EXX calculation
+- **Default**: True
+
 [back to top](#full-list-of-input-keywords)
 
 ## Molecular dynamics
@@ -2657,6 +2666,27 @@ These variables are used to control molecular dynamics calculations. For more in
 - **Type**: String
 - **Description**: The filename of DP potential files, see [md.md](../md.md#dpmd) in detail.
 - **Default**: graph.pb
+
+### dp_rescaling
+
+- **Type**: Real
+- **Availability**: [esolver_type](#esolver_type) = `dp`.
+- **Description**: Rescaling factor to use a temperature-dependent DP. Energy, stress and force calculated by DP will be multiplied by this factor.
+- **Default**: 1.0
+
+### dp_fparam
+
+- **Type**: Real
+- **Availability**: [esolver_type](#esolver_type) = `dp`.
+- **Description**: The frame parameter for dp potential. The array size is dim_fparam, then all frames are assumed to be provided with the same fparam.
+- **Default**: {}
+
+### dp_aparam
+
+- **Type**: Real
+- **Availability**: [esolver_type](#esolver_type) = `dp`.
+- **Description**: The atomic parameter for dp potential. The array size can be (1) natoms x dim_aparam, then all frames are assumed to be provided with the same aparam; (2) dim_aparam, then all frames and atoms are assumed to be provided with the same aparam.
+- **Default**: {}
 
 ### msst_direction
 
@@ -3484,8 +3514,6 @@ These variables are used to control berry phase and wannier90 interface paramete
   - 0: No.
   - 1: Yes.
 - **Default**: 0
-
-### colour
 
 - **Type**: Boolean
 - **Description**: Specify whether to set the colorful output in terminal.
