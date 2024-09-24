@@ -63,7 +63,7 @@ namespace ModuleESolver
 //! mohan add 2024-05-11
 //------------------------------------------------------------------------------
 template <typename TK, typename TR>
-ESolver_KS_LCAO<TK, TR>::ESolver_KS_LCAO(): orb_(GlobalC::ORB)
+ESolver_KS_LCAO<TK, TR>::ESolver_KS_LCAO()
 {
     this->classname = "ESolver_KS_LCAO";
     this->basisname = "LCAO";
@@ -134,7 +134,7 @@ void ESolver_KS_LCAO<TK, TR>::before_all_runners(const Input_para& inp, UnitCell
 
         // 1.3) Setup k-points according to symmetry.
         this->kv
-            .set(ucell.symm, GlobalV::global_kpoint_card, GlobalV::NSPIN, ucell.G, ucell.latvec, GlobalV::ofs_running);
+            .set(ucell.symm, PARAM.inp.kpoint_file, PARAM.inp.nspin, ucell.G, ucell.latvec, GlobalV::ofs_running);
         ModuleBase::GlobalFunc::DONE(GlobalV::ofs_running, "INIT K-POINTS");
 
         Print_Info::setup_parameters(ucell, this->kv);
@@ -179,7 +179,7 @@ void ESolver_KS_LCAO<TK, TR>::before_all_runners(const Input_para& inp, UnitCell
     // DensityMatrix is allocated here, DMK is also initialized here
     // DMR is not initialized here, it will be constructed in each before_scf
     dynamic_cast<elecstate::ElecStateLCAO<TK>*>(this->pelec)
-        ->init_DM(&this->kv, &(this->pv), GlobalV::NSPIN);
+        ->init_DM(&this->kv, &(this->pv), PARAM.inp.nspin);
 
     // this function should be removed outside of the function
     if (PARAM.inp.calculation == "get_S")
@@ -204,8 +204,8 @@ void ESolver_KS_LCAO<TK, TR>::before_all_runners(const Input_para& inp, UnitCell
         {
             XC_Functional::set_xc_first_loop(ucell);
             // initialize 2-center radial tables for EXX-LRI
-            if (GlobalC::exx_info.info_ri.real_number) { this->exx_lri_double->init(MPI_COMM_WORLD, this->kv); }
-            else { this->exx_lri_complex->init(MPI_COMM_WORLD, this->kv); }
+            if (GlobalC::exx_info.info_ri.real_number) { this->exx_lri_double->init(MPI_COMM_WORLD, this->kv, orb_); }
+            else { this->exx_lri_complex->init(MPI_COMM_WORLD, this->kv, orb_); }
         }
     }
 #endif
@@ -219,7 +219,7 @@ void ESolver_KS_LCAO<TK, TR>::before_all_runners(const Input_para& inp, UnitCell
     GlobalC::ppcell.init_vloc(GlobalC::ppcell.vloc, this->pw_rho);
 
     // 11) inititlize the charge density
-    this->pelec->charge->allocate(GlobalV::NSPIN);
+    this->pelec->charge->allocate(PARAM.inp.nspin);
     this->pelec->omega = GlobalC::ucell.omega;
 
     // 12) initialize the potential
@@ -236,12 +236,12 @@ void ESolver_KS_LCAO<TK, TR>::before_all_runners(const Input_para& inp, UnitCell
 
 #ifdef __DEEPKS
     // 13) initialize deepks
-    if (GlobalV::deepks_scf)
+    if (PARAM.inp.deepks_scf)
     {
         // load the DeePKS model from deep neural network
         GlobalC::ld.load_model(PARAM.inp.deepks_model);
         // read pdm from file for NSCF or SCF-restart, do it only once in whole calculation
-        GlobalC::ld.read_projected_DM((PARAM.inp.init_chg == "file"), GlobalV::deepks_equiv, *orb_.Alpha);
+        GlobalC::ld.read_projected_DM((PARAM.inp.init_chg == "file"), PARAM.inp.deepks_equiv, *orb_.Alpha);
     }
 #endif
 
@@ -301,7 +301,7 @@ void ESolver_KS_LCAO<TK, TR>::cal_force(ModuleBase::matrix& force)
     Force_Stress_LCAO<TK> fsl(this->RA, GlobalC::ucell.nat);
 
     fsl.getForceStress(PARAM.inp.cal_force,
-                       GlobalV::CAL_STRESS,
+                       PARAM.inp.cal_stress,
                        PARAM.inp.test_force,
                        PARAM.inp.test_stress,
                        this->pv,
@@ -405,14 +405,14 @@ void ESolver_KS_LCAO<TK, TR>::after_all_runners()
         ModuleIO::write_istate_info(this->pelec->ekb, this->pelec->wg, this->kv, &(GlobalC::Pkpoints));
     }
 
-    const int nspin0 = (GlobalV::NSPIN == 2) ? 2 : 1;
+    const int nspin0 = (PARAM.inp.nspin == 2) ? 2 : 1;
 
     if (PARAM.inp.out_band[0])
     {
         for (int is = 0; is < nspin0; is++)
         {
             std::stringstream ss2;
-            ss2 << GlobalV::global_out_dir << "BANDS_" << is + 1 << ".dat";
+            ss2 << PARAM.globalv.global_out_dir << "BANDS_" << is + 1 << ".dat";
             GlobalV::ofs_running << "\n Output bands in file: " << ss2.str() << std::endl;
             ModuleIO::nscf_band(is,
                                 ss2.str(),
@@ -449,7 +449,7 @@ void ESolver_KS_LCAO<TK, TR>::after_all_runners()
 
     if (PARAM.inp.out_mat_xc)
     {
-        ModuleIO::write_Vxc<TK, TR>(GlobalV::NSPIN,
+        ModuleIO::write_Vxc<TK, TR>(PARAM.inp.nspin,
             GlobalV::NLOCAL,
             GlobalV::DRANK,
             &this->pv,
@@ -463,6 +463,7 @@ void ESolver_KS_LCAO<TK, TR>::after_all_runners()
             this->GG,
             this->GK,
             this->kv,
+            orb_.cutoffs(),
             this->pelec->wg,
             GlobalC::GridD
 #ifdef __EXX
@@ -474,7 +475,7 @@ void ESolver_KS_LCAO<TK, TR>::after_all_runners()
 
     if (PARAM.inp.out_eband_terms)
     {
-        ModuleIO::write_eband_terms<TK, TR>(GlobalV::NSPIN,
+        ModuleIO::write_eband_terms<TK, TR>(PARAM.inp.nspin,
             GlobalV::NLOCAL,
             GlobalV::DRANK,
             &this->pv,
@@ -490,6 +491,7 @@ void ESolver_KS_LCAO<TK, TR>::after_all_runners()
             this->kv,
             this->pelec->wg,
             GlobalC::GridD,
+            orb_.cutoffs(),
             this->two_center_bundle_
 #ifdef __EXX
             , this->exx_lri_double ? &this->exx_lri_double->Hexxs : nullptr
@@ -600,7 +602,7 @@ void ESolver_KS_LCAO<TK, TR>::iter_init(const int istep, const int iter)
             // rho1 and rho2 are the same rho.
             // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-            if (GlobalV::NSPIN == 4)
+            if (PARAM.inp.nspin == 4)
             {
                 GlobalC::ucell.cal_ux();
             }
@@ -640,7 +642,7 @@ void ESolver_KS_LCAO<TK, TR>::iter_init(const int istep, const int iter)
     GlobalC::ld.set_hr_cal(true);
 
     // HR in HamiltLCAO should be recalculate
-    if (GlobalV::deepks_scf)
+    if (PARAM.inp.deepks_scf)
     {
         this->p_hamilt->refresh();
     }
@@ -703,13 +705,13 @@ void ESolver_KS_LCAO<TK, TR>::hamilt2density(int istep, int iter, double ethr)
         this->pelec->f_en.eband = 0.0;
         this->pelec->f_en.demet = 0.0;
 
-        hsolver::HSolverLCAO<TK> hsolver_lcao_obj(&(this->pv), GlobalV::KS_SOLVER);
-        hsolver_lcao_obj.solve(this->p_hamilt, this->psi[0], this->pelec, GlobalV::KS_SOLVER, false);
+        hsolver::HSolverLCAO<TK> hsolver_lcao_obj(&(this->pv), PARAM.inp.ks_solver);
+        hsolver_lcao_obj.solve(this->p_hamilt, this->psi[0], this->pelec, PARAM.inp.ks_solver, false);
 
 
         if (PARAM.inp.out_bandgap)
         {
-            if (!GlobalV::TWO_EFERMI)
+            if (!PARAM.globalv.two_fermi)
             {
                 this->pelec->cal_bandgap();
             }
@@ -759,7 +761,7 @@ void ESolver_KS_LCAO<TK, TR>::hamilt2density(int istep, int iter, double ethr)
 
     // (7) for deepks, calculate delta_e
 #ifdef __DEEPKS
-    if (GlobalV::deepks_scf)
+    if (PARAM.inp.deepks_scf)
     {
         const std::vector<std::vector<TK>>& dm
             = dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM()->get_DMK_vector();
@@ -780,9 +782,9 @@ void ESolver_KS_LCAO<TK, TR>::hamilt2density(int istep, int iter, double ethr)
 
     // 10) symmetrize the charge density
     Symmetry_rho srho;
-    for (int is = 0; is < GlobalV::NSPIN; is++)
+    for (int is = 0; is < PARAM.inp.nspin; is++)
     {
-        srho.begin(is, *(this->pelec->charge), this->pw_rho, GlobalC::Pgrid, GlobalC::ucell.symm);
+        srho.begin(is, *(this->pelec->charge), this->pw_rho, GlobalC::ucell.symm);
     }
 
     // 11) compute magnetization, only for spin==2
@@ -810,13 +812,13 @@ void ESolver_KS_LCAO<TK, TR>::update_pot(const int istep, const int iter)
     // 1) print Hamiltonian and Overlap matrix
     if (this->conv_elec || iter == PARAM.inp.scf_nmax)
     {
-        if (!PARAM.globalv.gamma_only_local && (PARAM.inp.out_mat_hs[0] || GlobalV::deepks_v_delta))
+        if (!PARAM.globalv.gamma_only_local && (PARAM.inp.out_mat_hs[0] || PARAM.inp.deepks_v_delta))
         {
             this->GK.renew(true);
         }
         for (int ik = 0; ik < this->kv.get_nks(); ++ik)
         {
-            if (PARAM.inp.out_mat_hs[0]|| GlobalV::deepks_v_delta)
+            if (PARAM.inp.out_mat_hs[0]|| PARAM.inp.deepks_v_delta)
             {
                 this->p_hamilt->updateHk(ik);
             }
@@ -856,7 +858,7 @@ void ESolver_KS_LCAO<TK, TR>::update_pot(const int istep, const int iter)
                                        GlobalV::DRANK);
                 }
 #ifdef __DEEPKS
-                if(GlobalV::deepks_out_labels && GlobalV::deepks_v_delta)
+                if(PARAM.inp.deepks_out_labels && PARAM.inp.deepks_v_delta)
                 {
                     DeePKS_domain::save_h_mat(h_mat.p, this->pv.nloc);
                 }
@@ -878,18 +880,10 @@ void ESolver_KS_LCAO<TK, TR>::update_pot(const int istep, const int iter)
                                 istep);
     }
 
-    // 3) print potential
-    if (this->conv_elec || iter == PARAM.inp.scf_nmax)
-    {
-        if (GlobalV::out_pot < 0) // mohan add 2011-10-10
-        {
-            GlobalV::out_pot = -2;
-        }
-    }
 
     if (!this->conv_elec)
     {
-        if (GlobalV::NSPIN == 4)
+        if (PARAM.inp.nspin == 4)
         {
             GlobalC::ucell.cal_ux();
         }
@@ -931,7 +925,7 @@ void ESolver_KS_LCAO<TK, TR>::iter_finish(int& iter)
     // Peize Lin add 2020.04.04
     if (GlobalC::restart.info_save.save_charge)
     {
-        for (int is = 0; is < GlobalV::NSPIN; ++is)
+        for (int is = 0; is < PARAM.inp.nspin; ++is)
         {
             GlobalC::restart.save_disk("charge", is, this->pelec->charge->nrxx, this->pelec->charge->rho[is]);
         }
@@ -1011,7 +1005,7 @@ void ESolver_KS_LCAO<TK, TR>::iter_finish(int& iter)
     // 4) output charge density and density matrix
     if (this->out_freq_elec && iter % this->out_freq_elec == 0)
     {
-        for (int is = 0; is < GlobalV::NSPIN; is++)
+        for (int is = 0; is < PARAM.inp.nspin; is++)
         {
             double* data = nullptr;
             if (PARAM.inp.dm_to_rho)
@@ -1022,7 +1016,7 @@ void ESolver_KS_LCAO<TK, TR>::iter_finish(int& iter)
             {
                 data = this->pelec->charge->rho_save[is];
             }
-            std::string fn = GlobalV::global_out_dir + "/tmp_SPIN" + std::to_string(is + 1) + "_CHG.cube";
+            std::string fn = PARAM.globalv.global_out_dir + "/tmp_SPIN" + std::to_string(is + 1) + "_CHG.cube";
             ModuleIO::write_cube(
 #ifdef __MPI
                 this->pw_big->bz,
@@ -1032,7 +1026,7 @@ void ESolver_KS_LCAO<TK, TR>::iter_finish(int& iter)
 #endif
                 data,
                 is,
-                GlobalV::NSPIN,
+                PARAM.inp.nspin,
                 0,
                 fn,
                 this->pw_rhod->nx,
@@ -1044,7 +1038,7 @@ void ESolver_KS_LCAO<TK, TR>::iter_finish(int& iter)
                 1);
             if (XC_Functional::get_func_type() == 3 || XC_Functional::get_func_type() == 5)
             {
-                fn = GlobalV::global_out_dir + "/tmp_SPIN" + std::to_string(is + 1) + "_TAU.cube";
+                fn = PARAM.globalv.global_out_dir + "/tmp_SPIN" + std::to_string(is + 1) + "_TAU.cube";
                 ModuleIO::write_cube(
 #ifdef __MPI
                     this->pw_big->bz,
@@ -1054,7 +1048,7 @@ void ESolver_KS_LCAO<TK, TR>::iter_finish(int& iter)
 #endif
                     this->pelec->charge->kin_r_save[is],
                     is,
-                    GlobalV::NSPIN,
+                    PARAM.inp.nspin,
                     0,
                     fn,
                     this->pw_rhod->nx,
@@ -1117,7 +1111,7 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
     // 3) write density matrix
     if (PARAM.inp.out_dm)
     {
-        std::vector<double> efermis(GlobalV::NSPIN == 2 ? 2 : 1);
+        std::vector<double> efermis(PARAM.inp.nspin == 2 ? 2 : 1);
         for (int ispin = 0; ispin < efermis.size(); ispin++)
         {
             efermis[ispin] = this->pelec->eferm.get_efval(ispin);
@@ -1134,7 +1128,7 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
     // 4) write Hexx matrix for NSCF (see `out_chg` in docs/advanced/input_files/input-main.md)
     if (GlobalC::exx_info.info_global.cal_exx && PARAM.inp.out_chg[0] && istep % PARAM.inp.out_interval == 0) // Peize Lin add if 2022.11.14
     {
-        const std::string file_name_exx = GlobalV::global_out_dir + "HexxR" + std::to_string(GlobalV::MY_RANK);
+        const std::string file_name_exx = PARAM.globalv.global_out_dir + "HexxR" + std::to_string(GlobalV::MY_RANK);
         if (GlobalC::exx_info.info_ri.real_number) {
             ModuleIO::write_Hexxs_csr(file_name_exx, GlobalC::ucell, this->exd->get_Hexxs());
         } else {
@@ -1160,7 +1154,7 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
                           &(this->pv),
                           *(this->psi),
                           dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM(),
-                          GlobalV::deepks_v_delta);
+                          PARAM.inp.deepks_v_delta);
 
     ModuleBase::timer::tick("ESolver_KS_LCAO", "out_deepks_labels");
 #endif
@@ -1171,12 +1165,12 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
     {
         // ModuleRPA::DFT_RPA_interface
         // rpa_interface(GlobalC::exx_info.info_global);
-        // rpa_interface.rpa_exx_lcao().info.files_abfs = GlobalV::rpa_orbitals;
         RPA_LRI<TK, double> rpa_lri_double(GlobalC::exx_info.info_ri);
         rpa_lri_double.cal_postSCF_exx(*dynamic_cast<const elecstate::ElecStateLCAO<TK>*>(this->pelec)->get_DM(),
                                        MPI_COMM_WORLD,
-                                       this->kv);
-        rpa_lri_double.init(MPI_COMM_WORLD, this->kv);
+                                       this->kv,
+                                       orb_);
+        rpa_lri_double.init(MPI_COMM_WORLD, this->kv, orb_.cutoffs());
         rpa_lri_double.out_for_RPA(this->pv, *(this->psi), this->pelec);
     }
 #endif
@@ -1190,7 +1184,7 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
         std::string zipname = "output_HR0.npz";
         this->output_mat_npz(zipname, *(p_ham_lcao->getHR()));
 
-        if (GlobalV::NSPIN == 2)
+        if (PARAM.inp.nspin == 2)
         {
             this->p_hamilt->updateHk(this->kv.get_nks() / 2); // the other half of k points, down spin
             hamilt::HamiltLCAO<std::complex<double>, double>* p_ham_lcao
@@ -1208,7 +1202,7 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
         std::string zipname = "output_DM0.npz";
         this->output_mat_npz(zipname, *(dm->get_DMR_pointer(1)));
 
-        if (GlobalV::NSPIN == 2)
+        if (PARAM.inp.nspin == 2)
         {
             zipname = "output_DM1.npz";
             this->output_mat_npz(zipname, *(dm->get_DMR_pointer(2)));
@@ -1236,7 +1230,7 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
     }
 
     // 16) delete grid
-    if (!PARAM.inp.cal_force && !GlobalV::CAL_STRESS)
+    if (!PARAM.inp.cal_force && !PARAM.inp.cal_stress)
     {
         RA.delete_grid();
     }
@@ -1245,7 +1239,7 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
     if (PARAM.inp.qo_switch)
     {
         toQO tqo(PARAM.inp.qo_basis, PARAM.inp.qo_strategy, PARAM.inp.qo_thr, PARAM.inp.qo_screening_coeff);
-        tqo.initialize(GlobalV::global_out_dir,
+        tqo.initialize(PARAM.globalv.global_out_dir,
                        PARAM.inp.pseudo_dir,
                        PARAM.inp.orbital_dir,
                        &GlobalC::ucell,
@@ -1265,10 +1259,11 @@ void ESolver_KS_LCAO<TK, TR>::after_scf(const int istep)
                                                                   this->kv.kvec_d,
                                                                   &hR,
                                                                   &GlobalC::ucell,
+                                                                  orb_.cutoffs(),
                                                                   &GlobalC::GridD,
                                                                   two_center_bundle_.kinetic_orb.get());
 
-        const int nspin_k = (GlobalV::NSPIN == 2 ? 2 : 1);
+        const int nspin_k = (PARAM.inp.nspin == 2 ? 2 : 1);
         for (int ik = 0; ik < this->kv.get_nks() / nspin_k; ++ik)
         {
             ekinetic->init(ik);
